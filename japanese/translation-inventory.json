@@ -1,0 +1,4367 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "generated_at": "2026-11-06T12:55:47.091Z",
+  "markdown_sources": 232,
+  "translated": 232,
+  "agent_translated": 52,
+  "machine_unreviewed": 163,
+  "machine_partially_reviewed": 17,
+  "original_files_unchanged": true,
+  "errors": [],
+  "warnings": [],
+  "documents": [
+    {
+      "source": ".github/PULL_REQUEST_TEMPLATE.md",
+      "destination": "japanese/.github/PULL_REQUEST_TEMPLATE.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "1c4ddf9f1d8dd4061685aa3b4488d26673c8c8fb0cbcc66e2cf3792915eb46f9",
+      "translation_sha256": "10d6eaacb153762a5c45361da935d5b30e8fbc65779ee1d19fd7c052855797a5",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "01-agentnetworkprotocol-technical-white-paper.md",
+      "destination": "japanese/01-agentnetworkprotocol-technical-white-paper.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "0e5402144078ac5c1901fe51739cd8ab6f3764e4407f60d1c3cb0cb29aea5fdc",
+      "translation_sha256": "b03de5cda530eaa15845889b19cc89a6e2b35302c805289c662c4044cb650a2c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "02-anp-did-authentication-protocol-specification.md",
+      "destination": "japanese/02-anp-did-authentication-protocol-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "6f65fd8deebb286cb4d228467b1b9f52f6e35193df3c5ed264287bae6b504894",
+      "translation_sha256": "f6c41dbc64e6b8c2447eb25d2f720e989c62cd6f12ac1a1468e840a6c9b71b3a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "destination": "japanese/03-did-wba-method-design-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "64ed07debf5b56c0356042641530968f22ba07d1a8fe356e02e15d987ba40800",
+      "translation_sha256": "2054cb041559323bd335cfc635ca7b288026c4b46b4f1de3df4b04f45bfbc753",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "04-anp-did-wba-name-space-specification.md",
+      "destination": "japanese/04-anp-did-wba-name-space-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "d6a70eff817e8e43c1a862ee20e689e02a252c0df77712e017a0aa4603c720e8",
+      "translation_sha256": "540e17cc47591ed56a4fc59ad6002492c2f753fdf64abb3e2ae331226a4e899b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "05-anp-did-authorization-protocol-specification.md",
+      "destination": "japanese/05-anp-did-authorization-protocol-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "9f1d89e9289dfa6b972ff5e312b1a896fe4b49a7a7b9fc86fcfb20653f82799c",
+      "translation_sha256": "4a15e86962dcb73d361af2855d2c833f3c36037415fe8b8781ed7c22f6410da2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "06-anp-agent-communication-meta-protocol-specification.md",
+      "destination": "japanese/06-anp-agent-communication-meta-protocol-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e699a79df735d2e89d6de271a93a7db2de978bbe924e0dc3b0df03b3418b9e42",
+      "translation_sha256": "2c818000d1a408f7b78a0426524f02c34d315be526b4f15e930eb0ab050a78b7",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "07-anp-agent-description-protocol-specification.md",
+      "destination": "japanese/07-anp-agent-description-protocol-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "1c77b52dea725bb9b915707dba873043a3fb930df2829e426164144df442819a",
+      "translation_sha256": "64c6d835a38bdc245337394b2f8b348b15435e9f4770baf0ceca315065ca933a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "08-ANP-Agent-Discovery-Protocol-Specification.md",
+      "destination": "japanese/08-ANP-Agent-Discovery-Protocol-Specification.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "47d549f2faddc0fc7cad7e3141a64565e2964ce8d0d2bca78ebd1f738ea69bf9",
+      "translation_sha256": "cbda5cad43518ef2fabb056711605cad2fd09fb1f7cc886470fc5397e96497a1",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "09-ANP-end-to-end-instant-messaging-protocol-specification.md",
+      "destination": "japanese/09-ANP-end-to-end-instant-messaging-protocol-specification.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "f871923b186663fe4b6982c6d96491a0f1c829be3f2a91bdc53ec939246df289",
+      "translation_sha256": "daa7f6b5985f378e4ee2710e2af4a6556cb6b90aac20da39294ea38d5061fb1c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "AGENTS.md",
+      "destination": "japanese/AGENTS.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "1edf85fb573003741f6ce81b3bda00c5ceb6ba6e661c3c5acf6eef4c400833b3",
+      "translation_sha256": "ffb4a8a8280b5497acffae00790eae87eac0dc56197305ebd364aaa341bd4acf",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "CONTRIBUTING.cn.md",
+      "destination": "japanese/CONTRIBUTING.cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b4aaf876e9649b870e555cfa1534f5173b1474896bba4f8b753e18bd5e79b8a0",
+      "translation_sha256": "9e11614c1903dba33803e37d439ce64301d4a2e86274b2e823b198ed766b800a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "destination": "japanese/CONTRIBUTING.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "6a1be98822787655adc450d2a8ebe6e3930c67d2cfbcba1ba90aa2ac7d75f11d",
+      "translation_sha256": "5d1e36ef50c1a55d6ea09554096ca33a4bdb51898a735e99dc0955f279d51433",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "CONTRIBUTORS.cn.md",
+      "destination": "japanese/CONTRIBUTORS.cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "06cf771bc374a16fb807355a8d780b45e373e1d7529bfae9ca4eb542ae261726",
+      "translation_sha256": "36ef4a35f321a1ba631f162f71d87c9cc96213eff0eed2def62a4517e617eb71",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "CONTRIBUTORS.md",
+      "destination": "japanese/CONTRIBUTORS.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "c405e49b318392099ba9d10994caaacb139221e8fa42001a205ea0c690d5f177",
+      "translation_sha256": "8cac9e263325ed5ca280d442a96b703cb012e08919f4d8a8d4647371528b727f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "GEMINI.md",
+      "destination": "japanese/GEMINI.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "translation_sha256": "0307e7f4cb863ece12d85d7b4a1bb4b1eaf097c5d2ef13b65acc9908bd9e1fcb",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "README.cn.md",
+      "destination": "japanese/README.cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "fa9bf4e818b3a26279b9845bf76926b2ee229ea093644d6097e4f4918413a72a",
+      "translation_sha256": "7c8f8aefede0baafff94179a2370034743c63635e2d0efb40da29fe233bed8cd",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "README.md",
+      "destination": "japanese/README.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "692f5f2b1520205940553167a300c1b77ffdd834a9e8eaaa8e19f005b659ca79",
+      "translation_sha256": "811fac8879c9ec549200408fcaf969434628d455fbdee183d9a783a736c0f6ab",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "appendix-a-did-wba-k1-compatibility-extension.md",
+      "destination": "japanese/appendix-a-did-wba-k1-compatibility-extension.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "f6ccb7584c993d5798ab888ff6a9a05c05ff2e6eb9842c9c9c75886de3531fac",
+      "translation_sha256": "4e68dc3ddb628e5d8364ac9b7f4a3ffe7fa1ddf677e8e98890f15ac560df4469",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "appendix-b-compatibility-with-native-did-web.md",
+      "destination": "japanese/appendix-b-compatibility-with-native-did-web.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "552a577a69cf2dd011adc00bead77643b86e9036c676957e289ac65530ba98b7",
+      "translation_sha256": "35f05bd611e02f2e42f517720583d5666889f31e4f860bad498611a356225cc0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "application/10-anp-agent-payment-protocol-specification.md",
+      "destination": "japanese/application/10-anp-agent-payment-protocol-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "14c53b50b36a4681a063a3eb7d0b6dca16238d488cb4bcde82598221d6305c8a",
+      "translation_sha256": "99586e30e3196206a9ee7271ef65dce73994dce24eeebb3fc49d73da7df41746",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/01-agent-Identity-authorization-encryption.md",
+      "destination": "japanese/blogs/01-agent-Identity-authorization-encryption.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "86c4a39236836e93cb2a9c7c3eb549fbc5a2cc581164a8e8f2ba7afea876d000",
+      "translation_sha256": "5bb359071453e4178fb580549a054f93668e18f3bde455ff481d851a5f0b2669",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/02-Why-Sequoia-Capital-US-Lists-Communication-Protocols-as-One-of-Five-Major-Investment-Themes.md",
+      "destination": "japanese/blogs/02-Why-Sequoia-Capital-US-Lists-Communication-Protocols-as-One-of-Five-Major-Investment-Themes.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "04df5beaedced40a42ef1004fd46abf2a7ddd9e759ded6ebe502e6f5178243ca",
+      "translation_sha256": "d9d3b1765ff8531f8593dae7612ac8c2ae3789ef9f0fea1c3d2f705d777a8e22",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md",
+      "destination": "japanese/blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "f99ba6f2ecb7c86955d120dc5ffe61c25bd300f0efa1b97a09e22bca9cac0b03",
+      "translation_sha256": "6887b92ea486781e702b9afd7d612e5920bb90d67614289494df51b40d42ec82",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/04-In-Depth-Analysis-of-Google-AP2.md",
+      "destination": "japanese/blogs/04-In-Depth-Analysis-of-Google-AP2.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e648d5be10ac84a86f94a27c9458553276f0206da613c492a166017624dd980a",
+      "translation_sha256": "0ecfb16d3156b742fd56b350bd8c38807b9f86c568e2aca48944886f5f9fa60a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/10-Major-Upgrade-to-the-ANP-Message-Protocol.md",
+      "destination": "japanese/blogs/10-Major-Upgrade-to-the-ANP-Message-Protocol.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b5ae37e63c89e29c428c068917484918ef1b65e76280bad4916d0e1a517fd432",
+      "translation_sha256": "359a5aec3f24adbd5fbe3ad45e9b105d22de521f8a4d5c125f118947213deafc",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/11-ANP-Release-1.1-Focus-on-Agent-Cross-Domain-Communication.md",
+      "destination": "japanese/blogs/11-ANP-Release-1.1-Focus-on-Agent-Cross-Domain-Communication.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "5b35a8cd8cd8827efbc9030ee9f312932568b571e3d1df1e7a31383d9f6e8346",
+      "translation_sha256": "8fca81ca3ef06fe1bd2287d34f4dba98d556c91e71b1bea2c501d4659584fcca",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/12-ANP-explained-from-scratch-en.md",
+      "destination": "japanese/blogs/12-ANP-explained-from-scratch-en.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "5178e62a83a25c2ee803b9268a3385ab56de74513b2e399ccdc99554edb680aa",
+      "translation_sha256": "767b5604ce18bfc97a52813630d2ea8e8359f633d7b3979aa0d6170a6be72328",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/ANP-Community-First-Meeting-A-Milestone-for-the-Agentic-Web.md",
+      "destination": "japanese/blogs/ANP-Community-First-Meeting-A-Milestone-for-the-Agentic-Web.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "bf503c9c162d2cd16f424ff50f9333b42d343f77bf53fa9ea5004c4751a65097",
+      "translation_sha256": "f1d612f1fa1bd9648de51efd823d03f1366cfc0aea19e2d36cc3b449217233a0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b962550b2a39ddffbd7013351fb37d75e0cce95470ce386c3f2e0fb463fbfe8b",
+      "translation_sha256": "d10dfe90803106da5c116f162cd0c3a8a435416cf038bd6b29a49c7a59acc70f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md",
+      "destination": "japanese/blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "280e9a32e682e95e5abf6c2868dacdf304c2a7d0712b4e4c0802b3d5adf187c3",
+      "translation_sha256": "900e55d31245f36645e33b378caa9771fa9e7de01e93ab49b12debfb03344927",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/00-series-preview-when-ai-becomes-advanced-productivity.md",
+      "destination": "japanese/blogs/Agentic-Web-Ten-Talks/00-series-preview-when-ai-becomes-advanced-productivity.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "80f96d7c2abadf3e6ef73b3e7ba2a454deda5d08b54dde1b628e1a8743df7325",
+      "translation_sha256": "3d8b4e13c97a49f2a594a99962a8848cd8043bf4b6fa11a399369f2c446ea0ad",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/01day-the-past-and-present-of-the-web.md",
+      "destination": "japanese/blogs/Agentic-Web-Ten-Talks/01day-the-past-and-present-of-the-web.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b3fb4f1635396b5fcf6e01ff57b434816f828b357949160d5e48699ad5d61b73",
+      "translation_sha256": "4b78799a230462a26e779e0d16cb71e0ebe5b4b34e6b92cf320d525131ff791c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/02day-first-principles.md",
+      "destination": "japanese/blogs/Agentic-Web-Ten-Talks/02day-first-principles.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "deda7848e1276c57bd502da18f72c2de80a216cae5049d7cbb63eb0fe7d693a0",
+      "translation_sha256": "ff9b1945b673caee53b159e8af653c60247ed0a2f059a9e49d6126d76c9b2329",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "destination": "japanese/blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "9b31fa4d467e8908b6b4dfc5e1f5e2a5a70853d8a54c8dae521b1aa2377986cb",
+      "translation_sha256": "e62725d161e9122c96bbbd3b63b90b9a44cdf0426a00e32a0d891d7a2b0676f8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+      "destination": "japanese/blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a9ed2cb4fc9fe4cb62a53c803d28accf2d7e89c891f20829b56b5319670b6856",
+      "translation_sha256": "10ac47744e2bd7a6001e4e9c936ad9abe8f95acd44efa9540c46af39d22d15af",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Comparison-of-Agent-Communication-Protocols.md",
+      "destination": "japanese/blogs/Comparison-of-Agent-Communication-Protocols.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "3738308e239444b0601e9c06195445334bc0a2eb66ac58b7f169b9bc87ccb477",
+      "translation_sha256": "fe4130f940448acdbecbbcd1ec009d19544b771265fe61ecf0cb5223b41a46e4",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "japanese/blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "537cb256c198d759e6ce56d8f19babe9c09367bdd0edf8c96b19c75fbd38c92a",
+      "translation_sha256": "3521f7757882daf6e68e3cdd64d4d7a886d36f8747a3c4c9a735e5446b31061b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Comprehensive-Comparison-of-Google-A2A-ANP-MCP.md",
+      "destination": "japanese/blogs/Comprehensive-Comparison-of-Google-A2A-ANP-MCP.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "74a2163165e0c185d48e73c1f8a6b3ae580104e2fe32820114711807035db825",
+      "translation_sha256": "d0860eb356d977c032ff432fe16faa3f0d131a1cdde581df915375fa556f244a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "destination": "japanese/blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a81885f2e8569c6a2acf83450961904b5ea09858538caefd5d6805bbd26fdfd6",
+      "translation_sha256": "aea4149884a9ee8168b6ddfe9adcfddcf631d92c3371f5b63607bb25b973e047",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/In-the-year-that-the-ANP-was-born.md",
+      "destination": "japanese/blogs/In-the-year-that-the-ANP-was-born.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "c050e4c9bfe356a89f3a4be3704a3f28540c96a1dfe7817ca56b3643a27b2dfd",
+      "translation_sha256": "3ee38c4847b04b0930667a6dc6f38d0acbdb1dc851681e7d93c5b0ecc98fb42d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "destination": "japanese/blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ea0482aa4188d5f89d8e3e32f32a1aefc979e5f30094626af8f212a833617f12",
+      "translation_sha256": "c2c8d723a480bd63411652d3c3510698783b3765c821c3c852d2a9a50b7142db",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Ten-Questions-and-Answers-about-MCP.md",
+      "destination": "japanese/blogs/Ten-Questions-and-Answers-about-MCP.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "dcb45477018108fffe83620d6754b0e9d7b8f0ac7683c5e85e5805aa457464aa",
+      "translation_sha256": "1f56e4307a5ee8cfbcf3738a8e2dc7075eb3373d066d358a9e6463e73df58333",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "destination": "japanese/blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "7528d78827f6ccc55986d0aef16304f568d00bbd6cc511cf108ea82cb987efd6",
+      "translation_sha256": "42e4c85a6aa92a8000bfef98b8c28aa9acbf96895469a7620d7afdd40be55ce0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "destination": "japanese/blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "6abdd60a3ca1945d6e6a64b04f0b66c8f0f1b63f2c61cd5fed9964c177dbcaf8",
+      "translation_sha256": "da203484bdac834b58899221b62602c6f494a34287a5672edca997e7f0548b42",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md",
+      "destination": "japanese/blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "48ec4178be4e7eb4c0378b2892e634149937a73acca2d5ff77d108b1641226e6",
+      "translation_sha256": "07164485a5fe3aa53880d33fd6481e5f8a3e580d1bb9755f72a849c406950e75",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/What-Makes-Agentic-Web-Different.md",
+      "destination": "japanese/blogs/What-Makes-Agentic-Web-Different.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "9aafb55ec8e40d505997c456231af933831d5bff96cb8178caeeeeba2876b11e",
+      "translation_sha256": "ddff246134b4b26a5dc2be7015f0a5ba14f51bf82536f3e78d4fc1136baebb9b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/agent-.md",
+      "destination": "japanese/blogs/agent-.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a47d63d1a0f548ab316f5a308e6226d6c162b01cdd69f88842478e2d6e0f514e",
+      "translation_sha256": "bc78678480bd69495976d63d46e4ca1a2851a928c081f16a25ba708cb7852ddf",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/analysis-and-predictions-of-future-ai-personal-assistant-products-and-key-players.md",
+      "destination": "japanese/blogs/analysis-and-predictions-of-future-ai-personal-assistant-products-and-key-players.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "852945e3e5f18826ab2daa89db7b0b11351254db78c06993f63c5fc525723354",
+      "translation_sha256": "f897d182b58988aac688ac131a9cbda3f21740b31aa22fb8f9ca1cb13a7b53d2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "destination": "japanese/blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "7d810327b3c4b74fa95eb4596fe11fa80f65b57d26ee43355a8b88feb57cad34",
+      "translation_sha256": "77f410e62530bb5f073c5451e9749c4b79ce0f9425a647cf2b42c03a39f894fa",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/01-智能体的身份-授权-加密.md",
+      "destination": "japanese/blogs/cn/01-智能体的身份-授权-加密.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "39447513b1994ef497148575a7162c3e6818ec6db68c1117b6118f7e2da1bd02",
+      "translation_sha256": "1530a6751201e6211a6cce8e59a0e84427523b4208ece07cc03a10c84c67086e",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/02-解读：为什么红杉美国将通信协议作为五大投资主题之一.md",
+      "destination": "japanese/blogs/cn/02-解读：为什么红杉美国将通信协议作为五大投资主题之一.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "4aac637cc34408c39d8883b2d2ad7d3cf5b2d37c4227188c4528d41515b7b013",
+      "translation_sha256": "c0acb93d4763d8210895945cea12fbed49595f3309b260f1d6bf934279eca44f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/04-深度解读谷歌最新发布的AP2.md",
+      "destination": "japanese/blogs/cn/04-深度解读谷歌最新发布的AP2.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "d2fb9f5649f78f628305eb027cbd4a57754e59bf43473c4107f50612a22334f7",
+      "translation_sha256": "9a978935fd99b1922ef70b8e99cea6ea7222cb167e079c85ce729e32817a1b20",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/05-ANP的核心概念和交互模式.md",
+      "destination": "japanese/blogs/cn/05-ANP的核心概念和交互模式.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "951342333cf2b7da9a54b42001a57d91cf01450bda07330de592962d994dbbf8",
+      "translation_sha256": "0793b7aea1953b347ecdbd6b77f36ba973a06cbeb6ba6225ee7bf22a6311ca82",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "destination": "japanese/blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "144c988bd05086067cb2ddb0530a0de1b46eac35152d910bb7a1ef2df1f821df",
+      "translation_sha256": "32590fc80d2e27ccfed48aeff5ee261b3f16340686ad8bc71d8f1adfa6456665",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/07-2-全球首个开放智能体网络.md",
+      "destination": "japanese/blogs/cn/07-2-全球首个开放智能体网络.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "04e2069bb625bb05e46007635be04dfa82e1d95aba19f6e4b19870aaa2478b33",
+      "translation_sha256": "2099c1998ae13d9af1a00bfdb8b94a987c25dfcbc0bd970bd6084b645b402190",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/07-3-全球首个开放智能体网络.md",
+      "destination": "japanese/blogs/cn/07-3-全球首个开放智能体网络.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "f33f364fcf2c1780ccd7a8c28c3fa04e3f38f957a4e7b73b4fb67c542e89cf41",
+      "translation_sha256": "97fee274c1b883c198c52081605c236ab2571a0c33bbafd7c747f1a6e48d4f93",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/07-全球首个开放智能体网络.md",
+      "destination": "japanese/blogs/cn/07-全球首个开放智能体网络.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "1bd92c07680f1c319f0fbe2e80074526d39d5377499df2f21d9753b67a183377",
+      "translation_sha256": "3de9c8d787fc60c2cd3e8fde89db2bbe284ce6b5d712988240d8a892b367d9fd",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/08-智能体支付.md",
+      "destination": "japanese/blogs/cn/08-智能体支付.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ec9482f3b984760f0f8029ac376090fea477bbd4d79630cd98d5ae7c0f40ca45",
+      "translation_sha256": "b3fd916f7eab877b08094b5bf77151ce97fa4725432661bc78405f0e048172ad",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/10-新版本IM协议.md",
+      "destination": "japanese/blogs/cn/10-新版本IM协议.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "12777b37690dbd4bd0141941f209738c0f50aab43a9b2edd2ad8b39f6f2a6d1f",
+      "translation_sha256": "b1e17dff4928ea7c3e8c0aece616d2361aa19318cee663af337fee30def806d9",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/10-谷歌UCP.md",
+      "destination": "japanese/blogs/cn/10-谷歌UCP.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "46b45cdd4211f5eac48b24f9bc3fd76f9d898de4acad27bf9d959cccf5ee72b0",
+      "translation_sha256": "620c0cb5c1bad70124b8ab0baa5fb7e840e2eac8787bd700f021730060231b79",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/11-ANP-Release-1.1-从身份到跨域消息.md",
+      "destination": "japanese/blogs/cn/11-ANP-Release-1.1-从身份到跨域消息.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "82cb1f876396936e1cc4ccdde1296a238adc6d28940586fa8b408cea11d4a80f",
+      "translation_sha256": "b7abb6ba850d8a3c5043d699cab07ccecc4306acae0d6d31cc1130d16d99203d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/12-ANP-讲解从0开始.md",
+      "destination": "japanese/blogs/cn/12-ANP-讲解从0开始.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "a96907edc9015b3f6a20507680691255e2d298dc7747431e55a3ecb89f60d6f4",
+      "translation_sha256": "f7a228d31dd165195e27743202653ae961b2f8accacb385ce354ecce47001274",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/2025年ANP下一步规划的思考.md",
+      "destination": "japanese/blogs/cn/2025年ANP下一步规划的思考.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "abcda69ee4e512f7273b5a3ae33c641810b279c2def7ff9947519985ed98f9aa",
+      "translation_sha256": "38008d09251bc28d3cf2fd5f4e35bf8e0f675bf9a36142132a4f483fbea7059b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/AI个人助手未来产品形态和主要玩家的分析与预测.md",
+      "destination": "japanese/blogs/cn/AI个人助手未来产品形态和主要玩家的分析与预测.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ab64e186fe6178f26a819e6e57779bdccc9ada7429bb5db3296add1e6e708438",
+      "translation_sha256": "2db3200d60dbf28b5608f40221748776cf68bd8369b3585acadd47b17716166f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/ANP协议要感谢的社区：web3、Agora、WebAgents.md",
+      "destination": "japanese/blogs/cn/ANP协议要感谢的社区：web3、Agora、WebAgents.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ef3d2be38fd95f273e81274bd0a6899c52a60346dacc219987c11e50c3d2c63a",
+      "translation_sha256": "782d910710e39260a2a98208c24602e1c10cb672aa421f6a15e4b932b710f7d1",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/ANP在W3C-WebAgents-CG的演讲.md",
+      "destination": "japanese/blogs/cn/ANP在W3C-WebAgents-CG的演讲.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "c1e7ce7e199eced78ab6c59eeaa8bb45d85b3bc41199f047571db196c28ca8be",
+      "translation_sha256": "9ae1f558cf0de0774d268f1c493e48d24be276554f1f7c983308b44b6eae1b1d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/ANP社区首次会议：这可能是一个新时代的起点.md",
+      "destination": "japanese/blogs/cn/ANP社区首次会议：这可能是一个新时代的起点.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "c13984fa676a7a3947ce35ca5faf1d87992dfc0dd0b795ea136069c62ffe8faf",
+      "translation_sha256": "1bb08bdc8be10098fd3b7426121c6151dc1405bc7469b45e958bf9609d27b6c8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/00-系列预告-当AI成为先进生产力.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/00-系列预告-当AI成为先进生产力.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "57f186d404c5ab7868ae8ad23d7bfa69e676679b8f1a176b8b90016df8f06454",
+      "translation_sha256": "5f1148cfa326bc8c2b439ff05f2c86dc9da55ff5bb7a5051839d71d8f73709b5",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/01day-Web的前世今生.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/01day-Web的前世今生.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "94671f8ec72ea8324853fa23b8393352316848759a722b1b6073b30e9b6b39c6",
+      "translation_sha256": "cc3fe12e74ad18ede1823a6422060889bfdbadaf25cdd21f4763e362d44fda48",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/02day-第一性原理.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/02day-第一性原理.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "265479498ade23b940e93f3709de71287c749c18f59f9e837e98ff6f05087e4b",
+      "translation_sha256": "06437f76f3420b4eb64f1eb9f622b3255ee8ee2cd083bd2d601b8ffef6e65c34",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web copy.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web copy.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "f40ef3b0c0b550323467bc72f592dd378cf8210f3f500edaca0297c23a62db12",
+      "translation_sha256": "f82c45123307cbe4415dff769b4cd8f5d2d10f4706003480b7d944af788b4d46",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "50e3f3e2cc0265f8ece0dd475fa876116b6136175edcd0b5c8eab4c9f04479c3",
+      "translation_sha256": "2afde5975d3aab11e8da893632c25dea5c4aba4932f95dd384ad47d4a9e01478",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/notebook-prompt.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/notebook-prompt.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "26381f33d2aa5161b4ad5644923d1cca3d27ed463dd2c4f18f34f2bd129ba2ff",
+      "translation_sha256": "8ac9265addf4a46bbc997ce8d51ced94717fd69a278b652d971cd0668c3be609",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/planning.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/planning.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "80e8ee7a0f929b543228a63942cf395bbc435cf1594aa4cab67a54ddb575b037",
+      "translation_sha256": "d27bc0c69945a7dda47afc4e77d3862725772c3213403b3f7cc17659729e4f74",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/大纲/01-Agentic-web-10day.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/大纲/01-Agentic-web-10day.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "4d981e0edc1c9add13c74655829bcfb22b86bc81987819b2b6e2ee829b6130a8",
+      "translation_sha256": "1534b8cdb96a443f340f1e25b1a52f92f74e27048a61dbd0ffcb0fdc8c8b16f8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/大纲/02-Agentic-web-10day.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/大纲/02-Agentic-web-10day.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "cdc5a6237ab689458e7621d30bdfd108a63092fb59158d703ce272df233950ad",
+      "translation_sha256": "7afdbfd4f749a7b91ed56a9d7e03ef363f88ff3abb03c9c6807a423a076bb7fe",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md",
+      "destination": "japanese/blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "273e9deb9b61e7689787d0f78dbf67f8a75ccfa43c7cf547a066b6b15b023a01",
+      "translation_sha256": "9384304968d175954915b0f7d94340a4d2da9fa45aecaf9a30704e5471b5b62f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md",
+      "destination": "japanese/blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a7410f81e5ec9bdfc24fa29f4c9e93f6f959ec89cda3b44ca3e93ca985933550",
+      "translation_sha256": "f9c88060dbaff17a205b441e16ad903f4d07d57ca162c9baf5b635898ca67606",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/MCP十问十答.md",
+      "destination": "japanese/blogs/cn/MCP十问十答.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "36c08a15509bb7c91d8f9b5c2291033e0f7123f5a6021209312cf321c8041301",
+      "translation_sha256": "c185baa5419276ae3c13e631de46181a5df7c1d755cbea5dd32643d02fdb0d33",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/W3C-AI-Agent-Protocol社区组最新进展(202506).md",
+      "destination": "japanese/blogs/cn/W3C-AI-Agent-Protocol社区组最新进展(202506).md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "6258c83fffca9ba0ea54db6bc1daee0335430f4d2684c8abfe120f883f6297c1",
+      "translation_sha256": "e548e6deef5536fed09c60cea7f842b100d58cf92c26b1f5a5dea84321fe18ad",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/agent对infra的改变-对连接基础设施的改变.md",
+      "destination": "japanese/blogs/cn/agent对infra的改变-对连接基础设施的改变.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "1499d971dba6eaa3cf9f317bec77889b536e9a1b45b1bb023f8b5a28bd25b1c9",
+      "translation_sha256": "4ff919da6eef0d6b33de29c3629785bfcf11c33899121393827bb36ad8c8951d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "destination": "japanese/blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "60c4cb6ebe0b6e64e4d1660f230763e707ea72c2b03c04712a4f81aa4ba7d01c",
+      "translation_sha256": "29ddd162f8cf33f5f37e6fece1fe61308a51a1b922daa3e7aaa7b29959440ce2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "destination": "japanese/blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "17125ecc65f4d9cabdcf86fd6c39282614f1a3c980d91f1365d74c3163eb2253",
+      "translation_sha256": "ddaed26744b743a230ec3c043105b9be9303e562d26b4979aff8dde04effab99",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/did-wba安全性原理解析.md",
+      "destination": "japanese/blogs/cn/did-wba安全性原理解析.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "924757ec00cfe5f7086f7be564aea8badc33e1214b3aecc02b30237d27f80e05",
+      "translation_sha256": "83f5b2b44af122adcaa3baa1565486a3fff24a8b191207a6ec67d7147faf6c13",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "destination": "japanese/blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "aab165b4260a83af82892318c09b8dbf3e9404a894092a659a6dbea11841b3bf",
+      "translation_sha256": "ddcc17336f4ab96cab001f25dbc7195248386478ff653d71ca9c08590a765acb",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/《微信背后的产品观》是否适合AI.md",
+      "destination": "japanese/blogs/cn/《微信背后的产品观》是否适合AI.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "0907a9cd976200fd6595c7d4fd9574d7dd2ea172bec2221b5f55ebb91e5d26f7",
+      "translation_sha256": "ed758335631b8d0fcac99b2147f64d54f6d7bbac43f13eb36992757a13b03d6d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "destination": "japanese/blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "639c8fc57f46b6221740905e5e8c7c7182f3e17082cab3f18ea633a74b14f03a",
+      "translation_sha256": "36217b245fe47a3fcb406261a3c5d96440c6438e7fe7e277b084e9ce7b4d6f59",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "destination": "japanese/blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e8ccb73ab3d2b04248408e66f66041f0c13ea303b0b489356f5c9fe857ac63fb",
+      "translation_sha256": "510ed2751232fd9f363546fea353606f54079b1b0027d781c93d8b54b8142dc2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/但我们设计一个协议的时候，我们在设计什么.md",
+      "destination": "japanese/blogs/cn/但我们设计一个协议的时候，我们在设计什么.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "44c4c0ab76b1e699f651947f5b143e9813af3ec752c9ee964d9a0ac0c44e79df",
+      "translation_sha256": "066afead9713ad42a799350b03a41d536f36e2b05ce12a8203d90cf90e026d31",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "destination": "japanese/blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e90b83c07c5ecddd60607f904680817226abbb454d6f1ef6a26fb2fa13756e7f",
+      "translation_sha256": "32859ada4f0abec46eb4a46fffeaef833f974be6a6052208ce418ab729c80e7f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/多角度全面对比Google最新的A2A、ANP、MCP.md",
+      "destination": "japanese/blogs/cn/多角度全面对比Google最新的A2A、ANP、MCP.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "4583ca51d7673252e3240444b10ae1db59d3181dca73849932c3a37e9638caa1",
+      "translation_sha256": "c61711b071c83680e96c63342bc7603b84a4fb00a345e10ed0d8495c17bb3014",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "destination": "japanese/blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "41c3fd4f2f2994f07d7315ce7b23eabdcd743198e891502e845f34f363b9886b",
+      "translation_sha256": "33df30667924907101440ce450145133c751ae67482a7494992ccc03444b3093",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/我们应该为AI，重构所有互联网应用.md",
+      "destination": "japanese/blogs/cn/我们应该为AI，重构所有互联网应用.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "7a94d2f16311bd7f51f5a8264945894e62a51af8ff1dc1e84854d50ad64351f8",
+      "translation_sha256": "fac52671938cd8e8c475a1c14535bad8897025c6afed65da605346529b04e9c8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/智能体互联网有什么不同.md",
+      "destination": "japanese/blogs/cn/智能体互联网有什么不同.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "6bf7403507e281a02d0c367e6c8d2428f5578b749647bfe57df4ddb0860772ba",
+      "translation_sha256": "b9997b05c049944a580d101cbdcddeb757a080e6409310682adc648c4750101f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/智能体协议汇总.md",
+      "destination": "japanese/blogs/cn/智能体协议汇总.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e7e2ba4c32e6519b5c4956c96fb80ad2e0e39b34b9a808bc29ce6a04dc3f4ea0",
+      "translation_sha256": "42283b8b93dbde289313eae46ca8d9763a7c7a77e497bb8ff330dfe9c68e226b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/智能体通信协议对比.md",
+      "destination": "japanese/blogs/cn/智能体通信协议对比.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "061d2d7ec798a9f3d75a1db8eede2e3bbdb01d57f9715b4d5c03c3b321025a82",
+      "translation_sha256": "791f248623c8d52ecf325725339fb164c36e1b676182fd32e2b1aac50715b8b8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+      "destination": "japanese/blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "62c8080bce9ee3e5152b7da5056cb4eec329698bc0dd44ffe8019f86c6b58a22",
+      "translation_sha256": "536c881b9df08fff540cd8df0e799b47bd3ab8f1bf293e97c33688b2d3d4ba2f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "destination": "japanese/blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e42e5bae1769086944bf614f77b04e0657cf01a313fc8cfa342592dfc3f58be3",
+      "translation_sha256": "bfdcee1de9ca8bea98b03ea2cab69c6f7278f2a6a915942e2f32f4d914151fca",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "destination": "japanese/blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "630a70c7b29a835a29af48592f217b6a9be454fa2cf356f981428188a36b59a0",
+      "translation_sha256": "7610215ab8408e91f72b50d5b2aca0758fad8d528b05d3c1a4e085465b6b8aa9",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "destination": "japanese/blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "eea4b9723984b3101d9606b1a8b790e706731acb6b8a3985ee96e89fc417a8ea",
+      "translation_sha256": "960664ca8594359270ce919d705d738b7b9860a52bd69360cfaafb4c963f8bde",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "japanese/blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "1db9920924de7c96ede84e2928ea1d8dfad9bf6ef3a3add585464a6adb4fc80f",
+      "translation_sha256": "b7b0eff3db1e974bcb2059a76f3e62638285938cd1737a61e4c6835c8ec90351",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/did-wba-security-principles.md",
+      "destination": "japanese/blogs/did-wba-security-principles.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "6860bd5d4fbbdf9a0869d4b648a6b54b38cbdf8b9237ca82afdc65e7a45584d1",
+      "translation_sha256": "9cd57449e88da2bf7bb6c3cf73723fb3e00aa68dd05861b7dc726245d607e1b3",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/the-three-major-trends-of-the-internet-of-agents.md",
+      "destination": "japanese/blogs/the-three-major-trends-of-the-internet-of-agents.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "051ca6fdc51e9a26829c048e5e3c72d3b2d3d6e570e509b4062c016e765e4dd3",
+      "translation_sha256": "331db864bf7fcd861320a46431809f1cbacbd4939ee171ae4c0adc462d93964c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "destination": "japanese/blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "556e7af87912f3f7f03701c7798e2f967b32fba0db1c8af20271eaba3cbf1667",
+      "translation_sha256": "6fa3067cef267728159f6d24ee3f0a6afa0d17080d559d687c42a8e7816132fa",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "destination": "japanese/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "2a22598e5390a634fe434aefbc7bdb4c4c6fa0b1e0876d6b07c9520c69f2e663",
+      "translation_sha256": "c0dc22ac174a2937b6a7e890a5ba8390def86a7355da915ab12d291cf0a4f647",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/02-ANP-基于DID的身份认证协议.md",
+      "destination": "japanese/chinese/02-ANP-基于DID的身份认证协议.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "72052e432c63dfc7dc5b25020a990aed4122cf93f0349b131b9eecea414ad8d2",
+      "translation_sha256": "5dedf5d604201ec0e04b1ff00f7d05506c1eb62ca9162d79e3d087c50df40fab",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "destination": "japanese/chinese/03-did-wba方法规范.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "2f84685ff7a4b117033cee0a03205ab58cad029bc52364ccf255fc0ffc262935",
+      "translation_sha256": "0f9ed1d7256c4bc0bb16401c5f5e1741b2dbc653dc22f18752f35cb11b5334e0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "destination": "japanese/chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "a0d395b0f19e496b25cc87e2d0546f681a7e93476dc96881f916c36b4df9c4f4",
+      "translation_sha256": "6d826d16724b8da1ac9dc6285dd70db6371e21de6f3cdabbe0eb5e8a7cf0eeab",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/05-ANP-基于DID的授权协议.md",
+      "destination": "japanese/chinese/05-ANP-基于DID的授权协议.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "caff34bcbf5547177f308f77dee22144124e532c1768c0cf3602de7c8558b2a5",
+      "translation_sha256": "1d118d87d0d0892e6e38beac2de79dcbe8ef28a3bce62060b9b3bfb80f19e54f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/06-ANP-智能体通信元协议规范.md",
+      "destination": "japanese/chinese/06-ANP-智能体通信元协议规范.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "6da4e22d4c03bcf0d9342a73752ade473c1b484adb53368ef75746581d5bb342",
+      "translation_sha256": "7b49820d092877621a3697c4b839883c81beb38969a604b09b47a4aeecc0dee2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/07-ANP-智能体描述协议规范.md",
+      "destination": "japanese/chinese/07-ANP-智能体描述协议规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "db5993f068cc0afe4d460b25c766aedaf8d27a14908fb8b4f31ceaebc0c14a99",
+      "translation_sha256": "62c1339db89f8227a9ca14de5d1e54b33695428f8f6634636ff5c04659fb7a70",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/08-ANP-智能体发现协议规范.md",
+      "destination": "japanese/chinese/08-ANP-智能体发现协议规范.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "ce40e289cfce9107310d911502728d44b9c3bd4833d4c54648b65ac7968d1ab4",
+      "translation_sha256": "6070e0414e18c9a8f24668aab6a2f516840435c108584a99d52fec752b952899",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/09-ANP-端到端即时消息协议规范.md",
+      "destination": "japanese/chinese/09-ANP-端到端即时消息协议规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ddf12f8989118508b2c5def8656ea9f6cc27142f2ada7ec802e6d9eaeb5a4aad",
+      "translation_sha256": "b4cdf05044d298395c82c1289f2311b2aec2602d042ad9a0e6970cc66de81e7a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+      "destination": "japanese/chinese/application/10-ANP-智能体支付协议规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "f953d966564331e597a922f78edf0cf0cc4243e9f0c3fcda2f686b37bc2f5985",
+      "translation_sha256": "8395771dc93feee5de22bc298cf058494086de1a543c7720a7e1dd44268ac448",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "destination": "japanese/chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "832c86baeb458f46c21045391fd02392da5d8184c816827ef2a4eb5cbaf91474",
+      "translation_sha256": "c1bf8bb34025cab2b33f33d7b4524d73fbd3271d0ea4a58ca7ab74422bc90053",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "819c8dda2f8b094c23922954dd7aac40a1b638b1d7b5736d49c54cba56a0cc64",
+      "translation_sha256": "1aba3d47bb3b46b6bbe30d74e9fded755c598f53983859000ea5155e74eb4cba",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/01-核心绑定.md",
+      "destination": "japanese/chinese/deprecated/01-核心绑定.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "8d66820881573dc3818fc8315146e4e0403f159fbc856c3483b69f53c926b488",
+      "translation_sha256": "1def36ba98845f16ac7d722b777d326144e3697eb6d2c314b28259810c8c8dee",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/02-did-all方法规范.md",
+      "destination": "japanese/chinese/deprecated/02-did-all方法规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "965998fd0f2e9247b9f85397bf675c49e3a400eb1e762c8aef4152e5230406a8",
+      "translation_sha256": "d58609dce802875e666e0220824a2bebc94d62ad83779459b809d1706a5bbff8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/02-身份与发现.md",
+      "destination": "japanese/chinese/deprecated/02-身份与发现.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "81008fd94a034163eb11e35b995e4224470a5a0148ceb0231c91e556a5c9e5a7",
+      "translation_sha256": "586f23c5b3d8ea7ad4f9345ed89ff93e9300aac4bc0ed575942884f40b3e091c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "3ee962b6111098fd5c9e8734e9080f7940d171f462b59ee0a6d0fd956c6dbb07",
+      "translation_sha256": "43f74d4ca01ab76bf9ca5b4fff4c01319a3f25389c4eead6899dc0e9ef06d8b5",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/03-私聊基础语义.md",
+      "destination": "japanese/chinese/deprecated/03-私聊基础语义.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "30ce98ca7220e196fb22a488d640a2c65cc227def0b680493da4351be46e6e62",
+      "translation_sha256": "7a2f06b160ef412e8db61a07005d8b48cb91370297674e2ff73beaad95e11f50",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "destination": "japanese/chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "cb870999b535c6f4e0b73cb52b4e5a89c73b36a667e35249d39b84b7b769af66",
+      "translation_sha256": "ee67fd3c536820729abc6b97bf58aec31665df7e4abe731f0469e0159f30eceb",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/04-群组基础语义.md",
+      "destination": "japanese/chinese/deprecated/04-群组基础语义.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "c5018b14f0921461140e5cb830cbdbd428386b03e9197e8361acda4aa7c53378",
+      "translation_sha256": "e22e58e49688bdd9ce935ca0f2742aeba701acba037fe58535823a3ac8d11e65",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/05-基于did的消息服务协议.md",
+      "destination": "japanese/chinese/deprecated/05-基于did的消息服务协议.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "6fd8bfdfcbf6ee73183f642a493950c5beb5f88de9de23564e58a3cdf0da60a6",
+      "translation_sha256": "90b2122d15a8315e6bb385fe65cdd90d9cfe655a6bbeae98b652394c67bfe3f3",
+      "fenced_examples_exact": false,
+      "historical_fence_repair": {
+        "ok": true,
+        "errors": [],
+        "jsonExamples": 6,
+        "pythonExamples": 2,
+        "exampleHashes": [
+          {
+            "kind": "json",
+            "sha256": "7269b848896a54981e062a2bded77ecbb08816d079f64cf954a51217f8c9942d"
+          },
+          {
+            "kind": "json",
+            "sha256": "9581530c006f849cb7841f01d71f07277201210d04bb562f5c760d277761ac3d"
+          },
+          {
+            "kind": "python",
+            "sha256": "5b2ee9d364f3af4eac97481307d743a419667cee488b8c3cfaa247c888f07861"
+          },
+          {
+            "kind": "json",
+            "sha256": "c4caa7838615810ff6df26cda58255ddc9aa385a739c08a4d4c3a276efd805f9"
+          },
+          {
+            "kind": "python",
+            "sha256": "5263c15f91ed0152ebbcf5f01a2fddb6e34fc0373f10e006af32c87aa4f8a2ab"
+          },
+          {
+            "kind": "json",
+            "sha256": "99576271a41669c5dacb1396eb8b108f6022a6af8e5bccc44f5c865192225ec9"
+          },
+          {
+            "kind": "json",
+            "sha256": "3e9141e338032079dd6da3081777c23836b781e0686a7945a300eb98d8d72153"
+          },
+          {
+            "kind": "json",
+            "sha256": "b650f5dbebaa6d29777822ee97cf7931226d86111ecc9c1725e5f414499061b3"
+          }
+        ]
+      },
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "destination": "japanese/chinese/deprecated/05-私聊端到端加密.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b061b1f778c7afefa80115eba9a7791a8e9b3ea75958b94882492142320480cf",
+      "translation_sha256": "9fdd5647fdaaf629044377c3ef11a827d7e8aff43e10f5a7c5316365466f978a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/06-群组端到端加密.md",
+      "destination": "japanese/chinese/deprecated/06-群组端到端加密.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "478638d5f88a47b85196297dc0ab594182886ab69854f2a1707eb1fb986ad6e2",
+      "translation_sha256": "c0a4ec48b99853827c0171512dc2b49062a773215ac9a459ead2f69fcda5844c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/07-附件与对象传输.md",
+      "destination": "japanese/chinese/deprecated/07-附件与对象传输.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "89e7ef260ae33c1ff704120e402fd7837f95868a5c9075cd2322f0f17f29eed4",
+      "translation_sha256": "03a7094149de43d521b22dfbcd194b4398df46bffe051aea5aadb8efd568c29b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/08-联邦与跨域.md",
+      "destination": "japanese/chinese/deprecated/08-联邦与跨域.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e037c8f2df1e22d19532261e41201f98bec33634084f0d091c36dd94c57d39fd",
+      "translation_sha256": "e0b2e4e815a0b604b0b9b90e5857dc37aa321ccb2acd8551f565d90051d230db",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+      "destination": "japanese/chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "861e6827c64c4d46335c621b939e3d2d13171639c9985e823151c383d290945a",
+      "translation_sha256": "53e550bab7b112cbabdaf2a4f7ed152e00514712749723bd6d76cebe2451bd8e",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "destination": "japanese/chinese/deprecated/09-消息Mention扩展.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "623b42a5cfa4edf0f6f94eb0ddfd089d32d92b6c8f466b2e665f960b88cf827f",
+      "translation_sha256": "af7425266d2426983ee37c94f6dede5197a7071e9167870823f496353b1cd065",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "destination": "japanese/chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "882fa1a9c246a1756f67bcf70adc31d7aef0f488ed350302b233164f046fa798",
+      "translation_sha256": "39801d05a9377d772b05997300ef4c08ec2039d8f5c8f58e6cf6d088a8556f1c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "796b9aed761a40e522fd8e7948b32b1cf246134e2546dd756f70dbc4aef1b0a2",
+      "translation_sha256": "1726416ab4a1fcf687453b63997d4d9d9afc401584de6f6a0bd541afaadbe800",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "destination": "japanese/chinese/docs/did-wba服务端测试接口.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "41819dfc87d38ccbae3f5b6e4c87806a8187348c8db9159ffd10bbd9895837f6",
+      "translation_sha256": "4cde8dcc7b7102d053a930baecb0bf57389b68e6abb1c770bf7201ecbb9b523e",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/01-核心绑定.md",
+      "destination": "japanese/chinese/message/01-核心绑定.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "32bf45fdf8ef0e2a7f8176a5b224cd7388453438ad78bb8cfacb0f99625248f5",
+      "translation_sha256": "9804120ba0b9510b96827b02083c3fa018cdb594c074dd71e4097707487c1d81",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/02-身份与发现.md",
+      "destination": "japanese/chinese/message/02-身份与发现.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "64c6372d50c9253be133fb3ff10927290cea77d2af0552d11b63643b3d73cf03",
+      "translation_sha256": "257c147b3e21044f1c3bd40cf21d4a927d03a7ebf352b27262aeac04955042b1",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/03-私聊基础语义.md",
+      "destination": "japanese/chinese/message/03-私聊基础语义.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "29f7dc60dc8fb6b7f0c199e7dee316784e787d7e6b48678f339bb302b46fc311",
+      "translation_sha256": "969410a0eb55fe14f6dd4f46ae0368a993e65ef7d0e752c4b73a5c3eb351d3fe",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/04-群组基础语义.md",
+      "destination": "japanese/chinese/message/04-群组基础语义.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "74f52e779035c50eb44928868e188d97e77e55b1739fff335b44ecd795607ddb",
+      "translation_sha256": "74ea49f95b2ef764240e3cfe289a5cd257c11719f5233bb441475b29b55f45fa",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "destination": "japanese/chinese/message/05-私聊端到端加密.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "370be81eba5189f8471c1ce1dab3ee46326ceb6cfa9360f3f3004063ec3f6bdd",
+      "translation_sha256": "ce9c157fad3c2885378c3e286ba0ef4d9ffcd63c6d0caa7aeae1a9723fc88995",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/06-群组端到端加密.md",
+      "destination": "japanese/chinese/message/06-群组端到端加密.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "f9002dc2b923e1b6eb6933e62707f937c038d67e45350f9b4fb4e25a220f29cc",
+      "translation_sha256": "e1bbb633bf73c1c05e858dded4edda4a0acfba433fd855258931900e8b646da6",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/07-附件与对象传输.md",
+      "destination": "japanese/chinese/message/07-附件与对象传输.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e433d3a251e0399667cb5b29760e777a0d2c70eecd26da2ed8f40a47bd18950a",
+      "translation_sha256": "12fb2bf78ca0f4a6bb4fadd57b1821360d961e1db8b9dfa297610577cef3ae0b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/08-联邦与跨域.md",
+      "destination": "japanese/chinese/message/08-联邦与跨域.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "8d6a54cef5c48cdd74f0797041bf4ba27aa5c11e6f4518394007096386bb4f88",
+      "translation_sha256": "324a1ce1d602b6f12d7c6e8385ece418beeb9552d48d5a12ebdd3f70204cef42",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/09-消息Mention扩展.md",
+      "destination": "japanese/chinese/message/09-消息Mention扩展.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a89a2a23119360e086376db05ccd3cd1c28d0459ac89f5619095f20a45f6013d",
+      "translation_sha256": "05f0a748924a26487239682a761fad2debe0dbbe9a70ef902ad5348b20e0723a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/message/README.md",
+      "destination": "japanese/chinese/message/README.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "e09cc9851567bcad7aa1deb8ad754be259752d498ef304c3bc4d51f7e215b617",
+      "translation_sha256": "1f4e0b20cf13836b10a238bcb4c93b9b5c12322f94427b6cb1ce94438345127f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/参考资料/paper&规范.md",
+      "destination": "japanese/chinese/参考资料/paper&规范.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "c8984253cc943b9061d8e9537f7b175768f85172d55b765dd366338f98b13343",
+      "translation_sha256": "b8dbd23ec046bd5e44092621d379e5a870f80aca7838dbf046d75da53a6d0ae9",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/参考资料/语义网/Linked-Data.md",
+      "destination": "japanese/chinese/参考资料/语义网/Linked-Data.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "002e44b8ddd40ee3071d5aa56abaa6bbd75c85a6b0a0a4f4b35ddbc3d49c8d48",
+      "translation_sha256": "fd7259fa31a5f41929d69e4d9a5946779f51033b5f36693279f5d70e1f9409ad",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "destination": "japanese/chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "87cf71cea116f8efccd28254332e06473f062c65dad1f7618f7213a28a64835f",
+      "translation_sha256": "0b5586f7b82c9bd151402f85387312ea2aa1bf4845d88eb5e1c21ee1a1d61dfe",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "destination": "japanese/chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "c80555776f7db1d6339e1b8c1ce1985dabcffe805772c8ca2f9495bf14f636a0",
+      "translation_sha256": "6ce3b4edd27deca7a8e7df4efa4075e490bfe239273e5823c1c8c7784db28b3c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/参考资料/语义网/semantic-web.md",
+      "destination": "japanese/chinese/参考资料/语义网/semantic-web.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a8904801f838a822765d96c73ee635ffa38a07d77827b99466ed7a6c181271f3",
+      "translation_sha256": "42bfe0da3bb1ed546a24cc839a3f8c54c295f3eff942df4d438133b1c27ba51e",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/atproto-vs-anp.md",
+      "destination": "japanese/chinese/思考&问题/atproto-vs-anp.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "5dcbcfd6b5d18586483164d88ca8ca6116af0e932a1257037f15429e9c2c065e",
+      "translation_sha256": "d15a22b94e1951505632d0eebe573f96ba18e973b5038a15c651681053527357",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/其他/share-ppt.md",
+      "destination": "japanese/chinese/思考&问题/其他/share-ppt.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "4caa46018f08f7c6e666842367984d5fa30a3ed442fee4886942ec5240f3df4a",
+      "translation_sha256": "0f2a3a7cfa10cc574f3c8e9749fdea83ae77d93982c4a84d6d83ef46c78a2385",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/其他/介绍did-wba.md",
+      "destination": "japanese/chinese/思考&问题/其他/介绍did-wba.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "f5965ca5a9046c7fc4d6837df1529efec93f0dd2fd99ef1a0712465e7d8cb173",
+      "translation_sha256": "319c8d4028e0bb49a189b7dfca1fea527e6eba887e346d9f81fe12b7a4169c53",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/http与ANP.md",
+      "destination": "japanese/chinese/思考&问题/协议与技术对比/http与ANP.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "c2aeeb72b3b69c0a55450371443a5af54cf8e091a725fdfe4149dcd8b31d66e1",
+      "translation_sha256": "c2245f8a866b2f04891a9a24ddccf7bb437d6feb833053703279ecaba783f041",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "destination": "japanese/chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "2b6cbb33910708b139ff9812a8df831889cd7445b078748c55fc484d2ccc835f",
+      "translation_sha256": "297c3a6f7720e31c8683069ff0acdf51bb130cb11c230cee6887f7dae5dfb517",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "japanese/chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "369f8eb5b0c21d920fb3383ba4f206b055387ea93d38080799cdf9cd78577f82",
+      "translation_sha256": "7ffbfcfc373e1216e39995f46c88ffa0dd8c80fd53ecad0437914674dfee508a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/E2E类似项目.md",
+      "destination": "japanese/chinese/思考&问题/智能体网络与通信/E2E类似项目.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "8aca0b81cfbd4e51c84019466a15fcaaa946d5fc099643bb724f3e29760dadc7",
+      "translation_sha256": "6427088c095b3bfe45c920e7b752f665bdeb6c029101a0e43f483c6752063063",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/价值思考.md",
+      "destination": "japanese/chinese/思考&问题/智能体网络与通信/价值思考.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "0ffe96ffd005f9195d290a44487f94fd2df8f6652463d318b4c5ed5920370a34",
+      "translation_sha256": "37f39a2d1d07d95d00c6fb983aa0da11e501a3067fc31cd2762de0d271f9584d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/元协议思考.md",
+      "destination": "japanese/chinese/思考&问题/智能体网络与通信/元协议思考.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "e5b244f6972faf0bd9b419cc1f5393de1d0ae734fa251bbc8ea910ab8ea42292",
+      "translation_sha256": "35e79099807fc0e1e5d52847154442ac7237d03a9d7f9c9c3710e3c7548424d4",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/智能体发现与描述.md",
+      "destination": "japanese/chinese/思考&问题/智能体网络与通信/智能体发现与描述.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "20b959a9718739d4510335e6411522d83aba54fb1231c63d25326239f895b82b",
+      "translation_sha256": "9c7c453b4c91f0b4d3f37c7ca19f0904eaa2421b19b1041b302ae907b6a45525",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/智能体网络的特点.md",
+      "destination": "japanese/chinese/思考&问题/智能体网络与通信/智能体网络的特点.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "22c35833b5c397f81cb017b69d196019e094d15ac1b79dec05abb94675fe3bbb",
+      "translation_sha256": "9a97bcf1d7bdbe0b347f3fd40f4e135c1bad66305e91e7615d9746baebbd1dc2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "destination": "japanese/chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ae43c62b01ff2cf973a436850dbb90da3a79ac8da90fc8ecab7a1e98c459d6cb",
+      "translation_sha256": "106536d134a7ad028fd1749115862e97844cb8f50e2edb838dba1e7080b7a45b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/MCP-wba-commit.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/MCP-wba-commit.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "07550d5941325e5294639e1bd298a187cf1d43278f2d184e3a62327aff6b56d6",
+      "translation_sha256": "d1d7dd4a41e091644c074d55f83fbb665ff67c5ef59333cfecadd2c07a51892c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b7f2aaf5fab14d6c4b6dc82b39beb25889537a0f5fae4ce9b55b13ac0116fb06",
+      "translation_sha256": "f965924a68e8788e777d955856451dabf622fbb42238526ca0e973768ddfc2db",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/did.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/did.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b4a7b02d4bb88d2bbc5bddd3cf9fedc25eb26f560d945d707ced85ff2cedfa9a",
+      "translation_sha256": "15600fca8118b6682e3d0133a3c6a7357fe3a94f2e7a7fc0eee4a131141950cd",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/加密思考.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/加密思考.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "aaaa7b1c88a49c221206ed3fdc2ac6062d306d3907663d53d3b9ca44bc79e268",
+      "translation_sha256": "abdae436367b4acfc0beab3e94fe6633174c1e428f1b27a0aeced61d6fb1822d",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/秘钥泄漏问题.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/秘钥泄漏问题.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "85b9471613dbe996d6060b7cbc5fd19c548bf2f546816a4029b52227fbea4aed",
+      "translation_sha256": "c5887088cdc52ed044b2f45a1acab9d1cc7ff128b49208fece058df7876bbc01",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/相关产品与技术/ANP-VS-IETF.MD",
+      "destination": "japanese/chinese/相关产品与技术/ANP-VS-IETF.MD",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "26f5e37d54f04fd1b8034874ab262a7eba5deb0aae0b035e400bf2e79064bffc",
+      "translation_sha256": "aa2526c8d8a87ba18944c44bdbe1b1634af984cdab02ebe190fd33afc94d6107",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/相关产品与技术/ANP论文汇总.md",
+      "destination": "japanese/chinese/相关产品与技术/ANP论文汇总.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "c0d11c3f83d048152a5e02182ed58fb554cc6132354d9aa18b995cb4b4a8d981",
+      "translation_sha256": "90df753958bcd3f61dfe2c61842ec928a5b551fce3855f9ce61b26781394edc9",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/相关产品与技术/相关开源项目.md",
+      "destination": "japanese/chinese/相关产品与技术/相关开源项目.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "155822b2c211bcab951b45ae13c34d92ae0a469d85826ad01fbcd4e8517c2600",
+      "translation_sha256": "cf644f4af1445d96766bc4351ee9ae49a342befb801ce0f47ce79aef1eff5dc5",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/相关产品与技术/相关标准.md",
+      "destination": "japanese/chinese/相关产品与技术/相关标准.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "85f1e9f20355be9faa07bb16ec88fd0995c2f8cec2a5b84a9f4dd5be16d0fb92",
+      "translation_sha256": "e25eba84eca82efa91fbf9d075c356be4e1abc0fd43c40d9d087d92eaee6fa96",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+      "destination": "japanese/chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "24f72ab0006a656a58d8877036c7a99fd5e72f147b5759d5835c2bc6eb2eedc4",
+      "translation_sha256": "ec79984e4f81e089a4142017f7e1e2ef20012d5dcf1a3b5001b90d7b6e4110d5",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+      "destination": "japanese/chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "d7e3da57e241fc9c85ff00fff106b0a66cc6b1342135816d367ce3e198327f63",
+      "translation_sha256": "42ce5a9c430f35bea808162e8f404707b4dd70257c2f2a8a198cb035106bf075",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/附录A：did-wba-k1_兼容扩展.md",
+      "destination": "japanese/chinese/附录A：did-wba-k1_兼容扩展.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "14bcf65f9c611e627e116cc4fa4c48a98761799f45eec5e6a60e56f9c5fbdd94",
+      "translation_sha256": "70d7ddd4cbec7d41e951e4c2bc135d5027a3c772dfa28b6333bece6d816fd347",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "chinese/附录B：与原生did-web-的兼容.md",
+      "destination": "japanese/chinese/附录B：与原生did-web-的兼容.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e997e5a0b96fa5880b3b3c668692340a1464444ca5a2aa5fc3869aaf2a52871d",
+      "translation_sha256": "b5da1fc1c18cb13939495675604daeccab4fa5a25e3249d06f2e944395aee3fc",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "destination": "japanese/deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "4e1630cef537d3f531e863020205567afdbbbc53252bda734969ffda0ed77be5",
+      "translation_sha256": "acce56f301c96118b0e83a38fed9fa679656ba6831f0fd4545dd297e6297e8ee",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "d2c30678c519336ac64ec675bf6ebc1eb8d8cc6d9dceecc3971cb614506db8c0",
+      "translation_sha256": "a538edd7eeecb3f89f98ca26d7b5f80d6b7fbda8997325981bed0750a58d0a0f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/01-core-binding.md",
+      "destination": "japanese/deprecated/01-core-binding.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "56c5694e364f0b776e3ae6538895c40a451afb1385b8fcda3325760cd6a7a1de",
+      "translation_sha256": "2d32ae90e7e1c15414c48db7aa3daab666e0b4a9d6e40ae20e70ae3867c715cc",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/02-did-all-method-design-specification.md",
+      "destination": "japanese/deprecated/02-did-all-method-design-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "b8dadd4ed9c30cc01aa6b0a8bb44e3d2d2de7a66335cbc3ddc017fd0c5fc526f",
+      "translation_sha256": "42a71ada10310523d985752d166d3eb794ca4f500c7d03f0c04488dd2277bf18",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/02-identity-and-discovery.md",
+      "destination": "japanese/deprecated/02-identity-and-discovery.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "a82e8ad19e79d2c0c4ca4670523181dbe4201c516106281e59e58cdb90f95cfe",
+      "translation_sha256": "bcd867024e775dd11fdec7a8a345fcf6ac25ac6d4b4012ff75505e7786486dd0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/03-direct-messaging-base-semantics.md",
+      "destination": "japanese/deprecated/03-direct-messaging-base-semantics.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "5c8a25c9c9ba9f42aee72f4bc424fed98f3758c52b2964dc73ed19e4f1bc313b",
+      "translation_sha256": "8c536db96e883a7fd5d32b7d50f20555d855b7b5739185790227a5525fef420f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "destination": "japanese/deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "9f1c0df14e2d25bcdfcdcab19aa43054462aed79bb9fa5ab196aa72df2899b03",
+      "translation_sha256": "90dc94466092156ed90767b09eb3156573a9d395591a565d05e80da4696870f2",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/04-group-messaging-base-semantics.md",
+      "destination": "japanese/deprecated/04-group-messaging-base-semantics.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e8460f0c89bf39a7decd4eed4a5d5f8cbfa7a80d83b2d909ea2d044489b230d2",
+      "translation_sha256": "450db47bbad84273b6c5325f212d0a21367d7bad6b327ed63eda2442a9e8eac0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "destination": "japanese/deprecated/05-direct-end-to-end-encryption.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "c532059a717de54fda416bd1ad24019ac4b8a651bd14724fa320285f7fb65f1c",
+      "translation_sha256": "70b1132085c8c577b7cdc83fd9ddc7df10959b9c0689777e13834b5ade840b41",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/05-message-service-protocol-based-on-did.md",
+      "destination": "japanese/deprecated/05-message-service-protocol-based-on-did.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "9a121586d15d13fa071bd4eeb32de0e4d33319d464090e778e75431a808f1046",
+      "translation_sha256": "2f840ca491581775f35080ee34468836d00e9ce805a79632772b8c68d40fd279",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/06-group-end-to-end-encryption.md",
+      "destination": "japanese/deprecated/06-group-end-to-end-encryption.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e59cdb0e34a6d28bf7f83e8d666db191baff8546de8dc38ba5a520fe41060582",
+      "translation_sha256": "9b93564d048ba9ccf3029a4444b8e1acf26f417db46fbaf89acecd3d31b08640",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/07-attachments-and-object-transfer.md",
+      "destination": "japanese/deprecated/07-attachments-and-object-transfer.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "37d4f7501276132228785d12c9c1fa289c8f07c59c5a9dbdd3ce85d05acd8fff",
+      "translation_sha256": "9304d1a4d462ebdb07916a599b5e986d21e52373240de80e85c75ae276b5a724",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/08-federation-and-cross-domain.md",
+      "destination": "japanese/deprecated/08-federation-and-cross-domain.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "6ce9c430ee55208ef986b9cbf5693bd4014d773d2d2c58181c0a17b1b311da8e",
+      "translation_sha256": "32a12940ceca79586e1dca03b6fc7efea2f278c4908e24a28d1304c156a7ce83",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "destination": "japanese/deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "e8a0b6a4f828f9cd457f34f78432c39ec2d2cdf4860ee4d9097886628d29cedc",
+      "translation_sha256": "610a6b18ab9fabf2517da66d339c0c989f1c01858720b816c9bedf0a1cb08e55",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "destination": "japanese/deprecated/09-message-mentions.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "fc8a654c5ab0b8df1c6343c1256077f263734d27dbd549e0c9a5d20c659344c5",
+      "translation_sha256": "954984d248b24bd8b2ab98eeb58fa0ea5fc3717f6cb18c032b0fde6199de01ec",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/agent-description-extended-fields-guide.md",
+      "destination": "japanese/docs/agent-description-extended-fields-guide.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "4e0c7fb9020f1379ed9e0c7a3dd1c2a02866abfb5c33926d01fe57c99dc3a85b",
+      "translation_sha256": "010cec5c98f1a985158fd74748e50bdd555c8e7d83fe27d661030d5a1539dedc",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/anp-05-validation-guide.md",
+      "destination": "japanese/docs/anp-05-validation-guide.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "cb11a71813ee4062d856950ef9036a2bdad044c58664ebec7baa58ed077c7d78",
+      "translation_sha256": "f548f692bd3e1a26f1ba6c364353b2bcbe00c90984e0f89ca45fca15b335eae3",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/anp-getting-started-guide.md",
+      "destination": "japanese/docs/anp-getting-started-guide.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "e0b75eba680a7fe307c46dc2745cd79b979020f56442937a3ab0745af523acc4",
+      "translation_sha256": "f29d2fabdaa0f50da2c3fd52505d3bbf6834222aa66bb99576c1c2b9cd6060d8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "destination": "japanese/docs/chinese/ANP入门指南.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "1ff020020aa0b4b4b414151b2dbade5fd8a140b0f1518ade6249f587bc219896",
+      "translation_sha256": "f926201c5b10cffc280e8a0b8c7916ca2e017d459d72a1199d49abbc4853fbc9",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/ANP示例程序.md",
+      "destination": "japanese/docs/chinese/ANP示例程序.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "5cb8ad9a1b1d40e536da449822d361e01b96e05b9268431ea3a6a331c267b722",
+      "translation_sha256": "dc0bfcb24f6f00ea7da02733bf18fa2dbb3027338827f4ee6c20f3802bfbae2c",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/anp-05-validation-guide.md",
+      "destination": "japanese/docs/chinese/anp-05-validation-guide.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "28218959574dfcdc8268bc35dbadeed288361885987f4cdb0bf2dc1e91eaaea7",
+      "translation_sha256": "357081c43bebf1bdc0346510904e3083731eb1ba74c3871deed28aee78c3350a",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/community-operations/operations-cn.md",
+      "destination": "japanese/docs/chinese/community-operations/operations-cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "187741c5961cee86986ccf1ccc2d0c5cc8b03e20e18a97fe00e0449de48226ca",
+      "translation_sha256": "d031534959246dafb0640b07510de850853a48d1ab18d0cd5747302948c4ac90",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/links.md",
+      "destination": "japanese/docs/chinese/links.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "0ccb01327bf685e9a08bc5058b374fc59b5e19074c5bef2f36ff7bea23f7c69f",
+      "translation_sha256": "3dd94d3610a021688d229c043e55043d48c560168edc072ad44f6d4aee2efa89",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/roadmap/roadmap-and-todo-202504.md",
+      "destination": "japanese/docs/chinese/roadmap/roadmap-and-todo-202504.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "96989a6670eb25c9a77f157038db10ed1fce5ae7118cc43f432f743830717e3a",
+      "translation_sha256": "0fa0a0292647c86d49c25c20b88f89e32fd80a9b01ac5876c058158037e6ddb0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+      "destination": "japanese/docs/chinese/基于ANP的WebAgent如何运行.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "bcfe6a61074ee2195ca91d911e0c750449ec9db4d17dec6be0d2cd3ceb83952b",
+      "translation_sha256": "84c7f01b346e48e4ff11d0a82b6b09ca4c56ffc40edc31eea07d5092b524edbf",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/community-operations/community-operations.md",
+      "destination": "japanese/docs/community-operations/community-operations.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ef32b6a6e62f6b10d6f6c6f6b482c7b52c0bf418bf78de06f5ce60f55f7b7968",
+      "translation_sha256": "72ec5a897a00d628b19c327cfadb346847d31b1752faf2da3b02908e18ebf3ff",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/did-wba-server-test-interface.md",
+      "destination": "japanese/docs/did-wba-server-test-interface.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "7f3c045f02b57b92285e2b94bb7a397487861d36ff6df33e445ea95d03d7578c",
+      "translation_sha256": "4fa584bc2253195a43c1fc0cbad3e37b7e0b550050333d1756d3c0850c04dd34",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/did-wba入门指南.md",
+      "destination": "japanese/docs/did-wba入门指南.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "43e8e5227a8546225f1a522b81cc75994cf38bb5093179c8f07509ae9f5db46f",
+      "translation_sha256": "8d8d7f7692029cf19dff018b8d55e5fc5bbd809a8864da8c1cc607e7bf3320bb",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/how-anp-based-webagent-works.md",
+      "destination": "japanese/docs/how-anp-based-webagent-works.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "09256ab98d589aa7644d2adb42219799ca16df726b3004fdf97e7a22b531201a",
+      "translation_sha256": "7ccf55c4a67e5e1dc947343dd0c7c4aed553287bdb8dce7739c2a0b8517e2a52",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "docs/links.md",
+      "destination": "japanese/docs/links.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "fe7d2ac449b83249ea7c7a6096cdc3b0dc0f98bb1d04abb2f29cef5a8ad6f183",
+      "translation_sha256": "f8be6be32abe631c3072fa09198a195504475f5db29dcf68277e53beaa137e88",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "examples/did-authentication-vnext/README.cn.md",
+      "destination": "japanese/examples/did-authentication-vnext/README.cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "bda02bfd04929f087843c2fa662fd779ee4af45569791ff27c8c4ed3dc3ee0a1",
+      "translation_sha256": "0244dd17566d750dd9ce8d37d9b94606efadfc54d80334b223e9a5dc60f996b5",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "examples/did-authentication-vnext/README.md",
+      "destination": "japanese/examples/did-authentication-vnext/README.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "4dc1e090272eee59e30bf2f4ff5c5d0f8bbbbd385bfd19ab0e66f795313742cd",
+      "translation_sha256": "58bb36edcc484613bc5c8436c5dadbeac1518921a94ea23813e5b21d0d896448",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "examples/message-vnext/README.cn.md",
+      "destination": "japanese/examples/message-vnext/README.cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "1f3cab7a700cc41f0337afc8b058562cad4b0a647bea772d237950745c1157fd",
+      "translation_sha256": "9fa39bf78a00b5434dfb47db176dd43cff5d98fa8075998edca36d060907cc63",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "examples/message-vnext/README.md",
+      "destination": "japanese/examples/message-vnext/README.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "d96b1031b33b20546c1c3a3d5c40053c88d11d0417f61f066fda23b0f05bc838",
+      "translation_sha256": "fc1eb44b70bcb6996fd89e9f18d9b485b7e7ed13db27fe82dcc6487bffe1a7ce",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/01-core-binding.md",
+      "destination": "japanese/message/01-core-binding.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "e37005e5038e0bbd79024470133bd86ae166395ddfd5d27b0ccde653d40785a7",
+      "translation_sha256": "954057dd211712c1a344cc32ac0f301e65b3f0cd2e9b069da51c2d4e28804720",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/02-identity-and-discovery.md",
+      "destination": "japanese/message/02-identity-and-discovery.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "77858cfed725ae2f72502e49ae066e69a80e7af70db15c50846cdd7683806f69",
+      "translation_sha256": "c4751b9210e6eeeeafe2d6c3d315c025845a8ebaae800de0873c119fb22d0533",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/03-direct-messaging-base-semantics.md",
+      "destination": "japanese/message/03-direct-messaging-base-semantics.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "4eb0bdb4116beda3e90c22194d28510ede40397a51c07b5083d88a8423881dde",
+      "translation_sha256": "f1429817968ffe1b668c0370d4032d68afc068cad95be710f99f11fcd27f24b9",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/04-group-messaging-base-semantics.md",
+      "destination": "japanese/message/04-group-messaging-base-semantics.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "c2341d0beb0083a4d41647efa215a3eca50d159a2156e8c7430cfb793ed5e0d9",
+      "translation_sha256": "84d19b78c6550a88a0eb2f9bc452350130a7a969574d985e00f69c162e9faacc",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "destination": "japanese/message/05-direct-end-to-end-encryption.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "745b10c1bd19602b9f4f7f5eb0128799ba4f4d9ffe98da1d04249d3afe7e2999",
+      "translation_sha256": "b9983cb8c8378073055b3d390b02360d92487b3f25a454127514477554c95a31",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/06-group-end-to-end-encryption.md",
+      "destination": "japanese/message/06-group-end-to-end-encryption.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "53226ee776b39bf4566fd9137133859a5dabec48115c3811129d32b23b12b8a0",
+      "translation_sha256": "b6c5a9e4fdcb76612595a161334383d0dc4dd4941ebb28c0aeef96130e5b537e",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/07-attachments-and-object-transfer.md",
+      "destination": "japanese/message/07-attachments-and-object-transfer.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "ae2f5ad609311e73b6ae1a878734c56dd31c04653c325f8ece006db5581bcdae",
+      "translation_sha256": "871f93c5afc655956e9e29c90a43f9483047d3d8f4eb3552eca70dc65d403806",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/08-federation-and-cross-domain.md",
+      "destination": "japanese/message/08-federation-and-cross-domain.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "fb08112536d8d47d270486bc824dc46ff4b2e72ee0b420d8520f149fec3a9135",
+      "translation_sha256": "5f8d67a666a5a69a995fae588abe059d2e661db0dd2ca2f6f25d1a19aac4b800",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/09-message-mentions.md",
+      "destination": "japanese/message/09-message-mentions.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "47761738daae5f07013fc394cb842624037b20ac663c5d42b6c68c69e6741979",
+      "translation_sha256": "da19e6e86b26b00dca3c9a86e293c9a79ce91f7245be1298a0380cf79dff48c3",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "message/README.md",
+      "destination": "japanese/message/README.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "7fc18e52f053b42c59d92aba30d59ff262a90691907ea6325b07e4d764fbe26d",
+      "translation_sha256": "9d4e25fab44cbff9455a03b999b1e233a810ce95dd97063eb4b0bb11e8c1c8c0",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+      "destination": "japanese/standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "f3455e6dd99a98434932c4c11cbbd32004c0cff0fa9b1e87fcec9cae25841bb0",
+      "translation_sha256": "cf642c4a8c6c240f1faa105574759bf81dcd49b33e70f258b87bd9f720e9d255",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+      "destination": "japanese/standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "774d9694aeeedea14666e44a98d61abb07be8272aa2b52d8b304db5aef56c29a",
+      "translation_sha256": "03c991ae74cead5436d5c156f146c720b7459d47d8981da99d900dc0f7dfc52b",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "destination": "japanese/standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "90539683db5ac4e4b54eef1adf4bcf110b1c00c5ad5f6e79e10dd1fcfe93a936",
+      "translation_sha256": "7346ab0667c44b1b7e560245f0016a28139d9b36a1142f1f07b98a6f4427c147",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "destination": "japanese/standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "6261d91151f36888de8f9a039eff6b8d844a0a78b9c3013e635fddce0a46ec16",
+      "translation_sha256": "277f0e54c782fbe6a7d336cf7bf8722ea49d6ad11b46af8375415323d58728be",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/bak/Backup Init Version.md",
+      "destination": "japanese/standard/bak/Backup Init Version.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "4141cdc72a71052f08ab0f44e8eb50c6efe21769efe2b3c58689686efbdfbc24",
+      "translation_sha256": "543ee46645b9ff353f8e6f97026c89f4654c8ded7dd3c4c45f2855fa145783cd",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "destination": "japanese/standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "9a6617b2aecdb41a44a30fc5fe125ddb7d2f0b59a8605221fa047a581e657367",
+      "translation_sha256": "e10ffef7d12529fb10e562c4f9eb842c94f53056999ce1326cf3d82bc86659be",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/bak/draft-name-wg-word1-word2-00.md",
+      "destination": "japanese/standard/bak/draft-name-wg-word1-word2-00.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "0cdc971c551d407b3b3be2c8c3e6f3e54fdf3f5365bef53503c1eb2f548d4914",
+      "translation_sha256": "3549047fb19204a141a4ce31b37e86ebcbe166c2dd954d0624b8b8331e2cb0ed",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "standard/draft-zyyhl-agent-networks-framework-00.md",
+      "destination": "japanese/standard/draft-zyyhl-agent-networks-framework-00.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "9b089f5f087fd5415d6a7654c780d548cd3c614d59ccb5eff4a5a00e8c4a4425",
+      "translation_sha256": "1431eece77a69168aa9827f87944b0d52afa560f5626a9bd31c82f0d6af92958",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+      "destination": "japanese/vnext/01-agentnetworkprotocol-technical-white-paper.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "31509e14c316e0b8dbb0d130d397cb43d471cb008353ef799787fa13b7ccf833",
+      "translation_sha256": "2cb6c411f28c6d37d4413530d211279fe320be8d194230b0b3de35322e1170cf",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "vnext/README.md",
+      "destination": "japanese/vnext/README.md",
+      "status": "translated",
+      "method": "agent-translated-or-reviewed",
+      "source_sha256": "779e296c62e73b9ce5fff82c966b0e43fd77a4fba513c7f4f41391ed53a881db",
+      "translation_sha256": "77e184cc9ff1ea1a56f476fc4ce8ac3d1d4ac5869f7f1e1b28189e25434fb1b8",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "destination": "japanese/vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "e1fdfe9cd41cd57ed067089b9ca4813a2468e0fad22a421c682537a85a41c3b3",
+      "translation_sha256": "ad0db95c9bea89cde5f5e44beef44e3d7a710fdcf875776af2e05757d7b1006f",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "vnext/chinese/P4-群组基础语义.md",
+      "destination": "japanese/vnext/chinese/P4-群组基础语义.md",
+      "status": "translated",
+      "method": "machine-partially-reviewed",
+      "source_sha256": "42b208a53d208096592bcf411352b0ac13346be11c18cf2616e89ac62a019bab",
+      "translation_sha256": "dc2ab84dbfaaa120954e8f09e82ba038ea4d86bef8efe79c400e223ddb289048",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "vnext/chinese/README.md",
+      "destination": "japanese/vnext/chinese/README.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "422ff60f670b037ee364d13165b58d2cfea0618f67713df31a61ac26cdd4b8b8",
+      "translation_sha256": "ce7c1f71a6cee07053f6138d03bf521d088d503b6ddc049876b5fed0c1348381",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    },
+    {
+      "source": "vnext/p4-group-messaging-base-semantics.md",
+      "destination": "japanese/vnext/p4-group-messaging-base-semantics.md",
+      "status": "translated",
+      "method": "machine-unreviewed",
+      "source_sha256": "93592c89212777cc4751301da821fdeb4287787902c3488251dd40e3851d0a3e",
+      "translation_sha256": "b6f7af686d4d16b1eb885aea0f0c8a6ed7b9e5129884688d82b17eb9e8d06403",
+      "fenced_examples_exact": true,
+      "historical_fence_repair": null,
+      "inline_code_preserved": true,
+      "normative_keyword_counts_exact": true,
+      "protocol_identifiers_present": true,
+      "missing_protocol_identifiers": []
+    }
+  ],
+  "retained_non_markdown_files": [
+    {
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/config.yml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": ".github/workflows/update-contributors.yml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": ".gitignore",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "LICENSE",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/cn/03-解读：MCP注册中心是什么，未来发展方向",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "blogs/cn/09-豆包手机助手",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "blogs/cn/09-豆包手机助手2",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/01-worry-client.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/01-worry-server.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/02-apikeys-3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/02-apikeys-6.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/03-identity.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/04-resolve.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step4.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step5.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-pass.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop4.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop5.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-mint.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-outcomes.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-e1-hacked.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-e1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-noe1-hacked.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-noe1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/11-adjson.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/12-discovery.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta4.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/14-e2ee-off.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/14-e2ee-on.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/01-worry-client.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/01-worry-server.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/02-apikeys-3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/02-apikeys-6.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/03-identity.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/04-resolve.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step4.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step5.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-pass.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop4.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop5.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-mint.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-outcomes.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-e1-changed.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-e1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-noe1-changed.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/11-adjson.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/12-discovery.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta4.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/14-e2ee-off.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/14-e2ee-on.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/OAuth2.1.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/a2a-id-auth.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/a2a-partners.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-authorization/agent-connect-existing-app.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-authorization/agent-interact.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-authorization/multi-agent-auth.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-authorization/one-data-center.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-interview-Internet.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-network/connect.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-network/integration.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-network/network-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agent-network/vinote.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/agentic-web.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/ai-native-network.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/all-protocol-1.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/all-protocol-2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-ap2/ap2flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-authorization.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-data-network.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-did-auth.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-email.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-explorer.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/00.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/01.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/02.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/03.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/04.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/05.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/06.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/07.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-first-meet/08.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page1.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page10.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page11.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page12.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page13.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page14.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page15.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page16.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page17.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page18.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page19.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page2.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page20.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page21.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page22.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page23.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page24.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page3.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page4.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page5.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page6.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page7.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page8.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page9.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/anp-interaction-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/ap2/anp-transaction.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/ap2/anp-vc-hash.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/ap2/rules.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/api-keys-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/asymmetric-encryption.mmd",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "blogs/images/auth-flow.mmd",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "blogs/images/computer-use-product.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/data-silos.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/did-wba-auth.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/did-wba-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/first-web-agent.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/human-ai-agent.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/internet-translation.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-anp-share/protocol-explanation.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-authorization.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-http-sse.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-init.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-server-api-key-example.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-tools.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-usb.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-vs-anp-core.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-vs-anp.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/mcp-wba-did-proposal.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/meta-protocol-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/openid-connect-fllow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "blogs/images/user-agent-internet.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/思考&问题/pic/agent-find.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/思考&问题/pic/mcp-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/思考&问题/pic/mcp-auth-thinking.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/思考&问题/pic/meta-protocol-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/思考&问题/pic/meta-protocol-weather.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/思考&问题/pic/protocol-layer-design.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/相关产品与技术/agent-discovery-en.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/相关产品与技术/agent-discovery.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-VC哈希链关系图-en.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-VC哈希链关系图.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-理想交易流程图-v2.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-系统架构图-en.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-系统架构图.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/ad.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/ad.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/instruction.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/instruction.jpeg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/instruction.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/identities.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/manifest.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/01-did-document-two-devices.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/02-direct-two-device-deliveries.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/03-device-prekey-bundle.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/04-mls-two-device-leaves.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/06-device-state-changed-error.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "examples/message-vnext/07-did-transition-retry.json",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "images/Internet.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agent-a-call-agent-b.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agent-connect-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agent-discovery-protocol.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agent-discovery.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agent-network-diagram.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agentic-web-new.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/agentic-web3.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/ai-native-network.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-active-discovery-mechanism.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-architecture2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-human-agent-authorization-en.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-human-agent-authorization.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-identity-interop.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-information-interact.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-meta-protocol.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-passive-discovery-mechanism.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-trading-hash.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/anp-trading-sysytem-arch.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/ap2-402/ANP_AP2_Protocol_Flow.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/ap2-402/ANP_X402_Hybrid_Protocol.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/ap2-402/X402_Protocol_Flow.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/ap2-402/ap2-flow-diagram.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/cross-platform-authentication.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/cross-platform-identity-authentication-process.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/did-all-core-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/did-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/did-as-identity-bridge.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/did-identity-authentication.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/end-to-end-encryption-process.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/judgment1_agent_replace_software.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/judgment2_interconnected_agents.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/judgment3_protocol_connection.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/mcp-registry-architecture.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/message-did-register-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/message-flow-architecture.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/message-send-receive-flow.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/meta-protocol-communication.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/multi-did-privacy-en.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/multi-did-privacy.svg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/protocol-layer-design.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "images/relationship.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "references/did_web-method-specification.html",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/add_copyright.py",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/anp02-vector-utils.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/check-anp02-vectors.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/check-release-docs.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/generate-anp02-vectors.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/release-entrypoint-checks.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/rename_images.py",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/start-chrome-debug.sh",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "scripts/update_contributors.js",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/IETF124/Framwork for AI Agent Network-ANP.pdf",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/pic/Section12.2.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/pic/pic.jpg",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/pic/section7.png",
+      "disposition": "original-binary-asset-retained"
+    },
+    {
+      "source": "standard/pic/stack.txt",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "tests/did-oauth-draft.test.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "tests/release-doc-entrypoints.test.mjs",
+      "disposition": "original-code-data-or-support-file-retained"
+    },
+    {
+      "source": "tests/update_contributors.test.js",
+      "disposition": "original-code-data-or-support-file-retained"
+    }
+  ]
+}

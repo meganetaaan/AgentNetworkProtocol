@@ -1,0 +1,20 @@
+{
+  "name": "anp-three-personalities-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.0.0" },
+  "scripts": {
+    "demo": "node src/demo.ts",
+    "test": "node --test --test-isolation=none test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@awiki/anp-typescript-sdk": "0.9.5",
+    "selfsigned": "5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}

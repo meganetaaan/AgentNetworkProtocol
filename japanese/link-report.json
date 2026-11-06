@@ -1,0 +1,1793 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "generated_at": "2026-11-06T12:55:47.416Z",
+  "scope": "Local file/directory targets in Japanese Markdown, reference definitions, and HTML src/href attributes; fenced examples, inline code and comments excluded.",
+  "fragment_policy": "Links to translated headings can change their anchors. Nonempty fragment destinations inside japanese/ are reported separately for review; fragment existence is not guessed.",
+  "limitations": [
+    "No external URL requests.",
+    "Fragment IDs and GitHub heading slug generation are not validated.",
+    "Reference definitions spanning multiple lines and nested Markdown inside raw HTML are best-effort.",
+    "A report generated during translation is a snapshot; pending targets require a rerun after completion."
+  ],
+  "baseline_upstream_broken": [
+    {
+      "document": "AGENTS.md",
+      "destination": "../../awiki-harness/rules/ai-coding-rules.md",
+      "line": 5,
+      "kind": "markdown",
+      "target": "../../awiki-harness/rules/ai-coding-rules.md"
+    },
+    {
+      "document": "AGENTS.md",
+      "destination": "../../awiki-harness/rules/verification-policy.md",
+      "line": 6,
+      "kind": "markdown",
+      "target": "../../awiki-harness/rules/verification-policy.md"
+    },
+    {
+      "document": "CONTRIBUTORS.cn.md",
+      "destination": "./docs/CONTRIBUTING.cn.md",
+      "line": 7,
+      "kind": "markdown",
+      "target": "docs/CONTRIBUTING.cn.md"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+      "line": 14,
+      "kind": "markdown",
+      "target": "ANP-Presentation-at-W3C-WebAgents-cg.pdf"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page1.jpg",
+      "line": 18,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page1.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page2.jpg",
+      "line": 27,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page2.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page3.jpg",
+      "line": 37,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page3.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page4.jpg",
+      "line": 43,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page4.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page5.jpg",
+      "line": 49,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page5.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page6.jpg",
+      "line": 55,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page6.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page7.jpg",
+      "line": 63,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page7.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page8.jpg",
+      "line": 75,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page8.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page9.jpg",
+      "line": 83,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page9.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page10.jpg",
+      "line": 91,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page10.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page11.jpg",
+      "line": 101,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page11.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page12.jpg",
+      "line": 109,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page12.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page13.jpg",
+      "line": 117,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page13.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page14.jpg",
+      "line": 129,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page14.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page15.jpg",
+      "line": 139,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page15.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page16.jpg",
+      "line": 153,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page16.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page17.jpg",
+      "line": 164,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page17.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page18.jpg",
+      "line": 178,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page18.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page19.jpg",
+      "line": 190,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page19.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page20.jpg",
+      "line": 200,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page20.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page21.jpg",
+      "line": 210,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page21.jpg"
+    },
+    {
+      "document": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../images/anp-in-w3c-20250214/page22.jpg",
+      "line": 216,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page22.jpg"
+    },
+    {
+      "document": "blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "destination": "/blogs/en/did_wba_vs_OpenID_Connect_API_keys.md",
+      "line": 41,
+      "kind": "markdown",
+      "target": "blogs/en/did_wba_vs_OpenID_Connect_API_keys.md"
+    },
+    {
+      "document": "blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "destination": "./LICENSE",
+      "line": 80,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "./Comparison%20of%20did:wba%20with%20OpenID%20Connect%20and%20API%20keys.md",
+      "line": 117,
+      "kind": "markdown",
+      "target": "blogs/Comparison of did:wba with OpenID Connect and API keys.md"
+    },
+    {
+      "document": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "/03-did:wba%20Method%20Design%20Specification.md",
+      "line": 118,
+      "kind": "markdown",
+      "target": "03-did:wba Method Design Specification.md"
+    },
+    {
+      "document": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "/07-ANP-Agent%20Description%20Protocol%20Specification.md",
+      "line": 159,
+      "kind": "markdown",
+      "target": "07-ANP-Agent Description Protocol Specification.md"
+    },
+    {
+      "document": "blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "destination": "./LICENSE",
+      "line": 225,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/What-Makes-Agentic-Web-Different.md",
+      "destination": "./LICENSE",
+      "line": 164,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "destination": "./LICENSE",
+      "line": 79,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md",
+      "destination": "/blogs/cn/did:wba对比OpenID%20Connect、API%20keys.md",
+      "line": 41,
+      "kind": "markdown",
+      "target": "blogs/cn/did:wba对比OpenID Connect、API keys.md"
+    },
+    {
+      "document": "blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md",
+      "destination": "./did:wba对比OpenID%20Connect、API%20keys.md",
+      "line": 117,
+      "kind": "markdown",
+      "target": "blogs/cn/did:wba对比OpenID Connect、API keys.md"
+    },
+    {
+      "document": "blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "destination": "./LICENSE",
+      "line": 80,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "destination": "/blogs/cn/did:wba对比OpenID%20Connect、API%20keys.md",
+      "line": 13,
+      "kind": "markdown",
+      "target": "blogs/cn/did:wba对比OpenID Connect、API keys.md"
+    },
+    {
+      "document": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "destination": "./LICENSE",
+      "line": 157,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/cn/did-wba安全性原理解析.md",
+      "destination": "./LICENSE",
+      "line": 121,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "destination": "./LICENSE",
+      "line": 155,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "destination": "./LICENSE",
+      "line": 229,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "destination": "./LICENSE",
+      "line": 127,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "destination": "/blogs/cn/智能体互联网有什么不同",
+      "line": 7,
+      "kind": "markdown",
+      "target": "blogs/cn/智能体互联网有什么不同"
+    },
+    {
+      "document": "blogs/cn/智能体互联网有什么不同.md",
+      "destination": "./LICENSE",
+      "line": 171,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "destination": "./LICENSE",
+      "line": 154,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "/03-did:wba%20Method%20Design%20Specification.md",
+      "line": 9,
+      "kind": "markdown",
+      "target": "03-did:wba Method Design Specification.md"
+    },
+    {
+      "document": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "/blogs/Comparison%20of%20did:wba%20with%20OpenID%20Connect%20and%20API%20keys.md",
+      "line": 13,
+      "kind": "markdown",
+      "target": "blogs/Comparison of did:wba with OpenID Connect and API keys.md"
+    },
+    {
+      "document": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "./LICENSE",
+      "line": 156,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/did-wba-security-principles.md",
+      "destination": "./LICENSE",
+      "line": 115,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "destination": "/blogs/did:wba,%20a%20Web-based%20Decentralized%20Identifier.md",
+      "line": 57,
+      "kind": "markdown",
+      "target": "blogs/did:wba, a Web-based Decentralized Identifier.md"
+    },
+    {
+      "document": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "destination": "./LICENSE",
+      "line": 124,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "destination": "01-AgentNetworkProtocol技术白皮书.md",
+      "line": 3,
+      "kind": "markdown",
+      "target": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书.md"
+    },
+    {
+      "document": "chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "destination": "./LICENSE",
+      "line": 129,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "02-did%3Aall方法设计规范.md",
+      "line": 60,
+      "kind": "markdown",
+      "target": "chinese/deprecated/02-did:all方法设计规范.md"
+    },
+    {
+      "document": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "02-did%3Aall方法设计规范.md",
+      "line": 64,
+      "kind": "markdown",
+      "target": "chinese/deprecated/02-did:all方法设计规范.md"
+    },
+    {
+      "document": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "03-基于did的端到端加密通信技术协议.md",
+      "line": 231,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "02-did%3Aall方法设计规范.md",
+      "line": 283,
+      "kind": "markdown",
+      "target": "chinese/deprecated/02-did:all方法设计规范.md"
+    },
+    {
+      "document": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "03-基于did的端到端加密通信技术协议.md",
+      "line": 285,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "./LICENSE",
+      "line": 289,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/02-did-all方法规范.md",
+      "destination": "/chinese/03-did:wba方法规范.md",
+      "line": 3,
+      "kind": "markdown",
+      "target": "chinese/03-did:wba方法规范.md"
+    },
+    {
+      "document": "chinese/deprecated/02-did-all方法规范.md",
+      "destination": "./LICENSE",
+      "line": 402,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "/references/did_web%20Method%20Specification.html",
+      "line": 19,
+      "kind": "markdown",
+      "target": "references/did_web Method Specification.html"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "09-ANP-端到端即时消息协议规范.md",
+      "line": 168,
+      "kind": "markdown",
+      "target": "chinese/deprecated/09-ANP-端到端即时消息协议规范.md"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "04-ANP-基于DID-WBA的命名空间规范.md",
+      "line": 186,
+      "kind": "markdown",
+      "target": "chinese/deprecated/04-ANP-基于DID-WBA的命名空间规范.md"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "09-ANP-端到端即时消息协议规范.md",
+      "line": 191,
+      "kind": "markdown",
+      "target": "chinese/deprecated/09-ANP-端到端即时消息协议规范.md"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "04-ANP-基于DID-WBA的命名空间规范.md",
+      "line": 193,
+      "kind": "markdown",
+      "target": "chinese/deprecated/04-ANP-基于DID-WBA的命名空间规范.md"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "09-ANP-端到端即时消息协议规范.md",
+      "line": 194,
+      "kind": "markdown",
+      "target": "chinese/deprecated/09-ANP-端到端即时消息协议规范.md"
+    },
+    {
+      "document": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "./LICENSE",
+      "line": 672,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "destination": "01-AgentNetworkProtocol技术白皮书.md",
+      "line": 7,
+      "kind": "markdown",
+      "target": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书.md"
+    },
+    {
+      "document": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "destination": "./LICENSE",
+      "line": 551,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/05-基于did的消息服务协议.md",
+      "destination": "./LICENSE",
+      "line": 347,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "destination": "./LICENSE",
+      "line": 358,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/04-基于did的端到端加密通信技术协议.md",
+      "line": 9,
+      "kind": "markdown",
+      "target": "chinese/deprecated/chinese/message/04-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/05-基于did的消息服务协议.md",
+      "line": 9,
+      "kind": "markdown",
+      "target": "chinese/deprecated/chinese/message/05-基于did的消息服务协议.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 65,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 80,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 102,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/07-ANP-智能体描述协议规范.md",
+      "line": 173,
+      "kind": "markdown",
+      "target": "chinese/deprecated/chinese/07-ANP-智能体描述协议规范.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/04-基于did的端到端加密通信技术协议.md",
+      "line": 818,
+      "kind": "markdown",
+      "target": "chinese/deprecated/chinese/message/04-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 1336,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "01-agentnetworkprotocol-technical-white-paper.md",
+      "line": 1375,
+      "kind": "markdown",
+      "target": "chinese/deprecated/01-agentnetworkprotocol-technical-white-paper.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 1376,
+      "kind": "markdown",
+      "target": "chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/04-基于did的端到端加密通信技术协议.md",
+      "line": 1377,
+      "kind": "markdown",
+      "target": "chinese/deprecated/chinese/message/04-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/05-基于did的消息服务协议.md",
+      "line": 1378,
+      "kind": "markdown",
+      "target": "chinese/deprecated/chinese/message/05-基于did的消息服务协议.md"
+    },
+    {
+      "document": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "LICENSE",
+      "line": 1383,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "chinese/docs/did-wba服务端测试接口.md",
+      "destination": "./LICENSE",
+      "line": 225,
+      "kind": "markdown",
+      "target": "chinese/docs/LICENSE"
+    },
+    {
+      "document": "chinese/参考资料/paper&规范.md",
+      "destination": "./LICENSE",
+      "line": 65,
+      "kind": "markdown",
+      "target": "chinese/参考资料/LICENSE"
+    },
+    {
+      "document": "chinese/参考资料/语义网/Linked-Data.md",
+      "destination": "./LICENSE",
+      "line": 123,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "destination": "./LICENSE",
+      "line": 193,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "destination": "./LICENSE",
+      "line": 89,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "chinese/参考资料/语义网/semantic-web.md",
+      "destination": "./LICENSE",
+      "line": 173,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/atproto-vs-anp.md",
+      "destination": "./LICENSE",
+      "line": 23,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/其他/share-ppt.md",
+      "destination": "./LICENSE",
+      "line": 421,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/其他/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/其他/介绍did-wba.md",
+      "destination": "./LICENSE",
+      "line": 4,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/其他/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/http与ANP.md",
+      "destination": "./LICENSE",
+      "line": 21,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/协议与技术对比/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "destination": "./LICENSE",
+      "line": 293,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/协议与技术对比/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./pic/mcp-architecture.png",
+      "line": 10,
+      "kind": "image",
+      "target": "chinese/思考&问题/协议与技术对比/pic/mcp-architecture.png"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./pic/anp-architecture.png",
+      "line": 24,
+      "kind": "image",
+      "target": "chinese/思考&问题/协议与技术对比/pic/anp-architecture.png"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./pic/mcp-auth-thinking.png",
+      "line": 36,
+      "kind": "image",
+      "target": "chinese/思考&问题/协议与技术对比/pic/mcp-auth-thinking.png"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./pic/meta-protocol-flow.png",
+      "line": 60,
+      "kind": "image",
+      "target": "chinese/思考&问题/协议与技术对比/pic/meta-protocol-flow.png"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./pic/meta-protocol-weather.png",
+      "line": 64,
+      "kind": "image",
+      "target": "chinese/思考&问题/协议与技术对比/pic/meta-protocol-weather.png"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./pic/agent-find.png",
+      "line": 75,
+      "kind": "image",
+      "target": "chinese/思考&问题/协议与技术对比/pic/agent-find.png"
+    },
+    {
+      "document": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "destination": "./LICENSE",
+      "line": 99,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/协议与技术对比/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/智能体网络与通信/E2E类似项目.md",
+      "destination": "./LICENSE",
+      "line": 99,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/智能体网络与通信/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/智能体网络与通信/价值思考.md",
+      "destination": "./LICENSE",
+      "line": 13,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/智能体网络与通信/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/智能体网络与通信/元协议思考.md",
+      "destination": "./LICENSE",
+      "line": 30,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/智能体网络与通信/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/智能体网络与通信/智能体发现与描述.md",
+      "destination": "./LICENSE",
+      "line": 37,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/智能体网络与通信/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/智能体网络与通信/智能体网络的特点.md",
+      "destination": "./LICENSE",
+      "line": 5,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/智能体网络与通信/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "destination": "./LICENSE",
+      "line": 630,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/语义网与智能体研究/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/身份认证与加密/MCP-wba-commit.md",
+      "destination": "./LICENSE",
+      "line": 51,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "destination": "./LICENSE",
+      "line": 310,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/身份认证与加密/did.md",
+      "destination": "./LICENSE",
+      "line": 104,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/身份认证与加密/加密思考.md",
+      "destination": "./LICENSE",
+      "line": 47,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "chinese/思考&问题/身份认证与加密/秘钥泄漏问题.md",
+      "destination": "./LICENSE",
+      "line": 9,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "destination": "01-AgentNetworkProtocol%20Technical%20White%20Paper.md",
+      "line": 4,
+      "kind": "markdown",
+      "target": "deprecated/01-AgentNetworkProtocol Technical White Paper.md"
+    },
+    {
+      "document": "deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "destination": "./LICENSE",
+      "line": 130,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did%3Aall%20Method%20Design%20Specification.md",
+      "line": 59,
+      "kind": "markdown",
+      "target": "deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did%3Aall%20Method%20Design%20Specification.md",
+      "line": 63,
+      "kind": "markdown",
+      "target": "deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did%3Aall%20Method%20Design%20Specification.md",
+      "line": 102,
+      "kind": "markdown",
+      "target": "deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did%3Aall%20Method.md",
+      "line": 188,
+      "kind": "markdown",
+      "target": "deprecated/03-End-to-End Encrypted Communication Technology Protocol Based on did:all Method.md"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did%3Aall%20Method%20Design%20Specification.md",
+      "line": 240,
+      "kind": "markdown",
+      "target": "deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did%3Aall%20Method.md",
+      "line": 242,
+      "kind": "markdown",
+      "target": "deprecated/03-End-to-End Encrypted Communication Technology Protocol Based on did:all Method.md"
+    },
+    {
+      "document": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "./LICENSE",
+      "line": 253,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "deprecated/02-did-all-method-design-specification.md",
+      "destination": "/03-did:wba%20Method%20Design%20Specification.md",
+      "line": 3,
+      "kind": "markdown",
+      "target": "03-did:wba Method Design Specification.md"
+    },
+    {
+      "document": "deprecated/02-did-all-method-design-specification.md",
+      "destination": "./LICENSE",
+      "line": 418,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "destination": "01-AgentNetworkProtocol%20Technical%20White%20Paper.md",
+      "line": 7,
+      "kind": "markdown",
+      "target": "deprecated/01-AgentNetworkProtocol Technical White Paper.md"
+    },
+    {
+      "document": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "destination": "./LICENSE",
+      "line": 539,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "deprecated/05-message-service-protocol-based-on-did.md",
+      "destination": "./LICENSE",
+      "line": 351,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "docs/did-wba-server-test-interface.md",
+      "destination": "./LICENSE",
+      "line": 224,
+      "kind": "markdown",
+      "target": "docs/LICENSE"
+    },
+    {
+      "document": "docs/links.md",
+      "destination": "/08-anp-agent-discovery-protocol-specification.md",
+      "line": 21,
+      "kind": "markdown",
+      "target": "08-anp-agent-discovery-protocol-specification.md"
+    },
+    {
+      "document": "standard/bak/Backup Init Version.md",
+      "destination": "./pic/pic.jpg",
+      "line": 96,
+      "kind": "image",
+      "target": "standard/bak/pic/pic.jpg"
+    },
+    {
+      "document": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "destination": "./pic/pic.jpg",
+      "line": 98,
+      "kind": "image",
+      "target": "standard/bak/pic/pic.jpg"
+    },
+    {
+      "document": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "destination": "./pic/section7.png",
+      "line": 219,
+      "kind": "image",
+      "target": "standard/bak/pic/section7.png"
+    }
+  ],
+  "upstream_broken": [
+    {
+      "document": "japanese/AGENTS.md",
+      "source": "AGENTS.md",
+      "destination": "../../../awiki-harness/rules/ai-coding-rules.md",
+      "line": 8,
+      "kind": "markdown",
+      "target": "../../awiki-harness/rules/ai-coding-rules.md"
+    },
+    {
+      "document": "japanese/AGENTS.md",
+      "source": "AGENTS.md",
+      "destination": "../../../awiki-harness/rules/verification-policy.md",
+      "line": 9,
+      "kind": "markdown",
+      "target": "../../awiki-harness/rules/verification-policy.md"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+      "line": 17,
+      "kind": "markdown",
+      "target": "ANP-Presentation-at-W3C-WebAgents-cg.pdf"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page1.jpg",
+      "line": 21,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page1.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page2.jpg",
+      "line": 30,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page2.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page3.jpg",
+      "line": 40,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page3.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page4.jpg",
+      "line": 46,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page4.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page5.jpg",
+      "line": 52,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page5.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page6.jpg",
+      "line": 58,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page6.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page7.jpg",
+      "line": 66,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page7.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page8.jpg",
+      "line": 78,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page8.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page9.jpg",
+      "line": 86,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page9.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page10.jpg",
+      "line": 94,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page10.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page11.jpg",
+      "line": 104,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page11.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page12.jpg",
+      "line": 112,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page12.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page13.jpg",
+      "line": 120,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page13.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page14.jpg",
+      "line": 132,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page14.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page15.jpg",
+      "line": 142,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page15.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page16.jpg",
+      "line": 156,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page16.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page17.jpg",
+      "line": 167,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page17.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page18.jpg",
+      "line": 181,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page18.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page19.jpg",
+      "line": 193,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page19.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page20.jpg",
+      "line": 203,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page20.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page21.jpg",
+      "line": 213,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page21.jpg"
+    },
+    {
+      "document": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "../../images/anp-in-w3c-20250214/page22.jpg",
+      "line": 219,
+      "kind": "image",
+      "target": "images/anp-in-w3c-20250214/page22.jpg"
+    },
+    {
+      "document": "japanese/blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "source": "blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "destination": "../../blogs/LICENSE",
+      "line": 82,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "source": "blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "destination": "../../../blogs/cn/LICENSE",
+      "line": 83,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "destination": "../../../blogs/cn/LICENSE",
+      "line": 160,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "source": "blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "destination": "../../../blogs/cn/LICENSE",
+      "line": 158,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "source": "blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "destination": "../../../blogs/cn/LICENSE",
+      "line": 232,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "source": "blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "destination": "../../../blogs/cn/LICENSE",
+      "line": 130,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "source": "blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "destination": "../../../blogs/cn/智能体互联网有什么不同",
+      "line": 10,
+      "kind": "markdown",
+      "target": "blogs/cn/智能体互联网有什么不同"
+    },
+    {
+      "document": "japanese/blogs/cn/智能体互联网有什么不同.md",
+      "source": "blogs/cn/智能体互联网有什么不同.md",
+      "destination": "../../../blogs/cn/LICENSE",
+      "line": 174,
+      "kind": "markdown",
+      "target": "blogs/cn/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "source": "blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "destination": "../../blogs/LICENSE",
+      "line": 157,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "source": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "Comparison%20of%20did:wba%20with%20OpenID%20Connect%20and%20API%20keys.md",
+      "line": 120,
+      "kind": "markdown",
+      "target": "japanese/blogs/Comparison of did:wba with OpenID Connect and API keys.md"
+    },
+    {
+      "document": "japanese/blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "source": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "../03-did:wba%20Method%20Design%20Specification.md",
+      "line": 121,
+      "kind": "markdown",
+      "target": "japanese/03-did:wba Method Design Specification.md"
+    },
+    {
+      "document": "japanese/blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "source": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "../07-ANP-Agent%20Description%20Protocol%20Specification.md",
+      "line": 162,
+      "kind": "markdown",
+      "target": "japanese/07-ANP-Agent Description Protocol Specification.md"
+    },
+    {
+      "document": "japanese/blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "../03-did:wba%20Method%20Design%20Specification.md",
+      "line": 12,
+      "kind": "markdown",
+      "target": "japanese/03-did:wba Method Design Specification.md"
+    },
+    {
+      "document": "japanese/blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "Comparison%20of%20did:wba%20with%20OpenID%20Connect%20and%20API%20keys.md",
+      "line": 16,
+      "kind": "markdown",
+      "target": "japanese/blogs/Comparison of did:wba with OpenID Connect and API keys.md"
+    },
+    {
+      "document": "japanese/blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "../../blogs/LICENSE",
+      "line": 159,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "source": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "destination": "../../blogs/LICENSE",
+      "line": 127,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "source": "blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "destination": "../../blogs/LICENSE",
+      "line": 228,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "japanese/blogs/What-Makes-Agentic-Web-Different.md",
+      "source": "blogs/What-Makes-Agentic-Web-Different.md",
+      "destination": "../../blogs/LICENSE",
+      "line": 167,
+      "kind": "markdown",
+      "target": "blogs/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "source": "chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "destination": "01-AgentNetworkProtocol技术白皮书.md",
+      "line": 6,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "02-did:all方法设计规范.md",
+      "line": 63,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/02-did:all方法设计规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "02-did:all方法设计规范.md",
+      "line": 67,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/02-did:all方法设计规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "03-基于did的端到端加密通信技术协议.md",
+      "line": 234,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "02-did:all方法设计规范.md",
+      "line": 286,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/02-did:all方法设计规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "03-基于did的端到端加密通信技术协议.md",
+      "line": 288,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "../../../chinese/deprecated/LICENSE",
+      "line": 292,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/deprecated/02-did-all方法规范.md",
+      "source": "chinese/deprecated/02-did-all方法规范.md",
+      "destination": "../03-did:wba方法规范.md",
+      "line": 6,
+      "kind": "markdown",
+      "target": "japanese/chinese/03-did:wba方法规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/02-did-all方法规范.md",
+      "source": "chinese/deprecated/02-did-all方法规范.md",
+      "destination": "../../../chinese/deprecated/LICENSE",
+      "line": 405,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "../../../references/did_web%20Method%20Specification.html",
+      "line": 22,
+      "kind": "markdown",
+      "target": "references/did_web Method Specification.html"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "09-ANP-端到端即时消息协议规范.md",
+      "line": 171,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/09-ANP-端到端即时消息协议规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "04-ANP-基于DID-WBA的命名空间规范.md",
+      "line": 189,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/04-ANP-基于DID-WBA的命名空间规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "09-ANP-端到端即时消息协议规范.md",
+      "line": 194,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/09-ANP-端到端即时消息协议规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "04-ANP-基于DID-WBA的命名空间规范.md",
+      "line": 196,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/04-ANP-基于DID-WBA的命名空间规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "09-ANP-端到端即时消息协议规范.md",
+      "line": 197,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/09-ANP-端到端即时消息协议规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "../../../chinese/deprecated/LICENSE",
+      "line": 675,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "destination": "01-AgentNetworkProtocol技术白皮书.md",
+      "line": 10,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "destination": "../../../chinese/deprecated/LICENSE",
+      "line": 554,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "destination": "../../../chinese/deprecated/LICENSE",
+      "line": 361,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/04-基于did的端到端加密通信技术协议.md",
+      "line": 12,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/chinese/message/04-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/05-基于did的消息服务协议.md",
+      "line": 12,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/chinese/message/05-基于did的消息服务协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 68,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 83,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 105,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/07-ANP-智能体描述协议规范.md",
+      "line": 176,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/chinese/07-ANP-智能体描述协议规范.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/04-基于did的端到端加密通信技术协议.md",
+      "line": 821,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/chinese/message/04-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 1339,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "01-agentnetworkprotocol-technical-white-paper.md",
+      "line": 1378,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/01-agentnetworkprotocol-technical-white-paper.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "03-did-wba-method-design-specification.md",
+      "line": 1379,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/03-did-wba-method-design-specification.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/04-基于did的端到端加密通信技术协议.md",
+      "line": 1380,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/chinese/message/04-基于did的端到端加密通信技术协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "chinese/message/05-基于did的消息服务协议.md",
+      "line": 1381,
+      "kind": "markdown",
+      "target": "japanese/chinese/deprecated/chinese/message/05-基于did的消息服务协议.md"
+    },
+    {
+      "document": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "../../../chinese/deprecated/LICENSE",
+      "line": 1386,
+      "kind": "markdown",
+      "target": "chinese/deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/docs/did-wba服务端测试接口.md",
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "destination": "../../../chinese/docs/LICENSE",
+      "line": 228,
+      "kind": "markdown",
+      "target": "chinese/docs/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "source": "chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "destination": "../../../../chinese/参考资料/语义网/LICENSE",
+      "line": 196,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/参考资料/语义网/semantic-web.md",
+      "source": "chinese/参考资料/语义网/semantic-web.md",
+      "destination": "../../../../chinese/参考资料/语义网/LICENSE",
+      "line": 176,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "source": "chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "destination": "../../../../chinese/参考资料/语义网/LICENSE",
+      "line": 92,
+      "kind": "markdown",
+      "target": "chinese/参考资料/语义网/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/思考&问题/其他/share-ppt.md",
+      "source": "chinese/思考&问题/其他/share-ppt.md",
+      "destination": "../../../../chinese/思考&问题/其他/LICENSE",
+      "line": 424,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/其他/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "source": "chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "destination": "../../../../chinese/思考&问题/协议与技术对比/LICENSE",
+      "line": 296,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/协议与技术对比/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "destination": "../../../../chinese/思考&问题/语义网与智能体研究/LICENSE",
+      "line": 633,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/语义网与智能体研究/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "source": "chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "destination": "../../../../chinese/思考&问题/身份认证与加密/LICENSE",
+      "line": 313,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "japanese/chinese/思考&问题/身份认证与加密/did.md",
+      "source": "chinese/思考&问题/身份认证与加密/did.md",
+      "destination": "../../../../chinese/思考&问题/身份认证与加密/LICENSE",
+      "line": 107,
+      "kind": "markdown",
+      "target": "chinese/思考&问题/身份认证与加密/LICENSE"
+    },
+    {
+      "document": "japanese/CONTRIBUTORS.cn.md",
+      "source": "CONTRIBUTORS.cn.md",
+      "destination": "docs/CONTRIBUTING.cn.md",
+      "line": 10,
+      "kind": "markdown",
+      "target": "japanese/docs/CONTRIBUTING.cn.md"
+    },
+    {
+      "document": "japanese/deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "source": "deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "destination": "01-AgentNetworkProtocol%20Technical%20White%20Paper.md",
+      "line": 6,
+      "kind": "markdown",
+      "target": "japanese/deprecated/01-AgentNetworkProtocol Technical White Paper.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did:all%20Method%20Design%20Specification.md",
+      "line": 62,
+      "kind": "markdown",
+      "target": "japanese/deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did:all%20Method%20Design%20Specification.md",
+      "line": 66,
+      "kind": "markdown",
+      "target": "japanese/deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did:all%20Method%20Design%20Specification.md",
+      "line": 105,
+      "kind": "markdown",
+      "target": "japanese/deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did:all%20Method.md",
+      "line": 191,
+      "kind": "markdown",
+      "target": "japanese/deprecated/03-End-to-End Encrypted Communication Technology Protocol Based on did:all Method.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "02-did:all%20Method%20Design%20Specification.md",
+      "line": 243,
+      "kind": "markdown",
+      "target": "japanese/deprecated/02-did:all Method Design Specification.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did:all%20Method.md",
+      "line": 245,
+      "kind": "markdown",
+      "target": "japanese/deprecated/03-End-to-End Encrypted Communication Technology Protocol Based on did:all Method.md"
+    },
+    {
+      "document": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "destination": "../../deprecated/LICENSE",
+      "line": 256,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/deprecated/02-did-all-method-design-specification.md",
+      "source": "deprecated/02-did-all-method-design-specification.md",
+      "destination": "../03-did:wba%20Method%20Design%20Specification.md",
+      "line": 6,
+      "kind": "markdown",
+      "target": "japanese/03-did:wba Method Design Specification.md"
+    },
+    {
+      "document": "japanese/deprecated/02-did-all-method-design-specification.md",
+      "source": "deprecated/02-did-all-method-design-specification.md",
+      "destination": "../../deprecated/LICENSE",
+      "line": 421,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "destination": "01-AgentNetworkProtocol%20Technical%20White%20Paper.md",
+      "line": 10,
+      "kind": "markdown",
+      "target": "japanese/deprecated/01-AgentNetworkProtocol Technical White Paper.md"
+    },
+    {
+      "document": "japanese/deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "destination": "../../deprecated/LICENSE",
+      "line": 542,
+      "kind": "markdown",
+      "target": "deprecated/LICENSE"
+    },
+    {
+      "document": "japanese/standard/bak/Backup Init Version.md",
+      "source": "standard/bak/Backup Init Version.md",
+      "destination": "../../../standard/bak/pic/pic.jpg",
+      "line": 99,
+      "kind": "image",
+      "target": "standard/bak/pic/pic.jpg"
+    },
+    {
+      "document": "japanese/standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "source": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "destination": "../../../standard/bak/pic/pic.jpg",
+      "line": 101,
+      "kind": "image",
+      "target": "standard/bak/pic/pic.jpg"
+    },
+    {
+      "document": "japanese/standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "source": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "destination": "../../../standard/bak/pic/section7.png",
+      "line": 222,
+      "kind": "image",
+      "target": "standard/bak/pic/section7.png"
+    }
+  ],
+  "newly_broken": [],
+  "pending_translation_targets": [],
+  "translated_fragment_targets": [
+    {
+      "document": "japanese/appendix-b-compatibility-with-native-did-web.md",
+      "source": "appendix-b-compatibility-with-native-did-web.md",
+      "destination": "02-anp-did-authentication-protocol-specification.md#web-binding",
+      "line": 13,
+      "kind": "markdown",
+      "target": "japanese/02-anp-did-authentication-protocol-specification.md",
+      "fragment": "web-binding",
+      "target_status": "resolved"
+    },
+    {
+      "document": "japanese/appendix-b-compatibility-with-native-did-web.md",
+      "source": "appendix-b-compatibility-with-native-did-web.md",
+      "destination": "04-anp-did-wba-name-space-specification.md#binding-verification",
+      "line": 15,
+      "kind": "markdown",
+      "target": "japanese/04-anp-did-wba-name-space-specification.md",
+      "fragment": "binding-verification",
+      "target_status": "resolved"
+    }
+  ],
+  "summary": {
+    "baseline_markdown_sources": 232,
+    "japanese_markdown_documents": 235,
+    "missing_translation_documents": 0,
+    "local_links_checked": 1418,
+    "resolved_local_links": 1318,
+    "external_links_skipped": 634,
+    "baseline_upstream_broken_links": 134,
+    "translated_upstream_broken_links": 100,
+    "newly_broken_links": 0,
+    "pending_translation_target_links": 0,
+    "translated_fragment_target_warnings": 2,
+    "snapshot_complete": true
+  },
+  "missing_translation_documents": []
+}

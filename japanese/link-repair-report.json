@@ -1,0 +1,207 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "generated_at": "2026-11-06T12:53:04.295Z",
+  "mode": "write",
+  "prefix": "",
+  "limit": null,
+  "guarantees": [
+    "Only files with the machine-translation header are eligible.",
+    "The generated source header is excluded from repair.",
+    "Only parsed link URL character spans are changed; labels, prose and examples remain byte-for-byte unchanged.",
+    "Link count or kind mismatches are skipped without guessing.",
+    "Original content is rechecked immediately before atomic replacement; a concurrent change is skipped."
+  ],
+  "documents": [
+    {
+      "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "status": "link-kind-mismatch-skipped",
+      "patches": [],
+      "source_kinds": [
+        "image",
+        "markdown",
+        "markdown",
+        "markdown",
+        "markdown"
+      ],
+      "translation_kinds": [
+        "markdown",
+        "markdown",
+        "markdown",
+        "markdown",
+        "markdown"
+      ]
+    },
+    {
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "status": "written",
+      "patches": [
+        {
+          "start": 4063,
+          "end": 4112,
+          "before": "02-did%3Aall%20Method%20Design%20Specification.md",
+          "after": "02-did:all%20Method%20Design%20Specification.md",
+          "line": 62,
+          "kind": "markdown"
+        },
+        {
+          "start": 4210,
+          "end": 4259,
+          "before": "02-did%3Aall%20Method%20Design%20Specification.md",
+          "after": "02-did:all%20Method%20Design%20Specification.md",
+          "line": 66,
+          "kind": "markdown"
+        },
+        {
+          "start": 5812,
+          "end": 5861,
+          "before": "02-did%3Aall%20Method%20Design%20Specification.md",
+          "after": "02-did:all%20Method%20Design%20Specification.md",
+          "line": 105,
+          "kind": "markdown"
+        },
+        {
+          "start": 10340,
+          "end": 10442,
+          "before": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did%3Aall%20Method.md",
+          "after": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did:all%20Method.md",
+          "line": 191,
+          "kind": "markdown"
+        },
+        {
+          "start": 13307,
+          "end": 13356,
+          "before": "02-did%3Aall%20Method%20Design%20Specification.md",
+          "after": "02-did:all%20Method%20Design%20Specification.md",
+          "line": 243,
+          "kind": "markdown"
+        },
+        {
+          "start": 13429,
+          "end": 13531,
+          "before": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did%3Aall%20Method.md",
+          "after": "03-End-to-End%20Encrypted%20Communication%20Technology%20Protocol%20Based%20on%20did:all%20Method.md",
+          "line": 245,
+          "kind": "markdown"
+        }
+      ]
+    },
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "status": "written",
+      "patches": [
+        {
+          "start": 19524,
+          "end": 19544,
+          "before": "/images/anp-flow.png",
+          "after": "../../../images/anp-flow.png",
+          "line": 613,
+          "kind": "image"
+        }
+      ]
+    },
+    {
+      "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+      "status": "written",
+      "patches": [
+        {
+          "start": 3544,
+          "end": 3570,
+          "before": "../images/agentic-web3.png",
+          "after": "../../images/agentic-web3.png",
+          "line": 40,
+          "kind": "html-src"
+        },
+        {
+          "start": 9199,
+          "end": 9230,
+          "before": "../images/anp-architecture2.png",
+          "after": "../../images/anp-architecture2.png",
+          "line": 115,
+          "kind": "html-src"
+        },
+        {
+          "start": 14863,
+          "end": 14899,
+          "before": "../images/did-as-identity-bridge.png",
+          "after": "../../images/did-as-identity-bridge.png",
+          "line": 210,
+          "kind": "html-src"
+        },
+        {
+          "start": 31071,
+          "end": 31109,
+          "before": "../images/anp-information-interact.png",
+          "after": "../../images/anp-information-interact.png",
+          "line": 480,
+          "kind": "html-src"
+        },
+        {
+          "start": 31632,
+          "end": 31663,
+          "before": "../images/ai-native-network.png",
+          "after": "../../images/ai-native-network.png",
+          "line": 490,
+          "kind": "html-src"
+        }
+      ]
+    },
+    {
+      "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "status": "written",
+      "patches": [
+        {
+          "start": 3396,
+          "end": 3425,
+          "before": "../../images/agentic-web3.png",
+          "after": "../../../images/agentic-web3.png",
+          "line": 40,
+          "kind": "html-src"
+        },
+        {
+          "start": 8787,
+          "end": 8821,
+          "before": "../../images/anp-architecture2.png",
+          "after": "../../../images/anp-architecture2.png",
+          "line": 115,
+          "kind": "html-src"
+        },
+        {
+          "start": 13998,
+          "end": 14037,
+          "before": "../../images/did-as-identity-bridge.png",
+          "after": "../../../images/did-as-identity-bridge.png",
+          "line": 210,
+          "kind": "html-src"
+        },
+        {
+          "start": 29489,
+          "end": 29530,
+          "before": "../../images/anp-information-interact.png",
+          "after": "../../../images/anp-information-interact.png",
+          "line": 480,
+          "kind": "html-src"
+        },
+        {
+          "start": 30014,
+          "end": 30048,
+          "before": "../../images/ai-native-network.png",
+          "after": "../../../images/ai-native-network.png",
+          "line": 490,
+          "kind": "html-src"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "mode": "write",
+    "eligible_machine_documents_checked": 174,
+    "hand_translation_documents_skipped": 58,
+    "translation_documents_not_yet_generated": 0,
+    "repairable_documents": 4,
+    "link_destination_edits": 17,
+    "written_documents": 4,
+    "ambiguous_documents_skipped": 1,
+    "concurrent_updates_skipped": 0,
+    "limited": false
+  }
+}

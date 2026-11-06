@@ -1,0 +1,3 @@
+# Optional offline documentation translation backend; not needed by the TS demo.
+ctranslate2==4.8.5
+sentencepiece==0.2.3

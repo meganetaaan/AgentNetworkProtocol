@@ -1,0 +1,63 @@
+{
+  "verified_at": "2026-11-06T12:57:31.013Z",
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "translation": {
+    "source_markdown": 232,
+    "translated": 232,
+    "agent_translated": 52,
+    "machine_partially_reviewed": 17,
+    "machine_unreviewed": 163,
+    "original_files_unchanged": true,
+    "preservation_errors": [],
+    "preservation_warnings": [],
+    "retained_non_markdown_files": 266
+  },
+  "links": {
+    "baseline_markdown_sources": 232,
+    "japanese_markdown_documents": 235,
+    "missing_translation_documents": 0,
+    "local_links_checked": 1418,
+    "resolved_local_links": 1318,
+    "external_links_skipped": 634,
+    "baseline_upstream_broken_links": 134,
+    "translated_upstream_broken_links": 100,
+    "newly_broken_links": 0,
+    "pending_translation_target_links": 0,
+    "translated_fragment_target_warnings": 2,
+    "snapshot_complete": true
+  },
+  "stable_authz_case_ids": {
+    "source": 136,
+    "verified": 136
+  },
+  "demo": {
+    "typecheck": "PASS",
+    "network_tests_passed": 7,
+    "network_tests_failed": 0,
+    "agents": 3,
+    "group_sends": 9,
+    "incoming_notifications": 27,
+    "messages_received_per_agent": 9,
+    "conversation_mode": "scripted-no-model-api",
+    "conversation_model_api_calls": 0,
+    "full_p4_conformance_claimed": false
+  },
+  "maintenance_tests": {
+    "passed": 14,
+    "failed": 0
+  },
+  "upstream_baseline": {
+    "release_document_check": "PASS",
+    "anp02_vector_check": "PASS",
+    "tests": 131,
+    "passed": 93,
+    "failed": 38,
+    "original_files_changed": false
+  },
+  "remaining": {
+    "full_semantic_translation_review": "not completed",
+    "binary_assets_and_text_inside_code": "retained in original languages",
+    "live_conversation_model": "not implemented or run; credential decision pending",
+    "external_interoperability_and_product_e2e": "not performed"
+  }
+}

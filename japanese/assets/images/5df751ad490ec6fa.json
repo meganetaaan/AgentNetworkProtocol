@@ -1,0 +1,248 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page1.jpg",
+  "sha256": "5df751ad490ec6fabdad12f25cd0c3943096be4677f59a0bbaecbe6908f20ad4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ANP",
+      "confidence": 0.982508659362793,
+      "box": [
+        [
+          2153.0322265625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          86.78571319580078
+        ],
+        [
+          2153.0322265625,
+          86.78571319580078
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Agent Network Protocol",
+      "confidence": 0.9888370335102081,
+      "box": [
+        [
+          603.8709716796875,
+          401.528564453125
+        ],
+        [
+          1702.4515380859375,
+          398.0571594238281
+        ],
+        [
+          1702.4515380859375,
+          501.0428771972656
+        ],
+        [
+          603.8709716796875,
+          504.5142822265625
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Redefining Agent Connectivity and Collaboration",
+      "confidence": 0.9882866461226281,
+      "box": [
+        [
+          703.741943359375,
+          619.0714111328125
+        ],
+        [
+          1606.064453125,
+          619.0714111328125
+        ],
+        [
+          1606.064453125,
+          667.6714477539062
+        ],
+        [
+          703.741943359375,
+          667.6714477539062
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANPOpenSourceCommunity",
+      "confidence": 0.9942451146515933,
+      "box": [
+        [
+          881.4193115234375,
+          781.0714721679688
+        ],
+        [
+          1421.4193115234375,
+          783.3857421875
+        ],
+        [
+          1421.4193115234375,
+          826.2000122070312
+        ],
+        [
+          881.4193115234375,
+          823.8857421875
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Gaowei Chang, James Waugh",
+      "confidence": 0.974644296169281,
+      "box": [
+        [
+          880.258056640625,
+          841.2428588867188
+        ],
+        [
+          1422.58056640625,
+          843.55712890625
+        ],
+        [
+          1422.58056640625,
+          888.6857299804688
+        ],
+        [
+          880.258056640625,
+          886.3714599609375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "2025-02",
+      "confidence": 0.9992105279650006,
+      "box": [
+        [
+          1081.1612548828125,
+          993.9857177734375
+        ],
+        [
+          1227.48388671875,
+          993.9857177734375
+        ],
+        [
+          1227.48388671875,
+          1035.642822265625
+        ],
+        [
+          1081.1612548828125,
+          1035.642822265625
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "2025",
+        "02"
+      ]
+    },
+    {
+      "source": "https://agent-network-protocol.com/",
+      "confidence": 0.999765283720834,
+      "box": [
+        [
+          1613.0322265625,
+          1212.685791015625
+        ],
+        [
+          2223.870849609375,
+          1212.685791015625
+        ],
+        [
+          2223.870849609375,
+          1257.8143310546875
+        ],
+        [
+          1613.0322265625,
+          1257.8143310546875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://agent-network-protocol.com/"
+      ]
+    },
+    {
+      "source": "Agent Network Protocol\n\n\n\n     Redefining Agent Connectivity and Collaboration\n\n\n\n          ANP Open Source Community\n            Gaowei Chang, James Waugh\n\n\n\n                        2025-02\n\n\n\n\n                                                          https://agent-network-protocol.com/",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L008",
+      "japanese": "Agent Network Protocol\n\nエージェントの接続と協働を再定義する。\n\nANPオープンソースコミュニティ\nGaowei Chang、James Waugh\n2025-02\nhttps://agent-network-protocol.com/",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5195365999825299,
+    0.010004997253417969,
+    1.0796449184417725
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 1,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-1",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 0.472337962962963,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 1,
+    "manual_label_translations": {
+      "Agent Network Protocol\n\n\n\n     Redefining Agent Connectivity and Collaboration\n\n\n\n          ANP Open Source Community\n            Gaowei Chang, James Waugh\n\n\n\n                        2025-02\n\n\n\n\n                                                          https://agent-network-protocol.com/": "Agent Network Protocol\n\nエージェントの接続と協働を再定義する。\n\nANPオープンソースコミュニティ\nGaowei Chang、James Waugh\n2025-02\nhttps://agent-network-protocol.com/"
+    },
+    "additional_labels": [
+      {
+        "source": "Agent Network Protocol\n\n\n\n     Redefining Agent Connectivity and Collaboration\n\n\n\n          ANP Open Source Community\n            Gaowei Chang, James Waugh\n\n\n\n                        2025-02\n\n\n\n\n                                                          https://agent-network-protocol.com/",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "ANP",
+      "Agent Network Protocol",
+      "Redefining Agent Connectivity and Collaboration",
+      "ANPOpenSourceCommunity",
+      "Gaowei Chang, James Waugh",
+      "2025-02",
+      "https://agent-network-protocol.com/"
+    ],
+    "source_sha256": "5df751ad490ec6fabdad12f25cd0c3943096be4677f59a0bbaecbe6908f20ad4"
+  }
+}

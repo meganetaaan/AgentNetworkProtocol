@@ -1,0 +1,10 @@
+# Optional asset extraction/verification tools used for the Japanese sidecars.
+# These are not runtime dependencies of ANP or the TypeScript demo.
+pymupdf==2.1
+python-pptx==1.0.2
+Pillow==13.0.0
+lxml==6.1.3
+PyYAML==6.0.3
+rapidocr-onnxruntime==1.4.4
+numpy==2.5.4
+onnxruntime==1.31.1

@@ -1,0 +1,105 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step2.png",
+  "sha256": "d07acf22f7007a5cb87f0851ed2b5b483bb97b25c5d622dd590d6cff9134693e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第2步/共5步",
+      "confidence": 0.979438841342926,
+      "box": [
+        [
+          38.0,
+          35.0
+        ],
+        [
+          188.0,
+          35.0
+        ],
+        [
+          188.0,
+          57.0
+        ],
+        [
+          38.0,
+          57.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第2段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2",
+        "5"
+      ]
+    },
+    {
+      "source": "三",
+      "confidence": 0.8292306661605835,
+      "box": [
+        [
+          658.0,
+          120.0
+        ],
+        [
+          751.0,
+          126.0
+        ],
+        [
+          743.0,
+          240.0
+        ],
+        [
+          650.0,
+          234.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "按死规矩排好的一行",
+      "confidence": 0.9961711565653483,
+      "box": [
+        [
+          575.0,
+          275.0
+        ],
+        [
+          834.0,
+          275.0
+        ],
+        [
+          834.0,
+          304.0
+        ],
+        [
+          575.0,
+          304.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "厳密な規則に従って並べた1行",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7201865999959409,
+    0.00513148307800293,
+    0.2599003314971924
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "false_positive_labels": [
+      "三"
+    ],
+    "source_sha256": "d07acf22f7007a5cb87f0851ed2b5b483bb97b25c5d622dd590d6cff9134693e"
+  }
+}

@@ -1,0 +1,852 @@
+{
+  "source": "images/message-send-receive-flow.png",
+  "sha256": "6f0b301d81e5c116095a0e3b715253a44a30b7640893dec08a1b978931c6b33f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "DID Sever",
+      "confidence": 0.9471561908721924,
+      "box": [
+        [
+          635.0,
+          75.0
+        ],
+        [
+          727.0,
+          77.0
+        ],
+        [
+          727.0,
+          101.0
+        ],
+        [
+          635.0,
+          99.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "DIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "DIDSever",
+      "confidence": 0.995840422809124,
+      "box": [
+        [
+          966.0,
+          74.0
+        ],
+        [
+          1059.0,
+          77.0
+        ],
+        [
+          1058.0,
+          102.0
+        ],
+        [
+          965.0,
+          99.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "DIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "DID Sever"
+    },
+    {
+      "source": "5、QueryB's DID document",
+      "confidence": 0.9674358056939166,
+      "box": [
+        [
+          1025.0,
+          164.0
+        ],
+        [
+          1244.0,
+          164.0
+        ],
+        [
+          1244.0,
+          186.0
+        ],
+        [
+          1025.0,
+          186.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "5、 BのDID文書を照会する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "5",
+        "QueryB",
+        "DID"
+      ],
+      "transcribed_source": "5、 Query B's DID document"
+    },
+    {
+      "source": "3、QueryB's DID document",
+      "confidence": 0.9519204937893412,
+      "box": [
+        [
+          702.0,
+          194.0
+        ],
+        [
+          921.0,
+          194.0
+        ],
+        [
+          921.0,
+          217.0
+        ],
+        [
+          702.0,
+          217.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "3、 BのDID文書を照会する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3",
+        "QueryB",
+        "DID"
+      ],
+      "transcribed_source": "3、 Query B's DID document"
+    },
+    {
+      "source": "toobtainB'smessagerouting.",
+      "confidence": 0.9912098967112027,
+      "box": [
+        [
+          1025.0,
+          185.0
+        ],
+        [
+          1262.0,
+          189.0
+        ],
+        [
+          1261.0,
+          212.0
+        ],
+        [
+          1024.0,
+          208.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "Bのメッセージのルーティング情報を取得するために",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "toobtainB"
+      ],
+      "transcribed_source": "to obtain B's message routing."
+    },
+    {
+      "source": "UserASever",
+      "confidence": 0.9956507861614228,
+      "box": [
+        [
+          292.0,
+          208.0
+        ],
+        [
+          409.0,
+          210.0
+        ],
+        [
+          409.0,
+          233.0
+        ],
+        [
+          292.0,
+          231.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ユーザー Aのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UserASever"
+      ],
+      "transcribed_source": "User A Sever"
+    },
+    {
+      "source": "to obtain B'smessage",
+      "confidence": 0.960958868265152,
+      "box": [
+        [
+          701.0,
+          216.0
+        ],
+        [
+          875.0,
+          219.0
+        ],
+        [
+          875.0,
+          242.0
+        ],
+        [
+          701.0,
+          239.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "Bのメッセージの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "to obtain B's message"
+    },
+    {
+      "source": "UserBSever",
+      "confidence": 0.9977116584777832,
+      "box": [
+        [
+          1284.0,
+          208.0
+        ],
+        [
+          1401.0,
+          210.0
+        ],
+        [
+          1401.0,
+          233.0
+        ],
+        [
+          1283.0,
+          231.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ユーザー Bのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UserBSever"
+      ],
+      "transcribed_source": "User B Sever"
+    },
+    {
+      "source": "service endpoint.",
+      "confidence": 0.9692929948077482,
+      "box": [
+        [
+          702.0,
+          243.0
+        ],
+        [
+          837.0,
+          243.0
+        ],
+        [
+          837.0,
+          264.0
+        ],
+        [
+          702.0,
+          264.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "サービスエンドポイントを取得するために",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "6、Send the message",
+      "confidence": 0.97547490729226,
+      "box": [
+        [
+          1424.0,
+          287.0
+        ],
+        [
+          1595.0,
+          290.0
+        ],
+        [
+          1594.0,
+          313.0
+        ],
+        [
+          1424.0,
+          310.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "6、 メッセージを送信する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "6"
+      ],
+      "transcribed_source": "6、 Send the message"
+    },
+    {
+      "source": "1.Initiateaconnection",
+      "confidence": 0.9618869111651466,
+      "box": [
+        [
+          62.0,
+          303.0
+        ],
+        [
+          269.0,
+          303.0
+        ],
+        [
+          269.0,
+          322.0
+        ],
+        [
+          62.0,
+          322.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "1. 接続を開始する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1.Initiateaconnection"
+      ],
+      "transcribed_source": "1. Initiate a connection"
+    },
+    {
+      "source": "2、Send amessage to",
+      "confidence": 0.9587562845812904,
+      "box": [
+        [
+          385.0,
+          312.0
+        ],
+        [
+          559.0,
+          316.0
+        ],
+        [
+          559.0,
+          336.0
+        ],
+        [
+          384.0,
+          333.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "2、 次の相手にメッセージを送信する:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ],
+      "transcribed_source": "2、 Send a message to"
+    },
+    {
+      "source": "to the user.",
+      "confidence": 0.9526393562555313,
+      "box": [
+        [
+          1423.0,
+          313.0
+        ],
+        [
+          1515.0,
+          315.0
+        ],
+        [
+          1515.0,
+          336.0
+        ],
+        [
+          1423.0,
+          334.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "ユーザーへ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "2.to Bbased on B's DID",
+      "confidence": 0.9175364348021421,
+      "box": [
+        [
+          60.0,
+          328.0
+        ],
+        [
+          275.0,
+          328.0
+        ],
+        [
+          275.0,
+          350.0
+        ],
+        [
+          60.0,
+          350.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "2. BのDIDに基づいてBへ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2.to",
+        "DID"
+      ],
+      "transcribed_source": "2. to B based on B's DID"
+    },
+    {
+      "source": "Message",
+      "confidence": 0.9980136241231646,
+      "box": [
+        [
+          638.0,
+          328.0
+        ],
+        [
+          721.0,
+          333.0
+        ],
+        [
+          719.0,
+          358.0
+        ],
+        [
+          636.0,
+          352.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "メッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Message",
+      "confidence": 0.9976774879864284,
+      "box": [
+        [
+          969.0,
+          328.0
+        ],
+        [
+          1051.0,
+          333.0
+        ],
+        [
+          1049.0,
+          358.0
+        ],
+        [
+          967.0,
+          352.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "メッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "6、Basedonthemessagerouting,",
+      "confidence": 0.9783176956353364,
+      "box": [
+        [
+          1115.0,
+          325.0
+        ],
+        [
+          1379.0,
+          327.0
+        ],
+        [
+          1379.0,
+          348.0
+        ],
+        [
+          1115.0,
+          346.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "6、 メッセージのルーティング情報に基づいて、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "6"
+      ],
+      "transcribed_source": "6、 Based on the message routing,"
+    },
+    {
+      "source": "B containing both",
+      "confidence": 0.9786761438145357,
+      "box": [
+        [
+          385.0,
+          335.0
+        ],
+        [
+          527.0,
+          337.0
+        ],
+        [
+          526.0,
+          361.0
+        ],
+        [
+          384.0,
+          359.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "Bへ送る。次の両方を含む:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "A's and B's DIDs.",
+      "confidence": 0.9301254819421207,
+      "box": [
+        [
+          388.0,
+          359.0
+        ],
+        [
+          518.0,
+          361.0
+        ],
+        [
+          518.0,
+          382.0
+        ],
+        [
+          388.0,
+          380.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "AとBのDID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Proxy",
+      "confidence": 0.9922661662101746,
+      "box": [
+        [
+          652.0,
+          356.0
+        ],
+        [
+          710.0,
+          360.0
+        ],
+        [
+          708.0,
+          385.0
+        ],
+        [
+          650.0,
+          381.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "プロキシ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Proxy",
+      "confidence": 0.9931236386299134,
+      "box": [
+        [
+          983.0,
+          356.0
+        ],
+        [
+          1041.0,
+          359.0
+        ],
+        [
+          1040.0,
+          384.0
+        ],
+        [
+          981.0,
+          381.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "プロキシ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "findtheUserServer'sWsSconnection",
+      "confidence": 0.9721178412437439,
+      "box": [
+        [
+          1119.0,
+          351.0
+        ],
+        [
+          1411.0,
+          351.0
+        ],
+        [
+          1411.0,
+          368.0
+        ],
+        [
+          1119.0,
+          368.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "ユーザーサーバーのWSS接続を見つける",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "findtheUserServer",
+        "sWsSconnection"
+      ],
+      "transcribed_source": "find the User Server's WSS connection"
+    },
+    {
+      "source": "andsend themessage",
+      "confidence": 0.9738952318827311,
+      "box": [
+        [
+          1116.0,
+          371.0
+        ],
+        [
+          1291.0,
+          375.0
+        ],
+        [
+          1291.0,
+          395.0
+        ],
+        [
+          1116.0,
+          392.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "そしてメッセージを送信する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "and send the message"
+    },
+    {
+      "source": "4、ConnecttoB'smessage",
+      "confidence": 0.9928416723296756,
+      "box": [
+        [
+          748.0,
+          388.0
+        ],
+        [
+          961.0,
+          392.0
+        ],
+        [
+          960.0,
+          415.0
+        ],
+        [
+          748.0,
+          412.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "4、 Bのメッセージの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4",
+        "ConnecttoB"
+      ],
+      "transcribed_source": "4、 Connect to B's message"
+    },
+    {
+      "source": "serviceendpointand",
+      "confidence": 0.9976637131637998,
+      "box": [
+        [
+          750.0,
+          416.0
+        ],
+        [
+          914.0,
+          416.0
+        ],
+        [
+          914.0,
+          436.0
+        ],
+        [
+          750.0,
+          436.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "サービスエンドポイントに接続して",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "service endpoint and"
+    },
+    {
+      "source": "UserB",
+      "confidence": 0.9971857070922852,
+      "box": [
+        [
+          1442.0,
+          415.0
+        ],
+        [
+          1504.0,
+          415.0
+        ],
+        [
+          1504.0,
+          437.0
+        ],
+        [
+          1442.0,
+          437.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "ユーザー B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UserB"
+      ],
+      "transcribed_source": "User B"
+    },
+    {
+      "source": "UserA",
+      "confidence": 0.996409809589386,
+      "box": [
+        [
+          189.0,
+          434.0
+        ],
+        [
+          253.0,
+          434.0
+        ],
+        [
+          253.0,
+          459.0
+        ],
+        [
+          189.0,
+          459.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "ユーザー A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UserA"
+      ],
+      "transcribed_source": "User A"
+    },
+    {
+      "source": "send the message.",
+      "confidence": 0.9394547062761643,
+      "box": [
+        [
+          749.0,
+          438.0
+        ],
+        [
+          893.0,
+          440.0
+        ],
+        [
+          892.0,
+          461.0
+        ],
+        [
+          749.0,
+          458.0
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "メッセージを送信する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Messagereturnpath,followingthesamemessagesendingmechanism",
+      "confidence": 0.9930053761130885,
+      "box": [
+        [
+          585.0,
+          570.0
+        ],
+        [
+          1125.0,
+          570.0
+        ],
+        [
+          1125.0,
+          589.0
+        ],
+        [
+          585.0,
+          589.0
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "メッセージの返送経路。同じメッセージ送信の仕組みに従う",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Message return path, following the same message sending mechanism."
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5771449000458233,
+    0.04786229133605957,
+    3.0736629962921143
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "source_note": "原図にはSeverの綴りと重複する手順番号2/6があり、そのまま保持した。ラベル内改行にまたがる文は隣接行と続けて読む。",
+    "corrections": {
+      "DIDSever": "DID Sever",
+      "5、QueryB's DID document": "5、 Query B's DID document",
+      "3、QueryB's DID document": "3、 Query B's DID document",
+      "toobtainB'smessagerouting.": "to obtain B's message routing.",
+      "UserASever": "User A Sever",
+      "to obtain B'smessage": "to obtain B's message",
+      "UserBSever": "User B Sever",
+      "6、Send the message": "6、 Send the message",
+      "1.Initiateaconnection": "1. Initiate a connection",
+      "2、Send amessage to": "2、 Send a message to",
+      "2.to Bbased on B's DID": "2. to B based on B's DID",
+      "6、Basedonthemessagerouting,": "6、 Based on the message routing,",
+      "findtheUserServer'sWsSconnection": "find the User Server's WSS connection",
+      "andsend themessage": "and send the message",
+      "4、ConnecttoB'smessage": "4、 Connect to B's message",
+      "serviceendpointand": "service endpoint and",
+      "UserB": "User B",
+      "UserA": "User A",
+      "Messagereturnpath,followingthesamemessagesendingmechanism": "Message return path, following the same message sending mechanism."
+    },
+    "source_sha256": "6f0b301d81e5c116095a0e3b715253a44a30b7640893dec08a1b978931c6b33f"
+  }
+}

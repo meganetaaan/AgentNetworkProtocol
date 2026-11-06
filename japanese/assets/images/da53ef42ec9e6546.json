@@ -1,0 +1,153 @@
+{
+  "source": "blogs/images/a2a-id-auth.png",
+  "sha256": "da53ef42ec9e65464902f735b8903389734f7494ef6c28ef11b348aeae907c0f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "带外获得身份验证材料",
+      "confidence": 0.9956011235713959,
+      "box": [
+        [
+          318.0,
+          32.0
+        ],
+        [
+          564.0,
+          32.0
+        ],
+        [
+          564.0,
+          55.0
+        ],
+        [
+          318.0,
+          55.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "帯域外で認証用の情報を取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Identity",
+      "confidence": 0.9968504756689072,
+      "box": [
+        [
+          388.0,
+          124.0
+        ],
+        [
+          482.0,
+          128.0
+        ],
+        [
+          481.0,
+          155.0
+        ],
+        [
+          387.0,
+          151.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Client Agent",
+      "confidence": 0.9884929060935974,
+      "box": [
+        [
+          60.0,
+          338.0
+        ],
+        [
+          195.0,
+          341.0
+        ],
+        [
+          195.0,
+          367.0
+        ],
+        [
+          60.0,
+          364.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "クライアントエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Remote Agent",
+      "confidence": 0.9565517952044805,
+      "box": [
+        [
+          657.0,
+          336.0
+        ],
+        [
+          812.0,
+          338.0
+        ],
+        [
+          811.0,
+          364.0
+        ],
+        [
+          657.0,
+          362.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "リモートエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "A2A",
+      "confidence": 0.9946171243985494,
+      "box": [
+        [
+          421.0,
+          427.0
+        ],
+        [
+          473.0,
+          427.0
+        ],
+        [
+          473.0,
+          453.0
+        ],
+        [
+          421.0,
+          453.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "A2A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "A2A"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6834000000380911,
+    0.009015798568725586,
+    0.5698721408843994
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "da53ef42ec9e65464902f735b8903389734f7494ef6c28ef11b348aeae907c0f"
+  }
+}

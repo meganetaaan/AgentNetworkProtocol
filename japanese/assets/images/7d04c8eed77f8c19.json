@@ -1,0 +1,280 @@
+{
+  "source": "images/judgment1_agent_replace_software.svg",
+  "sha256": "7d04c8eed77f8c199b83aac53632fc0c4c160130b1e6f76b2e3eb3ca1a09d640",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "判断一：智能体将替代现有软件",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "見解1: エージェントが既存のソフトウェアに取って代わる",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "传统APP时代",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "100",
+      "label_id": "L002",
+      "japanese": "従来のアプリの時代",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "微信",
+      "element": "text",
+      "id": null,
+      "x": "80",
+      "y": "190",
+      "label_id": "L003",
+      "japanese": "WeChat（微信）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "淘宝",
+      "element": "text",
+      "id": null,
+      "x": "160",
+      "y": "190",
+      "label_id": "L004",
+      "japanese": "Taobao（淘宝）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "抖音",
+      "element": "text",
+      "id": null,
+      "x": "240",
+      "y": "190",
+      "label_id": "L005",
+      "japanese": "Douyin（抖音）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支",
+      "element": "text",
+      "id": null,
+      "x": "120",
+      "y": "235",
+      "label_id": "L006",
+      "japanese": "支（Alipayのアイコン文字）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付宝",
+      "element": "text",
+      "id": null,
+      "x": "120",
+      "y": "270",
+      "label_id": "L007",
+      "japanese": "Alipay（支付宝）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "娱乐",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "270",
+      "label_id": "L008",
+      "japanese": "娯楽",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "替代",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "190",
+      "label_id": "L009",
+      "japanese": "置き換え",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体时代",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "100",
+      "label_id": "L010",
+      "japanese": "エージェントの時代",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "个人AI助手",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "230",
+      "label_id": "L011",
+      "japanese": "個人AIアシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "购物",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "105",
+      "label_id": "L012",
+      "japanese": "買い物",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "社交",
+      "element": "text",
+      "id": null,
+      "x": "470",
+      "y": "185",
+      "label_id": "L013",
+      "japanese": "交流",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "出行",
+      "element": "text",
+      "id": null,
+      "x": "630",
+      "y": "185",
+      "label_id": "L014",
+      "japanese": "移動",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付",
+      "element": "text",
+      "id": null,
+      "x": null,
+      "y": null,
+      "label_id": "L015",
+      "japanese": "支払い",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "娱乐",
+      "element": "text",
+      "id": null,
+      "x": "610",
+      "y": "275",
+      "label_id": "L016",
+      "japanese": "娯楽",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "385",
+      "label_id": "L017",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 用户需要使用多个APP",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "340",
+      "label_id": "L018",
+      "japanese": "• ユーザーは複数のアプリを使う必要がある",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 数据分散在各个平台",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "360",
+      "label_id": "L019",
+      "japanese": "• データが各プラットフォームに分散する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 体验碎片化",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "380",
+      "label_id": "L020",
+      "japanese": "• 体験が断片化する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 一个AI助手连接所有服务",
+      "element": "text",
+      "id": null,
+      "x": "460",
+      "y": "340",
+      "label_id": "L021",
+      "japanese": "• 1つのAIアシスタントがすべてのサービスに接続する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 个性化的统一体验",
+      "element": "text",
+      "id": null,
+      "x": "460",
+      "y": "360",
+      "label_id": "L022",
+      "japanese": "• 個人に合わせた統一的な体験",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 智能化的任务处理",
+      "element": "text",
+      "id": null,
+      "x": "460",
+      "y": "380",
+      "label_id": "L023",
+      "japanese": "• インテリジェントなタスク処理",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ANP",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L024",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "8",
+      "label_id": "L025",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "个人AI助手成为新的互联网入口",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "450",
+      "label_id": "L026",
+      "japanese": "個人AIアシスタントが新たなインターネットの入口になる",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "在综合场景下，体验比现有APP好十倍",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "470",
+      "label_id": "L027",
+      "japanese": "複合的な利用場面では、既存アプリの10倍優れた体験となる",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

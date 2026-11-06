@@ -1,0 +1,565 @@
+{
+  "source": "images/did-architecture.png",
+  "sha256": "9b43eb8001fc6e5e44571ab75d9ab618f07337091a1b1aa000e91b7bfa70a41e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "DID",
+      "confidence": 0.9968568086624146,
+      "box": [
+        [
+          79.0,
+          34.0
+        ],
+        [
+          132.0,
+          34.0
+        ],
+        [
+          132.0,
+          62.0
+        ],
+        [
+          79.0,
+          62.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "refers to",
+      "confidence": 0.9478996793429056,
+      "box": [
+        [
+          225.0,
+          38.0
+        ],
+        [
+          312.0,
+          38.0
+        ],
+        [
+          312.0,
+          61.0
+        ],
+        [
+          225.0,
+          61.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "参照する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID",
+      "confidence": 0.9950358867645264,
+      "box": [
+        [
+          444.0,
+          44.0
+        ],
+        [
+          494.0,
+          44.0
+        ],
+        [
+          494.0,
+          72.0
+        ],
+        [
+          444.0,
+          72.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "subject",
+      "confidence": 0.999709461416517,
+      "box": [
+        [
+          59.0,
+          69.0
+        ],
+        [
+          155.0,
+          69.0
+        ],
+        [
+          155.0,
+          100.0
+        ],
+        [
+          59.0,
+          100.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "主体",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "did:example:123",
+      "confidence": 0.9908540844917297,
+      "box": [
+        [
+          397.0,
+          87.0
+        ],
+        [
+          542.0,
+          87.0
+        ],
+        [
+          542.0,
+          104.0
+        ],
+        [
+          397.0,
+          104.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "did:example:123",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "123"
+      ]
+    },
+    {
+      "source": "resolvesto",
+      "confidence": 0.9971982121467591,
+      "box": [
+        [
+          442.0,
+          124.0
+        ],
+        [
+          558.0,
+          124.0
+        ],
+        [
+          558.0,
+          146.0
+        ],
+        [
+          442.0,
+          146.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "解決する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "resolves to"
+    },
+    {
+      "source": "recordedon",
+      "confidence": 0.9976808547973632,
+      "box": [
+        [
+          595.0,
+          168.0
+        ],
+        [
+          714.0,
+          168.0
+        ],
+        [
+          714.0,
+          189.0
+        ],
+        [
+          595.0,
+          189.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "記録される",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "recorded on"
+    },
+    {
+      "source": "contains",
+      "confidence": 0.998277984559536,
+      "box": [
+        [
+          263.0,
+          189.0
+        ],
+        [
+          350.0,
+          189.0
+        ],
+        [
+          350.0,
+          211.0
+        ],
+        [
+          263.0,
+          211.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "含む",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Verifiable",
+      "confidence": 0.9948454320430755,
+      "box": [
+        [
+          785.0,
+          246.0
+        ],
+        [
+          892.0,
+          248.0
+        ],
+        [
+          892.0,
+          274.0
+        ],
+        [
+          784.0,
+          272.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "検証可能な",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID URL",
+      "confidence": 0.9826327306883675,
+      "box": [
+        [
+          296.0,
+          256.0
+        ],
+        [
+          403.0,
+          256.0
+        ],
+        [
+          403.0,
+          281.0
+        ],
+        [
+          296.0,
+          281.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "DID URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID",
+        "URL"
+      ]
+    },
+    {
+      "source": "Data",
+      "confidence": 0.9976471960544586,
+      "box": [
+        [
+          810.0,
+          277.0
+        ],
+        [
+          867.0,
+          280.0
+        ],
+        [
+          866.0,
+          305.0
+        ],
+        [
+          809.0,
+          302.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "データ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "did:example:123/path/to/rsrc",
+      "confidence": 0.9839405566453934,
+      "box": [
+        [
+          213.0,
+          294.0
+        ],
+        [
+          486.0,
+          295.0
+        ],
+        [
+          486.0,
+          314.0
+        ],
+        [
+          213.0,
+          314.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "did:example:123/path/to/rsrc",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "123",
+        "/path/to/rsrc"
+      ]
+    },
+    {
+      "source": "Registry",
+      "confidence": 0.9997826740145683,
+      "box": [
+        [
+          791.0,
+          305.0
+        ],
+        [
+          887.0,
+          309.0
+        ],
+        [
+          886.0,
+          340.0
+        ],
+        [
+          789.0,
+          336.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "レジストリ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "refers, and",
+      "confidence": 0.9980714104392312,
+      "box": [
+        [
+          324.0,
+          333.0
+        ],
+        [
+          434.0,
+          333.0
+        ],
+        [
+          434.0,
+          357.0
+        ],
+        [
+          324.0,
+          357.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "参照し、かつ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "recordedon",
+      "confidence": 0.9980148434638977,
+      "box": [
+        [
+          602.0,
+          344.0
+        ],
+        [
+          725.0,
+          344.0
+        ],
+        [
+          725.0,
+          366.0
+        ],
+        [
+          602.0,
+          366.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "記録される",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "recorded on"
+    },
+    {
+      "source": "dereferences,to",
+      "confidence": 0.9782912572224934,
+      "box": [
+        [
+          263.0,
+          360.0
+        ],
+        [
+          433.0,
+          362.0
+        ],
+        [
+          433.0,
+          385.0
+        ],
+        [
+          263.0,
+          383.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "参照解決する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "dereferences, to"
+    },
+    {
+      "source": "DID",
+      "confidence": 0.9968568086624146,
+      "box": [
+        [
+          79.0,
+          458.0
+        ],
+        [
+          132.0,
+          458.0
+        ],
+        [
+          132.0,
+          486.0
+        ],
+        [
+          79.0,
+          486.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "controls",
+      "confidence": 0.9953703433275223,
+      "box": [
+        [
+          219.0,
+          464.0
+        ],
+        [
+          300.0,
+          464.0
+        ],
+        [
+          300.0,
+          485.0
+        ],
+        [
+          219.0,
+          485.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "制御する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DIDdocument",
+      "confidence": 0.9981187798760154,
+      "box": [
+        [
+          385.0,
+          476.0
+        ],
+        [
+          555.0,
+          478.0
+        ],
+        [
+          555.0,
+          503.0
+        ],
+        [
+          385.0,
+          501.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "DID文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "DID document"
+    },
+    {
+      "source": "controller",
+      "confidence": 0.9995074033737182,
+      "box": [
+        [
+          45.0,
+          492.0
+        ],
+        [
+          165.0,
+          492.0
+        ],
+        [
+          165.0,
+          520.0
+        ],
+        [
+          45.0,
+          520.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "コントローラー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6518247000058182,
+    0.027228116989135742,
+    1.053145408630371
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "resolvesto": "resolves to",
+      "recordedon": "recorded on",
+      "dereferences,to": "dereferences, to",
+      "DIDdocument": "DID document"
+    },
+    "source_sha256": "9b43eb8001fc6e5e44571ab75d9ab618f07337091a1b1aa000e91b7bfa70a41e"
+  }
+}

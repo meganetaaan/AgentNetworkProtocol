@@ -1,0 +1,283 @@
+{
+  "source": "blogs/images/agent-authorization/agent-interact.png",
+  "sha256": "baadde48a376df78452f001ff02216d4f7330d2d49b1ac2d50875c4d7bee76b4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "HOTEL",
+      "confidence": 0.9414489030838012,
+      "box": [
+        [
+          1590.0,
+          166.0
+        ],
+        [
+          1651.0,
+          166.0
+        ],
+        [
+          1651.0,
+          185.0
+        ],
+        [
+          1590.0,
+          185.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ホテル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HOTEL"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.999673354625702,
+      "box": [
+        [
+          405.0,
+          214.0
+        ],
+        [
+          512.0,
+          212.0
+        ],
+        [
+          513.0,
+          255.0
+        ],
+        [
+          406.0,
+          257.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9994973540306091,
+      "box": [
+        [
+          1207.0,
+          214.0
+        ],
+        [
+          1312.0,
+          214.0
+        ],
+        [
+          1312.0,
+          256.0
+        ],
+        [
+          1207.0,
+          256.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Alice",
+      "confidence": 0.9967874050140381,
+      "box": [
+        [
+          95.0,
+          303.0
+        ],
+        [
+          166.0,
+          306.0
+        ],
+        [
+          164.0,
+          340.0
+        ],
+        [
+          93.0,
+          336.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "Alice",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Hotel",
+      "confidence": 0.9996740698814393,
+      "box": [
+        [
+          1581.0,
+          323.0
+        ],
+        [
+          1661.0,
+          323.0
+        ],
+        [
+          1661.0,
+          355.0
+        ],
+        [
+          1581.0,
+          355.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ホテル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1. Alice authorizes her agent to act on her behalf to request",
+      "confidence": 0.993124891500004,
+      "box": [
+        [
+          449.0,
+          407.0
+        ],
+        [
+          1279.0,
+          408.0
+        ],
+        [
+          1279.0,
+          444.0
+        ],
+        [
+          449.0,
+          443.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "1. Aliceは、自分に代わってホテルのエージェントへ照会する権限をエージェントに与える。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "information from the hotel agent, such as room details and",
+      "confidence": 0.9975075382610847,
+      "box": [
+        [
+          482.0,
+          449.0
+        ],
+        [
+          1310.0,
+          451.0
+        ],
+        [
+          1310.0,
+          487.0
+        ],
+        [
+          482.0,
+          486.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "照会するのは客室の詳細や",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "pricing.",
+      "confidence": 0.9998668432235718,
+      "box": [
+        [
+          482.0,
+          493.0
+        ],
+        [
+          592.0,
+          497.0
+        ],
+        [
+          591.0,
+          534.0
+        ],
+        [
+          481.0,
+          531.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "料金などの情報。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "2. Alice authorizes her agent to act on her behalf to book and",
+      "confidence": 0.9922019224013051,
+      "box": [
+        [
+          448.0,
+          538.0
+        ],
+        [
+          1302.0,
+          538.0
+        ],
+        [
+          1302.0,
+          574.0
+        ],
+        [
+          448.0,
+          574.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "2. Aliceは、自分に代わってホテルのエージェントを通じて客室を予約し、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "pay for a hotel room through the hotel agent.",
+      "confidence": 0.9958555632167392,
+      "box": [
+        [
+          484.0,
+          583.0
+        ],
+        [
+          1115.0,
+          583.0
+        ],
+        [
+          1115.0,
+          618.0
+        ],
+        [
+          484.0,
+          618.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "代金を支払う権限をエージェントに与える。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5532022999832407,
+    0.01502680778503418,
+    1.513946294784546
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "baadde48a376df78452f001ff02216d4f7330d2d49b1ac2d50875c4d7bee76b4"
+  }
+}

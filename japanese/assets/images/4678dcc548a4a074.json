@@ -1,0 +1,105 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/06-step4.png",
+  "sha256": "4678dcc548a4a0745da17d6d36123f355904ca901fc0bebcb1863d86e14eae10",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Step 4of5",
+      "confidence": 0.9548311829566956,
+      "box": [
+        [
+          35.0,
+          35.0
+        ],
+        [
+          148.0,
+          34.0
+        ],
+        [
+          148.0,
+          59.0
+        ],
+        [
+          36.0,
+          60.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第4段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4",
+        "5"
+      ],
+      "transcribed_source": "Step 4 of 5"
+    },
+    {
+      "source": "Private key (stays local)",
+      "confidence": 0.9996110653877258,
+      "box": [
+        [
+          309.0,
+          265.0
+        ],
+        [
+          638.0,
+          267.0
+        ],
+        [
+          637.0,
+          302.0
+        ],
+        [
+          309.0,
+          300.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "秘密鍵（この端末内だけに保持）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "The short string it produces",
+      "confidence": 0.9876793324947357,
+      "box": [
+        [
+          784.0,
+          266.0
+        ],
+        [
+          1166.0,
+          269.0
+        ],
+        [
+          1166.0,
+          300.0
+        ],
+        [
+          784.0,
+          297.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "署名で生成される短い文字列",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9068268000264652,
+    0.008022546768188477,
+    0.701946496963501
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Step 4of5": "Step 4 of 5"
+    },
+    "source_sha256": "4678dcc548a4a0745da17d6d36123f355904ca901fc0bebcb1863d86e14eae10"
+  }
+}

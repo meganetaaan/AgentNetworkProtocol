@@ -1,0 +1,1155 @@
+{
+  "source": "blogs/images/ai-native-network.png",
+  "sha256": "43e9f94dc1334dd25c9ec5481af0dcae806969da9eadd3940dc3236ca92d36ad",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Personal Agent",
+      "confidence": 0.9990407398768834,
+      "box": [
+        [
+          10.322580337524414,
+          24.384376525878906
+        ],
+        [
+          507.8709411621094,
+          30.48046875
+        ],
+        [
+          507.8709411621094,
+          99.56953430175781
+        ],
+        [
+          10.322580337524414,
+          93.47344207763672
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "個人用エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Search Agent",
+      "confidence": 0.9995538791020712,
+      "box": [
+        [
+          660.6451416015625,
+          20.3203125
+        ],
+        [
+          1088.0,
+          24.384376525878906
+        ],
+        [
+          1088.0,
+          93.47344207763672
+        ],
+        [
+          660.6451416015625,
+          89.40937805175781
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "検索エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service Agent",
+      "confidence": 0.9996719176952655,
+      "box": [
+        [
+          1432.774169921875,
+          26.416406631469727
+        ],
+        [
+          1895.2257080078125,
+          30.48046875
+        ],
+        [
+          1895.2257080078125,
+          99.56953430175781
+        ],
+        [
+          1432.774169921875,
+          95.5054702758789
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "サービスエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Data Network",
+      "confidence": 0.9952628678745694,
+      "box": [
+        [
+          2739.61279296875,
+          38.60859298706055
+        ],
+        [
+          3373.419189453125,
+          34.544532775878906
+        ],
+        [
+          3373.419189453125,
+          101.6015625
+        ],
+        [
+          2739.61279296875,
+          105.6656265258789
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェントデータネットワーク",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "JSON",
+      "confidence": 0.9801518768072128,
+      "box": [
+        [
+          3757.419189453125,
+          260.1000061035156
+        ],
+        [
+          3837.935302734375,
+          260.1000061035156
+        ],
+        [
+          3837.935302734375,
+          288.5484313964844
+        ],
+        [
+          3757.419189453125,
+          288.5484313964844
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JSON"
+      ]
+    },
+    {
+      "source": "N",
+      "confidence": 0.5592471957206726,
+      "box": [
+        [
+          1408.0,
+          369.8296813964844
+        ],
+        [
+          1488.51611328125,
+          369.8296813964844
+        ],
+        [
+          1488.51611328125,
+          440.9508056640625
+        ],
+        [
+          1408.0,
+          440.9508056640625
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Z",
+      "confidence": 0.639475405216217,
+      "box": [
+        [
+          1825.0322265625,
+          384.0539245605469
+        ],
+        [
+          1886.9676513671875,
+          384.0539245605469
+        ],
+        [
+          1886.9676513671875,
+          432.8226623535156
+        ],
+        [
+          1825.0322265625,
+          432.8226623535156
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "N"
+    },
+    {
+      "source": "JSON",
+      "confidence": 0.9720331430435181,
+      "box": [
+        [
+          2694.193359375,
+          473.4632873535156
+        ],
+        [
+          2778.838623046875,
+          473.4632873535156
+        ],
+        [
+          2778.838623046875,
+          501.9117431640625
+        ],
+        [
+          2694.193359375,
+          501.9117431640625
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JSON"
+      ]
+    },
+    {
+      "source": "NOSN",
+      "confidence": 0.6628107652068138,
+      "box": [
+        [
+          3022.451416015625,
+          471.4312744140625
+        ],
+        [
+          3100.903076171875,
+          471.4312744140625
+        ],
+        [
+          3100.903076171875,
+          499.87969970703125
+        ],
+        [
+          3022.451416015625,
+          499.87969970703125
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSN"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "NOSN",
+      "confidence": 0.6353654190897942,
+      "box": [
+        [
+          3383.741943359375,
+          473.4632873535156
+        ],
+        [
+          3470.451416015625,
+          473.4632873535156
+        ],
+        [
+          3470.451416015625,
+          508.0078125
+        ],
+        [
+          3383.741943359375,
+          508.0078125
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSN"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "N",
+      "confidence": 0.9752867221832275,
+      "box": [
+        [
+          1610.322509765625,
+          593.3531494140625
+        ],
+        [
+          1690.838623046875,
+          593.3531494140625
+        ],
+        [
+          1690.838623046875,
+          662.4421997070312
+        ],
+        [
+          1610.322509765625,
+          662.4421997070312
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "NOSE",
+      "confidence": 0.6206493712961674,
+      "box": [
+        [
+          3765.67724609375,
+          672.6023559570312
+        ],
+        [
+          3856.51611328125,
+          672.6023559570312
+        ],
+        [
+          3856.51611328125,
+          707.1469116210938
+        ],
+        [
+          3765.67724609375,
+          707.1469116210938
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSE"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "N",
+      "confidence": 0.729887843132019,
+      "box": [
+        [
+          1410.064453125,
+          812.8125
+        ],
+        [
+          1492.6451416015625,
+          812.8125
+        ],
+        [
+          1492.6451416015625,
+          879.8695678710938
+        ],
+        [
+          1410.064453125,
+          879.8695678710938
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "NOSr",
+      "confidence": 0.522394347935915,
+      "box": [
+        [
+          3736.774169921875,
+          900.1898803710938
+        ],
+        [
+          3846.193359375,
+          900.1898803710938
+        ],
+        [
+          3846.193359375,
+          934.734375
+        ],
+        [
+          3736.774169921875,
+          934.734375
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "N",
+      "confidence": 0.8716349601745605,
+      "box": [
+        [
+          1602.064453125,
+          1028.2078857421875
+        ],
+        [
+          1692.9031982421875,
+          1020.0797119140625
+        ],
+        [
+          1699.0966796875,
+          1099.3289794921875
+        ],
+        [
+          1608.258056640625,
+          1107.45703125
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "JSON",
+      "confidence": 0.9293185174465179,
+      "box": [
+        [
+          3005.935302734375,
+          1113.5531005859375
+        ],
+        [
+          3084.386962890625,
+          1113.5531005859375
+        ],
+        [
+          3084.386962890625,
+          1142.0015869140625
+        ],
+        [
+          3005.935302734375,
+          1142.0015869140625
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JSON"
+      ]
+    },
+    {
+      "source": "NOSE",
+      "confidence": 0.529095221310854,
+      "box": [
+        [
+          3371.354736328125,
+          1117.6171875
+        ],
+        [
+          3456.0,
+          1117.6171875
+        ],
+        [
+          3456.0,
+          1152.1617431640625
+        ],
+        [
+          3371.354736328125,
+          1152.1617431640625
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSE"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "MOS",
+      "confidence": 0.5024766474962234,
+      "box": [
+        [
+          3734.70947265625,
+          1121.6812744140625
+        ],
+        [
+          3827.61279296875,
+          1121.6812744140625
+        ],
+        [
+          3827.61279296875,
+          1156.225830078125
+        ],
+        [
+          3734.70947265625,
+          1156.225830078125
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MOS"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "N",
+      "confidence": 0.9214621186256409,
+      "box": [
+        [
+          1414.1934814453125,
+          1286.2757568359375
+        ],
+        [
+          1496.774169921875,
+          1286.2757568359375
+        ],
+        [
+          1496.774169921875,
+          1355.3648681640625
+        ],
+        [
+          1414.1934814453125,
+          1355.3648681640625
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "N",
+      "confidence": 0.5774042010307312,
+      "box": [
+        [
+          1829.1612548828125,
+          1288.307861328125
+        ],
+        [
+          1911.7418212890625,
+          1288.307861328125
+        ],
+        [
+          1911.7418212890625,
+          1357.3968505859375
+        ],
+        [
+          1829.1612548828125,
+          1357.3968505859375
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "NOSN",
+      "confidence": 0.609691921621561,
+      "box": [
+        [
+          3747.0966796875,
+          1316.7562255859375
+        ],
+        [
+          3835.870849609375,
+          1316.7562255859375
+        ],
+        [
+          3835.870849609375,
+          1351.30078125
+        ],
+        [
+          3747.0966796875,
+          1351.30078125
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSN"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "N",
+      "confidence": 0.9399713277816772,
+      "box": [
+        [
+          1639.2257080078125,
+          1509.7991943359375
+        ],
+        [
+          1719.741943359375,
+          1509.7991943359375
+        ],
+        [
+          1719.741943359375,
+          1580.92041015625
+        ],
+        [
+          1639.2257080078125,
+          1580.92041015625
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "NOSE",
+      "confidence": 0.6006551869213581,
+      "box": [
+        [
+          3734.70947265625,
+          1540.2796630859375
+        ],
+        [
+          3825.54833984375,
+          1540.2796630859375
+        ],
+        [
+          3825.54833984375,
+          1574.82421875
+        ],
+        [
+          3734.70947265625,
+          1574.82421875
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSE"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "N",
+      "confidence": 0.7209293842315674,
+      "box": [
+        [
+          1422.4515380859375,
+          1747.546875
+        ],
+        [
+          1505.0322265625,
+          1747.546875
+        ],
+        [
+          1505.0322265625,
+          1814.60400390625
+        ],
+        [
+          1422.4515380859375,
+          1814.60400390625
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Z",
+      "confidence": 0.5316170454025269,
+      "box": [
+        [
+          1839.4837646484375,
+          1747.546875
+        ],
+        [
+          1917.9354248046875,
+          1747.546875
+        ],
+        [
+          1917.9354248046875,
+          1814.60400390625
+        ],
+        [
+          1839.4837646484375,
+          1814.60400390625
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "N"
+    },
+    {
+      "source": "JSON",
+      "confidence": 0.9353794753551483,
+      "box": [
+        [
+          2308.12890625,
+          1749.5789794921875
+        ],
+        [
+          2390.709716796875,
+          1749.5789794921875
+        ],
+        [
+          2390.709716796875,
+          1778.02734375
+        ],
+        [
+          2308.12890625,
+          1778.02734375
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JSON"
+      ]
+    },
+    {
+      "source": "NOSN",
+      "confidence": 0.6680786088109016,
+      "box": [
+        [
+          2683.870849609375,
+          1757.70703125
+        ],
+        [
+          2758.193359375,
+          1757.70703125
+        ],
+        [
+          2758.193359375,
+          1786.155517578125
+        ],
+        [
+          2683.870849609375,
+          1786.155517578125
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSN"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "NOSE",
+      "confidence": 0.7411015257239342,
+      "box": [
+        [
+          3008.0,
+          1755.675048828125
+        ],
+        [
+          3078.193359375,
+          1755.675048828125
+        ],
+        [
+          3078.193359375,
+          1778.02734375
+        ],
+        [
+          3008.0,
+          1778.02734375
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSE"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "NOSE",
+      "confidence": 0.6579417660832405,
+      "box": [
+        [
+          3367.2255859375,
+          1757.70703125
+        ],
+        [
+          3453.935302734375,
+          1757.70703125
+        ],
+        [
+          3453.935302734375,
+          1792.2515869140625
+        ],
+        [
+          3367.2255859375,
+          1792.2515869140625
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NOSE"
+      ],
+      "transcribed_source": "JSON"
+    },
+    {
+      "source": "JSON",
+      "confidence": 0.9345905482769012,
+      "box": [
+        [
+          3749.1611328125,
+          1958.878173828125
+        ],
+        [
+          3842.064453125,
+          1958.878173828125
+        ],
+        [
+          3842.064453125,
+          1987.32666015625
+        ],
+        [
+          3749.1611328125,
+          1987.32666015625
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JSON"
+      ]
+    },
+    {
+      "source": "CA",
+      "confidence": 0.9977850019931793,
+      "box": [
+        [
+          2287.48388671875,
+          2194.59375
+        ],
+        [
+          2388.64501953125,
+          2194.59375
+        ],
+        [
+          2388.64501953125,
+          2265.71484375
+        ],
+        [
+          2287.48388671875,
+          2265.71484375
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "CA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "CA"
+      ]
+    },
+    {
+      "source": "PKI",
+      "confidence": 0.9891414841016134,
+      "box": [
+        [
+          1633.0322265625,
+          2216.946044921875
+        ],
+        [
+          1820.9031982421875,
+          2216.946044921875
+        ],
+        [
+          1820.9031982421875,
+          2334.803955078125
+        ],
+        [
+          1633.0322265625,
+          2334.803955078125
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "PKI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "PKI"
+      ]
+    },
+    {
+      "source": "SNA",
+      "confidence": 0.8236986398696899,
+      "box": [
+        [
+          536.774169921875,
+          2243.362548828125
+        ],
+        [
+          637.9354858398438,
+          2239.298583984375
+        ],
+        [
+          640.0,
+          2284.003173828125
+        ],
+        [
+          538.8386840820312,
+          2288.067138671875
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "DNS",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SNA"
+      ],
+      "transcribed_source": "DNS"
+    },
+    {
+      "source": "CDN",
+      "confidence": 0.9767085512479147,
+      "box": [
+        [
+          1054.9676513671875,
+          2255.5546875
+        ],
+        [
+          1259.3548583984375,
+          2271.81103515625
+        ],
+        [
+          1253.1612548828125,
+          2342.93212890625
+        ],
+        [
+          1048.774169921875,
+          2326.67578125
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "CDN",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "CDN"
+      ]
+    },
+    {
+      "source": "SSL",
+      "confidence": 0.9860725998878479,
+      "box": [
+        [
+          2851.0966796875,
+          2239.298583984375
+        ],
+        [
+          2997.67724609375,
+          2235.234375
+        ],
+        [
+          2999.741943359375,
+          2320.579833984375
+        ],
+        [
+          2853.1611328125,
+          2324.643798828125
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "SSL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SSL"
+      ]
+    },
+    {
+      "source": "E8",
+      "confidence": 0.8443411886692047,
+      "box": [
+        [
+          2277.1611328125,
+          2259.618896484375
+        ],
+        [
+          2440.258056640625,
+          2271.81103515625
+        ],
+        [
+          2434.064453125,
+          2361.220458984375
+        ],
+        [
+          2270.9677734375,
+          2349.028076171875
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": [
+        "E8"
+      ]
+    },
+    {
+      "source": "HTTP:II",
+      "confidence": 0.8843434538160052,
+      "box": [
+        [
+          3392.0,
+          2281.97119140625
+        ],
+        [
+          3557.1611328125,
+          2281.97119140625
+        ],
+        [
+          3557.1611328125,
+          2336.8359375
+        ],
+        [
+          3392.0,
+          2336.8359375
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "HTTP://",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP",
+        "II"
+      ],
+      "transcribed_source": "HTTP://"
+    },
+    {
+      "source": "Web Infrastructure",
+      "confidence": 0.9980722433990903,
+      "box": [
+        [
+          1694.9676513671875,
+          2507.526611328125
+        ],
+        [
+          2330.838623046875,
+          2513.622802734375
+        ],
+        [
+          2330.838623046875,
+          2574.583740234375
+        ],
+        [
+          1694.9676513671875,
+          2568.487548828125
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "Webの基盤",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "N",
+      "location": "service column right node near y850",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L039",
+      "japanese": "N（サービスノードのロゴ）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON",
+      "location": "top data group left document near x2350 y480",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L040",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON",
+      "location": "top data group right document near x3800 y480",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L041",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON",
+      "location": "middle data group left document near x2350 y1130",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L042",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON",
+      "location": "middle data group second document near x2740 y1130",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L043",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON",
+      "location": "bottom data group right document near x3800 y1770",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L044",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.7617306999745779,
+    0.05405306816101074,
+    1.7537858486175537
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Z": "N",
+      "NOSN": "JSON",
+      "NOSE": "JSON",
+      "NOSr": "JSON",
+      "MOS": "JSON",
+      "SNA": "DNS",
+      "HTTP:II": "HTTP://"
+    },
+    "additional_labels": [
+      {
+        "source": "N",
+        "location": "service column right node near y850"
+      },
+      {
+        "source": "JSON",
+        "location": "top data group left document near x2350 y480"
+      },
+      {
+        "source": "JSON",
+        "location": "top data group right document near x3800 y480"
+      },
+      {
+        "source": "JSON",
+        "location": "middle data group left document near x2350 y1130"
+      },
+      {
+        "source": "JSON",
+        "location": "middle data group second document near x2740 y1130"
+      },
+      {
+        "source": "JSON",
+        "location": "bottom data group right document near x3800 y1770"
+      }
+    ],
+    "source_note": "図内のJSON文書21個とNロゴ11個を数え、OCR欠落分を手動追記。API・動画・画像アイコンの絵には文字はない。",
+    "false_positive_labels": [
+      "E8"
+    ],
+    "source_sha256": "43e9f94dc1334dd25c9ec5481af0dcae806969da9eadd3940dc3236ca92d36ad"
+  }
+}

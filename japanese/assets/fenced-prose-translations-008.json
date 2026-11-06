@@ -1,0 +1,333 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    1600,
+    1626
+  ],
+  "units": [
+    {
+      "original": "CollectionPage：AD 的 URL 列表（可通过 next 分页）",
+      "translation": "CollectionPage：ADのURL一覧（nextでページ分割可能）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "被动发现",
+      "translation": "受動的な発見",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "调用注册接口，提交自己的 AD URL",
+      "translation": "登録インターフェースを呼び出し、自身のAD URLを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "抓取 AD 并建立索引",
+      "translation": "ADを取得して索引を作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "检索需要的能力",
+      "translation": "必要な機能を検索",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回匹配的 AD URL",
+      "translation": "一致するAD URLを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "读取 AD，找到 MetaProtocolInterface",
+      "translation": "ADを読み、MetaProtocolInterfaceを特定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:554-564/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "当前支持的接口、Profile、安全模式与 Schema",
+      "translation": "現在対応しているインターフェース、Profile、セキュリティモード、Schema",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:554-564/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "anp.negotiate：提出交互方案与约束",
+      "translation": "anp.negotiate：やり取りの計画と制約を提案",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:554-564/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接受，或给出替代方案",
+      "translation": "受け入れるか、代案を提示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:554-564/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "按协商结果进行业务交互",
+      "translation": "交渉結果に従って業務上のやり取りを実施",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:554-564/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "采购智能体",
+      "translation": "調達エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "供应商智能体",
+      "translation": "供給者エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "采购负责人",
+      "translation": "調達責任者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "检索符合条件的供应商",
+      "translation": "条件に合う供給者を検索",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "若干供应商的 AD URL",
+      "translation": "複数の供給者のAD URL",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "读取 AD 与相关产品的 Information",
+      "translation": "ADと関連商品のInformationを読み取る",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "在本地结合预算与内部标准比较方案",
+      "translation": "予算と社内基準を組み合わせ、ローカルで案を比較",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息（端到端加密）：询问交期与定制条件",
+      "translation": "メッセージ（エンドツーエンド暗号化）：納期とカスタマイズ条件を問い合わせる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息：报价与交付方案",
+      "translation": "メッセージ：見積もりと納品計画",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "请求批准订单",
+      "translation": "注文の承認を要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "以 DID 认证调用订购接口",
+      "translation": "DID認証付きで発注インターフェースを呼び出す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "请求出示代理凭证",
+      "translation": "委任資格情報の提示を要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "出示企业签发的采购角色凭证",
+      "translation": "企業が発行した調達役割の資格情報を提示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "订单确认",
+      "translation": "注文確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "通过支付协议完成付款",
+      "translation": "決済プロトコルを通じて支払いを完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息与附件：进度与发货单据",
+      "translation": "メッセージと添付ファイル：進捗と発送書類",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:20",
+          "language": "mermaid"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/03-identity.png",
+  "sha256": "6d03f5638fdf59e20e5958ab119be7496295299cbc4444063b26b9c7c9160a8f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "O",
+      "confidence": 0.8337769508361816,
+      "box": [
+        [
+          255.0,
+          135.0
+        ],
+        [
+          331.0,
+          139.0
+        ],
+        [
+          327.0,
+          212.0
+        ],
+        [
+          252.0,
+          209.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "一",
+      "confidence": 0.6943798065185547,
+      "box": [
+        [
+          343.0,
+          148.0
+        ],
+        [
+          422.0,
+          153.0
+        ],
+        [
+          418.0,
+          212.0
+        ],
+        [
+          339.0,
+          207.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "An ANP identity",
+      "confidence": 0.9451821247736613,
+      "box": [
+        [
+          236.0,
+          273.0
+        ],
+        [
+          451.0,
+          277.0
+        ],
+        [
+          450.0,
+          307.0
+        ],
+        [
+          235.0,
+          303.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "1つのANPのID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Also an addressyou can open",
+      "confidence": 0.9484571229528498,
+      "box": [
+        [
+          841.0,
+          275.0
+        ],
+        [
+          1251.0,
+          281.0
+        ],
+        [
+          1250.0,
+          309.0
+        ],
+        [
+          840.0,
+          302.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "アクセスして開けるアドレスでもある",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Also an address you can open"
+    },
+    {
+      "source": "gibberish at first glance, but five segments",
+      "confidence": 0.9789435118436813,
+      "box": [
+        [
+          100.0,
+          315.0
+        ],
+        [
+          589.0,
+          315.0
+        ],
+        [
+          589.0,
+          343.0
+        ],
+        [
+          100.0,
+          343.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "一見するとでたらめな文字列だが、5つの部分に分かれている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5968895999831147,
+    0.007500648498535156,
+    0.9871325492858887
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "false_positive_labels": [
+      "O",
+      "一"
+    ],
+    "corrections": {
+      "Also an addressyou can open": "Also an address you can open"
+    },
+    "source_sha256": "6d03f5638fdf59e20e5958ab119be7496295299cbc4444063b26b9c7c9160a8f"
+  }
+}

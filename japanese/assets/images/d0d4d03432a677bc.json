@@ -1,0 +1,453 @@
+{
+  "source": "chinese/思考&问题/pic/agent-find.png",
+  "sha256": "d0d4d03432a677bc7405604d42f16168238ad409c19e5b97c075b7dc12bfa344",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "智能体发现",
+      "confidence": 0.9999054670333862,
+      "box": [
+        [
+          817.0,
+          74.0
+        ],
+        [
+          985.0,
+          74.0
+        ],
+        [
+          985.0,
+          109.0
+        ],
+        [
+          817.0,
+          109.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェント発見",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务",
+      "confidence": 0.9999527931213379,
+      "box": [
+        [
+          865.0,
+          118.0
+        ],
+        [
+          937.0,
+          118.0
+        ],
+        [
+          937.0,
+          158.0
+        ],
+        [
+          865.0,
+          158.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体注册",
+      "confidence": 0.9998517990112304,
+      "box": [
+        [
+          1113.0,
+          176.0
+        ],
+        [
+          1264.0,
+          176.0
+        ],
+        [
+          1264.0,
+          212.0
+        ],
+        [
+          1113.0,
+          212.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェントの登録",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "查询智能体",
+      "confidence": 0.9999313116073608,
+      "box": [
+        [
+          486.0,
+          190.0
+        ],
+        [
+          639.0,
+          190.0
+        ],
+        [
+          639.0,
+          222.0
+        ],
+        [
+          486.0,
+          222.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェントを検索",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体描述文档：",
+      "confidence": 0.9756114780902863,
+      "box": [
+        [
+          667.0,
+          249.0
+        ],
+        [
+          888.0,
+          252.0
+        ],
+        [
+          887.0,
+          284.0
+        ],
+        [
+          666.0,
+          281.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "エージェント記述ドキュメント：",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体服务",
+      "confidence": 0.999726164340973,
+      "box": [
+        [
+          1277.0,
+          259.0
+        ],
+        [
+          1444.0,
+          259.0
+        ],
+        [
+          1444.0,
+          295.0
+        ],
+        [
+          1277.0,
+          295.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "エージェントのサービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服装店",
+      "confidence": 0.9998250206311544,
+      "box": [
+        [
+          1698.0,
+          259.0
+        ],
+        [
+          1793.0,
+          259.0
+        ],
+        [
+          1793.0,
+          297.0
+        ],
+        [
+          1698.0,
+          297.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "衣料品店",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID、能力、协议",
+      "confidence": 0.95961109134886,
+      "box": [
+        [
+          663.0,
+          277.0
+        ],
+        [
+          897.0,
+          280.0
+        ],
+        [
+          897.0,
+          316.0
+        ],
+        [
+          663.0,
+          312.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "DID、能力、プロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "智能体服务",
+      "confidence": 0.9997308373451232,
+      "box": [
+        [
+          1277.0,
+          366.0
+        ],
+        [
+          1445.0,
+          366.0
+        ],
+        [
+          1445.0,
+          401.0
+        ],
+        [
+          1277.0,
+          401.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "エージェントのサービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "饭店",
+      "confidence": 0.9998117387294769,
+      "box": [
+        [
+          1701.0,
+          362.0
+        ],
+        [
+          1770.0,
+          365.0
+        ],
+        [
+          1768.0,
+          405.0
+        ],
+        [
+          1699.0,
+          401.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "飲食店",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体协议交互",
+      "confidence": 0.9999500513076782,
+      "box": [
+        [
+          828.0,
+          396.0
+        ],
+        [
+          1034.0,
+          396.0
+        ],
+        [
+          1034.0,
+          428.0
+        ],
+        [
+          828.0,
+          428.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "エージェントのプロトコルによるやり取り",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能助手",
+      "confidence": 0.998922199010849,
+      "box": [
+        [
+          342.0,
+          419.0
+        ],
+        [
+          478.0,
+          419.0
+        ],
+        [
+          478.0,
+          456.0
+        ],
+        [
+          342.0,
+          456.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "インテリジェントアシスタント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体服务",
+      "confidence": 0.9998381972312927,
+      "box": [
+        [
+          1275.0,
+          471.0
+        ],
+        [
+          1444.0,
+          471.0
+        ],
+        [
+          1444.0,
+          510.0
+        ],
+        [
+          1275.0,
+          510.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "エージェントのサービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "酒店",
+      "confidence": 0.9998322427272797,
+      "box": [
+        [
+          1700.0,
+          471.0
+        ],
+        [
+          1768.0,
+          471.0
+        ],
+        [
+          1768.0,
+          510.0
+        ],
+        [
+          1700.0,
+          510.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "ホテル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体服务",
+      "confidence": 0.9998047113418579,
+      "box": [
+        [
+          1276.0,
+          578.0
+        ],
+        [
+          1446.0,
+          578.0
+        ],
+        [
+          1446.0,
+          616.0
+        ],
+        [
+          1276.0,
+          616.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "エージェントのサービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "出租车",
+      "confidence": 0.9998617966969808,
+      "box": [
+        [
+          1703.0,
+          577.0
+        ],
+        [
+          1799.0,
+          580.0
+        ],
+        [
+          1798.0,
+          617.0
+        ],
+        [
+          1703.0,
+          615.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "タクシー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "……",
+      "location": "below the four service boxes",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L017",
+      "japanese": "……（その他）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.608859800035134,
+    0.023519039154052734,
+    0.6148533821105957
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "additional_labels": [
+      {
+        "source": "……",
+        "location": "below the four service boxes"
+      }
+    ],
+    "source_sha256": "d0d4d03432a677bc7405604d42f16168238ad409c19e5b97c075b7dc12bfa344"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page24.jpg",
+  "sha256": "18362e8314973400ba7fda2a973761233ad71f3c94d4fe648465a3099212f138",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Q&A",
+      "confidence": 0.9761234720547994,
+      "box": [
+        [
+          33.67741775512695,
+          41.657142639160156
+        ],
+        [
+          226.45159912109375,
+          38.18571472167969
+        ],
+        [
+          227.61289978027344,
+          114.55714416503906
+        ],
+        [
+          34.838706970214844,
+          118.02857208251953
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9734750588734945,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          86.78571319580078
+        ],
+        [
+          2154.193603515625,
+          86.78571319580078
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Question & Answer",
+      "confidence": 0.9928345049128813,
+      "box": [
+        [
+          866.3225708007812,
+          506.8285827636719
+        ],
+        [
+          1445.806396484375,
+          503.3571472167969
+        ],
+        [
+          1445.806396484375,
+          571.6286010742188
+        ],
+        [
+          866.3225708007812,
+          575.1000366210938
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Q&A\n\n\n\n\n\n                          Question & Answer",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L004",
+      "japanese": "Q&A\n\n質疑応答。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4451765000121668,
+    0.005005359649658203,
+    0.2823066711425781
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 24,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-24",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 0.2411458333333333,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 24,
+    "manual_label_translations": {
+      "Q&A\n\n\n\n\n\n                          Question & Answer": "Q&A\n\n質疑応答。"
+    },
+    "additional_labels": [
+      {
+        "source": "Q&A\n\n\n\n\n\n                          Question & Answer",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Q&A",
+      "ANP",
+      "Question & Answer"
+    ],
+    "source_sha256": "18362e8314973400ba7fda2a973761233ad71f3c94d4fe648465a3099212f138"
+  }
+}

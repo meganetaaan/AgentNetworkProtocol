@@ -1,0 +1,1115 @@
+{
+  "source": "blogs/images/ap2/anp-vc-hash.png",
+  "sha256": "307fd2d023ec58dcecec654ad0b1ac720e5a1b6e781c09d095614caa18fe6781",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ANP协议-理想状态下的VC哈希链关系",
+      "confidence": 0.987084056201734,
+      "box": [
+        [
+          242.0,
+          10.0
+        ],
+        [
+          658.0,
+          10.0
+        ],
+        [
+          658.0,
+          34.0
+        ],
+        [
+          242.0,
+          34.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ANPプロトコル：理想的な状態でのVCハッシュチェーンの関係",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "订单提议凭证",
+      "confidence": 0.9991597731908163,
+      "box": [
+        [
+          102.0,
+          95.0
+        ],
+        [
+          200.0,
+          95.0
+        ],
+        [
+          200.0,
+          113.0
+        ],
+        [
+          102.0,
+          113.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "注文提案の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含哈希",
+      "confidence": 0.9994042217731476,
+      "box": [
+        [
+          280.0,
+          100.0
+        ],
+        [
+          322.0,
+          100.0
+        ],
+        [
+          322.0,
+          114.0
+        ],
+        [
+          280.0,
+          114.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "预订确认凭证",
+      "confidence": 0.9942793349424998,
+      "box": [
+        [
+          401.0,
+          95.0
+        ],
+        [
+          500.0,
+          93.0
+        ],
+        [
+          500.0,
+          113.0
+        ],
+        [
+          401.0,
+          115.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "予約確認の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含哈希",
+      "confidence": 0.9994031935930252,
+      "box": [
+        [
+          580.0,
+          100.0
+        ],
+        [
+          621.0,
+          100.0
+        ],
+        [
+          621.0,
+          114.0
+        ],
+        [
+          580.0,
+          114.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付请求凭证",
+      "confidence": 0.9998495876789093,
+      "box": [
+        [
+          701.0,
+          94.0
+        ],
+        [
+          798.0,
+          94.0
+        ],
+        [
+          798.0,
+          113.0
+        ],
+        [
+          701.0,
+          113.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "支払い要求の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "OrderOfferCredential",
+      "confidence": 0.9694172471761704,
+      "box": [
+        [
+          93.0,
+          123.0
+        ],
+        [
+          208.0,
+          123.0
+        ],
+        [
+          208.0,
+          139.0
+        ],
+        [
+          93.0,
+          139.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "OrderOfferCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "OrderOfferCredential"
+      ]
+    },
+    {
+      "source": "BookingConfirmationCredential",
+      "confidence": 0.9970780117758389,
+      "box": [
+        [
+          366.0,
+          124.0
+        ],
+        [
+          536.0,
+          124.0
+        ],
+        [
+          536.0,
+          139.0
+        ],
+        [
+          366.0,
+          139.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "BookingConfirmationCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "BookingConfirmationCredential"
+      ]
+    },
+    {
+      "source": "PaymentRequestCredential",
+      "confidence": 0.9977509851257006,
+      "box": [
+        [
+          676.0,
+          124.0
+        ],
+        [
+          825.0,
+          124.0
+        ],
+        [
+          825.0,
+          139.0
+        ],
+        [
+          676.0,
+          139.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "PaymentRequestCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "PaymentRequestCredential"
+      ]
+    },
+    {
+      "source": "发行方：酒店智能体",
+      "confidence": 0.9969310363133749,
+      "box": [
+        [
+          106.0,
+          139.0
+        ],
+        [
+          195.0,
+          139.0
+        ],
+        [
+          195.0,
+          155.0
+        ],
+        [
+          106.0,
+          155.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "発行者：ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发行方：用户智能体",
+      "confidence": 0.9977002938588461,
+      "box": [
+        [
+          407.0,
+          141.0
+        ],
+        [
+          494.0,
+          141.0
+        ],
+        [
+          494.0,
+          154.0
+        ],
+        [
+          407.0,
+          154.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "発行者：ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发行方：酒店智能体",
+      "confidence": 0.9973022871547275,
+      "box": [
+        [
+          707.0,
+          140.0
+        ],
+        [
+          794.0,
+          140.0
+        ],
+        [
+          794.0,
+          154.0
+        ],
+        [
+          707.0,
+          154.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "発行者：ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "包含哈希",
+      "confidence": 0.9987481534481049,
+      "box": [
+        [
+          746.0,
+          169.0
+        ],
+        [
+          792.0,
+          168.0
+        ],
+        [
+          793.0,
+          184.0
+        ],
+        [
+          747.0,
+          186.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "预订完成凭证",
+      "confidence": 0.9978889226913452,
+      "box": [
+        [
+          107.0,
+          211.0
+        ],
+        [
+          194.0,
+          211.0
+        ],
+        [
+          194.0,
+          230.0
+        ],
+        [
+          107.0,
+          230.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "予約完了の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含哈希（可选）",
+      "confidence": 0.9718302339315414,
+      "box": [
+        [
+          265.0,
+          219.0
+        ],
+        [
+          335.0,
+          219.0
+        ],
+        [
+          335.0,
+          233.0
+        ],
+        [
+          265.0,
+          233.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "ハッシュを含む（任意）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "资金托管凭证",
+      "confidence": 0.9998578329881033,
+      "box": [
+        [
+          401.0,
+          214.0
+        ],
+        [
+          500.0,
+          214.0
+        ],
+        [
+          500.0,
+          234.0
+        ],
+        [
+          401.0,
+          234.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "資金預託の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含哈希",
+      "confidence": 0.9995421916246414,
+      "box": [
+        [
+          579.0,
+          219.0
+        ],
+        [
+          621.0,
+          219.0
+        ],
+        [
+          621.0,
+          233.0
+        ],
+        [
+          579.0,
+          233.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付指令凭证",
+      "confidence": 0.999819686015447,
+      "box": [
+        [
+          700.0,
+          213.0
+        ],
+        [
+          799.0,
+          213.0
+        ],
+        [
+          799.0,
+          234.0
+        ],
+        [
+          700.0,
+          234.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "支払い指示の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(可选）",
+      "confidence": 0.8764821588993073,
+      "box": [
+        [
+          132.0,
+          233.0
+        ],
+        [
+          169.0,
+          233.0
+        ],
+        [
+          169.0,
+          251.0
+        ],
+        [
+          132.0,
+          251.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "（任意）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "FundsEscrowedCredential",
+      "confidence": 0.9914794719737509,
+      "box": [
+        [
+          378.0,
+          242.0
+        ],
+        [
+          523.0,
+          243.0
+        ],
+        [
+          523.0,
+          259.0
+        ],
+        [
+          378.0,
+          258.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "FundsEscrowedCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "FundsEscrowedCredential"
+      ]
+    },
+    {
+      "source": "PaymentlnstructionCredential",
+      "confidence": 0.9711835512093135,
+      "box": [
+        [
+          670.0,
+          244.0
+        ],
+        [
+          831.0,
+          244.0
+        ],
+        [
+          831.0,
+          260.0
+        ],
+        [
+          670.0,
+          260.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "PaymentInstructionCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "PaymentlnstructionCredential"
+      ],
+      "transcribed_source": "PaymentInstructionCredential"
+    },
+    {
+      "source": "BookingFinalizedCredential",
+      "confidence": 0.9886290706121005,
+      "box": [
+        [
+          83.0,
+          255.0
+        ],
+        [
+          218.0,
+          255.0
+        ],
+        [
+          218.0,
+          268.0
+        ],
+        [
+          83.0,
+          268.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "BookingFinalizedCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "BookingFinalizedCredential"
+      ]
+    },
+    {
+      "source": "发行方：支付智能体",
+      "confidence": 0.9984130130873786,
+      "box": [
+        [
+          407.0,
+          260.0
+        ],
+        [
+          494.0,
+          260.0
+        ],
+        [
+          494.0,
+          274.0
+        ],
+        [
+          407.0,
+          274.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "発行者：決済エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发行方：支付智能体",
+      "confidence": 0.9982201457023621,
+      "box": [
+        [
+          707.0,
+          260.0
+        ],
+        [
+          793.0,
+          260.0
+        ],
+        [
+          793.0,
+          274.0
+        ],
+        [
+          707.0,
+          274.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "発行者：決済エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发行方：酒店智能体",
+      "confidence": 0.9319825503561232,
+      "box": [
+        [
+          107.0,
+          272.0
+        ],
+        [
+          195.0,
+          272.0
+        ],
+        [
+          195.0,
+          283.0
+        ],
+        [
+          107.0,
+          283.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "発行者：ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "包含哈希",
+      "confidence": 0.9988314062356949,
+      "box": [
+        [
+          447.0,
+          289.0
+        ],
+        [
+          492.0,
+          289.0
+        ],
+        [
+          492.0,
+          305.0
+        ],
+        [
+          447.0,
+          305.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含哈希（可选路径）",
+      "confidence": 0.9775734961032867,
+      "box": [
+        [
+          187.0,
+          330.0
+        ],
+        [
+          275.0,
+          330.0
+        ],
+        [
+          275.0,
+          344.0
+        ],
+        [
+          187.0,
+          344.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "ハッシュを含む（任意の経路）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务完成确认凭证",
+      "confidence": 0.9993935003876686,
+      "box": [
+        [
+          386.0,
+          335.0
+        ],
+        [
+          514.0,
+          335.0
+        ],
+        [
+          514.0,
+          353.0
+        ],
+        [
+          386.0,
+          353.0
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "サービス完了確認の証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含哈希",
+      "confidence": 0.9994768351316452,
+      "box": [
+        [
+          579.0,
+          340.0
+        ],
+        [
+          621.0,
+          340.0
+        ],
+        [
+          621.0,
+          354.0
+        ],
+        [
+          579.0,
+          354.0
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "资金释放凭证",
+      "confidence": 0.9998093148072561,
+      "box": [
+        [
+          701.0,
+          334.0
+        ],
+        [
+          800.0,
+          334.0
+        ],
+        [
+          800.0,
+          355.0
+        ],
+        [
+          701.0,
+          355.0
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "資金払い出しの証明書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ServiceCompletionConfirmation",
+      "confidence": 0.9974175198324795,
+      "box": [
+        [
+          372.0,
+          365.0
+        ],
+        [
+          529.0,
+          365.0
+        ],
+        [
+          529.0,
+          378.0
+        ],
+        [
+          372.0,
+          378.0
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "ServiceCompletionConfirmation",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ServiceCompletionConfirmation"
+      ]
+    },
+    {
+      "source": "FundsReleasedCredential",
+      "confidence": 0.9983733996101047,
+      "box": [
+        [
+          680.0,
+          364.0
+        ],
+        [
+          820.0,
+          364.0
+        ],
+        [
+          820.0,
+          378.0
+        ],
+        [
+          680.0,
+          378.0
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "FundsReleasedCredential",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "FundsReleasedCredential"
+      ]
+    },
+    {
+      "source": "发行方：用户智能体",
+      "confidence": 0.9978442986806234,
+      "box": [
+        [
+          407.0,
+          385.0
+        ],
+        [
+          494.0,
+          385.0
+        ],
+        [
+          494.0,
+          399.0
+        ],
+        [
+          407.0,
+          399.0
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "発行者：ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发行方：支付智能体",
+      "confidence": 0.9985360039605035,
+      "box": [
+        [
+          707.0,
+          380.0
+        ],
+        [
+          794.0,
+          380.0
+        ],
+        [
+          794.0,
+          394.0
+        ],
+        [
+          707.0,
+          394.0
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "発行者：決済エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "酒店智能体发行",
+      "confidence": 0.9995089088167463,
+      "box": [
+        [
+          104.0,
+          429.0
+        ],
+        [
+          189.0,
+          429.0
+        ],
+        [
+          189.0,
+          445.0
+        ],
+        [
+          104.0,
+          445.0
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "ホテルエージェントが発行",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户智能体发行",
+      "confidence": 0.9996816771371024,
+      "box": [
+        [
+          264.0,
+          429.0
+        ],
+        [
+          351.0,
+          429.0
+        ],
+        [
+          351.0,
+          446.0
+        ],
+        [
+          264.0,
+          446.0
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "ユーザーエージェントが発行",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付智能体发行",
+      "confidence": 0.9998516525541034,
+      "box": [
+        [
+          423.0,
+          430.0
+        ],
+        [
+          510.0,
+          430.0
+        ],
+        [
+          510.0,
+          446.0
+        ],
+        [
+          423.0,
+          446.0
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "決済エージェントが発行",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "必须哈希引用",
+      "confidence": 0.9992920160293579,
+      "box": [
+        [
+          600.0,
+          434.0
+        ],
+        [
+          674.0,
+          434.0
+        ],
+        [
+          674.0,
+          448.0
+        ],
+        [
+          600.0,
+          448.0
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "必須のハッシュ参照",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选哈希引用",
+      "confidence": 0.9998852610588074,
+      "box": [
+        [
+          750.0,
+          433.0
+        ],
+        [
+          823.0,
+          433.0
+        ],
+        [
+          823.0,
+          449.0
+        ],
+        [
+          750.0,
+          449.0
+        ]
+      ],
+      "label_id": "L039",
+      "japanese": "任意のハッシュ参照",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "公众号：ANP开源技术Community",
+      "confidence": 0.9529921859502792,
+      "box": [
+        [
+          485.0,
+          446.0
+        ],
+        [
+          871.0,
+          454.0
+        ],
+        [
+          870.0,
+          478.0
+        ],
+        [
+          484.0,
+          471.0
+        ]
+      ],
+      "label_id": "L040",
+      "japanese": "WeChat公式アカウント：ANP开源技术Community",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "图4：ANP协议中的VC哈希链-每个凭证通过包含前一",
+      "confidence": 0.9683548166201665,
+      "box": [
+        [
+          202.0,
+          469.0
+        ],
+        [
+          479.0,
+          469.0
+        ],
+        [
+          479.0,
+          482.0
+        ],
+        [
+          202.0,
+          482.0
+        ]
+      ],
+      "label_id": "L041",
+      "japanese": "図4：ANPプロトコル内のVCハッシュチェーン。各証明書が直前の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4"
+      ]
+    },
+    {
+      "source": "个凭证的哈希值形成不可篡改的链式结构",
+      "confidence": 0.9643907133075926,
+      "box": [
+        [
+          479.0,
+          469.0
+        ],
+        [
+          702.0,
+          469.0
+        ],
+        [
+          702.0,
+          482.0
+        ],
+        [
+          479.0,
+          482.0
+        ]
+      ],
+      "label_id": "L042",
+      "japanese": "証明書のハッシュ値を含むことで、改ざんできない連鎖構造を作る",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.2976193999638781,
+    0.05302143096923828,
+    2.0363543033599854
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "PaymentlnstructionCredential": "PaymentInstructionCredential"
+    },
+    "source_sha256": "307fd2d023ec58dcecec654ad0b1ac720e5a1b6e781c09d095614caa18fe6781"
+  }
+}

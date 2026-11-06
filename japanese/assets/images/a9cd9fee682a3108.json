@@ -1,0 +1,444 @@
+{
+  "source": "images/anp-human-agent-authorization-en.svg",
+  "sha256": "a9cd9fee682a3108941273f6b2bf48e266f9a6ffaa38e3d403e96b093fb3beb4",
+  "method": "svg-xml",
+  "status": "text-extracted-malformed-xml-recovered",
+  "labels": [
+    {
+      "source": "ANP Authorization Mechanism: Agent Autonomy vs. Human Control",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "40",
+      "label_id": "L001",
+      "japanese": "ANPの認可の仕組み: エージェントの自律性と人間の制御の対比",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Autonomous Agent Operations",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "80",
+      "label_id": "L002",
+      "japanese": "エージェントによる自律的な操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Human-Authorized Critical Operations",
+      "element": "text",
+      "id": null,
+      "x": "1200",
+      "y": "80",
+      "label_id": "L003",
+      "japanese": "人間が認可する重要な操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "LOW RISK",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-2",
+      "label_id": "L004",
+      "japanese": "低リスク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "No Auth Needed",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "10",
+      "label_id": "L005",
+      "japanese": "認可不要",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HIGH RISK",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-2",
+      "label_id": "L006",
+      "japanese": "高リスク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Bio Auth Required",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "10",
+      "label_id": "L007",
+      "japanese": "生体認証が必要",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L008",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L009",
+      "japanese": "ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Autonomous Mode)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "10",
+      "label_id": "L010",
+      "japanese": "（自律モード）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Hotel Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L011",
+      "japanese": "ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Information Service)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "10",
+      "label_id": "L012",
+      "japanese": "（情報サービス）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Low-Risk: Query Hotel Info",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L013",
+      "japanese": "低リスク: ホテル情報の照会",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent acts autonomously",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "12",
+      "label_id": "L014",
+      "japanese": "エージェントが自律的に動作する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L015",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L016",
+      "japanese": "ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Requesting Auth)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "10",
+      "label_id": "L017",
+      "japanese": "（認可の要求中）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Hotel Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L018",
+      "japanese": "ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Payment Service)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "10",
+      "label_id": "L019",
+      "japanese": "（決済サービス）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "High-Risk: Make Payment",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L020",
+      "japanese": "高リスク: 支払いの実行",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Requires biometric auth",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "12",
+      "label_id": "L021",
+      "japanese": "生体認証が必要",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L022",
+      "japanese": "1",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "User grants general permission",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L023",
+      "japanese": "ユーザーが包括的な許可を与える",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L024",
+      "japanese": "2",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Agent acts autonomously",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L025",
+      "japanese": "エージェントが自律的に動作する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "3",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L026",
+      "japanese": "3",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Service completed automatically",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L027",
+      "japanese": "サービスが自動的に完了する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L028",
+      "japanese": "1",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Agent detects critical operation",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L029",
+      "japanese": "エージェントが重要な操作を検出する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L030",
+      "japanese": "2",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Request biometric authentication",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L031",
+      "japanese": "生体認証を要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "3",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L032",
+      "japanese": "3",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "User authenticates & authorizes",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L033",
+      "japanese": "ユーザーが本人確認を行って認可する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "4",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L034",
+      "japanese": "4",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Agent executes with human signature",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "5",
+      "label_id": "L035",
+      "japanese": "エージェントが人間の署名を使って実行する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Authorization Model Difference",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-15",
+      "label_id": "L036",
+      "japanese": "認可モデルの違い",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Low-Risk: Agent autonomous action",
+      "element": "text",
+      "id": null,
+      "x": "-180",
+      "y": "5",
+      "label_id": "L037",
+      "japanese": "• 低リスク: エージェントの自律的な動作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• High-Risk: Biometric authentication required",
+      "element": "text",
+      "id": null,
+      "x": "-180",
+      "y": "25",
+      "label_id": "L038",
+      "japanese": "• 高リスク: 生体認証が必要",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Biometric Authentication",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-35",
+      "label_id": "L039",
+      "japanese": "生体認証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Fingerprint scan",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-15",
+      "label_id": "L040",
+      "japanese": "• 指紋の読み取り",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Face recognition",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L041",
+      "japanese": "• 顔認証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Voice verification",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "15",
+      "label_id": "L042",
+      "japanese": "• 声による本人確認",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Required for humanAuthorization",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "35",
+      "label_id": "L043",
+      "japanese": "humanAuthorizationで必要",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained",
+  "parse_recovery": {
+    "original_xml_error": "not well-formed (invalid token): line 175, column 78",
+    "operation": "bare-ampersands-escaped-in-memory-only"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "method": "Exact text reuse from agent-reviewed code/SVG translations; all 45 unique reused phrases read and compared. Original code remains unchanged.",
+  "reviewed_unique_phrases": 45,
+  "overrides": [
+    {
+      "original": "版权声明",
+      "translation": "著作権表示",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Luckin Coffee",
+      "translation": "Luckin Coffee（ブランド名。原表記を保持）",
+      "status": "agent-reviewed"
+    }
+  ]
+}

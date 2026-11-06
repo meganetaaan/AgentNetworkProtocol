@@ -1,0 +1,218 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-pass.png",
+  "sha256": "d518bef12003c23a3d341716970696a7ad390035314fb8c71151512d4893078d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "The request enters from the left and moves right, gate by gate",
+      "confidence": 0.9916893397608111,
+      "box": [
+        [
+          36.0,
+          34.0
+        ],
+        [
+          691.0,
+          35.0
+        ],
+        [
+          691.0,
+          59.0
+        ],
+        [
+          36.0,
+          58.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "リクエストは左から入り、各検査を通って右に進む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "0=",
+      "confidence": 0.5987749695777893,
+      "box": [
+        [
+          683.0,
+          139.0
+        ],
+        [
+          762.0,
+          139.0
+        ],
+        [
+          762.0,
+          191.0
+        ],
+        [
+          683.0,
+          191.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": [
+        "0"
+      ]
+    },
+    {
+      "source": "Gate 1",
+      "confidence": 0.949669728676478,
+      "box": [
+        [
+          290.0,
+          206.0
+        ],
+        [
+          359.0,
+          206.0
+        ],
+        [
+          359.0,
+          227.0
+        ],
+        [
+          290.0,
+          227.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "検査1",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "Gate 2",
+      "confidence": 0.9656992157300314,
+      "box": [
+        [
+          490.0,
+          206.0
+        ],
+        [
+          559.0,
+          206.0
+        ],
+        [
+          559.0,
+          227.0
+        ],
+        [
+          490.0,
+          227.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "検査2",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "Gate 3",
+      "confidence": 0.9185874164104462,
+      "box": [
+        [
+          690.0,
+          206.0
+        ],
+        [
+          759.0,
+          206.0
+        ],
+        [
+          759.0,
+          227.0
+        ],
+        [
+          690.0,
+          227.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "検査3",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "Gate 4",
+      "confidence": 0.981438567241033,
+      "box": [
+        [
+          890.0,
+          206.0
+        ],
+        [
+          960.0,
+          206.0
+        ],
+        [
+          960.0,
+          227.0
+        ],
+        [
+          890.0,
+          227.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "検査4",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4"
+      ]
+    },
+    {
+      "source": "Gate 5",
+      "confidence": 0.9186783035596212,
+      "box": [
+        [
+          1090.0,
+          206.0
+        ],
+        [
+          1160.0,
+          206.0
+        ],
+        [
+          1160.0,
+          227.0
+        ],
+        [
+          1090.0,
+          227.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "検査5",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "5"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7318943999707699,
+    0.009520530700683594,
+    0.42302942276000977
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "false_positive_labels": [
+      "0="
+    ],
+    "source_note": "時計・チケット・身分証・文書・虫眼鏡のアイコンに文字はない。身分証の線などをOCRが文字として誤検出した。",
+    "source_sha256": "d518bef12003c23a3d341716970696a7ad390035314fb8c71151512d4893078d"
+  }
+}

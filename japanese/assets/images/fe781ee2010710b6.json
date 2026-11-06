@@ -1,0 +1,178 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad1.png",
+  "sha256": "fe781ee2010710b64f0ce73d4f560d0a136e8980cad210972a5572241344455c",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "①抄到同一行",
+      "confidence": 0.9959195256233215,
+      "box": [
+        [
+          408.0,
+          131.0
+        ],
+        [
+          547.0,
+          131.0
+        ],
+        [
+          547.0,
+          156.0
+        ],
+        [
+          408.0,
+          156.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "① 同じ行をコピーする",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "②再发一遍",
+      "confidence": 0.9935811638832093,
+      "box": [
+        [
+          877.0,
+          130.0
+        ],
+        [
+          992.0,
+          130.0
+        ],
+        [
+          992.0,
+          156.0
+        ],
+        [
+          877.0,
+          156.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "② もう一度送信する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "坏人",
+      "confidence": 0.9983548521995544,
+      "box": [
+        [
+          221.0,
+          264.0
+        ],
+        [
+          286.0,
+          266.0
+        ],
+        [
+          285.0,
+          302.0
+        ],
+        [
+          220.0,
+          300.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "攻撃者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "一模一样的一份",
+      "confidence": 0.9970191206250872,
+      "box": [
+        [
+          604.0,
+          268.0
+        ],
+        [
+          804.0,
+          268.0
+        ],
+        [
+          804.0,
+          298.0
+        ],
+        [
+          604.0,
+          298.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "まったく同じコピー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "真咖啡店",
+      "confidence": 0.999801442027092,
+      "box": [
+        [
+          1086.0,
+          267.0
+        ],
+        [
+          1202.0,
+          267.0
+        ],
+        [
+          1202.0,
+          299.0
+        ],
+        [
+          1086.0,
+          299.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "本物のコーヒー店",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "截到了那一行",
+      "confidence": 0.9992805023988088,
+      "box": [
+        [
+          182.0,
+          308.0
+        ],
+        [
+          329.0,
+          308.0
+        ],
+        [
+          329.0,
+          336.0
+        ],
+        [
+          182.0,
+          336.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "その行を盗み取った",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.1161048000212759,
+    0.008004188537597656,
+    0.1366865634918213
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "右下の×は拒否、チェックマークは受理を示す図形。本文ラベルを全照合した。",
+    "source_sha256": "fe781ee2010710b64f0ce73d4f560d0a136e8980cad210972a5572241344455c"
+  }
+}

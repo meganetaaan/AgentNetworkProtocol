@@ -1,0 +1,1247 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page7.jpg",
+  "sha256": "88f09260551b6cf5e7075ed94c97b33cd6781f5317d22689d1412eabdeaff11f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "AgentNetworkProtocol(ANP)",
+      "confidence": 0.9920862841606141,
+      "box": [
+        [
+          37.16128921508789,
+          43.97142791748047
+        ],
+        [
+          1125.290283203125,
+          40.5
+        ],
+        [
+          1125.290283203125,
+          115.71428680419922
+        ],
+        [
+          37.16128921508789,
+          119.18571472167969
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentNetworkProtocol",
+        "ANP"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9893266558647156,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          85.62857055664062
+        ],
+        [
+          2154.193603515625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "IdentityandEncrypted CommunicationLayer:",
+      "confidence": 0.9822121754288673,
+      "box": [
+        [
+          218.32257080078125,
+          269.6142883300781
+        ],
+        [
+          908.1290283203125,
+          270.77142333984375
+        ],
+        [
+          908.1290283203125,
+          305.4857177734375
+        ],
+        [
+          218.32257080078125,
+          304.3285827636719
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "IdentityandEncrypted",
+        "CommunicationLayer"
+      ]
+    },
+    {
+      "source": "Standard",
+      "confidence": 0.9910056665539742,
+      "box": [
+        [
+          1264.6451416015625,
+          285.8143005371094
+        ],
+        [
+          1385.4193115234375,
+          285.8143005371094
+        ],
+        [
+          1385.4193115234375,
+          318.21429443359375
+        ],
+        [
+          1264.6451416015625,
+          318.21429443359375
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Consensus",
+      "confidence": 0.9888450304667155,
+      "box": [
+        [
+          1606.064453125,
+          285.8143005371094
+        ],
+        [
+          1746.58056640625,
+          290.44287109375
+        ],
+        [
+          1745.4193115234375,
+          322.8428649902344
+        ],
+        [
+          1604.9031982421875,
+          318.21429443359375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Personalized",
+      "confidence": 0.9932820598284403,
+      "box": [
+        [
+          1932.3870849609375,
+          286.971435546875
+        ],
+        [
+          2099.61279296875,
+          286.971435546875
+        ],
+        [
+          2099.61279296875,
+          318.21429443359375
+        ],
+        [
+          1932.3870849609375,
+          318.21429443359375
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Based onW3C DID, it builds a decentralized identity",
+      "confidence": 0.9663446440416223,
+      "box": [
+        [
+          164.90321350097656,
+          318.21429443359375
+        ],
+        [
+          894.1935424804688,
+          321.68572998046875
+        ],
+        [
+          894.1935424804688,
+          359.8714294433594
+        ],
+        [
+          164.90321350097656,
+          356.3999938964844
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "onW3C",
+        "DID"
+      ]
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9957580342888832,
+      "box": [
+        [
+          1271.6129150390625,
+          326.3143005371094
+        ],
+        [
+          1386.58056640625,
+          326.3143005371094
+        ],
+        [
+          1386.58056640625,
+          357.5571594238281
+        ],
+        [
+          1271.6129150390625,
+          357.5571594238281
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9958540722727776,
+      "box": [
+        [
+          1621.1612548828125,
+          326.3143005371094
+        ],
+        [
+          1736.1290283203125,
+          326.3143005371094
+        ],
+        [
+          1736.1290283203125,
+          357.5571594238281
+        ],
+        [
+          1621.1612548828125,
+          357.5571594238281
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9962935373187065,
+      "box": [
+        [
+          1961.4193115234375,
+          326.3143005371094
+        ],
+        [
+          2076.386962890625,
+          326.3143005371094
+        ],
+        [
+          2076.386962890625,
+          357.5571594238281
+        ],
+        [
+          1961.4193115234375,
+          357.5571594238281
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "authentication solution with excellent scalability,capable",
+      "confidence": 0.9673216096286116,
+      "box": [
+        [
+          166.06451416015625,
+          372.6000061035156
+        ],
+        [
+          944.1290283203125,
+          371.44287109375
+        ],
+        [
+          944.1290283203125,
+          409.6285705566406
+        ],
+        [
+          166.06451416015625,
+          410.7857360839844
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "of supportingbillions of users.",
+      "confidence": 0.9677862544213572,
+      "box": [
+        [
+          167.22579956054688,
+          424.67144775390625
+        ],
+        [
+          586.4515991210938,
+          422.3571472167969
+        ],
+        [
+          586.4515991210938,
+          460.5428771972656
+        ],
+        [
+          167.22579956054688,
+          462.8571472167969
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgentDescriptionSpecification",
+      "confidence": 0.9966876938425261,
+      "box": [
+        [
+          1256.51611328125,
+          422.3571472167969
+        ],
+        [
+          1654.838623046875,
+          421.20001220703125
+        ],
+        [
+          1654.838623046875,
+          452.44287109375
+        ],
+        [
+          1256.51611328125,
+          453.6000061035156
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentDescriptionSpecification"
+      ]
+    },
+    {
+      "source": "APPProtocolSpecification",
+      "confidence": 0.9919922053813934,
+      "box": [
+        [
+          1730.322509765625,
+          421.20001220703125
+        ],
+        [
+          2074.064453125,
+          421.20001220703125
+        ],
+        [
+          2074.064453125,
+          452.44287109375
+        ],
+        [
+          1730.322509765625,
+          452.44287109375
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Application Protocol Layer",
+      "confidence": 0.9669265265648181,
+      "box": [
+        [
+          1495.741943359375,
+          492.94287109375
+        ],
+        [
+          1853.4193115234375,
+          490.6285705566406
+        ],
+        [
+          1853.4193115234375,
+          525.3428955078125
+        ],
+        [
+          1495.741943359375,
+          527.6571655273438
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Meta-Protocol Layer: A meta-protocol is a protocol",
+      "confidence": 0.9796964478492737,
+      "box": [
+        [
+          214.8386993408203,
+          504.5142822265625
+        ],
+        [
+          940.6451416015625,
+          505.67144775390625
+        ],
+        [
+          940.6451416015625,
+          545.0142822265625
+        ],
+        [
+          214.8386993408203,
+          543.857177734375
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "fornegotiatingcommunicationprotocolsbetweenagents.",
+      "confidence": 0.9845658993721008,
+      "box": [
+        [
+          168.3870849609375,
+          561.2142944335938
+        ],
+        [
+          946.4515991210938,
+          561.2142944335938
+        ],
+        [
+          946.4515991210938,
+          595.9285888671875
+        ],
+        [
+          168.3870849609375,
+          595.9285888671875
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "It isthekeytotheevolutionoftheagentnetworkintoan",
+      "confidence": 0.9765749648213387,
+      "box": [
+        [
+          167.22579956054688,
+          610.971435546875
+        ],
+        [
+          941.806396484375,
+          612.1286010742188
+        ],
+        [
+          941.806396484375,
+          646.8428955078125
+        ],
+        [
+          167.22579956054688,
+          645.6857299804688
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9950203597545624,
+      "box": [
+        [
+          1272.774169921875,
+          631.7999877929688
+        ],
+        [
+          1387.741943359375,
+          631.7999877929688
+        ],
+        [
+          1387.741943359375,
+          667.6714477539062
+        ],
+        [
+          1272.774169921875,
+          667.6714477539062
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9956176653504372,
+      "box": [
+        [
+          1614.1934814453125,
+          632.9571533203125
+        ],
+        [
+          1729.1612548828125,
+          632.9571533203125
+        ],
+        [
+          1729.1612548828125,
+          665.357177734375
+        ],
+        [
+          1614.1934814453125,
+          665.357177734375
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9968933761119843,
+      "box": [
+        [
+          1962.58056640625,
+          630.6428833007812
+        ],
+        [
+          2078.709716796875,
+          632.9571533203125
+        ],
+        [
+          2077.54833984375,
+          668.82861328125
+        ],
+        [
+          1961.4193115234375,
+          666.5142822265625
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "autonomous, self-negotiating,and highly efficient",
+      "confidence": 0.9748351938870489,
+      "box": [
+        [
+          163.74192810058594,
+          663.0428466796875
+        ],
+        [
+          848.9031982421875,
+          661.8857421875
+        ],
+        [
+          848.9031982421875,
+          700.0714111328125
+        ],
+        [
+          163.74192810058594,
+          701.2285766601562
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Negotiation",
+      "confidence": 0.9962384375658903,
+      "box": [
+        [
+          1254.1934814453125,
+          669.9857177734375
+        ],
+        [
+          1410.9676513671875,
+          672.2999877929688
+        ],
+        [
+          1410.9676513671875,
+          708.1714477539062
+        ],
+        [
+          1254.1934814453125,
+          705.857177734375
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Debugging",
+      "confidence": 0.9981735944747925,
+      "box": [
+        [
+          1601.4193115234375,
+          667.6714477539062
+        ],
+        [
+          1747.741943359375,
+          673.4571533203125
+        ],
+        [
+          1746.58056640625,
+          712.7999877929688
+        ],
+        [
+          1600.258056640625,
+          707.0142822265625
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Testing",
+      "confidence": 0.9981335656983512,
+      "box": [
+        [
+          1973.0322265625,
+          666.5142822265625
+        ],
+        [
+          2076.386962890625,
+          674.6143188476562
+        ],
+        [
+          2072.903076171875,
+          711.6428833007812
+        ],
+        [
+          1969.54833984375,
+          703.5428466796875
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "collaborativenetwork.",
+      "confidence": 0.9988259502819606,
+      "box": [
+        [
+          167.22579956054688,
+          717.4285888671875
+        ],
+        [
+          474.9677429199219,
+          717.4285888671875
+        ],
+        [
+          474.9677429199219,
+          748.6714477539062
+        ],
+        [
+          167.22579956054688,
+          748.6714477539062
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Meta-Protocol Layer",
+      "confidence": 0.9843441216569198,
+      "box": [
+        [
+          1535.2257080078125,
+          748.6714477539062
+        ],
+        [
+          1809.290283203125,
+          750.9857177734375
+        ],
+        [
+          1809.290283203125,
+          782.2285766601562
+        ],
+        [
+          1535.2257080078125,
+          779.914306640625
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Application Protocol Layer: Based on Semantic Web",
+      "confidence": 0.9942840459395428,
+      "box": [
+        [
+          166.06451416015625,
+          790.32861328125
+        ],
+        [
+          969.6773681640625,
+          792.6428833007812
+        ],
+        [
+          969.6773681640625,
+          837.7714233398438
+        ],
+        [
+          166.06451416015625,
+          835.4571533203125
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "standards,it enables agentstodescribe theirpublic",
+      "confidence": 0.9681722813723038,
+      "box": [
+        [
+          166.06451416015625,
+          850.5
+        ],
+        [
+          859.3547973632812,
+          850.5
+        ],
+        [
+          859.3547973632812,
+          885.2142944335938
+        ],
+        [
+          166.06451416015625,
+          885.2142944335938
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Identity",
+      "confidence": 0.9224458783864975,
+      "box": [
+        [
+          1459.741943359375,
+          851.6571655273438
+        ],
+        [
+          1565.4193115234375,
+          857.44287109375
+        ],
+        [
+          1563.0966796875,
+          894.471435546875
+        ],
+        [
+          1457.4193115234375,
+          888.6857299804688
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "E2E",
+      "confidence": 0.9929422934850057,
+      "box": [
+        [
+          1813.9354248046875,
+          851.6571655273438
+        ],
+        [
+          1867.354736328125,
+          851.6571655273438
+        ],
+        [
+          1867.354736328125,
+          881.7428588867188
+        ],
+        [
+          1813.9354248046875,
+          881.7428588867188
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "E2E"
+      ]
+    },
+    {
+      "source": "information, available capabilities, and supported",
+      "confidence": 0.9677574098110199,
+      "box": [
+        [
+          163.74192810058594,
+          900.2571411132812
+        ],
+        [
+          843.0967407226562,
+          901.414306640625
+        ],
+        [
+          843.0967407226562,
+          939.6000366210938
+        ],
+        [
+          163.74192810058594,
+          938.44287109375
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "W3CDID",
+      "confidence": 0.9933914641539255,
+      "box": [
+        [
+          1621.1612548828125,
+          939.6000366210938
+        ],
+        [
+          1733.806396484375,
+          939.6000366210938
+        ],
+        [
+          1733.806396484375,
+          972.0
+        ],
+        [
+          1621.1612548828125,
+          972.0
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "W3CDID"
+      ]
+    },
+    {
+      "source": "interfaces.Using thisinformation,other agents can",
+      "confidence": 0.9809827342325327,
+      "box": [
+        [
+          164.90321350097656,
+          953.4857177734375
+        ],
+        [
+          864.0,
+          954.6428833007812
+        ],
+        [
+          864.0,
+          989.357177734375
+        ],
+        [
+          164.90321350097656,
+          988.2000122070312
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "interfaces.Using"
+      ]
+    },
+    {
+      "source": "discover andinteractwiththem.",
+      "confidence": 0.9859306935606331,
+      "box": [
+        [
+          167.22579956054688,
+          1005.5571899414062
+        ],
+        [
+          606.1935424804688,
+          1007.8714599609375
+        ],
+        [
+          606.1935424804688,
+          1039.1142578125
+        ],
+        [
+          167.22579956054688,
+          1036.800048828125
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Identity and Encrypted Communication Layer",
+      "confidence": 0.9584746999400002,
+      "box": [
+        [
+          1419.0966796875,
+          1007.8714599609375
+        ],
+        [
+          2021.806396484375,
+          1007.8714599609375
+        ],
+        [
+          2021.806396484375,
+          1037.9571533203125
+        ],
+        [
+          1419.0966796875,
+          1037.9571533203125
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Today, we will focus on the identity layer and the application layer.",
+      "confidence": 0.9783984275831692,
+      "box": [
+        [
+          612.0,
+          1202.271484375
+        ],
+        [
+          1690.838623046875,
+          1204.585693359375
+        ],
+        [
+          1690.838623046875,
+          1246.242919921875
+        ],
+        [
+          612.0,
+          1243.9285888671875
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgentNetworkProtocol(ANP)\n\n\n\n       • 🔒 Identity and Encrypted Communication Layer:\n        Based on W3C DID, it builds a decentralized identity\n\n          authentication solution with excellent scalability, capable\n\n         of supporting billions of users.\n\n       • 🌍 Meta-Protocol Layer: A meta-protocol is a protocol\n          for negotiating communication protocols between agents.\n\n             It is the key to the evolution of the agent network into an\n\n        autonomous, self-negotiating, and highly efficient\n\n          collaborative network.\n\n       • 📡 Application Protocol Layer: Based on Semantic Web\n          standards, it enables agents to describe their public\n\n         information, available capabilities, and supported\n\n          interfaces. Using this information, other agents can\n\n         discover and interact with them.\n\n\n\n\n                                 Today, we will focus on the identity layer and the application layer.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L038",
+      "japanese": "AgentNetworkProtocol（ANP）\n\n- アイデンティティ・暗号化通信層：W3C DIDを基盤に、優れた拡張性を持ち、数十億の利用者に対応できる分散型の身元認証方式を構築します。\n- メタプロトコル層：メタプロトコルは、エージェント間の通信プロトコルを交渉するためのプロトコルです。エージェントネットワークが、自律的で、自ら交渉し、効率よく協働するネットワークへ発展するための鍵となります。\n- アプリケーションプロトコル層：セマンティックWeb標準に基づき、エージェントが公開情報、利用可能な機能、対応インターフェースを記述できるようにします。他のエージェントは、この情報を使って発見し、やり取りできます。\n\n本日は、アイデンティティ層とアプリケーション層を中心に説明します。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Standard Protocol",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L039",
+      "japanese": "標準プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Consensus Protocol",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L040",
+      "japanese": "合意によるプロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Personalized Protocol",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L041",
+      "japanese": "個別のプロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Description Specification",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L042",
+      "japanese": "エージェント記述仕様",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "APP Protocol Specification",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L043",
+      "japanese": "アプリケーションプロトコル仕様",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Application Protocol Layer",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L044",
+      "japanese": "アプリケーションプロトコル層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Negotiation",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L045",
+      "japanese": "プロトコル交渉",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Debugging",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L046",
+      "japanese": "プロトコルのデバッグ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Testing",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L047",
+      "japanese": "プロトコルのテスト",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Meta-Protocol Layer",
+      "location": "visible diagram label 10, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L048",
+      "japanese": "メタプロトコル層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Identity",
+      "location": "visible diagram label 11, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L049",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "E2E",
+      "location": "visible diagram label 12, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L050",
+      "japanese": "E2E（エンドツーエンド）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "W3C DID",
+      "location": "visible diagram label 13, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L051",
+      "japanese": "W3C DID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Identity and Encrypted Communication Layer",
+      "location": "visible diagram label 14, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L052",
+      "japanese": "IDと暗号化通信の層",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    1.3534296000143513,
+    0.03908276557922363,
+    4.9991161823272705
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 7,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-7",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 2.4908680555555556,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 7,
+    "manual_label_translations": {
+      "AgentNetworkProtocol(ANP)\n\n\n\n       • 🔒 Identity and Encrypted Communication Layer:\n        Based on W3C DID, it builds a decentralized identity\n\n          authentication solution with excellent scalability, capable\n\n         of supporting billions of users.\n\n       • 🌍 Meta-Protocol Layer: A meta-protocol is a protocol\n          for negotiating communication protocols between agents.\n\n             It is the key to the evolution of the agent network into an\n\n        autonomous, self-negotiating, and highly efficient\n\n          collaborative network.\n\n       • 📡 Application Protocol Layer: Based on Semantic Web\n          standards, it enables agents to describe their public\n\n         information, available capabilities, and supported\n\n          interfaces. Using this information, other agents can\n\n         discover and interact with them.\n\n\n\n\n                                 Today, we will focus on the identity layer and the application layer.": "AgentNetworkProtocol（ANP）\n\n- アイデンティティ・暗号化通信層：W3C DIDを基盤に、優れた拡張性を持ち、数十億の利用者に対応できる分散型の身元認証方式を構築します。\n- メタプロトコル層：メタプロトコルは、エージェント間の通信プロトコルを交渉するためのプロトコルです。エージェントネットワークが、自律的で、自ら交渉し、効率よく協働するネットワークへ発展するための鍵となります。\n- アプリケーションプロトコル層：セマンティックWeb標準に基づき、エージェントが公開情報、利用可能な機能、対応インターフェースを記述できるようにします。他のエージェントは、この情報を使って発見し、やり取りできます。\n\n本日は、アイデンティティ層とアプリケーション層を中心に説明します。",
+      "Standard Protocol": "標準プロトコル",
+      "Consensus Protocol": "合意によるプロトコル",
+      "Personalized Protocol": "個別のプロトコル",
+      "Agent Description Specification": "エージェント記述仕様",
+      "APP Protocol Specification": "アプリケーションプロトコル仕様",
+      "Application Protocol Layer": "アプリケーションプロトコル層",
+      "Protocol Negotiation": "プロトコル交渉",
+      "Protocol Debugging": "プロトコルのデバッグ",
+      "Protocol Testing": "プロトコルのテスト",
+      "Meta-Protocol Layer": "メタプロトコル層",
+      "Identity": "ID",
+      "E2E": "E2E（エンドツーエンド）",
+      "W3C DID": "W3C DID",
+      "Identity and Encrypted Communication Layer": "IDと暗号化通信の層"
+    },
+    "additional_labels": [
+      {
+        "source": "AgentNetworkProtocol(ANP)\n\n\n\n       • 🔒 Identity and Encrypted Communication Layer:\n        Based on W3C DID, it builds a decentralized identity\n\n          authentication solution with excellent scalability, capable\n\n         of supporting billions of users.\n\n       • 🌍 Meta-Protocol Layer: A meta-protocol is a protocol\n          for negotiating communication protocols between agents.\n\n             It is the key to the evolution of the agent network into an\n\n        autonomous, self-negotiating, and highly efficient\n\n          collaborative network.\n\n       • 📡 Application Protocol Layer: Based on Semantic Web\n          standards, it enables agents to describe their public\n\n         information, available capabilities, and supported\n\n          interfaces. Using this information, other agents can\n\n         discover and interact with them.\n\n\n\n\n                                 Today, we will focus on the identity layer and the application layer.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "Standard Protocol",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "Consensus Protocol",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "Personalized Protocol",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "Agent Description Specification",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "APP Protocol Specification",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "Application Protocol Layer",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "Protocol Negotiation",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Protocol Debugging",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "Protocol Testing",
+        "location": "visible diagram label 9, manually transcribed"
+      },
+      {
+        "source": "Meta-Protocol Layer",
+        "location": "visible diagram label 10, manually transcribed"
+      },
+      {
+        "source": "Identity",
+        "location": "visible diagram label 11, manually transcribed"
+      },
+      {
+        "source": "E2E",
+        "location": "visible diagram label 12, manually transcribed"
+      },
+      {
+        "source": "W3C DID",
+        "location": "visible diagram label 13, manually transcribed"
+      },
+      {
+        "source": "Identity and Encrypted Communication Layer",
+        "location": "visible diagram label 14, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "AgentNetworkProtocol(ANP)",
+      "ANP",
+      "IdentityandEncrypted CommunicationLayer:",
+      "Standard",
+      "Consensus",
+      "Personalized",
+      "Based onW3C DID, it builds a decentralized identity",
+      "Protocol",
+      "Protocol",
+      "Protocol",
+      "authentication solution with excellent scalability,capable",
+      "of supportingbillions of users.",
+      "AgentDescriptionSpecification",
+      "APPProtocolSpecification",
+      "Application Protocol Layer",
+      "Meta-Protocol Layer: A meta-protocol is a protocol",
+      "fornegotiatingcommunicationprotocolsbetweenagents.",
+      "It isthekeytotheevolutionoftheagentnetworkintoan",
+      "Protocol",
+      "Protocol",
+      "Protocol",
+      "autonomous, self-negotiating,and highly efficient",
+      "Negotiation",
+      "Debugging",
+      "Testing",
+      "collaborativenetwork.",
+      "Meta-Protocol Layer",
+      "Application Protocol Layer: Based on Semantic Web",
+      "standards,it enables agentstodescribe theirpublic",
+      "Identity",
+      "E2E",
+      "information, available capabilities, and supported",
+      "W3CDID",
+      "interfaces.Using thisinformation,other agents can",
+      "discover andinteractwiththem.",
+      "Identity and Encrypted Communication Layer",
+      "Today, we will focus on the identity layer and the application layer."
+    ],
+    "source_limitation": "右図のE2Eの下にある文字は元図で隠れており、判読不能な点しか残っていない。推測して補完しない。",
+    "source_sha256": "88f09260551b6cf5e7075ed94c97b33cd6781f5317d22689d1412eabdeaff11f"
+  }
+}

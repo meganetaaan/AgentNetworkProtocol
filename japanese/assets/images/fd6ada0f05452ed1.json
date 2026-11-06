@@ -1,0 +1,461 @@
+{
+  "source": "blogs/images/anp-email.png",
+  "sha256": "fd6ada0f05452ed1ef7eca07078280e628d2040166830347269b2171b3292954",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ANP is the email for agents.",
+      "confidence": 0.9974827936717442,
+      "box": [
+        [
+          476.0,
+          112.0
+        ],
+        [
+          1228.0,
+          121.0
+        ],
+        [
+          1227.0,
+          179.0
+        ],
+        [
+          475.0,
+          170.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ANPはエージェントのための電子メール。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Agent A",
+      "confidence": 0.9378285918916974,
+      "box": [
+        [
+          200.0,
+          293.0
+        ],
+        [
+          314.0,
+          290.0
+        ],
+        [
+          315.0,
+          328.0
+        ],
+        [
+          201.0,
+          330.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent B",
+      "confidence": 0.9995351604052952,
+      "box": [
+        [
+          1376.0,
+          293.0
+        ],
+        [
+          1497.0,
+          290.0
+        ],
+        [
+          1498.0,
+          328.0
+        ],
+        [
+          1377.0,
+          330.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "www.alice.com",
+      "confidence": 0.9962054170095004,
+      "box": [
+        [
+          145.0,
+          335.0
+        ],
+        [
+          365.0,
+          335.0
+        ],
+        [
+          365.0,
+          364.0
+        ],
+        [
+          145.0,
+          364.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "www.alice.com",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "www.alice.com"
+      ]
+    },
+    {
+      "source": "FROM",
+      "confidence": 0.9933288991451263,
+      "box": [
+        [
+          602.0,
+          333.0
+        ],
+        [
+          716.0,
+          333.0
+        ],
+        [
+          716.0,
+          366.0
+        ],
+        [
+          602.0,
+          366.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "送信元",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "FROM"
+      ]
+    },
+    {
+      "source": "did:wba:alice.com:a",
+      "confidence": 0.9884093529299686,
+      "box": [
+        [
+          727.0,
+          333.0
+        ],
+        [
+          1016.0,
+          335.0
+        ],
+        [
+          1016.0,
+          364.0
+        ],
+        [
+          726.0,
+          362.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "did:wba:alice.com:a",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba:alice.com:a"
+      ]
+    },
+    {
+      "source": "www.bob.com",
+      "confidence": 0.995430740443143,
+      "box": [
+        [
+          1334.0,
+          335.0
+        ],
+        [
+          1540.0,
+          335.0
+        ],
+        [
+          1540.0,
+          364.0
+        ],
+        [
+          1334.0,
+          364.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "www.bob.com",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "www.bob.com"
+      ]
+    },
+    {
+      "source": "TO",
+      "confidence": 0.9871552586555481,
+      "box": [
+        [
+          627.0,
+          388.0
+        ],
+        [
+          684.0,
+          388.0
+        ],
+        [
+          684.0,
+          426.0
+        ],
+        [
+          627.0,
+          426.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "宛先",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TO"
+      ]
+    },
+    {
+      "source": "did:wba:bob.com:b",
+      "confidence": 0.9882807941997752,
+      "box": [
+        [
+          734.0,
+          396.0
+        ],
+        [
+          1006.0,
+          398.0
+        ],
+        [
+          1005.0,
+          430.0
+        ],
+        [
+          733.0,
+          428.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "did:wba:bob.com:b",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba:bob.com:b"
+      ]
+    },
+    {
+      "source": "did:wba:bob.com:b FROM",
+      "confidence": 0.9813749492168427,
+      "box": [
+        [
+          681.0,
+          517.0
+        ],
+        [
+          1082.0,
+          517.0
+        ],
+        [
+          1082.0,
+          553.0
+        ],
+        [
+          681.0,
+          553.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "did:wba:bob.com:b 送信元",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba:bob.com:b",
+        "FROM"
+      ]
+    },
+    {
+      "source": "did:wba:alice.com:a",
+      "confidence": 0.9910356904331007,
+      "box": [
+        [
+          681.0,
+          576.0
+        ],
+        [
+          965.0,
+          578.0
+        ],
+        [
+          964.0,
+          608.0
+        ],
+        [
+          681.0,
+          606.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "did:wba:alice.com:a",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba:alice.com:a"
+      ]
+    },
+    {
+      "source": "TO",
+      "confidence": 0.9920892119407654,
+      "box": [
+        [
+          994.0,
+          574.0
+        ],
+        [
+          1054.0,
+          574.0
+        ],
+        [
+          1054.0,
+          612.0
+        ],
+        [
+          994.0,
+          612.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "宛先",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TO"
+      ]
+    },
+    {
+      "source": "8:",
+      "confidence": 0.9629037976264954,
+      "box": [
+        [
+          122.0,
+          794.0
+        ],
+        [
+          172.0,
+          794.0
+        ],
+        [
+          172.0,
+          829.0
+        ],
+        [
+          122.0,
+          829.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": [
+        "8"
+      ]
+    },
+    {
+      "source": "Agent Authentication",
+      "confidence": 0.9948253899812698,
+      "box": [
+        [
+          204.0,
+          795.0
+        ],
+        [
+          599.0,
+          791.0
+        ],
+        [
+          599.0,
+          830.0
+        ],
+        [
+          205.0,
+          834.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "エージェント認証",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Discovery",
+      "confidence": 0.977769649028778,
+      "box": [
+        [
+          726.0,
+          791.0
+        ],
+        [
+          1024.0,
+          793.0
+        ],
+        [
+          1024.0,
+          836.0
+        ],
+        [
+          725.0,
+          834.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "エージェント発見",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Communication",
+      "confidence": 0.9789223357250816,
+      "box": [
+        [
+          1193.0,
+          793.0
+        ],
+        [
+          1608.0,
+          787.0
+        ],
+        [
+          1609.0,
+          830.0
+        ],
+        [
+          1193.0,
+          836.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "エージェント間通信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.0870881999726407,
+    0.023990154266357422,
+    1.411435604095459
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "false_positive_labels": [
+      "8:"
+    ],
+    "source_sha256": "fd6ada0f05452ed1ef7eca07078280e628d2040166830347269b2171b3292954"
+  }
+}

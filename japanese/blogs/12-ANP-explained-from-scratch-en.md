@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/12-ANP-explained-from-scratch-en.md -->
 # 初めて出会う二つのプログラムは、相手がなりすましでないと、どうすれば分かるのでしょうか
 
 このガイドでは、その一つの疑問を出発点に、ANPを一つずつ分解して説明します。**暗号やネットワークの予備知識は必要ありません。**

@@ -1,0 +1,543 @@
+{
+  "source": "images/protocol-layer-design.png",
+  "sha256": "11576e27122bcaef77403d7520afd706adfc0eea3500a8b8a13fd4bcc94d7dd2",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Standard",
+      "confidence": 0.9990869387984276,
+      "box": [
+        [
+          95.0,
+          62.0
+        ],
+        [
+          233.0,
+          62.0
+        ],
+        [
+          233.0,
+          96.0
+        ],
+        [
+          95.0,
+          96.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "標準の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Consensus",
+      "confidence": 0.9964916706085205,
+      "box": [
+        [
+          486.0,
+          63.0
+        ],
+        [
+          644.0,
+          67.0
+        ],
+        [
+          643.0,
+          98.0
+        ],
+        [
+          485.0,
+          93.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "合意による",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Personalized",
+      "confidence": 0.9760285218556722,
+      "box": [
+        [
+          860.0,
+          62.0
+        ],
+        [
+          1047.0,
+          62.0
+        ],
+        [
+          1047.0,
+          95.0
+        ],
+        [
+          860.0,
+          95.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "個別の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9995564296841621,
+      "box": [
+        [
+          103.0,
+          107.0
+        ],
+        [
+          231.0,
+          107.0
+        ],
+        [
+          231.0,
+          138.0
+        ],
+        [
+          103.0,
+          138.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9995836988091469,
+      "box": [
+        [
+          502.0,
+          106.0
+        ],
+        [
+          633.0,
+          106.0
+        ],
+        [
+          633.0,
+          140.0
+        ],
+        [
+          502.0,
+          140.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9997219666838646,
+      "box": [
+        [
+          892.0,
+          106.0
+        ],
+        [
+          1022.0,
+          106.0
+        ],
+        [
+          1022.0,
+          140.0
+        ],
+        [
+          892.0,
+          140.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Description Specification",
+      "confidence": 0.9907499647909596,
+      "box": [
+        [
+          84.0,
+          216.0
+        ],
+        [
+          538.0,
+          214.0
+        ],
+        [
+          538.0,
+          249.0
+        ],
+        [
+          84.0,
+          251.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "エージェント記述仕様",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "APP Protocol Specification",
+      "confidence": 0.9827913504380447,
+      "box": [
+        [
+          626.0,
+          213.0
+        ],
+        [
+          1018.0,
+          215.0
+        ],
+        [
+          1017.0,
+          250.0
+        ],
+        [
+          626.0,
+          248.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "アプリケーションプロトコル仕様",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "APP"
+      ]
+    },
+    {
+      "source": "Application Protocol Layer",
+      "confidence": 0.9860397898233854,
+      "box": [
+        [
+          358.0,
+          298.0
+        ],
+        [
+          763.0,
+          298.0
+        ],
+        [
+          763.0,
+          333.0
+        ],
+        [
+          358.0,
+          333.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "アプリケーションプロトコル層",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9995708242058754,
+      "box": [
+        [
+          104.0,
+          458.0
+        ],
+        [
+          233.0,
+          458.0
+        ],
+        [
+          233.0,
+          492.0
+        ],
+        [
+          104.0,
+          492.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9997232928872108,
+      "box": [
+        [
+          495.0,
+          458.0
+        ],
+        [
+          624.0,
+          458.0
+        ],
+        [
+          624.0,
+          492.0
+        ],
+        [
+          495.0,
+          492.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9996362254023552,
+      "box": [
+        [
+          894.0,
+          458.0
+        ],
+        [
+          1023.0,
+          458.0
+        ],
+        [
+          1023.0,
+          492.0
+        ],
+        [
+          894.0,
+          492.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Negotiation",
+      "confidence": 0.9870435812256553,
+      "box": [
+        [
+          83.0,
+          500.0
+        ],
+        [
+          260.0,
+          504.0
+        ],
+        [
+          260.0,
+          541.0
+        ],
+        [
+          82.0,
+          538.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Debugging",
+      "confidence": 0.9999271300103929,
+      "box": [
+        [
+          483.0,
+          499.0
+        ],
+        [
+          644.0,
+          506.0
+        ],
+        [
+          643.0,
+          543.0
+        ],
+        [
+          481.0,
+          537.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "デバッグ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Testing",
+      "confidence": 0.9999454191752842,
+      "box": [
+        [
+          905.0,
+          498.0
+        ],
+        [
+          1020.0,
+          505.0
+        ],
+        [
+          1018.0,
+          543.0
+        ],
+        [
+          902.0,
+          535.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "テスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Meta-Protocol Layer",
+      "confidence": 0.987763125645487,
+      "box": [
+        [
+          406.0,
+          591.0
+        ],
+        [
+          717.0,
+          593.0
+        ],
+        [
+          717.0,
+          626.0
+        ],
+        [
+          406.0,
+          624.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "メタプロトコル層",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Identity",
+      "confidence": 0.983623668551445,
+      "box": [
+        [
+          319.0,
+          710.0
+        ],
+        [
+          436.0,
+          714.0
+        ],
+        [
+          435.0,
+          751.0
+        ],
+        [
+          318.0,
+          748.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "E2E",
+      "confidence": 0.9988355040550232,
+      "box": [
+        [
+          722.0,
+          705.0
+        ],
+        [
+          784.0,
+          705.0
+        ],
+        [
+          784.0,
+          742.0
+        ],
+        [
+          722.0,
+          742.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "E2E",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "E2E"
+      ]
+    },
+    {
+      "source": "W3C DID",
+      "confidence": 0.937568119594029,
+      "box": [
+        [
+          503.0,
+          808.0
+        ],
+        [
+          630.0,
+          808.0
+        ],
+        [
+          630.0,
+          842.0
+        ],
+        [
+          503.0,
+          842.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "W3C DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "W3C",
+        "DID"
+      ]
+    },
+    {
+      "source": "Identity and Encrypted Communication Layer",
+      "confidence": 0.9806066070284162,
+      "box": [
+        [
+          266.0,
+          885.0
+        ],
+        [
+          960.0,
+          887.0
+        ],
+        [
+          960.0,
+          919.0
+        ],
+        [
+          266.0,
+          917.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "IDと暗号化通信の層",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    0.7357774000265636,
+    0.030549287796020508,
+    1.124871015548706
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "source_limitation": "E2Eの下に文字らしき切れた画素があり、原画像で下部が隠れているため判読不能。見えているラベルは照合済みだが、隠れた文字は補完していない。",
+    "full_transcription_confirmed": false,
+    "corrections": {},
+    "source_sha256": "11576e27122bcaef77403d7520afd706adfc0eea3500a8b8a13fd4bcc94d7dd2"
+  }
+}

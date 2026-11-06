@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md -->
 # LangGraph責任者がMCPに提起した課題と、ANPによる対応
 
 最近、MCP（Model Context Protocol）がインターネット上で注目されています。LangChainのウェブサイトで、FounderParkにも転載されたブログ記事を読みました。

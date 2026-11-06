@@ -1,0 +1,76 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step3.png",
+  "sha256": "adedaddd3ec0729d222a2122779876b2501a3cdcb70cab3a4c260dbc61a67cb8",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第3步/共5步",
+      "confidence": 0.98575188432421,
+      "box": [
+        [
+          38.0,
+          35.0
+        ],
+        [
+          188.0,
+          35.0
+        ],
+        [
+          188.0,
+          57.0
+        ],
+        [
+          38.0,
+          57.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第3段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3",
+        "5"
+      ]
+    },
+    {
+      "source": "压成固定长度的摘要",
+      "confidence": 0.998934010664622,
+      "box": [
+        [
+          575.0,
+          276.0
+        ],
+        [
+          834.0,
+          274.0
+        ],
+        [
+          834.0,
+          303.0
+        ],
+        [
+          575.0,
+          304.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "固定長のダイジェストに要約する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8306659000227228,
+    0.003917694091796875,
+    0.1725606918334961
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "adedaddd3ec0729d222a2122779876b2501a3cdcb70cab3a4c260dbc61a67cb8"
+  }
+}

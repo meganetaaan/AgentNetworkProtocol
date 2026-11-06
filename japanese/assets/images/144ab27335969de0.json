@@ -1,0 +1,677 @@
+{
+  "source": "standard/pic/section7.png",
+  "sha256": "144ab27335969de01a47f0f9115c859dddcdb9f72795b976fa215e9e4239f6f1",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "——————+",
+      "confidence": 0.7844111408506121,
+      "box": [
+        [
+          784.0,
+          8.0
+        ],
+        [
+          907.0,
+          8.0
+        ],
+        [
+          907.0,
+          24.0
+        ],
+        [
+          784.0,
+          24.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "--sendtaskO---",
+      "confidence": 0.952556529215404,
+      "box": [
+        [
+          361.0,
+          35.0
+        ],
+        [
+          620.0,
+          33.0
+        ],
+        [
+          620.0,
+          53.0
+        ],
+        [
+          361.0,
+          55.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "タスク0を送信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "sendtaskO"
+      ],
+      "transcribed_source": "send task0"
+    },
+    {
+      "source": "--→",
+      "confidence": 0.5816418727238973,
+      "box": [
+        [
+          730.0,
+          37.0
+        ],
+        [
+          794.0,
+          37.0
+        ],
+        [
+          794.0,
+          52.0
+        ],
+        [
+          730.0,
+          52.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Al",
+      "confidence": 0.9070375934243202,
+      "box": [
+        [
+          36.0,
+          62.0
+        ],
+        [
+          194.0,
+          62.0
+        ],
+        [
+          194.0,
+          85.0
+        ],
+        [
+          36.0,
+          85.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Agent A"
+    },
+    {
+      "source": "Agent B",
+      "confidence": 0.9432773334639413,
+      "box": [
+        [
+          800.0,
+          62.0
+        ],
+        [
+          941.0,
+          62.0
+        ],
+        [
+          941.0,
+          85.0
+        ],
+        [
+          800.0,
+          85.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "|<-task status/result notification-|",
+      "confidence": 0.9438629158669047,
+      "box": [
+        [
+          178.0,
+          90.0
+        ],
+        [
+          800.0,
+          89.0
+        ],
+        [
+          800.0,
+          111.0
+        ],
+        [
+          178.0,
+          112.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "タスクの状態／結果の通知",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/result"
+      ],
+      "transcribed_source": "task status/result notification"
+    },
+    {
+      "source": "-一十",
+      "confidence": 0.5622729063034058,
+      "box": [
+        [
+          137.0,
+          123.0
+        ],
+        [
+          193.0,
+          123.0
+        ],
+        [
+          193.0,
+          137.0
+        ],
+        [
+          137.0,
+          137.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "+---",
+      "confidence": 0.5193997919559479,
+      "box": [
+        [
+          784.0,
+          121.0
+        ],
+        [
+          857.0,
+          123.0
+        ],
+        [
+          856.0,
+          139.0
+        ],
+        [
+          784.0,
+          138.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "+一",
+      "confidence": 0.5819917321205139,
+      "box": [
+        [
+          156.0,
+          181.0
+        ],
+        [
+          190.0,
+          181.0
+        ],
+        [
+          190.0,
+          190.0
+        ],
+        [
+          156.0,
+          190.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "+一一",
+      "confidence": 0.534542590379715,
+      "box": [
+        [
+          785.0,
+          178.0
+        ],
+        [
+          838.0,
+          177.0
+        ],
+        [
+          838.0,
+          192.0
+        ],
+        [
+          786.0,
+          193.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "--sendsub-taskl---",
+      "confidence": 0.9780873192681206,
+      "box": [
+        [
+          347.0,
+          206.0
+        ],
+        [
+          683.0,
+          203.0
+        ],
+        [
+          683.0,
+          224.0
+        ],
+        [
+          347.0,
+          227.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "サブタスク1を送信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "send sub-task1"
+    },
+    {
+      "source": "-->",
+      "confidence": 0.7145497798919678,
+      "box": [
+        [
+          723.0,
+          207.0
+        ],
+        [
+          803.0,
+          207.0
+        ],
+        [
+          803.0,
+          223.0
+        ],
+        [
+          723.0,
+          223.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9996807694435119,
+      "box": [
+        [
+          831.0,
+          204.0
+        ],
+        [
+          922.0,
+          203.0
+        ],
+        [
+          922.0,
+          228.0
+        ],
+        [
+          832.0,
+          229.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "I<-task status/result notification-l",
+      "confidence": 0.9546045470568869,
+      "box": [
+        [
+          182.0,
+          233.0
+        ],
+        [
+          797.0,
+          233.0
+        ],
+        [
+          797.0,
+          254.0
+        ],
+        [
+          182.0,
+          254.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "タスクの状態／結果の通知",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/result"
+      ],
+      "transcribed_source": "task status/result notification"
+    },
+    {
+      "source": "B",
+      "confidence": 0.9998536109924316,
+      "box": [
+        [
+          867.0,
+          233.0
+        ],
+        [
+          889.0,
+          233.0
+        ],
+        [
+          889.0,
+          256.0
+        ],
+        [
+          867.0,
+          256.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "+—--",
+      "confidence": 0.5186210945248604,
+      "box": [
+        [
+          784.0,
+          265.0
+        ],
+        [
+          847.0,
+          265.0
+        ],
+        [
+          847.0,
+          281.0
+        ],
+        [
+          784.0,
+          281.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent A",
+      "confidence": 0.9813288365091596,
+      "box": [
+        [
+          36.0,
+          292.0
+        ],
+        [
+          170.0,
+          291.0
+        ],
+        [
+          170.0,
+          314.0
+        ],
+        [
+          36.0,
+          316.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "+--—",
+      "confidence": 0.5031088069081306,
+      "box": [
+        [
+          785.0,
+          294.0
+        ],
+        [
+          854.0,
+          294.0
+        ],
+        [
+          854.0,
+          310.0
+        ],
+        [
+          785.0,
+          310.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "<--------xse-qnspus--",
+      "confidence": 0.8360755855128879,
+      "box": [
+        [
+          352.0,
+          320.0
+        ],
+        [
+          803.0,
+          320.0
+        ],
+        [
+          803.0,
+          340.0
+        ],
+        [
+          352.0,
+          340.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "サブタスク2を送信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "send sub-task2"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9997367978096008,
+      "box": [
+        [
+          831.0,
+          320.0
+        ],
+        [
+          921.0,
+          319.0
+        ],
+        [
+          922.0,
+          343.0
+        ],
+        [
+          832.0,
+          344.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "I<-task status/result notification-|",
+      "confidence": 0.9619039040472772,
+      "box": [
+        [
+          180.0,
+          347.0
+        ],
+        [
+          800.0,
+          347.0
+        ],
+        [
+          800.0,
+          370.0
+        ],
+        [
+          180.0,
+          370.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "タスクの状態／結果の通知",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/result"
+      ],
+      "transcribed_source": "task status/result notification"
+    },
+    {
+      "source": "C",
+      "confidence": 0.9684568643569946,
+      "box": [
+        [
+          868.0,
+          348.0
+        ],
+        [
+          890.0,
+          348.0
+        ],
+        [
+          890.0,
+          370.0
+        ],
+        [
+          868.0,
+          370.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "C",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "-+",
+      "confidence": 0.5354972779750824,
+      "box": [
+        [
+          164.0,
+          382.0
+        ],
+        [
+          192.0,
+          382.0
+        ],
+        [
+          192.0,
+          394.0
+        ],
+        [
+          164.0,
+          394.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "+一",
+      "confidence": 0.6568446755409241,
+      "box": [
+        [
+          785.0,
+          381.0
+        ],
+        [
+          826.0,
+          381.0
+        ],
+        [
+          826.0,
+          394.0
+        ],
+        [
+          785.0,
+          394.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.41313780000200495,
+    0.03401064872741699,
+    2.6532812118530273
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "--sendtaskO---": "send task0",
+      "Agent Al": "Agent A",
+      "|<-task status/result notification-|": "task status/result notification",
+      "--sendsub-taskl---": "send sub-task1",
+      "I<-task status/result notification-l": "task status/result notification",
+      "<--------xse-qnspus--": "send sub-task2",
+      "I<-task status/result notification-|": "task status/result notification"
+    },
+    "false_positive_labels": [
+      "——————+",
+      "--→",
+      "-一十",
+      "+---",
+      "+一",
+      "+一一",
+      "-->",
+      "+—--",
+      "+--—",
+      "-+"
+    ],
+    "source_note": "0・1・2は原図のタスク番号を目視確認。罫線、矢印、改行記号は図形として原画像に保持。",
+    "source_sha256": "144ab27335969de01a47f0f9115c859dddcdb9f72795b976fa215e9e4239f6f1"
+  }
+}

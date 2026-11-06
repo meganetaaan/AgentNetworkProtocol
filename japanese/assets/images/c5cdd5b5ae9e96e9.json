@@ -1,0 +1,412 @@
+{
+  "source": "blogs/images/agent-network/connect.png",
+  "sha256": "c5cdd5b5ae9e96e9b55fc6ed0f9e713b7c57715882a210ac2b599e4dcbbc27ae",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "供给找到需求",
+      "confidence": 0.9978084762891134,
+      "box": [
+        [
+          421.0,
+          21.0
+        ],
+        [
+          631.0,
+          21.0
+        ],
+        [
+          631.0,
+          61.0
+        ],
+        [
+          421.0,
+          61.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "供給側が需要を見つける",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "酒店",
+      "confidence": 0.99941286444664,
+      "box": [
+        [
+          253.0,
+          122.0
+        ],
+        [
+          324.0,
+          122.0
+        ],
+        [
+          324.0,
+          162.0
+        ],
+        [
+          253.0,
+          162.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ホテル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "景点",
+      "confidence": 0.9996223449707031,
+      "box": [
+        [
+          428.0,
+          122.0
+        ],
+        [
+          499.0,
+          122.0
+        ],
+        [
+          499.0,
+          162.0
+        ],
+        [
+          428.0,
+          162.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "観光地",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "火车",
+      "confidence": 0.8762678503990173,
+      "box": [
+        [
+          604.0,
+          122.0
+        ],
+        [
+          673.0,
+          122.0
+        ],
+        [
+          673.0,
+          162.0
+        ],
+        [
+          604.0,
+          162.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "鉄道",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "航班",
+      "confidence": 0.9993449747562408,
+      "box": [
+        [
+          778.0,
+          121.0
+        ],
+        [
+          849.0,
+          121.0
+        ],
+        [
+          849.0,
+          161.0
+        ],
+        [
+          778.0,
+          161.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "航空便",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "地图",
+      "confidence": 0.9997280240058899,
+      "box": [
+        [
+          341.0,
+          240.0
+        ],
+        [
+          409.0,
+          240.0
+        ],
+        [
+          409.0,
+          278.0
+        ],
+        [
+          341.0,
+          278.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "地図",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "快递",
+      "confidence": 0.9987009167671204,
+      "box": [
+        [
+          524.0,
+          240.0
+        ],
+        [
+          593.0,
+          240.0
+        ],
+        [
+          593.0,
+          278.0
+        ],
+        [
+          524.0,
+          278.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "宅配便",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "天气",
+      "confidence": 0.9989467561244965,
+      "box": [
+        [
+          706.0,
+          239.0
+        ],
+        [
+          778.0,
+          239.0
+        ],
+        [
+          778.0,
+          280.0
+        ],
+        [
+          706.0,
+          280.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "天気",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "汇率",
+      "confidence": 0.9982162714004517,
+      "box": [
+        [
+          410.0,
+          359.0
+        ],
+        [
+          479.0,
+          359.0
+        ],
+        [
+          479.0,
+          396.0
+        ],
+        [
+          410.0,
+          396.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "為替レート",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "视频",
+      "confidence": 0.9990976452827454,
+      "box": [
+        [
+          586.0,
+          358.0
+        ],
+        [
+          653.0,
+          358.0
+        ],
+        [
+          653.0,
+          395.0
+        ],
+        [
+          586.0,
+          395.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "動画",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "C端AI应用",
+      "confidence": 0.9971893429756165,
+      "box": [
+        [
+          280.0,
+          773.0
+        ],
+        [
+          423.0,
+          773.0
+        ],
+        [
+          423.0,
+          810.0
+        ],
+        [
+          280.0,
+          810.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "消費者向けAIアプリ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ChatBot",
+      "confidence": 0.9991779242243085,
+      "box": [
+        [
+          643.0,
+          776.0
+        ],
+        [
+          757.0,
+          776.0
+        ],
+        [
+          757.0,
+          807.0
+        ],
+        [
+          643.0,
+          807.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "チャットボット",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ChatBot"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9977509379386902,
+      "box": [
+        [
+          308.0,
+          874.0
+        ],
+        [
+          397.0,
+          874.0
+        ],
+        [
+          397.0,
+          912.0
+        ],
+        [
+          308.0,
+          912.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "需求连接供给",
+      "confidence": 0.9992112418015798,
+      "box": [
+        [
+          421.0,
+          964.0
+        ],
+        [
+          630.0,
+          964.0
+        ],
+        [
+          630.0,
+          1001.0
+        ],
+        [
+          421.0,
+          1001.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "需要を供給へつなぐ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "...",
+      "location": "bottom blue supply box",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L015",
+      "japanese": "…（その他）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": ".......",
+      "location": "bottom right orange demand box",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L016",
+      "japanese": "…（その他）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7865656000212766,
+    0.021614551544189453,
+    0.5366544723510742
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "additional_labels": [
+      {
+        "source": "...",
+        "location": "bottom blue supply box"
+      },
+      {
+        "source": ".......",
+        "location": "bottom right orange demand box"
+      }
+    ],
+    "source_sha256": "c5cdd5b5ae9e96e9b55fc6ed0f9e713b7c57715882a210ac2b599e4dcbbc27ae"
+  }
+}

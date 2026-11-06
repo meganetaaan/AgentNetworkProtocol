@@ -1,0 +1,232 @@
+{
+  "source": "blogs/images/meta-protocol-flow.png",
+  "sha256": "a1ba49a9028915c82fb6a9c2479bc2ff91324551949b512b4a4e4ba2a1adf908",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "What format is used",
+      "confidence": 0.9492626221556413,
+      "box": [
+        [
+          201.0,
+          145.0
+        ],
+        [
+          429.0,
+          147.0
+        ],
+        [
+          429.0,
+          172.0
+        ],
+        [
+          201.0,
+          170.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "データの送信には",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "totransmitdata?",
+      "confidence": 0.9968136231104533,
+      "box": [
+        [
+          219.0,
+          172.0
+        ],
+        [
+          411.0,
+          172.0
+        ],
+        [
+          411.0,
+          194.0
+        ],
+        [
+          219.0,
+          194.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "どの形式を使いますか？",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "to transmit data?"
+    },
+    {
+      "source": "Agent A",
+      "confidence": 0.9783431376729693,
+      "box": [
+        [
+          42.0,
+          232.0
+        ],
+        [
+          159.0,
+          230.0
+        ],
+        [
+          159.0,
+          265.0
+        ],
+        [
+          42.0,
+          266.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Transmit using",
+      "confidence": 0.9908162908894675,
+      "box": [
+        [
+          240.0,
+          237.0
+        ],
+        [
+          408.0,
+          241.0
+        ],
+        [
+          408.0,
+          268.0
+        ],
+        [
+          239.0,
+          264.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "次の方式で送信する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent B",
+      "confidence": 0.9819104160581317,
+      "box": [
+        [
+          489.0,
+          232.0
+        ],
+        [
+          604.0,
+          230.0
+        ],
+        [
+          605.0,
+          265.0
+        ],
+        [
+          490.0,
+          266.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON-RPC",
+      "confidence": 0.9968858882784843,
+      "box": [
+        [
+          258.0,
+          269.0
+        ],
+        [
+          390.0,
+          269.0
+        ],
+        [
+          390.0,
+          294.0
+        ],
+        [
+          258.0,
+          294.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "JSON-RPC",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JSON-RPC"
+      ]
+    },
+    {
+      "source": "Natural Language-Based Protocol",
+      "confidence": 0.9978171990763757,
+      "box": [
+        [
+          134.0,
+          414.0
+        ],
+        [
+          510.0,
+          414.0
+        ],
+        [
+          510.0,
+          441.0
+        ],
+        [
+          134.0,
+          441.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "自然言語に基づくプロトコルの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Negotiation and Connection",
+      "confidence": 0.9566128872908078,
+      "box": [
+        [
+          167.0,
+          449.0
+        ],
+        [
+          477.0,
+          449.0
+        ],
+        [
+          477.0,
+          476.0
+        ],
+        [
+          167.0,
+          476.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "交渉と接続",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.2686231000116095,
+    0.012024641036987305,
+    0.9883880615234375
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "totransmitdata?": "to transmit data?"
+    },
+    "source_sha256": "a1ba49a9028915c82fb6a9c2479bc2ff91324551949b512b4a4e4ba2a1adf908"
+  }
+}

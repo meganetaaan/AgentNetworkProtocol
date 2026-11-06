@@ -1,0 +1,156 @@
+{
+  "source": "blogs/images/anp-first-meet/07.png",
+  "sha256": "da9f512dd146dd5e8c6858e129de5c39bbc09447a71989edc5a2c53d7e162e2f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "社区进展同步",
+      "confidence": 0.9881415168444315,
+      "box": [
+        [
+          28.938508987426758,
+          37.66304397583008
+        ],
+        [
+          589.7943725585938,
+          37.66304397583008
+        ],
+        [
+          589.7943725585938,
+          122.40489959716797
+        ],
+        [
+          28.938508987426758,
+          122.40489959716797
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "コミュニティの進捗共有",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9912943442662557,
+      "box": [
+        [
+          2561.7470703125,
+          28.247283935546875
+        ],
+        [
+          2717.4638671875,
+          28.247283935546875
+        ],
+        [
+          2717.4638671875,
+          84.74185180664062
+        ],
+        [
+          2561.7470703125,
+          84.74185180664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "标准化合作：互联网协会、W3C",
+      "confidence": 0.9990951617558798,
+      "box": [
+        [
+          461.63812255859375,
+          377.9755554199219
+        ],
+        [
+          1427.633056640625,
+          373.94024658203125
+        ],
+        [
+          1427.633056640625,
+          439.8505554199219
+        ],
+        [
+          461.63812255859375,
+          443.8858947753906
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "標準化での協力：インターネット協会、W3C",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "W3C"
+      ]
+    },
+    {
+      "source": "公司合作：项目落地、生态合作",
+      "confidence": 0.9989217136587415,
+      "box": [
+        [
+          454.74798583984375,
+          544.76904296875
+        ],
+        [
+          1404.2066650390625,
+          544.76904296875
+        ],
+        [
+          1404.2066650390625,
+          606.64404296875
+        ],
+        [
+          454.74798583984375,
+          606.64404296875
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "企業との協力：プロジェクトの実用化、エコシステムでの協力",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "技术：DID本地demo，两个子项目",
+      "confidence": 0.9951720039049784,
+      "box": [
+        [
+          460.2601013183594,
+          706.1820678710938
+        ],
+        [
+          1528.2288818359375,
+          706.1820678710938
+        ],
+        [
+          1528.2288818359375,
+          776.1277465820312
+        ],
+        [
+          460.2601013183594,
+          776.1277465820312
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "技術：DIDのローカルデモ、2つのサブプロジェクト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9490338999894448,
+    0.007996320724487305,
+    0.8241269588470459
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。",
+    "source_sha256": "da9f512dd146dd5e8c6858e129de5c39bbc09447a71989edc5a2c53d7e162e2f"
+  }
+}

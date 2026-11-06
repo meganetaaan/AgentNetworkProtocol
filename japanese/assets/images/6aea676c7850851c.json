@@ -1,0 +1,420 @@
+{
+  "source": "images/ap2-402/ANP_AP2_Protocol_Flow.svg",
+  "sha256": "6aea676c7850851c7eb2339aaffb5a9662f36aea14dbd03c22c07bf529b3c88c",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP/AP2 智能体支付协议流程",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "ANP/AP2エージェント決済プロトコルの手順",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "25",
+      "label_id": "L002",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "45",
+      "label_id": "L003",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Shopper Agent",
+      "element": "text",
+      "id": null,
+      "x": "420",
+      "y": "25",
+      "label_id": "L004",
+      "japanese": "購買エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "购物者智能体 (SA)",
+      "element": "text",
+      "id": null,
+      "x": "420",
+      "y": "45",
+      "label_id": "L005",
+      "japanese": "買い物客エージェント（SA）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Merchant Agent",
+      "element": "text",
+      "id": null,
+      "x": "670",
+      "y": "25",
+      "label_id": "L006",
+      "japanese": "加盟店エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "商户智能体 (MA)",
+      "element": "text",
+      "id": null,
+      "x": "670",
+      "y": "45",
+      "label_id": "L007",
+      "japanese": "加盟店エージェント（MA）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Payment Processor",
+      "element": "text",
+      "id": null,
+      "x": "920",
+      "y": "25",
+      "label_id": "L008",
+      "japanese": "決済処理事業者",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付处理方 (PP)",
+      "element": "text",
+      "id": null,
+      "x": "920",
+      "y": "45",
+      "label_id": "L009",
+      "japanese": "決済処理事業者（PP）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Phase 1: 创建订单",
+      "element": "text",
+      "id": null,
+      "x": "80",
+      "y": "180",
+      "label_id": "L010",
+      "japanese": "Phase 1: 注文の作成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1. 发起购买请求",
+      "element": "text",
+      "id": null,
+      "x": "295",
+      "y": "185",
+      "label_id": "L011",
+      "japanese": "1. 購入要求を開始する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2. create_cart_mandate",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "225",
+      "label_id": "L012",
+      "japanese": "2. create_cart_mandate",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "3. CartMandate + 二维码",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "265",
+      "label_id": "L013",
+      "japanese": "3. CartMandateとQRコード",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(包含商户签名)",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "285",
+      "label_id": "L014",
+      "japanese": "（加盟店の署名を含む）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Phase 2: 授权支付",
+      "element": "text",
+      "id": null,
+      "x": "80",
+      "y": "330",
+      "label_id": "L015",
+      "japanese": "Phase 2: 支払いの認可",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "4. 展示订单+二维码",
+      "element": "text",
+      "id": null,
+      "x": "295",
+      "y": "335",
+      "label_id": "L016",
+      "japanese": "4. 注文とQRコードを表示",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "5. send_payment_mandate",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "385",
+      "label_id": "L017",
+      "japanese": "5. send_payment_mandate",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(用户授权签名, MA返回200 OK)",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "405",
+      "label_id": "L018",
+      "japanese": "（ユーザーの承認署名。MAは200 OKを返す）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "6a. 用户扫码支付",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "455",
+      "label_id": "L019",
+      "japanese": "6a. ユーザーがQRコードを読み取って支払う",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "6b. 支付结果通知 (Callback)",
+      "element": "text",
+      "id": null,
+      "x": "795",
+      "y": "485",
+      "label_id": "L020",
+      "japanese": "6b. 決済結果の通知（Callback）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(支付宝/微信 -> 商户)",
+      "element": "text",
+      "id": null,
+      "x": "795",
+      "y": "505",
+      "label_id": "L021",
+      "japanese": "（Alipay／WeChatから加盟店へ）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Phase 3: 凭证交付",
+      "element": "text",
+      "id": null,
+      "x": "80",
+      "y": "550",
+      "label_id": "L022",
+      "japanese": "Phase 3: 資格情報の引き渡し",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "7. 发送支付确认凭证",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "565",
+      "label_id": "L023",
+      "japanese": "7. 決済確認の証明書を送信",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Payment Confirmation)",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "585",
+      "label_id": "L024",
+      "japanese": "（決済確認）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "8. 通知支付结果",
+      "element": "text",
+      "id": null,
+      "x": "295",
+      "y": "605",
+      "label_id": "L025",
+      "japanese": "8. 決済結果を通知",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "9. 发送物流状态凭证",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "655",
+      "label_id": "L026",
+      "japanese": "9. 配送状況の証明書を送信",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Logistics Status)",
+      "element": "text",
+      "id": null,
+      "x": "545",
+      "y": "675",
+      "label_id": "L027",
+      "japanese": "（配送状況）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "10. 通知物流状态",
+      "element": "text",
+      "id": null,
+      "x": "295",
+      "y": "695",
+      "label_id": "L028",
+      "japanese": "10. 配送状況を通知",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "核心特性:",
+      "element": "text",
+      "id": null,
+      "x": "20",
+      "y": "30",
+      "label_id": "L029",
+      "japanese": "主な特性:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• DID:WBA 去中心化身份",
+      "element": "text",
+      "id": null,
+      "x": "20",
+      "y": "55",
+      "label_id": "L030",
+      "japanese": "• DID:WBA 分散型ID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• JWT/JWS 密码学签名",
+      "element": "text",
+      "id": null,
+      "x": "20",
+      "y": "75",
+      "label_id": "L031",
+      "japanese": "• JWT/JWSによる暗号学的署名",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 用户明确授权 (User Authorization)",
+      "element": "text",
+      "id": null,
+      "x": "20",
+      "y": "95",
+      "label_id": "L032",
+      "japanese": "• ユーザーによる明示的な認可（User Authorization）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "安全机制:",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "30",
+      "label_id": "L033",
+      "japanese": "安全性の仕組み:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Cart Hash: 防止购物车内容篡改",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "55",
+      "label_id": "L034",
+      "japanese": "• Cart Hash: ショッピングカートの内容の改ざんを防ぐ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Mandates: 基于凭证的交易流程",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "75",
+      "label_id": "L035",
+      "japanese": "• Mandates: 資格情報に基づく取引手順",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Nonce/JTI: 防重放攻击",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "95",
+      "label_id": "L036",
+      "japanese": "• Nonce/JTI: リプレイ攻撃対策",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "图例:",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "30",
+      "label_id": "L037",
+      "japanese": "凡例:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "请求 (Request)",
+      "element": "text",
+      "id": null,
+      "x": "660",
+      "y": "55",
+      "label_id": "L038",
+      "japanese": "要求（Request）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "响应/凭证 (Response)",
+      "element": "text",
+      "id": null,
+      "x": "660",
+      "y": "80",
+      "label_id": "L039",
+      "japanese": "応答／資格情報（Response）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "异步回调 (Callback)",
+      "element": "text",
+      "id": null,
+      "x": "660",
+      "y": "105",
+      "label_id": "L040",
+      "japanese": "非同期コールバック（Callback）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户动作",
+      "element": "text",
+      "id": null,
+      "x": "830",
+      "y": "60",
+      "label_id": "L041",
+      "japanese": "ユーザーの操作",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

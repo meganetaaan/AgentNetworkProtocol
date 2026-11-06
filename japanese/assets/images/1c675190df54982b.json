@@ -1,0 +1,183 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/14-e2ee-on.png",
+  "sha256": "1c675190df54982b0e875dee341c710219d5c28b776edc885b77caeb9ea51d01",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "发信人",
+      "confidence": 0.9998499353726705,
+      "box": [
+        [
+          156.0,
+          266.0
+        ],
+        [
+          246.0,
+          266.0
+        ],
+        [
+          246.0,
+          301.0
+        ],
+        [
+          156.0,
+          301.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "送信者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "中转服务器",
+      "confidence": 0.9993801832199096,
+      "box": [
+        [
+          631.0,
+          266.0
+        ],
+        [
+          777.0,
+          266.0
+        ],
+        [
+          777.0,
+          300.0
+        ],
+        [
+          631.0,
+          300.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "中継サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "收信人",
+      "confidence": 0.9999227126439413,
+      "box": [
+        [
+          1155.0,
+          266.0
+        ],
+        [
+          1245.0,
+          266.0
+        ],
+        [
+          1245.0,
+          301.0
+        ],
+        [
+          1155.0,
+          301.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "受信者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "负责投递",
+      "confidence": 0.9994560927152634,
+      "box": [
+        [
+          655.0,
+          307.0
+        ],
+        [
+          753.0,
+          307.0
+        ],
+        [
+          753.0,
+          336.0
+        ],
+        [
+          655.0,
+          336.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "配送を担当",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "中转服务器看到的内容",
+      "confidence": 0.9982898831367493,
+      "box": [
+        [
+          150.0,
+          396.0
+        ],
+        [
+          438.0,
+          396.0
+        ],
+        [
+          438.0,
+          426.0
+        ],
+        [
+          150.0,
+          426.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "中継サーバーから見える内容",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "kR9x2Lp8vQ··：（一串解不开的密文，它只知道该转给谁）",
+      "confidence": 0.9548699334263802,
+      "box": [
+        [
+          148.0,
+          454.0
+        ],
+        [
+          731.0,
+          454.0
+        ],
+        [
+          731.0,
+          479.0
+        ],
+        [
+          148.0,
+          479.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "kR9x2Lp8vQ…（解読できない暗号文。誰へ転送すべきかだけが分かる）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "kR9x2Lp8vQ"
+      ],
+      "transcribed_source": "kR9x2Lp8vQ…（一串解不开的密文，它只知道该转给谁）"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.4027036000043154,
+    0.009021759033203125,
+    1.5348351001739502
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "kR9x2Lp8vQ··：（一串解不开的密文，它只知道该转给谁）": "kR9x2Lp8vQ…（一串解不开的密文，它只知道该转给谁）"
+    },
+    "source_note": "錠前の開閉は図形として保持。暗号文は省略例であり、有効な暗号値を示さない。",
+    "source_sha256": "1c675190df54982b0e875dee341c710219d5c28b776edc885b77caeb9ea51d01"
+  }
+}

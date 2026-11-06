@@ -1,0 +1,179 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/11-adjson.png",
+  "sha256": "f6577148f38f627f28c00bdd2586aa1992d1e0ee07413464639c07e92a23dd2e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "来访的助理",
+      "confidence": 0.9984428286552429,
+      "box": [
+        [
+          153.0,
+          263.0
+        ],
+        [
+          296.0,
+          263.0
+        ],
+        [
+          296.0,
+          291.0
+        ],
+        [
+          153.0,
+          291.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "訪問側のアシスタント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ad.json",
+      "confidence": 0.9993176460266113,
+      "box": [
+        [
+          652.0,
+          261.0
+        ],
+        [
+          758.0,
+          263.0
+        ],
+        [
+          758.0,
+          298.0
+        ],
+        [
+          651.0,
+          296.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ad.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ad.json"
+      ]
+    },
+    {
+      "source": "咖啡店的程序",
+      "confidence": 0.9973295132319132,
+      "box": [
+        [
+          1079.0,
+          263.0
+        ],
+        [
+          1249.0,
+          263.0
+        ],
+        [
+          1249.0,
+          291.0
+        ],
+        [
+          1079.0,
+          291.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "コーヒー店のプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "「你会干什么？」",
+      "confidence": 0.9715822488069534,
+      "box": [
+        [
+          142.0,
+          302.0
+        ],
+        [
+          306.0,
+          304.0
+        ],
+        [
+          306.0,
+          330.0
+        ],
+        [
+          141.0,
+          328.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "「何ができますか？」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "门口的菜单牌",
+      "confidence": 0.9995920856793722,
+      "box": [
+        [
+          631.0,
+          302.0
+        ],
+        [
+          775.0,
+          303.0
+        ],
+        [
+          775.0,
+          329.0
+        ],
+        [
+          631.0,
+          328.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "店先のメニュー看板",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "名字、归谁所有、有哪些商品、接口在哪个网址、要不要先认证",
+      "confidence": 0.9992391786405018,
+      "box": [
+        [
+          369.0,
+          350.0
+        ],
+        [
+          1040.0,
+          350.0
+        ],
+        [
+          1040.0,
+          376.0
+        ],
+        [
+          369.0,
+          376.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "名前、所有者、商品、インターフェースのURL、認証が先に必要かどうか",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.2581532999756746,
+    0.010007381439208984,
+    1.627197504043579
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "f6577148f38f627f28c00bdd2586aa1992d1e0ee07413464639c07e92a23dd2e"
+  }
+}

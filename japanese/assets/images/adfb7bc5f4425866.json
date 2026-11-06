@@ -1,0 +1,522 @@
+{
+  "source": "blogs/images/anp-explorer.png",
+  "sha256": "adfb7bc5f4425866abaec2f9be04ec6d0b6d54bc0ccd4ab8b2e82d8ec7d473e4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ANP Network Explorer",
+      "confidence": 0.9742398351430893,
+      "box": [
+        [
+          136.1693572998047,
+          39.48749923706055
+        ],
+        [
+          693.225830078125,
+          42.52499771118164
+        ],
+        [
+          693.225830078125,
+          97.19999694824219
+        ],
+        [
+          136.1693572998047,
+          94.1624984741211
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ANPネットワークエクスプローラー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "中文",
+      "confidence": 0.9996993839740753,
+      "box": [
+        [
+          2794.56640625,
+          44.04374694824219
+        ],
+        [
+          2884.314453125,
+          44.04374694824219
+        ],
+        [
+          2884.314453125,
+          89.60624694824219
+        ],
+        [
+          2794.56640625,
+          89.60624694824219
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "中国語",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "α）",
+      "confidence": 0.6487648487091064,
+      "box": [
+        [
+          2913.714599609375,
+          44.04374694824219
+        ],
+        [
+          3000.367919921875,
+          44.04374694824219
+        ],
+        [
+          3000.367919921875,
+          88.08749389648438
+        ],
+        [
+          2913.714599609375,
+          88.08749389648438
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "Explore Agent Network with Natural Language",
+      "confidence": 0.9869098801945531,
+      "box": [
+        [
+          673.10986328125,
+          200.47499084472656
+        ],
+        [
+          2386.058349609375,
+          208.06874084472656
+        ],
+        [
+          2386.058349609375,
+          302.2312316894531
+        ],
+        [
+          673.10986328125,
+          294.6374816894531
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "自然言語でエージェントネットワークを探索",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Connect to the agent world via ANP protocol, input URL to interact with various agents",
+      "confidence": 0.9938888043858284,
+      "box": [
+        [
+          807.7318725585938,
+          308.3062438964844
+        ],
+        [
+          2251.4365234375,
+          308.3062438964844
+        ],
+        [
+          2251.4365234375,
+          352.3499755859375
+        ],
+        [
+          807.7318725585938,
+          352.3499755859375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ANPプロトコルでエージェントの世界へ接続。URLを入力してさまざまなエージェントとやり取りできます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP",
+        "URL"
+      ]
+    },
+    {
+      "source": "Your Question",
+      "confidence": 0.9940409201842088,
+      "box": [
+        [
+          676.2046508789062,
+          539.15625
+        ],
+        [
+          926.8800048828125,
+          539.15625
+        ],
+        [
+          926.8800048828125,
+          584.71875
+        ],
+        [
+          676.2046508789062,
+          584.71875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "質問",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "例如：帮我预订杭州的酒店，1晚，今天入住，价格500以下？/e.g.,Help mebooka hotel in Hangzhou for1",
+      "confidence": 0.955532021181924,
+      "box": [
+        [
+          710.2469482421875,
+          625.7249755859375
+        ],
+        [
+          2252.98388671875,
+          625.7249755859375
+        ],
+        [
+          2252.98388671875,
+          669.7687377929688
+        ],
+        [
+          710.2469482421875,
+          669.7687377929688
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "例：杭州のホテルを1泊予約してください。今日チェックインし、料金は500未満で。／例：杭州のホテルを1",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1",
+        "500",
+        "/e.g.",
+        "1"
+      ],
+      "transcribed_source": "例如：帮我预订杭州的酒店，1晚，今天入住，价格500以下？/ e.g., Help me book a hotel in Hangzhou for 1"
+    },
+    {
+      "source": "night, check in today, and the price is below 500?",
+      "confidence": 0.9819721627235413,
+      "box": [
+        [
+          708.6995849609375,
+          675.84375
+        ],
+        [
+          1443.70458984375,
+          674.324951171875
+        ],
+        [
+          1443.70458984375,
+          715.3312377929688
+        ],
+        [
+          708.6995849609375,
+          716.8499755859375
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "泊予約してください。今日チェックインし、料金は500未満で。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "500"
+      ]
+    },
+    {
+      "source": "Agent URL(Optional)",
+      "confidence": 0.970070901669954,
+      "box": [
+        [
+          677.7520141601562,
+          833.793701171875
+        ],
+        [
+          1042.9334716796875,
+          832.2749633789062
+        ],
+        [
+          1042.9334716796875,
+          879.356201171875
+        ],
+        [
+          677.7520141601562,
+          880.875
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "エージェントのURL（任意）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ],
+      "transcribed_source": "Agent URL (Optional)"
+    },
+    {
+      "source": "https://agent-search.ai/ad.json",
+      "confidence": 0.9966825535220485,
+      "box": [
+        [
+          711.7943725585938,
+          923.3999633789062
+        ],
+        [
+          1176.008056640625,
+          923.3999633789062
+        ],
+        [
+          1176.008056640625,
+          962.887451171875
+        ],
+        [
+          711.7943725585938,
+          962.887451171875
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "https://agent-search.ai/ad.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "https://agent-search.ai/ad.json"
+      ]
+    },
+    {
+      "source": "Analyze Structure ",
+      "confidence": 0.9891077048248715,
+      "box": [
+        [
+          1725.32763671875,
+          1043.3812255859375
+        ],
+        [
+          2017.7822265625,
+          1043.3812255859375
+        ],
+        [
+          2017.7822265625,
+          1084.387451171875
+        ],
+        [
+          1725.32763671875,
+          1084.387451171875
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "構造を解析",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Analyze Structure"
+    },
+    {
+      "source": "Submit ",
+      "confidence": 0.995013245514461,
+      "box": [
+        [
+          2164.783203125,
+          1041.8624267578125
+        ],
+        [
+          2331.900146484375,
+          1041.8624267578125
+        ],
+        [
+          2331.900146484375,
+          1082.8687744140625
+        ],
+        [
+          2164.783203125,
+          1082.8687744140625
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "送信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Submit"
+    },
+    {
+      "source": "Welcome toANPNetwork Explorer",
+      "confidence": 0.9827461694848949,
+      "box": [
+        [
+          92.84274291992188,
+          1271.1937255859375
+        ],
+        [
+          809.2792358398438,
+          1277.2686767578125
+        ],
+        [
+          809.2792358398438,
+          1325.86865234375
+        ],
+        [
+          92.84274291992188,
+          1319.793701171875
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "ANPネットワークエクスプローラーへようこそ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "toANPNetwork"
+      ],
+      "transcribed_source": "Welcome to ANP Network Explorer"
+    },
+    {
+      "source": "Visited URLs",
+      "confidence": 0.9565853277842203,
+      "box": [
+        [
+          1949.697509765625,
+          1277.2686767578125
+        ],
+        [
+          2191.088623046875,
+          1277.2686767578125
+        ],
+        [
+          2191.088623046875,
+          1318.27490234375
+        ],
+        [
+          1949.697509765625,
+          1318.27490234375
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "訪問したURL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "his isa network exploration tool based on Agent NetworkProtocol(ANP). Simply enteryour agent",
+      "confidence": 0.9768991768360138,
+      "box": [
+        [
+          176.40121459960938,
+          1362.3187255859375
+        ],
+        [
+          1630.9375,
+          1363.83740234375
+        ],
+        [
+          1630.9375,
+          1404.84375
+        ],
+        [
+          176.40121459960938,
+          1403.324951171875
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "これはAgent Network Protocol（ANP）に基づくネットワーク探索ツールです。エージェントの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NetworkProtocol",
+        "ANP"
+      ],
+      "transcribed_source": "This is a network exploration tool based on Agent Network Protocol (ANP). Simply enter your agent"
+    },
+    {
+      "source": "NoURLsvisitedyet",
+      "confidence": 0.9908262528479099,
+      "box": [
+        [
+          1887.8023681640625,
+          1360.7999267578125
+        ],
+        [
+          2183.351806640625,
+          1363.83740234375
+        ],
+        [
+          2183.351806640625,
+          1404.84375
+        ],
+        [
+          1887.8023681640625,
+          1401.80615234375
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "訪問したURLはまだありません",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "NoURLsvisitedyet"
+      ],
+      "transcribed_source": "No URLs visited yet"
+    },
+    {
+      "source": "description file URL, and you can use this tool to access your agent and interact with it. By asking",
+      "confidence": 0.9793501049280167,
+      "box": [
+        [
+          177.94859313964844,
+          1407.8812255859375
+        ],
+        [
+          1618.5584716796875,
+          1410.918701171875
+        ],
+        [
+          1618.5584716796875,
+          1454.96240234375
+        ],
+        [
+          177.94859313964844,
+          1451.9249267578125
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "記述ファイルのURLを入力するだけで、エージェントへアクセスしてやり取りできます。質問することで…（続きは画像外）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "0",
+      "location": "visited URLs count",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L018",
+      "japanese": "0",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    0.6518735999707133,
+    0.022027254104614258,
+    3.467942237854004
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {
+      "例如：帮我预订杭州的酒店，1晚，今天入住，价格500以下？/e.g.,Help mebooka hotel in Hangzhou for1": "例如：帮我预订杭州的酒店，1晚，今天入住，价格500以下？/ e.g., Help me book a hotel in Hangzhou for 1",
+      "Agent URL(Optional)": "Agent URL (Optional)",
+      "Analyze Structure ": "Analyze Structure",
+      "Submit ": "Submit",
+      "Welcome toANPNetwork Explorer": "Welcome to ANP Network Explorer",
+      "his isa network exploration tool based on Agent NetworkProtocol(ANP). Simply enteryour agent": "This is a network exploration tool based on Agent Network Protocol (ANP). Simply enter your agent",
+      "NoURLsvisitedyet": "No URLs visited yet"
+    },
+    "additional_labels": [
+      {
+        "source": "0",
+        "location": "visited URLs count"
+      }
+    ],
+    "source_note": "先頭の大きなTを本文と結合。右上の月・太陽マークは図形。下部本文はBy askingの先が画像外。",
+    "false_positive_labels": [
+      "α）"
+    ],
+    "source_limitation": "下部の説明文の続きは画像外。",
+    "source_sha256": "adfb7bc5f4425866abaec2f9be04ec6d0b6d54bc0ccd4ab8b2e82d8ec7d473e4"
+  }
+}

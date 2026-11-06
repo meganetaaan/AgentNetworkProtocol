@@ -1,0 +1,129 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta1.png",
+  "sha256": "234921a5939d265f3bc8bb40a7f7ee923e745cc07b922aa29bf48d87e5865c51",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Step 1 of 4",
+      "confidence": 0.963787626136433,
+      "box": [
+        [
+          35.0,
+          35.0
+        ],
+        [
+          148.0,
+          33.0
+        ],
+        [
+          148.0,
+          59.0
+        ],
+        [
+          35.0,
+          61.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全4段階の第1段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "source": "?",
+      "confidence": 0.6924992799758911,
+      "box": [
+        [
+          705.0,
+          168.0
+        ],
+        [
+          724.0,
+          168.0
+        ],
+        [
+          724.0,
+          196.0
+        ],
+        [
+          705.0,
+          196.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "?（疑問符）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Program A",
+      "confidence": 0.9879218339920044,
+      "box": [
+        [
+          209.0,
+          270.0
+        ],
+        [
+          359.0,
+          270.0
+        ],
+        [
+          359.0,
+          301.0
+        ],
+        [
+          209.0,
+          301.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "プログラムA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Program B",
+      "confidence": 0.997484200530582,
+      "box": [
+        [
+          1069.0,
+          270.0
+        ],
+        [
+          1219.0,
+          270.0
+        ],
+        [
+          1219.0,
+          301.0
+        ],
+        [
+          1069.0,
+          301.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "プログラムB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8252859999774955,
+    0.004998207092285156,
+    0.12148571014404297
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "図中の文字と記号を目視確認した。",
+    "source_sha256": "234921a5939d265f3bc8bb40a7f7ee923e745cc07b922aa29bf48d87e5865c51"
+  }
+}

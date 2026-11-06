@@ -1,0 +1,254 @@
+{
+  "source": "chinese/相关产品与技术/agent-discovery-en.svg",
+  "sha256": "ef0fd651a190b80bf7176e27140b5b36c9bb499ec10ccfc7353197493fbb317a",
+  "method": "svg-xml",
+  "status": "text-extracted-malformed-xml-recovered",
+  "labels": [
+    {
+      "source": "ANP Agent Discovery Protocol Architecture",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "70",
+      "label_id": "L001",
+      "japanese": "ANPエージェント発見プロトコルの構成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Active Discovery Mechanism",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "40",
+      "label_id": "L002",
+      "japanese": "能動的発見の仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Search Engine/Agent",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "85",
+      "label_id": "L003",
+      "japanese": "検索エンジン／エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Server",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "85",
+      "label_id": "L004",
+      "japanese": "エージェントサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "/.well-known/",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "80",
+      "label_id": "L005",
+      "japanese": "/.well-known/",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "agent-descriptions",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "105",
+      "label_id": "L006",
+      "japanese": "agent-descriptions",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "HTTP GET",
+      "element": "text",
+      "id": null,
+      "x": "360",
+      "y": "190",
+      "label_id": "L007",
+      "japanese": "HTTP GET",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Provides",
+      "element": "text",
+      "id": null,
+      "x": "555",
+      "y": "310",
+      "label_id": "L008",
+      "japanese": "提供する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Active Discovery: Search engines or other agents discover all public agents via .well-known URI paths",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "25",
+      "label_id": "L009",
+      "japanese": "• 能動的発見: 検索エンジンや他のエージェントが.well-known URIパス経由で、公開されているすべてのエージェントを発見する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Return Format: JSON-LD collection document containing URL list of agent description documents",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "55",
+      "label_id": "L010",
+      "japanese": "• 応答形式: エージェント記述文書のURL一覧を含むJSON-LDコレクション文書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Passive Discovery Mechanism",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "40",
+      "label_id": "L011",
+      "japanese": "受動的発見の仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "85",
+      "label_id": "L012",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Search Service",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "80",
+      "label_id": "L013",
+      "japanese": "検索サービス",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "105",
+      "label_id": "L014",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Description",
+      "element": "text",
+      "id": null,
+      "x": "130",
+      "y": "75",
+      "label_id": "L015",
+      "japanese": "エージェント記述",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Document (JSON-LD)",
+      "element": "text",
+      "id": null,
+      "x": "130",
+      "y": "95",
+      "label_id": "L016",
+      "japanese": "文書（JSON-LD）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Registration Request",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "155",
+      "label_id": "L017",
+      "japanese": "登録要求",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(with description URL)",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "175",
+      "label_id": "L018",
+      "japanese": "（記述文書のURL付き）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Crawl and Index",
+      "element": "text",
+      "id": null,
+      "x": "325",
+      "y": "300",
+      "label_id": "L019",
+      "japanese": "クロールとインデックス作成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Passive Discovery: Agents proactively register their description URLs to search services for",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "20",
+      "label_id": "L020",
+      "japanese": "• 受動的発見: エージェントが検索サービスに記述文書のURLを自発的に登録して、",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "crawling and indexing",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "40",
+      "label_id": "L021",
+      "japanese": "クロールとインデックス作成を可能にする",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• Validation & Crawling: Search service validates requests then crawls agent description",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "65",
+      "label_id": "L022",
+      "japanese": "• 検証とクロール: 検索サービスは要求を検証した後、エージェント記述",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "documents for indexing",
+      "element": "text",
+      "id": null,
+      "x": "25",
+      "y": "85",
+      "label_id": "L023",
+      "japanese": "文書をクロールしてインデックスを作成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Based on ANP-Agent Discovery Protocol Specification (Version 1.1)",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "870",
+      "label_id": "L024",
+      "japanese": "ANPエージェント発見プロトコル仕様（Version 1.1）に基づく",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained",
+  "parse_recovery": {
+    "original_xml_error": "not well-formed (invalid token): line 173, column 30",
+    "operation": "bare-ampersands-escaped-in-memory-only"
+  }
+}

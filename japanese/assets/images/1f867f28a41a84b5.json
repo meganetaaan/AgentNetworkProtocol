@@ -1,0 +1,527 @@
+{
+  "source": "blogs/images/mcp-usb.png",
+  "sha256": "1f867f28a41a84b5e04d8ddd9949b374f66277f9e8fcefd1eb706daa8aa63a0d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "MCP",
+      "confidence": 0.996644934018453,
+      "box": [
+        [
+          35.0,
+          28.0
+        ],
+        [
+          135.0,
+          25.0
+        ],
+        [
+          136.0,
+          66.0
+        ],
+        [
+          36.0,
+          68.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "MCP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "米Claude",
+      "confidence": 0.9288548912320819,
+      "box": [
+        [
+          856.0,
+          39.0
+        ],
+        [
+          1004.0,
+          42.0
+        ],
+        [
+          1004.0,
+          76.0
+        ],
+        [
+          855.0,
+          73.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "Claude",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Claude"
+    },
+    {
+      "source": "architecture",
+      "confidence": 0.9982263197501501,
+      "box": [
+        [
+          38.0,
+          80.0
+        ],
+        [
+          266.0,
+          82.0
+        ],
+        [
+          266.0,
+          117.0
+        ],
+        [
+          38.0,
+          116.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "構成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCP clients",
+      "confidence": 0.9887503602287986,
+      "box": [
+        [
+          575.0,
+          100.0
+        ],
+        [
+          757.0,
+          102.0
+        ],
+        [
+          757.0,
+          135.0
+        ],
+        [
+          574.0,
+          133.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "MCPクライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "client.py",
+      "confidence": 0.9939092795054117,
+      "box": [
+        [
+          612.0,
+          141.0
+        ],
+        [
+          722.0,
+          148.0
+        ],
+        [
+          720.0,
+          182.0
+        ],
+        [
+          610.0,
+          175.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "client.py",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "client.py"
+      ]
+    },
+    {
+      "source": "MCPhosts",
+      "confidence": 0.9864158183336258,
+      "box": [
+        [
+          854.0,
+          143.0
+        ],
+        [
+          1020.0,
+          145.0
+        ],
+        [
+          1020.0,
+          175.0
+        ],
+        [
+          854.0,
+          173.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "MCPホスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "MCP hosts"
+    },
+    {
+      "source": "MCP",
+      "confidence": 0.994148870309194,
+      "box": [
+        [
+          275.0,
+          173.0
+        ],
+        [
+          356.0,
+          173.0
+        ],
+        [
+          356.0,
+          208.0
+        ],
+        [
+          275.0,
+          208.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "MCP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "MCP",
+      "confidence": 0.9922579924265543,
+      "box": [
+        [
+          146.0,
+          302.0
+        ],
+        [
+          216.0,
+          302.0
+        ],
+        [
+          216.0,
+          330.0
+        ],
+        [
+          146.0,
+          330.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "MCP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "server",
+      "confidence": 0.9975546896457672,
+      "box": [
+        [
+          138.0,
+          335.0
+        ],
+        [
+          223.0,
+          335.0
+        ],
+        [
+          223.0,
+          358.0
+        ],
+        [
+          138.0,
+          358.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCP",
+      "confidence": 0.9943657517433167,
+      "box": [
+        [
+          827.0,
+          416.0
+        ],
+        [
+          900.0,
+          414.0
+        ],
+        [
+          901.0,
+          443.0
+        ],
+        [
+          828.0,
+          446.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "MCP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "server",
+      "confidence": 0.996773342291514,
+      "box": [
+        [
+          820.0,
+          448.0
+        ],
+        [
+          908.0,
+          446.0
+        ],
+        [
+          908.0,
+          472.0
+        ],
+        [
+          820.0,
+          474.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Remote",
+      "confidence": 0.9970697462558746,
+      "box": [
+        [
+          58.0,
+          515.0
+        ],
+        [
+          137.0,
+          517.0
+        ],
+        [
+          136.0,
+          543.0
+        ],
+        [
+          57.0,
+          541.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "リモート",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCP",
+      "confidence": 0.9933384855588278,
+      "box": [
+        [
+          455.0,
+          517.0
+        ],
+        [
+          527.0,
+          517.0
+        ],
+        [
+          527.0,
+          547.0
+        ],
+        [
+          455.0,
+          547.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "MCP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "Localdata",
+      "confidence": 0.9943049682511224,
+      "box": [
+        [
+          941.0,
+          511.0
+        ],
+        [
+          1042.0,
+          511.0
+        ],
+        [
+          1042.0,
+          533.0
+        ],
+        [
+          941.0,
+          533.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "ローカルのデータ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Local data"
+    },
+    {
+      "source": "services",
+      "confidence": 0.9959152936935425,
+      "box": [
+        [
+          57.0,
+          545.0
+        ],
+        [
+          137.0,
+          545.0
+        ],
+        [
+          137.0,
+          568.0
+        ],
+        [
+          57.0,
+          568.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "31",
+      "confidence": 0.9986561238765717,
+      "box": [
+        [
+          319.0,
+          540.0
+        ],
+        [
+          344.0,
+          540.0
+        ],
+        [
+          344.0,
+          561.0
+        ],
+        [
+          319.0,
+          561.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "31",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "31"
+      ]
+    },
+    {
+      "source": "sources",
+      "confidence": 0.9960524780409676,
+      "box": [
+        [
+          952.0,
+          541.0
+        ],
+        [
+          1030.0,
+          541.0
+        ],
+        [
+          1030.0,
+          561.0
+        ],
+        [
+          952.0,
+          561.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "ソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "server",
+      "confidence": 0.9978481729825338,
+      "box": [
+        [
+          449.0,
+          551.0
+        ],
+        [
+          533.0,
+          551.0
+        ],
+        [
+          533.0,
+          574.0
+        ],
+        [
+          449.0,
+          574.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "</>",
+      "location": "source-code document icon above MCP clients",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L019",
+      "japanese": "コード（記号）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.38778259995160624,
+    0.025716304779052734,
+    0.49091100692749023
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "米Claude": "Claude",
+      "MCPhosts": "MCP hosts",
+      "Localdata": "Local data"
+    },
+    "additional_labels": [
+      {
+        "source": "</>",
+        "location": "source-code document icon above MCP clients"
+      }
+    ],
+    "source_note": "Claude左の星形、OpenAI・Cursor・Slack・Gmail・Finderの各ロゴは図形。カレンダーロゴの31は文字として保持。",
+    "source_sha256": "1f867f28a41a84b5e04d8ddd9949b374f66277f9e8fcefd1eb706daa8aa63a0d"
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page20.jpg",
+  "sha256": "703b0a859a572ffb02ac1d938ce7fc215090d428a0ea7f0ca4a6fbbd3f4a82c2",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "DemoPresentation",
+      "confidence": 0.9934709966182709,
+      "box": [
+        [
+          42.96773910522461,
+          47.4428596496582
+        ],
+        [
+          768.774169921875,
+          47.4428596496582
+        ],
+        [
+          768.774169921875,
+          112.24285888671875
+        ],
+        [
+          42.96773910522461,
+          112.24285888671875
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DemoPresentation"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9751088817914327,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          86.78571319580078
+        ],
+        [
+          2154.193603515625,
+          86.78571319580078
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Through the coffee ordering scenario, demonstrate how a",
+      "confidence": 0.9976793137463656,
+      "box": [
+        [
+          465.6773986816406,
+          484.8428649902344
+        ],
+        [
+          1840.6451416015625,
+          484.8428649902344
+        ],
+        [
+          1840.6451416015625,
+          538.0714111328125
+        ],
+        [
+          465.6773986816406,
+          538.0714111328125
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "personal assistant interacts with the coffee shop's agent using",
+      "confidence": 0.995704868483165,
+      "box": [
+        [
+          416.9031982421875,
+          554.2714233398438
+        ],
+        [
+          1884.774169921875,
+          553.1143188476562
+        ],
+        [
+          1884.774169921875,
+          617.914306640625
+        ],
+        [
+          416.9031982421875,
+          619.0714111328125
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID and AgentDescription.",
+      "confidence": 0.984158902168274,
+      "box": [
+        [
+          819.8709716796875,
+          629.4857177734375
+        ],
+        [
+          1480.6451416015625,
+          634.1143188476562
+        ],
+        [
+          1480.6451416015625,
+          688.5
+        ],
+        [
+          819.8709716796875,
+          683.8714599609375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID",
+        "AgentDescription"
+      ]
+    },
+    {
+      "source": "Demo Presentation\n\n\n\n\n\n               Through the coffee ordering scenario, demonstrate how a\n               personal assistant interacts with the coffee shop's agent using\n                      DID and AgentDescription.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L006",
+      "japanese": "デモ実演\n\nコーヒー注文の場面を通じて、パーソナルアシスタントがDIDとAgentDescriptionを使い、コーヒーショップのエージェントとやり取りする様子を示します。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4179780000122264,
+    0.0069904327392578125,
+    1.3077893257141113
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 20,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-20",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 0.7457581018518519,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 20,
+    "manual_label_translations": {
+      "Demo Presentation\n\n\n\n\n\n               Through the coffee ordering scenario, demonstrate how a\n               personal assistant interacts with the coffee shop's agent using\n                      DID and AgentDescription.": "デモ実演\n\nコーヒー注文の場面を通じて、パーソナルアシスタントがDIDとAgentDescriptionを使い、コーヒーショップのエージェントとやり取りする様子を示します。"
+    },
+    "additional_labels": [
+      {
+        "source": "Demo Presentation\n\n\n\n\n\n               Through the coffee ordering scenario, demonstrate how a\n               personal assistant interacts with the coffee shop's agent using\n                      DID and AgentDescription.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "DemoPresentation",
+      "ANP",
+      "Through the coffee ordering scenario, demonstrate how a",
+      "personal assistant interacts with the coffee shop's agent using",
+      "DID and AgentDescription."
+    ],
+    "source_sha256": "703b0a859a572ffb02ac1d938ce7fc215090d428a0ea7f0ca4a6fbbd3f4a82c2"
+  }
+}

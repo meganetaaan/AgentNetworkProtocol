@@ -1,0 +1,279 @@
+{
+  "source": "images/meta-protocol-communication.png",
+  "sha256": "8ad6739ad846c52236a384a341ee1f0f4069f8e99fc411cb1cb5babed2807aa4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agent A",
+      "confidence": 0.9664796761104039,
+      "box": [
+        [
+          89.0,
+          59.0
+        ],
+        [
+          207.0,
+          59.0
+        ],
+        [
+          207.0,
+          100.0
+        ],
+        [
+          89.0,
+          100.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent B",
+      "confidence": 0.9971642579351153,
+      "box": [
+        [
+          702.0,
+          59.0
+        ],
+        [
+          820.0,
+          59.0
+        ],
+        [
+          820.0,
+          100.0
+        ],
+        [
+          702.0,
+          100.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Negotiation",
+      "confidence": 0.9941591560840607,
+      "box": [
+        [
+          286.0,
+          174.0
+        ],
+        [
+          588.0,
+          174.0
+        ],
+        [
+          588.0,
+          210.0
+        ],
+        [
+          286.0,
+          210.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "プロトコル交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Code",
+      "confidence": 0.9966409068841201,
+      "box": [
+        [
+          160.0,
+          356.0
+        ],
+        [
+          367.0,
+          356.0
+        ],
+        [
+          367.0,
+          388.0
+        ],
+        [
+          160.0,
+          388.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "プロトコルのコード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Code",
+      "confidence": 0.9649429412988516,
+      "box": [
+        [
+          780.0,
+          348.0
+        ],
+        [
+          989.0,
+          348.0
+        ],
+        [
+          989.0,
+          380.0
+        ],
+        [
+          780.0,
+          380.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "プロトコルのコード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Generation",
+      "confidence": 0.9995199561119079,
+      "box": [
+        [
+          160.0,
+          401.0
+        ],
+        [
+          325.0,
+          401.0
+        ],
+        [
+          325.0,
+          434.0
+        ],
+        [
+          160.0,
+          434.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "生成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Generation",
+      "confidence": 0.999605143070221,
+      "box": [
+        [
+          780.0,
+          393.0
+        ],
+        [
+          945.0,
+          393.0
+        ],
+        [
+          945.0,
+          426.0
+        ],
+        [
+          780.0,
+          426.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "生成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Test Data Negotiation",
+      "confidence": 0.9986364926610675,
+      "box": [
+        [
+          282.0,
+          512.0
+        ],
+        [
+          601.0,
+          514.0
+        ],
+        [
+          601.0,
+          551.0
+        ],
+        [
+          282.0,
+          549.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "テストデータの交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Integration Testing",
+      "confidence": 0.9932462126016617,
+      "box": [
+        [
+          246.0,
+          695.0
+        ],
+        [
+          655.0,
+          700.0
+        ],
+        [
+          654.0,
+          736.0
+        ],
+        [
+          246.0,
+          732.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "プロトコルの結合テスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Communication",
+      "confidence": 0.9850162457336079,
+      "box": [
+        [
+          268.0,
+          878.0
+        ],
+        [
+          632.0,
+          880.0
+        ],
+        [
+          631.0,
+          909.0
+        ],
+        [
+          268.0,
+          907.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "プロトコルによる通信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6744962999946438,
+    0.015214681625366211,
+    0.6716561317443848
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "8ad6739ad846c52236a384a341ee1f0f4069f8e99fc411cb1cb5babed2807aa4"
+  }
+}

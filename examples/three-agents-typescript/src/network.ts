@@ -381,19 +381,24 @@ export async function createDemo() {
   } catch (error) { await Promise.allSettled(endpoints.map(endpoint => endpoint.close())); throw error; }
 }
 
-export async function runConversation(rounds = 3) {
+export type ConversationComposer = (agent: ConversationAgent, round: number, names: ReadonlyMap<string, string>) => Promise<string>;
+
+export async function runConversation(rounds = 3, composer?: ConversationComposer) {
+  if (!Number.isInteger(rounds) || rounds < 1 || rounds > 3) throw new Error('Rounds must be an integer from 1 to 3');
   const demo = await createDemo();
   const transcript: { name: string; personality: string; text: string; seq: string }[] = [];
+  const names = new Map(demo.agents.map(agent => [agent.endpoint.did, agent.personality.name]));
   try {
     for (let round = 0; round < rounds; round++) {
       for (const agent of demo.agents) {
-        const text = agent.compose(round);
+        const text = composer ? await composer(agent, round, names) : agent.compose(round);
         const message = agent.endpoint.sign('group.send', { kind: 'group', did: agent.groupDid },
           { text, thread_id: 'city-guide' }, { message_id: randomUUID(), content_type: 'text/plain' });
         const result = await demo.transport.rpc(demo.host.endpoint.rpcUrl, message);
         transcript.push({ name: agent.personality.name, personality: agent.personality.stance, text, seq: String(result.group_event_seq) });
       }
     }
-    return { mode: 'scripted-no-model-api', transcript, wire: demo.transport.trace, inboxes: demo.agents.map(agent => ({ name: agent.personality.name, messages: agent.inbox })) };
+    return { mode: composer ? 'live-openai-responses' : 'scripted-no-model-api', transcript, wire: demo.transport.trace,
+      inboxes: demo.agents.map(agent => ({ name: agent.personality.name, messages: agent.inbox })) };
   } finally { await demo.close(); }
 }

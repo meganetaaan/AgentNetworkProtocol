@@ -1,0 +1,191 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/12-discovery.png",
+  "sha256": "dafcf923a40d18477de31c2b6050451a5282eb938b11ce221edbfc8692e67e94",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "0OO0",
+      "confidence": 0.5246681943535805,
+      "box": [
+        [
+          687.0,
+          101.0
+        ],
+        [
+          711.0,
+          101.0
+        ],
+        [
+          711.0,
+          212.0
+        ],
+        [
+          687.0,
+          212.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "source": "只知道一个域名",
+      "confidence": 0.9993039284433637,
+      "box": [
+        [
+          167.0,
+          263.0
+        ],
+        [
+          363.0,
+          263.0
+        ],
+        [
+          363.0,
+          292.0
+        ],
+        [
+          167.0,
+          292.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ドメインだけを知っている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "约定好的黄页路径",
+      "confidence": 0.9952043369412422,
+      "box": [
+        [
+          609.0,
+          262.0
+        ],
+        [
+          840.0,
+          263.0
+        ],
+        [
+          840.0,
+          292.0
+        ],
+        [
+          609.0,
+          290.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "取り決められた案内ディレクトリのパス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "example.com",
+      "confidence": 0.9984577189792286,
+      "box": [
+        [
+          185.0,
+          305.0
+        ],
+        [
+          343.0,
+          305.0
+        ],
+        [
+          343.0,
+          330.0
+        ],
+        [
+          185.0,
+          330.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "example.com",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "example.com"
+      ]
+    },
+    {
+      "source": "/ .well-known/agent-descriptions",
+      "confidence": 0.986922062933445,
+      "box": [
+        [
+          540.0,
+          305.0
+        ],
+        [
+          911.0,
+          305.0
+        ],
+        [
+          911.0,
+          329.0
+        ],
+        [
+          540.0,
+          329.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "/.well-known/agent-descriptions",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/agent-descriptions"
+      ],
+      "transcribed_source": "/.well-known/agent-descriptions"
+    },
+    {
+      "source": "这个域名下所有公开的程序",
+      "confidence": 0.9996185998121897,
+      "box": [
+        [
+          1057.0,
+          372.0
+        ],
+        [
+          1344.0,
+          372.0
+        ],
+        [
+          1344.0,
+          396.0
+        ],
+        [
+          1057.0,
+          396.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "このドメインで公開されているすべてのプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.107947200012859,
+    0.011016607284545898,
+    0.922001838684082
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "/ .well-known/agent-descriptions": "/.well-known/agent-descriptions"
+    },
+    "false_positive_labels": [
+      "0OO0"
+    ],
+    "source_note": "ブラウザの3つの丸と検索バーをOCRが文字と誤検出した。",
+    "source_sha256": "dafcf923a40d18477de31c2b6050451a5282eb938b11ce221edbfc8692e67e94"
+  }
+}

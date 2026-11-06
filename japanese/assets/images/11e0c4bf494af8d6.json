@@ -1,0 +1,178 @@
+{
+  "source": "blogs/images/mcp-init.png",
+  "sha256": "11e0c4bf494af8d62021e70c5b827e4c23bdc3515eebbbccf99be2bbaca2937c",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Client",
+      "confidence": 0.9989904761314392,
+      "box": [
+        [
+          121.0,
+          65.0
+        ],
+        [
+          215.0,
+          67.0
+        ],
+        [
+          214.0,
+          102.0
+        ],
+        [
+          120.0,
+          100.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9978261590003967,
+      "box": [
+        [
+          574.0,
+          66.0
+        ],
+        [
+          680.0,
+          71.0
+        ],
+        [
+          678.0,
+          104.0
+        ],
+        [
+          573.0,
+          99.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Initialization Phase",
+      "confidence": 0.9756342858076096,
+      "box": [
+        [
+          256.0,
+          192.0
+        ],
+        [
+          537.0,
+          194.0
+        ],
+        [
+          537.0,
+          223.0
+        ],
+        [
+          255.0,
+          221.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "初期化段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "initialize request",
+      "confidence": 0.9795890947182974,
+      "box": [
+        [
+          269.0,
+          291.0
+        ],
+        [
+          520.0,
+          295.0
+        ],
+        [
+          519.0,
+          327.0
+        ],
+        [
+          269.0,
+          323.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "initializeリクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "initialize response",
+      "confidence": 0.9848302602767944,
+      "box": [
+        [
+          263.0,
+          391.0
+        ],
+        [
+          538.0,
+          397.0
+        ],
+        [
+          537.0,
+          429.0
+        ],
+        [
+          262.0,
+          423.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "initializeレスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "initialized notification",
+      "confidence": 0.9850357969601949,
+      "box": [
+        [
+          234.0,
+          493.0
+        ],
+        [
+          555.0,
+          495.0
+        ],
+        [
+          555.0,
+          523.0
+        ],
+        [
+          234.0,
+          522.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "initialized通知",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5271142999990843,
+    0.009008407592773438,
+    0.8208174705505371
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "最下部の次の黄色い枠は画像外に続くが、切れた部分に判読可能な文字はない。",
+    "source_sha256": "11e0c4bf494af8d62021e70c5b827e4c23bdc3515eebbbccf99be2bbaca2937c"
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/01-worry-client.png",
+  "sha256": "e7768cc98378c6b12c655399e21b567eee2b2c290183c08fa8f9ca18bef8bf71",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Your assistant",
+      "confidence": 0.9966908650738853,
+      "box": [
+        [
+          146.0,
+          290.0
+        ],
+        [
+          344.0,
+          290.0
+        ],
+        [
+          344.0,
+          317.0
+        ],
+        [
+          146.0,
+          317.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "あなたのアシスタント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Coffee shop program",
+      "confidence": 0.9862401108992728,
+      "box": [
+        [
+          999.0,
+          287.0
+        ],
+        [
+          1292.0,
+          293.0
+        ],
+        [
+          1291.0,
+          324.0
+        ],
+        [
+          999.0,
+          319.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "コーヒー店のプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "offtoordercoffee",
+      "confidence": 0.995112556964159,
+      "box": [
+        [
+          142.0,
+          330.0
+        ],
+        [
+          346.0,
+          330.0
+        ],
+        [
+          346.0,
+          353.0
+        ],
+        [
+          142.0,
+          353.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "コーヒーを注文しようとしている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "off to order coffee"
+    },
+    {
+      "source": "？？？",
+      "confidence": 0.7560515602429708,
+      "box": [
+        [
+          1124.0,
+          328.0
+        ],
+        [
+          1165.0,
+          328.0
+        ],
+        [
+          1165.0,
+          354.0
+        ],
+        [
+          1124.0,
+          354.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "???",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "???"
+    },
+    {
+      "source": "\"Is that machine really the coffee shop,",
+      "confidence": 0.9945975050330162,
+      "box": [
+        [
+          480.0,
+          384.0
+        ],
+        [
+          930.0,
+          390.0
+        ],
+        [
+          929.0,
+          419.0
+        ],
+        [
+          480.0,
+          414.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "「そのコンピューターは、本当にコーヒー店のものなのか。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "or someone impersonating it to take my money?\"",
+      "confidence": 0.9864441843136497,
+      "box": [
+        [
+          416.0,
+          430.0
+        ],
+        [
+          987.0,
+          428.0
+        ],
+        [
+          988.0,
+          457.0
+        ],
+        [
+          416.0,
+          459.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "それとも、お金を取るために誰かがなりすましているのか？」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?",
+      "location": "central speech bubble",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L007",
+      "japanese": "?（疑問符）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5471010999754071,
+    0.008096694946289062,
+    1.2058615684509277
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "additional_labels": [
+      {
+        "source": "?",
+        "location": "central speech bubble"
+      }
+    ],
+    "corrections": {
+      "offtoordercoffee": "off to order coffee",
+      "？？？": "???"
+    },
+    "source_sha256": "e7768cc98378c6b12c655399e21b567eee2b2c290183c08fa8f9ca18bef8bf71"
+  }
+}

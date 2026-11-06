@@ -1,0 +1,243 @@
+{
+  "source": "blogs/images/computer-use-product.png",
+  "sha256": "bf5591bd2e58c0f26e58f83ddf43b159e1fadc9d7a64443dd1f21f7e1676f761",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "米Claude",
+      "confidence": 0.9562092934335981,
+      "box": [
+        [
+          125.0,
+          37.0
+        ],
+        [
+          393.0,
+          37.0
+        ],
+        [
+          393.0,
+          98.0
+        ],
+        [
+          125.0,
+          98.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "Claude",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Claude"
+    },
+    {
+      "source": "智谱·AI",
+      "confidence": 0.9740586876869202,
+      "box": [
+        [
+          761.0,
+          62.0
+        ],
+        [
+          896.0,
+          62.0
+        ],
+        [
+          896.0,
+          104.0
+        ],
+        [
+          761.0,
+          104.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "智谱·AI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "Computer Use API",
+      "confidence": 0.9950162395834923,
+      "box": [
+        [
+          109.0,
+          175.0
+        ],
+        [
+          407.0,
+          173.0
+        ],
+        [
+          407.0,
+          209.0
+        ],
+        [
+          109.0,
+          211.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "Computer Use API",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API"
+      ]
+    },
+    {
+      "source": "AutoGLM",
+      "confidence": 0.9927421467644828,
+      "box": [
+        [
+          703.0,
+          174.0
+        ],
+        [
+          861.0,
+          174.0
+        ],
+        [
+          861.0,
+          207.0
+        ],
+        [
+          703.0,
+          207.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "AutoGLM",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AutoGLM"
+      ]
+    },
+    {
+      "source": "Google",
+      "confidence": 0.9852975110212961,
+      "box": [
+        [
+          690.0,
+          341.0
+        ],
+        [
+          874.0,
+          346.0
+        ],
+        [
+          872.0,
+          410.0
+        ],
+        [
+          688.0,
+          405.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "Google",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "OpenAl",
+      "confidence": 0.9722649256388346,
+      "box": [
+        [
+          206.0,
+          354.0
+        ],
+        [
+          381.0,
+          354.0
+        ],
+        [
+          381.0,
+          403.0
+        ],
+        [
+          206.0,
+          403.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "OpenAI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "OpenAl"
+      ],
+      "transcribed_source": "OpenAI"
+    },
+    {
+      "source": "Operator",
+      "confidence": 0.9998003840446472,
+      "box": [
+        [
+          181.0,
+          448.0
+        ],
+        [
+          335.0,
+          448.0
+        ],
+        [
+          335.0,
+          485.0
+        ],
+        [
+          181.0,
+          485.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "Operator",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Project Mariner",
+      "confidence": 0.9929001490275066,
+      "box": [
+        [
+          657.0,
+          449.0
+        ],
+        [
+          906.0,
+          449.0
+        ],
+        [
+          906.0,
+          482.0
+        ],
+        [
+          657.0,
+          482.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "Project Mariner",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7168966000317596,
+    0.015007734298706055,
+    0.2849099636077881
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "米Claude": "Claude",
+      "OpenAl": "OpenAI"
+    },
+    "source_note": "企業名・製品名は固有名として保持。原図の過去の製品一覧を現行情報へ更新していない。Claude左のマークはロゴであり『米』という文字ではない。",
+    "source_sha256": "bf5591bd2e58c0f26e58f83ddf43b159e1fadc9d7a64443dd1f21f7e1676f761"
+  }
+}

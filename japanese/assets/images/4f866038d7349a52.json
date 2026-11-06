@@ -1,0 +1,148 @@
+{
+  "source": "blogs/images/human-ai-agent.png",
+  "sha256": "4f866038d7349a52bbe72a4e9c03a2a265396962b858b6deee66df577ffb58b3",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "HTML/CSS",
+      "confidence": 0.9965347424149513,
+      "box": [
+        [
+          519.0,
+          259.0
+        ],
+        [
+          672.0,
+          259.0
+        ],
+        [
+          672.0,
+          290.0
+        ],
+        [
+          519.0,
+          290.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "HTML/CSS",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTML",
+        "/CSS"
+      ]
+    },
+    {
+      "source": "API/Protocol",
+      "confidence": 0.9773683895667394,
+      "box": [
+        [
+          889.0,
+          259.0
+        ],
+        [
+          1074.0,
+          259.0
+        ],
+        [
+          1074.0,
+          292.0
+        ],
+        [
+          889.0,
+          292.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "API／プロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API",
+        "/Protocol"
+      ]
+    },
+    {
+      "source": "UI",
+      "confidence": 0.973154217004776,
+      "box": [
+        [
+          383.0,
+          290.0
+        ],
+        [
+          427.0,
+          290.0
+        ],
+        [
+          427.0,
+          328.0
+        ],
+        [
+          383.0,
+          328.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ユーザーインターフェース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UI"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9996394872665405,
+      "box": [
+        [
+          736.0,
+          291.0
+        ],
+        [
+          846.0,
+          293.0
+        ],
+        [
+          845.0,
+          334.0
+        ],
+        [
+          736.0,
+          332.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "WWW",
+      "location": "browser field in globe icon",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L005",
+      "japanese": "WWW",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    0.5184983999934047,
+    0.009011983871459961,
+    0.15835881233215332
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {},
+    "additional_labels": [
+      {
+        "source": "WWW",
+        "location": "browser field in globe icon"
+      }
+    ],
+    "source_note": "地球の各ピクトグラムにはWWW以外の文章はない。下端の透かしは文字上部だけが切れており、語として読めない。",
+    "source_limitation": "下端の透かしの大部分が画像外であり、判読できない。",
+    "source_sha256": "4f866038d7349a52bbe72a4e9c03a2a265396962b858b6deee66df577ffb58b3"
+  }
+}

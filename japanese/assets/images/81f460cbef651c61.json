@@ -1,0 +1,300 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page13.jpg",
+  "sha256": "81f460cbef651c614a310430337554ee97881fbac326bffddb1ddf0aa4860260",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "UnresolvedIssues",
+      "confidence": 0.9587333798408508,
+      "box": [
+        [
+          41.80644989013672,
+          43.97142791748047
+        ],
+        [
+          693.290283203125,
+          49.757144927978516
+        ],
+        [
+          693.290283203125,
+          114.55714416503906
+        ],
+        [
+          41.80644989013672,
+          108.77143096923828
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "UnresolvedIssues"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9686598777770996,
+      "box": [
+        [
+          2151.870849609375,
+          35.871429443359375
+        ],
+        [
+          2281.935302734375,
+          33.55714416503906
+        ],
+        [
+          2283.0966796875,
+          86.78571319580078
+        ],
+        [
+          2153.0322265625,
+          89.0999984741211
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "· For user permissions, how can we implement more granular permission control,",
+      "confidence": 0.9804333024300061,
+      "box": [
+        [
+          264.7742004394531,
+          336.72857666015625
+        ],
+        [
+          1969.54833984375,
+          337.8857116699219
+        ],
+        [
+          1969.54833984375,
+          387.6428527832031
+        ],
+        [
+          264.7742004394531,
+          386.4857177734375
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "instead of using a single ID for communication with all agents?",
+      "confidence": 0.9824822639662122,
+      "box": [
+        [
+          299.6128845214844,
+          401.528564453125
+        ],
+        [
+          1622.322509765625,
+          401.528564453125
+        ],
+        [
+          1622.322509765625,
+          450.1285705566406
+        ],
+        [
+          299.6128845214844,
+          450.1285705566406
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ID"
+      ]
+    },
+    {
+      "source": "· How can we determine whether a request from an agent has been manually",
+      "confidence": 0.9886084745327631,
+      "box": [
+        [
+          264.7742004394531,
+          507.9857177734375
+        ],
+        [
+          1860.3870849609375,
+          511.4571533203125
+        ],
+        [
+          1860.3870849609375,
+          564.6857299804688
+        ],
+        [
+          264.7742004394531,
+          561.2142944335938
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "authorized by the user? Some sensitive actions should not be initiated",
+      "confidence": 0.9801722799028669,
+      "box": [
+        [
+          305.4193420410156,
+          576.2571411132812
+        ],
+        [
+          1750.064453125,
+          572.7857055664062
+        ],
+        [
+          1750.064453125,
+          621.3857421875
+        ],
+        [
+          305.4193420410156,
+          624.857177734375
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "autonomouslybythe agent.",
+      "confidence": 0.9910629714528719,
+      "box": [
+        [
+          304.258056640625,
+          642.2142944335938
+        ],
+        [
+          880.258056640625,
+          642.2142944335938
+        ],
+        [
+          880.258056640625,
+          691.971435546875
+        ],
+        [
+          304.258056640625,
+          691.971435546875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· How can we ensure that the user has full ownership of their identity, rather than",
+      "confidence": 0.9752488689250257,
+      "box": [
+        [
+          264.7742004394531,
+          749.82861328125
+        ],
+        [
+          1956.774169921875,
+          752.1428833007812
+        ],
+        [
+          1956.774169921875,
+          797.2714233398438
+        ],
+        [
+          264.7742004394531,
+          794.9571533203125
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "relying on permissions granted by the platform?",
+      "confidence": 0.9937764127203759,
+      "box": [
+        [
+          299.6128845214844,
+          812.3142700195312
+        ],
+        [
+          1302.9676513671875,
+          813.471435546875
+        ],
+        [
+          1302.9676513671875,
+          866.7000122070312
+        ],
+        [
+          299.6128845214844,
+          865.5428466796875
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Unresolved Issues\n\n\n\n\n             • For user permissions, how can we implement more granular permission control,\n             instead of using a single ID for communication with all agents?\n\n             • How can we determine whether a request from an agent has been manually\n            authorized by the user? Some sensitive actions should not be initiated\n           autonomously by the agent.\n\n             • How can we ensure that the user has full ownership of their identity, rather than\n             relying on permissions granted by the platform?",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L010",
+      "japanese": "未解決の課題\n\n- すべてのエージェントとの通信に一つのIDを使うのではなく、利用者の権限をさらに細かく制御するにはどうすればよいでしょうか。\n- エージェントのリクエストが、利用者本人によって承認されたかをどう判断すればよいでしょうか。機密性の高い一部の操作を、エージェントが自律的に開始するべきではありません。\n- プラットフォームから付与された権限に依存せず、利用者が自分のアイデンティティを完全に所有するにはどうすればよいでしょうか。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4171252999803983,
+    0.016495943069458008,
+    3.2794978618621826
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 13,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-13",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.2379108796296296,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 13,
+    "manual_label_translations": {
+      "Unresolved Issues\n\n\n\n\n             • For user permissions, how can we implement more granular permission control,\n             instead of using a single ID for communication with all agents?\n\n             • How can we determine whether a request from an agent has been manually\n            authorized by the user? Some sensitive actions should not be initiated\n           autonomously by the agent.\n\n             • How can we ensure that the user has full ownership of their identity, rather than\n             relying on permissions granted by the platform?": "未解決の課題\n\n- すべてのエージェントとの通信に一つのIDを使うのではなく、利用者の権限をさらに細かく制御するにはどうすればよいでしょうか。\n- エージェントのリクエストが、利用者本人によって承認されたかをどう判断すればよいでしょうか。機密性の高い一部の操作を、エージェントが自律的に開始するべきではありません。\n- プラットフォームから付与された権限に依存せず、利用者が自分のアイデンティティを完全に所有するにはどうすればよいでしょうか。"
+    },
+    "additional_labels": [
+      {
+        "source": "Unresolved Issues\n\n\n\n\n             • For user permissions, how can we implement more granular permission control,\n             instead of using a single ID for communication with all agents?\n\n             • How can we determine whether a request from an agent has been manually\n            authorized by the user? Some sensitive actions should not be initiated\n           autonomously by the agent.\n\n             • How can we ensure that the user has full ownership of their identity, rather than\n             relying on permissions granted by the platform?",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "UnresolvedIssues",
+      "ANP",
+      "· For user permissions, how can we implement more granular permission control,",
+      "instead of using a single ID for communication with all agents?",
+      "· How can we determine whether a request from an agent has been manually",
+      "authorized by the user? Some sensitive actions should not be initiated",
+      "autonomouslybythe agent.",
+      "· How can we ensure that the user has full ownership of their identity, rather than",
+      "relying on permissions granted by the platform?"
+    ],
+    "source_sha256": "81f460cbef651c614a310430337554ee97881fbac326bffddb1ddf0aa4860260"
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "source": "blogs/images/agent-network/vinote.png",
+  "sha256": "1613f299528cb9c3898cf01589a569f890bac25b2cb35c891fee4289b5cc586d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "WiNote",
+      "confidence": 0.9901677568753561,
+      "box": [
+        [
+          28.225805282592773,
+          19.848684310913086
+        ],
+        [
+          357.05645751953125,
+          28.355262756347656
+        ],
+        [
+          355.6451416015625,
+          104.91446685791016
+        ],
+        [
+          26.814516067504883,
+          96.40789031982422
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ViNote",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WiNote"
+      ],
+      "transcribed_source": "ViNote"
+    },
+    {
+      "source": "●ViNote AI1.0内测中",
+      "confidence": 0.9069374166429043,
+      "box": [
+        [
+          392.3387145996094,
+          45.3684196472168
+        ],
+        [
+          605.4435424804688,
+          45.3684196472168
+        ],
+        [
+          605.4435424804688,
+          73.72367858886719
+        ],
+        [
+          392.3387145996094,
+          73.72367858886719
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "● ViNote AI 1.0 内部テスト中",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ViNote",
+        "AI1.0"
+      ],
+      "transcribed_source": "●ViNote AI 1.0 内测中"
+    },
+    {
+      "source": "首页",
+      "confidence": 0.9999327659606934,
+      "box": [
+        [
+          1143.1451416015625,
+          39.69736862182617
+        ],
+        [
+          1206.6531982421875,
+          39.69736862182617
+        ],
+        [
+          1206.6531982421875,
+          76.55921173095703
+        ],
+        [
+          1143.1451416015625,
+          76.55921173095703
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ホーム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "超级智能体",
+      "confidence": 0.9963405966758728,
+      "box": [
+        [
+          1264.51611328125,
+          41.11513137817383
+        ],
+        [
+          1408.4676513671875,
+          41.11513137817383
+        ],
+        [
+          1408.4676513671875,
+          75.14144134521484
+        ],
+        [
+          1264.51611328125,
+          75.14144134521484
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "スーパーエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "GitHub",
+      "confidence": 0.999682625134786,
+      "box": [
+        [
+          1469.1531982421875,
+          41.11513137817383
+        ],
+        [
+          1562.29833984375,
+          41.11513137817383
+        ],
+        [
+          1562.29833984375,
+          75.14144134521484
+        ],
+        [
+          1469.1531982421875,
+          75.14144134521484
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "GitHub",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "GitHub"
+      ]
+    },
+    {
+      "source": "ANP节点",
+      "confidence": 0.9996030449867248,
+      "box": [
+        [
+          1617.338623046875,
+          41.11513137817383
+        ],
+        [
+          1747.1773681640625,
+          41.11513137817383
+        ],
+        [
+          1747.1773681640625,
+          75.14144134521484
+        ],
+        [
+          1617.338623046875,
+          75.14144134521484
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ANPノード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "关于我们",
+      "confidence": 0.9986175447702408,
+      "box": [
+        [
+          1803.6290283203125,
+          41.11513137817383
+        ],
+        [
+          1922.1773681640625,
+          41.11513137817383
+        ],
+        [
+          1922.1773681640625,
+          75.14144134521484
+        ],
+        [
+          1803.6290283203125,
+          75.14144134521484
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "私たちについて",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "登录",
+      "confidence": 0.9998874664306641,
+      "box": [
+        [
+          2739.314453125,
+          39.69736862182617
+        ],
+        [
+          2798.588623046875,
+          39.69736862182617
+        ],
+        [
+          2798.588623046875,
+          76.55921173095703
+        ],
+        [
+          2739.314453125,
+          76.55921173095703
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ログイン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "视记AI·让每一个视频都成为",
+      "confidence": 0.9699046782084874,
+      "box": [
+        [
+          632.258056640625,
+          197.06907653808594
+        ],
+        [
+          2427.419189453125,
+          197.06907653808594
+        ],
+        [
+          2427.419189453125,
+          351.6052551269531
+        ],
+        [
+          632.258056640625,
+          351.6052551269531
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "視記AI・すべての動画を",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "知识宝藏",
+      "confidence": 0.9976372718811035,
+      "box": [
+        [
+          1253.225830078125,
+          381.3782653808594
+        ],
+        [
+          1817.741943359375,
+          381.3782653808594
+        ],
+        [
+          1817.741943359375,
+          520.319091796875
+        ],
+        [
+          1253.225830078125,
+          520.319091796875
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "知識の宝庫に",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "开始体验",
+      "confidence": 0.9999518394470215,
+      "box": [
+        [
+          1318.1451416015625,
+          647.917724609375
+        ],
+        [
+          1453.6290283203125,
+          647.917724609375
+        ],
+        [
+          1453.6290283203125,
+          687.6151123046875
+        ],
+        [
+          1318.1451416015625,
+          687.6151123046875
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "使ってみる",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "观看演示",
+      "confidence": 0.9995541572570801,
+      "box": [
+        [
+          1610.2822265625,
+          646.5
+        ],
+        [
+          1747.1773681640625,
+          646.5
+        ],
+        [
+          1747.1773681640625,
+          690.4506225585938
+        ],
+        [
+          1610.2822265625,
+          690.4506225585938
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "デモを見る",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "释放AI在视频内容中的潜力。一站式转录、总结、对话和整理您的学习资料。",
+      "confidence": 0.9918875353676933,
+      "box": [
+        [
+          824.1935424804688,
+          1044.891357421875
+        ],
+        [
+          2215.725830078125,
+          1044.891357421875
+        ],
+        [
+          2215.725830078125,
+          1086.006591796875
+        ],
+        [
+          824.1935424804688,
+          1086.006591796875
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "動画コンテンツにおけるAIの可能性を引き出す。文字起こし、要約、対話、学習資料の整理を1か所で行える。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "思维导图",
+      "confidence": 0.9985137581825256,
+      "box": [
+        [
+          461.4919128417969,
+          1579.3880615234375
+        ],
+        [
+          622.3790283203125,
+          1579.3880615234375
+        ],
+        [
+          622.3790283203125,
+          1627.592041015625
+        ],
+        [
+          461.4919128417969,
+          1627.592041015625
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "マインドマップ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "互动对话",
+      "confidence": 0.9996381402015686,
+      "box": [
+        [
+          1229.23388671875,
+          1579.3880615234375
+        ],
+        [
+          1391.5322265625,
+          1579.3880615234375
+        ],
+        [
+          1391.5322265625,
+          1627.592041015625
+        ],
+        [
+          1229.23388671875,
+          1627.592041015625
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "対話",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "无限可能",
+      "confidence": 0.9998434334993362,
+      "box": [
+        [
+          1996.9757080078125,
+          1579.3880615234375
+        ],
+        [
+          2160.685546875,
+          1579.3880615234375
+        ],
+        [
+          2160.685546875,
+          1627.592041015625
+        ],
+        [
+          1996.9757080078125,
+          1627.592041015625
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "無限の可能性",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "可视化重构您的知识体系",
+      "confidence": 0.996410770849748,
+      "box": [
+        [
+          386.69354248046875,
+          1651.6939697265625
+        ],
+        [
+          698.5886840820312,
+          1651.6939697265625
+        ],
+        [
+          698.5886840820312,
+          1688.555908203125
+        ],
+        [
+          386.69354248046875,
+          1688.555908203125
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "知識の体系を視覚的に再構成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "像导师一样回答您的问题",
+      "confidence": 0.998009817166762,
+      "box": [
+        [
+          1153.024169921875,
+          1651.6939697265625
+        ],
+        [
+          1467.741943359375,
+          1651.6939697265625
+        ],
+        [
+          1467.741943359375,
+          1688.555908203125
+        ],
+        [
+          1153.024169921875,
+          1688.555908203125
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "指導者のように質問に答える",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "更多创意场景持续解锁",
+      "confidence": 0.9981323599815368,
+      "box": [
+        [
+          1933.4676513671875,
+          1651.6939697265625
+        ],
+        [
+          2219.959716796875,
+          1648.8585205078125
+        ],
+        [
+          2219.959716796875,
+          1685.7203369140625
+        ],
+        [
+          1933.4676513671875,
+          1688.555908203125
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "創造的な活用場面をさらに追加",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "支持本",
+      "confidence": 0.9979085723559061,
+      "box": [
+        [
+          2688.508056640625,
+          1650.2762451171875
+        ],
+        [
+          2778.83056640625,
+          1650.2762451171875
+        ],
+        [
+          2778.83056640625,
+          1685.7203369140625
+        ],
+        [
+          2688.508056640625,
+          1685.7203369140625
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "本…に対応（続きは画像外）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "视…",
+      "location": "clipped lower right card heading",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L021",
+      "japanese": "視…（続きは画像外）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    1.5510544999851845,
+    0.0360255241394043,
+    2.390564203262329
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {
+      "WiNote": "ViNote",
+      "●ViNote AI1.0内测中": "●ViNote AI 1.0 内测中"
+    },
+    "additional_labels": [
+      {
+        "source": "视…",
+        "location": "clipped lower right card heading"
+      }
+    ],
+    "source_note": "右端のカード見出しと説明は途中で画像外へ切れている。見えていない文字を推測して補っていない。",
+    "source_limitation": "右端のカードの文字が画像の端で切れている。",
+    "source_sha256": "1613f299528cb9c3898cf01589a569f890bac25b2cb35c891fee4289b5cc586d"
+  }
+}

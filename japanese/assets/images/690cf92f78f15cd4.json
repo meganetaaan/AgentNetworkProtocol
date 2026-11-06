@@ -1,0 +1,1941 @@
+{
+  "source": "blogs/images/a2a-partners.png",
+  "sha256": "690cf92f78f15cd4453a1d725d0ee6a483620383df370873e44a3286bcc91392",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Google Cloud",
+      "confidence": 0.9996136923631033,
+      "box": [
+        [
+          806.0,
+          39.0
+        ],
+        [
+          1112.0,
+          43.0
+        ],
+        [
+          1111.0,
+          100.0
+        ],
+        [
+          805.0,
+          97.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "Google Cloud",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Partners contributing to the Agent2Agent protocol",
+      "confidence": 0.991774494550666,
+      "box": [
+        [
+          287.0,
+          157.0
+        ],
+        [
+          1620.0,
+          161.0
+        ],
+        [
+          1620.0,
+          224.0
+        ],
+        [
+          287.0,
+          219.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "Agent2Agentプロトコルに貢献するパートナー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "^ arize",
+      "confidence": 0.9056337560926165,
+      "box": [
+        [
+          286.0,
+          303.0
+        ],
+        [
+          430.0,
+          300.0
+        ],
+        [
+          431.0,
+          341.0
+        ],
+        [
+          287.0,
+          343.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "arize",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "arize"
+    },
+    {
+      "source": "Articuls",
+      "confidence": 0.9082217663526535,
+      "box": [
+        [
+          492.0,
+          304.0
+        ],
+        [
+          622.0,
+          304.0
+        ],
+        [
+          622.0,
+          342.0
+        ],
+        [
+          492.0,
+          342.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "Articul8",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Articul8"
+    },
+    {
+      "source": "ask-ai",
+      "confidence": 0.989217609167099,
+      "box": [
+        [
+          714.0,
+          305.0
+        ],
+        [
+          814.0,
+          305.0
+        ],
+        [
+          814.0,
+          340.0
+        ],
+        [
+          714.0,
+          340.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ask-ai",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "BCG",
+      "confidence": 0.9971852501233419,
+      "box": [
+        [
+          1118.0,
+          300.0
+        ],
+        [
+          1211.0,
+          300.0
+        ],
+        [
+          1211.0,
+          345.0
+        ],
+        [
+          1118.0,
+          345.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "BCG",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "BCG"
+      ]
+    },
+    {
+      "source": "box",
+      "confidence": 0.9906887610753378,
+      "box": [
+        [
+          1313.0,
+          299.0
+        ],
+        [
+          1396.0,
+          303.0
+        ],
+        [
+          1394.0,
+          352.0
+        ],
+        [
+          1310.0,
+          347.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "box",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "c3.ai",
+      "confidence": 0.9976197600364685,
+      "box": [
+        [
+          1494.0,
+          296.0
+        ],
+        [
+          1616.0,
+          307.0
+        ],
+        [
+          1612.0,
+          353.0
+        ],
+        [
+          1490.0,
+          343.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "c3.ai",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "c3.ai"
+      ]
+    },
+    {
+      "source": "accenture",
+      "confidence": 0.999377171198527,
+      "box": [
+        [
+          76.0,
+          314.0
+        ],
+        [
+          242.0,
+          311.0
+        ],
+        [
+          242.0,
+          342.0
+        ],
+        [
+          77.0,
+          344.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "accenture",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "AATLASSIAN",
+      "confidence": 0.9835667192935944,
+      "box": [
+        [
+          864.0,
+          310.0
+        ],
+        [
+          1049.0,
+          310.0
+        ],
+        [
+          1049.0,
+          338.0
+        ],
+        [
+          864.0,
+          338.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "ATLASSIAN",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AATLASSIAN"
+      ],
+      "transcribed_source": "ATLASSIAN"
+    },
+    {
+      "source": "mwobco",
+      "confidence": 0.6446074595053991,
+      "box": [
+        [
+          1661.0,
+          307.0
+        ],
+        [
+          1817.0,
+          311.0
+        ],
+        [
+          1816.0,
+          353.0
+        ],
+        [
+          1660.0,
+          350.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "Capgemini",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Capgemini"
+    },
+    {
+      "source": "chronosphere",
+      "confidence": 0.9993437081575394,
+      "box": [
+        [
+          113.0,
+          420.0
+        ],
+        [
+          243.0,
+          420.0
+        ],
+        [
+          243.0,
+          444.0
+        ],
+        [
+          113.0,
+          444.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "chronosphere",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": ">cognizant",
+      "confidence": 0.9837818562984466,
+      "box": [
+        [
+          301.0,
+          417.0
+        ],
+        [
+          442.0,
+          417.0
+        ],
+        [
+          442.0,
+          448.0
+        ],
+        [
+          301.0,
+          448.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "cognizant",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "cognizant"
+    },
+    {
+      "source": "cohere",
+      "confidence": 0.9996123413244883,
+      "box": [
+        [
+          484.0,
+          418.0
+        ],
+        [
+          632.0,
+          418.0
+        ],
+        [
+          632.0,
+          449.0
+        ],
+        [
+          484.0,
+          449.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "cohere",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Collibra",
+      "confidence": 0.9992779940366745,
+      "box": [
+        [
+          725.0,
+          413.0
+        ],
+        [
+          841.0,
+          417.0
+        ],
+        [
+          840.0,
+          451.0
+        ],
+        [
+          724.0,
+          448.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "Collibra",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "contextualai",
+      "confidence": 0.9974036167065302,
+      "box": [
+        [
+          873.0,
+          420.0
+        ],
+        [
+          1039.0,
+          420.0
+        ],
+        [
+          1039.0,
+          447.0
+        ],
+        [
+          873.0,
+          447.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "contextual·ai",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "contextual·ai"
+    },
+    {
+      "source": "cotality\"",
+      "confidence": 0.9261174466874864,
+      "box": [
+        [
+          1116.0,
+          415.0
+        ],
+        [
+          1227.0,
+          415.0
+        ],
+        [
+          1227.0,
+          450.0
+        ],
+        [
+          1116.0,
+          450.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "cotality",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "cotality"
+    },
+    {
+      "source": "DATADOG",
+      "confidence": 0.9905219503811428,
+      "box": [
+        [
+          1273.0,
+          414.0
+        ],
+        [
+          1438.0,
+          414.0
+        ],
+        [
+          1438.0,
+          448.0
+        ],
+        [
+          1273.0,
+          448.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "DATADOG",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DATADOG"
+      ]
+    },
+    {
+      "source": "DataRobot",
+      "confidence": 0.9993639323446486,
+      "box": [
+        [
+          1485.0,
+          421.0
+        ],
+        [
+          1622.0,
+          421.0
+        ],
+        [
+          1622.0,
+          445.0
+        ],
+        [
+          1485.0,
+          445.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "DataRobot",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DataRobot"
+      ]
+    },
+    {
+      "source": "DATASTAX",
+      "confidence": 0.9680930078029633,
+      "box": [
+        [
+          1682.0,
+          422.0
+        ],
+        [
+          1823.0,
+          422.0
+        ],
+        [
+          1823.0,
+          445.0
+        ],
+        [
+          1682.0,
+          445.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "DATASTAX",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DATASTAX"
+      ]
+    },
+    {
+      "source": "W Decagon",
+      "confidence": 0.8897050453556908,
+      "box": [
+        [
+          76.0,
+          525.0
+        ],
+        [
+          244.0,
+          527.0
+        ],
+        [
+          244.0,
+          561.0
+        ],
+        [
+          75.0,
+          559.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "Decagon",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Decagon"
+    },
+    {
+      "source": "lleunp",
+      "confidence": 0.5373901575803757,
+      "box": [
+        [
+          477.0,
+          518.0
+        ],
+        [
+          635.0,
+          520.0
+        ],
+        [
+          634.0,
+          566.0
+        ],
+        [
+          477.0,
+          563.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "devnagri",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "devnagri"
+    },
+    {
+      "source": "elastic",
+      "confidence": 0.9999180776732308,
+      "box": [
+        [
+          734.0,
+          520.0
+        ],
+        [
+          839.0,
+          524.0
+        ],
+        [
+          838.0,
+          564.0
+        ],
+        [
+          732.0,
+          560.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "elastic",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Ema",
+      "confidence": 0.9988514383633932,
+      "box": [
+        [
+          936.0,
+          521.0
+        ],
+        [
+          1017.0,
+          528.0
+        ],
+        [
+          1014.0,
+          567.0
+        ],
+        [
+          933.0,
+          560.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "Ema",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "<epam>",
+      "confidence": 0.9994823535283407,
+      "box": [
+        [
+          1103.0,
+          520.0
+        ],
+        [
+          1207.0,
+          520.0
+        ],
+        [
+          1207.0,
+          562.0
+        ],
+        [
+          1103.0,
+          562.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "epam",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "epam"
+    },
+    {
+      "source": "glean",
+      "confidence": 0.9970564126968384,
+      "box": [
+        [
+          1292.0,
+          516.0
+        ],
+        [
+          1415.0,
+          512.0
+        ],
+        [
+          1417.0,
+          566.0
+        ],
+        [
+          1293.0,
+          570.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "glean",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Deloitte.",
+      "confidence": 0.999920540385776,
+      "box": [
+        [
+          284.0,
+          526.0
+        ],
+        [
+          432.0,
+          528.0
+        ],
+        [
+          431.0,
+          562.0
+        ],
+        [
+          283.0,
+          560.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "Deloitte.",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "GrowthLoop",
+      "confidence": 0.9989871025085449,
+      "box": [
+        [
+          1509.0,
+          529.0
+        ],
+        [
+          1634.0,
+          531.0
+        ],
+        [
+          1634.0,
+          558.0
+        ],
+        [
+          1508.0,
+          556.0
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "GrowthLoop",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "GrowthLoop"
+      ]
+    },
+    {
+      "source": "harness",
+      "confidence": 0.9984747341700962,
+      "box": [
+        [
+          1691.0,
+          526.0
+        ],
+        [
+          1820.0,
+          530.0
+        ],
+        [
+          1819.0,
+          562.0
+        ],
+        [
+          1689.0,
+          557.0
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "harness",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "IN-",
+      "confidence": 0.7770525813102722,
+      "box": [
+        [
+          346.0,
+          630.0
+        ],
+        [
+          388.0,
+          630.0
+        ],
+        [
+          388.0,
+          653.0
+        ],
+        [
+          346.0,
+          653.0
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "IN-",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "IN"
+      ]
+    },
+    {
+      "source": "Infosys",
+      "confidence": 0.9960481183869498,
+      "box": [
+        [
+          507.0,
+          626.0
+        ],
+        [
+          608.0,
+          632.0
+        ],
+        [
+          605.0,
+          675.0
+        ],
+        [
+          505.0,
+          670.0
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "Infosys",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "INTUIT",
+      "confidence": 0.965073029200236,
+      "box": [
+        [
+          692.0,
+          634.0
+        ],
+        [
+          816.0,
+          634.0
+        ],
+        [
+          816.0,
+          665.0
+        ],
+        [
+          692.0,
+          665.0
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "INTUIT",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "INTUIT"
+      ]
+    },
+    {
+      "source": "BRAINS",
+      "confidence": 0.9954270819822947,
+      "box": [
+        [
+          926.0,
+          635.0
+        ],
+        [
+          995.0,
+          637.0
+        ],
+        [
+          994.0,
+          662.0
+        ],
+        [
+          925.0,
+          659.0
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "BRAINS",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "BRAINS"
+      ]
+    },
+    {
+      "source": "JET",
+      "confidence": 0.9983776807785034,
+      "box": [
+        [
+          930.0,
+          626.0
+        ],
+        [
+          963.0,
+          626.0
+        ],
+        [
+          963.0,
+          644.0
+        ],
+        [
+          930.0,
+          644.0
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "JET",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JET"
+      ]
+    },
+    {
+      "source": "HCLTech",
+      "confidence": 0.9993478996413094,
+      "box": [
+        [
+          88.0,
+          639.0
+        ],
+        [
+          229.0,
+          639.0
+        ],
+        [
+          229.0,
+          674.0
+        ],
+        [
+          88.0,
+          674.0
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "HCLTech",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "KPMG",
+      "confidence": 0.9882329404354095,
+      "box": [
+        [
+          1302.0,
+          642.0
+        ],
+        [
+          1404.0,
+          642.0
+        ],
+        [
+          1404.0,
+          677.0
+        ],
+        [
+          1302.0,
+          677.0
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "KPMG",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "KPMG"
+      ]
+    },
+    {
+      "source": "Labelbox",
+      "confidence": 0.999497264623642,
+      "box": [
+        [
+          1514.0,
+          633.0
+        ],
+        [
+          1627.0,
+          635.0
+        ],
+        [
+          1626.0,
+          667.0
+        ],
+        [
+          1513.0,
+          664.0
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "Labelbox",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "COR",
+      "confidence": 0.9910178581873575,
+      "box": [
+        [
+          346.0,
+          644.0
+        ],
+        [
+          392.0,
+          644.0
+        ],
+        [
+          392.0,
+          672.0
+        ],
+        [
+          346.0,
+          672.0
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "COR",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "COR"
+      ]
+    },
+    {
+      "source": "LangChain",
+      "confidence": 0.9958047005865309,
+      "box": [
+        [
+          1723.0,
+          638.0
+        ],
+        [
+          1836.0,
+          638.0
+        ],
+        [
+          1836.0,
+          665.0
+        ],
+        [
+          1723.0,
+          665.0
+        ]
+      ],
+      "label_id": "L039",
+      "japanese": "LangChain",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LangChain"
+      ]
+    },
+    {
+      "source": "TA",
+      "confidence": 0.9948406517505646,
+      "box": [
+        [
+          356.0,
+          660.0
+        ],
+        [
+          392.0,
+          660.0
+        ],
+        [
+          392.0,
+          688.0
+        ],
+        [
+          356.0,
+          688.0
+        ]
+      ],
+      "label_id": "L040",
+      "japanese": "TA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TA"
+      ]
+    },
+    {
+      "source": "JFrog",
+      "confidence": 0.9647028923034668,
+      "box": [
+        [
+          1125.0,
+          653.0
+        ],
+        [
+          1191.0,
+          657.0
+        ],
+        [
+          1189.0,
+          689.0
+        ],
+        [
+          1123.0,
+          685.0
+        ]
+      ],
+      "label_id": "L041",
+      "japanese": "JFrog",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "McKinsey",
+      "confidence": 0.996333658695221,
+      "box": [
+        [
+          685.0,
+          732.0
+        ],
+        [
+          791.0,
+          737.0
+        ],
+        [
+          790.0,
+          765.0
+        ],
+        [
+          684.0,
+          760.0
+        ]
+      ],
+      "label_id": "L042",
+      "japanese": "McKinsey",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "McKinsey"
+      ]
+    },
+    {
+      "source": "( livex.AI",
+      "confidence": 0.8291229426860809,
+      "box": [
+        [
+          93.0,
+          745.0
+        ],
+        [
+          231.0,
+          741.0
+        ],
+        [
+          232.0,
+          776.0
+        ],
+        [
+          94.0,
+          779.0
+        ]
+      ],
+      "label_id": "L043",
+      "japanese": "LIVEX.AI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "livex.AI"
+      ],
+      "transcribed_source": "LIVEX.AI"
+    },
+    {
+      "source": "LTIMindtree",
+      "confidence": 0.981430172920227,
+      "box": [
+        [
+          304.0,
+          747.0
+        ],
+        [
+          437.0,
+          747.0
+        ],
+        [
+          437.0,
+          775.0
+        ],
+        [
+          304.0,
+          775.0
+        ]
+      ],
+      "label_id": "L044",
+      "japanese": "LTIMindtree",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "lyzr",
+      "confidence": 0.9611679017543793,
+      "box": [
+        [
+          560.0,
+          746.0
+        ],
+        [
+          621.0,
+          746.0
+        ],
+        [
+          621.0,
+          781.0
+        ],
+        [
+          560.0,
+          781.0
+        ]
+      ],
+      "label_id": "L045",
+      "japanese": "lyzr",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "mongoDB.",
+      "confidence": 0.977461688220501,
+      "box": [
+        [
+          902.0,
+          751.0
+        ],
+        [
+          1043.0,
+          751.0
+        ],
+        [
+          1043.0,
+          783.0
+        ],
+        [
+          902.0,
+          783.0
+        ]
+      ],
+      "label_id": "L046",
+      "japanese": "mongoDB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "mongoDB"
+      ],
+      "transcribed_source": "mongoDB"
+    },
+    {
+      "source": "se04j",
+      "confidence": 0.8955240488052368,
+      "box": [
+        [
+          1099.0,
+          744.0
+        ],
+        [
+          1220.0,
+          741.0
+        ],
+        [
+          1221.0,
+          783.0
+        ],
+        [
+          1100.0,
+          785.0
+        ]
+      ],
+      "label_id": "L047",
+      "japanese": "neo4j",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "04"
+      ],
+      "transcribed_source": "neo4j"
+    },
+    {
+      "source": " new relic.",
+      "confidence": 0.9414440230889753,
+      "box": [
+        [
+          1284.0,
+          746.0
+        ],
+        [
+          1437.0,
+          743.0
+        ],
+        [
+          1437.0,
+          777.0
+        ],
+        [
+          1285.0,
+          779.0
+        ]
+      ],
+      "label_id": "L048",
+      "japanese": "new relic",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "new relic"
+    },
+    {
+      "source": "ORACLE",
+      "confidence": 0.9980387190977732,
+      "box": [
+        [
+          1492.0,
+          748.0
+        ],
+        [
+          1627.0,
+          748.0
+        ],
+        [
+          1627.0,
+          776.0
+        ],
+        [
+          1492.0,
+          776.0
+        ]
+      ],
+      "label_id": "L049",
+      "japanese": "ORACLE",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ORACLE"
+      ]
+    },
+    {
+      "source": "pendo",
+      "confidence": 0.9991216659545898,
+      "box": [
+        [
+          1714.0,
+          745.0
+        ],
+        [
+          1823.0,
+          742.0
+        ],
+        [
+          1824.0,
+          776.0
+        ],
+        [
+          1715.0,
+          779.0
+        ]
+      ],
+      "label_id": "L050",
+      "japanese": "pendo",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "& Company",
+      "confidence": 0.9492232071028815,
+      "box": [
+        [
+          716.0,
+          757.0
+        ],
+        [
+          839.0,
+          761.0
+        ],
+        [
+          838.0,
+          789.0
+        ],
+        [
+          715.0,
+          786.0
+        ]
+      ],
+      "label_id": "L051",
+      "japanese": "& Company",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "quantiphi",
+      "confidence": 0.9938706225819058,
+      "box": [
+        [
+          268.0,
+          849.0
+        ],
+        [
+          420.0,
+          849.0
+        ],
+        [
+          420.0,
+          880.0
+        ],
+        [
+          268.0,
+          880.0
+        ]
+      ],
+      "label_id": "L052",
+      "japanese": "quantiphi",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "salesforce",
+      "confidence": 0.9985019266605377,
+      "box": [
+        [
+          722.0,
+          855.0
+        ],
+        [
+          804.0,
+          859.0
+        ],
+        [
+          803.0,
+          883.0
+        ],
+        [
+          721.0,
+          880.0
+        ]
+      ],
+      "label_id": "L053",
+      "japanese": "salesforce",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "SAP",
+      "confidence": 0.9850204388300577,
+      "box": [
+        [
+          911.0,
+          852.0
+        ],
+        [
+          983.0,
+          852.0
+        ],
+        [
+          983.0,
+          894.0
+        ],
+        [
+          911.0,
+          894.0
+        ]
+      ],
+      "label_id": "L054",
+      "japanese": "SAP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SAP"
+      ]
+    },
+    {
+      "source": "servicenow",
+      "confidence": 0.9986697971820832,
+      "box": [
+        [
+          1075.0,
+          858.0
+        ],
+        [
+          1240.0,
+          858.0
+        ],
+        [
+          1240.0,
+          888.0
+        ],
+        [
+          1075.0,
+          888.0
+        ]
+      ],
+      "label_id": "L055",
+      "japanese": "servicenow",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "O Supertab\"",
+      "confidence": 0.9512993801723827,
+      "box": [
+        [
+          1274.0,
+          856.0
+        ],
+        [
+          1436.0,
+          855.0
+        ],
+        [
+          1436.0,
+          886.0
+        ],
+        [
+          1274.0,
+          887.0
+        ]
+      ],
+      "label_id": "L056",
+      "japanese": "Supertab",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Supertab"
+    },
+    {
+      "source": "tCS",
+      "confidence": 0.7145470976829529,
+      "box": [
+        [
+          1490.0,
+          861.0
+        ],
+        [
+          1543.0,
+          861.0
+        ],
+        [
+          1543.0,
+          887.0
+        ],
+        [
+          1490.0,
+          887.0
+        ]
+      ],
+      "label_id": "L057",
+      "japanese": "tcs",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "tCS"
+      ],
+      "transcribed_source": "tcs"
+    },
+    {
+      "source": "CONSULTANCY",
+      "confidence": 0.9948370456695557,
+      "box": [
+        [
+          1547.0,
+          860.0
+        ],
+        [
+          1628.0,
+          860.0
+        ],
+        [
+          1628.0,
+          880.0
+        ],
+        [
+          1547.0,
+          880.0
+        ]
+      ],
+      "label_id": "L058",
+      "japanese": "コンサルティング",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "CONSULTANCY"
+      ]
+    },
+    {
+      "source": "TATA",
+      "confidence": 0.9894658029079437,
+      "box": [
+        [
+          1549.0,
+          852.0
+        ],
+        [
+          1583.0,
+          852.0
+        ],
+        [
+          1583.0,
+          866.0
+        ],
+        [
+          1549.0,
+          866.0
+        ]
+      ],
+      "label_id": "L059",
+      "japanese": "TATA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TATA"
+      ]
+    },
+    {
+      "source": "pwc",
+      "confidence": 0.9771281480789185,
+      "box": [
+        [
+          116.0,
+          867.0
+        ],
+        [
+          186.0,
+          860.0
+        ],
+        [
+          189.0,
+          892.0
+        ],
+        [
+          119.0,
+          899.0
+        ]
+      ],
+      "label_id": "L060",
+      "japanese": "pwc",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "S&P Global",
+      "confidence": 0.9513327658176423,
+      "box": [
+        [
+          486.0,
+          863.0
+        ],
+        [
+          638.0,
+          863.0
+        ],
+        [
+          638.0,
+          893.0
+        ],
+        [
+          486.0,
+          893.0
+        ]
+      ],
+      "label_id": "L061",
+      "japanese": "S&P Global",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Typeface",
+      "confidence": 0.9992879033088684,
+      "box": [
+        [
+          1731.0,
+          858.0
+        ],
+        [
+          1831.0,
+          858.0
+        ],
+        [
+          1831.0,
+          889.0
+        ],
+        [
+          1731.0,
+          889.0
+        ]
+      ],
+      "label_id": "L062",
+      "japanese": "Typeface",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Solving What Matters",
+      "confidence": 0.986078354716301,
+      "box": [
+        [
+          270.0,
+          879.0
+        ],
+        [
+          420.0,
+          879.0
+        ],
+        [
+          420.0,
+          896.0
+        ],
+        [
+          270.0,
+          896.0
+        ]
+      ],
+      "label_id": "L063",
+      "japanese": "重要な課題を解決する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "SERVICES",
+      "confidence": 0.9934995174407959,
+      "box": [
+        [
+          1547.0,
+          876.0
+        ],
+        [
+          1600.0,
+          876.0
+        ],
+        [
+          1600.0,
+          890.0
+        ],
+        [
+          1547.0,
+          890.0
+        ]
+      ],
+      "label_id": "L064",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SERVICES"
+      ]
+    },
+    {
+      "source": "UKG",
+      "confidence": 0.8960798184076945,
+      "box": [
+        [
+          365.0,
+          953.0
+        ],
+        [
+          464.0,
+          953.0
+        ],
+        [
+          464.0,
+          991.0
+        ],
+        [
+          365.0,
+          991.0
+        ]
+      ],
+      "label_id": "L065",
+      "japanese": "UKG",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UKG"
+      ]
+    },
+    {
+      "source": "WRITER",
+      "confidence": 0.9946385622024536,
+      "box": [
+        [
+          1195.0,
+          945.0
+        ],
+        [
+          1291.0,
+          945.0
+        ],
+        [
+          1291.0,
+          983.0
+        ],
+        [
+          1195.0,
+          983.0
+        ]
+      ],
+      "label_id": "L066",
+      "japanese": "WRITER",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WRITER"
+      ]
+    },
+    {
+      "source": "::Weights & Biases",
+      "confidence": 0.9496981898943583,
+      "box": [
+        [
+          519.0,
+          956.0
+        ],
+        [
+          744.0,
+          956.0
+        ],
+        [
+          744.0,
+          989.0
+        ],
+        [
+          519.0,
+          989.0
+        ]
+      ],
+      "label_id": "L067",
+      "japanese": "Weights & Biases",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Weights & Biases"
+    },
+    {
+      "source": "workday.",
+      "confidence": 0.9877262488007545,
+      "box": [
+        [
+          998.0,
+          955.0
+        ],
+        [
+          1113.0,
+          959.0
+        ],
+        [
+          1112.0,
+          991.0
+        ],
+        [
+          997.0,
+          988.0
+        ]
+      ],
+      "label_id": "L068",
+      "japanese": "workday",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "workday"
+    },
+    {
+      "source": "ZEOTAP",
+      "confidence": 0.9990681906541189,
+      "box": [
+        [
+          1415.0,
+          951.0
+        ],
+        [
+          1546.0,
+          951.0
+        ],
+        [
+          1546.0,
+          981.0
+        ],
+        [
+          1415.0,
+          981.0
+        ]
+      ],
+      "label_id": "L069",
+      "japanese": "ZEOTAP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ZEOTAP"
+      ]
+    },
+    {
+      "source": "WI",
+      "confidence": 0.8612159788608551,
+      "box": [
+        [
+          802.0,
+          965.0
+        ],
+        [
+          829.0,
+          965.0
+        ],
+        [
+          829.0,
+          980.0
+        ],
+        [
+          802.0,
+          980.0
+        ]
+      ],
+      "label_id": "L070",
+      "japanese": "wipro",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WI"
+      ],
+      "transcribed_source": "wipro"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.386882799968589,
+    0.08124709129333496,
+    3.2002203464508057
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "^ arize": "arize",
+      "Articuls": "Articul8",
+      "AATLASSIAN": "ATLASSIAN",
+      "mwobco": "Capgemini",
+      ">cognizant": "cognizant",
+      "contextualai": "contextual·ai",
+      "cotality\"": "cotality",
+      "W Decagon": "Decagon",
+      "lleunp": "devnagri",
+      "<epam>": "epam",
+      "mongoDB.": "mongoDB",
+      "se04j": "neo4j",
+      " new relic.": "new relic",
+      "( livex.AI": "LIVEX.AI",
+      "O Supertab\"": "Supertab",
+      "tCS": "tcs",
+      "::Weights & Biases": "Weights & Biases",
+      "workday.": "workday",
+      "WI": "wipro"
+    },
+    "source_note": "企業・製品名のロゴは固有名として保持。INCORTAはIN-/COR/TAの3段、JETBRAINSはJET/BRAINSの2段、McKinsey & CompanyとTATA CONSULTANCY SERVICESも複数行で記載。パートナー一覧は原画像の歴史的記載であり現行の参加状況へ更新していない。",
+    "source_sha256": "690cf92f78f15cd4453a1d725d0ee6a483620383df370873e44a3286bcc91392"
+  }
+}

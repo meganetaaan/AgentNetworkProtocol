@@ -1,0 +1,154 @@
+{
+  "source": "blogs/images/anp-first-meet/06.png",
+  "sha256": "0f38bafb1645344fa6ad63cc2815d266cd301e7d7b6eeb45c2fc0aacffb4b474",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "企业参与方式",
+      "confidence": 0.9986880918343862,
+      "box": [
+        [
+          24.858871459960938,
+          33.92856979370117
+        ],
+        [
+          595.2318725585938,
+          36.64285659790039
+        ],
+        [
+          595.2318725585938,
+          131.64285278320312
+        ],
+        [
+          24.858871459960938,
+          128.92857360839844
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "企業の参加方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9929941097895304,
+      "box": [
+        [
+          2565.988037109375,
+          29.857141494750977
+        ],
+        [
+          2719.284423828125,
+          29.857141494750977
+        ],
+        [
+          2719.284423828125,
+          86.85713958740234
+        ],
+        [
+          2565.988037109375,
+          86.85713958740234
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "观察员",
+      "confidence": 0.9985396265983582,
+      "box": [
+        [
+          665.6653442382812,
+          637.8571166992188
+        ],
+        [
+          816.1996459960938,
+          637.8571166992188
+        ],
+        [
+          816.1996459960938,
+          694.8571166992188
+        ],
+        [
+          665.6653442382812,
+          694.8571166992188
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "オブザーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?？?",
+      "confidence": 0.6018191973368326,
+      "box": [
+        [
+          1894.7984619140625,
+          641.9285278320312
+        ],
+        [
+          2027.379150390625,
+          641.9285278320312
+        ],
+        [
+          2027.379150390625,
+          689.4285278320312
+        ],
+        [
+          1894.7984619140625,
+          689.4285278320312
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "? ? ?（未定）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "当前已经有多个企业观察员",
+      "confidence": 0.9989010840654373,
+      "box": [
+        [
+          385.3125,
+          985.2857055664062
+        ],
+        [
+          1096.552490234375,
+          987.9999389648438
+        ],
+        [
+          1096.552490234375,
+          1046.3570556640625
+        ],
+        [
+          385.3125,
+          1043.642822265625
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "現在すでに複数の企業オブザーバーが参加している",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.2149853999726474,
+    0.00738525390625,
+    0.6450157165527344
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。",
+    "source_sha256": "0f38bafb1645344fa6ad63cc2815d266cd301e7d7b6eeb45c2fc0aacffb4b474"
+  }
+}

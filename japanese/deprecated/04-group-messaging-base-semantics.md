@@ -1,174 +1,175 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: full; source=deprecated/04-group-messaging-base-semantics.md; method=full-original-to-translation-semantic-comparison -->
+> 日本語参考訳（原文全体を段落ごとに意味照合済み）。deprecated配下の旧版で、Released・1.1・v1は当時の状態です。自主参加・直接追加とHandle再バインドの仕様を原文どおり保持しています。規範となるのは原文です。
 > 原文: [deprecated/04-group-messaging-base-semantics.md](../../deprecated/04-group-messaging-base-semantics.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
-# ANPのプロフィール4:グループ メッセージング ベース セマティックス
+# ANPプロファイル4：グループメッセージの基本的な意味
 
-- 文書ID: ANP-P4
-- タイトル:グループメッセージングベースセマティクス
-- ステータス: リリース
-- バージョン: 1.1
-- 原文言語: English / このページは日本語参考訳
-- 応用性:このプロファイルは、グループDIDに基づくグループライフサイクル、グループ管理、グループメッセージベースのセマティクスに適用され、グループエンドツーエンド暗号化アルゴリズム自体は含まれていません。
+- 文書ID：ANP-P4
+- タイトル：グループメッセージの基本的な意味
+- 状態：公開済み（Released）
+- バージョン：1.1
+- 原文言語：英語／本ページは日本語参考訳
+- 適用範囲：Group DIDに基づくグループの存続期間、管理、メッセージの基本的な意味。グループE2EEのアルゴリズム自体は含みません。
 
 ---
 
-> Note: このリリースでは、v1コアを2つのパスにまとめました。"セルフサービス結合と直接追加":
+> 注：この版はv1中核の入群経路を「自主参加」と「直接追加」の2つへ集約します。
 >
-> 1. `group.invite`, `group.accept_invite` 規格・規格 `invitation` v1コアからオブジェクトが移動しました。
-> 2. `membership_request`, `membership_request_digest`, `group.approve_membership`と `group.reject_membership` v1コアから移動してきた。
-> 3. `group_policy` 対談 `message_security_profile + bootstrap_security_profile + admission_mode + permissions`;
-> 4. 非会員制ガバナンスの指示通知 `group.governance_notice` v1コアから移動しました。
-> 5. 参加条件 `group.state_changed` グループ内での注文状況通知として。
+> 1. `group.invite`、`group.accept_invite`、標準`invitation`オブジェクトはv1中核の外へ移しました。
+> 2. `membership_request`、`membership_request_digest`、`group.approve_membership`、`group.reject_membership`も外へ移しました。
+> 3. `group_policy`を`message_security_profile + bootstrap_security_profile + admission_mode + permissions`へ集約しました。
+> 4. 非メンバー向けの管理通知`group.governance_notice`も中核の外へ移しました。
+> 5. `group.state_changed`は、グループ内の順序付け済み状態通知として維持します。
 
 ---
 
-## 1. 目的:
+## 1. 目的
 
-このプロファイルは、ANPのグループベースセマティクスレイヤーを定義します。
+本プロファイルは、グループの基本的な意味を定義し、次を規定します。
 
-1. グループ DID は、グループアプリケーションのレイヤーのグローバル ID として機能します。
-2. グループ作成、セルフサービス参加、直接会員追加、メンバー削除、グループ退去、グループ情報の更新、グループポリシーの更新など基本的な行動
-3. グループメッセージのベースセマティクス `group.send`;
-4. グループホストサービスの責任の注文;
-5. グループ E2EE オーバーレイがこのプロファイルのアプリケーション・セマティクスに優先されます。
-6. 任意安定したハンドルの会員アンカー、現在のDIDのcrudentialの結合およびグループ同一証明の継続。
+1. アプリケーション層のグローバル識別子としてのGroup DID。
+2. 作成、自主参加、メンバー直接追加、削除、退会、情報更新、ポリシー更新。
+3. `group.send`の基本的な意味。
+4. Group Host Serviceの順序付け責任。
+5. Group E2EE Overlayをアプリケーション上の意味へ重ねる方法。
+6. 任意の安定Handleによる会員基点、現在のDID資格情報の再バインド、グループID継続性。
 
-このプロファイルは定義しません。
+本プロファイルでは、次を定義しません。
 
-- 特定のグループ E2EE のアルゴリズム;
-- 履歴メッセージを引き受ける。
-- オンラインでのステータスを読んでください。
-- デバイスまたは内部のコピーコンセプト;
-- グループ外部ディレクトリ同期の詳細;
-- プライベート招待状リンク、トークンまたは他のアウトオブバンドグループメンバーシップ資格情報に特定の配信メカニズムを展開します。
-- エージェント内で動的グループの状態が保存される方法。
-
----
-
-## 2. 用語集と定款
-
-### 2.1 仮説キーワード
-
-この記事では、 **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**, **NOT RECOMMENDED**, **MAY**, **OPTIONAL** 資本金を基準とした規範的な要件として解釈されます。
-
-### 2.2 用語集
-
-- **グループ会社**: 特定したグループプロトコル `group_did`.
-- **グループホストサービス**: 基本ステータスの注文、ポリシー申請、グループメッセージのエントリーを担当するサービスです。
-- **グループ州**: 情報、ポリシー、会員関係など、特定の時点でのグループの適用層の状態。
-- **グループ州版**: グループホストサービスが割り当てられた現在のグループの状態バージョン識別子。
-- **グループイベント シーケンス**: グループホストサービスが割り当てられたグループイベントは、コントロール操作とグループメッセージをカバーしています。
-- **会員名**: 所属団体のエージェント会員
-- **入学モード**: グループの入学経路は、デフォルトで非会員に開放されます。 このプロファイルv1の標準的な値が `admin-add` とりあえず `open-join`. . . それらの中で、中国「自動参加」オンラインプロトコル値は、同様に均一に書かれています `open-join`.
-- **運営方針**: 送信するメッセージ、メンバーを直接追加し、メンバーを削除したり、グループ情報を更新したり、ポリシーを更新したりできるかどうかをアプリケーション層ルールで判断します。
-- **起源の証拠**: グループ操作やグループメッセージの開始を行なうエージェントが生成するアプリケーションレイヤーの原点の証明は、do:wba JSON ベアア認証に基づいて行われます。
-- **グループレシート**: グループホストが生成する検証可能なレシートオブジェクトで、グループ操作やグループメッセージの受け入れを証明し、一定の状態を取得しました。
-- **論理的ターゲット URI**: アプリケーションレイヤーの署名を転送中に安定させるには、ホップ用の特定のHTTP URLではなく、P1 Appendix Aによってグローバルに定義される論理的ターゲットURI。
-- **グループ変更イベント**: グループホストが現在活動しているメンバーに発注するイベントオブジェクトをグループ状態変更。
-- **会員ハンドル**: WNS に合わせる完全なハンドル。 記録されたとき `group_member`、それはその会員のための永久的な安定したアンカーです。
-- **ハンドル・バックメンバー**: 確認したグループメンバー `member_handle`; ハンドルは安定した会員を識別し、 `agent_did` 現行の暗号クレデンシャルを識別します。
-- **ハンドルの結合の生成**: モノトニック `binding_generation` WNSハンドルの決断文書から、P4で表される小数の文字列として `handle_binding_generation`.
-- **会員資格取得**: 電流を置換する `agent_did` ハンドルバックメンバーのロール、ステータス、または参加時間を変更することなく。
+- 具体的なグループE2EEアルゴリズム。
+- 過去メッセージの取得。
+- 既読・オンライン状態。
+- 端末や内部複製の概念。
+- 外部ディレクトリー同期の詳細。
+- 招待リンク、Join Tokenなどの帯域外資格情報の、配置固有の配送手段。
+- Agent内の動的状態の保存方法。
 
 ---
 
-## 3. デザイン原則
+## 2. 用語と規範上の慣例
 
-### 3.1 グループID
+### 2.1 規範キーワード
 
-各グループ **MUST** 一つある `group_did`. `group_did` このグループでアプリケーションレイヤーのグローバル識別子であり、以下に使用されます。
+本書の**MUST**、**MUST NOT**、**REQUIRED**、**SHALL**、**SHALL NOT**、**SHOULD**、**SHOULD NOT**、**RECOMMENDED**、**NOT RECOMMENDED**、**MAY**、**OPTIONAL**は、大文字の場合に規範的な要求として解釈します。
 
-- グループ発見;
-- グループ管理;
-- グループメッセージのアドレス;
-- 続いてグループE2EEのオーバーレイのための固定ポイントを結合します。
+### 2.2 用語
 
-### 3.2 グループホストは、注文を担当しています
-
-グループの状態を変更するすべての操作 **MUST** グループホストサービスで受付・注文
-
-グループホストサービス **MUST** グループステートの変更の定義された線形命令を維持し、新しい割り当てて下さい `group_state_version` それぞれの受入状態の変化に対応
-
-### 3.3 アプリケーションセマティクスと暗号学の分離
-
-このプロファイルは、グループ内のアプリケーションレイヤーのアクションとオブジェクトのみを定義します。特定のグループキーの確立、メンバーの暗号化ステータスの進化、ウェルカムメッセージ、暗号化されたアプリケーションメッセージ、およびその他の機能がグループE2EEプロファイルによって定義されます。
-
-### 3.4 プロトコルの終点は、まだエージェントです
-
-グループメンバーは、プロトコルレイヤーでエージェントをまだ作成しています。 エージェント内で存在するレプリカ、ワーカー、デバイス、端末は、このプロファイルの相互運用性セマティクスを入力しません。
-
-### 3.5 非目標
-
-プロフィールは **なし** 提供:
-
-- グローバル歴史再生;
-- 強力な同期セマティクス;
-- デバイスレベルのメンバーシップ;
-- 装置レベルの配達;
-- 内部の執行者レベルの権限制御;
-- 標準化された承認の流れ。
-
-### 3.6 初期化とグループ結果の配線の分離
-
-グループシナリオには、通常2つの署名があります。
-
-1. **ニイテーターのシグネチャ**: 特定のものを約束する `sender_did` グループ操作やグループメッセージの実際に開始
-2. **グループ結果の証人**: グループで操作やメッセージが受け入れられ、確認されたものを割り当てられた場合 `group_state_version`, `group_event_seq`、または同等の状態の位置。
-
-このページのコンテンツには、次のページが必要です。
-
-- グループの状態を変更し、グループの状態を変更するすべての要求 `group.send`, **MUST** 始動機の持ち運び `auth.origin_proof`;
-- グループDIDの署名 **SHOULD** に表示 `group_receipt` グループホストから返される。
-- スタッフ **MUST NOT** イニスターのシグネチャをグループシグネチャに置き換え、 **MUST NOT** グループレストの証人をイニスターズシグネチャと交換します。
-
-### 3.7 グループエントリーパスコンバージェンス
-
-v1コアでは、グループに非会員向けに2つの標準アクションのみが予約されます。
-
-- `group.join`: ターゲットエージェントは、独立して参加し、直ちにメンバーになる `active` 成功に。
-- `group.add`: 認定メンバーをグループにターゲットエージェントを直接追加し、成功するとすぐに効果が出る。
-
-このプロファイルv1は標準を定義しません `invitation` オブジェクト, `invitation_id`, `group.invite`, または `group.accept_invite`. . . デプロイメントが招待リンクを必要とする場合、トークンの登録、またはその他のアウトオブバンド認証が必要な場合は、サポート `group.join`, これらの機能 **MUST** 展開拡張として扱い、 **MUST NOT** 標準的なメンバーステータスを作成する前に `group.join` 成功する。
-
-このプロファイルv1は標準化された承認フローを定義しないし、導入しません `pending` 中間ガバナンスは、中核に状態を置きます。
-
-### 3.8 ハンドル会員アンカーとDID認証の分離
-
-このプロファイルは、エージェントがDIDのみまたはハンドルバックモードのいずれかでメンバーになることを可能にします。
-
-- DID会員は、現在、特定されていません。 `agent_did`; DID 文字列が変更された場合、このプロファイルは自動継続性を提供していません。
-- ハンドルバックメンバーの場合、 `member_handle` 安定した会員のアンカーであり、 `agent_did` 認証、署名、ルーティング、セキュリティオーバーレイの現在の資格です。
-- ハンドル・バック・メンバー **MUST** 永久に譲渡不能かつ非再利用可能なWNSハンドルを使用します。 グループホスト **MUST** ハンドルプロバイダを、そのハンドルの継続的信頼ルートとして扱います。
-- ハンドル自体が `revoked`会員資格のリバインド **MUST NOT** 行なう。 ハンドルが残っている場合 `active` 続いているDIDは変化します。 `group.rebind_member` 利用する
-
-ANPワイヤーでは、ハンドルバックメンバーの安定したメンバーシップキーが `(group_did, member_handle)`, その時 `agent_did` 再発する可能性があります。 DID会員の入会キーは、 `(group_did, agent_did)`. . . クライアントやサーバー内のローカルユーザーIDにフォームをマッピングすることも可能ですが、ユーザ ID は ANP を入力することができません。
-
-会員が設立後、DID専用モードとハンドルバックモード **MUST NOT** 現在は同じDIDに解決するため、サイレントに変換または統合されるだけです。 会員が作成されると、ハンドルの継続性を要求するエージェントは、ハンドルをDIDのみに後で添付するためのメソッドを定義します。
+- **Group**：`group_did`が識別するグループのプロトコル主体。
+- **Group Host Service**：基本状態の順序付け、ポリシー適用、グループメッセージの入口を担うサービス。
+- **Group State**：情報、ポリシー、メンバー関係など、ある時点のアプリケーション層の状態。
+- **Group State Version**：Hostが割り当てる現在の状態バージョン識別子。
+- **Group Event Sequence**：制御操作とメッセージを含め、Hostが割り当てる単調増加のイベント番号。
+- **Member**：グループ内のAgentメンバー。
+- **Admission Mode**：非メンバーに対する既定の入群経路。v1の値は`admin-add`と`open-join`です。中国語の「自動参加」に対応するワイヤー値も、`open-join`に統一します。
+- **Policy**：送信、直接追加、削除、情報更新、ポリシー更新を誰ができるか決める業務層の規則。
+- **Origin Proof**：操作やメッセージを開始するAgentが、did:wba JSON bearer認証に基づいて生成するアプリケーション層の送信元証明。
+- **Group Receipt**：操作やメッセージが受理され、特定の状態位置を得たことを証明する、Host生成の検証可能な受領証。
+- **論理宛先URI**：ホップのHTTP URLでなく、転送中も署名が安定するようP1付録Aが全体に定義するURI。
+- **Group State Changed Event**：Hostが順序付け、現在のactiveメンバーへ同期する状態変更イベント。
+- **Member Handle**：WNSに従う完全なHandle。`group_member`へ記録した場合、その会員関係の恒久的で安定した基点。
+- **Handle-backed Member**：検証済み`member_handle`を持つメンバー。Handleが安定した会員関係を、`agent_did`が現在の暗号資格情報を識別します。
+- **Handle Binding Generation**：WNS解決文書の単調増加`binding_generation`。P4では10進文字列`handle_binding_generation`で表します。
+- **Member Credential Rebind**：ロール、状態、参加時刻を変えず、Handle-backed Memberの現在の`agent_did`を原子的に置き換えること。
 
 ---
 
-## 4. グループガバナンスモデルの概要(非暫定的)
+## 3. 設計原則
 
-### 4.1 ルールのまとめ一覧
+### 3.1 1グループに1つのGroup DID
 
-| シナリオ | エントリー方法 | 即日結果 | 定性オブジェクト/ステータス | いつになるか `active` | 免責事項 |
+各グループは1つの`group_did`を持たなければなりません（**MUST**）。`group_did`はグローバルな識別子として次に使います。
+
+- グループ発見。
+- グループ管理。
+- グループメッセージの宛先指定。
+- 後続Group E2EE Overlayのバインドの基点。
+
+### 3.2 順序付けはGroup Hostの責任
+
+状態変更操作はすべてHostが受理し、順序付けなければなりません（**MUST**）。
+
+Hostは明確な線形順序を維持し、受理した各状態変更へ新しい`group_state_version`を割り当てなければなりません（**MUST**）。
+
+### 3.3 アプリケーションと暗号処理の意味を分離
+
+ここではグループのアプリケーション層の操作とオブジェクトだけを定義します。鍵確立、メンバーの暗号状態の進行、welcome、暗号化業務メッセージなどはGroup E2EE Profileが定義します。
+
+### 3.4 プロトコル終端は引き続きAgent
+
+メンバーはプロトコル層ではAgentです。内部の複製、ワーカー、デバイス、端末は相互運用の意味へ含めません。
+
+### 3.5 対象外の機能
+
+本プロファイルは次を提供**しません**。
+
+- 全体の履歴再生。
+- 強い同期の意味。
+- 端末単位の会員関係。
+- 端末単位の配送。
+- 内部実行主体単位の権限制御。
+- 標準化された承認フロー。
+
+### 3.6 開始者の認証と、グループ結果の証明を分離
+
+グループには通常、異なる意味の署名が2つあります。
+
+1. **開始者の署名**：`sender_did`が実際に操作やメッセージを開始したことを証明。
+2. **グループ結果の証明**：受理され、確定した`group_state_version`、`group_event_seq`などの状態位置を得たことを証明。
+
+本プロファイルでは次を要求します。
+
+- 状態変更要求と`group.send`は、開始者の`auth.origin_proof`を持つ（**MUST**）。
+- Group DIDの署名は、Hostの`group_receipt`に置くことが望ましい（**SHOULD**）。
+- 開始者署名をグループ署名で代用せず（**MUST NOT**）、グループ結果証明を開始者署名でも代用しない（**MUST NOT**）。
+
+### 3.7 入群経路の集約
+
+v1中核の非メンバーの入群操作は2つだけです。
+
+- `group.join`：対象Agentが自主参加し、成功時に直ちに`active`になります。
+- `group.add`：既存の認可メンバーが直接追加し、成功時に直ちに有効になります。
+
+v1は標準`invitation`、`invitation_id`、`group.invite`、`group.accept_invite`を定義しません。招待リンク、Join Tokenなどで`group.join`を補助する場合は配置上の拡張として扱い（**MUST**）、`group.join`の成功前に標準メンバー状態を作ってはなりません（**MUST NOT**）。
+
+標準承認フローはなく、`pending`という管理上の中間状態も中核に導入しません。
+
+### 3.8 Handle会員基点とDID資格情報を分離
+
+AgentはDID-onlyかHandle-backedのいずれかで会員になれます。
+
+- DID-onlyは現在の`agent_did`で識別します。DID文字列の変更に自動継続性はありません。
+- Handle-backedでは、`member_handle`が会員基点、`agent_did`が認証・署名・経路・Overlay用の現在の資格情報です。
+- 恒久的に譲渡不能・再利用不能のWNS Handleを使わなければならず（**MUST**）、HostはHandle Providerを継続性の信頼の根として扱わなければなりません（**MUST**）。
+- Handleが`revoked`なら再バインドは禁止（**MUST NOT**）です。`active`のまま内部DIDが変わったときに`group.rebind_member`を使います。
+
+ワイヤー上のHandle-backed会員キーは`(group_did, member_handle)`で、`agent_did`は再バインド可能です。DID-onlyは`(group_did, agent_did)`です。内部でローカルUser IDに対応付けても、そのIDはANPへ出しません。
+
+両モードを、現在同じDIDに解決するだけの理由で暗黙に変換・統合してはなりません（**MUST NOT**）。継続性が必要なら会員作成時にHandleを提出します。DID-only会員へ後からHandleを付けるメソッドは定義しません。
+
+---
+
+## 4. グループ管理モデルの概要（非規範的）
+
+### 4.1 規則の概要
+
+| 場面 | 入口 | 即時結果 | 権威ある状態 | `active`になる時点 | 注 |
 |---|---|---|---|---|---|
-| セルフサービス参加 | `group.join` | コールアがグループに参加 | `group_member.status = active` | 参加はすぐに効果をとります | 対象者のみ `open-join` |
-| 直接メンバーを追加 | `group.add` | ターゲットを直接追加 | `group_member.status = active` | この追加ですぐに有効 | 一般的に使用される `admin-add` |
-| 会員は積極的にグループを離れる | `group.leave` | グループから退会 | `group_member.status = left` | 該当なし | 現行の `active` 会員メンバー |
-| 管理者はメンバーを削除 | `group.remove` | グループから削除されたメンバー | `group_member.status = removed` | 該当なし | 現時点でのみ適用 `active` 会員メンバー |
-| ハンドルメンバーのDIDをリバインド | `group.rebind_member` | 古い DID は権限を失い、新しい DID が現在のようになります | `group_member` 残留期間 `active` | グループホストがリバインドを受け入れるとき | ハンドルバックメンバーのみ |
+| 自主参加 | `group.join` | 呼び出し元が参加 | `group_member.status = active` | 即時 | `open-join`のみ |
+| 直接追加 | `group.add` | 対象を直接追加 | `group_member.status = active` | 即時 | 通常`admin-add`で使用 |
+| 自主退会 | `group.leave` | 退会 | `group_member.status = left` | 対象外 | 現在の`active`のみ |
+| 管理者による削除 | `group.remove` | 削除 | `group_member.status = removed` | 対象外 | 現在の`active`のみ |
+| Handle会員のDID再バインド | `group.rebind_member` | 旧DIDが権限を失い、新DIDへ変更 | `group_member`は`active`を維持 | Hostの受理時 | Handle-backedのみ |
 
-> Note: デプロイメントガイドがバンド外招待リンクから参加する場合、トークンまたはオンサイトリマインダーに加入すると、標準の相互運用性レイヤーは引き続き動作します。 **MUST** 成功の結果を表示 `group.join` または `group.add` 終わり。
+> 注：帯域外の招待リンク、Join Token、サイト内通知で入群を案内しても、標準相互運用層では最終的に`group.join`か`group.add`の成功結果を示さなければなりません（**MUST**）。
 
-### 4.2 ステータスオブジェクト比較表
+### 4.2 状態オブジェクトの比較
 
-| オブジェクト | 主の状態 | 意味する |
+| オブジェクト | 主要状態 | 意味 |
 |---|---|---|
-| `group_member` | `active` | 応用層会員は効果があります |
-| `group_member` | `left` / `removed` | 会員資格 |
+| `group_member` | `active` | アプリケーション層の会員関係が有効 |
+| `group_member` | `left` / `removed` | 会員関係が終了 |
 
-### 4.3 ステートマシン図
+### 4.3 状態機械の図
 
 ```mermaid
 stateDiagram-v2
@@ -184,31 +185,31 @@ stateDiagram-v2
 
 ---
 
-## 5. プロフィールの同一証明および依存関係
+## 5. プロファイル識別子と依存関係
 
-### 5.1 プロフィール名
+### 5.1 プロファイル名
 
-このプロファイルの標準的な名前は、次のとおりです。
+本プロファイルの標準名は次のとおりです。
 
 `anp.group.base.v1`
 
 ### 5.2 依存関係
 
-プロフィール **MUST** 下記のプロフィールによります。
+本プロファイルは、次のプロファイルに依存しなければなりません（**MUST**）。
 
 - `anp.core.binding.v1`
 - `anp.identity.discovery.v1`
 
-ハンドルバックメンバーが使用している場合、このプロフィールも **MUST** は、 [ANP DID-WBA 名空間仕様(WNS)](../04-anp-did-wba-name-space-specification.md) ハンドルのフォーマット、決断、二方向結合のため、 `binding_generation`、永久的な非transferabilityおよび永久的な非再使用の皮下。
+Handle-backedを使う場合、形式、解決、双方向バインド、`binding_generation`、恒久的な譲渡・再利用禁止について、[ANP DID-WBA名前空間仕様（WNS）](../04-anp-did-wba-name-space-specification.md)にも依存しなければなりません（**MUST**）。
 
 ### 5.3 セキュリティプロファイル
 
-このプロファイルが独立して実行中の基本グループプロファイルとして使用されるとき:
+基本グループProfileとして単独で動作する場合、
 
-- `meta.profile` **MUST** 等しく `anp.group.base.v1`
-- `meta.security_profile` **MUST** 等しく `transport-protected`
+- `meta.profile`は`anp.group.base.v1`（**MUST**）。
+- `meta.security_profile`は`transport-protected`でなければなりません（**MUST**）。
 
-グループ E2EE オーバーレイがその後に重ねられている場合、対応するセキュリティプロファイル **MUST** 暗号的にこのプロファイルのグループの状態オブジェクトとグループメッセージオブジェクトを結合する方法を指定します。
+後からGroup E2EE Overlayを重ねる場合、状態とメッセージを暗号学的にバインドする方法を明示しなければなりません（**MUST**）。
 
 ---
 
@@ -216,38 +217,38 @@ stateDiagram-v2
 
 ### 6.1 `group_did`
 
-`group_did` グループのアプリケーションレイヤーのグローバル識別子です。
+`group_did`はグループのアプリケーション層のグローバル識別子です。
 
-`group_did`:
+`group_did`は、
 
-- **MUST** グループ管理操作の対象識別子として使用されます。
-- **MUST** グループメッセージ操作の対象識別子として機能します。
-- **MUST NOT** 内部と自動的に等しいように扱われて下さい `group_id` 特定の暗号実装の。
+- グループ管理の宛先識別子に使う（**MUST**）。
+- グループメッセージの宛先識別子に使う（**MUST**）。
+- 特定の暗号実装内部の`group_id`と自動的に同一視しない（**MUST NOT**）。
 
 ### 6.2 `group_state_version`
 
-`group_state_version` アプリケーションレイヤーグループの状態の現在のバージョンを識別します。
+`group_state_version`は、現在の業務上のグループ状態の版を識別します。
 
-要件は以下の通りです。
+要件：
 
-- **MUST** グループホストサービスで割り当てられます。
-- **MUST** 不透明の文字列として扱われます。
-- 各成功したグループの状態の変化 **MUST** 新規作成 `group_state_version`;
-- グループメッセージの送信 **MUST NOT** 事前申し込み `group_state_version`;
-- とりあえず `group_state_version` グループメッセージに対する応答が成功したときに返されると、そのメッセージが受け入れられたグループステートのスナップショットを識別します。
+- Hostが割り当てる（**MUST**）。
+- 不透明な文字列として扱う（**MUST**）。
+- 成功した状態変更ごとに、新しい`group_state_version`を生成（**MUST**）。
+- メッセージ送信によって`group_state_version`を進めない（**MUST NOT**）。
+- メッセージの成功応答に含む`group_state_version`は、受理時の状態スナップショットを示します。
 
 ### 6.3 `group_event_seq`
 
-`group_event_seq` グループイベントのシーケンス番号を表します。
+`group_event_seq`はグループイベントの番号です。
 
-要件は以下の通りです。
+要件：
 
-- **MUST** 同じグループ内で単調に増加する。
-- **MUST** カバー グループ制御操作とグループメッセージ。
-- **MUST** 決定的な文字列で表される。
-- **MUST NOT** セキュリティのセマンティックスだけに、直接機能します。
+- 同じグループ内で単調増加（**MUST**）。
+- 制御操作とメッセージをともに含む（**MUST**）。
+- 10進文字列で表す（**MUST**）。
+- 安全性の意味の唯一の根拠にしない（**MUST NOT**）。
 
-P4 で最も簡単に混同するポイントは、グループステートバージョンを優先するアクションであり、これはグループイベントシーケンスだけを進行させ、正確に何をするか `group_receipt` アンカー。 以下は、これらの3つの関係を1つのビューに置きます。
+どの操作が状態版を進め、どの操作がイベント番号だけを進め、`group_receipt`が何を固定するかは混同されやすい点です。次の図へまとめます。
 
 ```mermaid
 flowchart TD
@@ -267,31 +268,31 @@ SNAP --> RC
 RC --> OUT[Anchored result in response / notification]
 ```
 
-*図 P4-1: 関係性 `group_state_version`, `group_event_seq`と `group_receipt` (非放射性)。*
+*図P4-1：`group_state_version`、`group_event_seq`、`group_receipt`の関係（非規範的）。*
 
-後続のセマンティックスを読んだとき `group.send`, `group.state_changed`と `group_receipt`, この図に戻ります: グループメッセージはイベントの注文に参加しますが、メッセージ自体は新しい進歩をしません `group_state_version`.
+`group.send`、`group.state_changed`、`group_receipt`を読む際はこの図を参照してください。メッセージは順序付けに参加しますが、それ自体で新たな`group_state_version`を進めません。
 
 ### 6.4 ロールモデル
 
-このページでは、最低限の相互運用性について紹介しています。 **MUST** 以下の役割をサポート:
+最低限、次のロールへ対応しなければなりません（**MUST**）。
 
 - `owner`
 - `admin`
 - `member`
 
-役割階層は、次の場所に固定されます。
+ロールの階層は次に固定します。
 
 `owner > admin > member`
 
-通訳ルールは以下の通りです。
+解釈規則：
 
-- アクションが最小文字を必要とする場合 `member`, `admin` とりあえず `owner` 自動的に満足します;
-- アクションが最小文字を必要とする場合 `admin`, `owner` 自動的に満足します;
-- の1 **MUST NOT** 最小限の相互運用性スコープ内でカスタムロールを導入します。
+- 最低ロールが`member`なら、`admin`と`owner`も満たします。
+- 最低ロールが`admin`なら、`owner`も満たします。
+- v1の最低相互運用範囲に独自ロールを導入してはなりません（**MUST NOT**）。
 
-### 6.5 メンバーステータス
+### 6.5 メンバー状態
 
-このページでは、最低限の相互運用性について紹介しています。 **MUST** 以下のメンバーの状態をサポート:
+最低限、次の状態に対応しなければなりません（**MUST**）。
 
 - `active`
 - `left`
@@ -303,9 +304,9 @@ RC --> OUT[Anchored result in response / notification]
 
 ### 7.1 `group_policy`
 
-`group_policy` アプリケーションのレイヤーの承認とグループエントリールールオブジェクトを表します。
+`group_policy`は、アプリケーション層の認可と入群規則を表します。
 
-推奨構造は以下の通りです。
+推奨構造は次のとおりです。
 
 ```json
 {
@@ -324,140 +325,140 @@ RC --> OUT[Anchored result in response / notification]
 }
 ```
 
-フィールドの説明:
+フィールドの説明：
 
-- `message_security_profile`: 文字列, **SHOULD**, 推奨値: `transport-protected`, `group-e2ee`
-- `bootstrap_security_profile`: 文字列, **SHOULD**, 推奨値: `transport-protected`, `group-e2ee`
-- `admission_mode`: 文字列, **MUST**
-- `permissions`: オブジェクト、 **MUST**
-- `attachments_allowed`: ブーリアン値、 **MAY**
-- `max_members`: 小文字の文字列, **MAY**
+- `message_security_profile`：文字列（**SHOULD**）。推奨値：`transport-protected`, `group-e2ee`
+- `bootstrap_security_profile`：文字列（**SHOULD**）。推奨値：`transport-protected`, `group-e2ee`
+- `admission_mode`：文字列（**MUST**）。
+- `permissions`：オブジェクト（**MUST**）。
+- `attachments_allowed`：真偽値（**MAY**）。
+- `max_members`：10進文字列（**MAY**）。
 
-通訳ルールは以下の通りです。
+解釈規則：
 
-1. `message_security_profile` 制約:
+1. `message_security_profile`が制約するのは、
    - `group.send`
-   - 会員専用グループ運営をメンバーにし、 `active`
+   - `active`になった後のメンバー専用操作。
 
-2. `bootstrap_security_profile` 制約:
+2. `bootstrap_security_profile`が制約するのは、
    - `group.join`
-   - 続いてオーバーレイのオンボーディング/ブートストラップメソッドは明確に定義されています
+   - 後続Overlayが明示する導入・初期設定メソッド。
 
-3. `admission_mode` **MUST** 以下のいずれかの値を取る:
+3. `admission_mode`は次のいずれか（**MUST**）。
    - `admin-add`
    - `open-join`
 
-4. `permissions` **MUST** 下記の標準キーのみを含んだ。
+4. `permissions`には次の標準キーだけを、すべて含める（**MUST**）。
    - `send`
    - `add`
    - `remove`
    - `update_profile`
    - `update_policy`
 
-5. 値の **MUST** のり `permissions.*` は:
+5. `permissions.*`の値は次のいずれか（**MUST**）。
    - `owner`
    - `admin`
    - `member`
 
-6. デフォルトの解釈ルールは以下の通りです。
-   - いつか `admission_mode = "admin-add"`, `group.join` **MUST** 拒否される;典型的なエントリパスは `group.add`
-   - `group.join` **MUST** 許可される場合 `admission_mode = "open-join"`
-   - かわい `group.add` 可能です。 `permissions.add`
+6. 既定の解釈：
+   - `admission_mode = "admin-add"`なら`group.join`は拒否（**MUST**）。通常の入口は`group.add`。
+   - `admission_mode = "open-join"`なら`group.join`を認める（**MUST**）。
+   - `group.add`の可否は、引き続き`permissions.add`で決定。
 
-7. 場合 `max_members` グループホストが存在します。 **MUST** それを解釈する `active` 会員制限
+7. `max_members`があれば、`active`の人数制限として解釈（**MUST**）。
 
 ### 7.2 `group_member`
 
-`group_member` グループメンバーオブジェクトを表します。
+`group_member`はグループ会員関係のオブジェクトです。
 
-最低の推薦された分野:
+推奨する最小フィールド：
 
-- `agent_did`: 文字列, **MUST**
-- `member_handle`: WNS のハンドルの文字列を完成して下さい、 **MUST** ハンドルバックメンバーと **MUST NOT** DID専用会員様向け
-- `handle_binding_generation`: 正の小数の文字列, **MUST** ハンドルバックメンバーと **MUST NOT** DID専用会員様向け
-- `role`: 文字列, **MUST**
-- `status`: 文字列, **MUST**
-- `joined_at`: RFC 3339 時間のひも、 **MAY**
-- `added_by`: DID 文字列, **MAY**
+- `agent_did`：文字列（**MUST**）。
+- `member_handle`：完全なWNS Handle。Handle-backedでは必須（**MUST**）、DID-onlyでは禁止（**MUST NOT**）。
+- `handle_binding_generation`：正の10進文字列。Handle-backedでは必須（**MUST**）、DID-onlyでは禁止（**MUST NOT**）。
+- `role`：文字列（**MUST**）。
+- `status`：文字列（**MUST**）。
+- `joined_at`：RFC 3339時刻文字列（**MAY**）。
+- `added_by`：DID文字列（**MAY**）。
 
-注意:
+注：
 
-- デフォルトでは、受信機 **MUST** 通訳 `role` として `member`;
-- `status = active` アプリケーション層のメンバーシップが有効になっていることを示します。
-- `status = left` または `removed` 会員が終了したことを示します。
-- `added_by` 会員が設立した時点でのみ推奨されます。 `group.add`;
-- `agent_did` 認証、認可、メッセージング、ルーティング、セキュリティオーバーレイの会員の現在のIDを常に識別します。
-- `member_handle` **MUST** WNS の下で正常化される完全なハンドルであり、 **MUST NOT** 変更中 `group.rebind_member`;
-- `handle_binding_generation` **MUST** 正確に WNS をコピーします。 `binding_generation` 会員が設立された時、または最近リバウンドした時に検証
-- グループホスト **MUST NOT** ハンドルテキストだけでメンバーシップを確立または再結合する。WNSの解像度とバインディング検証を最初に完了する必要があります。
+- 既定の`role`は`member`と解釈（**MUST**）。
+- `status = active`は会員関係が有効な状態。
+- `status = left`または`removed`は会員関係の終了。
+- `added_by`は`group.add`で作成された関係の場合だけ推奨。
+- `agent_did`は、認証・認可・メッセージ・経路・Overlayのための現在のDID。
+- `member_handle`はWNS正規化済みの完全形（**MUST**）で、`group.rebind_member`中に変更しない（**MUST NOT**）。
+- `handle_binding_generation`は、作成時または最後の再バインド時に検証したWNSの`binding_generation`を正確に写す（**MUST**）。
+- Handle文字列だけで関係を作成・再バインドしてはなりません（**MUST NOT**）。まずWNS解決とバインド検証を完了します。
 
-このプロファイルは定義または送信しません `user_id`, `member_user_id`、またはその他のローカルデータベース識別子。 クライアントまたはサーバー **MAY** プロジェクトのプロジェクト `group_member` 内部で安定したローカルキーに、そのキーは ANP グループ メンバーの識別子ではなく、 **MUST NOT** 相互ドメイン認証や認可に使用されます。
+`user_id`、`member_user_id`などのローカルDB識別子は定義・送信しません。内部で`group_member`を安定したローカルキーへ対応付けてもかまいませんが（**MAY**）、それはANPの会員識別子ではなく、ドメイン間認証・認可へ使ってはなりません（**MUST NOT**）。
 
-### 7.3 拡張グループ認証の展開
+### 7.3 配置拡張としての入群資格情報
 
-このプロファイルv1は標準を定義しません `invitation` オブジェクト、または定義する `invitation_id`.
+v1は、標準`invitation`も`invitation_id`も定義しません。
 
-デプロイメントが招待リンクを必要とする場合、トークンの登録、またはその他のアウトオブバンド認証が必要な場合は、サポート `group.join`, これらのオブジェクト **MAY** 存在します。, しかし、彼らは:
+`group.join`を補助する招待リンク、Join Tokenなどの帯域外資格情報を設けてもかまいません（**MAY**）。ただし、
 
-- **MUST NOT** v1コアのインターワーキングオブジェクトと見なされます。
-- **MUST NOT** 標準的なメンバーの状態を前に作成 `group.join` 成功;
-- **SHOULD** 制御されたチャネルによって配られるため。
+- v1中核の相互運用オブジェクトと見なさない（**MUST NOT**）。
+- `group.join`成功前に標準メンバー状態を作らない（**MUST NOT**）。
+- 制御されたチャネルで配布することが望ましい（**SHOULD**）。
 
 ### 7.4 `group_profile`
 
-`group_profile` グループのプレゼンテーションデータオブジェクトを表します。
+`group_profile`は、表示用データのオブジェクトです。
 
-推奨分野:
+推奨フィールド：
 
-- `display_name`: 文字列、提供 **SHOULD** グループを作成するとき
-- `description`: 文字列, **MAY**
-- `avatar_uri`: 文字列, **MAY**
-- `discoverability`: 文字列, **MAY**, 推奨値: `private`, `listed`, `public`
-- `labels`: オブジェクト、 **MAY**
+- `display_name`：文字列。作成時の提供が望ましい（**SHOULD**）。
+- `description`：文字列（**MAY**）。
+- `avatar_uri`：文字列（**MAY**）。
+- `discoverability`：文字列（**MAY**）。推奨値：`private`, `listed`, `public`
+- `labels`：オブジェクト（**MAY**）。
 
 ### 7.5 `group_state_ref`
 
-`group_state_ref` グループ州参照オブジェクトを表します。
+`group_state_ref`は、グループ状態の参照オブジェクトです。
 
-最低の推薦された分野:
+推奨する最小フィールド：
 
-- `group_did`: 文字列, **MUST**
-- `group_state_version`: 文字列, **MUST**
-- `policy_hash`: 文字列, **MAY**
-- `roster_hash`: 文字列, **MAY**
+- `group_did`：文字列（**MUST**）。
+- `group_state_version`：文字列（**MUST**）。
+- `policy_hash`：文字列（**MAY**）。
+- `roster_hash`：文字列（**MAY**）。
 
 ### 7.6 グループメッセージのペイロード
 
-`meta.content_type` **MUST** のり `group.send` 存在します。
+`group.send`には`meta.content_type`が必要です（**MUST**）。
 
-このページでは、最低限の相互運用性について紹介しています。 **MUST** 以下に示すコンテンツタイプをサポートしています。
+最低限の相互運用では、次の内容種別に対応しなければなりません（**MUST**）。
 
 - `text/plain`
 - `application/json`
 - `application/anp-attachment-manifest+json`
 
-にほんご `group.send` とりあえず `body`, 中 `text`, `payload` とりあえず `payload_b64u`:
+`group.send`の`body`内の`text`、`payload`、`payload_b64u`には、次を適用します。
 
-- これら1つの分野を正確に **MUST** プレゼント
-- 複数の人が現れた場合、受取人 **MUST** リクエストを拒否する
-- いずれの3つが存在しない場合、受取人 **MUST** リクエストを拒否する
+- ちょうど1つだけ存在しなければなりません（**MUST**）。
+- 複数が存在すれば、受信者は要求を拒否しなければなりません（**MUST**）。
+- 3つとも存在しなければ、受信者は要求を拒否しなければなりません（**MUST**）。
 
-のために `payload_b64u`:
+`payload_b64u`について、
 
-- **MUST** パッドベース64urlを使用しないでください。
-- **SHOULD** バイナリエクステンションや、プライベートエクステンションオブジェクトのみに使用されます。
+- パディングなしbase64urlを使う（**MUST**）。
+- バイナリ拡張や独自拡張オブジェクトだけに使うことが望ましい（**SHOULD**）。
 
-いつか `meta.content_type = "application/json"`, `body.payload` **MUST** 持ち運び
-JSONオブジェクトは直接。 このプロフィールは、ビジネスの意味を定義しない
-オブジェクト内のフィールド; グループアプリケーションまたはホストは、それを解釈する方法を決定します。
+`meta.content_type = "application/json"`では、`body.payload`に
+JSONオブジェクトを直接格納しなければなりません（**MUST**）。内部フィールドの業務上の意味は
+ANPは定めず、グループのアプリケーションやHostが解釈します。
 
-### 7.7 `auth` オブジェクト
+### 7.7 `auth`オブジェクト
 
-グループの状態を変更するすべてのリクエストは、 `group.get_info`と `group.send`, その `params` **MUST** 含まれるもの `auth` オブジェクト。
+`group.get_info`を除く状態変更要求と、`group.send`の`params`には、`auth`オブジェクトが必要です（**MUST**）。
 
-証拠のベアラールール、署名されたリクエストオブジェクトとこのセクションで署名されたコンポーネントマッピング **MUST** P1付録Aで統一された定義を再使用;P4 **もはや** 独立した証拠のフィールド名、独立した署名されたペイロード構造またはローカルを定義します `@target-uri` マッピング。
+proofの保持、Signed Request Object、署名要素の対応付けは、P1付録Aの共通定義を使わなければなりません（**MUST**）。P4は独自のproofフィールド名、Signed Payload、局所的な`@target-uri`を**もはや定義しません**。
 
-推奨構造は以下の通りです。
+推奨構造は次のとおりです。
 
 ```json
 {
@@ -472,60 +473,60 @@ JSONオブジェクトは直接。 このプロフィールは、ビジネスの
 }
 ```
 
-分野条件:
+フィールドの要件：
 
-- `auth.scheme` **MUST** 等しく `anp-rfc9421-origin-proof-v1`
-- `auth.origin_proof` **MUST** 常に変化するグループ操作に存在し、 `group.send`
-- `auth` まあ、 **MUST NOT** エントリー `contentDigest`
+- `auth.scheme`は`anp-rfc9421-origin-proof-v1`でなければなりません（**MUST**）。
+- 状態変更操作と`group.send`すべてで、`auth.origin_proof`が必要（**MUST**）。
+- `auth`自体を`contentDigest`へ含めない（**MUST NOT**）。
 
-### 7.8 共有署名されたリクエストオブジェクトへの結合
+### 7.8 共有Signed Request Objectへのバインド
 
-`auth.origin_proof.contentDigest` **MUST** 共有されたバインド **署名された要求の目的** P1 付録 A で定義される。
+`auth.origin_proof.contentDigest`は、P1付録Aの共有**Signed Request Object**へバインドしなければなりません（**MUST**）。
 
-グループベースの場合:
+Group Baseでは、
 
-- など、メッセージクラスメソッドの `group.send`, `meta.message_id` とりあえず `meta.content_type` **MUST** 存在している
-- のために `group.create`, `meta.target.kind` **MUST** は、 `service`
-- 既存のグループをターゲットとする他のグループ操作のため、 `meta.target.kind` **MUST** は、 `group`
+- `group.send`などのメッセージには、`meta.message_id`と`meta.content_type`が必要（**MUST**）。
+- `group.create`の`meta.target.kind`は`service`（**MUST**）。
+- 既存グループ宛ての操作の`meta.target.kind`は`group`（**MUST**）。
 
-### 7.8.1 グローバルコンポーネントマッピングへの参照
+### 7.8.1 共通の署名要素への参照
 
-グループ 必要なメソッド `auth.origin_proof` **MUST** P1 Appendix A で定義されているグローバルシグネチャコンポーネントマップを使用します。
+`auth.origin_proof`が必要な全Group Baseメソッドは、P1付録Aの共通対応付けを使わなければなりません（**MUST**）。
 
-したがって:
+したがって、
 
-- のために `group.create`、 の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の 増 の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の の `@target-uri = anp://service/<pct-encoded meta.target.did>` ベース `meta.target.kind = "service"`
-- 既存のグループをターゲットとするグループ操作の場合、その検証者再構築 `@target-uri = anp://group/<pct-encoded meta.target.did>` ベース `meta.target.kind = "group"`
-- 上記結果は、P1のグローバルルールから来ており、 **なし** P4 によって独自に定義されるローカルマッピングのセット
+- `group.create`では、`meta.target.kind = "service"`から`@target-uri = anp://service/<pct-encoded meta.target.did>`を再構築。
+- 既存グループ操作では、`meta.target.kind = "group"`から`@target-uri = anp://group/<pct-encoded meta.target.did>`を再構築。
+- P1の共通規則であり、P4独自の局所的な対応付けでは**ありません**。
 
 ### 7.9 `group_receipt`
 
-`group_receipt` グループ操作やグループメッセージがグループホストによって受け入れられ、グループの状態マシンの検証可能な証人オブジェクトに書かれていることを示します。
+`group_receipt`は、Hostが操作やメッセージを受理し、状態機械へ書き込んだことの検証可能な証明です。
 
-推奨分野:
+推奨フィールド：
 
-- `receipt_type`: 文字列, **MUST**, 推奨値: `group-operation-accepted`, `group-message-accepted`
-- `group_did`: 文字列, **MUST**
-- `group_state_version`: 文字列, **MUST**
-- `group_event_seq`: 小文字の文字列, **MUST**
-- `subject_method`: 文字列, **MUST**
-- `operation_id`: 文字列, **MUST**
-- `message_id`: 文字列, **MAY**
-- `actor_did`: 文字列, **MUST**
-- `accepted_at`: RFC 3339 時間のひも、 **MUST**
-- `payload_digest`: 文字列, **MUST**
-- `proof`: オブジェクト、 **SHOULD**; 場合 `group_receipt` グループホストが配置されているドメインを離れ、他のドメインに依存します **MUST**
+- `receipt_type`：文字列（**MUST**）。推奨値：`group-operation-accepted`, `group-message-accepted`
+- `group_did`：文字列（**MUST**）。
+- `group_state_version`：文字列（**MUST**）。
+- `group_event_seq`：10進文字列（**MUST**）。
+- `subject_method`：文字列（**MUST**）。
+- `operation_id`：文字列（**MUST**）。
+- `message_id`：文字列（**MAY**）。
+- `actor_did`：文字列（**MUST**）。
+- `accepted_at`：RFC 3339時刻文字列（**MUST**）。
+- `payload_digest`：文字列（**MUST**）。
+- `proof`：オブジェクト。推奨（**SHOULD**）で、`group_receipt`がHostのドメイン外へ出て他ドメインが依拠する場合は必須（**MUST**）。
 
-`group_receipt.proof` **MUST** 共有の再利用 **オブジェクトの証拠のプロフィール** P1 付録 B で定義される。
+`group_receipt.proof`は、P1付録Bの共有**Object Proof Profile**を使わなければなりません（**MUST**）。
 
-のために `group_receipt`:
+`group_receipt`では、
 
-- 発行者 DID **MUST** は、 `group_did`
-- 保護された文書 **MUST** 全体として `group_receipt` 取除いた後 `proof`
-- `proof.verificationMethod` **MUST** 認証方法のポイント `assertionMethod` で、 `group_did` DID ドキュメント
-- 署名の目的 `group_receipt` 「この結果が受け入れられている」と証明するのではなく、「要求を開始した」ことを証明する
+- 発行者DIDは`group_did`（**MUST**）。
+- 保護対象は`proof`を除いた`group_receipt`全体（**MUST**）。
+- `proof.verificationMethod`は、`group_did`のDID文書の`assertionMethod`が認める検証メソッドを指す（**MUST**）。
+- `group_receipt`署名が証明するのは「グループが結果を受理したこと」であり、「要求を開始した者」ではありません。
 
-P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** 少なくとも次のセキュリティクリティカルなフィールドを含み、したがって、その全体で保護されています `proof`:
+共通規則に加え、`group_receipt`には少なくとも次の重要フィールドが必要で（**MUST**）、すべてが`proof`の保護対象となります。
 
 - `receipt_type`
 - `group_did`
@@ -536,17 +537,17 @@ P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** �
 - `actor_did`
 - `accepted_at`
 - `payload_digest`
-- `message_id`, 提示すれば, も **MUST** 含まれ、保護されて
+- `message_id`も存在するなら保護へ含める（**MUST**）。
 
-アフター `group_receipt.proof` 検証済み、検証済み、認証 **MUST** 上記フィールドは、実際の応答、通知コンテキスト、および対応するグループ状態と一致していることを確認します。
+`group_receipt.proof`の検証後も、各フィールドが実際の応答、通知コンテキスト、状態位置に一致するか確認しなければなりません（**MUST**）。
 
-### 7.10グループ ステート変更イベントオブジェクト
+### 7.10 状態変更イベントオブジェクト
 
-このセクションでは、使用した状態の変化イベントをコンバージします。 `group.state_changed` 統一されたイベントオブジェクトに、特定のイベントを区別します。 `event_type`.
+`group.state_changed`のイベントを共通オブジェクトへ集約し、`event_type`で種別を区別します。
 
-#### 7.10.1 共通分野
+#### 7.10.1 共通フィールド
 
-統一されたイベントオブジェクトの推奨構造は次のとおりです。
+共通イベントの推奨構造：
 
 ```json
 {
@@ -569,17 +570,17 @@ P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** �
 }
 ```
 
-共通のルールは以下の通りです。
+共通規則：
 
-1. `body` **MUST** のり `group.state_changed` イベントオブジェクトを直接運ぶ。
-2. でん **MUST NOT** バンドグループエントリー資格情報、リマインダー、または結果通知をグループメンバーにまだないオブジェクトに送信するために使用されます。
-3. でん **SHOULD** 同じシーケンシャルセマティクスをそのまま維持 `group_event_seq`;
-4. 場合 `subject_method = "group.join"` または `"group.add"`, それから `event_type = "member-activated"`;
-5. 場合 `subject_method = "group.rebind_member"`, `event_type` **MUST** は、 `member-credential-rebound`.
+1. `group.state_changed`の`body`にイベントオブジェクトを直接入れる（**MUST**）。
+2. 未参加者への帯域外入群資格情報、リマインダー、結果通知に使わない（**MUST NOT**）。
+3. `group_event_seq`と同じ順序の意味を維持することが望ましい（**SHOULD**）。
+4. `subject_method = "group.join"`か`"group.add"`なら、`event_type = "member-activated"`。
+5. `subject_method = "group.rebind_member"`なら、`event_type`は`member-credential-rebound`（**MUST**）。
 
-#### 7.10.2 標準的な `event_type`
+#### 7.10.2 標準`event_type`
 
-このページの先頭へ `event_type`:
+v1は、次の`event_type`を推奨します。
 
 - `member-activated`
 - `member-removed`
@@ -588,80 +589,80 @@ P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** �
 - `group-profile-updated`
 - `group-policy-updated`
 
-それらの中で:
+内訳：
 
-- `member-activated` **MUST** 含まれるもの `subject_did` とりあえず `membership_status = "active"`
-- `member-removed` **MUST** 含まれるもの `subject_did`
-- `member-left` **MUST** 含まれるもの `subject_did`
-- `member-credential-rebound` **MUST** 含まれるもの `subject_handle`, `previous_subject_did`, `subject_did`, `handle_binding_generation`と `membership_status = "active"`
-- `group-profile-updated` **SHOULD** 含まれるもの `group_profile`
-- `group-policy-updated` **SHOULD** 含まれるもの `group_policy`
+- `member-activated`には`subject_did`と`membership_status = "active"`が必要（**MUST**）。
+- `member-removed`には`subject_did`が必要（**MUST**）。
+- `member-left`には`subject_did`が必要（**MUST**）。
+- `member-credential-rebound`には`subject_handle`、`previous_subject_did`、`subject_did`、`handle_binding_generation`、`membership_status = "active"`が必要（**MUST**）。
+- `group-profile-updated`には`group_profile`を含めることが望ましい（**SHOULD**）。
+- `group-policy-updated`には`group_policy`を含めることが望ましい（**SHOULD**）。
 
 ---
 
-## 8. 標準方法と通知
+## 8. 標準メソッドと通知
 
-対象外 `group.get_info`, このセクションのすべてのステート変更方法の要求 MUST 下記の一般規則を満たします。
+`group.get_info`を除く、本節のすべての状態変更要求は、次の共通規則を満たさなければなりません（MUST）。
 
-- `params.auth.scheme` **MUST** 等しく `anp-rfc9421-origin-proof-v1`
-- `params.auth.origin_proof` **MUST** 関連する署名されたリクエストオブジェクトが存在し、バインド
-- 十字がドメイン境界を要求する場合、元の `auth.origin_proof` **MUST** メッセージを転送し、 **MUST NOT** 中間サービスで上書きされる
+- `params.auth.scheme`は`anp-rfc9421-origin-proof-v1`（**MUST**）。
+- `params.auth.origin_proof`が存在し、対応Signed Request Objectへバインド（**MUST**）。
+- ドメインをまたぐ場合、元の`auth.origin_proof`を転送し（**MUST**）、中間サービスが上書きしない（**MUST NOT**）。
 
-グループホストの受け入れ可能なすべての状態変更方法、ならびに `group.send`:
+Hostが受理するすべての状態変更と`group.send`では、
 
-- 未処理の展開では、成功した応答 **SHOULD** 返品 `group_receipt`
-- 応答がグループホストのドメインを離れ、別のドメインで信頼されるように意図されている場合は、成功した応答 **MUST** 返品 `group_receipt`と `group_receipt.proof` **MUST** プレゼント
+- 非フェデレーション配置では、成功応答で`group_receipt`を返すことが望ましい（**SHOULD**）。
+- 他ドメインが依拠するためにHostのドメイン外へ出る応答では、`group_receipt`が必要（**MUST**）で、`group_receipt.proof`も必要（**MUST**）。
 
-通知/非同期メッセージメソッドの2つ:
+次の2つの非同期通知メソッドは、
 
 - `group.incoming`
 - `group.state_changed`
 
-に続く **OPTIONAL プッシュ機能**. . . これらは、このプロファイルの最小相互運用性方法を必要としません。しかし一度実装された後、送信者 **MUST** 標準通知封筒と標準を使用してください。 `body` このプロファイルで定義された構造。
+**任意（OPTIONAL）のプッシュ機能**です。最低相互運用の必須メソッドではありません。ただし実装した場合は、標準Notificationエンベロープと、本書の標準`body`を使わなければなりません（**MUST**）。
 
 ### 8.1 `group.create`
 
-#### 8.1.1 統計学
+#### 8.1.1 意味
 
-新規グループを作成して、新しいグループを割り当てる `group_did` 初期値 `group_state_version` グループホストサービス
+新規グループを作成し、Hostが新しい`group_did`と初期`group_state_version`を割り当てます。
 
 #### 8.1.2 要求の要件
 
-`group.create` リクエスト **MUST** 満足する:
+`group.create`要求は、次を満たさなければなりません（**MUST**）。
 
 1. `method = "group.create"`
 2. `meta.profile = "anp.group.base.v1"`
 3. `meta.security_profile = "transport-protected"`
-4. `meta.sender_did` **MUST** 存在している
+4. `meta.sender_did`が存在（**MUST**）。
 5. `meta.target.kind = "service"`
-6. `meta.target.did` **MUST** 等しいターゲット `ANPMessageService.serviceDid`
-7. `meta.operation_id` **MUST** 存在している
-8. `body.group_profile` **SHOULD** 存在している
-9. `body.group_policy` **MUST** 存在している
-10. `body.initial_members` **MAY** 存在している
-11. `params.auth.origin_proof` **MUST** 存在している
-12. `body.creator_handle` **MAY** 存在している
+6. `meta.target.did`は宛先の`ANPMessageService.serviceDid`（**MUST**）。
+7. `meta.operation_id`が存在（**MUST**）。
+8. `body.group_profile`が存在することが望ましい（**SHOULD**）。
+9. `body.group_policy`が必要（**MUST**）。
+10. `body.initial_members`は任意（**MAY**）。
+11. `params.auth.origin_proof`が必要（**MUST**）。
+12. `body.creator_handle`は任意（**MAY**）。
 
-場合 `body.creator_handle` グループホストが現在存在している **MUST** WNS で解決し、検証します。 **MUST** は、 `active`と、その `did` **MUST** 丁度等しい `meta.sender_did`. . . 成功に、クリエイターの成功 `group_member` **MUST** レコード `member_handle` 対応する `handle_binding_generation`;フィールドが不在の場合、作成者はDIDのみのメンバーです。
+`body.creator_handle`があれば、WNS解決・検証を行い（**MUST**）、状態が`active`で（**MUST**）、`did`が`meta.sender_did`と厳密に一致することを求めます（**MUST**）。成功時は作成者の`group_member`へ`member_handle`と`handle_binding_generation`を記録（**MUST**）し、なければDID-onlyとします。
 
-新着情報 `body.initial_members`、グループ ホスト **MUST** 下記の規則に従って処理される:
+`body.initial_members`は次の規則で処理しなければなりません（**MUST**）。
 
-- クリエイター自身 **MUST** は、 `owner` すぐに `active`;
-- その他 `initial_members` グループホストが存在します。 **MAY** 同等と解釈する `group.add` 作成段階の間に;
-- 各エントリー **MUST** 正確に 1 つを含ま `member_did` または `member_handle`と **MUST NOT** 両方または両方を含む;
-- ハンドルの記入項目 **MUST** セクション8.4のハンドルパスに従って、解決され、検証され、保存されます。
-- エントリー `initial_members` 明示的に宣言しない `role` **MUST** として解釈される `member`.
+- 作成者自身は`owner`となり、直ちに`active`（**MUST**）。
+- 他の`initial_members`は、作成中の`group.add`相当と解釈してもかまいません（**MAY**）。
+- 各要素は`member_did`か`member_handle`をちょうど1つ持ち（**MUST**）、両方・どちらもなしは禁止（**MUST NOT**）。
+- Handle要素は第8.4節に従い解決・検証・保存（**MUST**）。
+- `initial_members`で`role`未指定なら、`member`と解釈（**MUST**）。
 
-#### 8.1.3 成功的な応答
+#### 8.1.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `group_state_version`
 - `created_at`
 - `creator_did`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `creator_handle`
 - `handle_binding_generation`
@@ -670,266 +671,266 @@ P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** �
 - `group_policy`
 - `group_receipt`
 
-リクエストが含まれている場合 `creator_handle`、成功した応答 **MUST** 含まれるもの `creator_handle` とりあえず `handle_binding_generation`; その他にも、両方のフィールド **MUST NOT** 登場。
+要求に`creator_handle`があれば、応答に`creator_handle`と`handle_binding_generation`が必要（**MUST**）。なければ両方を含めてはなりません（**MUST NOT**）。
 
 ### 8.2 `group.get_info`
 
-#### 8.2.1 科学
+#### 8.2.1 意味
 
-グループの基本情報のスナップショットを取得します。
+現在のグループの基本情報のスナップショットを取得します。
 
 #### 8.2.2 要求の要件
 
-- `meta.target.kind` **MUST** なる `"group"`
-- `meta.target.did` **MUST** ターゲット `group_did`
+- `meta.target.kind`は`"group"`（**MUST**）。
+- `meta.target.did`は宛先`group_did`（**MUST**）。
 
-`body` **MAY** 含まれるもの:
+`body`へ次を含めてもかまいません（**MAY**）。
 
 - `include_policy`
 - `include_member_list`
 
-アイデンティティ要件は以下の通りです。
+IDの要件：
 
-- グループが `discoverability = "public"` または `"listed"`, `group.get_info` **MAY** 匿名で読み込まれる。この時点では、 `meta.sender_did` **MAY** 必須項目
-- グループが `discoverability = "private"`, 呼び出し **MUST** アイデンティティを提供して下さい;
-- リクエストされたプロジェクションがコールアの可視範囲外にある場合、受信機 **MUST** 返品 `group.policy_violation`.
+- `discoverability = "public"`か`"listed"`なら、`group.get_info`を匿名参照してもよく（**MAY**）、`meta.sender_did`も省略してかまいません（**MAY**）。
+- `discoverability = "private"`なら、IDを提供しなければなりません（**MUST**）。
+- 要求する情報の範囲が呼び出し元の可視範囲外なら、`group.policy_violation`を返す（**MUST**）。
 
-#### 8.2.3 成功の応答
+#### 8.2.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `group_state_version`
 - `group_profile`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
-- `group_policy` (もしあれば) `include_policy = true` 呼び出し側は、ビュー権限を持つ
-- `member_list` (もしあれば) `include_member_list = true` 呼び出し側は、ビュー権限を持つ。その要素タイプ **MUST** は、 `group_member`)
-- `member_count` (決定文字列; 現時点では、 **SHOULD** 現在の数を表します。 `active` 会員様
+- `group_policy`（`include_policy = true`で、閲覧権限がある場合だけ）
+- `member_list`（`include_member_list = true`で、閲覧権限がある場合だけ。要素型は`group_member`（**MUST**））
+- `member_count`（10進文字列。現在の`active`の人数を表すことが望ましい（**SHOULD**））
 
-場合 `member_list` 返された内容 **SHOULD** 現行のものだけを含んだ `active` 会員様
+`member_list`を返す場合、現在の`active`だけを含めることが望まれます（**SHOULD**）。
 
 ### 8.3 `group.join`
 
-#### 8.3.1 統計学
+#### 8.3.1 意味
 
-`group.join` 会員以外の方で、独立して入会する際の参加を行なうために利用します。 v1コアの場合、呼び出し主はすぐにメンバーになります `active` 成功に。
+`group.join`は非メンバーの自主参加用で、v1中核では成功時に直ちに`active`となります。
 
 #### 8.3.2 要求の要件
 
-`body` **MAY** 含まれるもの:
+`body`へ次を含めてもかまいません（**MAY**）。
 
 - `member_handle`
 - `reason_text`
 
-場合 `member_handle` は、DID専用モードとDIDのメンバーで、呼び出し主が参加する非在です。 `meta.sender_did`. . . 場合 `member_handle` グループホストが現在存在している **MUST**:
+`member_handle`がなければDID-onlyとして`meta.sender_did`で参加します。`member_handle`があれば、次を行わなければなりません（**MUST**）。
 
-1. WNS の下のハンドルおよび完全な双方向結合の検証を正規化し、解決して下さい;
-2. 解像度の文書を要求して、 `status = "active"`;
-3. 解決する必要 `did` 正確に等しく `meta.sender_did`;
-4. 正規化を保存 `member_handle` 解決する `binding_generation` 会員記録に。
+1. WNSに従いHandleを正規化・解決し、双方向バインドを検証。
+2. 解決文書の`status = "active"`を要求。
+3. 解決した`did`と`meta.sender_did`の完全一致を要求。
+4. 正規化済み`member_handle`と解決した`binding_generation`を会員記録へ保存。
 
-現時点でグループがない場合 `open-join` モード、受取人 **MUST** リクエストを拒絶し、要求する **SHOULD** 返品 `group.policy_violation`.
+現在`open-join`でなければ、拒否しなければならず（**MUST**）、`group.policy_violation`を返すことが望まれます（**SHOULD**）。
 
-#### 8.3.3 成功の応答
+#### 8.3.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
-- `member_did`, , , **MUST** 等しく `meta.sender_did`
-- `membership_status`と **MUST** は、 `active`
+- `member_did`は`meta.sender_did`（**MUST**）。
+- `membership_status`は`active`（**MUST**）。
 - `group_state_version`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `member_handle`
 - `handle_binding_generation`
 - `group_receipt`
 
-リクエストが含まれている場合 `member_handle`、成功した応答 **MUST** 含まれるもの `member_handle` とりあえず `handle_binding_generation`; DIDのみ参加応答 **MUST NOT** フィールドを格納します。
+要求に`member_handle`があれば、応答に`member_handle`と`handle_binding_generation`が必要（**MUST**）。DID-only応答には両方とも含めません（**MUST NOT**）。
 
 ### 8.4 `group.add`
 
-#### 8.4.1 統計
+#### 8.4.1 意味
 
-権限を持つメンバーは、ターゲットエージェントをグループに直接追加することができます。成功すると、ターゲットはすぐにメンバーになります `active`.
+認可されたメンバーが対象Agentを直接追加し、成功時に直ちに`active`にします。
 
 #### 8.4.2 要求の要件
 
-`body` **MUST** ターゲット識別子を1つに正確に含んでいます。
+`body`は次の識別子をちょうど1つ持たなければなりません（**MUST**）。
 
 - `member_did`
 - `member_handle`
 
-`body` **MAY** 含まれるもの:
+`body`へ次を含めてもかまいません（**MAY**）。
 
 - `role`
 - `reason_text`
 
-いつか `role` 明示的に提供されていない、受信機 **MUST** 通訳 `member` など。
+`role`を明示しなければ、`member`と解釈しなければなりません（**MUST**）。
 
-場合 `member_did` グループホストが利用されている **MUST** DID専用会員を設立 場合 `member_handle` グループホストが利用されている **MUST** 正規化し、それを解決し、WNS の下の双方向結合の検証を完了して下さい、ハンドルをあるように要求します `active`, 解決された現在のDIDを使用してハンドルをバックアップしたメンバーを確立します。 会員記録 **MUST** 店舗情報 `member_handle`、流れ `agent_did`と `handle_binding_generation` 一緒に。
+`member_did`ならDID-onlyとして作成（**MUST**）。`member_handle`ならWNS正規化・解決・双方向バインド検証を行い（**MUST**）、Handleが`active`であることを要求し、現在のDIDでHandle-backedを作ります。`member_handle`、`agent_did`、`handle_binding_generation`を一緒に保存（**MUST**）します。
 
-#### 8.4.3 成功的な応答
+#### 8.4.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `member_did`
-- `membership_status`と **MUST** は、 `active`
+- `membership_status`は`active`（**MUST**）。
 - `group_state_version`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `member_handle`
 - `handle_binding_generation`
 - `group_receipt`
 
-リクエストが使用されている場合 `member_handle`、成功した応答 **MUST** 含まれるもの `member_handle` とりあえず `handle_binding_generation`; 使用すると `member_did`、成功した応答 **MUST NOT** フィールドを格納します。
+要求が`member_handle`なら、応答に`member_handle`と`handle_binding_generation`が必要（**MUST**）。`member_did`ならどちらも含めません（**MUST NOT**）。
 
 ### 8.5 `group.remove`
 
-#### 8.5.1 統計学
+#### 8.5.1 意味
 
-電流 `active` 会員は、認定会員から退会します。
+認可されたメンバーが、現在`active`のメンバーを削除します。
 
 #### 8.5.2 要求の要件
 
-`body` **MUST** 含まれるもの:
+`body`には次が必要です（**MUST**）。
 
 - `member_did`
 
-`body` **MAY** 含まれるもの:
+`body`へ次を含めてもかまいません（**MAY**）。
 
 - `reason_text`
 
-#### 8.5.3 処理ルール
+#### 8.5.3 処理規則
 
-- 対象が現在ある場合 `active`, それから `group.remove` **MUST** それを作って下さい `group_member.status = "removed"`;
-- ターゲットが既にある場合 `left`, `removed`、または存在しません。 **MUST** リクエストを拒否する
+- 対象が`active`なら、`group.remove`で`group_member.status = "removed"`にする（**MUST**）。
+- すでに`left`、`removed`、または存在しないなら拒否（**MUST**）。
 
-#### 8.5.4 成功した応答
+#### 8.5.4 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `member_did`
 - `group_state_version`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `membership_status`
 - `group_receipt`
 
 ### 8.6 `group.leave`
 
-#### 8.6.1 経済学
+#### 8.6.1 意味
 
-現行の送信者がグループを積極的に退出していることを示す。
+現在の送信者が自主退会することを示します。
 
 #### 8.6.2 要求の要件
 
-- `meta.sender_did` **MUST** 現在の残グループメンバーであること
+- `meta.sender_did`は現在退会する本人のDID（**MUST**）。
 
-#### 8.6.3 成功した応答
+#### 8.6.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `leaver_did`
 - `group_state_version`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `group_receipt`
 
 ### 8.7 `group.update_profile`
 
-#### 8.7.1 統計学
+#### 8.7.1 意味
 
-グループ表示データオブジェクトを更新します。
+グループの表示用データを更新します。
 
 #### 8.7.2 要求の要件
 
-`body` **MUST** 含まれるもの:
+`body`には次が必要です（**MUST**）。
 
 - `group_profile_patch`
 
-`group_profile_patch` **MUST** RFC 7386 JSON のマージのパッチの皮下剤を使用して下さい。
+`group_profile_patch`はRFC 7386 JSON Merge Patchの意味に従わなければなりません（**MUST**）。
 
-#### 8.7.3 成功的な応答
+#### 8.7.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `group_state_version`
 - `group_profile`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `group_receipt`
 
 ### 8.8 `group.update_policy`
 
-#### 8.8.1 統計学
+#### 8.8.1 意味
 
-グループポリシーオブジェクトを更新します。
+グループのポリシーを更新します。
 
 #### 8.8.2 要求の要件
 
-`body` **MUST** 含まれるもの:
+`body`には次が必要です（**MUST**）。
 
 - `group_policy_patch`
 
-`group_policy_patch` **MUST** RFC 7386 JSON のマージのパッチの皮下剤を使用して下さい。
+`group_policy_patch`はRFC 7386 JSON Merge Patchの意味に従わなければなりません（**MUST**）。
 
-#### 8.8.3 成功した応答
+#### 8.8.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `group_state_version`
 - `group_policy`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `group_receipt`
 
 ### 8.9 `group.send`
 
-#### 8.9.1 統計
+#### 8.9.1 意味
 
-アプリケーションのレイヤーグループメッセージをグループに送信します。
+グループへアプリケーション層のメッセージを送ります。
 
 #### 8.9.2 要求の要件
 
-コンプライアンス `group.send` リクエスト **MUST** 満足する:
+適合する`group.send`要求は、次を満たさなければなりません（**MUST**）。
 
 1. `method = "group.send"`
 2. `meta.profile = "anp.group.base.v1"`
 3. `meta.security_profile = "transport-protected"`
 4. `meta.target.kind = "group"`
-5. `meta.target.did` **MUST** ターゲットになる `group_did`
-6. `meta.sender_did` **MUST** 現在の送信者エージェントのIDである
-7. `meta.message_id` **MUST** 存在している
-8. `meta.operation_id` **MUST** 存在している
-9. `meta.content_type` **MUST** 存在している
-10. `body` **MUST** ペイロード相互排除規則を満たす
-11. `params.auth.origin_proof` **MUST** 署名された要求オブジェクトが存在し、バインド
+5. `meta.target.did`は宛先`group_did`（**MUST**）。
+6. `meta.sender_did`は現在の送信Agent DID（**MUST**）。
+7. `meta.message_id`が必要（**MUST**）。
+8. `meta.operation_id`が必要（**MUST**）。
+9. `meta.content_type`が必要（**MUST**）。
+10. `body`がペイロード排他規則に適合（**MUST**）。
+11. `params.auth.origin_proof`が存在し、Signed Request Objectへバインド（**MUST**）。
 
-#### 8.9.3 `body` のり `group.send`
+#### 8.9.3 `group.send`の`body`
 
-`group.send` のり `body` 含めることができます。:
+`group.send`の`body`は次を含められます。
 
-- `thread_id`: 文字列, **MAY**
-- `reply_to_message_id`: 文字列, **MAY**
-- `annotations`: オブジェクト、 **MAY**
-- 正確に 1 つ `text`, `payload`, または `payload_b64u` **MUST** プレゼント
+- `thread_id`：文字列（**MAY**）。
+- `reply_to_message_id`：文字列（**MAY**）。
+- `annotations`：オブジェクト（**MAY**）。
+- `text`、`payload`、`payload_b64u`のちょうど1つが必要（**MUST**）。
 
-#### 8.9.4 成功した応答
+#### 8.9.4 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `accepted = true`
 - `group_did`
@@ -939,26 +940,26 @@ P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** �
 - `group_state_version`
 - `accepted_at`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答に次を含めてもかまいません（**MAY**）。
 
 - `group_receipt`
 
 ### 8.10 `group.incoming`
 
-`group.incoming` グループホストが現在アクティブなメンバーエージェントに受け入れられているグループメッセージを非同期的にプッシュするために使用されます。 でん **MUST** 通知として使用されます。
+`group.incoming`はHostが受理したメッセージを、現在のactiveメンバーAgentへ非同期プッシュします。Notificationとして使わなければなりません（**MUST**）。
 
-場合 `group.incoming` 通知封筒の実装 **MUST** 満足する:
+実装する`group.incoming`のNotificationは、次を満たさなければなりません（**MUST**）。
 
 - `meta.profile = "anp.group.base.v1"`
-- `meta.security_profile` **MUST** グループメッセージが受け入れられるとき、セキュリティプロファイルに等しい
+- `meta.security_profile`は受理時のモードと一致（**MUST**）。
 - `meta.target.kind = "agent"`
-- `meta.target.did` **MUST** 現在の通知受信者DIDに等しい
-- `meta.sender_did` **MUST** 元のグループ メッセージの送信者 DID に等しい
-- `meta.operation_id` **MUST** 等しい原物 `group.send.meta.operation_id`
-- `meta.message_id` **MUST** 等しい原物 `group.send.meta.message_id`
-- `meta.content_type` **MUST** 等しく `meta.content_type` オリジナルグループメッセージの
+- `meta.target.did`は現在の通知受信者DID（**MUST**）。
+- `meta.sender_did`は元のグループメッセージの送信主体DID（**MUST**）。
+- `meta.operation_id`は元の`group.send.meta.operation_id`（**MUST**）。
+- `meta.message_id`は元の`group.send.meta.message_id`（**MUST**）。
+- `meta.content_type`は元メッセージの`meta.content_type`（**MUST**）。
 
-推奨構造の `body` 以下は、
+`body`の推奨構造：
 
 ```json
 {
@@ -974,47 +975,47 @@ P1付録Bの共有ルールに加えて、 `group_receipt` まさか **MUST** �
 }
 ```
 
-ルールは以下の通りです。
+規則は次のとおりです。
 
-- `body` **MUST** オリジナルのグループメッセージと一貫したサービスペイロードを運ぶ。
-- 場合 `params.auth` 以下は、
-  - `params.auth.scheme` **MUST** 等しく `anp-rfc9421-origin-proof-v1`
-  - `params.auth.origin_proof` **MUST** 元の損失のないコピーである `origin_proof`
-  - 中間サービス **MUST NOT** 新規事業の証拠を刷新。
+- `body`は元の業務ペイロードと一致させる（**MUST**）。
+- `params.auth`が存在する場合、
+- `params.auth.scheme`は`anp-rfc9421-origin-proof-v1`（**MUST**）。
+  - `params.auth.origin_proof`は元の`origin_proof`の損失のないコピー（**MUST**）。
+  - 中間サービスが新しい業務proofへ書き換えない（**MUST NOT**）。
 
 ### 8.11 `group.state_changed`
 
-`group.state_changed` グループステート変更の標準的な非同期通知メソッドです。 注文した会員の変更、グループデータ変更、グループポリシーの変更を現在アクティブなメンバーに同期させるために使用されます。 でん **MUST** 通知として使用されます。
+`group.state_changed`は標準の非同期状態変更通知です。順序付け済みの会員関係、グループ情報、ポリシーの変更を現在のactiveメンバーへ同期します。Notificationとして使わなければなりません（**MUST**）。
 
-通知封筒 **MUST** 満足する:
+Notificationは次を満たさなければなりません（**MUST**）。
 
 - `meta.profile = "anp.group.base.v1"`
 - `meta.security_profile = "transport-protected"`
 - `meta.target.kind = "agent"`
-- `meta.target.did` **MUST** 現在の通知受信者DIDに等しい
-- `meta.sender_did` **MUST** 等しく `body.group_did`
-- `body` **MUST** セクション 7.10 で定義される 1 つのでき事の目的を直接運びて下さい
+- `meta.target.did`は現在の通知受信者DID（**MUST**）。
+- `meta.sender_did`は`body.group_did`（**MUST**）。
+- `body`は第7.10節のイベントオブジェクトをちょうど1つ直接運ぶ（**MUST**）。
 
-`group.state_changed` **MUST NOT** バンド外グループメンバーの資格取得、非会員リマインダー、またはそれ以外の場合は使用している任意のターゲットガバナンス通知に使用されます `direct.send`.
+`group.state_changed`を帯域外の入群資格情報、非メンバーへのリマインダー、通常なら`direct.send`を使う個別の管理通知へ使用してはなりません（**MUST NOT**）。
 
 ### 8.12 `group.rebind_member`
 
-#### 8.12.1 統計学
+#### 8.12.1 意味
 
-`group.rebind_member` 原子的には、DID が変更した後にハンドルを裏付けられたメンバーの現在の資格を置き換えます。 新規会員の登録、会員の固定変更、またはDID専用メンバーの復元は行いません。
+`group.rebind_member`は、Handle-backedの内部DIDが変わった後、現在の資格情報を原子的に置き換えます。新規メンバーを作らず、会員基点を変えず、DID-onlyメンバーの復旧もしません。
 
-WNS マッピングの変更は、新しいバインディング検出のみを生成し、 **MUST NOT** グループメンバーを自動的に書き換えます。 グループホストがポーリングやキャッシュリフレッシュで新しいIDを観察しても、このメソッドをグループごとに送信して渡すために新しいDIDを待つ必要があります。 この方法と厳密に増加する `handle_binding_generation` そのため、グループがDID変更の学習をすることで標準メカニズムです。
+WNSの対応変更は新バインドを発見可能にするだけで、会員関係を自動更新してはなりません（**MUST NOT**）。Hostがポーリングやキャッシュ更新で新DIDを見つけても、グループごとに新DIDが本メソッドを提出して成功するのを待ちます。本メソッドと厳密増加の`handle_binding_generation`が、DID変更をグループへ伝える標準手段です。
 
-#### 8.12.2 コールアと要求の要件
+#### 8.12.2 呼び出し元と要求の要件
 
-メソッド **MUST** 新しく DID によって開始され、満足します:
+新DIDが開始し、次を満たさなければなりません（**MUST**）。
 
-- `meta.security_profile` **MUST** 等しく `transport-protected`;
-- `meta.sender_did` **MUST** 等しく `body.new_member_did`;
-- `auth.origin_proof` **MUST** 有効にすることで生成される `authentication` 新規IDの検証方法
-- `body` **MUST** 含まれるもの `member_handle`, `previous_member_did`, `new_member_did`と `handle_binding_generation`.
+- `meta.security_profile`は`transport-protected`（**MUST**）。
+- `meta.sender_did`は`body.new_member_did`（**MUST**）。
+- `auth.origin_proof`は、新DIDの有効な`authentication`検証メソッドで生成（**MUST**）。
+- `body`は`member_handle`、`previous_member_did`、`new_member_did`、`handle_binding_generation`を持つ（**MUST**）。
 
-おすすめの `body` は:
+推奨する`body`：
 
 ```json
 {
@@ -1025,46 +1026,46 @@ WNS マッピングの変更は、新しいバインディング検出のみを�
 }
 ```
 
-リクエストを受け付ける前に、グループホスト **MUST**:
+受理前にHostは、次を行わなければなりません（**MUST**）。
 
-1. 同じグループで1つのメンバーシップを正確に配置 `status = "active"`、厳密な `member_handle`、および流れ `agent_did = previous_member_did`;
-2. 新鮮なWNS解像度と双方向のバインディング検証を実行します。 `member_handle`, 現在のTTLを超えるキャッシュされた結果のみに依存することなく;
-3. 解像度の文書を要求して、 `status = "active"` とそれ `did` 正確に等しく `new_member_did`;
-4. 要求する `binding_generation` 正確に等しく `handle_binding_generation` と、小数の整数者と比較すると、保存された古いよりも厳密に大きくなります `handle_binding_generation`;
-5. 新しい DID 文書と新しい DID の所有権の証明を確認します。古い DID だけで署名することは、十分な継続証拠ではありません。
-6. 確認する `new_member_did` 別のものを識別しない `active` 同じグループで会員
-7. ハンドルがいつあるか、不規則に閉まる失敗 `suspended`, `revoked`、WNS で検証できない、または同時の競合が発生した場合
+1. 同グループに`status = "active"`、完全一致の`member_handle`、現在の`agent_did = previous_member_did`を満たす会員関係をちょうど1つ見つける。
+2. `member_handle`を新たにWNS解決し、双方向バインドを検証。有効TTLを超えたキャッシュだけには依存しない。
+3. 解決文書の`status = "active"`と、`did`と`new_member_did`の完全一致を要求。
+4. `binding_generation`と`handle_binding_generation`の完全一致を要求し、10進整数比較で保存済み旧`handle_binding_generation`より厳密に大きいことを確認。
+5. 新DID文書とその所持証明を検証。旧DIDの署名だけでは継続性証明として不十分。
+6. `new_member_did`が同じグループの別の`active`会員関係を識別しないことを確認。
+7. Handleが`suspended`、`revoked`、WNS検証不能、または同時更新競合なら、安全側に拒否。
 
-検証後、グループホスト **MUST**、1つの原子州の状態で変更:
+検証成功後、Hostは1つの原子的な状態変更として、次を行わなければなりません（**MUST**）。
 
-- 会員の入会手続き `agent_did` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `new_member_did`;
-- 更新情報 `handle_binding_generation` 新たな価値へ。
-- プレザーブ `member_handle`, `role`, `status`, `joined_at`, `added_by`, およびアクティブなメンバーのカウント;
-- アドバンス `group_state_version` とりあえず `group_event_seq`;
-- すぐに承認を停止する `previous_member_did` 会員の行動のため
-- 送信する `member-credential-rebound` ステートイベント。
+- `agent_did`を`new_member_did`へ更新。
+- `handle_binding_generation`を新値へ更新。
+- `member_handle`、`role`、`status`、`joined_at`、`added_by`、active人数を維持。
+- `group_state_version`と`group_event_seq`を進める。
+- `previous_member_did`による会員操作の認可を直ちに停止。
+- `member-credential-rebound`イベントを発行。
 
-歴史あるメッセージ、 `group_receipt` オブジェクト、イベント、DID、署名 **MUST NOT** 書き換える。
+過去のメッセージ、`group_receipt`、イベント、DID、署名を書き換えてはなりません（**MUST NOT**）。
 
-#### 8.12.3 応答の成功
+#### 8.12.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答には少なくとも次が必要です（**MUST**）。
 
 - `group_did`
 - `member_handle`
 - `previous_member_did`
-- `member_did`, その値が新しい DID である
+- `member_did`：値は新DID。
 - `handle_binding_generation`
-- `membership_status`, , , **MUST** は、 `active`
+- `membership_status`は`active`（**MUST**）。
 - `group_state_version`
 
-成功する応答 **MAY** 含まれるもの `group_receipt`.
+成功応答に`group_receipt`を含めてもかまいません（**MAY**）。
 
 ---
 
-## 9. フロー概要(非定常)
+## 9. フローの概要（非規範的）
 
-### 9.1 セルフサービス参加パス(セルフサービス)`open-join`)
+### 9.1 自主参加（`open-join`）
 
 ```mermaid
 sequenceDiagram
@@ -1075,7 +1076,7 @@ sequenceDiagram
     H-->>B: membership_status = active
 ```
 
-### 9.2 直接メンバー加算パス (`admin-add`)
+### 9.2 直接追加（`admin-add`）
 
 ```mermaid
 sequenceDiagram
@@ -1088,7 +1089,7 @@ sequenceDiagram
     H-->>B: group.state_changed / or deployment-specific custom notification
 ```
 
-### 9.3 グループメッセージパス
+### 9.3 グループメッセージの経路
 
 ```mermaid
 sequenceDiagram
@@ -1101,7 +1102,7 @@ sequenceDiagram
     H-->>M: group.incoming
 ```
 
-### 9.4 DIDはハンドルを裏返したメンバーのためにリバインドします
+### 9.4 Handle-backedメンバーのDID再バインド
 
 ```mermaid
 sequenceDiagram
@@ -1119,11 +1120,11 @@ sequenceDiagram
 
 ---
 
-## 10. 注文、通貨および紛争
+## 10. 順序付け、同時実行、競合
 
-### 10.1 注文責任
+### 10.1 順序付けの責任
 
-グループホストサービス **MUST** 同じすべての受け入れられたイベントのための線形注文を維持します `group_did`. . . オーダー カバー:
+Hostは同じ`group_did`の全受理イベントに線形順序を維持しなければなりません（**MUST**）。対象は次です。
 
 - `group.create`
 - `group.join`
@@ -1135,56 +1136,56 @@ sequenceDiagram
 - `group.update_policy`
 - `group.send`
 
-### 10.2 グループメッセージとステータスバージョン
+### 10.2 メッセージと状態バージョン
 
-アフター `group.send` 受付:
+`group.send`受理後は、
 
-- **MUST** 新規を割り当てる `group_event_seq`;
-- **MUST NOT** 事前申し込み `group_state_version` なぜなら、メッセージ自体のからです。
-- とりあえず `group_state_version` 返送 `group_receipt` メッセージが受け入れられたグループステートスナップショットを表します。
+- 新しい`group_event_seq`を割り当てる（**MUST**）。
+- メッセージ自体で`group_state_version`を進めない（**MUST NOT**）。
+- `group_receipt`とともに返す`group_state_version`は、受理時の状態スナップショットです。
 
-### 10.3 免責と重複排除
+### 10.3 冪等性と重複排除
 
-グループステートの変更とグループメッセージの場合、受信者 **MUST** 以下フィールドを、下位の基準として使用します。
+状態変更とメッセージでは、次を冪等性の基礎にしなければなりません（**MUST**）。
 
 - `sender_did`
 - `group_did`
 - `method`
 - `operation_id`
 
-受信機 **MUST** そのタプルを使用して、潜入チェックを実行します。
+この組で冪等性を確認しなければなりません（**MUST**）。
 
-のために `group.send`、受信機 **SHOULD** 重複検出のために次のフィールドをさらに使用:
+`group.send`の重複検出には、さらに次を使うことが望まれます（**SHOULD**）。
 
 - `sender_did`
 - `group_did`
 - `message_id`
 
-受信機 **SHOULD** そのタプルを使用して重複検出を実行します。
+この組で重複を検出することが望まれます（**SHOULD**）。
 
 ---
 
 ## 11. セキュリティとポリシー
 
-### 11.1 セキュアな伝送要件
+### 11.1 安全な伝送の要件
 
-独立して実行するときのこのプロフィール、 **MUST** 認定された安全な輸送層に依存します。
+単独で動作する場合、認証された安全な伝送層に依存しなければなりません（**MUST**）。
 
-### 11.2 グループ運用イニスター認証
+### 11.2 操作開始者の認証
 
-常に変化するグループ操作と `group.send`:
+すべての状態変更操作と`group.send`では、
 
-- グループホストサービス **MUST** 認証 `auth.origin_proof`;
-- どのDIDにするか `keyid` のり `auth.origin_proof` 所属部署 **MUST** 一貫して `meta.sender_did`;
-- 認証方法が指す `keyid` **MUST** 認定される `authentication` DID 文書の関係;
-- パスタイプの場合 `e1_` DID、グループホストサービス **MUST** ド:wba 仕様によると DID とバインドの公開鍵の関係を検証します。
-- 証拠のベアラー規則 **MUST** また、P1付録Aの共有起源証拠条約を満たしています。
+- Hostが`auth.origin_proof`を認証（**MUST**）。
+- `auth.origin_proof`の`keyid`の所属DIDと`meta.sender_did`が一致（**MUST**）。
+- `keyid`の指すメソッドがDID文書の`authentication`で認可されている（**MUST**）。
+- パス型`e1_` DIDは、did:wbaに従いDIDとバインド鍵の関係を検証（**MUST**）。
+- P1付録AのOrigin Proof規約も満たす（**MUST**）。
 
-### 11.3 イニスター認証とグループポリシーの承認の関係
+### 11.3 開始者認証とポリシーによる認可
 
-「メンバーを追加したり、メンバーを削除したり、グループ情報を更新したり、ポリシーの更新やメッセージの送信」などの権限 **MUST** 決定される `group_policy`.
+追加、削除、情報更新、ポリシー更新、送信などの権限は、`group_policy`で決めなければなりません（**MUST**）。
 
-具体的には、受信機 **MUST** 以下に基づいている:
+具体的には次に基づき（**MUST**）、
 
 - `group_policy.permissions.send`
 - `group_policy.permissions.add`
@@ -1193,114 +1194,114 @@ sequenceDiagram
 - `group_policy.permissions.update_policy`
 - `group_policy.admission_mode`
 
-リクエストが承認されるかどうかを判断します。
+現在の要求を認可するか判断します。
 
-### 11.4 グループDIDの署名を使用する場所
+### 11.4 Group DID署名を使う場所
 
-グループDIDの署名は **なし** クライアントのインバウンドリクエストの2番目の署名。 その正しい使用はあります:
+Group DIDの署名は、クライアントから入る要求の第2の署名では**ありません**。用途は次です。
 
-- 受諾されたグループの状態の変更の結果に気づく;
-- 受入れ可能なウィットネス `group.send` 結果;
-- 操作/メッセージが確かにグループによって受け入れられたポータブルの証拠とクロスドメインの発信者を提供します。
+- 受理した状態変更の結果を証明。
+- 受理した`group.send`の結果を証明。
+- 操作・メッセージの受理について、持ち運べる証明をドメイン間呼び出し元へ提供。
 
-のために `group_receipt.proof`、証拠の構文、保護された文書および確認のステップ **MUST** P1付録Bで共有オブジェクトプルーフプロファイルを再使用します。
+`group_receipt.proof`の構文、保護対象文書、検証手順は、P1付録BのObject Proof Profileを使わなければなりません（**MUST**）。
 
-### 11.5 クロスドメイン転送
+### 11.5 ドメイン間転送
 
-グループ操作やグループメッセージが他のサービスで転送される場合:
+他のサービスを経由する場合、
 
-- オリジナル `auth.origin_proof` **MUST** 変更されず、要求に転送されるまま;
-- ターゲットグループホスト **MUST** 独立して確認する `auth.origin_proof`;
-- **MUST** サービスホップ間でのサービスレベルの認証をさらに行います。
+- 元の`auth.origin_proof`を変更せず転送（**MUST**）。
+- 宛先Hostが`auth.origin_proof`を独立に検証（**MUST**）。
+- サービスホップ間のサービス認証も追加で行う（**MUST**）。
 
-### 11.6アクセストークンの最適化
+### 11.6 アクセストークン最適化
 
-アクセストークンプロセス **MAY** 以下に基づいて、呼び出し主とグループホストの間の繰り返しの呼び出しを最適化するために使用されるwbaは、サービス間で、
+did:wbaのアクセストークンで、呼び出し元とHostの間やサービス間の繰り返し呼び出しを最適化してもかまいません（**MAY**）。ただし、
 
-- アクセストークン **MUST NOT** 交換する `auth.origin_proof`;
-- 送信者禁忌のアクセストークン **SHOULD** 通常のベアラートークンを優先的に受ける。
+- トークンで`auth.origin_proof`を代用しない（**MUST NOT**）。
+- 通常のBearer tokenより送信者制約付きトークンを優先することが望ましい（**SHOULD**）。
 
-### 11.7 安全プロファイルの要件
+### 11.7 セキュリティプロファイルの要件
 
-場合 `message_security_profile` グループポリシーでは、 `group-e2ee`:
+`message_security_profile`が`group-e2ee`を要求する場合、
 
-- 会員専用グループ運営のため `group.send` 会員になり次第 `active`、送信者 **MUST** グループ E2EE プロファイルを使用する。
-- グループホストサービス MUST リクエストの拒否 `transport-protected`.
+- `group.send`と、`active`参加後のメンバー専用操作はGroup E2EE Profileを使う（**MUST**）。
+- Hostは該当する`transport-protected`要求を拒否（MUST）。
 
-場合 `bootstrap_security_profile` グループポリシーでは、 `group-e2ee`:
+`bootstrap_security_profile`が`group-e2ee`を要求する場合、
 
-- のために `group.join` 続いて、オーバーレイのオンボーディング/ブートストラップメソッド、送信者を定義 **MUST** グループ E2EE プロファイルを使用する。
-- グループホストサービス **MUST NOT** 静かにダウングレードする `transport-protected` 明示的な交渉なしで。
+- `group.join`と、Overlayが明示する導入・初期設定でGroup E2EE Profileを使う（**MUST**）。
+- 明示的交渉なしに`transport-protected`へ暗黙に下げない（**MUST NOT**）。
 
-`group.rebind_member` 既存のMLSメンバーが生成できる通常の会員専用操作ではなく、リカバリーコントロールの動作です。 でん **MUST** 利用条件 `transport-protected` と新しいDIDの `origin_proof` P4 がリバインドする。 グループが E2EE を使用する場合、現在の所有者は P6 MLS コントローラーとして使用している場合 **MUST** 自動的にオーケストレーション `group.e2ee.add(new DID)` フォロー `group.e2ee.remove(old DID)`グループホストの時 **MUST** P6 で要求されるようにアプリケーションメッセージを一時停止します。 P4 の証拠 **MUST NOT** MLS コミットの代わりに。
+`group.rebind_member`は、既存MLS会員が生成する通常操作とは異なる復旧制御です。P4再バインドには`transport-protected`と新DIDの`origin_proof`を使わなければなりません（**MUST**）。E2EEなら現在のownerがP6 MLS Controllerとして`group.e2ee.add(new DID)`、次に`group.e2ee.remove(old DID)`を自動実行し（**MUST**）、HostはP6に従い業務メッセージを止めます（**MUST**）。P4 proofでどちらのMLS Commitも代用してはなりません（**MUST NOT**）。
 
-### 11.8 オーバーレイでポイントを結合
+### 11.8 Overlayとのバインド点
 
-サブシーケントグループ E2EEオーバーレイ **SHOULD** 少なくとも次のフィールドをバインド:
+後続Group E2EE Overlayは、少なくとも次へバインドすることが望まれます（**SHOULD**）。
 
 - `group_did`
 - `sender_did`
-- `group_state_version` または同等のステータスの参照
+- `group_state_version`または同等の状態参照。
 - `message_id`
 - `content_type`
 - `security_profile`
-- `auth.origin_proof.contentDigest` または同等の起源の証拠の消化器
+- `auth.origin_proof.contentDigest`または同等のOrigin Proofのダイジェスト
 
-### 11.9 ハンドルの決断および担保の保証を結合して下さい
+### 11.9 Handle解決と再バインドの安全性
 
-- ハンドルはWNSの検証の後で安定した会員アンカーだけであり、 **MUST NOT** DID リクエストの署名を置き換える。
-- ハンドルプロバイダ **MUST** 永久非譲渡性および非再使用にコミットし、永続墓石として再発されたハンドルを保持します。 この約束を満足しないハンドル **MUST NOT** ハンドルバック会員に使用されます。
-- グループホスト **MUST** 持続可能で、最終承認 `handle_binding_generation` 等しく、古い、または非決定的コンパラブルな生成を拒否する。
-- キャッシュされたハンドルの解像度の結果が、要求された新規生成と期限切れまたは競合している場合、グループホスト **MUST** 再び解決し、閉鎖を失敗します。
-- `group.rebind_member` 現行のDIDが現在の状態になる前に呼び出される可能性があるという、かなりの範囲の例外です。 `agent_did`; その権限は、セクション 8.12 で定義された同じハンドルのクレデンシャル・リバインドに限定されています。
-- 古いDIDトークン、セッション、ルーティングキャッシュの展開が実装固有の方法ですが、古いDIDを再度結合した後 **MUST NOT** 会員のP4認証を渡す
+- HandleはWNS検証後の安定会員基点にすぎず、DIDの要求署名を代用してはなりません（**MUST NOT**）。
+- Providerは恒久的な譲渡・再利用禁止にコミットし、失効Handleを恒久tombstoneとして保持しなければなりません（**MUST**）。満たさないHandleの使用は禁止（**MUST NOT**）。
+- Hostは最後に受理した`handle_binding_generation`を永続化し、同値、過去、10進整数として比較できない世代を拒否（**MUST**）。
+- キャッシュが失効、または要求された新世代と競合すれば、再解決し、安全側に拒否（**MUST**）。
+- `group.rebind_member`は、新DIDが現在の`agent_did`になる前に使える狭い例外です。権限は第8.12節の同じHandleの資格情報更新だけです。
+- 旧DIDトークン、セッション、経路キャッシュの無効化は実装依存ですが、再バインド受理後に旧DIDがその会員のP4認可を通ってはなりません（**MUST NOT**）。
 
 ---
 
-## 12. プロファイル固有のエラー(推奨)
+## 12. プロファイル固有のエラー（推奨）
 
-ANPコアの公開エラーモデルを以下に示す前提では、このプロファイルは、次のことを推奨します。 `anp_code`:
+ANP Coreの共通エラーモデルに従う前提で、次の`anp_code`を推奨します。
 
-| `code` | `anp_code` | 意味する |
+| `code` | `anp_code` | 意味 |
 |---|---|---|
-| 3000 | `group.not_member` | 呼び出し側はグループのメンバーではありません |
-| 3001 | `group.already_member` | 対象は既にグループメンバーです |
-| 3002 | `group.admission_not_allowed` | グループに参加する現在のパスは利用できません。またはグループに参加する前提条件は満たしません |
-| 3003 | `group.policy_violation` | 運営はグループポリシーに違反する |
-| 3005 | `group.member_conflict` | 会員資格の紛争 |
-| 3006 | `group.security_mode_required` | グループには、より高い要件のセキュリティプロファイルがあります |
-| 3007 | `group.host_unavailable` | グループホストは一時的に利用できません |
-| 3008 | `group.invalid_origin_proof` | 初期の原産証拠は無効、期限切れまたは欠落しています |
-| 3009 | `group.origin_did_mismatch` | どのIDにするか `meta.sender_did` とりあえず `keyid` 所属は矛盾している |
-| 3010 | `group.invalid_group_receipt` | グループレシートの署名が無効な場合、または返された結果に一致しない |
-| 3011 | `group.invalid_handle_binding` | ハンドルのフォーマット、状態、決断の結果、または二方向結合は無効です |
-| 3012 | `group.handle_binding_stale` | ハンドル結合生成は厳密に増加しませんでした, ロールバック, または階段キャッシュから来ました |
-| 3013 | `group.rebind_not_allowed` | 対象は、対象となるハンドルをバックアップしたアクティブなメンバーではなく、またはハンドルが中断または再発されるわけではありません。 |
-| 3014 | `group.rebind_conflict` | 新規の DID は、別のアクティブなメンバーに属しているか、同時リバインドされた競合が発生した |
+| 3000 | `group.not_member` | 呼び出し元が非メンバー |
+| 3001 | `group.already_member` | 対象がすでにメンバー |
+| 3002 | `group.admission_not_allowed` | 入群経路が利用不能、または前提条件未達 |
+| 3003 | `group.policy_violation` | ポリシー違反 |
+| 3005 | `group.member_conflict` | メンバー状態が競合 |
+| 3006 | `group.security_mode_required` | より高い安全性のモードが必要 |
+| 3007 | `group.host_unavailable` | Hostが一時利用不能 |
+| 3008 | `group.invalid_origin_proof` | 開始者proofが無効、失効、欠落 |
+| 3009 | `group.origin_did_mismatch` | `meta.sender_did`と`keyid`の所属DIDが不一致 |
+| 3010 | `group.invalid_group_receipt` | 受領証の署名が無効か、結果と不一致 |
+| 3011 | `group.invalid_handle_binding` | Handleの形式、状態、解決結果、双方向バインドが不正 |
+| 3012 | `group.handle_binding_stale` | 世代が厳密増加せず、巻き戻り、または古いキャッシュ |
+| 3013 | `group.rebind_not_allowed` | 適格なHandle-backed active会員でないか、Handleが停止・失効 |
+| 3014 | `group.rebind_conflict` | 新DIDが他のactive会員に属するか、同時更新が競合 |
 
 ---
 
-## 13. プライバシーに関する考慮事項
+## 13. プライバシー上の考慮事項
 
-### 13.1 会員リストの最小開示
+### 13.1 メンバー一覧の開示最小化
 
-実装がサポートしている場合でも `include_member_list`グループホスト **SHOULD** 認定された発信者に最低限必要な会員情報のみを返します。 パブリックグループの場合、匿名で読み取ります **SHOULD NOT** デフォルトで全メンバーリストを公開します。
+`include_member_list`に対応しても、認可された呼び出し元へ必要最小限だけ返すことが望まれます（**SHOULD**）。公開グループの匿名参照で、既定で全員を公開しないことが望まれます（**SHOULD NOT**）。
 
-ハンドルバック会員を選択すると、完全な開示が行われます `member_handle` ロケールがロスターフィールドを読み取り権限を持つようにしました。 導入事例 **SHOULD** このプライバシーの境界をクリアします。; 公共または匿名のロスタービューはまだ **SHOULD NOT** デフォルトでハンドルを明示します。
+Handle-backedを選ぶと、該当名簿フィールドの閲覧権限者へ完全な`member_handle`を開示します。この境界を明確にすることが望まれ（**SHOULD**）、公開・匿名の名簿には既定でHandleを出さないことが望まれます（**SHOULD NOT**）。
 
-### 13.2 バンド外出グループ入力資格情報の伝播
+### 13.2 帯域外入群資格情報の配布
 
-デプロイメントがプライベートな招待状リンク、トークンの登録、またはその他のアウトオブバンド認証機能を使用してトリガーする場合 `group.join`, インストーラ **SHOULD** これらの実用的な資格情報を未関連当事者に露出しないようにします。 **SHOULD** 制御されたチャネル、帯域外チャンネル、または保護された直接メッセージングによってそれらを優先的に提供します。
+招待リンクやJoin Tokenなどで`group.join`を開始する配置では、無関係な相手への資格情報公開を避け（**SHOULD**）、制御されたチャネル、帯域外チャネル、保護された直接メッセージを優先することが望まれます（**SHOULD**）。
 
-### 13.3 公開発見と匿名読書
+### 13.3 公開発見と匿名参照
 
-グループがセットされるとき `public` または `listed`, 匿名の読み込み **SHOULD** 最小限のデータスナップショットのみを返します。呼び出し側 **SHOULD NOT** そのような読み取りから内部のメンバーシップ、役割配分、または他の不必要な状態を妨害します。
+`public`や`listed`の匿名参照では、最小スナップショットだけを返すことが望まれます（**SHOULD**）。そこから内部会員関係、ロール分布、不要な状態を推測しないことが望まれます（**SHOULD NOT**）。
 
 ---
 
-## 14. 最小相互運用性要件
+## 14. 最低相互運用要件
 
-このページの先頭へ MUST 少なくともサポート:
+本プロファイルに適合する実装は、少なくとも次に対応しなければなりません（MUST）。
 
 1. `group.create`
 2. `group.get_info`
@@ -1315,19 +1316,19 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 11. `group_did`
 12. `group_state_version`
 13. `group_event_seq`
-14. DID のみとハンドル バックのメンバーシップ モード
-15. 役割: `owner`, `admin`, `member`
-16. 会員資格: `active`, `left`, `removed`
-17. ユニファイドイベントオブジェクトのセマンティックス `group.state_changed`、を含む `member-credential-rebound`
-18. 安全な伝達操作モード
+14. DID-onlyとHandle-backedの両方式。
+15. ロール：`owner`、`admin`、`member`。
+16. 状態：`active`、`left`、`removed`。
+17. `member-credential-rebound`を含む、`group.state_changed`の統一イベントの意味。
+18. 安全な伝送での動作。
 
-実装がプッシュ機能を提供する場合、その `group.incoming` とりあえず `group.state_changed` **MUST** このページのコンテンツは、以下のとおりです。
+プッシュを提供する実装の`group.incoming`と`group.state_changed`は、標準Notificationの意味に従わなければなりません（**MUST**）。
 
 ---
 
-## 15. 事例紹介
+## 15. 例
 
-### 15.1 `group.create` 事例紹介
+### 15.1 `group.create`の例
 
 ```json
 {
@@ -1385,7 +1386,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-通常のJSONペイロード例:
+通常のJSONペイロードの例：
 
 ```json
 {
@@ -1419,9 +1420,9 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-フィールド内 `payload` は、アプリケーション定義で、ANP によって指定されていない。
+`payload`内部のフィールドはアプリケーションが定め、ANPは規定しません。
 
-応答の成功例:
+成功応答の例：
 
 ```json
 {
@@ -1456,7 +1457,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-### 15.2 `group.add` 事例紹介
+### 15.2 `group.add`の例
 
 ```json
 {
@@ -1492,7 +1493,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-応答の成功例:
+成功応答の例：
 
 ```json
 {
@@ -1528,7 +1529,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-### 15.3 `group.join` 例(参加開始)
+### 15.3 `group.join`の例（自主参加可能）
 
 ```json
 {
@@ -1562,7 +1563,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-応答の成功例:
+成功応答の例：
 
 ```json
 {
@@ -1596,7 +1597,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-### 15.4 `group.send` 事例紹介
+### 15.4 `group.send`の例
 
 ```json
 {
@@ -1633,7 +1634,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-応答の成功例:
+成功応答の例：
 
 ```json
 {
@@ -1671,7 +1672,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-### 15.5 `group.rebind_member` 事例紹介
+### 15.5 `group.rebind_member`の例
 
 ```json
 {
@@ -1708,7 +1709,7 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 }
 ```
 
-応答の成功例:
+成功応答の例：
 
 ```json
 {
@@ -1728,27 +1729,27 @@ ANPコアの公開エラーモデルを以下に示す前提では、このプ�
 
 ---
 
-## 16. レジストリプレースホルダー
+## 16. レジストリーのプレースホルダー
 
-この標準のサブシーケントバージョン **SHOULD** 下記のレジストリの登録簿を定める:
+後続版では、次のレジストリーを設けることが望まれます（**SHOULD**）。
 
-1. グループの役割の登録フォーム;
-2. グループ会員の登録フォーム
-3. `group_policy.admission_mode` レジストリ;
-4. `group.state_changed.event_type` レジストリ;
-5. グループエラーコード登録テーブル。
+1. グループロール。
+2. メンバー状態。
+3. `group_policy.admission_mode`。
+4. `group.state_changed.event_type`。
+5. グループエラーコード。
 
 ---
 
-## 17. 参照実装ノート(非定常)
+## 17. 参考実装上の注意（非規範的）
 
-実装者は、このプロファイルを実装する際に次の原則を採用する必要があります。
+実装者は、次の原則に従うことが望まれます。
 
-- v1コアは、唯一の維持管理 `group_member` グループエントリー結果オブジェクトは標準ではなく、 `invitation` または標準化された承認の目的;
-- `group_policy` 固定された使用 `admission_mode + permissions` 構造は、ブールスイッチの数よりも明確で簡単に実装できます。
-- `group.incoming` グループメッセージのプッシュを責任で、 `group.state_changed` グループ内での順序付け状態同期に責任があります。
-- 現地での実装が使える `user_id` 内部データ協会のため、しかしP4ワイヤー オブジェクトは現在のDIDおよび任意安定したハンドルだけを使用します;
-- ハンドル・バック・メンバーは、会員の継続性を保ち続けるべき `member_handle` 治療と治療 `agent_did` 取り替え可能な現在の資格として;
-- DID のみのメンバーは、DID 文字列の変更と実装が ID を推測したりマージしたりしなければ自動継続性がない。
-- プライベート招待リンク、トークンの結合、サイトリマインダーなどの機能が展開拡張機能で、v1コアの相互運用性要件ではありません。
-- `group.send` グループ状態バージョンのコンカレンス制御には参加しません。 サーバは「送信者が現在メンバーであるか」を検証するだけ `active` と あります。 `send` 許可」
+- v1中核は`group_member`という入群結果だけを維持し、標準`invitation`や承認オブジェクトを導入しません。
+- `group_policy`の固定`admission_mode + permissions`は、多数の真偽値スイッチより明確で実装しやすい構造です。
+- `group.incoming`はメッセージのプッシュ、`group.state_changed`はグループ内の順序付き状態同期を担います。
+- 内部に`user_id`を使っても、ワイヤーでは現在のDIDと任意の安定Handleだけを使います。
+- Handle-backedでは`member_handle`で継続性を保ち、`agent_did`を置換可能な現在の資格情報と扱うことが望まれます。
+- DID-onlyではDID変更時の自動継続性はなく、IDを推測・統合してはなりません。
+- 招待リンク、Join Token、サイト内通知などは配置拡張で、v1中核要件ではありません。
+- `group.send`は状態版の同時実行制御に参加しません。現在の`active`メンバーで`send`権限を持つかを確認します。

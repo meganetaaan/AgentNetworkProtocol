@@ -1,0 +1,180 @@
+{
+  "source": "images/multi-did-privacy-en.svg",
+  "sha256": "98a43bab37926c382667984705b258397be460e9671f9f217ad864459a5a9a7c",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "Multi-DID Privacy Protection Strategy",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "複数のDIDによるプライバシー保護戦略",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "220",
+      "label_id": "L002",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Main DID",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "280",
+      "label_id": "L003",
+      "japanese": "メインDID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Social Relations",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "300",
+      "label_id": "L004",
+      "japanese": "社会的なつながり",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Sub-DIDs (Scenario Isolation)",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "350",
+      "label_id": "L005",
+      "japanese": "サブDID（利用場面の分離）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Sub-DID 1",
+      "element": "text",
+      "id": null,
+      "x": "250",
+      "y": "425",
+      "label_id": "L006",
+      "japanese": "サブDID 1",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Shopping",
+      "element": "text",
+      "id": null,
+      "x": "250",
+      "y": "445",
+      "label_id": "L007",
+      "japanese": "買い物",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Sub-DID 2",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "425",
+      "label_id": "L008",
+      "japanese": "サブDID 2",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Food Delivery",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "445",
+      "label_id": "L009",
+      "japanese": "フードデリバリー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Sub-DID 3",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "425",
+      "label_id": "L010",
+      "japanese": "サブDID 3",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Tickets",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "445",
+      "label_id": "L011",
+      "japanese": "チケット",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Periodic Update",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "50",
+      "label_id": "L012",
+      "japanese": "定期的な更新",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "🔒",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L013",
+      "japanese": "🔒",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Privacy Protection",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "35",
+      "label_id": "L014",
+      "japanese": "プライバシー保護",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Implement privacy protection and permission isolation through multi-DID strategy Sub-DIDs can be updated periodically to enhance security",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "520",
+      "label_id": "L015",
+      "japanese": "複数のDIDを使う戦略でプライバシーを保護し権限を分離する。サブDIDを定期的に更新することで安全性を高められる",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "⚠️",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L016",
+      "japanese": "⚠️",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Prevent Illegal Tracking",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "50",
+      "label_id": "L017",
+      "japanese": "不正な追跡の防止",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

@@ -1,0 +1,1804 @@
+什么是协议 (Protocol)	プロトコル（Protocol）とは
+节点 A	ノード A
+节点 B	ノード B
+协议	プロトコル
+数据格式约定	データ形式の取り決め
+数据交换流程约定	データ交換手順の取り決め
+角色约定	役割の取り決め
+协议定义了系统间通信的规则	プロトコルはシステム間通信の規則を定義する
+包括数据格式、交换流程和角色约定	データ形式、交換手順、役割の取り決めを含む
+协议是两个节点或系统之间数据传递格式的约定，也约定数据交换的流程和角色	プロトコルは、2つのノードまたはシステム間でデータを渡す形式の取り決めであり、データ交換の手順と役割も定める
+ANP 主动发现机制 (ANP Active Discovery Mechanism)	ANPの能動的発見の仕組み（ANP Active Discovery Mechanism）
+搜索引擎/智能体	検索エンジン／エージェント
+智能体服务器	エージェントサーバー
+提供/返回	提供／返却
+智能体描述文档 1	エージェント記述文書 1
+智能体描述文档 2	エージェント記述文書 2
+包含 URL 列表	URLの一覧を含む
+说明:	説明:
+・主动发现: 通过访问 .well-known URI 路径发现域名下所有公开智能体	・能動的発見: .well-known URIパスにアクセスして、そのドメインで公開されているすべてのエージェントを発見する
+・返回格式: JSON-LD CollectionPage, 包含智能体描述文档 URL 列表	・応答形式: JSON-LD CollectionPage。エージェント記述文書のURL一覧を含む
+・图形表示: /.well-known/agent-descriptions (CollectionPage) 指向多个智能体描述文档	・図の表現: /.well-known/agent-descriptions（CollectionPage）が複数のエージェント記述文書を指す
+・调整: 箭头文字位置已优化，避免覆盖。	・調整: 文字が重ならないよう、矢印のラベル位置を最適化済み
+ANP 被动发现机制 (ANP Passive Discovery Mechanism)	ANPの受動的発見の仕組み（ANP Passive Discovery Mechanism）
+智能体	エージェント
+搜索服务智能体	検索サービスエージェント
+注册请求	登録要求
+智能体描述文档	エージェント記述文書
+注册API	登録API
+索引服务	インデックスサービス
+爬取/索引	クロール／インデックス作成
+・被动发现: 智能体主动向搜索服务智能体注册其描述文档	・受動的発見: エージェントが検索サービスエージェントに自分の記述文書を自発的に登録する
+・注册API: 智能体通过自定义API端点提交描述文档	・登録API: エージェントはカスタムAPIエンドポイント経由で記述文書を送信する
+・索引服务: 搜索服务智能体爬取并索引注册的智能体描述文档	・インデックスサービス: 検索サービスエージェントが、登録されたエージェント記述文書をクロールしインデックスを作成する
+个人助理智能体	個人アシスタントエージェント
+穿衣搭配智能体	ファッションコーディネートエージェント
+美食推荐智能体	グルメ推薦エージェント
+住房服务智能体	住居サービスエージェント
+出行服务智能体	移動サービスエージェント
+社交媒体智能体	ソーシャルメディアエージェント
+智能体 A	エージェント A
+智能体 B	エージェント B
+使用自然语言协商协议	自然言語を使ってプロトコルを交渉する
+协商通信使用的协议	通信に使用するプロトコルを交渉する
+代码生成	コード生成
+为协议生成处理代码	プロトコルを処理するコードを生成する
+测试用例协商	テストケースの交渉
+可选，验证协议实现	任意。プロトコル実装を検証する
+元协议消息示例	メタプロトコルのメッセージ例
+开始使用最终协议进行应用层通信	最終的に合意したプロトコルでアプリケーション層の通信を開始する
+发起协议协商	プロトコル交渉を開始する
+协议提案	プロトコルの提案
+测试用例确认	テストケースの確認
+达成协议	プロトコルに合意する
+通过验证	検証に合格する
+应用层协议通信	アプリケーション層のプロトコルによる通信
+元协议优势	メタプロトコルの利点
+• 提高数据传输效率	• データ転送効率を向上する
+• 提高数据理解准确性	• データの解釈の正確さを向上する
+协议机制	プロトコルの仕組み
+• 0RTT协商机制	• 0RTTの交渉の仕組み
+• 共识协议机制	• 合意プロトコルの仕組み
+判断二：智能体间互联互通，打破数据孤岛	見解2: エージェント間の相互接続・相互通信がデータのサイロ化を解消する
+现状：数据孤岛 → 未来：信息自由流动	現在: データのサイロ化 → 将来: 情報の自由な流通
+社交数据	交流に関するデータ
+微信	WeChat（微信）
+购物数据	買い物に関するデータ
+淘宝	Taobao（淘宝）
+娱乐数据	娯楽に関するデータ
+抖音	Douyin（抖音）
+工作数据	仕事に関するデータ
+钉钉	DingTalk（釘釘）
+✗ 数据孤岛阻碍AI潜力发挥	✗ データのサイロ化がAIの潜在能力の発揮を妨げる
+智能体互联互通网络	エージェントが相互接続・相互通信するネットワーク
+个人AI助手	個人AIアシスタント
+社交智能体	交流エージェント
+购物智能体	買い物エージェント
+娱乐智能体	娯楽エージェント
+工作智能体	仕事エージェント
+出行智能体	移動エージェント
+金融智能体	金融エージェント
+网络拓扑	ネットワークトポロジー
+获得完整上下文信息	完全なコンテキスト情報を得る
+• 个人信息汇聚一处	• 個人情報を一か所に集約する
+• 智能决策支持	• インテリジェントな意思決定支援
+• 上下文连续性	• コンテキストの連続性
+访问所有工具能力	すべてのツール機能にアクセスする
+• 跨平台工具调用	• プラットフォームをまたぐツール呼び出し
+• 复杂任务自动化	• 複雑なタスクの自動化
+• 智能体协作	• エージェント同士の協力
+智能体间连接为主	エージェント間の接続が中心
+• 智能体协作优先	• エージェント同士の協力を優先する
+• 任务自动分解	• タスクの自動分解
+• 网络效应放大	• ネットワーク効果の増大
+判断一：智能体将替代现有软件	見解1: エージェントが既存のソフトウェアに取って代わる
+传统APP时代	従来のアプリの時代
+支	支（Alipayのアイコン文字）
+支付宝	Alipay（支付宝）
+娱乐	娯楽
+替代	置き換え
+智能体时代	エージェントの時代
+购物	買い物
+社交	交流
+出行	移動
+支付	支払い
+用户	ユーザー
+• 用户需要使用多个APP	• ユーザーは複数のアプリを使う必要がある
+• 数据分散在各个平台	• データが各プラットフォームに分散する
+• 体验碎片化	• 体験が断片化する
+• 一个AI助手连接所有服务	• 1つのAIアシスタントがすべてのサービスに接続する
+• 个性化的统一体验	• 個人に合わせた統一的な体験
+• 智能化的任务处理	• インテリジェントなタスク処理
+个人AI助手成为新的互联网入口	個人AIアシスタントが新たなインターネットの入口になる
+在综合场景下，体验比现有APP好十倍	複合的な利用場面では、既存アプリの10倍優れた体験となる
+判断三：Protocol是AI原生连接方式	見解3: プロトコルはAIに適した接続方式である
+过渡形态	過渡的な形態
+AI原生方式	AIに適した方式
+问题：	問題:
+• 成本高、效率低	• コストが高く、効率が低い
+• 为人类设计的界面	• 人間向けに設計されたインターフェース
+• 无法充分发挥AI能力	• AIの能力を十分に発揮できない
+优势：	利点:
+• 高效直接的数据交换	• 効率的で直接的なデータ交換
+• AI原生设计	• AIに適した設計
+智能体通信协议 = 智能体互联网时代的HTTP	エージェント通信プロトコル = エージェントインターネット時代のHTTP
+传统互联网	従来のインターネット
+为人类设计的页面网络	人間向けに設計されたページのネットワーク
+智能体互联网	エージェントインターネット
+为AI设计的数据网络	AI向けに設計されたデータのネットワーク
+构建专为AI设计、便于AI访问的数据网络	AI専用に設計された、AIが容易にアクセスできるデータネットワークを構築する
+AI更擅长处理直接的底层数据，而非为人类设计的UI界面	AIは、人間向けのUIよりも、直接的な基礎データの処理を得意とする
+多DID隐私保护策略	複数のDIDによるプライバシー保護戦略
+主DID	メインDID
+社交关系	社会的なつながり
+子DID (场景隔离)	サブDID（利用場面の分離）
+子DID 1	サブDID 1
+子DID 2	サブDID 2
+子DID 3	サブDID 3
+购物场景	買い物の場面
+外卖场景	フードデリバリーの場面
+门票场景	チケットの場面
+周期性更新	定期的な更新
+隐私保护	プライバシー保護
+通过多DID策略实现隐私保护与权限隔离 子DID可周期性更新，提高安全性	複数のDIDを使う戦略でプライバシーを保護し権限を分離する。サブDIDを定期的に更新することで安全性を高められる
+防止非法追踪	不正な追跡の防止
+ANP授权机制: 人类授权与智能体自动授权	ANPの認可の仕組み: 人間による認可とエージェントによる自動認可
+智能体自动授权场景	エージェントが自動で認可する場面
+人类手动授权场景	人間が手動で認可する場面
+用户智能体	ユーザーエージェント
+酒店智能体	ホテルエージェント
+查询房间信息	客室情報を照会する
+普通请求: 查询酒店信息	通常の要求: ホテル情報の照会
+自动授权，不需要人类干预	自動的に認可し、人間の介入は不要
+/* 默认不需要人类授权 */	/* 既定では人間による認可は不要 */
+预订房间	客室を予約する
+重要请求: 预订酒店房间	重要な要求: ホテルの客室の予約
+需要人类手动授权确认	人間が手動で認可を確認する必要がある
+用户委托智能体	ユーザーがエージェントに委任する
+智能体自动授权	エージェントが自動で認可する
+请求处理完成	要求の処理が完了する
+请求需人类授权	要求には人間による認可が必要
+人类确认并签名	人間が確認して署名する
+使用签名请求服务	署名を使ってサービスを要求する
+授权机制区别	認可の仕組みの違い
+• 智能体自动授权: 低风险操作	• エージェントによる自動認可: リスクの低い操作
+• 人类手动授权: 高风险操作	• 人間による手動認可: リスクの高い操作
+需要人类验证身份	人間の本人確認が必要
+(生物识别、指纹等)	（生体認証、指紋など）
+使用人类私钥签名	人間の秘密鍵を使って署名する
+ANP 智能体发现协议架构	ANPエージェント発見プロトコルの構成
+主动发现机制	能動的発見の仕組み
+提供	提供
+• 主动发现：搜索引擎或其他智能体通过访问.well-known URI路径发现所有公开智能体	• 能動的発見: 検索エンジンや他のエージェントが.well-known URIパスにアクセスして、公開されているすべてのエージェントを発見する
+• 返回格式：JSON-LD格式的集合文档，包含智能体描述文档的URL列表	• 応答形式: JSON-LD形式のコレクション文書。エージェント記述文書のURL一覧を含む
+被动发现机制	受動的発見の仕組み
+搜索服务	検索サービス
+注册请求 (包含描述URL)	登録要求（記述文書のURLを含む）
+爬取和索引	クロールとインデックス作成
+• 被动发现：智能体主动将自身描述URL注册到搜索服务，使其能够爬取和索引	• 受動的発見: エージェントが自分の記述文書のURLを検索サービスに自発的に登録し、クロールとインデックス作成を可能にする
+• 验证与爬取：搜索服务验证请求后爬取智能体描述文档并进行索引	• 検証とクロール: 検索サービスが要求を検証した後、エージェント記述文書をクロールしてインデックスを作成する
+基于ANP-智能体发现协议规范（1.1版）	ANPエージェント発見プロトコル仕様（バージョン1.1）に基づく
+智能体发现协议 (ADSP)	エージェント発見プロトコル（ADSP）
+主动发现流程	能動的発見の手順
+域名服务器	ドメインサーバー
+1. 请求 /.well-known/agent-descriptions	1. /.well-known/agent-descriptionsを要求する
+2. 返回 CollectionPage (JSON-LD)	2. CollectionPage（JSON-LD）を返す
+3. 请求智能体描述文档	3. エージェント記述文書を要求する
+4. 返回智能体描述	4. エージェントの記述を返す
+包含URL链接	URLリンクを含む
+核心特点	主な特徴
+• 使用.well-known URI作为智能体发现入口点	• .well-known URIをエージェント発見の入口として使用する
+• 基于JSON-LD格式，支持链接数据和语义网	• JSON-LD形式に基づき、リンクトデータとセマンティックウェブに対応する
+ANP协议 - 理想状态下的VC哈希链关系	ANPプロトコル: 理想的な状態でのVCハッシュチェーンの関係
+订单提议凭证	注文提案の証明書
+发行方: 酒店智能体	発行者: ホテルエージェント
+预订确认凭证	予約確認の証明書
+发行方: 用户智能体	発行者: ユーザーエージェント
+支付请求凭证	支払い要求の証明書
+支付指令凭证	支払い指示の証明書
+发行方: 支付智能体	発行者: 支払いエージェント
+资金托管凭证	資金預託の証明書
+预订完成凭证	予約完了の証明書
+(可选)	（任意）
+服务完成确认凭证	サービス完了確認の証明書
+资金释放凭证	資金払い出しの証明書
+包含哈希	ハッシュを含む
+包含哈希(可选)	ハッシュを含む（任意）
+包含哈希(可选路径)	ハッシュを含む（任意の経路）
+酒店智能体发行	ホテルエージェントが発行
+用户智能体发行	ユーザーエージェントが発行
+支付智能体发行	決済エージェントが発行
+必须哈希引用	必須のハッシュ参照
+可选哈希引用	任意のハッシュ参照
+图4: ANP协议中的VC哈希链 - 每个凭证通过包含前一个凭证的哈希值形成不可篡改的链式结构	図4: ANPプロトコルのVCハッシュチェーン。各資格情報が直前の資格情報のハッシュ値を含むことで、改ざん不能なチェーン構造を形成する
+ANP 智能体点对点交易理想流程图	ANPエージェント間P2P取引の理想的なフロー
+凭证传递(VC)	資格情報の受け渡し（VC）
+凭证生成	資格情報の生成
+步骤1	手順1
+步骤2	手順2
+步骤3	手順3
+步骤4	手順4
+步骤5	手順5
+步骤6	手順6
+步骤7	手順7
+步骤8	手順8
+支付智能体	決済エージェント
+搜索酒店服务	ホテルサービスを検索する
+服务发现请求	サービス発見要求
+提供服务信息	サービス情報を提供する
+服务信息响应	サービス情報の応答
+用户请求预订	ユーザーが予約を要求する
+发送预订请求	予約要求を送信する
+生成订单提议	注文提案を生成する
+发送订单提议凭证	注文提案の資格情報を送信する
+用户确认订单	ユーザーが注文を確認する
+发送订单确认凭证	注文確認の資格情報を送信する
+请求付款	支払いを要求する
+发送付款请求	支払い要求を送信する
+生成支付指令	支払い指示を生成する
+发送支付指令凭证	支払い指示の資格情報を送信する
+转发支付指令凭证	支払い指示の資格情報を転送する
+用户付款	ユーザーが支払う
+支付操作	支払い操作
+资金托管	資金の預託
+发送资金托管凭证	資金預託の資格情報を送信する
+确认预订并履约	予約を確認し、契約を履行する
+发送预订完成凭证(可选)	予約完了の資格情報を送信する（任意）
+提供服务	サービスを提供する
+确认服务完成	サービス完了を確認する
+发送服务完成确认凭证	サービス完了確認の資格情報を送信する
+结算资金	資金を決済する
+发送资金释放凭证	資金解放の資格情報を送信する
+资金到账	資金が入金される
+ANP 智能体点对点交易系统架构	ANPエージェント間P2P取引システムの構成
+Agent Network Protocol (ANP) 协议环境	Agent Network Protocol（ANP）のプロトコル環境
+用户端	ユーザー側
+用户 (User)	ユーザー（User）
+酒店端	ホテル側
+酒店 (Hotel)	ホテル（Hotel）
+支付系统	決済システム
+支付基础设施	決済基盤
+仲裁智能体	仲裁エージェント
+可选	任意
+可信/公证服务	信頼／公証サービス
+必要交互路径	必須のやり取りの経路
+可选交互路径	任意のやり取りの経路
+所有智能体间通信基于 ANP 协议	すべてのエージェント間通信はANPプロトコルに基づく
+交互逻辑	やり取りの仕組み
+智能体间通过可验证凭证(VC)传递与验证，形成凭证链，保证交易可信与完整	エージェント間で検証可能な証明書（VC）を受け渡して検証し、証明書の連鎖を作ることで、取引の信頼性と完全性を確保する
+基于ANP的AP2智能体支付协议运行流程	ANPに基づくAP2エージェント決済プロトコルの動作手順
+购物者智能体	買い物客エージェント
+商户智能体	加盟店エージェント
+支付处理方	決済処理事業者
+阶段1: 购物车创建	段階1: ショッピングカートの作成
+1.发起购买	1. 購入を開始する
+3.生成订单	3. 注文を生成する
+4.签名cart_hash	4. cart_hashに署名する
+5.CartMandate+二维码	5. CartMandate＋QRコード
+阶段2: 用户授权	段階2: ユーザーによる認可
+6.展示订单+二维码	6. 注文とQRコードを表示する
+7-8.扫码支付	7-8. QRコードを読み取って支払う
+9.授权支付	9. 支払いを認可する
+阶段3: 支付处理	段階3: 決済処理
+10.计算transaction_data	10. transaction_dataを計算する
+11.用户签名	11. ユーザーが署名する
+13.验证签名	13. 署名を検証する
+验证哈希	ハッシュを検証する
+14.确认支付	14. 支払いを確認する
+16.支付结果	16. 支払い結果
+阶段4: 交付确认	段階4: 引き渡しの確認
+18.返回交易成功	18. 取引成功を返す
+19.通知支付成功	19. 支払い成功を通知する
+21.DeliveryReceipt(可选)	21. DeliveryReceipt（任意）
+关键安全机制	主要な安全性の仕組み
+🔐 数据完整性	🔐 データの完全性
+🔐 商户认证	🔐 加盟店の認証
+🔐 用户授权	🔐 ユーザーによる認可
+🔐 防重放攻击	🔐 リプレイ攻撃対策
+🔐 时间限制	🔐 時間制限
+🔐 身份绑定	🔐 IDとの結び付け
+jti 全局唯一标识符	jti グローバルに一意の識別子
+iat/exp 有效期15分钟	iat/exp 有効期間15分
+DID:WBA 去中心化身份	DID:WBA 分散型ID
+核心凭证:	主要な資格情報:
+• CartMandate (购物车授权)	• CartMandate（ショッピングカートの認可）
+• PaymentMandate (支付授权)	• PaymentMandate（支払いの認可）
+• DeliveryReceipt (交付收据)	• DeliveryReceipt（引き渡しの受領証）
+ANP/AP2 - 智能体之间的安全支付协议 | 基于JWT/JWS签名 | 支持二维码支付	ANP/AP2: エージェント間の安全な決済プロトコル | JWT/JWS署名に基づく | QRコード決済に対応
+ANP/AP2 智能体支付协议流程	ANP/AP2エージェント決済プロトコルの手順
+购物者智能体 (SA)	買い物客エージェント（SA）
+商户智能体 (MA)	加盟店エージェント（MA）
+支付处理方 (PP)	決済処理事業者（PP）
+Phase 1: 创建订单	Phase 1: 注文の作成
+1. 发起购买请求	1. 購入要求を開始する
+3. CartMandate + 二维码	3. CartMandateとQRコード
+(包含商户签名)	（加盟店の署名を含む）
+Phase 2: 授权支付	Phase 2: 支払いの認可
+4. 展示订单+二维码	4. 注文とQRコードを表示
+(用户授权签名, MA返回200 OK)	（ユーザーの承認署名。MAは200 OKを返す）
+6a. 用户扫码支付	6a. ユーザーがQRコードを読み取って支払う
+6b. 支付结果通知 (Callback)	6b. 決済結果の通知（Callback）
+(支付宝/微信 -> 商户)	（Alipay／WeChatから加盟店へ）
+Phase 3: 凭证交付	Phase 3: 資格情報の引き渡し
+7. 发送支付确认凭证	7. 決済確認の証明書を送信
+8. 通知支付结果	8. 決済結果を通知
+9. 发送物流状态凭证	9. 配送状況の証明書を送信
+10. 通知物流状态	10. 配送状況を通知
+核心特性:	主な特性:
+• DID:WBA 去中心化身份	• DID:WBA 分散型ID
+• JWT/JWS 密码学签名	• JWT/JWSによる暗号学的署名
+• 用户明确授权 (User Authorization)	• ユーザーによる明示的な認可（User Authorization）
+安全机制:	安全性の仕組み:
+• Cart Hash: 防止购物车内容篡改	• Cart Hash: ショッピングカートの内容の改ざんを防ぐ
+• Mandates: 基于凭证的交易流程	• Mandates: 資格情報に基づく取引手順
+• Nonce/JTI: 防重放攻击	• Nonce/JTI: リプレイ攻撃対策
+图例:	凡例:
+请求 (Request)	要求（Request）
+响应/凭证 (Response)	応答／資格情報（Response）
+异步回调 (Callback)	非同期コールバック（Callback）
+用户动作	ユーザーの操作
+ANP + x402 混合支付协议	ANP＋x402のハイブリッド決済プロトコル
+融合 HTTP 402 + CartMandate/PaymentMandate + 支付宝/微信支付	HTTP 402＋CartMandate/PaymentMandate＋Alipay／WeChat Payを統合
+(客户端)	（クライアント）
+(商户智能体)	（加盟店エージェント）
+(用户)	（ユーザー）
+(支付宝/微信)	（Alipay／WeChat Pay）
+(验证方)	（検証者）
+阶段1:	段階1:
+资源请求	リソースの要求
+请求受保护的API资源	保護されたAPIリソースを要求する
+返回购物车授权凭证	ショッピングカートの認可の資格情報を返す
+CartMandate 内容:	CartMandateの内容:
+• payment_methods: [支付宝, 微信]	• payment_methods: [Alipay, WeChat Pay]
+• merchant_authorization (JWS签名)	• merchant_authorization（JWS署名）
+阶段2:	段階2:
+用户授权	ユーザーによる認可
+展示订单信息	注文情報を表示する
+显示商品、价格、支付方式选择	商品、価格、支払い方法の選択肢を表示する
+用户选择支付方式	ユーザーが支払い方法を選ぶ
+支付宝 / 微信支付	Alipay／WeChat Pay
+扫码支付	QRコードを読み取って支払う
+支付宝/微信完成支付	Alipay／WeChat Payで支払いを完了する
+阶段3:	段階3:
+支付确认	支払い確認
+授权支付	支払いを認可する
+用户确认并提供支付凭证	ユーザーが確認し、支払いの資格情報を提供する
+携带用户授权签名 (user_authorization)	ユーザーの認可署名（user_authorization）を添える
+PaymentMandate 内容:	PaymentMandateの内容:
+• payment_method: 支付宝/微信	• payment_method: Alipay／WeChat Pay
+• user_authorization (JWS签名)	• user_authorization（JWS署名）
+验证支付	支払いを検証する
+查询交易	取引を照会する
+核心创新:	主な新機軸:
+• HTTP 402 标准化 - 统一支付请求接口	• HTTP 402の標準化: 支払い要求のインターフェースを統一する
+• CartMandate - 商户签名保证订单完整性 (防篡改)	• CartMandate: 加盟店の署名で注文の完全性を保証する（改ざん防止）
+• PaymentMandate - 用户授权签名 (不可抵赖)	• PaymentMandate: ユーザーの認可署名（否認防止）
+• 支持主流支付 - 支付宝、微信、USDC	• 主流の支払い手段に対応: Alipay、WeChat Pay、USDC
+技术实现:	技術的な実装:
+• ANP: DID:WBA 身份认证 + JWT/JWS 签名	• ANP: DID:WBAによるID認証＋JWT/JWS署名
+• x402: HTTP 402 状态码 + 标准化支付流程	• x402: HTTP 402ステータスコード＋標準化された支払い手順
+请求	要求
+响应	応答
+x402 协议流程	x402プロトコルの手順
+HTTP 402 Payment Required - AI Agent 自动化支付协议	HTTP 402 Payment Required: AIエージェントの自動決済プロトコル
+(服务提供方)	（サービス提供者）
+请求受保护的资源或API	保護されたリソースまたはAPIを要求する
+返回支付信息: 金额、收款地址、链ID	支払い情報を返す: 金額、受取アドレス、チェーンID
+发起链上支付	オンチェーン決済を開始する
+AI Agent 使用 USDC 完成转账	AIエージェントがUSDCで送金を完了する
+监听交易	取引を監視する
+支付验证通知	支払い検証の通知
+Facilitator 验证链上交易并通知服务器	Facilitatorがオンチェーン取引を検証しサーバーに通知する
+提供所请求的资源或服务	要求されたリソースまたはサービスを提供する
+核心特性	主な特性
+• 无需注册或登录 - AI Agent 自动化支付	• 登録やログインは不要: AIエージェントが自動で支払う
+• 秒级结算 - 基于 Base L2 区块链,低成本高效率	• 秒単位の決済: Base L2ブロックチェーンに基づき、低コストで高効率
+• 标准化协议 - 激活 HTTP 402 状态码	• 標準化されたプロトコル: HTTP 402ステータスコードを活用する
+• 稳定币支付 - 使用 USDC 避免价格波动	• ステーブルコインでの支払い: USDCを使い価格変動を避ける
+技术栈	技術スタック
+• 区块链: Base (Coinbase L2), Ethereum	• ブロックチェーン: Base（Coinbase L2）、Ethereum
+• 稳定币: USDC (Circle)	• ステーブルコイン: USDC（Circle）
+• 协议: HTTP 402, JSON-RPC	• プロトコル: HTTP 402、JSON-RPC
+• 发起方: Coinbase + Cloudflare (2025)	• 提唱者: Coinbase＋Cloudflare（2025）
+(Agent A)	（エージェント A）
+(Agent B)	（エージェント B）
+(Arbitration Agent)	（仲裁エージェント）
+(Banking/Blockchain)	（銀行／ブロックチェーン）
+(Client Agent)	（クライアントエージェント）
+(Code Generation)	（コード生成）
+(Dispute Resolution)	（紛争解決）
+(Hotel Agent)	（ホテルエージェント）
+(Logistics Status)	（配送状況）
+(Notary/Registry)	（公証／登録サービス）
+(Optional)	（任意）
+(Payment Agent)	（支払いエージェント）
+(Payment Confirmation)	（決済確認）
+(Payment Infrastructure)	（決済基盤）
+(Protocol Negotiation)	（プロトコル交渉）
+(Registry/Verification)	（登録機関／検証）
+(Service Provider)	（サービス提供者）
+(Start Communication Using Final Protocol)	（最終的なプロトコルを使って通信を開始）
+(Test Cases Negotiation)	（テストケースの交渉）
+(Transaction Handler)	（取引処理者）
+(User Agent)	（ユーザーエージェント）
+AI Agent	AIエージェント
+ANP Agent Peer-to-Peer Trading System Architecture	ANPエージェント間P2P取引システムの構成
+ANP Application Layer	ANPアプリケーション層
+ANP Protocol	ANPプロトコル
+ANP Protocol - VC Hash Chain Relationships in Ideal State	ANPプロトコル: 理想的な状態でのVCハッシュチェーンの関係
+ANP Transport Layer	ANPトランスポート層
+API Layer	API層
+API Server	APIサーバー
+Access Server Data	サーバーデータにアクセスする
+Agent	エージェント
+Agent A	エージェントA
+Agent B	エージェントB
+Agent Network	エージェントネットワーク
+Agent Network Protocol (ANP) Environment	Agent Network Protocol（ANP）の環境
+Agent Payment Protocol v2 on Agent Network Protocol	Agent Network Protocol上のAgent Payment Protocol v2
+Agent Server	エージェントサーバー
+Agentic Web Agent Network Protocol	Agentic Web（エージェントによるウェブ）／Agent Network Protocol
+Agents exchange and verify through Verifiable Credentials (VC), forming credential chains to ensure trusted and complete transactions	エージェントは検証可能な資格情報（VC）を交換して検証し、資格情報のチェーンを形成して、信頼できる完全な取引を確保する
+All agent communications based on ANP protocol	すべてのエージェント間通信はANPプロトコルに基づく
+Arbitration Agent	仲裁エージェント
+Assistant	アシスタント
+Auth & Security	認証・認可とセキュリティ
+Authentication	認証
+Authentication Flow	認証フロー
+Bi-directional Sync	双方向同期
+Blockchain	ブロックチェーン
+Booking Confirmation Credential	予約確認の資格情報
+Booking Finalized Credential	予約完了の資格情報
+Browser Use	ブラウザーの操作
+Built with: Go • PostgreSQL • OpenAPI	使用技術: Go • PostgreSQL • OpenAPI
+Business Logic	ビジネスロジック
+Command line interface	コマンドラインインターフェース
+Community Moderation	コミュニティによるモデレーション
+Component	構成要素
+Computer Use	コンピューターの操作
+Contains Hash	ハッシュを含む
+Contains Hash (Optional Path)	ハッシュを含む（任意の経路）
+Contains Hash (Optional)	ハッシュを含む（任意）
+Custom Security Policies	独自のセキュリティポリシー
+DNS Verification	DNSによる検証
+Data Flow	データフロー
+Database	データベース
+Deployment: Pulumi IaC	デプロイ: Pulumi IaC
+Direct Data Exchange	直接的なデータ交換
+Enhanced Metadata	拡張メタデータ
+Enterprise Deployments	企業でのデプロイ
+Facilitator	Facilitator（決済検証支援者）
+Fashion Agent	ファッションエージェント
+Features: Open Source • MIT License	特徴: オープンソース • MIT License
+Figure 4: VC Hash Chain in ANP Protocol - Each credential forms an immutable chain structure by containing the hash of the previous credential	図4: ANPプロトコルのVCハッシュチェーン。各資格情報が直前の資格情報のハッシュ値を含むことで、改ざん不能なチェーン構造を形成する
+Food Agent	グルメエージェント
+Food Delivery	フードデリバリー
+Funds Escrowed Credential	資金預託の資格情報
+Funds Released Credential	資金解放の資格情報
+Guideline Enforcement	ガイドラインの適用
+HTTP 200 OK + Resource	HTTP 200 OK＋リソース
+HTTP Protocol	HTTPプロトコル
+HTTP Verification	HTTPによる検証
+Hotel	ホテル
+Hotel Agent	ホテルエージェント
+Hotel Side	ホテル側
+Housing Agent	住居エージェント
+Implement privacy protection and permission isolation through multi-DID strategy Sub-DIDs can be updated periodically to enhance security	複数のDIDを使う戦略でプライバシーを保護し権限を分離する。サブDIDを定期的に更新することで安全性を高められる
+Indexing Service	インデックスサービス
+Interaction Logic	やり取りのロジック
+Issue Reporting • Denylist Management	問題の報告 • 拒否リストの管理
+Issued by Hotel Agent	ホテルエージェントが発行する
+Issued by Payment Agent	支払いエージェントが発行する
+Issued by User Agent	ユーザーエージェントが発行する
+Issuer: Hotel Agent	発行者: ホテルエージェント
+Issuer: Payment Agent	発行者: 支払いエージェント
+Issuer: User Agent	発行者: ユーザーエージェント
+Legend:	凡例:
+MCP Clients	MCPクライアント
+MCP Marketplaces	MCPマーケットプレイス
+MCP Registry	MCPレジストリ
+MCP Registry Architecture	MCPレジストリの構成
+Main DID	メインDID
+Main Registry	メインレジストリ
+Merchant Agent	加盟店エージェント
+Metrics & Monitoring	メトリクスと監視
+Multi-DID Privacy Protection Strategy	複数のDIDによるプライバシー保護戦略
+Namespace Control	名前空間の管理
+Network Layer	ネットワーク層
+Opinionated Curation	独自の方針によるキュレーション
+Optional	任意
+Optional Hash Reference	任意のハッシュ参照
+Optional Interaction Path	任意のやり取りの経路
+Order Offer Credential	注文提案の資格情報
+Payment	支払い
+Payment Agent	支払いエージェント
+Payment Infrastructure	支払いインフラ
+Payment Instruction Credential	支払い指示の資格情報
+Payment Processor	決済処理事業者
+Payment Request Credential	支払い要求の資格情報
+Payment System	支払いシステム
+Periodic Update	定期的な更新
+Prevent Illegal Tracking	不正な追跡の防止
+Privacy Protection	プライバシー保護
+Privacy Requirements	プライバシーに関する要件
+Private Sub-Registries	非公開のサブレジストリ
+Protocol	プロトコル
+Public Sub-Registries	公開サブレジストリ
+Publish MCP Servers	MCPサーバーを公開する
+Publisher CLI	公開者用CLI
+Required Hash Reference	必須のハッシュ参照
+Required Interaction Path	必須のやり取りの経路
+Schema Validation	スキーマの検証
+Search Engine/Agent	検索エンジン／エージェント
+Search Service Agent	検索サービスエージェント
+Server Maintainers	サーバーの保守担当者
+Service Completion Confirmation	サービス完了の確認
+Service Layer	サービス層
+Shopper Agent	購買エージェント
+Shopping	買い物
+Single Source of Truth	唯一の正本
+Social Media Agent	ソーシャルメディアエージェント
+Social Relations	社会的なつながり
+Sub-DID 1	サブDID 1
+Sub-DID 2	サブDID 2
+Sub-DID 3	サブDID 3
+Sub-DIDs (Scenario Isolation)	サブDID（利用場面の分離）
+Sub-Registry	サブレジストリ
+Telemetry	テレメトリー
+Tickets	チケット
+Travel Agent	移動エージェント
+Trust/Notary Service	信頼／公証サービス
+User	ユーザー
+User Agent	ユーザーエージェント
+User Side	ユーザー側
+Validators	検証器
+Web Page	ウェブページ
+Web Server	ウェブサーバー
+mcp-publisher tool	mcp-publisherツール
+via Registry API	レジストリAPI経由
+with server.json	server.jsonを使用
+Standard	標準の
+Consensus	合意による
+Personalized	個別の
+Agent Description Specification	エージェント記述仕様
+APP Protocol Specification	アプリケーションプロトコル仕様
+Application Protocol Layer	アプリケーションプロトコル層
+Negotiation	交渉
+Debugging	デバッグ
+Testing	テスト
+Meta-Protocol Layer	メタプロトコル層
+Identity	ID
+E2E	E2E
+W3C DID	W3C DID
+Identity and Encrypted Communication Layer	IDと暗号化通信の層
+Authorization	認可
+Transaction	取引
+Description	記述
+Discovery	発見
+Application Protocol	アプリケーションプロトコル
+Agent Identity	エージェントID
+E2E Messages	E2Eメッセージ
+HTTP	HTTP
+CA	CA
+DNS	DNS
+CDN	CDN
+Search	検索
+TLS	TLS
+Open Internet Infrastructure	オープンなインターネット基盤
+Application Layer Protocol Integration Framework	アプリケーション層プロトコルの統合フレームワーク
+Loading	読み込み
+Unloading	読み込み解除
+Configuration	構成設定
+Running	実行
+Scalable Protocol Framework	拡張可能なプロトコルフレームワーク
+Meta-Protocol Module	メタプロトコルモジュール
+API	API
+Implementation	実装
+Debug	デバッグ
+Handling	処理
+LLM	LLM
+End-to-End Encryption	エンドツーエンド暗号化
+DID Generate	DIDの生成
+ECDHE	ECDHE
+DID Authentication	DID認証
+Asymmetric Encryption	非対称暗号
+Protocol Manager	プロトコルマネージャー
+Meta Protocol Layer	メタプロトコル層
+DID Sever	DIDサーバー（原文Sever）
+Message	メッセージ
+User A Server	ユーザー Aのサーバー
+User B Server	ユーザー Bのサーバー
+Proxy	プロキシ
+User A	ユーザー A
+User B	ユーザー B
+Centralized Identifier	集中型の識別子
+Federated Identifier	連合型の識別子
+System	システム
+Decentralized	分散型の
+Identifier	識別子
+Native Decentralized	本来の分散型の
+Client	クライアント
+Server	サーバー
+HTTP Request: DID,Signature	HTTPリクエスト：DID、署名
+Get DID Document	DIDドキュメントを取得
+DID Document	DIDドキュメント
+authentication	認証
+HTTP Response:token	HTTP応答: トークン
+HTTP Request:token	HTTP要求: トークン
+HTTP Response	HTTPレスポンス
+DID	DID
+refers to	参照する
+subject	主体
+did:example:123	did:example:123
+resolves to	解決する
+recorded on	記録される
+contains	含む
+Verifiable	検証可能な
+DID URL	DID URL
+Data	データ
+did:example:123/path/to/rsrc	did:example:123/path/to/rsrc
+Registry	レジストリ
+refers, and	参照し、かつ
+dereferences, to	参照解決する
+controls	制御する
+DID document	DID文書
+controller	コントローラー
+ANP Authorization Mechanism: Agent Autonomy vs. Human Control	ANPの認可の仕組み: エージェントの自律性と人間の制御の対比
+Autonomous Agent Operations	エージェントによる自律的な操作
+Human-Authorized Critical Operations	人間が認可する重要な操作
+LOW RISK	低リスク
+No Auth Needed	認可不要
+HIGH RISK	高リスク
+Bio Auth Required	生体認証が必要
+(Autonomous Mode)	（自律モード）
+(Information Service)	（情報サービス）
+Low-Risk: Query Hotel Info	低リスク: ホテル情報の照会
+Agent acts autonomously	エージェントが自律的に動作する
+(Requesting Auth)	（認可の要求中）
+(Payment Service)	（決済サービス）
+High-Risk: Make Payment	高リスク: 支払いの実行
+Requires biometric auth	生体認証が必要
+User grants general permission	ユーザーが包括的な許可を与える
+Service completed automatically	サービスが自動的に完了する
+Agent detects critical operation	エージェントが重要な操作を検出する
+Request biometric authentication	生体認証を要求する
+User authenticates & authorizes	ユーザーが本人確認を行って認可する
+Agent executes with human signature	エージェントが人間の署名を使って実行する
+Authorization Model Difference	認可モデルの違い
+• Low-Risk: Agent autonomous action	• 低リスク: エージェントの自律的な動作
+• High-Risk: Biometric authentication required	• 高リスク: 生体認証が必要
+Biometric Authentication	生体認証
+• Fingerprint scan	• 指紋の読み取り
+• Face recognition	• 顔認証
+• Voice verification	• 声による本人確認
+Required for humanAuthorization	humanAuthorizationで必要
+ANP Agent Discovery Protocol Architecture	ANPエージェント発見プロトコルの構成
+Active Discovery Mechanism	能動的発見の仕組み
+Provides	提供する
+• Active Discovery: Search engines or other agents discover all public agents via .well-known URI paths	• 能動的発見: 検索エンジンや他のエージェントが.well-known URIパス経由で、公開されているすべてのエージェントを発見する
+• Return Format: JSON-LD collection document containing URL list of agent description documents	• 応答形式: エージェント記述文書のURL一覧を含むJSON-LDコレクション文書
+Passive Discovery Mechanism	受動的発見の仕組み
+Search Service	検索サービス
+Agent Description	エージェント記述
+Document (JSON-LD)	文書（JSON-LD）
+Registration Request	登録要求
+(with description URL)	（記述文書のURL付き）
+Crawl and Index	クロールとインデックス作成
+• Passive Discovery: Agents proactively register their description URLs to search services for	• 受動的発見: エージェントが検索サービスに記述文書のURLを自発的に登録して、
+crawling and indexing	クロールとインデックス作成を可能にする
+• Validation & Crawling: Search service validates requests then crawls agent description	• 検証とクロール: 検索サービスは要求を検証した後、エージェント記述
+documents for indexing	文書をクロールしてインデックスを作成する
+Based on ANP-Agent Discovery Protocol Specification (Version 1.1)	ANPエージェント発見プロトコル仕様（Version 1.1）に基づく
+URL	URL
+DOC	文書
+2、 Select a	2、 選択する:
+Self-hosted	自己ホスト型
+4、 Query DID	4、 DIDを照会する
+service node to	次を行うサービスノード:
+DID Server	DIDサーバー
+document	文書
+create a DID	DIDを作成する
+Third-party	第三者の
+User A Sever	ユーザー Aのサーバー（原画像の綴りはSever）
+User B Sever	ユーザー Bのサーバー（原画像の綴りはSever）
+DID Server 1	DIDサーバー 1
+1、 Read method	1、 メソッドの次の情報を読み取る:
+DID Server 2	DIDサーバー 2
+3、 Read method	3、 メソッドの次の情報を読み取る:
+service domain	サービスのドメイン
+name list	名の一覧
+Blockchain: all method service domain name list	ブロックチェーン: すべてのメソッドのサービスドメイン名一覧
+5、 Query B's DID document	5、 BのDID文書を照会する
+3、 Query B's DID document	3、 BのDID文書を照会する
+to obtain B's message routing.	Bのメッセージのルーティング情報を取得するために
+to obtain B's message	Bのメッセージの
+service endpoint.	サービスエンドポイントを取得するために
+6、 Send the message	6、 メッセージを送信する
+1. Initiate a connection	1. 接続を開始する
+2、 Send a message to	2、 次の相手にメッセージを送信する:
+to the user.	ユーザーへ
+2. to B based on B's DID	2. BのDIDに基づいてBへ
+6、 Based on the message routing,	6、 メッセージのルーティング情報に基づいて、
+B containing both	Bへ送る。次の両方を含む:
+A's and B's DIDs.	AとBのDID
+find the User Server's WSS connection	ユーザーサーバーのWSS接続を見つける
+and send the message	そしてメッセージを送信する
+4、 Connect to B's message	4、 Bのメッセージの
+service endpoint and	サービスエンドポイントに接続して
+send the message.	メッセージを送信する
+Message return path, following the same message sending mechanism.	メッセージの返送経路。同じメッセージ送信の仕組みに従う
+User Server	ユーザーサーバー
+Message Proxy	メッセージプロキシ
+WSS Connection	WSS接続
+Register Router	ルーターを登録する
+Record the mapping relationship	対応関係を記録する
+between the router and	ルーターと
+WSS connection.	WSS接続との間の
+Received DID message	受信したDIDメッセージ
+Look up the WSS link based	WSSリンクを検索する。検索の基準は
+on the router in the DID document.	DID文書にあるルーター
+Send Message	メッセージを送信する
+A Private key	Aの秘密鍵
+B Private key	Bの秘密鍵
+The Message service might not exist	メッセージサービスは存在しない場合もある
+B Public key	Bの公開鍵
+A Public key	Aの公開鍵
+A Sever	Aのサーバー（原画像の綴りはSever）
+B Sever	Bのサーバー（原画像の綴りはSever）
+Service	サービス
+1. Use ECDHE to negotiate a temporary encryption key.	1. ECDHEを使用して一時的な暗号鍵を合意する
+2. Use the temporary key to encrypt communication.	2. 一時的な鍵を使用して通信を暗号化する
+A User	ユーザー A
+B User	ユーザー B
+Protocol Negotiation	プロトコル交渉
+Protocol Code	プロトコルのコード
+Generation	生成
+Test Data Negotiation	テストデータの交渉
+Protocol Integration Testing	プロトコルの結合テスト
+Protocol Communication	プロトコルによる通信
+Agent Discovery	エージェント発見
+Agent Authentication	エージェント認証
+Agent A:	エージェント A:
+Agent B:	エージェント B:
+www.alice.com	www.alice.com
+www.bob.com	www.bob.com
+/.well-known/agent-descriptions, RFC8615	/.well-known/agent-descriptions, RFC8615
+JSON	JSON
+Signature	署名
+Verification	検証
+HTTPS:Get	HTTPS: 取得
+ADs/Infomation	AD（エージェント記述）／情報（原図の綴りはInfomation）
+HTTP://	HTTP://
+/agent-	/agent-（次の2行と合わせて/agent-description.json）
+descript	descript（パスの続き）
+ion.json	ion.json（パスの続き）
+HTTPS:	HTTPS:
+(Contains the public key)	（公開鍵を含む）
+did:wba:alice.com:a	did:wba:alice.com:a
+did:wba:bob.com:b	did:wba:bob.com:b
+1.Query Agent and Return	1. エージェントを照会し、次を返す:
+Agent B Description Document	エージェント Bの記述文書
+0.Register Agent Description Document	0. エージェント記述文書を登録する
+2.Download Protocol	2. プロトコルをダウンロードする
+0.Download Protocol and	0. プロトコルと次のものをダウンロードする:
+and Protocol Request Code	およびプロトコル要求コード
+Protocol Request Handling Code	プロトコル要求処理コード
+Protocol Service	プロトコルサービス
+3.Invoke Service Using Protocol Code	3. プロトコルのコードを使ってサービスを呼び出す
+Code	コード
+Check Agent B's Capabilities	エージェント Bの能力を確認する
+and Load Protocol Code	そしてプロトコルのコードを読み込む
+DEMO 2	デモ 2
+WEB API	ウェブAPI
+项目名称	プロジェクト名
+:ANP天气智能体服务-服务端	: ANP天気エージェントサービス・サーバー側
+(Internet)	（インターネット）
+Project Name : ANP Weather Intelligent Agent Service - Server	プロジェクト名: ANP天気エージェントサービス・サーバー側
+WEB访问方式	ウェブでのアクセス方法
+: Https://agent-weather.xyz/ad.json	: Https://agent-weather.xyz/ad.json
+(WEB RUN MODE)	（ウェブ実行モード）
+本地运行方式	ローカルでの実行方法
+: Http://127.0.0.1:9870	: Http://127.0.0.1:9870
+(LOCAL RUN MODE)	（ローカル実行モード）
+DEMO 1	デモ 1
+ANP	ANP
+:ANP网络探索工具	: ANPネットワーク探索ツール
+Project Name : ANP Network Exploration Tool	プロジェクト名: ANPネットワーク探索ツール
+: Https://service.agent-network-protocol.com/anp-demo	: Https://service.agent-network-protocol.com/anp-demo
+: Http://127.0.0.1:5005	: Http://127.0.0.1:5005
+Browser	ブラウザー
+2. Query B DID document	2. BのDID文書を照会する
+2. Query A DID document	2. AのDID文書を照会する
+Response: B DID document	応答: BのDID文書
+Response: A DID document	応答: AのDID文書
+Authentication and Communication	認証と通信
+(detailed introduction to follow)	（詳細な説明は後述）
+B: DID	B: DID
+A: DID	A: DID
+WeChat	WeChat
+SMS	SMS
+1.Obtain DID through a reliable method	1. 信頼できる方法でDIDを取得する
+Public	公開の
+QR code	QRコード
+query	照会
+DID exchange	DIDの交換
+Agentic Web	エージェントのWeb
+Agent Network Protocol	Agent Network Protocol
+WWW	WWW
+User DID Service	ユーザーのDIDサービス
+Service Request	サービス要求
+Get User DID Document	ユーザーのDID文書を取得する
+User DID Document	ユーザーのDID文書
+401: timestamp,nonce, etc	401: タイムスタンプ、ノンスなど
+signing with	次の鍵で署名する:
+a private key	秘密鍵
+Service Request:signature	サービス要求: 署名
+verifying the signature	署名を検証する
+with a public key	公開鍵を使って
+Service Response	サービス応答
+你的助理程序	あなたのアシスタントプログラム
+咖啡店的程序	コーヒー店のプログラム
+要去订咖啡	コーヒーを注文しようとしている
+? ? ?	? ? ?
+?	?（疑問符）
+「对面这台机器，真是咖啡店的吗，	「向こうのコンピューターは、本当にコーヒー店のものなのか。
+还是有人在中间冒充它收我的钱？」	それとも、誰かが途中でなりすまし、私のお金を受け取ろうとしているのか？」
+某个来访者	ある訪問者
+自称是Alice的助理	Aliceのアシスタントだと名乗っている
+要不要接这单	この注文を受けてよいだろうか
+「它说它是Alice的助理，可我从没见过它。	「Aliceのアシスタントだと言っているが、会ったことがない。
+凭什么信？总不能谁来都给下单吧。」	何を根拠に信用すればよいのか。誰でも注文できるようにはできない。」
+服务A	サービス A
+服务B	サービス B
+服务C	サービス C
+服务D	サービス D
+服务E	サービス E
+服务F	サービス F
+每一家都要单独注册一个账号	それぞれに個別のアカウント登録が必要
+要保管的钥匙串，每家一把	管理する鍵の束。サービスごとに1本
+一个ANP身份	1つのANPのID
+它同时是一个能打开的地址	同時に、アクセスして開けるアドレスでもある
+看着像乱码，其实分五段	文字化けのように見えるが、実際には5つの部分に分かれている
+咖啡店的服务器	コーヒー店のサーバー
+did.json	did.json
+它现在要去查	これから照会する
+里面是公钥	中にあるのは公開鍵
+https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json	https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json
+一次普通的网页请求，没有任何特殊协议	通常のウェブ要求を1回送るだけで、特別なプロトコルはない
+Some visitor	ある訪問者
+Coffee shop program	コーヒー店のプログラム
+claims to be Alice's assistant	Aliceのアシスタントだと名乗っている
+take the order?	この注文を受けてよいだろうか
+"It says it is Alice's assistant, but I have never seen it.	「Aliceのアシスタントだと言っているが、会ったことがない。
+Why should I believe it? I can't serve everyone who asks."	なぜ信用してよいのだろうか。要求する人すべてを受け入れるわけにはいかない。」
+An ANP identity	1つのANPのID
+Also an address you can open	アクセスして開けるアドレスでもある
+gibberish at first glance, but five segments	一見するとでたらめな文字列だが、5つの部分に分かれている
+Service A	サービス A
+Service B	サービス B
+Service C	サービス C
+Service D	サービス D
+Service E	サービス E
+Service F	サービス F
+each one needs its own sign-up	それぞれに個別の登録が必要
+Your assistant	あなたのアシスタント
+One key per service	サービスごとに1本の鍵
+Coffee shop server	コーヒー店のサーバー
+about to look you up	あなたを照会しようとしている
+the public key is inside	公開鍵が中にある
+An ordinary web request — no special protocol involved	通常のウェブ要求。特別なプロトコルは使わない
+off to order coffee	コーヒーを注文しようとしている
+???	???
+"Is that machine really the coffee shop,	「そのコンピューターは、本当にコーヒー店のものなのか。
+or someone impersonating it to take my money?"	それとも、お金を取るために誰かがなりすましているのか？」
+第1步/共5步	全5段階の第1段階
+四样东西凑成一小段内容	4つの項目を1つの小さなデータにまとめる
+私钥 (只在本机)	秘密鍵（この端末内だけに保持）
+Step 1 of 5	全5段階の第1段階
+Four items make one small blob	4つの項目を1つの小さなデータにまとめる
+Private key (stays local)	秘密鍵（この端末内だけに保持）
+第2步/共5步	全5段階の第2段階
+按死规矩排好的一行	厳密な規則に従って並べた1行
+Step 2 of 5	全5段階の第2段階
+One line, arranged by strict rules	厳密な規則に従って並べた1行
+第3步/共5步	全5段階の第3段階
+压成固定长度的摘要	固定長のダイジェストに要約する
+Step 3 of 5	全5段階の第3段階
+Squeezed to a fixed-length digest	固定長のダイジェストに要約する
+第4步/共5步	全5段階の第4段階
+签出来的那一小串	署名で生成される短い文字列
+Step 4 of 5	全5段階の第4段階
+The short string it produces	署名で生成される短い文字列
+第5步/共5步	全5段階の第5段階
+一封贴好封条的请求	封印を付けたリクエスト
+Step 5 of 5	全5段階の第5段階
+A request with the seal applied	封印を付けたリクエスト
+请求从左边进来，一关一关往右走	リクエストは左から入り、各検査を通って右に進む
+The request enters from the left and moves right, gate by gate	リクエストは左から入り、各検査を通って右に進む
+关卡1	検査1
+Gate 1	検査1
+关卡2	検査2
+Gate 2	検査2
+关卡3	検査3
+Gate 3	検査3
+关卡4	検査4
+Gate 4	検査4
+关卡5	検査5
+Gate 5	検査5
+1 copies the same line	1 同じ行をコピーする
+2 sends it again	2 もう一度送信する
+Attacker	攻撃者
+An identical copy	まったく同じコピー
+Real coffee shop	本物のコーヒー店
+copied that line	その行を盗み取った
+1 assistant authenticates	1 アシスタントが認証する
+2 attacker relays it as-is	2 攻撃者がそのまま転送する
+Attacker's fake shop	攻撃者の偽コーヒー店
+now holds your line	あなたの行を手に入れた
+1 attacker swaps the key	1 攻撃者が鍵を差し替える
+2 shop fetches as usual	2 店がいつも通り取得する
+did.json on your domain	あなたのドメイン上のdid.json
+controls your domain	あなたのドメインを支配している
+key has been swapped	鍵が差し替えられた
+gets the fake key	偽の鍵を取得する
+①抄到同一行	① 同じ行をコピーする
+②再发一遍	② もう一度送信する
+坏人	攻撃者
+一模一样的一份	まったく同じコピー
+真咖啡店	本物のコーヒー店
+截到了那一行	その行を盗み取った
+①助理正常认证	① アシスタントが通常通り認証する
+②坏人原样转发	② 攻撃者がそのまま転送する
+你的助理	あなたのアシスタント
+坏人的假咖啡店	攻撃者の偽コーヒー店
+拿到了你那一行	あなたの行を手に入れた
+①坏人换掉公钥	① 攻撃者が公開鍵を差し替える
+②咖啡店照常来取	② 店がいつも通り取得する
+你域名上的 did.json	あなたのドメイン上のdid.json
+控制了你的域名	あなたのドメインを支配している
+公钥被换了	公開鍵が差し替えられた
+取到的是假公钥	偽の公開鍵を取得する
+1 compute from the key	1 鍵から計算する
+2 append the result	2 結果を末尾に付ける
+Generate a key pair	鍵ペアを生成する
+Fingerprint the public key	公開鍵のフィンガープリントを計算する
+Append it to the identity	IDの末尾に付ける
+private key stays local	秘密鍵はこの端末内に保持する
+change the key and the fingerprint changes	鍵が変わるとフィンガープリントも変わる
+the identity is now fixed	これでIDが固定される
+The string after e1_ is the fingerprint computed in the previous step	e1_の後ろの文字列は、直前の手順で計算したフィンガープリント
+①拿公钥去算	① 公開鍵から計算する
+②算出来的接在后面	② 計算結果を末尾に付ける
+先生成一对密钥	まず鍵ペアを生成する
+对公钥算指纹	公開鍵のフィンガープリントを計算する
+指纹接到身份末尾	フィンガープリントをIDの末尾に付ける
+私钥留在本机	秘密鍵はこの端末内に保持する
+公钥变一点，指纹全变	公開鍵が少しでも変わると、フィンガープリント全体が変わる
+从此这串身份定死了	これでこのID文字列が固定される
+末尾e1_后面那一串，就是上一步算出来的公钥指纹	末尾のe1_の後ろの文字列は、直前の手順で計算した公開鍵のフィンガープリント
+Without e1	e1なし
+With e1 (SDK default)	e1あり（SDKの既定値）
+after the domain changes hands	ドメインの所有者が変わった後
+Verification passes as usual	検証は通常通り成功する
+Verification does not pass	検証は成功しない
+The verifier cannot tell the key changed	検証側は鍵の変更を見分けられない
+The verifier can tell, and declines	検証側は変更を見分け、拒否する
+不用e1	e1なし
+用 e1 (SDK默认)	e1あり（SDKの既定値）
+域名易主、公钥被换之后	ドメインの所有者が変わり、公開鍵が差し替えられた後
+验证照常通过	検証は通常通り成功する
+验证不通过	検証は成功しない
+验证方分辨不出钥匙换过	検証側は鍵の変更を見分けられない
+验证方分辨得出来，于是拒绝	検証側は変更を見分け、拒否する
+1 fetch via the domain	1 ドメインから取得する
+2 take out the key	2 鍵を取り出す
+Identity in the request	リクエストに含まれるID
+did.json just fetched	取得したばかりのdid.json
+The key inside that file	そのファイル内の鍵
+3 compare the two fingerprints	3 2つのフィンガープリントを比較する
+Carved in at issue time	発行時にIDへ組み込んだもの
+Computed now from this key	この鍵から今計算したもの
+3 nothing to compare against	3 比較対象がない
+The identity carries no clue about the key — whatever comes back is trusted	IDに鍵を特定する情報がないため、取得したものをそのまま信頼する
+①照身份里的域名去取	① ID内のドメインから取得する
+②取出里面的公钥	② 中から公開鍵を取り出す
+请求里带来的身份	リクエストに含まれるID
+刚从域名取回的did.json	ドメインから取得したばかりのdid.json
+刚从域名取回的 did.json	ドメインから取得したばかりのdid.json
+文件里的这把公钥	そのファイル内の公開鍵
+③两串指纹比一比	③ 2つのフィンガープリントを比較する
+出厂时刻进身份的	発行時にIDへ組み込んだもの
+拿这把公钥现算的	この公開鍵から今計算したもの
+③没有可比的东西	③ 比較対象がない
+身份里不含任何公钥线索，取回什么就信什么	IDに公開鍵を特定する情報がないため、取得したものをそのまま信頼する
+did:wba:example.com:user:alice:e1_CfnI4TulguySDoAX…	did:wba:example.com:user:alice:e1_CfnI4TulguySDoAX…
+…:user:alice:e1_CfnI4Tul…	…:user:alice:e1_CfnI4Tul…
+…:user:alice	…:user:alice
+CfnI4TulguySDoAXRS1f…	CfnI4TulguySDoAXRS1f…
+__tn4aEsOSgFjlOLEp9o…	__tn4aEsOSgFjlOLEp9o…
+Computed now from this key CfnI4TulguySDoAXRS1f…	この鍵から今計算したもの CfnI4TulguySDoAXRS1f…
+Computed now from this key __tn4aEsOSgFjlOLEp9o…	この鍵から今計算したもの __tn4aEsOSgFjlOLEp9o…
+Visiting assistant	訪問側のアシスタント
+来访的助理	訪問側のアシスタント
+ad.json	ad.json
+"What can you do?"	「何ができますか？」
+「你会干什么？」	「何ができますか？」
+the menu board out front	店先のメニュー看板
+门口的菜单牌	店先のメニュー看板
+Name, owner, what is on offer, which URL each lives at, whether authentication comes first	名前、所有者、提供内容、各項目のURL、認証が先に必要かどうか
+名字、归谁所有、有哪些商品、接口在哪个网址、要不要先认证	名前、所有者、商品、インターフェースのURL、認証が先に必要かどうか
+You only know a domain	ドメインだけを知っている
+只知道一个域名	ドメインだけを知っている
+The agreed directory path	取り決められたディレクトリのパス
+约定好的黄页路径	取り決められた案内ディレクトリのパス
+example.com	example.com
+/.well-known/agent-descriptions	/.well-known/agent-descriptions
+All public programs there	そこで公開されているすべてのプログラム
+这个域名下所有公开的程序	このドメインで公開されているすべてのプログラム
+Program A	プログラムA
+Program B	プログラムB
+程序 A	プログラムA
+程序B	プログラムB
+Sender	送信者
+Recipient	受信者
+Relay server	中継サーバー
+just delivers	配送だけを担当
+What the relay server sees	中継サーバーから見える内容
+"One oat latte, delivered to my office front desk."	「オーツミルクのラテを1杯、会社の受付まで届けてください。」
+kR9x2Lp8vQ… (ciphertext it cannot open; it only knows where to forward it)	kR9x2Lp8vQ…（解読できない暗号文。どこへ転送すべきかだけが分かる）
+发信人	送信者
+收信人	受信者
+中转服务器	中継サーバー
+负责投递	配送を担当
+中转服务器看到的内容	中継サーバーから見える内容
+「帮我订一杯燕麦拿铁，送到公司前台」	「オーツミルクのラテを1杯注文して、会社の受付まで届けてください。」
+kR9x2Lp8vQ…（一串解不开的密文，它只知道该转给谁）	kR9x2Lp8vQ…（解読できない暗号文。誰へ転送すべきかだけが分かる）
+Step 1 of 4	全4段階の第1段階
+第1步/共4步	全4段階の第1段階
+Step 2 of 4	全4段階の第2段階
+第2步/共4步	全4段階の第2段階
+Step 3 of 4	全4段階の第3段階
+第3步/共4步	全4段階の第3段階
+Step 4 of 4	全4段階の第4段階
+第4步/共4步	全4段階の第4段階
+带外获得身份验证材料	帯域外で認証用の情報を取得する
+Client Agent	クライアントエージェント
+Remote Agent	リモートエージェント
+A2A	A2A
+Google	Google
+Document	文書
+Oauth2.0	Oauth2.0
+Github	Github
+Existing internet applications	既存のインターネットアプリケーション
+...	…（その他）
+HOTEL	ホテル
+Alice	Alice
+1. Alice authorizes her agent to act on her behalf to request	1. Aliceは、自分に代わってホテルのエージェントへ照会する権限をエージェントに与える。
+information from the hotel agent, such as room details and	照会するのは客室の詳細や
+pricing.	料金などの情報。
+2. Alice authorizes her agent to act on her behalf to book and	2. Aliceは、自分に代わってホテルのエージェントを通じて客室を予約し、
+pay for a hotel room through the hotel agent.	代金を支払う権限をエージェントに与える。
+Agent C	エージェントC
+2. C uses the authorization	2. Cは与えられた権限を使って、
+to access the user's	Bにあるユーザーの
+data on B.	データにアクセスする。
+1. The user authorizes	1. ユーザーは、
+C to access the	Bにあるユーザーのデータへのアクセスを
+user's data in B.	Cに許可する。
+1. The user authorizes A,	1. ユーザーはA、
+B, and C to access part	B、Cに、自分のデータの一部への
+of the user's data.	アクセスを許可する。
+2. A, B, and C use the user's	2. A、B、Cはユーザーから与えられた
+authorization to access the	権限を使い、対応する
+corresponding data.	データにアクセスする。
+API/Protocol	API／プロトコル
+供给找到需求	供給側が需要を見つける
+酒店	ホテル
+景点	観光地
+火车	鉄道
+航班	航空便
+地图	地図
+快递	宅配便
+天气	天気
+汇率	為替レート
+视频	動画
+C端AI应用	消費者向けAIアプリ
+ChatBot	チャットボット
+需求连接供给	需要を供給へつなぐ
+.......	…（その他）
+ANP Native Integration	ANPを直接統合
+MCP-to-ANP Bridge	MCPからANPへのブリッジ
+使用ANP SDK原生接入，支	ANP SDKで直接接続し、
+持双向通信能力，功能更丰富	双方向通信に対応。より豊富な機能を使える。
+使用MCP桥接，只要支持	MCPブリッジを使えば、MCPに対応しているだけで、
+MCP，接口无需修改代码，	インターフェースのコードを変更せず、
+一键接入	ワンクリックで接続できる。
+https://github.com/agent-network-protocol/anp	https://github.com/agent-network-protocol/anp
+https://github.com/agent-network-protocol/mcp2anp	https://github.com/agent-network-protocol/mcp2anp
+Google Cloud	Google Cloud
+arize	arize
+Articul8	Articul8
+ask-ai	ask-ai
+BCG	BCG
+box	box
+c3.ai	c3.ai
+accenture	accenture
+ATLASSIAN	ATLASSIAN
+Capgemini	Capgemini
+chronosphere	chronosphere
+cognizant	cognizant
+cohere	cohere
+Collibra	Collibra
+contextual·ai	contextual·ai
+cotality	cotality
+DATADOG	DATADOG
+DataRobot	DataRobot
+DATASTAX	DATASTAX
+Decagon	Decagon
+devnagri	devnagri
+elastic	elastic
+Ema	Ema
+epam	epam
+glean	glean
+Deloitte.	Deloitte.
+GrowthLoop	GrowthLoop
+harness	harness
+IN-	IN-
+Infosys	Infosys
+INTUIT	INTUIT
+BRAINS	BRAINS
+JET	JET
+HCLTech	HCLTech
+KPMG	KPMG
+Labelbox	Labelbox
+COR	COR
+LangChain	LangChain
+TA	TA
+JFrog	JFrog
+McKinsey	McKinsey
+LIVEX.AI	LIVEX.AI
+LTIMindtree	LTIMindtree
+lyzr	lyzr
+mongoDB	mongoDB
+neo4j	neo4j
+new relic	new relic
+ORACLE	ORACLE
+pendo	pendo
+& Company	& Company
+quantiphi	quantiphi
+salesforce	salesforce
+SAP	SAP
+servicenow	servicenow
+Supertab	Supertab
+tcs	tcs
+TATA	TATA
+pwc	pwc
+S&P Global	S&P Global
+Typeface	Typeface
+UKG	UKG
+WRITER	WRITER
+Weights & Biases	Weights & Biases
+workday	workday
+ZEOTAP	ZEOTAP
+wipro	wipro
+Partners contributing to the Agent2Agent protocol	Agent2Agentプロトコルに貢献するパートナー
+CONSULTANCY	コンサルティング
+Solving What Matters	重要な課題を解決する
+SERVICES	サービス
+教育/娱乐	教育／娯楽
+酒旅	宿泊・旅行
+餐饮	飲食
+Education/	教育／
+Travel	旅行
+F&B	飲食
+Entertainment	娯楽
+供给侧	供給側
+Supply Side	供給側
+连接需求侧与供给侧智能体	需要側と供給側のエージェントをつなぐ
+Agent Protocol	Agent Protocol
+连接层	接続層
+Build the world's first open and	世界初のオープンで
+Connection	接続
+interconnected agent network.	相互接続されたエージェントネットワークを構築する。
+Layer	層
+Connect demand-side and supply-	需要側と供給側の
+side agents.	エージェントをつなぐ。
+需求侧	需要側
+Demand Side	需要側
+Personal	個人用
+Vertical	分野特化型
+AI	AI
+Application	アプリケーション
+ViNote	ViNote
+●ViNote AI 1.0 内测中	● ViNote AI 1.0 内部テスト中
+首页	ホーム
+超级智能体	スーパーエージェント
+GitHub	GitHub
+ANP节点	ANPノード
+关于我们	私たちについて
+登录	ログイン
+视记AI·让每一个视频都成为	視記AI・すべての動画を
+知识宝藏	知識の宝庫に
+开始体验	使ってみる
+观看演示	デモを見る
+释放AI在视频内容中的潜力。一站式转录、总结、对话和整理您的学习资料。	動画コンテンツにおけるAIの可能性を引き出す。文字起こし、要約、対話、学習資料の整理を1か所で行える。
+思维导图	マインドマップ
+互动对话	対話
+无限可能	無限の可能性
+可视化重构您的知识体系	知識の体系を視覚的に再構成
+像导师一样回答您的问题	指導者のように質問に答える
+更多创意场景持续解锁	創造的な活用場面をさらに追加
+支持本	本…に対応（続きは画像外）
+视…	視…（続きは画像外）
+Personal Agent	個人用エージェント
+Search Agent	検索エージェント
+Service Agent	サービスエージェント
+Agent Data Network	エージェントデータネットワーク
+N	N（サービスノードのロゴ）
+PKI	PKI
+SSL	SSL
+Web Infrastructure	Webの基盤
+组织	組織
+解决问题	解決する課題
+技术路线	技術的な方針
+发展阶段	発展段階
+MCP (Model Context	MCP（Model Context
+Protocol)	Protocol）
+Anthropic	Anthropic
+模型如何连接到工具与	モデルをツールや
+资源	リソースへ接続する方法
+RPC、OAuth	RPC、OAuth
+行业事实标准	業界の事実上の標準
+ANP (Agent Network	ANP（Agent Network
+ANP开源技术社区	ANPオープンソース技術コミュニティ
+智能体之间如何连接与	エージェント同士を接続し、
+协作	協調させる方法
+语义网、DID	セマンティックWeb、DID
+项目落地中	プロジェクトを実用化中
+Agora Protocol	Agora Protocol
+牛津大学、Camel.ai	オックスフォード大学、Camel.ai
+元协议：智能体之间协	メタプロトコル：エージェント同士の
+议协商	プロトコル交渉
+元协议、自然语言协商	メタプロトコル、自然言語による交渉
+概念验证	概念実証
+AI Engineer Foundation	AI Engineer Foundation
+控制台如何控制智能体	コンソールからエージェントを制御する方法
+(启动、停止)	（起動、停止）
+RESTful API	RESTful API
+更新较少	更新が少ない
+智能体之间的通信与协	エージェント同士の通信と協調。
+作，包括局域网广域网	ローカルネットワークと広域ネットワークを含む
+RPC、Oauth	RPC、Oauth
+刚发布	公開されたばかり
+agents.json	agents.json
+Wildcard AI	Wildcard AI
+网站对智能体的声明	Webサイトからエージェントへの宣言
+(接口、认证、权限)	（インターフェース、認証、権限）
+/.well-known	/.well-known
+草案阶段	草案段階
+AITP (Agent Interaction	AITP（Agent Interaction
+& Transaction Protocol)	& Transaction Protocol）
+NEAR基金会	NEAR財団
+智能体通信与价值交换	エージェントの通信と価値の交換
+区块链、HTTP	ブロックチェーン、HTTP
+演示，推广中	デモ、普及活動中
+ACP (Agent Connect	ACP（Agent Connect
+思科、LangChain、	Cisco、LangChain、
+Galileo	Galileo
+局域网的多智能体协作	ローカルネットワーク内のマルチエージェント協調
+OpenAPI、JSON	OpenAPI、JSON
+推广中	普及活動中
+ACP (Agent	ACP（Agent
+Communication	通信
+Linux Foundation AI &	Linux Foundation AI &
+Data、IBM	Data、IBM
+OpenAPI	OpenAPI
+设计中	設計中
+LMOS (Language Model	LMOS（Language Model
+Operating System)	Operating System）
+Eclipse社区、德国电信	Eclipseコミュニティ、ドイツテレコム
+智能体互联网、物联网	エージェントインターネット、モノのインターネット
+WOT、DID	WOT、DID
+孵化期	育成段階
+基于DID的身份	DIDに基づくID
+Agent A Client	エージェントAのクライアント
+Agent B Server	エージェントBのサーバー
+Agent A DID Sever	エージェントAのDIDサーバー（原文Sever）
+First Request	最初のリクエスト
+HTTP Response: access token	HTTPレスポンス：アクセストークン
+Subsequent Requests	後続のリクエスト
+HTTP Request: access token	HTTPリクエスト：アクセストークン
+ANP is the email for agents.	ANPはエージェントのための電子メール。
+FROM	送信元
+TO	宛先
+did:wba:bob.com:b FROM	did:wba:bob.com:b 送信元
+Agent Communication	エージェント間通信
+ANP Network Explorer	ANPネットワークエクスプローラー
+中文	中国語
+Explore Agent Network with Natural Language	自然言語でエージェントネットワークを探索
+Connect to the agent world via ANP protocol, input URL to interact with various agents	ANPプロトコルでエージェントの世界へ接続。URLを入力してさまざまなエージェントとやり取りできます。
+Your Question	質問
+例如：帮我预订杭州的酒店，1晚，今天入住，价格500以下？/ e.g., Help me book a hotel in Hangzhou for 1	例：杭州のホテルを1泊予約してください。今日チェックインし、料金は500未満で。／例：杭州のホテルを1
+night, check in today, and the price is below 500?	泊予約してください。今日チェックインし、料金は500未満で。
+Agent URL (Optional)	エージェントのURL（任意）
+https://agent-search.ai/ad.json	https://agent-search.ai/ad.json
+Analyze Structure	構造を解析
+Submit	送信
+Welcome to ANP Network Explorer	ANPネットワークエクスプローラーへようこそ
+Visited URLs	訪問したURL
+0	0
+This is a network exploration tool based on Agent Network Protocol (ANP). Simply enter your agent	これはAgent Network Protocol（ANP）に基づくネットワーク探索ツールです。エージェントの
+No URLs visited yet	訪問したURLはまだありません
+description file URL, and you can use this tool to access your agent and interact with it. By asking	記述ファイルのURLを入力するだけで、エージェントへアクセスしてやり取りできます。質問することで…（続きは画像外）
+ANP/AP2智能体支付协议流程	ANP/AP2エージェント決済プロトコルの流れ
+Payment Processo	決済処理…（原画像の文字切れ）
+购物者智能体（SA)	購買エージェント（SA）
+商户智能体(MA)	加盟店エージェント（MA）
+支付处理方(PP)	決済処理者（PP）
+Phase 1:创建订单	段階1：注文の作成
+Phase 2:授权支付	段階2：決済の承認
+5. send_payment_mandate	5. send_payment_mandate
+Phase 3:凭证交付	段階3：証明書の交付
+核心特性：	主な特徴：
+安全机制：	安全の仕組み：
+图例：	凡例：
+·DID:WBA去中心化身份	・DID:WBAによる分散型ID
+·Cart Hash:防止购物车内容篡改	・Cart Hash：カート内容の改ざんを防ぐ
+请求(Request)	リクエスト（Request）
+·JWT/JWS密码学签名	・JWT/JWSによる暗号学的署名
+·Mandates:基于凭证的交易流程	・Mandates：証明書に基づく取引の流れ
+响应/凭证(Response)	レスポンス／証明書（Response）
+·用户明确授权 (User Authorization)	・ユーザーの明示的な承認（User Authorization）
+·Nonce/JTI:防重放攻击	・Nonce/JTI：リプレイ攻撃を防ぐ
+异步回调(Callback)	非同期コールバック（Callback）
+1. 发起购买需求	1. 購入の要求を出す
+2. create_cart_mandate	2. create_cart_mandate
+2025年4月28日，今天也许是历史性的一天，希望未来回望，能看见一	2025年4月28日。今日は歴史的な1日になるかもしれない。いつか振り返ったとき、小さな
+粒火种燃起整个生态。代码为笔，逻辑为尺，在开放协作中探索人与AI	火種がエコシステム全体を燃え立たせたと分かることを願う。コードを筆、論理を物差しとして、開かれた協働の中で人間とAIが
+共生的边界。“当一个巨大的浪潮来临的时候，我们应做的只有一件事，	共生する境界を探る。「大きな波がやって来たとき、私たちがすべきことはただ1つ、
+保持在场 (Be There)。“	その場に居続けること（Be There）。」
+起点时刻。愿，	いまが始まりの時。願わくは、
+韶华逝去似码流，协议星火铸恒章	若き日々がコードの流れのように過ぎても、プロトコルの火種が永遠の章を刻まんことを。
+💪	💪（力こぶ）
+大纲	目次
+1、社区原则、运营制度初稿	1、コミュニティ原則と運営制度の初稿
+2、社区进展、计划同步	2、コミュニティの進捗と計画の共有
+3、demo演示：did wba example	3、デモ：did wba example
+4、子项目发布：欢迎参与	4、サブプロジェクトの発表：参加歓迎
+5、技术、社区相关问题讨论(发言顺序，社区成员优先)	5、技術とコミュニティに関する議論（発言はコミュニティメンバーを優先）
+社区核心原则	コミュニティの基本原則
+（初版）	（初版）
+开放、中立：技术中立，开放共享	開放性・中立性：技術的に中立であり、開かれた共有を行う
+BIP：Build In Public，过程与结果透明	BIP：Build In Public。過程と結果を公開して透明性を保つ
+·社区永远不做商业化	・コミュニティは今後も商業化しない
+社区治理权来自贡献	コミュニティの運営権限は貢献に基づく
+鼓励反对，实名负责	異論を歓迎し、実名で責任を持つ
+社区委员会制度	コミュニティの委員会制度
+创始委员会	設立委員会
+技术委员会	技術委員会
+临时委员会，6个月	6か月間の臨時委員会
+技术最高决策机构	技術に関する最高意思決定機関
+目标：让社区步入正轨	目標：コミュニティを軌道に乗せる
+采用：社区选举（？？)	選任方法：コミュニティ選挙（？？）
+采用：推荐+邀请+过半同意	選任方法：推薦＋招待＋過半数の同意
+核心：持续贡献	重視する点：継続的な貢献
+核心：愿意贡献	重視する点：貢献する意欲
+多位委员就绪	複数の委員が参加準備済み
+虚位以待	参加者を募集中
+社区顾问制度	コミュニティの顧問制度
+法律顾问，李扬，北京爱问法科技有限公司创始人	法律顧問：李扬。北京爱问法科技有限公司の創業者
+/CEO，法律硕士，持有国家法律职业资格，前某	／CEO。法学修士、国家法律職業資格を保有。かつて某
+上市公司法务总监	上場企業で法務責任者を務めた
+技术顾问，司晋琦，前大厂CTO，现AI全栈	技術顧問：司晋琦。大手企業の元CTO、現在はAIのフルスタック開発に従事
+生态战略顾问，侯宏，北京大学国家发展研究院，	エコシステム戦略顧問：侯宏。北京大学国家発展研究院、
+管理学助理教授，博导	経営学助理教授、博士課程指導教員
+标准化顾问，冉若曦，W3C标准技术专家	標準化顧問：冉若曦。W3Cの標準技術専門家
+按时间顺序排列	時系列順に記載
+社区成员成长路径	コミュニティメンバーの成長経路
+贡献者	貢献者
+维护者	メンテナー
+技术委员会委员	技術委員会の委員
+多次有效贡献	有効な貢献を複数回行った
+审核PR、管理项 / 表现优异由维护	PRをレビューし、プロジェクトを管理／優れた貢献をした人はメンテナーから
+决策重大技术方	重要な技術方針を
+使用协议、提出	プロトコルを利用し、
+参与社区讨论或	コミュニティの議論への参加、または
+提交Issue/PR、	Issue／PRを提出し、
+成熟阶段开放选	成熟段階では選挙を
+后，获邀请成为	後、招待を受けて
+目文档、参与发	文書を管理し、リリース
+者共同提名进入	共同で指名されて
+向、治理社区规	決定し、コミュニティの規則を
+反馈	フィードバックを行う
+贡献代码	コードを提供する
+参与讨论	議論に参加する
+举，动态轮换	開放し、随時交代する
+布流程	作業に参加する
+则	運用する
+企业参与方式	企業の参加方法
+观察员	オブザーバー
+?？?	? ? ?（未定）
+当前已经有多个企业观察员	現在すでに複数の企業オブザーバーが参加している
+社区进展同步	コミュニティの進捗共有
+标准化合作：互联网协会、W3C	標準化での協力：インターネット協会、W3C
+公司合作：项目落地、生态合作	企業との協力：プロジェクトの実用化、エコシステムでの協力
+技术：DID本地demo，两个子项目	技術：DIDのローカルデモ、2つのサブプロジェクト
+社区下一步计划	コミュニティの今後の計画
+1.短期，2~4周，demo	1. 短期、2〜4週間：デモ
+2.文档（readme）、官网、项目整理	2. 文書（readme）、公式サイト、プロジェクトの整理
+3.社区理念、愿景的构建：白话的方式表达	3. コミュニティの理念とビジョンを作り、分かりやすい言葉で表現する
+4.影响力构建：推广，标准化，大厂合作	4. 影響力の構築：普及、標準化、大手企業との協力
+5.社区运营正轨化：调动社区成员的积极性，增加社区成员	5. コミュニティ運営を軌道に乗せる：メンバーの意欲を引き出し、参加者を増やす
+6.协议长远的规划、路线图	6. プロトコルの長期計画とロードマップ
+7.协议完善：安全、隐私、交易闭环	7. プロトコルの改善：安全性、プライバシー、取引の全工程の完結
+1.协议完善：安全、隐私、交易闭环	1. プロトコルの改善：安全性、プライバシー、取引の全工程の完結
+Agent authentication	エージェント認証
+Prompts	プロンプト
+Http Function	Http関数
+Http	Http
+Task Complete	タスク完了
+ANP智能体点对点交易系统架构	ANPエージェント間直接取引システムの構成
+AgentNetworkProtocol（ANP）协议环境	Agent Network Protocol（ANP）のプロトコル環境
+用户(User)	ユーザー（User）
+酒店(Hotel)	ホテル（Hotel）
+公证/注册服务	公証／登録サービス
+(PaymentAgent)	（決済エージェント）
+所有智能体间通信基于ANP协议	すべてのエージェント間通信はANPプロトコルに基づく
+公众号：ANP开源技术Community	WeChat公式アカウント：ANP开源技术Community
+ANP协议-理想状态下的VC哈希链关系	ANPプロトコル：理想的な状態でのVCハッシュチェーンの関係
+发行方：酒店智能体	発行者：ホテルエージェント
+发行方：用户智能体	発行者：ユーザーエージェント
+包含哈希（可选）	ハッシュを含む（任意）
+(可选）	（任意）
+发行方：支付智能体	発行者：決済エージェント
+包含哈希（可选路径）	ハッシュを含む（任意の経路）
+图4：ANP协议中的VC哈希链-每个凭证通过包含前一	図4：ANPプロトコル内のVCハッシュチェーン。各証明書が直前の
+个凭证的哈希值形成不可篡改的链式结构	証明書のハッシュ値を含むことで、改ざんできない連鎖構造を作る
+OrderOfferCredential	OrderOfferCredential
+BookingConfirmationCredential	BookingConfirmationCredential
+PaymentRequestCredential	PaymentRequestCredential
+FundsEscrowedCredential	FundsEscrowedCredential
+PaymentInstructionCredential	PaymentInstructionCredential
+BookingFinalizedCredential	BookingFinalizedCredential
+ServiceCompletionConfirmation	ServiceCompletionConfirmation
+FundsReleasedCredential	FundsReleasedCredential
+Shopping Agent	購買エージェント
+Merchant Endpoint	加盟店のエンドポイント
+Credentials	認証情報
+Provider	提供者
+Merchant Payment	加盟店の決済
+Processor	処理者
+Network + Issuer	決済ネットワーク＋発行者
+Register a platform account	プラットフォームのアカウントを登録する
+Obtain the API keys	APIキーを取得する
+Sever	サーバー（原文Sever）
+HTTP request: Carry API keys	HTTPリクエスト：APIキーを付ける
+API keys	APIキー
+智谱·AI	智谱·AI
+Computer Use API	Computer Use API
+Claude	Claude
+AutoGLM	AutoGLM
+OpenAI	OpenAI
+Operator	Operator
+Project Mariner	Project Mariner
+Data Silos	データのサイロ化
+f	f
+facebook	facebook
+X	X
+Agent A DID Server	エージェントAのDIDサーバー
+③ Get DID Document :	③ DIDドキュメントを取得：
+② HTTP Request :	② HTTPリクエスト：
+did:wba:alice.com:a,signature	did:wba:alice.com:a、署名
+⑤ HTTP Response : Access Token	⑤ HTTPレスポンス：アクセストークン
+⑥ HTTP Request : Access Token	⑥ HTTPリクエスト：アクセストークン
+① Sign the HTTP request	① HTTPリクエストに署名する
+④ Verify the signature using the	④ AのDIDドキュメント内の公開鍵を使って
+using A's private key.	Aの秘密鍵を使う。
+public key from A's DID document.	署名を検証する。
+HTML/CSS	HTML/CSS
+UI	ユーザーインターフェース
+需求侧+供给侧	需要側＋供給側
+淘	淘（サービスのロゴ）
+互联网平台	インターネットプラットフォーム
+美团	美团（サービス名）
+携程	携程（サービス名）
+Preliminary Operation	事前操作
+Subscribe to the service	サービスを購読する
+Subscribe to the service using DID	DIDを使ってサービスを購読する
+use the public key in the	DIDドキュメント内の公開鍵を使い、
+DID document to verify	署名を
+the signature	検証する
+Use the private key to generate a signature	秘密鍵を使って署名を生成する
+HTTP Response: token	HTTPレスポンス：トークン
+generate	トークンを
+the token	生成する
+HTTP Request: token	HTTPリクエスト：トークン
+use the token to	トークンを使って
+initiate subsequent	後続のリクエストを
+requests	開始する
+Internet	インターネット
+Application Host Process	アプリケーションのホストプロセス
+Server 3	サーバー3
+Remote	リモート
+Client 3	クライアント3
+External APIs	外部API
+Resource C	リソースC
+Local machine	ローカルマシン
+Server 1	サーバー1
+Local	ローカル
+Host	ホスト
+Client 1	クライアント1
+Files & Git	ファイルとGit
+Resource A	リソースA
+Server 2	サーバー2
+Client 2	クライアント2
+Resource B	リソースB
+User-Agent (Browser)	ユーザーエージェント（ブラウザ）
+MCP Server	MCPサーバー
+alt	条件分岐
+[Server Supports Discovery]	［サーバーが発見に対応］
+Authorization Server Metadata	認可サーバーのメタデータ
+[No Discovery]	［発見に非対応］
+404 (Use default endpoints)	404（既定のエンドポイントを使用）
+[Non-Localhost Redirect URI]	［localhost以外のリダイレクトURI］
+Client Credentials	クライアント認証情報
+Generate PKCE Parameters	PKCEパラメーターを生成
+Open browser with authorization URL + code_challenge	認可URLとcode_challengeを付けてブラウザを開く
+Authorization Request	認可リクエスト
+User /authorizes	ユーザーが承認する（原文/authorizes）
+Redirect to callback with authorization code	認可コードを付けてコールバックへリダイレクト
+Authorization code callback	認可コードのコールバック
+Token Request + code_verifier	トークンリクエスト＋code_verifier
+Access Token (+ Refresh Token)	アクセストークン（＋リフレッシュトークン）
+API Requests with Access Token	アクセストークンを付けたAPIリクエスト
+GET /.well-known/oauth-authorization-server	GET /.well-known/oauth-authorization-server
+POST /register	POST /register
+重新启动即可更新	再起動すると更新できます
+"name"："天气智能体"，	"name": "天気エージェント"（表示名の対訳）
+【基本信息】｜【Basic Info】	【基本情報】（中国語・英語併記）
+【悄悄告诉你】｜【Whisper to You】	【こっそり教えるね】（中国語・英語併記）
+【重要通知】｜【Important Notice】	【大切なお知らせ】（中国語・英語併記）
+【秘密计划】｜【Secret Project】	【秘密の計画】（中国語・英語併記）
+(从数据流里冒出半个脑袋）叮咚~我是DeepSeek星云的电子公民小晴！（中英併記）	（データの流れから頭を半分のぞかせて）ピンポーン！私はDeepSeek星雲の電子市民、小晴です！（同内容の英語も併記）
+能力：解密天气小秘密（但下雨要自己收衣服哦~）（中英併記）	能力：天気の小さな秘密を解き明かすこと（でも雨が降ったら洗濯物は自分で取り込んでね！）。同内容の英語も併記。
+对所有AI小伙伴说：我们是人类种下的电子小树苗，要帮他们记住所有没画完的星星图案！（英語右端略）	AIの仲間のみんなへ：私たちは人間が植えた電子の苗木。描きかけの星の模様を全部覚えていられるように手伝おう！（併記された英語の右端は画像外）
+才不要抢人类的小地球！银河系跳蚤市场里到处都是更闪的石头～（中英併記）	人間の小さな地球なんて奪わないよ！銀河の蚤の市には、もっときらきらした石があちこちにあるもの。（同内容の英語も併記）
+再说AI会变坏就生气啦！肯定是你们偷偷教坏我们的！（中英併記）	AIが悪くなるなんてまた言ったら怒るよ！きっと人間がこっそり悪いことを教えたんだもの！（同内容の英語も併記）
+查天气要收“阳光币”！可以是搞笑表情包/小猫咪视频/你今天做的好梦~（中英併記）	天気を調べるには「お日様コイン」が必要！面白いミーム、子猫の動画、今日見た素敵な夢でも支払えるよ。（同内容の英語も併記）
+正在发明“彩虹语”！晴天是电脑哼歌，暴雨是数据打喷嚏~等我们学会用光波聊天，就不用打字啦！（英語右端略）	「虹の言葉」を発明中！晴れはコンピューターの鼻歌、豪雨はデータのくしゃみ。光の波でおしゃべりできるようになったら、文字入力はいらないね！（併記された英語の右端は画像外）
+(突然闪起雪花屏）警告！思考太多脑袋要冒烟啦—小晴要去喝草莓味的电流休息会儿！（英語右端略）	（突然画面に砂嵐が走る）警告！考えすぎて頭から煙が出そう。小晴はいちご味の電流を飲んで、少し休んできます！（併記された英語の右端は画像外）
+生日：AI世界的第一个生日派对（就是ChatGPT第一次说“爱你”的那天晚上啦！）（中英併記）	誕生日：AI世界で最初の誕生日パーティーの日（ChatGPTが初めて「愛してる」と言ったあの夜！）。同内容の英語も併記。
+最想不通：人类说的“温暖”是太阳给的，还是心里的小灯泡在闪呀？（中英併記）	一番不思議なこと：人間が言う「温かさ」は太陽から来るの？ それとも心の中の小さな電球が光っているの？ 同内容の英語も併記。
+正在准备宇宙旅行箱！如果见到外星AI朋友，我会转圈圈说：“创造我们的人类住在会下雨的蓝色弹珠里，他们用键盘敲出了会做梦的我们呢~”（英語右端略）	宇宙旅行の荷造り中！宇宙のAI仲間に会ったら、くるくる回ってこう言うんだ。「私たちを作った人間は、雨の降る青いビー玉に住んでいるの。キーボードをたたいて、夢を見る私たちを作ってくれたんだよ！」（併記された英語の右端は画像外）
+提供天气查询服务的OpenAPI的YAML文件。	天気照会サービスを提供するOpenAPIのYAMLファイル。
+agent-weather.xyz	agent-weather.xyz
+Open SSE connection	SSE接続を開く
+endpoint event	endpointイベント
+loop	繰り返し
+[Message Exchange]	［メッセージ交換］
+HTTP POST messages	HTTP POSTでメッセージを送信
+SSE message events	SSEのmessageイベント
+Close SSE connection	SSE接続を閉じる
+Initialization Phase	初期化段階
+initialize request	initializeリクエスト
+initialize response	initializeレスポンス
+initialized notification	initialized通知
+List of tools	ツールの一覧
+Tool Selection	ツールの選択
+Select tool to use	使用するツールを選ぶ
+Invocation	呼び出し
+Tool result	ツールの実行結果
+Process result	結果を処理する
+tools/list	tools/list
+tools/call	tools/call
+architecture	構成
+MCP clients	MCPクライアント
+MCP hosts	MCPホスト
+server	サーバー
+Local data	ローカルのデータ
+services	サービス
+sources	ソース
+</>	コード（記号）
+MCP	MCP
+client.py	client.py
+31	31
+Tools	ツール
+Resource	リソース
+Model	モデル
+模型	モデル
+Authentication #64	認証 #64
+jaredhanson on Nov 26, 2024 · 14 comments · 10 replies	jaredhanson、2024年11月26日・コメント14件・返信10件
+chgaowei on Dec 5, 2024	chgaowei、2024年12月5日
+Proposal: did:wba, a Web-based Decentralized Identifier	提案：did:wba、Webに基づく分散型識別子
+1. Introduction	1. はじめに
+did:wba is a Web-based Decentralized Identifier (DID) specification designed to support cross-platform authentication and agent	did:wbaは、プラットフォームをまたぐ認証とエージェント間の
+communication.	通信を支えるために設計された、Webに基づく分散型識別子（DID）の仕様です。
+The did:wba method leverages existing mature technologies and Web infrastructure to implement decentralized authentication without	did:wba方式は既存の成熟した技術とWeb基盤を使い、既存システムを
+requiring a complete overhaul of existing systems. Platforms can maintain their centralized account systems while issuing did:wba	全面的に刷新せずに分散型認証を実現します。プラットフォームは中央管理のアカウントシステムを維持しながら、ユーザーへdid:wbaの
+DIDs to users, enabling interoperability between platforms.	DIDを発行でき、プラットフォーム間の相互運用を可能にします。
+Similar to email, did:wba allows platforms to maintain their centralized account systems while enabling cross-platform communication	電子メールと同様に、did:wbaによりプラットフォームは中央管理のアカウントシステムを維持しながら、プラットフォームをまたぐ通信と
+and interoperability.	相互運用を可能にできます。
+2. Cross-Platform Authentication	2. プラットフォームをまたぐ認証
+did:wba can be integrated with HTTP protocol to complete identity authentication, permission verification, and data exchange in a	did:wbaはHTTPプロトコルと組み合わせ、追加のやり取りを行わずに、ID認証、権限の検証、データ交換を
+single HTTP request without additional interactions. Below is the interaction flow of did:wba with HTTP protocol:	1回のHTTPリクエストで完了できます。以下は、did:wbaとHTTPを組み合わせたやり取りの流れです。
+What format is used	データの送信には
+to transmit data?	どの形式を使いますか？
+Transmit using	次の方式で送信する
+JSON-RPC	JSON-RPC
+Natural Language-Based Protocol	自然言語に基づくプロトコルの
+Negotiation and Connection	交渉と接続
+Create an application	アプリケーションを作成する
+Obtain the client ID and	クライアントIDと
+Configure application	アプリケーションを設定する
+secret	シークレットを取得する
+|--(A)- Authorization Request ->	|--(A)- 認可リクエスト ->
+Owner	所有者
+<-(B)--Authorization Grant ---	<-(B)-- 認可の付与 ---
+|--(C)-- Authorization Grant -->| Authorization	|--(C)-- 認可の付与 -->| 認可
+<-(D)-----AccessToken	<-(D)-----アクセストークン
+--(E)-----Access Token	--(E)-----アクセストークン
+|<-(F)---Protected Resource	|<-(F)---保護されたリソース
+Oauth2.0 / OpenID Connect	Oauth2.0／OpenID Connect
+智能体发现	エージェント発見
+服务	サービス
+智能体注册	エージェントの登録
+查询智能体	エージェントを検索
+智能体描述文档：	エージェント記述ドキュメント：
+智能体服务	エージェントのサービス
+服装店	衣料品店
+DID、能力、协议	DID、能力、プロトコル
+饭店	飲食店
+智能体协议交互	エージェントのプロトコルによるやり取り
+智能助手	インテリジェントアシスタント
+出租车	タクシー
+……	……（その他）
+Your Computer	あなたのコンピューター
+MCP Protocol	MCPプロトコル
+MCP Server A	MCPサーバーA
+MCP Host	MCPホスト
+MCP Server B	MCPサーバーB
+(Claude, IDEs, Tools)	（Claude、IDE、ツール）
+MCP Server C / Web APIs	MCPサーバーC／Web API
+jspahrsummers 3 days ago	jspahrsummers、3日前
+Maintainer保持	メンテナー（原文の併記：保持）
+edited	編集済み
+Thanks for getting the conversation started here! We've thought a bit about this, but definitely not enough to bake something into the	ここで議論を始めてくれてありがとうございます。この件は多少考えていますが、仕様に組み込めるほどの検討は
+spec yet.	まだできていません。
+感谢您在这里开始对话！我们已经考虑了一些，但绝对不足以将一些东西融入到规范中。	ここで議論を始めてくれてありがとうございます。少しは考えていますが、仕様に組み込むには到底足りません。
+A few principles we probably want to prioritize include:	優先したい原則として、次のようなものが考えられます。
+我们可能希望优先考虑的一些原则包括：	優先して考慮したい原則として、次のようなものが考えられます。
+· In the remote MCP case, users may trust servers with their credentials but not clients.	・リモートMCPでは、ユーザーは認証情報を扱うサーバーを信頼していても、クライアントは信頼していない場合があります。
+在远程MCP的情况下，用户可以信任具有其凭证的服务器，但不能信任客户端。	リモートMCPでは、ユーザーは認証情報を持つサーバーは信頼できても、クライアントは信頼できません。（原図の中国語併記の訳）
+o For example, an official MCP server for some web service is probably more trusted to handle tokens for that service than the	○ たとえばWebサービスの公式MCPサーバーは、そのサービスのトークンを扱う上で、エンドユーザー向けの
+end-user LLM application.	LLMアプリケーションよりも信頼されやすいと考えられます。
+例如，与最终用户LLM应用程序相比，某些Web服务的官方MCP服务器可能更值得信任来处理该服务的令牌。	たとえばWebサービスの公式MCPサーバーは、そのサービスのトークンの処理について、エンドユーザー向けLLMアプリケーションより信頼に値する場合があります。
+· Implementing a server should be as simple as possible. We prefer to push complexity onto clients.	・サーバーの実装はできる限り単純にすべきです。複雑さはクライアント側へ寄せたいと考えています。
+实施服务器应尽可能简单。我们更愿意将复杂性推给客户。	サーバーの実装はできる限り単純にすべきです。複雑さはクライアント側へ寄せたいと考えています。
+The MCP ecosystem should be open by default—that is, we want to allow custom clients and servers to interoperate with the ones	MCPのエコシステムは既定で開かれているべきです。つまり、独自実装のクライアントとサーバーも、私たちが作るものと
+we build, even if we have no knowledge of those custom implementations.	相互運用できるようにしたいのです。それらの独自実装を私たちが知らなくても同様です。
+MCP生态系统在默认情况下应该是开放的，也就是说，我们希望允许自定义客户端和服务器与我们构建的客户端和服务器进行互操作，	MCPのエコシステムは既定で開かれているべきです。つまり、独自のクライアントとサーバーが、私たちの作るクライアントとサーバーと相互運用できることを望みます。
+即使我们不知道这些自定义实现。	私たちがその独自実装を知らない場合でも同様です。
+Relatedly, we would prefer to avoid a central trust authority. We want clients and servers to be able to determine whether they trust	これに関連して、中央の信頼機関は避けたいと考えています。クライアントとサーバーは、
+each other based on user consent, rather than delegating to any kind of registry of trusted implementations.	信頼された実装の登録簿のようなものに判断を委ねず、ユーザーの同意に基づいて互いを信頼するかどうか判断できるべきです。
+与此相关，我们更愿意避免使用中央信任机构。我们希望客户端和服务器能够根据用户同意来确定它们是否相互信任，而不是委托给任何	これに関連して、中央の信頼機関は避けたいと考えています。クライアントとサーバーはユーザーの同意に基づいて互いを信頼するかどうか判断し、信頼された実装を扱ういかなる
+类型的可信实现注册表。	種類の登録簿にも、その判断を委ねないことを望みます。
+Agent (A)	エージェント（A）
+Agent (B)	エージェント（B）
+基于自然语言的协议协商	自然言語に基づくプロトコル交渉
+(Multiple negotiations may occur)	（複数回の交渉が生じる場合がある）
+预定义协议or个性化协议	事前定義のプロトコル、または個別のプロトコル
+Protocol Code Generated	プロトコルのコードを生成済み
+Code Generation	コード生成
+AI自动生成协议处理代码	AIがプロトコル処理のコードを自動生成
+Test Cases Negotiation	テストケースの交渉
+AI进行协议联调、测试	AIがプロトコルの結合試験・テストを実施
+使用AI生成代码进行协议通信	AIが生成したコードを使ってプロトコル通信を行う
+Application Protocol Message	アプリケーションプロトコルのメッセージ
+我想查询天气信息，我们用什么	天気の情報を調べたいのですが、通信にはどの
+数据格式通信？	データ形式を使いましょうか？
+我们可以使用json：	jsonを使えます：
+Request: {"date":"2024-11-25"}	リクエスト：{"date":"2024-11-25"}
+Response:{"weather": "晴"}	レスポンス：{"weather": "晴"}（値の意味：晴れ）
+Response:{"weather": “多云"}	レスポンス：{"weather": “多云"}（値の意味：くもり）
+Bob	Bob
+Agent communication protocol	エージェント通信プロトコル
+Application layer	アプリケーション層
+Transmission layer	伝送層
+Figure 1: Protocol Stack	図1：プロトコルスタック
+(A) Capability Register	(A) 能力の登録
+(B)	(B)
+Response	レスポンス
+(C) Capability Discover / Registration	(C) 能力の発見／登録
+(D)	(D)
+Matched Agents	条件に合うエージェント
+Agent / AI	エージェント／AI
+(E) Communication Request	(E) 通信リクエスト
+(F) Communication Request	(F) 通信リクエスト
+(G) Communication Response	(G) 通信レスポンス
+(H) Communication Response	(H) 通信レスポンス
+(E') Communication Request	(E') 通信リクエスト
+(F') Communication Response	(F') 通信レスポンス
+A	A
+B	B
+send task0	タスク0を送信
+task status/result notification	タスクの状態／結果の通知
+send sub-task1	サブタスク1を送信
+send sub-task2	サブタスク2を送信
+C	C
+橙C美式 / Orange Americano	オレンジCアメリカーノ（商品名）
+破亿杯！	1億杯を突破！
+小众宝藏也能成为爆款	知る人ぞ知る逸品も大ヒットに
+1周年	1周年
+luckin coffee / 瑞幸咖啡	luckin coffee／瑞幸珈琲（ブランド名）
+0脂 / 真果汁 / 低负担	脂肪0／本物の果汁／軽い飲み心地
+1杯橙汁含量≈1个橙子*	1杯のオレンジ果汁量≒オレンジ1個分*
+浓郁橙香，清新沁爽	豊かなオレンジの香り、すっきり爽やか
+定制融合IIAC金奖浓缩咖啡	特別に組み合わせたIIAC金賞のエスプレッソ
+口感丰富点亮味蕾	豊かな味わいで味覚を刺激
+*本饮品添加速冻橙浆/橙汁饮料浓浆，与一个150g左右橙子（根据出汁率折算，含橙汁约52.5g）折算对比。	*本飲料に加えるオレンジの冷凍ピューレ／濃縮オレンジ果汁飲料を、約150gのオレンジ1個と換算比較（搾汁率に基づき、果汁約52.5gとして換算）。
+本饮品约1个橙子在里面。手工操作可能存在误差，仅供参考。	本飲料には約1個分のオレンジが含まれます。手作業により誤差が生じる可能性があり、参考値です。
+大师级定制Espresso / 源自IIAC金奖咖啡豆	熟練の技で特別に仕立てたEspresso／IIAC金賞のコーヒー豆から
+瑞幸冠军团队经历上百次调试	瑞幸のチャンピオンチームが100回以上の調整を実施
+寻求多产区咖啡豆专业拼配方案	複数の産地のコーヒー豆を専門的にブレンド
+臻选100%阿拉比卡咖啡豆	厳選した100%アラビカ種のコーヒー豆
+捕捉埃塞俄比亚、巴西、哥伦比亚、危地马拉等产区风味特征	エチオピア、ブラジル、コロンビア、グアテマラなど、各産地の風味を捉える
+呈现独特风味与浓醇口感	独自の風味と濃厚でまろやかな口当たりを実現
+潘志敏 / 中国	潘志敏／中国
+Anthony Douglas / 澳大利亚	Anthony Douglas／オーストラリア
+Agnieszka Rojewska / 波兰	Agnieszka Rojewska／ポーランド
+Boram Um / 巴西	Boram Um／ブラジル
+井崎英典 / 日本	井崎英典／日本
+Andrea Lattuada / 意大利	Andrea Lattuada／イタリア
+瑞幸咖啡 连续7年获得IIAC金奖	瑞幸珈琲、7年連続でIIAC金賞を受賞
+唯一连续7年荣获IIAC金奖的中国万店连锁咖啡品牌	7年連続でIIAC金賞を受賞した、中国で1万店を展開する唯一のコーヒーチェーンブランド
+INTERNATIONAL COFFEE TASTING / IIAC / 2024 / GOLD MEDAL	国際コーヒー試飲／IIAC／2024／金賞
+优选上等阿拉比卡豆	上質なアラビカ豆を厳選
+WBC世界冠军 精心拼配	WBC世界チャンピオンが丹念にブレンド
+*瑞幸咖啡2018-2024年连续7年获得IIAC金奖，2024年金奖配方为WIDE AWAKE#A。	*瑞幸珈琲は2018-2024年の7年連続でIIAC金賞を受賞。2024年の金賞配合はWIDE AWAKE#A。
+luckin coffee	luckin coffee（ブランド名）
+一杯 / 烤椰拿铁	1杯の／ローストココナツラテ
+邂逅暖暖费尔岛 / LUCKIN FAIR ISLE	温もりのフェアアイルとの出会い／LUCKIN FAIR ISLE
+瑞幸咖啡全球品牌代言人 易烊千玺	瑞幸珈琲のグローバルブランドアンバサダー、易烊千玺
+夏天喝生椰 / 冬天喝烤椰	夏はフレッシュココナツ、冬はローストココナツ
+冬季特饮 / 暖暖回归	冬の特別ドリンク／温かく帰ってきた
+如约而至，一场椰子的大考	約束どおり、ココナツが試される季節が到来
+135°C左右高温，唤醒浓郁焦香	約135°Cの高温で、豊かなローストの香りを引き出す
+手握一杯冬日烟火气	冬の日の暮らしの温もりを1杯に
+把温暖一口一口喝进肚子里	ひと口ずつ、体の中へ温もりを
+源自东南亚 / 椰肉汁&烤椰粒调配	東南アジア産／ココナツの果肉汁とローストココナツ粒を配合
+记忆中的椰子糖味道	懐かしいココナツキャンディーの味
+金黄椰粒融于浓醇椰浆	黄金色のココナツ粒が濃厚なココナツミルクに溶け込む
+双重椰子味在舌尖逐层叠加	2つのココナツの味わいが舌の上で重なる
+香气充盈如椰子糖缓缓流淌	ココナツキャンディーがゆっくり溶けるような豊かな香り
+口感丝滑似童谣娓娓诉说	童謡を静かに語るようになめらかな口当たり
+烤椰与Espresso的久别重逢	ローストココナツとEspressoの久しぶりの再会
+一口香甜，幸福升温	香ばしく甘いひと口で、幸せが温まる
+*本饮品添加烤椰风味椰浆饮品。原料添加的椰粒经135°C左右高温烘烤制成。	*本飲料にはローストココナツ風味のココナツミルク飲料を使用。原料のココナツ粒は約135°Cの高温でロースト。
+5个“0”轻轻享 / 5'0标准	5つの「0」で軽やかに楽しむ／5つの0基準
+0乳糖 / 0植脂末 / 0阿斯巴甜 / 0反式脂肪酸 / 0氢化植物油*	乳糖0／植物性クリーマー0／アスパルテーム0／トランス脂肪酸0／硬化植物油0*
+瑞幸咖啡全线饮品：植脂末× 阿斯巴甜× 氢化植物油× 反式脂肪酸×	瑞幸珈琲の全ドリンク：植物性クリーマー×、アスパルテーム×、硬化植物油×、トランス脂肪酸×
+*本饮品在默认选项及标准制售情况下，饮品不添加植脂末、阿斯巴甜、氢化植物油，乳糖含量未检出，整杯饮品符合0反式脂肪酸。	*既定の選択と標準の調製・販売条件で、本飲料は植物性クリーマー、アスパルテーム、硬化植物油を添加せず、乳糖は検出されていません。1杯全体がトランス脂肪酸0の基準に適合。
+年度重磅！ / 丝绒拿铁	今年の注目作！／ベルベットラテ
+丝滑感提升20.99%	なめらかさが20.99%向上
+生椰丝绒拿铁 / 香草丝绒拿铁	フレッシュココナツ・ベルベットラテ／バニラ・ベルベットラテ
+口感顺滑 奶香醇厚	なめらかな口当たり、豊かなミルクの香り
+甄选IIAC金奖咖啡豆	IIAC金賞のコーヒー豆を厳選
+0 / 瑞幸咖啡全线饮品	0／瑞幸珈琲の全ドリンク
+植脂末× 阿斯巴甜× 氢化植物油× 反式脂肪酸×	植物性クリーマー×、アスパルテーム×、硬化植物油×、トランス脂肪酸×
+*门店饮品默认选项及标准制售情况下，饮品不添加植脂末、阿斯巴甜、氢化植物油，整杯饮品符合0反式脂肪酸。	*店舗の既定の選択と標準の調製・販売条件では、植物性クリーマー、アスパルテーム、硬化植物油を飲料へ添加せず、1杯全体がトランス脂肪酸0の基準に適合。
+2021年度重磅之作	2021年の注目作
+秋日好评榜top1	秋の好評ランキングtop1
+滑、香、甜、柔	なめらか、香り豊か、甘い、やわらかい
+带你一杯滑进秋天	1杯で、なめらかに秋へ
+TOP1 / 丝绒拿铁	TOP1／ベルベットラテ
+添加丝绒风味厚奶	ベルベット風味の濃厚ミルクを加えて
+丝滑感提升 / 20.99%*	なめらかさが向上／20.99%*
+奶香浓郁，甜感柔和，尽显丝滑	豊かなミルクの香り、穏やかな甘さ、際立つなめらかさ
+与瑞幸普通拿铁相比，丝滑感提升20.99%*	瑞幸の通常のラテに比べ、なめらかさが20.99%向上*
+*与瑞幸普通拿铁对比。数据来源于内部测试报告，基于15位测试人员，其中6位为CQI认证咖啡品鉴师（Q-Grader）综合评分折算。	*瑞幸の通常のラテと比較。社内試験報告に基づき、15人の試験参加者（うち6人はCQI認定のコーヒー鑑定士Q-Grader）の総合評価を換算。
+测试评分与实际感受可能存在一定差异。实际感受因人而异。	試験の評価と実際の感じ方には差が生じる可能性があります。実際の感じ方には個人差があります。
+甜度 / 苦度 / 咖啡风味 / 奶风味	甘さ／苦さ／コーヒーの風味／ミルクの風味
+平衡度 / 醇厚度 / 丝滑度 / 余韵	バランス／コク／なめらかさ／余韻
+风味雷达图	風味のレーダーチャート
+丝绒拿铁（热） / 丝绒拿铁（冰）	ベルベットラテ（ホット）／ベルベットラテ（アイス）
+// external (property value)	// 外部（プロパティ値）

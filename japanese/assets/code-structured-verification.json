@@ -1,0 +1,157 @@
+{
+  "original_candidate_units": 315,
+  "additional_proposed_units": 201,
+  "total_reviewed_units": 516,
+  "reviewed_source_files": 29,
+  "ids_unique": true,
+  "placeholder_expressions_preserved": true,
+  "original_files_unchanged": true,
+  "errors": [],
+  "source_evidence": [
+    {
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "sha256": "cf951b3c398c484682a1bca1e8714026495e548cf64e9d7ea061069d7b191e61",
+      "original_unchanged": true
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+      "original_unchanged": true
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "sha256": "2a1d086825da23bf05d7301c52cc4ae72ef199e0dc87adcedd592436d117a8eb",
+      "original_unchanged": true
+    },
+    {
+      "source": ".github/workflows/update-contributors.yml",
+      "sha256": "a2cccd04f45fd4cde40582f2a0662aeb505cd5f43d4113d02cdc8afeb2fc75bb",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/hotel/examples/ad.json",
+      "sha256": "01c98a3baf8a7c45912b2da5c25f95d2e4d7ed383593fa28834e0c9dc4536711",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "sha256": "deca04224c50d8069353516b375dc9d934ee6f7c528cf777164a3534705de198",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "sha256": "f84a8c52d23d2486da15755500a716e78b068965e909f38ab49db75a7684ace9",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "sha256": "1550bcf414d0daca89e685837892fdedc1e70b0eddf41b7f8abf902644065a47",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "sha256": "bdfc64289818eef8cee0a9ee7194da95276bc6198763332c5f5342c8fb9408a5",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/lkcoffe/ad.json",
+      "sha256": "9924270c2e4a81e82f964cf2abb418c15b3d20beadf340c6677178eaf17cccac",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "sha256": "4fda1c22cb77784d1d6645ce3541daa2053a799f53988fbf698e8430bbf751e7",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "sha256": "180cd8ca3cb05532abeece68ca16d71e34f00ac4ef4739849cec3af1320fd779",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "sha256": "c278b496765c13dee7cb55fb03d58f76ff3602710a5aed7d8e9f7529b6dd69bf",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "sha256": "fa1c675303f1cdd50117b1099bd16d8829c9c6e38f6390e549f2e90d3c0838e1",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "sha256": "985be1ceb32d8d80bc7b64790cd83205724408bdfda4a72bedd7ed3b2bed03a1",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "sha256": "cb2bba7980b3aa976ac194f65bb484e04a1ecccd941ef1f6bb5d1d5ff83a8ef6",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/did-authentication-vnext/identities.json",
+      "sha256": "1d71031cb128808f0623733fd44fe36e7052e788e162f6cd4b405bfce11ffac3",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/did-authentication-vnext/manifest.json",
+      "sha256": "4bacbd61598861c8c6477233c2e95bf81469a275dc9eee04d5121249686c1cc4",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "sha256": "abcbc6a2cb8885d3b1f8ef53e7a33c5ec27c37738bb3c56a8f876568113577bf",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/01-did-document-two-devices.json",
+      "sha256": "6229cc61b0ee242e895db3c74d42fecf7acf4d54078e07684cb2f411ee34d949",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/02-direct-two-device-deliveries.json",
+      "sha256": "1197e373696aacafa968bb64114a561557aad84351372ac3946b235977fec819",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/03-device-prekey-bundle.json",
+      "sha256": "25fe117fd567e099662ccfb1c827195c2807ea84f8a6f8bbaa81d6fe743e045d",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/04-mls-two-device-leaves.json",
+      "sha256": "4255d570ba19262ba9c91880b87fa1a3f55b4278ece7936c81da71f6b17eeaef",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "sha256": "ed134758eaeebd772a0ecc0dd8025173305d0511cc1d29691064e06c51226291",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/06-device-state-changed-error.json",
+      "sha256": "7ed4a69edd96b780d9581126e13e45460811a9ec279a4c55687a7367d48d06ce",
+      "original_unchanged": true
+    },
+    {
+      "source": "examples/message-vnext/07-did-transition-retry.json",
+      "sha256": "b24b17f1aa0483f0eb0fb43c9050ca1a0ac2bf601e0065a606308bce0e7b790b",
+      "original_unchanged": true
+    },
+    {
+      "source": "scripts/add_copyright.py",
+      "sha256": "e1ba2e5b5817085ca3e58bdf7a8fdb25d8caa9a300f94dfc0b28d3a0028ba5c6",
+      "original_unchanged": true
+    },
+    {
+      "source": "scripts/rename_images.py",
+      "sha256": "8a7b74c6eb0b63b1e597513d5b8dde75f8755288cce348cca2c78b0d6608006e",
+      "original_unchanged": true
+    },
+    {
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "sha256": "d2c721d0a467bbfb0a73d815e1a4511d4e42d7c13b74050c3a1d38ce8694bce2",
+      "original_unchanged": true
+    }
+  ]
+}

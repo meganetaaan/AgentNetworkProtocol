@@ -1,0 +1,238 @@
+{
+  "source": "blogs/images/anp-first-meet/02.png",
+  "sha256": "89ac1e9169f28258a21e3afe7fb887f0b517299ac73da3b6c2834b89ce2d6941",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "社区核心原则",
+      "confidence": 0.9954613049825033,
+      "box": [
+        [
+          32.975807189941406,
+          42.481483459472656
+        ],
+        [
+          603.1824951171875,
+          42.481483459472656
+        ],
+        [
+          603.1824951171875,
+          124.70370483398438
+        ],
+        [
+          32.975807189941406,
+          124.70370483398438
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "コミュニティの基本原則",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "（初版）",
+      "confidence": 0.9978675544261932,
+      "box": [
+        [
+          603.1824951171875,
+          39.74074172973633
+        ],
+        [
+          913.7046508789062,
+          39.74074172973633
+        ],
+        [
+          913.7046508789062,
+          128.8148193359375
+        ],
+        [
+          603.1824951171875,
+          128.8148193359375
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "（初版）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9891396562258402,
+      "box": [
+        [
+          2562.4951171875,
+          31.518518447875977
+        ],
+        [
+          2717.756103515625,
+          28.77777862548828
+        ],
+        [
+          2719.130126953125,
+          86.33333587646484
+        ],
+        [
+          2563.868896484375,
+          89.0740737915039
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "开放、中立：技术中立，开放共享",
+      "confidence": 0.9994359175364177,
+      "box": [
+        [
+          435.5554504394531,
+          380.9629821777344
+        ],
+        [
+          1472.91943359375,
+          378.22222900390625
+        ],
+        [
+          1472.91943359375,
+          441.25927734375
+        ],
+        [
+          435.5554504394531,
+          444.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "開放性・中立性：技術的に中立であり、開かれた共有を行う",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "BIP：BuildInPublic，过程与结果透明",
+      "confidence": 0.9872013306617737,
+      "box": [
+        [
+          463.0352783203125,
+          542.6666870117188
+        ],
+        [
+          1599.32666015625,
+          548.1481323242188
+        ],
+        [
+          1599.32666015625,
+          607.0740966796875
+        ],
+        [
+          463.0352783203125,
+          601.5925903320312
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "BIP：Build In Public。過程と結果を公開して透明性を保つ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "BIP",
+        "BuildInPublic"
+      ],
+      "transcribed_source": "BIP：Build In Public，过程与结果透明"
+    },
+    {
+      "source": "·社区永远不做商业化",
+      "confidence": 0.9532409250736237,
+      "box": [
+        [
+          434.18145751953125,
+          712.5925903320312
+        ],
+        [
+          1070.3397216796875,
+          712.5925903320312
+        ],
+        [
+          1070.3397216796875,
+          775.629638671875
+        ],
+        [
+          434.18145751953125,
+          775.629638671875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "・コミュニティは今後も商業化しない",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "社区治理权来自贡献",
+      "confidence": 0.9966253704494901,
+      "box": [
+        [
+          469.9052429199219,
+          879.7777709960938
+        ],
+        [
+          1068.9656982421875,
+          879.7777709960938
+        ],
+        [
+          1068.9656982421875,
+          938.7037353515625
+        ],
+        [
+          469.9052429199219,
+          938.7037353515625
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "コミュニティの運営権限は貢献に基づく",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "鼓励反对，实名负责",
+      "confidence": 0.999011304643419,
+      "box": [
+        [
+          469.9052429199219,
+          1045.5926513671875
+        ],
+        [
+          1068.9656982421875,
+          1045.5926513671875
+        ],
+        [
+          1068.9656982421875,
+          1104.5185546875
+        ],
+        [
+          469.9052429199219,
+          1104.5185546875
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "異論を歓迎し、実名で責任を持つ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.172776200051885,
+    0.015539884567260742,
+    1.1341524124145508
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "BIP：BuildInPublic，过程与结果透明": "BIP：Build In Public，过程与结果透明"
+    },
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。",
+    "source_sha256": "89ac1e9169f28258a21e3afe7fb887f0b517299ac73da3b6c2834b89ce2d6941"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "source": "blogs/images/user-agent-internet.png",
+  "sha256": "7ce61fcb5d91667daf4ac72a33e569aefad63001d7ac45b3a027912e564e70e7",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "上-",
+      "confidence": 0.5713627338409424,
+      "box": [
+        [
+          38.0,
+          207.0
+        ],
+        [
+          194.0,
+          207.0
+        ],
+        [
+          194.0,
+          321.0
+        ],
+        [
+          38.0,
+          321.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTML/CSS",
+      "confidence": 0.9953712075948715,
+      "box": [
+        [
+          436.0,
+          218.0
+        ],
+        [
+          563.0,
+          218.0
+        ],
+        [
+          563.0,
+          245.0
+        ],
+        [
+          436.0,
+          245.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "HTML/CSS",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTML",
+        "/CSS"
+      ]
+    },
+    {
+      "source": "API/Protocol",
+      "confidence": 0.9657254119714102,
+      "box": [
+        [
+          744.0,
+          218.0
+        ],
+        [
+          899.0,
+          218.0
+        ],
+        [
+          899.0,
+          247.0
+        ],
+        [
+          744.0,
+          247.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "API／プロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API",
+        "/Protocol"
+      ]
+    },
+    {
+      "source": "WWW",
+      "confidence": 0.9192559123039246,
+      "box": [
+        [
+          942.0,
+          221.0
+        ],
+        [
+          969.0,
+          221.0
+        ],
+        [
+          969.0,
+          232.0
+        ],
+        [
+          942.0,
+          232.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "WWW",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WWW"
+      ]
+    },
+    {
+      "source": "UI",
+      "confidence": 0.9748258888721466,
+      "box": [
+        [
+          322.0,
+          244.0
+        ],
+        [
+          361.0,
+          244.0
+        ],
+        [
+          361.0,
+          277.0
+        ],
+        [
+          322.0,
+          277.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ユーザーインターフェース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UI"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.999101459980011,
+      "box": [
+        [
+          617.0,
+          244.0
+        ],
+        [
+          710.0,
+          246.0
+        ],
+        [
+          709.0,
+          282.0
+        ],
+        [
+          616.0,
+          280.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8014911999925971,
+    0.00861501693725586,
+    0.1967906951904297
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "false_positive_labels": [
+      "上-"
+    ],
+    "source_note": "人物とその右の横線をOCRが『上-』と誤検出した。地球内の他の小マークは図形。",
+    "source_sha256": "7ce61fcb5d91667daf4ac72a33e569aefad63001d7ac45b3a027912e564e70e7"
+  }
+}

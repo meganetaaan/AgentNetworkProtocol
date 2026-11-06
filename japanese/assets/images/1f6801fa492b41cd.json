@@ -1,0 +1,220 @@
+{
+  "source": "images/anp-active-discovery-mechanism.svg",
+  "sha256": "1f6801fa492b41cdb933a214a2963b5e615b6cc3e5f034b26f5d7b111f978059",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP 主动发现机制 (ANP Active Discovery Mechanism)",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "ANPの能動的発見の仕組み（ANP Active Discovery Mechanism）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "搜索引擎/智能体",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "215",
+      "label_id": "L002",
+      "japanese": "検索エンジン／エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Search Engine/Agent",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "235",
+      "label_id": "L003",
+      "japanese": "検索エンジン／エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体服务器",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "215",
+      "label_id": "L004",
+      "japanese": "エージェントサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Server",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "235",
+      "label_id": "L005",
+      "japanese": "エージェントサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP GET",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "190",
+      "label_id": "L006",
+      "japanese": "HTTP GET",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "提供/返回",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "285",
+      "label_id": "L007",
+      "japanese": "提供／返却",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体描述文档 1",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "360",
+      "label_id": "L008",
+      "japanese": "エージェント記述文書 1",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ad1.json",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "380",
+      "label_id": "L009",
+      "japanese": "ad1.json",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "智能体描述文档 2",
+      "element": "text",
+      "id": null,
+      "x": "210",
+      "y": "350",
+      "label_id": "L010",
+      "japanese": "エージェント記述文書 2",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ad2.json",
+      "element": "text",
+      "id": null,
+      "x": "210",
+      "y": "370",
+      "label_id": "L011",
+      "japanese": "ad2.json",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "...",
+      "element": "text",
+      "id": null,
+      "x": "220",
+      "y": "340",
+      "label_id": "L012",
+      "japanese": "…（その他）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "/.well-known/",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "360",
+      "label_id": "L013",
+      "japanese": "/.well-known/",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "agent-descriptions",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "380",
+      "label_id": "L014",
+      "japanese": "agent-descriptions",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "RFC 8615",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "400",
+      "label_id": "L015",
+      "japanese": "RFC 8615",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "包含 URL 列表",
+      "element": "text",
+      "id": null,
+      "x": "440",
+      "y": "360",
+      "label_id": "L016",
+      "japanese": "URLの一覧を含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "说明:",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "630",
+      "label_id": "L017",
+      "japanese": "説明:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "・主动发现: 通过访问 .well-known URI 路径发现域名下所有公开智能体",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "660",
+      "label_id": "L018",
+      "japanese": "・能動的発見: .well-known URIパスにアクセスして、そのドメインで公開されているすべてのエージェントを発見する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "・返回格式: JSON-LD CollectionPage, 包含智能体描述文档 URL 列表",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "690",
+      "label_id": "L019",
+      "japanese": "・応答形式: JSON-LD CollectionPage。エージェント記述文書のURL一覧を含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "・图形表示: /.well-known/agent-descriptions (CollectionPage) 指向多个智能体描述文档",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "720",
+      "label_id": "L020",
+      "japanese": "・図の表現: /.well-known/agent-descriptions（CollectionPage）が複数のエージェント記述文書を指す",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "・调整: 箭头文字位置已优化，避免覆盖。",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "750",
+      "label_id": "L021",
+      "japanese": "・調整: 文字が重ならないよう、矢印のラベル位置を最適化済み",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

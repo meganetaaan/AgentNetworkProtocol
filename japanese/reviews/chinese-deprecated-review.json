@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "scope": "16 initially unreviewed Chinese deprecated documents plus transferred English transaction; core owns CN P1/P4; guides owns CN P5",
+  "policy": "Only actual complete original prose comparison counts as full; historical obsolete identifiers and exact code retained.",
+  "total": 17,
+  "full": 14,
+  "files": [
+    {
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "destination": "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "status": "full",
+      "source_sha256": "819c8dda2f8b094c23922954dd7aac40a1b638b1d7b5736d49c54cba56a0cc64",
+      "source_lines": 290,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          290
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read complete 290-line Chinese whitepaper and Japanese English counterpart paragraph by paragraph before reuse. Restored Chinese-only full encrypted-message ASCII flow (three source fences versus English two), original author/Discord/GitHub and two distinct Feishu URLs, CA-free public-key validation explanation, WebSocket+JSON versus English WSS+JSON. Restored Chinese reference/link targets; corrected human-computer/replay/transport replacement mistranslations. Preserved all authentication steps, key-expiration/retry logic, three-message/four-arrow historical inconsistency, optional third-party services and six future directions."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/01-核心绑定.md",
+      "destination": "japanese/chinese/deprecated/01-核心绑定.md",
+      "status": "transferred-unreviewed",
+      "source_sha256": "8d66820881573dc3818fc8315146e4e0403f159fbc856c3483b69f53c926b488",
+      "source_lines": 1246,
+      "reviewed_source_line_ranges": [],
+      "unreviewed_source_line_ranges": [
+        [
+          1,
+          1246
+        ]
+      ],
+      "owner": "/root/translation_core",
+      "transfer_evidence": "Parent explicitly reassigned P1/P4 before any edits by blogs agent."
+    },
+    {
+      "source": "chinese/deprecated/02-did-all方法规范.md",
+      "destination": "japanese/chinese/deprecated/02-did-all方法规范.md",
+      "status": "full",
+      "source_sha256": "965998fd0f2e9247b9f85397bf675c49e3a400eb1e762c8aef4152e5230406a8",
+      "source_lines": 403,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          403
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read complete 403-line Chinese source and existing full English Japanese translation, compared each paragraph/field/operation before reuse. Restored all Chinese original fenced examples exactly (including Chinese API-key placeholders, malformed JWT indentation, original comments and nested-indented JSON). Restored Chinese proof reference URLs absent from English translation; corrected update-note causal meaning: changing particular fields deprecates document. Preserved public-key-signing source claim, secp256r1/0x00/4-byte/256-bit quantities, WSS-only/router batch registration, centralized node versus distributed choice, milliseconds, compromised-key deactivation and multisig future plan."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/02-身份与发现.md",
+      "destination": "japanese/chinese/deprecated/02-身份与发现.md",
+      "status": "full",
+      "source_sha256": "81008fd94a034163eb11e35b995e4224470a5a0148ceb0231c91e556a5c9e5a7",
+      "source_lines": 765,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          765
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read complete Chinese P2 (765 source lines) and entire Japanese English translation before paragraph-by-paragraph reuse. Restored Chinese five original diagram/JSON fences and language. Clarified service capability versus discovery, private extension versus non-public extension, conditional runtime capability query, and explicit Business Origin/Logical Issuer/Service DID names. Preserved single cross-domain public endpoint, internal roles nonnormative, authentication/assertion/keyAgreement boundaries, DID document prohibited dynamic material, serviceDid hint versus actual P8 verification, original attachment sender anchor, runtime/static hints and all privacy/MTI requirements."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "destination": "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "status": "full",
+      "source_sha256": "3ee962b6111098fd5c9e8734e9080f7940d171f462b59ee0a6d0fd956c6dbb07",
+      "source_lines": 673,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          673
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "corrections": [
+        "Read entire 673-line old V0.1 Chinese source and translated all sections, subfield lists, two independent HTTP/JSON flows, eight 401 error types, privacy and two use cases. All nineteen source code/sequence fences retained exactly. Historical CN Common Name/no-IP rules, duplicate 2.5 numbering, R|S/nonce/aud-without-port details, optional extra server nonce round-trip, retry bounds, token response Authorization, humanAuthorization, HPKE key separation and WNS bidirectional service preserved. Repaired local archive/reference filenames and linked original source fragments with original numbering discrepancy noted."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/03-私聊基础语义.md",
+      "destination": "japanese/chinese/deprecated/03-私聊基础语义.md",
+      "status": "full",
+      "source_sha256": "30ce98ca7220e196fb22a488d640a2c65cc227def0b680493da4351be46e6e62",
+      "source_lines": 804,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          804
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read complete 804-line Chinese P3 and full Japanese English counterpart paragraph by paragraph. Restored all Chinese original diagram/JSON fences. Corrected JSON-carried authentication (not Bearer auth) and sole security-context qualifier for conversation_id. Kept distinct Base mandatory origin proof versus E2EE deniability override, accepted-only success, direct.incoming required notification/no response and no regenerated proofs, exact payload exclusivity, operation/message dedup priority, no fixed retry mandate, complete e1 binding verification, all error rows and examples. Removed English-only uppercase MAY in acceptance commentary to match Chinese normative counts."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "destination": "japanese/chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "status": "full",
+      "source_sha256": "cb870999b535c6f4e0b73cb52b4e5a89c73b36a667e35249d39b84b7b769af66",
+      "source_lines": 552,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          552
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read all Chinese prose and existing English Japanese counterpart before reuse. Restored entire Chinese DestinationHello repeated field list omitted in English version, including Id capitalization, intentionally wrong SourceHello type example and complete proof fields. Corrected expiry semantic: expiry differences do not cause negotiation failure, added explicit EcdsaSecp256r1Signature2019 and default HKDF backend. All strict original fences including nested Python, Chinese comments and whitespace retained. Verified source 16/32-character IDs, 12/16-byte IV/tag, 8-byte/16-hex secretKeyId, 128-bit key, expiry/retry behavior, no salt, exact labels and historical limitations."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/04-群组基础语义.md",
+      "destination": "japanese/chinese/deprecated/04-群组基础语义.md",
+      "status": "transferred-unreviewed",
+      "source_sha256": "c5018b14f0921461140e5cb830cbdbd428386b03e9197e8361acda4aa7c53378",
+      "source_lines": 1753,
+      "reviewed_source_line_ranges": [],
+      "unreviewed_source_line_ranges": [
+        [
+          1,
+          1753
+        ]
+      ],
+      "owner": "/root/translation_core",
+      "transfer_evidence": "Parent explicitly reassigned P1/P4 before any edits by blogs agent."
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "destination": "japanese/chinese/deprecated/05-私聊端到端加密.md",
+      "status": "transferred-unreviewed",
+      "source_sha256": "b061b1f778c7afefa80115eba9a7791a8e9b3ea75958b94882492142320480cf",
+      "source_lines": 1634,
+      "reviewed_source_line_ranges": [],
+      "unreviewed_source_line_ranges": [
+        [
+          1,
+          1634
+        ]
+      ],
+      "owner": "/root/translation_guides",
+      "transfer_evidence": "Parent explicitly reassigned EN/CN P5 pair before blogs edits."
+    },
+    {
+      "source": "chinese/deprecated/06-群组端到端加密.md",
+      "destination": "japanese/chinese/deprecated/06-群组端到端加密.md",
+      "status": "full",
+      "source_sha256": "478638d5f88a47b85196297dc0ab594182886ab69854f2a1707eb1fb986ad6e2",
+      "source_lines": 2076,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          2076
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "work_progress": {
+        "original_read_line_ranges": [
+          [
+            1,
+            2076
+          ]
+        ],
+        "translation_semantically_compared_line_ranges": [
+          [
+            1,
+            2076
+          ]
+        ],
+        "stage": "Complete source-to-Japanese prose comparison, original-code restoration and invariant checks passed.",
+        "differences": [
+          "CN5.4 no uppercase SHOUNT typo; leaf key must not be conflated with DID key as non-keyword prose",
+          "CN6.3 verification_method rather than English authentication-method wording",
+          "CN4.4.1 historical before-group.create-success wording retained even though surrounding sections say after",
+          "All 25 original fences to be retained, including Chinese captions/comments"
+        ],
+        "original_comparison_notes": [
+          "All Chinese prose read, including 23 MTI items, error table 5000-5012, seven JSON examples and six flow diagrams.",
+          "Read existing Chinese Japanese machine translation through section7.2: corrupted text and inverted negations require replacement, not terminology-only edit.",
+          "Comparison with English source shows same 25 fence structure and equivalent chapter content; key Chinese distinctions are method terminology, lack of SHOUNT typo, verification method rather than authentication method.",
+          "Both historical Chinese and English 4.4.1 say before group.create succeeds despite later after clauses; preserve this source wording without silently repairing the protocol."
+        ]
+      },
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read all 2076 Chinese original lines, all English counterpart prose across 2074 lines, and all complete Japanese counterpart prose, comparing every chapter, security negation, table, 23 MTI requirements, seven JSON examples and six flows. Reused completed Japanese only after actual Chinese/English paragraph comparison. Restored 25 Chinese original fenced diagrams/examples. Kept Chinese-specific keyword counts by removing English-only MUST(1), MUST NOT(3), SHOULD NOT(3) annotations without weakening Japanese obligations; removed English-only SHOUNT/Cryptozoological/authentication-method/Post-Quantum Swarm Kit notes. Kept source before-group.create-success inconsistency with explanatory note. Confirmed P4-business-authority versus MLS state coupling, current DID credential.identity, separate leaf/DID keys and Object Proof, owner-only control, normal send accepted versus decrypted, rebind Add then Remove using same P4 state reference with paused sends and no intermediate applications, owner fail-closed when MLS state lost, no historical secret recovery, 5000-5012 errors and future-only extensions. Chinese tree-material wording is separately provided rather than English-only only-to-new-members; owner persisted add/remove refers to successfully applied rather than English accepted results."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/07-附件与对象传输.md",
+      "destination": "japanese/chinese/deprecated/07-附件与对象传输.md",
+      "status": "full",
+      "source_sha256": "89e7ef260ae33c1ff704120e402fd7837f95868a5c9075cd2322f0f17f29eed4",
+      "source_lines": 1596,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          1596
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read all 1596 Chinese source lines and compared the complete Japanese English counterpart including every prose paragraph, sixteen examples, all manifest/control/error tables and MTI requirements. Confirmed three separate planes; create/commit do not authorize recipients; successful send creates Access Grant; ticket discovery uses original sender DID and public serviceDid, not object hostname/group DID. Confirmed ciphertext expected_size, plaintext+16 tag, fresh 32-byte key and 12-byte nonce, empty AAD, no key/nonce in control calls, 5-minute ticket recommendation, no retroactive revocation, all 21 MTI requirements and 6000-6013 errors. Replaced all 33 fenced examples with exact Chinese originals including Chinese comments/captions; preserved historical Released/1.1."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/08-联邦与跨域.md",
+      "destination": "japanese/chinese/deprecated/08-联邦与跨域.md",
+      "status": "full",
+      "source_sha256": "e037c8f2df1e22d19532261e41201f98bec33634084f0d091c36dd94c57d39fd",
+      "source_lines": 637,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          637
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read all 637 Chinese source lines and existing full Japanese English counterpart paragraph by paragraph. Restored all five Chinese original Mermaid fences. Corrected CN-specific 6.3 equality to locally received request (English Japanese said destination receiver), endpoint business-origin-proof wording, explicit Host acceptance AND ordering, Chinese serviceDid term formatting/language/status. Retained entire method lists, caller-anchor distinction for group notices, eight-step identity validation, no object-byte relay, original proof nonrewrite, MTI/proxy versus direct extension, six separate success meanings, two-layer authorization and all twelve MTI requirements."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+      "destination": "japanese/chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+      "status": "full",
+      "source_sha256": "861e6827c64c4d46335c621b939e3d2d13171639c9985e823151c383d290945a",
+      "source_lines": 548,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          548
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "corrections": [
+        "Read complete 548-line Chinese source. Entire document translated: four challenges, all functional/nonfunctional requirements, fifteen terminology entries where present, eight transaction steps, five full tables (8 roles/11 transitions/10 exceptions/17 credential types/12 security mappings), all generation/verification procedures and final constraints. Exact two source diagrams retained. Preserved all credentialSubject wire attributes and hash placeholders, optional first/final VC paths, privacy-limited payment data, escrow/cancellation/dispute timing and independent VC hash chain not W3C standard. Kept Chinese-only Verifier definition and architecture identity point 1; no English duplicate safety list imported."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "destination": "japanese/chinese/deprecated/09-消息Mention扩展.md",
+      "status": "full",
+      "source_sha256": "623b42a5cfa4edf0f6f94eb0ddfd089d32d92b6c8f466b2e665f960b88cf827f",
+      "source_lines": 825,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          825
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "corrections": [
+        "Read entire 825-line Chinese P9 original and Japanese English counterpart, comparing all fourteen chapters, vocabulary/range/target tables, selector semantics and twelve-step validation/MTI. Retained actual Chinese status draft rather than English Released; clarified selector state snapshot is at message acceptance. Restored every Chinese original code fence (including text/pseudocode/JSON), unicode-code-point half-open range, no local sender/proof, server no mention auth/selector expansion with operational rejection exceptions, endpoint-only validation, notification preferences cannot reject ANP message, E2EE privacy and future-only features."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "destination": "japanese/chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "status": "full",
+      "source_sha256": "882fa1a9c246a1756f67bcf70adc31d7aef0f488ed350302b233164f046fa798",
+      "source_lines": 358,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          358
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "corrections": [
+        "Entire 358-line Chinese original read and translated; all three example fences exact, including invalid JSON empty string and old cryptographic names. All three vocabulary tables (16/9/5 rows), four context rules, six in-location choices and all proof-generation steps retained. Preserved securityDefinitions definition-versus-activation, all-security requirements, resource override, no secret storage, AD does not grant authorization, auto must omit name, historical humanAuthorization semantics."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "destination": "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "status": "full",
+      "source_sha256": "796b9aed761a40e522fd8e7948b32b1cf246134e2546dd756f70dbc4aef1b0a2",
+      "source_lines": 1384,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          1384
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "corrections": [
+        "Read entire 1384-line Chinese original and translated all prose, all ten API parameter/authentication tables and every E2EE field table. All 41 original fences including huge escaped JSON examples and Python remain exact. Preserved optional/none authentication, receiver/group exclusivity, E2EE direct-only/group plaintext, server federation excluded, counts/default limits, old ECDHE handshake and DID-public-key claim, source snake_case versus Finished inner camelCase secretKeyId, retry-error and future-only group MLS. Repaired broken archival local links to actual same-generation archived specifications."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    },
+    {
+      "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "destination": "japanese/deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "status": "full",
+      "source_sha256": "e8a0b6a4f828f9cd457f34f78432c39ec2d2cdf4860ee4d9097886628d29cedc",
+      "source_lines": 549,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          549
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "owner": "/root/translation_blogs",
+      "transfer_evidence": "Parent explicitly added English transaction pair from history agent.",
+      "method": "manual-full-translation-and-review",
+      "corrections": [
+        "Read complete 549-line English (including embedded Chinese source paragraphs) source. Entire document translated: four challenges, all functional/nonfunctional requirements, fifteen terminology entries where present, eight transaction steps, five full tables (8 roles/11 transitions/10 exceptions/17 credential types/12 security mappings), all generation/verification procedures and final constraints. Exact two source diagrams retained. Preserved all credentialSubject wire attributes and hash placeholders, optional first/final VC paths, privacy-limited payment data, escrow/cancellation/dispute timing and independent VC hash chain not W3C standard. Kept English-only repeated five safety bullets; English lacks Chinese Verifier definition and architecture identity point 1, so did not import them."
+      ],
+      "evidence": "All original headings, prose paragraphs, tables, numeric/security constraints and negations read and compared. Code blocks and wire identifiers preserved; historical protocol not updated to current versions."
+    }
+  ]
+}

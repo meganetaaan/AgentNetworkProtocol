@@ -1,0 +1,255 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/02-apikeys-6.png",
+  "sha256": "fcdb13411d5e42efcc19f4bf78788eaca6311a218cc112c9c8b7dc9d89f0c613",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Service A",
+      "confidence": 0.951069176197052,
+      "box": [
+        [
+          762.0,
+          74.0
+        ],
+        [
+          894.0,
+          74.0
+        ],
+        [
+          894.0,
+          109.0
+        ],
+        [
+          762.0,
+          109.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "サービス A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "each one needs its own sign-up",
+      "confidence": 0.9971079528331757,
+      "box": [
+        [
+          950.0,
+          76.0
+        ],
+        [
+          1313.0,
+          81.0
+        ],
+        [
+          1312.0,
+          112.0
+        ],
+        [
+          949.0,
+          107.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "それぞれに個別の登録が必要",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service B",
+      "confidence": 0.9985477328300476,
+      "box": [
+        [
+          763.0,
+          176.0
+        ],
+        [
+          894.0,
+          176.0
+        ],
+        [
+          894.0,
+          208.0
+        ],
+        [
+          763.0,
+          208.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "サービス B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Your assistant",
+      "confidence": 0.9991088424410138,
+      "box": [
+        [
+          145.0,
+          278.0
+        ],
+        [
+          345.0,
+          278.0
+        ],
+        [
+          345.0,
+          309.0
+        ],
+        [
+          145.0,
+          309.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "あなたのアシスタント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service C",
+      "confidence": 0.9979919327629937,
+      "box": [
+        [
+          763.0,
+          275.0
+        ],
+        [
+          895.0,
+          275.0
+        ],
+        [
+          895.0,
+          307.0
+        ],
+        [
+          763.0,
+          307.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "サービス C",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service D",
+      "confidence": 0.9997688333193461,
+      "box": [
+        [
+          762.0,
+          374.0
+        ],
+        [
+          895.0,
+          374.0
+        ],
+        [
+          895.0,
+          409.0
+        ],
+        [
+          762.0,
+          409.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "サービス D",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "One key per service",
+      "confidence": 0.9848848173492833,
+      "box": [
+        [
+          214.0,
+          424.0
+        ],
+        [
+          443.0,
+          426.0
+        ],
+        [
+          443.0,
+          457.0
+        ],
+        [
+          213.0,
+          455.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "サービスごとに1本の鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service E",
+      "confidence": 0.9977997210290697,
+      "box": [
+        [
+          763.0,
+          476.0
+        ],
+        [
+          893.0,
+          476.0
+        ],
+        [
+          893.0,
+          508.0
+        ],
+        [
+          763.0,
+          508.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "サービス E",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service F",
+      "confidence": 0.9542941715982225,
+      "box": [
+        [
+          762.0,
+          574.0
+        ],
+        [
+          893.0,
+          574.0
+        ],
+        [
+          893.0,
+          609.0
+        ],
+        [
+          762.0,
+          609.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "サービス F",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.4645210000453517,
+    0.01253819465637207,
+    0.6480653285980225
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "fcdb13411d5e42efcc19f4bf78788eaca6311a218cc112c9c8b7dc9d89f0c613"
+  }
+}

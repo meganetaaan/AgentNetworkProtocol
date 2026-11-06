@@ -1,0 +1,2017 @@
+{
+  "source_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "scope": "Additional candidates from completeness review; parent merges explicitly; originals and main candidate list unchanged",
+  "unit_count": 201,
+  "units": [
+    {
+      "id": "1eb284b64f094c77f13c",
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "locator": "/interface/endpoints/0/sseDescription",
+      "original": "此接口支持服务器发送事件（SSE），用于实时自然语言数据流。",
+      "translation": "このインターフェースはServer-Sent Events（SSE）に対応し、自然言語データのリアルタイムストリームを提供します。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f426193c97c1b429f71a",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/roomName/example",
+      "original": "豪华海景房",
+      "translation": "豪华海景房（デラックス・オーシャンビュー客室）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a4213ace9fee9fbc5942",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/name/example",
+      "original": "Deluxe Ocean View Room",
+      "translation": "Deluxe Ocean View Room（デラックス・オーシャンビュー客室）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "eed079b85592c867d50b",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/description/example",
+      "original": "Spacious deluxe room with breathtaking ocean views, featuring modern amenities and elegant design.",
+      "translation": "息をのむような海の眺めを楽しめる、広々としたデラックス客室。近代的な設備と優雅なデザインを備えています。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "bd391866064af818f859",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/useableArea/example",
+      "original": "45 square meters",
+      "translation": "45平方メートル",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "928805831e840437f4bc",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/bedType/example",
+      "original": "1 King Bed",
+      "translation": "キングサイズベッド1台",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a2bee8e34668892b5abf",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/windowType/example",
+      "original": "Floor-to-ceiling windows",
+      "translation": "床から天井までの窓",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "6606a5c58a293219ccf9",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/image/items/properties/caption/example",
+      "original": "豪华海景房 - 全景",
+      "translation": "豪华海景房（デラックス・オーシャンビュー客室） — 全景",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "676a070ff8feb137f299",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/image/items/properties/description/example",
+      "original": "Luxurious room featuring floor-to-ceiling windows with panoramic ocean views",
+      "translation": "床から天井までの窓から、海のパノラマを望める豪華な客室。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b89f3e30389fb57832a3",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/amenityFeature/items/properties/name/example",
+      "original": "空调",
+      "translation": "エアコン",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f2d4fed9a8f675f463ea",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/amenityFeature/items/properties/value/example",
+      "original": "45 square meters",
+      "translation": "45平方メートル",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f8e251b0b59d00be4c5f",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/offers/properties/name/example",
+      "original": "标准价",
+      "translation": "標準料金",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c11b671371c316a46378",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/properties/offers/properties/seller/properties/name/example",
+      "original": "Sheraton Chuzhou Hotel",
+      "translation": "Sheraton Chuzhou Hotel（シェラトン滁州ホテル）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "7e8a329966e5c55484db",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/roomName",
+      "original": "豪华海景房",
+      "translation": "豪华海景房（デラックス・オーシャンビュー客室）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c6c811f142ce2d6226b1",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/category",
+      "original": "Hotel Room",
+      "translation": "ホテルの客室",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "0866803f9b454f418791",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/useableArea",
+      "original": "45 square meters",
+      "translation": "45平方メートル",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ff13fd07627fee4c14a8",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/bedType",
+      "original": "1 King Bed",
+      "translation": "キングサイズベッド1台",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "0b0225f4d76d463d1b01",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/windowType",
+      "original": "Floor-to-ceiling windows",
+      "translation": "床から天井までの窓",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "28587c1e91c0f28283e4",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/termsOfService/cancelationPolicy/refundType",
+      "original": "Full refund",
+      "translation": "全額返金",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ade16e438e8e6a33aa43",
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "locator": "/interface/endpoints/0/sseDescription",
+      "original": "此接口支持服务器发送事件（SSE），用于实时自然语言数据流。",
+      "translation": "このインターフェースはServer-Sent Events（SSE）に対応し、自然言語データのリアルタイムストリームを提供します。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "dbf90b81044210300b02",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/audience/audienceType",
+      "original": "咖啡爱好者",
+      "translation": "コーヒー愛好者",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d7376fd032bead7c0b1a",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/ingredients",
+      "original": "椰奶，浓缩咖啡，烤椰糖浆",
+      "translation": "ココナッツミルク、エスプレッソ、ローストココナッツシロップ",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "182047931ebeeacb5173",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/category",
+      "original": "饮料",
+      "translation": "飲料",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c4067d01700b1d74fcb2",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/audience/audienceType",
+      "original": "咖啡爱好者",
+      "translation": "コーヒー愛好者",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ff3701a6fe1696e4647e",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/audience/geographicArea",
+      "original": "中国",
+      "translation": "中国",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "6f79c8e4f0f5a841259d",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/audience/audienceType",
+      "original": "咖啡爱好者",
+      "translation": "コーヒー愛好者",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e748f77e6fe7b5b55fa5",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/scope",
+      "original": "Request signature/digest construction, E1/Object Proof bytes, and P5 AEAD bytes. Not SDK, complete method, X3DH/Ratchet or MLS conformance.",
+      "translation": "リクエスト署名／ダイジェストの構築、E1/Object Proofのバイト列、P5 AEADのバイト列を対象とします。SDK、完全なメソッド、X3DH/Ratchet、MLSの適合性を示すものではありません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a07efb8ef9733b3727a5",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/28/precondition",
+      "original": "The device-pair Session and this message key/nonce are established controlled inputs; X3DH/Ratchet/SDK execution is not claimed.",
+      "translation": "デバイス間のSessionと、このメッセージの鍵／nonceは、確立済みの管理された入力です。X3DH/Ratchet/SDKの実行を主張しません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "bd390e01a93bd55d134d",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/29/precondition",
+      "original": "The device-pair Session and this message key/nonce are established controlled inputs; X3DH/Ratchet/SDK execution is not claimed.",
+      "translation": "デバイス間のSessionと、このメッセージの鍵／nonceは、確立済みの管理された入力です。X3DH/Ratchet/SDKの実行を主張しません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "74b1a21652e458320f0e",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/30/precondition",
+      "original": "The device-pair Session and this message key/nonce are established controlled inputs; X3DH/Ratchet/SDK execution is not claimed.",
+      "translation": "デバイス間のSessionと、このメッセージの鍵／nonceは、確立済みの管理された入力です。X3DH/Ratchet/SDKの実行を主張しません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "0b397b2bf806ad149cc2",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/31/precondition",
+      "original": "The device-pair Session and this message key/nonce are established controlled inputs; X3DH/Ratchet/SDK execution is not claimed.",
+      "translation": "デバイス間のSessionと、このメッセージの鍵／nonceは、確立済みの管理された入力です。X3DH/Ratchet/SDKの実行を主張しません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f3af89769e46f9681aab",
+      "source": "examples/did-authentication-vnext/identities.json",
+      "locator": "/test_key_derivation",
+      "original": "SHA-256(\"ANP02-PUBLIC-TEST-ONLY:\" + key label); all keys are public test material, never production credentials.",
+      "translation": "SHA-256(\"ANP02-PUBLIC-TEST-ONLY:\" + key label)。すべての鍵は公開テスト用素材であり、本番の認証情報ではありません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "1b2fe66064559c65fe72",
+      "source": "examples/did-authentication-vnext/identities.json",
+      "locator": "/network_boundary",
+      "original": "No HTTPS, DNS, method resolver or state freshness is exercised by generating these documents.",
+      "translation": "これらの文書を生成しても、HTTPS、DNS、メソッドリゾルバー、状態の鮮度は実際に検証されません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "cf49364e7b1660f251c9",
+      "source": "examples/did-authentication-vnext/manifest.json",
+      "locator": "/generation_command",
+      "original": "node scripts/generate-anp02-vectors.mjs --write",
+      "translation": "node scripts/generate-anp02-vectors.mjs --write",
+      "status": "technical-retained",
+      "kind": "additional-human-string-proposal",
+      "reason": "実行コマンドであり、引数・ファイル名をそのまま保持する。"
+    },
+    {
+      "id": "6eaba1ca111eee693cd4",
+      "source": "examples/did-authentication-vnext/manifest.json",
+      "locator": "/checking_command",
+      "original": "node scripts/check-anp02-vectors.mjs",
+      "translation": "node scripts/check-anp02-vectors.mjs",
+      "status": "technical-retained",
+      "kind": "additional-human-string-proposal",
+      "reason": "実行コマンドであり、引数・ファイル名をそのまま保持する。"
+    },
+    {
+      "id": "aef67a265bad2501ad81",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scope",
+      "original": "Authentication-related setups/actions/outcomes are illustrative implementation-policy examples, not additional conformance requirements. The ANP-02 1.2 authentication text is authoritative. Static validation does not execute scenarios.",
+      "translation": "認証関連の準備／操作／結果は、実装ポリシーの説明用の例であり、追加の適合性要件ではありません。ANP-02 1.2の認証本文が正規の仕様です。静的な検証は、シナリオを実行するものではありません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f140268bf08de68825fd",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/0/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b973240111eff1ea6715",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/1/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e59191b6c88b017893b8",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/2/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ef6e07b70691f7087370",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/3/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e61151cd37f02f2bbf1b",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/4/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "1ed87d43f0cc91749758",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/5/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "be30d2c9bd238944aea0",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/6/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c0c559bdee93082c3bd7",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/7/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e7f22689f4ad9e42c462",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/8/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "cb63e8b5a04b372dfe9e",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/9/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "289a4b2ae3fa13da0b93",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/10/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "2d8b73633e369b29369d",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/11/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c6b2a53d17425f5686cb",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/12/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "80fa5707f20772583fc6",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/13/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "1be4161a453da94c00c7",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/14/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e368e4ae164468fea390",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/15/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f61587492edf5ef652f5",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/16/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "9320d7c7043b0ab048a3",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/17/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b709dc77380db52fcb63",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/18/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "8d120190931bc79d094f",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/19/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c3e258f623123e4f8efc",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/20/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "52c90efce44d8678306c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/21/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ad84f819b9b4188831c0",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/22/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5762a67b1d4e615d57cc",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/23/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "83b76530036fe2057a46",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/24/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "681649c5ac548cdf4fe4",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/25/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c7b4561504228d773c00",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/26/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "0b52dc59abb049630b10",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/27/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "427ebb2ea78ea586434f",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/28/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5a7c93cea5b379b39929",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/29/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "61ee7890c266d059c5dd",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/30/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b31ad22869a3e3935956",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/31/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "3e9492c8b9e03102495c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/32/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "923492a0f535d5159250",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/33/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5e35a480ef8d6ee0f6a2",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/34/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "28776f45faf919af24fa",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/35/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "015ceddd48a72deed27f",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/36/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b3444435ccaa819a1c6b",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/37/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "3951c60b9e1b1575f2ad",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/38/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e715e3a6a8aeee118359",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/39/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c931615a94af7c61f81c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/40/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "523c42ba17d8b1a48a49",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/41/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "07f69c7769d2991927ec",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/42/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "2ce1bb5c6b0378293a21",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/43/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "93785374d6541be9658f",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/44/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d05d3ec887f434f29eba",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/45/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e21dfa437417bc165623",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/46/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "92b4f47dd73b41cde529",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/47/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "926b5de758040ce0ddf6",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/48/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f6b95d8900fc0eb7efe3",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/49/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "8dff1dd32c75f2793bc1",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/50/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "31f41cc31f5fe3cf8b45",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/51/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "2a072b86e1ae62721dda",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/52/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "65dd6bcb76fec8331621",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/53/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "dbda0bcb0003c270e5c1",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/54/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b217a57a5fb90257fae8",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/55/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "86ef942d928f7aecd2bc",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/56/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c028423b6b26d7de9902",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/57/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "72a41db59c994f4a42d4",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/58/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "22d0bdc56f427352b7eb",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/59/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "cdfc962b701b199ae9c3",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/60/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c99fcd8ac24875b6fe43",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/61/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "fc5bae9635ef6b2ef0ae",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/62/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "38dfcf6e6c473404c6cd",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/63/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "7bf51dff8c6a7a5c8ecf",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/64/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "0f32806cce9426fbed59",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/65/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "126b39de6902627b060c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/122/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "88106062ebd163cb983c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/123/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "447a213003d01e06bd29",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/124/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "eb59e9f4651a120e5365",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/125/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ea99682d00fd3c1b0b1f",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/126/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "7386e41c53e7f8986ff5",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/127/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "299ba26aabb63045cc05",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/128/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "60dd5e0d4514e60d84f3",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/129/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "6287ef0c694b8fd9aaf0",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/130/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "beebba871c2f3bc8b8c1",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/131/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "f1494d505819d66780a9",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/132/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "28564acf1d79ef554fa6",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/133/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "512b9b44281e599bf0c2",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/135/input/mls_commit_precondition",
+      "original": "valid owner-authorized add Commit under a ready P4/P6 state",
+      "translation": "準備済みのP4/P6状態のもとで、所有者が認可した有効な追加Commit。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "da4684d1c0ba95a2e23c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/136/input/mls_commit_precondition",
+      "original": "valid owner-authorized remove Commit under a ready state",
+      "translation": "準備済みの状態のもとで、所有者が認可した有効な削除Commit。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a916c6dce388436ef082",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/139/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "967b1a6c7125262de710",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/141/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a94253583305f9babc4e",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/146/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "3606a0d5dea1206991a5",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/147/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a15a6d4ed5c53a352638",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/148/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "3f4b6745478812d10f87",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/149/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "45d0fcf32e293fc10280",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/150/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "63dbe01e76c804ec2f76",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/151/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d51fe18e007bd67ffeff",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/152/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "87232a86b19d74499b77",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/153/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e55f898244829bdca770",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/154/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d8c48a4d4f8ccfd11d8a",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/155/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d00c7d3ebd7d21f0debc",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/156/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "45cbde859dda651d46e9",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/157/input/keypackage_precondition",
+      "original": "For P6, construct a valid suite KeyPackage/Leaf with this exact binding and current Manifest before applying the single mutation.",
+      "translation": "P6では、単一の変更を適用する前に、この正確なバインディングと現在のManifestを持つ、有効なスイートのKeyPackage/Leafを構築してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "1e4d778e39daf4df15e4",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/159/input/mls_commit_precondition",
+      "original": "valid owner-authorized add Commit under a ready P4/P6 state",
+      "translation": "準備済みのP4/P6状態のもとで、所有者が認可した有効な追加Commit。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ed449b26af0a64e67d56",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/160/input/mls_commit_precondition",
+      "original": "valid owner-authorized remove Commit under a ready state",
+      "translation": "準備済みの状態のもとで、所有者が認可した有効な削除Commit。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "0f9d4ff7092290aa86cc",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/163/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "04eb1a0f68997baa6f6a",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/165/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d16002e6b4578d66909a",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/170/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "84a9e0b869d979e4001b",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/171/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "2f19f9bd62aacc9dc6b1",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/172/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5c307881edc23d968bed",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/173/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a5aef36038b09b40cd3c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/174/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "261e695cf86762bfdaf7",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/175/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "2438e4e7f29591a0e272",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/176/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d0ccbd3e0f2e033ed0fa",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/177/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "8a0b56c44b097df3ceb3",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/178/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "cb5f603f05cd7ea481d2",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/179/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a5ad64c0347278602535",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/180/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5140abae2e4480ed4b87",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/181/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "36af00a121c06364d206",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/182/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "636688b35f674fca9aee",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/183/input/document_precondition",
+      "original": "Add reverse_service and regenerate any required WBA Document proof.",
+      "translation": "reverse_serviceを追加し、必要なWBA Documentの証明を再生成してください。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b9b7fb800b89634b2a94",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/185/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "fdd656ee64669d5cdba0",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/186/input/precondition",
+      "original": "Same stable subject path, authenticated same-origin complete successor chain, no old-binding/recovery proof, valid final active E1 Document",
+      "translation": "安定した主体パスが同じで、同一オリジンの完全な後継チェーンが認証済みであり、旧バインディング／回復の証明はなく、最終的な有効状態のE1 Documentが妥当であること。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "8290981e279d062c1c42",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/187/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c99b5e80736b3a531c5b",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/188/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "62f8a414c4ba1535e626",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/189/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "1f83cb4982ae1d99328b",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/190/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "85b21226392d721a1915",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/191/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5f41f0784e25bafe7f29",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/192/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "882480b016c7f43b7d51",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/193/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "53f1d4c2c78a690de9e2",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/194/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "832a006b2b7494f8e94a",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/195/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5f01aa7776645364b77c",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/196/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "276d2bab032c5950bd58",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/197/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "7a19b725bb1a7aa7ff3f",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/198/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "4d3cf4f1c1e8b5a66968",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/199/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "da1b5f4dd99b2b61f754",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/200/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b284ae6ef115d765a4e1",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/201/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ac9e0823c5fac2d8f992",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/202/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "6b4db1fa9004f58cef20",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/203/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "09ed2165aab38450d392",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/205/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a2ebbab6b00b4943f592",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/207/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "8aace29a6c70c7c93e55",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/209/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b3748efcf06f83c8650d",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/211/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "fe2433ee5ab01f0579c5",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/213/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "23ce9634a83d36497700",
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "locator": "/scenarios/214/policy_note",
+      "original": "Expected results illustrate the selected fixture policy, including error mapping and boundary handling. The ANP-02 1.2 authentication text remains authoritative; these scenarios do not mandate new replay, cache, resolver, credential-selection, algorithm, or token behavior.",
+      "translation": "期待結果は、エラーマッピングや境界の処理を含む、選択したフィクスチャのポリシーを例示します。ANP-02 1.2の認証本文が引き続き正規の仕様であり、これらのシナリオは、リプレイ、キャッシュ、リゾルバー、認証情報の選択、アルゴリズム、トークンの新たな動作を義務付けません。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "4345bc3010e93e23edfd",
+      "source": "examples/message-vnext/04-mls-two-device-leaves.json",
+      "locator": "/binding_invariant",
+      "original": "Each mls_key_package_b64u encodes a LeafNode with the provisional ANP v2 extension type 0xF0A1; its extension_data exactly matches the JCS bytes of did_wba_binding, LeafNode.capabilities.extensions lists 0xF0A1, and GroupContext.required_capabilities.extension_types includes 0xF0A1.",
+      "translation": "各mls_key_package_b64uは、暫定ANP v2拡張タイプ0xF0A1を持つLeafNodeをエンコードします。そのextension_dataはdid_wba_bindingのJCSバイト列と厳密に一致し、LeafNode.capabilities.extensionsは0xF0A1を列挙し、GroupContext.required_capabilities.extension_typesは0xF0A1を含みます。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "4c27bf34c7eb710003e2",
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "locator": "/required_follow_up/0",
+      "original": "stop future PreKey and Mailbox use for dev-a2-9R5TLM",
+      "translation": "dev-a2-9R5TLMについて、以後のPreKeyとMailboxの使用を停止する。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c811efff37354db08441",
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "locator": "/required_follow_up/1",
+      "original": "invalidate unconsumed KeyPackages for dev-a2-9R5TLM",
+      "translation": "dev-a2-9R5TLMに対する、未使用のKeyPackagesを無効にする。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "c7c1f8360b87e432e92a",
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "locator": "/required_follow_up/2",
+      "original": "remove the device leaf from each MLS group and commit a new epoch",
+      "translation": "各MLSグループからデバイスのリーフを削除し、新しいepochを確定するCommitを行う。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "08519cd90b584c4699b1",
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "locator": "/required_follow_up/3",
+      "original": "never reuse the removed device_id or device keys",
+      "translation": "削除したdevice_idやデバイス鍵を再利用しない。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "9b4cd76239a6908fd19e",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/addOn/name",
+      "original": "Breakfast",
+      "translation": "朝食",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "58d9cb38e1daf0abf59a",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/amenityFeature/1/name",
+      "original": "View",
+      "translation": "眺望",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "7281759538c61014dec2",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/amenityFeature/2/name",
+      "original": "Bathroom",
+      "translation": "バスルーム",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d7b0fae77757e97a12eb",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/containedInPlace/address/addressLocality",
+      "original": "Chuzhou",
+      "translation": "Chuzhou（滁州）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b755bc29b39585d5a3b5",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/containedInPlace/address/addressRegion",
+      "original": "Anhui",
+      "translation": "Anhui（安徽省）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "6305009f670baad9473c",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/0/name",
+      "original": "Feature",
+      "translation": "特徴",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "673c060457515d7e222c",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/1/name",
+      "original": "Slogan",
+      "translation": "キャッチコピー",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "3da704d838392d79ded1",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/3/name",
+      "original": "Flavor",
+      "translation": "風味",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "9210d38d876bd5879d69",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/5/name",
+      "original": "Espresso",
+      "translation": "Espresso（エスプレッソ）",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "6cb88bb5a6587dfc5af4",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/additionalProperty/0/name",
+      "original": "Feature",
+      "translation": "特徴",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "5e0b6fe5eaf9e8d3da2b",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/additionalProperty/1/name",
+      "original": "Slogan",
+      "translation": "キャッチコピー",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a3212afd2d88a4d46255",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/additionalProperty/0/name",
+      "original": "Feature",
+      "translation": "特徴",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "7ec712045be028c6088e",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/additionalProperty/1/name",
+      "original": "Slogan",
+      "translation": "キャッチコピー",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "175b8f5edbf17988cc47",
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "locator": "line:1:comment",
+      "original": "购买接口配置",
+      "translation": "購入インターフェースの設定",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "a0275df33d4c2d9142ba",
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "locator": "line:1:comment",
+      "original": "自然语言接口配置",
+      "translation": "自然言語インターフェースの設定",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "b4910a78a86737fb5ebd",
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "locator": "line:1:comment",
+      "original": "自然语言接口配置",
+      "translation": "自然言語インターフェースの設定",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ad5ded30ef6a048adc43",
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "locator": "line:1:comment",
+      "original": "购买接口配置",
+      "translation": "購入インターフェースの設定",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "e153a0e77b5935810e5d",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "line:39:embedded-shell-literal",
+      "original": "Contributor avatars are already up to date",
+      "translation": "貢献者のアバターはすでに最新です。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ad2efa73af0ba7943ab2",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "line:46:embedded-shell-literal",
+      "original": "The contributor update branch is already up to date",
+      "translation": "貢献者更新ブランチはすでに最新です。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "43f5fb62d9544bbc16c3",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "line:52:embedded-shell-literal",
+      "original": "docs: update contributor avatars",
+      "translation": "docs: 貢献者のアバターを更新",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "d52c3023e325553f03b6",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "line:66:embedded-shell-literal",
+      "original": "docs: update contributor avatars",
+      "translation": "docs: 貢献者のアバターを更新",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "9aeb6d68be67d3df2b3d",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "line:67:embedded-shell-literal",
+      "original": "Automatically synchronizes the README contributor avatars from GitHub contributor data.",
+      "translation": "GitHubの貢献者データからREADMEの貢献者アバターを自動同期します。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    },
+    {
+      "id": "ee0e7097e44e7d857165",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "line:69:embedded-shell-literal",
+      "original": "Updated contributor pull request #$pull_request",
+      "translation": "貢献者更新のプルリクエスト#$pull_requestを更新しました。",
+      "status": "agent-reviewed",
+      "kind": "additional-human-string-proposal"
+    }
+  ],
+  "excluded_technical_leaves": [
+    {
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "/jobs/update/steps/1/with/script",
+      "reason": "埋込プログラム全体は自然文ではない。人向けログ・PR説明は個別に追加する。"
+    },
+    {
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "/jobs/update/steps/2/run",
+      "reason": "埋込プログラム全体は自然文ではない。人向けログ・PR説明は個別に追加する。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/30/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/33/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/36/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/39/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/42/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/45/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/48/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/negatives/51/replacement",
+      "reason": "暗号テストの改ざん後の符号化JSON値。自然文の置き換えを行わない。"
+    }
+  ],
+  "reviewed_sources": [
+    {
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "source_sha256": "cf951b3c398c484682a1bca1e8714026495e548cf64e9d7ea061069d7b191e61",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/config.yml",
+      "source_sha256": "13064e7bea658e01e718b414fbb7b3b244f36411fe25ee2055c151f7b534547a",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "source_sha256": "2a1d086825da23bf05d7301c52cc4ae72ef199e0dc87adcedd592436d117a8eb",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": ".github/workflows/update-contributors.yml",
+      "source_sha256": "a2cccd04f45fd4cde40582f2a0662aeb505cd5f43d4113d02cdc8afeb2fc75bb",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/ad.json",
+      "source_sha256": "01c98a3baf8a7c45912b2da5c25f95d2e4d7ed383593fa28834e0c9dc4536711",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "source_sha256": "deca04224c50d8069353516b375dc9d934ee6f7c528cf777164a3534705de198",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "source_sha256": "f84a8c52d23d2486da15755500a716e78b068965e909f38ab49db75a7684ace9",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "source_sha256": "1550bcf414d0daca89e685837892fdedc1e70b0eddf41b7f8abf902644065a47",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "source_sha256": "bdfc64289818eef8cee0a9ee7194da95276bc6198763332c5f5342c8fb9408a5",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/ad.json",
+      "source_sha256": "9924270c2e4a81e82f964cf2abb418c15b3d20beadf340c6677178eaf17cccac",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "source_sha256": "4fda1c22cb77784d1d6645ce3541daa2053a799f53988fbf698e8430bbf751e7",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "source_sha256": "180cd8ca3cb05532abeece68ca16d71e34f00ac4ef4739849cec3af1320fd779",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "source_sha256": "c278b496765c13dee7cb55fb03d58f76ff3602710a5aed7d8e9f7529b6dd69bf",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "source_sha256": "fa1c675303f1cdd50117b1099bd16d8829c9c6e38f6390e549f2e90d3c0838e1",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "source_sha256": "985be1ceb32d8d80bc7b64790cd83205724408bdfda4a72bedd7ed3b2bed03a1",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "source_sha256": "cb2bba7980b3aa976ac194f65bb484e04a1ecccd941ef1f6bb5d1d5ff83a8ef6",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/identities.json",
+      "source_sha256": "1d71031cb128808f0623733fd44fe36e7052e788e162f6cd4b405bfce11ffac3",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/manifest.json",
+      "source_sha256": "4bacbd61598861c8c6477233c2e95bf81469a275dc9eee04d5121249686c1cc4",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "source_sha256": "abcbc6a2cb8885d3b1f8ef53e7a33c5ec27c37738bb3c56a8f876568113577bf",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/01-did-document-two-devices.json",
+      "source_sha256": "6229cc61b0ee242e895db3c74d42fecf7acf4d54078e07684cb2f411ee34d949",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/02-direct-two-device-deliveries.json",
+      "source_sha256": "1197e373696aacafa968bb64114a561557aad84351372ac3946b235977fec819",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/03-device-prekey-bundle.json",
+      "source_sha256": "25fe117fd567e099662ccfb1c827195c2807ea84f8a6f8bbaa81d6fe743e045d",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/04-mls-two-device-leaves.json",
+      "source_sha256": "4255d570ba19262ba9c91880b87fa1a3f55b4278ece7936c81da71f6b17eeaef",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "source_sha256": "ed134758eaeebd772a0ecc0dd8025173305d0511cc1d29691064e06c51226291",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/06-device-state-changed-error.json",
+      "source_sha256": "7ed4a69edd96b780d9581126e13e45460811a9ec279a4c55687a7367d48d06ce",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "examples/message-vnext/07-did-transition-retry.json",
+      "source_sha256": "b24b17f1aa0483f0eb0fb43c9050ca1a0ac2bf601e0065a606308bce0e7b790b",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "scripts/add_copyright.py",
+      "source_sha256": "e1ba2e5b5817085ca3e58bdf7a8fdb25d8caa9a300f94dfc0b28d3a0028ba5c6",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "scripts/rename_images.py",
+      "source_sha256": "8a7b74c6eb0b63b1e597513d5b8dde75f8755288cce348cca2c78b0d6608006e",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    },
+    {
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "source_sha256": "d2c721d0a467bbfb0a73d815e1a4511d4e42d7c13b74050c3a1d38ce8694bce2",
+      "review": "source-read-and-structure-audited-human-fields-and-comments; cryptographic/wire values retained"
+    }
+  ]
+}

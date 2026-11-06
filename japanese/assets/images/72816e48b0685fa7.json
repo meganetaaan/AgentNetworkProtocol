@@ -1,0 +1,455 @@
+{
+  "source": "chinese/思考&问题/pic/mcp-architecture.png",
+  "sha256": "72816e48b0685fa7a4345aa6106b2f92e18abde75a4d1336c2d242d28b048f0f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Your Computer",
+      "confidence": 0.9982706262515142,
+      "box": [
+        [
+          619.0,
+          32.0
+        ],
+        [
+          838.0,
+          34.0
+        ],
+        [
+          838.0,
+          67.0
+        ],
+        [
+          619.0,
+          64.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "あなたのコンピューター",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Local",
+      "confidence": 0.9996400713920593,
+      "box": [
+        [
+          1249.0,
+          144.0
+        ],
+        [
+          1333.0,
+          144.0
+        ],
+        [
+          1333.0,
+          176.0
+        ],
+        [
+          1249.0,
+          176.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ローカル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCPProtocol-",
+      "confidence": 0.9581485042969385,
+      "box": [
+        [
+          443.0,
+          170.0
+        ],
+        [
+          689.0,
+          170.0
+        ],
+        [
+          689.0,
+          200.0
+        ],
+        [
+          443.0,
+          200.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "MCPプロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "MCP Protocol"
+    },
+    {
+      "source": "MCP Server A",
+      "confidence": 0.9253483762343725,
+      "box": [
+        [
+          696.0,
+          170.0
+        ],
+        [
+          902.0,
+          172.0
+        ],
+        [
+          902.0,
+          202.0
+        ],
+        [
+          695.0,
+          200.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "MCPサーバーA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "Resource A",
+      "confidence": 0.9487371921539307,
+      "box": [
+        [
+          1210.0,
+          199.0
+        ],
+        [
+          1374.0,
+          199.0
+        ],
+        [
+          1374.0,
+          228.0
+        ],
+        [
+          1210.0,
+          228.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "リソースA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCP Host",
+      "confidence": 0.9949216172099113,
+      "box": [
+        [
+          160.0,
+          434.0
+        ],
+        [
+          310.0,
+          436.0
+        ],
+        [
+          309.0,
+          467.0
+        ],
+        [
+          159.0,
+          465.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "MCPホスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "Local",
+      "confidence": 0.999631655216217,
+      "box": [
+        [
+          1249.0,
+          433.0
+        ],
+        [
+          1334.0,
+          435.0
+        ],
+        [
+          1333.0,
+          470.0
+        ],
+        [
+          1248.0,
+          467.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "ローカル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCPProtocol-",
+      "confidence": 0.9300946543614069,
+      "box": [
+        [
+          409.0,
+          465.0
+        ],
+        [
+          676.0,
+          465.0
+        ],
+        [
+          676.0,
+          492.0
+        ],
+        [
+          409.0,
+          492.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "MCPプロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "MCP Protocol"
+    },
+    {
+      "source": "MCP Server B",
+      "confidence": 0.9104024718205134,
+      "box": [
+        [
+          699.0,
+          462.0
+        ],
+        [
+          902.0,
+          464.0
+        ],
+        [
+          902.0,
+          494.0
+        ],
+        [
+          698.0,
+          491.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "MCPサーバーB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "(Claude, IDEs, Tools)",
+      "confidence": 0.9920888202530997,
+      "box": [
+        [
+          87.0,
+          488.0
+        ],
+        [
+          379.0,
+          488.0
+        ],
+        [
+          379.0,
+          520.0
+        ],
+        [
+          87.0,
+          520.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "（Claude、IDE、ツール）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ResourceB",
+      "confidence": 0.9980055226220025,
+      "box": [
+        [
+          1209.0,
+          490.0
+        ],
+        [
+          1374.0,
+          490.0
+        ],
+        [
+          1374.0,
+          519.0
+        ],
+        [
+          1209.0,
+          519.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "リソースB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ResourceB"
+      ],
+      "transcribed_source": "Resource B"
+    },
+    {
+      "source": "MCPProtocol-",
+      "confidence": 0.9420050928990046,
+      "box": [
+        [
+          443.0,
+          638.0
+        ],
+        [
+          662.0,
+          638.0
+        ],
+        [
+          662.0,
+          667.0
+        ],
+        [
+          443.0,
+          667.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "MCPプロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "MCP Protocol"
+    },
+    {
+      "source": "MCPServerCWebAPls.",
+      "confidence": 0.9466610153516134,
+      "box": [
+        [
+          698.0,
+          639.0
+        ],
+        [
+          1102.0,
+          639.0
+        ],
+        [
+          1102.0,
+          667.0
+        ],
+        [
+          698.0,
+          667.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "MCPサーバーC／Web API",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "MCP Server C / Web APIs"
+    },
+    {
+      "source": "Internet",
+      "confidence": 0.9808069095015526,
+      "box": [
+        [
+          1233.0,
+          810.0
+        ],
+        [
+          1350.0,
+          810.0
+        ],
+        [
+          1350.0,
+          840.0
+        ],
+        [
+          1233.0,
+          840.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "インターネット",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Remote",
+      "confidence": 0.9996807277202606,
+      "box": [
+        [
+          1235.0,
+          919.0
+        ],
+        [
+          1347.0,
+          923.0
+        ],
+        [
+          1347.0,
+          954.0
+        ],
+        [
+          1234.0,
+          950.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "リモート",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource C",
+      "confidence": 0.9864292323589325,
+      "box": [
+        [
+          1209.0,
+          974.0
+        ],
+        [
+          1375.0,
+          974.0
+        ],
+        [
+          1375.0,
+          1004.0
+        ],
+        [
+          1209.0,
+          1004.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "リソースC",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.1418055999674834,
+    0.021023273468017578,
+    1.2095279693603516
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "MCPProtocol-": "MCP Protocol",
+      "ResourceB": "Resource B",
+      "MCPServerCWebAPls.": "MCP Server C / Web APIs"
+    },
+    "source_note": "MCP Protocolの後ろの横線は矢印の線として原画像に保持。",
+    "source_sha256": "72816e48b0685fa7a4345aa6106b2f92e18abde75a4d1336c2d242d28b048f0f"
+  }
+}

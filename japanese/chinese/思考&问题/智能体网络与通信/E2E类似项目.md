@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=chinese/思考&问题/智能体网络与通信/E2E类似项目.md; basis=complete manual translation against the original in the preceding review -->
 > 日本語訳。原文：[E2E类似项目.md](../../../../chinese/思考&问题/智能体网络与通信/E2E类似项目.md)。研究メモ中の記述・主張は執筆時点の原文に従います。
 
 didcomm

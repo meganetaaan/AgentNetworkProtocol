@@ -1,0 +1,390 @@
+{
+  "source": "images/judgment2_interconnected_agents.svg",
+  "sha256": "51107ff0bc503d051619f414f880198448abc6ba401ced4075b5b1a2d83b8073",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "判断二：智能体间互联互通，打破数据孤岛",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "40",
+      "label_id": "L001",
+      "japanese": "見解2: エージェント間の相互接続・相互通信がデータのサイロ化を解消する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "现状：数据孤岛 → 未来：信息自由流动",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "80",
+      "label_id": "L002",
+      "japanese": "現在: データのサイロ化 → 将来: 情報の自由な流通",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "社交数据",
+      "element": "text",
+      "id": null,
+      "x": "140",
+      "y": "125",
+      "label_id": "L003",
+      "japanese": "交流に関するデータ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "微信",
+      "element": "text",
+      "id": null,
+      "x": "140",
+      "y": "140",
+      "label_id": "L004",
+      "japanese": "WeChat（微信）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "购物数据",
+      "element": "text",
+      "id": null,
+      "x": "290",
+      "y": "125",
+      "label_id": "L005",
+      "japanese": "買い物に関するデータ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "淘宝",
+      "element": "text",
+      "id": null,
+      "x": "290",
+      "y": "140",
+      "label_id": "L006",
+      "japanese": "Taobao（淘宝）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "娱乐数据",
+      "element": "text",
+      "id": null,
+      "x": "440",
+      "y": "125",
+      "label_id": "L007",
+      "japanese": "娯楽に関するデータ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "抖音",
+      "element": "text",
+      "id": null,
+      "x": "440",
+      "y": "140",
+      "label_id": "L008",
+      "japanese": "Douyin（抖音）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "工作数据",
+      "element": "text",
+      "id": null,
+      "x": "590",
+      "y": "125",
+      "label_id": "L009",
+      "japanese": "仕事に関するデータ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "钉钉",
+      "element": "text",
+      "id": null,
+      "x": "590",
+      "y": "140",
+      "label_id": "L010",
+      "japanese": "DingTalk（釘釘）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "✗",
+      "element": "text",
+      "id": null,
+      "x": "215",
+      "y": "125",
+      "label_id": "L011",
+      "japanese": "✗",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "✗",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "125",
+      "label_id": "L012",
+      "japanese": "✗",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "✗",
+      "element": "text",
+      "id": null,
+      "x": "515",
+      "y": "125",
+      "label_id": "L013",
+      "japanese": "✗",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "✗ 数据孤岛阻碍AI潜力发挥",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "185",
+      "label_id": "L014",
+      "japanese": "✗ データのサイロ化がAIの潜在能力の発揮を妨げる",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体互联互通网络",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "280",
+      "label_id": "L015",
+      "japanese": "エージェントが相互接続・相互通信するネットワーク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "个人AI助手",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "370",
+      "label_id": "L016",
+      "japanese": "個人AIアシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "社交智能体",
+      "element": "text",
+      "id": null,
+      "x": "250",
+      "y": "350",
+      "label_id": "L017",
+      "japanese": "交流エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "购物智能体",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "350",
+      "label_id": "L018",
+      "japanese": "買い物エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "娱乐智能体",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "480",
+      "label_id": "L019",
+      "japanese": "娯楽エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "工作智能体",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "480",
+      "label_id": "L020",
+      "japanese": "仕事エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "出行智能体",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "410",
+      "label_id": "L021",
+      "japanese": "移動エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "¥",
+      "element": "text",
+      "id": null,
+      "x": "650",
+      "y": "385",
+      "label_id": "L022",
+      "japanese": "¥",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "金融智能体",
+      "element": "text",
+      "id": null,
+      "x": "650",
+      "y": "410",
+      "label_id": "L023",
+      "japanese": "金融エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "网络拓扑",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "20",
+      "label_id": "L024",
+      "japanese": "ネットワークトポロジー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "获得完整上下文信息",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "520",
+      "label_id": "L025",
+      "japanese": "完全なコンテキスト情報を得る",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 个人信息汇聚一处",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "540",
+      "label_id": "L026",
+      "japanese": "• 個人情報を一か所に集約する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 智能决策支持",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "555",
+      "label_id": "L027",
+      "japanese": "• インテリジェントな意思決定支援",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 上下文连续性",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "570",
+      "label_id": "L028",
+      "japanese": "• コンテキストの連続性",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "访问所有工具能力",
+      "element": "text",
+      "id": null,
+      "x": "310",
+      "y": "520",
+      "label_id": "L029",
+      "japanese": "すべてのツール機能にアクセスする",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 跨平台工具调用",
+      "element": "text",
+      "id": null,
+      "x": "310",
+      "y": "540",
+      "label_id": "L030",
+      "japanese": "• プラットフォームをまたぐツール呼び出し",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 复杂任务自动化",
+      "element": "text",
+      "id": null,
+      "x": "310",
+      "y": "555",
+      "label_id": "L031",
+      "japanese": "• 複雑なタスクの自動化",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 智能体协作",
+      "element": "text",
+      "id": null,
+      "x": "310",
+      "y": "570",
+      "label_id": "L032",
+      "japanese": "• エージェント同士の協力",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体间连接为主",
+      "element": "text",
+      "id": null,
+      "x": "540",
+      "y": "520",
+      "label_id": "L033",
+      "japanese": "エージェント間の接続が中心",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 智能体协作优先",
+      "element": "text",
+      "id": null,
+      "x": "540",
+      "y": "540",
+      "label_id": "L034",
+      "japanese": "• エージェント同士の協力を優先する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 任务自动分解",
+      "element": "text",
+      "id": null,
+      "x": "540",
+      "y": "555",
+      "label_id": "L035",
+      "japanese": "• タスクの自動分解",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 网络效应放大",
+      "element": "text",
+      "id": null,
+      "x": "540",
+      "y": "570",
+      "label_id": "L036",
+      "japanese": "• ネットワーク効果の増大",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ANP",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-3",
+      "label_id": "L037",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "8",
+      "label_id": "L038",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

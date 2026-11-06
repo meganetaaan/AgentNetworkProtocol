@@ -1,0 +1,108 @@
+{
+  "source": "blogs/images/agent-interview-Internet.png",
+  "sha256": "f081d3dd0030b6112226e3582547dad241e9ce94b9e35643982bc86b290536cf",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "APl/Protocol",
+      "confidence": 0.956723781923453,
+      "box": [
+        [
+          234.0,
+          259.0
+        ],
+        [
+          424.0,
+          259.0
+        ],
+        [
+          424.0,
+          293.0
+        ],
+        [
+          234.0,
+          293.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "API／プロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/Protocol"
+      ],
+      "transcribed_source": "API/Protocol"
+    },
+    {
+      "source": "www1",
+      "confidence": 0.8137232065200806,
+      "box": [
+        [
+          501.0,
+          261.0
+        ],
+        [
+          539.0,
+          259.0
+        ],
+        [
+          540.0,
+          275.0
+        ],
+        [
+          502.0,
+          277.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "WWW",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ],
+      "transcribed_source": "WWW"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9991107106208801,
+      "box": [
+        [
+          43.0,
+          294.0
+        ],
+        [
+          156.0,
+          296.0
+        ],
+        [
+          156.0,
+          339.0
+        ],
+        [
+          43.0,
+          337.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.4670316000119783,
+    0.005502939224243164,
+    0.1851210594177246
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "APl/Protocol": "API/Protocol",
+      "www1": "WWW"
+    },
+    "source_note": "WWWの右側の縦線は入力カーソル。その他の小アイコンには文字はない。",
+    "source_sha256": "f081d3dd0030b6112226e3582547dad241e9ce94b9e35643982bc86b290536cf"
+  }
+}

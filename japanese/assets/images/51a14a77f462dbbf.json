@@ -1,0 +1,130 @@
+{
+  "source": "images/anp-identity-interop.svg",
+  "sha256": "51a14a77f462dbbfd5675c9b568f697851e7f8cdfc5765ce687e036c909d7a86",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "个人助理智能体",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L001",
+      "japanese": "個人アシスタントエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID: did:wba:...",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "65",
+      "label_id": "L002",
+      "japanese": "DID: did:wba:...",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "穿衣搭配智能体",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L003",
+      "japanese": "ファッションコーディネートエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Fashion Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L004",
+      "japanese": "ファッションエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "美食推荐智能体",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L005",
+      "japanese": "グルメ推薦エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Food Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L006",
+      "japanese": "グルメエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "住房服务智能体",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L007",
+      "japanese": "住居サービスエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Housing Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L008",
+      "japanese": "住居エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "出行服务智能体",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L009",
+      "japanese": "移動サービスエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Travel Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L010",
+      "japanese": "移動エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "社交媒体智能体",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L011",
+      "japanese": "ソーシャルメディアエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Social Media Agent",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L012",
+      "japanese": "ソーシャルメディアエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

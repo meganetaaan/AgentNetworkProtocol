@@ -1,0 +1,339 @@
+{
+  "source": "blogs/images/mcp-tools.png",
+  "sha256": "4b90f531b632e83d23836153a70ddc0194c94e9b3af1402c780e293bfa5fbd62",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "LLM",
+      "confidence": 0.9961198767026266,
+      "box": [
+        [
+          127.0,
+          61.0
+        ],
+        [
+          200.0,
+          61.0
+        ],
+        [
+          200.0,
+          98.0
+        ],
+        [
+          127.0,
+          98.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "LLM",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LLM"
+      ]
+    },
+    {
+      "source": "Client",
+      "confidence": 0.9996384084224701,
+      "box": [
+        [
+          517.0,
+          59.0
+        ],
+        [
+          615.0,
+          62.0
+        ],
+        [
+          614.0,
+          101.0
+        ],
+        [
+          516.0,
+          98.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.999405970176061,
+      "box": [
+        [
+          926.0,
+          61.0
+        ],
+        [
+          1032.0,
+          66.0
+        ],
+        [
+          1031.0,
+          101.0
+        ],
+        [
+          924.0,
+          96.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Discovery",
+      "confidence": 0.9996251728799608,
+      "box": [
+        [
+          695.0,
+          184.0
+        ],
+        [
+          851.0,
+          191.0
+        ],
+        [
+          849.0,
+          228.0
+        ],
+        [
+          693.0,
+          221.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "発見",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "tools/list",
+      "confidence": 0.99953852891922,
+      "box": [
+        [
+          700.0,
+          286.0
+        ],
+        [
+          838.0,
+          286.0
+        ],
+        [
+          838.0,
+          323.0
+        ],
+        [
+          700.0,
+          323.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "tools/list",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/list"
+      ]
+    },
+    {
+      "source": "List of tools",
+      "confidence": 0.9980320655382596,
+      "box": [
+        [
+          683.0,
+          398.0
+        ],
+        [
+          864.0,
+          400.0
+        ],
+        [
+          863.0,
+          435.0
+        ],
+        [
+          683.0,
+          432.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ツールの一覧",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Tool Selection",
+      "confidence": 0.9996613604681832,
+      "box": [
+        [
+          256.0,
+          510.0
+        ],
+        [
+          473.0,
+          512.0
+        ],
+        [
+          473.0,
+          546.0
+        ],
+        [
+          256.0,
+          544.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "ツールの選択",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Select tool to use",
+      "confidence": 0.9920976724889543,
+      "box": [
+        [
+          228.0,
+          610.0
+        ],
+        [
+          494.0,
+          612.0
+        ],
+        [
+          493.0,
+          646.0
+        ],
+        [
+          228.0,
+          643.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "使用するツールを選ぶ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Invocation",
+      "confidence": 0.978876781463623,
+      "box": [
+        [
+          691.0,
+          710.0
+        ],
+        [
+          854.0,
+          712.0
+        ],
+        [
+          853.0,
+          746.0
+        ],
+        [
+          691.0,
+          744.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "呼び出し",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "tools/call",
+      "confidence": 0.999773907661438,
+      "box": [
+        [
+          696.0,
+          809.0
+        ],
+        [
+          842.0,
+          809.0
+        ],
+        [
+          842.0,
+          847.0
+        ],
+        [
+          696.0,
+          847.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "tools/call",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/call"
+      ]
+    },
+    {
+      "source": "Tool result",
+      "confidence": 0.9982033805413679,
+      "box": [
+        [
+          693.0,
+          923.0
+        ],
+        [
+          857.0,
+          923.0
+        ],
+        [
+          857.0,
+          957.0
+        ],
+        [
+          693.0,
+          957.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "ツールの実行結果",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Process result",
+      "confidence": 0.9993939740317208,
+      "box": [
+        [
+          257.0,
+          1025.0
+        ],
+        [
+          476.0,
+          1025.0
+        ],
+        [
+          476.0,
+          1055.0
+        ],
+        [
+          257.0,
+          1055.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "結果を処理する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9551358000026084,
+    0.01800990104675293,
+    0.36978983879089355
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "4b90f531b632e83d23836153a70ddc0194c94e9b3af1402c780e293bfa5fbd62"
+  }
+}

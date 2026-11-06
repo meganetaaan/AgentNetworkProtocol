@@ -1,0 +1,676 @@
+{
+  "source": "standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf",
+  "source_sha256": "efbc232eccd538d5fb2e4b2871c784ad8dcdfb1ecead25ce61f08d6f5240ca79",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "format": "pdf",
+  "units": [
+    {
+      "unit": 1,
+      "kind": "page",
+      "text": "AI Agents Communication Use Cases and Requirements\n\n\n\n\n\n                                                   • Menghan Yu(China Telecom)\n                                                   •  Xueting Li(China Telecom)\n                                                   •  Aijun Wang (China Telecom/Presentator)\n                                                   •  Ying Tong(China Telecom)",
+      "text_characters": 386,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            0.0,
+            720.0,
+            404.99993896484375
+          ],
+          "width": 2200,
+          "height": 1238
+        },
+        {
+          "bbox": [
+            609.0900268554688,
+            5.90301513671875,
+            720.0,
+            77.33999633789062
+          ],
+          "width": 340,
+          "height": 218
+        },
+        {
+          "bbox": [
+            16.5939998626709,
+            0.75,
+            83.06300354003906,
+            108.6199951171875
+          ],
+          "width": 152,
+          "height": 247
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-001.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 2,
+      "kind": "page",
+      "text": "AI Agents Use Cases in 3GPP\n\n\n\n    ❑Achievements in SA1:\n       •   AI Agent Definition: an automated intelligent entity capable of e.g interacting with its environment,\n          acquiring contextual information, reasoning, self-learning, decision-making, executing tasks\n         (autonomously or in collaboration with other Al Agents) to achieve a specific goal\n       •   AI Agents in 6G system: On-device AI Agents, Application AI Agents, Network AI Agents...\n       •  Use cases and requirements: 21+ agreed AI Agents related use cases and 63+ potential\n         requirements in TR 22.870. These use cases can be classified into 4 main categories according to\n         the deployment, capabilities, and operational roles of the AI Agents:\n               •   Intent-based 6G Services Enabled by Network AI Agents\n               •   Device-Network Collaboration\n               •   Multiple Devices Collaboration\n               •   Network-Application Collaboration",
+      "text_characters": 968,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            598.989990234375,
+            11.1610107421875,
+            703.8599853515625,
+            33.3800048828125
+          ],
+          "width": 263,
+          "height": 56
+        },
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            42.94000244140625,
+            720.0,
+            47.44000244140625
+          ],
+          "width": 1800,
+          "height": 13
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-002.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 3,
+      "kind": "page",
+      "text": "AI Agents Use Cases in 3GPP(1/4)\n\n\n❑Intent-based 6G Services Enabled by Network AI Agents:\n•  By deploying AI Agents in 6G network, the 6G network can provide\n   users with novel intelligent services requested by the user intent.\n•  Agent Communication: Agents communication between different\n   network AI Agents\n•  Use Cases:\n       •  6G Network Providing On-demand Networking with AI Agent\n       •   Intelligent Calling Services\n       •   Disaster Rescue Planning Enabled By Network AI Agents\n       •   AI agent for network performance assurance\n       •  Customized service provisioning based on AI Agents\n       •  Network-based intelligent assistance (e.g. for autonomous driving) by a network-native AI Agent\n       •   AI-optimized smart call assistance for telecom networks",
+      "text_characters": 786,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            598.989990234375,
+            11.1610107421875,
+            703.8599853515625,
+            33.3800048828125
+          ],
+          "width": 263,
+          "height": 56
+        },
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            42.94000244140625,
+            720.0,
+            47.44000244140625
+          ],
+          "width": 1800,
+          "height": 13
+        },
+        {
+          "bbox": [
+            436.5899963378906,
+            56.779998779296875,
+            702.4000244140625,
+            250.52999877929688
+          ],
+          "width": 783,
+          "height": 546
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-003.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 4,
+      "kind": "page",
+      "text": "Network Capability Exposure for Third-Party Services\n\n\n The exposure of network capabilities to third-party applications empowers them to deliver personalized services to users\n\n\n            The \"Concert AR Smart Interaction\" APP platform declares its\n                intent to the central intelligence layer for network-facilitated user\n                      data analytics, to enable personalized services.\n\n\n                                                                                                                                                                                                                                  Capability\n                                                                                                                                                                   Exposure\n                  2. The capability exposure agent in the central intelligence layer                                                                                                    Exposure Intent\n                                performs the parsing.\n         ① Parses the intent and conducts task decomposition:\n                User preferences, User network quality, High-demand users, ...                                                                                                       Task\n        ② Dispatches task information to service intelligence layer.                                                                                                        Decomposition\n\n\n                 3. The service customization agent interacts with other agents and\n                network elements to acquire raw data, invokes its internal                                                                                                       Data Collection\n                   analytical capabilities (e.g., user profiling, network quality                                                                                                      and Analysis\n                assessment), and reports the analytical results to the capability\n                                    exposure agent.\n\n\n                 4. The capability exposure agent delivers the analytical results to\n                                     the APP platform.\n\n\n                 5. The network provides data support to third-party applications,\n              enabling them to deliver personalized services to users through the\n                 collaboration of the capability exposure agent and the service\n                                   customization agent.\n                  Preferred interaction method selection, Interest-based service recommendations,  ...",
+      "text_characters": 2664,
+      "embedded_images": 13,
+      "image_regions": [
+        {
+          "bbox": [
+            598.989990234375,
+            11.1610107421875,
+            703.8599853515625,
+            33.3800048828125
+          ],
+          "width": 263,
+          "height": 56
+        },
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            42.94000244140625,
+            720.0,
+            47.44000244140625
+          ],
+          "width": 1800,
+          "height": 13
+        },
+        {
+          "bbox": [
+            359.8500061035156,
+            122.58499145507812,
+            676.989990234375,
+            355.42498779296875
+          ],
+          "width": 880,
+          "height": 646
+        },
+        {
+          "bbox": [
+            360.45001220703125,
+            95.3599853515625,
+            696.22998046875,
+            376.54901123046875
+          ],
+          "width": 337,
+          "height": 282
+        },
+        {
+          "bbox": [
+            360.45001220703125,
+            95.3599853515625,
+            696.22998046875,
+            376.54901123046875
+          ],
+          "width": 337,
+          "height": 282
+        },
+        {
+          "bbox": [
+            635.6400146484375,
+            141.59500122070312,
+            695.1589965820312,
+            169.67999267578125
+          ],
+          "width": 83,
+          "height": 40
+        },
+        {
+          "bbox": [
+            635.8800048828125,
+            141.4759979248047,
+            695.041015625,
+            171.72000122070312
+          ],
+          "width": 83,
+          "height": 43
+        },
+        {
+          "bbox": [
+            526.2000122070312,
+            141.95599365234375,
+            579.7210083007812,
+            170.0399932861328
+          ],
+          "width": 75,
+          "height": 40
+        },
+        {
+          "bbox": [
+            531.239990234375,
+            145.9219970703125,
+            574.56201171875,
+            168.0
+          ],
+          "width": 61,
+          "height": 31
+        },
+        {
+          "bbox": [
+            635.6400146484375,
+            184.1959991455078,
+            695.1589965820312,
+            212.27999877929688
+          ],
+          "width": 83,
+          "height": 40
+        },
+        {
+          "bbox": [
+            636.9600219726562,
+            184.0760040283203,
+            693.9609985351562,
+            214.32000732421875
+          ],
+          "width": 80,
+          "height": 43
+        },
+        {
+          "bbox": [
+            635.6400146484375,
+            240.60299682617188,
+            695.1589965820312,
+            268.55999755859375
+          ],
+          "width": 83,
+          "height": 39
+        },
+        {
+          "bbox": [
+            636.239990234375,
+            240.4759979248047,
+            694.6809692382812,
+            270.7200012207031
+          ],
+          "width": 82,
+          "height": 43
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-004.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 5,
+      "kind": "page",
+      "text": "AI Agents Use Cases in 3GPP(2/4)\n\n\n\n❑Device-Network Collaboration:\n•  Due to device limitations (computational resources, battery\n    capacity, etc.) The device cannot fully execute complex\n    tasks locally and may offload partial tasks to the network,\n    collaborating with 6G network to execute complex tasks.\n•  Agent Communication: Agents communication between on-\n   device AI Agents, and between on-device Agents and\n   network AI Agents\n•  Use Cases:\n       •  6G System Assisted AI Agent Service          •   Child Health Management Assistant\n       •  Smart Housekeeping                               •   Flexible UE-Network coordination through AI agent(s)\n                                                                    •   Proactive AI agent for personal safety\n                                                                    •  Shared embodied AI agents",
+      "text_characters": 876,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            598.989990234375,
+            11.1610107421875,
+            703.8599853515625,
+            33.3800048828125
+          ],
+          "width": 263,
+          "height": 56
+        },
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            42.94000244140625,
+            720.0,
+            47.44000244140625
+          ],
+          "width": 1800,
+          "height": 13
+        },
+        {
+          "bbox": [
+            392.2799987792969,
+            87.6500244140625,
+            709.8499755859375,
+            221.16000366210938
+          ],
+          "width": 624,
+          "height": 324
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-005.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 6,
+      "kind": "page",
+      "text": "AI Agents Use Cases in 3GPP(3/4)\n\n\n❑Multiple Devices Collaboration:\n•  Under the powerful communication capabilities\n    of 6G networks, multiple on-device AI Agents\n   can collaborate with each other to accomplish\n   complex AI tasks after being authenticated and\n    authorized by the 6G network.\n•  Agent Communication: Agents communication\n   between different on-device AI Agents\n\n\n\n  •  Use Cases:\n          •   Collaborative AI Agents\n          •   AI Agents Communication\n          •   Authentication and authorization for AI agents\n          •  Smart support for data collection and fusion in multi-agent scenarios",
+      "text_characters": 623,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            598.989990234375,
+            11.1610107421875,
+            703.8599853515625,
+            33.3800048828125
+          ],
+          "width": 263,
+          "height": 56
+        },
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            42.94000244140625,
+            720.0,
+            47.44000244140625
+          ],
+          "width": 1800,
+          "height": 13
+        },
+        {
+          "bbox": [
+            341.6400146484375,
+            82.07000732421875,
+            709.4100341796875,
+            256.7200012207031
+          ],
+          "width": 744,
+          "height": 484
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-006.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 7,
+      "kind": "page",
+      "text": "AI Agents Use Cases in 3GPP(4/4)\n\n\n❑Network-Application Collaboration:\n•  The network AI Agents can invoke\n    appropriate application AI Agents, and can\n   share network data and domain expertise\n    with application AI Agents, providing crucial\n   data support for application AI Agents.\n•  Agent Communication: Agents\n   communication between network AI Agents\n   and Application AI Agents\n\n\n   •  Use Cases:\n          •   Intelligent Communication Assistant\n          •  6G AI Agent Collaboration With Third-party AI Using LLM\n          •  Network knowledge as part of Retrieval Augmented Generation for Generative AI\n          •   AI agent management",
+      "text_characters": 655,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            598.989990234375,
+            11.1610107421875,
+            703.8599853515625,
+            33.3800048828125
+          ],
+          "width": 263,
+          "height": 56
+        },
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            42.94000244140625,
+            720.0,
+            47.44000244140625
+          ],
+          "width": 1800,
+          "height": 13
+        },
+        {
+          "bbox": [
+            314.4800109863281,
+            88.08000183105469,
+            692.719970703125,
+            233.22000122070312
+          ],
+          "width": 865,
+          "height": 332
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-007.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 8,
+      "kind": "page",
+      "text": "Semantic Routing",
+      "text_characters": 16,
+      "embedded_images": 0,
+      "image_regions": [],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-008.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": true,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 9,
+      "kind": "page",
+      "text": "What is Semantic Routing(SemR)?\n\n Definition：SemR enables routing decisions based on application-layer semantics — such\n     as service identity, API version, user context, or intent — to align network behavior with\n     business goals.\n\n\n\n    Core Components:\n\n\n     Identity                                                             Telemetry\n                                          Policy\n\n     Authenticate and verify                                                   Provide runtime feedback\n                                            Translate business intent into\n     communicating entities                                                           (metrics, logs, traces) for\n                                          executable routing rules.\n      (service, user, agent).                                                dynamic optimization.\n\n\n\n\n\n                                                                                                   9",
+      "text_characters": 963,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            19.80500030517578,
+            47.69941329956055,
+            700.114990234375,
+            51.670013427734375
+          ],
+          "width": 1549,
+          "height": 11
+        },
+        {
+          "bbox": [
+            636.0900268554688,
+            0.89801025390625,
+            716.8250122070312,
+            52.730010986328125
+          ],
+          "width": 224,
+          "height": 143
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-009.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 10,
+      "kind": "page",
+      "text": "From Services to Agents: New Communication Paradigm\n\n Why SemR is critical for AI Agent networks:\n\n                      Dimension        Service Mesh（Traditional SemR）AI Agent Network（Future SemR）\n\n                                                      Static Service Identification\n                            Target                                     Dynamic agent (intent + capability)                                       （Service Name, Version, API）\n\n                       Topology                   Relatively stable           Highly dynamic, self-organizing\n\n                         Trust Model              mTLS, RBAC             Contextual, history-based trust\n\n                                                                          Task relevance, trust, cost, data\n                      Decision Metric                 Latency, load\n                                                                                                         locality\n\n\n   SemR is a Key Mechanism to Address Agent Communication Challenges:\n\n\n\n       Resolve Semantic Gap              Adapt to Dynamic Topology          Enhance Collaboration Efficiency\n\n\n\n\n                                                                                                   10",
+      "text_characters": 1255,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            19.80500030517578,
+            47.69941329956055,
+            700.114990234375,
+            51.670013427734375
+          ],
+          "width": 1549,
+          "height": 11
+        },
+        {
+          "bbox": [
+            636.0900268554688,
+            0.89801025390625,
+            716.8250122070312,
+            52.730010986328125
+          ],
+          "width": 224,
+          "height": 143
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-010.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 11,
+      "kind": "page",
+      "text": "Semantic Evolution\n\n From “Service Name” to “Intent Vector”\n\n\n\n    From “Service Name” to        Capability Discovery and                                                                  Trust-Aware Dynamic Policy\n           “Intent Vector”                 Matching\n\n\n         •   Intent Vector                                                               •   Trust Score\n                                                 •   Agent Registration\n\n         •   Semantic                                                                    •   Policy Control\n                                                 •   Intent Routing Table\n         Matching\n                                                                                             •   Security\n                                                 •   Real-time Policy\n         •   Flexibility                                                   Assurance\n\n\n\n\n\n                                                                                                         11",
+      "text_characters": 1020,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            19.80500030517578,
+            47.69941329956055,
+            700.114990234375,
+            51.670013427734375
+          ],
+          "width": 1549,
+          "height": 11
+        },
+        {
+          "bbox": [
+            636.0900268554688,
+            0.89801025390625,
+            716.8250122070312,
+            52.730010986328125
+          ],
+          "width": 224,
+          "height": 143
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-011.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 12,
+      "kind": "page",
+      "text": "Future Architecture\n\n  Semantic Routing design for AI Agent Communication\n\n\n\n             Layer                Components                                  Role\n                                                     Manages Agent capabilities, intent vectors, and resource\n                          Agent Capability Registration\n                                                                                                      status.\n        Control Plane         Intent Discovery Service       Converts tasks to intent vectors and matches with registry.\n\n                                Global Policy Engine           Generates/distributes routing policies (trust, cost, load).\n\n                                     Service Router            Handles Agent communication with semantic metadata.\n        Data Plane\n                             Local Routing Decision Unit         Makes final routing decisions at Agent edges.\n\n                             Task Success Monitoring          Tracks task completion, latency, and resource use.\n      Feedback Loop\n                          RL Module               Optimizes routing model via historical/realtime data.\n\n\n\n\n\n                                                                                                   12",
+      "text_characters": 1272,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            19.80500030517578,
+            47.69941329956055,
+            700.114990234375,
+            51.670013427734375
+          ],
+          "width": 1549,
+          "height": 11
+        },
+        {
+          "bbox": [
+            636.0900268554688,
+            0.89801025390625,
+            716.8250122070312,
+            52.730010986328125
+          ],
+          "width": 224,
+          "height": 143
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-012.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 13,
+      "kind": "page",
+      "text": "Summary---Core Requirements for 6G AI Agent Use Cases\n\n\n\n 1.   AI Agent Communication Framework\n\n         •   Which can integrate the necessary components to accomplish all the mentioned scenarios.\n\n 2.  The Identity of AI Agents\n\n         •   Secure authentication, authorization, and management mechanisms for AI Agents' digital identities\n\n 3.   Efficient Collaboration\n\n         •    Efficient collaboration between different AI Agents and between AI Agents and the tools\n\n 4.   Registration and Discovery\n\n         •   On-device AI Agents, 3rd party AI Agent, network AI Agents and tools\n\n 5.  Semantic Routing\n\n         •   Routing decisions based on application-layer semantics — such as identity, user context, or intent\n\n 6.   Security\n\n         •   Data protection and user consent\n\n                                                                                                   13",
+      "text_characters": 894,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            19.80500030517578,
+            47.69941329956055,
+            700.114990234375,
+            51.670013427734375
+          ],
+          "width": 1549,
+          "height": 11
+        },
+        {
+          "bbox": [
+            636.0900268554688,
+            0.89801025390625,
+            716.8250122070312,
+            52.730010986328125
+          ],
+          "width": 224,
+          "height": 143
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-013.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 14,
+      "kind": "page",
+      "text": "Thank you!\n\n\n1. https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/\n2. https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/\n3. https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+      "text_characters": 241,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            1.0728999768616632e-05,
+            0.0,
+            720.0,
+            404.99993896484375
+          ],
+          "width": 2200,
+          "height": 1238
+        },
+        {
+          "bbox": [
+            609.0900268554688,
+            5.90301513671875,
+            720.0,
+            77.33999633789062
+          ],
+          "width": 340,
+          "height": 218
+        },
+        {
+          "bbox": [
+            16.5939998626709,
+            0.75,
+            83.06300354003906,
+            108.6199951171875
+          ],
+          "width": 152,
+          "height": 247
+        }
+      ],
+      "hyperlinks": [
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-yu-ai-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/draft-tong-network-agent-use-cases-in-6g/",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture",
+        "https://datatracker.ietf.org/doc/html/draft-li-semantic-routing-architecture"
+      ],
+      "preview_local_reference": "AI Agents Communication Use Cases and Requirements(v3)-chinatelecom/page-014.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    }
+  ],
+  "unit_count": 14,
+  "original_binary_unchanged": true,
+  "historical_document": true
+}

@@ -1,0 +1,705 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page4.jpg",
+  "sha256": "a8dcff29247139265eea1ed55fd482ae1d915040a29eb3247fee27a5cdfbff9f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agentic Web:",
+      "confidence": 0.9410320023695627,
+      "box": [
+        [
+          36.0,
+          46.28571319580078
+        ],
+        [
+          606.1935424804688,
+          42.81428527832031
+        ],
+        [
+          606.1935424804688,
+          115.71428680419922
+        ],
+        [
+          36.0,
+          119.18571472167969
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9882486263910929,
+      "box": [
+        [
+          2153.0322265625,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          85.62857055664062
+        ],
+        [
+          2153.0322265625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "The Impact of Agents on the Internet",
+      "confidence": 0.9932748360766305,
+      "box": [
+        [
+          616.6451416015625,
+          63.64285659790039
+        ],
+        [
+          1340.1290283203125,
+          70.5857162475586
+        ],
+        [
+          1340.1290283203125,
+          124.97142791748047
+        ],
+        [
+          616.6451416015625,
+          118.02857208251953
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9956391811370849,
+      "box": [
+        [
+          1667.61279296875,
+          278.8714294433594
+        ],
+        [
+          1739.61279296875,
+          278.8714294433594
+        ],
+        [
+          1739.61279296875,
+          307.8000183105469
+        ],
+        [
+          1667.61279296875,
+          307.8000183105469
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agents must be interconnected",
+      "confidence": 0.9985556253071489,
+      "box": [
+        [
+          119.61289978027344,
+          336.72857666015625
+        ],
+        [
+          780.3870849609375,
+          332.1000061035156
+        ],
+        [
+          780.3870849609375,
+          380.70001220703125
+        ],
+        [
+          119.61289978027344,
+          385.3285827636719
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9937108635902405,
+      "box": [
+        [
+          1416.774169921875,
+          380.70001220703125
+        ],
+        [
+          1491.0966796875,
+          380.70001220703125
+        ],
+        [
+          1491.0966796875,
+          413.1000061035156
+        ],
+        [
+          1416.774169921875,
+          413.1000061035156
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9950784564018249,
+      "box": [
+        [
+          1917.290283203125,
+          378.3857116699219
+        ],
+        [
+          1992.774169921875,
+          380.70001220703125
+        ],
+        [
+          1991.61279296875,
+          414.25714111328125
+        ],
+        [
+          1916.1290283203125,
+          411.94287109375
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "·AI must have access to completecontextual",
+      "confidence": 0.9455752032143729,
+      "box": [
+        [
+          125.41934967041016,
+          453.6000061035156
+        ],
+        [
+          927.8709106445312,
+          454.75714111328125
+        ],
+        [
+          927.8709106445312,
+          497.5714416503906
+        ],
+        [
+          125.41934967041016,
+          496.414306640625
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "information.",
+      "confidence": 0.9997168630361557,
+      "box": [
+        [
+          153.29031372070312,
+          521.8714599609375
+        ],
+        [
+          378.58062744140625,
+          521.8714599609375
+        ],
+        [
+          378.58062744140625,
+          561.2142944335938
+        ],
+        [
+          153.29031372070312,
+          561.2142944335938
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AI should beableto access all tool",
+      "confidence": 0.9589434721890617,
+      "box": [
+        [
+          135.87095642089844,
+          612.1286010742188
+        ],
+        [
+          771.0967407226562,
+          613.2857055664062
+        ],
+        [
+          771.0967407226562,
+          651.471435546875
+        ],
+        [
+          135.87095642089844,
+          650.3142700195312
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "AgenticWeb",
+      "confidence": 0.9892186522483826,
+      "box": [
+        [
+          1607.2257080078125,
+          616.7571411132812
+        ],
+        [
+          1802.322509765625,
+          616.7571411132812
+        ],
+        [
+          1802.322509765625,
+          654.94287109375
+        ],
+        [
+          1607.2257080078125,
+          654.94287109375
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgenticWeb"
+      ]
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9865298403633965,
+      "box": [
+        [
+          1298.322509765625,
+          630.6428833007812
+        ],
+        [
+          1402.838623046875,
+          630.6428833007812
+        ],
+        [
+          1402.838623046875,
+          658.414306640625
+        ],
+        [
+          1298.322509765625,
+          658.414306640625
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9873714844385783,
+      "box": [
+        [
+          2002.064453125,
+          628.3285522460938
+        ],
+        [
+          2110.064453125,
+          630.6428833007812
+        ],
+        [
+          2110.064453125,
+          661.8857421875
+        ],
+        [
+          2002.064453125,
+          659.5714111328125
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "capabilities.",
+      "confidence": 0.9970057010650635,
+      "box": [
+        [
+          153.29031372070312,
+          679.2428588867188
+        ],
+        [
+          371.6128845214844,
+          675.7714233398438
+        ],
+        [
+          372.774169921875,
+          723.2142944335938
+        ],
+        [
+          154.4516143798828,
+          726.6857299804688
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "The connectivity between agents will have a",
+      "confidence": 0.9804071894911832,
+      "box": [
+        [
+          135.87095642089844,
+          771.8142700195312
+        ],
+        [
+          939.4838256835938,
+          772.971435546875
+        ],
+        [
+          939.4838256835938,
+          814.6286010742188
+        ],
+        [
+          135.87095642089844,
+          813.471435546875
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "higher proportion.",
+      "confidence": 0.9956237971782684,
+      "box": [
+        [
+          153.29031372070312,
+          837.7714233398438
+        ],
+        [
+          479.6128845214844,
+          840.0857543945312
+        ],
+        [
+          479.6128845214844,
+          886.3714599609375
+        ],
+        [
+          153.29031372070312,
+          884.05712890625
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9935524702072144,
+      "box": [
+        [
+          1416.774169921875,
+          880.5857543945312
+        ],
+        [
+          1491.0966796875,
+          880.5857543945312
+        ],
+        [
+          1491.0966796875,
+          912.9857177734375
+        ],
+        [
+          1416.774169921875,
+          912.9857177734375
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9942043781280517,
+      "box": [
+        [
+          1916.1290283203125,
+          880.5857543945312
+        ],
+        [
+          1991.61279296875,
+          880.5857543945312
+        ],
+        [
+          1991.61279296875,
+          912.9857177734375
+        ],
+        [
+          1916.1290283203125,
+          912.9857177734375
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9952386975288391,
+      "box": [
+        [
+          1668.774169921875,
+          985.8857421875
+        ],
+        [
+          1740.774169921875,
+          985.8857421875
+        ],
+        [
+          1740.774169921875,
+          1014.8143310546875
+        ],
+        [
+          1668.774169921875,
+          1014.8143310546875
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "The current data silos on the internet hinder the full potential of AI.",
+      "confidence": 0.9706989266503026,
+      "box": [
+        [
+          609.6774291992188,
+          1191.857177734375
+        ],
+        [
+          1688.51611328125,
+          1193.0142822265625
+        ],
+        [
+          1688.51611328125,
+          1231.2000732421875
+        ],
+        [
+          609.6774291992188,
+          1230.0428466796875
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents must be interconnected\n\n\n      • AI must have access to complete contextual\n\n       information.\n\n      • AI should be able to access all tool\n\n       capabilities.\n\n      • The connectivity between agents will have a\n\n      higher proportion.\n\n\n\n\n\n                            The current data silos on the internet hinder the full potential of AI.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L021",
+      "japanese": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェント同士を接続する必要があります。\n- AIは、完全な文脈情報にアクセスできなければなりません。\n- AIは、すべてのツールの機能にアクセスできるべきです。\n- エージェント間の接続が占める割合は、より大きくなります。\n\n現在のインターネットのデータサイロは、AIの潜在能力を十分に発揮する妨げとなっています。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L022",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L023",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L024",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L025",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L026",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L027",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L028",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L029",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agentic Web",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L030",
+      "japanese": "エージェントのWeb",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.352468199969735,
+    0.03749251365661621,
+    2.4545037746429443
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 4,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-4",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.2192766203703702,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 4,
+    "manual_label_translations": {
+      "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents must be interconnected\n\n\n      • AI must have access to complete contextual\n\n       information.\n\n      • AI should be able to access all tool\n\n       capabilities.\n\n      • The connectivity between agents will have a\n\n      higher proportion.\n\n\n\n\n\n                            The current data silos on the internet hinder the full potential of AI.": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェント同士を接続する必要があります。\n- AIは、完全な文脈情報にアクセスできなければなりません。\n- AIは、すべてのツールの機能にアクセスできるべきです。\n- エージェント間の接続が占める割合は、より大きくなります。\n\n現在のインターネットのデータサイロは、AIの潜在能力を十分に発揮する妨げとなっています。",
+      "Agent": "エージェント",
+      "Assistant": "アシスタント",
+      "Agentic Web": "エージェントのWeb"
+    },
+    "additional_labels": [
+      {
+        "source": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents must be interconnected\n\n\n      • AI must have access to complete contextual\n\n       information.\n\n      • AI should be able to access all tool\n\n       capabilities.\n\n      • The connectivity between agents will have a\n\n      higher proportion.\n\n\n\n\n\n                            The current data silos on the internet hinder the full potential of AI.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "Assistant",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Assistant",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "Agentic Web",
+        "location": "visible diagram label 9, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Agentic Web:",
+      "ANP",
+      "The Impact of Agents on the Internet",
+      "Agent",
+      "Agents must be interconnected",
+      "Agent",
+      "Agent",
+      "·AI must have access to completecontextual",
+      "information.",
+      "AI should beableto access all tool",
+      "AgenticWeb",
+      "Assistant",
+      "Assistant",
+      "capabilities.",
+      "The connectivity between agents will have a",
+      "higher proportion.",
+      "Agent",
+      "Agent",
+      "Agent",
+      "The current data silos on the internet hinder the full potential of AI."
+    ],
+    "source_sha256": "a8dcff29247139265eea1ed55fd482ae1d915040a29eb3247fee27a5cdfbff9f"
+  }
+}

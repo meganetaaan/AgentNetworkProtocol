@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=chinese/相关产品与技术/ANP论文汇总.md; basis=complete manual translation against the original in the preceding review -->
 > 日本語訳。原文：[ANP论文汇总.md](../../../chinese/相关产品与技术/ANP论文汇总.md)。研究メモ中の記述・主張は執筆時点の原文に従います。
 
 # ANP 論文一覧

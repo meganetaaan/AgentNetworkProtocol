@@ -1,0 +1,1232 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page10.jpg",
+  "sha256": "8a4ed0076bff4c5833e0223cb09766210a7c97230154767dbb1bbe425db3dbfe",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "DID Method: Web-Based Agent",
+      "confidence": 0.9658023405958105,
+      "box": [
+        [
+          37.16128921508789,
+          42.81428527832031
+        ],
+        [
+          1291.3548583984375,
+          45.128570556640625
+        ],
+        [
+          1291.3548583984375,
+          116.87142944335938
+        ],
+        [
+          37.16128921508789,
+          114.55714416503906
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9882486263910929,
+      "box": [
+        [
+          2153.0322265625,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          85.62857055664062
+        ],
+        [
+          2153.0322265625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "\"@context\":[",
+      "confidence": 0.9406091670195261,
+      "box": [
+        [
+          1227.48388671875,
+          179.35714721679688
+        ],
+        [
+          1378.4515380859375,
+          179.35714721679688
+        ],
+        [
+          1378.4515380859375,
+          205.971435546875
+        ],
+        [
+          1227.48388671875,
+          205.971435546875
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"https://www.w3.org/ns/did/v1\",",
+      "confidence": 0.9695055715499385,
+      "box": [
+        [
+          1243.741943359375,
+          200.1857147216797
+        ],
+        [
+          1595.6129150390625,
+          202.5
+        ],
+        [
+          1595.6129150390625,
+          232.58572387695312
+        ],
+        [
+          1243.741943359375,
+          230.2714385986328
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://www.w3.org/ns/did/v1\","
+      ]
+    },
+    {
+      "source": "\"https://w3id.org/security/suites/jws-2020/v1\",",
+      "confidence": 0.9771516576726386,
+      "box": [
+        [
+          1246.064453125,
+          224.4857177734375
+        ],
+        [
+          1768.6451416015625,
+          225.6428680419922
+        ],
+        [
+          1768.6451416015625,
+          255.72857666015625
+        ],
+        [
+          1246.064453125,
+          254.57142639160156
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://w3id.org/security/suites/jws-2020/v1\","
+      ]
+    },
+    {
+      "source": "\"https://w3id.org/security/suites/secp256k1-2019/v1\",",
+      "confidence": 0.9807976945391241,
+      "box": [
+        [
+          1244.9031982421875,
+          247.62857055664062
+        ],
+        [
+          1840.6451416015625,
+          248.7857208251953
+        ],
+        [
+          1840.6451416015625,
+          278.8714294433594
+        ],
+        [
+          1244.9031982421875,
+          277.71429443359375
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://w3id.org/security/suites/secp256k1-2019/v1\","
+      ]
+    },
+    {
+      "source": "\"https://w3id.org/security/suites/ed25519-2020/v1\",",
+      "confidence": 0.9812129584013247,
+      "box": [
+        [
+          1247.225830078125,
+          273.0857238769531
+        ],
+        [
+          1815.0966796875,
+          275.3999938964844
+        ],
+        [
+          1815.0966796875,
+          302.0142822265625
+        ],
+        [
+          1247.225830078125,
+          299.70001220703125
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://w3id.org/security/suites/ed25519-2020/v1\","
+      ]
+    },
+    {
+      "source": "Method DesignPrinciples:",
+      "confidence": 0.9708668266733488,
+      "box": [
+        [
+          74.32257843017578,
+          288.1285705566406
+        ],
+        [
+          421.5483703613281,
+          290.44287109375
+        ],
+        [
+          421.5483703613281,
+          325.1571350097656
+        ],
+        [
+          74.32257843017578,
+          322.8428649902344
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DesignPrinciples"
+      ]
+    },
+    {
+      "source": "\"https://w3id.org/security/suites/x25519-2019/v1\"",
+      "confidence": 0.9867782714415569,
+      "box": [
+        [
+          1246.064453125,
+          295.0714416503906
+        ],
+        [
+          1798.838623046875,
+          297.3857116699219
+        ],
+        [
+          1798.838623046875,
+          327.471435546875
+        ],
+        [
+          1246.064453125,
+          325.1571350097656
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://w3id.org/security/suites/x25519-2019/v1\""
+      ]
+    },
+    {
+      "source": "\"id\":\"did:wba:example.com3A8800:user:alice\",",
+      "confidence": 0.9518618014725772,
+      "box": [
+        [
+          1224.0,
+          343.67144775390625
+        ],
+        [
+          1738.4515380859375,
+          344.8285827636719
+        ],
+        [
+          1738.4515380859375,
+          371.44287109375
+        ],
+        [
+          1224.0,
+          370.28570556640625
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "·Donotpursuecompletedecentralization,feasibilityis",
+      "confidence": 0.9810975193977356,
+      "box": [
+        [
+          76.64515686035156,
+          364.5
+        ],
+        [
+          841.9354858398438,
+          364.5
+        ],
+        [
+          841.9354858398438,
+          398.0571594238281
+        ],
+        [
+          76.64515686035156,
+          398.0571594238281
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"verificationMethod\":[",
+      "confidence": 0.9608064483512532,
+      "box": [
+        [
+          1226.322509765625,
+          369.1285705566406
+        ],
+        [
+          1488.774169921875,
+          370.28570556640625
+        ],
+        [
+          1488.774169921875,
+          393.4285888671875
+        ],
+        [
+          1226.322509765625,
+          392.27142333984375
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "prioritizedoverdecentralizationfeatures.",
+      "confidence": 0.9970656543970108,
+      "box": [
+        [
+          112.64515686035156,
+          423.5142822265625
+        ],
+        [
+          644.51611328125,
+          421.20001220703125
+        ],
+        [
+          644.51611328125,
+          452.44287109375
+        ],
+        [
+          112.64515686035156,
+          454.75714111328125
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"id\":\"did:wba:example.com%3A8800:user:alice#WjKgJV7VRw3hmgU6--4v15c0Aewbcvat1BsRFTIqa5Q\"",
+      "confidence": 0.9499834542247382,
+      "box": [
+        [
+          1268.1290283203125,
+          414.25714111328125
+        ],
+        [
+          2266.838623046875,
+          416.5714416503906
+        ],
+        [
+          2266.838623046875,
+          443.18572998046875
+        ],
+        [
+          1268.1290283203125,
+          440.8714294433594
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"type\":\"EcdsaSecp256k1VerificationKey2019\",",
+      "confidence": 0.9542430556097696,
+      "box": [
+        [
+          1269.290283203125,
+          438.5571594238281
+        ],
+        [
+          1760.51611328125,
+          439.71429443359375
+        ],
+        [
+          1760.51611328125,
+          467.4857177734375
+        ],
+        [
+          1269.290283203125,
+          466.3285827636719
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"controller\":\"did:wba:example.com3A8800:user:alice\",",
+      "confidence": 0.9492164620986352,
+      "box": [
+        [
+          1269.290283203125,
+          461.70001220703125
+        ],
+        [
+          1870.838623046875,
+          462.8571472167969
+        ],
+        [
+          1870.838623046875,
+          490.6285705566406
+        ],
+        [
+          1269.290283203125,
+          489.471435546875
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Reuseexistingwebinfrastructuretoreduceimplementation",
+      "confidence": 0.9944183150163064,
+      "box": [
+        [
+          108.0,
+          494.1000061035156
+        ],
+        [
+          909.290283203125,
+          495.25714111328125
+        ],
+        [
+          909.290283203125,
+          526.5
+        ],
+        [
+          108.0,
+          525.3428955078125
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"publicKeyJwk\":{",
+      "confidence": 0.9267988502979279,
+      "box": [
+        [
+          1272.774169921875,
+          487.15716552734375
+        ],
+        [
+          1469.0322265625,
+          487.15716552734375
+        ],
+        [
+          1469.0322265625,
+          513.7714233398438
+        ],
+        [
+          1272.774169921875,
+          513.7714233398438
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"crv\":\"secp256k1\"",
+      "confidence": 0.927015202886918,
+      "box": [
+        [
+          1291.3548583984375,
+          510.3000183105469
+        ],
+        [
+          1500.3870849609375,
+          511.4571533203125
+        ],
+        [
+          1500.3870849609375,
+          535.7571411132812
+        ],
+        [
+          1291.3548583984375,
+          534.6000366210938
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "costs.",
+      "confidence": 0.9886928995450338,
+      "box": [
+        [
+          111.48387145996094,
+          554.2714233398438
+        ],
+        [
+          190.4516143798828,
+          554.2714233398438
+        ],
+        [
+          190.4516143798828,
+          583.2000122070312
+        ],
+        [
+          111.48387145996094,
+          583.2000122070312
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"y\":\"qN1jKupJLFsPFc1UkWinqLjv4YE0mq_Ickwnjgasvmo\",",
+      "confidence": 0.9188010251522064,
+      "box": [
+        [
+          1292.51611328125,
+          556.5857543945312
+        ],
+        [
+          1861.54833984375,
+          558.9000244140625
+        ],
+        [
+          1861.54833984375,
+          585.5142822265625
+        ],
+        [
+          1292.51611328125,
+          583.2000122070312
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"kty\":\"EC\",",
+      "confidence": 0.8338436538522894,
+      "box": [
+        [
+          1293.6773681640625,
+          582.0428466796875
+        ],
+        [
+          1424.9031982421875,
+          582.0428466796875
+        ],
+        [
+          1424.9031982421875,
+          608.6571655273438
+        ],
+        [
+          1293.6773681640625,
+          608.6571655273438
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"kid\":\"WjKgJV7VRw3hmgU6--4v15c0Aewbcvat1BsRFTIqa5Q\"",
+      "confidence": 0.9424697838577569,
+      "box": [
+        [
+          1290.1934814453125,
+          601.7142944335938
+        ],
+        [
+          1875.4837646484375,
+          604.028564453125
+        ],
+        [
+          1875.4837646484375,
+          635.2714233398438
+        ],
+        [
+          1290.1934814453125,
+          632.9571533203125
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Buildupontheexistingdid:webmethodandaddagent-related",
+      "confidence": 0.9908436399239761,
+      "box": [
+        [
+          110.32257843017578,
+          626.0142822265625
+        ],
+        [
+          927.8709106445312,
+          626.0142822265625
+        ],
+        [
+          927.8709106445312,
+          656.1000366210938
+        ],
+        [
+          110.32257843017578,
+          656.1000366210938
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "did:webmethodandaddagent-related"
+      ]
+    },
+    {
+      "source": "features.",
+      "confidence": 0.9929625458187528,
+      "box": [
+        [
+          110.32257843017578,
+          680.4000244140625
+        ],
+        [
+          228.77418518066406,
+          682.7142944335938
+        ],
+        [
+          228.77418518066406,
+          713.9571533203125
+        ],
+        [
+          110.32257843017578,
+          711.6428833007812
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"authentication\":[",
+      "confidence": 0.9297815528180864,
+      "box": [
+        [
+          1232.1290283203125,
+          701.2285766601562
+        ],
+        [
+          1440.0,
+          701.2285766601562
+        ],
+        [
+          1440.0,
+          724.3714599609375
+        ],
+        [
+          1232.1290283203125,
+          724.3714599609375
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"did:wba:example.com%3A8800:user:alice#WjKgJV7VRw3hmgU6--4v15c0Aewbcvat1BsRFTIqa5Q\",",
+      "confidence": 0.9577234791857856,
+      "box": [
+        [
+          1249.54833984375,
+          723.2142944335938
+        ],
+        [
+          2182.064453125,
+          723.2142944335938
+        ],
+        [
+          2182.064453125,
+          749.82861328125
+        ],
+        [
+          1249.54833984375,
+          749.82861328125
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "did:wba:example.com%3A8800:user:alice",
+        "WjKgJV7VRw3hmgU6",
+        "4",
+        "15",
+        "0",
+        "1",
+        "5"
+      ]
+    },
+    {
+      "source": "\"id\":\"did:wba:example.com%3A8800:user:alice#key-1\",",
+      "confidence": 0.9542620696273505,
+      "box": [
+        [
+          1269.290283203125,
+          768.3428955078125
+        ],
+        [
+          1849.9354248046875,
+          770.6571655273438
+        ],
+        [
+          1849.9354248046875,
+          797.2714233398438
+        ],
+        [
+          1269.290283203125,
+          794.9571533203125
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"type\":\"Ed25519VerificationKey2020\",",
+      "confidence": 0.9308820126785172,
+      "box": [
+        [
+          1272.774169921875,
+          796.1143188476562
+        ],
+        [
+          1680.3870849609375,
+          796.1143188476562
+        ],
+        [
+          1680.3870849609375,
+          819.2571411132812
+        ],
+        [
+          1272.774169921875,
+          819.2571411132812
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"controller\":\"did:wba:example.com3A8800:user:alice\",",
+      "confidence": 0.9543855591462209,
+      "box": [
+        [
+          1271.6129150390625,
+          818.1000366210938
+        ],
+        [
+          1869.6773681640625,
+          818.1000366210938
+        ],
+        [
+          1869.6773681640625,
+          844.7142944335938
+        ],
+        [
+          1271.6129150390625,
+          844.7142944335938
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Did:wba DID Defines:",
+      "confidence": 0.9797558337450027,
+      "box": [
+        [
+          74.32257843017578,
+          850.5
+        ],
+        [
+          386.70965576171875,
+          853.971435546875
+        ],
+        [
+          386.70965576171875,
+          888.6857299804688
+        ],
+        [
+          74.32257843017578,
+          885.2142944335938
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "\"pubLicKeyMuLtibase:\"zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV\"",
+      "confidence": 0.9500354163682283,
+      "box": [
+        [
+          1269.290283203125,
+          840.0857543945312
+        ],
+        [
+          2041.54833984375,
+          838.9285888671875
+        ],
+        [
+          2041.54833984375,
+          869.0142822265625
+        ],
+        [
+          1269.290283203125,
+          870.1714477539062
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "pubLicKeyMuLtibase",
+        "zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV"
+      ]
+    },
+    {
+      "source": "did:wba:example.com:user:alice",
+      "confidence": 0.9785718321800232,
+      "box": [
+        [
+          77.80644989013672,
+          906.0428466796875
+        ],
+        [
+          508.6451416015625,
+          906.0428466796875
+        ],
+        [
+          508.6451416015625,
+          939.6000366210938
+        ],
+        [
+          77.80644989013672,
+          939.6000366210938
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "did:wba:example.com:user:alice"
+      ]
+    },
+    {
+      "source": "\"keyAgreement\":[",
+      "confidence": 0.942418921738863,
+      "box": [
+        [
+          1228.6451416015625,
+          914.1428833007812
+        ],
+        [
+          1421.4193115234375,
+          914.1428833007812
+        ],
+        [
+          1421.4193115234375,
+          937.2857055664062
+        ],
+        [
+          1228.6451416015625,
+          937.2857055664062
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "->https://example.com/user/alice/did.json",
+      "confidence": 0.9924100259455239,
+      "box": [
+        [
+          87.09677124023438,
+          954.6428833007812
+        ],
+        [
+          646.8386840820312,
+          954.6428833007812
+        ],
+        [
+          646.8386840820312,
+          988.2000122070312
+        ],
+        [
+          87.09677124023438,
+          988.2000122070312
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "https://example.com/user/alice/did.json"
+      ]
+    },
+    {
+      "source": "\"id\":\"did:wba:example.com%3A8800:user:alice#key-2\",",
+      "confidence": 0.9403145722314423,
+      "box": [
+        [
+          1270.4515380859375,
+          956.9571533203125
+        ],
+        [
+          1847.61279296875,
+          959.2714233398438
+        ],
+        [
+          1847.61279296875,
+          987.0428466796875
+        ],
+        [
+          1270.4515380859375,
+          984.7285766601562
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"type\":\"X25519KeyAgreementKey2019\"",
+      "confidence": 0.9429502855328953,
+      "box": [
+        [
+          1270.4515380859375,
+          983.5714721679688
+        ],
+        [
+          1665.290283203125,
+          983.5714721679688
+        ],
+        [
+          1665.290283203125,
+          1010.1857299804688
+        ],
+        [
+          1270.4515380859375,
+          1010.1857299804688
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"controller\":\"did:wba:example.com%3A8800:user:alice\"",
+      "confidence": 0.9444754020525858,
+      "box": [
+        [
+          1270.4515380859375,
+          1006.7142944335938
+        ],
+        [
+          1866.1934814453125,
+          1005.5571899414062
+        ],
+        [
+          1866.1934814453125,
+          1032.17138671875
+        ],
+        [
+          1270.4515380859375,
+          1033.32861328125
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"publicKeyMultibase:\"z9hFgmPVfmBZwRvFEyniQDBkz9LmV7gDEqytWyGZLmDXE\"",
+      "confidence": 0.9521264344898622,
+      "box": [
+        [
+          1270.4515380859375,
+          1028.7000732421875
+        ],
+        [
+          2042.7095947265625,
+          1027.5428466796875
+        ],
+        [
+          2042.7095947265625,
+          1057.6285400390625
+        ],
+        [
+          1270.4515380859375,
+          1058.7857666015625
+        ]
+      ],
+      "label_id": "L039",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "publicKeyMultibase",
+        "9",
+        "9",
+        "7"
+      ]
+    },
+    {
+      "source": "\"service\":[",
+      "confidence": 0.8558848229321566,
+      "box": [
+        [
+          1232.1290283203125,
+          1102.7572021484375
+        ],
+        [
+          1366.838623046875,
+          1102.7572021484375
+        ],
+        [
+          1366.838623046875,
+          1125.9000244140625
+        ],
+        [
+          1232.1290283203125,
+          1125.9000244140625
+        ]
+      ],
+      "label_id": "L040",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"id\":\"did:wba:example.com%3A8800:user:alice#ad\",",
+      "confidence": 0.9444173686206341,
+      "box": [
+        [
+          1269.290283203125,
+          1146.7286376953125
+        ],
+        [
+          1816.258056640625,
+          1147.8857421875
+        ],
+        [
+          1816.258056640625,
+          1174.5
+        ],
+        [
+          1269.290283203125,
+          1173.3428955078125
+        ]
+      ],
+      "label_id": "L041",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"type\":\"AgentDescription",
+      "confidence": 0.9560360486308733,
+      "box": [
+        [
+          1270.4515380859375,
+          1169.8714599609375
+        ],
+        [
+          1554.9676513671875,
+          1171.028564453125
+        ],
+        [
+          1554.9676513671875,
+          1201.1142578125
+        ],
+        [
+          1270.4515380859375,
+          1199.9571533203125
+        ]
+      ],
+      "label_id": "L042",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"serviceEndpoint\":\"https://agent-network-protocol.com/agents/example/ad.json\"",
+      "confidence": 0.97670540716741,
+      "box": [
+        [
+          1269.290283203125,
+          1195.32861328125
+        ],
+        [
+          2140.258056640625,
+          1194.1715087890625
+        ],
+        [
+          2140.258056640625,
+          1221.94287109375
+        ],
+        [
+          1269.290283203125,
+          1223.0999755859375
+        ]
+      ],
+      "label_id": "L043",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "DID Method：Web-Based Agent\n\n\n\n\n\n   Method Design Principles:\n\n    • Do not pursue complete decentralization, feasibility is\n\n       prioritized over decentralization features.\n\n    •  Reuse existing web infrastructure to reduce implementation\n\n       costs.\n\n    •  Build upon the existing did:web method and add agent-related\n\n       features.\n\n\n\n   Did:wba DID Defines：\n   did:wba:example.com:user:alice\n   -> https://example.com/user/alice/did.json",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L044",
+      "japanese": "DIDメソッド：Web-Based Agent\n\nメソッド設計の原則：\n- 完全な分散化を追求せず、分散性よりも実現可能性を優先します。\n- 既存のWeb基盤を再利用し、実装コストを下げます。\n- 既存のdid:webメソッドを基礎に、エージェント関連の機能を追加します。\n\ndid:wbaのDID定義：\n`did:wba:example.com:user:alice`\n→ `https://example.com/user/alice/did.json`",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-human-prose-reviewed-technical-code-original-pixels-authoritative",
+  "translation_status": "visible-human-prose-translated-technical-code-transcription-unverified",
+  "ocr_seconds": [
+    1.527304199989885,
+    0.07543802261352539,
+    8.76681923866272
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 10,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-10",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 2.795260416666667,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels; technical-code-original-pixels-authoritative",
+    "matching_pdf_page": 10,
+    "manual_label_translations": {
+      "DID Method：Web-Based Agent\n\n\n\n\n\n   Method Design Principles:\n\n    • Do not pursue complete decentralization, feasibility is\n\n       prioritized over decentralization features.\n\n    •  Reuse existing web infrastructure to reduce implementation\n\n       costs.\n\n    •  Build upon the existing did:web method and add agent-related\n\n       features.\n\n\n\n   Did:wba DID Defines：\n   did:wba:example.com:user:alice\n   -> https://example.com/user/alice/did.json": "DIDメソッド：Web-Based Agent\n\nメソッド設計の原則：\n- 完全な分散化を追求せず、分散性よりも実現可能性を優先します。\n- 既存のWeb基盤を再利用し、実装コストを下げます。\n- 既存のdid:webメソッドを基礎に、エージェント関連の機能を追加します。\n\ndid:wbaのDID定義：\n`did:wba:example.com:user:alice`\n→ `https://example.com/user/alice/did.json`"
+    },
+    "additional_labels": [
+      {
+        "source": "DID Method：Web-Based Agent\n\n\n\n\n\n   Method Design Principles:\n\n    • Do not pursue complete decentralization, feasibility is\n\n       prioritized over decentralization features.\n\n    •  Reuse existing web infrastructure to reduce implementation\n\n       costs.\n\n    •  Build upon the existing did:web method and add agent-related\n\n       features.\n\n\n\n   Did:wba DID Defines：\n   did:wba:example.com:user:alice\n   -> https://example.com/user/alice/did.json",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "DID Method: Web-Based Agent",
+      "ANP",
+      "\"@context\":[",
+      "\"https://www.w3.org/ns/did/v1\",",
+      "\"https://w3id.org/security/suites/jws-2020/v1\",",
+      "\"https://w3id.org/security/suites/secp256k1-2019/v1\",",
+      "\"https://w3id.org/security/suites/ed25519-2020/v1\",",
+      "Method DesignPrinciples:",
+      "\"https://w3id.org/security/suites/x25519-2019/v1\"",
+      "\"id\":\"did:wba:example.com3A8800:user:alice\",",
+      "·Donotpursuecompletedecentralization,feasibilityis",
+      "\"verificationMethod\":[",
+      "prioritizedoverdecentralizationfeatures.",
+      "\"id\":\"did:wba:example.com%3A8800:user:alice#WjKgJV7VRw3hmgU6--4v15c0Aewbcvat1BsRFTIqa5Q\"",
+      "\"type\":\"EcdsaSecp256k1VerificationKey2019\",",
+      "\"controller\":\"did:wba:example.com3A8800:user:alice\",",
+      "Reuseexistingwebinfrastructuretoreduceimplementation",
+      "\"publicKeyJwk\":{",
+      "\"crv\":\"secp256k1\"",
+      "costs.",
+      "\"y\":\"qN1jKupJLFsPFc1UkWinqLjv4YE0mq_Ickwnjgasvmo\",",
+      "\"kty\":\"EC\",",
+      "\"kid\":\"WjKgJV7VRw3hmgU6--4v15c0Aewbcvat1BsRFTIqa5Q\"",
+      "Buildupontheexistingdid:webmethodandaddagent-related",
+      "features.",
+      "\"authentication\":[",
+      "\"did:wba:example.com%3A8800:user:alice#WjKgJV7VRw3hmgU6--4v15c0Aewbcvat1BsRFTIqa5Q\",",
+      "\"id\":\"did:wba:example.com%3A8800:user:alice#key-1\",",
+      "\"type\":\"Ed25519VerificationKey2020\",",
+      "\"controller\":\"did:wba:example.com3A8800:user:alice\",",
+      "Did:wba DID Defines:",
+      "\"pubLicKeyMuLtibase:\"zH3C2AVvLMv6gmMNam3uVAjZpfkcJCwDwnZn6z3wXmqPV\"",
+      "did:wba:example.com:user:alice",
+      "\"keyAgreement\":[",
+      "->https://example.com/user/alice/did.json",
+      "\"id\":\"did:wba:example.com%3A8800:user:alice#key-2\",",
+      "\"type\":\"X25519KeyAgreementKey2019\"",
+      "\"controller\":\"did:wba:example.com%3A8800:user:alice\"",
+      "\"publicKeyMultibase:\"z9hFgmPVfmBZwRvFEyniQDBkz9LmV7gDEqytWyGZLmDXE\"",
+      "\"service\":[",
+      "\"id\":\"did:wba:example.com%3A8800:user:alice#ad\",",
+      "\"type\":\"AgentDescription",
+      "\"serviceEndpoint\":\"https://agent-network-protocol.com/agents/example/ad.json\""
+    ],
+    "code_transcription_unverified": true,
+    "source_sha256": "8a4ed0076bff4c5833e0223cb09766210a7c97230154767dbb1bbe425db3dbfe"
+  }
+}

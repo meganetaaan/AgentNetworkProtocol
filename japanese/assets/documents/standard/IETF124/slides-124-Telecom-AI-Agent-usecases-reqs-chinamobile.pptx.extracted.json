@@ -1,0 +1,119 @@
+{
+  "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+  "source_sha256": "131e7a4e711f623143da267ae83b63c7500e931cb3480717bcf080c672ab98ea",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "format": "pptx",
+  "units": [
+    {
+      "unit": 1,
+      "kind": "slide",
+      "text": "Telecom AI Agent  Use cases and Requirements\nKehan Yao, China Mobile\nIETF 124",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 77,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 2,
+      "kind": "slide",
+      "text": "Holistic AI agent communication scenarios \nOTT X\nOperator B\nOperator A\nOTT Y\nApplication\nTools Service\nTool y_1\nTool y_2\nUser\nAgent\nAgent\nAgent\nAgent\nAgent\nNetwork\nTools Service\nTool a_2\nTool a_1\nAI agent types:\nAgent in Apps. Provider: OTT, operator, third party, etc.\nAgent in UEs. Provider: phone vendor, robot vendor, etc.\nAgent in network. Provider: operator, OTT.\nTools types:\nApplication tools. \nNetwork tools.",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 417,
+      "embedded_images": 10,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 3,
+      "kind": "slide",
+      "text": "Ownership and Roles of AI agents:\nOBO(On-behalf-of) User: the agent may require the authorization from user(s) to implement jobs for user(s). \nOBO Agent Itself: the agent itself has indentity and implements jobs and represents itself.\nOBO Other Agent(s): the agent may represent other agents to implement some jobs, given that other agents may not have the capabilities to implement the jobs.\nDomain:\nTask-wise Domain: a temporary domain that is created to target on a specific job, when the job is finished, the domain is destroyed.  A typical example is a domain that is created by 6G systems.\nApplication Domain: a durable domain that is created by a specific application, e.g., a web or mobile application offerred by cloud service providers.\nTerminology ",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 759,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 4,
+      "kind": "slide",
+      "text": "Use cases: Trip Planning (Agent OBO User) \nAI agent delegates its user to plan trip services. \nAI agent can do payment execution for booking.  \nAI Agent\nUser\nTrip Planning Agent\n(UE native/App native)\nApplication 1\nticket booking service\nmap service\nApplication 2\nRequirements:\nMUST support HITL(human-in-the-loop) to avoid wrong execution.\nMUST define risk levels, what level MUST require HITL, what level is in “whitelist”,  and what level requires user confirmation but can then put into “whitelist”.",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 503,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 5,
+      "kind": "slide",
+      "text": "Use cases: Health Care (Agent OBO other agent)\nFor children, specific elder people (e.g., Alzheimer's patients), and people with disabilities who require guardians\nTheir agents (e.g., smart watches) collect biosensing data and transmit it to the guardians' agents which make decisions on whether sending requests to external institutions such as hospitals on behalf of the wards' agents \nRequirements:\nMUST define clear scope or boundaries for resource access and decision making under delegated authorization.\nAI Agent\nUser\nSmart Watch \nAI Agent\nUser\nPhone \nWard\nGuardian \nExternal\nresources/API\nHospital, etc. ",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 612,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 6,
+      "kind": "slide",
+      "text": "Use cases:  Remote Rescue (Agent OBO itself) \nMultiple AI agents collaborate to finish remote rescue tasks.   \nRobot Dog\nRobot Arm\nUAV\nACN\nSubnet\ntask-wise domain\nExternal Agent\nMobile Core Network\nRequirements:\nMUST support real-time communication between agents, as well as reliablity.\nMUST support dynamic groups of agent communication for temporary tasks.\nMUST support life-cycle management of groups, including construction and destroy. ",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 442,
+      "embedded_images": 5,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 7,
+      "kind": "slide",
+      "text": "Agent Protocols’ Applicability in Telecom Core Net\nIdentity registration, issue, and discovery:\nAgents, Tools, and other services/resources share similarities in terms of ID.\nPotential related NFs enhancements, UDM, UDR, SMF, etc.\nAuthentication and authorization：\nPotential related NFs enhancements, AUSF, SMF, etc.\nHITL(Human-in-the-Loop) confirmation:\nRedirection to human confirmation invoked by core network functions\nPotential related NFs enhancements, PCF, NEF,UPF, etc.\nDynamic group and real-time communication: \nPotential related NFs enhancements, AMF, SMF, etc.",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 572,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 8,
+      "kind": "slide",
+      "text": "Summary\nThere are some important use cases in telecom network, beyond enterprise networks and the Internet. They are not limited to use just A2A, but also open to MCP, ANP, etc. \nFine-grained requirements and new requirements are proposed for protocol design, beyond the 4 main work item listed in AIproto strawman charter.\nDo you agree with these use cases and requirements? \nAny interests to join? ",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 400,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    },
+    {
+      "unit": 9,
+      "kind": "slide",
+      "text": "THANKS!\nIETF 124",
+      "notes": "",
+      "diagram_text": [],
+      "text_characters": 16,
+      "embedded_images": 0,
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "hyperlinks": []
+    }
+  ],
+  "unit_count": 9,
+  "original_binary_unchanged": true,
+  "historical_document": true
+}

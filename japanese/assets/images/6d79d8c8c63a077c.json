@@ -1,0 +1,195 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page23.jpg",
+  "sha256": "6d79d8c8c63a077cbdfc95789de05c6264a796edda98afc3b3f3b37072029594",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Finally",
+      "confidence": 0.9955656698771885,
+      "box": [
+        [
+          37.16128921508789,
+          35.871429443359375
+        ],
+        [
+          268.258056640625,
+          45.128570556640625
+        ],
+        [
+          264.7742004394531,
+          126.12857055664062
+        ],
+        [
+          33.67741775512695,
+          116.87142944335938
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9774680733680725,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          86.78571319580078
+        ],
+        [
+          2154.193603515625,
+          86.78571319580078
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "ANP is still in its early stages, and if possible, we are willing",
+      "confidence": 0.9852362586901738,
+      "box": [
+        [
+          274.06451416015625,
+          501.0428771972656
+        ],
+        [
+          2032.258056640625,
+          504.5142822265625
+        ],
+        [
+          2032.258056640625,
+          579.7285766601562
+        ],
+        [
+          274.06451416015625,
+          576.2571411132812
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "to contribute ANP and continue improving it together with",
+      "confidence": 0.995216407273945,
+      "box": [
+        [
+          299.6128845214844,
+          588.9857177734375
+        ],
+        [
+          1999.7418212890625,
+          586.6714477539062
+        ],
+        [
+          1999.7418212890625,
+          666.5142822265625
+        ],
+        [
+          299.6128845214844,
+          668.82861328125
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "everyone in WebAgents.",
+      "confidence": 0.9981909881938588,
+      "box": [
+        [
+          792.0,
+          680.4000244140625
+        ],
+        [
+          1513.1612548828125,
+          675.7714233398438
+        ],
+        [
+          1513.1612548828125,
+          747.5142822265625
+        ],
+        [
+          792.0,
+          752.1428833007812
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "WebAgents"
+      ]
+    },
+    {
+      "source": "Finally\n\n\n\n\n\n     ANP is still in its early stages, and if possible, we are willing\n          to contribute ANP and continue improving it together with\n                       everyone in WebAgents.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L006",
+      "japanese": "最後に\n\nANPはまだ初期段階にあります。可能であればANPに関する貢献を行い、WebAgentsの皆さんと一緒に改善を続けたいと考えています。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5011685999925248,
+    0.007058382034301758,
+    1.2980172634124756
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 23,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-23",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 0.7767650462962963,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 23,
+    "manual_label_translations": {
+      "Finally\n\n\n\n\n\n     ANP is still in its early stages, and if possible, we are willing\n          to contribute ANP and continue improving it together with\n                       everyone in WebAgents.": "最後に\n\nANPはまだ初期段階にあります。可能であればANPに関する貢献を行い、WebAgentsの皆さんと一緒に改善を続けたいと考えています。"
+    },
+    "additional_labels": [
+      {
+        "source": "Finally\n\n\n\n\n\n     ANP is still in its early stages, and if possible, we are willing\n          to contribute ANP and continue improving it together with\n                       everyone in WebAgents.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Finally",
+      "ANP",
+      "ANP is still in its early stages, and if possible, we are willing",
+      "to contribute ANP and continue improving it together with",
+      "everyone in WebAgents."
+    ],
+    "source_sha256": "6d79d8c8c63a077cbdfc95789de05c6264a796edda98afc3b3f3b37072029594"
+  }
+}

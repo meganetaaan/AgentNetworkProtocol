@@ -1,0 +1,361 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page16.jpg",
+  "sha256": "64216ff0bcfc0c1f68a3375120fe509e0119fcbb791c1afcb5bf5e38b355c36a",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ADPDesignScheme",
+      "confidence": 0.9688711921374004,
+      "box": [
+        [
+          34.838706970214844,
+          42.81428527832031
+        ],
+        [
+          821.0322265625,
+          48.60000228881836
+        ],
+        [
+          821.0322265625,
+          121.5
+        ],
+        [
+          34.838706970214844,
+          115.71428680419922
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9607288440068563,
+      "box": [
+        [
+          2154.193603515625,
+          38.18571472167969
+        ],
+        [
+          2281.935302734375,
+          38.18571472167969
+        ],
+        [
+          2281.935302734375,
+          87.94285583496094
+        ],
+        [
+          2154.193603515625,
+          87.94285583496094
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "description document serves as the entry point for all the information about the agent, and from this",
+      "confidence": 0.9920507085205305,
+      "box": [
+        [
+          256.6451416015625,
+          327.471435546875
+        ],
+        [
+          2007.870849609375,
+          325.1571350097656
+        ],
+        [
+          2007.870849609375,
+          366.8143005371094
+        ],
+        [
+          256.6451416015625,
+          369.1285705566406
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD",
+      "confidence": 0.9924428831128513,
+      "box": [
+        [
+          254.32257080078125,
+          393.4285888671875
+        ],
+        [
+          2055.48388671875,
+          388.8000183105469
+        ],
+        [
+          2055.48388671875,
+          433.9285888671875
+        ],
+        [
+          254.32257080078125,
+          438.5571594238281
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "LD"
+      ]
+    },
+    {
+      "source": "as the primary format.",
+      "confidence": 0.944086795503443,
+      "box": [
+        [
+          254.32257080078125,
+          459.3857116699219
+        ],
+        [
+          643.3547973632812,
+          459.3857116699219
+        ],
+        [
+          643.3547973632812,
+          505.67144775390625
+        ],
+        [
+          254.32257080078125,
+          505.67144775390625
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are",
+      "confidence": 0.9865777114830395,
+      "box": [
+        [
+          221.8064422607422,
+          550.7999877929688
+        ],
+        [
+          2009.0322265625,
+          549.6428833007812
+        ],
+        [
+          2009.0322265625,
+          594.7714233398438
+        ],
+        [
+          221.8064422607422,
+          595.9285888671875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "Schema.org",
+        "LD",
+        "Schema.org"
+      ]
+    },
+    {
+      "source": "any undefined fields, they will be added with a definition. This ensures consistency in how multiple",
+      "confidence": 0.9952769416570664,
+      "box": [
+        [
+          253.16128540039062,
+          616.7571411132812
+        ],
+        [
+          2000.9031982421875,
+          616.7571411132812
+        ],
+        [
+          2000.9031982421875,
+          666.5142822265625
+        ],
+        [
+          253.16128540039062,
+          666.5142822265625
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "agents interpret the same field, while also making it easier for programs to process.",
+      "confidence": 0.9985515776802512,
+      "box": [
+        [
+          252.0,
+          682.7142944335938
+        ],
+        [
+          1717.54833984375,
+          683.8714599609375
+        ],
+        [
+          1717.54833984375,
+          737.1000366210938
+        ],
+        [
+          252.0,
+          735.94287109375
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "core framework and structure of ADP; the other part consists of AD examples for each domain. For",
+      "confidence": 0.9867092507580916,
+      "box": [
+        [
+          253.16128540039062,
+          841.2428588867188
+        ],
+        [
+          2034.58056640625,
+          841.2428588867188
+        ],
+        [
+          2034.58056640625,
+          889.8428955078125
+        ],
+        [
+          253.16128540039062,
+          889.8428955078125
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ADP",
+        "AD"
+      ]
+    },
+    {
+      "source": "example, an AD document for a coffee shop, where other agents can refer to this example to generate",
+      "confidence": 0.9914979868464999,
+      "box": [
+        [
+          255.48385620117188,
+          910.6714477539062
+        ],
+        [
+          2036.9031982421875,
+          910.6714477539062
+        ],
+        [
+          2036.9031982421875,
+          959.2714233398438
+        ],
+        [
+          255.48385620117188,
+          959.2714233398438
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AD"
+      ]
+    },
+    {
+      "source": "theirown.",
+      "confidence": 0.9960840476883782,
+      "box": [
+        [
+          253.16128540039062,
+          977.7857055664062
+        ],
+        [
+          436.6451416015625,
+          977.7857055664062
+        ],
+        [
+          436.6451416015625,
+          1020.6000366210938
+        ],
+        [
+          253.16128540039062,
+          1020.6000366210938
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ADP Design Scheme\n\n\n\n            • Linked-Data: Using Linked-Data technology, the information of agents is linked together. The agent\n\n            description document serves as the entry point for all the information about the agent, and from this\n\n            entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD\n\n            as the primary format.\n\n            • Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are\n\n          any undefined fields, they will be added with a definition. This ensures consistency in how multiple\n\n            agents interpret the same field, while also making it easier for programs to process.\n\n            • The specification is divided into two parts: one is the core ADP specification, which describes the\n\n            core framework and structure of ADP; the other part consists of AD examples for each domain. For\n\n           example, an AD document for a coffee shop, where other agents can refer to this example to generate\n\n              their own.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L012",
+      "japanese": "ADPの設計方式\n\n- Linked-Data：Linked-Data技術を使って、エージェントの情報を相互に結び付けます。エージェント記述文書をそのエージェントの全情報への入り口とし、そこから全情報をたどれるようにします。文書形式には主にJson-LDを使います。\n- Schema.org：Json-LDのフィールドでは、Schema.orgがあらかじめ定義したフィールドを広く使います。未定義のものは定義を追加します。複数のエージェントが同じフィールドを一貫して解釈でき、プログラム処理もしやすくなります。\n- 仕様は二つに分かれます。一つはADPの中心的な枠組みと構造を記述するコアADP仕様、もう一つは分野別のAD例です。例えばコーヒーショップのAD文書を例に、他のエージェントが自分の文書を生成できます。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5069521999685094,
+    0.017530441284179688,
+    5.533184289932251
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 16,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-16",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 2.0838715277777777,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 16,
+    "manual_label_translations": {
+      "ADP Design Scheme\n\n\n\n            • Linked-Data: Using Linked-Data technology, the information of agents is linked together. The agent\n\n            description document serves as the entry point for all the information about the agent, and from this\n\n            entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD\n\n            as the primary format.\n\n            • Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are\n\n          any undefined fields, they will be added with a definition. This ensures consistency in how multiple\n\n            agents interpret the same field, while also making it easier for programs to process.\n\n            • The specification is divided into two parts: one is the core ADP specification, which describes the\n\n            core framework and structure of ADP; the other part consists of AD examples for each domain. For\n\n           example, an AD document for a coffee shop, where other agents can refer to this example to generate\n\n              their own.": "ADPの設計方式\n\n- Linked-Data：Linked-Data技術を使って、エージェントの情報を相互に結び付けます。エージェント記述文書をそのエージェントの全情報への入り口とし、そこから全情報をたどれるようにします。文書形式には主にJson-LDを使います。\n- Schema.org：Json-LDのフィールドでは、Schema.orgがあらかじめ定義したフィールドを広く使います。未定義のものは定義を追加します。複数のエージェントが同じフィールドを一貫して解釈でき、プログラム処理もしやすくなります。\n- 仕様は二つに分かれます。一つはADPの中心的な枠組みと構造を記述するコアADP仕様、もう一つは分野別のAD例です。例えばコーヒーショップのAD文書を例に、他のエージェントが自分の文書を生成できます。"
+    },
+    "additional_labels": [
+      {
+        "source": "ADP Design Scheme\n\n\n\n            • Linked-Data: Using Linked-Data technology, the information of agents is linked together. The agent\n\n            description document serves as the entry point for all the information about the agent, and from this\n\n            entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD\n\n            as the primary format.\n\n            • Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are\n\n          any undefined fields, they will be added with a definition. This ensures consistency in how multiple\n\n            agents interpret the same field, while also making it easier for programs to process.\n\n            • The specification is divided into two parts: one is the core ADP specification, which describes the\n\n            core framework and structure of ADP; the other part consists of AD examples for each domain. For\n\n           example, an AD document for a coffee shop, where other agents can refer to this example to generate\n\n              their own.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "ADPDesignScheme",
+      "ANP",
+      "description document serves as the entry point for all the information about the agent, and from this",
+      "entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD",
+      "as the primary format.",
+      "· Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are",
+      "any undefined fields, they will be added with a definition. This ensures consistency in how multiple",
+      "agents interpret the same field, while also making it easier for programs to process.",
+      "core framework and structure of ADP; the other part consists of AD examples for each domain. For",
+      "example, an AD document for a coffee shop, where other agents can refer to this example to generate",
+      "theirown."
+    ],
+    "source_sha256": "64216ff0bcfc0c1f68a3375120fe509e0119fcbb791c1afcb5bf5e38b355c36a"
+  }
+}

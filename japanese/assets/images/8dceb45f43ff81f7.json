@@ -1,0 +1,117 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta2.png",
+  "sha256": "8dceb45f43ff81f77c00dbafe8888065f52f5e094a48fe4d71233dc6f4384af7",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第2步/共4步",
+      "confidence": 0.9693383744784764,
+      "box": [
+        [
+          37.0,
+          34.0
+        ],
+        [
+          188.0,
+          34.0
+        ],
+        [
+          188.0,
+          57.0
+        ],
+        [
+          37.0,
+          57.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全4段階の第2段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2",
+        "4"
+      ]
+    },
+    {
+      "source": "程序 A",
+      "confidence": 0.9458197951316833,
+      "box": [
+        [
+          240.0,
+          267.0
+        ],
+        [
+          327.0,
+          265.0
+        ],
+        [
+          328.0,
+          298.0
+        ],
+        [
+          241.0,
+          300.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "プログラムA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "程序B",
+      "confidence": 0.9996524651845297,
+      "box": [
+        [
+          1100.0,
+          267.0
+        ],
+        [
+          1188.0,
+          267.0
+        ],
+        [
+          1188.0,
+          299.0
+        ],
+        [
+          1100.0,
+          299.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "プログラムB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?",
+      "location": "central speech bubble",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L004",
+      "japanese": "?（疑問符）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7655488000018522,
+    0.0055162906646728516,
+    0.11403274536132812
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "人型アイコンの丸い頭は文字ではない。ステップ2の吹き出しの?はOCR欠落のため手動追記。",
+    "additional_labels": [
+      {
+        "source": "?",
+        "location": "central speech bubble"
+      }
+    ],
+    "source_sha256": "8dceb45f43ff81f77c00dbafe8888065f52f5e094a48fe4d71233dc6f4384af7"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "source": "images/agent-network-diagram.svg",
+  "sha256": "554b985787ae51ec857a3e7d40680717db9941945760e9efbba66e3ea844a839",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "680",
+      "y": "180",
+      "label_id": "L001",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "420",
+      "label_id": "L002",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "120",
+      "y": "420",
+      "label_id": "L003",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "180",
+      "label_id": "L004",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "560",
+      "label_id": "L005",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "40",
+      "label_id": "L006",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "220",
+      "y": "520",
+      "label_id": "L007",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "580",
+      "y": "520",
+      "label_id": "L008",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "220",
+      "y": "80",
+      "label_id": "L009",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "580",
+      "y": "80",
+      "label_id": "L010",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agentic Web Agent Network Protocol",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "300",
+      "label_id": "L011",
+      "japanese": "Agentic Web（エージェントによるウェブ）／Agent Network Protocol",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

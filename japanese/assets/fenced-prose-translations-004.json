@@ -1,0 +1,2928 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    800,
+    999
+  ],
+  "units": [
+    {
+      "original": "A high-end AI assistant offering advanced customization services.",
+      "translation": "高度なカスタマイズサービスを提供する高級AIアシスタント。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:31:column:22",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Agent Connector",
+      "translation": "Agent Connector",
+      "status": "technical-retained",
+      "reason": "製品名、媒体名、作品名または人名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:36:column:15",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "A cross-platform connectivity solution for intelligent agents.",
+      "translation": "知的エージェント向けのプラットフォーム間接続ソリューション。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:37:column:22",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "A JSON-RPC 2.0 file for interacting with the intelligent agent through APIs.",
+      "translation": "APIを通じて知的エージェントとやり取りするためのJSON-RPC 2.0ファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:59:column:22",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Roasted at approximately 135°C for a unique coconut sugar flavor, suitable for winter consumption. This drink combines coconut pulp juice and roasted coconut granules, offering five 'zero' light enjoyment health options, using master-customized Espresso from IIAC gold award coffee beans.",
+      "translation": "約135°Cでローストし、独特のココナッツシュガーの風味を引き出した、冬に適した飲み物です。ココナッツ果肉ジュースとローストしたココナッツの粒を組み合わせ、5つの「ゼロ」で軽やかに楽しめる健康志向の選択肢を提供します。IIAC金賞受賞コーヒー豆による、熟練者が調整したEspressoを使用しています。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Coconut pulp juice & roasted coconut granules blend, five 'zero' light enjoyment (0 lactose, 0 creamer, 0 sucrose solids, 0 trans fats, 0 added flavors), master-customized Espresso from IIAC gold award coffee beans",
+      "translation": "ココナッツ果肉ジュースとローストしたココナッツの粒のブレンド。5つの「ゼロ」で軽やかに楽しめます（乳糖0、クリーマー0、固形ショ糖0、トランス脂肪酸0、添加香料0）。IIAC金賞受賞コーヒー豆による、熟練者が調整したEspressoを使用。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//additionalProperty/0/value",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Winter Special Drink Warm Return",
+      "translation": "冬の限定ドリンクが温かく再登場",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//additionalProperty/1/value",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Coconut flavor from memory",
+      "translation": "思い出のココナッツ風味",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//additionalProperty/2/value",
+          "language": "json"
+        },
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//image/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Roasted Coconut Latte - Winter Special Drink Warm Return",
+      "translation": "Roasted Coconut Latte：冬の限定ドリンクが温かく再登場",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//image/0/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Using 135°C high-temperature roasting process, perfectly blending coconut pulp juice and roasted coconut granules, paired with Espresso made from IIAC gold award coffee beans, bringing a unique blend of roasted coconut aroma and coffee aroma",
+      "translation": "135°Cの高温ロースト製法で、ココナッツ果肉ジュースとローストしたココナッツの粒を調和させ、IIAC金賞受賞コーヒー豆のEspressoと合わせました。ローストココナッツの香りとコーヒーの香りが独特に混ざり合います。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//image/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Roasted Coconut Latte - Coconut flavor from memory",
+      "translation": "Roasted Coconut Latte：思い出のココナッツ風味",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//image/1/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Sugar Level",
+      "translation": "甘さ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//customizationOptions/options/1/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Standard Sweet",
+      "translation": "標準の甘さ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//customizationOptions/options/1/value/0",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Less Sweet",
+      "translation": "甘さ控えめ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//customizationOptions/options/1/value/1",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Slightly Sweet",
+      "translation": "ほんのり甘い",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//customizationOptions/options/1/value/2",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "No Additional Sugar",
+      "translation": "砂糖の追加なし",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:109-203//customizationOptions/options/1/value/3",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "错误描述",
+      "translation": "エラーの説明",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:133-143//error/message",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "示例聊天智能体",
+      "translation": "チャットエージェントの例",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:181-215//name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "ANP E2EE 即时消息协议，支持私聊、群聊和端到端加密通信。",
+      "translation": "ANP E2EEインスタントメッセージングプロトコル。個別チャット、グループチャット、エンドツーエンド暗号化通信に対応します。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:181-215//interfaces/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "消息服务端点，用于发送、接收和管理消息，包括 E2EE 加密消息",
+      "translation": "メッセージを送受信・管理するためのメッセージサービスエンドポイント。E2EE暗号化メッセージも含みます。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:181-215//interfaces/0/content/endpoints/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "群组服务端点，用于群组管理和群组消息",
+      "translation": "グループ管理とグループメッセージのためのグループサービスエンドポイント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:181-215//interfaces/0/content/endpoints/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "E2EE 能力：ECDHE 密钥交换、AES-GCM 加密，仅支持私聊",
+      "translation": "E2EE機能：ECDHE鍵交換、AES-GCM暗号化。個別チャットのみ対応。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:181-215//interfaces/0/content/e2ee/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "开发群",
+      "translation": "開発グループ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:676-694//result/groups/0/name",
+          "language": "json"
+        },
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:723-736//result/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "开发者交流群",
+      "translation": "開発者交流グループ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:676-694//result/groups/0/description",
+          "language": "json"
+        },
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:723-736//result/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "1. HKDF 提取阶段：从共享秘密提取伪随机密钥",
+      "translation": "1. HKDFの抽出段階：共有秘密から疑似ランダム鍵を抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1149-1205/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "2. 生成握手流量密钥",
+      "translation": "2. ハンドシェイクのトラフィック鍵を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1149-1205/line:18",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "3. 扩展生成实际加密密钥",
+      "translation": "3. 展開して実際の暗号化鍵を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1149-1205/line:40",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "16 字节 (AES-128)",
+      "translation": "16バイト（AES-128）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1149-1205/line:43",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "生成 8 字节",
+      "translation": "8バイトを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1220-1239/line:11",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "16 个十六进制字符",
+      "translation": "16文字の16進数",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1220-1239/line:18",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "GCM 推荐 12 字节 IV",
+      "translation": "GCMでは12バイトのIVを推奨",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1245-1273/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "AES-128-GCM 加密",
+      "translation": "AES-128-GCM暗号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1245-1273/line:7",
+          "language": "python"
+        },
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1245-1273/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "1. 构造消息，排除 proof_value 字段",
+      "translation": "1. proof_valueフィールドを除いてメッセージを構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:4",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "... 其他字段",
+      "translation": "…その他のフィールド",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:7",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "proof_value 除外",
+      "translation": "proof_valueを除く",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "2. 转换为排序的 JSON 字符串",
+      "translation": "2. 並べ替えたJSON文字列へ変換",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:16",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "3. 编码为 UTF-8 字节",
+      "translation": "3. UTF-8バイト列へ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:19",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "4. 使用 ECDSA + SHA-256 签名",
+      "translation": "4. ECDSA + SHA-256で署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:22",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "5. Base64URL 编码",
+      "translation": "5. Base64URLへ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "locator": "fence:1289-1319/line:28",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "<DID文档json>",
+      "translation": "<DID文档json>",
+      "status": "technical-retained",
+      "reason": "技術プレースホルダーを保持。DID文档jsonは「DID文書のJSON」を意味する。",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:135-144/line:6:column:19",
+          "language": "plaintext"
+        },
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:158-169/line:7:column:19",
+          "language": "plaintext"
+        },
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:191-202/line:7:column:19",
+          "language": "plaintext"
+        }
+      ]
+    },
+    {
+      "original": "<私钥pem格式>",
+      "translation": "<私钥pem格式>",
+      "status": "technical-retained",
+      "reason": "技術プレースホルダーを保持。私钥pem格式は「PEM形式の秘密鍵」を意味する。",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:135-144/line:7:column:18",
+          "language": "plaintext"
+        },
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:158-169/line:8:column:18",
+          "language": "plaintext"
+        },
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:191-202/line:8:column:18",
+          "language": "plaintext"
+        }
+      ]
+    },
+    {
+      "original": "<身份验证url>",
+      "translation": "<身份验证url>",
+      "status": "technical-retained",
+      "reason": "技術プレースホルダーを保持。身份验证urlは「身元認証URL」を意味する。",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:158-169/line:9:column:15",
+          "language": "plaintext"
+        },
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:191-202/line:9:column:15",
+          "language": "plaintext"
+        }
+      ]
+    },
+    {
+      "original": "DID did:wba:example.com%3A8800:user:alice Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature_of_nonce_timestamp_service_did)>",
+      "translation": "DID did:wba:example.com%3A8800:user:alice Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature_of_nonce_timestamp_service_did)>",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:172-183/line:6:column:20",
+          "language": "plaintext"
+        },
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:205-216/line:6:column:20",
+          "language": "plaintext"
+        },
+        {
+          "source": "docs/did-wba-server-test-interface.md",
+          "locator": "fence:170-181/line:6:column:20",
+          "language": "plaintext"
+        },
+        {
+          "source": "docs/did-wba-server-test-interface.md",
+          "locator": "fence:203-214/line:6:column:20",
+          "language": "plaintext"
+        }
+      ]
+    },
+    {
+      "original": "Invalid credentials provided.",
+      "translation": "指定された資格情報は無効です。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "locator": "fence:205-216/line:8:column:20",
+          "language": "plaintext"
+        },
+        {
+          "source": "docs/did-wba-server-test-interface.md",
+          "locator": "fence:203-214/line:8:column:20",
+          "language": "plaintext"
+        }
+      ]
+    },
+    {
+      "original": "meta<br/>DID 字段 / 操作字段<br/>设备 selector 仅由 E2EE Overlay 声明",
+      "translation": "meta<br/>DIDフィールド／操作フィールド<br/>デバイスselectorはE2EE Overlayのみが宣言",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/01-核心绑定.md",
+          "locator": "fence:236-253/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Host 接受成员 DID 更新",
+      "translation": "HostがメンバーDIDの更新を受け入れる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:177-187/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:177-187/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群状态变更操作<br/>create / join / add / group.member_did_update / remove / leave / update_*",
+      "translation": "グループ状態の変更操作<br/>create / join / add / group.member_did_update / remove / leave / update_*",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:254-270/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:254-270/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Resolver",
+      "translation": "DIDリゾルバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:995-1005/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1017-1027/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:996-1006/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1018-1028/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "活动成员",
+      "translation": "アクティブなメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:995-1005/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:996-1006/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析已保存旧 DID 并验证迁移",
+      "translation": "保存済みの旧DIDを解決し、移行を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:995-1005/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:996-1006/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "当前 DID + assurance",
+      "translation": "現在のDID＋assurance",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:995-1005/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:996-1006/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "执行业务策略 + CAS 成员记录",
+      "translation": "業務ポリシーを実施＋メンバー記録をCAS更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:995-1005/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:996-1006/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "deviceManifest 条目",
+      "translation": "deviceManifestの項目",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "设备 Assertion Key<br/>signing_key_id / assertionMethod",
+      "translation": "デバイスのアサーション鍵<br/>signing_key_id / assertionMethod",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "设备 Static Key Agreement Key<br/>e2ee_key_id / keyAgreement / X25519",
+      "translation": "デバイスの静的な鍵合意鍵<br/>e2ee_key_id / keyAgreement / X25519",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "逐设备 One-Time Prekey 池",
+      "translation": "デバイスごとの使い捨て事前鍵プール",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发起设备 A/a",
+      "translation": "開始デバイスA/a",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收设备 B/b",
+      "translation": "受信デバイスB/b",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "<outer meta.operation_id>",
+      "translation": "<outer meta.operation_id>",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1337-1351/line:4:column:19",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1334-1348/line:4:column:19",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "<outer meta.sender_device_id>",
+      "translation": "<outer meta.sender_device_id>",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1337-1351/line:8:column:23",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1334-1348/line:8:column:23",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "<outer meta.recipient_device_id>",
+      "translation": "<outer meta.recipient_device_id>",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1337-1351/line:10:column:26",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1334-1348/line:10:column:26",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "P4 业务状态变化<br/>group.create / member active / member left or removed / member DID updated",
+      "translation": "P4の業務状態の変化<br/>group.create / メンバーがactive / メンバーがleftまたはremoved / メンバーのDID更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.add(new DID devices)",
+      "translation": "group.e2ee.add(new DID devices)",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.remove(old DID devices)",
+      "translation": "group.e2ee.remove(old DID devices)",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "合格设备未进入 MLS",
+      "translation": "適格なデバイスがMLSに参加していない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "设备或 DID 必须离开 MLS",
+      "translation": "デバイスまたはDIDがMLSから離脱しなければならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "P4 成员已DID 更新且旧 Leaf 仍存在",
+      "translation": "P4メンバーのDIDが更新済みで、旧Leafがまだ存在",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 更新 Add 已接受后执行",
+      "translation": "DID更新のAddが受け入れられた後に実行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "deviceManifest device_id",
+      "translation": "deviceManifest device_id",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:456-470/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:453-467/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "无损保留",
+      "translation": "損失なく保持",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1671-1679/line:3:column:28",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "创建者设备(owner)",
+      "translation": "作成者のデバイス（owner）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1751-1760/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.create(sender_device_id, creator KeyPackage)",
+      "translation": "group.e2ee.create(sender_device_id, creator KeyPackage)",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1751-1760/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1749-1758/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "新成员设备",
+      "translation": "新メンバーのデバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1764-1777/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1781-1795/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Owner 设备",
+      "translation": "Ownerのデバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1764-1777/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1781-1795/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "当前设备 Leaves",
+      "translation": "現在のデバイスのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1764-1777/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1781-1795/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1820-1831/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "独立 group.e2ee.notice(commit-delivery)",
+      "translation": "独立したgroup.e2ee.notice(commit-delivery)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1764-1777/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1781-1795/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "保留设备 Leaves",
+      "translation": "保持するデバイスのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "被移除设备 Leaf",
+      "translation": "削除されたデバイスのLeaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "每个受影响设备 leaf",
+      "translation": "影響を受ける各デバイスのleaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "最终 group.e2ee.notice(commit-delivery, subject_status=removed)",
+      "translation": "最終のgroup.e2ee.notice(commit-delivery, subject_status=removed)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "只终结本地绑定；不获得新 epoch secret",
+      "translation": "ローカルのバインディングだけを終了し、新しいepoch secretは取得しない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送设备 Leaf",
+      "translation": "送信デバイスのLeaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1820-1831/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.send(sender_did, sender_device_id, 一个 PrivateMessage)",
+      "translation": "group.e2ee.send(sender_did, sender_device_id, 一つのPrivateMessage)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1820-1831/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "独立 P6 group.incoming(recipient_device_id, 同一 PrivateMessage)",
+      "translation": "独立したP6 group.incoming(recipient_device_id, 同じPrivateMessage)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1820-1831/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "选定的新 DID 设备",
+      "translation": "選択された新DIDのデバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Owner 设备 / MLS Controller",
+      "translation": "Ownerのデバイス／MLSコントローラー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "被移除的旧 DID Leaves",
+      "translation": "削除される旧DIDのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "P4 Host 接受成员 DID 更新",
+      "translation": "P4 HostがメンバーDIDの更新を受け入れる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "每个选定的新 DID 设备",
+      "translation": "選択された新DIDの各デバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.add(new DID, device ID)",
+      "translation": "group.e2ee.add(new DID, device ID)",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "welcome-delivery 到精确接收设备",
+      "translation": "正確に指定した受信デバイスへのwelcome-delivery",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "独立 commit-delivery 信封",
+      "translation": "独立したcommit-deliveryエンベロープ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "所有中间 epoch 均禁止应用消息",
+      "translation": "すべての中間epochでアプリケーションメッセージを禁止",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "每个旧 DID 设备 leaf",
+      "translation": "旧DIDの各デバイスleaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.remove(old DID, device ID)",
+      "translation": "group.e2ee.remove(old DID, device ID)",
+      "status": "technical-retained",
+      "reason": "HTTP認証・暗号処理・メソッド引数の技術構文またはプレースホルダーを保持。",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "给被移除旧 DID leaf 的最终 commit-delivery",
+      "translation": "削除される旧DIDのleafへの最終commit-delivery",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "最后一个 Remove 成功后恢复消息",
+      "translation": "最後のRemoveの成功後にメッセージを再開",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送附件清单<br/>direct.send / group.send / group.e2ee.send",
+      "translation": "添付ファイルのマニフェストを送信<br/>direct.send / group.send / group.e2ee.send",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:99-115/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.send (group-e2ee, 内层 manifest 含 object_key)",
+      "translation": "group.e2ee.send（group-e2ee、内側のmanifestにobject_keyを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send / group.send / group.e2ee.send 附件清单",
+      "translation": "direct.send / group.send / group.e2ee.sendの添付ファイルのマニフェスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Learn how JSON-LD can help improve your website's SEO and visibility in search engines.",
+      "translation": "JSON-LDを使ってWebサイトのSEOと検索エンジンでの見つけやすさを向上させる方法を学びます。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+          "locator": "fence:326-348//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "John Doe",
+      "translation": "John Doe",
+      "status": "technical-retained",
+      "reason": "製品名、媒体名、作品名または人名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+          "locator": "fence:326-348//author/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Example News",
+      "translation": "Example News",
+      "status": "technical-retained",
+      "reason": "製品名、媒体名、作品名または人名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+          "locator": "fence:326-348//publisher/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "The Great Gatsby",
+      "translation": "The Great Gatsby",
+      "status": "technical-retained",
+      "reason": "製品名、媒体名、作品名または人名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+          "locator": "fence:352-361//title",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "F. Scott Fitzgerald",
+      "translation": "F. Scott Fitzgerald",
+      "status": "technical-retained",
+      "reason": "製品名、媒体名、作品名または人名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+          "locator": "fence:352-361//author/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Markus Lanthaler",
+      "translation": "Markus Lanthaler",
+      "status": "technical-retained",
+      "reason": "製品名、媒体名、作品名または人名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+          "locator": "fence:381-389//name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "示例酒店",
+      "translation": "サンプルホテル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:87-115/line:13:column:20",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "豪华大床房",
+      "translation": "デラックスダブルルーム",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:87-115/line:14:column:19",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "用户提交订单",
+      "translation": "利用者が注文を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "酒店接受请求",
+      "translation": "ホテルが要求を受け入れる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "酒店拒绝请求",
+      "translation": "ホテルが要求を拒否",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户撤销请求",
+      "translation": "利用者が要求を撤回",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户付款至托管",
+      "translation": "利用者がエスクローへ支払う",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户超时未付/取消",
+      "translation": "利用者が期限内に支払わない／キャンセル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "酒店确认托管凭证",
+      "translation": "ホテルがエスクロー資格情報を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "酒店拒绝托管凭证/取消",
+      "translation": "ホテルがエスクロー資格情報を拒否／キャンセル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户撤销",
+      "translation": "利用者が撤回",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务正常完成, 双方确认",
+      "translation": "サービスが正常に完了し、双方が確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务开始前用户或酒店取消",
+      "translation": "サービス開始前に利用者またはホテルがキャンセル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务出现争议",
+      "translation": "サービスについて紛争が発生",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "托管完成资金划转",
+      "translation": "エスクローが資金移動を完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "结算失败/异常",
+      "translation": "決済失敗／異常",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "仲裁结束, 确认结算",
+      "translation": "仲裁が終了し、決済を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "仲裁结束, 确认退款",
+      "translation": "仲裁が終了し、返金を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+          "locator": "fence:142-173/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Transport Layer<br/>HTTPS / WSS / secure channel",
+      "translation": "トランスポート層<br/>HTTPS / WSS / 安全なチャネル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:64-73/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:69-78/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Binding Layer<br/>anp.core.binding.v1<br/>JSON-RPC 2.0 / meta / auth / body",
+      "translation": "バインディング層<br/>anp.core.binding.v1<br/>JSON-RPC 2.0 / meta / auth / body",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:64-73/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:69-78/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Business Layer<br/>Direct Base / Group Base",
+      "translation": "業務層<br/>Direct Base / Group Base",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:64-73/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:69-78/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Security Overlay Layer<br/>Direct E2EE / Group E2EE",
+      "translation": "セキュリティオーバーレイ層<br/>Direct E2EE / Group E2EE",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:64-73/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:69-78/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Media / Object Layer<br/>Attachment / object transfer",
+      "translation": "メディア／オブジェクト層<br/>Attachment / オブジェクト転送",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:64-73/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:69-78/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ANP JSON-RPC Object",
+      "translation": "ANP JSON-RPCオブジェクト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Request<br/>with id",
+      "translation": "Request<br/>idあり",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Notification<br/>without id",
+      "translation": "Notification<br/>idなし",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "auth<br/>present only as required by the specific Profile",
+      "translation": "auth<br/>具体的なProfileで要求される場合のみ出現",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "body<br/>method-specific parameters",
+      "translation": "body<br/>メソッド固有のパラメーター",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Successful Response<br/>result",
+      "translation": "成功応答<br/>result",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Failure Response<br/>error",
+      "translation": "失敗応答<br/>error",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:226-243/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve target DID",
+      "translation": "宛先DIDを解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:559-571/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:600-612/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "serviceEndpoint + static hints",
+      "translation": "serviceEndpoint＋静的hint",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:559-571/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:600-612/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Runtime results take precedence over static hints",
+      "translation": "実行時の結果が静的hintより優先",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:559-571/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:600-612/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Refresh cache and select the actual profile / security_profile",
+      "translation": "キャッシュを更新し、実際のprofile / security_profileを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/01-core-binding.md",
+          "locator": "fence:559-571/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:600-612/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. Create all fields of the DID document, excluding the proofValue field",
+      "translation": "1. proofValueフィールドを除く、DID文書の全フィールドを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:1",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Other necessary fields",
+      "translation": "その他の必須フィールド",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:4",
+          "language": "python"
+        },
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:3",
+          "language": "python"
+        },
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:3",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Exclude proofValue field",
+      "translation": "proofValueフィールドを除く",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:10",
+          "language": "python"
+        },
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "2. Convert the DID document to a JSON string, sorted by keys, using commas and colons as separators",
+      "translation": "2. DID文書をJSON文字列へ変換し、キーで並べ替え、カンマとコロンを区切りに使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:14",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "3. Encode the JSON string into UTF-8 bytes",
+      "translation": "3. JSON文字列をUTF-8バイト列へ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:17",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "4. Sign the byte data using the private key and ECDSA with SHA-256",
+      "translation": "4. 秘密鍵とECDSA、SHA-256を使ってバイトデータへ署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:20",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "5. Add the signature value to the proofValue field in the proof dictionary of the DID document",
+      "translation": "5. 署名値をDID文書のproof辞書内のproofValueフィールドへ追加",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-did-all-method-design-specification.md",
+          "locator": "fence:206-231/line:23",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Logical Issuer DID<br/>group_did / receipt or governance object issuer",
+      "translation": "論理的な発行者DID<br/>group_did / 受領証またはガバナンスオブジェクトの発行者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:113-127/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:121-135/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Business initiation / application semantics",
+      "translation": "業務の開始／アプリケーションの意味",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:113-127/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:121-135/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Object issuance / result witnessing",
+      "translation": "オブジェクトの発行／結果の証明",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:113-127/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:121-135/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Cross-domain one-hop service identity",
+      "translation": "ドメインをまたぐ一段のサービスアイデンティティ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:113-127/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:121-135/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "The three MUST NOT be automatically equated",
+      "translation": "三者を自動的に同一視してはならない（MUST NOT）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:113-127/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:121-135/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Single public ANPMessageService",
+      "translation": "一意の公開ANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:326-337/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:382-393/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Home Role<br/>direct messaging entry",
+      "translation": "Home Role<br/>個別メッセージングの入口",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:326-337/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:382-393/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group Role<br/>Group Host / group entry",
+      "translation": "Group Role<br/>グループのHost／入口",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:326-337/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:382-393/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Key Role<br/>E2EE materials",
+      "translation": "Key Role<br/>E2EEの素材",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:326-337/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:382-393/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Object Role<br/>attachment control / download tickets",
+      "translation": "Object Role<br/>添付ファイルの制御／ダウンロードチケット",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:326-337/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:382-393/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Join Role<br/>joining / onboarding",
+      "translation": "Join Role<br/>参加／onboarding",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:326-337/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:382-393/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Caller holds a target DID",
+      "translation": "呼び出し元が宛先DIDを保持",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve Agent DID document",
+      "translation": "エージェントDID文書を解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve Group DID document",
+      "translation": "グループDID文書を解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve Service DID document",
+      "translation": "サービスDID文書を解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Select the single public ANPMessageService",
+      "translation": "一意の公開ANPMessageServiceを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Read static hints<br/>profiles / securityProfiles / serviceDid",
+      "translation": "静的hintを読み取る<br/>profiles / securityProfiles / serviceDid",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Optionally call anp.get_capabilities",
+      "translation": "任意でanp.get_capabilitiesを呼び出す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Use the runtime result as authoritative capabilities",
+      "translation": "実行時の結果を権威ある機能情報として使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/02-identity-and-discovery.md",
+          "locator": "fence:468-484/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/02-identity-and-discovery.md",
+          "locator": "fence:524-540/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sender Agent",
+      "translation": "送信側エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sender-domain service",
+      "translation": "送信元ドメインのサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Target-domain ingress service",
+      "translation": "宛先ドメインの入口サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receiver Agent",
+      "translation": "受信側エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Forward original direct.send cross-domain",
+      "translation": "元のdirect.sendをドメインをまたいで転送",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Validate target / idempotence / origin_proof",
+      "translation": "target／冪等性／origin_proofを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return success",
+      "translation": "successを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Success only means ingress accepted",
+      "translation": "成功が示すのはingress acceptedのみ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:84-98/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:89-103/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receive direct.send",
+      "translation": "direct.sendを受信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:461-474/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:482-495/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Process normally",
+      "translation": "通常の処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:461-474/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:482-495/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Write idempotence record and return accepted",
+      "translation": "冪等性の記録を書き込み、acceptedを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:461-474/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:482-495/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Apply duplicate-message policy",
+      "translation": "重複メッセージのポリシーを適用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:461-474/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:482-495/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return the same or equivalent result",
+      "translation": "同じ結果または同等の結果を返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:461-474/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:482-495/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Please check the attachment",
+      "translation": "添付ファイルをご確認ください",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/03-direct-messaging-base-semantics.md",
+          "locator": "fence:653-705//params/body/payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:1312-1365//params/body/payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:1461-1491//payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "message/03-direct-messaging-base-semantics.md",
+          "locator": "fence:666-718//params/body/payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:1357-1410//params/body/payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:1507-1537//payload/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "1. Create all fields of the JSON message, excluding the proofValue field",
+      "translation": "1. proofValueフィールドを除く、JSONメッセージの全フィールドを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:1",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "2. Convert msg to a JSON string, sorted by keys, using commas and colons as separators",
+      "translation": "2. msgをJSON文字列へ変換し、キーで並べ替え、カンマとコロンを区切りに使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "3. Encode the JSON string to UTF-8 bytes",
+      "translation": "3. JSON文字列をUTF-8バイト列へ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:15",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "4. Sign the byte data using ECDSA and SHA-256",
+      "translation": "4. ECDSAとSHA-256を使ってバイトデータへ署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:18",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "5. Add the signature value to the proofValue field in the proof dictionary of the JSON message",
+      "translation": "5. 署名値をJSONメッセージのproof辞書内のproofValueフィールドへ追加",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:210-233/line:21",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "TLS_AES_128_GCM_SHA256 encryption function",
+      "translation": "TLS_AES_128_GCM_SHA256暗号化関数",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:1",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Ensure key length is 16 bytes (128 bits)",
+      "translation": "鍵長が16バイト（128ビット）であることを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:3",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Generate random IV",
+      "translation": "ランダムなIVを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:7",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Recommended IV length for GCM is 12 bytes",
+      "translation": "GCMの推奨IV長は12バイト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Create cipher object",
+      "translation": "暗号化オブジェクトを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:10",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Encrypt data",
+      "translation": "データを暗号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:17",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Get authentication tag",
+      "translation": "認証tagを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:20",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Encode to Base64",
+      "translation": "Base64へ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:23",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Create JSON object",
+      "translation": "JSONオブジェクトを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:370-406/line:28",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Use HKDF to derive an 8-byte key",
+      "translation": "HKDFを使って8バイトの鍵を導出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:430-454/line:9",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Ensure using the hash algorithm instance from the cryptography library",
+      "translation": "cryptographyライブラリのハッシュアルゴリズムのインスタンスを使用していることを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:430-454/line:11",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Generate an 8-byte key",
+      "translation": "8バイトの鍵を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:430-454/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Optional context information to distinguish keys for different purposes",
+      "translation": "用途の異なる鍵を区別するための任意のコンテキスト情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:430-454/line:14",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Use the default cryptographic backend",
+      "translation": "既定の暗号化バックエンドを使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:430-454/line:15",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Encode the derived key to a hexadecimal string",
+      "translation": "導出した鍵を16進数文字列へ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:430-454/line:20",
+          "language": "python"
+        }
+      ]
+    }
+  ]
+}

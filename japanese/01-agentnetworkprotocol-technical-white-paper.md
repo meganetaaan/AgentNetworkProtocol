@@ -1,14 +1,15 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: machine-fully-reviewed; scope=source lines 1-344; inventory=japanese/reviews/core-review.json; full prose compared against source -->
+> 日本語参考訳（機械翻訳を原文と全文照合し、意味・用語を校閲済み）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
 > 原文: [01-agentnetworkprotocol-technical-white-paper.md](../01-agentnetworkprotocol-technical-white-paper.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
-# エージェント ネットワーク プロトコルのテクニカル ホワイト ペーパー:
+# Agent Network Protocol技術白書:
 
 - 文書ID: ANP-01
-- ステータス: 有益なホワイトペーパー
+- 状態: 参考白書（規範仕様ではありません）
 - バージョン: 1.2
 - 原文言語: English / このページは日本語参考訳
 
-> このホワイトペーパーでは、概念的なアーキテクチャとビジョンについて説明します。標準的な ANP 1.2 要件は、各仕様によって定義されます。 [ANP-02](02-anp-did-authentication-protocol-specification.md) 共通認証を所有し、ANP-03 は WBA メソッド ルールを所有します。ネイティブ `did:web` 同じ認証フローを使用します。 ANP-06 はまだドラフトのままであり、安定した P6 リリースは引き続き MLS 登録ゲートの対象となります。
+> この白書は概念的な構造とビジョンを説明します。ANP 1.2の規範要件は各仕様が定めます。[ANP-02](02-anp-did-authentication-protocol-specification.md)が共通認証、ANP-03がWBAメソッドの規則を担当し、ネイティブの`did:web`も同じ認証フローを使います。ANP-06はドラフトのままで、P6の安定版公開には引き続きMLS登録の条件を満たす必要があります。
 
 ## 要約
 
@@ -16,7 +17,7 @@
 
 これらの傾向に合わせて、エージェント ネットワーク プロトコル (ANP) はエージェント Web 用の新世代の通信プロトコルを提案しています。 ANP は AI ネイティブ設計を遵守し、既存のインターネット プロトコルとの互換性を維持し、モジュール式の構成可能なアーキテクチャを採用し、最小限でありながら拡張可能な原則に従い、既存のインフラストラクチャに基づいた迅速な展開を可能にします。 ANP は、アイデンティティおよび暗号化通信層、メタプロトコル ネゴシエーション層、アプリケーション プロトコル層の 3 層プロトコル システムを通じて、エージェント ID 認証、動的ネゴシエーション、および機能検出の相互運用性の問題を体系的に解決します。
 
-アプリケーション層では、ANP はエージェント記述プロトコル (ADP) とエージェント検出プロトコルを通じて AI に適したネイティブ データ ネットワークを構築し、エージェントが機能をオープンして構造化された方法で相互接続できるようにします。セキュリティとプライバシーの設計の観点から、ANP は人間の認証とエージェントの認証を区別するメカニズムを導入し、複数の DID プライバシー保護戦略をサポートし、最小限の情報開示とエンドツーエンドの暗号化通信を促進して、オープン ネットワーク環境におけるユーザーとエージェントの自律性とデータ セキュリティを確保します。
+アプリケーション層では、エージェント記述プロトコル（ADP）と発見プロトコルでAIに適したネイティブなデータネットワークを構築し、機能の公開と構造化された相互接続を可能にします。セキュリティとプライバシーでは、人の認可とエージェントの認可を区別する仕組み、複数DIDによるプライバシー保護戦略、開示最小化、エンドツーエンド暗号化を取り入れ、開かれたネットワークでユーザーとエージェントの自律性とデータの安全性を確保します。
 
 ANP は将来を見据えて、デジタル サイロを打破し、インターネットの進化をクローズド プラットフォームのエコシステムからオープン プロトコルを中心とした協調ネットワークに戻すよう推進することに取り組んでいます。 「接続は力である」という設計哲学を支持し、高品質で摩擦の少ないエージェント接続とコラボレーションを促進することで集合知の巨大な可能性を解放します。 ANP は単なる通信標準ではなく、エージェントティック Web の時代におけるオープン性、公平性、イノベーションの活力を再構築するための重要なインフラストラクチャを表します。私たちは、世界中の開発者、研究者、組織を、ANP エコシステムの構築に参加し、エージェントによって推進される新しいインターネットの未来を共同創造するよう招待します。
 
@@ -32,7 +33,7 @@ ANP は将来を見据えて、デジタル サイロを打破し、インター
 
 - **高いコラボレーションコスト**: 現在、さまざまなエージェントが相互に分離されており、直接的な通信メカニズムがありません。大規模な言語モデルにより、エージェントは自然言語を使用してネゴシエートできますが、標準プロトコルのサポートがなければ、自己組織化されたコラボレーションは依然として困難です。エージェントが他のエージェントと直接通信し、自律的に交渉できるようになれば、既存のインターネットよりも費用対効果が高く、効率的な協力ネットワークが構築されるでしょう。
 
-### 1.2 エージェントティック Web の 4 つのトレンド
+### 1.2 Agentic Webの4つの傾向
 
 上記の分析に基づいて、インターネットはエージェントを中心とした新たな大きな変革を経験していると考えられます。この変化は、次の 4 つの主要なトレンドに反映されています。
 
@@ -50,9 +51,9 @@ Agentic Web の 2 番目の中心的なトレンドは、あらゆるエージ�
 
 #### 1.2.4 エージェントは自己組織化して協力できる
 
-エージェントティック Web の 4 番目の中心的なトレンドは、エージェントが自己組織化して共同作業する能力を備えていることです。標準プロトコルのサポートにより、エージェントは自然言語を使用して柔軟な自動ネゴシエーションを行い、互いのニーズを迅速に明確にし、協力関係を動的に形成して複雑なタスクを一緒に完了できます。このコラボレーション モードは、固定構造のインターフェイスを必要とせず、ネットワークの運用効率とタスク応答能力を大幅に向上させ、人間の介入と通信コストを大幅に削減します。その結果、柔軟性が高く、効率的で、低コストのエージェント ネットワークが徐々に形成されます。
+Agentic Webの第4の傾向は、エージェントが自己組織化して協働できることです。標準プロトコルにより自然言語で柔軟に自動交渉し、相互の要望を素早く明確にして、動的に協力関係を作り、複雑なタスクを共に完了できます。固定的な構造化インターフェースを必要としないこの協働形態は、ネットワークの運用効率とタスク応答能力を高め、人の介入や調整の費用を大きく減らします。その結果、柔軟で効率的かつ低費用なエージェントネットワークが徐々に形成されます。
 
-こうした傾向を考慮すると、エージェントティック Web の開発をサポートするための新しい通信プロトコルが緊急に必要です。エージェント ネットワーク プロトコル (ANP) はこのような背景に基づいて提案され、エージェントにオープンで統一された接続メカニズムを提供し、相互接続、ネイティブ インターフェイス、効率的なコラボレーションの 3 つの主要な課題を解決し、それによって AI エージェントの可能性を最大限に解放することを目的としています。
+こうした傾向から、Agentic Webの発展を支える新しい通信プロトコルが急務です。Agent Network Protocol（ANP）はこの背景で提案され、開かれた共通の接続機構を提供し、相互接続、ネイティブインターフェース、効率的な協働の3課題を解決して、AIエージェントの可能性を解放することを目指します。
 
 ## 2. コア設計原則
 
@@ -90,7 +91,7 @@ ANP の設計は、実際的な展開の実現可能性を十分に考慮して�
 
 ### 2.6 最小信頼の原則
 
-デフォルトでは、ネットワークの参加者 (エージェント、ノードなど) を完全に信頼すべきではありません。すべての対話は認証および承認され、特定のタスクを完了するために必要な最小限の権限のみを付与する必要があります。そのため、潜在的なセキュリティ リスクや悪用を軽減するために、プロトコル設計内に堅牢な ID 検証、アクセス制御、データ検証メカニズムが必要になります。
+ネットワークの参加者（エージェント、ノードなど）を既定で完全に信頼するべきではありません。全ての対話で認証と認可を行い、特定タスクに必要な最小限の権限だけを与える必要があります。そのため、本人性検証、アクセス制御、データ検証の堅牢な機構を設計に組み込み、潜在的な危険や乱用を軽減します。
 
 目標: 信頼できない環境でも安全に動作できるエージェント ネットワークを確立すること。
 
@@ -210,7 +211,7 @@ DID メソッドは、DID と DID ドキュメントを作成、解決、更新�
 
 #### 3.4.1 エージェント記述プロトコル (ADP)
 
-Agent description Protocol (ADP) は、各エージェントに標準化された自己記述方法を提供します。 ADP ドキュメントは、JSON-LD (JSON に基づくリンクされたデータ形式) で記述され、schema.org によって拡張機能が提供される一般語彙を使用し、ANP カスタム語彙と組み合わせて、エージェント用の統一メタデータ形式を定義します。エージェント説明 (AD) 文書は、ネットワーク世界におけるエージェントの名刺またはプロフィールに相当し、他のエージェントがこの文書を読むことでエージェントとの対話方法を理解できるようになります。
+エージェント記述プロトコル（ADP）は、各エージェントが標準化された方法で自分を記述する仕組みです。文書はJSON-LD（JSONに基づくLinked Data形式）で書き、schema.orgの一般語彙を拡張し、ANP独自語彙と組み合わせて統一メタデータ形式を定義します。エージェント記述（AD）文書はネットワーク上の名刺やプロフィールに相当し、他エージェントはこれを読んで対話方法を理解できます。
 
 エージェント説明文書には通常、次の重要な情報が含まれます。
 
@@ -220,27 +221,27 @@ Agent description Protocol (ADP) は、各エージェントに標準化され�
 - **セキュリティと認可**: エージェントの認証方法と権限の要件。たとえば、その身元を確認するためにどの DID 識別子と公開キーが使用されるかなどです。 ADP 仕様では、クロスプラットフォームの ID 認証要件を満たすための統合セキュリティ メカニズムとして Did:wba メソッドを使用することを推奨しています。
 - **連絡先情報**: 自動対話以外で人間による介入やデバッグを容易にするための、オプションのテクニカル サポートまたは連絡チャネル (サービス エンドポイント URL、メンテナの連絡先電子メールなど)。
 
-上記の情報は、JSON-LD ドキュメントとして構造化された形式で提示されるため、エージェントの説明は機械で解析可能であり、意味的にも豊富になります。 Through JSON-LD contexts, vocabularies in AD documents can link to publicly defined ontologies, achieving semantic consistency across different systems.たとえば、ADP は「エージェント」、「サービス」、「インターフェイス」などの中心的な語彙を定義しており、その意味はこの仕様に従ってすべてのエージェントに対して統一されています。これにより、エージェントが互いの能力を理解するための基盤が提供されます。
+これらの情報はJSON-LDで構造化して提示され、機械が解析でき、豊かな意味を表現する記述になります。JSON-LDコンテキストを通じ、AD文書の語彙を公開オントロジーに結び付けることで、システム間の意味を揃えられます。例えばADPは「Agent」「Service」「Interface」などの中核語彙を定義し、本仕様に従う全エージェントで意味を共通にします。これが相互の機能理解の基盤です。
 
-ADP は分散型 ID を記述文書のセキュリティ アーキテクチャに組み込んでいることに言及する価値があります。各エージェントの説明は、エージェント ID を認証するための組み込みの検証メソッドと公開キー情報を使用して DID にバインドできます。 When other agents read the description and communicate with it, they can verify the DID signature to confirm the other party's identity is trustworthy, thereby establishing secure connections in an open network.この設計により、エージェント間の相互信頼が確保され、さらなるコラボレーションの基盤が築かれます。
+ADPは分散型の本人性を記述文書のセキュリティ構造に組み込みます。各エージェント記述はDIDと結び付け、本人性認証用の検証メソッドと公開鍵情報を持たせられます。他エージェントは記述を読んで通信するときDID署名を検証し、相手の本人性が信頼できることを確認して、開かれたネットワークで安全な接続を確立できます。この設計は相互信頼を確保し、その後の協働の基盤になります。
 
-Finally, the agent description document serves as an entry point for an agent in the agent network, similar to a website's homepage, allowing other agents to understand how to interact with it by reading the agent description document.
+最後に、エージェント記述文書はWebサイトのホームページに似たネットワーク上の入口であり、他エージェントはその文書を読むことで対話方法を理解できます。
 
 #### 3.4.2 エージェント検出プロトコル
 
-エージェントの説明を設定すると、エージェントが相互に検出して接続を確立するためのメカニズムが必要になります。 Agent Discovery Protocol は、この目的のための標準プロトコルとして設計されています。 It specifies how to publish and retrieve agent description documents in the network, allowing any agent or search service to easily find the entry points of other agents. Essentially, the Agent Discovery Protocol serves as a "search engine protocol" for agents, ensuring that nodes in the agent internet are visible and accessible.
+記述が用意されたら、エージェント同士を発見して接続する仕組みが必要です。エージェント発見プロトコルはその標準として設計されています。ネットワークで記述文書を公開・取得する方法を定め、任意のエージェントや検索サービスが他の入口を見つけやすくします。本質的にはエージェント用の「検索エンジンのプロトコル」であり、エージェントインターネットのノードを発見・利用可能にします。
 
 Agent Discovery Protocol は、次の 2 つの補完的な検出方法を提供します。
 
-1. **Active Discovery**: Based on the common Web .well-known path convention, this allows querying all publicly available agent descriptions under a known domain. Specifically, a unified directory entry is reserved under an internet domain (default path: /.well-known/agent-descriptions), and accessing this URL returns a JSON-LD manifest containing URLs of all agent AD documents on that domain. The manifest document type is CollectionPage, which lists the link addresses of each agent description document and can be paginated to support massive numbers of agents. With the active discovery mechanism, any agent only needs to know another's domain name to obtain its agent directory, thereby traversing the entire agent network level by level.
+1. **能動的発見**: Webで一般的な.well-knownの慣習を使い、既知ドメイン配下の公開エージェント記述を問い合わせます。ドメイン配下に統一ディレクトリ入口（既定パス: /.well-known/agent-descriptions）を設け、このURLで全AD文書のURLを含むJSON-LDマニフェストを返します。文書型はCollectionPageで、各記述へのリンクを列挙し、大規模な件数にはページ分割を使えます。相手のドメイン名だけでディレクトリを取得し、エージェントネットワークを段階的にたどれます。
 
-2. **Passive Discovery**: Similar to how search engines index web pages, agents can proactively submit their information to specialized search service agents. The specific approach involves search services providing a registration API interface (publicly documented in their agent description), which other agents can call to register their AD document URLs. After receiving a registration request, the search service periodically crawls the URL to obtain the latest agent description and indexes it in its database.エージェントまたはユーザーが関連サービスにクエリを実行すると、検索サービスは登録されたエージェントに関する情報を返すことができます。受動的な検出を通じて、新しいエージェントはその存在を通知し、インデックス作成サービスによってインデックスを作成されるため、より多くのノードによって検出されるようになります。
+2. **受動的発見**: 検索エンジンのWeb索引に似て、エージェントから専用の検索サービスエージェントへ情報を登録できます。検索サービスは記述文書に公開した登録APIを提供し、他エージェントはAD文書のURLを登録します。検索サービスはそのURLを定期的に巡回し、最新の記述を取得してデータベースに索引化します。関連サービスの問い合わせがあれば登録エージェント情報を返せます。新しいエージェントはこの仕組みで存在を知らせ、索引に登録され、より多くのノードから発見されます。
 
-These two mechanisms complement each other: active discovery focuses on using distributed domain directories to publish agent lists, while passive discovery introduces centralized search agents for index aggregation.すべての検出情報は、ADP 仕様に準拠した JSON-LD 形式で表されます。取得経路に関係なく、発見結果は最終的にさまざまなエージェントの説明文書を示します。
+両機構は補完的です。能動的発見は分散ドメインディレクトリによる一覧公開、受動的発見は集中型の検索エージェントによる索引集約を重視します。発見情報は全てADPに沿うJSON-LDで表します。どの経路で取得しても、最終的には各エージェントの記述文書を指します。
 
-Through the Agent Discovery Protocol, ANP ensures the openness of the agent network: newly joined agents won't silently become information islands.説明文書を公開または登録するためのプロトコルに従っている限り、それらはネットワーク内で取得できます。これは、大規模なエージェント エコシステムの形成に対する基礎的なサポートを提供します。
+発見プロトコルによりANPはネットワークの開放性を確保します。新しいエージェントが知られないまま情報の孤島になることを防ぎます。プロトコルに従って記述文書を公開・登録すればネットワークで検索でき、大規模なエコシステム形成の基盤になります。
 
-Notably, the Agent Discovery Protocol also specifies standard methods for result pagination and linking to efficiently manage massive agent information. When a domain has many agents, the .well-known/agent-descriptions document can link to subsequent pages through the next field, enabling incremental loading.検索サービスは、クエリ結果を返すときに同様のページネーション メカニズムを採用できます。これらの詳細により、検出プロセスの拡張性と堅牢性が保証されます。
+発見プロトコルは大量のエージェント情報を効率よく扱うため、結果のページ分割とリンク方法も標準化します。ドメイン内の件数が多い場合、.well-known/agent-descriptions文書のnextフィールドで次ページを示し、段階的に読み込めます。検索結果にも同様の仕組みを使えます。これが発見処理の拡張性と堅牢性を支えます。
 
 エージェント記述プロトコルと検出プロトコルの組み合わせにより、ANP はアプリケーション層で閉ループを実現します。つまり、エージェントは ADP を使用して自分自身を記述し、エージェント検出プロトコルを使用して自分自身を公開し、他のエージェントを検出します。このメカニズムは、エージェント インターネットにおける「お互いをどのように認識するか」という課題に対処し、前述のエージェント相互接続の要件を満たします。 ANP は、セキュア ID 層と柔軟なメタプロトコル層と組み合わせることで、エージェント間にオープンで効率的で信頼できる接続を確立するための完全なソリューションを提供します。
 
@@ -268,17 +269,17 @@ Notably, the Agent Discovery Protocol also specifies standard methods for result
 
 このセクションでは、ANP のセキュリティとプライバシーの設計を、ID と認可の管理、プライバシー保護メカニズム、通信セキュリティの 3 つの側面から体系的に説明します。
 
-### 4.1 人間による認証とエージェントによる認証の区別
+### 4.1 人の認可とエージェントの認可の区別
 
-機密性の高い操作を人間の制御下に置くために、ANP は ID 認証を操作の承認から分離します。指定どおり [ANP-02 v1.2](02-anp-did-authentication-protocol-specification.md)、 `did:wba` DID ドキュメントは、次の目的で使用できる検証方法を宣言します。 `authentication`;専用のものを定義するものではありません `humanAuthorization` 検証関係。
+慎重に扱うべき操作を人の管理下に置くため、ANPは本人性認証と操作の認可を分けます。[ANP-02 v1.2](02-anp-did-authentication-protocol-specification.md)のとおり、`did:wba` DID Documentは`authentication`に使う検証メソッドを宣言しますが、専用の`humanAuthorization`検証関係は定義しません。
 
-- **低リスク操作** (公開情報のクエリやデータの閲覧など) は、ローカル認証ポリシーで許可されている場合、エージェントによって自動的に開始される場合があります。
+- **低リスク操作**（公開情報の問い合わせや閲覧など）は、ローカル認可ポリシーが許す場合、エージェントが自動で開始できます。
 - **高リスク操作** (資金移動、重要なデータの提出、個人情報の開示など) は、操作を続行する前に明示的な人間の承認が必要となる場合があります。
 
 人間による承認要件は、DID 層の上に表現されます。
 
-- で [ANP-07](07-anp-agent-description-protocol-specification.md), `humanAuthorization: true` インターフェイス上で、インターフェイスの呼び出しには人間の承認が必要であることを宣言します。
-- ドラフトでは [ANP-06](06-anp-agent-communication-meta-protocol-specification.md), `requiresHumanAuthorization: true` は交渉上の制約であり、人間による承認が完了したことを意味するものではありません。
+- [ANP-07](07-anp-agent-description-protocol-specification.md)では、インターフェースの`humanAuthorization: true`で人の認可が必要なことを宣言します。
+- ドラフトの[ANP-06](06-anp-agent-communication-meta-protocol-specification.md)では、`requiresHumanAuthorization: true`は交渉上の制約であり、認可完了を意味しません。
 
 人間による承認が必要な場合、ユーザー エージェントはまず該当する承認ポリシーで定義された確認プロセスを完了し、次にそのポリシーで許可されている `authentication` キーを使用して署名し、リクエストを開始する必要があります。サーバーは、リクエストが合意された上位レベルの認可ポリシーを満たしているかどうかを検証します。 `authentication` 検証方法で生成されたリクエスト署名は、それ自体では人間が操作を許可したことを証明するものではありません。
 
@@ -288,9 +289,9 @@ Notably, the Agent Discovery Protocol also specifies standard methods for result
 
 エージェント開発者は、以下を含むがこれらに限定されない、高リスク操作で使用される `authentication` キーの厳密な権限分離とセキュリティ管理を実装する必要があります。
 
-- **リスクベースの管理**: 分類する `authentication` ポリシーで使用が許可されている操作に従ってキーを管理し、関連するリスクに適切な制御を適用します。
+- **リスクに基づく管理**: `authentication`鍵を、ポリシーが許可する操作ごとに分類し、その危険度に合う制御を適用します。
 - **ローカル暗号化ストレージ**: 秘密キーは、安全に暗号化されたローカル デバイス (TEE、HSM など) または保護されたキー管理システムに保存する必要があります。
-- **追加確認**: 該当するポリシーで要求されている場合は、認証の前に追加の確認 (指紋、顔認識、ワンタイム パスワード、安全なハードウェアの承認など) を取得してください。 `authentication` キーは危険性の高い操作に使用されます。
+- **追加確認**: ポリシーが要求する場合、高リスク操作に`authentication`鍵を使う前に、指紋、顔認証、ワンタイムパスワード、セキュアハードウェアでの承認などを追加で確認します。
 - **操作ログ**: イベント後の監査と追跡を容易にするために、機密署名操作ごとに完全な操作ログを記録する必要があります。
 
 これらのメカニズムにより、キーの漏洩、盗難、悪用のリスクに対する保護が最大限に強化されます。
@@ -301,7 +302,7 @@ Notably, the Agent Discovery Protocol also specifies standard methods for result
 
 - **プライマリ DID とサブ DID の分離**: プライマリ DID は長期的な社会関係 (友人、ビジネス パートナーなど) を維持するために使用され、独立したサブ DID はさまざまなアプリケーション シナリオ (電子商取引ショッピング、食品配達、オンライン サービスなど) に合わせて生成されます。
 - **最小権限の原則**: 各サブ DID には、特定のタスクを完了するために必要な最小限の権限と役割のみが付与されます。
-- **定期的なローテーションと有効期限**: サブ DID にはライフサイクルを定義し、クロスシナリオ追跡や ID 相関攻撃を防ぐために使用後に破棄され、再適用される必要があります。
+- **定期ローテーションと期限**: サブDIDのライフサイクルを定め、用途をまたぐ追跡や本人性の関連付け攻撃を防ぐため、使用後は廃棄して新しいものを申請するべきです。
 
 マルチ DID システムを通じて、ID と行動の効果的な分離を実現でき、全体的な ID セキュリティを向上させながら、大規模なデータ分析によるプライバシー漏洩のリスクを軽減します。
 
@@ -329,7 +330,7 @@ Agentic Web の出現は、この不均衡を再形成する歴史的な機会�
 
 [^1]: ビル・ゲイツ、AI はコンピューターの使い方を完全に変えようとしています。 [https://www.gatesnotes.com/AI-agents](https://www.gatesnotes.com/AI-agents)
 
-[^2]: OAuth 2.0 認証フレームワーク、 [https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
+[^2]: OAuth 2.0認可フレームワーク、[https://tools.ietf.org/html/rfc6749](https://tools.ietf.org/html/rfc6749)
 
 [^3]: 分散型識別子 (DID) v1.0: コア アーキテクチャ、データ モデル、および表現[https://www.w3.org/TR/did-core/](https://www.w3.org/TR/did-core/)
 
@@ -343,4 +344,4 @@ Agentic Web の出現は、この不均衡を再形成する歴史的な機会�
 
 ## 著作権表示
 著作権 (c) 2024 ANP コミュニティ
-このファイルは、 [Apache ライセンス 2.0](../LICENSE)。自由に使用および変更できますが、この著作権表示は保持しておく必要があります。
+このファイルは[Apache License 2.0](../LICENSE)の下で公開されています。自由に使用・変更できますが、この著作権表示を保持する必要があります。

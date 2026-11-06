@@ -1,0 +1,256 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "scope": "Owned Chinese reference/research/design assets; original sources retained.",
+  "documents": [
+    {
+      "source": "chinese/思考&问题/身份认证与加密/did.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/did.md",
+      "source_sha256": "b4a7b02d4bb88d2bbc5bddd3cf9fedc25eb26f560d945d707ced85ff2cedfa9a",
+      "translation_sha256": "3b3d05c45f7b25ce34a2ce4af75c65543926d2381de55757ebd7b9b9d37a6618",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        104
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire original read and Japanese fully rewritten. Historical assertions and incomplete opening question retained; not independently updated or endorsed.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "destination": "japanese/chinese/docs/did-wba服务端测试接口.md",
+      "source_sha256": "41819dfc87d38ccbae3f5b6e4c87806a8187348c8db9159ffd10bbd9895837f6",
+      "translation_sha256": "5089a935464b96a4018c219b36088017889bbb1dc4137f7da3f6aac4c6dbf62b",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        225
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire original read; Japanese fully rewritten. HTTP methods, status codes, exact IDs, URLs and fenced examples retained. Historical service endpoint not contacted. Ambiguous original first-request Authorization sentence clarified from immediately surrounding request/response examples.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "destination": "japanese/chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "source_sha256": "c80555776f7db1d6339e1b8c1ce1985dabcffe805772c8ca2f9495bf14f636a0",
+      "translation_sha256": "e7e651659bad1f3dab0a5abdcede84d283d0c309dba26ac6e08df9fc2b1abc81",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        89
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire Chinese source read; Japanese manually rewritten paragraph by paragraph, preserving all sections, examples, numbers and original transcript uncertainty markers (？)/(？？). This translates the repository transcript, not a newly verified official talk transcript.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "destination": "japanese/chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "source_sha256": "87cf71cea116f8efccd28254332e06473f062c65dad1f7618f7213a28a64835f",
+      "translation_sha256": "7b2598f276661d1e567c5416517437d2c097c5a010a4452fbbf26ac23438c852",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        193
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire Chinese source translated and checked paragraph by paragraph including HTML comment. Historical 1998 draft status and date, numeric examples, logical negation, rules, unresolved @@ and references to absent diagrams retained; no historical assertions silently updated.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/参考资料/语义网/semantic-web.md",
+      "destination": "japanese/chinese/参考资料/语义网/semantic-web.md",
+      "source_sha256": "a8904801f838a822765d96c73ee635ffa38a07d77827b99466ed7a6c181271f3",
+      "translation_sha256": "e0be352d0f4d08b43d0f6fe252200dac3dd652a9e5824d00b37a85d42f06df18",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        173
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire Chinese source read and manually retranslated, including three repository HTML comments. Source paragraph breaks caused by extraction joined for readability without dropping claims. All original external link destinations and numerical examples retained. Source author-role wording is historically ambiguous and not independently repaired.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/相关产品与技术/ANP-VS-IETF.MD",
+      "destination": "japanese/chinese/相关产品与技术/ANP-VS-IETF.MD",
+      "source_sha256": "26f5e37d54f04fd1b8034874ab262a7eba5deb0aae0b035e400bf2e79064bffc",
+      "translation_sha256": "acba4b7faaaa13110f847fa130af60570796badfb1f48a8b3d39ac7a1bb59e9d",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        67
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire original read and Japanese fully rewritten. All comparison axes, examples, qualifications and references retained. Original draft-00-era technical claims and speculative interpretations are translated as historical author analysis, not newly verified current ANP/A2A specifications.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "destination": "japanese/chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "source_sha256": "2b6cbb33910708b139ff9812a8df831889cd7445b078748c55fc484d2ccc835f",
+      "translation_sha256": "068a088f0bfcdd00d2f7aa116c8dace246580ad64515f8cba72c0a02921a158e",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        293
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire original read and Japanese fully rewritten, retaining original English quotations with Japanese counterparts and historical DID all design. Unfinished empty bullet and empty sections kept. Original early MCP claims, including remote-call limitations, translated as historical notes rather than current advice.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/思考&问题/其他/share-ppt.md",
+      "destination": "japanese/chinese/思考&问题/其他/share-ppt.md",
+      "source_sha256": "4caa46018f08f7c6e666842367984d5fa30a3ed442fee4886942ec5240f3df4a",
+      "translation_sha256": "99145719e91aaccefec0e563d6fb1a444099262a8ca3cece21d91f6f3e9c1477",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        421
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire original source read, including all four draft blocks (initial V3, old, V2, final V3); every distinct section and repeated-version content translated. TODOs, empty contacts, project names, historic 2025-01 release forecast and 1,000億ドル amount retained. Outline nesting reorganized where redundant headings carried identical subordinate meaning.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "destination": "japanese/chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "source_sha256": "b7f2aaf5fab14d6c4b6dc82b39beb25889537a0f5fae4ce9b55b13ac0116fb06",
+      "translation_sha256": "663f21909deac923a0e3084c0cf2f4149684d720041e07c20493450d7f8def1e",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        310
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire source read and manually translated. Both ASCII diagrams and five indented URL code examples retained verbatim. Historical opinions on OAuth/security/browser flows and WeChat/OIDC analogy preserved as source claims, not current technical recommendations.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true,
+        "inline_multiset_matches_source_excluding_header_commit": true
+      }
+    },
+    {
+      "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "destination": "japanese/chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "source_sha256": "ae43c62b01ff2cf973a436850dbb90da3a79ac8da90fc8ecab7a1e98c459d6cb",
+      "translation_sha256": "55f3dfc7b8022e086d9a88371a3de39a9bd52c3b61a34ff38a90bc1a1179ce77",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        630
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire 630-line source read and manually translated, all research sections and repeated OWL discussion retained. Three fenced JSON examples and unfenced HAL JSON copied verbatim. Source CNCO names are incomplete: explicitly marked without guessing. Historical dates and questionable claims (GraphQL/REST, JSON-RPC authentication, X25519 suite vs TLS) translated as original research notes, not independently corrected advice; original @ytpe typo and lind-data spelling retained.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+      "destination": "japanese/chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+      "source_sha256": "24f72ab0006a656a58d8877036c7a99fd5e72f147b5759d5835c2bc6eb2eedc4",
+      "translation_sha256": "90c372d72f3e5dddd83a7e572ea185631ee373298dc0fce33cd4630dcecc1d0b",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        246
+      ],
+      "fenced_examples_exact": true,
+      "review_method": "entire-original-read-and-manually-translated",
+      "notes": "Entire 246-line original read and manually retranslated. Both fenced JSON/Mermaid examples unchanged; all Chinese diagram labels/transitions and code human-facing sample values/comments translated in adjacent Japanese explanations. Source-level security/VC/JWT/TLS/escrow claims retained as design proposal, not independently verified normative implementation guidance. No payment/service/API called.",
+      "verification": {
+        "original_matches_base_commit": true,
+        "all_fenced_blocks_exact_including_indented": true,
+        "missing_inline_code": [],
+        "missing_protocol_identifiers": [],
+        "missing_external_markdown_links": [],
+        "full_marker": true
+      }
+    }
+  ],
+  "generated_at": "2026-11-06T14:46:48.329695+00:00",
+  "summary": {
+    "full": 11,
+    "originals_unchanged": 11,
+    "errors": 0
+  },
+  "verification_errors": []
+}

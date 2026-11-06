@@ -1,0 +1,324 @@
+{
+  "source": "images/message-did-register-flow.png",
+  "sha256": "7df9ed39b2646ab5e2d7b849b8fa4a0f187c8d8b9091672d7493c32b9b30b67e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "User Server",
+      "confidence": 0.9755097248337485,
+      "box": [
+        [
+          88.0,
+          74.0
+        ],
+        [
+          247.0,
+          74.0
+        ],
+        [
+          247.0,
+          107.0
+        ],
+        [
+          88.0,
+          107.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ユーザーサーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Message Proxy",
+      "confidence": 0.9993836329533503,
+      "box": [
+        [
+          903.0,
+          72.0
+        ],
+        [
+          1100.0,
+          77.0
+        ],
+        [
+          1099.0,
+          112.0
+        ],
+        [
+          902.0,
+          106.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "メッセージプロキシ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "WSS Connection",
+      "confidence": 0.9514880648681096,
+      "box": [
+        [
+          482.0,
+          185.0
+        ],
+        [
+          704.0,
+          188.0
+        ],
+        [
+          704.0,
+          218.0
+        ],
+        [
+          481.0,
+          216.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "WSS接続",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WSS"
+      ]
+    },
+    {
+      "source": "Register Router",
+      "confidence": 0.9977659662564595,
+      "box": [
+        [
+          483.0,
+          380.0
+        ],
+        [
+          690.0,
+          380.0
+        ],
+        [
+          690.0,
+          415.0
+        ],
+        [
+          483.0,
+          415.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "ルーターを登録する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Record the mapping relationship",
+      "confidence": 0.9861683537883144,
+      "box": [
+        [
+          1136.0,
+          486.0
+        ],
+        [
+          1570.0,
+          487.0
+        ],
+        [
+          1570.0,
+          520.0
+        ],
+        [
+          1136.0,
+          519.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "対応関係を記録する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "between the router and",
+      "confidence": 0.9757360030304302,
+      "box": [
+        [
+          1137.0,
+          527.0
+        ],
+        [
+          1451.0,
+          527.0
+        ],
+        [
+          1451.0,
+          558.0
+        ],
+        [
+          1137.0,
+          558.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ルーターと",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "WsS connection.",
+      "confidence": 0.9265119194984436,
+      "box": [
+        [
+          1135.0,
+          567.0
+        ],
+        [
+          1362.0,
+          569.0
+        ],
+        [
+          1362.0,
+          599.0
+        ],
+        [
+          1135.0,
+          597.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "WSS接続との間の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WsS"
+      ],
+      "transcribed_source": "WSS connection."
+    },
+    {
+      "source": "Received DID message",
+      "confidence": 0.9597682863473892,
+      "box": [
+        [
+          1183.0,
+          672.0
+        ],
+        [
+          1483.0,
+          676.0
+        ],
+        [
+          1483.0,
+          710.0
+        ],
+        [
+          1182.0,
+          705.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "受信したDIDメッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "Lookup theWsslinkbased",
+      "confidence": 0.9280785755677656,
+      "box": [
+        [
+          1140.0,
+          759.0
+        ],
+        [
+          1500.0,
+          759.0
+        ],
+        [
+          1500.0,
+          790.0
+        ],
+        [
+          1140.0,
+          790.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "WSSリンクを検索する。検索の基準は",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "theWsslinkbased"
+      ],
+      "transcribed_source": "Look up the WSS link based"
+    },
+    {
+      "source": "on the router in the DiD document.",
+      "confidence": 0.9381516812478795,
+      "box": [
+        [
+          1138.0,
+          801.0
+        ],
+        [
+          1595.0,
+          801.0
+        ],
+        [
+          1595.0,
+          830.0
+        ],
+        [
+          1138.0,
+          830.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "DID文書にあるルーター",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DiD"
+      ],
+      "transcribed_source": "on the router in the DID document."
+    },
+    {
+      "source": "Send Message",
+      "confidence": 0.9766544649998347,
+      "box": [
+        [
+          466.0,
+          866.0
+        ],
+        [
+          657.0,
+          871.0
+        ],
+        [
+          656.0,
+          905.0
+        ],
+        [
+          465.0,
+          901.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "メッセージを送信する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.146805000025779,
+    0.01853179931640625,
+    1.330315113067627
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "WsS connection.": "WSS connection.",
+      "Lookup theWsslinkbased": "Look up the WSS link based",
+      "on the router in the DiD document.": "on the router in the DID document."
+    },
+    "source_sha256": "7df9ed39b2646ab5e2d7b849b8fa4a0f187c8d8b9091672d7493c32b9b30b67e"
+  }
+}

@@ -1,0 +1,4015 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    600,
+    799
+  ],
+  "units": [
+    {
+      "original": "大家好",
+      "translation": "皆さん、こんにちは",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/04-群组基础语义.md",
+          "locator": "fence:1599-1632//params/body/text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/04-群组基础语义.md",
+          "locator": "fence:1454-1487//params/body/text",
+          "language": "json"
+        },
+        {
+          "source": "vnext/chinese/P4-群组基础语义.md",
+          "locator": "fence:1482-1515//params/body/text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "2. 转换为JSON字符串，按键排序，并使用逗号和冒号作为分隔符",
+      "translation": "2. JSON文字列へ変換し、キーで並べ替え、カンマとコロンを区切りに使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-基于did的消息服务协议.md",
+          "locator": "fence:190-213/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Agent DID 文档",
+      "translation": "エージェントのDID文書",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:187-204/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Assertion Key<br/>assertionMethod",
+      "translation": "アサーション鍵<br/>assertionMethod",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:187-204/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:183-200/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Static Key Agreement Key<br/>keyAgreement / X25519",
+      "translation": "静的な鍵合意鍵<br/>keyAgreement / X25519",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:187-204/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:183-200/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Signed Prekey<br/>X25519",
+      "translation": "署名付き事前鍵<br/>X25519",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:187-204/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:183-200/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "One-Time Prekey 池",
+      "translation": "使い捨て事前鍵のプール",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:187-204/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回 prekey_bundle + 可选 OPK",
+      "translation": "prekey_bundle＋任意のOPKを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:187-204/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:218-236/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ANP Direct E2EE v1 Initial Secret",
+      "translation": "ANP Direct E2EE v1 Initial Secret",
+      "status": "technical-retained",
+      "reason": "暗号処理のドメイン分離用ラベル／識別文字列を原文のまま保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:607-610/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:661-664/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:606-609/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:660-663/line:2:column:31",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "ANP Direct E2EE v1 Root Key",
+      "translation": "ANP Direct E2EE v1 Root Key",
+      "status": "technical-retained",
+      "reason": "暗号処理のドメイン分離用ラベル／識別文字列を原文のまま保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:614-618/line:1:column:30",
+          "language": "text"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:668-672/line:1:column:30",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:613-617/line:1:column:30",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:667-671/line:1:column:30",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "ANP Direct E2EE v1 Chain Key",
+      "translation": "ANP Direct E2EE v1 Chain Key",
+      "status": "technical-retained",
+      "reason": "暗号処理のドメイン分離用ラベル／識別文字列を原文のまま保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:614-618/line:2:column:30",
+          "language": "text"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:668-672/line:2:column:30",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:613-617/line:2:column:30",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:667-671/line:2:column:30",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "ANP Direct E2EE v1 Session ID",
+      "translation": "ANP Direct E2EE v1 Session ID",
+      "status": "technical-retained",
+      "reason": "暗号処理のドメイン分離用ラベル／識別文字列を原文のまま保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:614-618/line:3:column:30",
+          "language": "text"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:668-672/line:3:column:30",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:613-617/line:3:column:30",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:667-671/line:3:column:30",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "发起方 A",
+      "translation": "開始側A",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收方 B 的 ANPMessageService",
+      "translation": "受信側BのANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收方 B",
+      "translation": "受信側B",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "prekey_bundle + optional OPK",
+      "translation": "prekey_bundle＋任意のOPK",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 Bundle / 生成 EK_A / 计算 DH1~DH4 / 派生 SK",
+      "translation": "Bundleを検証／EK_Aを生成／DH1~DH4を計算／SKを導出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "交付 direct_init",
+      "translation": "direct_initを配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "重算共享秘密 / 校验 session_id / 解密 init",
+      "translation": "共有秘密を再計算／session_idを検証／initを復号",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send (首条 direct-cipher 回复)",
+      "translation": "direct.send（最初のdirect-cipher応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "首条回复",
+      "translation": "最初の応答",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "会话进入 established",
+      "translation": "セッションがestablishedになる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:693-708/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:751-766/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送 direct_init",
+      "translation": "direct_initを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:941-953/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1013-1025/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "同一 init 幂等重试",
+      "translation": "同じinitを冪等に再試行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:941-953/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1013-1025/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "收到首条有效回复",
+      "translation": "最初の有効な応答を受信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:941-953/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1013-1025/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "超时 / 放弃 / 重建",
+      "translation": "タイムアウト／断念／再構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:941-953/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1013-1025/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "reset / 新 init 重建",
+      "translation": "reset／新しいinitで再構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:941-953/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1013-1025/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ANP Direct E2EE v1 KDF_RK",
+      "translation": "ANP Direct E2EE v1 KDF_RK",
+      "status": "technical-retained",
+      "reason": "暗号処理のドメイン分離用ラベル／識別文字列を原文のまま保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1035-1040/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1114-1119/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1032-1037/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1111-1116/line:2:column:31",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "ANP Direct E2EE v1 KDF_CK",
+      "translation": "ANP Direct E2EE v1 KDF_CK",
+      "status": "technical-retained",
+      "reason": "暗号処理のドメイン分離用ラベル／識別文字列を原文のまま保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1044-1050/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1123-1129/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1041-1047/line:2:column:31",
+          "language": "text"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1120-1126/line:2:column:31",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "当前会话状态<br/>RK / DHs / DHr / CKs / CKr / Ns / Nr / PN",
+      "translation": "現在のセッション状態<br/>RK / DHs / DHr / CKs / CKr / Ns / Nr / PN",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送后续消息",
+      "translation": "後続のメッセージを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "得到 MK / NONCE / CKs'",
+      "translation": "MK / NONCE / CKs'を取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "加密 Application Plaintext",
+      "translation": "Application Plaintextを暗号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "更新 CKs = CKs' ; Ns++",
+      "translation": "CKs = CKs' ; Ns++へ更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收消息<br/>dh_pub 与当前 DHr 相同",
+      "translation": "メッセージを受信<br/>dh_pubが現在のDHrと同じ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "得到 MK / NONCE / CKr'",
+      "translation": "MK / NONCE / CKr'を取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解密并验证 AD_msg",
+      "translation": "復号し、AD_msgを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "更新 CKr = CKr' ; Nr++",
+      "translation": "CKr = CKr' ; Nr++へ更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收消息<br/>dh_pub 与当前 DHr 不同",
+      "translation": "メッセージを受信<br/>dh_pubが現在のDHrと異なる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "得到新的 CKr",
+      "translation": "新しいCKrを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "生成新的 DHs",
+      "translation": "新しいDHsを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "得到新的 CKs",
+      "translation": "新しいCKsを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1140-1163/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1219-1242/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "<outer meta.message_id>",
+      "translation": "<outer meta.message_id>",
+      "status": "technical-retained",
+      "reason": "プロトコルのフィールド／型／プレースホルダーの技術表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1254-1265/line:3:column:17",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1337-1351/line:3:column:17",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1251-1262/line:3:column:17",
+          "language": "json"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1334-1348/line:3:column:17",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "<outer meta.sender_did>",
+      "translation": "<outer meta.sender_did>",
+      "status": "technical-retained",
+      "reason": "プロトコルのフィールド／型／プレースホルダーの技術表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1254-1265/line:6:column:17",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1337-1351/line:7:column:17",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1251-1262/line:6:column:17",
+          "language": "json"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1334-1348/line:7:column:17",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "<outer meta.target.did>",
+      "translation": "<outer meta.target.did>",
+      "status": "technical-retained",
+      "reason": "プロトコルのフィールド／型／プレースホルダーの技術表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "locator": "fence:1254-1265/line:7:column:20",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "locator": "fence:1337-1351/line:9:column:20",
+          "language": "text"
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1251-1262/line:7:column:20",
+          "language": "json"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1334-1348/line:9:column:20",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "P4 业务状态变化<br/>group.create / member active / member left or removed / credential rebound",
+      "translation": "P4の業務状態の変化<br/>group.create / メンバーがactive / メンバーがleftまたはremoved / 資格情報の再バインディング",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "owner 观察业务状态",
+      "translation": "ownerが業務状態を監視",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.add(new DID)",
+      "translation": "group.e2ee.add(new DID)",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.remove(old DID)",
+      "translation": "group.e2ee.remove(old DID)",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群已创建且尚无 crypto_group_id",
+      "translation": "グループ作成済みで、crypto_group_idがまだない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:154-182/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "成员已 active 且未进入 MLS",
+      "translation": "メンバーがactiveで、MLSにはまだ参加していない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "成员已 left or removed 且仍在 MLS",
+      "translation": "メンバーがleftまたはremovedで、MLSにはまだ残っている",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Handle 成员已换绑且旧 leaf 仍在 MLS",
+      "translation": "Handleメンバーが再バインド済みで、旧leafがまだMLSに残っている",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "换绑 Add 已接受后执行",
+      "translation": "再バインディングのAddが受け入れられた後に実行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:129-157/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "assertionMethod verificationMethod",
+      "translation": "assertionMethod verificationMethod",
+      "status": "technical-retained",
+      "reason": "プロトコルのフィールド／型／プレースホルダーの技術表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:406-419/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:456-470/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:403-416/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:453-467/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "MLS KeyPackage",
+      "translation": "MLS KeyPackage",
+      "status": "technical-retained",
+      "reason": "プロトコルのフィールド／型／プレースホルダーの技術表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:406-419/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:456-470/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:403-416/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:453-467/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group_did<br/>应用层群标识",
+      "translation": "group_did<br/>アプリケーション層のグループ識別子",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:456-480/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:507-531/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group_state_version<br/>P4 业务状态版本",
+      "translation": "group_state_version<br/>P4の業務状態バージョン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:456-480/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:507-531/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "crypto_group_id<br/>MLS group_id",
+      "translation": "crypto_group_id<br/>MLSのgroup_id",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:456-480/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:507-531/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:452-476/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:503-527/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "epoch<br/>MLS 代际",
+      "translation": "epoch<br/>MLSの世代",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:456-480/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:507-531/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "创建者(owner)",
+      "translation": "作成者（owner）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1508-1517/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "业务创建成功(group_did, group_state_version)",
+      "translation": "業務上の作成に成功（group_did, group_state_version）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1508-1517/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1751-1760/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "MLS 初始化成功(crypto_group_id, epoch)",
+      "translation": "MLSの初期化に成功（crypto_group_id, epoch）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1508-1517/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1751-1760/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "新成员",
+      "translation": "新しいメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1521-1533/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1537-1550/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "业务加入成功(active)",
+      "translation": "業務上の参加に成功（active）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1521-1533/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1764-1777/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "业务加人成功(target active)",
+      "translation": "業務上のメンバー追加に成功（target active）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1537-1550/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1781-1795/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "业务状态已变更(removed/left)",
+      "translation": "業務状態を変更済み（removed/left）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1554-1565/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1799-1816/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送成员",
+      "translation": "送信メンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1569-1580/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "本地构造 Group Application Plaintext",
+      "translation": "Group Application Plaintextをローカルで構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1569-1580/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1820-1831/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "本地生成 PrivateMessage 和 group_cipher_object",
+      "translation": "PrivateMessageとgroup_cipher_objectをローカルで生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1569-1580/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1820-1831/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "owner / MLS Controller",
+      "translation": "owner／MLSコントローラー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "保留成员",
+      "translation": "残るメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "暂停新的 E2EE 消息",
+      "translation": "新しいE2EEメッセージを一時停止",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/06-群组端到端加密.md",
+          "locator": "fence:1835-1858/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.add(new DID, epoch N+1)",
+      "translation": "group.e2ee.add(new DID, epoch N+1)",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "中间 epoch 禁止应用消息",
+      "translation": "中間のepochではアプリケーションメッセージを禁止",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.remove(old DID, epoch N+2)",
+      "translation": "group.e2ee.remove(old DID, epoch N+2)",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Remove 成功后恢复 E2EE 消息",
+      "translation": "Removeの成功後にE2EEメッセージを再開",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/06-群组端到端加密.md",
+          "locator": "fence:1584-1601/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送方客户端",
+      "translation": "送信側クライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:94-110/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:99-115/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS PUT 对象字节",
+      "translation": "HTTPS PUTでオブジェクトのバイト列を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:94-110/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:99-115/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送附件清单<br/>direct.send / group.send",
+      "translation": "添付ファイルのマニフェストを送信<br/>direct.send / group.send",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:94-110/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息 accepted 后创建 Access Grant",
+      "translation": "メッセージがacceptedになった後でAccess Grantを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:94-110/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:99-115/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收方",
+      "translation": "受信側",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:94-110/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:99-115/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS GET object_uri",
+      "translation": "HTTPS GET object_uri",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:94-110/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:99-115/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:92-108/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:97-113/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "控制服务",
+      "translation": "制御サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "对象数据面",
+      "translation": "オブジェクトのデータプレーン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收方或群 Host",
+      "translation": "受信側またはグループのHost",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "依据原始消息 sender_did 解析后\\nattachment.get_download_ticket",
+      "translation": "元のメッセージのsender_didに基づいて解決した後に\\nattachment.get_download_ticket",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS GET object_uri\\nAuthorization: Bearer ticket",
+      "translation": "HTTPS GET object_uri\\nAuthorization: Bearer ticket",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:208-215/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:224-231/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送方客户端 A",
+      "translation": "送信側クライアントA",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "A 域服务",
+      "translation": "Aドメインのサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Object Service",
+      "translation": "オブジェクトサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "B 域服务",
+      "translation": "Bドメインのサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收方客户端 B",
+      "translation": "受信側クライアントB",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS PUT 明文字节",
+      "translation": "HTTPS PUTで平文のバイト列を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.incoming / 等价投递",
+      "translation": "direct.incoming／同等の配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "attachment.get_download_ticket（基于原始消息 sender_did 解析）（基于原始消息 sender_did 解析）",
+      "translation": "attachment.get_download_ticket（元のメッセージのsender_didに基づいて解決）（元のメッセージのsender_didに基づいて解決）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS GET object_uri + Authorization",
+      "translation": "HTTPS GET object_uri + Authorization",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "明文字节",
+      "translation": "平文のバイト列",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "校验 size / digest",
+      "translation": "size / digestを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:219-241/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:235-257/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "本地生成 object_key + nonce\\n本地加密文件",
+      "translation": "object_key＋nonceをローカルで生成\\nファイルをローカルで暗号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS PUT 密文字节",
+      "translation": "HTTPS PUTで暗号文のバイト列を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send (direct-e2ee, 内层 manifest 含 object_key)",
+      "translation": "direct.send（direct-e2ee、内側のmanifestにobject_keyを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解出内层 manifest\\n得到 object_key + nonce",
+      "translation": "内側のmanifestを復号\\nobject_key＋nonceを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "密文字节",
+      "translation": "暗号文のバイト列",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "校验密文 size / digest\\n本地解密",
+      "translation": "暗号文のsize / digestを検証\\nローカルで復号",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:245-269/line:23",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:261-285/line:23",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群成员客户端",
+      "translation": "グループメンバーのクライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:273-294/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:289-310/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:314-337/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.send (group-e2ee, 内层 manifest 含 object_key)",
+      "translation": "group.send（group-e2ee、内側のmanifestにobject_keyを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:298-321/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "附件说明",
+      "translation": "添付ファイルの説明",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:376-399//caption",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:399-422//caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "发送方服务",
+      "translation": "送信側サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息面",
+      "translation": "メッセージのプレーン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "这里只创建对象，不创建下载授权",
+      "translation": "ここではオブジェクトだけを作成し、ダウンロード認可は作成しない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send / group.send 附件清单",
+      "translation": "direct.send / group.sendの添付ファイルのマニフェスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息 accepted",
+      "translation": "メッセージがaccepted",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "为每个 attachment 创建 Access Grant",
+      "translation": "各attachmentにAccess Grantを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "校验 requester_did + message_id + attachment_id + object_uri",
+      "translation": "requester_did + message_id + attachment_id + object_uriを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET object_uri + Authorization",
+      "translation": "GET object_uri + Authorization",
+      "status": "technical-retained",
+      "reason": "メソッド呼び出しまたはHTTP要求の技術構文と引数・識別子を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:714-733/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:743-762/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "开始 PUT",
+      "translation": "PUTを開始",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:769-783/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:808-822/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "PUT 完成",
+      "translation": "PUT完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:769-783/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:808-822/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "超时",
+      "translation": "タイムアウト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:769-783/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:769-783/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:769-783/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:808-822/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:808-822/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:808-822/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群文件",
+      "translation": "グループのファイル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:1372-1425//params/body/payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:1417-1470//params/body/payload/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "设计稿",
+      "translation": "設計案",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/07-附件与对象传输.md",
+          "locator": "fence:1543-1577//payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/07-附件与对象传输.md",
+          "locator": "fence:1589-1623//payload/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "发送方域",
+      "translation": "送信元ドメイン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送方 ANPMessageService",
+      "translation": "送信側ANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "目标域",
+      "translation": "宛先ドメイン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "目标 ANPMessageService",
+      "translation": "宛先ANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "目标 Agent",
+      "translation": "宛先エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "业务对象<br/>meta.sender_did / auth.origin_proof",
+      "translation": "業務オブジェクト<br/>meta.sender_did / auth.origin_proof",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "跨域 HTTP 调用<br/>外层 serviceDid 认证",
+      "translation": "ドメインをまたぐHTTP呼び出し<br/>外側のserviceDid認証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:103-123/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:112-132/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "收到跨域业务请求",
+      "translation": "ドメインをまたぐ業務要求を受信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析 target.did 的 Agent DID",
+      "translation": "target.didのエージェントDIDを解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析 target.did 的 Group DID",
+      "translation": "target.didのグループDIDを解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "直接以 target.did 为 serviceDid 发现目标服务",
+      "translation": "target.didを直接serviceDidとして宛先サービスを発見",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "选择目标 ANPMessageService",
+      "translation": "宛先ANPMessageServiceを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "定位 Group Host 的 ANPMessageService",
+      "translation": "グループHostのANPMessageServiceを特定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "直接发送原始业务方法",
+      "translation": "元の業務メソッドを直接送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:173-188/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:184-199/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "成员域服务",
+      "translation": "メンバーのドメインサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "成员 Agent",
+      "translation": "メンバーのエージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群消息分发",
+      "translation": "グループメッセージを配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "投递群消息",
+      "translation": "グループメッセージを届ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "业务状态变化",
+      "translation": "業務状態の変化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "投递状态事件",
+      "translation": "状態イベントを届ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "密码学结果分发",
+      "translation": "暗号処理の結果を配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:275-291/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:290-306/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "调用方服务",
+      "translation": "呼び出し元サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收方服务",
+      "translation": "受信側サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 解析 / 文档",
+      "translation": "DIDの解決／文書",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "跨域 HTTP 请求 + Signature-Input(keyid=...)",
+      "translation": "ドメインをまたぐHTTP要求＋Signature-Input(keyid=...)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "按方法确定 caller anchor",
+      "translation": "メソッドに従ってcaller anchorを決定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "普通请求取 meta.sender_did",
+      "translation": "通常の要求ではmeta.sender_didを使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群通知取 body.group_did",
+      "translation": "グループ通知ではbody.group_didを使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析 caller anchor DID 文档",
+      "translation": "caller anchorのDID文書を解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "选择其公开 ANPMessageService",
+      "translation": "その公開ANPMessageServiceを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "读取 serviceDid",
+      "translation": "serviceDidを読み取る",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "比对 keyid 所属 DID == serviceDid",
+      "translation": "keyidの所属DID == serviceDidであることを照合",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析 serviceDid 文档并取 authentication key",
+      "translation": "serviceDid文書を解決し、authentication keyを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验签材料",
+      "translation": "署名検証の素材",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 HTTP Message Signatures",
+      "translation": "HTTP Message Signaturesを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:375-396/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:394-415/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 解析器",
+      "translation": "DIDリゾルバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "原始消息发送方 ANPMessageService",
+      "translation": "元のメッセージ送信者のANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "A 域内部 Object Service",
+      "translation": "Aドメイン内部のObject Service",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "请求下载附件",
+      "translation": "添付ファイルのダウンロードを要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析原始附件消息 sender_did",
+      "translation": "元の添付メッセージのsender_didを解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "目标 ANPMessageService.serviceDid",
+      "translation": "宛先ANPMessageService.serviceDid",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "锚点必须是原始消息 sender_did",
+      "translation": "アンカーは元のメッセージのsender_didでなければならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "不能用 group_did 或 object_uri 域名反推",
+      "translation": "group_didやobject_uriのドメイン名から逆算してはならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "内部校验 Access Grant",
+      "translation": "Access Grantを内部で検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "允许签发",
+      "translation": "発行を許可",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/08-联邦与跨域.md",
+          "locator": "fence:564-586/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/08-联邦与跨域.md",
+          "locator": "fence:599-621/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户智能体(User Agent)",
+      "translation": "利用者エージェント（User Agent）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "酒店智能体(Hotel Agent)",
+      "translation": "ホテルエージェント（Hotel Agent）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "支付智能体(Payment Agent)",
+      "translation": "決済エージェント（Payment Agent）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "公证/注册服务(Registry)",
+      "translation": "公証／登録サービス（Registry）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤1: 用户搜索与选择",
+      "translation": "手順1：利用者が検索して選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤2: 用户请求预订",
+      "translation": "手順2：利用者が予約を要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "发送预订请求(BookingRequest)",
+      "translation": "予約要求を送信（BookingRequest）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤3: 生成订单提议",
+      "translation": "手順3：注文提案を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "（可选）查询产品信息的哈希和URL",
+      "translation": "（任意）商品情報のハッシュとURLを照会",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回验证过的产品信息哈希和URL",
+      "translation": "検証済みの商品情報のハッシュとURLを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【订单提议凭证】OrderProposalCredential<br/>(包含公证服务产品信息的哈希和URL)",
+      "translation": "【注文提案資格情報】OrderProposalCredential<br/>（公証サービスの商品情報のハッシュとURLを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤4: 用户确认订单",
+      "translation": "手順4：利用者が注文を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【订单确认凭证】BookingConfirmationCredential<br/>(包含OrderProposal的哈希)",
+      "translation": "【予約確認資格情報】BookingConfirmationCredential<br/>（OrderProposalのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:24",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【支付指令凭证】PaymentInstructionCredential<br/>(包含BookingConfirmation的哈希)",
+      "translation": "【支払い指示資格情報】PaymentInstructionCredential<br/>（BookingConfirmationのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:32",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤5: 用户付款与资金托管",
+      "translation": "手順5：利用者による支払いとエスクロー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:37",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:37",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "完成支付操作",
+      "translation": "支払い操作を完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:38",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:38",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【资金托管凭证】FundsEscrowedCredential<br/>(包含PaymentInstruction的哈希)",
+      "translation": "【資金エスクロー資格情報】FundsEscrowedCredential<br/>（PaymentInstructionのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:42",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:42",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤6: 酒店确认与服务履约",
+      "translation": "手順6：ホテルの確認とサービスの履行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:47",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:47",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【预订完成凭证(可选)】BookingFinalizedCredential<br/>(包含FundsEscrowed的哈希)",
+      "translation": "【予約完了資格情報（任意）】BookingFinalizedCredential<br/>（FundsEscrowedのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:49",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:49",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务完成通知",
+      "translation": "サービス完了通知",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:54",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:54",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤7: 用户确认放款",
+      "translation": "手順7：利用者が資金の払い出しを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:56",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:56",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【服务完成确认凭证】ServiceCompletionConfirmationCredential<br/>(包含FundsEscrowed或BookingFinalized的哈希)",
+      "translation": "【サービス完了確認資格情報】ServiceCompletionConfirmationCredential<br/>（FundsEscrowedまたはBookingFinalizedのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:58",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:58",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤8: 结算结束",
+      "translation": "手順8：決済完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:62",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:62",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "【资金释放凭证】FundsReleasedCredential<br/>(包含ServiceCompletionConfirmation的哈希)",
+      "translation": "【資金払い出し資格情報】FundsReleasedCredential<br/>（ServiceCompletionConfirmationのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:64",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:64",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "资金划转至酒店账户",
+      "translation": "ホテルの口座へ資金を移す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+          "locator": "fence:201-270/line:68",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+          "locator": "fence:122-191/line:68",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "@agents please summarize this discussion.",
+      "translation": "@agents この議論を要約してください。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "locator": "fence:204-223//text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "locator": "fence:220-239//text",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "locator": "fence:204-223//text",
+          "language": "json"
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "locator": "fence:220-239//text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "@agents please summarize yesterday's meeting.",
+      "translation": "@agents 昨日の会議を要約してください。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "locator": "fence:490-539//params/body/payload/text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "locator": "fence:510-559//params/body/payload/text",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "locator": "fence:490-539//params/body/payload/text",
+          "language": "json"
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "locator": "fence:510-559//params/body/payload/text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "@all please review the agenda.",
+      "translation": "@all 議題を確認してください。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "locator": "fence:552-574//payload/text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "locator": "fence:574-596//payload/text",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "locator": "fence:552-574//payload/text",
+          "language": "json"
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "locator": "fence:574-596//payload/text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "@humans please confirm your attendance.",
+      "translation": "@humans 出席を確認してください。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "locator": "fence:670-688//text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "locator": "fence:693-711//text",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "locator": "fence:670-688//text",
+          "language": "json"
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "locator": "fence:693-711//text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "@张三 please review this.",
+      "translation": "@张三 これを確認してください。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "locator": "fence:692-712//text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "locator": "fence:715-735//text",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "locator": "fence:692-712//text",
+          "language": "json"
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "locator": "fence:715-735//text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "@InvoiceBot extract the invoice fields.",
+      "translation": "@InvoiceBot 請求書の項目を抽出してください。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "locator": "fence:716-736//text",
+          "language": "json"
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "locator": "fence:739-759//text",
+          "language": "json"
+        },
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "locator": "fence:716-736//text",
+          "language": "json"
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "locator": "fence:739-759//text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Hangzhou Bit Intelligence Technology Co., Ltd.",
+      "translation": "Hangzhou Bit Intelligence Technology Co., Ltd.",
+      "status": "technical-retained",
+      "reason": "組織名または製品名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:13:column:13",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "SmartAssistant is an intelligent agent solution for individuals and enterprises, providing various natural language processing and cross-platform connectivity capabilities.",
+      "translation": "SmartAssistantは、個人と企業向けの知的エージェントソリューションです。さまざまな自然言語処理機能とプラットフォーム間の接続機能を提供します。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:16:column:18",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "AI Assistant Pro",
+      "translation": "AI Assistant Pro",
+      "status": "technical-retained",
+      "reason": "組織名または製品名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+          "locator": "fence:33-106/line:30:column:15",
+          "language": "json"
+        }
+      ]
+    }
+  ]
+}

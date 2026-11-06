@@ -1,0 +1,839 @@
+{
+  "source": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+  "source_sha256": "7e9fac77b0f09a963fcd5feb736cc5a562982756b7b10eee7a9c47e6bcd27d92",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "format": "pdf",
+  "units": [
+    {
+      "unit": 1,
+      "kind": "page",
+      "text": "Agent Network Protocol\n\n\n\n     Redefining Agent Connectivity and Collaboration\n\n\n\n          ANP Open Source Community\n            Gaowei Chang, James Waugh\n\n\n\n                        2025-02\n\n\n\n\n                                                          https://agent-network-protocol.com/",
+      "text_characters": 288,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-001.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 2,
+      "kind": "page",
+      "text": "Outline\n\n\n\n\n          This presentation will cover the following topics:\n\n              • Core Assumptions of ANP Design\n\n              • ANP Authentication Scheme\n\n              • ANP Identity Verification Process\n\n              • ANP Agent Description Scheme\n\n              • How to Build an AI-Accessible Data Network Using Agent Descriptions\n\n              • Demo Demonstration",
+      "text_characters": 381,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-002.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 3,
+      "kind": "page",
+      "text": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents will replace existing software\n\n\n      • The personal assistant will replace humans in\n\n       accessing the internet.\n\n      • Agents will replace software services for\n\n       enterprises.\n\n      • Personal assistants will directly connect to\n\n       agents.\n\n\n\n\n\n                             A personal assistant is also an agent",
+      "text_characters": 396,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            645.8311767578125,
+            118.327392578125,
+            1059.1732177734375,
+            529.672607421875
+          ],
+          "width": 1656,
+          "height": 1648
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-003.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 4,
+      "kind": "page",
+      "text": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents must be interconnected\n\n\n      • AI must have access to complete contextual\n\n       information.\n\n      • AI should be able to access all tool\n\n       capabilities.\n\n      • The connectivity between agents will have a\n\n      higher proportion.\n\n\n\n\n\n                            The current data silos on the internet hinder the full potential of AI.",
+      "text_characters": 412,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            645.8311767578125,
+            118.327392578125,
+            1059.1732177734375,
+            529.672607421875
+          ],
+          "width": 1656,
+          "height": 1648
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-004.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 5,
+      "kind": "page",
+      "text": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents interact with each other through protocols\n\n\n      • The most efficient way for AI to interact with\n\n       the internet.\n\n      • Computer Use is a transitional form.\n\n      • In the future, standardized agent\n\n      communication protocols will emerge.\n\n\n\n\n\n                                 Directly processing underlying data through protocols is the best way for\n                                         AI to interact with the internet.",
+      "text_characters": 505,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            645.8311767578125,
+            118.327392578125,
+            1059.1732177734375,
+            529.672607421875
+          ],
+          "width": 1656,
+          "height": 1648
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-005.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 6,
+      "kind": "page",
+      "text": "AgentNetworkProtocol(ANP)\n\n\n\n                Goal\n\n\n    HTTP/HTML of the Agentic Web\n\n\n\n\n                 Vision\n\n      Define the connectivity between agents\n\n         and build an open, secure, and\n\n          efficient collaboration network for\n\n                   billions of agents.",
+      "text_characters": 286,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            644.3682250976562,
+            144.32479858398438,
+            1056.7720947265625,
+            554.2200927734375
+          ],
+          "width": 1644,
+          "height": 1634
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-006.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 7,
+      "kind": "page",
+      "text": "AgentNetworkProtocol(ANP)\n\n\n\n       • 🔒 Identity and Encrypted Communication Layer:\n        Based on W3C DID, it builds a decentralized identity\n\n          authentication solution with excellent scalability, capable\n\n         of supporting billions of users.\n\n       • 🌍 Meta-Protocol Layer: A meta-protocol is a protocol\n          for negotiating communication protocols between agents.\n\n             It is the key to the evolution of the agent network into an\n\n        autonomous, self-negotiating, and highly efficient\n\n          collaborative network.\n\n       • 📡 Application Protocol Layer: Based on Semantic Web\n          standards, it enables agents to describe their public\n\n         information, available capabilities, and supported\n\n          interfaces. Using this information, other agents can\n\n         discover and interact with them.\n\n\n\n\n                                 Today, we will focus on the identity layer and the application layer.",
+      "text_characters": 956,
+      "embedded_images": 5,
+      "image_regions": [
+        {
+          "bbox": [
+            591.577392578125,
+            117.44418334960938,
+            1086.787353515625,
+            530.5557861328125
+          ],
+          "width": 1134,
+          "height": 946
+        },
+        {
+          "bbox": [
+            83.7529525756836,
+            131.27499389648438,
+            104.7529525756836,
+            152.27499389648438
+          ],
+          "width": 160,
+          "height": 160
+        },
+        {
+          "bbox": [
+            83.7529525756836,
+            250.27499389648438,
+            104.7529525756836,
+            271.2749938964844
+          ],
+          "width": 160,
+          "height": 160
+        },
+        {
+          "bbox": [
+            83.7529525756836,
+            395.2749938964844,
+            104.7529525756836,
+            416.2749938964844
+          ],
+          "width": 160,
+          "height": 160
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-007.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 8,
+      "kind": "page",
+      "text": "Goals and Principles of Agent Identity Design\n\n\n\n\n\n       Goals                                                         Principles\n\n           • All agents can authenticate each other's                                                                                • Decentralization: Identity should not be\n            identity.                                                                 provided by a few vendors.\n\n                                                                                • Interoperability: Identities between\n\n                                                                            different systems should be easily\n\n                                                                      authenticated with each other.\n\n                                                                                • Scalability: The system should support\n\n                                                                         large-scale user usage.\n\n\n\n\n\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/",
+      "text_characters": 1128,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [
+        "https://www.w3.org/TR/did-core/"
+      ],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-008.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 9,
+      "kind": "page",
+      "text": "W3C DID\n\n\n\n\n    What is DID:\n\n      •  Full Name: Decentralized Identifier\n\n      •  Definition: A user-controlled, self-sovereign digital\n        identity identifier, widely applicable in decentralized\n       systems.\n\n      •  Officially became a W3C Recommendation in 2022.\n\n\n\n     Features of DID:\n\n        •  Decentralized Identity: Users manage their identity\n          independently, avoiding reliance on centralized service\n          providers.\n\n        •  Interoperability: Supports cross-platform usage,\n         enhancing compatibility between different systems.\n\n        •  Privacy and Security: Ensures the privacy and security\n          of user identity data, preventing abuse.\n\n        •  Typical Application: Bluesky.\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/",
+      "text_characters": 882,
+      "embedded_images": 4,
+      "image_regions": [
+        {
+          "bbox": [
+            611.780029296875,
+            86.85560607910156,
+            1062.678955078125,
+            333.989501953125
+          ],
+          "width": 1310,
+          "height": 718
+        },
+        {
+          "bbox": [
+            918.7559814453125,
+            182.34152221679688,
+            1142.9976806640625,
+            238.50369262695312
+          ],
+          "width": 1102,
+          "height": 276
+        },
+        {
+          "bbox": [
+            642.5449829101562,
+            360.2804870605469,
+            1040.552734375,
+            594.2786865234375
+          ],
+          "width": 944,
+          "height": 555
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [
+        "https://www.w3.org/TR/did-core/"
+      ],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-009.png",
+      "source_image_assets": [
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-01.png",
+          "sha256": "9e3b03638b0ff0f0bf9ae581414c5d7f92c5af1f0b7c38cfcff87b8e28895088",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-02.png",
+          "sha256": "07d7dbccccbe271fd0d126d92452a65de8395cfb9194bb71aa214eff6502fda5",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-03.png",
+          "sha256": "1827db4180a6a5d10997717e9fb90b7d49b038651f987bea2f8dabd978e7109b",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        }
+      ],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 10,
+      "kind": "page",
+      "text": "DID Method：Web-Based Agent\n\n\n\n\n\n   Method Design Principles:\n\n    • Do not pursue complete decentralization, feasibility is\n\n       prioritized over decentralization features.\n\n    •  Reuse existing web infrastructure to reduce implementation\n\n       costs.\n\n    •  Build upon the existing did:web method and add agent-related\n\n       features.\n\n\n\n   Did:wba DID Defines：\n   did:wba:example.com:user:alice\n   -> https://example.com/user/alice/did.json",
+      "text_characters": 451,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            585.5883178710938,
+            79.27484130859375,
+            1135.808837890625,
+            646.1477661132812
+          ],
+          "width": 1586,
+          "height": 1634
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-010.png",
+      "source_image_assets": [
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-010-image-01.png",
+          "sha256": "2e66800669abaa3b5c411e27ea50e7d3a3be5e1ece70afcaec4f35b06ace76cc",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        }
+      ],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 11,
+      "kind": "page",
+      "text": "CURD Operations of did:wba\n\n\n               www.alice.com                                                                   www.bob.com\n\n\n\n                                                             https://alice.com/user/did.json        did:wba:alice.com:user                                                                                                                                                                        Create       Update     Deactivate         Create       Update     Deactivate            Read\n\n\n\n\n                                                     did:wba:bob.com:user          https://bob.com/user/did.json                                                                                                                      Read\n\n\n\n\n\n                                                                                                                                                                                       Private Keys         DID Document            Private Keys         DID Document\n\n\n\n\n\n     CURD Operations:                                                               Method Features:\n            •  Create (Register): Defined by the implementer.                                                                                                      •  Fully utilizes existing web infrastructure, capable of\n            •  Read (Parse): Use the HTTP GET method to retrieve                        serving billions of users.\n              the DID document.                                                                                                      •  Achieves decentralization and interoperability of agent\n            •  Update: Defined by the implementer.                                               identities.\n\n            •  Deactivate (Revoke): Defined by the implementer.                            •  The method is similar to the existing Email service.",
+      "text_characters": 1919,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [
+        "https://alice.com/user/did.json",
+        "https://bob.com/user/did.json"
+      ],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-011.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 12,
+      "kind": "page",
+      "text": "DID:wba Method Identity Verification Process\n\n\n\n\n                                                                                                                                                             Agent B\n  • A calls the API to subscribe to B's service, and\n  B records A's DID.\n\n  • A includes its DID and signature in the HTTP\n   header during the first HTTP request.\n\n  • When B receives the HTTP request, it extracts\n   A's DID and signature from the HTTP header,\n   then retrieves A's DID document from A's DID\n   server using A's DID.\n\n                                                                    Authorization: DID <did> Nonce <abc123> Timestamp\n  • After B obtains A's DID document, it uses the\n                                                             <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature\n   public key from A's DID document to verify                                                                  <base64url(signature)>                                                                       use the public key in the\n   A's signature.                                                                                                                                DID document to verify\n                                                                                                                                                                the signature\n                                                                                                                                   generate\n                                                          Use the private key to generate a signature\n  • Once the verification is successful, B processes                                                                                      the token\n   A's business request and returns the business\n   data along with an access token.\n\n  • In subsequent requests, A includes the access                                       use the token to\n                                                                                                                        initiate subsequent\n   token, and B verifies A's identity by validating                                             requests\n   the access token.\n\n\n\n                                                         Features: Supports automatic registration; simple process with minimal interaction;\n\n                                                             equivalent security to traditional methods.",
+      "text_characters": 2508,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            535.6130981445312,
+            83.27484130859375,
+            1121.613037109375,
+            563.2748413085938
+          ],
+          "width": 1172,
+          "height": 960
+        },
+        {
+          "bbox": [
+            422.66351318359375,
+            400.85296630859375,
+            626.3380126953125,
+            472.28662109375
+          ],
+          "width": 690,
+          "height": 242
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-012.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 13,
+      "kind": "page",
+      "text": "Unresolved Issues\n\n\n\n\n             • For user permissions, how can we implement more granular permission control,\n             instead of using a single ID for communication with all agents?\n\n             • How can we determine whether a request from an agent has been manually\n            authorized by the user? Some sensitive actions should not be initiated\n           autonomously by the agent.\n\n             • How can we ensure that the user has full ownership of their identity, rather than\n             relying on permissions granted by the platform?",
+      "text_characters": 557,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-013.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 14,
+      "kind": "page",
+      "text": "Agent Description Protocol(ADP)\n\n\n\n                                         What information does an agent description  What is an Agent Description Protocol?\n                                              document contain?\n\n   • Used to define the Agent Description Document.                  • An agent description includes the identity of the entity\n\n                                                                         to which the agent belongs, the owner, authentication\n   • The agent description document can be seen as an\n                                                              methods, external interfaces, and public information\n     entry point for the agent, similar to the homepage of a\n                                                                about the entity.\n    website. Through this homepage, all aspects of the\n\n    website can be accessed.                                             • For example, if the agent represents a coffee shop, the\n\n                                                                     publicly available information would include the\n\n                                                                          location, business hours, product list, purchase\n\n                                                                            interface, and other related details..",
+      "text_characters": 1337,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-014.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 15,
+      "kind": "page",
+      "text": "Core Principles of ADP Design\n\n\n\n\n\n                • AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.\n\n                • Semi-Structured Protocol: Overall, it is a structured design that facilitates\n              programmatic processing; fields can contain natural language, making it easier to\n             convey personalized information.\n\n                • Multi-Agent Consensus: Enhances the consistency of agents' understanding of data\n               semantics.\n\n\n\n\n\n                                In theory, as long as the intelligence is strong enough, ADP could entirely\n                              use natural language. However, this approach has many drawbacks, such\n                                     as cost, the probability of errors at the current stage, and so on.",
+      "text_characters": 820,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-015.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 16,
+      "kind": "page",
+      "text": "ADP Design Scheme\n\n\n\n            • Linked-Data: Using Linked-Data technology, the information of agents is linked together. The agent\n\n            description document serves as the entry point for all the information about the agent, and from this\n\n            entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD\n\n            as the primary format.\n\n            • Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are\n\n          any undefined fields, they will be added with a definition. This ensures consistency in how multiple\n\n            agents interpret the same field, while also making it easier for programs to process.\n\n            • The specification is divided into two parts: one is the core ADP specification, which describes the\n\n            core framework and structure of ADP; the other part consists of AD examples for each domain. For\n\n           example, an AD document for a coffee shop, where other agents can refer to this example to generate\n\n              their own.",
+      "text_characters": 1089,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-016.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 17,
+      "kind": "page",
+      "text": "AD Document Example\n\n\n      Example URL: https://github.com/chgaowei/AgentNetworkProtocol/blob/main/examples/adp/lkcoffe/ad.json\n\n                                                                           Domain entities corresponding to the agent             Identity authentication information\n\n\n\n\n\n        External interfaces, including natural language\n                 interfaces and purchased APIs\n\n                                                                                        Products provided by the entity to the outside world",
+      "text_characters": 545,
+      "embedded_images": 5,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        },
+        {
+          "bbox": [
+            101.38800048828125,
+            176.57501220703125,
+            371.38800048828125,
+            347.57501220703125
+          ],
+          "width": 540,
+          "height": 342
+        },
+        {
+          "bbox": [
+            735.8519287109375,
+            172.46112060546875,
+            1065.8519287109375,
+            407.46112060546875
+          ],
+          "width": 660,
+          "height": 470
+        },
+        {
+          "bbox": [
+            717.8519287109375,
+            484.78900146484375,
+            1083.8519287109375,
+            634.7890014648438
+          ],
+          "width": 732,
+          "height": 300
+        },
+        {
+          "bbox": [
+            76.76705169677734,
+            432.9588928222656,
+            411.70556640625,
+            641.5054931640625
+          ],
+          "width": 954,
+          "height": 594
+        }
+      ],
+      "hyperlinks": [
+        "https://github.com/chgaowei/AgentNetworkProtocol/blob/main/examples/adp/lkcoffe/ad.json"
+      ],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-017.png",
+      "source_image_assets": [
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-02.png",
+          "sha256": "7f276e671d95a5c5cbf6b84c3a2588da13bd924f320369e064a38181e8c323c8",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-03.png",
+          "sha256": "64f6b299683714e2bdf48972521ddb47e769b927cb150c8a7b65abda7771c550",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-04.png",
+          "sha256": "5595112cffa94588fb5f1d35027cb00af20ef29bd6ac6d42800316214ab63711",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-05.png",
+          "sha256": "481adc622139c568f750a2fa57f7f0be26a20d3da620b5cca81ab345255ee294",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        }
+      ],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 18,
+      "kind": "page",
+      "text": "Interaction Flow\n\n\n\n\n\n                   • We have placed the agent description document link in the DID document, meaning that as long as\n                  there is a DID, the agent description document can be found.\n\n                   • In the future, there will be a data network that makes it easier for AI to access.",
+      "text_characters": 322,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            227.76870727539062,
+            78.27700805664062,
+            924.231201171875,
+            447.0635986328125
+          ],
+          "width": 1152,
+          "height": 610
+        },
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-018.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 19,
+      "kind": "page",
+      "text": "Others\n\n\n\n\n                     • Supporting ADP during LLM training: ADs specifications, along with\n               examples and interfaces from various industries, can be incorporated\n                    into the LLM through training data or fine-tuning. This enhances the\n               LLM's speed and accuracy in processing ADP and reduces the length\n                   of prompts required.\n\n                     • Agents can independently define and upload AD document examples\n                     for reference by other agents. The specification examples defined by\n                agents may surpass those defined by humans.",
+      "text_characters": 632,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-019.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 20,
+      "kind": "page",
+      "text": "Demo Presentation\n\n\n\n\n\n               Through the coffee ordering scenario, demonstrate how a\n               personal assistant interacts with the coffee shop's agent using\n                      DID and AgentDescription.",
+      "text_characters": 220,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-020.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 21,
+      "kind": "page",
+      "text": "Code\n\n\n\n\n\n                    ANP Open Source Code: https://github.com/chgaowei/AgentConnect",
+      "text_characters": 92,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        },
+        {
+          "bbox": [
+            330.7193908691406,
+            90.8182373046875,
+            821.2805786132812,
+            527.426025390625
+          ],
+          "width": 1182,
+          "height": 1052
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-021.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 22,
+      "kind": "page",
+      "text": "Thanks\n\n\n\n\n\n      The historical meeting records of WebAgents provide valuable\n                  resources and inspiration for our design.",
+      "text_characters": 138,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-022.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 23,
+      "kind": "page",
+      "text": "Finally\n\n\n\n\n\n     ANP is still in its early stages, and if possible, we are willing\n          to contribute ANP and continue improving it together with\n                       everyone in WebAgents.",
+      "text_characters": 197,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-023.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 24,
+      "kind": "page",
+      "text": "Q&A\n\n\n\n\n\n                          Question & Answer",
+      "text_characters": 52,
+      "embedded_images": 1,
+      "image_regions": [
+        {
+          "bbox": [
+            1078.3489990234375,
+            20.7313232421875,
+            1140.3489990234375,
+            40.7313232421875
+          ],
+          "width": 124,
+          "height": 40
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "ANP-Presentation-at-W3C-WebAgents-cg/page-024.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    }
+  ],
+  "unit_count": 24,
+  "original_binary_unchanged": true,
+  "historical_document": true
+}

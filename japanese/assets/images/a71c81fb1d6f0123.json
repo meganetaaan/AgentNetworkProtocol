@@ -1,0 +1,1061 @@
+{
+  "source": "blogs/images/anp-ap2/ap2flow.png",
+  "sha256": "a71c81fb1d6f0123578cbde5d0d23e6c3c6b1897e07b07236d61e6945b13a07e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ANP/AP2智能体支付协议流程",
+      "confidence": 0.9765110500156879,
+      "box": [
+        [
+          412.0,
+          25.0
+        ],
+        [
+          789.0,
+          25.0
+        ],
+        [
+          789.0,
+          55.0
+        ],
+        [
+          412.0,
+          55.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ANP/AP2エージェント決済プロトコルの流れ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP",
+        "/AP2"
+      ]
+    },
+    {
+      "source": "User",
+      "confidence": 0.9947104752063751,
+      "box": [
+        [
+          151.0,
+          88.0
+        ],
+        [
+          192.0,
+          92.0
+        ],
+        [
+          190.0,
+          112.0
+        ],
+        [
+          149.0,
+          108.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ShopperAgent",
+      "confidence": 0.9964508066574732,
+      "box": [
+        [
+          359.0,
+          88.0
+        ],
+        [
+          484.0,
+          90.0
+        ],
+        [
+          483.0,
+          113.0
+        ],
+        [
+          359.0,
+          111.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "購買エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ShopperAgent"
+      ],
+      "transcribed_source": "Shopper Agent"
+    },
+    {
+      "source": "Merchant Agent",
+      "confidence": 0.9644928276538849,
+      "box": [
+        [
+          604.0,
+          87.0
+        ],
+        [
+          736.0,
+          89.0
+        ],
+        [
+          736.0,
+          112.0
+        ],
+        [
+          604.0,
+          110.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "加盟店エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "PaymentProcesso",
+      "confidence": 0.9870942870775858,
+      "box": [
+        [
+          849.0,
+          91.0
+        ],
+        [
+          993.0,
+          89.0
+        ],
+        [
+          993.0,
+          109.0
+        ],
+        [
+          849.0,
+          111.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "決済処理…（原画像の文字切れ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "PaymentProcesso"
+      ],
+      "transcribed_source": "Payment Processo"
+    },
+    {
+      "source": "用户",
+      "confidence": 0.9996493756771088,
+      "box": [
+        [
+          152.0,
+          108.0
+        ],
+        [
+          189.0,
+          108.0
+        ],
+        [
+          189.0,
+          130.0
+        ],
+        [
+          152.0,
+          130.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "购物者智能体（SA)",
+      "confidence": 0.9368240416049958,
+      "box": [
+        [
+          352.0,
+          110.0
+        ],
+        [
+          488.0,
+          110.0
+        ],
+        [
+          488.0,
+          130.0
+        ],
+        [
+          352.0,
+          130.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "購買エージェント（SA）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SA"
+      ]
+    },
+    {
+      "source": "商户智能体(MA)",
+      "confidence": 0.9662517242961459,
+      "box": [
+        [
+          607.0,
+          108.0
+        ],
+        [
+          733.0,
+          108.0
+        ],
+        [
+          733.0,
+          131.0
+        ],
+        [
+          607.0,
+          131.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "加盟店エージェント（MA）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MA"
+      ]
+    },
+    {
+      "source": "支付处理方(PP)",
+      "confidence": 0.983644942442576,
+      "box": [
+        [
+          859.0,
+          109.0
+        ],
+        [
+          980.0,
+          109.0
+        ],
+        [
+          980.0,
+          132.0
+        ],
+        [
+          859.0,
+          132.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "決済処理者（PP）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "PP"
+      ]
+    },
+    {
+      "source": "Phase 1:创建订单",
+      "confidence": 0.9513913144667944,
+      "box": [
+        [
+          27.0,
+          168.0
+        ],
+        [
+          133.0,
+          168.0
+        ],
+        [
+          133.0,
+          185.0
+        ],
+        [
+          27.0,
+          185.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "段階1：注文の作成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "rtMandate +",
+      "confidence": 0.9903484257784757,
+      "box": [
+        [
+          502.0,
+          255.0
+        ],
+        [
+          575.0,
+          255.0
+        ],
+        [
+          575.0,
+          268.0
+        ],
+        [
+          502.0,
+          268.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "3. CartMandateとQRコード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "rtMandate"
+      ],
+      "transcribed_source": "3. CartMandate + 二维码"
+    },
+    {
+      "source": "（自含育户签名",
+      "confidence": 0.6550566852092743,
+      "box": [
+        [
+          507.0,
+          273.0
+        ],
+        [
+          584.0,
+          273.0
+        ],
+        [
+          584.0,
+          290.0
+        ],
+        [
+          507.0,
+          290.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "（加盟店の署名を含む）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(包含商户签名)"
+    },
+    {
+      "source": "Phase2:授权支付",
+      "confidence": 0.979737563566728,
+      "box": [
+        [
+          24.0,
+          314.0
+        ],
+        [
+          134.0,
+          317.0
+        ],
+        [
+          134.0,
+          337.0
+        ],
+        [
+          24.0,
+          335.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "段階2：決済の承認",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ],
+      "transcribed_source": "Phase 2:授权支付"
+    },
+    {
+      "source": "5. send_payment_mandate",
+      "confidence": 0.9430115015610404,
+      "box": [
+        [
+          461.0,
+          373.0
+        ],
+        [
+          630.0,
+          373.0
+        ],
+        [
+          630.0,
+          390.0
+        ],
+        [
+          461.0,
+          390.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "5. send_payment_mandate",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "5",
+        "send_payment_mandate"
+      ]
+    },
+    {
+      "source": "(用户领权盛名MA返四200QX)",
+      "confidence": 0.8279365274836036,
+      "box": [
+        [
+          464.0,
+          393.0
+        ],
+        [
+          627.0,
+          393.0
+        ],
+        [
+          627.0,
+          410.0
+        ],
+        [
+          464.0,
+          410.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "（ユーザーの承認署名。MAは200 OKを返す）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "200"
+      ],
+      "transcribed_source": "(用户授权签名, MA返回200 OK)"
+    },
+    {
+      "source": "6a.用户扫码支付",
+      "confidence": 0.9994548426734077,
+      "box": [
+        [
+          117.0,
+          441.0
+        ],
+        [
+          223.0,
+          441.0
+        ],
+        [
+          223.0,
+          461.0
+        ],
+        [
+          117.0,
+          461.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "6a. ユーザーがQRコードを読み取って支払う",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "6"
+      ],
+      "transcribed_source": "6a. 用户扫码支付"
+    },
+    {
+      "source": "(文付宝/誉慎->青户)",
+      "confidence": 0.692089855670929,
+      "box": [
+        [
+          740.0,
+          493.0
+        ],
+        [
+          851.0,
+          493.0
+        ],
+        [
+          851.0,
+          511.0
+        ],
+        [
+          740.0,
+          511.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "（Alipay／WeChatから加盟店へ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(支付宝/微信 -> 商户)"
+    },
+    {
+      "source": "Phase3:凭证交付",
+      "confidence": 0.9544703147628091,
+      "box": [
+        [
+          26.0,
+          538.0
+        ],
+        [
+          133.0,
+          538.0
+        ],
+        [
+          133.0,
+          555.0
+        ],
+        [
+          26.0,
+          555.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "段階3：証明書の交付",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ],
+      "transcribed_source": "Phase 3:凭证交付"
+    },
+    {
+      "source": "7.发送支付确认凭证",
+      "confidence": 0.9565345585346222,
+      "box": [
+        [
+          485.0,
+          552.0
+        ],
+        [
+          607.0,
+          552.0
+        ],
+        [
+          607.0,
+          569.0
+        ],
+        [
+          485.0,
+          569.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "7. 決済確認の証明書を送信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "7"
+      ],
+      "transcribed_source": "7. 发送支付确认凭证"
+    },
+    {
+      "source": "(uoeungg jueu/d)",
+      "confidence": 0.617976401001215,
+      "box": [
+        [
+          479.0,
+          572.0
+        ],
+        [
+          611.0,
+          570.0
+        ],
+        [
+          611.0,
+          590.0
+        ],
+        [
+          480.0,
+          593.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "（決済確認）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/d"
+      ],
+      "transcribed_source": "(Payment Confirmation)"
+    },
+    {
+      "source": "(Logistics Stotus)",
+      "confidence": 0.9102921088536581,
+      "box": [
+        [
+          497.0,
+          664.0
+        ],
+        [
+          592.0,
+          664.0
+        ],
+        [
+          592.0,
+          681.0
+        ],
+        [
+          497.0,
+          681.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "（配送状況）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(Logistics Status)"
+    },
+    {
+      "source": "核心特性：",
+      "confidence": 0.9982724905014038,
+      "box": [
+        [
+          68.0,
+          865.0
+        ],
+        [
+          134.0,
+          865.0
+        ],
+        [
+          134.0,
+          887.0
+        ],
+        [
+          68.0,
+          887.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "主な特徴：",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "安全机制：",
+      "confidence": 0.9987933397293091,
+      "box": [
+        [
+          348.0,
+          865.0
+        ],
+        [
+          414.0,
+          865.0
+        ],
+        [
+          414.0,
+          887.0
+        ],
+        [
+          348.0,
+          887.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "安全の仕組み：",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "图例：",
+      "confidence": 0.9994462331136068,
+      "box": [
+        [
+          647.0,
+          864.0
+        ],
+        [
+          687.0,
+          864.0
+        ],
+        [
+          687.0,
+          887.0
+        ],
+        [
+          647.0,
+          887.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "凡例：",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "·DID:WBA去中心化身份",
+      "confidence": 0.9636076220444271,
+      "box": [
+        [
+          68.0,
+          893.0
+        ],
+        [
+          207.0,
+          893.0
+        ],
+        [
+          207.0,
+          910.0
+        ],
+        [
+          68.0,
+          910.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "・DID:WBAによる分散型ID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "·CartHash:防止购物车内容篡改",
+      "confidence": 0.942727455967351,
+      "box": [
+        [
+          349.0,
+          893.0
+        ],
+        [
+          531.0,
+          893.0
+        ],
+        [
+          531.0,
+          910.0
+        ],
+        [
+          349.0,
+          910.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "・Cart Hash：カート内容の改ざんを防ぐ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "CartHash"
+      ],
+      "transcribed_source": "·Cart Hash:防止购物车内容篡改"
+    },
+    {
+      "source": "请求(Request)",
+      "confidence": 0.982977265661413,
+      "box": [
+        [
+          708.0,
+          892.0
+        ],
+        [
+          796.0,
+          892.0
+        ],
+        [
+          796.0,
+          912.0
+        ],
+        [
+          708.0,
+          912.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "リクエスト（Request）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "用户动作",
+      "confidence": 0.9997627288103104,
+      "box": [
+        [
+          878.0,
+          896.0
+        ],
+        [
+          932.0,
+          896.0
+        ],
+        [
+          932.0,
+          917.0
+        ],
+        [
+          878.0,
+          917.0
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "ユーザーの操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "·JWT/JWS密码学签名",
+      "confidence": 0.9874663169567401,
+      "box": [
+        [
+          68.0,
+          913.0
+        ],
+        [
+          197.0,
+          913.0
+        ],
+        [
+          197.0,
+          930.0
+        ],
+        [
+          68.0,
+          930.0
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "・JWT/JWSによる暗号学的署名",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "JWT",
+        "/JWS"
+      ]
+    },
+    {
+      "source": "·Mandates:基于凭证的交易流程",
+      "confidence": 0.9685084286488985,
+      "box": [
+        [
+          349.0,
+          913.0
+        ],
+        [
+          532.0,
+          913.0
+        ],
+        [
+          532.0,
+          930.0
+        ],
+        [
+          349.0,
+          930.0
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "・Mandates：証明書に基づく取引の流れ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "响应/凭证(Response)",
+      "confidence": 0.978889532883962,
+      "box": [
+        [
+          708.0,
+          915.0
+        ],
+        [
+          832.0,
+          917.0
+        ],
+        [
+          832.0,
+          937.0
+        ],
+        [
+          707.0,
+          935.0
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "レスポンス／証明書（Response）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "·用户明确授权（UserAuthorization）",
+      "confidence": 0.9703595569500556,
+      "box": [
+        [
+          69.0,
+          933.0
+        ],
+        [
+          270.0,
+          933.0
+        ],
+        [
+          270.0,
+          950.0
+        ],
+        [
+          69.0,
+          950.0
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "・ユーザーの明示的な承認（User Authorization）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UserAuthorization"
+      ],
+      "transcribed_source": "·用户明确授权 (User Authorization)"
+    },
+    {
+      "source": "·Nonce/JTI:防重放攻击",
+      "confidence": 0.9551738239824772,
+      "box": [
+        [
+          349.0,
+          933.0
+        ],
+        [
+          485.0,
+          933.0
+        ],
+        [
+          485.0,
+          950.0
+        ],
+        [
+          349.0,
+          950.0
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "・Nonce/JTI：リプレイ攻撃を防ぐ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/JTI"
+      ]
+    },
+    {
+      "source": "异步回调(Callback)",
+      "confidence": 0.9783981570175716,
+      "box": [
+        [
+          708.0,
+          941.0
+        ],
+        [
+          822.0,
+          941.0
+        ],
+        [
+          822.0,
+          961.0
+        ],
+        [
+          708.0,
+          961.0
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "非同期コールバック（Callback）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "1. 发起购买需求",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L035",
+      "japanese": "1. 購入の要求を出す",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2. create_cart_mandate",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L036",
+      "japanese": "2. create_cart_mandate",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "4. 展示订单+二维码",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L037",
+      "japanese": "4. 注文とQRコードを表示",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "6b. 支付结果通知 (Callback)",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L038",
+      "japanese": "6b. 決済結果の通知（Callback）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "8. 通知支付结果",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L039",
+      "japanese": "8. 決済結果を通知",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "9. 发送物流状态凭证",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L040",
+      "japanese": "9. 配送状況の証明書を送信",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "10. 通知物流状态",
+      "location": "sequence arrow label omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L041",
+      "japanese": "10. 配送状況を通知",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    0.9067574000218883,
+    0.050353288650512695,
+    2.301363706588745
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {
+      "ShopperAgent": "Shopper Agent",
+      "PaymentProcesso": "Payment Processo",
+      "rtMandate +": "3. CartMandate + 二维码",
+      "（自含育户签名": "(包含商户签名)",
+      "Phase2:授权支付": "Phase 2:授权支付",
+      "(用户领权盛名MA返四200QX)": "(用户授权签名, MA返回200 OK)",
+      "6a.用户扫码支付": "6a. 用户扫码支付",
+      "(文付宝/誉慎->青户)": "(支付宝/微信 -> 商户)",
+      "Phase3:凭证交付": "Phase 3:凭证交付",
+      "7.发送支付确认凭证": "7. 发送支付确认凭证",
+      "(uoeungg jueu/d)": "(Payment Confirmation)",
+      "(Logistics Stotus)": "(Logistics Status)",
+      "·CartHash:防止购物车内容篡改": "·Cart Hash:防止购物车内容篡改",
+      "·用户明确授权（UserAuthorization）": "·用户明确授权 (User Authorization)"
+    },
+    "additional_labels": [
+      {
+        "source": "1. 发起购买需求",
+        "location": "sequence arrow label omitted by OCR"
+      },
+      {
+        "source": "2. create_cart_mandate",
+        "location": "sequence arrow label omitted by OCR"
+      },
+      {
+        "source": "4. 展示订单+二维码",
+        "location": "sequence arrow label omitted by OCR"
+      },
+      {
+        "source": "6b. 支付结果通知 (Callback)",
+        "location": "sequence arrow label omitted by OCR"
+      },
+      {
+        "source": "8. 通知支付结果",
+        "location": "sequence arrow label omitted by OCR"
+      },
+      {
+        "source": "9. 发送物流状态凭证",
+        "location": "sequence arrow label omitted by OCR"
+      },
+      {
+        "source": "10. 通知物流状态",
+        "location": "sequence arrow label omitted by OCR"
+      }
+    ],
+    "source_note": "透明な背景に暗い文字がありOCRで多くの矢印ラベルが欠落したため、原図とblogs/cn/08-智能体支付.mdの説明を照合して追記。右上Payment Processorの末尾はボックスの端で切れているため補完していない。",
+    "source_limitation": "右上Payment Processo…の末尾文字がボックスで切れている。",
+    "source_sha256": "a71c81fb1d6f0123578cbde5d0d23e6c3c6b1897e07b07236d61e6945b13a07e"
+  }
+}

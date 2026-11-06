@@ -1,27 +1,28 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: full; scope: entire original source; method: manual-source-comparison -->
+> 日本語参考訳（原文全文照合・校閲済み）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
 > 原文: [chinese/docs/did-wba服务端测试接口.md](../../../chinese/docs/did-wba服务端测试接口.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
-# wba サービスエンド テスト インターフェイス
+# did:wba サーバーのテスト用インターフェイス
 
-d:wbaテストの将来は実行が簡単です。テスト用のサービス終了を開発したので、アップロード、アクセス、DD機能のテスト用に複数のHTTPインターフェイスを設計しました。
+did:wba のテストを簡単にするため、テスト用サーバーを開発しました。アップロード、取得、DID 機能のテストのために、複数の HTTP インターフェイスを設けています。
 
-サービスエンドのテスト ドメインの名前は:`agent-network-protocol.com`，`pi-unlimited.com`どちらでも使えます。`agent-network-protocol.com`事例紹介
+テストサーバーのドメインは `agent-network-protocol.com` と `pi-unlimited.com` です。どちらも利用できます。以下では `agent-network-protocol.com` を例にします。
 
-ローカルにDIDドキュメントを生成し、サーバーにアップロードして、使用可能なDIDを作成できます。
+ローカルで DID 文書を生成してサーバーにアップロードすると、利用可能な DID を作成できます。
 
-例えばアップロードしたパスは、`https://agent-network-protocol.com/wba/user/2i3dg4dtf908cde0/did.json`作成したDIDは、`did:wba:agent-network-protocol.com:wba:user:2i3dg4dtf908cde0`。
+例えば、アップロード先が `https://agent-network-protocol.com/wba/user/2i3dg4dtf908cde0/did.json` なら、生成される DID は `did:wba:agent-network-protocol.com:wba:user:2i3dg4dtf908cde0` です。
 
-## 1. JSON ファイルをアップロード(PUTリクエスト)
+## 1. JSON ファイルのアップロード（PUT リクエスト）
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/user/2i3dg4dtf908cde0/did.json`
 
-注意:
-- 「2i3dg4dtf9008cde0」は、将来の紛争防止のための唯一のマークであり、16はランダムな文字列として推奨されます。
-- 既にサービス終了時にidが存在している場合、あなたは409告白を返します。
-- このインターフェイスは、IPごとの最大50ファイルで、テスト目的のために一時的に使用されます。
+注意：
+- "2i3dg4dtf908cde0" は一意な識別子です。衝突を避けるため、16 文字のランダムな文字列を推奨します。
+- id がサーバーに既に存在する場合は、409 Conflict を返します。
+- このインターフェイスは当面テスト専用です。1 つの IP から PUT できるファイルは最大 50 個です。
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 PUT /wba/user/2i3dg4dtf908cde0/did.json HTTP/1.1
 Host: agent-network-protocol.com
@@ -31,18 +32,18 @@ Content-Length: <文件长度>
 <DID文档json>
 ```
 
-## 2. JSONファイルを取得する(リクエストをGET)
+## 2. JSON ファイルの取得（GET リクエスト）
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/user/2i3dg4dtf908cde0/did.json`
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 GET /wba/user/2i3dg4dtf908cde0/did.json HTTP/1.1
 Host: agent-network-protocol.com
 ```
 
-### 応答形式例
+### レスポンス形式の例
 ```plaintext
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -51,31 +52,31 @@ Content-Length: <文件长度>
 <DID文档json>
 ```
 
-### エラー応答
-- 未発見:指定のリソースが存在しません。
+### エラーレスポンス
+- 404 Not Found：指定されたリソースが存在しません。
 
-## 3. 試験ID:wbaの同一証明の正常
+## 3. did:wba 認証の正常系テスト
 
-ユーザのdo:wba IDの正常性をテストするためにサービスエンドのテストインターフェイスが提供されました。
+ユーザーの did:wba 認証が正常に動作するかを調べる、サーバー側のテスト用インターフェイスです。
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/test`
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 GET /wba/test HTTP/1.1
 Host: agent-network-protocol.com
 Authorization: DID did:wba:example.com%3A8800:user:alice Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature_of_nonce_timestamp_service_did)>
 ```
 
-http リクエストの見出しにあるオートレーションフィールドは、do:wba メソッドノームに従って署名されます。
-トークンを検証すると、自動処理のリクエストが初めて返されます。例:
+HTTP リクエストヘッダーの Authorization フィールドは、did:wba メソッド仕様に従って署名します。
+トークンによる認証フローを試す場合は、最初のリクエストに対してサーバーが返した token を Authorization に記載します。例：
 
 ```plaintext
 Authorization: Bearer <token>
 ```
 
-### 応答形式例
+### レスポンス形式の例
 ```plaintext
 HTTP/1.1 200 OK
 Authorization: Bearer <token>
@@ -85,35 +86,35 @@ Content-Length: <文件长度>
 OK
 ```
 
-最初に、オートレーションフィールドが含まれているので、このトークンは http リクエストにフォローアップする。
+最初のリクエストに対して返される Authorization フィールドには、後続の HTTP リクエストで使用する token が含まれます。
 
-### エラー応答
-- 403 禁止: 停電の故障
+### エラーレスポンス
+- 403 Forbidden：認証・認可に失敗しました。
 
 
 
-## 4. 試験ID:wbaの同一証明401
+## 4. did:wba 認証の 401 テスト
 
-サービスエンドのテストインターフェイスは、サービスエンドが401に戻ったときに、ユーザーのdoed:wba識別が適切に処理されるかどうかをテストするために提供されました。
+did:wba 認証でサーバーが 401 を返した際、クライアントが正しく処理できるかを調べる、サーバー側のテスト用インターフェイスです。
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/test401`
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 GET /wba/test401 HTTP/1.1
 Host: agent-network-protocol.com
 Authorization: DID did:wba:example.com%3A8800:user:alice Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature_of_nonce_timestamp_service_did)>
 ```
 
-http リクエストの見出しにあるオートレーションフィールドは、do:wba メソッドノームに従って署名されます。
-トークンを検証すると、自動処理のリクエストが初めて返されます。例:
+HTTP リクエストヘッダーの Authorization フィールドは、did:wba メソッド仕様に従って署名します。
+トークンによる認証フローを試す場合は、最初のリクエストに対してサーバーが返した token を Authorization に記載します。例：
 
 ```plaintext
 Authorization: Bearer <token>
 ```
 
-### 応答形式例
+### レスポンス形式の例
 ```plaintext
 HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer error="invalid_nonce", error_description="Nonce has already been used. Please provide a new nonce.", nonce="xyz987"
@@ -121,20 +122,20 @@ Content-Type: application/json
 Content-Length: 0
 ```
 
-WWW-Authentity フィールドは、その後の http リクエストシグネチャに使われる nance を含む。
+WWW-Authenticate フィールドには、後続の HTTP リクエストの署名に使用する nonce が含まれます。
 
-## 5. DID 文書と秘密鍵インターフェイスを生成
+## 5. DID 文書と秘密鍵の生成インターフェイス
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/demo/generate`
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 GET /wba/demo/generate HTTP/1.1
 Host: agent-network-protocol.com
 ```
 
-### 応答形式例
+### レスポンス形式の例
 ```plaintext
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -146,18 +147,18 @@ Content-Length: <文件长度>
 }
 ```
 
-### 注意点
-- DID 文書や秘密鍵を処理する際は、特殊な文字を含むことができます。JSON を通じてデータが正しく送信できるようにするため、変換用に特別文字が提案されます。
-- 二重引用符などのJSONの特殊文字(`"`) とバックスラッシュ ()`\`)バックスラッシュで転置する必要があります。
-- DID 文書または秘密鍵が行の休憩を含んでいる場合(`\n`移行も必要です。
-- テキスト以外の文字を含むデータについては、データの完全性を確保するためにBase64コードが使用されることを推奨します。
+### 注意事項
+- DID 文書や秘密鍵には特殊文字が含まれる場合があります。JSON で正しく送信できるよう、特殊文字のエスケープを推奨します。
+- JSON 内の二重引用符（`"`）やバックスラッシュ（`\`）などの特殊文字は、バックスラッシュでエスケープする必要があります。
+- DID 文書や秘密鍵に改行（`\n`）が含まれる場合も、エスケープが必要です。
+- テキスト以外の文字を含むデータは、完全性を保つため Base64 エンコードを推奨します。
 
 ## 6. 認証インターフェイス
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/demo/auth`
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 POST /wba/demo/auth HTTP/1.1
 Host: agent-network-protocol.com
@@ -171,7 +172,7 @@ Content-Length: <文件长度>
 }
 ```
 
-### 応答形式例
+### レスポンス形式の例
 ```plaintext
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -185,12 +186,12 @@ Content-Length: <文件长度>
 }
 ```
 
-## 7. 同一証明 401 インターフェイス
+## 7. 認証 401 インターフェイス
 
-### リクエストパス
+### リクエスト先
 `https://agent-network-protocol.com/wba/demo/auth401`
 
-### フォーマットリクエスト例
+### リクエスト形式の例
 ```plaintext
 POST /wba/demo/auth401 HTTP/1.1
 Host: agent-network-protocol.com
@@ -204,7 +205,7 @@ Content-Length: <文件长度>
 }
 ```
 
-### 応答形式例
+### レスポンス形式の例
 ```plaintext
 HTTP/1.1 401 Unauthorized
 Content-Type: application/json
@@ -223,6 +224,6 @@ Content-Length: <文件长度>
 
 
 
-## 公益社団法人 一般社団法人 日本版著作権協会
-社会貢献活動の推進に関する基本方針 _ ANPコミュニティ
-この文書の基礎 [MITライセンス](../../../chinese/docs/LICENSE) 公開、あなたは自由にこの著作権宣言を使用および変更することができます。  
+## 著作権表示
+Copyright (c) 2024 ANP Community  
+本書は [MIT ライセンス](../../../chinese/docs/LICENSE) に基づき公開されています。自由に利用・変更できますが、この著作権表示を保持しなければなりません。

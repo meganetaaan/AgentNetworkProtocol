@@ -1,0 +1,332 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page15.jpg",
+  "sha256": "42874d7f9d8536fcea9359c0d79061f386ba89e3b83ec7ac9301416b0b1925dc",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Core Principles of ADP Design",
+      "confidence": 0.9682794624361498,
+      "box": [
+        [
+          37.16128921508789,
+          40.5
+        ],
+        [
+          1167.0966796875,
+          46.28571319580078
+        ],
+        [
+          1167.0966796875,
+          122.65714263916016
+        ],
+        [
+          37.16128921508789,
+          116.87142944335938
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ADP"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9841848810513815,
+      "box": [
+        [
+          2153.0322265625,
+          35.871429443359375
+        ],
+        [
+          2283.0966796875,
+          35.871429443359375
+        ],
+        [
+          2283.0966796875,
+          89.0999984741211
+        ],
+        [
+          2153.0322265625,
+          89.0999984741211
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "· AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.",
+      "confidence": 0.9887055595253789,
+      "box": [
+        [
+          318.19354248046875,
+          361.028564453125
+        ],
+        [
+          2045.0322265625,
+          361.028564453125
+        ],
+        [
+          2045.0322265625,
+          414.25714111328125
+        ],
+        [
+          318.19354248046875,
+          414.25714111328125
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI-",
+        "AI",
+        "AI"
+      ]
+    },
+    {
+      "source": "· Semi-Structured Protocol: Overall, it is a structured design that facilitates",
+      "confidence": 0.9934450267236444,
+      "box": [
+        [
+          319.3548278808594,
+          455.914306640625
+        ],
+        [
+          1858.064453125,
+          457.0714416503906
+        ],
+        [
+          1858.064453125,
+          506.8285827636719
+        ],
+        [
+          319.3548278808594,
+          505.67144775390625
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "convey personalized information.",
+      "confidence": 0.9833727143704891,
+      "box": [
+        [
+          351.8709716796875,
+          605.1857299804688
+        ],
+        [
+          1025.4193115234375,
+          597.0857543945312
+        ],
+        [
+          1025.4193115234375,
+          646.8428955078125
+        ],
+        [
+          351.8709716796875,
+          654.94287109375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· Multi-Agent Consensus: Enhances the consistency of agents' understanding of data",
+      "confidence": 0.9927201416434311,
+      "box": [
+        [
+          321.6773986816406,
+          695.44287109375
+        ],
+        [
+          2041.54833984375,
+          695.44287109375
+        ],
+        [
+          2041.54833984375,
+          748.6714477539062
+        ],
+        [
+          321.6773986816406,
+          748.6714477539062
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "semantics.",
+      "confidence": 0.9989846706390381,
+      "box": [
+        [
+          350.70965576171875,
+          768.3428955078125
+        ],
+        [
+          567.8709716796875,
+          770.6571655273438
+        ],
+        [
+          567.8709716796875,
+          816.94287109375
+        ],
+        [
+          350.70965576171875,
+          814.6286010742188
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "In theory, as long as the intelligence is strong enough, ADP could entirely",
+      "confidence": 0.9912824455897014,
+      "box": [
+        [
+          563.2257690429688,
+          1085.4000244140625
+        ],
+        [
+          1738.4515380859375,
+          1085.4000244140625
+        ],
+        [
+          1738.4515380859375,
+          1127.05712890625
+        ],
+        [
+          563.2257690429688,
+          1127.05712890625
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ADP"
+      ]
+    },
+    {
+      "source": "use natural language. However, this approach has many drawbacks, such",
+      "confidence": 0.9928457175475963,
+      "box": [
+        [
+          567.8709716796875,
+          1134.0
+        ],
+        [
+          1734.9676513671875,
+          1131.685791015625
+        ],
+        [
+          1734.9676513671875,
+          1174.5
+        ],
+        [
+          567.8709716796875,
+          1176.8143310546875
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "as cost, the probability of errors at the current stage, and so on.",
+      "confidence": 0.9929823857634815,
+      "box": [
+        [
+          650.3225708007812,
+          1183.7572021484375
+        ],
+        [
+          1657.1612548828125,
+          1183.7572021484375
+        ],
+        [
+          1657.1612548828125,
+          1221.94287109375
+        ],
+        [
+          650.3225708007812,
+          1221.94287109375
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Core Principles of ADP Design\n\n\n\n\n\n                • AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.\n\n                • Semi-Structured Protocol: Overall, it is a structured design that facilitates\n              programmatic processing; fields can contain natural language, making it easier to\n             convey personalized information.\n\n                • Multi-Agent Consensus: Enhances the consistency of agents' understanding of data\n               semantics.\n\n\n\n\n\n                                In theory, as long as the intelligence is strong enough, ADP could entirely\n                              use natural language. However, this approach has many drawbacks, such\n                                     as cost, the probability of errors at the current stage, and so on.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L011",
+      "japanese": "ADP設計の基本原則\n\n- AIを対象とする設計：AIからのアクセスを容易にするため、AI向けに特化して設計します。\n- 半構造化プロトコル：全体としてプログラム処理しやすい構造化設計としつつ、フィールドに自然言語を含めて個別の情報を伝えやすくします。\n- 複数エージェント間の合意：データの意味に関するエージェントの理解の一貫性を高めます。\n\n理論的には、十分な知能があればADPをすべて自然言語にすることも可能です。ただし、コストや現段階での誤りの確率など、多くの欠点があります。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5257998000015505,
+    0.0156710147857666,
+    3.4606621265411377
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 15,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-15",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 2.1030729166666666,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 15,
+    "manual_label_translations": {
+      "Core Principles of ADP Design\n\n\n\n\n\n                • AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.\n\n                • Semi-Structured Protocol: Overall, it is a structured design that facilitates\n              programmatic processing; fields can contain natural language, making it easier to\n             convey personalized information.\n\n                • Multi-Agent Consensus: Enhances the consistency of agents' understanding of data\n               semantics.\n\n\n\n\n\n                                In theory, as long as the intelligence is strong enough, ADP could entirely\n                              use natural language. However, this approach has many drawbacks, such\n                                     as cost, the probability of errors at the current stage, and so on.": "ADP設計の基本原則\n\n- AIを対象とする設計：AIからのアクセスを容易にするため、AI向けに特化して設計します。\n- 半構造化プロトコル：全体としてプログラム処理しやすい構造化設計としつつ、フィールドに自然言語を含めて個別の情報を伝えやすくします。\n- 複数エージェント間の合意：データの意味に関するエージェントの理解の一貫性を高めます。\n\n理論的には、十分な知能があればADPをすべて自然言語にすることも可能です。ただし、コストや現段階での誤りの確率など、多くの欠点があります。"
+    },
+    "additional_labels": [
+      {
+        "source": "Core Principles of ADP Design\n\n\n\n\n\n                • AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.\n\n                • Semi-Structured Protocol: Overall, it is a structured design that facilitates\n              programmatic processing; fields can contain natural language, making it easier to\n             convey personalized information.\n\n                • Multi-Agent Consensus: Enhances the consistency of agents' understanding of data\n               semantics.\n\n\n\n\n\n                                In theory, as long as the intelligence is strong enough, ADP could entirely\n                              use natural language. However, this approach has many drawbacks, such\n                                     as cost, the probability of errors at the current stage, and so on.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Core Principles of ADP Design",
+      "ANP",
+      "· AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.",
+      "· Semi-Structured Protocol: Overall, it is a structured design that facilitates",
+      "convey personalized information.",
+      "· Multi-Agent Consensus: Enhances the consistency of agents' understanding of data",
+      "semantics.",
+      "In theory, as long as the intelligence is strong enough, ADP could entirely",
+      "use natural language. However, this approach has many drawbacks, such",
+      "as cost, the probability of errors at the current stage, and so on."
+    ],
+    "source_sha256": "42874d7f9d8536fcea9359c0d79061f386ba89e3b83ec7ac9301416b0b1925dc"
+  }
+}

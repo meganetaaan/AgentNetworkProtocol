@@ -1,0 +1,299 @@
+{
+  "source": "blogs/images/agent-network/integration.png",
+  "sha256": "6d57ec17104a242b8ab4c3d6e1428bbdc3065cf54af8d263e4df2c0dd11bb5b7",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "口J",
+      "confidence": 0.6016298532485962,
+      "box": [
+        [
+          1663.59375,
+          157.8389434814453
+        ],
+        [
+          1858.59375,
+          157.8389434814453
+        ],
+        [
+          1858.59375,
+          255.7235565185547
+        ],
+        [
+          1663.59375,
+          255.7235565185547
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP Native Integration",
+      "confidence": 0.9762898710640994,
+      "box": [
+        [
+          255.9375,
+          368.2908630371094
+        ],
+        [
+          868.96875,
+          374.4086608886719
+        ],
+        [
+          868.96875,
+          430.69232177734375
+        ],
+        [
+          255.9375,
+          424.57452392578125
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ANPを直接統合",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "MCP-to-ANP Bridge",
+      "confidence": 0.9894522779128131,
+      "box": [
+        [
+          1486.875,
+          359.7259521484375
+        ],
+        [
+          2031.65625,
+          370.73797607421875
+        ],
+        [
+          2030.4375,
+          435.5865478515625
+        ],
+        [
+          1485.65625,
+          424.57452392578125
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "MCPからANPへのブリッジ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP-",
+        "ANP"
+      ]
+    },
+    {
+      "source": "使用ANPSDK原生接入，支",
+      "confidence": 0.9983393933091845,
+      "box": [
+        [
+          299.8125,
+          565.28369140625
+        ],
+        [
+          829.96875,
+          567.7307739257812
+        ],
+        [
+          829.96875,
+          609.3317260742188
+        ],
+        [
+          299.8125,
+          606.8846435546875
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "ANP SDKで直接接続し、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "使用ANP SDK原生接入，支"
+    },
+    {
+      "source": "使用MCP桥接，只要支持",
+      "confidence": 0.998596598704656,
+      "box": [
+        [
+          1518.5625,
+          564.0601196289062
+        ],
+        [
+          2002.40625,
+          566.5072021484375
+        ],
+        [
+          2002.40625,
+          610.5552978515625
+        ],
+        [
+          1518.5625,
+          608.108154296875
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "MCPブリッジを使えば、MCPに対応しているだけで、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "持双向通信能力，功能更丰富",
+      "confidence": 0.9979355243536142,
+      "box": [
+        [
+          283.96875,
+          626.4615478515625
+        ],
+        [
+          843.375,
+          626.4615478515625
+        ],
+        [
+          843.375,
+          670.5096435546875
+        ],
+        [
+          283.96875,
+          670.5096435546875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "双方向通信に対応。より豊富な機能を使える。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCP，接口无需修改代码，",
+      "confidence": 0.995847578232105,
+      "box": [
+        [
+          1492.96875,
+          624.014404296875
+        ],
+        [
+          1995.09375,
+          626.4615478515625
+        ],
+        [
+          1995.09375,
+          670.5096435546875
+        ],
+        [
+          1492.96875,
+          668.0625
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "インターフェースのコードを変更せず、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "一键接入",
+      "confidence": 0.9985255897045135,
+      "box": [
+        [
+          1669.6875,
+          683.96875
+        ],
+        [
+          1851.28125,
+          683.96875
+        ],
+        [
+          1851.28125,
+          734.1346435546875
+        ],
+        [
+          1669.6875,
+          734.1346435546875
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ワンクリックで接続できる。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "https://github.com/agent-network-protocol/anp",
+      "confidence": 0.9995631085501777,
+      "box": [
+        [
+          32.90625,
+          925.0096435546875
+        ],
+        [
+          1090.78125,
+          927.4567260742188
+        ],
+        [
+          1090.78125,
+          983.7404174804688
+        ],
+        [
+          32.90625,
+          981.2932739257812
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "https://github.com/agent-network-protocol/anp",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "https://github.com/agent-network-protocol/anp"
+      ]
+    },
+    {
+      "source": "https://github.com/agent-network-protocol/mcp2anp",
+      "confidence": 0.9997157223370611,
+      "box": [
+        [
+          1217.53125,
+          926.2332153320312
+        ],
+        [
+          2397.28125,
+          927.4567260742188
+        ],
+        [
+          2397.28125,
+          981.2932739257812
+        ],
+        [
+          1217.53125,
+          980.0697021484375
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "https://github.com/agent-network-protocol/mcp2anp",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "https://github.com/agent-network-protocol/mcp2anp"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.1322141999844462,
+    0.015052318572998047,
+    1.9894604682922363
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "使用ANPSDK原生接入，支": "使用ANP SDK原生接入，支"
+    },
+    "source_note": "URLと接続方式の主張は原図の記載を保持し、現時点の提供状況へ更新していない。",
+    "false_positive_labels": [
+      "口J"
+    ],
+    "source_sha256": "6d57ec17104a242b8ab4c3d6e1428bbdc3065cf54af8d263e4df2c0dd11bb5b7"
+  }
+}

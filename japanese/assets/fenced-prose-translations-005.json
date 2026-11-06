@@ -1,0 +1,3346 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    1000,
+    1199
+  ],
+  "units": [
+    {
+      "original": "s ap traffic",
+      "translation": "s ap traffic",
+      "status": "technical-retained",
+      "reason": "鍵導出のラベルとして使われる技術文字列を保持。",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:483-496/line:11:column:64",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "d ap traffic",
+      "translation": "d ap traffic",
+      "status": "technical-retained",
+      "reason": "鍵導出のラベルとして使われる技術文字列を保持。",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "locator": "fence:483-496/line:12:column:69",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Group state-changing operations<br/>create / join / add / rebind / remove / leave / update_*",
+      "translation": "グループ状態の変更操作<br/>create / join / add / rebind / remove / leave / update_*",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:249-265/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Advance group_state_version",
+      "translation": "group_state_versionを進める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:249-265/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Advance group_event_seq",
+      "translation": "group_event_seqを進める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:249-265/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Reference current group_state_version snapshot",
+      "translation": "現在のgroup_state_versionのスナップショットを参照",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:249-265/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Anchored result in response / notification",
+      "translation": "応答／通知内のアンカーとなる結果",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:249-265/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Target Member",
+      "translation": "対象メンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1077-1086/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:991-1000/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:992-1001/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.state_changed / or deployment-specific custom notification",
+      "translation": "group.state_changed、または配備環境で独自に定義する通知",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1077-1086/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:991-1000/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:992-1001/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sending Member",
+      "translation": "送信メンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1090-1099/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1567-1578/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1004-1013/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1005-1014/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Other Members",
+      "translation": "その他のメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1090-1099/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1567-1578/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1004-1013/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1005-1014/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "New DID",
+      "translation": "新しいDID",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1103-1115/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Other active members",
+      "translation": "その他のアクティブなメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1103-1115/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Collaboration Group",
+      "translation": "協働グループ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1329-1383//params/body/group_profile/description",
+          "language": "json"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1239-1293//params/body/group_profile/description",
+          "language": "json"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1267-1321//params/body/group_profile/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Hello everyone",
+      "translation": "皆さん、こんにちは",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/04-group-messaging-base-semantics.md",
+          "locator": "fence:1598-1631//params/body/text",
+          "language": "json"
+        },
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1481-1514//params/body/text",
+          "language": "json"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1509-1542//params/body/text",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Agent DID Document",
+      "translation": "エージェントのDID文書",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:183-200/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "One-Time Prekey pool",
+      "translation": "使い捨て事前鍵のプール",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:183-200/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return prekey_bundle + optional OPK",
+      "translation": "prekey_bundle＋任意のOPKを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:183-200/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Initiator A",
+      "translation": "開始側A",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receiver B's ANPMessageService",
+      "translation": "受信側BのANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receiver B",
+      "translation": "受信側B",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify Bundle / generate EK_A / compute DH1~DH4 / derive SK",
+      "translation": "Bundleを検証／EK_Aを生成／DH1~DH4を計算／SKを導出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Deliver direct_init",
+      "translation": "direct_initを配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Recompute shared secret / verify session_id / decrypt init",
+      "translation": "共有秘密を再計算／session_idを検証／initを復号",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send (first direct-cipher reply)",
+      "translation": "direct.send（最初のdirect-cipher応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "First reply",
+      "translation": "最初の応答",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Session enters established",
+      "translation": "セッションがestablishedになる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:687-702/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send direct_init",
+      "translation": "direct_initを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:936-948/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1008-1020/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Idempotent retry of the same init",
+      "translation": "同じinitを冪等に再試行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:936-948/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1008-1020/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receive first valid reply",
+      "translation": "最初の有効な応答を受信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:936-948/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1008-1020/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "reset / rebuild with new init",
+      "translation": "reset／新しいinitで再構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:936-948/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1008-1020/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Current session state<br/>RK / DHs / DHr / CKs / CKr / Ns / Nr / PN",
+      "translation": "現在のセッション状態<br/>RK / DHs / DHr / CKs / CKr / Ns / Nr / PN",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send subsequent message",
+      "translation": "後続のメッセージを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Obtain MK / NONCE / CKs'",
+      "translation": "MK / NONCE / CKs'を取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Encrypt Application Plaintext",
+      "translation": "Application Plaintextを暗号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Update CKs = CKs' ; Ns++",
+      "translation": "CKs = CKs' ; Ns++へ更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receive message<br/>dh_pub equals current DHr",
+      "translation": "メッセージを受信<br/>dh_pubが現在のDHrと同じ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Obtain MK / NONCE / CKr'",
+      "translation": "MK / NONCE / CKr'を取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Decrypt and verify AD_msg",
+      "translation": "復号し、AD_msgを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Update CKr = CKr' ; Nr++",
+      "translation": "CKr = CKr' ; Nr++へ更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receive message<br/>dh_pub differs from current DHr",
+      "translation": "メッセージを受信<br/>dh_pubが現在のDHrと異なる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Obtain new CKr",
+      "translation": "新しいCKrを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Generate new DHs",
+      "translation": "新しいDHsを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Obtain new CKs",
+      "translation": "新しいCKsを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1135-1158/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:1214-1237/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. Create all fields of the json message, excluding proofValue field",
+      "translation": "1. proofValueフィールドを除く、jsonメッセージの全フィールドを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:1",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Excluding proofValue field",
+      "translation": "proofValueフィールドを除く",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "2. Convert to JSON string, sort by keys, and use commas and colons as separators",
+      "translation": "2. JSON文字列へ変換し、キーで並べ替え、カンマとコロンを区切りに使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "3. Encode JSON string as UTF-8 bytes",
+      "translation": "3. JSON文字列をUTF-8バイト列へ符号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:15",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "4. Sign byte data using private key and ECDSA algorithm",
+      "translation": "4. 秘密鍵とECDSAアルゴリズムを使ってバイトデータへ署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:18",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "5. Add signature value to proof field in json message",
+      "translation": "5. 署名値をjsonメッセージのproofフィールドへ追加",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/05-message-service-protocol-based-on-did.md",
+          "locator": "fence:201-224/line:21",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "P4 business-state changes<br/>group.create / member active / member left or removed / credential rebound",
+      "translation": "P4の業務状態の変化<br/>group.create / メンバーがactive / メンバーがleftまたはremoved / 資格情報の再バインディング",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "owner observes business state",
+      "translation": "ownerが業務状態を監視",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group created and has no crypto_group_id yet",
+      "translation": "グループ作成済みで、crypto_group_idがまだない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "member active and not yet in MLS",
+      "translation": "メンバーがactiveで、MLSにはまだ参加していない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "member left or removed and still in MLS",
+      "translation": "メンバーがleftまたはremovedで、MLSにはまだ残っている",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Handle member rebound and old leaf still in MLS",
+      "translation": "Handleメンバーが再バインド済みで、旧leafがまだMLSに残っている",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "execute after rebind Add is accepted",
+      "translation": "再バインディングのAddが受け入れられた後に実行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:127-155/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group_did<br/>application-layer group identifier",
+      "translation": "group_did<br/>アプリケーション層のグループ識別子",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:452-476/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:503-527/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group_state_version<br/>P4 business-state version",
+      "translation": "group_state_version<br/>P4の業務状態バージョン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:452-476/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:503-527/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "epoch<br/>MLS generation",
+      "translation": "epoch<br/>MLSの世代",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:452-476/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:503-527/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "business creation succeeded (group_did, group_state_version)",
+      "translation": "業務上の作成に成功（group_did, group_state_version）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1506-1515/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1749-1758/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "MLS initialization succeeded (crypto_group_id, epoch)",
+      "translation": "MLSの初期化に成功（crypto_group_id, epoch）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1506-1515/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1749-1758/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "New Member",
+      "translation": "新しいメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1519-1531/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1535-1548/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "business join succeeded (active)",
+      "translation": "業務上の参加に成功（active）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1519-1531/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1762-1775/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "member addition succeeded (target active)",
+      "translation": "メンバー追加に成功（target active）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1535-1548/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1779-1793/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "business state changed (removed/left)",
+      "translation": "業務状態を変更済み（removed/left）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1552-1563/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Locally construct Group Application Plaintext",
+      "translation": "Group Application Plaintextをローカルで構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1567-1578/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1818-1829/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Locally generate PrivateMessage and group_cipher_object",
+      "translation": "PrivateMessageとgroup_cipher_objectをローカルで生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1567-1578/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1818-1829/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Retained Members",
+      "translation": "残るメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Pause new E2EE messages",
+      "translation": "新しいE2EEメッセージを一時停止",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "No application messages in the intermediate epoch",
+      "translation": "中間のepochではアプリケーションメッセージを禁止",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resume E2EE messages after Remove succeeds",
+      "translation": "Removeの成功後にE2EEメッセージを再開",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/06-group-end-to-end-encryption.md",
+          "locator": "fence:1582-1599/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sender client",
+      "translation": "送信側クライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:92-108/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:97-113/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS PUT object bytes",
+      "translation": "HTTPS PUTでオブジェクトのバイト列を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:92-108/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:97-113/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send attachment manifest<br/>direct.send / group.send",
+      "translation": "添付ファイルのマニフェストを送信<br/>direct.send / group.send",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:92-108/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Create Access Grant after message accepted",
+      "translation": "メッセージがacceptedになった後でAccess Grantを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:92-108/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:97-113/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sender Client",
+      "translation": "送信側クライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Control Service",
+      "translation": "制御サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Object Data Plane",
+      "translation": "オブジェクトのデータプレーン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Recipient or Group Host",
+      "translation": "受信側またはグループのHost",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve using sender_did from the original message\\nattachment.get_download_ticket",
+      "translation": "元のメッセージのsender_didを使って解決\\nattachment.get_download_ticket",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:207-214/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:223-230/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sender Client A",
+      "translation": "送信側クライアントA",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "A Domain Service",
+      "translation": "Aドメインのサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "B Domain Service",
+      "translation": "Bドメインのサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Recipient Client B",
+      "translation": "受信側クライアントB",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS PUT plaintext bytes",
+      "translation": "HTTPS PUTで平文のバイト列を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.incoming / equivalent delivery mechanism",
+      "translation": "direct.incoming／同等の配信の仕組み",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "attachment.get_download_ticket (resolved from the original message sender_did)",
+      "translation": "attachment.get_download_ticket（元のメッセージのsender_didから解決）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "plaintext bytes",
+      "translation": "平文のバイト列",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "validate size / digest",
+      "translation": "size / digestを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:218-240/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:234-256/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Generate object_key + nonce locally\\nEncrypt the file locally",
+      "translation": "object_key＋nonceをローカルで生成\\nファイルをローカルで暗号化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTPS PUT ciphertext bytes",
+      "translation": "HTTPS PUTで暗号文のバイト列を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send (direct-e2ee, inner manifest carries object_key)",
+      "translation": "direct.send（direct-e2ee、内側のmanifestにobject_keyを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Decrypt the inner manifest\\nObtain object_key + nonce",
+      "translation": "内側のmanifestを復号\\nobject_key＋nonceを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ciphertext bytes",
+      "translation": "暗号文のバイト列",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Validate ciphertext size / digest\\nDecrypt locally",
+      "translation": "暗号文のsize / digestを検証\\nローカルで復号",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:244-268/line:23",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:260-284/line:23",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group Member Client",
+      "translation": "グループメンバーのクライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:272-293/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:288-309/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.send (group-e2ee, inner manifest carries object_key)",
+      "translation": "group.send（group-e2ee、内側のmanifestにobject_keyを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:297-320/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Attachment description",
+      "translation": "添付ファイルの説明",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:375-398//caption",
+          "language": "json"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:398-421//caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Sender service",
+      "translation": "送信側サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Message plane",
+      "translation": "メッセージのプレーン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Only creates the object; does not create download authorization",
+      "translation": "ここではオブジェクトだけを作成し、ダウンロード認可は作成しない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send / group.send attachment manifest",
+      "translation": "direct.send / group.sendの添付ファイルのマニフェスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "message accepted",
+      "translation": "メッセージがaccepted",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Create Access Grant for each attachment",
+      "translation": "各attachmentにAccess Grantを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Validate requester_did + message_id + attachment_id + object_uri",
+      "translation": "requester_did + message_id + attachment_id + object_uriを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:709-728/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Start PUT",
+      "translation": "PUTを開始",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:765-779/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:804-818/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "PUT completed",
+      "translation": "PUT完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:765-779/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:804-818/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group file",
+      "translation": "グループのファイル",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:1369-1422//params/body/payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:1414-1467//params/body/payload/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Design document",
+      "translation": "設計文書",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/07-attachments-and-object-transfer.md",
+          "locator": "fence:1540-1574//payload/caption",
+          "language": "json"
+        },
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:1586-1620//payload/caption",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Sender domain",
+      "translation": "送信元ドメイン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sender ANPMessageService",
+      "translation": "送信側ANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Target domain",
+      "translation": "宛先ドメイン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Target ANPMessageService",
+      "translation": "宛先ANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Target Agent",
+      "translation": "宛先エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Business object<br/>meta.sender_did / auth.origin_proof",
+      "translation": "業務オブジェクト<br/>meta.sender_did / auth.origin_proof",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Cross-domain HTTP call<br/>outer serviceDid authentication",
+      "translation": "ドメインをまたぐHTTP呼び出し<br/>外側のserviceDid認証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:99-119/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:108-128/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receive cross-domain business request",
+      "translation": "ドメインをまたぐ業務要求を受信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve target.did as Agent DID",
+      "translation": "target.didをエージェントDIDとして解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve target.did as Group DID",
+      "translation": "target.didをグループDIDとして解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Use target.did directly as serviceDid to discover target service",
+      "translation": "target.didを直接serviceDidとして宛先サービスを発見",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Select target ANPMessageService",
+      "translation": "宛先ANPMessageServiceを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Locate the Group Host's ANPMessageService",
+      "translation": "グループHostのANPMessageServiceを特定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send the original business method directly",
+      "translation": "元の業務メソッドを直接送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:170-185/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:181-196/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Member-domain service",
+      "translation": "メンバーのドメインサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Member Agent",
+      "translation": "メンバーのエージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group message distribution",
+      "translation": "グループメッセージを配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Deliver group message",
+      "translation": "グループメッセージを届ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Business-state change",
+      "translation": "業務状態の変化",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Deliver state event",
+      "translation": "状態イベントを届ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Cryptographic result distribution",
+      "translation": "暗号処理の結果を配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:269-285/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:284-300/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Caller service",
+      "translation": "呼び出し元サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Receiver service",
+      "translation": "受信側サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID resolver / document",
+      "translation": "DIDの解決／文書",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Cross-domain HTTP request + Signature-Input(keyid=...)",
+      "translation": "ドメインをまたぐHTTP要求＋Signature-Input(keyid=...)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Determine caller anchor by method",
+      "translation": "メソッドに従ってcaller anchorを決定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Normal requests use meta.sender_did",
+      "translation": "通常の要求ではmeta.sender_didを使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group notifications use body.group_did",
+      "translation": "グループ通知ではbody.group_didを使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve caller anchor DID document",
+      "translation": "caller anchorのDID文書を解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Select its public ANPMessageService",
+      "translation": "その公開ANPMessageServiceを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Read serviceDid",
+      "translation": "serviceDidを読み取る",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Compare DID owning keyid == serviceDid",
+      "translation": "keyidの所属DID == serviceDidであることを照合",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve serviceDid document and obtain authentication key",
+      "translation": "serviceDid文書を解決し、authentication keyを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verification material",
+      "translation": "署名検証の素材",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify HTTP Message Signatures",
+      "translation": "HTTP Message Signaturesを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:369-390/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:388-409/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "B-domain service",
+      "translation": "Bドメインのサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID resolver",
+      "translation": "DIDリゾルバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Original sender ANPMessageService",
+      "translation": "元の送信者のANPMessageService",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Internal Object Service in A domain",
+      "translation": "Aドメイン内部のObject Service",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Request attachment download",
+      "translation": "添付ファイルのダウンロードを要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve original attachment message sender_did",
+      "translation": "元の添付メッセージのsender_didを解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Target ANPMessageService.serviceDid",
+      "translation": "宛先ANPMessageService.serviceDid",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Anchor MUST be original message sender_did",
+      "translation": "アンカーは元のメッセージのsender_didでなければならない（MUST）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Do not infer it from group_did or object_uri domain",
+      "translation": "group_didやobject_uriのドメイン名から逆算してはならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Internal Access Grant validation",
+      "translation": "Access Grantを内部で検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Allow issuance",
+      "translation": "発行を許可",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/08-federation-and-cross-domain.md",
+          "locator": "fence:557-579/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/08-federation-and-cross-domain.md",
+          "locator": "fence:592-614/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Registry/Notary Service",
+      "translation": "登録／公証サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 1: User Search & Selection",
+      "translation": "手順1：利用者が検索して選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service Discovery Request",
+      "translation": "サービス発見要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Provide Service Information",
+      "translation": "サービス情報を提供",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 2: User Booking Request",
+      "translation": "手順2：利用者が予約を要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Booking Request",
+      "translation": "予約要求を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 3: Generate Order Proposal",
+      "translation": "手順3：注文提案を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "(Optional) Query product info hash and URL",
+      "translation": "（任意）商品情報のハッシュとURLを照会",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return verified product info hash and URL",
+      "translation": "検証済みの商品情報のハッシュとURLを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Order Proposal Credential]<br/>(contains hash and URL of notarized product info)",
+      "translation": "【注文提案資格情報】<br/>（公証済み商品情報のハッシュとURLを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Order Proposal Credential",
+      "translation": "注文提案資格情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Order Proposal Credential",
+      "translation": "注文提案資格情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 4: User Confirms Order",
+      "translation": "手順4：利用者が注文を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Booking Confirmation Credential]<br/>(contains OrderProposal hash)",
+      "translation": "【予約確認資格情報】<br/>（OrderProposalのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Booking Confirmation Credential",
+      "translation": "予約確認資格情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Payment Request",
+      "translation": "支払い要求を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Generate Payment Instruction",
+      "translation": "支払い指示を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:30",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Payment Instruction Credential]<br/>(contains BookingConfirmation hash)",
+      "translation": "【支払い指示資格情報】<br/>（BookingConfirmationのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Payment Instruction Credential",
+      "translation": "支払い指示資格情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:34",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Forward Payment Instruction Credential",
+      "translation": "支払い指示資格情報を転送",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:35",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 5: User Payment & Funds Escrow",
+      "translation": "手順5：利用者による支払いとエスクロー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:37",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Complete Payment Operation",
+      "translation": "支払い操作を完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:38",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Funds Escrow",
+      "translation": "資金のエスクロー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:40",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Funds Escrowed Credential]<br/>(contains PaymentInstruction hash)",
+      "translation": "【資金エスクロー資格情報】<br/>（PaymentInstructionのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:42",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Funds Escrowed Credential",
+      "translation": "資金エスクロー資格情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:44",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:45",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 6: Hotel Confirmation & Service Delivery",
+      "translation": "手順6：ホテルの確認とサービス提供",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:47",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Booking Finalized Credential (Optional)]<br/>(contains FundsEscrowed hash)",
+      "translation": "【予約完了資格情報（任意）】<br/>（FundsEscrowedのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:49",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Booking Finalized Credential (Optional)",
+      "translation": "予約完了資格情報（任意）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:49",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Booking Finalized Credential (Optional)",
+      "translation": "予約完了資格情報を送信（任意）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:51",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Provide Service",
+      "translation": "サービスを提供",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:53",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service Completion Notification",
+      "translation": "サービス完了通知",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:54",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Step 7: User Confirms Fund Release",
+      "translation": "手順7：利用者が資金の払い出しを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:56",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Service Completion Confirmation Credential]<br/>(contains FundsEscrowed or BookingFinalized hash)",
+      "translation": "【サービス完了確認資格情報】<br/>（FundsEscrowedまたはBookingFinalizedのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:58",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service Completion Confirmation Credential",
+      "translation": "サービス完了確認資格情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:58",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Service Completion Confirmation Credential",
+      "translation": "サービス完了確認資格情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:60",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "[Funds Released Credential]<br/>(contains ServiceCompletionConfirmation hash)",
+      "translation": "【資金払い出し資格情報】<br/>（ServiceCompletionConfirmationのハッシュを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:64",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send Funds Released Credential",
+      "translation": "資金払い出し資格情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:66",
+          "language": "mermaid"
+        },
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:67",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Transfer funds to hotel account",
+      "translation": "ホテルの口座へ資金を移す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+          "locator": "fence:203-272/line:68",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Example Hotel",
+      "translation": "Example Hotel（サンプルホテル）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/agent-description-extended-fields-guide.md",
+          "locator": "fence:39-61//domainEntity/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Room details, rates, and booking conditions.",
+      "translation": "客室の詳細、料金、予約条件。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/agent-description-extended-fields-guide.md",
+          "locator": "fence:68-78//Infomations/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Hotel room booking and reservation management.",
+      "translation": "ホテルの客室予約と予約管理。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/agent-description-extended-fields-guide.md",
+          "locator": "fence:93-106//interfaces/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Example Coffee Shop",
+      "translation": "Example Coffee Shop（サンプルコーヒーショップ）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/agent-description-extended-fields-guide.md",
+          "locator": "fence:131-144//domainEntity/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Example City",
+      "translation": "Example City（例示用の都市）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/agent-description-extended-fields-guide.md",
+          "locator": "fence:131-144//domainEntity/address/addressLocality",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "A travel planning agent",
+      "translation": "旅行計画エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:295-314//profile/description",
+          "language": "json"
+        }
+      ]
+    }
+  ]
+}

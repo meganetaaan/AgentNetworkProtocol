@@ -1,0 +1,244 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "definition": "The complete source, examples and tables were read and compared. Every prose line was retranslated; examples remain exact. Agent review, not independent human certification.",
+  "documents": [
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "source_sha256": "1ff020020aa0b4b4b414151b2dbade5fd8a140b0f1518ade6249f587bc219896",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          625
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "retranslated_prose_lines": 216,
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read all identity, WNS, discovery, messaging, SDK, example and flow sections; rewrote all prose from the Chinese source.",
+        "Restored ANP identity, authentication-versus-authorization, optional WNS/Manifest boundary, DID migration trust, exact-handle assurance, runtime capabilities and P6 release gate.",
+        "Preserved the 2026-06-27 SDK package snapshot as historical, not current implementation conformance; preserved Infomations spelling, legacy security declaration and every code example."
+      ],
+      "translation_sha256": "8d5d456a4b4cfd45d98b69b239df4653105aa645eecab97249f49e314c2fcbcd"
+    },
+    {
+      "source": "docs/chinese/anp-05-validation-guide.md",
+      "source_sha256": "28218959574dfcdc8268bc35dbadeed288361885987f4cdb0bf2dc1e91eaaea7",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          95
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "retranslated_prose_lines": 83,
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read and retranslated all 68 AUTHZ scenario descriptions, metadata, mode selection, retired identifier history and copyright.",
+        "Restored ordinary cimd versus mandatory did_bound checks, no downgrade retry, URL client identity, actual signing-key authorization, metadata/JWKS freshness and SSRF boundaries.",
+        "Verified holder/requester binding, one-time challenges, credential type isolation, authorization intersection, per-operation amounts, session expiry and local issuer trust without upgrading the draft status.",
+        "Scenario IDs remain in original non-contiguous order; design scenarios do not claim runtime JWT/VC conformance."
+      ],
+      "translation_sha256": "cc85d2e722fc7e52426d366ec988cca1f117e6bae7218e047b698dbcc8bb2951"
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+      "source_sha256": "d7e3da57e241fc9c85ff00fff106b0a66cc6b1342135816d367ce3e198327f63",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          274
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "retranslated_prose_lines": 115,
+      "checks": {
+        "inline_multiset_exact": true,
+        "fences_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read all original prose and both full Mermaid examples; retranslated all 115 prose lines.",
+        "Preserved escrow versus direct payment, eight transaction stages, credential hash links, optional credentials, arbitration and state transitions.",
+        "Historical research proposal; source security and interoperability claims retained as claims, not current product or protocol guarantees. Original stateDiagram fence and figure numbering retained."
+      ],
+      "translation_sha256": "eab6e17ca8b18c68316079b1becabdcc9e3245ae6e0efb3db99f48f8138de99f"
+    },
+    {
+      "source": "docs/anp-05-validation-guide.md",
+      "source_sha256": "cb11a71813ee4062d856950ef9036a2bdad044c58664ebec7baa58ed077c7d78",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          95
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read the full English source including all 68 AUTHZ cases; reused the independently translated Chinese counterpart only after comparing all prose.",
+        "Preserved the English verifier-enforceability wording in AUTHZ-56 and future-dated wording in AUTHZ-08; restored English local reference paths and mirror direction."
+      ],
+      "translation_sha256": "16946fb16941c9e376ea08ff87913bba7c283ca50d5b9046fc77359a11de89cf"
+    },
+    {
+      "source": "docs/community-operations/community-operations.md",
+      "source_sha256": "ef32b6a6e62f6b10d6f6c6f6b482c7b52c0bf418bf78de06f5ce60f55f7b7968",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          144
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read full English and Chinese governance plans, compared all corresponding paragraphs, and translated all 77 nonempty lines.",
+        "Preserved committee size, one-quarter company representation, four timezones, terms, peer PR review, consensus escalation, foundation neutrality and planned rather than implemented status.",
+        "Original GA reference is retained even though its antecedent is absent; plan recommendations are not new instructions to the translator."
+      ],
+      "translation_sha256": "4b066d299dbc12fe83411be4110a182ad54ffca190fcbdedeba644eb40ffbe8b"
+    },
+    {
+      "source": "docs/chinese/community-operations/operations-cn.md",
+      "source_sha256": "187741c5961cee86986ccf1ccc2d0c5cc8b03e20e18a97fe00e0449de48226ca",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          144
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read full English and Chinese governance plans, compared all corresponding paragraphs, and translated all 77 nonempty lines.",
+        "Preserved committee size, one-quarter company representation, four timezones, terms, peer PR review, consensus escalation, foundation neutrality and planned rather than implemented status.",
+        "Original GA reference is retained even though its antecedent is absent; plan recommendations are not new instructions to the translator."
+      ],
+      "translation_sha256": "c1156263bd0ca3be2ec9744035d71d6ce5254016d69f845f4e9e376886ad1410"
+    },
+    {
+      "source": "docs/chinese/links.md",
+      "source_sha256": "0ccb01327bf685e9a08bc5058b374fc59b5e19074c5bef2f36ff7bea23f7c69f",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read and translated every category and all 38 link labels, preserving each source target and order."
+      ],
+      "translation_sha256": "29861e3171474df442afd355e681c8cecc8ed35dc7e4733bee2af3761f3c3ac4"
+    },
+    {
+      "source": "chinese/附录A：did-wba-k1_兼容扩展.md",
+      "source_sha256": "14bcf65f9c611e627e116cc4fa4c48a98761799f45eec5e6a60e56f9c5fbdd94",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          214
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "reviewed_prose_lines": 124,
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read all 214 original lines and the English counterpart translation; reused source-aligned Japanese only after comparing every Chinese section.",
+        "Preserved the three explicit Chinese MUST requirements absent as uppercase in English: A.5.1 key pairing, A.5.4 joint proof/binding verification and thumbprint equality.",
+        "Preserved nonstandard optional k1 proof versus standard e1 proof, strict-mode failure, no substitution of an unrelated secp256k1 key, RFC 7638 32-byte/43-character encoding, DER to 64-byte R||S, and method-specific authentication."
+      ],
+      "translation_sha256": "628a420d943f10f7b87f5ba4af9f3e5ca1ee7f0a515f6f4cf88bd0ca4bcc3c17"
+    },
+    {
+      "source": "chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "source_sha256": "2a22598e5390a634fe434aefbc7bdb4c4c6fa0b1e0876d6b07c9520c69f2e663",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          348
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "retranslated_prose_lines": 167,
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read the full Chinese whitepaper and all references; retranslated every prose paragraph, heading, bullet and figure caption directly.",
+        "Preserved informational status and the opening caveat about ANP-02, native did:web, draft meta-protocol and MLS release gate; conceptual architecture does not claim implemented conformance.",
+        "Restored data-island versus GUI versus protocol challenges, all six design principles, six-stage negotiation and cached negotiation research questions, active/passive discovery, identity-versus-human-authorization and four privacy sections.",
+        "Preserved the historical ECDHE/proxy and token-flow narrative, exact Mermaid example and figure/reference targets; source claims are not changes to current normative specifications."
+      ],
+      "translation_sha256": "f923bda2e263038ead5428351f9d2fc16eeb901aa0414e63bed30424afa669f2",
+      "independent_review": "japanese/reviews/whitepaper-independent-review.json"
+    },
+    {
+      "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+      "source_sha256": "f953d966564331e597a922f78edf0cf0cc4243e9f0c3fcda2f686b37bc2f5985",
+      "status": "full",
+      "reviewed_source_ranges": [
+        [
+          1,
+          1150
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "retranslated_prose_lines": 421,
+      "checks": {
+        "fences_exact": true,
+        "inline_multiset_exact": true,
+        "normative_multiset_exact": true
+      },
+      "notes": [
+        "Read all 1150 original lines including complete Mermaid/JSON examples, both signature-generation and validation flows, fields, 11-stage shopping and 9-stage hotel scenarios; retranslated all prose, headings, lists, table cells and references.",
+        "Preserved Chinese v0.1 draft status and explicitly unsynchronized English revision; no actual payment or JWT runtime conformance execution.",
+        "Preserved all four roles, QR-first flow, CartMandate/PaymentMandate and separate asynchronous PaymentReceipt/FulfillmentReceipt branches, exact hash/JCS/signature algorithms, user private-key restrictions, replay and webhook requirements.",
+        "Original inconsistencies retained and annotated: initial three credential categories versus four definitions; MA-to-TA direction; duplicate type and malformed inline JSON; 180-day example comment versus 15-minute recommendation; pmt_hash wording; missing section numbers and mixed webhook_url/mandate_webhook_url."
+      ],
+      "translation_sha256": "b16fc548b59a21c32b469749074410fe49def5760adf4bb5ccfe6e12ba677d05",
+      "independent_review": "japanese/reviews/payment-independent-review.json"
+    }
+  ]
+}

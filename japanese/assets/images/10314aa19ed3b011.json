@@ -1,0 +1,1603 @@
+{
+  "source": "examples/adp/lkcoffe/orange-americano/instruction.jpg",
+  "sha256": "10314aa19ed3b01136599117d0a38d94cbfb6839983012a88513b36c4a1123fe",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "橙C美式",
+      "confidence": 0.9912892431020737,
+      "box": [
+        [
+          86.70703125,
+          90.36189270019531
+        ],
+        [
+          953.77734375,
+          78.0398178100586
+        ],
+        [
+          957.90625,
+          336.8034362792969
+        ],
+        [
+          90.8359375,
+          349.1255187988281
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Mangwo",
+      "confidence": 0.5104299311836561,
+      "box": [
+        [
+          255.9921875,
+          287.51513671875
+        ],
+        [
+          491.33984375,
+          287.51513671875
+        ],
+        [
+          491.33984375,
+          332.6960754394531
+        ],
+        [
+          255.9921875,
+          336.8034362792969
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Hmowbal",
+      "confidence": 0.530712868486132,
+      "box": [
+        [
+          495.46875,
+          254.65625
+        ],
+        [
+          767.9765625,
+          266.97833251953125
+        ],
+        [
+          763.84765625,
+          324.4813537597656
+        ],
+        [
+          491.33984375,
+          312.1592712402344
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "破亿杯",
+      "confidence": 0.9972912271817526,
+      "box": [
+        [
+          115.609375,
+          316.2666320800781
+        ],
+        [
+          854.68359375,
+          320.3739929199219
+        ],
+        [
+          850.5546875,
+          579.1376342773438
+        ],
+        [
+          111.48046875,
+          575.0302734375
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "小众宝藏也能成为爆款",
+      "confidence": 0.9984464049339294,
+      "box": [
+        [
+          140.3828125,
+          583.2449951171875
+        ],
+        [
+          875.328125,
+          583.2449951171875
+        ],
+        [
+          875.328125,
+          657.1774291992188
+        ],
+        [
+          140.3828125,
+          653.070068359375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "1周年",
+      "confidence": 0.9812644124031067,
+      "box": [
+        [
+          784.4921875,
+          993.9808349609375
+        ],
+        [
+          953.77734375,
+          981.6588134765625
+        ],
+        [
+          957.90625,
+          1039.161865234375
+        ],
+        [
+          788.62109375,
+          1051.48388671875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "C脂",
+      "confidence": 0.9682523608207703,
+      "box": [
+        [
+          834.0390625,
+          1380.0726318359375
+        ],
+        [
+          949.6484375,
+          1400.609375
+        ],
+        [
+          933.1328125,
+          1495.07861328125
+        ],
+        [
+          817.5234375,
+          1474.5418701171875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "luckin coffe",
+      "confidence": 0.9760651538769404,
+      "box": [
+        [
+          388.1171875,
+          1437.57568359375
+        ],
+        [
+          668.8828125,
+          1437.57568359375
+        ],
+        [
+          668.8828125,
+          1495.07861328125
+        ],
+        [
+          388.1171875,
+          1495.07861328125
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "真果汁",
+      "confidence": 0.9980291724205017,
+      "box": [
+        [
+          809.265625,
+          1490.9713134765625
+        ],
+        [
+          1019.83984375,
+          1499.18603515625
+        ],
+        [
+          1019.83984375,
+          1589.5478515625
+        ],
+        [
+          805.13671875,
+          1585.4405517578125
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "低负担",
+      "confidence": 0.9907317956288656,
+      "box": [
+        [
+          796.87890625,
+          1593.6552734375
+        ],
+        [
+          1007.453125,
+          1597.7625732421875
+        ],
+        [
+          1007.453125,
+          1696.3392333984375
+        ],
+        [
+          792.75,
+          1692.23193359375
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "1杯橙汁含量≈1个橙子*",
+      "confidence": 0.9186474680900574,
+      "box": [
+        [
+          127.99609375,
+          2439.771240234375
+        ],
+        [
+          924.875,
+          2435.663818359375
+        ],
+        [
+          924.875,
+          2505.489013671875
+        ],
+        [
+          127.99609375,
+          2505.489013671875
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "source": "浓都橙香清新沁爽",
+      "confidence": 0.9440275356173515,
+      "box": [
+        [
+          350.95703125,
+          2591.743408203125
+        ],
+        [
+          701.9140625,
+          2591.743408203125
+        ],
+        [
+          701.9140625,
+          2632.817138671875
+        ],
+        [
+          350.95703125,
+          2632.817138671875
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "定制触合IIAC金奖浓缩咖啡",
+      "confidence": 0.92882239818573,
+      "box": [
+        [
+          276.63671875,
+          2661.568603515625
+        ],
+        [
+          776.234375,
+          2661.568603515625
+        ],
+        [
+          776.234375,
+          2702.64208984375
+        ],
+        [
+          276.63671875,
+          2702.64208984375
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "口感丰富点亮味蕾",
+      "confidence": 0.8524261526763439,
+      "box": [
+        [
+          375.73046875,
+          2731.393798828125
+        ],
+        [
+          681.26953125,
+          2731.393798828125
+        ],
+        [
+          681.26953125,
+          2768.35986328125
+        ],
+        [
+          375.73046875,
+          2768.35986328125
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "luckin coffe",
+      "confidence": 0.9503812044858932,
+      "box": [
+        [
+          367.47265625,
+          3643.227294921875
+        ],
+        [
+          644.109375,
+          3655.549560546875
+        ],
+        [
+          639.98046875,
+          3721.26708984375
+        ],
+        [
+          363.34375,
+          3704.837646484375
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "二、这1个千五，平二气龙在量，天，",
+      "confidence": 0.5245591217980665,
+      "box": [
+        [
+          66.0625,
+          4082.71484375
+        ],
+        [
+          767.9765625,
+          4082.71484375
+        ],
+        [
+          767.9765625,
+          4115.57373046875
+        ],
+        [
+          66.0625,
+          4115.57373046875
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "大师级定制Espre550",
+      "confidence": 0.8722607676799481,
+      "box": [
+        [
+          127.99609375,
+          4341.478515625
+        ],
+        [
+          929.00390625,
+          4353.80029296875
+        ],
+        [
+          929.00390625,
+          4423.62548828125
+        ],
+        [
+          127.99609375,
+          4415.41064453125
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "550"
+      ]
+    },
+    {
+      "source": "源自IAC金奖咖啡豆",
+      "confidence": 0.8119605779647827,
+      "box": [
+        [
+          169.28515625,
+          4444.16259765625
+        ],
+        [
+          883.5859375,
+          4444.16259765625
+        ],
+        [
+          883.5859375,
+          4501.66552734375
+        ],
+        [
+          169.28515625,
+          4501.66552734375
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "瑞幸冠军团队经历上百次词试",
+      "confidence": 0.9467979027674749,
+      "box": [
+        [
+          276.63671875,
+          4604.34912109375
+        ],
+        [
+          780.36328125,
+          4604.34912109375
+        ],
+        [
+          780.36328125,
+          4641.3154296875
+        ],
+        [
+          276.63671875,
+          4641.3154296875
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "寻求多产区啡豆专业拼配方案",
+      "confidence": 0.8797803314832541,
+      "box": [
+        [
+          260.12109375,
+          4670.06689453125
+        ],
+        [
+          796.87890625,
+          4670.06689453125
+        ],
+        [
+          796.87890625,
+          4711.140625
+        ],
+        [
+          260.12109375,
+          4711.140625
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "臻选100%阿拉比卡啡豆",
+      "confidence": 0.9561035186052322,
+      "box": [
+        [
+          297.28125,
+          4739.89208984375
+        ],
+        [
+          751.4609375,
+          4739.89208984375
+        ],
+        [
+          751.4609375,
+          4776.8583984375
+        ],
+        [
+          297.28125,
+          4776.8583984375
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "100"
+      ]
+    },
+    {
+      "source": "捕捉埃塞假比亚、巴西、哥伦比亚、危地马拉等",
+      "confidence": 0.9375971413794018,
+      "box": [
+        [
+          119.73828125,
+          4805.60986328125
+        ],
+        [
+          933.1328125,
+          4805.60986328125
+        ],
+        [
+          933.1328125,
+          4846.68359375
+        ],
+        [
+          119.73828125,
+          4846.68359375
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "产区凤味特征",
+      "confidence": 0.8331679999828339,
+      "box": [
+        [
+          408.76171875,
+          4871.32763671875
+        ],
+        [
+          644.109375,
+          4871.32763671875
+        ],
+        [
+          644.109375,
+          4916.5087890625
+        ],
+        [
+          408.76171875,
+          4916.5087890625
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "星现独特风味与浓醇口感",
+      "confidence": 0.8850566419688138,
+      "box": [
+        [
+          317.92578125,
+          4941.15283203125
+        ],
+        [
+          739.07421875,
+          4941.15283203125
+        ],
+        [
+          739.07421875,
+          4982.2265625
+        ],
+        [
+          317.92578125,
+          4982.2265625
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "vincmyDoudla",
+      "confidence": 0.6237383969128132,
+      "box": [
+        [
+          305.5390625,
+          5544.9345703125
+        ],
+        [
+          338.5703125,
+          5544.9345703125
+        ],
+        [
+          342.69921875,
+          5737.98046875
+        ],
+        [
+          309.66796875,
+          5737.98046875
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "vincmyDoudla"
+      ]
+    },
+    {
+      "source": "大利",
+      "confidence": 0.5994059294462204,
+      "box": [
+        [
+          276.63671875,
+          5631.18896484375
+        ],
+        [
+          305.5390625,
+          5631.18896484375
+        ],
+        [
+          305.5390625,
+          5733.873046875
+        ],
+        [
+          276.63671875,
+          5733.873046875
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "中",
+      "confidence": 0.7518578171730042,
+      "box": [
+        [
+          111.48046875,
+          5655.8330078125
+        ],
+        [
+          144.51171875,
+          5655.8330078125
+        ],
+        [
+          144.51171875,
+          5676.3701171875
+        ],
+        [
+          111.48046875,
+          5676.3701171875
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "4",
+      "confidence": 0.5296974778175354,
+      "box": [
+        [
+          788.62109375,
+          5643.51123046875
+        ],
+        [
+          817.5234375,
+          5647.61865234375
+        ],
+        [
+          813.39453125,
+          5709.22900390625
+        ],
+        [
+          784.4921875,
+          5705.12158203125
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "4"
+      ]
+    },
+    {
+      "source": "瑞幸咖啡",
+      "confidence": 0.9994572252035141,
+      "box": [
+        [
+          359.21484375,
+          6148.71630859375
+        ],
+        [
+          697.78515625,
+          6148.71630859375
+        ],
+        [
+          697.78515625,
+          6226.75634765625
+        ],
+        [
+          359.21484375,
+          6226.75634765625
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "连续",
+      "confidence": 0.9993787407875061,
+      "box": [
+        [
+          107.3515625,
+          6247.29296875
+        ],
+        [
+          289.0234375,
+          6247.29296875
+        ],
+        [
+          289.0234375,
+          6329.43994140625
+        ],
+        [
+          107.3515625,
+          6329.43994140625
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "卖7年获得IIAC金奖",
+      "confidence": 0.9598982442509044,
+      "box": [
+        [
+          239.4765625,
+          6226.75634765625
+        ],
+        [
+          945.51953125,
+          6234.970703125
+        ],
+        [
+          945.51953125,
+          6333.54736328125
+        ],
+        [
+          239.4765625,
+          6329.43994140625
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "7"
+      ]
+    },
+    {
+      "source": "唯一连续7年荣获IIAC余奖的中回万店连锁啡品牌",
+      "confidence": 0.8843780731161436,
+      "box": [
+        [
+          161.02734375,
+          6349.97705078125
+        ],
+        [
+          887.71484375,
+          6349.97705078125
+        ],
+        [
+          887.71484375,
+          6386.943359375
+        ],
+        [
+          161.02734375,
+          6386.943359375
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "7"
+      ]
+    },
+    {
+      "source": "IIAC",
+      "confidence": 0.9887796640396118,
+      "box": [
+        [
+          404.6328125,
+          6916.79248046875
+        ],
+        [
+          639.98046875,
+          6916.79248046875
+        ],
+        [
+          639.98046875,
+          6970.18798828125
+        ],
+        [
+          404.6328125,
+          6970.18798828125
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "IIAC"
+      ]
+    },
+    {
+      "source": "0100",
+      "confidence": 0.5483074747025967,
+      "box": [
+        [
+          363.34375,
+          7011.26171875
+        ],
+        [
+          516.11328125,
+          7089.3017578125
+        ],
+        [
+          487.2109375,
+          7150.912109375
+        ],
+        [
+          330.3125,
+          7072.8720703125
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "0100"
+      ]
+    },
+    {
+      "source": "2024",
+      "confidence": 0.9968871027231216,
+      "box": [
+        [
+          404.6328125,
+          6974.29541015625
+        ],
+        [
+          644.109375,
+          6974.29541015625
+        ],
+        [
+          644.109375,
+          7035.90576171875
+        ],
+        [
+          404.6328125,
+          7031.79833984375
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "2024"
+      ]
+    },
+    {
+      "source": "MEDAL",
+      "confidence": 0.986111867427826,
+      "box": [
+        [
+          495.46875,
+          7085.1943359375
+        ],
+        [
+          701.9140625,
+          7003.046875
+        ],
+        [
+          734.9453125,
+          7089.3017578125
+        ],
+        [
+          528.5,
+          7167.34130859375
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "MEDAL"
+      ]
+    },
+    {
+      "source": "优选上等",
+      "confidence": 0.8979482501745224,
+      "box": [
+        [
+          301.41015625,
+          7660.224609375
+        ],
+        [
+          437.6640625,
+          7656.1171875
+        ],
+        [
+          437.6640625,
+          7697.1904296875
+        ],
+        [
+          305.5390625,
+          7697.1904296875
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "WBC世界冠军",
+      "confidence": 0.9177306805338178,
+      "box": [
+        [
+          557.40234375,
+          7656.1171875
+        ],
+        [
+          776.234375,
+          7660.224609375
+        ],
+        [
+          776.234375,
+          7701.2978515625
+        ],
+        [
+          557.40234375,
+          7697.1904296875
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "可拉比卡豆",
+      "confidence": 0.8307343274354935,
+      "box": [
+        [
+          293.15234375,
+          7701.2978515625
+        ],
+        [
+          454.1796875,
+          7701.2978515625
+        ],
+        [
+          454.1796875,
+          7738.26416015625
+        ],
+        [
+          293.15234375,
+          7738.26416015625
+        ]
+      ],
+      "label_id": "L039",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "精心拼配",
+      "confidence": 0.9650883376598358,
+      "box": [
+        [
+          602.8203125,
+          7701.2978515625
+        ],
+        [
+          734.9453125,
+          7701.2978515625
+        ],
+        [
+          734.9453125,
+          7738.26416015625
+        ],
+        [
+          602.8203125,
+          7738.26416015625
+        ]
+      ],
+      "label_id": "L040",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "对拉比卡豆",
+      "confidence": 0.7929353415966034,
+      "box": [
+        [
+          289.0234375,
+          7943.63232421875
+        ],
+        [
+          454.1796875,
+          7951.8466796875
+        ],
+        [
+          454.1796875,
+          7988.81298828125
+        ],
+        [
+          289.0234375,
+          7984.70556640625
+        ]
+      ],
+      "label_id": "L041",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "优选上等",
+      "confidence": 0.9572976231575012,
+      "box": [
+        [
+          305.5390625,
+          7906.666015625
+        ],
+        [
+          437.6640625,
+          7906.666015625
+        ],
+        [
+          437.6640625,
+          7947.73974609375
+        ],
+        [
+          305.5390625,
+          7947.73974609375
+        ]
+      ],
+      "label_id": "L042",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "WBC世界冠军",
+      "confidence": 0.8317326392446246,
+      "box": [
+        [
+          557.40234375,
+          7906.666015625
+        ],
+        [
+          776.234375,
+          7910.7734375
+        ],
+        [
+          776.234375,
+          7947.73974609375
+        ],
+        [
+          557.40234375,
+          7943.63232421875
+        ]
+      ],
+      "label_id": "L043",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "精心拼配",
+      "confidence": 0.8406564146280289,
+      "box": [
+        [
+          602.8203125,
+          7947.73974609375
+        ],
+        [
+          734.9453125,
+          7947.73974609375
+        ],
+        [
+          734.9453125,
+          7988.81298828125
+        ],
+        [
+          602.8203125,
+          7988.81298828125
+        ]
+      ],
+      "label_id": "L044",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "橙C美式 / Orange Americano",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 1",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L045",
+      "japanese": "オレンジCアメリカーノ（商品名）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "破亿杯！",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 2",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L046",
+      "japanese": "1億杯を突破！",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "小众宝藏也能成为爆款",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 3",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L047",
+      "japanese": "知る人ぞ知る逸品も大ヒットに",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1周年",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 4",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L048",
+      "japanese": "1周年",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "luckin coffee / 瑞幸咖啡",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 5",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L049",
+      "japanese": "luckin coffee／瑞幸珈琲（ブランド名）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "0脂 / 真果汁 / 低负担",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 6",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L050",
+      "japanese": "脂肪0／本物の果汁／軽い飲み心地",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1杯橙汁含量≈1个橙子*",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 7",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L051",
+      "japanese": "1杯のオレンジ果汁量≒オレンジ1個分*",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "浓郁橙香，清新沁爽",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 8",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L052",
+      "japanese": "豊かなオレンジの香り、すっきり爽やか",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "定制融合IIAC金奖浓缩咖啡",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 9",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L053",
+      "japanese": "特別に組み合わせたIIAC金賞のエスプレッソ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "口感丰富点亮味蕾",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 10",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L054",
+      "japanese": "豊かな味わいで味覚を刺激",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "*本饮品添加速冻橙浆/橙汁饮料浓浆，与一个150g左右橙子（根据出汁率折算，含橙汁约52.5g）折算对比。",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 11",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L055",
+      "japanese": "*本飲料に加えるオレンジの冷凍ピューレ／濃縮オレンジ果汁飲料を、約150gのオレンジ1個と換算比較（搾汁率に基づき、果汁約52.5gとして換算）。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "本饮品约1个橙子在里面。手工操作可能存在误差，仅供参考。",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 12",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L056",
+      "japanese": "本飲料には約1個分のオレンジが含まれます。手作業により誤差が生じる可能性があり、参考値です。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "大师级定制Espresso / 源自IIAC金奖咖啡豆",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 13",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L057",
+      "japanese": "熟練の技で特別に仕立てたEspresso／IIAC金賞のコーヒー豆から",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "瑞幸冠军团队经历上百次调试",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 14",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L058",
+      "japanese": "瑞幸のチャンピオンチームが100回以上の調整を実施",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "寻求多产区咖啡豆专业拼配方案",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 15",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L059",
+      "japanese": "複数の産地のコーヒー豆を専門的にブレンド",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "臻选100%阿拉比卡咖啡豆",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 16",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L060",
+      "japanese": "厳選した100%アラビカ種のコーヒー豆",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "捕捉埃塞俄比亚、巴西、哥伦比亚、危地马拉等产区风味特征",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 17",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L061",
+      "japanese": "エチオピア、ブラジル、コロンビア、グアテマラなど、各産地の風味を捉える",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "呈现独特风味与浓醇口感",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 18",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L062",
+      "japanese": "独自の風味と濃厚でまろやかな口当たりを実現",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "潘志敏 / 中国",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 19",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L063",
+      "japanese": "潘志敏／中国",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Anthony Douglas / 澳大利亚",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 20",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L064",
+      "japanese": "Anthony Douglas／オーストラリア",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agnieszka Rojewska / 波兰",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 21",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L065",
+      "japanese": "Agnieszka Rojewska／ポーランド",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Boram Um / 巴西",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 22",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L066",
+      "japanese": "Boram Um／ブラジル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "井崎英典 / 日本",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 23",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L067",
+      "japanese": "井崎英典／日本",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Andrea Lattuada / 意大利",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 24",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L068",
+      "japanese": "Andrea Lattuada／イタリア",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "瑞幸咖啡 连续7年获得IIAC金奖",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 25",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L069",
+      "japanese": "瑞幸珈琲、7年連続でIIAC金賞を受賞",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "唯一连续7年荣获IIAC金奖的中国万店连锁咖啡品牌",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 26",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L070",
+      "japanese": "7年連続でIIAC金賞を受賞した、中国で1万店を展開する唯一のコーヒーチェーンブランド",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "INTERNATIONAL COFFEE TASTING / IIAC / 2024 / GOLD MEDAL",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 27",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L071",
+      "japanese": "国際コーヒー試飲／IIAC／2024／金賞",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "优选上等阿拉比卡豆",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 28",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L072",
+      "japanese": "上質なアラビカ豆を厳選",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "WBC世界冠军 精心拼配",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 29",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L073",
+      "japanese": "WBC世界チャンピオンが丹念にブレンド",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "*瑞幸咖啡2018-2024年连续7年获得IIAC金奖，2024年金奖配方为WIDE AWAKE#A。",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 30",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L074",
+      "japanese": "*瑞幸珈琲は2018-2024年の7年連続でIIAC金賞を受賞。2024年の金賞配合はWIDE AWAKE#A。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-readable-text-translated-unreadable-source-text-remains",
+  "ocr_seconds": [
+    2.7167679999838583,
+    0.05526876449584961,
+    4.218743085861206
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {},
+    "source_note": "商品広告の画像を目視し、読める文章・数値・脚注を手動で対訳した。元OCRの不完全な断片は別途保持し、手動追記のラベルへ置き換えて読めるようにした。品質・栄養・受賞・売上・順位・試験結果は原広告の主張として訳しており、現在の事実や効果を保証する記述ではない。写真内の署名・ロゴ図形は原画素を保持。",
+    "additional_labels": [
+      {
+        "source": "橙C美式 / Orange Americano",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 1"
+      },
+      {
+        "source": "破亿杯！",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 2"
+      },
+      {
+        "source": "小众宝藏也能成为爆款",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 3"
+      },
+      {
+        "source": "1周年",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 4"
+      },
+      {
+        "source": "luckin coffee / 瑞幸咖啡",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 5"
+      },
+      {
+        "source": "0脂 / 真果汁 / 低负担",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 6"
+      },
+      {
+        "source": "1杯橙汁含量≈1个橙子*",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 7"
+      },
+      {
+        "source": "浓郁橙香，清新沁爽",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 8"
+      },
+      {
+        "source": "定制融合IIAC金奖浓缩咖啡",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 9"
+      },
+      {
+        "source": "口感丰富点亮味蕾",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 10"
+      },
+      {
+        "source": "*本饮品添加速冻橙浆/橙汁饮料浓浆，与一个150g左右橙子（根据出汁率折算，含橙汁约52.5g）折算对比。",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 11"
+      },
+      {
+        "source": "本饮品约1个橙子在里面。手工操作可能存在误差，仅供参考。",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 12"
+      },
+      {
+        "source": "大师级定制Espresso / 源自IIAC金奖咖啡豆",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 13"
+      },
+      {
+        "source": "瑞幸冠军团队经历上百次调试",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 14"
+      },
+      {
+        "source": "寻求多产区咖啡豆专业拼配方案",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 15"
+      },
+      {
+        "source": "臻选100%阿拉比卡咖啡豆",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 16"
+      },
+      {
+        "source": "捕捉埃塞俄比亚、巴西、哥伦比亚、危地马拉等产区风味特征",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 17"
+      },
+      {
+        "source": "呈现独特风味与浓醇口感",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 18"
+      },
+      {
+        "source": "潘志敏 / 中国",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 19"
+      },
+      {
+        "source": "Anthony Douglas / 澳大利亚",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 20"
+      },
+      {
+        "source": "Agnieszka Rojewska / 波兰",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 21"
+      },
+      {
+        "source": "Boram Um / 巴西",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 22"
+      },
+      {
+        "source": "井崎英典 / 日本",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 23"
+      },
+      {
+        "source": "Andrea Lattuada / 意大利",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 24"
+      },
+      {
+        "source": "瑞幸咖啡 连续7年获得IIAC金奖",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 25"
+      },
+      {
+        "source": "唯一连续7年荣获IIAC金奖的中国万店连锁咖啡品牌",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 26"
+      },
+      {
+        "source": "INTERNATIONAL COFFEE TASTING / IIAC / 2024 / GOLD MEDAL",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 27"
+      },
+      {
+        "source": "优选上等阿拉比卡豆",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 28"
+      },
+      {
+        "source": "WBC世界冠军 精心拼配",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 29"
+      },
+      {
+        "source": "*瑞幸咖啡2018-2024年连续7年获得IIAC金奖，2024年金奖配方为WIDE AWAKE#A。",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 30"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "橙C美式",
+      "Mangwo",
+      "Hmowbal",
+      "破亿杯",
+      "小众宝藏也能成为爆款",
+      "1周年",
+      "C脂",
+      "luckin coffe",
+      "真果汁",
+      "低负担",
+      "1杯橙汁含量≈1个橙子*",
+      "浓都橙香清新沁爽",
+      "定制触合IIAC金奖浓缩咖啡",
+      "口感丰富点亮味蕾",
+      "luckin coffe",
+      "二、这1个千五，平二气龙在量，天，",
+      "大师级定制Espre550",
+      "源自IAC金奖咖啡豆",
+      "瑞幸冠军团队经历上百次词试",
+      "寻求多产区啡豆专业拼配方案",
+      "臻选100%阿拉比卡啡豆",
+      "捕捉埃塞假比亚、巴西、哥伦比亚、危地马拉等",
+      "产区凤味特征",
+      "星现独特风味与浓醇口感",
+      "vincmyDoudla",
+      "大利",
+      "中",
+      "4",
+      "瑞幸咖啡",
+      "连续",
+      "卖7年获得IIAC金奖",
+      "唯一连续7年荣获IIAC余奖的中回万店连锁啡品牌",
+      "IIAC",
+      "0100",
+      "2024",
+      "MEDAL",
+      "优选上等",
+      "WBC世界冠军",
+      "可拉比卡豆",
+      "精心拼配",
+      "对拉比卡豆",
+      "优选上等",
+      "WBC世界冠军",
+      "精心拼配"
+    ],
+    "unreadable_source_text": true,
+    "source_limitation": "注いでいる瓶のラベルは手で覆われており断片しか見えないため、隠れたブランド文字を推測しない。カップ上の薄い小文字の一部は原画像の印刷・反射により判読困難。読める商品説明・脚注・人物名は対訳済み。",
+    "source_sha256": "10314aa19ed3b01136599117d0a38d94cbfb6839983012a88513b36c4a1123fe"
+  }
+}

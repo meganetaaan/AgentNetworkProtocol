@@ -1,0 +1,190 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/12-discovery.png",
+  "sha256": "71ae3a7b463405aec71379678730d9c0a37b6ca751fa7e6fcef0492be843848f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "0OOC",
+      "confidence": 0.661425806581974,
+      "box": [
+        [
+          684.0,
+          102.0
+        ],
+        [
+          710.0,
+          101.0
+        ],
+        [
+          714.0,
+          207.0
+        ],
+        [
+          687.0,
+          208.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": [
+        "0"
+      ]
+    },
+    {
+      "source": "You only know a domain",
+      "confidence": 0.9989065771753137,
+      "box": [
+        [
+          94.0,
+          263.0
+        ],
+        [
+          437.0,
+          262.0
+        ],
+        [
+          437.0,
+          295.0
+        ],
+        [
+          94.0,
+          296.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ドメインだけを知っている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "The agreed directory path",
+      "confidence": 0.9937724375724792,
+      "box": [
+        [
+          545.0,
+          262.0
+        ],
+        [
+          905.0,
+          263.0
+        ],
+        [
+          905.0,
+          296.0
+        ],
+        [
+          544.0,
+          295.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "取り決められたディレクトリのパス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "example.com",
+      "confidence": 0.9986035444519736,
+      "box": [
+        [
+          186.0,
+          305.0
+        ],
+        [
+          343.0,
+          305.0
+        ],
+        [
+          343.0,
+          330.0
+        ],
+        [
+          186.0,
+          330.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "example.com",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "example.com"
+      ]
+    },
+    {
+      "source": "/ .well-known/agent-descriptions",
+      "confidence": 0.9856654554605484,
+      "box": [
+        [
+          540.0,
+          305.0
+        ],
+        [
+          910.0,
+          305.0
+        ],
+        [
+          910.0,
+          329.0
+        ],
+        [
+          540.0,
+          329.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "/.well-known/agent-descriptions",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/agent-descriptions"
+      ],
+      "transcribed_source": "/.well-known/agent-descriptions"
+    },
+    {
+      "source": "All public programs there",
+      "confidence": 0.998351309299469,
+      "box": [
+        [
+          1035.0,
+          370.0
+        ],
+        [
+          1327.0,
+          372.0
+        ],
+        [
+          1327.0,
+          400.0
+        ],
+        [
+          1035.0,
+          399.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "そこで公開されているすべてのプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6623930000350811,
+    0.01200246810913086,
+    0.9443747997283936
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "/ .well-known/agent-descriptions": "/.well-known/agent-descriptions"
+    },
+    "false_positive_labels": [
+      "0OOC"
+    ],
+    "source_note": "ブラウザの3つの丸と検索バーをOCRが文字と誤検出した。",
+    "source_sha256": "71ae3a7b463405aec71379678730d9c0a37b6ca751fa7e6fcef0492be843848f"
+  }
+}

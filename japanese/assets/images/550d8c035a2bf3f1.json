@@ -1,0 +1,205 @@
+{
+  "source": "blogs/images/anp-did-auth.png",
+  "sha256": "550d8c035a2bf3f11f43380b0fac86374b7457c1f80af6741e5eb7595522e711",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Identity",
+      "confidence": 0.9994291663169861,
+      "box": [
+        [
+          434.0,
+          56.0
+        ],
+        [
+          529.0,
+          59.0
+        ],
+        [
+          529.0,
+          87.0
+        ],
+        [
+          433.0,
+          84.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Identity",
+      "confidence": 0.997053362429142,
+      "box": [
+        [
+          102.0,
+          357.0
+        ],
+        [
+          196.0,
+          360.0
+        ],
+        [
+          195.0,
+          389.0
+        ],
+        [
+          101.0,
+          386.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Identity",
+      "confidence": 0.9979948252439499,
+      "box": [
+        [
+          762.0,
+          348.0
+        ],
+        [
+          856.0,
+          350.0
+        ],
+        [
+          855.0,
+          378.0
+        ],
+        [
+          761.0,
+          376.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "基于DID的身份",
+      "confidence": 0.9951107427477837,
+      "box": [
+        [
+          392.0,
+          364.0
+        ],
+        [
+          558.0,
+          364.0
+        ],
+        [
+          558.0,
+          392.0
+        ],
+        [
+          392.0,
+          392.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "DIDに基づくID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Client Agent",
+      "confidence": 0.9898731062809626,
+      "box": [
+        [
+          88.0,
+          457.0
+        ],
+        [
+          222.0,
+          461.0
+        ],
+        [
+          222.0,
+          488.0
+        ],
+        [
+          87.0,
+          485.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "クライアントエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Remote Agent",
+      "confidence": 0.968294769525528,
+      "box": [
+        [
+          738.0,
+          456.0
+        ],
+        [
+          893.0,
+          458.0
+        ],
+        [
+          893.0,
+          485.0
+        ],
+        [
+          737.0,
+          483.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "リモートエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9947156111399332,
+      "box": [
+        [
+          454.0,
+          542.0
+        ],
+        [
+          507.0,
+          542.0
+        ],
+        [
+          507.0,
+          569.0
+        ],
+        [
+          454.0,
+          569.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.46480429999064654,
+    0.010004520416259766,
+    0.2248997688293457
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "550d8c035a2bf3f11f43380b0fac86374b7457c1f80af6741e5eb7595522e711"
+  }
+}

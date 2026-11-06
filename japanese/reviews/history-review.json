@@ -1,0 +1,872 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "generated_at": "2026-11-06T15:02:20.143Z",
+  "scope": "Original 33-document scope: deprecated English 15 + standards 8 + root governance/CN 5 + example CN READMEs 2 + vnext/chinese 3. Four parent-confirmed transfers remain listed as delegated; their own reviewer records are authoritative for completion.",
+  "definition": "Full requires an actual complete-source/translation semantic comparison, not a glossary replacement. Ranges are 1-based inclusive source lines. Existing two manual legacy translations are preserved. Delegated records retain only this reviewer’s actual reviewed ranges; external full markers are reported separately, not claimed as this reviewer’s work.",
+  "summary": {
+    "documents": 33,
+    "full": 29,
+    "partial": 0,
+    "unreviewed": 0,
+    "delegated": 4
+  },
+  "documents": [
+    {
+      "source": "AGENTS.md",
+      "translation": "japanese/AGENTS.md",
+      "source_sha256": "1edf85fb573003741f6ce81b3bda00c5ceb6ba6e661c3c5acf6eef4c400833b3",
+      "translation_sha256": "1b576167bbf246cba39cae8cb32d1176238efdd6655f7fde77cc251ed00b8bbd",
+      "source_line_count": 71,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          71
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=AGENTS.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "Profile所有境界の否定とanp.*名前空間外という条件を復元。",
+        "unit coverageを担当部分のユニットテストの網羅として修正。",
+        "logsをログインとする誤訳、fixtureを治具とする誤訳、壊れた文を修正。レビュー・承認条件を保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "CONTRIBUTING.cn.md",
+      "translation": "japanese/CONTRIBUTING.cn.md",
+      "source_sha256": "b4aaf876e9649b870e555cfa1534f5173b1474896bba4f8b753e18bd5e79b8a0",
+      "translation_sha256": "1a1a2be2da7326529d655b4bf4b0d92c4ec40e6bed5f67393c455460f8a55b43",
+      "source_line_count": 43,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          43
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=CONTRIBUTING.cn.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全文の貢献対象・事前議論・PR・レビュー手順を照合。十分なfeedback収集の意味とApache著作権表示を修正。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "CONTRIBUTORS.cn.md",
+      "translation": "japanese/CONTRIBUTORS.cn.md",
+      "source_sha256": "06cf771bc374a16fb807355a8d780b45e373e1d7529bfae9ca4eb542ae261726",
+      "translation_sha256": "1ea7d9c5d4e1a92457d6d80d95a1409cf28d4369053bcf8f27442b9efec9b10c",
+      "source_line_count": 34,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          34
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=CONTRIBUTORS.cn.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全19人の固有名詞を原表記へ復元。推广を拡張／延長とする誤訳を広報へ修正。",
+        "原文のCONTRIBUTINGリンクは元から参照切れ。修復を翻訳に混同せず、参照先文字列を保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "GEMINI.md",
+      "translation": "japanese/GEMINI.md",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "translation_sha256": "f4fb982968bc26c6c830e842560b2ba687ebcb3166dbe69bec3d57df47c7e020",
+      "source_line_count": 0,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=GEMINI.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文は0バイト。翻訳本文を捏造せず空文書であることを確認。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "README.cn.md",
+      "translation": "japanese/README.cn.md",
+      "source_sha256": "fa9bf4e818b3a26279b9845bf76926b2ee229ea093644d6097e4f4918413a72a",
+      "translation_sha256": "2d0aff3b458d9f90e3014bffec607f9186b8ec1175b90bd8105c7dba09243cf8",
+      "source_line_count": 213,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          213
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=README.cn.md; basis=entire Chinese original read and manually compared paragraph by paragraph; Japanese rendering adapted from the separately reviewed English mirror with Chinese-specific links and wording restored",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文中国語の全段落を照合。校閲済み英語鏡の日本語表現を基に中国語固有の参照・説明に合わせて再構成。",
+        "ANP/ANP-02をAMP等に変える誤訳、P1〜P9の別語化、ダウングレード禁止の肯定化を修正。",
+        "公開・草案・候補と文書版／wire版の区別を復元。メールアドレス・WeChat・著作権表示を原文へ復元。",
+        "中国語索引・英語鏡へのリンク、バージョン数値、全貢献者HTMLを確認。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "translation": "japanese/deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "source_sha256": "4e1630cef537d3f531e863020205567afdbbbc53252bda734969ffda0ed77be5",
+      "translation_sha256": "acce56f301c96118b0e83a38fed9fa679656ba6831f0fd4545dd297e6297e8ee",
+      "source_line_count": 131,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          131
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": null,
+      "method": "preserved-prior-manual-translation",
+      "corrections": [
+        "初回に原文全文を読み手動翻訳済み。歴史的記述と旧版の状態を保持。今回は内容を変更しない。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "translation": "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "source_sha256": "d2c30678c519336ac64ec675bf6ebc1eb8d8cc6d9dceecc3971cb614506db8c0",
+      "translation_sha256": "3bec0488f10958e5dd5d5e08c573abadab47545306a40b4997616262150b36a5",
+      "source_line_count": 254,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          254
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md; basis=entire original read and manually compared paragraph by paragraph; original examples retained",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全段落を照合。要旨・導入・CA証明書・改ざん防止・消息endpoint抽出・前方秘匿性／攻撃防止を正確化。",
+        "code span外のDID例が機械訳で大文字小文字を変えられていたため、原文のDID文字列を完全復元。",
+        "ECDHEで不正な復号を防ぐ記述を暗号化を防ぐとする誤訳、第三者message serviceの任意性、EncryptedExtensions/Certificate/Finishedの主体・否定を修正。",
+        "SourceHello等のwire名称を保持。原文の3メッセージと4矢印、WebSocket保護要否とWSS記述の不整合は推測で直さず、歴史資料であることを明示。既に切れた旧ファイル名参照を対応する日本語の歴史仕様へ修復。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/01-core-binding.md",
+      "translation": "japanese/deprecated/01-core-binding.md",
+      "source_sha256": "56c5694e364f0b776e3ae6538895c40a451afb1385b8fcda3325760cd6a7a1de",
+      "translation_sha256": "8e98afb5217379ddb5067b16de53818b8c1fbd88dcca5edb94fbe873d9855969",
+      "source_line_count": 1242,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          1242
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/01-core-binding.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全1242行と旧訳を実際に読み、本文と規範付録A/Bの全段落を照合。第1～6節215行に続き後半362本文行を再翻訳し、先のpartialを全文へ更新。",
+        "匿名能力発見時sender_did省略MAYが必須に反転、Default optional fields MUST omittedが必須に反転、規範付録Bが非規範的に見える誤訳、10進文字列を小数とした誤訳、冪等キーを秘密鍵・レート制限を電流制限とした誤訳を修正。",
+        "全13MTI・共通エラー1000～1014、JCS/RFC9530/RFC9421の責任分離、署名baseと生JSON署名禁止、Signed Request Object保護範囲と10検証手順、Object Proof全体保護範囲・assertionMethod・9検証手順を全照合。",
+        "付録B.0英語の崩れたrather than not adoptingは、対応中国語原文chinese/deprecated/01-核心绑定.md:1110の而不是整体采用で意味確認し、Data Integrity利用とVC全体不採用を訳出。英語原文は一切修正していない。全fence/inline/wireID/規範語を保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/02-did-all-method-design-specification.md",
+      "translation": "japanese/deprecated/02-did-all-method-design-specification.md",
+      "source_sha256": "b8dadd4ed9c30cc01aa6b0a8bb44e3d2d2de7a66335cbc3ddc017fd0c5fc526f",
+      "translation_sha256": "0879863552502ce44963eda795e8fa3080db0a352e5e7e13eb5f664e75114e06",
+      "source_line_count": 419,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          419
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/02-did-all-method-design-specification.md; basis=entire original prose read and manually compared; original code retained exactly",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全段落を照合し、all固有名をすべてと訳す誤り、DID解決／失効、改ざん防止、16進表現、authentication包含条件の反転を修正。",
+        "256bit/32byte、secp256r1、SHA256/RIPEMD160、0x00/0x04、checksum4byteと全HTTP methodを確認。DELETEをドレス、PUT/POSTをカタカナにする誤訳を原形へ復元。",
+        "古い本文の公開鍵署名・ECDSA説明・JWTミリ秒表記などの技術的主張は原文どおり保持し、サポート終了の歴史文書と明示。code fence/inline/署名例は変更しない。",
+        "サポート終了注の既に切れた旧did:wbaリンクは、同じ現行メソッドの日本語版パスへ修復。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/02-identity-and-discovery.md",
+      "translation": "japanese/deprecated/02-identity-and-discovery.md",
+      "source_sha256": "a82e8ad19e79d2c0c4ca4670523181dbe4201c516106281e59e58cdb90f95cfe",
+      "translation_sha256": "2e615657b372fbd6a867dfd3e8542d6166d52b0dc122b254eb892ba805aa70b3",
+      "source_line_count": 763,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          763
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/02-identity-and-discovery.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全763行と旧機械訳を読み、全段落を照合・350本文行を再翻訳。fence/inline/識別子と原文のReleased/1.1/v1を保持しdeprecated内の旧版と明示。",
+        "serviceDidはDID文字列でありDID URLではないMUSTが逆転していた誤訳、動的状態をDID文書へ入れてはならない否定の消失、少数静的ヒントを多数とした誤訳、ANPMessageServiceを未確認とした誤訳を修正。",
+        "Agent/Group/ServiceのID3層、authentication/assertionMethod/keyAgreement/capabilityInvocationの条件、1つの外部入口、静的vs実行時ヒント、endpoint-local例外、8MTI、添付ticket発見の元送信者DIDとobject_uri/group_didの禁止を全文確認。controllerとグループ業務ロールの区別、関連付けリスクも修正。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/03-direct-messaging-base-semantics.md",
+      "translation": "japanese/deprecated/03-direct-messaging-base-semantics.md",
+      "source_sha256": "5c8a25c9c9ba9f42aee72f4bc424fed98f3758c52b2964dc73ed19e4f1bc313b",
+      "translation_sha256": "07aa72c1b912726230bddd8583634ea4fae9b8e54fd230bbc9470daaa70f3703",
+      "source_line_count": 803,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          803
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/03-direct-messaging-base-semantics.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全803行と旧機械訳を読み、全段落を照合・323本文行を再翻訳。コードフェンス、inline/wire識別子、原文のReleased/1.1/v1を保持しdeprecated内の旧版と明示。",
+        "target.kindがagentでない場合の拒否条件がagentの場合に反転していた誤訳、P1共通proof定義をもはや独自定義しない否定の消失、deniabilityを耐久性にした誤訳、payload_b64uのpaddingなし条件の逆転、受信者・拒否の用語崩壊を修正。",
+        "成功は入口受理のみ（既読・表示・永続化ではない）、3payload厳密排他、direct.incoming必須/Notification/no response、operation_id優先の冪等処理、再送任意、Origin Proofとホップ認証、e1_ DID結合の5条件、E2EE優先時のproof上書きとdowngrade禁止、全11MTI項目・全エラー2000～2007を確認。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "translation": "japanese/deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "source_sha256": "9f1c0df14e2d25bcdfcdcab19aa43054462aed79bb9fa5ab196aa72df2899b03",
+      "translation_sha256": "046eef66d0e32b1ded6ad8fb10b832127584b1661989a95911dd05bbe29f1a3d",
+      "source_line_count": 540,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          540
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全540行と旧訳の全段落を読み、全本文・フィールド説明139箇所を再翻訳。繰り返しの説明にも同じ全文照合済み訳を適用。インデント付きPythonも含め全fenceとinlineを原文保持。",
+        "ECDHEをELLHE、悪意ある復号防止を暗号化防止、有効性を期限切れに反転、第三者サービス任意を不存在、Finishedのハッシュ/暗号化不要の否定消失を修正。DID/allを普通名詞にせず、全fieldと暗号スイート・ラベルの大小文字を復元。",
+        "秒/ミリ秒、16/32文字、12/16バイトと96/128ビット、8バイト→16桁、HKDF saltなし/初期ゼロ、s ap traffic/d ap traffic/keyを照合。原文の3messagesと図4arrows、WSS不要/鍵一対一等は修復せず歴史的主張と明示。白書の元リンク切れは対応する歴史日本語白書へ修正。原文のMIT表示と存在しないdeprecated/LICENSEへのリンクは、現行ライセンスへ黙って置換せず保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/04-group-messaging-base-semantics.md",
+      "translation": "japanese/deprecated/04-group-messaging-base-semantics.md",
+      "source_sha256": "e8460f0c89bf39a7decd4eed4a5d5f8cbfa7a80d83b2d909ea2d044489b230d2",
+      "translation_sha256": "35bdfb36dc358de5a4810227aa6762e60921fbb77ff73e6d11651cbddadd5323",
+      "source_line_count": 1752,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          1752
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/04-group-messaging-base-semantics.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全1752行と旧訳の全段落・表を実際に読み、前半236行・後半238行の本文に加えて型フィールドと見出しを再翻訳。先のpartialを全文へ更新。全fence/inline/規範語/wire識別子を保持。",
+        "GroupReceiptの署名は要求開始者ではなくグループ受理を証明する点の反転、DID-only識別の否定、Handle後付けメソッド未定義の否定消失、group.get_info匿名時sender_did省略MAYの必須化、10進文字列・ロール・順序付け誤訳を修正。",
+        "入群2経路、opaque state_versionとmonotonic event_seq、送信はstate版非更新、OriginProof/ObjectProofの責任と保護範囲、OPTIONAL push2種、全18MTI・エラー3000～3014を確認。3004欠番は原文のまま。",
+        "Handle永久譲渡/再利用不可、WNS双方向とgeneration厳密増加、新DIDproof・旧署名だけは不十分、7受理前検証と原子的更新、旧DID認可即停止、P6newadd→oldremove/業務停止とMLSCommit非代替、過去署名不改変、プライバシー境界を全文照合。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "translation": "japanese/deprecated/05-direct-end-to-end-encryption.md",
+      "source_sha256": "c532059a717de54fda416bd1ad24019ac4b8a651bd14724fa320285f7fb65f1c",
+      "translation_sha256": "deca0762014831bc2940bbf76e8f51dc016e6e97954c58d3aaa2c9edac2a2231",
+      "source_line_count": 1631,
+      "status": "delegated",
+      "review_owner": "translation_guides (parent-assigned EN/CN pair)",
+      "external_full_marker_present": true,
+      "reviewed_source_ranges": [],
+      "unreviewed_source_ranges": [
+        [
+          1,
+          1631
+        ]
+      ],
+      "review_marker": "machine-fully-reviewed; scope=full-document-source-lines-1-1631; inventory=japanese/reviews/deprecated-p5-review.json",
+      "method": "pending-full-semantic-comparison",
+      "corrections": [],
+      "basis": "No full semantic review claimed; this file remains machine-translated and unreviewed in this work batch."
+    },
+    {
+      "source": "deprecated/05-message-service-protocol-based-on-did.md",
+      "translation": "japanese/deprecated/05-message-service-protocol-based-on-did.md",
+      "source_sha256": "9a121586d15d13fa071bd4eeb32de0e4d33319d464090e778e75431a808f1046",
+      "translation_sha256": "2f840ca491581775f35080ee34468836d00e9ce805a79632772b8c68d40fd279",
+      "source_line_count": 352,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          352
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": null,
+      "method": "preserved-prior-manual-translation",
+      "corrections": [
+        "初回に原文全文を読み手動翻訳済み。原文から抽出したコード例をそのまま挿入。今回は内容を変更しない。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/06-group-end-to-end-encryption.md",
+      "translation": "japanese/deprecated/06-group-end-to-end-encryption.md",
+      "source_sha256": "e59cdb0e34a6d28bf7f83e8d666db191baff8546de8dc38ba5a520fe41060582",
+      "translation_sha256": "c7616b2106385ed497c2f46bfe1493b290a01402d28876dab1fa8b9ad54ff759",
+      "source_line_count": 2074,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          2074
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; scope: entire original source; paragraph-by-paragraph agent review; source code unchanged",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全2074行（終端改行除く2073行）を実際に読み、全日本語本文を再照合。旧固有256本文行を手動再訳し、全文校閲済み現行P6と原文が完全一致する543行を実際に再読して再利用。25フェンス・522コード行と各行inline/規範語が一致することを検証。",
+        "旧版の1 Agent＝1外部MLSメンバー、現在agent_didのCredentialIdentity、ownerだけがMLSController、business P4とcrypto P6の責任分離を保持。currentの原文一致段落に付いたdevice例外訳注2つが旧版へ混ざることを最終全読で発見し除去。Released/1.1/v1識別子は現行候補/v2へ変更しない。",
+        "Handle再バインドはAdd新DID→Remove旧DIDの2Commit/2epoch、同じP4stateRef、受理からRemove成功までアプリケーション停止、中間epochは業務メッセージ禁止、各失敗時停止維持と再試行、P4rollback禁止を全照合。owner更新は新DIDoriginproof/旧Leafから過渡Add/新LeafからRemove、state喪失はfail closed/Hostからepoch秘密配布禁止を確認。",
+        "MTI23項・エラー5000～5012、KeyPackage消費/失効/取消とratchet_tree新メンバー限定、UTF8JCS/AAD/ObjectProofassertionMethod、message3payload排他、receiptとfork検知を全照合。原文のBefore group.create成功/状態成立済み矛盾、SHOUNT誤綴り（対応CNの不应で意味確認）、Cryptozoological誤語、authentication methodとassertionMethodの呼称差は本文を黙って現行へ修復せず訳注。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/07-attachments-and-object-transfer.md",
+      "translation": "japanese/deprecated/07-attachments-and-object-transfer.md",
+      "source_sha256": "37d4f7501276132228785d12c9c1fa289c8f07c59c5a9dbdd3ce85d05acd8fff",
+      "translation_sha256": "77345bc637ced11f5aef330f221cec3aaa0fc93c327d5a18c3dce679b15bf676",
+      "source_line_count": 1593,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          1593
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/07-attachments-and-object-transfer.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文1593行と旧訳の全段落を実際に読み、413本文行を修正。全4制御メソッド・21MTI・6000～6013エラー・16実例見出しを照合。コードフェンス/inline/wire識別子/Released1.1v1は保持。",
+        "expected_sizeは元ファイルではなく暗号文アップロード長という条件の逆転、オブジェクト存在とダウンロード可能性の否定消失、decimal stringの小数/小文字誤訳、規範暗号手順を仮とした誤訳、未commitを否定するエラー誤訳を修正。",
+        "3プレーン、create/commitだけでは認可されないAccess Grant、元の送信者DIDによるserviceDid発見、5分/32鍵byte/12noncebyte/16tagbyte、空AAD・鍵再利用禁止・ciphertext/plaintextのdigestと長さを全照合。origin_proof不要の制御プレーンとメッセージ署名の区別、権利遡及撤回非保証も確認。",
+        "原文のSigned Direct/Group Payloadという用語やgroup.sendのE2EE実例は現行P1/P6へ修復せず、旧稿固有の主張として注記。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/08-federation-and-cross-domain.md",
+      "translation": "japanese/deprecated/08-federation-and-cross-domain.md",
+      "source_sha256": "6ce9c430ee55208ef986b9cbf5693bd4014d773d2d2c58181c0a17b1b311da8e",
+      "translation_sha256": "0337879ceb4f6f4c9d228d9c0ca054ac8e89ac8ce35843892794e48316b6a3f2",
+      "source_line_count": 632,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          632
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/08-federation-and-cross-domain.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文632行の全文を読み、すべての本文・表現を照合し261本文行を再翻訳。原文のReleased/1.1は当時の状態として明示し、deprecatedの位置付けとv1識別子を保持。",
+        "外側HTTP認証でサービス自身のDIDを使うMUSTが逆転していた重大誤訳、Origin Proofを変更せず保持するMUSTが変更を指示していた重大誤訳、中継ラッパー非推奨の肯定化を修正。",
+        "通常要求のmeta.sender_didとグループ通知のbody.group_didというcaller anchorの相違、serviceDid/keyidの8手順、E2EE透過性、順序付け、12最小相互運用要件を全件確認。冪等性を免責とした誤訳、再試行のID保持、チケット取得とダウンロード成功の違い、ダイジェスト・復号後検証も修正。全fence/inline/規範語/識別子は保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "translation": "japanese/deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "source_sha256": "e8a0b6a4f828f9cd457f34f78432c39ec2d2cdf4860ee4d9097886628d29cedc",
+      "translation_sha256": "27bc840b710f0a487815645bd30728142383ad3f66685c856ce8e7e58a3f6a44",
+      "source_line_count": 549,
+      "status": "delegated",
+      "review_owner": "translation_blogs (parent-confirmed EN/CN pair)",
+      "external_full_marker_present": true,
+      "reviewed_source_ranges": [],
+      "unreviewed_source_ranges": [
+        [
+          1,
+          549
+        ]
+      ],
+      "review_marker": "full; source=deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "method": "pending-full-semantic-comparison",
+      "corrections": [],
+      "basis": "No full semantic review claimed; this file remains machine-translated and unreviewed in this work batch."
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "translation": "japanese/deprecated/09-message-mentions.md",
+      "source_sha256": "fc8a654c5ab0b8df1c6343c1256077f263734d27dbd549e0c9a5d20c659344c5",
+      "translation_sha256": "366162fc4dc5c0c465ce4d3a96f0b5ca7fe35c3a8fe043e9d8e7fa2165b8145c",
+      "source_line_count": 825,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          825
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=deprecated/09-message-mentions.md; basis=entire original prose read and compared paragraph by paragraph; all original examples preserved bytewise apart from line endings",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全段落を照合し、第1〜14節の説明・用語・全規範文・表を修正。以前の部分校閲を完了に更新。",
+        "Unicodeコードポイント範囲のstart包含/end非包含、JSON解析後/UI正規化前という算定条件、表示名とDIDの違い、selector解決snapshotを正確化。",
+        "sender proof、認証／認可、冪等性、各MUST/MUST NOT/SHOULD/MAYの主体・否定・条件を修正。サーバー運用制限とメンション固有認可を区別。",
+        "第9節の12検証手順・第13節の12相互運用要件・将来拡張の範囲を全文修正。歴史的v1識別子・コードfence・inline識別子は保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "examples/did-authentication-vnext/README.cn.md",
+      "translation": "japanese/examples/did-authentication-vnext/README.cn.md",
+      "source_sha256": "bda02bfd04929f087843c2fa662fd779ee4af45569791ff27c8c4ed3dc3ee0a1",
+      "translation_sha256": "1225631b4e69515e2e7001d0f0bfa94a92d75c6f824bb20534edc5a25c12cb86",
+      "source_line_count": 68,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          68
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=examples/did-authentication-vnext/README.cn.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全段落を再翻訳。fixtureの証拠境界、SDK未実行、10識別子、Node22、固定時計、既定の無書込比較／--writeの差を復元。",
+        "HTTP/JSON/ORIGIN署名を相互交換できないこと、認証シナリオが追加適合要件でないこと、E1の故意の負例を修復してはならないことを正確化。",
+        "WNS方法差と全4メソッド組合せを復元。元のshell fences/inline識別子を保持。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "examples/message-vnext/README.cn.md",
+      "translation": "japanese/examples/message-vnext/README.cn.md",
+      "source_sha256": "1f3cab7a700cc41f0337afc8b058562cad4b0a647bea772d237950745c1157fd",
+      "translation_sha256": "0e4b8064e245ec46c2707060ae319b7032bffb811a74659a7ca001f839c0ccde",
+      "source_line_count": 29,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          29
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=examples/message-vnext/README.cn.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全文照合。説明用のplaceholderであり暗号テストベクトルとして使用禁止であることを復元。",
+        "DID継続性はalsoKnownAs/current_didだけでは確立できないという否定を復元。P5の独立暗号化・冪等性、P6候補の公開条件を正確化。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+      "translation": "japanese/standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+      "source_sha256": "f3455e6dd99a98434932c4c11cbbd32004c0cff0fa9b1e87fcec9cae25841bb0",
+      "translation_sha256": "3497871679aa77996ce8f372598e64615c76193bd6f76330f257defc54c18659",
+      "source_line_count": 420,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          420
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md; basis=entire original read and manually compared paragraph by paragraph; original examples retained exactly",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "中国語原文全段落をEN鏡と独立に照合。共通する説明には同じ日本語表現を使用し、RAR/UMAの原語説明差を反映。",
+        "英語と異なるMermaidフローを含む原文の全8fenceを保持。否定・Authn/Authz・AS/RS主体を修正。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+      "translation": "japanese/standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+      "source_sha256": "774d9694aeeedea14666e44a98d61abb07be8272aa2b52d8b304db5aef56c29a",
+      "translation_sha256": "3f28f84c4aff0e32567af40f190e8bbe27c6a62087b80ca813c27d86cce7c1fa",
+      "source_line_count": 377,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          377
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md; basis=entire original read and manually compared paragraph by paragraph; original examples retained exactly",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全段落を再翻訳。Authn/認証とAuthz/認可、否定、主体、token発行者AS、DPoP/RAR/UMAの役割を修正。",
+        "略語と5種類のanp.* type見出し、client_id/redirect_uri等を原形へ復元。",
+        "原文の提案上の強い技術的主張・例の不整合は修正せず、その資料の主張の翻訳であって現ANP05適合ではない旨を明示。全8fenceは原文と同一。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "translation": "japanese/standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "source_sha256": "90539683db5ac4e4b54eef1adf4bcf110b1c00c5ad5f6e79e10dd1fcfe93a936",
+      "translation_sha256": "a16e628445baec0c6a46fd6f77cf64764683a89267de7b2a80369447756f3167",
+      "source_line_count": 1249,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          1249
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "中国語原文全1249行のうちコードフェンス外の381非空本文行・表行を英語対応段落と全件実際に読んで照合。意味が一致する本文には校閲済み日本語を用い、独自の表外枠・二つの取得方式という表現を反映。",
+        "英語と異なる中国語コードコメント・コードフェンスを含め、すべてのフェンスはこの中国語原文固有の内容を保持。認証/認可、AS/RS/IdP、事前登録、条件・否定・数値を各原文から確認。",
+        "完全互換・影響ゼロ等は原文の主張として保持し、現行仕様への適合や暗号安全性の検証とは明確に区別。全文照合は単語の一括置換による判定ではない。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "translation": "japanese/standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "source_sha256": "6261d91151f36888de8f9a039eff6b8d844a0a78b9c3013e635fddce0a46ec16",
+      "translation_sha256": "fb619d4c995a38fe3e9ce71985655d949df869f4776a768fdfa4ffe3d829584c",
+      "source_line_count": 1282,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          1282
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/W3C-proposal/DID-OAuth-Integration-Solution.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全1282行のうちコードフェンス外の381非空本文行・表行を全件読み、全段落を再翻訳。コードフェンスは原文のまま保持。",
+        "Authn/認証とAuthz/認可、AS/RS/IdPの責任、DIDはOAuthを置換しない条件、事前登録/PKCE/Refresh失敗時だけ再認証、VCからRARへの対応付けを照合。誤訳されたclient_id/private_key_jwt/DPoP/VC/VPなどを復元。",
+        "全数値・閾値・10/100/500回毎時とmax_depth 1/3/5、各RFC番号、不要/必須・できないの否定を照合。原文の完全互換・影響ゼロ・設定だけ必要など広い主張は修正せず、歴史的提案者の主張であり検証結果ではない旨を注記。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/bak/Backup Init Version.md",
+      "translation": "japanese/standard/bak/Backup Init Version.md",
+      "source_sha256": "4141cdc72a71052f08ab0f44e8eb50c6efe21769efe2b3c58689686efbdfbc24",
+      "translation_sha256": "e00de2824b4b0c80ec4aa16a934a1b123f6ab86d98cb537f3474b4e693053cdd",
+      "source_line_count": 379,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          379
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/bak/Backup Init Version.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全379行を実際に読み、全文照合済み後稿と完全一致する段落を再利用し、初期稿固有の全段落は個別に再翻訳・照合。単語の一括置換だけによるfull判定ではない。",
+        "REQUIRED/MUST/SHOULD/MAYの強度・主語、長短期タスク・主従/対等/購読方式・公開範囲・多重化・移動管理を照合。数値100ms/50%と引用の1573–1583頁を確認・修正。",
+        "認可/認証・ID・処理主体・否定、壊れた社名、IETF/Simplified BSDの使用許可・名称利用禁止・無保証・免責を修正。目次/付録番号、文献・URL・placeholder、原文の不整合を保持。壊れたbak/pic参照は実在するstandard/picの原画像へ調整。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "translation": "japanese/standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "source_sha256": "9a6617b2aecdb41a44a30fc5fe125ddb7d2f0b59a8605221fa047a581e657367",
+      "translation_sha256": "73ad6016fb7a30f6ce4dcec4ae2f17f1166b125748b1f6760347b826ca4f9ab6",
+      "source_line_count": 395,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          395
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/bak/Framework for AI Agent Communication in Trust Domain.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全395行を実際に読み、全文照合済み最新版と完全一致する段落を再利用し、旧稿固有の全段落は個別に再翻訳・照合。単語の一括置換だけによるfull判定ではない。",
+        "送受信者、認証/認可、100ms遅延、50%空き率、6G/NRF登録、スキル名、直接/間接通信、QoS、公開の否定を確認・修正。",
+        "IETF/Simplified BSDの許可と禁止を全文照合し、宣伝への名称利用禁止と無保証・免責を反転から復元。目次/付録番号、文献・URL・placeholder、原文の不整合を保持。原文bak/picの壊れた参照だけは実在するstandard/picの同名原画像へ調整。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/bak/draft-name-wg-word1-word2-00.md",
+      "translation": "japanese/standard/bak/draft-name-wg-word1-word2-00.md",
+      "source_sha256": "0cdc971c551d407b3b3be2c8c3e6f3e54fdf3f5365bef53503c1eb2f548d4914",
+      "translation_sha256": "2f7dbac25861b1dac0edf6be0bc927344049ac76036ab2d39779d923a006ba6c",
+      "source_line_count": 151,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          151
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/bak/draft-name-wg-word1-word2-00.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全文照合。壊れたYAMLキー・値・author情報を原文のまま復元。",
+        "生成系のfront matter、boilerplate、anchor、{{reference}}、属性指定、TBD値、コードfenceを原形保持し、説明文を日本語化。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "standard/draft-zyyhl-agent-networks-framework-00.md",
+      "translation": "japanese/standard/draft-zyyhl-agent-networks-framework-00.md",
+      "source_sha256": "9b089f5f087fd5415d6a7654c780d548cd3c614d59ccb5eff4a5a00e8c4a4425",
+      "translation_sha256": "6f52ad0bd17b9fcf88b756f527e660d611ad3499c1b3d4d4b57cc743026ffac1",
+      "source_line_count": 545,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          545
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=standard/draft-zyyhl-agent-networks-framework-00.md; method=full-original-to-translation-semantic-comparison",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "原文全545行のYAML・本文・図を実際に照合し、本文全段落を再翻訳。AI Agentの長い重複文字列、JSON/JSON-LD、プレゼンテーション層、全二重通信、マルチモーダル、task0/sub-task1/2を修正。",
+        "登録・発見・応答・セッション確立・中継ルーティングの送受信者の逆転、認可と認証、一意とは限らない条件、100msの遅延、所有者承認と公開抑制を修正。",
+        "YAML全体、3つの図のフェンスと内容、kramdownディレクティブ・参照マクロ・図属性を原文どおり復元。単一ドメイン適用範囲と後段のクロスドメイン主張など原文の不整合は改変せず、歴史的草案として明示。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    },
+    {
+      "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "translation": "japanese/vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "source_sha256": "e1fdfe9cd41cd57ed067089b9ca4813a2468e0fad22a421c682537a85a41c3b3",
+      "translation_sha256": "017e60857e647824d6401d44332b6e5845616a1d8aabbf4f116e309431ce5c2f",
+      "source_line_count": 763,
+      "status": "delegated",
+      "review_owner": "asset_images (parent-assigned continuation)",
+      "external_full_marker_present": true,
+      "reviewed_source_ranges": [
+        [
+          1,
+          70
+        ],
+        [
+          587,
+          587
+        ],
+        [
+          589,
+          589
+        ],
+        [
+          598,
+          598
+        ]
+      ],
+      "unreviewed_source_ranges": [
+        [
+          71,
+          586
+        ],
+        [
+          588,
+          588
+        ],
+        [
+          590,
+          597
+        ],
+        [
+          599,
+          763
+        ]
+      ],
+      "review_marker": "full; scope: entire original source; method: Chinese-original-full-comparison; inventory: japanese/reviews/chinese-vnext-review.json",
+      "method": "partial-source-range-comparison",
+      "corrections": [
+        "今回の校閲は原文1〜70行。草案／候補／公開版の差、規範要件を追加しない資料性、認可の範囲、主体、2層の役割を再翻訳。",
+        "1億人を100万人へ、許可不要をライセンス化へ変える誤訳、行動と判断・Computer Useの限界の否定を修正。",
+        "以前から特定行587/589/598にあるOAuth/VC分離の手動訳は保持。その他の本文は未校閲。"
+      ],
+      "basis": "Only the explicitly recorded source range was compared and corrected. The rest remains machine-translated and unreviewed."
+    },
+    {
+      "source": "vnext/chinese/P4-群组基础语义.md",
+      "translation": "japanese/vnext/chinese/P4-群组基础语义.md",
+      "source_sha256": "42b208a53d208096592bcf411352b0ac13346be11c18cf2616e89ac62a019bab",
+      "translation_sha256": "2c1d9d86a2f9963328b1da280a381d3c8174d325fe60264ca68bcb05a5361bba",
+      "source_line_count": 1611,
+      "status": "delegated",
+      "review_owner": "asset_images (parent-assigned continuation)",
+      "external_full_marker_present": true,
+      "reviewed_source_ranges": [
+        [
+          1,
+          52
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          1108,
+          1108
+        ]
+      ],
+      "unreviewed_source_ranges": [
+        [
+          53,
+          63
+        ],
+        [
+          65,
+          1107
+        ],
+        [
+          1109,
+          1611
+        ]
+      ],
+      "review_marker": "full; scope: entire original source; method: Chinese-original-full-comparison; inventory: japanese/reviews/chinese-vnext-review.json",
+      "method": "partial-source-range-comparison",
+      "corrections": [
+        "今回の校閲は原文1〜52行。未公開vNextという状態、招待／membership_request等の中核対象外、メンバー追加の2経路、定義する操作と定義しない範囲の否定を修正。",
+        "排序を順序付け、device/internal replica・Join Token等の用語を正確化。規範キーワードの意味を修正。",
+        "以前から特定行64/1108にあるOrigin Proofと任意access tokenの手動訳は保持。その他の本文は未校閲。"
+      ],
+      "basis": "Only the explicitly recorded source range was compared and corrected. The rest remains machine-translated and unreviewed."
+    },
+    {
+      "source": "vnext/chinese/README.md",
+      "translation": "japanese/vnext/chinese/README.md",
+      "source_sha256": "422ff60f670b037ee364d13165b58d2cfea0618f67713df31a61ac26cdd4b8b8",
+      "translation_sha256": "111622382bf2a2c657b7e90ec8c986407b2a0b50a31611323af69b1b45be3088",
+      "source_line_count": 26,
+      "status": "full",
+      "review_owner": "translation_history",
+      "external_full_marker_present": false,
+      "reviewed_source_ranges": [
+        [
+          1,
+          26
+        ]
+      ],
+      "unreviewed_source_ranges": [],
+      "review_marker": "full; source=vnext/chinese/README.md; basis=entire original read and manually compared paragraph by paragraph",
+      "method": "full-original-to-translation-semantic-comparison",
+      "corrections": [
+        "全文再翻訳。ANP1.2対象外・P4/P6方法とsecurity mode結合・DID業務メンバーとMLS準備状態の区別を復元。",
+        "機械訳で欠落していた正式公開前のreviewとclient/AS/RS相互運用検証の必須条件を復元。"
+      ],
+      "basis": "The complete source prose and translation were read and compared paragraph by paragraph. Preserved examples were checked as literal source content; this is not protocol, cryptographic, or runtime conformance verification."
+    }
+  ]
+}

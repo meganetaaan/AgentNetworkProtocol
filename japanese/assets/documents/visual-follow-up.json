@@ -1,0 +1,438 @@
+{
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "method": "local-media-extraction-local-RapidOCR-1.4.4-source-pixel-inspection-and-manual-Japanese-translation",
+  "model_api_calls": 0,
+  "native_renderer_check": {
+    "checked": [
+      "PATH soffice/powerpnt",
+      "HKLM/HKCU App Paths POWERPNT.EXE",
+      "HKLM PowerPoint.Application CLSID",
+      "Office ClickToRun Configuration",
+      "Program Files standard Office/LibreOffice directories"
+    ],
+    "result": "not-found-in-checked-locations",
+    "native_pptx_rendered": false,
+    "visible_gui_launched": false,
+    "settings_changed": false,
+    "software_installed": false
+  },
+  "pdf_pages_overview_rechecked": 75,
+  "pdf_unique_embedded_images_previewed": 111,
+  "pdf_embedded_image_uses": 298,
+  "pdf_extra_images_ocr_assisted": 6,
+  "pptx_media_checked": 15,
+  "pptx_slides_xml_text_already_translated": 24,
+  "pptx_native_slides_rendered": 0,
+  "original_binaries_unchanged": true,
+  "full_visual_translation_verification": false,
+  "independent_second_review": false,
+  "assets": [
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image1.png",
+      "slides_referencing_including_layout_master": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "dimensions": [
+        531,
+        282
+      ],
+      "sha256": "e2c70c565100b681a6cb04ad9d111567da5bb14f6393b20e68c1f5ca51e75296",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image1.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 3,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image6.png",
+      "slides_referencing_including_layout_master": [
+        10
+      ],
+      "dimensions": [
+        1284,
+        730
+      ],
+      "sha256": "ceabc1c337836acd65aed5ee0f987f9f2cba19c4233d6cab4b90956391130624",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image6.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 11,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image5.png",
+      "slides_referencing_including_layout_master": [
+        9
+      ],
+      "dimensions": [
+        1084,
+        606
+      ],
+      "sha256": "a6de1971bff240b8a8c0503ffa624f74a3ed808e8abb9b94515be8fd35ec6955",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image5.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 20,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image7.png",
+      "slides_referencing_including_layout_master": [
+        11
+      ],
+      "dimensions": [
+        969,
+        734
+      ],
+      "sha256": "758c03c645c2507ca2864247d68badb57af43400a0c809a0e96dd2252b227884",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image7.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 18,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image3.jpg",
+      "slides_referencing_including_layout_master": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "dimensions": [
+        1024,
+        768
+      ],
+      "sha256": "a1f9ab81d46202cebed92ee209dd7d8a4ef568d28ca05a1716c653c43dbdf387",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image3.jpg",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image2.png",
+      "slides_referencing_including_layout_master": [
+        2
+      ],
+      "dimensions": [
+        350,
+        200
+      ],
+      "sha256": "2a39c25349d213c50e9bba319a3223556082eee2d16783f8b65d9fbc4eca1a53",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image2.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 3,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "source_part": "ppt/media/image4.png",
+      "slides_referencing_including_layout_master": [
+        2
+      ],
+      "dimensions": [
+        400,
+        400
+      ],
+      "sha256": "f36dc9ae924a4c2a1eb02da1f3d43c449d205aadd6ff428c111d2ac463fed8d8",
+      "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image4.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image1.png",
+      "slides_referencing_including_layout_master": [
+        2
+      ],
+      "dimensions": [
+        80,
+        75
+      ],
+      "sha256": "d83064d9814b4a8c8e3615b4e15925cbf7172fbfc2d41a6ae829ee1ad92e2c36",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image1.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image2.png",
+      "slides_referencing_including_layout_master": [
+        2
+      ],
+      "dimensions": [
+        78,
+        74
+      ],
+      "sha256": "658533aad0f222956458dbf00baf52b13196a5618e402195969d93b34d80f840",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image2.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image3.png",
+      "slides_referencing_including_layout_master": [
+        2
+      ],
+      "dimensions": [
+        75,
+        66
+      ],
+      "sha256": "ba8bd980b241ff179e1093c51f81e6a17255f5e0e86cc24177533d96c6591761",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image3.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image4.png",
+      "slides_referencing_including_layout_master": [
+        6
+      ],
+      "dimensions": [
+        354,
+        321
+      ],
+      "sha256": "57c99673b8f716f66d381d0bb3f9c7ba41834548d0542674aece35f94bb2cb55",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image4.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 1,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image5.png",
+      "slides_referencing_including_layout_master": [
+        6
+      ],
+      "dimensions": [
+        287,
+        255
+      ],
+      "sha256": "9516b2efe7d75da3394cedfe4ef309f247302ab55fea5bc49ff0616719c3d547",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image5.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 2,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image6.png",
+      "slides_referencing_including_layout_master": [
+        6
+      ],
+      "dimensions": [
+        654,
+        306
+      ],
+      "sha256": "a55228d49d93f5f6ce4c8fe447b54a8ac9115639af823d2df207ac0058664fbc",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image6.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image7.png",
+      "slides_referencing_including_layout_master": [
+        6
+      ],
+      "dimensions": [
+        514,
+        500
+      ],
+      "sha256": "96fa0057969660fc93a249104ff5cce45f99bf323e0f93d1c521be282dbf8a52",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image7.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "source_part": "ppt/media/image8.png",
+      "slides_referencing_including_layout_master": [
+        6
+      ],
+      "dimensions": [
+        116,
+        116
+      ],
+      "sha256": "0b9d07f9636b7975b1d465b1c2f193270e16843bbce59938fa8fb712139bcc3f",
+      "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image8.png",
+      "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+      "native_slide_rendered": false,
+      "local_ocr_label_count": 1,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+      "pages": [
+        12
+      ],
+      "dimensions": [
+        1172,
+        960
+      ],
+      "sha256": "e9401d87872169cf88288b9f5abf919bbbbd680db9f02f165c24a9f40f87fd4b",
+      "path": "japanese/assets/documents/source-figure-images/asset-011.png",
+      "visual_status": "readable-prose-manually-translated",
+      "local_ocr_label_count": 20,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf",
+      "pages": [
+        3
+      ],
+      "dimensions": [
+        783,
+        546
+      ],
+      "sha256": "82ff161c097b720e52a0053c4667843b3acc985cfe076cfc1696b47649197979",
+      "path": "japanese/assets/documents/source-figure-images/asset-022.png",
+      "visual_status": "readable-prose-manually-translated",
+      "local_ocr_label_count": 18,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+      "pages": [
+        3
+      ],
+      "dimensions": [
+        300,
+        207
+      ],
+      "sha256": "3af93a067ac6112a5c028577f02fdbe45ed9f71ca8432a59bff5b573465a6bbb",
+      "path": "japanese/assets/documents/source-figure-images/asset-098.jpeg",
+      "visual_status": "source-pixels-inspected-microtext-not-decipherable",
+      "local_ocr_label_count": 1,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+      "pages": [
+        3
+      ],
+      "dimensions": [
+        951,
+        599
+      ],
+      "sha256": "476cc1ad3a4a86b963ef027d52c926087edc1cd0f3c07ff15adbef0b7268dab5",
+      "path": "japanese/assets/documents/source-figure-images/asset-101.jpeg",
+      "visual_status": "readable-prose-manually-translated",
+      "local_ocr_label_count": 26,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+      "pages": [
+        4
+      ],
+      "dimensions": [
+        317,
+        327
+      ],
+      "sha256": "e6c1173eaba9e8cd0e6cab95d31d419dc24b1f0d487eb0dcd6e07344aa2cfab4",
+      "path": "japanese/assets/documents/source-figure-images/asset-102.jpeg",
+      "visual_status": "source-pixels-inspected-microtext-not-decipherable",
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    },
+    {
+      "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+      "pages": [
+        4
+      ],
+      "dimensions": [
+        324,
+        327
+      ],
+      "sha256": "3db89e883c6fcc77a5cf26f47b58666dfdd2e34df26b1ce77b34e3a59b84ae8d",
+      "path": "japanese/assets/documents/source-figure-images/asset-103.jpeg",
+      "visual_status": "source-pixels-inspected-microtext-not-decipherable",
+      "local_ocr_label_count": 0,
+      "local_ocr_status": "assistance-only-not-authoritative-transcription"
+    }
+  ],
+  "additional_translations": {
+    "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf": {
+      "3": "図の追加ラベル：Assistant＝アシスタント。",
+      "4": "図の追加ラベル：Assistant＝アシスタント。",
+      "5": "図の追加ラベル：Assistant＝アシスタント。",
+      "6": "図の追加ラベル：Assistant＝アシスタント。",
+      "12": "認証シーケンス図の画像を拡大して確認しました。User＝利用者、Agent A Client＝エージェントAのクライアント、Github＝GitHub、Agent A DID Sever（原図の綴り）＝エージェントAのDIDサーバー。Preliminary Operation＝事前の操作。Subscribe to the service＝サービスを購読する。Subscribe to the service using DID＝DIDを使ってサービスを購読する。First Request＝初回の要求。HTTP Request: DID,Signature＝HTTP要求：DIDと署名。Get DID Document＝DID文書を取得する。DID Document＝DID文書。Authentication＝認証。HTTP Response: token＝HTTP応答：トークン。Subsequent Requests＝以降の要求。HTTP Request: token＝HTTP要求：トークン。HTTP Response＝HTTP応答。\n\n隣のJSON画像には`nonce`、`timestamp`、`service`、`did`と例示値があり、人向け説明文はありません。これらの技術値は原画像のまま保持します。この図は発表当時の認証フローであり、現在仕様への更新ではありません。"
+    },
+    "standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf": {
+      "1": "背景画像の標語「更快更智能」＝「より速く、よりスマートに」。CHINA TELECOM／中国电信は企業名として保持します。ロゴの5G／helloは原表記を保持し、helloは「こんにちは」を意味します。",
+      "3": "列車内のオンライン会議の図に含まれる文章：\n- “I will attend an online meeting on a train at 2 pm tomorrow and will need a high-quality network support.”＝「明日午後2時に列車内でオンライン会議に参加するので、高品質なネットワーク支援が必要です」。\n- “…(thinking)… Check the performability by incorporating the train schedule and train route… Generate alternative call packages…”＝「…（思考中）…列車の時刻表と経路を取り込んで実行可能性を確認する…代替の通話パッケージを生成する…」。\n- Network information database＝ネットワーク情報データベース。QoE map prediction＝QoEマップの予測。Charging＝課金。Network capability set＝ネットワーク機能の集合。\n- Train schedule＝列車の時刻表。Train routes＝列車の経路。Third-party data sources＝第三者のデータ源。\n- Call package #1: …, Fees: 5 ¥＝通話パッケージ#1：…、料金：5 ¥。Call package #2: …, Fees: 9 ¥＝通話パッケージ#2：…、料金：9 ¥。原画像の省略記号を具体的な内容で補っていません。\n- Network assurance policy＝ネットワーク品質の保証ポリシー。図の下端ではこのラベルの下部が切れています。",
+      "14": "背景の企業名・標語はページ1と共通です。「更快更智能」＝「より速く、よりスマートに」。"
+    },
+    "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf": {
+      "3": "図に使われた機器写真を元の埋込画像で確認しました。写真内のHUAWEIは企業・製品のブランド表記として保持します。\n\nタブレット／スマートフォンの写真に含まれる読める中国語UI：\n- 为你推荐＝おすすめ。活动＝アクティビティ。张照片＝枚の写真（枚数は端末の重なりで隠れています）。\n- 日历＝カレンダー。完成＝完了。全部隐藏＝すべて非表示。\n- 学校＝学校。个人＝個人。家人＝家族。工作＝仕事。其他＝その他。\n- 中国节假日＝中国の祝祭日。已订阅＝購読済み。生日＝誕生日。\n- Siri 在应用中找到的日程＝Siriがアプリ内で見つけた予定。显示已拒绝的日程＝辞退した予定を表示。添加日历＝カレンダーを追加。\n- 照片＝写真。相簿＝アルバム。搜索＝検索。\n- 上午9:41 1月25日 周五＝午前9:41、1月25日、金曜日。時刻9:41、電池表示100%、ICLOUD、Emily Parker、Siriは原表記のままです。家族カレンダーの共有相手の行は右端が省略されているため、その続きを補っていません。\n\nホテルのスマートフォン写真は元画像が300×207画素で、画面上部の細い文字を確実に判読できません。図の主要分類（Home Security／Remote Work／Hybrid Access）は本文で訳しています。",
+      "4": "カメラ、ゲートウェイ、サーバー、スマートフォンの2点のイラストを元の埋込画像で確認しました。画面やサーバーに描かれた微小な模様は、原画素で意味のある文字列として判読できず、転記・翻訳していません。図外の本文は既存の全文訳に含まれます。"
+    },
+    "standard/IETF124/1-Agenda.pptx": {
+      "9": "埋込画像の全文訳：まとめ――6GのAIエージェントのユースケースに必要な主要要件。\n\n1. AIエージェント通信の枠組み：挙げられたすべての場面を実現するために、必要な構成要素を統合できること。\n2. AIエージェントのアイデンティティ：AIエージェントのデジタルアイデンティティに対する、安全な認証、認可、管理の仕組み。\n3. 効率的な協働：異なるAIエージェント同士、およびAIエージェントとツールとの効率的な協働。\n4. 登録と発見：端末内AIエージェント、第三者のAIエージェント、ネットワークAIエージェント、ツール。\n5. 意味に基づくルーティング：アイデンティティ、利用者の文脈、意図など、アプリケーション層の意味に基づく経路判断。\n6. セキュリティ：データ保護と利用者の同意。\n\n画像内のページ番号は13。ロゴの5G／helloは原表記を保持します。",
+      "10": "埋込画像の全文訳：通信コアネットワークにおけるエージェントプロトコルの適用可能性。\n\n- アイデンティティの登録・発行・発見：エージェント、ツール、その他のサービス／資源には、IDの観点で類似点があります。関連するネットワーク機能（NF）の拡張候補：UDM、UDR、SMFなど。\n- 認証と認可：関連するNFの拡張候補：AUSF、SMFなど。\n- HITL（Human-in-the-Loop）による確認：コアネットワーク機能が呼び出す、人間の確認へのリダイレクト。関連するNFの拡張候補：PCF、NEF、UPFなど。\n- 動的なグループとリアルタイム通信：関連するNFの拡張候補：AMF、SMFなど。",
+      "11": "埋込画像の全文訳：AIエージェントプロトコルへの要件。\n\n**身元認証とリクエスト検証**\nエージェント間のやり取りの要求を実行する前に、厳格な身元認証を行う必要があります。プロトコルは、デジタル証明書や相互認証などの高い安全性を持つ認証の仕組みを定義し、正規かつ認可済みのエージェントだけが指示を開始・受信できるようにして、不正アクセスや悪意ある制御を防止するものとします。\n\n**エージェントの発見と自動交渉**\nエージェントが家庭やオフィスなどのネットワークにアクセスした際、他の利用可能なエージェントと、プリンターやビデオ会議などの提供サービスを自動で発見するものとします。また、機能を自動で交渉し、接続を確立するものとします。\n\n**接続の安定性と切れ目のないハンドオーバー**\n利用者が家庭のネットワークからモバイルネットワークへ切り替える場面では、プロトコルはAIエージェントのセッションの維持と切れ目のないハンドオーバーに対応するものとします。これにより、進行中のサービスの連続動作が保証されます。アイデンティティの変換を伴う場合があります。\n\n**ローカルの障害復旧とオフライン処理**\nネットワーク障害などが発生した場合、家庭のゲートウェイやNASなどの重要なエージェントは現在の状態を記録し、ローカルの意思決定とデータ処理の機能を持つものとします。例えば、通信断の後も家庭のセンサーは異常イベントのローカル記録を続け、復旧後に記録したデータをクラウドとモバイル端末へ同期するものとします。"
+    },
+    "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx": {
+      "2": "3点の埋込画像は、エージェント／利用者対応／ツールを表すアイコンで、人向けの説明文は見当たりませんでした。図中の役割やサービス名はスライドXMLから抽出した本文で訳しています。",
+      "6": "5点の埋込画像は、ロボット犬、ロボットアーム、UAV、ネットワーク図、ロボットのアイコンです。説明用の文章は見当たりませんでした。機器表面の微小な刻印を意味のある語として確定していません。図外のRobot Dog／Robot Arm／UAVなどは抽出本文に含まれます。"
+    }
+  },
+  "remaining_limits": [
+    "PPTX 24スライドのネイティブ描画によるレイアウト・重なり・フォント確認は未実施。既存ソフトを確認した範囲で描画環境なし。",
+    "W3C PDF 17ページの一部description・URLは原画像自体で右端が切れており、続きを復元していない。",
+    "China Unicom PDF 3ページのホテル端末写真、4ページのイラスト内画面の微小文字は原画素で確実に判読できない。3ページの端末写真の隠れた写真枚数と省略された共有相手の続きは復元していない。",
+    "コード・鍵・URLなどの技術値は原画素・原文抽出を保持し、画像からコード全文を再入力していない。",
+    "全PDFページの概観と埋込画像の確認は、全画素・すべての文字に対する独立した二次校閲を意味しない。"
+  ]
+}

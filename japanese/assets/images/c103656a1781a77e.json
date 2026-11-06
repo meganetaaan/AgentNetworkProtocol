@@ -1,0 +1,219 @@
+{
+  "source": "blogs/images/anp-first-meet/01.png",
+  "sha256": "c103656a1781a77e8ff8d50e4ed46465bc44486dfea4f6f4ec1c2e4297f781f1",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "大纲",
+      "confidence": 0.9998380243778229,
+      "box": [
+        [
+          33.33871078491211,
+          36.27231979370117
+        ],
+        [
+          231.9818572998047,
+          39.0625
+        ],
+        [
+          230.59274291992188,
+          142.29910278320312
+        ],
+        [
+          31.94959831237793,
+          139.50892639160156
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "目次",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9915977716445923,
+      "box": [
+        [
+          2578.193603515625,
+          37.66741180419922
+        ],
+        [
+          2730.99609375,
+          37.66741180419922
+        ],
+        [
+          2730.99609375,
+          92.07588958740234
+        ],
+        [
+          2578.193603515625,
+          92.07588958740234
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "1、社区原则、运营制度初稿",
+      "confidence": 0.9988907346358666,
+      "box": [
+        [
+          391.7298583984375,
+          376.6741027832031
+        ],
+        [
+          1198.804443359375,
+          379.46429443359375
+        ],
+        [
+          1198.804443359375,
+          439.453125
+        ],
+        [
+          391.7298583984375,
+          436.6629333496094
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "1、コミュニティ原則と運営制度の初稿",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "2、社区进展、计划同步",
+      "confidence": 0.9997598962350325,
+      "box": [
+        [
+          384.7843017578125,
+          509.20758056640625
+        ],
+        [
+          1069.616943359375,
+          511.9977722167969
+        ],
+        [
+          1069.616943359375,
+          573.3817138671875
+        ],
+        [
+          384.7843017578125,
+          570.5914916992188
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "2、コミュニティの進捗と計画の共有",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "3、 demo演示: did wba example",
+      "confidence": 0.9505578967241141,
+      "box": [
+        [
+          383.3951721191406,
+          640.345947265625
+        ],
+        [
+          1426.6190185546875,
+          644.53125
+        ],
+        [
+          1426.6190185546875,
+          708.705322265625
+        ],
+        [
+          383.3951721191406,
+          704.5200805664062
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "3、デモ：did wba example",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ],
+      "transcribed_source": "3、demo演示：did wba example"
+    },
+    {
+      "source": "4、子项目发布：欢迎参与",
+      "confidence": 0.9997290323177973,
+      "box": [
+        [
+          383.3951721191406,
+          772.8794555664062
+        ],
+        [
+          1133.51611328125,
+          775.6696166992188
+        ],
+        [
+          1133.51611328125,
+          841.2388305664062
+        ],
+        [
+          383.3951721191406,
+          838.4486694335938
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "4、サブプロジェクトの発表：参加歓迎",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4"
+      ]
+    },
+    {
+      "source": "5、技术、社区相关问题讨论(发言顺序，社区成员优先)",
+      "confidence": 0.9988235510312594,
+      "box": [
+        [
+          384.7843017578125,
+          902.6227416992188
+        ],
+        [
+          1629.429443359375,
+          910.9932861328125
+        ],
+        [
+          1629.429443359375,
+          979.3526611328125
+        ],
+        [
+          384.7843017578125,
+          970.9821166992188
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "5、技術とコミュニティに関する議論（発言はコミュニティメンバーを優先）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "5"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.1562375000212342,
+    0.01300358772277832,
+    1.268014907836914
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "3、 demo演示: did wba example": "3、demo演示：did wba example"
+    },
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。",
+    "source_sha256": "c103656a1781a77e8ff8d50e4ed46465bc44486dfea4f6f4ec1c2e4297f781f1"
+  }
+}

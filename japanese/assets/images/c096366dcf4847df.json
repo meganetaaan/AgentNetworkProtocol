@@ -1,0 +1,709 @@
+{
+  "source": "blogs/images/ap2/anp-transaction.png",
+  "sha256": "c096366dcf4847df965233c788e615505501a750ee2e0f0c305f964b6b955096",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "ANP智能体点对点交易系统架构",
+      "confidence": 0.9986420591672261,
+      "box": [
+        [
+          278.0,
+          19.0
+        ],
+        [
+          622.0,
+          19.0
+        ],
+        [
+          622.0,
+          44.0
+        ],
+        [
+          278.0,
+          44.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ANPエージェント間直接取引システムの構成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgentNetworkProtocol（ANP）协议环境",
+      "confidence": 0.969779357827943,
+      "box": [
+        [
+          290.0,
+          80.0
+        ],
+        [
+          610.0,
+          80.0
+        ],
+        [
+          610.0,
+          99.0
+        ],
+        [
+          290.0,
+          99.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "Agent Network Protocol（ANP）のプロトコル環境",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentNetworkProtocol",
+        "ANP"
+      ]
+    },
+    {
+      "source": "用户端",
+      "confidence": 0.9995963374773661,
+      "box": [
+        [
+          164.0,
+          138.0
+        ],
+        [
+          218.0,
+          138.0
+        ],
+        [
+          218.0,
+          162.0
+        ],
+        [
+          164.0,
+          162.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ユーザー側",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店端",
+      "confidence": 0.999482274055481,
+      "box": [
+        [
+          683.0,
+          138.0
+        ],
+        [
+          738.0,
+          138.0
+        ],
+        [
+          738.0,
+          162.0
+        ],
+        [
+          683.0,
+          162.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "ホテル側",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户(User)",
+      "confidence": 0.940710574388504,
+      "box": [
+        [
+          152.0,
+          184.0
+        ],
+        [
+          230.0,
+          184.0
+        ],
+        [
+          230.0,
+          206.0
+        ],
+        [
+          152.0,
+          206.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ユーザー（User）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "酒店(Hotel)",
+      "confidence": 0.9973527855343289,
+      "box": [
+        [
+          670.0,
+          183.0
+        ],
+        [
+          751.0,
+          186.0
+        ],
+        [
+          751.0,
+          208.0
+        ],
+        [
+          669.0,
+          206.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ホテル（Hotel）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "用户智能体",
+      "confidence": 0.9999042868614196,
+      "box": [
+        [
+          154.0,
+          245.0
+        ],
+        [
+          227.0,
+          245.0
+        ],
+        [
+          227.0,
+          265.0
+        ],
+        [
+          154.0,
+          265.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店智能体",
+      "confidence": 0.9999139785766602,
+      "box": [
+        [
+          672.0,
+          244.0
+        ],
+        [
+          747.0,
+          244.0
+        ],
+        [
+          747.0,
+          264.0
+        ],
+        [
+          672.0,
+          264.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(User Agent)",
+      "confidence": 0.9880397717157999,
+      "box": [
+        [
+          154.0,
+          267.0
+        ],
+        [
+          227.0,
+          267.0
+        ],
+        [
+          227.0,
+          286.0
+        ],
+        [
+          154.0,
+          286.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "（ユーザーエージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Hotel Agent)",
+      "confidence": 0.9978202764804547,
+      "box": [
+        [
+          673.0,
+          267.0
+        ],
+        [
+          748.0,
+          267.0
+        ],
+        [
+          748.0,
+          286.0
+        ],
+        [
+          673.0,
+          286.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "（ホテルエージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付系统",
+      "confidence": 0.9999316036701202,
+      "box": [
+        [
+          416.0,
+          378.0
+        ],
+        [
+          486.0,
+          378.0
+        ],
+        [
+          486.0,
+          401.0
+        ],
+        [
+          416.0,
+          401.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "決済システム",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付基础设施",
+      "confidence": 0.9999194840590159,
+      "box": [
+        [
+          407.0,
+          425.0
+        ],
+        [
+          495.0,
+          425.0
+        ],
+        [
+          495.0,
+          445.0
+        ],
+        [
+          407.0,
+          445.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "決済基盤",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "仲裁智能体",
+      "confidence": 0.9997416734695435,
+      "box": [
+        [
+          133.0,
+          451.0
+        ],
+        [
+          208.0,
+          451.0
+        ],
+        [
+          208.0,
+          470.0
+        ],
+        [
+          133.0,
+          470.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "仲裁エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Payment Infrastructure)",
+      "confidence": 0.9562195874750614,
+      "box": [
+        [
+          394.0,
+          445.0
+        ],
+        [
+          507.0,
+          445.0
+        ],
+        [
+          507.0,
+          461.0
+        ],
+        [
+          394.0,
+          461.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "（決済基盤）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "公证/注册服务",
+      "confidence": 0.9952327609062195,
+      "box": [
+        [
+          685.0,
+          451.0
+        ],
+        [
+          776.0,
+          451.0
+        ],
+        [
+          776.0,
+          470.0
+        ],
+        [
+          685.0,
+          470.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "公証／登録サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(Arbitration Agent)",
+      "confidence": 0.9678376818958082,
+      "box": [
+        [
+          120.0,
+          472.0
+        ],
+        [
+          222.0,
+          472.0
+        ],
+        [
+          222.0,
+          491.0
+        ],
+        [
+          120.0,
+          491.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "（仲裁エージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Notary/Registry)",
+      "confidence": 0.9982440857326284,
+      "box": [
+        [
+          684.0,
+          474.0
+        ],
+        [
+          778.0,
+          474.0
+        ],
+        [
+          778.0,
+          490.0
+        ],
+        [
+          684.0,
+          490.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "（公証／登録サービス）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选",
+      "confidence": 0.828872561454773,
+      "box": [
+        [
+          162.0,
+          492.0
+        ],
+        [
+          183.0,
+          492.0
+        ],
+        [
+          183.0,
+          502.0
+        ],
+        [
+          162.0,
+          502.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "任意",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付智能体",
+      "confidence": 0.9999464988708496,
+      "box": [
+        [
+          414.0,
+          490.0
+        ],
+        [
+          488.0,
+          490.0
+        ],
+        [
+          488.0,
+          510.0
+        ],
+        [
+          414.0,
+          510.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "決済エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选",
+      "confidence": 0.9094971716403961,
+      "box": [
+        [
+          721.0,
+          492.0
+        ],
+        [
+          742.0,
+          492.0
+        ],
+        [
+          742.0,
+          502.0
+        ],
+        [
+          721.0,
+          502.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "任意",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(PaymentAgent)",
+      "confidence": 0.9931373511041913,
+      "box": [
+        [
+          402.0,
+          511.0
+        ],
+        [
+          499.0,
+          513.0
+        ],
+        [
+          498.0,
+          533.0
+        ],
+        [
+          402.0,
+          531.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "（決済エージェント）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "PaymentAgent"
+      ]
+    },
+    {
+      "source": "交互逻辑",
+      "confidence": 0.9992582201957703,
+      "box": [
+        [
+          420.0,
+          555.0
+        ],
+        [
+          482.0,
+          555.0
+        ],
+        [
+          482.0,
+          575.0
+        ],
+        [
+          420.0,
+          575.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "やり取りの仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体间通过可验证凭证(VC)传递与验证，形成凭证链，保证交易可信与完整",
+      "confidence": 0.9847860717111163,
+      "box": [
+        [
+          244.0,
+          577.0
+        ],
+        [
+          657.0,
+          577.0
+        ],
+        [
+          657.0,
+          595.0
+        ],
+        [
+          244.0,
+          595.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "エージェント間で検証可能な証明書（VC）を受け渡して検証し、証明書の連鎖を作ることで、取引の信頼性と完全性を確保する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "必要交互路径",
+      "confidence": 0.9999518990516663,
+      "box": [
+        [
+          167.0,
+          612.0
+        ],
+        [
+          246.0,
+          612.0
+        ],
+        [
+          246.0,
+          631.0
+        ],
+        [
+          167.0,
+          631.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "必須のやり取りの経路",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选交互路径",
+      "confidence": 0.9999522964159647,
+      "box": [
+        [
+          368.0,
+          612.0
+        ],
+        [
+          445.0,
+          612.0
+        ],
+        [
+          445.0,
+          631.0
+        ],
+        [
+          368.0,
+          631.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "任意のやり取りの経路",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "所有智能体间通信基于ANP协议",
+      "confidence": 0.999507995446523,
+      "box": [
+        [
+          548.0,
+          612.0
+        ],
+        [
+          729.0,
+          612.0
+        ],
+        [
+          729.0,
+          631.0
+        ],
+        [
+          548.0,
+          631.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "すべてのエージェント間通信はANPプロトコルに基づく",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "公众号：ANP开源技术Community",
+      "confidence": 0.9858475178480148,
+      "box": [
+        [
+          443.0,
+          645.0
+        ],
+        [
+          873.0,
+          649.0
+        ],
+        [
+          873.0,
+          680.0
+        ],
+        [
+          442.0,
+          676.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "WeChat公式アカウント：ANP开源技术Community",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.2946928999735974,
+    0.034017086029052734,
+    2.0740983486175537
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "c096366dcf4847df965233c788e615505501a750ee2e0f0c305f964b6b955096"
+  }
+}

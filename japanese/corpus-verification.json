@@ -1,0 +1,4097 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "generated_at": "2026-11-06T15:07:01.393Z",
+  "original_files": 498,
+  "original_sha256_checks": 498,
+  "originals_unchanged": true,
+  "markdown": {
+    "sources": 232,
+    "translated": 232,
+    "full_semantic_review": 232,
+    "pending": []
+  },
+  "non_markdown": {
+    "sources": 266,
+    "image_paths": 212,
+    "unique_images": 209,
+    "image_labels": 3655,
+    "readable_image_prose_pending": 0,
+    "paged_documents": 6,
+    "pages_and_slides": 99,
+    "code_prose_units": 807,
+    "code_prose_pending": 0,
+    "example_prose_units": 2782,
+    "example_prose_pending": 0,
+    "plain_example_full_blocks": 76
+  },
+  "limits": {
+    "image_source_pixels": [
+      {
+        "source": "blogs/images/agent-network/vinote.png",
+        "sha256": "1613f299528cb9c3898cf01589a569f890bac25b2cb35c891fee4289b5cc586d",
+        "limitation": "右端のカードの文字が画像の端で切れている。"
+      },
+      {
+        "source": "blogs/images/anp-ap2/ap2flow.png",
+        "sha256": "a71c81fb1d6f0123578cbde5d0d23e6c3c6b1897e07b07236d61e6945b13a07e",
+        "limitation": "右上Payment Processo…の末尾文字がボックスで切れている。"
+      },
+      {
+        "source": "blogs/images/anp-explorer.png",
+        "sha256": "adfb7bc5f4425866abaec2f9be04ec6d0b6d54bc0ccd4ab8b2e82d8ec7d473e4",
+        "limitation": "下部の説明文の続きは画像外。"
+      },
+      {
+        "source": "blogs/images/anp-in-w3c-20250214/page17.jpg",
+        "sha256": "2c7ebe6dbe294857a94614a82abb8668110c087b13ef3842c8bf50b06909464a",
+        "limitation": "左右下部のdescriptionとURLが元コード画像の右端で切れている。見える自然言語の値は訳したが、見えない語やURLの続きを補完しない。"
+      },
+      {
+        "source": "blogs/images/anp-in-w3c-20250214/page7.jpg",
+        "sha256": "88f09260551b6cf5e7075ed94c97b33cd6781f5317d22689d1412eabdeaff11f",
+        "limitation": "右図のE2Eの下にある文字は元図で隠れており、判読不能な点しか残っていない。推測して補完しない。"
+      },
+      {
+        "source": "blogs/images/first-web-agent.png",
+        "sha256": "6c3f3ecb4010d9e076a221368c0a24052febe8cf2922c5d11fed0d7755b4eec4",
+        "limitation": "英語併記の長い文章の右端と最下部コードの続きは画像外。見える人向け文章は上記の対訳に含む。"
+      },
+      {
+        "source": "blogs/images/human-ai-agent.png",
+        "sha256": "4f866038d7349a52bbe72a4e9c03a2a265396962b858b6deee66df577ffb58b3",
+        "limitation": "下端の透かしの大部分が画像外であり、判読できない。"
+      },
+      {
+        "source": "blogs/images/mcp-wba-did-proposal.png",
+        "sha256": "c7a763e7ed0bf8cccd8339eb1abf2956b6dd1cb27383df12d59bfbba43554284",
+        "limitation": "シーケンス図の末尾は原画像の下端より外にあり、見えない内容は補完しない。"
+      },
+      {
+        "source": "chinese/思考&问题/pic/protocol-layer-design.png",
+        "sha256": "31ad8676c6c2ec167eda42cd23e21c173533e74fd385e6f342c863b7e0e899b8",
+        "limitation": "E2Eの直下の文字が元画像で隠れており判読不能。"
+      },
+      {
+        "source": "examples/adp/lkcoffe/orange-americano/instruction.jpg",
+        "sha256": "10314aa19ed3b01136599117d0a38d94cbfb6839983012a88513b36c4a1123fe",
+        "limitation": "注いでいる瓶のラベルは手で覆われており断片しか見えないため、隠れたブランド文字を推測しない。カップ上の薄い小文字の一部は原画像の印刷・反射により判読困難。読める商品説明・脚注・人物名は対訳済み。"
+      },
+      {
+        "source": "examples/adp/lkcoffe/roasted-coconut-latte/instruction.jpeg",
+        "sha256": "c4fa85623a87c2f8e3b85118c830058422246651f3c10594b2fc15ea54c59680",
+        "limitation": "人物写真内の手書きサインは文字としての判読が困難なため、原画素を保持。手で隠れた紙カップのブランド表示の一部は補完しない。読める広告本文・脚注・人物名は対訳済み。"
+      },
+      {
+        "source": "examples/adp/lkcoffe/silk-latte/instruction.jpg",
+        "sha256": "b96ea698231f51355ce953d0971263b585a74ec10109674a813d82ac42ef9ed8",
+        "limitation": "レーダーチャートの薄い小さな目盛数字と、写真中の白い紙カップの薄い印字は一部判読困難。数字を推測して追加しない。読める広告本文・比較条件・15人/6人・20.99%・各軸名と凡例は対訳済み。"
+      },
+      {
+        "source": "images/did-identity-authentication.png",
+        "sha256": "db68b4a4cf6155fe8f2f6d23afce077876af0b8cd01d6e1f43f3e1dcab8bc6cc",
+        "limitation": "図の説明ラベルは目視照合した。小さなDID文書コード内の暗号鍵文字列・括弧とpublicKeyMultibase行はOCRの欠落があり、完全なコード転記は未確認。コードのOCR文字列を正確な識別子として使用しないこと。"
+      },
+      {
+        "source": "images/protocol-layer-design.png",
+        "sha256": "11576e27122bcaef77403d7520afd706adfc0eea3500a8b8a13fd4bcc94d7dd2",
+        "limitation": "E2Eの下に文字らしき切れた画素があり、原画像で下部が隠れているため判読不能。見えているラベルは照合済みだが、隠れた文字は補完していない。"
+      }
+    ],
+    "image_technical_code_transcription_unverified": 8,
+    "paged_document_visual_verification": false,
+    "paged_document_remaining_work": [
+      "PPTX 24スライドのネイティブ描画によるレイアウト・重なり・フォント確認は未実施。既存ソフトを確認した範囲で描画環境なし。",
+      "W3C PDF 17ページの一部description・URLは原画像自体で右端が切れており、続きを復元していない。",
+      "China Unicom PDF 3ページのホテル端末写真、4ページのイラスト内画面の微小文字は原画素で確実に判読できない。3ページの端末写真の隠れた写真枚数と省略された共有相手の続きは復元していない。",
+      "コード・鍵・URLなどの技術値は原画素・原文抽出を保持し、画像からコード全文を再入力していない。",
+      "全PDFページの概観と埋込画像の確認は、全画素・すべての文字に対する独立した二次校閲を意味しない。"
+    ],
+    "independent_human_translation_review": false
+  },
+  "all_recorded_readable_prose_reviewed": true,
+  "errors": [],
+  "checks": [
+    {
+      "source": ".github/PULL_REQUEST_TEMPLATE.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/.github/PULL_REQUEST_TEMPLATE.md"
+      ]
+    },
+    {
+      "source": "01-agentnetworkprotocol-technical-white-paper.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/01-agentnetworkprotocol-technical-white-paper.md"
+      ]
+    },
+    {
+      "source": "02-anp-did-authentication-protocol-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/02-anp-did-authentication-protocol-specification.md"
+      ]
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/03-did-wba-method-design-specification.md"
+      ]
+    },
+    {
+      "source": "04-anp-did-wba-name-space-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/04-anp-did-wba-name-space-specification.md"
+      ]
+    },
+    {
+      "source": "05-anp-did-authorization-protocol-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/05-anp-did-authorization-protocol-specification.md"
+      ]
+    },
+    {
+      "source": "06-anp-agent-communication-meta-protocol-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/06-anp-agent-communication-meta-protocol-specification.md"
+      ]
+    },
+    {
+      "source": "07-anp-agent-description-protocol-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/07-anp-agent-description-protocol-specification.md"
+      ]
+    },
+    {
+      "source": "08-ANP-Agent-Discovery-Protocol-Specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/08-ANP-Agent-Discovery-Protocol-Specification.md"
+      ]
+    },
+    {
+      "source": "09-ANP-end-to-end-instant-messaging-protocol-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/09-ANP-end-to-end-instant-messaging-protocol-specification.md"
+      ]
+    },
+    {
+      "source": "AGENTS.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/AGENTS.md"
+      ]
+    },
+    {
+      "source": "CONTRIBUTING.cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/CONTRIBUTING.cn.md"
+      ]
+    },
+    {
+      "source": "CONTRIBUTING.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/CONTRIBUTING.md"
+      ]
+    },
+    {
+      "source": "CONTRIBUTORS.cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/CONTRIBUTORS.cn.md"
+      ]
+    },
+    {
+      "source": "CONTRIBUTORS.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/CONTRIBUTORS.md"
+      ]
+    },
+    {
+      "source": "GEMINI.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/GEMINI.md"
+      ]
+    },
+    {
+      "source": "README.cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/README.cn.md"
+      ]
+    },
+    {
+      "source": "README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/README.md"
+      ]
+    },
+    {
+      "source": "appendix-a-did-wba-k1-compatibility-extension.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/appendix-a-did-wba-k1-compatibility-extension.md"
+      ]
+    },
+    {
+      "source": "appendix-b-compatibility-with-native-did-web.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/appendix-b-compatibility-with-native-did-web.md"
+      ]
+    },
+    {
+      "source": "application/10-anp-agent-payment-protocol-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/application/10-anp-agent-payment-protocol-specification.md"
+      ]
+    },
+    {
+      "source": "blogs/01-agent-Identity-authorization-encryption.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/01-agent-Identity-authorization-encryption.md"
+      ]
+    },
+    {
+      "source": "blogs/02-Why-Sequoia-Capital-US-Lists-Communication-Protocols-as-One-of-Five-Major-Investment-Themes.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/02-Why-Sequoia-Capital-US-Lists-Communication-Protocols-as-One-of-Five-Major-Investment-Themes.md"
+      ]
+    },
+    {
+      "source": "blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md"
+      ]
+    },
+    {
+      "source": "blogs/04-In-Depth-Analysis-of-Google-AP2.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/04-In-Depth-Analysis-of-Google-AP2.md"
+      ]
+    },
+    {
+      "source": "blogs/10-Major-Upgrade-to-the-ANP-Message-Protocol.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/10-Major-Upgrade-to-the-ANP-Message-Protocol.md"
+      ]
+    },
+    {
+      "source": "blogs/11-ANP-Release-1.1-Focus-on-Agent-Cross-Domain-Communication.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/11-ANP-Release-1.1-Focus-on-Agent-Cross-Domain-Communication.md"
+      ]
+    },
+    {
+      "source": "blogs/12-ANP-explained-from-scratch-en.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/12-ANP-explained-from-scratch-en.md"
+      ]
+    },
+    {
+      "source": "blogs/ANP-Community-First-Meeting-A-Milestone-for-the-Agentic-Web.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/ANP-Community-First-Meeting-A-Milestone-for-the-Agentic-Web.md"
+      ]
+    },
+    {
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md"
+      ]
+    },
+    {
+      "source": "blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md"
+      ]
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/00-series-preview-when-ai-becomes-advanced-productivity.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Agentic-Web-Ten-Talks/00-series-preview-when-ai-becomes-advanced-productivity.md"
+      ]
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/01day-the-past-and-present-of-the-web.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Agentic-Web-Ten-Talks/01day-the-past-and-present-of-the-web.md"
+      ]
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/02day-first-principles.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Agentic-Web-Ten-Talks/02day-first-principles.md"
+      ]
+    },
+    {
+      "source": "blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md"
+      ]
+    },
+    {
+      "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md"
+      ]
+    },
+    {
+      "source": "blogs/Comparison-of-Agent-Communication-Protocols.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Comparison-of-Agent-Communication-Protocols.md"
+      ]
+    },
+    {
+      "source": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md"
+      ]
+    },
+    {
+      "source": "blogs/Comprehensive-Comparison-of-Google-A2A-ANP-MCP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Comprehensive-Comparison-of-Google-A2A-ANP-MCP.md"
+      ]
+    },
+    {
+      "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md"
+      ]
+    },
+    {
+      "source": "blogs/In-the-year-that-the-ANP-was-born.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/In-the-year-that-the-ANP-was-born.md"
+      ]
+    },
+    {
+      "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md"
+      ]
+    },
+    {
+      "source": "blogs/Ten-Questions-and-Answers-about-MCP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Ten-Questions-and-Answers-about-MCP.md"
+      ]
+    },
+    {
+      "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md"
+      ]
+    },
+    {
+      "source": "blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md"
+      ]
+    },
+    {
+      "source": "blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md"
+      ]
+    },
+    {
+      "source": "blogs/What-Makes-Agentic-Web-Different.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/What-Makes-Agentic-Web-Different.md"
+      ]
+    },
+    {
+      "source": "blogs/agent-.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/agent-.md"
+      ]
+    },
+    {
+      "source": "blogs/analysis-and-predictions-of-future-ai-personal-assistant-products-and-key-players.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/analysis-and-predictions-of-future-ai-personal-assistant-products-and-key-players.md"
+      ]
+    },
+    {
+      "source": "blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/anthropic-mcp-2025h1-milestone-analysis.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/01-智能体的身份-授权-加密.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/01-智能体的身份-授权-加密.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/02-解读：为什么红杉美国将通信协议作为五大投资主题之一.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/02-解读：为什么红杉美国将通信协议作为五大投资主题之一.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/04-深度解读谷歌最新发布的AP2.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/04-深度解读谷歌最新发布的AP2.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/05-ANP的核心概念和交互模式.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/05-ANP的核心概念和交互模式.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/07-2-全球首个开放智能体网络.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/07-2-全球首个开放智能体网络.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/07-3-全球首个开放智能体网络.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/07-3-全球首个开放智能体网络.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/07-全球首个开放智能体网络.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/07-全球首个开放智能体网络.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/08-智能体支付.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/08-智能体支付.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/10-新版本IM协议.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/10-新版本IM协议.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/10-谷歌UCP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/10-谷歌UCP.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/11-ANP-Release-1.1-从身份到跨域消息.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/11-ANP-Release-1.1-从身份到跨域消息.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/12-ANP-讲解从0开始.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/12-ANP-讲解从0开始.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/2025年ANP下一步规划的思考.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/2025年ANP下一步规划的思考.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/AI个人助手未来产品形态和主要玩家的分析与预测.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/AI个人助手未来产品形态和主要玩家的分析与预测.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/ANP协议要感谢的社区：web3、Agora、WebAgents.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/ANP协议要感谢的社区：web3、Agora、WebAgents.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/ANP在W3C-WebAgents-CG的演讲.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/ANP在W3C-WebAgents-CG的演讲.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/ANP社区首次会议：这可能是一个新时代的起点.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/ANP社区首次会议：这可能是一个新时代的起点.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/00-系列预告-当AI成为先进生产力.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/00-系列预告-当AI成为先进生产力.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/01day-Web的前世今生.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/01day-Web的前世今生.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/02day-第一性原理.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/02day-第一性原理.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web copy.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web copy.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/notebook-prompt.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/notebook-prompt.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/planning.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/planning.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/大纲/01-Agentic-web-10day.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/大纲/01-Agentic-web-10day.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/大纲/02-Agentic-web-10day.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/Agentic-Web十日谈/大纲/02-Agentic-web-10day.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/MCP十问十答.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/MCP十问十答.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/W3C-AI-Agent-Protocol社区组最新进展(202506).md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/W3C-AI-Agent-Protocol社区组最新进展(202506).md"
+      ]
+    },
+    {
+      "source": "blogs/cn/agent对infra的改变-对连接基础设施的改变.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/agent对infra的改变-对连接基础设施的改变.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/anthropic-mcp-2025h1-里程碑解读.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/did-wba-基于web的去中心化身份标识符.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/did-wba安全性原理解析.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/did-wba安全性原理解析.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/did-wba对比openid-connect、api-keys.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/《微信背后的产品观》是否适合AI.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/《微信背后的产品观》是否适合AI.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/但我们设计一个协议的时候，我们在设计什么.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/但我们设计一个协议的时候，我们在设计什么.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/多角度全面对比Google最新的A2A、ANP、MCP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/多角度全面对比Google最新的A2A、ANP、MCP.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/我们应该为AI，重构所有互联网应用.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/我们应该为AI，重构所有互联网应用.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/智能体互联网有什么不同.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/智能体互联网有什么不同.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/智能体协议汇总.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/智能体协议汇总.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/智能体通信协议对比.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/智能体通信协议对比.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/深入对比MCP、A2A、ANP的交互模式.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md"
+      ]
+    },
+    {
+      "source": "blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md"
+      ]
+    },
+    {
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/did-wba-a-web-based-decentralized-identifier.md"
+      ]
+    },
+    {
+      "source": "blogs/did-wba-security-principles.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/did-wba-security-principles.md"
+      ]
+    },
+    {
+      "source": "blogs/the-three-major-trends-of-the-internet-of-agents.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/the-three-major-trends-of-the-internet-of-agents.md"
+      ]
+    },
+    {
+      "source": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md"
+      ]
+    },
+    {
+      "source": "chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/01-AgentNetworkProtocol技术白皮书.md"
+      ]
+    },
+    {
+      "source": "chinese/02-ANP-基于DID的身份认证协议.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/02-ANP-基于DID的身份认证协议.md"
+      ]
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/03-did-wba方法规范.md"
+      ]
+    },
+    {
+      "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/04-ANP-基于DID-WBA的命名空间规范.md"
+      ]
+    },
+    {
+      "source": "chinese/05-ANP-基于DID的授权协议.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/05-ANP-基于DID的授权协议.md"
+      ]
+    },
+    {
+      "source": "chinese/06-ANP-智能体通信元协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/06-ANP-智能体通信元协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/07-ANP-智能体描述协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/07-ANP-智能体描述协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/08-ANP-智能体发现协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/08-ANP-智能体发现协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/09-ANP-端到端即时消息协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/09-ANP-端到端即时消息协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/application/10-ANP-智能体支付协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/00-AgentNetworkProtocol技术蓝图(20241204).md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/01-核心绑定.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/01-核心绑定.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/02-did-all方法规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/02-did-all方法规范.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/02-身份与发现.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/02-身份与发现.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/03-did-wba方法规范-2026-03-28.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/03-私聊基础语义.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/03-私聊基础语义.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/04-基于did的端到端加密通信技术协议.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/04-群组基础语义.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/04-群组基础语义.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/05-基于did的消息服务协议.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/05-基于did的消息服务协议.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/05-私聊端到端加密.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/06-群组端到端加密.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/06-群组端到端加密.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/07-附件与对象传输.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/07-附件与对象传输.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/08-联邦与跨域.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/08-联邦与跨域.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/09-ANP-智能体点对点交易规范.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/09-消息Mention扩展.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md"
+      ]
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/docs/did-wba服务端测试接口.md"
+      ]
+    },
+    {
+      "source": "chinese/message/01-核心绑定.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/01-核心绑定.md"
+      ]
+    },
+    {
+      "source": "chinese/message/02-身份与发现.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/02-身份与发现.md"
+      ]
+    },
+    {
+      "source": "chinese/message/03-私聊基础语义.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/03-私聊基础语义.md"
+      ]
+    },
+    {
+      "source": "chinese/message/04-群组基础语义.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/04-群组基础语义.md"
+      ]
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/05-私聊端到端加密.md"
+      ]
+    },
+    {
+      "source": "chinese/message/06-群组端到端加密.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/06-群组端到端加密.md"
+      ]
+    },
+    {
+      "source": "chinese/message/07-附件与对象传输.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/07-附件与对象传输.md"
+      ]
+    },
+    {
+      "source": "chinese/message/08-联邦与跨域.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/08-联邦与跨域.md"
+      ]
+    },
+    {
+      "source": "chinese/message/09-消息Mention扩展.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/09-消息Mention扩展.md"
+      ]
+    },
+    {
+      "source": "chinese/message/README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/message/README.md"
+      ]
+    },
+    {
+      "source": "chinese/参考资料/paper&规范.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/参考资料/paper&规范.md"
+      ]
+    },
+    {
+      "source": "chinese/参考资料/语义网/Linked-Data.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/参考资料/语义网/Linked-Data.md"
+      ]
+    },
+    {
+      "source": "chinese/参考资料/语义网/Semantic-Web-Road-map.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/参考资料/语义网/Semantic-Web-Road-map.md"
+      ]
+    },
+    {
+      "source": "chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/参考资料/语义网/The-Next-Web-TimBerners-Lee.md"
+      ]
+    },
+    {
+      "source": "chinese/参考资料/语义网/semantic-web.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/参考资料/语义网/semantic-web.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/atproto-vs-anp.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/atproto-vs-anp.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/其他/share-ppt.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/其他/share-ppt.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/其他/介绍did-wba.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/其他/介绍did-wba.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/http与ANP.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/协议与技术对比/http与ANP.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/mcp-vs-anp.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/协议与技术对比/mcp-vs-anp.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/协议与技术对比/整体通俗介绍文章.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/E2E类似项目.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/智能体网络与通信/E2E类似项目.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/价值思考.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/智能体网络与通信/价值思考.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/元协议思考.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/智能体网络与通信/元协议思考.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/智能体发现与描述.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/智能体网络与通信/智能体发现与描述.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/智能体网络与通信/智能体网络的特点.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/智能体网络与通信/智能体网络的特点.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/语义网与智能体研究/语义网研究.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/MCP-wba-commit.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/身份认证与加密/MCP-wba-commit.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/did-vs-other.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/身份认证与加密/did-vs-other.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/did.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/身份认证与加密/did.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/加密思考.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/身份认证与加密/加密思考.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/身份认证与加密/秘钥泄漏问题.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/思考&问题/身份认证与加密/秘钥泄漏问题.md"
+      ]
+    },
+    {
+      "source": "chinese/相关产品与技术/ANP-VS-IETF.MD",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/相关产品与技术/ANP-VS-IETF.MD"
+      ]
+    },
+    {
+      "source": "chinese/相关产品与技术/ANP论文汇总.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/相关产品与技术/ANP论文汇总.md"
+      ]
+    },
+    {
+      "source": "chinese/相关产品与技术/相关开源项目.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/相关产品与技术/相关开源项目.md"
+      ]
+    },
+    {
+      "source": "chinese/相关产品与技术/相关标准.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/相关产品与技术/相关标准.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md"
+      ]
+    },
+    {
+      "source": "chinese/附录A：did-wba-k1_兼容扩展.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/附录A：did-wba-k1_兼容扩展.md"
+      ]
+    },
+    {
+      "source": "chinese/附录B：与原生did-web-的兼容.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/chinese/附录B：与原生did-web-的兼容.md"
+      ]
+    },
+    {
+      "source": "deprecated/00-agentnetworkprotocol-technical-blueprint.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/00-agentnetworkprotocol-technical-blueprint.md"
+      ]
+    },
+    {
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md"
+      ]
+    },
+    {
+      "source": "deprecated/01-core-binding.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/01-core-binding.md"
+      ]
+    },
+    {
+      "source": "deprecated/02-did-all-method-design-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/02-did-all-method-design-specification.md"
+      ]
+    },
+    {
+      "source": "deprecated/02-identity-and-discovery.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/02-identity-and-discovery.md"
+      ]
+    },
+    {
+      "source": "deprecated/03-direct-messaging-base-semantics.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/03-direct-messaging-base-semantics.md"
+      ]
+    },
+    {
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md"
+      ]
+    },
+    {
+      "source": "deprecated/04-group-messaging-base-semantics.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/04-group-messaging-base-semantics.md"
+      ]
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/05-direct-end-to-end-encryption.md"
+      ]
+    },
+    {
+      "source": "deprecated/05-message-service-protocol-based-on-did.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/05-message-service-protocol-based-on-did.md"
+      ]
+    },
+    {
+      "source": "deprecated/06-group-end-to-end-encryption.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/06-group-end-to-end-encryption.md"
+      ]
+    },
+    {
+      "source": "deprecated/07-attachments-and-object-transfer.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/07-attachments-and-object-transfer.md"
+      ]
+    },
+    {
+      "source": "deprecated/08-federation-and-cross-domain.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/08-federation-and-cross-domain.md"
+      ]
+    },
+    {
+      "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/09-anp-peer-to-peer-agent-transaction-specification.md"
+      ]
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/deprecated/09-message-mentions.md"
+      ]
+    },
+    {
+      "source": "docs/agent-description-extended-fields-guide.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/agent-description-extended-fields-guide.md"
+      ]
+    },
+    {
+      "source": "docs/anp-05-validation-guide.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/anp-05-validation-guide.md"
+      ]
+    },
+    {
+      "source": "docs/anp-getting-started-guide.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/anp-getting-started-guide.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/ANP入门指南.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/ANP示例程序.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/ANP示例程序.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/anp-05-validation-guide.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/anp-05-validation-guide.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/community-operations/operations-cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/community-operations/operations-cn.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/links.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/links.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/roadmap/roadmap-and-todo-202504.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/roadmap/roadmap-and-todo-202504.md"
+      ]
+    },
+    {
+      "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/chinese/基于ANP的WebAgent如何运行.md"
+      ]
+    },
+    {
+      "source": "docs/community-operations/community-operations.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/community-operations/community-operations.md"
+      ]
+    },
+    {
+      "source": "docs/did-wba-server-test-interface.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/did-wba-server-test-interface.md"
+      ]
+    },
+    {
+      "source": "docs/did-wba入门指南.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/did-wba入门指南.md"
+      ]
+    },
+    {
+      "source": "docs/how-anp-based-webagent-works.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/how-anp-based-webagent-works.md"
+      ]
+    },
+    {
+      "source": "docs/links.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/docs/links.md"
+      ]
+    },
+    {
+      "source": "examples/did-authentication-vnext/README.cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/examples/did-authentication-vnext/README.cn.md"
+      ]
+    },
+    {
+      "source": "examples/did-authentication-vnext/README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/examples/did-authentication-vnext/README.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/README.cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/examples/message-vnext/README.cn.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/examples/message-vnext/README.md"
+      ]
+    },
+    {
+      "source": "message/01-core-binding.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/01-core-binding.md"
+      ]
+    },
+    {
+      "source": "message/02-identity-and-discovery.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/02-identity-and-discovery.md"
+      ]
+    },
+    {
+      "source": "message/03-direct-messaging-base-semantics.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/03-direct-messaging-base-semantics.md"
+      ]
+    },
+    {
+      "source": "message/04-group-messaging-base-semantics.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/04-group-messaging-base-semantics.md"
+      ]
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/05-direct-end-to-end-encryption.md"
+      ]
+    },
+    {
+      "source": "message/06-group-end-to-end-encryption.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/06-group-end-to-end-encryption.md"
+      ]
+    },
+    {
+      "source": "message/07-attachments-and-object-transfer.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/07-attachments-and-object-transfer.md"
+      ]
+    },
+    {
+      "source": "message/08-federation-and-cross-domain.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/08-federation-and-cross-domain.md"
+      ]
+    },
+    {
+      "source": "message/09-message-mentions.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/09-message-mentions.md"
+      ]
+    },
+    {
+      "source": "message/README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/message/README.md"
+      ]
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md"
+      ]
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md"
+      ]
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md"
+      ]
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/W3C-proposal/DID-OAuth-Integration-Solution.md"
+      ]
+    },
+    {
+      "source": "standard/bak/Backup Init Version.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/bak/Backup Init Version.md"
+      ]
+    },
+    {
+      "source": "standard/bak/Framework for AI Agent Communication in Trust Domain.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/bak/Framework for AI Agent Communication in Trust Domain.md"
+      ]
+    },
+    {
+      "source": "standard/bak/draft-name-wg-word1-word2-00.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/bak/draft-name-wg-word1-word2-00.md"
+      ]
+    },
+    {
+      "source": "standard/draft-zyyhl-agent-networks-framework-00.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/standard/draft-zyyhl-agent-networks-framework-00.md"
+      ]
+    },
+    {
+      "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/vnext/01-agentnetworkprotocol-technical-white-paper.md"
+      ]
+    },
+    {
+      "source": "vnext/README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/vnext/README.md"
+      ]
+    },
+    {
+      "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/vnext/chinese/01-AgentNetworkProtocol技术白皮书.md"
+      ]
+    },
+    {
+      "source": "vnext/chinese/P4-群组基础语义.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/vnext/chinese/P4-群组基础语义.md"
+      ]
+    },
+    {
+      "source": "vnext/chinese/README.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/vnext/chinese/README.md"
+      ]
+    },
+    {
+      "source": "vnext/p4-group-messaging-base-semantics.md",
+      "original_sha256_matches": true,
+      "disposition": "markdown-semantic-review-full",
+      "sidecars": [
+        "japanese/vnext/p4-group-messaging-base-semantics.md"
+      ]
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/.github/ISSUE_TEMPLATE/bug.yml.ja.md"
+      ]
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/config.yml",
+      "original_sha256_matches": true,
+      "disposition": "technical-file-no-human-prose",
+      "sidecars": []
+    },
+    {
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/.github/ISSUE_TEMPLATE/feature.yml.ja.md"
+      ]
+    },
+    {
+      "source": ".github/workflows/update-contributors.yml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/.github/workflows/update-contributors.yml.ja.md"
+      ]
+    },
+    {
+      "source": ".gitignore",
+      "original_sha256_matches": true,
+      "disposition": "technical-file-no-human-prose",
+      "sidecars": []
+    },
+    {
+      "source": "LICENSE",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/texts/LICENSE.ja.md"
+      ]
+    },
+    {
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+      "original_sha256_matches": true,
+      "disposition": "complete-manual-translation",
+      "sidecars": [
+        "japanese/assets/documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md",
+        "japanese/assets/documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.json"
+      ]
+    },
+    {
+      "source": "blogs/cn/03-解读：MCP注册中心是什么，未来发展方向",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/texts/blogs/cn/03-解读：MCP注册中心是什么，未来发展方向.ja.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/09-豆包手机助手",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/texts/blogs/cn/09-豆包手机助手.ja.md"
+      ]
+    },
+    {
+      "source": "blogs/cn/09-豆包手机助手2",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/texts/blogs/cn/09-豆包手机助手2.ja.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/01-worry-client.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/b1f705fd059843cd.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/01-worry-server.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e69c63dbdc745ab4.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/02-apikeys-3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/b7c4e31f97afca64.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/02-apikeys-6.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8d05955cf3e3ef88.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/03-identity.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0cea8dec52a2ee5d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/04-resolve.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/c41b4f9628c4731c.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/b0968a0beb2cc50c.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d07acf22f7007a5c.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/adedaddd3ec0729d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step4.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/108064b5a6bfa7dd.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step5.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/49f30a6dda2dda30.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-pass.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/09058b99ea8f58d2.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8bd94ecc3f3c00d1.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/be5dd3b79a95c19d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/9713a353e4e34d23.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop4.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/38eafa18290def95.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/08-gates-stop5.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8c4f27d04f65ca56.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/fe781ee2010710b6.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/28b80226c00b95f9.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/7192d37c6fc18ba5.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-mint.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/480b6a37da679f9f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-outcomes.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e5ef3c95e06a6ea7.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-e1-hacked.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e44d5a80f6146c78.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-e1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/5d6db976f3ee4e0a.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-noe1-hacked.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/a858cfe9b2254586.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/10-verify-noe1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/90eb0483502bff60.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/11-adjson.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/f6577148f38f627f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/12-discovery.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/dafcf923a40d1847.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/740ad2cfbb24c024.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8dceb45f43ff81f7.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/5d112a380ec24c84.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta4.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/f9782fec7e448da1.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/14-e2ee-off.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d3bc6a1e0d3baed8.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-cn-png/14-e2ee-on.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/1c675190df54982b.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/01-worry-client.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e7768cc98378c6b1.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/01-worry-server.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/22d99ce1a6f5fb98.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/02-apikeys-3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/729de15d1cd74ba8.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/02-apikeys-6.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/fcdb13411d5e42ef.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/03-identity.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6d03f5638fdf59e2.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/04-resolve.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/bd0990a2bbda9989.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6603f0350d978b7f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/ec13629e9246ee9a.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8aa35a8a872fd4b4.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step4.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/4678dcc548a4a074.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/06-step5.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/fc4591ad1a12d183.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-pass.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d518bef12003c23a.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/ca592ef2cb88e1f9.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/61b55734a22eaa21.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/78fe1fb11f28cab9.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop4.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/56384b5dfe9d82e3.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/08-gates-stop5.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/69434f4e1ea7d0e2.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/159a64f0b7eb344e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0a99bedf87e279de.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/3101abcbcbfd17f3.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-mint.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/1974c73ce301b91f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-outcomes.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d7bed3ed680179cf.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-e1-changed.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/bf4fc2e8488418a9.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-e1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/b8e1c89d27d72f77.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-noe1-changed.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e6b958f6a3fcf02d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/11-adjson.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/44d6fff4c3dbdb0e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/12-discovery.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/71ae3a7b463405ae.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/234921a5939d265f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/71011c1f68054c38.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8e558ef29a45fb43.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/13-meta4.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/867726f3237ad22b.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/14-e2ee-off.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d8a5eae0e8b63350.md"
+      ]
+    },
+    {
+      "source": "blogs/images/12-ANP-from-scratch-en-png/14-e2ee-on.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d876d8b0bd3976ab.md"
+      ]
+    },
+    {
+      "source": "blogs/images/OAuth2.1.svg",
+      "original_sha256_matches": true,
+      "disposition": "not-applicable-invalid-source",
+      "sidecars": [
+        "japanese/assets/images/e3b0c44298fc1c14.md"
+      ]
+    },
+    {
+      "source": "blogs/images/a2a-id-auth.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/da53ef42ec9e6546.md"
+      ]
+    },
+    {
+      "source": "blogs/images/a2a-partners.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/690cf92f78f15cd4.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-authorization/agent-connect-existing-app.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/866ce28987056788.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-authorization/agent-interact.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/baadde48a376df78.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-authorization/multi-agent-auth.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/2841da0913fa6716.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-authorization/one-data-center.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8b77e365887e9b12.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-interview-Internet.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/f081d3dd0030b611.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-network/connect.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/c5cdd5b5ae9e96e9.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-network/integration.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6d57ec17104a242b.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-network/network-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/30c9f3383ff027ca.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agent-network/vinote.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/1613f299528cb9c3.md"
+      ]
+    },
+    {
+      "source": "blogs/images/agentic-web.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6fdec50f08d92d31.md"
+      ]
+    },
+    {
+      "source": "blogs/images/ai-native-network.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/43e9f94dc1334dd2.md"
+      ]
+    },
+    {
+      "source": "blogs/images/all-protocol-1.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/5970aa78bf5983fd.md"
+      ]
+    },
+    {
+      "source": "blogs/images/all-protocol-2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d6953cf6a5bf3001.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-ap2/ap2flow.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/a71c81fb1d6f0123.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e13958ffadc94165.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-authorization.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6e420ff99a64026f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-data-network.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/f117eb996f8bf2b1.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-did-auth.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/550d8c035a2bf3f1.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-email.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/fd6ada0f05452ed1.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-explorer.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/adfb7bc5f4425866.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/00.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/ff74093c26dfdd99.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/01.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/c103656a1781a77e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/02.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/89ac1e9169f28258.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/03.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/64d222507495e0ee.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/04.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/cb1eccfb79dc4972.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/05.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8c899f0a80616680.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/06.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0f38bafb1645344f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/07.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/da9f512dd146dd5e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-first-meet/08.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/c0f12046ceb1228d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page1.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/5df751ad490ec6fa.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page10.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/8a4ed0076bff4c58.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page11.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/cbb960c9a649ea1e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page12.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/99fc977277be529e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page13.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/81f460cbef651c61.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page14.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/61312d358ff5a23a.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page15.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/42874d7f9d8536fc.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page16.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/64216ff0bcfc0c1f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page17.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/2c7ebe6dbe294857.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page18.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/233bc9394f826746.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page19.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0a5dfc07401f1118.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page2.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/ee094cee9c7b1e96.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page20.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/703b0a859a572ffb.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page21.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/2805979717ce87b4.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page22.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/48b93f5dcebc5e85.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page23.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6d79d8c8c63a077c.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page24.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/18362e8314973400.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page3.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/5dbad778dee1f2ba.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page4.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/a8dcff2924713926.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page5.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/1ce06d0f40587d5e.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page6.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/9be88edfde623c3d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page7.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/88f09260551b6cf5.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page8.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/4d4578a5b9a31129.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page9.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/4eb327d95487cb9f.md"
+      ]
+    },
+    {
+      "source": "blogs/images/anp-interaction-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/e891bf1b23bd23d7.md"
+      ]
+    },
+    {
+      "source": "blogs/images/ap2/anp-transaction.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/c096366dcf4847df.md"
+      ]
+    },
+    {
+      "source": "blogs/images/ap2/anp-vc-hash.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/307fd2d023ec58dc.md"
+      ]
+    },
+    {
+      "source": "blogs/images/ap2/rules.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/7f7ff993b62072f6.md"
+      ]
+    },
+    {
+      "source": "blogs/images/api-keys-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/62fb1fb1e15ec704.md"
+      ]
+    },
+    {
+      "source": "blogs/images/asymmetric-encryption.mmd",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/diagrams/blogs/images/asymmetric-encryption.ja.mmd"
+      ]
+    },
+    {
+      "source": "blogs/images/auth-flow.mmd",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/diagrams/blogs/images/auth-flow.ja.mmd"
+      ]
+    },
+    {
+      "source": "blogs/images/computer-use-product.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/bf5591bd2e58c0f2.md"
+      ]
+    },
+    {
+      "source": "blogs/images/data-silos.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/1df6fb5e9479ceb7.md"
+      ]
+    },
+    {
+      "source": "blogs/images/did-wba-auth.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/a7efcf96f0b45ac9.md"
+      ]
+    },
+    {
+      "source": "blogs/images/did-wba-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/b3b061d710dacc38.md"
+      ]
+    },
+    {
+      "source": "blogs/images/first-web-agent.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/6c3f3ecb4010d9e0.md"
+      ]
+    },
+    {
+      "source": "blogs/images/human-ai-agent.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/4f866038d7349a52.md"
+      ]
+    },
+    {
+      "source": "blogs/images/internet-translation.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/48f82a04cde776db.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-anp-share/protocol-explanation.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/1baff2913b226fa5.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/1074d6e83f477926.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-authorization.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/b53b295e56b9be05.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-http-sse.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/050c66533476dc67.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-init.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/11e0c4bf494af8d6.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-server-api-key-example.png",
+      "original_sha256_matches": true,
+      "disposition": "technical-code-only-original-pixels-retained-no-prose-to-translate",
+      "sidecars": [
+        "japanese/assets/images/783479dc7db1c6bc.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-tools.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/4b90f531b632e83d.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-usb.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/1f867f28a41a84b5.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-vs-anp-core.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/a9ad5d482398dfc4.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-vs-anp.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/23daa51fe8c44494.md"
+      ]
+    },
+    {
+      "source": "blogs/images/mcp-wba-did-proposal.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/c7a763e7ed0bf8cc.md"
+      ]
+    },
+    {
+      "source": "blogs/images/meta-protocol-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/a1ba49a9028915c8.md"
+      ]
+    },
+    {
+      "source": "blogs/images/openid-connect-fllow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/486bd8088a9b4030.md"
+      ]
+    },
+    {
+      "source": "blogs/images/user-agent-internet.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/7ce61fcb5d91667d.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/pic/agent-find.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d0d4d03432a677bc.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/pic/mcp-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/72816e48b0685fa7.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/pic/mcp-auth-thinking.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/fc35dfd07516cdf6.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/pic/meta-protocol-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0c1a8b37825031df.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/pic/meta-protocol-weather.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/4c396da9f39fc886.md"
+      ]
+    },
+    {
+      "source": "chinese/思考&问题/pic/protocol-layer-design.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/31ad8676c6c2ec16.md"
+      ]
+    },
+    {
+      "source": "chinese/相关产品与技术/agent-discovery-en.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/ef0fd651a190b80b.md"
+      ]
+    },
+    {
+      "source": "chinese/相关产品与技术/agent-discovery.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/c389bac8135e0f49.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-VC哈希链关系图-en.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/6dc86d152ff342cc.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-VC哈希链关系图.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/5dce02ff051f26b1.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-理想交易流程图-v2.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/6ec869377d6e9a9e.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-系统架构图-en.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/7583dd811323434d.md"
+      ]
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-系统架构图.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/8aa3feff2088f5ae.md"
+      ]
+    },
+    {
+      "source": "examples/adp/hotel/examples/ad.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/hotel/examples/ad.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/hotel/examples/api/booking-interface.yaml.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/hotel/examples/api/nl-interface.yaml.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/hotel/examples/api/search-interface.yaml.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/hotel/examples/hotel_room.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/ad.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/lkcoffe/ad.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/lkcoffe/api/nl-interface.yaml.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/lkcoffe/api/purchase-interface.yaml.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/instruction.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-readable-text-translated-unreadable-source-text-remains",
+      "sidecars": [
+        "japanese/assets/images/10314aa19ed3b011.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/lkcoffe/orange-americano/orange-americano.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/instruction.jpeg",
+      "original_sha256_matches": true,
+      "disposition": "visible-readable-text-translated-unreadable-source-text-remains",
+      "sidecars": [
+        "japanese/assets/images/c4fa85623a87c2f8.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/instruction.jpg",
+      "original_sha256_matches": true,
+      "disposition": "visible-readable-text-translated-unreadable-source-text-remains",
+      "sidecars": [
+        "japanese/assets/images/b96ea698231f5135.md"
+      ]
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/adp/lkcoffe/silk-latte/silk-latte.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/did-authentication-vnext/byte-vectors.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/did-authentication-vnext/identities.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/did-authentication-vnext/identities.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/did-authentication-vnext/manifest.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/did-authentication-vnext/manifest.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/did-authentication-vnext/scenario-vectors.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/did-authentication-vnext/scenario-vectors.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/01-did-document-two-devices.json",
+      "original_sha256_matches": true,
+      "disposition": "technical-file-no-human-prose",
+      "sidecars": []
+    },
+    {
+      "source": "examples/message-vnext/02-direct-two-device-deliveries.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/message-vnext/02-direct-two-device-deliveries.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/03-device-prekey-bundle.json",
+      "original_sha256_matches": true,
+      "disposition": "technical-file-no-human-prose",
+      "sidecars": []
+    },
+    {
+      "source": "examples/message-vnext/04-mls-two-device-leaves.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/message-vnext/04-mls-two-device-leaves.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/05-device-revocation.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/message-vnext/05-device-revocation.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/06-device-state-changed-error.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/message-vnext/06-device-state-changed-error.json.ja.md"
+      ]
+    },
+    {
+      "source": "examples/message-vnext/07-did-transition-retry.json",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/examples/message-vnext/07-did-transition-retry.json.ja.md"
+      ]
+    },
+    {
+      "source": "images/Internet.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/f90df3d591dee6f3.md"
+      ]
+    },
+    {
+      "source": "images/agent-a-call-agent-b.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/9d518b277948d159.md"
+      ]
+    },
+    {
+      "source": "images/agent-connect-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/29cfaad1808eb9aa.md"
+      ]
+    },
+    {
+      "source": "images/agent-discovery-protocol.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/d2104ec2d20d0974.md"
+      ]
+    },
+    {
+      "source": "images/agent-discovery.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/e95584f8988ab145.md"
+      ]
+    },
+    {
+      "source": "images/agent-network-diagram.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/554b985787ae51ec.md"
+      ]
+    },
+    {
+      "source": "images/agentic-web-new.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/f5e8e2eed63648af.md"
+      ]
+    },
+    {
+      "source": "images/agentic-web3.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/f35bef28c6bc9773.md"
+      ]
+    },
+    {
+      "source": "images/ai-native-network.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/43e9f94dc1334dd2.md"
+      ]
+    },
+    {
+      "source": "images/anp-active-discovery-mechanism.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/1f6801fa492b41cd.md"
+      ]
+    },
+    {
+      "source": "images/anp-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6f2dfaae662b74f5.md"
+      ]
+    },
+    {
+      "source": "images/anp-architecture2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/19092c1d7ffa4279.md"
+      ]
+    },
+    {
+      "source": "images/anp-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/970d363039cfcf25.md"
+      ]
+    },
+    {
+      "source": "images/anp-human-agent-authorization-en.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/a9cd9fee682a3108.md"
+      ]
+    },
+    {
+      "source": "images/anp-human-agent-authorization.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/b8447cf8d1184f2b.md"
+      ]
+    },
+    {
+      "source": "images/anp-identity-interop.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/51a14a77f462dbbf.md"
+      ]
+    },
+    {
+      "source": "images/anp-information-interact.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0fdab33f58e6579a.md"
+      ]
+    },
+    {
+      "source": "images/anp-meta-protocol.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/2f64fb1f84bd2183.md"
+      ]
+    },
+    {
+      "source": "images/anp-passive-discovery-mechanism.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/4c79a2a3d50a93cb.md"
+      ]
+    },
+    {
+      "source": "images/anp-trading-hash.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/6dc86d152ff342cc.md"
+      ]
+    },
+    {
+      "source": "images/anp-trading-sysytem-arch.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/7583dd811323434d.md"
+      ]
+    },
+    {
+      "source": "images/ap2-402/ANP_AP2_Protocol_Flow.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/6aea676c7850851c.md"
+      ]
+    },
+    {
+      "source": "images/ap2-402/ANP_X402_Hybrid_Protocol.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/7d42e97ba6d3e1c9.md"
+      ]
+    },
+    {
+      "source": "images/ap2-402/X402_Protocol_Flow.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/adbf2f6f40f445fc.md"
+      ]
+    },
+    {
+      "source": "images/ap2-402/ap2-flow-diagram.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/2562b9a8f970934f.md"
+      ]
+    },
+    {
+      "source": "images/cross-platform-authentication.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/7f256240eedc70aa.md"
+      ]
+    },
+    {
+      "source": "images/cross-platform-identity-authentication-process.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/d482ab2a34fe07ea.md"
+      ]
+    },
+    {
+      "source": "images/did-all-core-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/2b12b209f3a26650.md"
+      ]
+    },
+    {
+      "source": "images/did-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/9b43eb8001fc6e5e.md"
+      ]
+    },
+    {
+      "source": "images/did-as-identity-bridge.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/4baaaeccbaea81ff.md"
+      ]
+    },
+    {
+      "source": "images/did-identity-authentication.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-human-prose-translated-technical-code-transcription-unverified",
+      "sidecars": [
+        "japanese/assets/images/db68b4a4cf6155fe.md"
+      ]
+    },
+    {
+      "source": "images/end-to-end-encryption-process.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/86cadacba0493435.md"
+      ]
+    },
+    {
+      "source": "images/judgment1_agent_replace_software.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/7d04c8eed77f8c19.md"
+      ]
+    },
+    {
+      "source": "images/judgment2_interconnected_agents.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/51107ff0bc503d05.md"
+      ]
+    },
+    {
+      "source": "images/judgment3_protocol_connection.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/d8542ded18cab377.md"
+      ]
+    },
+    {
+      "source": "images/mcp-registry-architecture.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/1fe21e71426e11aa.md"
+      ]
+    },
+    {
+      "source": "images/message-did-register-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/7df9ed39b2646ab5.md"
+      ]
+    },
+    {
+      "source": "images/message-flow-architecture.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/0c2c0b29dda1e8e2.md"
+      ]
+    },
+    {
+      "source": "images/message-send-receive-flow.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/6f0b301d81e5c116.md"
+      ]
+    },
+    {
+      "source": "images/meta-protocol-communication.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/8ad6739ad846c522.md"
+      ]
+    },
+    {
+      "source": "images/multi-did-privacy-en.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/98a43bab37926c38.md"
+      ]
+    },
+    {
+      "source": "images/multi-did-privacy.svg",
+      "original_sha256_matches": true,
+      "disposition": "all-svg-xml-labels-translated-technical-labels-retained",
+      "sidecars": [
+        "japanese/assets/images/7d96da9f0d5e19fc.md"
+      ]
+    },
+    {
+      "source": "images/protocol-layer-design.png",
+      "original_sha256_matches": true,
+      "disposition": "visible-labels-translated-source-clipped",
+      "sidecars": [
+        "japanese/assets/images/11576e27122bcaef.md"
+      ]
+    },
+    {
+      "source": "images/relationship.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/b48bdddfd1d012ad.md"
+      ]
+    },
+    {
+      "source": "references/did_web-method-specification.html",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/texts/references/did-web-method-specification.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/add_copyright.py",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/add_copyright.py.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/anp02-vector-utils.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/anp02-vector-utils.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/check-anp02-vectors.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/check-anp02-vectors.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/check-release-docs.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/check-release-docs.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/generate-anp02-vectors.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/generate-anp02-vectors.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/release-entrypoint-checks.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/release-entrypoint-checks.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/rename_images.py",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/rename_images.py.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/replace_spaces_with_hyphens.py.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/start-chrome-debug.sh",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/start-chrome-debug.sh.ja.md"
+      ]
+    },
+    {
+      "source": "scripts/update_contributors.js",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/scripts/update_contributors.js.ja.md"
+      ]
+    },
+    {
+      "source": "standard/IETF124/1-Agenda.pptx",
+      "original_sha256_matches": true,
+      "disposition": "complete-manual-translation",
+      "sidecars": [
+        "japanese/assets/documents/standard/IETF124/1-Agenda.pptx.ja.md",
+        "japanese/assets/documents/standard/IETF124/1-Agenda.pptx.ja.json"
+      ]
+    },
+    {
+      "source": "standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf",
+      "original_sha256_matches": true,
+      "disposition": "complete-manual-translation",
+      "sidecars": [
+        "japanese/assets/documents/standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf.ja.md",
+        "japanese/assets/documents/standard/IETF124/AI Agents Communication Use Cases and Requirements(v3)-chinatelecom.pdf.ja.json"
+      ]
+    },
+    {
+      "source": "standard/IETF124/Framwork for AI Agent Network-ANP.pdf",
+      "original_sha256_matches": true,
+      "disposition": "complete-manual-translation",
+      "sidecars": [
+        "japanese/assets/documents/standard/IETF124/Framwork for AI Agent Network-ANP.pdf.ja.md",
+        "japanese/assets/documents/standard/IETF124/Framwork for AI Agent Network-ANP.pdf.ja.json"
+      ]
+    },
+    {
+      "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+      "original_sha256_matches": true,
+      "disposition": "complete-manual-translation",
+      "sidecars": [
+        "japanese/assets/documents/standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf.ja.md",
+        "japanese/assets/documents/standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf.ja.json"
+      ]
+    },
+    {
+      "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+      "original_sha256_matches": true,
+      "disposition": "complete-manual-translation",
+      "sidecars": [
+        "japanese/assets/documents/standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx.ja.md",
+        "japanese/assets/documents/standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx.ja.json"
+      ]
+    },
+    {
+      "source": "standard/pic/Section12.2.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/5816c08d1af4b5db.md"
+      ]
+    },
+    {
+      "source": "standard/pic/pic.jpg",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/a29bc447f3c7bda7.md"
+      ]
+    },
+    {
+      "source": "standard/pic/section7.png",
+      "original_sha256_matches": true,
+      "disposition": "all-visible-text-visually-reviewed-and-translated",
+      "sidecars": [
+        "japanese/assets/images/144ab27335969de0.md"
+      ]
+    },
+    {
+      "source": "standard/pic/stack.txt",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/texts/standard/pic/stack.ja.md"
+      ]
+    },
+    {
+      "source": "tests/did-oauth-draft.test.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/tests/did-oauth-draft.test.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "tests/release-doc-entrypoints.test.mjs",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/tests/release-doc-entrypoints.test.mjs.ja.md"
+      ]
+    },
+    {
+      "source": "tests/update_contributors.test.js",
+      "original_sha256_matches": true,
+      "disposition": "agent-reviewed-sidecar",
+      "sidecars": [
+        "japanese/assets/code/tests/update_contributors.test.js.ja.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/02-apikeys-3.png",
+  "sha256": "b7c4e31f97afca6488d28ca946c838adffdb5760605c184b632724c6433ace52",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "服务A",
+      "confidence": 0.9997750123341879,
+      "box": [
+        [
+          743.0,
+          75.0
+        ],
+        [
+          831.0,
+          75.0
+        ],
+        [
+          831.0,
+          108.0
+        ],
+        [
+          743.0,
+          108.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "サービス A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "每一家都要单独注册一个账号",
+      "confidence": 0.9984586193011358,
+      "box": [
+        [
+          900.0,
+          81.0
+        ],
+        [
+          1212.0,
+          81.0
+        ],
+        [
+          1212.0,
+          107.0
+        ],
+        [
+          900.0,
+          107.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "それぞれに個別のアカウント登録が必要",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务B",
+      "confidence": 0.9998742540677389,
+      "box": [
+        [
+          743.0,
+          175.0
+        ],
+        [
+          831.0,
+          175.0
+        ],
+        [
+          831.0,
+          209.0
+        ],
+        [
+          743.0,
+          209.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "サービス B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "你的助理程序",
+      "confidence": 0.9977243542671204,
+      "box": [
+        [
+          158.0,
+          279.0
+        ],
+        [
+          331.0,
+          279.0
+        ],
+        [
+          331.0,
+          308.0
+        ],
+        [
+          158.0,
+          308.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "あなたのアシスタントプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务C",
+      "confidence": 0.998658816019694,
+      "box": [
+        [
+          743.0,
+          275.0
+        ],
+        [
+          831.0,
+          275.0
+        ],
+        [
+          831.0,
+          308.0
+        ],
+        [
+          743.0,
+          308.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "サービス C",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "要保管的钥匙串，每家一把",
+      "confidence": 0.9989682535330454,
+      "box": [
+        [
+          100.0,
+          427.0
+        ],
+        [
+          388.0,
+          427.0
+        ],
+        [
+          388.0,
+          452.0
+        ],
+        [
+          100.0,
+          452.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "管理する鍵の束。サービスごとに1本",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.0701989000081085,
+    0.011005163192749023,
+    0.7339200973510742
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "b7c4e31f97afca6488d28ca946c838adffdb5760605c184b632724c6433ace52"
+  }
+}

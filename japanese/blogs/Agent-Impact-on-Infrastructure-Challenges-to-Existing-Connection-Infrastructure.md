@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md -->
 # エージェントが基盤に与える影響：既存の接続基盤への課題
 
 ## AIが接続に求める特有の要件

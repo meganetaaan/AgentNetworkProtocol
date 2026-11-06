@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { repairCaseIds } from '../scripts/restore-ja-case-ids.mjs';
+import { repairCaseIds, verifyCaseIds } from '../scripts/restore-ja-case-ids.mjs';
 
 const header = '> 日本語参考訳（機械翻訳・未校閲）。\n> 原文: [guide](source.md)\n\n';
 const source = '# Guide\n\n| ID | Scenario |\n| --- | --- |\n| AUTHZ-01 | **MUST NOT** alter `wire_name`. |\n| AUTHZ-EDGE_A | Reject. |\n';
@@ -39,4 +39,12 @@ test('rejects extra stable-ID occurrences and does not reclassify manual transla
   assert.equal(extra.text, undefined);
   const manual = repairCaseIds(source, '<!-- translation-method: manual -->\n' + header + body);
   assert.equal(manual.status, 'skipped-non-machine-or-unknown-header');
+});
+
+test('verifies a reviewed translation read-only and detects swapped rows', () => {
+  const reviewed = '<!-- translation-review: full -->\n' + body.replace('オートHZ-01', 'AUTHZ-01').replace('任意に変形', 'AUTHZ-EDGE_A');
+  assert.equal(verifyCaseIds(source, reviewed).verified_cases, 2);
+  assert.equal(verifyCaseIds(source, reviewed).text, undefined);
+  const swapped = reviewed.replace('AUTHZ-01', 'TEMP').replace('AUTHZ-EDGE_A', 'AUTHZ-01').replace('TEMP', 'AUTHZ-EDGE_A');
+  assert.equal(verifyCaseIds(source, swapped).status, 'needs-repair');
 });

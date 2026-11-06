@@ -1,0 +1,719 @@
+{
+  "source": "images/cross-platform-identity-authentication-process.png",
+  "sha256": "d482ab2a34fe07ea4515737b79750dd43722bd107318993b6b71cc549b548350",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "2.QueryBDIDdocument",
+      "confidence": 0.9864597351927507,
+      "box": [
+        [
+          420.0,
+          59.0
+        ],
+        [
+          650.0,
+          59.0
+        ],
+        [
+          650.0,
+          82.0
+        ],
+        [
+          420.0,
+          82.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "2. BのDID文書を照会する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2.QueryBDIDdocument"
+      ],
+      "transcribed_source": "2. Query B DID document"
+    },
+    {
+      "source": "2.QueryA DIDdocument",
+      "confidence": 0.9769187361001969,
+      "box": [
+        [
+          930.0,
+          52.0
+        ],
+        [
+          1158.0,
+          52.0
+        ],
+        [
+          1158.0,
+          75.0
+        ],
+        [
+          930.0,
+          75.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "2. AのDID文書を照会する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2.QueryA"
+      ],
+      "transcribed_source": "2. Query A DID document"
+    },
+    {
+      "source": "DID Sever",
+      "confidence": 0.9520477387640212,
+      "box": [
+        [
+          751.0,
+          108.0
+        ],
+        [
+          844.0,
+          112.0
+        ],
+        [
+          844.0,
+          136.0
+        ],
+        [
+          750.0,
+          132.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "DIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "Response:B DID document",
+      "confidence": 0.9549893633179043,
+      "box": [
+        [
+          412.0,
+          123.0
+        ],
+        [
+          673.0,
+          125.0
+        ],
+        [
+          673.0,
+          151.0
+        ],
+        [
+          412.0,
+          149.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "応答: BのDID文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ],
+      "transcribed_source": "Response: B DID document"
+    },
+    {
+      "source": "Response:ADID document",
+      "confidence": 0.9652356586673043,
+      "box": [
+        [
+          943.0,
+          126.0
+        ],
+        [
+          1199.0,
+          126.0
+        ],
+        [
+          1199.0,
+          149.0
+        ],
+        [
+          943.0,
+          149.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "応答: AのDID文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ADID"
+      ],
+      "transcribed_source": "Response: A DID document"
+    },
+    {
+      "source": "ASever",
+      "confidence": 0.9951992829640707,
+      "box": [
+        [
+          261.0,
+          218.0
+        ],
+        [
+          337.0,
+          221.0
+        ],
+        [
+          336.0,
+          246.0
+        ],
+        [
+          261.0,
+          243.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "Aのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A Sever"
+    },
+    {
+      "source": "BSever",
+      "confidence": 0.9969852864742279,
+      "box": [
+        [
+          1258.0,
+          218.0
+        ],
+        [
+          1333.0,
+          221.0
+        ],
+        [
+          1332.0,
+          246.0
+        ],
+        [
+          1257.0,
+          243.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "Bのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "B Sever"
+    },
+    {
+      "source": "Message",
+      "confidence": 0.9978155664035252,
+      "box": [
+        [
+          632.0,
+          334.0
+        ],
+        [
+          716.0,
+          339.0
+        ],
+        [
+          714.0,
+          364.0
+        ],
+        [
+          630.0,
+          359.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "メッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Message",
+      "confidence": 0.9971650753702436,
+      "box": [
+        [
+          882.0,
+          335.0
+        ],
+        [
+          964.0,
+          339.0
+        ],
+        [
+          963.0,
+          363.0
+        ],
+        [
+          881.0,
+          359.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "メッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service",
+      "confidence": 0.9866462349891663,
+      "box": [
+        [
+          639.0,
+          362.0
+        ],
+        [
+          713.0,
+          364.0
+        ],
+        [
+          713.0,
+          389.0
+        ],
+        [
+          638.0,
+          387.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service",
+      "confidence": 0.9913885848862785,
+      "box": [
+        [
+          889.0,
+          362.0
+        ],
+        [
+          962.0,
+          364.0
+        ],
+        [
+          961.0,
+          389.0
+        ],
+        [
+          888.0,
+          387.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Authentication and Communication",
+      "confidence": 0.9816924929618835,
+      "box": [
+        [
+          645.0,
+          448.0
+        ],
+        [
+          972.0,
+          449.0
+        ],
+        [
+          972.0,
+          473.0
+        ],
+        [
+          645.0,
+          472.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "認証と通信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(detailedintroductiontofollow)",
+      "confidence": 0.9756395816802979,
+      "box": [
+        [
+          648.0,
+          478.0
+        ],
+        [
+          935.0,
+          478.0
+        ],
+        [
+          935.0,
+          501.0
+        ],
+        [
+          648.0,
+          501.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "（詳細な説明は後述）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(detailed introduction to follow)"
+    },
+    {
+      "source": "B: DID",
+      "confidence": 0.9933294653892517,
+      "box": [
+        [
+          98.0,
+          524.0
+        ],
+        [
+          160.0,
+          524.0
+        ],
+        [
+          160.0,
+          552.0
+        ],
+        [
+          98.0,
+          552.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "B: DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "A: DID",
+      "confidence": 0.9392395118872324,
+      "box": [
+        [
+          1467.0,
+          526.0
+        ],
+        [
+          1528.0,
+          526.0
+        ],
+        [
+          1528.0,
+          551.0
+        ],
+        [
+          1467.0,
+          551.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "A: DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "WeChat",
+      "confidence": 0.9919060468673706,
+      "box": [
+        [
+          688.0,
+          631.0
+        ],
+        [
+          765.0,
+          631.0
+        ],
+        [
+          765.0,
+          655.0
+        ],
+        [
+          688.0,
+          655.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "WeChat",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WeChat"
+      ]
+    },
+    {
+      "source": "SMS",
+      "confidence": 0.9947078824043274,
+      "box": [
+        [
+          889.0,
+          630.0
+        ],
+        [
+          937.0,
+          630.0
+        ],
+        [
+          937.0,
+          656.0
+        ],
+        [
+          889.0,
+          656.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "SMS",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SMS"
+      ]
+    },
+    {
+      "source": "1.0btainDID through areliablemethod",
+      "confidence": 0.9581291283879961,
+      "box": [
+        [
+          223.0,
+          645.0
+        ],
+        [
+          579.0,
+          645.0
+        ],
+        [
+          579.0,
+          668.0
+        ],
+        [
+          223.0,
+          668.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "1. 信頼できる方法でDIDを取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1.0btainDID"
+      ],
+      "transcribed_source": "1.Obtain DID through a reliable method"
+    },
+    {
+      "source": "1.0btain DID through a reliable method",
+      "confidence": 0.9783585824464497,
+      "box": [
+        [
+          1086.0,
+          644.0
+        ],
+        [
+          1445.0,
+          644.0
+        ],
+        [
+          1445.0,
+          670.0
+        ],
+        [
+          1086.0,
+          670.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "1. 信頼できる方法でDIDを取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1.0btain",
+        "DID"
+      ],
+      "transcribed_source": "1.Obtain DID through a reliable method"
+    },
+    {
+      "source": "AUser",
+      "confidence": 0.9937181830406189,
+      "box": [
+        [
+          81.0,
+          668.0
+        ],
+        [
+          147.0,
+          671.0
+        ],
+        [
+          146.0,
+          696.0
+        ],
+        [
+          80.0,
+          693.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "ユーザー A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A User"
+    },
+    {
+      "source": "B User",
+      "confidence": 0.9141104022661845,
+      "box": [
+        [
+          1501.0,
+          665.0
+        ],
+        [
+          1567.0,
+          669.0
+        ],
+        [
+          1565.0,
+          694.0
+        ],
+        [
+          1500.0,
+          690.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "ユーザー B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Public",
+      "confidence": 0.9968783855438232,
+      "box": [
+        [
+          879.0,
+          718.0
+        ],
+        [
+          942.0,
+          718.0
+        ],
+        [
+          942.0,
+          743.0
+        ],
+        [
+          879.0,
+          743.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "公開の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "QRcode",
+      "confidence": 0.9965850611527761,
+      "box": [
+        [
+          686.0,
+          732.0
+        ],
+        [
+          768.0,
+          732.0
+        ],
+        [
+          768.0,
+          759.0
+        ],
+        [
+          686.0,
+          759.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "QRコード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "QR code"
+    },
+    {
+      "source": "query",
+      "confidence": 0.993688416481018,
+      "box": [
+        [
+          883.0,
+          750.0
+        ],
+        [
+          942.0,
+          750.0
+        ],
+        [
+          942.0,
+          774.0
+        ],
+        [
+          883.0,
+          774.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "照会",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID exchange",
+      "confidence": 0.9793621947367986,
+      "box": [
+        [
+          751.0,
+          849.0
+        ],
+        [
+          881.0,
+          853.0
+        ],
+        [
+          880.0,
+          880.0
+        ],
+        [
+          750.0,
+          876.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "DIDの交換",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.0581180000444874,
+    0.03571057319641113,
+    2.002274513244629
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "2.QueryBDIDdocument": "2. Query B DID document",
+      "2.QueryA DIDdocument": "2. Query A DID document",
+      "Response:B DID document": "Response: B DID document",
+      "Response:ADID document": "Response: A DID document",
+      "ASever": "A Sever",
+      "BSever": "B Sever",
+      "(detailedintroductiontofollow)": "(detailed introduction to follow)",
+      "1.0btainDID through areliablemethod": "1.Obtain DID through a reliable method",
+      "1.0btain DID through a reliable method": "1.Obtain DID through a reliable method",
+      "AUser": "A User",
+      "QRcode": "QR code"
+    },
+    "source_sha256": "d482ab2a34fe07ea4515737b79750dd43722bd107318993b6b71cc549b548350"
+  }
+}

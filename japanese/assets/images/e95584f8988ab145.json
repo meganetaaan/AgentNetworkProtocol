@@ -1,0 +1,220 @@
+{
+  "source": "images/agent-discovery.svg",
+  "sha256": "e95584f8988ab145d9c667b33b734287a2aee17693fdf43231b1a8edd46c8f99",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP 智能体发现协议架构",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "70",
+      "label_id": "L001",
+      "japanese": "ANPエージェント発見プロトコルの構成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "主动发现机制",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "40",
+      "label_id": "L002",
+      "japanese": "能動的発見の仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "搜索引擎/智能体",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "85",
+      "label_id": "L003",
+      "japanese": "検索エンジン／エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体服务器",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "85",
+      "label_id": "L004",
+      "japanese": "エージェントサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "/.well-known/",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "80",
+      "label_id": "L005",
+      "japanese": "/.well-known/",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "agent-descriptions",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "105",
+      "label_id": "L006",
+      "japanese": "agent-descriptions",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "HTTP GET",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "180",
+      "label_id": "L007",
+      "japanese": "HTTP GET",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "提供",
+      "element": "text",
+      "id": null,
+      "x": "555",
+      "y": "310",
+      "label_id": "L008",
+      "japanese": "提供",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 主动发现：搜索引擎或其他智能体通过访问.well-known URI路径发现所有公开智能体",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "25",
+      "label_id": "L009",
+      "japanese": "• 能動的発見: 検索エンジンや他のエージェントが.well-known URIパスにアクセスして、公開されているすべてのエージェントを発見する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 返回格式：JSON-LD格式的集合文档，包含智能体描述文档的URL列表",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "55",
+      "label_id": "L010",
+      "japanese": "• 応答形式: JSON-LD形式のコレクション文書。エージェント記述文書のURL一覧を含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "被动发现机制",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "40",
+      "label_id": "L011",
+      "japanese": "受動的発見の仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "85",
+      "label_id": "L012",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "搜索服务",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "80",
+      "label_id": "L013",
+      "japanese": "検索サービス",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "105",
+      "label_id": "L014",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体描述文档",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "80",
+      "label_id": "L015",
+      "japanese": "エージェント記述文書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON-LD",
+      "element": "text",
+      "id": null,
+      "x": "100",
+      "y": "105",
+      "label_id": "L016",
+      "japanese": "JSON-LD",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "注册请求 (包含描述URL)",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "165",
+      "label_id": "L017",
+      "japanese": "登録要求（記述文書のURLを含む）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "爬取和索引",
+      "element": "text",
+      "id": null,
+      "x": "315",
+      "y": "300",
+      "label_id": "L018",
+      "japanese": "クロールとインデックス作成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 被动发现：智能体主动将自身描述URL注册到搜索服务，使其能够爬取和索引",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "25",
+      "label_id": "L019",
+      "japanese": "• 受動的発見: エージェントが自分の記述文書のURLを検索サービスに自発的に登録し、クロールとインデックス作成を可能にする",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 验证与爬取：搜索服务验证请求后爬取智能体描述文档并进行索引",
+      "element": "text",
+      "id": null,
+      "x": "15",
+      "y": "55",
+      "label_id": "L020",
+      "japanese": "• 検証とクロール: 検索サービスが要求を検証した後、エージェント記述文書をクロールしてインデックスを作成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "基于ANP-智能体发现协议规范（1.1版）",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "870",
+      "label_id": "L021",
+      "japanese": "ANPエージェント発見プロトコル仕様（バージョン1.1）に基づく",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

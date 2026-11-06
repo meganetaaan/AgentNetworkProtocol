@@ -1,63 +1,181 @@
 {
-  "verified_at": "2026-11-06T12:57:31.013Z",
+  "verified_at": "2026-11-06T15:10:10.111Z",
   "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
   "translation": {
     "source_markdown": 232,
     "translated": 232,
-    "agent_translated": 52,
-    "machine_partially_reviewed": 17,
-    "machine_unreviewed": 163,
+    "initial_agent_translated": 52,
+    "semantic_full": 232,
+    "machine_fully_reviewed": 180,
+    "machine_partially_reviewed": 0,
+    "machine_unreviewed": 0,
     "original_files_unchanged": true,
+    "original_sha256_checks": 498,
     "preservation_errors": [],
     "preservation_warnings": [],
-    "retained_non_markdown_files": 266
+    "full_review_evidence_missing": [],
+    "non_markdown": {
+      "sources": 266,
+      "image_paths": 212,
+      "unique_images": 209,
+      "image_labels": 3655,
+      "readable_image_prose_pending": 0,
+      "paged_documents": 6,
+      "pages_and_slides": 99,
+      "code_prose_units": 807,
+      "code_prose_pending": 0,
+      "example_prose_units": 2782,
+      "example_prose_pending": 0,
+      "plain_example_full_blocks": 76
+    }
   },
   "links": {
     "baseline_markdown_sources": 232,
-    "japanese_markdown_documents": 235,
+    "japanese_markdown_documents": 608,
     "missing_translation_documents": 0,
-    "local_links_checked": 1418,
-    "resolved_local_links": 1318,
+    "local_links_checked": 2896,
+    "resolved_local_links": 2881,
     "external_links_skipped": 634,
     "baseline_upstream_broken_links": 134,
-    "translated_upstream_broken_links": 100,
+    "translated_upstream_broken_links": 15,
     "newly_broken_links": 0,
     "pending_translation_target_links": 0,
-    "translated_fragment_target_warnings": 2,
+    "translated_fragment_target_warnings": 75,
     "snapshot_complete": true
   },
   "stable_authz_case_ids": {
     "source": 136,
-    "verified": 136
+    "verified": 136,
+    "read_only_verification": true
   },
   "demo": {
     "typecheck": "PASS",
-    "network_tests_passed": 7,
-    "network_tests_failed": 0,
-    "agents": 3,
-    "group_sends": 9,
-    "incoming_notifications": 27,
-    "messages_received_per_agent": 9,
-    "conversation_mode": "scripted-no-model-api",
-    "conversation_model_api_calls": 0,
-    "full_p4_conformance_claimed": false
+    "tests_passed": 10,
+    "tests_failed": 0,
+    "fake_model_api_boundary_tests": 3,
+    "scripted_model_api_calls": 0,
+    "live": {
+      "model": "gpt-5.6-terra",
+      "model_api_calls": 9,
+      "input_tokens": 5011,
+      "output_tokens": 710,
+      "estimated_usd_not_billed_amount": 0.018542,
+      "agents": 3,
+      "messagesPerAgent": [
+        9,
+        9,
+        9
+      ],
+      "identicalReceivedText": true,
+      "groupSend": 9,
+      "groupIncoming": 27
+    },
+    "full_p4_conformance_claimed": false,
+    "roundtable_used": false
   },
   "maintenance_tests": {
-    "passed": 14,
+    "passed": 18,
     "failed": 0
   },
   "upstream_baseline": {
     "release_document_check": "PASS",
     "anp02_vector_check": "PASS",
+    "vector_generation_fixture_check": "PASS",
     "tests": 131,
     "passed": 93,
     "failed": 38,
-    "original_files_changed": false
+    "baseline_and_current_failure_names_and_diagnostics_identical": true,
+    "original_files_changed": false,
+    "investigation": "japanese/reviews/upstream-test-investigation.json"
+  },
+  "limits": {
+    "image_source_pixels": [
+      {
+        "source": "blogs/images/agent-network/vinote.png",
+        "sha256": "1613f299528cb9c3898cf01589a569f890bac25b2cb35c891fee4289b5cc586d",
+        "limitation": "右端のカードの文字が画像の端で切れている。"
+      },
+      {
+        "source": "blogs/images/anp-ap2/ap2flow.png",
+        "sha256": "a71c81fb1d6f0123578cbde5d0d23e6c3c6b1897e07b07236d61e6945b13a07e",
+        "limitation": "右上Payment Processo…の末尾文字がボックスで切れている。"
+      },
+      {
+        "source": "blogs/images/anp-explorer.png",
+        "sha256": "adfb7bc5f4425866abaec2f9be04ec6d0b6d54bc0ccd4ab8b2e82d8ec7d473e4",
+        "limitation": "下部の説明文の続きは画像外。"
+      },
+      {
+        "source": "blogs/images/anp-in-w3c-20250214/page17.jpg",
+        "sha256": "2c7ebe6dbe294857a94614a82abb8668110c087b13ef3842c8bf50b06909464a",
+        "limitation": "左右下部のdescriptionとURLが元コード画像の右端で切れている。見える自然言語の値は訳したが、見えない語やURLの続きを補完しない。"
+      },
+      {
+        "source": "blogs/images/anp-in-w3c-20250214/page7.jpg",
+        "sha256": "88f09260551b6cf5e7075ed94c97b33cd6781f5317d22689d1412eabdeaff11f",
+        "limitation": "右図のE2Eの下にある文字は元図で隠れており、判読不能な点しか残っていない。推測して補完しない。"
+      },
+      {
+        "source": "blogs/images/first-web-agent.png",
+        "sha256": "6c3f3ecb4010d9e076a221368c0a24052febe8cf2922c5d11fed0d7755b4eec4",
+        "limitation": "英語併記の長い文章の右端と最下部コードの続きは画像外。見える人向け文章は上記の対訳に含む。"
+      },
+      {
+        "source": "blogs/images/human-ai-agent.png",
+        "sha256": "4f866038d7349a52bbe72a4e9c03a2a265396962b858b6deee66df577ffb58b3",
+        "limitation": "下端の透かしの大部分が画像外であり、判読できない。"
+      },
+      {
+        "source": "blogs/images/mcp-wba-did-proposal.png",
+        "sha256": "c7a763e7ed0bf8cccd8339eb1abf2956b6dd1cb27383df12d59bfbba43554284",
+        "limitation": "シーケンス図の末尾は原画像の下端より外にあり、見えない内容は補完しない。"
+      },
+      {
+        "source": "chinese/思考&问题/pic/protocol-layer-design.png",
+        "sha256": "31ad8676c6c2ec167eda42cd23e21c173533e74fd385e6f342c863b7e0e899b8",
+        "limitation": "E2Eの直下の文字が元画像で隠れており判読不能。"
+      },
+      {
+        "source": "examples/adp/lkcoffe/orange-americano/instruction.jpg",
+        "sha256": "10314aa19ed3b01136599117d0a38d94cbfb6839983012a88513b36c4a1123fe",
+        "limitation": "注いでいる瓶のラベルは手で覆われており断片しか見えないため、隠れたブランド文字を推測しない。カップ上の薄い小文字の一部は原画像の印刷・反射により判読困難。読める商品説明・脚注・人物名は対訳済み。"
+      },
+      {
+        "source": "examples/adp/lkcoffe/roasted-coconut-latte/instruction.jpeg",
+        "sha256": "c4fa85623a87c2f8e3b85118c830058422246651f3c10594b2fc15ea54c59680",
+        "limitation": "人物写真内の手書きサインは文字としての判読が困難なため、原画素を保持。手で隠れた紙カップのブランド表示の一部は補完しない。読める広告本文・脚注・人物名は対訳済み。"
+      },
+      {
+        "source": "examples/adp/lkcoffe/silk-latte/instruction.jpg",
+        "sha256": "b96ea698231f51355ce953d0971263b585a74ec10109674a813d82ac42ef9ed8",
+        "limitation": "レーダーチャートの薄い小さな目盛数字と、写真中の白い紙カップの薄い印字は一部判読困難。数字を推測して追加しない。読める広告本文・比較条件・15人/6人・20.99%・各軸名と凡例は対訳済み。"
+      },
+      {
+        "source": "images/did-identity-authentication.png",
+        "sha256": "db68b4a4cf6155fe8f2f6d23afce077876af0b8cd01d6e1f43f3e1dcab8bc6cc",
+        "limitation": "図の説明ラベルは目視照合した。小さなDID文書コード内の暗号鍵文字列・括弧とpublicKeyMultibase行はOCRの欠落があり、完全なコード転記は未確認。コードのOCR文字列を正確な識別子として使用しないこと。"
+      },
+      {
+        "source": "images/protocol-layer-design.png",
+        "sha256": "11576e27122bcaef77403d7520afd706adfc0eea3500a8b8a13fd4bcc94d7dd2",
+        "limitation": "E2Eの下に文字らしき切れた画素があり、原画像で下部が隠れているため判読不能。見えているラベルは照合済みだが、隠れた文字は補完していない。"
+      }
+    ],
+    "image_technical_code_transcription_unverified": 8,
+    "paged_document_visual_verification": false,
+    "paged_document_remaining_work": [
+      "PPTX 24スライドのネイティブ描画によるレイアウト・重なり・フォント確認は未実施。既存ソフトを確認した範囲で描画環境なし。",
+      "W3C PDF 17ページの一部description・URLは原画像自体で右端が切れており、続きを復元していない。",
+      "China Unicom PDF 3ページのホテル端末写真、4ページのイラスト内画面の微小文字は原画素で確実に判読できない。3ページの端末写真の隠れた写真枚数と省略された共有相手の続きは復元していない。",
+      "コード・鍵・URLなどの技術値は原画素・原文抽出を保持し、画像からコード全文を再入力していない。",
+      "全PDFページの概観と埋込画像の確認は、全画素・すべての文字に対する独立した二次校閲を意味しない。"
+    ],
+    "independent_human_translation_review": false
   },
   "remaining": {
-    "full_semantic_translation_review": "not completed",
-    "binary_assets_and_text_inside_code": "retained in original languages",
-    "live_conversation_model": "not implemented or run; credential decision pending",
-    "external_interoperability_and_product_e2e": "not performed"
+    "markdown_semantic_review": [],
+    "external_interoperability_and_product_e2e": "not performed",
+    "native_powerpoint_rendering": "unavailable; extracted text, embedded media and limited layout previews reviewed",
+    "independent_human_translation_review": "not performed"
   }
 }

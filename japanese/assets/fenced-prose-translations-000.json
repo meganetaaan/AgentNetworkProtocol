@@ -1,0 +1,1005 @@
+{
+  "method": "agent-read-and-translated-labels; original code unchanged",
+  "units": [
+    {
+      "original": "First Request",
+      "translation": "最初の要求",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Subsequent Requests",
+      "translation": "以後の要求",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "orders.read orders.write",
+      "translation": "orders.read orders.write（権限scopeの識別子を原文のまま保持）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Signature verification failed.",
+      "translation": "署名の検証に失敗しました。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Initial Request",
+      "translation": "初回の要求",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Handle Provider",
+      "translation": "Handleプロバイダー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "DID Document Server",
+      "translation": "DID Documentを提供するサーバー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Handle Resolution Document (containing DID)",
+      "translation": "Handle解決文書（DIDを含む）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Extract DID from the Resolution Document",
+      "translation": "解決文書からDIDを取り出す",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resolve under the applicable method (WBA: 03; Web: Appendix B)",
+      "translation": "該当メソッドで解決する（WBA: 03、Web: 付録B）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Obtain service endpoints from the DID Document",
+      "translation": "DID Documentからサービスエンドポイントを取得する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Researcher and AI agent user",
+      "translation": "研究者およびAIエージェントの利用者",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "The handle 'bob.example.com' does not exist",
+      "translation": "Handle「bob.example.com」は存在しません",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "1. Resolve Handle to obtain DID",
+      "translation": "1. Handleを解決してDIDを取得する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Handle Resolution Document",
+      "translation": "Handle解決文書",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "2. Resolve DID to obtain DID Document",
+      "translation": "2. DIDを解決してDID Documentを取得する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "3. Find ANPHandleService and read serviceEndpoint",
+      "translation": "3. ANPHandleServiceを見つけ、serviceEndpointを読む",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "4. Dereference serviceEndpoint",
+      "translation": "4. serviceEndpointを参照解決する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Handle Resolution Document or DID Confirmation Document",
+      "translation": "Handle解決文書またはDID確認文書",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Public Handle mode and exact match",
+      "translation": "公開Handleモードと完全一致",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Private confirmation mode and confirmed=true",
+      "translation": "非公開の確認モードとconfirmed=true",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Verification failed",
+      "translation": "検証に失敗",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Alice's Agent",
+      "translation": "AliceのAgent",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Agent needs to perform a protected operation",
+      "translation": "Agentが保護された操作を実行する必要がある",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "ANP-02 request authentication<br/>receiver applies local policy",
+      "translation": "ANP-02の要求認証<br/>受信側がローカルポリシーを適用",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "No, authorization is needed",
+      "translation": "いいえ、認可が必要",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "OAuth Profile<br/>authorization code or client credentials",
+      "translation": "OAuth Profile<br/>認可コードまたはクライアント資格情報",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resource-side policy, user authorization or verified information",
+      "translation": "リソース側のポリシー、ユーザーの認可、または検証済み情報",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "VC Profile<br/>delegation or role direct presentation",
+      "translation": "VC Profile<br/>委任またはroleの直接提示",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "A portable delegation or role credential is needed",
+      "translation": "持ち運べる委任credentialまたはrole credentialが必要",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Agent control boundary",
+      "translation": "Agentの管理境界",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Agent runtime<br/>runtime authentication key",
+      "translation": "Agent実行環境<br/>実行時認証鍵",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Held delegation credential",
+      "translation": "保有する委任credential",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "DID-document hosting boundary",
+      "translation": "DID Documentのホスティング境界",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Agent DID document<br/>authentication key and metadata digest",
+      "translation": "AgentのDID Document<br/>認証鍵とメタデータのダイジェスト",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Metadata hosting boundary",
+      "translation": "メタデータのホスティング境界",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Standard CIMD and JWKS",
+      "translation": "標準CIMDおよびJWKS",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Credential issuer boundary",
+      "translation": "credential発行者の境界",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "User or organization<br/>issuing key and status list",
+      "translation": "ユーザーまたは組織<br/>発行鍵とstatus list",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resource owner",
+      "translation": "リソース所有者",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Authorization server",
+      "translation": "認可サーバー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "issues delegation credential",
+      "translation": "委任credentialを発行する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Optional DID binding: URL, keys and pinned digest",
+      "translation": "任意のDID binding: URL、鍵、固定したダイジェスト",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Standard metadata and client public keys",
+      "translation": "標準メタデータとclientの公開鍵",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "client assertion and OAuth grant",
+      "translation": "client assertionとOAuth grant",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "issuer DID and credential status",
+      "translation": "issuerのDIDとcredentialの状態",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "resource-specific token",
+      "translation": "対象リソース専用のトークン",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resource server or peer Agent<br/>deterministic policy",
+      "translation": "リソースサーバーまたは相手Agent<br/>決定的なポリシー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "token and action, or direct VP",
+      "translation": "トークンとaction、または直接のVP",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "issuer trust / token status",
+      "translation": "issuerへの信頼／トークンの状態",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "CIMD URL client request",
+      "translation": "CIMD URL clientの要求",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate CIMD and local admission",
+      "translation": "CIMDとローカルな受入れ条件を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate DID, URL, metadata digest and key policy",
+      "translation": "DID、URL、メタデータのダイジェスト、鍵ポリシーを検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Verify fresh standard client assertion",
+      "translation": "新しい標準client assertionを検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Reject without mode fallback",
+      "translation": "モードのフォールバックを行わず拒否する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Check independent grant, user, resource and scope",
+      "translation": "独立したgrant、ユーザー、リソース、scopeを検査する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Issue resource-specific token",
+      "translation": "対象リソース専用のトークンを発行する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Client assertion for a CIMD URL",
+      "translation": "CIMD URLに対するclient assertion",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Select accepted JWKS key and authentication policy",
+      "translation": "受け入れるJWKS鍵と認証ポリシーを選択する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate current DID, URL, digest and actual key",
+      "translation": "現在のDID、URL、ダイジェスト、実際の鍵を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Verify JWT signature, claims and freshness",
+      "translation": "JWT署名、claim、鮮度を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Reject without fallback",
+      "translation": "フォールバックせず拒否する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Enforce replay controls",
+      "translation": "replay防止を強制する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Evaluate grant and requested resource permissions",
+      "translation": "grantと、要求されたリソースへの権限を評価する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Issue token",
+      "translation": "トークンを発行する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "User / system browser",
+      "translation": "ユーザー／システムのブラウザー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resource server",
+      "translation": "リソースサーバー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Public CIMD / JWKS / DID hosts",
+      "translation": "公開CIMD／JWKS／DIDのホスト",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Request resource without token",
+      "translation": "トークンなしでリソースを要求する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "401 and resource_metadata",
+      "translation": "401とresource_metadata",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate issuer, CIMD and selected capabilities",
+      "translation": "issuer、CIMD、選択した機能を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Open authorize URL (CIMD URL, resource, state, S256)",
+      "translation": "authorize URLを開く（CIMD URL、resource、state、S256）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Standard authorization request",
+      "translation": "標準の認可要求",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Fetch CIMD and accepted JWKS",
+      "translation": "CIMDと受け入れるJWKSを取得する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Standard metadata and public keys",
+      "translation": "標準メタデータと公開鍵",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Advertised DID-bound processing",
+      "translation": "広告されたDID-bound処理",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resolve and method-validate associated DID",
+      "translation": "関連DIDを解決し、メソッドの規則で検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Service URL, digest and allowed keys",
+      "translation": "サービスURL、ダイジェスト、許可された鍵",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Verify binding before accepting metadata",
+      "translation": "メタデータを受け入れる前にbindingを検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Apply admission and approve callback",
+      "translation": "受入れ条件を適用し、callbackを承認する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Authenticate user and request scoped consent",
+      "translation": "ユーザーを認証し、scopeを限定した同意を求める",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Approve or deny",
+      "translation": "承認または拒否",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "User approves",
+      "translation": "ユーザーが承認する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Code and state, iss when selected",
+      "translation": "codeとstate、選択した場合はiss",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Approved HTTPS or loopback callback",
+      "translation": "承認済みのHTTPSまたはloopback callback",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate session and pinned issuer strategy",
+      "translation": "sessionと固定したissuer方針を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Code, exact callback, verifier, fresh assertion, target binding",
+      "translation": "code、正確なcallback、verifier、新しいassertion、宛先binding",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Verify current key/binding, assertion, code and grant",
+      "translation": "現在の鍵／binding、assertion、code、grantを検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Resource-specific access token",
+      "translation": "対象リソース専用のアクセストークン",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Token and permitted action",
+      "translation": "トークンと許可されたaction",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate token, current authorization and operation policy",
+      "translation": "トークン、現在の認可、操作ポリシーを検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "User denies",
+      "translation": "ユーザーが拒否する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Error on approved callback, state, iss when selected",
+      "translation": "承認済みcallbackでエラー、state、選択した場合はiss",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Validate error binding and stop",
+      "translation": "エラーのbindingを検証して停止する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Upstream caller",
+      "translation": "上流の呼出し元",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Agent A<br/>inbound RS and downstream client",
+      "translation": "Agent A<br/>受信側RS兼、下流へのclient",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Authorization server accepted by B<br/>independent B grant and policy",
+      "translation": "Bが受け入れる認可サーバー<br/>Bに対する独立したgrantとポリシー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Service B<br/>validate audience and permissions",
+      "translation": "サービスB<br/>audienceと権限を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "B rejects an A-targeted token<br/>no token exchange in v1",
+      "translation": "BはA宛てのトークンを拒否する<br/>v1ではトークン交換を行わない",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "A-targeted token",
+      "translation": "A宛てのトークン",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Fresh client assertion and independent B grant",
+      "translation": "新しいclient assertionとBへの独立したgrant",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "B-targeted access token",
+      "translation": "B宛てのアクセストークン",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "B-targeted token and permitted operation",
+      "translation": "B宛てのトークンと許可された操作",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Forwarding an A-targeted token to B",
+      "translation": "A宛てのトークンをBへ転送する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Revalidate DID policy, CIMD and JWKS as applicable",
+      "translation": "該当するDIDポリシー、CIMD、JWKSを再検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Runtime key only",
+      "translation": "実行時の鍵のみ",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Retain eligible grants, reject removed keys once observed",
+      "translation": "適格なgrantを保持し、削除された鍵を観測した時点で拒否する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Valid and policy permits",
+      "translation": "有効で、ポリシーが許可する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Reject without stale-key or mode fallback",
+      "translation": "古い鍵や別モードへフォールバックせず拒否する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "New OAuth client, no automatic grant transfer",
+      "translation": "新しいOAuth client。grantの自動移転はしない",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "CIMD URL",
+      "translation": "CIMDのURL",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Enhanced mode requires explicit rebinding",
+      "translation": "強化モードでは明示的なbindingのやり直しが必要",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "DID at same URL",
+      "translation": "同じURLにあるDID",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Block affected issuance and apply revocation policy",
+      "translation": "影響する発行を止め、失効ポリシーを適用する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Semantic meta-protocol negotiation interface for selecting the best execution interface.",
+      "translation": "最適な実行インターフェースを選ぶための、意味的なメタプロトコル交渉インターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Book a hotel room for two people next Friday.",
+      "translation": "来週の金曜日に2人分のホテルの客室を予約する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Get product information by product ID.",
+      "translation": "商品IDから商品情報を取得する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "No matching interface",
+      "translation": "一致するインターフェースがない",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Grand Hotel Assistant",
+      "translation": "Grand Hotel Assistant（Grand Hotelのアシスタント）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Hotel room booking",
+      "translation": "ホテル客室の予約",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Book hotel rooms, modify reservations, and check room availability.",
+      "translation": "ホテルの客室を予約し、予約を変更し、空室状況を確認する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Endpoint for runtime capability and semantic meta-protocol negotiation.",
+      "translation": "実行時の機能確認と意味的なメタプロトコル交渉のためのエンドポイント。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Structured booking interface for room reservation.",
+      "translation": "客室予約のための構造化された予約インターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Natural language conversation interface.",
+      "translation": "自然言語による会話インターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Grand Hotel Management Group",
+      "translation": "Grand Hotel Management Group（Grand Hotel運営グループ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Grand Hotel Assistant is an intelligent hospitality agent providing comprehensive hotel services including room booking, concierge services, guest assistance, and real-time communication capabilities.",
+      "translation": "Grand Hotel Assistantは、客室予約、コンシェルジュ、宿泊客の支援、リアルタイム通信機能を含む、ホテルの総合サービスを提供する知的な接客エージェントです。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Luxury hotel rooms with premium amenities and personalized services.",
+      "translation": "上質な設備と個別サービスを備えた高級ホテルの客室。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Comprehensive concierge and guest services including dining, spa, and local attractions.",
+      "translation": "食事、スパ、周辺観光を含む、総合的なコンシェルジュと宿泊客向けサービス。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Complete hotel information including facilities, amenities, location, and policies.",
+      "translation": "施設、設備、所在地、規約を含むホテルの全体情報。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Hotel virtual tour showcasing rooms, facilities, dining areas, and recreational amenities.",
+      "translation": "客室、施設、飲食エリア、娯楽設備を紹介するホテルのバーチャルツアー。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Natural language interface for conversational hotel services and guest assistance.",
+      "translation": "会話によるホテルサービスと宿泊客の支援のための自然言語インターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Structured interface for hotel room booking and reservation management.",
+      "translation": "ホテルの客室予約と予約管理のための構造化インターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "openrpc interface for accessing hotel services and amenities.",
+      "translation": "ホテルのサービスと設備へアクセスするためのopenrpcインターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "OpenRPC interface for accessing hotel services.",
+      "translation": "ホテルのサービスへアクセスするためのOpenRPCインターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "OpenRPC Interface Description Document",
+      "translation": "OpenRPCインターフェース記述文書",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "MCP-compatible interface for seamless integration with MCP-based systems.",
+      "translation": "MCPベースのシステムと円滑に連携するための、MCP互換インターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "WebRTC interface for real-time video communication and streaming services.",
+      "translation": "リアルタイムのビデオ通信とストリーミングサービスのためのWebRTCインターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Deluxe Suite",
+      "translation": "Deluxe Suite（デラックススイート）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "A luxurious suite featuring a separate living room and bedroom, equipped with panoramic floor-to-ceiling windows, premium audio system, and smart home controls. Ideal for business professionals and high-end guests.",
+      "translation": "独立したリビングと寝室、眺望を楽しめる床から天井までの窓、上質な音響設備、スマートホーム制御を備える豪華なスイート。ビジネス利用者や上質な滞在を求める宿泊客に適しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Grand Hotel",
+      "translation": "Grand Hotel（ホテル名）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "80 square meters",
+      "translation": "80平方メートル",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Bed Type",
+      "translation": "ベッドの種類",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "King Size Bed",
+      "translation": "キングサイズベッド",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Free WiFi",
+      "translation": "無料WiFi",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Air Conditioning",
+      "translation": "空調",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Deluxe Suite - Bedroom Area",
+      "translation": "デラックススイート―寝室エリア",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Spacious bedroom with king-size bed and premium bedding",
+      "translation": "キングサイズベッドと上質な寝具を備えた広い寝室",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Deluxe Suite - Living Area",
+      "translation": "デラックススイート―リビングエリア",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Separate living room with sofa, coffee table, and work area",
+      "translation": "ソファ、コーヒーテーブル、作業スペースのある独立したリビング",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Deluxe Suite - City View",
+      "translation": "デラックススイート―街の眺め",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Panoramic floor-to-ceiling windows offering excellent city views",
+      "translation": "街の景色を見渡せる、床から天井までの大きな窓",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Grand Hotel Services API",
+      "translation": "Grand HotelサービスAPI",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "JSON-RPC 2.0 API for hotel services including room management, booking, and guest services",
+      "translation": "客室管理、予約、宿泊客向けサービスを含むホテルサービスのJSON-RPC 2.0 API",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Production Server",
+      "translation": "本番サーバー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Production server for Grand Hotel API",
+      "translation": "Grand Hotel APIの本番サーバー",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Search available hotel rooms based on criteria such as dates, number of guests, and room type",
+      "translation": "日付、人数、客室種類などの条件で、利用可能なホテル客室を検索する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Room search criteria",
+      "translation": "客室の検索条件",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Check-in date in YYYY-MM-DD format",
+      "translation": "YYYY-MM-DD形式のチェックイン日",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Check-out date in YYYY-MM-DD format",
+      "translation": "YYYY-MM-DD形式のチェックアウト日",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Number of guests",
+      "translation": "宿泊人数",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Preferred room type",
+      "translation": "希望する客室の種類",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Search results containing available rooms",
+      "translation": "利用可能な客室を含む検索結果",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Total number of available rooms",
+      "translation": "利用可能な客室の総数",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Create hotel reservation",
+      "translation": "ホテルの予約を作成する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Create a new hotel reservation with guest information and booking details",
+      "translation": "宿泊客の情報と予約の詳細を使って、新しいホテル予約を作成する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Reservation information",
+      "translation": "予約情報",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Unique room identifier",
+      "translation": "一意な客室識別子",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Check-in date",
+      "translation": "チェックイン日",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Check-out date",
+      "translation": "チェックアウト日",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Special requests or preferences",
+      "translation": "特別な要望または希望",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Reservation confirmation details",
+      "translation": "予約確認の詳細",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Unique reservation identifier",
+      "translation": "一意な予約識別子",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Booking confirmation number",
+      "translation": "予約確認番号",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Total reservation amount",
+      "translation": "予約の合計金額",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "DID-WBA authentication scheme",
+      "translation": "DID-WBA認証方式",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Room type",
+      "translation": "客室の種類",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Room price per night",
+      "translation": "客室の1泊あたりの料金",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "List of room amenities",
+      "translation": "客室設備の一覧",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Room availability status",
+      "translation": "客室の空き状況",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Guest's first name",
+      "translation": "宿泊客の名",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Guest's last name",
+      "translation": "宿泊客の姓",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Guest's email address",
+      "translation": "宿泊客のメールアドレス",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Guest's phone number",
+      "translation": "宿泊客の電話番号",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Smart Assistant",
+      "translation": "Smart Assistant（スマートアシスタント）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Customer Support Agent",
+      "translation": "Customer Support Agent（カスタマーサポートAgent）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Get agent description document",
+      "translation": "Agent記述文書を取得する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Return description document (including registration API info)",
+      "translation": "記述文書を返す（登録API情報を含む）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Parse registration API from description document",
+      "translation": "記述文書から登録APIを読み取る",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Send registration request (including own description URL)",
+      "translation": "登録要求を送る（自分の記述文書URLを含む）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Verify request",
+      "translation": "要求を検証する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Confirm registration",
+      "translation": "登録を確認する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Crawl agent description document and index",
+      "translation": "Agent記述文書をクロールし索引を作る",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Shopper Agent<br/>(SA)",
+      "translation": "買い手のAgent<br/>（SA）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Merchant Agent<br/>(MA)",
+      "translation": "販売者のAgent<br/>（MA）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Payment Processor<br/>(PP)",
+      "translation": "支払い処理事業者<br/>（PP）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "Phase 1: Cart Creation",
+      "translation": "第1段階: カートの作成",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "1. Initiate purchase<br/>(select items, quantity, options)",
+      "translation": "1. 購入を開始する<br/>（商品、数量、オプションを選択）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "2. create_cart_mandate<br/>(product SKU, quantity, address)",
+      "translation": "2. create_cart_mandate<br/>（商品SKU、数量、住所）",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "3. Generate order<br/>Calculate total<br/>Generate payment QR code",
+      "translation": "3. 注文を生成する<br/>合計金額を計算する<br/>支払い用QRコードを生成する",
+      "status": "agent-reviewed"
+    },
+    {
+      "original": "4. Calculate cart_hash<br/>Sign with private key to generate<br/>merchant_authorization",
+      "translation": "4. cart_hashを計算する<br/>秘密鍵で署名して<br/>merchant_authorizationを生成する",
+      "status": "agent-reviewed"
+    }
+  ]
+}

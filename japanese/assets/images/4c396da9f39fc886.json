@@ -1,0 +1,269 @@
+{
+  "source": "chinese/思考&问题/pic/meta-protocol-weather.png",
+  "sha256": "4c396da9f39fc886114f25077a25ea7e7c0e38beaa921c4e8eb3d989f65dfce4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Alice",
+      "confidence": 0.9982849597930908,
+      "box": [
+        [
+          89.0,
+          57.0
+        ],
+        [
+          163.0,
+          61.0
+        ],
+        [
+          161.0,
+          97.0
+        ],
+        [
+          87.0,
+          93.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "Alice",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Bob",
+      "confidence": 0.9995466868082682,
+      "box": [
+        [
+          706.0,
+          60.0
+        ],
+        [
+          768.0,
+          60.0
+        ],
+        [
+          768.0,
+          93.0
+        ],
+        [
+          706.0,
+          93.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "Bob",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "我想查询天气信息，我们用什么",
+      "confidence": 0.9997053784983498,
+      "box": [
+        [
+          242.0,
+          167.0
+        ],
+        [
+          629.0,
+          167.0
+        ],
+        [
+          629.0,
+          197.0
+        ],
+        [
+          242.0,
+          197.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "天気の情報を調べたいのですが、通信にはどの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "数据格式通信？",
+      "confidence": 0.9948764358248029,
+      "box": [
+        [
+          241.0,
+          206.0
+        ],
+        [
+          424.0,
+          206.0
+        ],
+        [
+          424.0,
+          240.0
+        ],
+        [
+          241.0,
+          240.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "データ形式を使いましょうか？",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "我们可以使用json：",
+      "confidence": 0.9941471815109253,
+      "box": [
+        [
+          243.0,
+          305.0
+        ],
+        [
+          472.0,
+          305.0
+        ],
+        [
+          472.0,
+          332.0
+        ],
+        [
+          243.0,
+          332.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "jsonを使えます：",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Request: {\"date\":\"2024-11-25\"}",
+      "confidence": 0.9961361030737559,
+      "box": [
+        [
+          241.0,
+          335.0
+        ],
+        [
+          600.0,
+          335.0
+        ],
+        [
+          600.0,
+          365.0
+        ],
+        [
+          241.0,
+          365.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "リクエスト：{\"date\":\"2024-11-25\"}",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2024",
+        "11",
+        "25"
+      ]
+    },
+    {
+      "source": "Response:\"weather\":\"晴\"}",
+      "confidence": 0.9781796206598696,
+      "box": [
+        [
+          240.0,
+          381.0
+        ],
+        [
+          556.0,
+          381.0
+        ],
+        [
+          556.0,
+          414.0
+        ],
+        [
+          240.0,
+          414.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "レスポンス：{\"weather\": \"晴\"}（値の意味：晴れ）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Response:{\"weather\": \"晴\"}"
+    },
+    {
+      "source": "Request: {\"date\":\"2024-11-25\"}",
+      "confidence": 0.991873965660731,
+      "box": [
+        [
+          250.0,
+          555.0
+        ],
+        [
+          608.0,
+          555.0
+        ],
+        [
+          608.0,
+          584.0
+        ],
+        [
+          250.0,
+          584.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "リクエスト：{\"date\":\"2024-11-25\"}",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2024",
+        "11",
+        "25"
+      ]
+    },
+    {
+      "source": "Response:{\"weather\":“多云\"}",
+      "confidence": 0.9594534134864807,
+      "box": [
+        [
+          270.0,
+          740.0
+        ],
+        [
+          615.0,
+          740.0
+        ],
+        [
+          615.0,
+          770.0
+        ],
+        [
+          270.0,
+          770.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "レスポンス：{\"weather\": “多云\"}（値の意味：くもり）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Response:{\"weather\": “多云\"}"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.568420400028117,
+    0.015001773834228516,
+    1.1539838314056396
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Response:\"weather\":\"晴\"}": "Response:{\"weather\": \"晴\"}",
+      "Response:{\"weather\":“多云\"}": "Response:{\"weather\": “多云\"}"
+    },
+    "source_note": "JSONのキー、日付、値の原表記を保持して説明を添えた。多云の前の引用符は原図で曲がった引用符になっているため直さない。",
+    "source_sha256": "4c396da9f39fc886114f25077a25ea7e7c0e38beaa921c4e8eb3d989f65dfce4"
+  }
+}

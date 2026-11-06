@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md -->
 # W3C AI Agent Protocol Community Groupの最新の進捗（2025年6月）
 
 エージェント通信プロトコルの標準化を進めるため、ANP（Agent Network Protocol）のオープンソースコミュニティは、W3CでAI Agent Protocol Community Groupの設立を主導しました。この記事では、このコミュニティグループの最新の進捗を詳しく紹介します。

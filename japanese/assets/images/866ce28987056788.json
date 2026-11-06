@@ -1,0 +1,193 @@
+{
+  "source": "blogs/images/agent-authorization/agent-connect-existing-app.png",
+  "sha256": "866ce2898705678821c012f78430c38673af0e4d118f1a6506362a00338df149",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Google",
+      "confidence": 0.9987563987572988,
+      "box": [
+        [
+          1224.0,
+          126.0
+        ],
+        [
+          1325.0,
+          130.0
+        ],
+        [
+          1324.0,
+          169.0
+        ],
+        [
+          1222.0,
+          165.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "Google",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Document",
+      "confidence": 0.9990617111325264,
+      "box": [
+        [
+          1205.0,
+          171.0
+        ],
+        [
+          1350.0,
+          173.0
+        ],
+        [
+          1349.0,
+          204.0
+        ],
+        [
+          1204.0,
+          202.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Oauth2.0",
+      "confidence": 0.9962235912680626,
+      "box": [
+        [
+          801.0,
+          297.0
+        ],
+        [
+          926.0,
+          297.0
+        ],
+        [
+          926.0,
+          328.0
+        ],
+        [
+          801.0,
+          328.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "Oauth2.0",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "Oauth2.0"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9970285177230835,
+      "box": [
+        [
+          448.0,
+          357.0
+        ],
+        [
+          535.0,
+          357.0
+        ],
+        [
+          535.0,
+          396.0
+        ],
+        [
+          448.0,
+          396.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Github",
+      "confidence": 0.99962850411733,
+      "box": [
+        [
+          1230.0,
+          357.0
+        ],
+        [
+          1324.0,
+          357.0
+        ],
+        [
+          1324.0,
+          389.0
+        ],
+        [
+          1230.0,
+          389.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "Github",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Existing internet applications",
+      "confidence": 0.9766384025414785,
+      "box": [
+        [
+          1061.0,
+          734.0
+        ],
+        [
+          1473.0,
+          736.0
+        ],
+        [
+          1473.0,
+          770.0
+        ],
+        [
+          1061.0,
+          768.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "既存のインターネットアプリケーション",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "...",
+      "location": "bottom application box",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L007",
+      "japanese": "…（その他）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.861463500012178,
+    0.008504629135131836,
+    0.8022849559783936
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "additional_labels": [
+      {
+        "source": "...",
+        "location": "bottom application box"
+      }
+    ],
+    "source_note": "Oauth2.0とGithubは原図の表記を保持。",
+    "source_sha256": "866ce2898705678821c012f78430c38673af0e4d118f1a6506362a00338df149"
+  }
+}

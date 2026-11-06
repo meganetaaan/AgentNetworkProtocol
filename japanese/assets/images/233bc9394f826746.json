@@ -1,0 +1,686 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page18.jpg",
+  "sha256": "233bc9394f826746f425a54ec7049457ae32e8fd7d9ba51c8c990f9e4998f134",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "InteractionFlow",
+      "confidence": 0.974171511332194,
+      "box": [
+        [
+          38.32257843017578,
+          41.657142639160156
+        ],
+        [
+          645.6774291992188,
+          46.28571319580078
+        ],
+        [
+          645.6774291992188,
+          112.24285888671875
+        ],
+        [
+          38.32257843017578,
+          107.61428833007812
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "InteractionFlow"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9893266558647156,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          85.62857055664062
+        ],
+        [
+          2154.193603515625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "AgentSearch",
+      "confidence": 0.9948267178101973,
+      "box": [
+        [
+          1104.3870849609375,
+          181.6714324951172
+        ],
+        [
+          1243.741943359375,
+          179.35714721679688
+        ],
+        [
+          1243.741943359375,
+          210.60000610351562
+        ],
+        [
+          1104.3870849609375,
+          212.91429138183594
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentSearch"
+      ]
+    },
+    {
+      "source": "DNS",
+      "confidence": 0.9896185795466105,
+      "box": [
+        [
+          1470.1934814453125,
+          239.52857971191406
+        ],
+        [
+          1537.54833984375,
+          239.52857971191406
+        ],
+        [
+          1537.54833984375,
+          267.3000183105469
+        ],
+        [
+          1470.1934814453125,
+          267.3000183105469
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DNS"
+      ]
+    },
+    {
+      "source": "DID",
+      "confidence": 0.9955816666285197,
+      "box": [
+        [
+          1062.58056640625,
+          310.1142883300781
+        ],
+        [
+          1110.1934814453125,
+          310.1142883300781
+        ],
+        [
+          1110.1934814453125,
+          341.3571472167969
+        ],
+        [
+          1062.58056640625,
+          341.3571472167969
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "DIDDocument",
+      "confidence": 0.9659824533896013,
+      "box": [
+        [
+          1240.258056640625,
+          348.3000183105469
+        ],
+        [
+          1412.1290283203125,
+          348.3000183105469
+        ],
+        [
+          1412.1290283203125,
+          376.0714416503906
+        ],
+        [
+          1240.258056640625,
+          376.0714416503906
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "DIDDocument",
+      "confidence": 0.9842636260119352,
+      "box": [
+        [
+          1141.54833984375,
+          458.22857666015625
+        ],
+        [
+          1318.064453125,
+          460.5428771972656
+        ],
+        [
+          1318.064453125,
+          491.7857360839844
+        ],
+        [
+          1141.54833984375,
+          489.471435546875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent.com",
+      "confidence": 0.9964689281251695,
+      "box": [
+        [
+          581.8064575195312,
+          480.21429443359375
+        ],
+        [
+          697.9354858398438,
+          480.21429443359375
+        ],
+        [
+          697.9354858398438,
+          507.9857177734375
+        ],
+        [
+          581.8064575195312,
+          507.9857177734375
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "Agent.com"
+      ]
+    },
+    {
+      "source": "HTML/CSS/JS",
+      "confidence": 0.986531295559623,
+      "box": [
+        [
+          846.5806274414062,
+          477.8999938964844
+        ],
+        [
+          992.9031982421875,
+          477.8999938964844
+        ],
+        [
+          992.9031982421875,
+          505.67144775390625
+        ],
+        [
+          846.5806274414062,
+          505.67144775390625
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "HTML",
+        "/CSS/JS"
+      ]
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9966790899634361,
+      "box": [
+        [
+          1553.806396484375,
+          597.0857543945312
+        ],
+        [
+          1660.6451416015625,
+          597.0857543945312
+        ],
+        [
+          1660.6451416015625,
+          628.3285522460938
+        ],
+        [
+          1553.806396484375,
+          628.3285522460938
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "百",
+      "confidence": 0.7858073115348816,
+      "box": [
+        [
+          1584.0,
+          631.7999877929688
+        ],
+        [
+          1637.4193115234375,
+          631.7999877929688
+        ],
+        [
+          1637.4193115234375,
+          693.1286010742188
+        ],
+        [
+          1584.0,
+          693.1286010742188
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Capacity",
+      "confidence": 0.9955146983265877,
+      "box": [
+        [
+          1553.806396484375,
+          733.6286010742188
+        ],
+        [
+          1662.9676513671875,
+          735.94287109375
+        ],
+        [
+          1661.806396484375,
+          771.8142700195312
+        ],
+        [
+          1552.6451416015625,
+          769.5
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.995969045162201,
+      "box": [
+        [
+          1417.9354248046875,
+          770.6571655273438
+        ],
+        [
+          1495.741943359375,
+          770.6571655273438
+        ],
+        [
+          1495.741943359375,
+          807.6857299804688
+        ],
+        [
+          1417.9354248046875,
+          807.6857299804688
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "目",
+      "confidence": 0.5146576166152954,
+      "box": [
+        [
+          1584.0,
+          769.5
+        ],
+        [
+          1643.2257080078125,
+          769.5
+        ],
+        [
+          1643.2257080078125,
+          834.2999877929688
+        ],
+        [
+          1584.0,
+          834.2999877929688
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Description",
+      "confidence": 0.998846400867809,
+      "box": [
+        [
+          1391.2257080078125,
+          807.6857299804688
+        ],
+        [
+          1532.9031982421875,
+          807.6857299804688
+        ],
+        [
+          1532.9031982421875,
+          842.4000244140625
+        ],
+        [
+          1391.2257080078125,
+          842.4000244140625
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "·We have placed the agent description document link in the DID document, meaning that as long as",
+      "confidence": 0.9795415078600248,
+      "box": [
+        [
+          326.32257080078125,
+          974.3143310546875
+        ],
+        [
+          2089.1611328125,
+          974.3143310546875
+        ],
+        [
+          2089.1611328125,
+          1022.914306640625
+        ],
+        [
+          326.32257080078125,
+          1022.914306640625
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "there is a DID, the agent description document can be found.",
+      "confidence": 0.9825098743041356,
+      "box": [
+        [
+          344.9032287597656,
+          1031.0142822265625
+        ],
+        [
+          1422.58056640625,
+          1029.857177734375
+        ],
+        [
+          1422.58056640625,
+          1074.9857177734375
+        ],
+        [
+          344.9032287597656,
+          1076.142822265625
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "·In the future, there will be a data network that makes it easier for AI to access.",
+      "confidence": 0.9580597884683724,
+      "box": [
+        [
+          320.51611328125,
+          1112.0142822265625
+        ],
+        [
+          1790.7095947265625,
+          1114.32861328125
+        ],
+        [
+          1790.7095947265625,
+          1152.5142822265625
+        ],
+        [
+          320.51611328125,
+          1150.2000732421875
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "Interaction Flow\n\n\n\n\n\n                   • We have placed the agent description document link in the DID document, meaning that as long as\n                  there is a DID, the agent description document can be found.\n\n                   • In the future, there will be a data network that makes it easier for AI to access.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L019",
+      "japanese": "やり取りの流れ\n\n- DID文書内にエージェント記述文書へのリンクを配置しているため、DIDさえあればエージェント記述文書を見つけられます。\n- 将来は、AIがよりアクセスしやすいデータネットワークが形成されます。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Search",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L020",
+      "japanese": "エージェント検索",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DNS",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L021",
+      "japanese": "DNS",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L022",
+      "japanese": "DID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID Document",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L023",
+      "japanese": "DIDドキュメント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent.com",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L024",
+      "japanese": "Agent.com",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTML/CSS/JS",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L025",
+      "japanese": "HTML/CSS/JS",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID Document",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L026",
+      "japanese": "DIDドキュメント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L027",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Capacity",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L028",
+      "japanese": "能力",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Description",
+      "location": "visible diagram label 10, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L029",
+      "japanese": "エージェント記述",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4439055999973789,
+    0.03271055221557617,
+    3.146358013153076
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 18,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-18",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.3728240740740743,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 18,
+    "manual_label_translations": {
+      "Interaction Flow\n\n\n\n\n\n                   • We have placed the agent description document link in the DID document, meaning that as long as\n                  there is a DID, the agent description document can be found.\n\n                   • In the future, there will be a data network that makes it easier for AI to access.": "やり取りの流れ\n\n- DID文書内にエージェント記述文書へのリンクを配置しているため、DIDさえあればエージェント記述文書を見つけられます。\n- 将来は、AIがよりアクセスしやすいデータネットワークが形成されます。",
+      "Agent Search": "エージェント検索",
+      "DNS": "DNS",
+      "DID": "DID",
+      "DID Document": "DIDドキュメント",
+      "Agent.com": "Agent.com",
+      "HTML/CSS/JS": "HTML/CSS/JS",
+      "Protocol": "プロトコル",
+      "Capacity": "能力",
+      "Agent Description": "エージェント記述"
+    },
+    "additional_labels": [
+      {
+        "source": "Interaction Flow\n\n\n\n\n\n                   • We have placed the agent description document link in the DID document, meaning that as long as\n                  there is a DID, the agent description document can be found.\n\n                   • In the future, there will be a data network that makes it easier for AI to access.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "Agent Search",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "DNS",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "DID",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "DID Document",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "Agent.com",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "HTML/CSS/JS",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "DID Document",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Protocol",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "Capacity",
+        "location": "visible diagram label 9, manually transcribed"
+      },
+      {
+        "source": "Agent Description",
+        "location": "visible diagram label 10, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "InteractionFlow",
+      "ANP",
+      "AgentSearch",
+      "DNS",
+      "DID",
+      "DIDDocument",
+      "DIDDocument",
+      "Agent.com",
+      "HTML/CSS/JS",
+      "Protocol",
+      "百",
+      "Capacity",
+      "Agent",
+      "目",
+      "Description",
+      "·We have placed the agent description document link in the DID document, meaning that as long as",
+      "there is a DID, the agent description document can be found.",
+      "·In the future, there will be a data network that makes it easier for AI to access."
+    ],
+    "source_sha256": "233bc9394f826746f425a54ec7049457ae32e8fd7d9ba51c8c990f9e4998f134"
+  }
+}

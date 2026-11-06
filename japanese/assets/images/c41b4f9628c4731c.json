@@ -1,0 +1,182 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/04-resolve.png",
+  "sha256": "c41b4f9628c4731c2da2c75306e67fec60a5c5fed0cbc342d95d6f50f483a61d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "咖啡店的服务器",
+      "confidence": 0.9991496120180402,
+      "box": [
+        [
+          124.0,
+          274.0
+        ],
+        [
+          323.0,
+          274.0
+        ],
+        [
+          323.0,
+          303.0
+        ],
+        [
+          124.0,
+          303.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "コーヒー店のサーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "did.json",
+      "confidence": 0.9578878059983253,
+      "box": [
+        [
+          1128.0,
+          270.0
+        ],
+        [
+          1243.0,
+          275.0
+        ],
+        [
+          1242.0,
+          312.0
+        ],
+        [
+          1127.0,
+          307.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "did.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did.json"
+      ]
+    },
+    {
+      "source": "它现在要去查",
+      "confidence": 0.9981697201728821,
+      "box": [
+        [
+          153.0,
+          315.0
+        ],
+        [
+          297.0,
+          313.0
+        ],
+        [
+          297.0,
+          339.0
+        ],
+        [
+          153.0,
+          341.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "これから照会する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "里面是公钥",
+      "confidence": 0.9955777287483215,
+      "box": [
+        [
+          1125.0,
+          315.0
+        ],
+        [
+          1245.0,
+          315.0
+        ],
+        [
+          1245.0,
+          340.0
+        ],
+        [
+          1125.0,
+          340.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "中にあるのは公開鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json",
+      "confidence": 0.9894559887739328,
+      "box": [
+        [
+          157.0,
+          368.0
+        ],
+        [
+          1250.0,
+          368.0
+        ],
+        [
+          1250.0,
+          394.0
+        ],
+        [
+          157.0,
+          394.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json"
+      ]
+    },
+    {
+      "source": "一次普通的网页请求，没有任何特殊协议",
+      "confidence": 0.9984827505217658,
+      "box": [
+        [
+          488.0,
+          407.0
+        ],
+        [
+          920.0,
+          407.0
+        ],
+        [
+          920.0,
+          432.0
+        ],
+        [
+          488.0,
+          432.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "通常のウェブ要求を1回送るだけで、特別なプロトコルはない",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.1390445999568328,
+    0.007904767990112305,
+    2.8471758365631104
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "source_note": "URLの長い公開鍵指紋は原画像の目視に加えてblogs/cn/12-ANP-讲解从0开始.mdの同一例とも照合。",
+    "corrections": {},
+    "source_sha256": "c41b4f9628c4731c2da2c75306e67fec60a5c5fed0cbc342d95d6f50f483a61d"
+  }
+}

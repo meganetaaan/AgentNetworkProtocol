@@ -1,0 +1,789 @@
+{
+  "source": "blogs/images/agent-network/network-architecture.png",
+  "sha256": "30c9f3383ff027ca2d9c0b2cf5e9a548870cbf3df33a301c216693261ec0a6fc",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "教育/娱乐",
+      "confidence": 0.9916267395019531,
+      "box": [
+        [
+          2016.381103515625,
+          57.375
+        ],
+        [
+          2171.290283203125,
+          57.375
+        ],
+        [
+          2171.290283203125,
+          100.7249984741211
+        ],
+        [
+          2016.381103515625,
+          100.7249984741211
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "教育／娯楽",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "酒旅",
+      "confidence": 0.9987767338752747,
+      "box": [
+        [
+          1503.0040283203125,
+          87.9749984741211
+        ],
+        [
+          1587.5,
+          87.9749984741211
+        ],
+        [
+          1587.5,
+          135.14999389648438
+        ],
+        [
+          1503.0040283203125,
+          135.14999389648438
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "宿泊・旅行",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "餐饮",
+      "confidence": 0.9987792074680328,
+      "box": [
+        [
+          1771.8548583984375,
+          87.9749984741211
+        ],
+        [
+          1852.5101318359375,
+          87.9749984741211
+        ],
+        [
+          1852.5101318359375,
+          135.14999389648438
+        ],
+        [
+          1771.8548583984375,
+          135.14999389648438
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "飲食",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Education/",
+      "confidence": 0.9992947399616241,
+      "box": [
+        [
+          1997.177490234375,
+          102.0
+        ],
+        [
+          2195.614990234375,
+          104.54999542236328
+        ],
+        [
+          2195.614990234375,
+          144.0749969482422
+        ],
+        [
+          1997.177490234375,
+          141.52499389648438
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "教育／",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Travel",
+      "confidence": 0.9970594545205435,
+      "box": [
+        [
+          1488.92138671875,
+          135.14999389648438
+        ],
+        [
+          1599.022216796875,
+          137.6999969482422
+        ],
+        [
+          1597.741943359375,
+          177.22499084472656
+        ],
+        [
+          1487.64111328125,
+          174.6750030517578
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "旅行",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "F&B",
+      "confidence": 0.9743334054946899,
+      "box": [
+        [
+          1770.5745849609375,
+          136.4250030517578
+        ],
+        [
+          1853.7904052734375,
+          136.4250030517578
+        ],
+        [
+          1853.7904052734375,
+          177.22499084472656
+        ],
+        [
+          1770.5745849609375,
+          177.22499084472656
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "飲食",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Entertainment",
+      "confidence": 0.9997011056313148,
+      "box": [
+        [
+          1979.2540283203125,
+          145.34999084472656
+        ],
+        [
+          2219.939453125,
+          147.89999389648438
+        ],
+        [
+          2219.939453125,
+          182.3249969482422
+        ],
+        [
+          1979.2540283203125,
+          179.77499389648438
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "娯楽",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "供给侧",
+      "confidence": 0.9994522929191589,
+      "box": [
+        [
+          1111.25,
+          212.9250030517578
+        ],
+        [
+          1258.4779052734375,
+          212.9250030517578
+        ],
+        [
+          1258.4779052734375,
+          270.29998779296875
+        ],
+        [
+          1111.25,
+          270.29998779296875
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "供給側",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Supply Side",
+      "confidence": 0.9991765076463873,
+      "box": [
+        [
+          1048.5181884765625,
+          275.3999938964844
+        ],
+        [
+          1322.489990234375,
+          277.9499816894531
+        ],
+        [
+          1322.489990234375,
+          334.04998779296875
+        ],
+        [
+          1048.5181884765625,
+          331.5
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "供給側",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "连接需求侧与供给侧智能体",
+      "confidence": 0.997030625740687,
+      "box": [
+        [
+          175.3931427001953,
+          373.5749816894531
+        ],
+        [
+          727.1774291992188,
+          376.125
+        ],
+        [
+          727.1774291992188,
+          425.8500061035156
+        ],
+        [
+          175.3931427001953,
+          423.29998779296875
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "需要側と供給側のエージェントをつなぐ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Protocol",
+      "confidence": 0.9967749459402901,
+      "box": [
+        [
+          1832.0262451171875,
+          395.25
+        ],
+        [
+          2079.113037109375,
+          392.6999816894531
+        ],
+        [
+          2079.113037109375,
+          430.9499816894531
+        ],
+        [
+          1832.0262451171875,
+          433.5
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "Agent Protocol",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "连接层",
+      "confidence": 0.9987191160519918,
+      "box": [
+        [
+          1108.6895751953125,
+          546.9749755859375
+        ],
+        [
+          1258.4779052734375,
+          546.9749755859375
+        ],
+        [
+          1258.4779052734375,
+          604.3499755859375
+        ],
+        [
+          1108.6895751953125,
+          604.3499755859375
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "接続層",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Build the world's first open and",
+      "confidence": 0.9949464313685894,
+      "box": [
+        [
+          79.375,
+          575.0249633789062
+        ],
+        [
+          768.1452026367188,
+          577.5750122070312
+        ],
+        [
+          768.1452026367188,
+          623.4749755859375
+        ],
+        [
+          79.375,
+          620.9249877929688
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "世界初のオープンで",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Connection",
+      "confidence": 0.9994231343269349,
+      "box": [
+        [
+          1057.4798583984375,
+          613.2749633789062
+        ],
+        [
+          1314.8084716796875,
+          615.8250122070312
+        ],
+        [
+          1314.8084716796875,
+          659.1749877929688
+        ],
+        [
+          1057.4798583984375,
+          656.625
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "接続",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "interconnected agent network.",
+      "confidence": 0.9996639243487654,
+      "box": [
+        [
+          87.05645751953125,
+          642.5999755859375
+        ],
+        [
+          754.0625,
+          643.875
+        ],
+        [
+          754.0625,
+          687.2249755859375
+        ],
+        [
+          87.05645751953125,
+          685.9500122070312
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "相互接続されたエージェントネットワークを構築する。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Layer",
+      "confidence": 0.999647033214569,
+      "box": [
+        [
+          1115.0906982421875,
+          666.8250122070312
+        ],
+        [
+          1253.35693359375,
+          670.6499633789062
+        ],
+        [
+          1252.07666015625,
+          724.2000122070312
+        ],
+        [
+          1113.810546875,
+          720.375
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "層",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Connect demand-side and supply-",
+      "confidence": 0.998299442952679,
+      "box": [
+        [
+          47.368953704833984,
+          701.25
+        ],
+        [
+          800.1512451171875,
+          708.8999633789062
+        ],
+        [
+          800.1512451171875,
+          758.625
+        ],
+        [
+          47.368953704833984,
+          750.9749755859375
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "需要側と供給側の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "side agents.",
+      "confidence": 0.9995040545860926,
+      "box": [
+        [
+          285.49395751953125,
+          771.375
+        ],
+        [
+          559.4657592773438,
+          773.9249877929688
+        ],
+        [
+          559.4657592773438,
+          824.9249877929688
+        ],
+        [
+          285.49395751953125,
+          822.375
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "エージェントをつなぐ。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Protocol",
+      "confidence": 0.999106594494411,
+      "box": [
+        [
+          1828.185546875,
+          810.8999633789062
+        ],
+        [
+          2076.552490234375,
+          808.3499755859375
+        ],
+        [
+          2076.552490234375,
+          851.7000122070312
+        ],
+        [
+          1828.185546875,
+          854.25
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "Agent Protocol",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "需求侧",
+      "confidence": 0.9997926155726115,
+      "box": [
+        [
+          1143.256103515625,
+          953.7000122070312
+        ],
+        [
+          1290.48388671875,
+          953.7000122070312
+        ],
+        [
+          1290.48388671875,
+          1012.3499755859375
+        ],
+        [
+          1143.256103515625,
+          1012.3499755859375
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "需要側",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Demand Side",
+      "confidence": 0.9913933331316168,
+      "box": [
+        [
+          1069.0020751953125,
+          1022.5499877929688
+        ],
+        [
+          1363.4576416015625,
+          1022.5499877929688
+        ],
+        [
+          1363.4576416015625,
+          1064.625
+        ],
+        [
+          1069.0020751953125,
+          1064.625
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "需要側",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Personal",
+      "confidence": 0.9988585636019707,
+      "box": [
+        [
+          1464.5968017578125,
+          1065.9000244140625
+        ],
+        [
+          1622.0665283203125,
+          1068.449951171875
+        ],
+        [
+          1622.0665283203125,
+          1107.9749755859375
+        ],
+        [
+          1464.5968017578125,
+          1105.4249267578125
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "個人用",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Vertical",
+      "confidence": 0.9973058775067329,
+      "box": [
+        [
+          1751.3709716796875,
+          1068.449951171875
+        ],
+        [
+          1883.2359619140625,
+          1068.449951171875
+        ],
+        [
+          1883.2359619140625,
+          1107.9749755859375
+        ],
+        [
+          1751.3709716796875,
+          1107.9749755859375
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "分野特化型",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "AI",
+      "confidence": 0.9414349794387817,
+      "box": [
+        [
+          2076.552490234375,
+          1071.0
+        ],
+        [
+          2114.959716796875,
+          1071.0
+        ],
+        [
+          2114.959716796875,
+          1104.1500244140625
+        ],
+        [
+          2076.552490234375,
+          1104.1500244140625
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "AI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "Personal",
+      "confidence": 0.9990342184901237,
+      "box": [
+        [
+          2295.473876953125,
+          1065.9000244140625
+        ],
+        [
+          2451.663330078125,
+          1068.449951171875
+        ],
+        [
+          2451.663330078125,
+          1107.9749755859375
+        ],
+        [
+          2295.473876953125,
+          1105.4249267578125
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "個人用",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9994202017784118,
+      "box": [
+        [
+          1492.7620849609375,
+          1109.25
+        ],
+        [
+          1600.302490234375,
+          1109.25
+        ],
+        [
+          1600.302490234375,
+          1150.0499267578125
+        ],
+        [
+          1492.7620849609375,
+          1150.0499267578125
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9991541385650635,
+      "box": [
+        [
+          1764.1734619140625,
+          1109.25
+        ],
+        [
+          1876.834716796875,
+          1109.25
+        ],
+        [
+          1876.834716796875,
+          1153.875
+        ],
+        [
+          1764.1734619140625,
+          1153.875
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Application",
+      "confidence": 0.9989841742949053,
+      "box": [
+        [
+          1998.457763671875,
+          1107.9749755859375
+        ],
+        [
+          2193.054443359375,
+          1107.9749755859375
+        ],
+        [
+          2193.054443359375,
+          1151.324951171875
+        ],
+        [
+          1998.457763671875,
+          1151.324951171875
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "アプリケーション",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9994494557380676,
+      "box": [
+        [
+          2322.35888671875,
+          1109.25
+        ],
+        [
+          2431.179443359375,
+          1109.25
+        ],
+        [
+          2431.179443359375,
+          1150.0499267578125
+        ],
+        [
+          2322.35888671875,
+          1150.0499267578125
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "...",
+      "location": "top right supply-side category",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L030",
+      "japanese": "…（その他）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.305830099969171,
+    0.036911725997924805,
+    1.4077153205871582
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "additional_labels": [
+      {
+        "source": "...",
+        "location": "top right supply-side category"
+      }
+    ],
+    "source_note": "世界初という表現は原図の主張を訳したもの。",
+    "source_sha256": "30c9f3383ff027ca2d9c0b2cf5e9a548870cbf3df33a301c216693261ec0a6fc"
+  }
+}

@@ -1,0 +1,390 @@
+{
+  "source": "images/ap2-402/X402_Protocol_Flow.svg",
+  "sha256": "adbf2f6f40f445fc77214337ac8b83c5ce9a899a009a59e5f344ca8e30924821",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "x402 协议流程",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "x402プロトコルの手順",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP 402 Payment Required - AI Agent 自动化支付协议",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "75",
+      "label_id": "L002",
+      "japanese": "HTTP 402 Payment Required: AIエージェントの自動決済プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AI Agent",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "145",
+      "label_id": "L003",
+      "japanese": "AIエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(客户端)",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "170",
+      "label_id": "L004",
+      "japanese": "（クライアント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "API Server",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "145",
+      "label_id": "L005",
+      "japanese": "APIサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(服务提供方)",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "170",
+      "label_id": "L006",
+      "japanese": "（サービス提供者）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Blockchain",
+      "element": "text",
+      "id": null,
+      "x": "1010",
+      "y": "145",
+      "label_id": "L007",
+      "japanese": "ブロックチェーン",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Base/USDC)",
+      "element": "text",
+      "id": null,
+      "x": "1010",
+      "y": "170",
+      "label_id": "L008",
+      "japanese": "(Base/USDC)",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Facilitator",
+      "element": "text",
+      "id": null,
+      "x": "1310",
+      "y": "155",
+      "label_id": "L009",
+      "japanese": "Facilitator（決済検証支援者）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1",
+      "element": "text",
+      "id": null,
+      "x": "30",
+      "y": "247",
+      "label_id": "L010",
+      "japanese": "1",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "GET /api/resource",
+      "element": "text",
+      "id": null,
+      "x": "395",
+      "y": "225",
+      "label_id": "L011",
+      "japanese": "GET /api/resource",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "请求受保护的资源或API",
+      "element": "text",
+      "id": null,
+      "x": "395",
+      "y": "260",
+      "label_id": "L012",
+      "japanese": "保護されたリソースまたはAPIを要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2",
+      "element": "text",
+      "id": null,
+      "x": "30",
+      "y": "317",
+      "label_id": "L013",
+      "japanese": "2",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "HTTP 402 Payment Required",
+      "element": "text",
+      "id": null,
+      "x": "395",
+      "y": "295",
+      "label_id": "L014",
+      "japanese": "HTTP 402 Payment Required",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "返回支付信息: 金额、收款地址、链ID",
+      "element": "text",
+      "id": null,
+      "x": "395",
+      "y": "330",
+      "label_id": "L015",
+      "japanese": "支払い情報を返す: 金額、受取アドレス、チェーンID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "3",
+      "element": "text",
+      "id": null,
+      "x": "30",
+      "y": "407",
+      "label_id": "L016",
+      "japanese": "3",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发起链上支付",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "385",
+      "label_id": "L017",
+      "japanese": "オンチェーン決済を開始する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AI Agent 使用 USDC 完成转账",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "420",
+      "label_id": "L018",
+      "japanese": "AIエージェントがUSDCで送金を完了する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "4",
+      "element": "text",
+      "id": null,
+      "x": "30",
+      "y": "487",
+      "label_id": "L019",
+      "japanese": "4",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "监听交易",
+      "element": "text",
+      "id": null,
+      "x": "1160",
+      "y": "465",
+      "label_id": "L020",
+      "japanese": "取引を監視する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付验证通知",
+      "element": "text",
+      "id": null,
+      "x": "955",
+      "y": "495",
+      "label_id": "L021",
+      "japanese": "支払い検証の通知",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Facilitator 验证链上交易并通知服务器",
+      "element": "text",
+      "id": null,
+      "x": "955",
+      "y": "530",
+      "label_id": "L022",
+      "japanese": "Facilitatorがオンチェーン取引を検証しサーバーに通知する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "5",
+      "element": "text",
+      "id": null,
+      "x": "30",
+      "y": "587",
+      "label_id": "L023",
+      "japanese": "5",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "HTTP 200 OK + Resource",
+      "element": "text",
+      "id": null,
+      "x": "395",
+      "y": "565",
+      "label_id": "L024",
+      "japanese": "HTTP 200 OK＋リソース",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "提供所请求的资源或服务",
+      "element": "text",
+      "id": null,
+      "x": "395",
+      "y": "600",
+      "label_id": "L025",
+      "japanese": "要求されたリソースまたはサービスを提供する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "核心特性",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "705",
+      "label_id": "L026",
+      "japanese": "主な特性",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 无需注册或登录 - AI Agent 自动化支付",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "730",
+      "label_id": "L027",
+      "japanese": "• 登録やログインは不要: AIエージェントが自動で支払う",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 秒级结算 - 基于 Base L2 区块链,低成本高效率",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "755",
+      "label_id": "L028",
+      "japanese": "• 秒単位の決済: Base L2ブロックチェーンに基づき、低コストで高効率",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 标准化协议 - 激活 HTTP 402 状态码",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "730",
+      "label_id": "L029",
+      "japanese": "• 標準化されたプロトコル: HTTP 402ステータスコードを活用する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 稳定币支付 - 使用 USDC 避免价格波动",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "755",
+      "label_id": "L030",
+      "japanese": "• ステーブルコインでの支払い: USDCを使い価格変動を避ける",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "技术栈",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "705",
+      "label_id": "L031",
+      "japanese": "技術スタック",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 区块链: Base (Coinbase L2), Ethereum",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "730",
+      "label_id": "L032",
+      "japanese": "• ブロックチェーン: Base（Coinbase L2）、Ethereum",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 稳定币: USDC (Circle)",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "755",
+      "label_id": "L033",
+      "japanese": "• ステーブルコイン: USDC（Circle）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 协议: HTTP 402, JSON-RPC",
+      "element": "text",
+      "id": null,
+      "x": "1000",
+      "y": "730",
+      "label_id": "L034",
+      "japanese": "• プロトコル: HTTP 402、JSON-RPC",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 发起方: Coinbase + Cloudflare (2025)",
+      "element": "text",
+      "id": null,
+      "x": "1000",
+      "y": "755",
+      "label_id": "L035",
+      "japanese": "• 提唱者: Coinbase＋Cloudflare（2025）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "图例:",
+      "element": "text",
+      "id": null,
+      "x": "1180",
+      "y": "630",
+      "label_id": "L036",
+      "japanese": "凡例:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "请求",
+      "element": "text",
+      "id": null,
+      "x": "1260",
+      "y": "647",
+      "label_id": "L037",
+      "japanese": "要求",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "响应",
+      "element": "text",
+      "id": null,
+      "x": "1260",
+      "y": "667",
+      "label_id": "L038",
+      "japanese": "応答",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

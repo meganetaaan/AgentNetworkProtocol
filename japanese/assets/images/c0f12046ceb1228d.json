@@ -1,0 +1,274 @@
+{
+  "source": "blogs/images/anp-first-meet/08.png",
+  "sha256": "c0f12046ceb1228d14eace0814c6d791eb42de527b66317b29353d2424d44cfc",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "社区下一步计划",
+      "confidence": 0.9970863546643939,
+      "box": [
+        [
+          13.608870506286621,
+          16.25
+        ],
+        [
+          669.5564575195312,
+          16.25
+        ],
+        [
+          669.5564575195312,
+          101.5625
+        ],
+        [
+          13.608870506286621,
+          101.5625
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "コミュニティの今後の計画",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9888180096944174,
+      "box": [
+        [
+          2547.58056640625,
+          6.7708330154418945
+        ],
+        [
+          2697.278076171875,
+          6.7708330154418945
+        ],
+        [
+          2697.278076171875,
+          59.58333206176758
+        ],
+        [
+          2547.58056640625,
+          59.58333206176758
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "1.短期，2~4周，demo",
+      "confidence": 0.9717646241188049,
+      "box": [
+        [
+          400.1007995605469,
+          342.6041564941406
+        ],
+        [
+          1038.3568115234375,
+          339.89581298828125
+        ],
+        [
+          1038.3568115234375,
+          398.125
+        ],
+        [
+          400.1007995605469,
+          400.83331298828125
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "1. 短期、2〜4週間：デモ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1",
+        "2",
+        "4"
+      ]
+    },
+    {
+      "source": "2.文档（readme）、官网、项目整理",
+      "confidence": 0.997414055466652,
+      "box": [
+        [
+          397.3790283203125,
+          452.2916564941406
+        ],
+        [
+          1411.2398681640625,
+          452.2916564941406
+        ],
+        [
+          1411.2398681640625,
+          514.5833129882812
+        ],
+        [
+          397.3790283203125,
+          514.5833129882812
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "2. 文書（readme）、公式サイト、プロジェクトの整理",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "3.社区理念、愿景的构建：白话的方式表达",
+      "confidence": 0.9735387623310089,
+      "box": [
+        [
+          400.1007995605469,
+          566.0416259765625
+        ],
+        [
+          1533.7197265625,
+          566.0416259765625
+        ],
+        [
+          1533.7197265625,
+          622.9166259765625
+        ],
+        [
+          400.1007995605469,
+          622.9166259765625
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "3. コミュニティの理念とビジョンを作り、分かりやすい言葉で表現する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "4.影响力构建：推广，标准化，大厂合作",
+      "confidence": 0.996250613739616,
+      "box": [
+        [
+          398.7398986816406,
+          675.7291259765625
+        ],
+        [
+          1476.5625,
+          675.7291259765625
+        ],
+        [
+          1476.5625,
+          732.6041259765625
+        ],
+        [
+          398.7398986816406,
+          732.6041259765625
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "4. 影響力の構築：普及、標準化、大手企業との協力",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4"
+      ]
+    },
+    {
+      "source": "5.社区运营正轨化：调动社区成员的积极性，增加社区成员",
+      "confidence": 0.9993992823141592,
+      "box": [
+        [
+          398.7398986816406,
+          785.4166259765625
+        ],
+        [
+          1951.5120849609375,
+          786.7708129882812
+        ],
+        [
+          1951.5120849609375,
+          843.6458129882812
+        ],
+        [
+          398.7398986816406,
+          842.2916259765625
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "5. コミュニティ運営を軌道に乗せる：メンバーの意欲を引き出し、参加者を増やす",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "5"
+      ]
+    },
+    {
+      "source": "6.协议长远的规划、路线图",
+      "confidence": 0.9993787637123694,
+      "box": [
+        [
+          402.82257080078125,
+          899.1666259765625
+        ],
+        [
+          1111.8447265625,
+          899.1666259765625
+        ],
+        [
+          1111.8447265625,
+          953.3333129882812
+        ],
+        [
+          402.82257080078125,
+          953.3333129882812
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "6. プロトコルの長期計画とロードマップ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "6"
+      ]
+    },
+    {
+      "source": "1.协议完善：安全、隐私、交易闭环",
+      "confidence": 0.9997545585912817,
+      "box": [
+        [
+          413.70965576171875,
+          1297.2916259765625
+        ],
+        [
+          1367.6915283203125,
+          1298.645751953125
+        ],
+        [
+          1367.6915283203125,
+          1352.8125
+        ],
+        [
+          413.70965576171875,
+          1351.458251953125
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "1. プロトコルの改善：安全性、プライバシー、取引の全工程の完結",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.2903393000015058,
+    0.013008356094360352,
+    2.037123441696167
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。末尾の番号1は原図で重複しており、7へ修正せず保持した。",
+    "source_sha256": "c0f12046ceb1228d14eace0814c6d791eb42de527b66317b29353d2424d44cfc"
+  }
+}

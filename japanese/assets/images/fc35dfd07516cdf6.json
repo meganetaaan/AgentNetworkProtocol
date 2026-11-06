@@ -1,0 +1,621 @@
+{
+  "source": "chinese/思考&问题/pic/mcp-auth-thinking.png",
+  "sha256": "fc35dfd07516cdf61e34a902915ea874dd13f4d913a89e4dc183ae9db4683be5",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "jspahrsummers 3 days ago",
+      "confidence": 0.9829742138584455,
+      "box": [
+        [
+          110.0,
+          32.0
+        ],
+        [
+          481.0,
+          34.0
+        ],
+        [
+          480.0,
+          67.0
+        ],
+        [
+          110.0,
+          65.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "jspahrsummers、3日前",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "Maintainer保持",
+      "confidence": 0.9983485341072083,
+      "box": [
+        [
+          513.0,
+          34.0
+        ],
+        [
+          695.0,
+          34.0
+        ],
+        [
+          695.0,
+          64.0
+        ],
+        [
+          513.0,
+          64.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "メンテナー（原文の併記：保持）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "edited",
+      "confidence": 0.9840650459130605,
+      "box": [
+        [
+          1568.0,
+          28.0
+        ],
+        [
+          1668.0,
+          28.0
+        ],
+        [
+          1668.0,
+          55.0
+        ],
+        [
+          1568.0,
+          55.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "編集済み",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Thanksfor getting the conversation started here!We've thought a bit about this, but definitely not enough tobake something into the",
+      "confidence": 0.952032394536579,
+      "box": [
+        [
+          33.0,
+          121.0
+        ],
+        [
+          1750.0,
+          121.0
+        ],
+        [
+          1750.0,
+          150.0
+        ],
+        [
+          33.0,
+          150.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "ここで議論を始めてくれてありがとうございます。この件は多少考えていますが、仕様に組み込めるほどの検討は",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Thanks for getting the conversation started here! We've thought a bit about this, but definitely not enough to bake something into the"
+    },
+    {
+      "source": "spec yet.",
+      "confidence": 0.9925660226080153,
+      "box": [
+        [
+          29.0,
+          166.0
+        ],
+        [
+          149.0,
+          164.0
+        ],
+        [
+          150.0,
+          195.0
+        ],
+        [
+          29.0,
+          197.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "まだできていません。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "感谢您在这里开始对话！我们已经考虑了一些，但绝对不足以将一些东西融入到规范中。",
+      "confidence": 0.9982027151645758,
+      "box": [
+        [
+          32.0,
+          220.0
+        ],
+        [
+          1109.0,
+          221.0
+        ],
+        [
+          1109.0,
+          251.0
+        ],
+        [
+          32.0,
+          250.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ここで議論を始めてくれてありがとうございます。少しは考えていますが、仕様に組み込むには到底足りません。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "A fewprinciplesweprobablywanttoprioritizeinclude:",
+      "confidence": 0.9893777212318109,
+      "box": [
+        [
+          33.0,
+          297.0
+        ],
+        [
+          737.0,
+          297.0
+        ],
+        [
+          737.0,
+          325.0
+        ],
+        [
+          33.0,
+          325.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "優先したい原則として、次のようなものが考えられます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A few principles we probably want to prioritize include:"
+    },
+    {
+      "source": "我们可能希望优先考虑的一些原则包括：",
+      "confidence": 0.9930915468268924,
+      "box": [
+        [
+          33.0,
+          353.0
+        ],
+        [
+          519.0,
+          353.0
+        ],
+        [
+          519.0,
+          382.0
+        ],
+        [
+          33.0,
+          382.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "優先して考慮したい原則として、次のようなものが考えられます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "·In the remote McP case, users may trust servers with their credentials but not clients.",
+      "confidence": 0.9702771245078607,
+      "box": [
+        [
+          54.0,
+          427.0
+        ],
+        [
+          1186.0,
+          428.0
+        ],
+        [
+          1186.0,
+          458.0
+        ],
+        [
+          54.0,
+          457.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "・リモートMCPでは、ユーザーは認証情報を扱うサーバーを信頼していても、クライアントは信頼していない場合があります。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "McP"
+      ],
+      "transcribed_source": "· In the remote MCP case, users may trust servers with their credentials but not clients."
+    },
+    {
+      "source": "o For example, an official McP server for some web service is probably more trusted to handle tokens for that service than the",
+      "confidence": 0.9848663693382627,
+      "box": [
+        [
+          101.0,
+          541.0
+        ],
+        [
+          1732.0,
+          542.0
+        ],
+        [
+          1732.0,
+          575.0
+        ],
+        [
+          101.0,
+          574.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "○ たとえばWebサービスの公式MCPサーバーは、そのサービスのトークンを扱う上で、エンドユーザー向けの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "McP"
+      ],
+      "transcribed_source": "o For example, an official MCP server for some web service is probably more trusted to handle tokens for that service than the"
+    },
+    {
+      "source": "end-user LLM application.",
+      "confidence": 0.9777352929115295,
+      "box": [
+        [
+          129.0,
+          587.0
+        ],
+        [
+          466.0,
+          587.0
+        ],
+        [
+          466.0,
+          616.0
+        ],
+        [
+          129.0,
+          616.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "LLMアプリケーションよりも信頼されやすいと考えられます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LLM"
+      ]
+    },
+    {
+      "source": "例如，与最终用户LLM应用程序相比，某些Web服务的官方MCP服务器可能更值得信任来处理该服务的令牌。",
+      "confidence": 0.9983535011609396,
+      "box": [
+        [
+          128.0,
+          642.0
+        ],
+        [
+          1509.0,
+          642.0
+        ],
+        [
+          1509.0,
+          674.0
+        ],
+        [
+          128.0,
+          674.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "たとえばWebサービスの公式MCPサーバーは、そのサービスのトークンの処理について、エンドユーザー向けLLMアプリケーションより信頼に値する場合があります。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "·Implementing aservershouldbe as simpleaspossible.Weprefer topushcomplexity ontoclients.",
+      "confidence": 0.9711968607523225,
+      "box": [
+        [
+          55.0,
+          702.0
+        ],
+        [
+          1343.0,
+          703.0
+        ],
+        [
+          1342.0,
+          732.0
+        ],
+        [
+          55.0,
+          731.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "・サーバーの実装はできる限り単純にすべきです。複雑さはクライアント側へ寄せたいと考えています。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "simpleaspossible.Weprefer"
+      ],
+      "transcribed_source": "· Implementing a server should be as simple as possible. We prefer to push complexity onto clients."
+    },
+    {
+      "source": "实施服务器应尽可能简单。我们更愿意将复杂性推给客户。",
+      "confidence": 0.9977055925589341,
+      "box": [
+        [
+          81.0,
+          759.0
+        ],
+        [
+          790.0,
+          759.0
+        ],
+        [
+          790.0,
+          788.0
+        ],
+        [
+          81.0,
+          788.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "サーバーの実装はできる限り単純にすべきです。複雑さはクライアント側へ寄せたいと考えています。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "TheMCPecosystemshould beopenbydefault-that is,wewant to allowcustom clientsand servers tointeroperatewith theones",
+      "confidence": 0.9563667539474183,
+      "box": [
+        [
+          75.0,
+          817.0
+        ],
+        [
+          1756.0,
+          819.0
+        ],
+        [
+          1756.0,
+          848.0
+        ],
+        [
+          75.0,
+          846.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "MCPのエコシステムは既定で開かれているべきです。つまり、独自実装のクライアントとサーバーも、私たちが作るものと",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TheMCPecosystemshould"
+      ],
+      "transcribed_source": "The MCP ecosystem should be open by default—that is, we want to allow custom clients and servers to interoperate with the ones"
+    },
+    {
+      "source": "we build, even if we have noknowledge of those custom implementations.",
+      "confidence": 0.9401528137070793,
+      "box": [
+        [
+          80.0,
+          859.0
+        ],
+        [
+          1035.0,
+          861.0
+        ],
+        [
+          1035.0,
+          890.0
+        ],
+        [
+          80.0,
+          888.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "相互運用できるようにしたいのです。それらの独自実装を私たちが知らなくても同様です。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "we build, even if we have no knowledge of those custom implementations."
+    },
+    {
+      "source": "MCP生态系统在默认情况下应该是开放的，也就是说，我们希望允许自定义客户端和服务器与我们构建的客户端和服务器进行互操作，",
+      "confidence": 0.9978651762008667,
+      "box": [
+        [
+          79.0,
+          914.0
+        ],
+        [
+          1726.0,
+          916.0
+        ],
+        [
+          1726.0,
+          948.0
+        ],
+        [
+          79.0,
+          946.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "MCPのエコシステムは既定で開かれているべきです。つまり、独自のクライアントとサーバーが、私たちの作るクライアントとサーバーと相互運用できることを望みます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "即使我们不知道这些自定义实现。",
+      "confidence": 0.9981687506039937,
+      "box": [
+        [
+          82.0,
+          959.0
+        ],
+        [
+          485.0,
+          959.0
+        ],
+        [
+          485.0,
+          988.0
+        ],
+        [
+          82.0,
+          988.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "私たちがその独自実装を知らない場合でも同様です。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Relatedly, we would prefer to avoid a central trust authority. We want clients and servers to be able to determine whether they trust",
+      "confidence": 0.9758119453164867,
+      "box": [
+        [
+          76.0,
+          1017.0
+        ],
+        [
+          1768.0,
+          1018.0
+        ],
+        [
+          1768.0,
+          1048.0
+        ],
+        [
+          76.0,
+          1047.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "これに関連して、中央の信頼機関は避けたいと考えています。クライアントとサーバーは、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "与此相关，我们更愿意避免使用中央信任机构。我们希望客户端和服务器能够根据用户同意来确定它们是否相互信任，而不是委托给任何",
+      "confidence": 0.9971839259068171,
+      "box": [
+        [
+          82.0,
+          1117.0
+        ],
+        [
+          1760.0,
+          1117.0
+        ],
+        [
+          1760.0,
+          1146.0
+        ],
+        [
+          82.0,
+          1146.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "これに関連して、中央の信頼機関は避けたいと考えています。クライアントとサーバーはユーザーの同意に基づいて互いを信頼するかどうか判断し、信頼された実装を扱ういかなる",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "类型的可信实现注册表。",
+      "confidence": 0.9997644316066395,
+      "box": [
+        [
+          79.0,
+          1157.0
+        ],
+        [
+          375.0,
+          1159.0
+        ],
+        [
+          374.0,
+          1189.0
+        ],
+        [
+          79.0,
+          1187.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "種類の登録簿にも、その判断を委ねないことを望みます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "在远程MCP的情况下，用户可以信任具有其凭证的服务器，但不能信任客户端。",
+      "location": "Chinese bullet omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L022",
+      "japanese": "リモートMCPでは、ユーザーは認証情報を持つサーバーは信頼できても、クライアントは信頼できません。（原図の中国語併記の訳）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "each other based on user consent, rather than delegating to any kind of registry of trusted implementations.",
+      "location": "last English line omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L023",
+      "japanese": "信頼された実装の登録簿のようなものに判断を委ねず、ユーザーの同意に基づいて互いを信頼するかどうか判断できるべきです。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5263684000237845,
+    0.028932571411132812,
+    9.414122343063354
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Thanksfor getting the conversation started here!We've thought a bit about this, but definitely not enough tobake something into the": "Thanks for getting the conversation started here! We've thought a bit about this, but definitely not enough to bake something into the",
+      "A fewprinciplesweprobablywanttoprioritizeinclude:": "A few principles we probably want to prioritize include:",
+      "·In the remote McP case, users may trust servers with their credentials but not clients.": "· In the remote MCP case, users may trust servers with their credentials but not clients.",
+      "o For example, an official McP server for some web service is probably more trusted to handle tokens for that service than the": "o For example, an official MCP server for some web service is probably more trusted to handle tokens for that service than the",
+      "·Implementing aservershouldbe as simpleaspossible.Weprefer topushcomplexity ontoclients.": "· Implementing a server should be as simple as possible. We prefer to push complexity onto clients.",
+      "TheMCPecosystemshould beopenbydefault-that is,wewant to allowcustom clientsand servers tointeroperatewith theones": "The MCP ecosystem should be open by default—that is, we want to allow custom clients and servers to interoperate with the ones",
+      "we build, even if we have noknowledge of those custom implementations.": "we build, even if we have no knowledge of those custom implementations."
+    },
+    "additional_labels": [
+      {
+        "source": "在远程MCP的情况下，用户可以信任具有其凭证的服务器，但不能信任客户端。",
+        "location": "Chinese bullet omitted by OCR"
+      },
+      {
+        "source": "each other based on user consent, rather than delegating to any kind of registry of trusted implementations.",
+        "location": "last English line omitted by OCR"
+      }
+    ],
+    "source_note": "当時の議論画面の英語と中国語併記を両方翻訳。相対日時の3日前から絶対日付は推測しない。英語mayと中国語の断定表現の差もそのまま示す。",
+    "source_sha256": "fc35dfd07516cdf61e34a902915ea874dd13f4d913a89e4dc183ae9db4683be5"
+  }
+}

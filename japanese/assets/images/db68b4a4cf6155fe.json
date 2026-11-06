@@ -1,0 +1,604 @@
+{
+  "source": "images/did-identity-authentication.png",
+  "sha256": "db68b4a4cf6155fe8f2f6d23afce077876af0b8cd01d6e1f43f3e1dcab8bc6cc",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "User",
+      "confidence": 0.9998802095651627,
+      "box": [
+        [
+          252.0,
+          92.0
+        ],
+        [
+          335.0,
+          92.0
+        ],
+        [
+          335.0,
+          131.0
+        ],
+        [
+          252.0,
+          131.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Service",
+      "confidence": 0.9982113923345294,
+      "box": [
+        [
+          801.0,
+          91.0
+        ],
+        [
+          924.0,
+          93.0
+        ],
+        [
+          923.0,
+          130.0
+        ],
+        [
+          800.0,
+          128.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "User DID Service",
+      "confidence": 0.9463316164910793,
+      "box": [
+        [
+          1325.0,
+          92.0
+        ],
+        [
+          1588.0,
+          94.0
+        ],
+        [
+          1588.0,
+          128.0
+        ],
+        [
+          1324.0,
+          126.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ユーザーのDIDサービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "Service Request",
+      "confidence": 0.9893973350524903,
+      "box": [
+        [
+          450.0,
+          246.0
+        ],
+        [
+          708.0,
+          246.0
+        ],
+        [
+          708.0,
+          282.0
+        ],
+        [
+          450.0,
+          282.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "サービス要求",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Get User DID Document",
+      "confidence": 0.9519529867739904,
+      "box": [
+        [
+          970.0,
+          349.0
+        ],
+        [
+          1350.0,
+          351.0
+        ],
+        [
+          1349.0,
+          384.0
+        ],
+        [
+          970.0,
+          382.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ユーザーのDID文書を取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "User DiD Document",
+      "confidence": 0.9579582670155693,
+      "box": [
+        [
+          1002.0,
+          467.0
+        ],
+        [
+          1318.0,
+          469.0
+        ],
+        [
+          1317.0,
+          502.0
+        ],
+        [
+          1002.0,
+          500.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "ユーザーのDID文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DiD"
+      ],
+      "transcribed_source": "User DID Document"
+    },
+    {
+      "source": "401: timestamp,nonce, etc",
+      "confidence": 0.9981650495529175,
+      "box": [
+        [
+          378.0,
+          606.0
+        ],
+        [
+          805.0,
+          610.0
+        ],
+        [
+          805.0,
+          647.0
+        ],
+        [
+          377.0,
+          643.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "401: タイムスタンプ、ノンスなど",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "401"
+      ]
+    },
+    {
+      "source": "\"@context\":",
+      "confidence": 0.9105481884696267,
+      "box": [
+        [
+          1100.0,
+          631.0
+        ],
+        [
+          1213.0,
+          631.0
+        ],
+        [
+          1213.0,
+          651.0
+        ],
+        [
+          1100.0,
+          651.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "\"@context\": （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"https://www.w3.org/ns/did/v1\",",
+      "confidence": 0.9814728863777653,
+      "box": [
+        [
+          1117.0,
+          653.0
+        ],
+        [
+          1397.0,
+          653.0
+        ],
+        [
+          1397.0,
+          673.0
+        ],
+        [
+          1117.0,
+          673.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "\"https://www.w3.org/ns/did/v1\", （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified",
+      "protected_tokens": [
+        "https://www.w3.org/ns/did/v1\","
+      ]
+    },
+    {
+      "source": "\"https://w3id.org/security/suites/ed25519-2020/v1\"",
+      "confidence": 0.9880124843120575,
+      "box": [
+        [
+          1114.0,
+          672.0
+        ],
+        [
+          1576.0,
+          673.0
+        ],
+        [
+          1576.0,
+          699.0
+        ],
+        [
+          1114.0,
+          698.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "\"https://w3id.org/security/suites/ed25519-2020/v1\" （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified",
+      "protected_tokens": [
+        "https://w3id.org/security/suites/ed25519-2020/v1\""
+      ]
+    },
+    {
+      "source": "signing with",
+      "confidence": 0.9992383370796839,
+      "box": [
+        [
+          56.0,
+          721.0
+        ],
+        [
+          254.0,
+          717.0
+        ],
+        [
+          255.0,
+          758.0
+        ],
+        [
+          57.0,
+          762.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "次の鍵で署名する:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"id\":\"did:example:123\"",
+      "confidence": 0.9311038553714752,
+      "box": [
+        [
+          1096.0,
+          718.0
+        ],
+        [
+          1314.0,
+          719.0
+        ],
+        [
+          1313.0,
+          742.0
+        ],
+        [
+          1096.0,
+          741.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "\"id\":\"did:example:123\" （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "\"authentication\":[",
+      "confidence": 0.9663859340879652,
+      "box": [
+        [
+          1099.0,
+          744.0
+        ],
+        [
+          1278.0,
+          744.0
+        ],
+        [
+          1278.0,
+          764.0
+        ],
+        [
+          1099.0,
+          764.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "\"authentication\":[ （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "a private key",
+      "confidence": 0.9961899060469407,
+      "box": [
+        [
+          55.0,
+          770.0
+        ],
+        [
+          265.0,
+          770.0
+        ],
+        [
+          265.0,
+          810.0
+        ],
+        [
+          55.0,
+          810.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "秘密鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"id\":\"did:example:123#z6MkecaLyHuYWkayBDLw5ihndj3T1m6zKTGqau3A51G7RBf3\",",
+      "confidence": 0.9758969628148608,
+      "box": [
+        [
+          1131.0,
+          786.0
+        ],
+        [
+          1800.0,
+          787.0
+        ],
+        [
+          1800.0,
+          810.0
+        ],
+        [
+          1131.0,
+          809.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "\"id\":\"did:example:123#z6MkecaLyHuYWkayBDLw5ihndj3T1m6zKTGqau3A51G7RBf3\", （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "Service Request:signature",
+      "confidence": 0.997521505355835,
+      "box": [
+        [
+          387.0,
+          804.0
+        ],
+        [
+          804.0,
+          808.0
+        ],
+        [
+          804.0,
+          842.0
+        ],
+        [
+          386.0,
+          838.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "サービス要求: 署名",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"type\":\"Ed25519VerificationKey2020\"，// external(propertyvalue)",
+      "confidence": 0.9678893425772267,
+      "box": [
+        [
+          1132.0,
+          809.0
+        ],
+        [
+          1738.0,
+          811.0
+        ],
+        [
+          1738.0,
+          834.0
+        ],
+        [
+          1132.0,
+          832.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "\"type\":\"Ed25519VerificationKey2020\"，// external(propertyvalue) （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "\"controller\":\"did:example:123\",",
+      "confidence": 0.9504834509664967,
+      "box": [
+        [
+          1134.0,
+          834.0
+        ],
+        [
+          1425.0,
+          834.0
+        ],
+        [
+          1425.0,
+          854.0
+        ],
+        [
+          1134.0,
+          854.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "\"controller\":\"did:example:123\", （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "verifying the signature",
+      "confidence": 0.9919154358946759,
+      "box": [
+        [
+          890.0,
+          948.0
+        ],
+        [
+          1251.0,
+          948.0
+        ],
+        [
+          1251.0,
+          984.0
+        ],
+        [
+          890.0,
+          984.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "署名を検証する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "with a public key",
+      "confidence": 0.9987992749494665,
+      "box": [
+        [
+          887.0,
+          992.0
+        ],
+        [
+          1163.0,
+          995.0
+        ],
+        [
+          1162.0,
+          1035.0
+        ],
+        [
+          887.0,
+          1032.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "公開鍵を使って",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service Response",
+      "confidence": 0.992940753698349,
+      "box": [
+        [
+          456.0,
+          1023.0
+        ],
+        [
+          737.0,
+          1026.0
+        ],
+        [
+          737.0,
+          1062.0
+        ],
+        [
+          455.0,
+          1059.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "サービス応答",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "// external (property value)",
+      "location": "code comment on type field",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L022",
+      "japanese": "// 外部（プロパティ値）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-human-prose-reviewed-technical-code-original-pixels-authoritative",
+  "translation_status": "visible-human-prose-translated-technical-code-transcription-unverified",
+  "ocr_seconds": [
+    1.562694400025066,
+    0.02934885025024414,
+    2.7195026874542236
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": false,
+    "full_transcription_confirmed": false,
+    "source_limitation": "図の説明ラベルは目視照合した。小さなDID文書コード内の暗号鍵文字列・括弧とpublicKeyMultibase行はOCRの欠落があり、完全なコード転記は未確認。コードのOCR文字列を正確な識別子として使用しないこと。",
+    "corrections": {
+      "User DiD Document": "User DID Document"
+    },
+    "source_sha256": "db68b4a4cf6155fe8f2f6d23afce077876af0b8cd01d6e1f43f3e1dcab8bc6cc",
+    "code_transcription_unverified": true,
+    "review_scope": "all-visible-human-prose-including-code-comment; technical-code-original-pixels-authoritative",
+    "additional_labels": [
+      {
+        "source": "// external (property value)",
+        "location": "code comment on type field"
+      }
+    ],
+    "technical_code_labels": [
+      "\"@context\":",
+      "\"https://www.w3.org/ns/did/v1\",",
+      "\"https://w3id.org/security/suites/ed25519-2020/v1\"",
+      "\"id\":\"did:example:123\"",
+      "\"authentication\":[",
+      "\"id\":\"did:example:123#z6MkecaLyHuYWkayBDLw5ihndj3T1m6zKTGqau3A51G7RBf3\",",
+      "\"type\":\"Ed25519VerificationKey2020\"，// external(propertyvalue)",
+      "\"controller\":\"did:example:123\","
+    ],
+    "source_note": "図内の説明文とコードコメントを目視対訳済み。公開鍵、フィールド、配列や括弧の完全なコード転記は検証していない。原コードの画素を正として参照し、欠けたOCRキーを推測して再生成しない。"
+  }
+}

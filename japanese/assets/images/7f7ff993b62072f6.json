@@ -1,0 +1,210 @@
+{
+  "source": "blogs/images/ap2/rules.png",
+  "sha256": "7f7ff993b62072f6ec157a8c40fcc419da98fb9a607810b3a7246d17ab4adf6c",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Shopping Agent",
+      "confidence": 0.9916735078607287,
+      "box": [
+        [
+          323.0,
+          56.0
+        ],
+        [
+          459.0,
+          57.0
+        ],
+        [
+          459.0,
+          84.0
+        ],
+        [
+          323.0,
+          83.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "購買エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Merchant Endpoint",
+      "confidence": 0.9840588990379783,
+      "box": [
+        [
+          725.0,
+          59.0
+        ],
+        [
+          882.0,
+          59.0
+        ],
+        [
+          882.0,
+          79.0
+        ],
+        [
+          725.0,
+          79.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "加盟店のエンドポイント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Credentials",
+      "confidence": 0.9979602261023088,
+      "box": [
+        [
+          343.0,
+          231.0
+        ],
+        [
+          440.0,
+          231.0
+        ],
+        [
+          440.0,
+          253.0
+        ],
+        [
+          343.0,
+          253.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "認証情報",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MerchantPayment",
+      "confidence": 0.9991933584213257,
+      "box": [
+        [
+          727.0,
+          233.0
+        ],
+        [
+          881.0,
+          233.0
+        ],
+        [
+          881.0,
+          253.0
+        ],
+        [
+          727.0,
+          253.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "加盟店の決済",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MerchantPayment"
+      ],
+      "transcribed_source": "Merchant Payment"
+    },
+    {
+      "source": "Provider",
+      "confidence": 0.9990794137120247,
+      "box": [
+        [
+          354.0,
+          252.0
+        ],
+        [
+          427.0,
+          254.0
+        ],
+        [
+          426.0,
+          277.0
+        ],
+        [
+          353.0,
+          275.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "提供者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Processor",
+      "confidence": 0.999127553568946,
+      "box": [
+        [
+          761.0,
+          254.0
+        ],
+        [
+          847.0,
+          255.0
+        ],
+        [
+          846.0,
+          277.0
+        ],
+        [
+          761.0,
+          276.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "処理者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Network+Issuer",
+      "confidence": 0.965097610439573,
+      "box": [
+        [
+          539.0,
+          461.0
+        ],
+        [
+          676.0,
+          461.0
+        ],
+        [
+          676.0,
+          481.0
+        ],
+        [
+          539.0,
+          481.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "決済ネットワーク＋発行者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Network + Issuer"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.32821920001879334,
+    0.01051187515258789,
+    0.5245456695556641
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "MerchantPayment": "Merchant Payment",
+      "Network+Issuer": "Network + Issuer"
+    },
+    "source_sha256": "7f7ff993b62072f6ec157a8c40fcc419da98fb9a607810b3a7246d17ab4adf6c"
+  }
+}

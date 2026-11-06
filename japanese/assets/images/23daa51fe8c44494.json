@@ -1,0 +1,328 @@
+{
+  "source": "blogs/images/mcp-vs-anp.png",
+  "sha256": "23daa51fe8c444940853851bd5031d5a73ae5aeee2ad0543907de84b97bd8c52",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Tools",
+      "confidence": 0.9992588639259339,
+      "box": [
+        [
+          389.4405212402344,
+          77.37132263183594
+        ],
+        [
+          472.9838562011719,
+          77.37132263183594
+        ],
+        [
+          472.9838562011719,
+          115.42279052734375
+        ],
+        [
+          389.4405212402344,
+          115.42279052734375
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.9980229437351227,
+      "box": [
+        [
+          609.2238159179688,
+          79.90808868408203
+        ],
+        [
+          745.4636840820312,
+          82.4448471069336
+        ],
+        [
+          745.4636840820312,
+          114.15441131591797
+        ],
+        [
+          607.9384765625,
+          111.61764526367188
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9991690993309021,
+      "box": [
+        [
+          2021.7490234375,
+          81.17646789550781
+        ],
+        [
+          2136.13916015625,
+          83.7132339477539
+        ],
+        [
+          2136.13916015625,
+          129.375
+        ],
+        [
+          2021.7490234375,
+          126.8382339477539
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.9977996498346329,
+      "box": [
+        [
+          165.80140686035156,
+          224.503662109375
+        ],
+        [
+          304.6119079589844,
+          228.30882263183594
+        ],
+        [
+          304.6119079589844,
+          260.01837158203125
+        ],
+        [
+          164.51612854003906,
+          256.2132263183594
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Tools",
+      "confidence": 0.9986128568649292,
+      "box": [
+        [
+          808.4425659179688,
+          223.23529052734375
+        ],
+        [
+          889.4153442382812,
+          223.23529052734375
+        ],
+        [
+          889.4153442382812,
+          260.01837158203125
+        ],
+        [
+          808.4425659179688,
+          260.01837158203125
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9988250374794007,
+      "box": [
+        [
+          1751.8397216796875,
+          266.36029052734375
+        ],
+        [
+          1863.6593017578125,
+          266.36029052734375
+        ],
+        [
+          1863.6593017578125,
+          308.2168884277344
+        ],
+        [
+          1751.8397216796875,
+          308.2168884277344
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9983915448188782,
+      "box": [
+        [
+          2296.79931640625,
+          267.628662109375
+        ],
+        [
+          2409.904296875,
+          267.628662109375
+        ],
+        [
+          2409.904296875,
+          310.753662109375
+        ],
+        [
+          2296.79931640625,
+          310.753662109375
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Tools",
+      "confidence": 0.9985299110412598,
+      "box": [
+        [
+          120.8165283203125,
+          374.17279052734375
+        ],
+        [
+          204.35987854003906,
+          374.17279052734375
+        ],
+        [
+          204.35987854003906,
+          410.95587158203125
+        ],
+        [
+          120.8165283203125,
+          410.95587158203125
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.9978543296456337,
+      "box": [
+        [
+          873.991943359375,
+          377.9779357910156
+        ],
+        [
+          1012.8024291992188,
+          381.7830810546875
+        ],
+        [
+          1011.5171508789062,
+          410.95587158203125
+        ],
+        [
+          873.991943359375,
+          407.1507263183594
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "模型",
+      "confidence": 0.9999383091926575,
+      "box": [
+        [
+          496.11895751953125,
+          445.2021789550781
+        ],
+        [
+          609.2238159179688,
+          445.2021789550781
+        ],
+        [
+          609.2238159179688,
+          507.3529357910156
+        ],
+        [
+          496.11895751953125,
+          507.3529357910156
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "モデル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9987826108932495,
+      "box": [
+        [
+          1827.67138671875,
+          554.2830810546875
+        ],
+        [
+          1939.490966796875,
+          554.2830810546875
+        ],
+        [
+          1939.490966796875,
+          597.4080810546875
+        ],
+        [
+          1827.67138671875,
+          597.4080810546875
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9986808776855469,
+      "box": [
+        [
+          2215.82666015625,
+          554.2830810546875
+        ],
+        [
+          2327.646240234375,
+          554.2830810546875
+        ],
+        [
+          2327.646240234375,
+          597.4080810546875
+        ],
+        [
+          2215.82666015625,
+          597.4080810546875
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8266637000488117,
+    0.020561695098876953,
+    0.40390753746032715
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "23daa51fe8c444940853851bd5031d5a73ae5aeee2ad0543907de84b97bd8c52"
+  }
+}

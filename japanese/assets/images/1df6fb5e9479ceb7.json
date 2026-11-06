@@ -1,0 +1,140 @@
+{
+  "source": "blogs/images/data-silos.png",
+  "sha256": "1df6fb5e9479ceb748abdd9675b13d57875f06de5356ffeeb8f0eea7b3b769d3",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Google",
+      "confidence": 0.9969622592131296,
+      "box": [
+        [
+          408.0,
+          102.0
+        ],
+        [
+          504.0,
+          106.0
+        ],
+        [
+          503.0,
+          140.0
+        ],
+        [
+          406.0,
+          135.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "Google",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Data Silos",
+      "confidence": 0.9993058204650879,
+      "box": [
+        [
+          240.0,
+          239.0
+        ],
+        [
+          538.0,
+          241.0
+        ],
+        [
+          537.0,
+          291.0
+        ],
+        [
+          240.0,
+          289.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "データのサイロ化",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "f",
+      "confidence": 0.8303372859954834,
+      "box": [
+        [
+          83.0,
+          349.0
+        ],
+        [
+          110.0,
+          349.0
+        ],
+        [
+          110.0,
+          369.0
+        ],
+        [
+          83.0,
+          369.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "f",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "facebook",
+      "confidence": 0.9995470270514488,
+      "box": [
+        [
+          110.0,
+          346.0
+        ],
+        [
+          208.0,
+          346.0
+        ],
+        [
+          208.0,
+          370.0
+        ],
+        [
+          110.0,
+          370.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "facebook",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "X",
+      "location": "lower right social service logo omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L005",
+      "japanese": "X",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7270098999724723,
+    0.007004976272583008,
+    0.0952451229095459
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "additional_labels": [
+      {
+        "source": "X",
+        "location": "lower right social service logo omitted by OCR"
+      }
+    ],
+    "source_note": "fとXはサービスのロゴ文字として保持した。",
+    "source_sha256": "1df6fb5e9479ceb748abdd9675b13d57875f06de5356ffeeb8f0eea7b3b769d3"
+  }
+}

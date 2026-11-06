@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/did-wba-security-principles.md -->
 # did:wbaのセキュリティ原理
 
 Webを基盤とする分散型識別子の方式であるdid:wbaは、セキュリティを中核に据えています。この記事では、did:wbaのセキュリティ原理を詳しく説明し、信頼できる安全な本人確認をどのように実現するかを分析します。

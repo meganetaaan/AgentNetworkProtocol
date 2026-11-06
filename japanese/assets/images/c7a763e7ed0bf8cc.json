@@ -1,0 +1,795 @@
+{
+  "source": "blogs/images/mcp-wba-did-proposal.png",
+  "sha256": "c7a763e7ed0bf8cccd8339eb1abf2956b6dd1cb27383df12d59bfbba43554284",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Authentication#64",
+      "confidence": 0.9972733890309053,
+      "box": [
+        [
+          26.0,
+          24.0
+        ],
+        [
+          284.0,
+          24.0
+        ],
+        [
+          284.0,
+          51.0
+        ],
+        [
+          26.0,
+          51.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "認証 #64",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "64"
+      ],
+      "transcribed_source": "Authentication #64"
+    },
+    {
+      "source": "jaredhansononNov26,2024.14comments·10replies",
+      "confidence": 0.9771402261473916,
+      "box": [
+        [
+          69.0,
+          67.0
+        ],
+        [
+          765.0,
+          67.0
+        ],
+        [
+          765.0,
+          93.0
+        ],
+        [
+          69.0,
+          93.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "jaredhanson、2024年11月26日・コメント14件・返信10件",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "jaredhansononNov26",
+        "2024.14comments",
+        "10"
+      ],
+      "transcribed_source": "jaredhanson on Nov 26, 2024 · 14 comments · 10 replies"
+    },
+    {
+      "source": "chgaowei onDec5,2024",
+      "confidence": 0.9795095264911652,
+      "box": [
+        [
+          137.0,
+          218.0
+        ],
+        [
+          483.0,
+          218.0
+        ],
+        [
+          483.0,
+          251.0
+        ],
+        [
+          137.0,
+          251.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "chgaowei、2024年12月5日",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "onDec5",
+        "2024"
+      ],
+      "transcribed_source": "chgaowei on Dec 5, 2024"
+    },
+    {
+      "source": "Proposal:did:wba, aWeb-based Decentralized ldentifier",
+      "confidence": 0.9589551158671109,
+      "box": [
+        [
+          57.0,
+          307.0
+        ],
+        [
+          1138.0,
+          307.0
+        ],
+        [
+          1138.0,
+          348.0
+        ],
+        [
+          57.0,
+          348.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "提案：did:wba、Webに基づく分散型識別子",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba",
+        "aWeb"
+      ],
+      "transcribed_source": "Proposal: did:wba, a Web-based Decentralized Identifier"
+    },
+    {
+      "source": "1. Introduction",
+      "confidence": 0.9960208535194397,
+      "box": [
+        [
+          56.0,
+          419.0
+        ],
+        [
+          297.0,
+          419.0
+        ],
+        [
+          297.0,
+          455.0
+        ],
+        [
+          56.0,
+          455.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "1. はじめに",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "did:wba is a Web-based Decentralized Identifier (DiD) specification designed to support cross-platform authentication and agent",
+      "confidence": 0.9762077423061911,
+      "box": [
+        [
+          56.0,
+          496.0
+        ],
+        [
+          1725.0,
+          498.0
+        ],
+        [
+          1725.0,
+          528.0
+        ],
+        [
+          56.0,
+          525.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "did:wbaは、プラットフォームをまたぐ認証とエージェント間の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba",
+        "DiD"
+      ],
+      "transcribed_source": "did:wba is a Web-based Decentralized Identifier (DID) specification designed to support cross-platform authentication and agent"
+    },
+    {
+      "source": "communication.",
+      "confidence": 0.9997522149767194,
+      "box": [
+        [
+          58.0,
+          540.0
+        ],
+        [
+          266.0,
+          540.0
+        ],
+        [
+          266.0,
+          567.0
+        ],
+        [
+          58.0,
+          567.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "通信を支えるために設計された、Webに基づく分散型識別子（DID）の仕様です。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "The did:wba method leverages existing mature technologies and Web infrastructure to implement decentralized authentication without",
+      "confidence": 0.9639918386936188,
+      "box": [
+        [
+          57.0,
+          614.0
+        ],
+        [
+          1796.0,
+          614.0
+        ],
+        [
+          1796.0,
+          643.0
+        ],
+        [
+          57.0,
+          643.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "did:wba方式は既存の成熟した技術とWeb基盤を使い、既存システムを",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba"
+      ]
+    },
+    {
+      "source": "DiDs to users, enabling interoperabilitybetweenplatforms.",
+      "confidence": 0.9676162872398109,
+      "box": [
+        [
+          56.0,
+          697.0
+        ],
+        [
+          815.0,
+          698.0
+        ],
+        [
+          815.0,
+          728.0
+        ],
+        [
+          56.0,
+          727.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "DIDを発行でき、プラットフォーム間の相互運用を可能にします。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DiDs"
+      ],
+      "transcribed_source": "DIDs to users, enabling interoperability between platforms."
+    },
+    {
+      "source": "Similar to email, did:wba allows platforms to maintain their centralized account systems while enabling cross-platform communication",
+      "confidence": 0.9899096814068881,
+      "box": [
+        [
+          57.0,
+          770.0
+        ],
+        [
+          1781.0,
+          771.0
+        ],
+        [
+          1781.0,
+          801.0
+        ],
+        [
+          57.0,
+          800.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "電子メールと同様に、did:wbaによりプラットフォームは中央管理のアカウントシステムを維持しながら、プラットフォームをまたぐ通信と",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba"
+      ]
+    },
+    {
+      "source": "and interoperability.",
+      "confidence": 0.9964090273493812,
+      "box": [
+        [
+          55.0,
+          810.0
+        ],
+        [
+          316.0,
+          813.0
+        ],
+        [
+          316.0,
+          846.0
+        ],
+        [
+          55.0,
+          843.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "相互運用を可能にできます。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "2. Cross-Platform Authentication",
+      "confidence": 0.9983281139284372,
+      "box": [
+        [
+          57.0,
+          902.0
+        ],
+        [
+          601.0,
+          903.0
+        ],
+        [
+          601.0,
+          936.0
+        ],
+        [
+          57.0,
+          935.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "2. プラットフォームをまたぐ認証",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "did:wba can be integrated with HTTP protocol to complete identity authentication, permission verification, and data exchange in a",
+      "confidence": 0.9939050272453663,
+      "box": [
+        [
+          57.0,
+          978.0
+        ],
+        [
+          1731.0,
+          979.0
+        ],
+        [
+          1731.0,
+          1009.0
+        ],
+        [
+          57.0,
+          1008.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "did:wbaはHTTPプロトコルと組み合わせ、追加のやり取りを行わずに、ID認証、権限の検証、データ交換を",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba",
+        "HTTP"
+      ]
+    },
+    {
+      "source": "single HTTP request without additional interactions. Below is the interaction flow of did:wba with HTTP protocol:",
+      "confidence": 0.962710645346515,
+      "box": [
+        [
+          57.0,
+          1022.0
+        ],
+        [
+          1506.0,
+          1022.0
+        ],
+        [
+          1506.0,
+          1051.0
+        ],
+        [
+          57.0,
+          1051.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "1回のHTTPリクエストで完了できます。以下は、did:wbaとHTTPを組み合わせたやり取りの流れです。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP",
+        "did:wba",
+        "HTTP"
+      ]
+    },
+    {
+      "source": "AgentA",
+      "confidence": 0.9990923007329305,
+      "box": [
+        [
+          553.0,
+          1116.0
+        ],
+        [
+          633.0,
+          1116.0
+        ],
+        [
+          633.0,
+          1147.0
+        ],
+        [
+          553.0,
+          1147.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentA"
+      ],
+      "transcribed_source": "Agent A"
+    },
+    {
+      "source": "AgentB",
+      "confidence": 0.9994077384471893,
+      "box": [
+        [
+          890.0,
+          1117.0
+        ],
+        [
+          970.0,
+          1114.0
+        ],
+        [
+          971.0,
+          1143.0
+        ],
+        [
+          891.0,
+          1146.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentB"
+      ],
+      "transcribed_source": "Agent B"
+    },
+    {
+      "source": "AgentA",
+      "confidence": 0.9990826745827993,
+      "box": [
+        [
+          1228.0,
+          1117.0
+        ],
+        [
+          1307.0,
+          1117.0
+        ],
+        [
+          1307.0,
+          1145.0
+        ],
+        [
+          1228.0,
+          1145.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentA"
+      ],
+      "transcribed_source": "Agent A"
+    },
+    {
+      "source": "Client",
+      "confidence": 0.9985798597335815,
+      "box": [
+        [
+          561.0,
+          1146.0
+        ],
+        [
+          625.0,
+          1146.0
+        ],
+        [
+          625.0,
+          1173.0
+        ],
+        [
+          561.0,
+          1173.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9957156578699747,
+      "box": [
+        [
+          896.0,
+          1148.0
+        ],
+        [
+          962.0,
+          1148.0
+        ],
+        [
+          962.0,
+          1172.0
+        ],
+        [
+          896.0,
+          1172.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID Sever",
+      "confidence": 0.9438429077466329,
+      "box": [
+        [
+          1218.0,
+          1144.0
+        ],
+        [
+          1316.0,
+          1147.0
+        ],
+        [
+          1315.0,
+          1174.0
+        ],
+        [
+          1217.0,
+          1171.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "DIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "HTTPRequest:DID,Signature",
+      "confidence": 0.9937845849990845,
+      "box": [
+        [
+          632.0,
+          1217.0
+        ],
+        [
+          909.0,
+          1219.0
+        ],
+        [
+          909.0,
+          1245.0
+        ],
+        [
+          632.0,
+          1243.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "HTTPリクエスト：DID、署名",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ],
+      "transcribed_source": "HTTP Request: DID,Signature"
+    },
+    {
+      "source": "Get DID Document",
+      "confidence": 0.9291671626269817,
+      "box": [
+        [
+          1004.0,
+          1282.0
+        ],
+        [
+          1183.0,
+          1282.0
+        ],
+        [
+          1183.0,
+          1308.0
+        ],
+        [
+          1004.0,
+          1308.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "DIDドキュメントを取得",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "DID Document",
+      "confidence": 0.9643235355615616,
+      "box": [
+        [
+          1022.0,
+          1348.0
+        ],
+        [
+          1166.0,
+          1352.0
+        ],
+        [
+          1165.0,
+          1379.0
+        ],
+        [
+          1021.0,
+          1375.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "DIDドキュメント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "authentication",
+      "confidence": 0.9990644199507577,
+      "box": [
+        [
+          1004.0,
+          1456.0
+        ],
+        [
+          1149.0,
+          1456.0
+        ],
+        [
+          1149.0,
+          1480.0
+        ],
+        [
+          1004.0,
+          1480.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "認証",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTPResponse:token",
+      "confidence": 0.9938246773348914,
+      "box": [
+        [
+          653.0,
+          1505.0
+        ],
+        [
+          868.0,
+          1507.0
+        ],
+        [
+          868.0,
+          1534.0
+        ],
+        [
+          653.0,
+          1532.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "HTTPレスポンス：トークン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "HTTP Response: token"
+    },
+    {
+      "source": "HTTPRequest:token",
+      "confidence": 0.9929787691901711,
+      "box": [
+        [
+          661.0,
+          1590.0
+        ],
+        [
+          861.0,
+          1593.0
+        ],
+        [
+          861.0,
+          1616.0
+        ],
+        [
+          661.0,
+          1614.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "HTTPリクエスト：トークン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "HTTP Request: token"
+    },
+    {
+      "source": "requiring a complete overhaul of existing systems. Platforms can maintain their centralized account systems while issuing did:wba",
+      "location": "paragraph 2 middle line omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L027",
+      "japanese": "全面的に刷新せずに分散型認証を実現します。プラットフォームは中央管理のアカウントシステムを維持しながら、ユーザーへdid:wbaの",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Response",
+      "location": "partially visible lower sequence label",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L028",
+      "japanese": "HTTPレスポンス",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-labels-translated-source-clipped",
+  "ocr_seconds": [
+    2.1711426000110805,
+    0.042543649673461914,
+    7.997365474700928
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {
+      "Authentication#64": "Authentication #64",
+      "jaredhansononNov26,2024.14comments·10replies": "jaredhanson on Nov 26, 2024 · 14 comments · 10 replies",
+      "chgaowei onDec5,2024": "chgaowei on Dec 5, 2024",
+      "Proposal:did:wba, aWeb-based Decentralized ldentifier": "Proposal: did:wba, a Web-based Decentralized Identifier",
+      "did:wba is a Web-based Decentralized Identifier (DiD) specification designed to support cross-platform authentication and agent": "did:wba is a Web-based Decentralized Identifier (DID) specification designed to support cross-platform authentication and agent",
+      "DiDs to users, enabling interoperabilitybetweenplatforms.": "DIDs to users, enabling interoperability between platforms.",
+      "AgentA": "Agent A",
+      "AgentB": "Agent B",
+      "HTTPRequest:DID,Signature": "HTTP Request: DID,Signature",
+      "HTTPResponse:token": "HTTP Response: token",
+      "HTTPRequest:token": "HTTP Request: token"
+    },
+    "additional_labels": [
+      {
+        "source": "requiring a complete overhaul of existing systems. Platforms can maintain their centralized account systems while issuing did:wba",
+        "location": "paragraph 2 middle line omitted by OCR"
+      },
+      {
+        "source": "HTTP Response",
+        "location": "partially visible lower sequence label"
+      }
+    ],
+    "source_note": "提案・日付・実装可能性の主張は当時の画面の記載として翻訳。原図下端のシーケンス図が途中で切れている。",
+    "source_limitation": "シーケンス図の末尾は原画像の下端より外にあり、見えない内容は補完しない。",
+    "source_sha256": "c7a763e7ed0bf8cccd8339eb1abf2956b6dd1cb27383df12d59bfbba43554284"
+  }
+}

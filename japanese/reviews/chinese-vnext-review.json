@@ -1,0 +1,54 @@
+{
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "documents": [
+    {
+      "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "destination": "japanese/vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "source_sha256": "e1fdfe9cd41cd57ed067089b9ca4813a2468e0fad22a421c682537a85a41c3b3",
+      "translation_sha256": "017e60857e647824d6401d44332b6e5845616a1d8aabbf4f116e309431ce5c2f",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        762
+      ],
+      "method": "Chinese source and reused reviewed English Japanese draft compared line by line; Chinese-specific paths/fences retained; awkward or semantically inaccurate Japanese rewritten.",
+      "fenced_diagram_label_translations": 92,
+      "verification": {
+        "source_matches_base": true,
+        "fenced_examples_exact": true,
+        "inline_code_multiset_exact": true,
+        "normative_keyword_multiset_exact": true,
+        "full_marker": true,
+        "external_markdown_links_retained": true
+      }
+    },
+    {
+      "source": "vnext/chinese/P4-群组基础语义.md",
+      "destination": "japanese/vnext/chinese/P4-群组基础语义.md",
+      "source_sha256": "42b208a53d208096592bcf411352b0ac13346be11c18cf2616e89ac62a019bab",
+      "translation_sha256": "2c1d9d86a2f9963328b1da280a381d3c8174d325fe60264ca68bcb05a5361bba",
+      "semantic_review_status": "full",
+      "reviewed_source_lines": [
+        1,
+        1610
+      ],
+      "method": "Entire Chinese source and same-structure reviewed English Japanese draft compared; manually translated Chinese-specific divergent clauses; all source fences preserved.",
+      "fenced_display_text_japanese_table_rows": 29,
+      "notes": "Chinese/English sources have genuine wording and normative-count differences. No English-only old-DID removal clause or expanded idempotency rules imported. Chinese creation example uses initial_members.agent_did while normative prose says member_did; source inconsistency retained. Examples not executed.",
+      "verification": {
+        "source_matches_base": true,
+        "fenced_examples_exact": true,
+        "inline_code_multiset_exact": true,
+        "normative_keyword_multiset_exact": true,
+        "full_marker": true,
+        "external_markdown_links_retained": true
+      }
+    }
+  ],
+  "generated_at": "2026-11-06T14:57:19.159188+00:00",
+  "summary": {
+    "full": 2,
+    "errors": 0
+  },
+  "verification_errors": []
+}

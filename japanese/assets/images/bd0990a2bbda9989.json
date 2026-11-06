@@ -1,0 +1,193 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/04-resolve.png",
+  "sha256": "bd0990a2bbda9989ec3c14f8f52eeecf98c66edeb20a5781546d8229d5fcf557",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Coffeeshopserver",
+      "confidence": 0.9964715354144573,
+      "box": [
+        [
+          97.0,
+          274.0
+        ],
+        [
+          354.0,
+          279.0
+        ],
+        [
+          354.0,
+          308.0
+        ],
+        [
+          97.0,
+          304.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "コーヒー店のサーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Coffee shop server"
+    },
+    {
+      "source": "did.json",
+      "confidence": 0.9987341836094856,
+      "box": [
+        [
+          1129.0,
+          272.0
+        ],
+        [
+          1242.0,
+          275.0
+        ],
+        [
+          1241.0,
+          310.0
+        ],
+        [
+          1128.0,
+          307.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "did.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did.json"
+      ]
+    },
+    {
+      "source": "abouttolookyouup",
+      "confidence": 0.9975772872567177,
+      "box": [
+        [
+          105.0,
+          313.0
+        ],
+        [
+          343.0,
+          318.0
+        ],
+        [
+          343.0,
+          345.0
+        ],
+        [
+          104.0,
+          340.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "あなたを照会しようとしている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "about to look you up"
+    },
+    {
+      "source": "the publickey is inside",
+      "confidence": 0.9685003187345422,
+      "box": [
+        [
+          1054.0,
+          315.0
+        ],
+        [
+          1314.0,
+          316.0
+        ],
+        [
+          1314.0,
+          343.0
+        ],
+        [
+          1053.0,
+          342.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "公開鍵が中にある",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "the public key is inside"
+    },
+    {
+      "source": "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did. json",
+      "confidence": 0.9878695510003878,
+      "box": [
+        [
+          157.0,
+          367.0
+        ],
+        [
+          1251.0,
+          368.0
+        ],
+        [
+          1251.0,
+          395.0
+        ],
+        [
+          157.0,
+          394.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did."
+      ],
+      "transcribed_source": "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json"
+    },
+    {
+      "source": "An ordinary web request - no special protocolinvolved",
+      "confidence": 0.972993013993749,
+      "box": [
+        [
+          385.0,
+          407.0
+        ],
+        [
+          1025.0,
+          406.0
+        ],
+        [
+          1025.0,
+          433.0
+        ],
+        [
+          385.0,
+          434.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "通常のウェブ要求。特別なプロトコルは使わない",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "An ordinary web request — no special protocol involved"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6880283000064082,
+    0.008003473281860352,
+    2.628054141998291
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "source_note": "URLの公開鍵指紋は原画像とblogs/12-ANP-explained-from-scratch-en.mdの同一例で照合。",
+    "corrections": {
+      "Coffeeshopserver": "Coffee shop server",
+      "abouttolookyouup": "about to look you up",
+      "the publickey is inside": "the public key is inside",
+      "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did. json": "https://example.com:8800/user/alice/e1_CfnI4TulguySDoAXRS1fm8zhAIDTxP9IByHouGTGfUY/did.json",
+      "An ordinary web request - no special protocolinvolved": "An ordinary web request — no special protocol involved"
+    },
+    "source_sha256": "bd0990a2bbda9989ec3c14f8f52eeecf98c66edeb20a5781546d8229d5fcf557"
+  }
+}

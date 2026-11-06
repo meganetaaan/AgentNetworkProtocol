@@ -1,0 +1,410 @@
+{
+  "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-VC哈希链关系图-en.svg",
+  "sha256": "6dc86d152ff342cc2c6af78b4c17f3d53955b0c86d2681936e8628eb3de5a691",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP Protocol - VC Hash Chain Relationships in Ideal State",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "30",
+      "label_id": "L001",
+      "japanese": "ANPプロトコル: 理想的な状態でのVCハッシュチェーンの関係",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Order Offer Credential",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "110",
+      "label_id": "L002",
+      "japanese": "注文提案の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "OrderOfferCredential",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "135",
+      "label_id": "L003",
+      "japanese": "OrderOfferCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: Hotel Agent",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "150",
+      "label_id": "L004",
+      "japanese": "発行者: ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Booking Confirmation Credential",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "110",
+      "label_id": "L005",
+      "japanese": "予約確認の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "BookingConfirmationCredential",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "135",
+      "label_id": "L006",
+      "japanese": "BookingConfirmationCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: User Agent",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "150",
+      "label_id": "L007",
+      "japanese": "発行者: ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Payment Request Credential",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "110",
+      "label_id": "L008",
+      "japanese": "支払い要求の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "PaymentRequestCredential",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "135",
+      "label_id": "L009",
+      "japanese": "PaymentRequestCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: Hotel Agent",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "150",
+      "label_id": "L010",
+      "japanese": "発行者: ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Payment Instruction Credential",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "230",
+      "label_id": "L011",
+      "japanese": "支払い指示の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "PaymentInstructionCredential",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "255",
+      "label_id": "L012",
+      "japanese": "PaymentInstructionCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: Payment Agent",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "270",
+      "label_id": "L013",
+      "japanese": "発行者: 支払いエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Funds Escrowed Credential",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "230",
+      "label_id": "L014",
+      "japanese": "資金預託の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "FundsEscrowedCredential",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "255",
+      "label_id": "L015",
+      "japanese": "FundsEscrowedCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: Payment Agent",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "270",
+      "label_id": "L016",
+      "japanese": "発行者: 支払いエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Booking Finalized Credential",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "225",
+      "label_id": "L017",
+      "japanese": "予約完了の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Optional)",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "245",
+      "label_id": "L018",
+      "japanese": "（任意）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "BookingFinalizedCredential",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "265",
+      "label_id": "L019",
+      "japanese": "BookingFinalizedCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: Hotel Agent",
+      "element": "text",
+      "id": null,
+      "x": "150",
+      "y": "280",
+      "label_id": "L020",
+      "japanese": "発行者: ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Service Completion Confirmation",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "350",
+      "label_id": "L021",
+      "japanese": "サービス完了の確認",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ServiceCompletionConfirmation",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "375",
+      "label_id": "L022",
+      "japanese": "ServiceCompletionConfirmation",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: User Agent",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "395",
+      "label_id": "L023",
+      "japanese": "発行者: ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Funds Released Credential",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "350",
+      "label_id": "L024",
+      "japanese": "資金解放の資格情報",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "FundsReleasedCredential",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "375",
+      "label_id": "L025",
+      "japanese": "FundsReleasedCredential",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issuer: Payment Agent",
+      "element": "text",
+      "id": null,
+      "x": "750",
+      "y": "390",
+      "label_id": "L026",
+      "japanese": "発行者: 支払いエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "110",
+      "label_id": "L027",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "110",
+      "label_id": "L028",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash",
+      "element": "text",
+      "id": null,
+      "x": "770",
+      "y": "180",
+      "label_id": "L029",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "230",
+      "label_id": "L030",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash (Optional)",
+      "element": "text",
+      "id": null,
+      "x": "300",
+      "y": "230",
+      "label_id": "L031",
+      "japanese": "ハッシュを含む（任意）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash",
+      "element": "text",
+      "id": null,
+      "x": "470",
+      "y": "300",
+      "label_id": "L032",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash (Optional Path)",
+      "element": "text",
+      "id": null,
+      "x": "230",
+      "y": "340",
+      "label_id": "L033",
+      "japanese": "ハッシュを含む（任意の経路）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Contains Hash",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "350",
+      "label_id": "L034",
+      "japanese": "ハッシュを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issued by Hotel Agent",
+      "element": "text",
+      "id": null,
+      "x": "105",
+      "y": "442",
+      "label_id": "L035",
+      "japanese": "ホテルエージェントが発行する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issued by User Agent",
+      "element": "text",
+      "id": null,
+      "x": "265",
+      "y": "442",
+      "label_id": "L036",
+      "japanese": "ユーザーエージェントが発行する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issued by Payment Agent",
+      "element": "text",
+      "id": null,
+      "x": "425",
+      "y": "442",
+      "label_id": "L037",
+      "japanese": "支払いエージェントが発行する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Required Hash Reference",
+      "element": "text",
+      "id": null,
+      "x": "50",
+      "y": "5",
+      "label_id": "L038",
+      "japanese": "必須のハッシュ参照",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Optional Hash Reference",
+      "element": "text",
+      "id": null,
+      "x": "50",
+      "y": "5",
+      "label_id": "L039",
+      "japanese": "任意のハッシュ参照",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Figure 4: VC Hash Chain in ANP Protocol - Each credential forms an immutable chain structure by containing the hash of the previous credential",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "480",
+      "label_id": "L040",
+      "japanese": "図4: ANPプロトコルのVCハッシュチェーン。各資格情報が直前の資格情報のハッシュ値を含むことで、改ざん不能なチェーン構造を形成する",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

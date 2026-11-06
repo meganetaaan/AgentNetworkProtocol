@@ -1,0 +1,191 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/01-worry-server.png",
+  "sha256": "e69c63dbdc745ab45b8b594434c8f58c11fd11170f8e3065505de6469f19631f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "某个来访者",
+      "confidence": 0.9997809767723084,
+      "box": [
+        [
+          171.0,
+          285.0
+        ],
+        [
+          318.0,
+          287.0
+        ],
+        [
+          318.0,
+          320.0
+        ],
+        [
+          170.0,
+          318.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ある訪問者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "咖啡店的程序",
+      "confidence": 0.9988829096158346,
+      "box": [
+        [
+          1057.0,
+          288.0
+        ],
+        [
+          1231.0,
+          288.0
+        ],
+        [
+          1231.0,
+          318.0
+        ],
+        [
+          1057.0,
+          318.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "コーヒー店のプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "自称是Alice的助理",
+      "confidence": 0.9982623945582997,
+      "box": [
+        [
+          141.0,
+          328.0
+        ],
+        [
+          347.0,
+          328.0
+        ],
+        [
+          347.0,
+          354.0
+        ],
+        [
+          141.0,
+          354.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "Aliceのアシスタントだと名乗っている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "要不要接这单",
+      "confidence": 0.9998680055141449,
+      "box": [
+        [
+          1073.0,
+          328.0
+        ],
+        [
+          1216.0,
+          328.0
+        ],
+        [
+          1216.0,
+          354.0
+        ],
+        [
+          1073.0,
+          354.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "この注文を受けてよいだろうか",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "「它说它是Alice的助理，可我从没见过它。",
+      "confidence": 0.9929332841526378,
+      "box": [
+        [
+          479.0,
+          387.0
+        ],
+        [
+          926.0,
+          388.0
+        ],
+        [
+          926.0,
+          415.0
+        ],
+        [
+          479.0,
+          414.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "「Aliceのアシスタントだと言っているが、会ったことがない。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "凭什么信？总不能谁来都给下单吧。」",
+      "confidence": 0.9966934112941518,
+      "box": [
+        [
+          507.0,
+          428.0
+        ],
+        [
+          903.0,
+          429.0
+        ],
+        [
+          903.0,
+          455.0
+        ],
+        [
+          507.0,
+          454.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "何を根拠に信用すればよいのか。誰でも注文できるようにはできない。」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?",
+      "location": "central speech bubble",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L007",
+      "japanese": "?（疑問符）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.31060229998547584,
+    0.003506183624267578,
+    0.9065966606140137
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "additional_labels": [
+      {
+        "source": "?",
+        "location": "central speech bubble"
+      }
+    ],
+    "corrections": {},
+    "source_sha256": "e69c63dbdc745ab45b8b594434c8f58c11fd11170f8e3065505de6469f19631f"
+  }
+}

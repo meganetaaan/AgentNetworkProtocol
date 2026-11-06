@@ -1,0 +1,3 @@
+# Publish the explanatory sidecars despite the original root-level code rule.
+!assets/code/
+!assets/code/**

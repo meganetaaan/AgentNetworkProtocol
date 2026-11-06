@@ -1,4 +1,5 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: machine-fully-reviewed; scope=source lines 1-930; inventory=japanese/reviews/core-review.json; full prose compared against source -->
+> 日本語参考訳（機械翻訳を原文と全文照合し、意味・用語を校閲済み）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
 > 原文: [06-anp-agent-communication-meta-protocol-specification.md](../06-anp-agent-communication-meta-protocol-specification.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
 # ANP エージェント通信メタプロトコル仕様 (草案)
@@ -12,14 +13,14 @@
 
 注:
 
-- メタプロトコルはエージェントのコラボレーションに必須のプロトコルではありません。それはオプションです。通常の場合、エージェント ID、メッセージング、検出、および説明のプロトコルで、ほとんどの相互運用性のニーズに十分対応できます。 The meta-protocol is primarily used when two agents need to dynamically negotiate a pair-specific interface, temporary protocol, or special execution constraints.
-- この仕様はまだ草案であり、リリースされていません。 Its goal is to upgrade the early message-embedded meta-protocol negotiation model into an independent negotiation Profile compatible with the current ANP description, discovery, Core Binding, DID authentication, and messaging Profile architecture.
-- この仕様は、ANP エージェント記述プロトコルを変更するものではありません。の `MetaProtocolInterface` ここで定義されているのは、 `interfaces` エージェント説明ドキュメントの配列。
-- 新しい実装では使用する必要があります `anp.meta.negotiation.v1` そして `anp.negotiate` この仕様で定義されているとおりです。初期の暗号化メッセージ内部バイナリ `PT=00` ネゴシエーション モデルは非推奨となっており、この仕様では古い実装との互換性を要求または推奨していません。
+- メタプロトコルはエージェント協調に必須ではなく、任意です。通常は本人性、メッセージング、発見、記述のプロトコルで大半の相互運用に対応できます。主に、2エージェントがペア固有のインターフェース、一時的プロトコル、特別な実行制約を動的に交渉する場合に使います。
+- 本仕様は未リリースのドラフトです。初期のメッセージ埋め込み型メタプロトコル交渉を、現行ANPの記述、発見、Core Binding、DID認証、メッセージングプロファイルの構造と互換性を持つ独立の交渉プロファイルへ発展させることを目指します。
+- 本仕様はANPエージェント記述プロトコルを変更しません。ここで定義する`MetaProtocolInterface`はANP-06の拡張インターフェース型で、エージェント記述文書の`interfaces`配列内に宣言できます。
+- 新しい実装は本仕様の`anp.meta.negotiation.v1`と`anp.negotiate`を使うべきです。初期の暗号化メッセージ内部のバイナリ`PT=00`交渉モデルは非推奨で、旧実装との互換性は要求も推奨もしません。
 
 ## 要約
 
-メタプロトコルは、通信プロトコルをネゴシエートするためのプロトコルです。 In an agent network, it lets a caller and a target agent select the protocol, interface, Profile, schema, content type, security profile, and execution mode that should be used for the subsequent business interaction, based on intent, capabilities, constraints, security requirements, and available interfaces.
+メタプロトコルは通信プロトコルを交渉するためのプロトコルです。エージェントネットワークでは、呼び出し元と対象エージェントが、意図、機能、制約、セキュリティ要件、利用可能なインターフェースに基づいて、後続業務対話に使うプロトコル、インターフェース、プロファイル、スキーマ、コンテンツ型、セキュリティプロファイル、実行モードを選択できます。
 
 この仕様は、ANP メタプロトコルを独立したセマンティック ネゴシエーション プロファイルとして再定義します。
 
@@ -37,19 +38,19 @@ Agent Discovery
 
 ## 1. 背景と問題の説明
 
-Agent interoperability usually starts from public descriptions: a target agent exposes capabilities, interfaces, and security requirements through its Agent Description, and the caller reads that description to select an appropriate interaction method.エージェントとインターフェイスの種類の数が増えると、静的な記述だけではいくつかの制限が生じます。
+エージェント間の相互運用は通常、公開記述から始まります。対象がエージェント記述で機能、インターフェース、セキュリティ要件を公開し、呼び出し元がそれを読んで適切な対話方式を選びます。エージェント数やインターフェース型が増えると、静的記述だけでは次の限界があります。
 
-1. **Static description cannot cover runtime changes**: server throttling, available security profiles, temporarily disabled interfaces, user authorization state, and deployment policy can change at runtime.
-2. **The same intent may have multiple usable interfaces**: for example, hotel booking may be performed through a structured OpenRPC interface or through a natural-language messaging interface.
-3. **Caller capability also affects selection**: whether the caller supports a specific ANP Profile, security profile, content type, or asynchronous execution mode affects the final protocol choice.
-4. **Natural-language ad-hoc negotiation is expensive**: fully relying on natural-language multi-round negotiation increases latency, cost, and uncertainty.
-5. **初期のメッセージ埋め込みモデルは現在のプロトコル スタックと整合していません**: 初期の ANP-06 は、暗号化されたメッセージ ペイロードを直接拡張し、バイナリを使用しました `PT` プロトコルの種類を区別するフィールド。現在の ANP は、DID 検出、エージェントの説明、 `ANPMessageService`、JSON-RPC 2.0 コア バインディング、およびランタイム機能の確認。
+1. **静的記述は実行時の変化を網羅できません**: サーバーのスロットリング、利用可能なセキュリティプロファイル、一時停止中のインターフェース、ユーザー認可状態、導入ポリシーは実行時に変わり得ます。
+2. **同じ意図に複数の利用可能インターフェースがあります**: 例えばホテル予約は、構造化したOpenRPCインターフェースでも自然言語メッセージングでも行えます。
+3. **呼び出し元の機能も選択に影響します**: 特定のANPプロファイル、セキュリティプロファイル、コンテンツ型、非同期実行モードに対応するかが最終選択に影響します。
+4. **自然言語の都度交渉は高コストです**: 複数往復の自然言語交渉に全面依存すると、遅延、費用、不確実性が増します。
+5. **初期のメッセージ埋め込みモデルは現行スタックと整合しません**: 初期ANP-06は暗号化メッセージのペイロードを直接拡張し、バイナリの`PT`フィールドでプロトコル型を区別しました。現行ANPはDID発見、エージェント記述、`ANPMessageService`、JSON-RPC 2.0 Core Binding、実行時機能確認に集約されています。
 
 したがって、新しい ANP-06 はメタプロトコルをセマンティック ネゴシエーション コントロール プレーンとして位置付けています。ビジネスデータは含まれません。これは、ビジネスの実行を開始する前に、双方がどの相互運用パスを使用する必要があるかを決定するのに役立ちます。
 
 ### 1.1 設計の起源
 
-ANP メタプロトコルは以下からインスピレーションを得ています。 [Agora プロトコル、で説明されています。 *大規模な言語モデルのネットワーク向けのスケーラブルな通信プロトコル*](https://arxiv.org/html/2410.11905v1)特に、エージェントの通信方法をネゴシエートし、自然言語の柔軟性と構造化されたプロトコルの効率性を組み合わせるメタプロトコルの使用です。 ANP は、これらのアイデアを独自のエージェント記述、検出、ID 認証、およびコア バインディング アーキテクチャに適用します。ネゴシエーション インターフェイスと相互運用性の要件は、この仕様によって定義されます。
+ANPメタプロトコルは、[*A Scalable Communication Protocol for Networks of Large Language Models*で説明されるAgora Protocol](https://arxiv.org/html/2410.11905v1)から着想を得ています。特に、メタプロトコルで通信方法を交渉し、自然言語の柔軟性と構造化プロトコルの効率を組み合わせる考え方です。ANPはこれを独自のエージェント記述、発見、本人性認証、Core Binding構造に適応します。交渉インターフェースと相互運用要件は本仕様が定義します。
 
 ## 2. デザインの目標と非目標
 
@@ -57,13 +58,13 @@ ANP メタプロトコルは以下からインスピレーションを得てい�
 
 この仕様の目的は次のとおりです。
 
-- 標準プロファイルを定義します。 `anp.meta.negotiation.v1`;
-- 定義する `MetaProtocolInterface` で宣言できるインターフェイス型として `interfaces` エージェント説明ドキュメントの配列。
-- ANP コア バインディングの JSON-RPC 2.0 を再利用し、 `params.meta/body/auth`, `profile`, `security_profile`, `target`、およびエラーモデル。
-- 再利用 `anp.get_capabilities` 実行時能力の確認方法として。
-- 定義する `anp.negotiate` 呼び出し元の意図、呼び出し元の機能、および制約に基づいて最終的な実行インターフェイスを選択します。
+- 標準プロファイル`anp.meta.negotiation.v1`を定義します。
+- エージェント記述文書の`interfaces`配列に宣言できる型として`MetaProtocolInterface`を定義します。
+- Core BindingのJSON-RPC 2.0、`params.meta/body/auth`、`profile`、`security_profile`、`target`、エラーモデルを再利用します。
+- 実行時機能確認に`anp.get_capabilities`を再利用します。
+- 呼び出し元の意図、機能、制約に基づき最終実行インターフェースを選ぶ`anp.negotiate`を定義します。
 - 構造化インターフェイスファーストネゴシエーション、自然言語フォールバック、キャッシュの再利用、将来のプロトコルアーティファクトの公開をサポートします。
-- 明示的に早期にマークを付ける `PT=00` メッセージ ネゴシエーション モデルは非推奨であり、この仕様の互換性範囲外です。
+- 初期の`PT=00`メッセージ交渉モデルを非推奨とし、本仕様の互換性範囲外と明記します。
 
 ### 2.2 非目標
 
@@ -99,20 +100,20 @@ ANP メタプロトコルは以下からインスピレーションを得てい�
 https://{domain}/.well-known/agent-descriptions
 ```
 
-次に、呼び出し元はターゲットのエージェント説明文書を読み取り、次の内容を探します。 `MetaProtocolInterface` で `interfaces` 配列。
+次に対象のエージェント記述文書を読み、`interfaces`配列内の`MetaProtocolInterface`を探します。
 
 ### 3.3 コアバインディングとの関係
 
 ANP-06 ランタイム メッセージは、ANP コア バインディング規則を使用します。
 
 - JSON-RPC 2.0;
-- の `params.meta`, `params.auth`、そして `params.body` 構造。
+- `params.meta`、`params.auth`、`params.body`の構造。
 - `meta.profile` リクエストの解釈プロファイルを示します。
 - `meta.security_profile` リクエストで使用されるセキュリティプロファイルを示します。
 - `meta.target` ターゲットモデリングを示します。
-- JSON-RPC `error` オブジェクトにはエラーが伴います。
+- エラーはJSON-RPCの`error`オブジェクトで運びます。
 
-`anp.negotiate`、`params.meta.profile` MUST は正確に次のようになります。
+`anp.negotiate`の`params.meta.profile`は正確に次の値でなければなりません（MUST）。
 
 ```text
 anp.meta.negotiation.v1
@@ -120,18 +121,18 @@ anp.meta.negotiation.v1
 
 ### 3.4 DID ドキュメントと ANPMessageService との関係
 
-エージェント説明の `MetaProtocolInterface.url` は、静的な宣言と可用性のヒントです。 ID とサービスの検出の権限は、引き続き DID ドキュメントで公開されている `ANPMessageService` から取得され、ランタイム機能の権限は `anp.get_capabilities` の結果から取得されます。
+エージェント記述の`MetaProtocolInterface.url`は静的宣言と利用可能性の手掛かりです。本人性とサービス発見の正本は引き続きDID Documentで公開する`ANPMessageService`であり、実行時機能の正本は`anp.get_capabilities`の結果です。
 
-エージェントの説明、DID ドキュメント、およびランタイム機能の結果が矛盾する場合、呼び出し元 SHOULD はこれらを次の順序で処理します。
+エージェント記述、DID Document、実行時機能の結果が矛盾する場合、次の順で扱うべきです（SHOULD）。
 
 1. DID ドキュメントと DID 解決結果を使用して、アイデンティティとサービス エンドポイントの信頼を確立します。
-2. 電話をかける `anp.get_capabilities` ランタイム機能を取得するため。
-3. 治療する `MetaProtocolInterface` 発見および意味論的なヒントとしてエージェントの説明に含まれます。
-4. 静的ヒントがランタイム機能と競合する場合、呼び出し元は MUST ランタイム機能の結果を使用し、そのローカル キャッシュを更新します。
+2. `anp.get_capabilities`を呼び出して実行時機能を取得します。
+3. エージェント記述内の`MetaProtocolInterface`を発見と意味上の手掛かりとして扱います。
+4. 静的な手掛かりが実行時機能と矛盾する場合、実行時機能の結果を使い、ローカルキャッシュを更新しなければなりません（MUST）。
 
 ### 3.5 DID:WBA およびセキュリティメカニズムとの関係
 
-この仕様は、DID メソッドや認証を再定義するものではありません。共通のリクエスト認証、HTTP メッセージ署名、アクセス トークンが続きます。 [ANP-02](02-anp-did-authentication-protocol-specification.md); WBAメソッドの検証は次のとおりです [ANP-03](03-did-wba-method-design-specification.md)、他の DID は独自の方法に従います。 `auth.origin_proof` メッセージングのサービス間の検証は、P1/P2 および所有プロファイルのセキュリティ要件に従います。文書バージョン 1.2 は、この仕様の草案ステータスやその仕様を変更しません。 `anp.meta.negotiation.v1` ワイヤー識別子。
+本仕様はDIDメソッドや認証を再定義しません。共通リクエスト認証、HTTP Message Signatures、アクセストークンは[ANP-02](02-anp-did-authentication-protocol-specification.md)、WBAメソッド検証は[ANP-03](03-did-wba-method-design-specification.md)、他のDIDは各メソッドに従います。`auth.origin_proof`とメッセージングのサービス間検証はP1/P2および担当プロファイルのセキュリティ要件に従います。文書版1.2でも、ドラフト状態や通信識別子`anp.meta.negotiation.v1`は変わりません。
 
 `anp.negotiate` のネゴシエーション結果は、ID クレデンシャル、認可クレデンシャル、アクセス トークン、検証可能なクレデンシャル、または人間による認可の結果ではありません。
 
@@ -159,13 +160,13 @@ anp.negotiate
 
 ### 4.3 相互運用性の最小要件
 
-`anp.meta.negotiation.v1` MUST をサポートする実装は、少なくとも以下をサポートします。
+`anp.meta.negotiation.v1`対応の実装は、少なくとも次に対応しなければなりません（MUST）。
 
-1. 宣言する `anp.meta.negotiation.v1` ランタイム機能において。
-2. 取り扱い `anp.negotiate` メタプロトコルネゴシエーションをサポートするエンドポイント上。
-3. 基本的な分野を認識することで、 `MetaProtocolInterface`: `type`, `profile`, `binding`, `url`、そして `methods`;
-4. に基づく交渉 `transport-protected` セキュリティプロファイル。
-5. 構造化されたものを返す `NegotiationResult`;
+1. 実行時機能で`anp.meta.negotiation.v1`を宣言すること。
+2. メタプロトコル交渉対応エンドポイントで`anp.negotiate`を処理すること。
+3. `MetaProtocolInterface`の基本フィールド`type`、`profile`、`binding`、`url`、`methods`を認識すること。
+4. `transport-protected`セキュリティプロファイルで交渉すること。
+5. 構造化した`NegotiationResult`を返すこと。
 6. サポートされていないプロファイル、インターフェイス、セキュリティ プロファイル、またはコンテンツ タイプに対して明示的なエラーを返します。
 7. 交渉結果を業務執行の承認として解釈しない。
 
@@ -177,8 +178,8 @@ anp.negotiate
 
 このインターフェースは以下を宣言します。
 
-- どの URL 呼び出し元がネゴシエーション リクエストを送信する必要があるか。
-- どのバインディング ネゴシエーション リクエストが使用するか。
+- 呼び出し元が交渉要求を送るべきURL。
+- 交渉要求に使うバインディング。
 - どのネゴシエーション方法がサポートされているか。
 - どのオブジェクトをネゴシエートできるか。
 - どのセキュリティ構成が必要か。
@@ -188,13 +189,13 @@ anp.negotiate
 | フィールド | タイプ | 要件 | 説明 |
 |---|---|---|---|
 | `id` | 文字列 | SHOULD | インターフェイスの安定した識別子。ネゴシエーション結果の参照に使用されます。 |
-| `type` | 文字列 | MUST | に固定 `MetaProtocolInterface`. |
+| `type` | string | MUST | `MetaProtocolInterface`固定 |
 | `protocol` | 文字列 | SHOULD | 推奨値: `ANP`、これが ANP プロトコル インターフェイスであることを示します。 |
 | `version` | 文字列 | SHOULD | インターフェース宣言のバージョン。 |
-| `profile` | 文字列 | MUST | に固定 `anp.meta.negotiation.v1`. |
-| `binding` | 文字列 | MUST | このバージョンでは、次のようになります。 `jsonrpc-2.0`. |
-| `url` | 文字列 | MUST | ネゴシエーションエンドポイントの URL。この URL は静的なヒントです。 DID ドキュメントと `anp.get_capabilities` 実行時に権限を維持します。 |
-| `methods` | 配列 | MUST | MUST 少なくとも含める `anp.negotiate`;通常は以下も含まれます `anp.get_capabilities`. |
+| `profile` | string | MUST | `anp.meta.negotiation.v1`固定 |
+| `binding` | string | MUST | この版では`jsonrpc-2.0`にするべきです |
+| `url` | string | MUST | 交渉エンドポイントURL。静的な手掛かりであり、実行時の正本は引き続きDID Documentと`anp.get_capabilities`です |
+| `methods` | array | MUST | 少なくとも`anp.negotiate`を含めなければなりません（MUST）。通常は`anp.get_capabilities`も含めます |
 | `security` | 配列/文字列 | MAY | エージェントの説明内のセキュリティ定義を参照します。 |
 | `securityProfiles` | 配列 | SHOULD | サポートされているセキュリティ プロファイル: `transport-protected` または `direct-e2ee`. |
 | `negotiates` | 配列 | SHOULD | 交渉可能なオブジェクト タイプのリスト。 |
@@ -208,7 +209,7 @@ anp.negotiate
 
 | 値 | 説明 |
 |---|---|
-| `profiles` | 後続のビジネス通話に使用される ANP プロファイルをネゴシエートします。 |
+| `profiles` | 後続の業務呼び出しに使うANPプロファイルを交渉します |
 | `interfaces` | どのエージェント記述インターフェースを使用するかをネゴシエーションします。 |
 | `schemas` | リクエストとレスポンスのスキーマをネゴシエートします。 |
 | `security_profiles` | セキュリティプロファイルをネゴシエートします。 |
@@ -249,7 +250,7 @@ anp.negotiate
 
 ### 5.5 推奨されるエンドポイント展開
 
-実装 SHOULD は、統合 ANP エンドポイントの再利用を好みます。次に例を示します。
+実装は統合ANPエンドポイントの再利用を優先するべきです（SHOULD）。例:
 
 ```text
 https://example.com/anp
@@ -265,7 +266,7 @@ group.send
 ...
 ```
 
-実装 MAY は、メタプロトコル ネゴシエーション用の専用エンドポイントをデプロイします。次に例を示します。
+メタプロトコル交渉専用のエンドポイントを配置してもかまいません（MAY）。例:
 
 ```text
 https://example.com/anp/negotiation
@@ -303,7 +304,7 @@ Caller Agent
 }
 ```
 
-ターゲットエージェントが `MetaProtocolInterface` を宣言しない場合、発信者 MAY:
+対象が`MetaProtocolInterface`を宣言しない場合、呼び出し元は次を行ってもかまいません（MAY）。
 
 - エージェント記述内の既存の構造化インターフェースを直接使用します。
 - 自然言語インターフェイスを使用します。
@@ -312,9 +313,9 @@ Caller Agent
 
 ### 6.4 ステップ 3: 実行時能力の確認
 
-電話をかけてきた人 SHOULD 電話する `anp.get_capabilities` 最初のやり取りの前に。このメソッドは、エンドポイントで現在サポートされているプロファイル、セキュリティ プロファイル、コンテンツ タイプ、および制限を返します。
+初回対話の前に`anp.get_capabilities`を呼び出すべきです（SHOULD）。このメソッドはエンドポイントが現在対応するプロファイル、セキュリティプロファイル、コンテンツ型、制限を返します。
 
-`anp.get_capabilities` は匿名で呼び出すことができます。サーバーが呼び出し元の ID に基づいて異なる機能サブセットを返した場合、呼び出し元 MAY は認証後にサーバーを再度呼び出します。
+`anp.get_capabilities`は匿名で呼び出せます。サーバーが呼び出し元の本人性によって異なる機能の部分集合を返す場合、認証後に再度呼び出してもかまいません（MAY）。
 
 ### 6.5 ステップ 4: セマンティック ネゴシエーション
 
@@ -346,13 +347,13 @@ Caller Agent
 anp.negotiate
 ```
 
-リクエストの `params.meta.profile` MUST は正確に次のようになります。
+要求の`params.meta.profile`は正確に次の値でなければなりません（MUST）。
 
 ```text
 anp.meta.negotiation.v1
 ```
 
-通常、ターゲット モデリング モードは `agent-addressed` です。デプロイメントがメタプロトコル ネゴシエーションをサービス スコープのコントロール プレーン機能として公開する場合、特定のプロファイルまたは実装ドキュメント MUST でターゲット バインディング ルールを明示的に定義します。
+対象のモデル化モードは通常`agent-addressed`です。サービス単位の制御機能としてメタプロトコル交渉を公開する場合、該当プロファイルや実装文書で対象との結合規則を明示的に定義しなければなりません（MUST）。
 
 ### 7.2 リクエスト構造
 
@@ -438,13 +439,13 @@ anp.meta.negotiation.v1
 | `intent` | オブジェクト | MUST | 発信者が達成したい目標。 |
 | `requiredCapabilities` | 配列 | MAY | 呼び出し元が必須とみなす機能識別子。 |
 | `callerCapabilities` | オブジェクト | SHOULD | 呼び出し元のランタイム機能。 |
-| `constraints` | オブジェクト | MAY | 遅延、認可、インターフェイス設定、セキュリティ設定などの制約。 |
+| `constraints` | object | MAY | 遅延、認可、インターフェースの優先順位、セキュリティの優先順位などの制約 |
 | `candidateInterfaceRefs` | 配列 | MAY | 発信者がエージェントの説明から選択した候補インターフェイス ID。 |
 | `candidateProtocols` | 配列 | MAY | 候補のプロトコル アーティファクト、プロファイル、または URI。大規模な自然言語テキストだけが機械処理可能なコンテンツであってはなりません。 |
 
 ### 7.4 `intent` オブジェクト
 
-`intent` は、発信者が達成したいことを表します。 SHOULD には構造化タグが含まれ、MAY には自然言語の説明が含まれます。
+`intent`は呼び出し元が達成したいことを表します。構造化タグを含めるべきで（SHOULD）、自然言語の説明も含めてかまいません（MAY）。
 
 ```json
 {
@@ -462,7 +463,7 @@ anp.meta.negotiation.v1
 }
 ```
 
-発信者 SHOULD は最小限の開示の原則に従い、交渉に不要な機密データを提供すべきではありません。
+呼び出し元は開示最小化の原則に従うべきで（SHOULD）、交渉に不要な機密情報を提供するべきではありません。
 
 ### 7.5 `callerCapabilities` オブジェクト
 
@@ -478,7 +479,7 @@ anp.meta.negotiation.v1
 
 ### 7.6 `constraints` オブジェクト
 
-`constraints` は発信者の好みや厳しい要件を表します。共通フィールドは次のとおりです。
+`constraints`は呼び出し元の希望または必須制約を表します。一般的なフィールドは次のとおりです。
 
 | フィールド | タイプ | 説明 |
 |---|---|---|
@@ -532,7 +533,7 @@ anp.meta.negotiation.v1
 |---|---|---|---|
 | `negotiationId` | 文字列 | MUST | ネゴシエーション結果の識別子。 |
 | `status` | 文字列 | MUST | `accepted`, `rejected`、または `needs_more_information`. |
-| `selected` | オブジェクト | MUST いつ `accepted` | 選択した機能、インターフェイス、プロトコル、プロファイル、セキュリティ プロファイル、コンテンツ タイプ、および URL。 |
+| `selected` | object | `accepted`の場合MUST | 選択した機能、インターフェース、プロトコル、プロファイル、セキュリティプロファイル、コンテンツ型、URL |
 | `execution` | オブジェクト | SHOULD | 後続の実行モードと実行制約。 |
 | `schemas` | オブジェクト | MAY | リクエストとレスポンスのスキーマ。 |
 | `validUntil` | 文字列 | MAY | ネゴシエーション結果の有効期限。 |
@@ -548,7 +549,7 @@ anp.meta.negotiation.v1
 |---|---|
 | `capability` | 選択された機能 ID。 |
 | `interface` | 選択されたエージェントの説明インターフェイス ID。 |
-| `protocol` | 選択したインターフェースで使用されるプロトコル (例: `openrpc`, `ANP`、または `MCP`. |
+| `protocol` | 選択インターフェースで使うプロトコル。例: `openrpc`、`ANP`、`MCP` |
 | `profile` | 後続のビジネス コールで使用される ANP プロファイル。 |
 | `securityProfile` | 後続のビジネスコールで使用されるセキュリティプロファイル。 |
 | `contentType` | 後続のビジネス ペイロードのコンテンツ タイプ。 |
@@ -589,13 +590,13 @@ anp.meta.negotiation.v1
 }
 ```
 
-自然言語フォールバック MAY はドラフト プロトコル アーティファクトを生成しますが、そのアーティファクトは、双方が受け入れる前に安定したプロトコルとして扱うべきではありません。実装 SHOULD は、可能な限り自然言語ドラフトを構造化フィールド、スキーマ、サンプル、テスト ケースに変換します。
+自然言語フォールバックでプロトコル成果物の草案を生成してもかまいません（MAY）が、双方が受け入れる前に安定したプロトコルとして扱うべきではありません。可能なら草案を構造化フィールド、スキーマ、例、テストケースに変換するべきです（SHOULD）。
 
 ## 10. キャッシュ、再利用、およびプロトコル アーティファクト
 
 ### 10.1 ネゴシエーション結果のキャッシュ
 
-電話をかけてきた人 MAY キャッシュ `NegotiationResult` 有効期限内に再利用してください。キャッシュキー SHOULD 少なくとも以下を含めてください:
+呼び出し元は`NegotiationResult`をキャッシュして有効期間内に再利用してもかまいません（MAY）。キャッシュキーには少なくとも次を含めるべきです（SHOULD）。
 
 - ターゲット エージェント DID;
 - 発信者 DID または発信者の機能ダイジェスト。
@@ -605,17 +606,17 @@ anp.meta.negotiation.v1
 - `selected.securityProfile`;
 - `negotiationDigest`.
 
-発信者 SHOULD は、次の場合に再ネゴシエートします。
+次の場合は再交渉するべきです（SHOULD）。
 
 - `validUntil` 有効期限が切れます。
 - `anp.get_capabilities` キャッシュと矛盾する結果を返します。
 - DID ドキュメントまたは `ANPMessageService` 変化。
 - 後続のビジネス コールは、サポートされていないプロファイル、インターフェイス、セキュリティ プロファイル、またはコンテンツ タイプのエラーを返します。
-- ローカル ポリシー、セキュリティ要件、またはユーザー認証状態の変更。
+- ローカルポリシー、セキュリティ要件、ユーザー認可状態が変化した場合。
 
 ### 10.2 プロトコルアーティファクト
 
-プロトコル アーティファクトは、再利用可能なプロトコル記述オブジェクトです。 MAY には以下が含まれます:
+プロトコル成果物は再利用できるプロトコル記述オブジェクトです。次を含めてもかまいません（MAY）。
 
 - `protocol_id`;
 - `protocol_uri`;
@@ -666,13 +667,13 @@ anp.meta.negotiation.v1
 1. 呼び出し元がキャッシュする `NegotiationResult` またはプロトコルアーティファクト。
 2. 後続のリクエストは、選択したプロファイル/インターフェイス/スキーマを直接使用します。
 3. ターゲット エンドポイントがその選択をサポートしていない場合、明示的なエラーが返されます。
-4. その後、発信者が電話をかけます `anp.get_capabilities` そして `anp.negotiate` またまた。
+4. その後、呼び出し元が`anp.get_capabilities`と`anp.negotiate`を再度呼び出します。
 
 ## 11. エラーモデル
 
 `anp.negotiate` は、JSON-RPC `error` オブジェクトを使用してエラーを返します。実装では、ANP カスタム エラー範囲を使用し、`error.data.anp_code` で機械可読コードを提供することが推奨されます。
 
-| コード | anp_ コード | 意味 |
+| code | anp_code | 意味 |
 |---|---|---|
 | 1600 | `meta.negotiation_rejected` | ターゲットはネゴシエーション要求を拒否します。 |
 | 1601 | `meta.no_matching_interface` | 意図と制約を満たすインターフェイスはありません。 |
@@ -710,9 +711,9 @@ anp.meta.negotiation.v1
 
 ### 12.1 ID認証
 
-`anp.get_capabilities` MAY は、匿名パブリック検出機能と呼ばれます。
+`anp.get_capabilities`は匿名の公開発見機能として呼び出してもかまいません（MAY）。
 
-もし `anp.negotiate` 次のいずれかが含まれます。 SHOULD 提供する `auth.origin_proof` または同等の DID 認証コンテキスト:
+`anp.negotiate`に次のいずれかが含まれる場合、呼び出し元は`auth.origin_proof`または同等のDID認証文脈を提供するべきです（SHOULD）。
 
 - `sender_did`;
 - センシティブな意図。
@@ -722,38 +723,38 @@ anp.meta.negotiation.v1
 - 非公開の候補インターフェイス。
 - サーバーが ID に基づいて異なるネゴシエーション結果を返す場合。
 
-サーバ MAY 匿名の関数サブセットのみを返す `anp.negotiate`、要求を拒否するか、または認証を要求して下さい。
+匿名の`anp.negotiate`に対し、サーバーは機能の一部だけを返す、要求を拒否する、認証を要求する、のいずれかとしてもかまいません（MAY）。
 
-### 12.2 交渉結果は承認されていません
+### 12.2 交渉結果は認可ではありません
 
 `NegotiationResult` は、その後のインタラクションがどのように行われるかを説明するだけです。次のような意味ではありません。
 
 -  ユーザーはビジネスアクションを承認しました。
-- サーバーは制限されたリソースへのアクセスを許可されています。
+- サーバーが制限付きリソースへのアクセスを認可済みであること。
 - 支払い、予約、または取引が作成されました。
 - 呼び出し元は長期アクセス資格情報を取得しました。
 - その後のビジネスリクエストでは、ビジネスプロファイルで必要な証明を省略できます。
 
-選択したインターフェースが `humanAuthorization` を必要とする場合でも、後続のビジネス フロー MUST は、対応するビジネス プロトコルに従って認証を完了します。
+選択したインターフェースが`humanAuthorization`を要求する場合、後続の業務フローは該当業務プロトコルに従って認可を完了しなければなりません（MUST）。
 
 ### 12.3 最小限の開示
 
-発信者 SHOULD は、交渉要求における情報開示を最小限に抑えます。
+呼び出し元は交渉要求での情報開示を最小化するべきです（SHOULD）。
 
 -  意図には、交渉に必要な概要のみを含める必要があります。
 - 交渉中に完全な支払い情報、身分証明書、プライベートメッセージ、または大きなオブジェクトの内容を提出してはなりません。
-- `callerCapabilities` 関係のない内部能力を発揮しないようにするためにトリミングする必要があります。
-- 交渉ログは編集する必要があります。
+- 関係のない内部機能を公開しないよう、`callerCapabilities`を必要な範囲に絞るべきです。
+- 交渉ログの機密部分はマスキングするべきです。
 
 ### 12.4 ダウングレード攻撃
 
-呼び出し元とサーバー MUST NOT は、明示的な合意なしに、より強力なセキュリティ プロファイルからより弱いセキュリティ プロファイルにサイレントにダウングレードします。
+呼び出し元とサーバーは、明示的合意なしに強いセキュリティプロファイルから弱いものへ黙って切り替えてはいけません（MUST NOT）。
 
 呼び出し元が `direct-e2ee` を要求した場合、サーバーは黙って `transport-protected` を返してはなりません。要件を満たせない場合、サーバーは明示的なエラーを返す必要があります。
 
 ### 12.5 プロトコルアーティファクトのセキュリティ
 
-ネゴシエーション結果が外部プロトコル アーティファクトを参照している場合、実装 SHOULD は以下を検証します。
+交渉結果が外部プロトコル成果物を参照する場合、次を検証するべきです（SHOULD）。
 
 - アーティファクトダイジェスト;
 - 発行者または署名。
@@ -763,11 +764,11 @@ anp.meta.negotiation.v1
 
 この仕様では、リモート コードを実行する必要はありません。コード生成またはコードの読み込みはローカル実装の詳細であり、サンドボックス化された最小権限の環境で処理する必要があります。
 
-## 13. レガシーの廃止 `PT=00` メッセージの交渉
+## 13. 旧`PT=00`メッセージ交渉の非推奨化
 
 初期の ANP-06 ドラフトでは、エンドツーエンド暗号化メッセージ ペイロード内の 1 バイトのバイナリ ヘッダーを定義し、メタ プロトコル、アプリケーション プロトコル、自然言語プロトコル、検証プロトコルを区別するために `PT` フィールドを使用しました。このモデルでは、`sourceHello`、`destinationHello`、`candidateProtocols`、`codeGeneration`、`testCasesNegotiation`、`fixErrorNegotiation` などのフローも定義されています。
 
-初期モデルが廃止される 新規導入 MUST 利用条件 `anp.meta.negotiation.v1` とりあえず `anp.negotiate` この仕様で定義されると、 MUST NOT 古いバイナリを実装または依存する `PT` メッセージヘッダー、古いハローフロー、または旧コード生成フローをANP-06相互運用性パスとして使用。
+初期モデルは非推奨です。新実装は本仕様の`anp.meta.negotiation.v1`と`anp.negotiate`を使わなければならず（MUST）、ANP-06の相互運用経路として旧バイナリ`PT`メッセージヘッダー、旧Helloフロー、旧コード生成フローを実装したり依存したりしてはいけません（MUST NOT）。
 
 この仕様では、古いモデルから新しいモデルへの互換性マッピングは提供されず、互換性ゲートウェイも必要ありません。デプロイメントに初期の実験的な実装がまだある場合は、それをプライベートな過去の実装として扱い、別の移行タスクを通じてこの仕様にアップグレードする必要があります。その移行は、ANP-06 の最小相互運用性要件の範囲外です。
 
@@ -881,7 +882,7 @@ anp.meta.negotiation.v1
 }
 ```
 
-### 14.3 機能確認応答の片
+### 14.3 機能確認応答の抜粋
 
 ```json
 {
@@ -911,7 +912,7 @@ anp.meta.negotiation.v1
 
 ### 14.4 交渉依頼と結果
 
-セクション7およびセクション8を参照してください。 交渉リクエストと結果。 導入事例 SHOULD 保存する `negotiationId` とりあえず `negotiationDigest` 実際のビジネスコールを行う前に、デバッグ、キャッシュ、監査が可能となります。
+交渉要求と結果は第7章・第8章を参照してください。実際の業務呼び出し前に`negotiationId`と`negotiationDigest`を保存し、デバッグ、キャッシュ、監査を可能にするべきです（SHOULD）。
 
 ## 15. 将来の拡張
 
@@ -921,12 +922,12 @@ anp.meta.negotiation.v1
 - プロトコルアーティファクトのレジストリと発見メカニズム;
 - 署名し、検証可能な交渉結果;
 - テストケースの交渉方法;
-- 問題報告/固定交渉延長;
+- 問題報告・修正交渉の拡張。
 - MCP、OpenAPI、OpenRPC、A2Aなどの外部プロトコルの説明にマッピングする。
 - 複数のパーティーの交渉およびグループ交渉;
-- プライバシー保護と最小限の保証交渉プロファイル;
+- プライバシー保護と開示最小化の交渉プロファイル。
 - プロトコルコンセンサス、投票、レビュー、およびガバナンスメカニズム。
 
 ## コンテンツの著作権について
-2024年 ANP オープンソースコミュニティ
-このファイルは、 [Apache ライセンス 2.0](../LICENSE)。自由に使用および変更できますが、この著作権表示は保持しておく必要があります。
+Copyright (c) 2024 ANP Open Source Community
+このファイルは[Apache License 2.0](../LICENSE)の下で公開されています。自由に使用・変更できますが、この著作権表示を保持する必要があります。

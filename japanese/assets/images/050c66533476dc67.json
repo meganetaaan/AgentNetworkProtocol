@@ -1,0 +1,316 @@
+{
+  "source": "blogs/images/mcp-http-sse.png",
+  "sha256": "050c66533476dc6799d740f95da5e0225fe6d42173866ac1ffe4e6c99a5040e1",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Client",
+      "confidence": 0.999247541030248,
+      "box": [
+        [
+          189.0,
+          75.0
+        ],
+        [
+          286.0,
+          78.0
+        ],
+        [
+          285.0,
+          116.0
+        ],
+        [
+          188.0,
+          114.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9974801739056905,
+      "box": [
+        [
+          663.0,
+          77.0
+        ],
+        [
+          766.0,
+          81.0
+        ],
+        [
+          764.0,
+          116.0
+        ],
+        [
+          662.0,
+          112.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Open SSE connection",
+      "confidence": 0.9772034475677892,
+      "box": [
+        [
+          324.0,
+          204.0
+        ],
+        [
+          624.0,
+          204.0
+        ],
+        [
+          624.0,
+          237.0
+        ],
+        [
+          324.0,
+          237.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "SSE接続を開く",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SSE"
+      ]
+    },
+    {
+      "source": "endpoint event",
+      "confidence": 0.9967446540083204,
+      "box": [
+        [
+          369.0,
+          315.0
+        ],
+        [
+          589.0,
+          315.0
+        ],
+        [
+          589.0,
+          350.0
+        ],
+        [
+          369.0,
+          350.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "endpointイベント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "loop",
+      "confidence": 0.990736648440361,
+      "box": [
+        [
+          231.0,
+          406.0
+        ],
+        [
+          302.0,
+          413.0
+        ],
+        [
+          299.0,
+          451.0
+        ],
+        [
+          228.0,
+          443.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "繰り返し",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "[Message Exchange]",
+      "confidence": 0.9768543342749277,
+      "box": [
+        [
+          384.0,
+          411.0
+        ],
+        [
+          669.0,
+          413.0
+        ],
+        [
+          668.0,
+          451.0
+        ],
+        [
+          384.0,
+          448.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "［メッセージ交換］",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTP POST messages",
+      "confidence": 0.9669503304693434,
+      "box": [
+        [
+          322.0,
+          520.0
+        ],
+        [
+          626.0,
+          525.0
+        ],
+        [
+          625.0,
+          559.0
+        ],
+        [
+          321.0,
+          553.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "HTTP POSTでメッセージを送信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP",
+        "POST"
+      ]
+    },
+    {
+      "source": "SSE message events",
+      "confidence": 0.9953423109319475,
+      "box": [
+        [
+          336.0,
+          634.0
+        ],
+        [
+          622.0,
+          638.0
+        ],
+        [
+          621.0,
+          671.0
+        ],
+        [
+          335.0,
+          667.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "SSEのmessageイベント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SSE"
+      ]
+    },
+    {
+      "source": "Close SSE connection",
+      "confidence": 0.9868191242218017,
+      "box": [
+        [
+          322.0,
+          765.0
+        ],
+        [
+          624.0,
+          767.0
+        ],
+        [
+          623.0,
+          800.0
+        ],
+        [
+          322.0,
+          798.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "SSE接続を閉じる",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SSE"
+      ]
+    },
+    {
+      "source": "Client",
+      "confidence": 0.9989129702250162,
+      "box": [
+        [
+          190.0,
+          921.0
+        ],
+        [
+          286.0,
+          925.0
+        ],
+        [
+          284.0,
+          964.0
+        ],
+        [
+          188.0,
+          960.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9969775577386221,
+      "box": [
+        [
+          663.0,
+          924.0
+        ],
+        [
+          766.0,
+          926.0
+        ],
+        [
+          765.0,
+          962.0
+        ],
+        [
+          662.0,
+          959.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7120201999787241,
+    0.018817424774169922,
+    0.814488410949707
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "050c66533476dc6799d740f95da5e0225fe6d42173866ac1ffe4e6c99a5040e1"
+  }
+}

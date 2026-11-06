@@ -1,0 +1,178 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/14-e2ee-off.png",
+  "sha256": "d3bc6a1e0d3baed8bf91bcc1b4de4b42acf965df86a312ea794542aae089849f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "发信人",
+      "confidence": 0.9998907446861267,
+      "box": [
+        [
+          156.0,
+          266.0
+        ],
+        [
+          246.0,
+          266.0
+        ],
+        [
+          246.0,
+          301.0
+        ],
+        [
+          156.0,
+          301.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "送信者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "中转服务器",
+      "confidence": 0.9994888782501221,
+      "box": [
+        [
+          631.0,
+          266.0
+        ],
+        [
+          777.0,
+          266.0
+        ],
+        [
+          777.0,
+          300.0
+        ],
+        [
+          631.0,
+          300.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "中継サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "收信人",
+      "confidence": 0.9999377727508545,
+      "box": [
+        [
+          1155.0,
+          266.0
+        ],
+        [
+          1245.0,
+          266.0
+        ],
+        [
+          1245.0,
+          301.0
+        ],
+        [
+          1155.0,
+          301.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "受信者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "负责投递",
+      "confidence": 0.9995244592428207,
+      "box": [
+        [
+          655.0,
+          307.0
+        ],
+        [
+          753.0,
+          307.0
+        ],
+        [
+          753.0,
+          336.0
+        ],
+        [
+          655.0,
+          336.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "配送を担当",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "中转服务器看到的内容",
+      "confidence": 0.9985495150089264,
+      "box": [
+        [
+          150.0,
+          396.0
+        ],
+        [
+          438.0,
+          396.0
+        ],
+        [
+          438.0,
+          426.0
+        ],
+        [
+          150.0,
+          426.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "中継サーバーから見える内容",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "「帮我订一杯燕麦拿铁，送到公司前台」",
+      "confidence": 0.9846358696619669,
+      "box": [
+        [
+          162.0,
+          452.0
+        ],
+        [
+          567.0,
+          454.0
+        ],
+        [
+          567.0,
+          479.0
+        ],
+        [
+          162.0,
+          477.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "「オーツミルクのラテを1杯注文して、会社の受付まで届けてください。」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9336925000534393,
+    0.008862495422363281,
+    1.092705488204956
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "錠前の開閉は図形として保持。暗号文は省略例であり、有効な暗号値を示さない。",
+    "source_sha256": "d3bc6a1e0d3baed8bf91bcc1b4de4b42acf965df86a312ea794542aae089849f"
+  }
+}

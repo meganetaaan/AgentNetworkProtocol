@@ -1,0 +1,11 @@
+{
+  "documents_checked": 6,
+  "page_or_slide_units_checked": 99,
+  "notes_checked": 1,
+  "source_image_assets_checked": 8,
+  "original_binary_hashes_match": true,
+  "complete_extracted_text_preserved": true,
+  "page_or_slide_translation_coverage": "all-extracted-text-units",
+  "full_visual_translation_verification": "not-claimed-see-documents-inventory",
+  "verification_scope": "coverage-source-hashes-source-text-links-notes-image-hashes-not-independent-semantic-review"
+}

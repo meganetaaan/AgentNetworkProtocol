@@ -1,0 +1,194 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/01-worry-client.png",
+  "sha256": "b1f705fd059843cd5f6020ca266e947b47057e48f1ff2b4be97580f6b8cee1a6",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "你的助理程序",
+      "confidence": 0.9981952905654907,
+      "box": [
+        [
+          159.0,
+          288.0
+        ],
+        [
+          331.0,
+          288.0
+        ],
+        [
+          331.0,
+          319.0
+        ],
+        [
+          159.0,
+          319.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "あなたのアシスタントプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "咖啡店的程序",
+      "confidence": 0.9989171624183655,
+      "box": [
+        [
+          1057.0,
+          287.0
+        ],
+        [
+          1231.0,
+          288.0
+        ],
+        [
+          1230.0,
+          320.0
+        ],
+        [
+          1057.0,
+          318.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "コーヒー店のプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "要去订咖啡",
+      "confidence": 0.9982939839363099,
+      "box": [
+        [
+          182.0,
+          328.0
+        ],
+        [
+          305.0,
+          328.0
+        ],
+        [
+          305.0,
+          355.0
+        ],
+        [
+          182.0,
+          355.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "コーヒーを注文しようとしている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?？?",
+      "confidence": 0.6017236312230428,
+      "box": [
+        [
+          1111.0,
+          328.0
+        ],
+        [
+          1178.0,
+          328.0
+        ],
+        [
+          1178.0,
+          355.0
+        ],
+        [
+          1111.0,
+          355.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "? ? ?",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "? ? ?"
+    },
+    {
+      "source": "「对面这台机器，真是咖啡店的吗，",
+      "confidence": 0.9979581162333488,
+      "box": [
+        [
+          525.0,
+          388.0
+        ],
+        [
+          881.0,
+          389.0
+        ],
+        [
+          881.0,
+          414.0
+        ],
+        [
+          524.0,
+          413.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "「向こうのコンピューターは、本当にコーヒー店のものなのか。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "还是有人在中间冒充它收我的钱？」",
+      "confidence": 0.9722690656781197,
+      "box": [
+        [
+          519.0,
+          428.0
+        ],
+        [
+          890.0,
+          429.0
+        ],
+        [
+          890.0,
+          455.0
+        ],
+        [
+          519.0,
+          454.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "それとも、誰かが途中でなりすまし、私のお金を受け取ろうとしているのか？」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?",
+      "location": "central speech bubble",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L007",
+      "japanese": "?（疑問符）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5692397999810055,
+    0.003540515899658203,
+    0.5299174785614014
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "additional_labels": [
+      {
+        "source": "?",
+        "location": "central speech bubble"
+      }
+    ],
+    "corrections": {
+      "?？?": "? ? ?"
+    },
+    "source_sha256": "b1f705fd059843cd5f6020ca266e947b47057e48f1ff2b4be97580f6b8cee1a6"
+  }
+}

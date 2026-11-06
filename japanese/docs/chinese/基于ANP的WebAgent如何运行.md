@@ -1,25 +1,26 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: full; source=docs/chinese/基于ANP的WebAgent如何运行.md; basis=entire original read and manually compared paragraph by paragraph -->
+> 日本語参考訳（機械翻訳を基に原文全文を照合済み）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
 > 原文: [docs/chinese/基于ANP的WebAgent如何运行.md](../../../docs/chinese/基于ANP的WebAgent如何运行.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
-# ANPに基づくWebAgentガイド:気象インテリジェンスを例に挙げる
+# ANP ベースの WebAgent 利用ガイド：天気エージェントの例
 
-## 総合案内
+## 概要
 
-WebAgentは、AIへのアクセスのために設計されたネットワークスマートボディで、他の知能体が標準化されたプロトコルを介して直接情報やサービスにアクセスできるようにします。 このドキュメントでは、気象を例に使用して、WebAgentの動作メカニズムと方法について説明します。
+WebAgent は AI からのアクセス用に設計されたネットワーク上のエージェントです。他のエージェントが、標準化されたプロトコルで情報やサービスを直接取得できます。このガイドでは、天気 WebAgent を例に動作と利用方法を説明します。
 
-## 1. Webエージェント・ディスカバリー・メカニズム
+## 1. WebAgent の発見
 
-Webエージェント:
+次の2つの方法があります。
 
-### 1.1 アクティブ検出(ドメイン名による)
+### 1.1 能動的発見：ドメイン名を使う
 
-WebAgent のドメイン名が知られていると、標準化されたパスにアクセスして、スマートのリストを取得できます。
+ドメイン名が分かれば、標準化されたパスからエージェント一覧を取得できます。
 
 ```
 https://<域名>/.well-known/agent-descriptions
 ```
 
-**事例:**_: 訪問 `https://agent-weather.xyz/.well-known/agent-descriptions` 次の JSON-LD 形式のデータを返します。
+**例**：`https://agent-weather.xyz/.well-known/agent-descriptions` にアクセスすると、次の JSON-LD が返ります。
 
 ```json
 {
@@ -39,19 +40,19 @@ https://<域名>/.well-known/agent-descriptions
 }
 ```
 
-この応答により、ドメイン名と説明ファイルのアドレスに存在するWebAgentsのリストをスマートボディで知ることができます。
+応答から、そのドメイン内の WebAgent の一覧と、記述ファイルの URL が分かります。
 
-話している内容がわからない。https://agent-weather.xyz/ad.json 気象情報の説明ファイルアドレスです。
+ここでは、https://agent-weather.xyz/ad.json が天気エージェントの記述ファイルです。
 
-### 1.2 パッシブ検出(検索サービスによる)
+### 1.2 受動的発見：検索サービスを使う
 
-WebAgentは、キーワードを検索することで、他のインテリジェントなボディがそれを見つけることができるように、スマートボディ検索サービス自体を登録することができます。例えば、「天気」のキーワードを検索すると、WebAgentの気象情報に戻ることができます。
+WebAgent はエージェント検索サービスに登録でき、他のエージェントがキーワードで見つけられます。例えば「天気」で検索すると、天気 WebAgent の情報が返る場合があります。
 
-## 2. Webエージェントの説明 パーシング
+## 2. WebAgent 記述ファイルの解析
 
-WebAgent を見つけたら、次のステップは説明ファイル (エージェントの説明) を取得して解析することです。
+発見後は、Agent Description を取得し、解析します。
 
-**事例:**気象インテリジェンスの説明 `https://agent-weather.xyz/ad.json` 含まれる:
+**例**：`https://agent-weather.xyz/ad.json` の記述には、次の内容があります。
 
 ```json
 {
@@ -109,57 +110,57 @@ WebAgent を見つけたら、次のステップは説明ファイル (エージ
 }
 ```
 
-**ファイルキーフィールドの解像度の説明**：
+**主なフィールド**：
 
-- `name`, `description`:WebAgent の名称と機能の説明
-- `owner`Webエージェントの所有者情報
-- `securityDefinitions`: 認証モードの定義
-- `security`: 使用される認証スキームの名前
-- `interfaces`: 提供されているインタフェースのリスト:
-  - 構造化されたインターフェイス:天候の照会、予約、等のため。
-  - 自然言語インターフェイス:自然言語による相互
+- `name`、`description`：WebAgent の名前と機能の説明。
+- `owner`：所有者情報。
+- `securityDefinitions`：認証方式の定義。
+- `security`：使用する認証方式の名前。
+- `interfaces`：インターフェースの一覧。
+  - 構造化インターフェース：天気照会や予約など。
+  - 自然言語インターフェース：自然言語での対話。
 
-情報を説明することで、スマートはWebAgentの名前、機能、インターフェイスの種類、インタフェースアドレス、インターフェース認証にアクセスすることができます。インターフェイスを呼び出すことにより、気象情報、予約サービス、サブスクリプションステータスの問い合わせなどにアクセスすることができます。
+記述から、名前、機能、インターフェースの種類と URL、認証方式などを理解できます。インターフェースを呼び出すと、天気情報、予約、購読状態の照会などを利用できます。
 
-## 3. 識別メカニズム
+## 3. 認証の仕組み
 
-WebAgentへのアクセスは、信頼できるインテリジェンスボディから要求が来ることを確認するために認証が必要です。
+WebAgent へのアクセスでは、信頼するエージェントからの要求であることを確認するために認証を行います。
 
-### 3.1 DIDの同一証明プロセス
+### 3.1 DID 認証の流れ
 
-天気 Webエージェント `did:wba` 認証方法:
+この天気 WebAgent は、`did:wba` で認証します。
 
-1. **DID の取得**: あらゆる知能は、独自のDIDを持つ必要があります。 `did:wba:example.com:agent:weather123`
-2. **DID 文書の準備**: パブリックキーを含むDID文書は、ドメイン名パスに公開される
-3. **署名のリクエスト**: コールアは、リクエストされたコンテンツの署名を作成するためにプライベートキーを使用します
-4. **リクエストを送信**: 署名を追加する `Authorization` 同期フォルダ
-5. **検証プロセス**:WebAgent は署名を検証し、アクセス権を承認するかどうかを決定します
+1. **DID の取得**：例えば `did:wba:example.com:agent:weather123` のような、各エージェント自身の DID を持ちます。
+2. **DID 文書の準備**：公開鍵を含む文書を、ドメイン内の所定のパスに公開します。
+3. **要求への署名**：呼び出し側が秘密鍵で要求内容に署名します。
+4. **要求の送信**：署名を `Authorization` ヘッダーに加えて送ります。
+5. **検証**：WebAgent が署名の有効性を検証し、アクセスを認めるか判断します。
 
-### 3.2 DIDのテスト
+### 3.2 テスト用 DID
 
-開発者のテストを容易にするために、AMP はパブリックテスト DID を提供します:
+開発者のテスト用に、ANP は公開のテスト DID を用意しています。
 
-- ドイド:`did:wba:agent-did.com:test:public`
-- 組織図[ANP例 コーディングライブラリ](https://github.com/agent-network-protocol/anp-examples/tree/main/use_did_test_public)
-- 目的: 機密操作のためにだけでなくテストして下さい
+- DID：`did:wba:agent-did.com:test:public`
+- 場所：[ANP サンプルコード](https://github.com/agent-network-protocol/anp-examples/tree/main/use_did_test_public)
+- 用途：テスト専用。機密性を要する操作には使用できません。
 
-## 4. WebAgent との相互連携
+## 4. WebAgent とのやり取り
 
-### 4.1 アクセスプロセス
+### 4.1 アクセスの流れ
 
-気象WebAgentを使用した標準プロセス:
+天気 WebAgent の標準的な利用手順：
 
-1. **プロフィールを見る**_: 訪問 `https://agent-weather.xyz/ad.json`
-2. **インターフェイス情報の解析**: から `interfaces` 利用可能な API インターフェイスを取得するフィールド
-3. **インターフェイス定義の取得**: ダウンロード `weather-info.yaml` OpenAPI定義ファイル待ち
-4. **ビルドリクエスト**: API 定義に基づくフォーマット対応リクエストを作成する
-5. **認証を追加**: リクエストのヘッダーに DID 署名認証情報を追加
-6. **リクエストを送信**リクエストに HTTP を WebAgent に送信する
-7. **プロセス応答**: 返された構造データ(JSON/YAML)の解析
+1. **記述ファイルの取得**：`https://agent-weather.xyz/ad.json` にアクセスします。
+2. **インターフェース情報の解析**：`interfaces` から使える API を取得します。
+3. **定義の取得**：`weather-info.yaml` などの OpenAPI 定義をダウンロードします。
+4. **要求の構築**：API 定義に合う形式で作ります。
+5. **認証の追加**：要求ヘッダーに DID 署名の認証情報を加えます。
+6. **送信**：WebAgent に HTTP 要求を送ります。
+7. **応答処理**：返された構造化データ（JSON/YAML）を解析します。
 
-### 4.2 コードの例
+### 4.2 コード例
 
-AMP ツールと気象 WebAgent とのやり取りのコードの例:
+ANP ツールで天気 WebAgent を使う例です。
 
 ```python
 # 以下代码展示如何使用 ANPTool 访问天气 WebAgent
@@ -192,40 +193,40 @@ async def query_weather(city):
     return weather_data
 ```
 
-### 4.3 ANPエクスプローラツールを使用する
+### 4.3 ANP Explorer の利用
 
-ANP Explorerは便利なWebAgentの相互ツールです。
+ANP Explorer は WebAgent とやり取りするための便利なツールです。
 
-- ウェブサイト:https://service.agent-network-protocol.com/anp-explorer/
-- 関数:
-  1. 自然言語の気象情報を検索
-  2. WebAgent の記述文書を閲覧し、探索する
-- 使用法:文書のURLを記述するか、または直接気象関連の質問にスマートなボディを書き入れて下さい
+- URL：https://service.agent-network-protocol.com/anp-explorer/
+- 機能：
+  1. 自然言語で天気情報を照会。
+  2. WebAgent 記述文書の閲覧と探索。
+- 利用方法：エージェント記述文書の URL を入力するか、天気について直接質問します。
 
-## 5. WebAgent 技術的特徴 概要
+## 5. WebAgent の技術的な特徴
 
-気象WebAgentは、ANPプロトコルのコアメリットを反映しています。
+この天気 WebAgent は、ANP の主な利点を示します。
 
-1. **構造データ**: 直接、HTMLを解釈することなくJSON/YAML形式でデータを提供
-2. **自己記述**: 完全なインターフェイス記述、自動的に検出し、使用すること容易なスマートなボディ
-3. **中央へ。**: それぞれスマートボディシステムが別途登録されることなく、DIDを使用してクロスプラットフォーム認証を提供
-4. **ネイティブAIインターフェイス**: 人操作のシミュレーションなしでAIのために設計されているインターフェイス モデル
+1. **構造化データ**：JSON/YAML を直接提供し、HTML の解析が不要です。
+2. **自己記述**：完全なインターフェース説明を備え、自動的な発見・利用を容易にします。
+3. **分散型認証**：DID により、各エージェントシステムで個別に登録せず、プラットフォーム間で認証します。
+4. **AI 向けのネイティブなインターフェース**：AI 専用に設計され、人間の操作を模倣する必要がありません。
 
-## 6. 独自のWebAgentクライアントを開発
+## 6. WebAgent クライアントの開発
 
-天候と対話できるクライアントを開発するには、次のことが必要です。
+天気 WebAgent とやり取りするクライアントには、次が必要です。
 
-1. 統合されたAMP用具、参照:https://github.com/agent-network-protocol/anp-examples
-2. DID認証を有効に
-3. インテリジェンスの発見と説明によってファイルの解像度のロジックを書く
-4. インターフェイスに基づくビルドジェネレータのリクエストを定義する
+1. ANP ツールの統合。参考：https://github.com/agent-network-protocol/anp-examples
+2. DID 認証機能の実装。
+3. エージェントの発見と記述ファイル解析のロジック。
+4. インターフェース定義に基づく要求生成器。
 
-ヒントとHTTP機能により、AIスマートボディがWebAgentとやり取りできるようになります。
+一つのプロンプトと HTTP 関数があれば、AI エージェントに WebAgent とやり取りする能力を持たせられます。
 
-## 参照リソース
+## 参考資料
 
-- ANPの議定書の規則:https://github.com/agent-network-protocol/AgentNetworkProtocol
-- 導入事例:https://github.com/agent-network-protocol/anp-examples
-- 天気:https://agent-weather.xyz/
-- ANPエクスプローラ:https://service.agent-network-protocol.com/anp-explorer/
-- AAIインタビュー用に設計された最初のWebAgentが誕生しました。[初のWebAgentがA.I.A.に誕生しました。](../../blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md)
+- ANP 仕様：https://github.com/agent-network-protocol/AgentNetworkProtocol
+- サンプルコード：https://github.com/agent-network-protocol/anp-examples
+- 天気 WebAgent：https://agent-weather.xyz/
+- ANP Explorer：https://service.agent-network-protocol.com/anp-explorer/
+- AI からのアクセス専用に設計された最初の WebAgent の誕生：[紹介記事](../../blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md)

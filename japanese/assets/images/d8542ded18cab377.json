@@ -1,0 +1,460 @@
+{
+  "source": "images/judgment3_protocol_connection.svg",
+  "sha256": "d8542ded18cab37788fdf3e6c8e41163f4bbda1a78aee0d0a5a83bee52ddecfa",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "01",
+      "element": "text",
+      "id": null,
+      "x": "2",
+      "y": "6",
+      "label_id": "L001",
+      "japanese": "01",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "判断三：Protocol是AI原生连接方式",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "40",
+      "label_id": "L002",
+      "japanese": "見解3: プロトコルはAIに適した接続方式である",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "过渡形态",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "80",
+      "label_id": "L003",
+      "japanese": "過渡的な形態",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AI原生方式",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "80",
+      "label_id": "L004",
+      "japanese": "AIに適した方式",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Computer Use",
+      "element": "text",
+      "id": null,
+      "x": "130",
+      "y": "210",
+      "label_id": "L005",
+      "japanese": "コンピューターの操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "https://example.com",
+      "element": "text",
+      "id": null,
+      "x": "225",
+      "y": "137",
+      "label_id": "L006",
+      "japanese": "https://example.com",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "<HTML>",
+      "element": "text",
+      "id": null,
+      "x": "270",
+      "y": "160",
+      "label_id": "L007",
+      "japanese": "<HTML>",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Web Page",
+      "element": "text",
+      "id": null,
+      "x": "270",
+      "y": "185",
+      "label_id": "L008",
+      "japanese": "ウェブページ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Browser Use",
+      "element": "text",
+      "id": null,
+      "x": "270",
+      "y": "210",
+      "label_id": "L009",
+      "japanese": "ブラウザーの操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "问题：",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "230",
+      "label_id": "L010",
+      "japanese": "問題:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 成本高、效率低",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "250",
+      "label_id": "L011",
+      "japanese": "• コストが高く、効率が低い",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 为人类设计的界面",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "265",
+      "label_id": "L012",
+      "japanese": "• 人間向けに設計されたインターフェース",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 无法充分发挥AI能力",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "280",
+      "label_id": "L013",
+      "japanese": "• AIの能力を十分に発揮できない",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "!",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "4",
+      "label_id": "L014",
+      "japanese": "!",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VS",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "200",
+      "label_id": "L015",
+      "japanese": "VS",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "ANP Application Layer",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "133",
+      "label_id": "L016",
+      "japanese": "ANPアプリケーション層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ANP Transport Layer",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "148",
+      "label_id": "L017",
+      "japanese": "ANPトランスポート層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Network Layer",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "163",
+      "label_id": "L018",
+      "japanese": "ネットワーク層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Direct Data Exchange",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "190",
+      "label_id": "L019",
+      "japanese": "直接的なデータ交換",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent A",
+      "element": "text",
+      "id": null,
+      "x": "520",
+      "y": "245",
+      "label_id": "L020",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent B",
+      "element": "text",
+      "id": null,
+      "x": "680",
+      "y": "245",
+      "label_id": "L021",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "222",
+      "label_id": "L022",
+      "japanese": "JSON",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ANP Protocol",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "210",
+      "label_id": "L023",
+      "japanese": "ANPプロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "优势：",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "250",
+      "label_id": "L024",
+      "japanese": "利点:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 高效直接的数据交换",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "270",
+      "label_id": "L025",
+      "japanese": "• 効率的で直接的なデータ交換",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• AI原生设计",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "285",
+      "label_id": "L026",
+      "japanese": "• AIに適した設計",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "✓",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "4",
+      "label_id": "L027",
+      "japanese": "✓",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "智能体通信协议 = 智能体互联网时代的HTTP",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "340",
+      "label_id": "L028",
+      "japanese": "エージェント通信プロトコル = エージェントインターネット時代のHTTP",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "传统互联网",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "0",
+      "label_id": "L029",
+      "japanese": "従来のインターネット",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Web Server",
+      "element": "text",
+      "id": null,
+      "x": "140",
+      "y": "60",
+      "label_id": "L030",
+      "japanese": "ウェブサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Web Server",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "60",
+      "label_id": "L031",
+      "japanese": "ウェブサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Web Server",
+      "element": "text",
+      "id": null,
+      "x": "260",
+      "y": "60",
+      "label_id": "L032",
+      "japanese": "ウェブサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Protocol",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "97",
+      "label_id": "L033",
+      "japanese": "HTTPプロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "为人类设计的页面网络",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "160",
+      "label_id": "L034",
+      "japanese": "人間向けに設計されたページのネットワーク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体互联网",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "0",
+      "label_id": "L035",
+      "japanese": "エージェントインターネット",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "540",
+      "y": "60",
+      "label_id": "L036",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "60",
+      "label_id": "L037",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "element": "text",
+      "id": null,
+      "x": "660",
+      "y": "60",
+      "label_id": "L038",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ANP Protocol",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "97",
+      "label_id": "L039",
+      "japanese": "ANPプロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "为AI设计的数据网络",
+      "element": "text",
+      "id": null,
+      "x": "600",
+      "y": "160",
+      "label_id": "L040",
+      "japanese": "AI向けに設計されたデータのネットワーク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ANP",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-8",
+      "label_id": "L041",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Network",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "6",
+      "label_id": "L042",
+      "japanese": "エージェントネットワーク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "16",
+      "label_id": "L043",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "构建专为AI设计、便于AI访问的数据网络",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "540",
+      "label_id": "L044",
+      "japanese": "AI専用に設計された、AIが容易にアクセスできるデータネットワークを構築する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AI更擅长处理直接的底层数据，而非为人类设计的UI界面",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "560",
+      "label_id": "L045",
+      "japanese": "AIは、人間向けのUIよりも、直接的な基礎データの処理を得意とする",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

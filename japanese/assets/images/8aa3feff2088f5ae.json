@@ -1,0 +1,270 @@
+{
+  "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-系统架构图.svg",
+  "sha256": "8aa3feff2088f5ae5b9277720351083c2d337e783e0db65ff5da89d3bd972b93",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP 智能体点对点交易系统架构",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "40",
+      "label_id": "L001",
+      "japanese": "ANPエージェント間P2P取引システムの構成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Network Protocol (ANP) 协议环境",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "95",
+      "label_id": "L002",
+      "japanese": "Agent Network Protocol（ANP）のプロトコル環境",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户端",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "155",
+      "label_id": "L003",
+      "japanese": "ユーザー側",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户 (User)",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "200",
+      "label_id": "L004",
+      "japanese": "ユーザー（User）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户智能体",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "260",
+      "label_id": "L005",
+      "japanese": "ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(User Agent)",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "280",
+      "label_id": "L006",
+      "japanese": "（ユーザーエージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店端",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "155",
+      "label_id": "L007",
+      "japanese": "ホテル側",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店 (Hotel)",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "200",
+      "label_id": "L008",
+      "japanese": "ホテル（Hotel）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店智能体",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "260",
+      "label_id": "L009",
+      "japanese": "ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Hotel Agent)",
+      "element": "text",
+      "id": null,
+      "x": "710",
+      "y": "280",
+      "label_id": "L010",
+      "japanese": "（ホテルエージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付系统",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "395",
+      "label_id": "L011",
+      "japanese": "決済システム",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付基础设施",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "440",
+      "label_id": "L012",
+      "japanese": "決済基盤",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Payment Infrastructure)",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "455",
+      "label_id": "L013",
+      "japanese": "（決済基盤）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付智能体",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "505",
+      "label_id": "L014",
+      "japanese": "決済エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Payment Agent)",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "525",
+      "label_id": "L015",
+      "japanese": "（支払いエージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "仲裁智能体",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "465",
+      "label_id": "L016",
+      "japanese": "仲裁エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Arbitration Agent)",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "485",
+      "label_id": "L017",
+      "japanese": "（仲裁エージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "500",
+      "label_id": "L018",
+      "japanese": "任意",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可信/公证服务",
+      "element": "text",
+      "id": null,
+      "x": "730",
+      "y": "465",
+      "label_id": "L019",
+      "japanese": "信頼／公証サービス",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Notary/Registry)",
+      "element": "text",
+      "id": null,
+      "x": "730",
+      "y": "485",
+      "label_id": "L020",
+      "japanese": "（公証／登録サービス）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选",
+      "element": "text",
+      "id": null,
+      "x": "730",
+      "y": "500",
+      "label_id": "L021",
+      "japanese": "任意",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "必要交互路径",
+      "element": "text",
+      "id": null,
+      "x": "170",
+      "y": "625",
+      "label_id": "L022",
+      "japanese": "必須のやり取りの経路",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选交互路径",
+      "element": "text",
+      "id": null,
+      "x": "370",
+      "y": "625",
+      "label_id": "L023",
+      "japanese": "任意のやり取りの経路",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "所有智能体间通信基于 ANP 协议",
+      "element": "text",
+      "id": null,
+      "x": "550",
+      "y": "625",
+      "label_id": "L024",
+      "japanese": "すべてのエージェント間通信はANPプロトコルに基づく",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "交互逻辑",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "570",
+      "label_id": "L025",
+      "japanese": "やり取りの仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体间通过可验证凭证(VC)传递与验证，形成凭证链，保证交易可信与完整",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "590",
+      "label_id": "L026",
+      "japanese": "エージェント間で検証可能な証明書（VC）を受け渡して検証し、証明書の連鎖を作ることで、取引の信頼性と完全性を確保する",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

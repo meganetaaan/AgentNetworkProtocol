@@ -1,0 +1,650 @@
+{
+  "source": "standard/pic/pic.jpg",
+  "sha256": "a29bc447f3c7bda72c994b67c5f5f11bc7b1942d7c82f7acfb0f63f79fc4e1e4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "I<-(A)-Capability Register",
+      "confidence": 0.9795410885260656,
+      "box": [
+        [
+          636.0,
+          36.0
+        ],
+        [
+          964.0,
+          36.0
+        ],
+        [
+          964.0,
+          58.0
+        ],
+        [
+          636.0,
+          58.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "(A) 能力の登録",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(A) Capability Register"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9960164904594422,
+      "box": [
+        [
+          519.0,
+          85.0
+        ],
+        [
+          585.0,
+          84.0
+        ],
+        [
+          585.0,
+          104.0
+        ],
+        [
+          520.0,
+          106.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "I-(B)",
+      "confidence": 0.903616750240326,
+      "box": [
+        [
+          634.0,
+          85.0
+        ],
+        [
+          696.0,
+          85.0
+        ],
+        [
+          696.0,
+          106.0
+        ],
+        [
+          634.0,
+          106.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "(B)",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(B)"
+    },
+    {
+      "source": "-Response-",
+      "confidence": 0.9874537646770477,
+      "box": [
+        [
+          780.0,
+          84.0
+        ],
+        [
+          901.0,
+          87.0
+        ],
+        [
+          900.0,
+          107.0
+        ],
+        [
+          779.0,
+          104.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "レスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Response"
+    },
+    {
+      "source": "|-(C) -Capability Discover-->l Registrationl",
+      "confidence": 0.9579001258720051,
+      "box": [
+        [
+          109.0,
+          106.0
+        ],
+        [
+          646.0,
+          107.0
+        ],
+        [
+          646.0,
+          129.0
+        ],
+        [
+          109.0,
+          128.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "(C) 能力の発見／登録",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(C) Capability Discover / Registration"
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9993225236733755,
+      "box": [
+        [
+          520.0,
+          131.0
+        ],
+        [
+          599.0,
+          133.0
+        ],
+        [
+          599.0,
+          153.0
+        ],
+        [
+          520.0,
+          151.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "I<-(D)",
+      "confidence": 0.9042467971642812,
+      "box": [
+        [
+          109.0,
+          157.0
+        ],
+        [
+          184.0,
+          155.0
+        ],
+        [
+          184.0,
+          176.0
+        ],
+        [
+          110.0,
+          177.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "(D)",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(D)"
+    },
+    {
+      "source": "----Matched Agents--",
+      "confidence": 0.9785361260175705,
+      "box": [
+        [
+          177.0,
+          154.0
+        ],
+        [
+          434.0,
+          157.0
+        ],
+        [
+          434.0,
+          177.0
+        ],
+        [
+          177.0,
+          174.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "条件に合うエージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Matched Agents"
+    },
+    {
+      "source": "AI",
+      "confidence": 0.9839828312397003,
+      "box": [
+        [
+          52.0,
+          180.0
+        ],
+        [
+          83.0,
+          180.0
+        ],
+        [
+          83.0,
+          199.0
+        ],
+        [
+          52.0,
+          199.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "AI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "AI",
+      "confidence": 0.9955932199954987,
+      "box": [
+        [
+          1035.0,
+          180.0
+        ],
+        [
+          1064.0,
+          180.0
+        ],
+        [
+          1064.0,
+          200.0
+        ],
+        [
+          1035.0,
+          200.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "AI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "Agentl",
+      "confidence": 0.9406114916006724,
+      "box": [
+        [
+          40.0,
+          203.0
+        ],
+        [
+          117.0,
+          203.0
+        ],
+        [
+          117.0,
+          223.0
+        ],
+        [
+          40.0,
+          223.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Agent"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.999668562412262,
+      "box": [
+        [
+          1023.0,
+          203.0
+        ],
+        [
+          1092.0,
+          203.0
+        ],
+        [
+          1092.0,
+          223.0
+        ],
+        [
+          1023.0,
+          223.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "A",
+      "confidence": 0.9968133568763733,
+      "box": [
+        [
+          68.0,
+          228.0
+        ],
+        [
+          81.0,
+          228.0
+        ],
+        [
+          81.0,
+          243.0
+        ],
+        [
+          68.0,
+          243.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "B",
+      "confidence": 0.9987461566925049,
+      "box": [
+        [
+          1050.0,
+          228.0
+        ],
+        [
+          1064.0,
+          228.0
+        ],
+        [
+          1064.0,
+          243.0
+        ],
+        [
+          1050.0,
+          243.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "I-(E) Communication Request->|",
+      "confidence": 0.9199548194805781,
+      "box": [
+        [
+          109.0,
+          273.0
+        ],
+        [
+          468.0,
+          274.0
+        ],
+        [
+          468.0,
+          296.0
+        ],
+        [
+          109.0,
+          295.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "(E) 通信リクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(E) Communication Request"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9996901750564575,
+      "box": [
+        [
+          518.0,
+          298.0
+        ],
+        [
+          584.0,
+          297.0
+        ],
+        [
+          585.0,
+          320.0
+        ],
+        [
+          519.0,
+          321.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "|-(F)Communication Request-->|",
+      "confidence": 0.9408238450686137,
+      "box": [
+        [
+          634.0,
+          297.0
+        ],
+        [
+          1009.0,
+          297.0
+        ],
+        [
+          1009.0,
+          319.0
+        ],
+        [
+          634.0,
+          320.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "(F) 通信リクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(F) Communication Request"
+    },
+    {
+      "source": "|Communication|",
+      "confidence": 0.9574057658513387,
+      "box": [
+        [
+          460.0,
+          322.0
+        ],
+        [
+          645.0,
+          322.0
+        ],
+        [
+          645.0,
+          342.0
+        ],
+        [
+          460.0,
+          342.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "通信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Communication"
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9992575645446777,
+      "box": [
+        [
+          507.0,
+          345.0
+        ],
+        [
+          586.0,
+          347.0
+        ],
+        [
+          585.0,
+          367.0
+        ],
+        [
+          507.0,
+          365.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "I<-(G) Communication Response-l",
+      "confidence": 0.9436693047323534,
+      "box": [
+        [
+          634.0,
+          345.0
+        ],
+        [
+          1010.0,
+          344.0
+        ],
+        [
+          1010.0,
+          366.0
+        ],
+        [
+          634.0,
+          367.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "(G) 通信レスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(G) Communication Response"
+    },
+    {
+      "source": "[<-(H) Communication Responsel",
+      "confidence": 0.9499628533919652,
+      "box": [
+        [
+          109.0,
+          368.0
+        ],
+        [
+          468.0,
+          369.0
+        ],
+        [
+          468.0,
+          391.0
+        ],
+        [
+          109.0,
+          390.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "(H) 通信レスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(H) Communication Response"
+    },
+    {
+      "source": "(E' )Communication Request",
+      "confidence": 0.9727067305491521,
+      "box": [
+        [
+          413.0,
+          441.0
+        ],
+        [
+          725.0,
+          441.0
+        ],
+        [
+          725.0,
+          461.0
+        ],
+        [
+          413.0,
+          461.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "(E') 通信リクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(E') Communication Request"
+    },
+    {
+      "source": "(F' ) Communication Response-",
+      "confidence": 0.9623727366842073,
+      "box": [
+        [
+          414.0,
+          488.0
+        ],
+        [
+          741.0,
+          488.0
+        ],
+        [
+          741.0,
+          510.0
+        ],
+        [
+          414.0,
+          510.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "(F') 通信レスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(F') Communication Response"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.4732607000041753,
+    0.04568028450012207,
+    2.43272066116333
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "I<-(A)-Capability Register": "(A) Capability Register",
+      "I-(B)": "(B)",
+      "-Response-": "Response",
+      "|-(C) -Capability Discover-->l Registrationl": "(C) Capability Discover / Registration",
+      "I<-(D)": "(D)",
+      "----Matched Agents--": "Matched Agents",
+      "Agentl": "Agent",
+      "I-(E) Communication Request->|": "(E) Communication Request",
+      "|-(F)Communication Request-->|": "(F) Communication Request",
+      "|Communication|": "Communication",
+      "I<-(G) Communication Response-l": "(G) Communication Response",
+      "[<-(H) Communication Responsel": "(H) Communication Response",
+      "(E' )Communication Request": "(E') Communication Request",
+      "(F' ) Communication Response-": "(F') Communication Response"
+    },
+    "source_note": "ASCII罫線と矢印を文章の対訳から分け、通信方向と経路の図は原画像に保持する。右端の改行記号やスペルチェック下線は編集画面の表示。",
+    "source_sha256": "a29bc447f3c7bda72c994b67c5f5f11bc7b1942d7c82f7acfb0f63f79fc4e1e4"
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "source": "blogs/images/anp-architecture.png",
+  "sha256": "e13958ffadc941650d4e6ec87f09b097f2cfeb99c84ffbf8a2ad080147c4bd20",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agent",
+      "confidence": 0.9994603157043457,
+      "box": [
+        [
+          345.0,
+          55.0
+        ],
+        [
+          455.0,
+          58.0
+        ],
+        [
+          454.0,
+          99.0
+        ],
+        [
+          345.0,
+          97.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9995945572853089,
+      "box": [
+        [
+          73.0,
+          240.0
+        ],
+        [
+          183.0,
+          242.0
+        ],
+        [
+          183.0,
+          283.0
+        ],
+        [
+          72.0,
+          281.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.999521005153656,
+      "box": [
+        [
+          619.0,
+          240.0
+        ],
+        [
+          729.0,
+          242.0
+        ],
+        [
+          728.0,
+          283.0
+        ],
+        [
+          618.0,
+          281.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9996507644653321,
+      "box": [
+        [
+          149.0,
+          526.0
+        ],
+        [
+          259.0,
+          526.0
+        ],
+        [
+          259.0,
+          568.0
+        ],
+        [
+          149.0,
+          568.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9981143236160278,
+      "box": [
+        [
+          538.0,
+          525.0
+        ],
+        [
+          648.0,
+          528.0
+        ],
+        [
+          647.0,
+          570.0
+        ],
+        [
+          537.0,
+          568.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.41150779998861253,
+    0.00651097297668457,
+    0.1462252140045166
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "e13958ffadc941650d4e6ec87f09b097f2cfeb99c84ffbf8a2ad080147c4bd20"
+  }
+}

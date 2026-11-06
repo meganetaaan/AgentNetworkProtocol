@@ -1,0 +1,1122 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page21.jpg",
+  "sha256": "2805979717ce87b430d5dc3cc5de46feb45c0ba02110a10c9f779308361a9f27",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Code",
+      "confidence": 0.9984376132488251,
+      "box": [
+        [
+          37.16128921508789,
+          41.657142639160156
+        ],
+        [
+          258.9677429199219,
+          41.657142639160156
+        ],
+        [
+          258.9677429199219,
+          114.55714416503906
+        ],
+        [
+          37.16128921508789,
+          114.55714416503906
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9888566931088766,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          85.62857055664062
+        ],
+        [
+          2154.193603515625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Application LayerProtocol IntegrationFramework",
+      "confidence": 0.9748915576416514,
+      "box": [
+        [
+          779.2257690429688,
+          215.22857666015625
+        ],
+        [
+          1419.0966796875,
+          215.22857666015625
+        ],
+        [
+          1419.0966796875,
+          248.7857208251953
+        ],
+        [
+          779.2257690429688,
+          248.7857208251953
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "LayerProtocol",
+        "IntegrationFramework"
+      ]
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9962379485368729,
+      "box": [
+        [
+          743.2257690429688,
+          306.6428527832031
+        ],
+        [
+          852.3870849609375,
+          306.6428527832031
+        ],
+        [
+          852.3870849609375,
+          337.8857116699219
+        ],
+        [
+          743.2257690429688,
+          337.8857116699219
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9959925562143326,
+      "box": [
+        [
+          944.1290283203125,
+          306.6428527832031
+        ],
+        [
+          1054.4515380859375,
+          306.6428527832031
+        ],
+        [
+          1054.4515380859375,
+          337.8857116699219
+        ],
+        [
+          944.1290283203125,
+          337.8857116699219
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.996578149497509,
+      "box": [
+        [
+          1143.8709716796875,
+          308.9571533203125
+        ],
+        [
+          1254.1934814453125,
+          308.9571533203125
+        ],
+        [
+          1254.1934814453125,
+          340.20001220703125
+        ],
+        [
+          1143.8709716796875,
+          340.20001220703125
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9954482167959213,
+      "box": [
+        [
+          1335.48388671875,
+          306.6428527832031
+        ],
+        [
+          1445.806396484375,
+          306.6428527832031
+        ],
+        [
+          1445.806396484375,
+          337.8857116699219
+        ],
+        [
+          1335.48388671875,
+          337.8857116699219
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Loading",
+      "confidence": 0.9980583701814923,
+      "box": [
+        [
+          746.7096557617188,
+          339.0428771972656
+        ],
+        [
+          857.0322265625,
+          344.8285827636719
+        ],
+        [
+          854.7096557617188,
+          379.5428771972656
+        ],
+        [
+          745.54833984375,
+          374.914306640625
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Unloading",
+      "confidence": 0.9960979355706109,
+      "box": [
+        [
+          936.0,
+          339.0428771972656
+        ],
+        [
+          1069.54833984375,
+          343.67144775390625
+        ],
+        [
+          1068.3870849609375,
+          379.5428771972656
+        ],
+        [
+          934.8386840820312,
+          374.914306640625
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Configuration",
+      "confidence": 0.9962408817731417,
+      "box": [
+        [
+          1127.6129150390625,
+          343.67144775390625
+        ],
+        [
+          1276.258056640625,
+          343.67144775390625
+        ],
+        [
+          1276.258056640625,
+          374.914306640625
+        ],
+        [
+          1127.6129150390625,
+          374.914306640625
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Running",
+      "confidence": 0.9971206443650382,
+      "box": [
+        [
+          1338.9676513671875,
+          341.3571472167969
+        ],
+        [
+          1448.1290283203125,
+          345.9857177734375
+        ],
+        [
+          1446.9676513671875,
+          378.3857116699219
+        ],
+        [
+          1337.806396484375,
+          373.75714111328125
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ScalableProtocolFramework",
+      "confidence": 0.9939647626876831,
+      "box": [
+        [
+          919.7418823242188,
+          426.9857177734375
+        ],
+        [
+          1275.0966796875,
+          426.9857177734375
+        ],
+        [
+          1275.0966796875,
+          457.0714416503906
+        ],
+        [
+          919.7418823242188,
+          457.0714416503906
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ScalableProtocolFramework"
+      ]
+    },
+    {
+      "source": "Meta-ProtocolModule",
+      "confidence": 0.9916401505470276,
+      "box": [
+        [
+          955.7418823242188,
+          523.028564453125
+        ],
+        [
+          1239.0966796875,
+          523.028564453125
+        ],
+        [
+          1239.0966796875,
+          553.1143188476562
+        ],
+        [
+          955.7418823242188,
+          553.1143188476562
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ProtocolModule"
+      ]
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.99532151222229,
+      "box": [
+        [
+          744.3870849609375,
+          612.1286010742188
+        ],
+        [
+          852.3870849609375,
+          612.1286010742188
+        ],
+        [
+          852.3870849609375,
+          644.528564453125
+        ],
+        [
+          744.3870849609375,
+          644.528564453125
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9949620738625526,
+      "box": [
+        [
+          953.4193115234375,
+          616.7571411132812
+        ],
+        [
+          1047.48388671875,
+          616.7571411132812
+        ],
+        [
+          1047.48388671875,
+          644.528564453125
+        ],
+        [
+          953.4193115234375,
+          644.528564453125
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9957212060689926,
+      "box": [
+        [
+          1143.8709716796875,
+          612.1286010742188
+        ],
+        [
+          1253.0322265625,
+          612.1286010742188
+        ],
+        [
+          1253.0322265625,
+          644.528564453125
+        ],
+        [
+          1143.8709716796875,
+          644.528564453125
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9952870309352875,
+      "box": [
+        [
+          1336.6451416015625,
+          612.1286010742188
+        ],
+        [
+          1445.806396484375,
+          612.1286010742188
+        ],
+        [
+          1445.806396484375,
+          644.528564453125
+        ],
+        [
+          1336.6451416015625,
+          644.528564453125
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "API",
+      "confidence": 0.9903258482615153,
+      "box": [
+        [
+          1572.3870849609375,
+          607.5
+        ],
+        [
+          1624.6451416015625,
+          607.5
+        ],
+        [
+          1624.6451416015625,
+          637.5857543945312
+        ],
+        [
+          1572.3870849609375,
+          637.5857543945312
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "API"
+      ]
+    },
+    {
+      "source": "Negotiation",
+      "confidence": 0.9959286830642007,
+      "box": [
+        [
+          726.9677124023438,
+          650.3142700195312
+        ],
+        [
+          876.774169921875,
+          650.3142700195312
+        ],
+        [
+          876.774169921875,
+          685.028564453125
+        ],
+        [
+          726.9677124023438,
+          685.028564453125
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Implementation",
+      "confidence": 0.9916486186640603,
+      "box": [
+        [
+          917.4193115234375,
+          649.1571655273438
+        ],
+        [
+          1089.290283203125,
+          649.1571655273438
+        ],
+        [
+          1089.290283203125,
+          676.9285888671875
+        ],
+        [
+          917.4193115234375,
+          676.9285888671875
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Debug",
+      "confidence": 0.9955589532852173,
+      "box": [
+        [
+          1157.806396484375,
+          644.528564453125
+        ],
+        [
+          1248.3870849609375,
+          652.6286010742188
+        ],
+        [
+          1244.9031982421875,
+          688.5
+        ],
+        [
+          1154.322509765625,
+          680.4000244140625
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Handling",
+      "confidence": 0.9967174604535103,
+      "box": [
+        [
+          1334.322509765625,
+          645.6857299804688
+        ],
+        [
+          1452.774169921875,
+          650.3142700195312
+        ],
+        [
+          1451.6129150390625,
+          686.1857299804688
+        ],
+        [
+          1333.1612548828125,
+          681.55712890625
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "LLM",
+      "confidence": 0.9787936806678772,
+      "box": [
+        [
+          1070.7095947265625,
+          730.1571655273438
+        ],
+        [
+          1122.9676513671875,
+          730.1571655273438
+        ],
+        [
+          1122.9676513671875,
+          761.4000244140625
+        ],
+        [
+          1070.7095947265625,
+          761.4000244140625
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "LLM"
+      ]
+    },
+    {
+      "source": "Identity",
+      "confidence": 0.9714531153440475,
+      "box": [
+        [
+          814.0645141601562,
+          830.82861328125
+        ],
+        [
+          919.7418823242188,
+          834.2999877929688
+        ],
+        [
+          918.5806274414062,
+          870.1714477539062
+        ],
+        [
+          812.9031982421875,
+          866.7000122070312
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "End-to-End Encryption",
+      "confidence": 0.981789129120963,
+      "box": [
+        [
+          1184.51611328125,
+          834.2999877929688
+        ],
+        [
+          1476.0,
+          837.7714233398438
+        ],
+        [
+          1476.0,
+          869.0142822265625
+        ],
+        [
+          1184.51611328125,
+          865.5428466796875
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "DIDGenerate",
+      "confidence": 0.9912941239096902,
+      "box": [
+        [
+          789.6773681640625,
+          903.7285766601562
+        ],
+        [
+          953.4193115234375,
+          906.0428466796875
+        ],
+        [
+          953.4193115234375,
+          937.2857055664062
+        ],
+        [
+          789.6773681640625,
+          934.971435546875
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ECDHE",
+      "confidence": 0.9959517121315002,
+      "box": [
+        [
+          1278.58056640625,
+          906.0428466796875
+        ],
+        [
+          1366.838623046875,
+          906.0428466796875
+        ],
+        [
+          1366.838623046875,
+          934.971435546875
+        ],
+        [
+          1278.58056640625,
+          934.971435546875
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ECDHE"
+      ]
+    },
+    {
+      "source": "DIDAuthentication",
+      "confidence": 0.9964797426672543,
+      "box": [
+        [
+          772.258056640625,
+          988.2000122070312
+        ],
+        [
+          970.8386840820312,
+          988.2000122070312
+        ],
+        [
+          970.8386840820312,
+          1014.8143310546875
+        ],
+        [
+          772.258056640625,
+          1014.8143310546875
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AsymmetricEncryption",
+      "confidence": 0.9756015658378601,
+      "box": [
+        [
+          1199.6129150390625,
+          988.2000122070312
+        ],
+        [
+          1445.806396484375,
+          985.8857421875
+        ],
+        [
+          1445.806396484375,
+          1015.971435546875
+        ],
+        [
+          1199.6129150390625,
+          1018.2857055664062
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AsymmetricEncryption"
+      ]
+    },
+    {
+      "source": "ANP OpenSourceCode:https://github.com/chgaowei/AgentConnect",
+      "confidence": 0.9886261356078972,
+      "box": [
+        [
+          562.0645141601562,
+          1137.471435546875
+        ],
+        [
+          1682.7095947265625,
+          1137.471435546875
+        ],
+        [
+          1682.7095947265625,
+          1175.6571044921875
+        ],
+        [
+          562.0645141601562,
+          1175.6571044921875
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP",
+        "OpenSourceCode",
+        "https://github.com/chgaowei/AgentConnect"
+      ]
+    },
+    {
+      "source": "Code\n\n\n\n\n\n                    ANP Open Source Code: https://github.com/chgaowei/AgentConnect",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L031",
+      "japanese": "コード\n\nANPのオープンソースコード：https://github.com/chgaowei/AgentConnect",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Application Layer Protocol Integration Framework",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L032",
+      "japanese": "アプリケーション層のプロトコル統合フレームワーク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Loading",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L033",
+      "japanese": "プロトコルの読み込み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Unloading",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L034",
+      "japanese": "プロトコルの取り外し",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Configuration",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L035",
+      "japanese": "プロトコルの設定",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Running",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L036",
+      "japanese": "プロトコルの実行",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Scalable Protocol Framework",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L037",
+      "japanese": "拡張可能なプロトコルフレームワーク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Meta-Protocol Module",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L038",
+      "japanese": "メタプロトコルモジュール",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Negotiation",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L039",
+      "japanese": "プロトコルの交渉",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Implementation",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L040",
+      "japanese": "プロトコルの実装",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Debug",
+      "location": "visible diagram label 10, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L041",
+      "japanese": "プロトコルのデバッグ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Protocol Handling",
+      "location": "visible diagram label 11, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L042",
+      "japanese": "プロトコルの処理",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "LLM",
+      "location": "visible diagram label 12, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L043",
+      "japanese": "LLM",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "API",
+      "location": "visible diagram label 13, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L044",
+      "japanese": "API",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Identity",
+      "location": "visible diagram label 14, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L045",
+      "japanese": "ID",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID Generate",
+      "location": "visible diagram label 15, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L046",
+      "japanese": "DID生成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID Authentication",
+      "location": "visible diagram label 16, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L047",
+      "japanese": "DID認証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "End-to-End Encryption",
+      "location": "visible diagram label 17, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L048",
+      "japanese": "エンドツーエンド暗号化",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ECDHE",
+      "location": "visible diagram label 18, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L049",
+      "japanese": "ECDHE",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Asymmetric Encryption",
+      "location": "visible diagram label 19, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L050",
+      "japanese": "非対称暗号化",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.459269699989818,
+    0.0508425235748291,
+    2.900754928588867
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 21,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-21",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.1456944444444446,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 21,
+    "manual_label_translations": {
+      "Code\n\n\n\n\n\n                    ANP Open Source Code: https://github.com/chgaowei/AgentConnect": "コード\n\nANPのオープンソースコード：https://github.com/chgaowei/AgentConnect",
+      "Application Layer Protocol Integration Framework": "アプリケーション層のプロトコル統合フレームワーク",
+      "Protocol Loading": "プロトコルの読み込み",
+      "Protocol Unloading": "プロトコルの取り外し",
+      "Protocol Configuration": "プロトコルの設定",
+      "Protocol Running": "プロトコルの実行",
+      "Scalable Protocol Framework": "拡張可能なプロトコルフレームワーク",
+      "Meta-Protocol Module": "メタプロトコルモジュール",
+      "Protocol Negotiation": "プロトコルの交渉",
+      "Protocol Implementation": "プロトコルの実装",
+      "Protocol Debug": "プロトコルのデバッグ",
+      "Protocol Handling": "プロトコルの処理",
+      "LLM": "LLM",
+      "API": "API",
+      "Identity": "ID",
+      "DID Generate": "DID生成",
+      "DID Authentication": "DID認証",
+      "End-to-End Encryption": "エンドツーエンド暗号化",
+      "ECDHE": "ECDHE",
+      "Asymmetric Encryption": "非対称暗号化"
+    },
+    "additional_labels": [
+      {
+        "source": "Code\n\n\n\n\n\n                    ANP Open Source Code: https://github.com/chgaowei/AgentConnect",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "Application Layer Protocol Integration Framework",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "Protocol Loading",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "Protocol Unloading",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "Protocol Configuration",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "Protocol Running",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "Scalable Protocol Framework",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "Meta-Protocol Module",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Protocol Negotiation",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "Protocol Implementation",
+        "location": "visible diagram label 9, manually transcribed"
+      },
+      {
+        "source": "Protocol Debug",
+        "location": "visible diagram label 10, manually transcribed"
+      },
+      {
+        "source": "Protocol Handling",
+        "location": "visible diagram label 11, manually transcribed"
+      },
+      {
+        "source": "LLM",
+        "location": "visible diagram label 12, manually transcribed"
+      },
+      {
+        "source": "API",
+        "location": "visible diagram label 13, manually transcribed"
+      },
+      {
+        "source": "Identity",
+        "location": "visible diagram label 14, manually transcribed"
+      },
+      {
+        "source": "DID Generate",
+        "location": "visible diagram label 15, manually transcribed"
+      },
+      {
+        "source": "DID Authentication",
+        "location": "visible diagram label 16, manually transcribed"
+      },
+      {
+        "source": "End-to-End Encryption",
+        "location": "visible diagram label 17, manually transcribed"
+      },
+      {
+        "source": "ECDHE",
+        "location": "visible diagram label 18, manually transcribed"
+      },
+      {
+        "source": "Asymmetric Encryption",
+        "location": "visible diagram label 19, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Code",
+      "ANP",
+      "Application LayerProtocol IntegrationFramework",
+      "Protocol",
+      "Protocol",
+      "Protocol",
+      "Protocol",
+      "Loading",
+      "Unloading",
+      "Configuration",
+      "Running",
+      "ScalableProtocolFramework",
+      "Meta-ProtocolModule",
+      "Protocol",
+      "Protocol",
+      "Protocol",
+      "Protocol",
+      "API",
+      "Negotiation",
+      "Implementation",
+      "Debug",
+      "Handling",
+      "LLM",
+      "Identity",
+      "End-to-End Encryption",
+      "DIDGenerate",
+      "ECDHE",
+      "DIDAuthentication",
+      "AsymmetricEncryption",
+      "ANP OpenSourceCode:https://github.com/chgaowei/AgentConnect"
+    ],
+    "source_sha256": "2805979717ce87b430d5dc3cc5de46feb45c0ba02110a10c9f779308361a9f27"
+  }
+}

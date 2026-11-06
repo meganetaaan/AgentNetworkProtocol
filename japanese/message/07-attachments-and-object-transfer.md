@@ -1,11 +1,12 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: machine-fully-reviewed; scope=source lines 1-1639; inventory=japanese/reviews/core-review.json; full prose compared against source -->
+> 日本語参考訳（機械翻訳を原文と全文照合し、意味・用語を校閲済み）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
 > 原文: [message/07-attachments-and-object-transfer.md](../../message/07-attachments-and-object-transfer.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
 # ANPプロファイル7:添付ファイルとオブジェクト転送
 
 - 文書ID: ANP-P7
 - タイトル: 添付ファイルとオブジェクト転送
-- ステータス: リリース
+- 状態: リリース済み
 - バージョン: 1.2
 - 仕様セット: ANP のメッセージング 1.2
 - 原文言語: English / このページは日本語参考訳
@@ -18,12 +19,12 @@
 このプロファイルは、ANPの添付ファイルとオブジェクト転送セマティクスを定義します。
 
 1. 直接メッセージングとグループメッセージで添付ファイルを表現する方法。
-2. 統一された持ち運び方法 `attachment_manifest` E2EE と E2EE メッセージ以外のメッセージで
+2. 非E2EEとE2EEの両方で共通の`attachment_manifest`を運ぶ方法。
 3. 添付送信を3つの層に分割する方法:メッセージ平面、制御面、データ平面;
 4. 独立した HTTPS チャネルを使用してオブジェクトのコンテンツをアップロードおよびダウンロードする方法。
 5. オブジェクトの場所のURI、短期ダウンロードチケットとオブジェクトレベルの暗号化によるリンク漏れのリスクを減らす方法。
 6. オブジェクトコンテンツの完全性検証、アクセス制御、およびオブジェクトレベルの暗号化を実行する方法。
-7. 添付オブジェクトとダウンロードチケットは、P5とP6自身のデバイスベースの暗号化された配信中にDID-スコープを維持する方法。
+7. デバイスに結び付く暗号配信をP5/P6が担当し、添付オブジェクトとDownload TicketをDID単位に保つ方法。
 8. v1 ソリューションをクリア、シンプル、実装可能に保つ方法。
 
 このプロファイルは定義しません。
@@ -31,38 +32,38 @@
 - オブジェクトストレージの内部実装。
 - オブジェクトレビューとリスク管理戦略;
 - オブジェクトのダウンロードチケット用の特定の暗号化発行形式。
-- オブジェクトバイトストリームクロスドメインコールリンクをANPを介して転送します。
+- ANPのクロスドメイン呼び出し経路を通じたオブジェクトバイト列の中継。
 - `service-managed` オブジェクトの暗号化モード;
-- `wrapped_object_key`、ファイルレベルのキーの一致の議定書、直接リンクのダウンロード、ミラーのURI、インライン ダウンロードの切符および他のフォークされた道;
+- `wrapped_object_key`、ファイル単位の鍵合意、直接リンクのダウンロード、ミラーURI、インラインDownload Ticketなど別系統の経路。
 - 専用のサムネイルサブオブジェクトと専用チャンクリストオブジェクト。
 - デバイス固有の添付フィールド、デバイスごとのダウンロードチケット、またはデバイスごとのオブジェクトのライフサイクル。
 
 ---
 
-このページの先頭へ `did:wba`, `did:web`ほかの DID メソッドをサポート。 ID の解像度と検証は、 [プチスイム](../../message/02-identity-and-discovery.md#method-validation).
+本プロファイルは`did:wba`、`did:web`、その他対応DIDメソッドに適用します。本人性の解決・検証は[P2](02-identity-and-discovery.md#method-validation)に従います。
 
-## 2. 用語集と定性キーワード
+## 2. 用語と規範キーワード
 
-この記事では、 **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**, **NOT RECOMMENDED**, **MAY**, **OPTIONAL** 資本金を問わない要件として解釈される。
+本書の**MUST**、**MUST NOT**、**REQUIRED**、**SHALL**、**SHALL NOT**、**SHOULD**、**SHOULD NOT**、**RECOMMENDED**、**NOT RECOMMENDED**、**MAY**、**OPTIONAL**は、大文字表記で規範要件を表します。
 
 用語定義:
 
 - **添付ファイル**: ANPメッセージで参照される外部オブジェクトは、そのコンテンツはファイル、イメージ、オーディオ、ビデオ、または任意のバイトストリームであることができます。
 - **オブジェクト**: 添付ファイルに対応する実際のバイトコンテンツ。
-- **添付メッセージ**: ANP メッセージを 1 つ以上で送信 `attachment_manifest` 第一次ペイロードとして。
-- **添付ファイル マニフェスト**: オブジェクトの場所、要約、サイズ、メディアプロパティ、暗号化特性を記述する構造化されたオブジェクト。
-- **オブジェクトサービス**: 添付制御平面およびオブジェクトデータ平面のサービスを責任をもって対応可能。
-- **コントロールプラン**: 平面のところ `attachment.create_slot`, `attachment.commit_object`, `attachment.abort_object`, `attachment.get_download_ticket` ほかのプロトコルメソッドが配置されています。
-- **データプラン**: オブジェクトバイトが独立したHTTPS PUT / GETを介して転送される平面。
-- **ご挨拶**: `direct.send`, `group.send`, または `group.e2ee.send` 持ち運び `attachment_manifest` 飛行機。
-- **アップロードスロット**: 仮アップロード機能と、送信機が指定したメタデータの場所をアップロードする。
-- **コミットされたオブジェクト**: アップロードされたオブジェクトと、メッセージで参照することができます。
+- **Attachment Message**: 1つ以上の`attachment_manifest`を主ペイロードとして持つANPメッセージ。
+- **Attachment Manifest**: オブジェクトの場所、ダイジェスト、サイズ、メディア属性、暗号化属性を記述する構造化オブジェクト。
+- **Object Service**: 添付の制御プレーンとオブジェクトのデータプレーンを担うサービス。
+- **Control Plane**: `attachment.create_slot`、`attachment.commit_object`、`attachment.abort_object`、`attachment.get_download_ticket`などのプロトコルメソッドを扱う制御プレーン。
+- **Data Plane**: 独立したHTTPS PUT/GETでオブジェクトのバイト列を転送するデータプレーン。
+- **Message Plane**: `direct.send`、`group.send`、`group.e2ee.send`で`attachment_manifest`を運ぶメッセージプレーン。
+- **Upload Slot**: オブジェクトのアップロード用に送信者が申請する、一時的なアップロード機能とメタデータ領域。
+- **Committed Object**: アップロード済みでメッセージから参照できるオブジェクト。
 - **オブジェクトのURI**: オブジェクトの場所 URI. v1では、公開直接リンクと等しいとは言えない、locatorスタイルのHTTPSリソースアドレスです。
-- **チケットダウンロード**: オブジェクトのダウンロード時に利用される一時アクセスチケット。
-- **アクセス助成**: 添付ファイルメッセージが正常に送信された後、送信者サービスによって確立されたダウンロード承認レコード。
+- **Download Ticket**: オブジェクトを取得するときの一時アクセス券。
+- **Access Grant**: 添付メッセージの送信成功後、送信者サービスが添付に対して作るダウンロード認可記録。
 - **オブジェクトレベルの暗号化**: 輸送層の機密性にのみ頼るよりも、送信者によってローカルで行われるオブジェクトコンテンツの暗号化。
 - **オブジェクトキー**: オブジェクトの送信者によって個別に生成されたランダムな対称キー。
-- **ノインス**: オブジェクト暗号化で使用されて、v1 MTIの12バイトに固定される長さ。
+- **Nonce**: オブジェクト暗号化用nonce。v1の実装必須方式では12バイト固定。
 
 ---
 
@@ -70,13 +71,13 @@
 
 ### 3.1 3層分離
 
-添付ファイル転送 **MUST** 3面として理解される:
+添付転送は次の3プレーンとして理解しなければなりません（**MUST**）。
 
-1. **メッセージ側**: 送信する責任のみ `attachment_manifest` 受取人へ
-2. **制御平面**: アップロードスロットの申請、オブジェクトの送信、オブジェクトの破棄、ダウンロードチケット発行のみを担当する。
+1. **メッセージプレーン**: `attachment_manifest`を受信者へ送ることだけを担当します。
+2. **制御プレーン**: アップロードスロットの申請、オブジェクトの確定・破棄、Download Ticketの発行だけを担当します。
 3. **データ平面**: PUT/GET オブジェクトバイトのみの責任を負います。
 
-これら3つの責任 **MUST NOT** 混乱する。 特に:
+この3つの責務を混同してはいけません（**MUST NOT**）。特に:
 
 - コントロール・プランの方法は、添付ファイルを受信者に送信する責任を負わない。
 - メッセージ平面は、オブジェクトバイトを中継する責任はありません。
@@ -84,18 +85,18 @@
 
 ### 3.2 v1メインラインパス
 
-標準的な本管道 **MUST** v1 の場合:
+v1の標準経路は次でなければなりません（**MUST**）。
 
-1. 送信者コール `attachment.create_slot`;
+1. 送信者が`attachment.create_slot`を呼びます。
 2. オブジェクトレベルの暗号化が有効になっている場合、送信者は最初にファイルをローカルに暗号化します。
-3. 送信者は、オブジェクトを独立 HTTPS を介してアップロードします `PUT`;
-4. 送信者コール `attachment.commit_object`;
-5. 送信者は添付リストを通します `direct.send`, `group.send`, または `group.e2ee.send`、エンクロージャのプロフィールによって定義されるように;
-6. 受信機は公共をパースします `ANPMessageService` 添付リストを運ぶ元のメッセージ送信者のDIDに基づいて、ダウンロードチケットを入手 `attachment.get_download_ticket`;
-7. 受信機は独立した HTTPS によって目的をダウンロードします `GET object_uri` チケットを機内に持ち運びます `Authorization` ヘッダー;
-8. 受信機は消化器を検証します。オブジェクトが持っている場合 `object-e2ee` 有効化し、復号化と復号化の検証を実行します。
+3. 送信者が独立のHTTPS `PUT`でオブジェクトのバイト列をアップロードします。
+4. 送信者が`attachment.commit_object`を呼びます。
+5. そのメッセージを包むプロファイルの定義に従い、`direct.send`、`group.send`、`group.e2ee.send`で添付一覧を送ります。
+6. 受信者が添付一覧を運んだ元メッセージの送信者DIDから公開`ANPMessageService`を解決し、`attachment.get_download_ticket`でDownload Ticketを得ます。
+7. 受信者が独立のHTTPS `GET object_uri`で取得し、`Authorization`ヘッダーにTicketを付けます。
+8. ダイジェストを検証し、`object-e2ee`なら復号と復号後の検証を行います。
 
-コンクリート制御平面法に入る前に、次の概要はメッセージ平面、制御面、データ平面を接続します。 読者は「オブジェクトが存在する」の3つのステージを区別するのに役立ちます。 「メッセージが送信されました」と、セクション5でシナリオを読むときに「ダウンロードが承認されています」。
+具体的な制御メソッドに入る前に、次の全体図でメッセージ・制御・データの3プレーンを結び付けます。第5章の各場面で「オブジェクトが存在する」「メッセージを送信した」「取得が認可された」を区別する助けになります。
 
 ```mermaid
 flowchart TD
@@ -115,44 +116,44 @@ R --> TICKET --> GET
 GRANT --> TICKET
 ```
 
-*図P7-1: アタッチメント3面フローと承認チェーン(非放射性)の概要。*
+*図P7-1: 添付の3プレーンの流れと認可の連鎖（規範ではありません）。*
 
-この図は、そのことを強調しています `create_slot` / `commit_object` オブジェクトだけを作成します。 実際に受信機にダウンロードできるのは、添付メッセージが受け入れられた後に確立されたアクセス助成金であり、その後のダウンロードチケットの流れです。
+`create_slot` / `commit_object`はオブジェクトを作るだけです。受信者が取得できるようにするのは、添付メッセージ受理後のAccess Grantと、それに続くDownload Ticketの処理です。
 
 ### 3.3 2つのオブジェクトモードのみを保持
 
-v1 では、 `encryption_info.mode` **MUST** 以下2つの値のみが許可されます。
+v1では`encryption_info.mode`に次の2値だけを許可しなければなりません（**MUST**）。
 
 - `none`
 - `object-e2ee`
 
-`service-managed` **MUST NOT** プロトコルフィールドに表示します。
+`service-managed`をプロトコルフィールドに含めてはいけません（**MUST NOT**）。
 
-サーバー側ディスク暗号化、KMS、オブジェクト倉庫静的暗号化など 実装の詳細は、 **MUST NOT** プロトコルの相互運用性モードとしてモデル化します。
+サーバーのディスク暗号化、KMS、オブジェクトストレージの保存時暗号化は実装の詳細であり、プロトコル相互運用モードとしてモデル化してはいけません（**MUST NOT**）。
 
 ### 3.4 メッセージセキュリティとオブジェクトのセキュリティの分離
 
 添付ファイルには2つのセキュリティレベルがあります。
 
-1. **メッセージセキュリティ**: 決定する `transport-protected`, `direct-e2ee`と `group-e2ee` リストを運ぶこと;
-2. **オブジェクトセキュリティ**: 決定する `encryption_info.mode`.
+1. **メッセージの安全性**: 一覧を運ぶ`transport-protected`、`direct-e2ee`、`group-e2ee`によって決まります。
+2. **オブジェクトの安全性**: `encryption_info.mode`で決まります。
 
 v1 のルールは:
 
-- 添付オブジェクト **MUST** 利用条件 `mode = "none"` とりあえず `transport-protected` ホスティング;
-- 添付オブジェクト **MAY** 利用条件 `mode = "none"` または `mode = "object-e2ee"` とりあえず `direct-e2ee` または `group-e2ee` ホスティング。
+- `transport-protected`で運ぶ添付は`mode = "none"`を使わなければなりません（**MUST**）。
+- `direct-e2ee`または`group-e2ee`で運ぶ添付は`mode = "none"`または`mode = "object-e2ee"`を使ってかまいません（**MAY**）。
 
 ### 3.5 オブジェクトキーは E2EE マニフェストだけを配信
 
 いつか `mode = "object-e2ee"`:
 
-- `object_key_b64u` とりあえず `nonce_b64u` **MUST** 保護された添付ファイルのリストにのみ表示されます `direct-e2ee` または `group-e2ee`;
-- `object_key_b64u` とりあえず `nonce_b64u` **MUST NOT** 制御平面の要求で現われて下さい `attachment.create_slot` または `attachment.commit_object`;
-- の1 **未定義** 別々のファイルレベルのキー・コンファレンス・プロトコル。
+- `object_key_b64u`と`nonce_b64u`は、`direct-e2ee`または`group-e2ee`で保護された添付一覧だけに含めなければなりません（**MUST**）。
+- `attachment.create_slot`や`attachment.commit_object`の制御要求に`object_key_b64u`と`nonce_b64u`を含めてはいけません（**MUST NOT**）。
+- v1は別のファイル単位の鍵合意プロトコルを**定義しません**。
 
-### 3.6 v1 偽造されたパスを明示的に削除
+### 3.6 v1で明示的に除外する分岐経路
 
-v1 をクリア、シンプル、実装可能に保つためには、次のパスが **なし** プロフィールを入力することができます。
+v1を明確・簡潔・実装可能に保つため、以下の経路を本プロファイルに含めることは**認めません**。
 
 - `service-managed`
 - `wrapped_object_key_b64u`
@@ -167,25 +168,25 @@ v1 をクリア、シンプル、実装可能に保つためには、次のパ�
 
 ### 3.7 許可された組合せのマトリックス
 
-| ベアリングモード | `meta.security_profile` | 許可される `encryption_info.mode` | 缶缶缶 `object_key_b64u` リストに表示 |
+| 搬送モード | `meta.security_profile` | 許可する`encryption_info.mode` | 一覧に`object_key_b64u`を含められるか |
 |---|---|---|---|
-| 直接基盤 | `transport-protected` | `none` | ノーザン |
-| グループベース | `transport-protected` | `none` | ノーザン |
-| 直接E2EE | `direct-e2ee` | `none` / `object-e2ee` | あり あり |
-| グループE2EE | `group-e2ee` | `none` / `object-e2ee` | あり あり |
+| Direct Base | `transport-protected` | `none` | 不可 |
+| Group Base | `transport-protected` | `none` | 不可 |
+| Direct E2EE | `direct-e2ee` | `none` / `object-e2ee` | 可 |
+| Group E2EE | `group-e2ee` | `none` / `object-e2ee` | 可 |
 
 ### 3.8 マルチデバイス境界
 
 P7 は既存のオブジェクトとチケットの状態マシンを保持し、デバイスアドレスレイヤーを付加しません。
 
-1. 通常の添付ファイルメッセージ、制御プレーンリクエスト、アクセス付与、ダウンロードチケットは、送信者/リッカーDIDと既存のメッセージ、添付ファイル、オブジェクト、および直接またはグループコンテキストによってスコープ付けられます。 彼らを **MUST NOT** 含まれるもの `sender_device_id`, `recipient_device_id`, `requester_device_id`、または別のデバイスセレクター。
-2. 添付ファイルオブジェクトを1つアップロードします。 ドメインローカルマルチデバイスファンアウト **MUST NOT** デバイスごとに標準のP7オブジェクトまたはチケットを作成します。
-3. P5は、直接E2EEデバイス選択とデバイスごとの暗号テキスト配信を独占的に定義します。 P6は、MLSデバイスの葉と暗号化された配達のみを定義しています。 P7 は、内部の添付ファイルマニフェストとオブジェクトキーフィールドだけを定義し、デバイス **MUST NOT** Ratchet または MLS プライベートの状態を共有して、それらを配信します。
-4. 展開は、認証、ルーティング、または承認のために内部でデバイスコンテキストを使用するかもしれませんが、そのコンテキスト **MUST NOT** P7 ワイヤー分野としてシリアル化される。
+1. 通常の添付メッセージ、制御要求、Access Grant、Download Ticketの範囲は、送信者・要求者DIDと既存のメッセージ、添付、オブジェクト、Direct/Group文脈で定まります。`sender_device_id`、`recipient_device_id`、`requester_device_id`や他のデバイスセレクターを含めてはいけません（**MUST NOT**）。
+2. 1つの添付オブジェクトは1回アップロードします。ドメイン内の複数デバイス配信でデバイスごとに標準P7オブジェクトやTicketを作ってはいけません（**MUST NOT**）。
+3. Direct E2EEのデバイス選択とデバイス別暗号文配信はP5、MLSのデバイスリーフと暗号配信はP6だけが定義します。P7は内側の添付Manifestとオブジェクト鍵フィールドだけを定めます。配信のためにデバイス間でRatchetやMLSの秘密状態を共有してはいけません（**MUST NOT**）。
+4. 認証、経路、認可に内部のデバイス文脈を使うことはできますが、P7の通信フィールドにシリアライズしてはいけません（**MUST NOT**）。
 
 ---
 
-## 4. プロフィールの同一証明および依存関係
+## 4. プロファイル識別と依存関係
 
 ### 4.1 プロフィール名
 
@@ -195,12 +196,12 @@ P7 は既存のオブジェクトとチケットの状態マシンを保持し�
 
 ### 4.2 依存関係
 
-プロフィール **MUST** 以下に依存します。
+本プロファイルは次に依存しなければなりません（**MUST**）。
 
 - `anp.core.binding.v1`
 - `anp.identity.discovery.v1`
 
-プロフィール **MAY** 次のプロフィールと組み合わせて使用してください。
+次のプロファイルと組み合わせて使ってもかまいません（**MAY**）。
 
 - `anp.direct.base.v1`
 - `anp.group.base.v2`
@@ -340,59 +341,59 @@ sequenceDiagram
 
 ---
 
-## 6. 運送規則:直接メッセージング、グループメッセージング、暗号化、暗号化されていない
+## 6. 搬送規則：直接メッセージング、グループメッセージング、暗号化あり／なし
 
-### 6.1 直接基地で配られる
+### 6.1 Direct Baseでの搬送
 
-添付リストが送信されるとき `anp.direct.base.v1` ビア `direct.send`:
+添付ファイル一覧を `anp.direct.base.v1` の `direct.send` で送信する場合：
 
-- `meta.profile` **MUST** 等しく `anp.direct.base.v1`
-- `meta.security_profile` **MUST** 等しく `transport-protected`
-- `meta.content_type` **MUST** 等しく `application/anp-attachment-manifest+json`
-- `body.payload` **MUST** 添付メッセージオブジェクト
-- `auth.origin_proof` **MUST** 署名された直接ペイロード全体が P3 によって要求されるように存在し、結合します
-- それぞれの場所 `attachment_manifest.encryption_info.mode` **MUST** 等しいです `none`
+- `meta.profile` は `anp.direct.base.v1` と等しくなければならない（**MUST**）。
+- `meta.security_profile` は `transport-protected` と等しくなければならない（**MUST**）。
+- `meta.content_type` は `application/anp-attachment-manifest+json` と等しくなければならない（**MUST**）。
+- `body.payload` はAttachment Messageオブジェクトでなければならない（**MUST**）。
+- `auth.origin_proof` が存在し、P3の要件に従ってSigned Direct Payload全体を束縛しなければならない（**MUST**）。
+- 各 `attachment_manifest.encryption_info.mode` は `none` と等しくなければならない（**MUST**）。
 
-### 6.2 グループベースでキャリー
+### 6.2 Group Baseでの搬送
 
-添付リストが送信されるとき `anp.group.base.v2` ビア `group.send`:
+添付ファイル一覧を `anp.group.base.v2` の `group.send` で送信する場合：
 
-- `meta.profile` **MUST** 等しく `anp.group.base.v2`
-- `meta.security_profile` **MUST** 等しく `transport-protected`
-- `meta.content_type` **MUST** 等しく `application/anp-attachment-manifest+json`
-- `body.payload` **MUST** 添付メッセージオブジェクト
-- `auth.origin_proof` **MUST** P4 で要求される署名されたグループペイロード全体に存在し、結合します
-- 成功の応答 **SHOULD** 返品 `group_receipt`
-- それぞれの場所 `attachment_manifest.encryption_info.mode` **MUST** 等しいです `none`
+- `meta.profile` は `anp.group.base.v2` と等しくなければならない（**MUST**）。
+- `meta.security_profile` は `transport-protected` と等しくなければならない（**MUST**）。
+- `meta.content_type` は `application/anp-attachment-manifest+json` と等しくなければならない（**MUST**）。
+- `body.payload` はAttachment Messageオブジェクトでなければならない（**MUST**）。
+- `auth.origin_proof` が存在し、P4の要件に従ってSigned Group Payload全体を束縛しなければならない（**MUST**）。
+- 成功応答は `group_receipt` を返すことが望ましい（**SHOULD**）。
+- 各 `attachment_manifest.encryption_info.mode` は `none` と等しくなければならない（**MUST**）。
 
-### 6.3 直接E2EEで運ぶ
+### 6.3 Direct E2EEでの搬送
 
-添付リストが送信されるとき `anp.direct.e2ee.v1` または `anp.direct.e2ee.v2`:
+添付ファイル一覧を `anp.direct.e2ee.v1` または `anp.direct.e2ee.v2` で送信する場合：
 
-- セッションの確立後の通常のパスの下、外側 `meta.content_type` **MUST** は、 `application/anp-direct-cipher+json`
-- P5で許可されるアプリケーションメッセージパスを最初に運ぶ場合、外部 `meta.content_type` **MAY** は、 `application/anp-direct-init+json`
-- 添付ファイルリスト **MUST** 内側のビジネスオブジェクトとして表示されます `Application Plaintext` 暗号化の前に
-- 内部の層 `application_content_type` **MUST** 等しく `application/anp-attachment-manifest+json`
+- セッション確立後の通常経路では、外側の `meta.content_type` は `application/anp-direct-cipher+json` でなければならない（**MUST**）。
+- P5が認める、最初のinitにアプリケーションメッセージを載せる経路を使う場合、外側の `meta.content_type` は `application/anp-direct-init+json` でもよい（**MAY**）。
+- 添付ファイル一覧は、暗号化前の `Application Plaintext` の内部業務オブジェクトとして含まれなければならない（**MUST**）。
+- 内側の `application_content_type` は `application/anp-attachment-manifest+json` と等しくなければならない（**MUST**）。
 
-### 6.4 グループE2EEで提供
+### 6.4 Group E2EEでの搬送
 
-添付リストが送信されるとき `group.e2ee.send` とりあえず `anp.group.e2ee.v1` または `anp.group.e2ee.v2`:
+添付ファイル一覧を `anp.group.e2ee.v1` または `anp.group.e2ee.v2` の `group.e2ee.send` で送信する場合：
 
-- 外の層 `meta.content_type` **MUST** 固定する `application/anp-group-cipher+json`
-- 外の層 `body` **MUST NOT** 直接、クリアテキスト添付リストが表示されます
-- 添付ファイルリスト **MUST** 内側のビジネスオブジェクトとして表示されます `Group Application Plaintext` 暗号化の前に
-- 内部の層 `application_content_type` **MUST** 等しく `application/anp-attachment-manifest+json`
+- 外側の `meta.content_type` は `application/anp-group-cipher+json` に固定しなければならない（**MUST**）。
+- 外側の `body` に平文の添付ファイル一覧を直接含めてはならない（**MUST NOT**）。
+- 添付ファイル一覧は、暗号化前の `Group Application Plaintext` の内部業務オブジェクトとして含まれなければならない（**MUST**）。
+- 内側の `application_content_type` は `application/anp-attachment-manifest+json` と等しくなければならない（**MUST**）。
 
-### 6.5 フィールド所有権
+### 6.5 フィールドの所管
 
-- ダイレクトベースとグループベースの添付メッセージは、プロファイルのDIDまたはグループDIDアドレスを囲むだけを使用します。 P7 はデバイスセレクタを追加しません。
-- `attachment_message` とりあえず `attachment_manifest` デバイス識別子は含まないで下さい。
-- P5 v2 ダイレクト E2EE エンベロープは、必要な送信者と受信者のデバイスフィールドを運ぶ。P6 v2 MLS のエンベロープは、その必須デバイスの結合を処理します。 外部フィールドはP5やP6のみで解釈されます。 デバイスセレクタはP7で取得しないv1 E2EE封筒。
-- `object_key_b64u` とりあえず `nonce_b64u` 暗号化された添付ファイルマニフェストの中に残っています。 P7は、別々のデバイスキーディストリビューションリクエストを導入しません。
+- Direct BaseとGroup Baseの添付ファイルメッセージは、それを包むProfileのDIDまたはGroup DIDによるアドレッシングだけを使う。P7はデバイス選択子を追加しない。
+- `attachment_message` と `attachment_manifest` はデバイス識別子を含まない。
+- P5 v2のDirect E2EEエンベロープは、必須の送信元および受信先デバイスフィールドを持つ。P6 v2のMLSエンベロープは、必須のデバイス束縛を持つ。これらの外側のフィールドはP5またはP6だけが解釈する。v1のE2EEエンベロープに、P7を通じてデバイス選択子が追加されることはない。
+- `object_key_b64u` と `nonce_b64u` は暗号化された添付ファイルマニフェストの内部に置く。P7はデバイスごとの別個の鍵配布要求を導入しない。
 
 ---
 
-## 7. `attachment_message` とりあえず `attachment_manifest` オブジェクト
+## 7. `attachment_message` と `attachment_manifest` オブジェクト
 
 ### 7.1 添付ファイル メッセージトップレベル構造
 
@@ -425,19 +426,19 @@ sequenceDiagram
 
 ルール:
 
-- `attachments` **MUST** 存在して空にしない
-- `caption` **MAY** 存在している
-- `primary_attachment_id` **MAY** 存在;それが存在する場合、 **MUST** 既存のポイント `attachment_id` でん `attachments`
+- `attachments` は存在し、空であってはならない（**MUST**）。
+- `caption` は存在してもよい（**MAY**）。
+- `primary_attachment_id` は存在してもよい（**MAY**）。存在する場合、`attachments` 内に存在する `attachment_id` を指さなければならない（**MUST**）。
 
 ### 7.2 `attachment_id` スコープ
 
-- `attachment_id` **MUST** 単一の添付ファイルメッセージ内で一意に
-- `attachment_id` **保証なし** メッセージを一堂に、世界一のユニークであること
-- チケットのバインディング、承認レコード、または監査記録をダウンロードします。 **MUST** 利用条件 `(message_id, attachment_id)` または `(object_uri, message_id, attachment_id)`, だけでなく、 `attachment_id`
+- `attachment_id` は、単一のAttachment Message内で一意でなければならない（**MUST**）。
+- `attachment_id` は、メッセージをまたいで大域的に一意であることは**保証されない**。
+- Download Ticketの束縛、認可記録、監査記録では、`attachment_id` だけでなく、`(message_id, attachment_id)` または `(object_uri, message_id, attachment_id)` を使わなければならない（**MUST**）。
 
-### 7.3 シングル `attachment_manifest`
+### 7.3 個々の `attachment_manifest`
 
-とりあえず `attachment_manifest` **MUST** 含まれるもの:
+各 `attachment_manifest` は、次のフィールドを含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `mime_type`
@@ -446,38 +447,38 @@ sequenceDiagram
 - `access_info`
 - `encryption_info`
 
-とりあえず `attachment_manifest` **MAY** 含まれるもの:
+各 `attachment_manifest` は、次のフィールドを含んでもよい（**MAY**）。
 
 - `filename`
 - `media_info`
 
 フィールドの説明:
 
-- `filename`: ファイル名を表示 **MAY**
-- `mime_type`: 元のファイルの MIME タイプ; **MUST**
-- `size`: オブジェクトバイトサイズ、小文字文字列をアップロードする。 **MUST**
-- `digest`: オブジェクトバイトのサマリーをアップロードする。 **MUST**
-- `access_info`: オブジェクトのダウンロード位置情報; **MUST**
-- `encryption_info`: オブジェクトレベルの暗号化メッセージ; **MUST**
-- `media_info`: 写真、オーディオ、ビデオなどのメディアオブジェクトの補足説明。 **MAY**
+- `filename`：表示用ファイル名。任意（**MAY**）。
+- `mime_type`：元のファイルのMIMEタイプ。必須（**MUST**）。
+- `size`：アップロードするオブジェクトのバイト数を表す10進文字列。必須（**MUST**）。
+- `digest`：アップロードするオブジェクトのバイト列のダイジェスト。必須（**MUST**）。
+- `access_info`：オブジェクトのダウンロード先を特定する情報。必須（**MUST**）。
+- `encryption_info`：オブジェクト単位の暗号化情報。必須（**MUST**）。
+- `media_info`：画像、音声、動画などのメディアオブジェクトの補足情報。任意（**MAY**）。
 
 ### 7.4 `digest`
 
-`digest` **MUST** 含まれるもの:
+`digest` は次を含まなければならない（**MUST**）。
 
 - `alg`
 - `value_b64u`
 
 ルール:
 
-- `digest.alg` v1 で **MUST** 固定する `sha-256`
-- `digest.value_b64u` **MUST** アップロードオブジェクトバイトのSHA-256ダイジェストになります
-- いつか `encryption_info.mode = "none"`、消化器は平文のバイトに相当します
-- いつか `encryption_info.mode = "object-e2ee"`、消化は暗号文バイトに相当します
+- v1では `digest.alg` を `sha-256` に固定しなければならない（**MUST**）。
+- `digest.value_b64u` は、アップロードするオブジェクトのバイト列のSHA-256ダイジェストでなければならない（**MUST**）。
+- `encryption_info.mode = "none"` の場合、ダイジェストは平文のバイト列に対応する。
+- `encryption_info.mode = "object-e2ee"` の場合、ダイジェストは暗号文のバイト列に対応する。
 
 ### 7.5 `access_info`
 
-構造の `access_info` 以下は、
+`access_info` の構造は次のとおり。
 
 ```json
 {
@@ -487,33 +488,33 @@ sequenceDiagram
 
 ルール:
 
-1. `object_uri` **MUST** なるほど `https://` ページの先頭へ
+1. `object_uri` は `https://` のURLでなければならない（**MUST**）。
 2. `object_uri` v1 のロケータスタイルのオブジェクトアドレスを表します。永久的な公開直接リンクではありません
-3. 受信機 **MUST** コール `attachment.get_download_ticket` ダウンロード前に
-4. 受信機 **MUST** パブリックを解析する `ANPMessageService` 添付リストを運ぶ元のメッセージ送信者のDIDに基づいて。
-5. グループシナリオでは、上記のオリジナルメッセージ送信者DID **MUST** 添付リストを運ぶ元のグループメッセージ送信機から取られる(例: `group.incoming.meta.sender_did`)
-6. `attachment.get_download_ticket` **MUST** 送信先へ `serviceDid` 送信者の公開サービスに対応。
-7. 受信機のダウンロード時, **MUST** トピックス `GET` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `object_uri` チケットを機内に持ち運びます `Authorization` ヘッダー。
-8. 呼び出し者 **MUST NOT** URL ドメイン名に基づいて制御平面サービスが推測されるだけ `object_uri`
+3. 受信者は、ダウンロード前に `attachment.get_download_ticket` を呼び出さなければならない（**MUST**）。
+4. 受信者は、添付ファイル一覧を載せた元のメッセージの送信者DIDに基づき、その公開 `ANPMessageService` を解決しなければならない（**MUST**）。
+5. グループの場合、上記の元の送信者DIDは、添付ファイル一覧を載せた元のグループメッセージの送信者（例：`group.incoming.meta.sender_did`）から取得しなければならない（**MUST**）。
+6. `attachment.get_download_ticket` は、送信者の公開サービスに対応する `serviceDid` に送信しなければならない（**MUST**）。
+7. 受信者は、ダウンロード時に `object_uri` に対して `GET` を行い、`Authorization` ヘッダーにチケットを含めなければならない（**MUST**）。
+8. 呼び出し側は、`object_uri` のURLドメイン名だけから制御プレーンのサービスを推測してはならない（**MUST NOT**）。
 
 ### 7.6 `media_info`
 
-`media_info` 映像、音声、動画などのメディアオブジェクトに適しています。 推奨分野:
+`media_info` は、画像、音声、動画などのメディアオブジェクトに適している。推奨フィールド：
 
 - `width`
 - `height`
 - `duration_ms`
 - `codec`
 
-数値フィールドが存在する場合、 **MUST** 正規の文字列を使用します。
+数値フィールドが存在する場合、10進文字列を使わなければならない（**MUST**）。
 
 ### 7.7サムネイルとチャンク
 
-v1 は専用のものを定義しません。 `thumbnail` フィールド、または、専用の定義を定義する `chunking_info` フィールド。
+v1は、専用の `thumbnail` フィールドも、専用の `chunking_info` フィールドも定義しない。
 
-サムネイルが必要な場合は、送信者 **SHOULD** サムネイルを通常の添付ファイルとして送信します。
+サムネイルが必要な場合、送信者は通常の添付ファイルとして送信することが望ましい（**SHOULD**）。
 
-大きいファイルがチャンクにアップロードする必要がある場合、 **SHOULD** HTTPアップロード実装内で内部で行われる。このプロファイルのマニフェスト構造は変更されません。
+大きなファイルを分割アップロードする必要がある場合、HTTPアップロード実装の内部で処理することが望ましい（**SHOULD**）。このProfileのマニフェスト構造は変わらない。
 
 ---
 
@@ -521,7 +522,7 @@ v1 は専用のものを定義しません。 `thumbnail` フィールド、ま�
 
 ### 8.1 `encryption_info`
 
-`encryption_info` **MUST** 次の2つの構造の1つになります。
+`encryption_info` は、次の2つの構造のいずれかでなければならない（**MUST**）。
 
 暗号化されていないオブジェクト:
 
@@ -545,30 +546,30 @@ v1 は専用のものを定義しません。 `thumbnail` フィールド、ま�
 
 ルール:
 
-1. `mode` **MUST** いずれかの `none` または `object-e2ee`
+1. `mode` は `none` または `object-e2ee` のいずれかでなければならない（**MUST**）。
 2. `mode = "none"` 送信者は、オブジェクトコンテンツをローカルに暗号化しなかったことを示します。
-3. `mode = "object-e2ee"` つまり、送信者は最初にオブジェクトをローカルに暗号化し、暗号化されたテキストバイトをアップロードすることを意味します。
-4. インフォメーション `transport-protected` ホスティング, `mode` **MUST** は、 `none`
-5. `object_key_b64u` とりあえず `nonce_b64u` **MUST NOT** 持ち運びする添付ファイルの一覧に表示 `transport-protected`
-6. `service-managed`、キーラッピングアルゴリズムとファイルレベルのキー契約は、このプロファイルに所属しません
+3. `mode = "object-e2ee"` は、送信者がまずローカルでオブジェクトを暗号化し、その暗号文のバイト列をアップロードすることを意味する。
+4. `transport-protected` で搬送する場合、`mode` は `none` でなければならない（**MUST**）。
+5. `transport-protected` で搬送する添付ファイル一覧に、`object_key_b64u` と `nonce_b64u` を含めてはならない（**MUST NOT**）。
+6. `service-managed`、鍵ラッピングアルゴリズム、ファイル単位の鍵合意は、このProfileの範囲外である。
 
 ### 8.2 MTIアルゴリズム `object-e2ee`
 
-とりあえず `object-e2ee` MTIアルゴリズム **MUST** v1 の場合:
+v1で実装必須の `object-e2ee` アルゴリズムは、次のとおりである（**MUST**）。
 
 - `object_cipher = "chacha20-poly1305"`
 - `object_key_b64u`: 32バイトのランダム対称キー
 - `nonce_b64u`: 12バイトランダム nonce
-- `plaintext_size`: バイト、小数文字列の元のファイル長さ
+- `plaintext_size`：元のファイルのバイト長を表す10進文字列。
 
-### 8.3 送信者の暗号化手順(仮)
+### 8.3 送信者の暗号化手順（規範）
 
-いつか `encryption_info.mode = "object-e2ee"`、送信者 **MUST** 次の手順を実行します。
+`encryption_info.mode = "object-e2ee"` の場合、送信者は次の手順を実行しなければならない（**MUST**）。
 
-1. 元のファイルバイトを、記録したように読みます `P`
-2. 新規ランダム32バイトオブジェクトキーを生成する `K`
-3. ランダム12バイトのnonceを生成 `N`
-4. とりあえず `AAD = empty byte string`
+1. 元のファイルのバイト列を読み取り、`P` とする。
+2. 新しいランダムな32バイトのオブジェクト鍵 `K` を生成する。
+3. 新しいランダムな12バイトのnonce `N` を生成する。
+4. `AAD = empty byte string` とする。
 5. 計算:
 
 ```text
@@ -580,35 +581,35 @@ C = ChaCha20-Poly1305-Encrypt(
     )
 ```
 
-6. オブジェクトは、Object サービスにアップロードされたバイト **MUST** は、 `C`
-7. `attachment_manifest.size` **MUST** と等しい非相続文字列である `len(C)`
-8. `attachment_manifest.digest` **MUST** 等しく `sha-256(C)`
-9. `encryption_info.plaintext_size` **MUST** と等しい非相続文字列である `len(P)`
-10. `mime_type` **MUST** 今後も、暗号文オブジェクトMIME型ではなく、元のファイルのMIMEタイプを表現し続けます。
+6. Object Serviceにアップロードするオブジェクトのバイト列は `C` でなければならない（**MUST**）。
+7. `attachment_manifest.size` は `len(C)` と等しい10進文字列でなければならない（**MUST**）。
+8. `attachment_manifest.digest` は `sha-256(C)` と等しくなければならない（**MUST**）。
+9. `encryption_info.plaintext_size` は `len(P)` と等しい10進文字列でなければならない（**MUST**）。
+10. `mime_type` は、暗号文オブジェクトではなく元のファイルのMIMEタイプを引き続き表さなければならない（**MUST**）。
 
 追加要件:
 
-- 各コミットされたオブジェクト **MUST** ランダムに新しい使用 `K`
-- カレンダー **MUST NOT** 同じ再利用 `(K, N)` 組み合わせ
-- 同じファイルの内容が繰り返し送信される場合でも、送信者 **SHOULD** 新しく再生する `K` とりあえず `N`
-- `object_key_b64u` **MUST NOT** P5のラチェットキーから直接取られた、また **MUST NOT** P6のMLS epochの秘密または他のセッションキーから直接取られた
+- コミットする各オブジェクトは、新しいランダムな `K` を使わなければならない（**MUST**）。
+- 送信者は、同じ `(K, N)` の組み合わせを再利用してはならない（**MUST NOT**）。
+- 同じファイル内容を繰り返し送信する場合でも、送信者は新しい `K` と `N` を生成し直すことが望ましい（**SHOULD**）。
+- `object_key_b64u` をP5のラチェット鍵から直接取得してはならず（**MUST NOT**）、P6のMLS epoch secretや他のセッション鍵から直接取得してもならない（**MUST NOT**）。
 
-### 8.4 `expected_size` とりあえず `plaintext_size`
+### 8.4 `expected_size` と `plaintext_size`
 
-インフォメーション `chacha20-poly1305` v1 MTI の場合:
+v1の実装必須アルゴリズム `chacha20-poly1305` では：
 
 - オブジェクトサイズをアップロード = 元ファイルサイズ + 16バイト認証タグ
-- 送信者が記入した場合 `expected_size` でん `attachment.create_slot`, 値 **SHOULD** アップロードオブジェクトのサイズではなく、元のファイルサイズにポイント
-- 場合 `mode = "object-e2ee"`、送信者 **SHOULD** 元のファイルサイズをローカルに保存して、 `encryption_info.plaintext_size` 後で書くことができます
+- 送信者が `attachment.create_slot` の `expected_size` を設定する場合、その値は元のファイルサイズではなく、アップロードするオブジェクトのサイズを指すことが望ましい（**SHOULD**）。
+- `mode = "object-e2ee"` の場合、送信者は後で `encryption_info.plaintext_size` を記入できるよう、元のファイルサイズもローカルに保存することが望ましい（**SHOULD**）。
 
-### 8.5 受信機の検証と復号化手順(仮)
+### 8.5 受信者の検証および復号手順（規範）
 
-受信機がオブジェクトバイトを取得するとき:
+受信者がオブジェクトのバイト列を取得した際は：
 
-1. **MUST** ダウンロードしたバイトの長さが等しいことを最初に確認します `attachment_manifest.size`
-2. **MUST** 計算 `sha-256(downloaded bytes)` とそれを比較して下さい `attachment_manifest.digest`
+1. まず、ダウンロードしたバイト列の長さが `attachment_manifest.size` と等しいことを検証しなければならない（**MUST**）。
+2. `sha-256(downloaded bytes)` を計算し、`attachment_manifest.digest` と比較しなければならない（**MUST**）。
 3. 場合 `encryption_info.mode = "none"`、それは成功した確認の後で上部の層に渡ることができます。
-4. 場合 `encryption_info.mode = "object-e2ee"`、受信機 **MUST** 使用:
+4. `encryption_info.mode = "object-e2ee"` の場合、受信者は次を使わなければならない（**MUST**）。
 
 ```text
 P = ChaCha20-Poly1305-Decrypt(
@@ -619,22 +620,22 @@ P = ChaCha20-Poly1305-Decrypt(
     )
 ```
 
-5. 復号が失敗した場合、受取人が **MUST** 添付ファイルを拒否する
-6. 復号化が成功すると、受信機 **MUST** かどうかを検証する `len(P)` 等しいです `plaintext_size`
-7. 検証を渡すと、受信機は上層ビジネスに平文バイトを渡すことができます
+5. 復号に失敗した場合、受信者は添付ファイルを拒否しなければならない（**MUST**）。
+6. 復号に成功した場合、受信者は `len(P)` が `plaintext_size` と等しいことを検証しなければならない（**MUST**）。
+7. 検証に成功した後、受信者は平文のバイト列を上位の業務処理に渡すことができる。
 
 ### 8.6 オブジェクトのキー配布ルール
 
 v1 の標準的なオブジェクトキー配布パスは 1 つだけあります。
 
-- 添付メッセージ自体が保護されるとき `direct-e2ee` または `group-e2ee`、送信者 **MAY** 直接入れる `object_key_b64u` とりあえず `nonce_b64u` 内側に `attachment_manifest`
+- 添付ファイルメッセージ自体が `direct-e2ee` または `group-e2ee` で保護されている場合、送信者は `object_key_b64u` と `nonce_b64u` を内側の `attachment_manifest` に直接入れてもよい（**MAY**）。
 - 受信機がE2EEメッセージからオブジェクトキーを取得した後、制御面でチケットを取得し、データ平面を介して暗号文オブジェクトをダウンロードします。
 
 つまり、
 
-- の1 **必要性無し** 添付ファイル用に別々に複雑なキー合意プロトコルを設計する
+- v1では、添付ファイル用に複雑な鍵合意プロトコルを別途設計する**必要はない**。
 - グループシナリオでは、グループメッセージの復号化が可能な人はオブジェクトキーを取得できます。
-- の1 **未保証** 権利の遡及的撤退; グループから削除されたメンバーが以前にオブジェクトキーとオブジェクトコンテンツを取得している場合、この仕様は、その後取得した情報を削除することを約束しません。
+- v1は**権限の遡及的な撤回を保証しない**。グループから削除されたメンバーが、それ以前にオブジェクト鍵とオブジェクト内容を取得済みである場合、この仕様は、その取得済み情報を後から消去することを約束しない。
 
 ---
 
@@ -642,63 +643,63 @@ v1 の標準的なオブジェクトキー配布パスは 1 つだけありま�
 
 ### 9.1 チケット対象
 
-ダウンロードチケットの目的は、正当な受取人が転送を防止するものではありませんが、次のことを目的としています。
+Download Ticketの目的は、正当な受信者による転送を完全に阻止することではなく、次を実現することにある。
 
-1. リストに基づいてオブジェクトを直接ダウンロードするから、第三者を防ぐ
-2. 防腐剤 `object_uri` 長期間の公共リンクになるから
-3. リクエストとメッセージのコンテキストへのダウンロード権限を制約する
-4. 監査の実施、制限率の制限、およびオブジェクトサービスのキャンセルのための開始点を提供
+1. 第三者が一覧だけを使ってオブジェクトを直接ダウンロードすることを防ぐ。
+2. `object_uri` が長期間有効な公開リンクになることを防ぐ。
+3. ダウンロード認可を、明確な要求者とメッセージのコンテキストに限定する。
+4. オブジェクトサービスの監査、レート制限、認可の取消しを実装するための基盤を提供する。
 
-### 9.2 アクセス助成金
+### 9.2 Access Grantの意味
 
-`attachment.create_slot` とりあえず `attachment.commit_object` は、 **のみ** オブジェクトの作成に責任があり、任意の受信者にダウンロード権限を付与しません。
+`attachment.create_slot` と `attachment.commit_object` が担うのは、オブジェクトの作成**だけ**であり、どの受信者にもダウンロード権限を付与しない。
 
-送信者メッセージの受信者によるダウンロードのためにオブジェクトが利用可能である場合、 **MUST** アクセス助成金により決定します。
+メッセージの受信者がオブジェクトをダウンロードできる時点は、Access Grantによって決定しなければならない（**MUST**）。
 
-いつか `direct.send`, `group.send`, または `group.e2ee.send` 添付ファイルを取り扱うことは、送信者サービスまたはグループホスト、送信者側システムによって受け入れられます **MUST** 各添付ファイルごとにアクセス付与を行います。
+添付ファイルを載せた `direct.send`、`group.send`、または `group.e2ee.send` が送信者サービスまたはGroup Hostに受理された時点で、送信者側のシステムは各添付ファイルについてAccess Grantを作成しなければならない（**MUST**）。
 
-アクセス助成金 少なくとも **MUST** bind:: ディレクティブ
+Access Grantは、少なくとも次を束縛しなければならない（**MUST**）。
 
 - `message_id`
 - `attachment_id`
 - `object_uri`
 - `message_security_profile`
-- `message_target_did` 直接メッセージングのコンテキストで;または `group_did` グループメッセージングのコンテキスト
+- 直接メッセージの場合は `message_target_did`、グループメッセージの場合は `group_did`。
 
-アクセス・グラントは、対象となるDIDやグループ・コンテクストをローカルデバイスではなく、許可します。 ドメインローカルデバイスデリバリーは、実装の細部を残します。
+Access Grantは、対象DIDまたはGroupのコンテキストを認可するものであり、1台のローカルデバイスを認可するものではない。ドメイン内のデバイスへの配信は、実装の詳細にとどまる。
 
 ### 9.3 境界の `intended_target`
 
-`attachment.create_slot.body.intended_target` 送信者のアップロードフェーズのポリシーヒントです。
+`attachment.create_slot.body.intended_target` は、送信者のアップロード段階におけるポリシーのヒントにすぎない。
 
 `intended_target`:
 
-- **MAY** オブジェクトサービスでサイズ、種類、または保持ポリシーの決定を事前に行なうために使用される
-- **MUST NOT** ダウンロード許可のベースとしてのみ使用
+- Object Serviceがサイズ、種類、保持ポリシーを事前に判断するために使ってもよい（**MAY**）。
+- ダウンロード認可の唯一の根拠として使ってはならない（**MUST NOT**）。
 
-実際のダウンロード承認ベース **MUST** アクセス助成金を正常に送信しました。
+実際のダウンロード認可の根拠は、送信成功に伴うAccess Grantから得なければならない（**MUST**）。
 
-### 9.4 チケットの結合
+### 9.4 チケットの束縛
 
-v1で、チケットをダウンロード **MUST** 少なくとも次のコンテキストをバインドします。
+v1のDownload Ticketは、少なくとも次のコンテキストを束縛しなければならない（**MUST**）。
 
 - `attachment_id`
 - `object_uri`
 - `requester_did`
 - `message_id`
 - `message_security_profile`
-- `message_target_did` 直接メッセージングのコンテキストで;または `group_did` グループメッセージングのコンテキスト
+- 直接メッセージの場合は `message_target_did`、グループメッセージの場合は `group_did`。
 - `expires_at`
 
-標準的な切符の結合 **MUST NOT** 含まれるもの `requester_device_id` または別のデバイスセレクター。 配布は、チケットを発行する前にローカルデバイスの状態を使うかもしれませんが、その状態はP7ワイヤーやチケット結合フィールドになりません。
+標準のチケット束縛に、`requester_device_id` や他のデバイス選択子を含めてはならない（**MUST NOT**）。デプロイ環境ではチケット発行前にローカルデバイスの状態を利用できるが、その状態はP7の通信上のフィールドにも、チケット束縛のフィールドにもならない。
 
-### 9.5 チケットの生涯と使用
+### 9.5 チケットの有効期間と利用
 
-- チケットダウンロード **SHOULD** 短期券は
-- デフォルト有効期間 **SHOULD NOT** 超過5分
-- 非常に敏感な主題のために **MAY** 使い捨てチケットを使用する
-- チケットダウンロード **MUST** 送信する HTTP 経由で `Authorization` ヘッダー
-- チケットダウンロード **MUST NOT** URL クエリパラメータで実行
+- Download Ticketは短期間有効なチケットとすることが望ましい（**SHOULD**）。
+- デフォルトの有効期間は5分を超えないことが望ましい（**SHOULD NOT**）。
+- 機密性が特に高い対象では、使い捨てチケットを使ってもよい（**MAY**）。
+- Download TicketはHTTPの `Authorization` ヘッダーで送信しなければならない（**MUST**）。
+- Download TicketをURLのクエリパラメータで送信してはならない（**MUST NOT**）。
 
 v1 の固定ダウンロード方法は:
 
@@ -707,36 +708,36 @@ GET {object_uri}
 Authorization: Bearer {download_ticket}
 ```
 
-### 9.6 チケット発行の有効化
+### 9.6 チケット発行時の検証
 
-オブジェクト制御サービスが処理する際 `attachment.get_download_ticket`, **MUST** チェック:
+オブジェクト制御サービスは、`attachment.get_download_ticket` を処理する際、次を検証しなければならない（**MUST**）。
 
 1. `meta.target.kind = "service"`
-2. `meta.target.did` **MUST** 公益者と等しい `ANPMessageService.serviceDid` 元の添付ファイルの送信元DIDから解決しました。
+2. `meta.target.did` は、元の添付ファイルメッセージの送信者DIDから解決した公開 `ANPMessageService.serviceDid` と等しくなければならない（**MUST**）。
 3. `requester_did = meta.sender_did`
-4. アクセス助成金は、 `(message_id, attachment_id, object_uri)` 存在している
-5. `message_security_profile` アクセス助成金と一貫して
-6. 直接メッセージングコンテキストが使用されるとき、 `message_target_did` 方針を遵守し、
-7. グループメッセージングコンテキストが入力されると、 `group_did` 存在し、 `requester_did` 現在、グループアクセスポリシーに依って依存しています
+4. `(message_id, attachment_id, object_uri)` に対応するAccess Grantが存在すること。
+5. `message_security_profile` がAccess Grantと一致すること。
+6. 直接メッセージのコンテキストでは、`message_target_did` が存在し、ポリシーに適合すること。
+7. グループメッセージのコンテキストでは、`group_did` が存在し、`requester_did` が現在もグループのアクセスポリシーに適合していること。
 
-P7 は、この検証のために、リクエストデバイスセレクタを必要としません。 ローカルデバイス認証は、相互運用可能なリクエストの外に残っています。
+P7は、この検証で要求者のデバイス選択子を要求しない。ローカルデバイスの認証は、相互運用する要求の範囲外である。
 
 ### 9.7 クロスサービス同期
 
-の1 **別々に標準化されない** 複数の内部サービス間のアクセスの補助同期プロトコル。
+v1は、複数の内部サービス間でAccess Grantを同期するプロトコルを**別途標準化しない**。
 
-デフォルトv1パスでは、ダウンロードチケットは発行されます `ANPMessageService` 添付メッセージの元の送信者によって露出される。 パブリックサービスエントリーが内部で独立したオブジェクトサービスにルーティングするかどうかは、実装の詳細です。 デプロイメントがオブジェクト制御コンポーネントを内部に分離する場合、実装 **MUST** 外部から公開されたサービスは、ローカルの状態または内部同期からダウンロードチケットを発行するために必要なアクセス付与を取得できるようにします。
+v1のデフォルト経路では、添付ファイルメッセージの元の送信者が公開する `ANPMessageService` がDownload Ticketを発行する。その公開サービス入口が内部で独立したObject Serviceにルーティングするかどうかは実装の詳細である。オブジェクト制御コンポーネントを内部で分離する場合、実装は、外部公開サービスがチケット発行に必要なAccess Grantをローカル状態または内部同期から取得できるようにしなければならない（**MUST**）。
 
 ### 9.8 メンバー変更後のアクセス境界
 
-の1 **反復的な退会は保証しません**.
+v1は**権限の遡及的な撤回を保証しない**。
 
 つまり、
 
-- オブジェクトサービス **SHOULD** 現在のグループの状態に基づいて削除されたメンバーに新しいダウンロードチケットを発行することを拒否する
-- しかし、オブジェクトバイト、オブジェクトキー、またはダウンロードしたコンテンツが以前に正当なメンバーに達した場合、この仕様 **約束しない** 取得したアクセス機能を再考する
+- Object Serviceは、現在のグループ状態に基づき、削除されたメンバーへの新しいDownload Ticketの発行を拒否することが望ましい（**SHOULD**）。
+- ただし、オブジェクトのバイト列、オブジェクト鍵、またはダウンロード済み内容が以前に正当なメンバーに届いている場合、本仕様は、その取得済みアクセス能力を後から取り消すことを**約束しない**。
 
-P7 のもう一つの重要な境界は、オブジェクトの存在がオブジェクトのダウンロード性を阻害しないということです。 以下の図は、オブジェクトのコミットメント、メッセージの受け入れ、アクセス付与の作成、チケット発行、最終ダウンロードを1つの承認チェーンに接続し、その実装者は正しくアクセス制御を適用できるようにします。
+P7のもう1つの重要な境界は、オブジェクトが存在しても、そのオブジェクトをダウンロードできるとは限らないことである。次の図は、オブジェクトのコミット、メッセージの受理、Access Grantの作成、チケットの発行、最終的なダウンロードを1つの認可の連鎖として結び付け、実装者がアクセス制御を正しく適用できるようにする。
 
 ```mermaid
 sequenceDiagram
@@ -759,27 +760,27 @@ S-->>R: download_ticket
 R->>O: GET object_uri + Authorization
 ```
 
-*図P7-2:アクセス付与とダウンロードチケット(非定着)の認可チェーン。*
+*図P7-2：Access GrantとDownload Ticketによる認可の連鎖（非規範）。*
 
-そのため、承認申請書の承認 `attachment.get_download_ticket` だけでなく、メッセージのコンテキストやアクセスグラントに依存する必要があります。 `object_uri` またはのみ `intended_target` アップロードステージの左から左へ。
+したがって、`attachment.get_download_ticket` の認可は、`object_uri` だけ、またはアップロード段階で残された `intended_target` だけに基づけず、メッセージのコンテキストとAccess Grantに基づくべきである。
 
-### 9.9 エージェントID移行後の履歴アクセス助成
+### 9.9 Agent DID移行後の過去のAccess Grant
 
-歴史・歴史 `attachment_manifest` オブジェクトとアクセスの助成金 **MUST NOT** エージェント DID が変更されたときに書き換えられます。
+Agent DIDが変わっても、過去の `attachment_manifest` オブジェクトとAccess Grantを書き換えてはならない（**MUST NOT**）。
 
-直接メッセージアクセス付与名が以前の受信者DIDと現在のリクエスト者が、その成功者DIDを提示した場合、オブジェクトサービス **MAY** 助成金のDIDからP2移行を検証した後にのみ、同じ内部の付与を要求するマップ `requester_did` 保有する事業方針は、返済保証を承諾します。 かわい `provider_asserted` 歴史的添付ファイルへのアクセスを継承するのに十分である。P7は受諾や拒絶を強制しない。
+直接メッセージのAccess Grantが以前の受信者DIDを指定し、現在の要求者がその後継DIDを提示する場合、Object Serviceは、GrantのDIDから `requester_did` へのP2移行を検証し、所管する業務ポリシーが返された保証レベルを受け入れた後に限り、要求を同じ内部Grantに対応付けてもよい（**MAY**）。`provider_asserted` が過去の添付ファイルへのアクセス継承に十分かどうかは業務上の判断であり、P7は受け入れも拒否も強制しない。
 
-マッピングは内部です。 プッシー **MUST NOT** 過去のマニフェスト、アクセス・グラント、チケット、またはコントロールプレーンリクエストに安定したサブジェクトフィールド、名前、トランジションチェーン、またはデバイスセレクタを追加します。 グループ添付の場合、現在のP4 v2 のロスター、グループポリシー、元のメッセージコンテキストに基づいて承認が残されます。
+この対応付けは内部処理である。P7は、過去のマニフェスト、Access Grant、Ticket、制御プレーンの要求に、安定した主体を表すフィールド、名前、移行チェーン、デバイス選択子を追加してはならない（**MUST NOT**）。グループの添付ファイルでは、現在のP4 v2のメンバー一覧、グループポリシー、元のメッセージコンテキストに基づいて引き続き認可する。
 
 ---
 
-## 10. 制御計画方法
+## 10. 制御プレーンのメソッド
 
 ### 10.1 全般
 
-このセクションのメソッドはオブジェクト制御平面に使用されます。 彼らを **なし** 変更点 `direct.send`, `group.send`, または `group.e2ee.send` 成功のセマンティクス。
+この節のメソッドはオブジェクト制御プレーンで使う。これらは、`direct.send`、`group.send`、`group.e2ee.send` の成功の意味を**変更しない**。
 
-これらのメソッドはデフォルトで実行します。
+これらのメソッドでは、デフォルトで次を使う。
 
 - `meta.profile = "anp.attachment.v1"`
 - `meta.security_profile = "transport-protected"`
@@ -791,18 +792,18 @@ R->>O: GET object_uri + Authorization
 3. `attachment.abort_object`
 4. `attachment.get_download_ticket`
 
-所属する全ての人 **サービススコープ** 制御計画方法。
+上記はすべて**サービススコープ**の制御プレーンメソッドである。
 
 したがって:
 
-- `meta.target.kind` **MUST** 等しく `service`
-- `meta.target.did` **MUST** 等しいターゲット 公共 `ANPMessageService.serviceDid`
-- 外部層認証はP8から提供 `serviceDid + HTTP Message Signatures`
-- v1 は **なし** オブジェクトサービスがエンドの受信者を再検証する必要 `origin_proof`
+- `meta.target.kind` は `service` と等しくなければならない（**MUST**）。
+- `meta.target.did` は、対象の公開 `ANPMessageService.serviceDid` と等しくなければならない（**MUST**）。
+- ドメイン間の外側の層の認証は、P8が `serviceDid + HTTP Message Signatures` によって提供する。
+- v1は、Object Serviceに最終受信者の `origin_proof` を再検証することを要求**しない**。
 
-これらのメソッド **MUST NOT** とりあえず `sender_device_id`, `recipient_device_id`, または `requester_device_id` P7ワイヤー モデルに。 内部デバイス認証とルーティングコンテキストは、デプロイにプライベートのままです。
+これらのメソッドは、`sender_device_id`、`recipient_device_id`、`requester_device_id` をP7の通信モデルに追加してはならない（**MUST NOT**）。内部のデバイス認証とルーティングのコンテキストは、デプロイ環境の非公開の詳細にとどまる。
 
-実装者が簡単に見落とす制御平面のディテールは、アップロードスロットとコミュートオブジェクトが同じ状態ではないことです。 以下は、ライフサイクルの生成、アップロード、コミット、中止、および有効期限をいいます。
+実装者が見落としやすい制御プレーンの詳細として、Upload SlotとCommitted Objectは同じ状態ではない。次の図は、作成、アップロード、コミット、中止、期限切れを1つのライフサイクルにまとめている。
 
 ```mermaid
 stateDiagram-v2
@@ -820,35 +821,35 @@ Uploading --> Expired: timeout
 Uploaded --> Expired: timeout
 ```
 
-*図 P7-3: スロット/オブジェクトのライフサイクル(非放射性)をアップロードします。*
+*図P7-3：Upload Slot／Objectのライフサイクル（非規範）。*
 
-実装は「達成する」解釈してはならない `object_uri`「オブジェクトは既にメッセージで参照できる」 オブジェクトが入るのに過ぎてから `Committed` 状態は、添付マニフェストによる法的参照の資格となります。
+実装は「`object_uri` を取得した」ことを「そのオブジェクトをすでにメッセージから参照できる」と解釈すべきではない。オブジェクトが `Committed` 状態に入って初めて、添付ファイルマニフェストから正当に参照できる。
 
 ### 10.2 `attachment.create_slot`
 
-#### 10.2.1 科学
+#### 10.2.1 意味
 
-アップロードするオブジェクトのアップロードスロットを適用する。
+アップロード予定のオブジェクト用に、Upload Slotを申請する。
 
 #### 10.2.2 要求の要件
 
-メソッド **MUST** 使用:
+このメソッドは次を使わなければならない（**MUST**）。
 
 - `meta.target.kind = "service"`
 - `meta.target.did = target public ANPMessageService.serviceDid`
 
-`body` **MUST** 含まれるもの:
+`body` は次を含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `intended_message_security_profile`
 - `object_encryption_mode`
 
-`body` **SHOULD** 含まれるもの:
+`body` は次を含むことが望ましい（**SHOULD**）。
 
 - `expected_size`
 - `mime_type`
 
-`body` **MAY** 含まれるもの:
+`body` は次を含んでもよい（**MAY**）。
 
 - `filename`
 - `expected_digest`
@@ -859,8 +860,8 @@ Uploaded --> Expired: timeout
 - `attachment_id`: 文字列
 - `intended_message_security_profile`: `transport-protected` / `direct-e2ee` / `group-e2ee`
 - `object_encryption_mode`: `none` / `object-e2ee`
-- `expected_size`: バイト、小文字の文字列にオブジェクトサイズをアップロードする
-- `expected_digest`: アップロードオブジェクトバイトの要約
+- `expected_size`：アップロードするオブジェクトのバイト数を表す10進文字列。
+- `expected_digest`：アップロードするオブジェクトのバイト列のダイジェスト。
 - `intended_target`: オブジェクト;推奨構造は次のとおりです。
 
 ```json
@@ -872,13 +873,13 @@ Uploaded --> Expired: timeout
 
 制約:
 
-1. いつか `intended_message_security_profile = "transport-protected"`, `object_encryption_mode` **MUST** は、 `none`
-2. いつか `object_encryption_mode = "object-e2ee"`, `expected_size` **SHOULD** 暗号テキストバイトサイズに対応
-3. `intended_target` ヒントは、 **MUST NOT** 単独で許可を構成します。
+1. `intended_message_security_profile = "transport-protected"` の場合、`object_encryption_mode` は `none` でなければならない（**MUST**）。
+2. `object_encryption_mode = "object-e2ee"` の場合、`expected_size` は暗号文のバイト数に対応することが望ましい（**SHOULD**）。
+3. `intended_target` はヒントにすぎず、それだけで認可が成立してはならない（**MUST NOT**）。
 
 #### 10.2.3 成功の応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `slot_id`
@@ -887,26 +888,26 @@ Uploaded --> Expired: timeout
 - `commit_token`
 - `expires_at`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答は、次を含んでもよい（**MAY**）。
 
 - `upload_headers`
 
-送信者がその後に構築したときに `attachment_manifest.access_info`, `object_uri` **SHOULD** 直接から取られる `attachment.create_slot` または `attachment.commit_object`'s Successful Response; ダウンロードする前に、受信機はこのプロフィールの規定に従い、元の添付ファイルメッセージ送信者のDIDに基づいてチケットサービスを発見します。
+送信者が後で `attachment_manifest.access_info` を構築する際、`object_uri` は `attachment.create_slot` または `attachment.commit_object` の成功応答から直接取得することが望ましい（**SHOULD**）。受信者はダウンロード前に、このProfileの規定に従い、元の添付ファイルメッセージの送信者DIDに基づいてチケットサービスを発見する。
 
 ### 10.3 `attachment.commit_object`
 
-#### 10.3.1 統計学
+#### 10.3.1 意味
 
-オブジェクトサービス:オブジェクトがアップロードされ、参照可能なオブジェクトとして送信することができます。
+オブジェクトがアップロード済みであり、参照可能なオブジェクトとしてコミットできることをObject Serviceに通知する。
 
 #### 10.3.2 要求の要件
 
-メソッド **MUST** 使用:
+このメソッドは次を使わなければならない（**MUST**）。
 
 - `meta.target.kind = "service"`
 - `meta.target.did = target public ANPMessageService.serviceDid`
 
-`body` **MUST** 少なくとも:
+`body` は、少なくとも次を含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `slot_id`
@@ -915,22 +916,22 @@ Uploaded --> Expired: timeout
 - `digest`
 - `object_encryption_mode`
 
-`body` **MAY** 含まれるもの:
+`body` は次を含んでもよい（**MAY**）。
 
 - `plaintext_size`
 - `media_info`
 
 ルール:
 
-1. `digest.alg` **MUST** 等しく `sha-256`
-2. いつか `object_encryption_mode = "object-e2ee"`, `plaintext_size` **MUST** 存在している
-3. `attachment.commit_object` **MUST NOT** 送信する `object_key_b64u`
-4. `attachment.commit_object` **MUST NOT** 送信する `nonce_b64u`
-5. `attachment.commit_object` 成功事例 **等しくない** 受信者は、オブジェクトをダウンロードするために許可されています。実際のダウンロード承認は、その後のメッセージが正常に送信された後にアクセス付与に依存します。
+1. `digest.alg` は `sha-256` と等しくなければならない（**MUST**）。
+2. `object_encryption_mode = "object-e2ee"` の場合、`plaintext_size` が存在しなければならない（**MUST**）。
+3. `attachment.commit_object` は `object_key_b64u` を送信してはならない（**MUST NOT**）。
+4. `attachment.commit_object` は `nonce_b64u` を送信してはならない（**MUST NOT**）。
+5. `attachment.commit_object` の成功は、受信者にオブジェクトのダウンロードが認可されたことと**同義ではない**。実際のダウンロード認可は、その後のメッセージ送信成功後のAccess Grantに依存する。
 
 #### 10.3.3 成功の応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければならない（**MUST**）。
 
 - `committed`
 - `attachment_id`
@@ -939,29 +940,29 @@ Uploaded --> Expired: timeout
 
 それらの中で:
 
-- `committed` **MUST** なる `true`
+- `committed` は `true` でなければならない（**MUST**）。
 
 ### 10.4 `attachment.abort_object`
 
-#### 10.4.1 科学
+#### 10.4.1 意味
 
-不完全または不要のアップロードスロットを除外します。
+未完了または不要になったUpload Slotを終了する。
 
 #### 10.4.2 要求の要件
 
-メソッド **MUST** 使用:
+このメソッドは次を使わなければならない（**MUST**）。
 
 - `meta.target.kind = "service"`
 - `meta.target.did = target public ANPMessageService.serviceDid`
 
-`body` **MUST** 少なくとも:
+`body` は、少なくとも次を含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `slot_id`
 
 #### 10.4.3 成功の応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければならない（**MUST**）。
 
 - `aborted`
 - `attachment_id`
@@ -969,22 +970,22 @@ Uploaded --> Expired: timeout
 
 それらの中で:
 
-- `aborted` **MUST** なる `true`
+- `aborted` は `true` でなければならない（**MUST**）。
 
 ### 10.5 `attachment.get_download_ticket`
 
-#### 10.5.1 統計学
+#### 10.5.1 意味
 
-オブジェクトアクセスがチケットを必要とする場合、このメソッドで一時的にダウンロードチケットを取得できます。
+オブジェクトへのアクセスにチケットが必要な場合、受信者はこのメソッドで一時的なDownload Ticketを取得する。
 
 #### 10.5.2 要求の要件
 
-メソッド **MUST** 使用:
+このメソッドは次を使わなければならない（**MUST**）。
 
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 公益者と等しい `ANPMessageService.serviceDid` 元の添付ファイルメッセージ送信者DIDから解決
+- `meta.target.did` は、元の添付ファイルメッセージの送信者DIDから解決した公開 `ANPMessageService.serviceDid` と等しくなければならない（**MUST**）。
 
-`body` **MUST** 少なくとも:
+`body` は、少なくとも次を含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `object_uri`
@@ -997,29 +998,29 @@ Uploaded --> Expired: timeout
 - 直接メッセージングコンテキスト: `message_target_did`
 - グループメッセージングコンテキスト: `group_did`
 
-`body` **MAY** 含まれるもの:
+`body` は次を含んでもよい（**MAY**）。
 
 - `one_time`
 
-このメソッドは、何も定義しません `requester_device_id` または同等のデバイスセレクター。
+このメソッドは、`requester_device_id` や同等のデバイス選択子を定義しない。
 
 フィールドルール:
 
-- `requester_did` **MUST** 等しく `meta.sender_did`
-- `message_security_profile` 添付リストを運ぶメッセージセキュリティプロファイルを参照します。, ないです `meta.security_profile` 今回は制御面で呼びます。
+- `requester_did` は `meta.sender_did` と等しくなければならない（**MUST**）。
+- `message_security_profile` は、添付ファイル一覧を載せたメッセージのセキュリティProfileを指し、今回の制御プレーン呼び出しの `meta.security_profile` を指すものではない。
 - `message_target_did` 元の直接メッセージングメッセージのターゲットエージェントDIDを参照
 - `group_did` 元のグループメッセージが属するグループDIDを参照して下さい
-- チケットリクエストを送信する前に、発信者 **MUST** 最初にその公開を主張する `ANPMessageService` 元の添付ファイルメッセージ送信者のDIDに基づいて、グループシナリオでは、DIDは元のグループメッセージ送信者から取られ、 `group_did`
+- 呼び出し側は、チケット要求を送信する前に、元の添付ファイルメッセージの送信者DIDに基づき、その公開 `ANPMessageService` を解決しなければならない（**MUST**）。グループの場合、このDIDは元のグループメッセージの送信者から取得し、`group_did` からは取得しない。
 
 #### 10.5.3 応答の成功
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければならない（**MUST**）。
 
 - `download_ticket_b64u`
 - `expires_at`
 - `ticket_binding`
 
-`ticket_binding` **MUST** 少なくとも:
+`ticket_binding` は、少なくとも次を含まなければならない（**MUST**）。
 
 - `attachment_id`
 - `object_uri`
@@ -1032,26 +1033,26 @@ Uploaded --> Expired: timeout
 - `message_target_did`
 - `group_did`
 
-`ticket_binding` **MUST NOT** デバイス識別子を追加します。
+`ticket_binding` にデバイス識別子を追加してはならない（**MUST NOT**）。
 
 ---
 
-## 11. データプラン規則
+## 11. データプレーンの規則
 
 ### 11.1 アップロード
 
-送信者 **MUST** トピックス `PUT` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `upload_uri` 別の HTTPS チャネルを使用して。
+送信者は、独立したHTTPSチャネルを使って `upload_uri` に対する `PUT` を開始しなければならない（**MUST**）。
 
 ルール:
 
-- いつか `object_encryption_mode = "none"`, アップロード プレーンテキストスタンザ
-- いつか `object_encryption_mode = "object-e2ee"`, アップロードする ciphertext bytes
-- アップロードリクエスト **MAY** 持ち運び `upload_headers`
-- オブジェクトバイト **MUST NOT** ANPのJSON-RPCビジネスメッセージに埋め込まれた
+- `object_encryption_mode = "none"` の場合、平文のデータをアップロードする。
+- `object_encryption_mode = "object-e2ee"` の場合、暗号文のバイト列をアップロードする。
+- アップロード要求は `upload_headers` を含んでもよい（**MAY**）。
+- オブジェクトのバイト列を、ANPのJSON-RPC業務メッセージに埋め込んではならない（**MUST NOT**）。
 
 ### 11.2 ダウンロード
 
-受信機 **MUST** トピックス `GET` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `object_uri` 別の HTTPS チャネルを使用して。
+受信者は、独立したHTTPSチャネルを使って `object_uri` に対する `GET` を開始しなければならない（**MUST**）。
 
 固定形式は以下の通りです。
 
@@ -1060,49 +1061,49 @@ GET {object_uri}
 Authorization: Bearer {download_ticket}
 ```
 
-オブジェクトバイト **MUST NOT** ANPのクロスドメインサービスの呼び出し経路を定期転送チャネルとして転送します。
+オブジェクトのバイト列を、ANPのドメイン間サービス呼び出し経路を通常の転送チャネルとして使って転送してはならない（**MUST NOT**）。
 
-標準的なベアラーのダウンロード要求はP7装置セレクターか装置の証拠を持っていません。 デバイスが制約されたチケットスキームは、任意の場合は、別のプロファイルが必要です。
+標準のBearerダウンロード要求には、P7のデバイス選択子もデバイス証明もない。デバイスに制約したチケット方式を設ける場合は、別のProfileを必要とする。
 
 ### 11.3 ダウンロード後の検証
 
-ダウンロードが完了したら、受信機 **MUST** 少なくとも次のチェックを実行します。
+ダウンロード完了後、受信者は少なくとも次を検証しなければならない（**MUST**）。
 
-1. 長期間の検証
+1. 長さの検証。
 2. ダイジェスト検証
-3. 場合 `mode = "object-e2ee"`、復号化を実行し、 `plaintext_size` 認証
+3. `mode = "object-e2ee"` の場合、復号と `plaintext_size` の検証。
 
-鍵チェックが失敗すると、受信機:
+重要な検証のいずれかに失敗した場合、受信者は：
 
-- **MUST NOT** オブジェクトを高層化したアプリケーションに有効な添付ファイルとして提供
-- **SHOULD** ログ診断情報
+- オブジェクトを有効な添付ファイルとして上位アプリケーションに渡してはならない（**MUST NOT**）。
+- 診断情報をログに記録することが望ましい（**SHOULD**）。
 
 ---
 
 ## 12. エラー条件と推奨エラーコード
 
-このプロフィールは固定に割り当てます `6000-6013` 添付ファイルとオブジェクト転送エラーのコードセグメント。 サーバがこのエラーを返すとき、 `error.data.anp_code` **MUST** 存在します。
+このProfileは、添付ファイルとオブジェクト転送のエラーに `6000-6013` のコード範囲を固定で割り当てる。サーバーがこのエラーを返す場合、`error.data.anp_code` が存在しなければならない（**MUST**）。
 
-| `code` | `anp_code` | 意味する |
+| `code` | `anp_code` | 意味 |
 |---|---|---|
-| 6000 | `anp.attachment.slot_not_found` | 利用可能なアップロードスロットが見つかりません。 `slot_id` 現在のコンテキストにマッチしない |
-| 6001 | `anp.attachment.slot_expired` | アップロードスロットが期限切れで、アップロード、提出または廃棄することはできません |
-| 6002 | `anp.attachment.commit_token_invalid` | 投稿トークンが欠落している、違法、検証に失敗したり、現在のオブジェクトのコンテキストと一致しない |
+| 6000 | `anp.attachment.slot_not_found` | 利用可能なUpload Slotが見つからない、または `slot_id` が現在のコンテキストと一致しない |
+| 6001 | `anp.attachment.slot_expired` | Upload Slotが期限切れで、アップロード、コミット、中止ができない |
+| 6002 | `anp.attachment.commit_token_invalid` | コミットトークンが欠落、不正、検証失敗、または現在のオブジェクトコンテキストと不一致 |
 | 6003 | `anp.attachment.object_too_large` | オブジェクトサイズは、サービス制限、ポリシー制限を超えたり、許可された範囲を超える |
 | 6004 | `anp.attachment.unsupported_mime_type` | `mime_type` 現行サービスまたはポリシーにより、受理されない |
-| 6005 | `anp.attachment.grant_not_found` | 対応するアクセス付与が見つかりませんでした。または、ダウンロード許可が確立されていないとメッセージが記載されました |
-| 6006 | `anp.attachment.unauthorized_requester` | 流れ `requester_did` ダウンロードポリシー、ターゲット制約、またはグループアクセス制限を満たしていない |
-| 6007 | `anp.attachment.download_ticket_invalid` | チケットのダウンロードは、違法で、署名を検証できなかったり、解析できないか、無効にされている |
-| 6008 | `anp.attachment.ticket_binding_mismatch` | チケットをダウンロード 境界オブジェクト、メッセージ、または要求のコンテキストは実際のリクエストと矛盾しています |
-| 6009 | `anp.attachment.ticket_expired` | チケットのダウンロード期限が切れました |
-| 6010 | `anp.attachment.digest_mismatch` | アップロードまたはダウンロード後のオブジェクト消化は、予想される消化器と矛盾しています |
+| 6005 | `anp.attachment.grant_not_found` | 対応するAccess Grantが見つからない、またはメッセージのダウンロード認可が未成立 |
+| 6006 | `anp.attachment.unauthorized_requester` | 現在の `requester_did` がダウンロードポリシー、対象の制約、グループアクセスの制約を満たさない |
+| 6007 | `anp.attachment.download_ticket_invalid` | Download Ticketが欠落、不正、署名検証失敗、解析不能、または無効化済み |
+| 6008 | `anp.attachment.ticket_binding_mismatch` | Download Ticketが束縛するオブジェクト、メッセージ、要求者のコンテキストが実際の要求と一致しない |
+| 6009 | `anp.attachment.ticket_expired` | Download Ticketが期限切れ |
+| 6010 | `anp.attachment.digest_mismatch` | アップロード後またはダウンロード後のオブジェクトのダイジェストが期待値と一致しない |
 | 6011 | `anp.attachment.decrypt_failed` | `object-e2ee` オブジェクトの復号化が失敗しました |
-| 6012 | `anp.attachment.object_unavailable` | オブジェクトは、未提出のものではなく、放棄されたもの、清掃されているか、一時的に利用できなくなった |
+| 6012 | `anp.attachment.object_unavailable` | オブジェクトが未コミット、中止済み、削除済み、または一時的に利用不能 |
 | 6013 | `anp.attachment.encryption_policy_violation` | オブジェクト暗号化モードとメッセージセキュリティプロファイルの組み合わせは違法です。またはこのプロファイルの制約を侵害します |
 
-デバイス結合エラーはP5またはP6に所属し、 **MUST NOT** 通常のP7リクエストでデバイスセレクタを要求するために使用される。
+デバイス束縛エラーはP5またはP6の所管であり、通常のP7要求にデバイス選択子を要求するために使ってはならない（**MUST NOT**）。
 
-エラー応答 **SHOULD** 提供場所 `error.data`:
+エラー応答は、次を `error.data` に含めることが望ましい（**SHOULD**）。
 
 - `attachment_id`
 - `slot_id`
@@ -1112,7 +1113,7 @@ Authorization: Bearer {download_ticket}
 
 ## 13. 最小相互運用性要件
 
-このページの先頭へ MUST 少なくともサポート:
+このProfileに適合する実装は、少なくとも次をサポートしなければならない（MUST）。
 
 1. `attachment.create_slot`
 2. `attachment.commit_object`
@@ -1120,30 +1121,30 @@ Authorization: Bearer {download_ticket}
 4. `attachment.get_download_ticket`
 5. `application/anp-attachment-manifest+json`
 6. `attachment_message.attachments`
-7. `attachment_manifest`'s's の `attachment_id`, `mime_type`, `size`, `digest`, `access_info`, `encryption_info`
+7. `attachment_manifest` の `attachment_id`、`mime_type`、`size`、`digest`、`access_info`、`encryption_info`。
 8. `access_info.object_uri`
-9. 詳しくはこちら `attachment.get_download_ticket` 元の添付ファイルメッセージ送信機DIDに基づくターゲットサービス
+9. 元の添付ファイルメッセージの送信者DIDに基づく、`attachment.get_download_ticket` の対象サービスの発見。
 10. `digest.alg = sha-256`
 11. スタンドアローン HTTPS `PUT upload_uri`
 12. スタンドアローン HTTPS `GET object_uri`
 13. `Authorization: Bearer {download_ticket}` ダウンロードモード
-14. 全て すべて `attachment.*` 制御計画法は、 `target.kind = "service"`
-15. ANPビジネスメッセージや、クロスドメインサービスの呼び出しパスを経由してオブジェクトバイトは転送されません
-16. `mode = "none"` とりあえず `transport-protected`
-17. 通常のP7マニフェスト、制御プレーンリクエスト、アクセスグランス、ダウンロードチケットはデバイスセレクターを必要としません
-18. 歴史的アクセス助成金は、過去のワイヤオブジェクトを書き換えることなく、P2移行検証とビジネスポリシーの受諾後だけ成功したDIDにマップすることができます
+14. すべての `attachment.*` 制御プレーンメソッドでの `target.kind = "service"` の使用。
+15. オブジェクトのバイト列を、ANP業務メッセージやドメイン間サービス呼び出し経路で転送しないこと。
+16. `transport-protected` の場合の `mode = "none"`。
+17. 通常のP7マニフェスト、制御プレーン要求、Access Grant、Download Ticketは、デバイス選択子を要求せず、公開もしないこと。
+18. 過去のAccess Grantを後継DIDに対応付けるのは、P2移行の検証と業務ポリシーによる受け入れ後に限り、過去の通信オブジェクトを書き換えないこと。
 
-E2EE 添付ファイルをサポートする実装の要求があった場合、 MUST も:
+E2EE添付ファイルへの対応を表明する実装は、さらに次を行わなければならない（MUST）。
 
-19. 支援サービス `mode = "object-e2ee"`
-20. サポート `chacha20-poly1305` このプロファイルで指定されたオブジェクト暗号化プロセス
-21. デリブ `object_key_b64u` とりあえず `nonce_b64u` P5またはP6によって保護されるE2EEの添付ファイルマニフェストの中; デバイス選択は、そのオーバーレイによって所有残されます
-22. オブジェクトのダウンロード後に暗号テキストの消化確認とローカルの復号を実行します
-23. 「v1」のアクセス境界をクリアに遵守することは、権利の遡及的撤退を保証するものではありません。
+19. `mode = "object-e2ee"` をサポートする。
+20. このProfileで定める `chacha20-poly1305` によるオブジェクト暗号化手順をサポートする。
+21. P5またはP6で保護されたE2EE添付ファイルマニフェストの内部で、`object_key_b64u` と `nonce_b64u` を配布する。デバイス選択は、そのオーバーレイが引き続き所管する。
+22. オブジェクトのダウンロード後、暗号文のダイジェスト検証とローカルでの復号を実行する。
+23. 「v1は権限の遡及的な撤回を保証しない」というアクセス境界を明確に守る。
 
 ---
 
-## 14. 事例紹介
+## 14. 例
 
 ### 14.1 `attachment.create_slot` リクエスト例
 
@@ -1180,7 +1181,7 @@ E2EE 添付ファイルをサポートする実装の要求があった場合、
 }
 ```
 
-### 14.2 `attachment.create_slot` 成功事例
+### 14.2 `attachment.create_slot` 成功応答の例
 
 ```json
 {
@@ -1235,7 +1236,7 @@ E2EE 添付ファイルをサポートする実装の要求があった場合、
 }
 ```
 
-### 14.4 `attachment.commit_object` 成功事例
+### 14.4 `attachment.commit_object` 成功応答の例
 
 ```json
 {
@@ -1277,7 +1278,7 @@ E2EE 添付ファイルをサポートする実装の要求があった場合、
 }
 ```
 
-### 14.6 `attachment.abort_object` 成功事例
+### 14.6 `attachment.abort_object` 成功応答の例
 
 ```json
 {
@@ -1291,7 +1292,7 @@ E2EE 添付ファイルをサポートする実装の要求があった場合、
 }
 ```
 
-### 14.7 `attachment.get_download_ticket` 例(直接メッセージング/E2EE)
+### 14.7 `attachment.get_download_ticket` 要求の例（直接メッセージング／E2EE）
 
 ```json
 {
@@ -1323,7 +1324,7 @@ E2EE 添付ファイルをサポートする実装の要求があった場合、
 }
 ```
 
-### 14.8 `attachment.get_download_ticket` 成功事例
+### 14.8 `attachment.get_download_ticket` 成功応答の例
 
 ```json
 {
@@ -1355,7 +1356,7 @@ Content-Length: 1048592
 <encrypted object bytes>
 ```
 
-### 14.10 `direct.send` 暗号化されていない添付ファイルリスト(直接ベース)の持ち運び例
+### 14.10 `direct.send` で暗号化されていない添付ファイル一覧を搬送する例（Direct Base）
 
 ```json
 {
@@ -1412,7 +1413,7 @@ Content-Length: 1048592
 }
 ```
 
-### 14.11 `group.send` 暗号化されていない添付ファイルリスト(グループベース)の持ち運び例
+### 14.11 `group.send` で暗号化されていない添付ファイル一覧を搬送する例（Group Base）
 
 ```json
 {
@@ -1469,7 +1470,7 @@ Content-Length: 1048592
 }
 ```
 
-### 14.12 `direct.send` 外部の暗号文例(直接E2EE)
+### 14.12 `direct.send` の外側の暗号文の例（Direct E2EE）
 
 ```json
 {
@@ -1505,7 +1506,7 @@ Content-Length: 1048592
 }
 ```
 
-### 14.13 直接 E2EE 内部 `Application Plaintext` 例(アタッチオブジェクトは暗号化されます)
+### 14.13 Direct E2EEの内側の `Application Plaintext` の例（添付ファイルオブジェクトは暗号化済み）
 
 ```json
 {
@@ -1539,7 +1540,7 @@ Content-Length: 1048592
 }
 ```
 
-### 14.14 `group.e2ee.send` 外部の暗号文例(グループE2EE)
+### 14.14 `group.e2ee.send` の外側の暗号文の例（Group E2EE）
 
 ```json
 {
@@ -1584,7 +1585,7 @@ Content-Length: 1048592
 }
 ```
 
-### 14.15 グループ E2EE 内部 `Group Application Plaintext` 例(アタッチオブジェクトは暗号化されます)
+### 14.15 Group E2EEの内側の `Group Application Plaintext` の例（添付ファイルオブジェクトは暗号化済み）
 
 ```json
 {
@@ -1622,7 +1623,7 @@ Content-Length: 1048592
 }
 ```
 
-### 14.16 HTTPSのダウンロード例(データ平面)
+### 14.16 HTTPSダウンロードの例（データプレーン）
 
 ```http
 GET /objects/obj-abc HTTP/1.1
@@ -1632,10 +1633,10 @@ Authorization: Bearer BASE64URL_TICKET
 
 ---
 
-## 付録A(情報):実装の提言
+## 付録A（参考）：実装上の推奨事項
 
 1. デフォルトは `operation_id = message_id`
-2. デフォルトでは、各添付ファイルが実行されます `attachment.get_download_ticket`
+2. デフォルトでは、添付ファイルごとに `attachment.get_download_ticket` を実行する。
 3. 各オブジェクトはデフォルトで新しいランダムオブジェクトキーを使用します
 4. サムネイルを新しいサブオブジェクトを発明する代わりにデフォルトで独立した添付ファイルとして扱います
 5. 複雑なオブジェクト機能が必要な場合は、v1 のメインラインパスを再フォークする代わりに将来のバージョンで個別に定義する必要があります。

@@ -1,0 +1,19 @@
+sequenceDiagram
+    participant C as クライアント
+    participant S as サーバー
+    Note over C,S: 最初の認証要求
+    C->>S: GET /protected-resource
+    S-->>C: 401 Unauthorized<br/>WWW-Authenticate: Bearer nonce="xyz987"
+    Note over C: 署名の生成:<br/>1. タイムスタンプを取得<br/>2. 秘密鍵で署名
+    C->>S: GET /protected-resource<br/>Authorization: DID <did> Nonce <nonce><br/>Timestamp <timestamp> VerificationMethod <key-id><br/>Signature <signature>
+    Note over S: 検証の手順:<br/>1. nonceが使用済みか確認<br/>2. タイムスタンプを検証<br/>3. 署名を検証
+    alt 検証に成功
+        S-->>C: 200 OK + Access Token
+        Note over C,S: 以後の要求はトークンを使用
+        C->>S: GET /protected-resource<br/>Authorization: Bearer <token>
+        S-->>C: 200 OK + Resource
+    else 検証に失敗
+        S-->>C: 401 Unauthorized
+    end
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style S fill:#9ff,stroke:#333,stroke-width:2px

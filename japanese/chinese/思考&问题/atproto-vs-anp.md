@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=chinese/思考&问题/atproto-vs-anp.md; basis=complete manual translation against the original in the preceding review -->
 > 日本語訳。原文：[atproto-vs-anp.md](../../../chinese/思考&问题/atproto-vs-anp.md)。研究メモ中の記述・主張は執筆時点の原文に従います。
 
 https://atproto.com/specs/data-model#relationship-with-ipld

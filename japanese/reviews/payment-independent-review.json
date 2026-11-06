@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-11-06T15:00:11.976180+00:00",
+  "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+  "destination": "japanese/chinese/application/10-ANP-智能体支付协议规范.md",
+  "source_sha256": "f953d966564331e597a922f78edf0cf0cc4243e9f0c3fcda2f686b37bc2f5985",
+  "translation_sha256": "b16fc548b59a21c32b469749074410fe49def5760adf4bb5ccfe6e12ba677d05",
+  "review_type": "independent-semantic-review",
+  "reviewed_source_prose_ranges": [
+    [
+      1,
+      1149
+    ]
+  ],
+  "source_lines": 1149,
+  "scope": "All prose/roles/requirements/fields/flows compared against Chinese original; detailed signature/hash/JWT/receipt examples also read. This is translation validation, not protocol implementation or cryptographic conformance testing.",
+  "checks": {
+    "original_matches_base_commit": true,
+    "fences_exact": true,
+    "inline_multiset_exact": true,
+    "normative_multiset_exact": true
+  },
+  "changes": [
+    {
+      "source_line": 509,
+      "translation_line": 513,
+      "before": "- `cnf`：任意のholderバインディング情報。",
+      "after": "- `cnf`：holderバインディング情報（任意）。",
+      "reason": "Make optionality attach to the field or sending action, not to an arbitrary value or arbitrary Webhook."
+    },
+    {
+      "source_line": 510,
+      "translation_line": 514,
+      "before": "- `sd_hash`：任意のSD-JWT／VCハッシュ参照。",
+      "after": "- `sd_hash`：SD-JWT／VCのハッシュ参照（任意）。",
+      "reason": "Make optionality attach to the field or sending action, not to an arbitrary value or arbitrary Webhook."
+    },
+    {
+      "source_line": 511,
+      "translation_line": 515,
+      "before": "- `extensions`：任意のプロトコル拡張識別子。",
+      "after": "- `extensions`：プロトコル拡張の識別子（任意）。",
+      "reason": "Make optionality attach to the field or sending action, not to an arbitrary value or arbitrary Webhook."
+    },
+    {
+      "source_line": 773,
+      "translation_line": 777,
+      "before": "- `shipping`：任意の配送情報。",
+      "after": "- `shipping`：配送情報（任意）。",
+      "reason": "Make optionality attach to the field or sending action, not to an arbitrary value or arbitrary Webhook."
+    },
+    {
+      "source_line": 778,
+      "translation_line": 782,
+      "before": "- `metadata`：任意の業務固有の履行データ。",
+      "after": "- `metadata`：業務固有の履行データ（任意）。",
+      "reason": "Make optionality attach to the field or sending action, not to an arbitrary value or arbitrary Webhook."
+    },
+    {
+      "source_line": 992,
+      "translation_line": 996,
+      "before": "6. **MAから送信** → SA：任意のWebhookによる`FulfillmentReceipt`。",
+      "after": "6. **MAから送信** → SA：`FulfillmentReceipt`（Webhook経由、送信は任意）。",
+      "reason": "Make optionality attach to the field or sending action, not to an arbitrary value or arbitrary Webhook."
+    }
+  ],
+  "findings": [
+    "All four roles preserved, including optional combined SA/CP/PP in M1 and user-private-key signatures versus merchant-private-key signatures.",
+    "cart_hash binds JCS(CartMandate.contents); pmt_hash binds JCS(PaymentMandate.payment_mandate_contents); receipts both refer back to the same pmt_hash and bind their own contents via cred_hash. Code equations and examples unchanged.",
+    "JWS Header/Payload signing and RS256/ES256K checks, iss/aud/time/jti validation, UTF-8 SHA-256/base64url no padding all faithfully translated.",
+    "Required basic JWT fields versus optional cnf/sd_hash/extensions retained. Webhook HTTPS/signature validation required; HTTP 200/error response and retry/idempotency/jti practices remain recommendations.",
+    "Suggested 15-minute expiry and checklist limit of at most 15 minutes retained; original 180-day comment and its 900-second example inconsistency retained.",
+    "No new substantive translation errors found beyond optionality-attachment ambiguity. Previously documented original draft inconsistencies intentionally not repaired."
+  ],
+  "apis_called": false
+}

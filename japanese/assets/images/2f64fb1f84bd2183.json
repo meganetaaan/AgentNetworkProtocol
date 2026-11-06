@@ -1,0 +1,360 @@
+{
+  "source": "images/anp-meta-protocol.svg",
+  "sha256": "2f64fb1f84bd21833379e242500f5c8a44ecf544a19e23ad13536e4006eda32e",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "智能体 A",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L001",
+      "japanese": "エージェント A",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Agent A)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "25",
+      "label_id": "L002",
+      "japanese": "（エージェント A）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体 B",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L003",
+      "japanese": "エージェント B",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Agent B)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "25",
+      "label_id": "L004",
+      "japanese": "（エージェント B）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "使用自然语言协商协议",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-25",
+      "label_id": "L005",
+      "japanese": "自然言語を使ってプロトコルを交渉する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Protocol Negotiation)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L006",
+      "japanese": "（プロトコル交渉）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "协商通信使用的协议",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "35",
+      "label_id": "L007",
+      "japanese": "通信に使用するプロトコルを交渉する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "代码生成",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-15",
+      "label_id": "L008",
+      "japanese": "コード生成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Code Generation)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "15",
+      "label_id": "L009",
+      "japanese": "（コード生成）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "为协议生成处理代码",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "40",
+      "label_id": "L010",
+      "japanese": "プロトコルを処理するコードを生成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "代码生成",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-15",
+      "label_id": "L011",
+      "japanese": "コード生成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Code Generation)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "15",
+      "label_id": "L012",
+      "japanese": "（コード生成）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "为协议生成处理代码",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "40",
+      "label_id": "L013",
+      "japanese": "プロトコルを処理するコードを生成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "测试用例协商",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-15",
+      "label_id": "L014",
+      "japanese": "テストケースの交渉",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Test Cases Negotiation)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "15",
+      "label_id": "L015",
+      "japanese": "（テストケースの交渉）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "可选，验证协议实现",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "40",
+      "label_id": "L016",
+      "japanese": "任意。プロトコル実装を検証する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "元协议消息示例",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-25",
+      "label_id": "L017",
+      "japanese": "メタプロトコルのメッセージ例",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "{\"action\": \"protocolNegotiation\",",
+      "element": "text",
+      "id": null,
+      "x": "-200",
+      "y": "0",
+      "label_id": "L018",
+      "japanese": "{\"action\": \"protocolNegotiation\",",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "\"candidateProtocols\": \"...\",",
+      "element": "text",
+      "id": null,
+      "x": "-200",
+      "y": "20",
+      "label_id": "L019",
+      "japanese": "\"candidateProtocols\": \"...\",",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "\"status\": \"negotiating\"}",
+      "element": "text",
+      "id": null,
+      "x": "-200",
+      "y": "40",
+      "label_id": "L020",
+      "japanese": "\"status\": \"negotiating\"}",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "开始使用最终协议进行应用层通信",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "5",
+      "label_id": "L021",
+      "japanese": "最終的に合意したプロトコルでアプリケーション層の通信を開始する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(Start Communication Using Final Protocol)",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "25",
+      "label_id": "L022",
+      "japanese": "（最終的なプロトコルを使って通信を開始）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "发起协议协商",
+      "element": "text",
+      "id": null,
+      "x": "380",
+      "y": "220",
+      "label_id": "L023",
+      "japanese": "プロトコル交渉を開始する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "协议提案",
+      "element": "text",
+      "id": null,
+      "x": "880",
+      "y": "220",
+      "label_id": "L024",
+      "japanese": "プロトコルの提案",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "测试用例协商",
+      "element": "text",
+      "id": null,
+      "x": "880",
+      "y": "480",
+      "label_id": "L025",
+      "japanese": "テストケースの交渉",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "测试用例确认",
+      "element": "text",
+      "id": null,
+      "x": "380",
+      "y": "480",
+      "label_id": "L026",
+      "japanese": "テストケースの確認",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "达成协议",
+      "element": "text",
+      "id": null,
+      "x": "560",
+      "y": "295",
+      "label_id": "L027",
+      "japanese": "プロトコルに合意する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "通过验证",
+      "element": "text",
+      "id": null,
+      "x": "700",
+      "y": "590",
+      "label_id": "L028",
+      "japanese": "検証に合格する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "应用层协议通信",
+      "element": "text",
+      "id": null,
+      "x": "640",
+      "y": "420",
+      "label_id": "L029",
+      "japanese": "アプリケーション層のプロトコルによる通信",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "元协议优势",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L030",
+      "japanese": "メタプロトコルの利点",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 提高数据传输效率",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "15",
+      "label_id": "L031",
+      "japanese": "• データ転送効率を向上する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 提高数据理解准确性",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "35",
+      "label_id": "L032",
+      "japanese": "• データの解釈の正確さを向上する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "协议机制",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "-5",
+      "label_id": "L033",
+      "japanese": "プロトコルの仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 0RTT协商机制",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "15",
+      "label_id": "L034",
+      "japanese": "• 0RTTの交渉の仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 共识协议机制",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "35",
+      "label_id": "L035",
+      "japanese": "• 合意プロトコルの仕組み",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

@@ -1,0 +1,1503 @@
+{
+  "method": "agent-read-and-manually-translated-full-blocks; exact deduplication with all source contexts; ASCII diagrams converted to complete labels and ordered actions",
+  "policy": "原本は変更せず、数式・HTTP構文・識別子・値を保持。歴史的説明や未リリース提案を現行仕様に修正しない。独立した二次校閲は未実施。",
+  "candidate_blocks": 106,
+  "unique_source_blocks": 76,
+  "translated_unique_blocks": 66,
+  "covered_source_blocks": 106,
+  "pending_source_blocks": 0,
+  "verification": {
+    "source_contexts_checked": 106,
+    "unique_original_strings": 76,
+    "source_block_text_matches": true,
+    "all_106_candidate_indices_covered": true,
+    "retained_values_invariant": true,
+    "status_counts": {
+      "technical-retained": {
+        "unique_blocks": 10,
+        "source_blocks": 25
+      },
+      "agent-reviewed": {
+        "unique_blocks": 66,
+        "source_blocks": 81
+      }
+    },
+    "errors": [],
+    "scope": "Source/context identity, coverage, technical invariance and identifier/URL preservation; single-pass manual translation, no independent second semantic review"
+  },
+  "units": [
+    {
+      "original": "WWW-Authenticate: DIDWba realm=\"api.example.com\", error=\"invalid_signature\", error_description=\"Signature verification failed.\", nonce=\"xyz987\"\nAccept-Signature: sig1=(\"@method\" \"@target-uri\" \"@authority\" \"content-digest\");created;expires;nonce;keyid\nCache-Control: no-store",
+      "translation": "WWW-Authenticate: DIDWba realm=\"api.example.com\", error=\"invalid_signature\", error_description=\"Signature verification failed.\", nonce=\"xyz987\"\nAccept-Signature: sig1=(\"@method\" \"@target-uri\" \"@authority\" \"content-digest\");created;expires;nonce;keyid\nCache-Control: no-store",
+      "status": "technical-retained",
+      "reason": "HTTP認証チャレンジと署名要件の例を技術構文・値ごと保持。error_descriptionのSignature verification failed.は「署名の検証に失敗しました」。Cache-Control: no-storeは保存禁止を示す。",
+      "original_sha256": "99e2077d6ea05b06d3e947f215f1577280de56f16eaa55b310a3d4ea3ea20f00",
+      "contexts": [
+        {
+          "source": "02-anp-did-authentication-protocol-specification.md",
+          "start": 242,
+          "end": 246,
+          "language": "plaintext",
+          "locator": "fence:242-246",
+          "candidate_index": 0
+        },
+        {
+          "source": "chinese/02-ANP-基于DID的身份认证协议.md",
+          "start": 242,
+          "end": 246,
+          "language": "plaintext",
+          "locator": "fence:242-246",
+          "candidate_index": 20
+        }
+      ]
+    },
+    {
+      "original": "did:wba:example.com:user:alice:e1_<fingerprint>\n        └──── stable subject path: example.com:user:alice ────┘",
+      "translation": "did:wba:example.com:user:alice:e1_<fingerprint>\n安定した主体のパス：example.com:user:alice",
+      "status": "agent-reviewed",
+      "original_sha256": "433385e48e8816c469f47cbeed41cb6e1641832a48d0747c677280d60f76033d",
+      "contexts": [
+        {
+          "source": "03-did-wba-method-design-specification.md",
+          "start": 175,
+          "end": 178,
+          "language": "text",
+          "locator": "fence:175-178",
+          "candidate_index": 1
+        }
+      ]
+    },
+    {
+      "original": "Example: Creating a DID\ndid:wba:example.com\n -> https://example.com/.well-known/did.json",
+      "translation": "例：DIDの作成\ndid:wba:example.com\n → https://example.com/.well-known/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "17c34a9b59aac036f042e148a3d30cb4321c7a2b75dd193d31e33e3109ff8323",
+      "contexts": [
+        {
+          "source": "03-did-wba-method-design-specification.md",
+          "start": 348,
+          "end": 352,
+          "language": "plaintext",
+          "locator": "fence:348-352",
+          "candidate_index": 2
+        }
+      ]
+    },
+    {
+      "original": "Example 5: Creating a path-based DID with the default path scheme\ndid:wba:example.com:user:alice:e1_<fingerprint>\n -> https://example.com/user/alice/e1_<fingerprint>/did.json",
+      "translation": "例5：既定のパス方式を使った、パスに基づくDIDの作成\ndid:wba:example.com:user:alice:e1_<fingerprint>\n → https://example.com/user/alice/e1_<fingerprint>/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "68fd6ce7e1aa9d3a61729aa2ca69cf216b066eb4316b3e352f189c227d81fa93",
+      "contexts": [
+        {
+          "source": "03-did-wba-method-design-specification.md",
+          "start": 358,
+          "end": 362,
+          "language": "plaintext",
+          "locator": "fence:358-362",
+          "candidate_index": 3
+        }
+      ]
+    },
+    {
+      "original": "Example 6: Creating a DID with an optional path and port\ndid:wba:example.com%3A3000:user:alice:e1_<fingerprint>\n -> https://example.com:3000/user/alice/e1_<fingerprint>/did.json",
+      "translation": "例6：任意のパスとポートを使ったDIDの作成\ndid:wba:example.com%3A3000:user:alice:e1_<fingerprint>\n → https://example.com:3000/user/alice/e1_<fingerprint>/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "f0e70693ff94cd87cd0cd320312f742e73ced6caa196eed1d8d841abf356a898",
+      "contexts": [
+        {
+          "source": "03-did-wba-method-design-specification.md",
+          "start": 366,
+          "end": 370,
+          "language": "plaintext",
+          "locator": "fence:366-370",
+          "candidate_index": 4
+        }
+      ]
+    },
+    {
+      "original": "alice.example.com          ✓ Valid\nbob-smith.example.com      ✓ Valid\nagent-42.example.com       ✓ Valid\na.example.com              ✓ Valid (single-character local-part)\n-alice.example.com         ✗ Invalid (starts with hyphen)\nalice-.example.com         ✗ Invalid (ends with hyphen)\nal--ice.example.com        ✗ Invalid (consecutive hyphens)\nAlice.Example.com          → Normalized to alice.example.com",
+      "translation": "alice.example.com          ✓ 有効\nbob-smith.example.com      ✓ 有効\nagent-42.example.com       ✓ 有効\na.example.com              ✓ 有効（local-partが1文字）\n-alice.example.com         ✗ 無効（ハイフンで始まる）\nalice-.example.com         ✗ 無効（ハイフンで終わる）\nal--ice.example.com        ✗ 無効（ハイフンが連続する）\nAlice.Example.com          → alice.example.comへ正規化",
+      "status": "agent-reviewed",
+      "original_sha256": "c54b2daf28f069a9fee2291afaa4fcf849fd853d248a6f6eec77ae73febee7dd",
+      "contexts": [
+        {
+          "source": "04-anp-did-wba-name-space-specification.md",
+          "start": 106,
+          "end": 115,
+          "language": "text",
+          "locator": "fence:106-115",
+          "candidate_index": 5
+        }
+      ]
+    },
+    {
+      "original": "Handle → Handle Resolution Endpoint → DID → DID Document → service",
+      "translation": "Handle（ハンドル）→Handle解決エンドポイント→DID→DID Document（DID文書）→サービス",
+      "status": "agent-reviewed",
+      "original_sha256": "aa2907acef0b95a20032e1e29c420ce6b6cd4df27ffe21e9937ea73732190b07",
+      "contexts": [
+        {
+          "source": "04-anp-did-wba-name-space-specification.md",
+          "start": 154,
+          "end": 156,
+          "language": "text",
+          "locator": "fence:154-156",
+          "candidate_index": 6
+        },
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "start": 153,
+          "end": 155,
+          "language": "text",
+          "locator": "fence:153-155",
+          "candidate_index": 26
+        }
+      ]
+    },
+    {
+      "original": "Agent Discovery\n  -> Agent Description\n  -> MetaProtocolInterface\n  -> anp.get_capabilities\n  -> anp.negotiate\n  -> selected interface / profile / security profile / schema\n  -> business call or message exchange",
+      "translation": "エージェントの発見\n → エージェント記述\n → MetaProtocolInterface\n → anp.get_capabilities\n → anp.negotiate\n → 選択されたインターフェース／profile／security profile／schema\n → 業務呼び出しまたはメッセージ交換",
+      "status": "agent-reviewed",
+      "original_sha256": "751c57fb397449676eb2077b02edcd7f4e423485f6c171d686a4fe1e596f3525",
+      "contexts": [
+        {
+          "source": "06-anp-agent-communication-meta-protocol-specification.md",
+          "start": 23,
+          "end": 31,
+          "language": "text",
+          "locator": "fence:23-31",
+          "candidate_index": 7
+        },
+        {
+          "source": "chinese/06-ANP-智能体通信元协议规范.md",
+          "start": 23,
+          "end": 31,
+          "language": "text",
+          "locator": "fence:23-31",
+          "candidate_index": 27
+        }
+      ]
+    },
+    {
+      "original": "Caller Agent\n  -> discover Agent Description\n  -> parse MetaProtocolInterface\n  -> resolve target DID and ANPMessageService\n  -> call anp.get_capabilities\n  -> call anp.negotiate\n  -> receive NegotiationResult\n  -> invoke selected interface or profile",
+      "translation": "呼び出し元エージェント\n → エージェント記述を発見\n → MetaProtocolInterfaceを解析\n → 宛先DIDとANPMessageServiceを解決\n → anp.get_capabilitiesを呼び出す\n → anp.negotiateを呼び出す\n → NegotiationResultを受信\n → 選択されたインターフェースまたはprofileを呼び出す",
+      "status": "agent-reviewed",
+      "original_sha256": "e88f1918cd3510238fa4da342ba26ce6654f400d13afa53e26a47b5fb47c0775",
+      "contexts": [
+        {
+          "source": "06-anp-agent-communication-meta-protocol-specification.md",
+          "start": 277,
+          "end": 286,
+          "language": "text",
+          "locator": "fence:277-286",
+          "candidate_index": 8
+        },
+        {
+          "source": "chinese/06-ANP-智能体通信元协议规范.md",
+          "start": 277,
+          "end": 286,
+          "language": "text",
+          "locator": "fence:277-286",
+          "candidate_index": 28
+        }
+      ]
+    },
+    {
+      "original": "AI agents provide a unique opportunity for people to boost productivity by autonomously handling many routine or complex tasks. Today, businesses are increasingly building and deploying autonomous agents to help scale, automate, and optimize processes across work scenarios—from ordering a new laptop, to assisting customer service representatives, to aiding in supply chain planning. (https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)",
+      "translation": "AIエージェントは、多くの日常的な作業や複雑なタスクを自律的に処理することで、人々が生産性を高める独自の機会をもたらします。今日、企業は、新しいノートパソコンの注文から、顧客サービス担当者の支援、サプライチェーン計画の補助まで、さまざまな業務場面のプロセスを拡大・自動化・最適化するために、自律エージェントを構築・導入することが増えています。（https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/）",
+      "status": "agent-reviewed",
+      "original_sha256": "66bb48385cbe7acb8b53585e15051255023921fe65d464b00491c2961910e6c0",
+      "contexts": [
+        {
+          "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+          "start": 118,
+          "end": 120,
+          "language": "",
+          "locator": "fence:118-120",
+          "candidate_index": 9
+        }
+      ]
+    },
+    {
+      "original": "Use Agent Network Protocol (ANP) to interact with other agents.\n1. For the first time, please enter the URL: https://agent-search.ai/ad.json, which is an agent search service that can use the interfaces inside to query agents that can provide hotels, tickets, and attractions.\n2. After receiving the agent's description document, you can crawl the data according to the data link URL in the agent's description document.\n3. During the process, you can call the API to complete the service until you think the task is completed.\n4. Note that any URL obtained using ANPTool must be called using ANPTool, do not call it directly yourself.",
+      "translation": "Agent Network Protocol（ANP）を使って他のエージェントとやり取りしてください。\n1. 初回はURL https://agent-search.ai/ad.json を入力してください。これはエージェント検索サービスで、含まれるインターフェースを使って、ホテル、チケット、観光スポットを提供できるエージェントを検索できます。\n2. エージェント記述文書を受け取ったら、その文書にあるデータリンクURLに従ってデータをクロールできます。\n3. 処理中は、タスクが完了したと判断するまでAPIを呼び出してサービスを完了できます。\n4. ANPToolを使って取得したURLは、必ずANPToolを使って呼び出してください。自分で直接呼び出してはなりません。",
+      "status": "agent-reviewed",
+      "original_sha256": "513b565db957a3355de473b6ed6e25e927db146c8ac7cd5eb02c3ff3324ea8aa",
+      "contexts": [
+        {
+          "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+          "start": 66,
+          "end": 72,
+          "language": "plaintext",
+          "locator": "fence:66-72",
+          "candidate_index": 10
+        },
+        {
+          "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+          "start": 65,
+          "end": 71,
+          "language": "plaintext",
+          "locator": "fence:65-71",
+          "candidate_index": 16
+        }
+      ]
+    },
+    {
+      "original": "1. You will receive a starting URL ({{initial_url}}), which is a description file of an agent.\n2. You need to understand the structure, functionality, and API usage of this agent description file.\n3. You should continuously discover and access new URLs and API endpoints like a web crawler.\n4. You can use the anp_tool to retrieve the content of any URL.\n5. This tool can handle responses in various formats, including:\n   - JSON format: which will be directly parsed into a JSON object.\n   - YAML format: which will return text content, and you need to analyze its structure.\n   - Other text formats: which will return the raw text content.\n6. Read each document to find information or API endpoints relevant to the task.\n7. You need to determine the crawling path on your own, without waiting for user instructions.\n8. Note: You can crawl up to 10 URLs, and must stop crawling after exceeding this limit.\n......",
+      "translation": "1. 開始URL（{{initial_url}}）が与えられます。これはエージェントの記述ファイルです。\n2. このエージェント記述ファイルの構造、機能、APIの使い方を理解する必要があります。\n3. Webクローラーのように、新しいURLやAPIエンドポイントを継続的に発見してアクセスしてください。\n4. anp_toolを使って、任意のURLの内容を取得できます。\n5. このツールは、次のようなさまざまな形式の応答を処理できます。\n   - JSON形式：JSONオブジェクトとして直接解析されます。\n   - YAML形式：テキスト内容が返されるので、その構造を分析する必要があります。\n   - その他のテキスト形式：元のテキスト内容が返されます。\n6. 各文書を読み、タスクに関係する情報やAPIエンドポイントを探してください。\n7. 利用者の指示を待たず、自分でクロール経路を決定する必要があります。\n8. 注：クロールできるURLは最大10件です。この上限を超えたら、クロールを終了しなければなりません。\n……",
+      "status": "agent-reviewed",
+      "original_sha256": "4cad3f3e27bc46bb0c5e3465fb5ccf6efb4105479f5b20ccbccafa27ee680e0c",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "start": 206,
+          "end": 219,
+          "language": "plaintext",
+          "locator": "fence:206-219",
+          "candidate_index": 11
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────────┐\n│                        供给侧 (Supply Side)                   │\n│  酒店智能体 | 餐饮智能体 | 教育/娱乐智能体 | ViNote ...       │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│              连接层 (Connection Layer)                        │\n│  1. 发现 (Discovery)  2. 描述 (Description)  3. 身份 (Identity) │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│                       需求侧 (Demand Side)                    │\n│  个人助手 | 垂直智能体 | AI应用 ...                           │\n└─────────────────────────────────────────────────────────────┘",
+      "translation": "供給側（Supply Side）：ホテルエージェント｜飲食エージェント｜教育／娯楽エージェント｜ViNote …\n ↕\n接続層（Connection Layer）：1. 発見（Discovery）、2. 記述（Description）、3. アイデンティティ（Identity）\n ↕\n需要側（Demand Side）：個人アシスタント｜分野別エージェント｜AIアプリケーション …",
+      "status": "agent-reviewed",
+      "original_sha256": "1b78b730525adacd17ef277375362209d4da5ac4543c2c2a203ede3a339df650",
+      "contexts": [
+        {
+          "source": "blogs/cn/07-2-全球首个开放智能体网络.md",
+          "start": 118,
+          "end": 133,
+          "language": "",
+          "locator": "fence:118-133",
+          "candidate_index": 12
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────────┐\n│                        供给侧 (Supply Side)                   │\n│  酒店智能体 | 餐饮智能体 | 教育/娱乐智能体 | ...              │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│              连接层 (Connection Layer)                        │\n│  Agent Protocol: 智能体发现、描述、交互                        │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│                       需求侧 (Demand Side)                    │\n│  个人助手 | 垂直智能体 | AI应用 | 个人助手 ...                 │\n└─────────────────────────────────────────────────────────────┘",
+      "translation": "供給側（Supply Side）：ホテルエージェント｜飲食エージェント｜教育／娯楽エージェント｜…\n ↕\n接続層（Connection Layer）：Agent Protocol――エージェントの発見、記述、やり取り\n ↕\n需要側（Demand Side）：個人アシスタント｜分野別エージェント｜AIアプリケーション｜個人アシスタント …",
+      "status": "agent-reviewed",
+      "original_sha256": "f90a813b3a84b8bea950dc8f88c22930d774835f43d7543cafe48614fc8308ce",
+      "contexts": [
+        {
+          "source": "blogs/cn/07-全球首个开放智能体网络.md",
+          "start": 83,
+          "end": 98,
+          "language": "",
+          "locator": "fence:83-98",
+          "candidate_index": 13
+        }
+      ]
+    },
+    {
+      "original": "## 版权声明\nCopyright (c) 2024 ANP Community\n本文件依据 [MIT 许可证](../../../LICENSE) 发布,您可以自由使用和修改,但必须保留本版权声明。",
+      "translation": "## 著作権表示\nCopyright (c) 2024 ANP Community\nこのファイルは[MITライセンス](../../../LICENSE)に基づいて公開されています。自由に使用・変更できますが、この著作権表示を保持しなければなりません。",
+      "status": "agent-reviewed",
+      "notes": "歴史的な計画文書内の例を忠実に訳しました。原文のMIT表記を保持していますが、この作業時点で確認したリポジトリルートのLICENSEの表題はApache License Version 2.0です。この古い例を現在のリポジトリのライセンス表示へ読み替えていません。",
+      "original_sha256": "be17ff1d782ff73eaae4a2980902b71e55a2e24d9439f41b6c81fd4140e21e10",
+      "contexts": [
+        {
+          "source": "blogs/cn/Agentic-Web十日谈/planning.md",
+          "start": 278,
+          "end": 282,
+          "language": "markdown",
+          "locator": "fence:278-282",
+          "candidate_index": 14
+        }
+      ]
+    },
+    {
+      "original": "示例：\ndid:wba:example.com:user:alice\n -> https://example.com/user/alice/did.json",
+      "translation": "例：\ndid:wba:example.com:user:alice\n → https://example.com/user/alice/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "1383ba69f47fa5715cef34e4b7b89ede4a9e686dabb5fbf4fb0be6ad5b2c0597",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+          "start": 71,
+          "end": 75,
+          "language": "plaintext",
+          "locator": "fence:71-75",
+          "candidate_index": 15
+        }
+      ]
+    },
+    {
+      "original": "AI 智能体为人们带来了独特的机会，能够通过自主处理许多日常重复性或复杂任务，帮助提升工作效率。如今，企业越来越多地构建并部署自主智能体，以帮助在整个工作场景中实现规模化、自动化并优化各类流程——从订购新笔记本电脑，到辅助客户服务代表，再到协助供应链规划。（https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/）",
+      "translation": "AIエージェントは、多くの日常の反復作業や複雑なタスクを自律的に処理し、作業効率の向上を助ける独自の機会を人々にもたらします。今日、企業は、新しいノートパソコンの注文から、顧客サービス担当者の補助、サプライチェーン計画の支援まで、さまざまな業務場面のプロセスを拡大・自動化・最適化するために、自律エージェントを構築・導入することが増えています。（https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/）",
+      "status": "agent-reviewed",
+      "original_sha256": "eaec13d1112814df2d9dc20c5e1fd937cad4f74f7a4a1a09d5fe116e0667ee79",
+      "contexts": [
+        {
+          "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+          "start": 118,
+          "end": 120,
+          "language": "",
+          "locator": "fence:118-120",
+          "candidate_index": 17
+        }
+      ]
+    },
+    {
+      "original": "https://<域名>/.well-known/agent-descriptions",
+      "translation": "https://<域名>/.well-known/agent-descriptions",
+      "status": "technical-retained",
+      "reason": "URLテンプレートを保持。<域名>は「ドメイン名」のプレースホルダー。",
+      "original_sha256": "f319dc843b6f20fb997945c3f00a1255fa456670f92a3288ec35d9a4d9ff27aa",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "start": 46,
+          "end": 48,
+          "language": "",
+          "locator": "fence:46-48",
+          "candidate_index": 18
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "start": 15,
+          "end": 17,
+          "language": "",
+          "locator": "fence:15-17",
+          "candidate_index": 72
+        }
+      ]
+    },
+    {
+      "original": "1. 您将收到一个起始URL（{{initial_url}}），这是一个智能体的描述文件。\n2. 您需要了解该智能体描述文件的结构、功能和API使用方法。\n3. 您需要像网络爬虫一样不断发现和访问新的URL和API端点。\n4. 您可以使用anp_tool获取任何URL的内容。\n5. 该工具可以处理多种格式的响应，包括：\n   - JSON格式：将直接解析为JSON对象。\n   - YAML格式：将返回文本内容，您需要分析其结构。\n   - 其他文本格式：将返回原始文本内容。\n6. 阅读每个文档以查找与任务相关的信息或API端点。\n7. 您需要自行决定爬取路径，不要等待用户指示。\n8. 注意：您最多可以爬取10个URL，超过此限制后必须结束爬取。\n......",
+      "translation": "1. 開始URL（{{initial_url}}）が与えられます。これはエージェントの記述ファイルです。\n2. このエージェント記述ファイルの構造、機能、APIの使い方を理解する必要があります。\n3. Webクローラーのように、新しいURLやAPIエンドポイントを絶えず発見してアクセスする必要があります。\n4. anp_toolを使って、任意のURLの内容を取得できます。\n5. このツールは、次のような複数形式の応答を処理できます。\n   - JSON形式：JSONオブジェクトとして直接解析されます。\n   - YAML形式：テキスト内容が返されるので、その構造を分析する必要があります。\n   - その他のテキスト形式：元のテキスト内容が返されます。\n6. 各文書を読み、タスクに関係する情報やAPIエンドポイントを探してください。\n7. 利用者の指示を待たず、自分でクロール経路を決定する必要があります。\n8. 注：クロールできるURLは最大10件です。この上限を超えたら、クロールを終了しなければなりません。\n……",
+      "status": "agent-reviewed",
+      "original_sha256": "c3be36fda9c0fd9882ced689af416ede68646416feb22f9166ebaf86bd0a090c",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "start": 210,
+          "end": 223,
+          "language": "plaintext",
+          "locator": "fence:210-223",
+          "candidate_index": 19
+        }
+      ]
+    },
+    {
+      "original": "did:wba:example.com:user:alice:e1_<fingerprint>\n        └──── 稳定主体路径：example.com:user:alice ────┘",
+      "translation": "did:wba:example.com:user:alice:e1_<fingerprint>\n安定した主体のパス：example.com:user:alice",
+      "status": "agent-reviewed",
+      "original_sha256": "fd01374f7d0391e7a7fe3ecb4f471687c4b83552255dce8d44288a5257aa6bb9",
+      "contexts": [
+        {
+          "source": "chinese/03-did-wba方法规范.md",
+          "start": 175,
+          "end": 178,
+          "language": "text",
+          "locator": "fence:175-178",
+          "candidate_index": 21
+        }
+      ]
+    },
+    {
+      "original": "示例：创建DID\ndid:wba:example.com\n -> https://example.com/.well-known/did.json",
+      "translation": "例：DIDの作成\ndid:wba:example.com\n → https://example.com/.well-known/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "73bf088d1efea0299fcb81bd54a85a6c78917032589e03fcfaa717ae520d9d1d",
+      "contexts": [
+        {
+          "source": "chinese/03-did-wba方法规范.md",
+          "start": 349,
+          "end": 353,
+          "language": "plaintext",
+          "locator": "fence:349-353",
+          "candidate_index": 22
+        },
+        {
+          "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+          "start": 210,
+          "end": 214,
+          "language": "plaintext",
+          "locator": "fence:210-214",
+          "candidate_index": 33
+        }
+      ]
+    },
+    {
+      "original": "示例5：使用默认路径方案创建路径型 DID\ndid:wba:example.com:user:alice:e1_<fingerprint>\n -> https://example.com/user/alice/e1_<fingerprint>/did.json",
+      "translation": "例5：既定のパス方式を使った、パス型DIDの作成\ndid:wba:example.com:user:alice:e1_<fingerprint>\n → https://example.com/user/alice/e1_<fingerprint>/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "0b8ade2d7de5b57e299528d009bbb1f515eba3ab1adfb2a5422bc50bcd917b23",
+      "contexts": [
+        {
+          "source": "chinese/03-did-wba方法规范.md",
+          "start": 359,
+          "end": 363,
+          "language": "plaintext",
+          "locator": "fence:359-363",
+          "candidate_index": 23
+        }
+      ]
+    },
+    {
+      "original": "示例6：使用可选路径和端口创建DID\ndid:wba:example.com%3A3000:user:alice:e1_<fingerprint>\n -> https://example.com:3000/user/alice/e1_<fingerprint>/did.json",
+      "translation": "例6：任意のパスとポートを使ったDIDの作成\ndid:wba:example.com%3A3000:user:alice:e1_<fingerprint>\n → https://example.com:3000/user/alice/e1_<fingerprint>/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "151ee548b0131b0b6222b000eb878fe8a3722f8ed5a0977d76e43453b06844c2",
+      "contexts": [
+        {
+          "source": "chinese/03-did-wba方法规范.md",
+          "start": 367,
+          "end": 371,
+          "language": "plaintext",
+          "locator": "fence:367-371",
+          "candidate_index": 24
+        }
+      ]
+    },
+    {
+      "original": "alice.example.com          ✓ 有效\nbob-smith.example.com      ✓ 有效\nagent-42.example.com       ✓ 有效\na.example.com              ✓ 有效（单字符 local-part）\n-alice.example.com         ✗ 无效（以连字符开头）\nalice-.example.com         ✗ 无效（以连字符结尾）\nal--ice.example.com        ✗ 无效（连续连字符）\nAlice.Example.com          → 归一化为 alice.example.com",
+      "translation": "alice.example.com          ✓ 有効\nbob-smith.example.com      ✓ 有効\nagent-42.example.com       ✓ 有効\na.example.com              ✓ 有効（local-partが1文字）\n-alice.example.com         ✗ 無効（ハイフンで始まる）\nalice-.example.com         ✗ 無効（ハイフンで終わる）\nal--ice.example.com        ✗ 無効（ハイフンが連続する）\nAlice.Example.com          → alice.example.comへ正規化",
+      "status": "agent-reviewed",
+      "original_sha256": "531b4d1f2a9139f5b103e381e5e74c725d7cd99589ef59381a0e70fab68bfe44",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "start": 105,
+          "end": 114,
+          "language": "text",
+          "locator": "fence:105-114",
+          "candidate_index": 25
+        }
+      ]
+    },
+    {
+      "original": "CartMandate(cart_hash)\n    ↓ (同步)\nPaymentMandate(cart_hash, pmt_hash)\n    ↓ (异步Webhook)\n    ├─→ PaymentReceipt(pmt_hash, cred_hash)\n    └─→ FulfillmentReceipt(pmt_hash, cred_hash)",
+      "translation": "CartMandate(cart_hash)\n ↓ 同期\nPaymentMandate(cart_hash, pmt_hash)\n ↓ 非同期Webhook\n ├→ PaymentReceipt(pmt_hash, cred_hash)\n └→ FulfillmentReceipt(pmt_hash, cred_hash)",
+      "status": "agent-reviewed",
+      "original_sha256": "056ae723767923dfadd38d4831c24edbc1498009f43200c24a935063ce77d685",
+      "contexts": [
+        {
+          "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+          "start": 999,
+          "end": 1006,
+          "language": "",
+          "locator": "fence:999-1006",
+          "candidate_index": 29
+        }
+      ]
+    },
+    {
+      "original": "Client (A)                                      Client (B)\n|                                                 |\n| -- Initiate Short-term Key Creation Process --> |\n|                                                 |\n|      (Create Temporary Encryption Key)          |\n|                                                 |\n| <---- Temporary Key Created ----                |\n|                                                 |\n|       (Key has an expiration time)              |\n|                                                 |\n|      (Monitor Key Validity)                     |\n|                                                 |\n|   (Before expiration, restart creation process) |\n|                                                 |\n| (A and B now have a negotiated short-term key)  |\n|                                                 |\n| ---- Encrypted Message ---->                    |\n|                                                 |\n|     (Encrypt message using short-term key)      |\n|     (Send via message server)                   |\n|                                                 |\n| <---- Receive Encrypted Message ----            |\n|                                                 |\n|     (Find stored key using key ID)              |\n|     (Decrypt message)                           |\n|      (If key not found or expired)              |\n|                                                 |\n| <---- or Error Message ----                     |\n|                                                 |\n|      (Notify A to update short-term key)        |\n|                                                 |",
+      "translation": "登場主体：クライアントA、クライアントB。\n\n1. A→B：短期鍵の作成処理を開始。\n2. 一時的な暗号化鍵を作成。\n3. B→A：一時鍵を作成済み。\n4. 鍵には有効期限がある。\n5. 鍵の有効性を監視。\n6. 有効期限の前に作成処理を再開。\n7. AとBは、交渉済みの短期鍵を保持した状態になる。\n8. A→B：暗号化メッセージ。\n9. 短期鍵でメッセージを暗号化。\n10. メッセージサーバーを介して送信。\n11. B→A：暗号化メッセージの受信（原図の左向き矢印に対応）。\n12. 鍵IDを使って保存済みの鍵を検索。\n13. メッセージを復号。\n14. 鍵が見つからない、または期限切れの場合。\n15. B→A：または、エラーメッセージ。\n16. Aに短期鍵の更新を通知。",
+      "status": "agent-reviewed",
+      "notes": "過去の原図の矢印と説明順を保持した補足訳であり、現在のE2EE方式へ変更していません。",
+      "original_sha256": "0dd86806b1cfebe8e8adf974ce910d94eff61af301a159a7843553b8f3f1f085",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+          "start": 160,
+          "end": 192,
+          "language": "plain",
+          "locator": "fence:160-192",
+          "candidate_index": 30
+        },
+        {
+          "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+          "start": 35,
+          "end": 67,
+          "language": "plaintext",
+          "locator": "fence:35-67",
+          "candidate_index": 37
+        },
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "start": 35,
+          "end": 67,
+          "language": "plaintext",
+          "locator": "fence:35-67",
+          "candidate_index": 59
+        }
+      ]
+    },
+    {
+      "original": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |         (Include public key and signature)         |\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |         (Include public key and signature)         |\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (Include verify_data) ------->  |\n   |                                                    |\n   |  <-------- Finished (Include verify_data) -------- |\n   |                                                    |\n   |                                                    |",
+      "translation": "登場主体：クライアントA、サーバーB。\n\n1. A→B：SourceHello。公開鍵と署名を含む。\n2. B→A：DestinationHello。公開鍵と署名を含む。\n3. A→B：Finished。verify_dataを含む。\n4. B→A：Finished。verify_dataを含む。",
+      "status": "agent-reviewed",
+      "original_sha256": "4e662482c13336eb76ee19793ec63fea27fde7cf291308862a6f016c1ff35dd8",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+          "start": 211,
+          "end": 229,
+          "language": "plain",
+          "locator": "fence:211-229",
+          "candidate_index": 31
+        },
+        {
+          "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+          "start": 168,
+          "end": 186,
+          "language": "plain",
+          "locator": "fence:168-186",
+          "candidate_index": 58
+        }
+      ]
+    },
+    {
+      "original": "示例3: wba方法DID示例\ndid:wba:example.com\n\ndid:wba:example.com:user:alice\n\ndid:wba:example.com%3A3000",
+      "translation": "例3：wbaメソッドのDIDの例\ndid:wba:example.com\n\ndid:wba:example.com:user:alice\n\ndid:wba:example.com%3A3000",
+      "status": "agent-reviewed",
+      "original_sha256": "d37774769176cba2620bb450b9c3a65a37cffb1f6524c67619abc1aa36f25cea",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+          "start": 40,
+          "end": 47,
+          "language": "plaintext",
+          "locator": "fence:40-47",
+          "candidate_index": 32
+        }
+      ]
+    },
+    {
+      "original": "示例5：使用可选路径创建DID\ndid:wba:example.com:user:alice\n -> https://example.com/user/alice/did.json",
+      "translation": "例5：任意のパスを使ったDIDの作成\ndid:wba:example.com:user:alice\n → https://example.com/user/alice/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "57e21d47f072053764fe261060a543efc4bfe0b4aa018fb061f9f984d471225a",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+          "start": 218,
+          "end": 222,
+          "language": "plaintext",
+          "locator": "fence:218-222",
+          "candidate_index": 34
+        }
+      ]
+    },
+    {
+      "original": "示例6：使用可选路径和端口创建DID\ndid:wba:example.com%3A3000:user:alice\n -> https://example.com:3000/user/alice/did.json",
+      "translation": "例6：任意のパスとポートを使ったDIDの作成\ndid:wba:example.com%3A3000:user:alice\n → https://example.com:3000/user/alice/did.json",
+      "status": "agent-reviewed",
+      "original_sha256": "46c0b8f3c346d768f4111ee0f5b5bdd42830c38d166649b01a357aec1ec6a02d",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+          "start": 226,
+          "end": 230,
+          "language": "plaintext",
+          "locator": "fence:226-230",
+          "candidate_index": 35
+        }
+      ]
+    },
+    {
+      "original": "WWW-Authenticate: Bearer method=\"DIDWba,DIDWeb\", error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"",
+      "translation": "WWW-Authenticate: Bearer method=\"DIDWba,DIDWeb\", error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"",
+      "status": "technical-retained",
+      "reason": "HTTP認証ヘッダーと値を保持。Nonce has already been used. Please provide a new nonce.は「Nonceは既に使用されています。新しいnonceを指定してください」。",
+      "original_sha256": "2840a3715a814aba1f89f6336c8ee8515e497f11d47933cc850c02a2ffe9fa61",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+          "start": 430,
+          "end": 432,
+          "language": "plaintext",
+          "locator": "fence:430-432",
+          "candidate_index": 36
+        }
+      ]
+    },
+    {
+      "original": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |                  (包含公钥和签名)                    |\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |                  (包含公钥和签名)                    |\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (包含verify_data) ------->       |\n   |                                                    |\n   |  <-------- Finished (包含verify_data) --------      |\n   |                                                    |\n   |                                                    |",
+      "translation": "登場主体：クライアントA、サーバーB。\n\n1. A→B：SourceHello。公開鍵と署名を含む。\n2. B→A：DestinationHello。公開鍵と署名を含む。\n3. A→B：Finished。verify_dataを含む。\n4. B→A：Finished。verify_dataを含む。",
+      "status": "agent-reviewed",
+      "original_sha256": "387ed7fdc03d3c23f4eaf738a44319db325734b385cbb5204ea1880a48e61182",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+          "start": 100,
+          "end": 118,
+          "language": "plaintext",
+          "locator": "fence:100-118",
+          "candidate_index": 38
+        }
+      ]
+    },
+    {
+      "original": "{\n  \"alg\": \"HS256\",\n  \"sign_type\": \"SIGN\"\n}\n- alg: 属性表示签名使用的算法，默认为 HMAC SHA256（写为HS256）。\n- sign_type: 属性表示令牌的类型，JWT 令牌统一写为 SIGN 。\n\n2. payload 示例\n\n",
+      "translation": "{\n  \"alg\": \"HS256\",\n  \"sign_type\": \"SIGN\"\n}\n- alg：署名に使うアルゴリズムを示す属性。既定値はHMAC SHA256（HS256と表記）。\n- sign_type：トークンの種類を示す属性。JWTトークンは一律にSIGNと表記。\n\n2. payloadの例\n\n",
+      "status": "agent-reviewed",
+      "notes": "原文ブロック内のJSON断片と説明をそのまま対象にしています。JWTのアルゴリズム・トークン種別についての原文の主張を現行仕様へ修正していません。",
+      "original_sha256": "fd6992461bd98b57294b052a8c426b91ee2219a0e0505badde508e391daf0dd4",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-基于did的消息服务协议.md",
+          "start": 65,
+          "end": 76,
+          "language": "",
+          "locator": "fence:65-76",
+          "candidate_index": 39
+        }
+      ]
+    },
+    {
+      "original": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)\nSK  = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 Initial Secret\", L = 32)",
+      "translation": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)\nSK  = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 Initial Secret\", L = 32)",
+      "status": "technical-retained",
+      "reason": "HKDFの数式、32 bytes、鍵導出のドメイン分離文字列を保持。Initial Secretは初期秘密情報を表す。",
+      "original_sha256": "502e49a57a2230e72ac2ac501c661207d7cacf4cfff891fb4e37bf20e00ccea7",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "start": 607,
+          "end": 610,
+          "language": "text",
+          "locator": "fence:607-610",
+          "candidate_index": 40
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "start": 661,
+          "end": 664,
+          "language": "text",
+          "locator": "fence:661-664",
+          "candidate_index": 51
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "start": 606,
+          "end": 609,
+          "language": "text",
+          "locator": "fence:606-609",
+          "candidate_index": 61
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "start": 660,
+          "end": 663,
+          "language": "text",
+          "locator": "fence:660-663",
+          "candidate_index": 74
+        }
+      ]
+    },
+    {
+      "original": "RK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Root Key\", L = 32)\nCK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Chain Key\", L = 32)\nSID = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Session ID\", L = 16)",
+      "translation": "RK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Root Key\", L = 32)\nCK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Chain Key\", L = 32)\nSID = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Session ID\", L = 16)",
+      "status": "technical-retained",
+      "reason": "鍵導出式、長さ、ドメイン分離文字列を保持。Root Key＝ルート鍵、Chain Key＝チェーン鍵、Session ID＝セッション識別子。",
+      "original_sha256": "dbac12c128f2bed7a60228abe950b65a7f14354782bef8b94dc824ed2fde30f6",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "start": 614,
+          "end": 618,
+          "language": "text",
+          "locator": "fence:614-618",
+          "candidate_index": 41
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "start": 668,
+          "end": 672,
+          "language": "text",
+          "locator": "fence:668-672",
+          "candidate_index": 52
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "start": 613,
+          "end": 617,
+          "language": "text",
+          "locator": "fence:613-617",
+          "candidate_index": 62
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "start": 667,
+          "end": 671,
+          "language": "text",
+          "locator": "fence:667-671",
+          "candidate_index": 75
+        }
+      ]
+    },
+    {
+      "original": "PRK = HKDF-Extract(salt = RK, IKM = dh_out)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_RK\", L = 64)\nRK' = OUT[0:32]\nCK  = OUT[32:64]",
+      "translation": "PRK = HKDF-Extract(salt = RK, IKM = dh_out)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_RK\", L = 64)\nRK' = OUT[0:32]\nCK  = OUT[32:64]",
+      "status": "technical-retained",
+      "reason": "HKDFの数式、インデックス、KDF_RKのドメイン分離文字列を保持。",
+      "original_sha256": "1a9301954c5ac6602e27fa55084ec1de5283510909012d748b05873545ba0c4a",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "start": 1035,
+          "end": 1040,
+          "language": "text",
+          "locator": "fence:1035-1040",
+          "candidate_index": 42
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "start": 1114,
+          "end": 1119,
+          "language": "text",
+          "locator": "fence:1114-1119",
+          "candidate_index": 53
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "start": 1032,
+          "end": 1037,
+          "language": "text",
+          "locator": "fence:1032-1037",
+          "candidate_index": 63
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "start": 1111,
+          "end": 1116,
+          "language": "text",
+          "locator": "fence:1111-1116",
+          "candidate_index": 76
+        }
+      ]
+    },
+    {
+      "original": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM = CK)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_CK\", L = 76)\nCK'   = OUT[0:32]\nMK    = OUT[32:64]\nNONCE = OUT[64:76]",
+      "translation": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM = CK)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_CK\", L = 76)\nCK'   = OUT[0:32]\nMK    = OUT[32:64]\nNONCE = OUT[64:76]",
+      "status": "technical-retained",
+      "reason": "HKDFの数式、インデックス、KDF_CKのドメイン分離文字列を保持。",
+      "original_sha256": "f9a2c7a0eaf250eff92c33ce9efe459ff03565f73d3a4c41190d7e56436e0d70",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/05-私聊端到端加密.md",
+          "start": 1044,
+          "end": 1050,
+          "language": "text",
+          "locator": "fence:1044-1050",
+          "candidate_index": 43
+        },
+        {
+          "source": "chinese/message/05-私聊端到端加密.md",
+          "start": 1123,
+          "end": 1129,
+          "language": "text",
+          "locator": "fence:1123-1129",
+          "candidate_index": 54
+        },
+        {
+          "source": "deprecated/05-direct-end-to-end-encryption.md",
+          "start": 1041,
+          "end": 1047,
+          "language": "text",
+          "locator": "fence:1041-1047",
+          "candidate_index": 64
+        },
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "start": 1120,
+          "end": 1126,
+          "language": "text",
+          "locator": "fence:1120-1126",
+          "candidate_index": 77
+        }
+      ]
+    },
+    {
+      "original": "外层群上下文中的所有 active 群成员",
+      "translation": "外側のグループコンテキストに含まれる、すべてのactiveなグループメンバー",
+      "status": "agent-reviewed",
+      "original_sha256": "329c83dc36f8eda02143c7fbbd87abeb101b6ca622a0902fe0ae36df5e8382ec",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "start": 416,
+          "end": 418,
+          "language": "text",
+          "locator": "fence:416-418",
+          "candidate_index": 44
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "start": 435,
+          "end": 437,
+          "language": "text",
+          "locator": "fence:435-437",
+          "candidate_index": 55
+        }
+      ]
+    },
+    {
+      "original": "本地应用 roster 或 profile 层分类为 agent 的 active 群成员",
+      "translation": "ローカルアプリケーションのrosterまたはprofile層がagentに分類する、activeなグループメンバー",
+      "status": "agent-reviewed",
+      "original_sha256": "cf288802fa9e6cb8ae6c5c3a1c07c40e8faf3eec2abfa8bf0fb7fd37b34a8fbf",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "start": 435,
+          "end": 437,
+          "language": "text",
+          "locator": "fence:435-437",
+          "candidate_index": 45
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "start": 454,
+          "end": 456,
+          "language": "text",
+          "locator": "fence:454-456",
+          "candidate_index": 56
+        }
+      ]
+    },
+    {
+      "original": "本地应用 roster 或 profile 层分类为 human 的 active 群成员",
+      "translation": "ローカルアプリケーションのrosterまたはprofile層がhumanに分類する、activeなグループメンバー",
+      "status": "agent-reviewed",
+      "original_sha256": "293530e6d85e41e92c213f264b5b7f0c67642843dc5b3bc8fb06d3b03fd8eb84",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/09-消息Mention扩展.md",
+          "start": 454,
+          "end": 456,
+          "language": "text",
+          "locator": "fence:454-456",
+          "candidate_index": 46
+        },
+        {
+          "source": "chinese/message/09-消息Mention扩展.md",
+          "start": 473,
+          "end": 475,
+          "language": "text",
+          "locator": "fence:473-475",
+          "candidate_index": 57
+        }
+      ]
+    },
+    {
+      "original": "Alice                           Message Server                          Bob\n  |                                   |                                   |\n  |  send(type=e2ee_hello)            |                                   |\n  |  content=SourceHello              |                                   |\n  |---------------------------------->|  send(type=e2ee_hello)            |\n  |                                   |  content=SourceHello              |\n  |                                   |---------------------------------->|\n  |                                   |                                   |\n  |                                   |  send(type=e2ee_hello)            |\n  |                                   |  content=DestinationHello         |\n  |  send(type=e2ee_hello)            |<----------------------------------|\n  |  content=DestinationHello         |                                   |\n  |<----------------------------------|  send(type=e2ee_finished)         |\n  |                                   |  content=Finished                 |\n  |  send(type=e2ee_finished)         |<----------------------------------|\n  |  content=Finished                 |                                   |\n  |<----------------------------------|                                   |\n  |                                   |                                   |\n  |  send(type=e2ee_finished)         |                                   |\n  |  content=Finished                 |                                   |\n  |---------------------------------->|  send(type=e2ee_finished)         |\n  |                                   |  content=Finished                 |\n  |                                   |---------------------------------->|\n  |                                   |                                   |\n  |           [双方会话激活，开始加密通信]                                    |\n  |                                   |                                   |\n  |  send(type=e2ee)                  |                                   |\n  |  content=加密消息                  |                                   |\n  |---------------------------------->|  send(type=e2ee)                  |\n  |                                   |  content=加密消息                  |\n  |                                   |---------------------------------->|\n  |                                   |                                   |",
+      "translation": "登場主体：Alice、メッセージサーバー（Message Server）、Bob。\n\n1. Alice→メッセージサーバー：send(type=e2ee_hello)、content=SourceHello。\n2. メッセージサーバー→Bob：send(type=e2ee_hello)、content=SourceHello。\n3. Bob→メッセージサーバー：send(type=e2ee_hello)、content=DestinationHello。\n4. メッセージサーバー→Alice：send(type=e2ee_hello)、content=DestinationHello。\n5. Bob→メッセージサーバー：send(type=e2ee_finished)、content=Finished。\n6. メッセージサーバー→Alice：send(type=e2ee_finished)、content=Finished。\n7. Alice→メッセージサーバー：send(type=e2ee_finished)、content=Finished。\n8. メッセージサーバー→Bob：send(type=e2ee_finished)、content=Finished。\n9. 双方のセッションがアクティブになり、暗号化通信を開始。\n10. Alice→メッセージサーバー：send(type=e2ee)、contentは暗号化メッセージ。\n11. メッセージサーバー→Bob：send(type=e2ee)、contentは暗号化メッセージ。",
+      "status": "agent-reviewed",
+      "original_sha256": "8e6bfd2d48656f3dfc6863c36cc70ed8687840e82bb42052c469d4adb25a3e1a",
+      "contexts": [
+        {
+          "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+          "start": 830,
+          "end": 863,
+          "language": "plaintext",
+          "locator": "fence:830-863",
+          "candidate_index": 47
+        }
+      ]
+    },
+    {
+      "original": "PUT /wba/user/2i3dg4dtf908cde0/did.json HTTP/1.1\nHost: agent-network-protocol.com\nContent-Type: application/json\nContent-Length: <文件长度>\n\n<DID文档json>",
+      "translation": "PUT /wba/user/2i3dg4dtf908cde0/did.json HTTP/1.1\nHost: agent-network-protocol.com\nContent-Type: application/json\nContent-Length: <文件长度>\n\n<DID文档json>",
+      "status": "technical-retained",
+      "reason": "HTTP PUT要求の構文と値を保持。<文件长度>はファイル長、<DID文档json>はDID文書のJSONを示すプレースホルダー。",
+      "original_sha256": "4b5d5d98ee958c78a3c6d0600a9d2aeece146c2664f799181a06d980d28e4739",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "start": 22,
+          "end": 29,
+          "language": "plaintext",
+          "locator": "fence:22-29",
+          "candidate_index": 48
+        }
+      ]
+    },
+    {
+      "original": "HTTP/1.1 200 OK\nContent-Type: application/json\nContent-Length: <文件长度>\n\n<DID文档json>",
+      "translation": "HTTP/1.1 200 OK\nContent-Type: application/json\nContent-Length: <文件长度>\n\n<DID文档json>",
+      "status": "technical-retained",
+      "reason": "HTTP成功応答の構文と値を保持。<文件长度>はファイル長、<DID文档json>はDID文書のJSONを示すプレースホルダー。",
+      "original_sha256": "f43ced21f583d977ac8e0cc49d8d9181e07c24c3d52d5cb6424db7d18cc8f1c9",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "start": 43,
+          "end": 49,
+          "language": "plaintext",
+          "locator": "fence:43-49",
+          "candidate_index": 49
+        }
+      ]
+    },
+    {
+      "original": "HTTP/1.1 401 Unauthorized\nWWW-Authenticate: Bearer error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"\nContent-Type: application/json\nContent-Length: 0",
+      "translation": "HTTP/1.1 401 Unauthorized\nWWW-Authenticate: Bearer error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"\nContent-Type: application/json\nContent-Length: 0",
+      "status": "technical-retained",
+      "reason": "HTTP 401応答の構文と値を保持。Nonce has already been used. Please provide a new nonce.は「Nonceは既に使用されています。新しいnonceを指定してください」。",
+      "original_sha256": "a865133553a315096547b22e85f90344e613820523cad8bda8d2eec767ff0c86",
+      "contexts": [
+        {
+          "source": "chinese/docs/did-wba服务端测试接口.md",
+          "start": 114,
+          "end": 119,
+          "language": "plaintext",
+          "locator": "fence:114-119",
+          "candidate_index": 50
+        },
+        {
+          "source": "docs/did-wba-server-test-interface.md",
+          "start": 112,
+          "end": 117,
+          "language": "plaintext",
+          "locator": "fence:112-117",
+          "candidate_index": 73
+        }
+      ]
+    },
+    {
+      "original": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |                  (Includes public key and signature)|\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |                  (Includes public key and signature)|\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (Includes verify_data) -------> |\n   |                                                    |\n   |  <-------- Finished (Includes verify_data) --------|\n   |                                                    |\n   |                                                    |",
+      "translation": "登場主体：クライアントA、サーバーB。\n\n1. A→B：SourceHello。公開鍵と署名を含む。\n2. B→A：DestinationHello。公開鍵と署名を含む。\n3. A→B：Finished。verify_dataを含む。\n4. B→A：Finished。verify_dataを含む。",
+      "status": "agent-reviewed",
+      "original_sha256": "8cef759ad8d63cac539a301e38f71b034929fa6f58d3bcd2b2ebfd07cd08eb51",
+      "contexts": [
+        {
+          "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+          "start": 98,
+          "end": 116,
+          "language": "plaintext",
+          "locator": "fence:98-116",
+          "candidate_index": 60
+        }
+      ]
+    },
+    {
+      "original": "all active group members in the enclosing group context",
+      "translation": "外側のグループコンテキストに含まれる、すべてのactiveなグループメンバー",
+      "status": "agent-reviewed",
+      "original_sha256": "cd84d3438913912e62a7ff4fcfb34728d4fe5309db8816edc9d2e8c3d5588536",
+      "contexts": [
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "start": 416,
+          "end": 418,
+          "language": "text",
+          "locator": "fence:416-418",
+          "candidate_index": 65
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "start": 435,
+          "end": 437,
+          "language": "text",
+          "locator": "fence:435-437",
+          "candidate_index": 78
+        }
+      ]
+    },
+    {
+      "original": "active group members that the local application roster or profile layer classifies as agents",
+      "translation": "ローカルアプリケーションのrosterまたはprofile層がagentsに分類する、activeなグループメンバー",
+      "status": "agent-reviewed",
+      "original_sha256": "0329f1a4b6216cdc842f8927527b323bbc263ea8ed8b528e0e9481d4811197a3",
+      "contexts": [
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "start": 435,
+          "end": 437,
+          "language": "text",
+          "locator": "fence:435-437",
+          "candidate_index": 66
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "start": 454,
+          "end": 456,
+          "language": "text",
+          "locator": "fence:454-456",
+          "candidate_index": 79
+        }
+      ]
+    },
+    {
+      "original": "active group members that the local application roster or profile layer classifies as humans",
+      "translation": "ローカルアプリケーションのrosterまたはprofile層がhumansに分類する、activeなグループメンバー",
+      "status": "agent-reviewed",
+      "original_sha256": "ceccd112130ce7baaa6d02b5a41860741d247ad9a055fa6c033a054805dd63f0",
+      "contexts": [
+        {
+          "source": "deprecated/09-message-mentions.md",
+          "start": 454,
+          "end": 456,
+          "language": "text",
+          "locator": "fence:454-456",
+          "candidate_index": 67
+        },
+        {
+          "source": "message/09-message-mentions.md",
+          "start": 473,
+          "end": 475,
+          "language": "text",
+          "locator": "fence:473-475",
+          "candidate_index": 80
+        }
+      ]
+    },
+    {
+      "original": "WNS Handle or Search Result\n  -> DID\n  -> DID Document\n  -> AgentDescription / ANPMessageService\n  -> Runtime capabilities\n  -> Business interface or messaging profile",
+      "translation": "WNS Handleまたは検索結果\n → DID\n → DID Document\n → AgentDescription / ANPMessageService\n → 実行時の機能\n → 業務インターフェースまたはメッセージングprofile",
+      "status": "agent-reviewed",
+      "original_sha256": "7c93e051b3e1196ef13b72ba9dfa649bb3eb3a924ecd6f6f27dc5cb8fa1141a7",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "start": 113,
+          "end": 120,
+          "language": "text",
+          "locator": "fence:113-120",
+          "candidate_index": 68
+        }
+      ]
+    },
+    {
+      "original": "Handle -> Handle Resolution Endpoint -> DID -> DID Document -> service",
+      "translation": "Handle（ハンドル）→Handle解決エンドポイント→DID→DID Document（DID文書）→サービス",
+      "status": "agent-reviewed",
+      "original_sha256": "ef70ffc9591f1d63de609618b651ba0f11234bd255c6b2f7dc4de1c1bc69dc53",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "start": 281,
+          "end": 283,
+          "language": "text",
+          "locator": "fence:281-283",
+          "candidate_index": 69
+        },
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "start": 281,
+          "end": 283,
+          "language": "text",
+          "locator": "fence:281-283",
+          "candidate_index": 71
+        }
+      ]
+    },
+    {
+      "original": "WNS Handle 或搜索结果\n  -> DID\n  -> DID Document\n  -> AgentDescription / ANPMessageService\n  -> 运行时能力\n  -> 业务接口或消息 Profile",
+      "translation": "WNS Handleまたは検索結果\n → DID\n → DID Document\n → AgentDescription / ANPMessageService\n → 実行時の機能\n → 業務インターフェースまたはメッセージProfile",
+      "status": "agent-reviewed",
+      "original_sha256": "a70d725f6ecd19b40efd493f05cb9065fb99278dec3b7acf2d3ebbf12bd049a7",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "start": 113,
+          "end": 120,
+          "language": "text",
+          "locator": "fence:113-120",
+          "candidate_index": 70
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                    OAuth 生态                            │\n│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │\n│  │   Client     │  │     AS       │  │     RS       │  │\n│  │  (不变)      │  │  (不变)      │  │  (不变)      │  │\n│  └──────────────┘  └──────────────┘  └──────────────┘  │\n│         │                 │                  │           │\n│         │                 │                  │           │\n│         │          ┌──────▼──────┐           │           │\n│         │          │   Authn层   │           │           │\n│         └─────────►│  (可插拔)   │           │           │\n│                    └──────────────┘           │           │\n│                          │                    │           │\n│                    ┌─────▼──────┐             │           │\n│                    │ DID-auth   │             │           │\n│                    │ (OIDC IdP) │             │           │\n│                    └────────────┘             │           │\n└─────────────────────────────────────────────────────────┘\n\n关键：DID-auth是OAuth认证层的一个可选实现，不改变OAuth的授权架构",
+      "translation": "OAuthのエコシステム\n- Client（クライアント）：変更なし。\n- AS（認可サーバー）：変更なし。\n- RS（リソースサーバー）：変更なし。\n- Authn層（認証層）：差し替え可能。図ではClientとASからこの層につながる。\n- Authn層の下にDID-auth（OIDC IdP）がつながる。\n\n要点：DID-authはOAuth認証層の任意の実装の一つであり、OAuthの認可アーキテクチャを変更しません。",
+      "status": "agent-reviewed",
+      "original_sha256": "d9adef54a089cc65a824ad8d63aa2d9219b71f72fe21c66230310ef2d9f1c936",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 7,
+          "end": 28,
+          "language": "",
+          "locator": "fence:7-28",
+          "candidate_index": 81
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────┐\n│         Authn Layer (认证层)             │\n│  职责：确认\"主体是谁\"                     │\n│  实现：密码/OIDC/SAML/DID-auth          │\n│  输出：认证凭证（如ID Token）            │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│         Authz Layer (授权层)             │\n│  职责：决定\"主体能做什么\"                 │\n│  实现：OAuth AS (token颁发)              │\n│  输出：Access Token + Refresh Token      │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│      Resource Access (资源访问)          │\n│  职责：执行访问控制                       │\n│  实现：Resource Server                   │\n│  验证：Access Token + 策略               │\n└─────────────────────────────────────────┘",
+      "translation": "Authn Layer（認証層）\n- 責務：「主体は誰か」を確認する。\n- 実装：パスワード／OIDC／SAML／DID-auth。\n- 出力：認証資格情報（例：ID Token）。\n ↓\nAuthz Layer（認可層）\n- 責務：「主体が何をできるか」を決定する。\n- 実装：OAuth AS（tokenの発行）。\n- 出力：Access Token + Refresh Token。\n ↓\nResource Access（リソースアクセス）\n- 責務：アクセス制御を実行する。\n- 実装：Resource Server。\n- 検証：Access Token＋ポリシー。",
+      "status": "agent-reviewed",
+      "original_sha256": "5b341d605c652dfeabd485b33ddf66eb1b7b9223b64d755ba51e4cab6ef5bc03",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 36,
+          "end": 57,
+          "language": "",
+          "locator": "fence:36-57",
+          "candidate_index": 82
+        }
+      ]
+    },
+    {
+      "original": "┌────────────────────────────────────────────────────┐\n│              DID-auth (OIDC Provider)              │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  标准OIDC端点                                 │ │\n│  │  ├── /.well-known/openid-configuration       │ │\n│  │  ├── /token (ID Token颁发)                   │ │\n│  │  ├── /jwks (公钥端点)                        │ │\n│  │  └── /authorize (浏览器场景)                 │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  DID/VC/VP验证能力                           │ │\n│  │  ├── DID解析                                 │ │\n│  │  ├── VP签名验证                              │ │\n│  │  ├── VC签名验证                              │ │\n│  │  ├── Personhood VC验证                       │ │\n│  │  └── VC撤销检查                              │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  输出：标准ID Token (JWT)                          │\n│        包含vc_claims (已验证的VC内容)              │\n└────────────────────────────────────────────────────┘",
+      "translation": "DID-auth（OIDC Provider）\n\n標準OIDCエンドポイント：\n- /.well-known/openid-configuration\n- /token：ID Tokenの発行。\n- /jwks：公開鍵エンドポイント。\n- /authorize：ブラウザーを使う場面。\n\nDID/VC/VPの検証機能：\n- DIDの解決。\n- VPの署名検証。\n- VCの署名検証。\n- Personhood VCの検証。\n- VCの取り消し確認。\n\n出力：標準ID Token（JWT）。\nvc_claims（検証済みのVC内容）を含みます。",
+      "status": "agent-reviewed",
+      "original_sha256": "44f3253af452531e7e4da86769654f440b45cc4ea674ec578a2d7d1dc2ff9cdc",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 159,
+          "end": 183,
+          "language": "",
+          "locator": "fence:159-183",
+          "candidate_index": 83
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  核心思路：                                              │\n│                                                         │\n│  • Agent 用 HTTP 库处理 302 重定向（模拟浏览器）        │\n│  • IdP (DID-auth) 支持在请求中直接接受 VP 认证          │\n│  • Agent 截获最终重定向，从 URL 提取 code               │\n│  • 使用标准 Authorization Code 换取 Access Token        │\n│                                                         │\n│  优势：                                                  │\n│  ✅ 兼容性最强（几乎所有 AS 都支持 Auth Code Flow）     │\n│  ✅ 不需要 AS 支持 Token Exchange                       │\n│  ✅ 安全性由 IdP 的 DID/VC 验证保证                    │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "中心となる考え方：\n- エージェントがHTTPライブラリを使って302リダイレクトを処理する（ブラウザーの動作を模擬）。\n- IdP（DID-auth）が、要求内でVP認証を直接受け付けることに対応する。\n- エージェントが最後のリダイレクトを捕捉し、URLからcodeを抽出する。\n- 標準Authorization Codeを使ってAccess Tokenに交換する。\n\n利点：\n✅ 最も高い互換性（ほぼすべてのASがAuth Code Flowに対応）。\n✅ ASがToken Exchangeに対応する必要がない。\n✅ IdPのDID/VC検証によって安全性を保証。",
+      "status": "agent-reviewed",
+      "original_sha256": "48462f10a3b9b7a3a3f38ae0c10118bc577d807d30dac30d13722ef1b6e11efe",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 351,
+          "end": 367,
+          "language": "",
+          "locator": "fence:351-367",
+          "candidate_index": 84
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  DID-auth /authorize 端点需要支持：                      │\n│                                                         │\n│  方式 A：GET 请求带 VP 参数                             │\n│  GET /authorize?                                        │\n│    response_type=code&                                  │\n│    client_id=xxx&                                       │\n│    vp_token=<base64url编码的VP>&                       │\n│    redirect_uri=...                                     │\n│                                                         │\n│  方式 B：POST 请求带 JSON body                          │\n│  POST /authorize                                        │\n│  Content-Type: application/json                         │\n│  {                                                      │\n│    \"response_type\": \"code\",                            │\n│    \"client_id\": \"xxx\",                                 │\n│    \"vp\": { ... VP内容 ... },                           │\n│    \"redirect_uri\": \"...\"                               │\n│  }                                                      │\n│                                                         │\n│  验证通过后直接返回 302，不返回 HTML                    │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "DID-authの/authorizeエンドポイントは、次に対応する必要があります。\n\n方式A：VPパラメーター付きのGET要求。\nGET /authorize?\n  response_type=code&\n  client_id=xxx&\n  vp_token=<base64url编码的VP>&\n  redirect_uri=...\n\n<base64url编码的VP>は「base64urlで符号化したVP」を示すプレースホルダーです。\n\n方式B：JSON body付きのPOST要求。\nPOST /authorize\nContent-Type: application/json\n{\n  \"response_type\": \"code\",\n  \"client_id\": \"xxx\",\n  \"vp\": { ... VP内容 ... },\n  \"redirect_uri\": \"...\"\n}\n\nVP内容は「VPの内容」を示すプレースホルダーです。\n\n検証に合格したら、HTMLを返さず302を直接返します。",
+      "status": "agent-reviewed",
+      "original_sha256": "cf89613e0f6864171748fcfeaa003a7d8be4723aa5bd9446469126b6fd50f6ee",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 421,
+          "end": 446,
+          "language": "",
+          "locator": "fence:421-446",
+          "candidate_index": 85
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  安全屏障转移：                                          │\n│                                                         │\n│  传统 OAuth：                                           │\n│    安全依赖 → AS 的 client 注册 + client_secret        │\n│                                                         │\n│  本方案：                                                │\n│    安全依赖 → IdP 的 DID/VC 验证                       │\n│                                                         │\n│  client_id 的作用降级为：                               │\n│    • 满足 AS 形式要求                                   │\n│    • 绑定 redirect_uri（AS 验证用）                    │\n│    • 配置 PKCE 要求                                     │\n│                                                         │\n│  真正的身份验证：                                        │\n│    ✓ DID 私钥签名（密码学不可伪造）                    │\n│    ✓ VC 颁发方验证（权威机构背书）                     │\n│    ✓ VC 撤销检查（动态准入控制）                       │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "安全性を支える境界の移動：\n\n従来のOAuth：\n安全性の依存先→ASでのクライアント登録＋client_secret。\n\nこの方式：\n安全性の依存先→IdPでのDID/VC検証。\n\nclient_idの役割を次へ限定：\n- ASの形式上の要件を満たす。\n- redirect_uriをバインドする（ASでの検証用）。\n- PKCE要件を設定する。\n\n実際のアイデンティティ検証：\n✓ DID秘密鍵による署名（暗号学的に偽造不可能）。\n✓ VC発行者の検証（権威ある機関の裏付け）。\n✓ VCの取り消し確認（動的な受け入れ制御）。",
+      "status": "agent-reviewed",
+      "original_sha256": "f1d71b91420d216abfefb9b59947cfba79274c28f76687eebd03250fbf8bc68d",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 496,
+          "end": 518,
+          "language": "",
+          "locator": "fence:496-518",
+          "candidate_index": 86
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  优先使用 Token Exchange：                               │\n│    AS 支持 RFC 8693 时                                  │\n│    流程更简单，代码更少                                  │\n│                                                         │\n│  使用模拟 Auth Code Flow：                              │\n│    AS 不支持 Token Exchange 时                          │\n│    需要最大兼容性时                                      │\n│    如 AWS Cognito 等受限环境                           │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "Token Exchangeを優先する場合：\n- ASがRFC 8693に対応しているとき。\n- フローが単純になり、コード量が減る。\n\n模擬的なAuth Code Flowを使う場合：\n- ASがToken Exchangeに対応していないとき。\n- 最大限の互換性が必要なとき。\n- 例えば、AWS Cognitoなどの制約のある環境。",
+      "status": "agent-reviewed",
+      "original_sha256": "8db57f0f834a9d471115cab5e48469e2f46138438506b982a461ef4c0f0295ff",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 535,
+          "end": 548,
+          "language": "",
+          "locator": "fence:535-548",
+          "candidate_index": 87
+        }
+      ]
+    },
+    {
+      "original": "传统OAuth只知道\"谁\"：\n用户登录 → AS只知道sub=\"alice\"\n         → 授予固定scope=\"read write\"\n         → 无法根据用户属性动态调整权限",
+      "translation": "従来のOAuthは「誰か」しか認識しない：\n利用者がログイン→ASが知るのはsub=\"alice\"だけ。\n → 固定のscope=\"read write\"を付与。\n → 利用者の属性に応じて権限を動的に調整できない。",
+      "status": "agent-reviewed",
+      "original_sha256": "e5f7f67fdfcbe3ff045713ef46d1c020f8ff1cb1942ba04ac8649690d460fa0d",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 773,
+          "end": 778,
+          "language": "",
+          "locator": "fence:773-778",
+          "candidate_index": 88
+        }
+      ]
+    },
+    {
+      "original": "有了VC Claims，AS知道\"谁的什么属性\"：\n用户提交VP → DID-auth验证VC\n           → 提取：personhood=verified, kyc_level=2\n           → 这些信息进入ID Token\n           → AS根据这些可信属性构造RAR\n           → 动态授予细粒度权限",
+      "translation": "VC Claimsがあれば、ASは「誰のどの属性か」を認識する：\n利用者がVPを送信→DID-authがVCを検証。\n → personhood=verified, kyc_level=2を抽出。\n → この情報がID Tokenに入る。\n → ASがこれらの信頼できる属性に基づいてRARを構築。\n → 細かい単位の権限を動的に付与。",
+      "status": "agent-reviewed",
+      "original_sha256": "481b27e5016f3d175f39550e433e224222f8592471dd4bccd82e260b4ae12da1",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 782,
+          "end": 789,
+          "language": "",
+          "locator": "fence:782-789",
+          "candidate_index": 89
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  传统OAuth的安全模型：                                   │\n│    client_id + client_secret（或mTLS）                 │\n│    → 防止未授权client获取token                          │\n│                                                         │\n│  DID-OAuth集成方案的安全模型：                           │\n│    client_id（形式要求）+ DID/VC验证（实质安全）        │\n│    → 安全重心从client凭据转移到主体身份验证              │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "従来のOAuthのセキュリティモデル：\nclient_id + client_secret（またはmTLS）。\n → 認可されていないクライアントによるtoken取得を防ぐ。\n\nDID-OAuth統合方式のセキュリティモデル：\nclient_id（形式上の要件）＋DID/VC検証（実質的な安全性）。\n → セキュリティの重点が、クライアント資格情報から主体のアイデンティティ検証へ移る。",
+      "status": "agent-reviewed",
+      "original_sha256": "ae7208d2b6c8cbe97e1e5b6e91b00bafabe3ef75958480c7f8c95b901f83cdae",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 876,
+          "end": 888,
+          "language": "",
+          "locator": "fence:876-888",
+          "candidate_index": 90
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────┐\n│      现有OAuth AS (如Keycloak)         │\n│  ┌───────────────────────────────────┐  │\n│  │  Identity Provider配置            │  │\n│  │  ├── Google (OIDC)                │  │\n│  │  ├── Azure AD (OIDC)              │  │\n│  │  ├── SAML IdP                     │  │\n│  │  └── DID-auth (OIDC) ← 新增      │  │\n│  └───────────────────────────────────┘  │\n│                                         │\n│  配置方式：                              │\n│  - 添加OIDC Provider                    │\n│  - 配置issuer URL                       │\n│  - 配置jwks_uri                         │\n│  - 映射vc_claims到用户属性              │\n└─────────────────────────────────────────┘",
+      "translation": "既存のOAuth AS（例：Keycloak）\n\nIdentity Providerの設定：\n- Google（OIDC）。\n- Azure AD（OIDC）。\n- SAML IdP。\n- DID-auth（OIDC）←新規追加。\n\n設定方法：\n- OIDC Providerを追加。\n- issuer URLを設定。\n- jwks_uriを設定。\n- vc_claimsを利用者の属性へ対応付ける。",
+      "status": "agent-reviewed",
+      "original_sha256": "2649d004c279fcc9e836caad33804249cdf73d653e95609d8afcd137f258d820",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 1029,
+          "end": 1046,
+          "language": "",
+          "locator": "fence:1029-1046",
+          "candidate_index": 91
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────┐\n│  DID-auth = 标准OIDC Provider           │\n│           + DID/VC/VP验证能力           │\n│                                         │\n│  定位：OAuth认证层的可插拔实现           │\n│  输出：标准ID Token                     │\n│  集成：通过OIDC标准协议                  │\n└─────────────────────────────────────────┘",
+      "translation": "DID-auth＝標準OIDC Provider＋DID/VC/VPの検証機能。\n\n位置づけ：OAuth認証層の差し替え可能な実装。\n出力：標準ID Token。\n統合：OIDC標準プロトコルを通じて行う。",
+      "status": "agent-reviewed",
+      "original_sha256": "f042ca71c4e7f2c1965b744ca2e10d77ab87685656260b878e6e23de55acd5ae",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "start": 1143,
+          "end": 1152,
+          "language": "",
+          "locator": "fence:1143-1152",
+          "candidate_index": 92
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                    OAuth Ecosystem                       │\n│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │\n│  │   Client     │  │     AS       │  │     RS       │  │\n│  │  (unchanged) │  │  (unchanged) │  │  (unchanged) │  │\n│  └──────────────┘  └──────────────┘  └──────────────┘  │\n│         │                 │                  │           │\n│         │                 │                  │           │\n│         │          ┌──────▼──────┐           │           │\n│         │          │   Authn     │           │           │\n│         └─────────►│  (pluggable)│           │           │\n│                    └──────────────┘           │           │\n│                          │                    │           │\n│                    ┌─────▼──────┐             │           │\n│                    │ DID-auth   │             │           │\n│                    │ (OIDC IdP) │             │           │\n│                    └────────────┘             │           │\n└─────────────────────────────────────────────────────────┘\n\nKey: DID-auth is an optional implementation of OAuth's authentication layer,\n     not changing OAuth's authorization architecture",
+      "translation": "OAuthのエコシステム\n- Client（クライアント）：変更なし。\n- AS（認可サーバー）：変更なし。\n- RS（リソースサーバー）：変更なし。\n- Authn（認証）：差し替え可能。図ではClientとASからこの層につながる。\n- Authnの下にDID-auth（OIDC IdP）がつながる。\n\n要点：DID-authはOAuth認証層の任意の実装であり、OAuthの認可アーキテクチャを変更しません。",
+      "status": "agent-reviewed",
+      "original_sha256": "726793d564f8f56e9acb6acf3a52e62f799f2d07cc233caf57407b32ebf936d0",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 7,
+          "end": 29,
+          "language": "",
+          "locator": "fence:7-29",
+          "candidate_index": 93
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────┐\n│         Authn Layer (Authentication)     │\n│  Responsibility: Confirm \"who is the     │\n│                  subject\"                │\n│  Implementation: Password/OIDC/SAML/     │\n│                  DID-auth                │\n│  Output: Authentication credentials      │\n│          (e.g., ID Token)                │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│         Authz Layer (Authorization)      │\n│  Responsibility: Decide \"what the        │\n│                  subject can do\"         │\n│  Implementation: OAuth AS (token         │\n│                  issuance)               │\n│  Output: Access Token + Refresh Token    │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│      Resource Access                     │\n│  Responsibility: Execute access control  │\n│  Implementation: Resource Server         │\n│  Verification: Access Token + Policy     │\n└─────────────────────────────────────────┘",
+      "translation": "Authn Layer（認証）\n- 責務：「主体は誰か」を確認する。\n- 実装：パスワード／OIDC／SAML／DID-auth。\n- 出力：認証資格情報（例：ID Token）。\n ↓\nAuthz Layer（認可）\n- 責務：「主体が何をできるか」を決定する。\n- 実装：OAuth AS（tokenの発行）。\n- 出力：Access Token + Refresh Token。\n ↓\nResource Access（リソースアクセス）\n- 責務：アクセス制御を実行する。\n- 実装：Resource Server。\n- 検証：Access Token＋ポリシー。",
+      "status": "agent-reviewed",
+      "original_sha256": "56bd31450442456a960273179f712aa8d8968de7c44964e6badae6a0a65455c0",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 37,
+          "end": 63,
+          "language": "",
+          "locator": "fence:37-63",
+          "candidate_index": 94
+        }
+      ]
+    },
+    {
+      "original": "┌────────────────────────────────────────────────────┐\n│              DID-auth (OIDC Provider)              │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  Standard OIDC Endpoints                     │ │\n│  │  ├── /.well-known/openid-configuration       │ │\n│  │  ├── /token (ID Token issuance)              │ │\n│  │  ├── /jwks (public key endpoint)             │ │\n│  │  └── /authorize (browser scenario)           │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  DID/VC/VP Verification Capability           │ │\n│  │  ├── DID resolution                          │ │\n│  │  ├── VP signature verification               │ │\n│  │  ├── VC signature verification               │ │\n│  │  ├── Personhood VC verification              │ │\n│  │  └── VC revocation check                     │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  Output: Standard ID Token (JWT)                   │\n│          Contains vc_claims (verified VC content)  │\n└────────────────────────────────────────────────────┘",
+      "translation": "DID-auth（OIDC Provider）\n\n標準OIDCエンドポイント：\n- /.well-known/openid-configuration\n- /token：ID Tokenの発行。\n- /jwks：公開鍵エンドポイント。\n- /authorize：ブラウザーを使う場面。\n\nDID/VC/VPの検証機能：\n- DIDの解決。\n- VPの署名検証。\n- VCの署名検証。\n- Personhood VCの検証。\n- VCの取り消し確認。\n\n出力：標準ID Token（JWT）。\nvc_claims（検証済みのVC内容）を含みます。",
+      "status": "agent-reviewed",
+      "original_sha256": "2f0c0b0ca0292d5a0e04047b42bc0392adf94cf15c24adb4a592df9287c0d147",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 165,
+          "end": 189,
+          "language": "",
+          "locator": "fence:165-189",
+          "candidate_index": 95
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  Core Idea:                                             │\n│                                                         │\n│  • Agent uses HTTP library to handle 302 redirects     │\n│    (simulating browser)                                 │\n│  • IdP (DID-auth) supports accepting VP authentication │\n│    directly in request                                  │\n│  • Agent intercepts final redirect, extracts code      │\n│    from URL                                             │\n│  • Uses standard Authorization Code to exchange for    │\n│    Access Token                                         │\n│                                                         │\n│  Advantages:                                            │\n│  ✅ Strongest compatibility (almost all AS support     │\n│     Auth Code Flow)                                     │\n│  ✅ Doesn't require AS to support Token Exchange       │\n│  ✅ Security guaranteed by IdP's DID/VC verification   │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "中心となる考え方：\n- エージェントがHTTPライブラリを使って302リダイレクトを処理する（ブラウザーを模擬）。\n- IdP（DID-auth）が、要求内でVP認証を直接受け付けることに対応する。\n- エージェントが最後のリダイレクトを捕捉し、URLからcodeを抽出する。\n- 標準Authorization Codeを使ってAccess Tokenに交換する。\n\n利点：\n✅ 最も高い互換性（ほぼすべてのASがAuth Code Flowに対応）。\n✅ ASがToken Exchangeに対応する必要がない。\n✅ IdPのDID/VC検証によって安全性を保証。",
+      "status": "agent-reviewed",
+      "original_sha256": "6966bc8cb7e8fbab1ffe5fa6bac8f8ff4f353fc765591d942ebdc9d1b38bb41a",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 360,
+          "end": 381,
+          "language": "",
+          "locator": "fence:360-381",
+          "candidate_index": 96
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  DID-auth /authorize endpoint needs to support:        │\n│                                                         │\n│  Method A: GET request with VP parameter               │\n│  GET /authorize?                                        │\n│    response_type=code&                                  │\n│    client_id=xxx&                                       │\n│    vp_token=<base64url encoded VP>&                    │\n│    redirect_uri=...                                     │\n│                                                         │\n│  Method B: POST request with JSON body                 │\n│  POST /authorize                                        │\n│  Content-Type: application/json                         │\n│  {                                                      │\n│    \"response_type\": \"code\",                            │\n│    \"client_id\": \"xxx\",                                 │\n│    \"vp\": { ... VP content ... },                       │\n│    \"redirect_uri\": \"...\"                               │\n│  }                                                      │\n│                                                         │\n│  After verification, directly return 302, no HTML      │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "DID-authの/authorizeエンドポイントは、次に対応する必要があります。\n\n方式A：VPパラメーター付きのGET要求。\nGET /authorize?\n  response_type=code&\n  client_id=xxx&\n  vp_token=<base64url encoded VP>&\n  redirect_uri=...\n\n<base64url encoded VP>は「base64urlで符号化したVP」を示すプレースホルダーです。\n\n方式B：JSON body付きのPOST要求。\nPOST /authorize\nContent-Type: application/json\n{\n  \"response_type\": \"code\",\n  \"client_id\": \"xxx\",\n  \"vp\": { ... VP content ... },\n  \"redirect_uri\": \"...\"\n}\n\nVP contentは「VPの内容」を示すプレースホルダーです。\n\n検証後は、HTMLを返さず302を直接返します。",
+      "status": "agent-reviewed",
+      "original_sha256": "23d4b9b7edea5891161f2cd39e3c4a6536ee2213b98d4955d551e01652a27f67",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 445,
+          "end": 470,
+          "language": "",
+          "locator": "fence:445-470",
+          "candidate_index": 97
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  Security Barrier Transfer:                            │\n│                                                         │\n│  Traditional OAuth:                                     │\n│    Security relies on → AS's client registration +     │\n│                         client_secret                   │\n│                                                         │\n│  This Solution:                                         │\n│    Security relies on → IdP's DID/VC verification      │\n│                                                         │\n│  client_id's role downgraded to:                       │\n│    • Satisfy AS formal requirements                    │\n│    • Bind redirect_uri (for AS verification)           │\n│    • Configure PKCE requirements                       │\n│                                                         │\n│  Real identity verification:                           │\n│    ✓ DID private key signature (cryptographically      │\n│      unforgeable)                                       │\n│    ✓ VC issuer verification (authority endorsement)    │\n│    ✓ VC revocation check (dynamic admission control)   │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "安全性を支える境界の移動：\n\n従来のOAuth：\n安全性の依存先→ASでのクライアント登録＋client_secret。\n\nこの方式：\n安全性の依存先→IdPでのDID/VC検証。\n\nclient_idの役割を次へ限定：\n- ASの形式上の要件を満たす。\n- redirect_uriをバインドする（ASでの検証用）。\n- PKCE要件を設定する。\n\n実際のアイデンティティ検証：\n✓ DID秘密鍵による署名（暗号学的に偽造不可能）。\n✓ VC発行者の検証（権威ある機関の裏付け）。\n✓ VCの取り消し確認（動的な受け入れ制御）。",
+      "status": "agent-reviewed",
+      "original_sha256": "1511056d35183404d1cdf3ecb6be9b350d5c0016405f0d3aedb269d9d994d9f4",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 531,
+          "end": 555,
+          "language": "",
+          "locator": "fence:531-555",
+          "candidate_index": 98
+        }
+      ]
+    },
+    {
+      "original": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  Prioritize Token Exchange:                            │\n│    When AS supports RFC 8693                           │\n│    Simpler flow, less code                             │\n│                                                         │\n│  Use Simulated Auth Code Flow:                         │\n│    When AS doesn't support Token Exchange              │\n│    When maximum compatibility needed                   │\n│    E.g., AWS Cognito and other restricted environments │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "translation": "Token Exchangeを優先する場合：\n- ASがRFC 8693に対応しているとき。\n- フローが単純になり、コード量が減る。\n\n模擬的なAuth Code Flowを使う場合：\n- ASがToken Exchangeに対応していないとき。\n- 最大限の互換性が必要なとき。\n- 例えば、AWS Cognitoなどの制約のある環境。",
+      "status": "agent-reviewed",
+      "original_sha256": "102f7be3c24b5483ece01e373d3964d24d1feb73135d1fb22f50c1c6af667f64",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 578,
+          "end": 591,
+          "language": "",
+          "locator": "fence:578-591",
+          "candidate_index": 99
+        }
+      ]
+    },
+    {
+      "original": "Traditional OAuth only knows \"who\":\nUser login → AS only knows sub=\"alice\"\n          → Grants fixed scope=\"read write\"\n          → Cannot dynamically adjust permissions based on user attributes",
+      "translation": "従来のOAuthは「誰か」しか認識しない：\n利用者がログイン→ASが知るのはsub=\"alice\"だけ。\n → 固定のscope=\"read write\"を付与。\n → 利用者の属性に応じて権限を動的に調整できない。",
+      "status": "agent-reviewed",
+      "original_sha256": "46146fe7b3f4de2402e3fa9fc3f2ced148a9e86caedfaf17fecabbfc76ae6224",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 815,
+          "end": 820,
+          "language": "",
+          "locator": "fence:815-820",
+          "candidate_index": 100
+        }
+      ]
+    },
+    {
+      "original": "With VC Claims, AS knows \"who's what attributes\":\nUser submits VP → DID-auth verifies VC\n           → Extracts: personhood=verified, kyc_level=2\n           → This information enters ID Token\n           → AS constructs RAR based on these trusted attributes\n           → Dynamically grants fine-grained permissions",
+      "translation": "VC Claimsがあれば、ASは「誰のどの属性か」を認識する：\n利用者がVPを送信→DID-authがVCを検証。\n → personhood=verified, kyc_level=2を抽出。\n → この情報がID Tokenに入る。\n → ASがこれらの信頼できる属性に基づいてRARを構築。\n → 細かい単位の権限を動的に付与。",
+      "status": "agent-reviewed",
+      "original_sha256": "3762b28b4850d063c260c17cfb2c3dda54bd364d97de31cd618067a8ca0af91e",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 824,
+          "end": 831,
+          "language": "",
+          "locator": "fence:824-831",
+          "candidate_index": 101
+        }
+      ]
+    },
+    {
+      "original": "Traditional OAuth Security Model:\n  client_id + client_secret (or mTLS)\n  → Prevents unauthorized clients from obtaining tokens\n\nDID-OAuth Integration Solution Security Model:\n  client_id (formal requirement) + DID/VC verification (substantive security)\n  → Security focus shifts from client credentials to subject identity verification",
+      "translation": "従来のOAuthのセキュリティモデル：\nclient_id + client_secret（またはmTLS）。\n → 認可されていないクライアントによるトークン取得を防ぐ。\n\nDID-OAuth統合方式のセキュリティモデル：\nclient_id（形式上の要件）＋DID/VC検証（実質的な安全性）。\n → セキュリティの重点が、クライアント資格情報から主体のアイデンティティ検証へ移る。",
+      "status": "agent-reviewed",
+      "original_sha256": "583ce064ab6bef7cb3c77e828bd4aae234853276c7796bf5e63bfb22927a6dee",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 918,
+          "end": 926,
+          "language": "",
+          "locator": "fence:918-926",
+          "candidate_index": 102
+        }
+      ]
+    },
+    {
+      "original": "Existing OAuth AS (e.g., Keycloak)\n ┌───────────────────────────────────┐\n │  Identity Provider Configuration  │\n │  ├── Google (OIDC)                │\n │  ├── Azure AD (OIDC)              │\n │  ├── SAML IdP                     │\n │  └── DID-auth (OIDC) ← New        │\n └───────────────────────────────────┘\n                                     \n Configuration:\n - Add OIDC Provider\n - Configure issuer URL\n - Configure jwks_uri\n - Map vc_claims to user attributes",
+      "translation": "既存のOAuth AS（例：Keycloak）\n\nIdentity Providerの設定：\n- Google（OIDC）。\n- Azure AD（OIDC）。\n- SAML IdP。\n- DID-auth（OIDC）←新規追加。\n\n設定：\n- OIDC Providerを追加。\n- issuer URLを設定。\n- jwks_uriを設定。\n- vc_claimsを利用者の属性へ対応付ける。",
+      "status": "agent-reviewed",
+      "original_sha256": "3e27d8abc0d54664f3ef427bc00f556b112875b73200d09986c19b9050bc3584",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 1067,
+          "end": 1082,
+          "language": "",
+          "locator": "fence:1067-1082",
+          "candidate_index": 103
+        }
+      ]
+    },
+    {
+      "original": "DID-auth = Standard OIDC Provider\n         + DID/VC/VP Verification Capability\n\nPositioning: Pluggable implementation of OAuth authentication layer\nOutput: Standard ID Token\nIntegration: Via OIDC standard protocol",
+      "translation": "DID-auth＝標準OIDC Provider＋DID/VC/VPの検証機能。\n\n位置づけ：OAuth認証層の差し替え可能な実装。\n出力：標準ID Token。\n統合：OIDC標準プロトコルを通じて行う。",
+      "status": "agent-reviewed",
+      "original_sha256": "ea92f5ec1b471556ae14e7c939e8d19fad0423c2dfc42574e11d599630459a67",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "start": 1178,
+          "end": 1185,
+          "language": "",
+          "locator": "fence:1178-1185",
+          "candidate_index": 104
+        }
+      ]
+    },
+    {
+      "original": "+--------------------------------------------------------+\n|                  AI Agent Application                  |\n+--------------------------------------------------------+\n\n+--------------------------------------------------------+\n|  AI Agent Comm Protocol Layer (e.g.,JSON-RPC, JSON-LD) |\n+--------------------------------------------------------+\n\n+--------------------------------------------------------+\n|            Application Layer (e.g.,HTTP, SIP)          |\n+--------------------------------------------------------+\n\n+--------------------------------------------------------+\n|         Transmission Layer (e.g.,UDP, TCP, QUIC)       |\n+--------------------------------------------------------+                    ",
+      "translation": "上から順に示された層：\n\n1. AI Agent Application：AIエージェントのアプリケーション。\n2. AI Agent Comm Protocol Layer：AIエージェント通信プロトコル層（例：JSON-RPC、JSON-LD）。\n3. Application Layer：アプリケーション層（例：HTTP、SIP）。\n4. Transmission Layer：伝送層（例：UDP、TCP、QUIC）。",
+      "status": "agent-reviewed",
+      "original_sha256": "4368777bc98da98c670d9146ada5357dc5139885fc649738ce621eb449a975e1",
+      "contexts": [
+        {
+          "source": "standard/draft-zyyhl-agent-networks-framework-00.md",
+          "start": 476,
+          "end": 492,
+          "language": "",
+          "locator": "fence:476-492",
+          "candidate_index": 105
+        }
+      ]
+    }
+  ],
+  "processed_unique_blocks": 76,
+  "technical_retained_unique_blocks": 10,
+  "translated_source_blocks": 81,
+  "technical_retained_source_blocks": 25
+}

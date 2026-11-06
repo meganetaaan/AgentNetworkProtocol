@@ -1,0 +1,2722 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    200,
+    399
+  ],
+  "units": [
+    {
+      "original": "5. CartMandate<br/>(order details + QR code + merchant signature)",
+      "translation": "5. CartMandate<br/>（注文の詳細＋QRコード＋加盟店の署名）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 2: User Authorization",
+      "translation": "フェーズ2：利用者による認可",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "6. Display order info<br/>(items, price, payment QR code)",
+      "translation": "6. 注文情報を表示<br/>（商品、価格、支払い用QRコード）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "7. Scan QR code to pay<br/>(Alipay/WeChat)",
+      "translation": "7. QRコードを読み取って支払う<br/>（Alipay/WeChat）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "8. Complete third-party payment<br/>(obtain payment proof)",
+      "translation": "8. 第三者決済を完了<br/>（支払い証明を取得）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "9. Authorize payment<br/>(provide payment proof)",
+      "translation": "9. 支払いを認可<br/>（支払い証明を提供）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 3: Payment Processing",
+      "translation": "フェーズ3：支払い処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "10. Calculate transaction_data<br/>(cart_hash + pmt_hash)",
+      "translation": "10. transaction_dataを計算<br/>（cart_hash＋pmt_hash）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "11. Sign with user private key<br/>generate user_authorization",
+      "translation": "11. 利用者の秘密鍵で署名し<br/>user_authorizationを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "12. send_payment_mandate<br/>(PaymentMandate + user authorization)",
+      "translation": "12. send_payment_mandate<br/>（PaymentMandate＋利用者の認可）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "13. Verify signatures<br/>- Verify merchant_authorization<br/>- Verify user_authorization<br/>- Validate cart_hash and pmt_hash",
+      "translation": "13. 署名を検証<br/>- merchant_authorizationを検証<br/>- user_authorizationを検証<br/>- cart_hashとpmt_hashを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:25",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "14. Request payment confirmation<br/>(payment proof)",
+      "translation": "14. 支払い確認を要求<br/>（支払い証明）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "15. Verify payment status",
+      "translation": "15. 支払い状況を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:27",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "16. Payment result<br/>(success/failure)",
+      "translation": "16. 支払い結果<br/>（成功／失敗）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 4: Delivery Confirmation",
+      "translation": "フェーズ4：引き渡しの確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:30",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Payment Success",
+      "translation": "支払い成功",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:31",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "17. Arrange shipment/service provision",
+      "translation": "17. 発送／サービス提供を手配",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "18. Return transaction success<br/>(transaction_id)",
+      "translation": "18. 取引成功を返す<br/>（transaction_id）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:33",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "19. Notify payment success<br/>Display order status",
+      "translation": "19. 支払い成功を通知<br/>注文状況を表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:34",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "20. (Optional) Send DeliveryReceipt",
+      "translation": "20. （任意）DeliveryReceiptを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:35",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "21. DeliveryReceipt<br/>(shipment info/service proof)",
+      "translation": "21. DeliveryReceipt<br/>（発送情報／サービスの証明）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:36",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Payment Failure",
+      "translation": "支払い失敗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:37",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "18. Return transaction failure<br/>(error message)",
+      "translation": "18. 取引失敗を返す<br/>（エラーメッセージ）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:38",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "19. Notify payment failure<br/>Display failure reason",
+      "translation": "19. 支払い失敗を通知<br/>失敗の理由を表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:148-189/line:39",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "An implementation of the AP2 protocol based on the ANP protocol, used for payment and transactions between agents.",
+      "translation": "ANPプロトコルに基づくAP2プロトコルの実装。エージェント間の支払いと取引に使用します。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:232-249//interfaces/0/description",
+          "language": "json"
+        },
+        {
+          "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+          "locator": "fence:313-338/line:6:column:22",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Merchant Agent - generates cart, creates QR orders, issues delivery receipts",
+      "translation": "加盟店エージェント：カートを生成し、QRコード付き注文を作成し、引き渡しの受領証を発行します。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:255-274//roles/merchant/description",
+          "language": "json"
+        },
+        {
+          "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+          "locator": "fence:313-338/line:17:column:28",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Shopper Agent - handles user interaction, PIN validation, QR code display",
+      "translation": "買い物エージェント：利用者とのやり取り、PIN検証、QRコード表示を処理します。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:255-274//roles/shopper/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "AP2 protocol implementation supporting payment and transaction operations",
+      "translation": "支払いと取引操作に対応するAP2プロトコルの実装",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Merchant Agent - hotel booking service provider",
+      "translation": "加盟店エージェント：ホテル予約サービスの提供者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Create a cart mandate for a hotel booking",
+      "translation": "ホテル予約のカート委任状を作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/create_cart_mandate/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Hotel ID",
+      "translation": "ホテルID",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/create_cart_mandate/item_schema/properties/hotel_id/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Rate plan ID",
+      "translation": "料金プランID",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/create_cart_mandate/item_schema/properties/rate_plan_id/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Number of rooms",
+      "translation": "客室数",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/create_cart_mandate/item_schema/properties/room_num/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Check-in date (YYYY-MM-DD)",
+      "translation": "チェックイン日（YYYY-MM-DD）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/create_cart_mandate/item_schema/properties/check_in_date/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Check-out date (YYYY-MM-DD)",
+      "translation": "チェックアウト日（YYYY-MM-DD）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:280-309//content/roles/merchant/create_cart_mandate/item_schema/properties/check_out_date/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Nike Air Max 90",
+      "translation": "Nike Air Max 90",
+      "status": "technical-retained",
+      "reason": "商品名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:319-387//contents/payment_request/details/displayItems/0/label",
+          "language": "json"
+        },
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:636-682//data/contents/payment_request/details/displayItems/0/label",
+          "language": "json"
+        },
+        {
+          "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+          "locator": "fence:349-425//contents/payment_request/details/displayItems/0/label",
+          "language": "json"
+        },
+        {
+          "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+          "locator": "fence:850-896//data/contents/payment_request/details/displayItems/0/label",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "pip install pyjwt",
+      "translation": "pip install pyjwt",
+      "status": "technical-retained",
+      "reason": "実行コマンドとパッケージ名を保持。",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:491-524/line:2",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Payment processed successfully",
+      "translation": "支払いを正常に処理しました",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "application/10-anp-agent-payment-protocol-specification.md",
+          "locator": "fence:730-742//data/message",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "1. Discovery Phase",
+      "translation": "1. 発見フェーズ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+          "locator": "fence:35-46/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+          "locator": "fence:35-46/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "2. Task Splitting",
+      "translation": "2. タスクの分割",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "3. Subtask Submission to Remote Agent A",
+      "translation": "3. リモートエージェントAへサブタスクを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "4. Subtask Submission to Remote Agent B",
+      "translation": "4. リモートエージェントBへサブタスクを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "5. Collect Result A",
+      "translation": "5. 結果Aを収集",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "6. Collect Result B",
+      "translation": "6. 結果Bを収集",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:24",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "7. Task Completion & Aggregation",
+      "translation": "7. タスク完了と集約",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+          "locator": "fence:60-89/line:27",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+          "locator": "fence:60-89/line:27",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "2. Task Submission",
+      "translation": "2. タスクの送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+          "locator": "fence:35-46/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+          "locator": "fence:35-46/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "4. Task Completion",
+      "translation": "4. タスクの完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+          "locator": "fence:35-46/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+          "locator": "fence:35-46/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "s description document, you can crawl the data according to the data link URL in the agent",
+      "translation": "s description document, you can crawl the data according to the data link URL in the agent",
+      "status": "needs-extraction-review",
+      "reason": "invalid-extraction-fragment：アポストロフィで分断された抽出断片をそのまま保持。該当5行指示文の全文訳はfenced-prose-extra-full-blocks-guides.jsonに別途収録。",
+      "contexts": [
+        {
+          "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+          "locator": "fence:66-72/line:3:column:29",
+          "language": "plaintext"
+        },
+        {
+          "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+          "locator": "fence:65-71/line:3:column:29",
+          "language": "plaintext"
+        }
+      ]
+    },
+    {
+      "original": "\n    Execute HTTP requests to interact with other agents\n    \n    Args:\n        url (str): URL of the agent description file or API endpoint\n        method (str, optional): HTTP method, default is \"GET\"\n        headers (Dict[str, str], optional): HTTP request headers\n        params (Dict[str, Any], optional): URL query parameters\n        body (Dict[str, Any], optional): Request body for POST/PUT requests\n        \n    Returns:\n        Dict[str, Any]: Response content\n    ",
+      "translation": "\n    HTTP要求を実行して他のエージェントとやり取りします。\n    \n    引数：\n        url (str)：エージェント記述ファイルまたはAPIエンドポイントのURL\n        method (str, optional)：HTTPメソッド。既定値は\"GET\"\n        headers (Dict[str, str], optional)：HTTP要求ヘッダー\n        params (Dict[str, Any], optional)：URLのクエリパラメーター\n        body (Dict[str, Any], optional)：POST/PUT要求の本文\n        \n    戻り値：\n        Dict[str, Any]：応答内容\n    ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+          "locator": "fence:78-100/line:1",
+          "language": "python"
+        },
+        {
+          "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+          "locator": "fence:78-100/line:9",
+          "language": "python"
+        },
+        {
+          "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+          "locator": "fence:77-99/line:1",
+          "language": "python"
+        },
+        {
+          "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+          "locator": "fence:77-99/line:9",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "天气智能体",
+      "translation": "天気エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:52-68//items/0/name",
+          "language": "json"
+        },
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:54-70//items/0/name",
+          "language": "json"
+        },
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:88-142//name",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:21-37//items/0/name",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:53-107//name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Weather Agent",
+      "translation": "天気エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:85-139//name",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:21-37//items/0/name",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:53-107//name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Weather Agent providing weather information query services for cities nationwide.",
+      "translation": "全国の都市の天気情報を照会するサービスを提供する天気エージェント。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:85-139//description",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:53-107//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "OpenAPI YAML file providing weather query services.",
+      "translation": "天気照会サービスを提供するOpenAPIのYAMLファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:85-139//ad:interfaces/0/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:53-107//ad:interfaces/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "OpenAPI YAML file providing weather information booking services.",
+      "translation": "天気情報の予約サービスを提供するOpenAPIのYAMLファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:85-139//ad:interfaces/1/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:53-107//ad:interfaces/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "OpenAPI YAML file providing weather subscription status query services.",
+      "translation": "天気情報の購読状況を照会するサービスを提供するOpenAPIのYAMLファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:85-139//ad:interfaces/2/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:53-107//ad:interfaces/2/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Interface for interacting with intelligent agents through natural language.",
+      "translation": "自然言語を通じて知的エージェントとやり取りするインターフェース。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+          "locator": "fence:85-139//ad:interfaces/3/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:53-107//ad:interfaces/3/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "ChatGPT(AI平台)",
+      "translation": "ChatGPT（AIプラットフォーム）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "商户系统",
+      "translation": "加盟店システム",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "PSP(Stripe等)",
+      "translation": "PSP（Stripeなど）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤1: 用户选择商品",
+      "translation": "手順1：利用者が商品を選ぶ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "在ChatGPT中浏览并选择商品",
+      "translation": "ChatGPTで商品を閲覧して選ぶ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤2: 创建购物会话",
+      "translation": "手順2：購入セッションを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "调用 Checkout API 创建会话",
+      "translation": "Checkout APIを呼び出してセッションを作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回购物车详情(商品、价格、税费、配送方式)",
+      "translation": "カートの詳細（商品、価格、税金、配送方法）を返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤3: 用户确认订单",
+      "translation": "手順3：利用者が注文を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "展示购物车内容",
+      "translation": "カートの内容を表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "确认订单,准备付款",
+      "translation": "注文を確認し、支払いを準備",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤4: 生成支付委托令牌",
+      "translation": "手順4：支払い委任トークンを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "调用 Delegate Payment API,提交用户支付信息",
+      "translation": "Delegate Payment APIを呼び出し、利用者の支払い情報を送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "请求生成支付令牌(Token化用户支付方式)",
+      "translation": "支払いトークンの生成を要求（利用者の支払い方法をトークン化）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回支付委托令牌(限定金额、有效期、用途)",
+      "translation": "支払い委任トークンを返す（金額、有効期間、用途を限定）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回支付令牌",
+      "translation": "支払いトークンを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤5: 提交支付",
+      "translation": "手順5：支払いを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "调用 Checkout Complete API,提交支付令牌",
+      "translation": "Checkout Complete APIを呼び出し、支払いトークンを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:25",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤6: 执行支付",
+      "translation": "手順6：支払いを実行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:27",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "使用令牌请求支付授权与扣款",
+      "translation": "トークンを使い、支払いの承認と引き落としを要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "完成资金流转(用户卡→商户账户)",
+      "translation": "資金移動を完了（利用者のカード→加盟店の口座）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:29",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤7: 返回订单结果",
+      "translation": "手順7：注文結果を返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:31",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "生成订单记录",
+      "translation": "注文記録を生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回订单完成(订单ID、订单链接)",
+      "translation": "注文完了を返す（注文ID、注文リンク）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:33",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "步骤8: 确认完成",
+      "translation": "手順8：完了を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:35",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "告知订单已完成,展示订单信息",
+      "translation": "注文完了を伝え、注文情報を表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+          "locator": "fence:99-136/line:36",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Call B's subscription API",
+      "translation": "Bの購読APIを呼び出す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+          "locator": "fence:81-111/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+          "locator": "fence:81-111/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Log in and set up A's DID",
+      "translation": "ログインし、AのDIDを設定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+          "locator": "fence:81-111/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+          "locator": "fence:81-111/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "身份所有者",
+      "translation": "アイデンティティの所有者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "私钥",
+      "translation": "秘密鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "公钥",
+      "translation": "公開鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "签名过程",
+      "translation": "署名の過程",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "原始数据",
+      "translation": "元のデータ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "数字签名",
+      "translation": "デジタル署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "使用私钥签名",
+      "translation": "秘密鍵を使って署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "计算哈希",
+      "translation": "ハッシュを計算",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证过程",
+      "translation": "検証の過程",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收到的数据",
+      "translation": "受信したデータ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接收到的签名",
+      "translation": "受信した署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证结果",
+      "translation": "検証結果",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "使用公钥验证",
+      "translation": "公開鍵を使って検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/did-wba安全性原理解析.md",
+          "locator": "fence:17-49/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "天气智能体，提供全国城市天气信息查询服务。",
+      "translation": "全国の都市の天気情報を照会するサービスを提供する天気エージェント。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:88-142//description",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:53-107//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "提供天气查询服务的OpenAPI的YAML文件。",
+      "translation": "天気照会サービスを提供するOpenAPIのYAMLファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:88-142//ad:interfaces/0/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:53-107//ad:interfaces/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "提供天气信息预订服务的OpenAPI的YAML文件。",
+      "translation": "天気情報の予約サービスを提供するOpenAPIのYAMLファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:88-142//ad:interfaces/1/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:53-107//ad:interfaces/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "提供天气订阅状态查询服务的OpenAPI的YAML文件。",
+      "translation": "天気情報の購読状況を照会するサービスを提供するOpenAPIのYAMLファイル。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:88-142//ad:interfaces/2/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:53-107//ad:interfaces/2/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "提供通过自然语言与智能代理交互的接口。",
+      "translation": "自然言語を通じて知的エージェントとやり取りするインターフェース。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+          "locator": "fence:88-142//ad:interfaces/3/description",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:53-107//ad:interfaces/3/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Identity Owner",
+      "translation": "アイデンティティの所有者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Private Key",
+      "translation": "秘密鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Public Key",
+      "translation": "公開鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Signing Process",
+      "translation": "署名の過程",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Original Data",
+      "translation": "元のデータ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Digital Signature",
+      "translation": "デジタル署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sign with Private Key",
+      "translation": "秘密鍵で署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Calculate Hash",
+      "translation": "ハッシュを計算",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verification Process",
+      "translation": "検証の過程",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Received Data",
+      "translation": "受信したデータ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Received Signature",
+      "translation": "受信した署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verification Result",
+      "translation": "検証結果",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify with Public Key",
+      "translation": "公開鍵で検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "blogs/did-wba-security-principles.md",
+          "locator": "fence:17-44/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "客户端",
+      "translation": "クライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:157-169/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Document 服务器",
+      "translation": "DID Documentサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:157-169/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Handle Resolution Document (含 DID)",
+      "translation": "Handle Resolution Document（DIDを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:157-169/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "从 Resolution Document 中提取 DID",
+      "translation": "Resolution DocumentからDIDを抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:157-169/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "按适用方法解析 DID Document（WBA: 03；Web: 附录 B）",
+      "translation": "適用するメソッドに従ってDID Documentを解決（WBA: 03；Web: 付録B）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:157-169/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "从 DID Document 获取服务端点",
+      "translation": "DID Documentからサービスエンドポイントを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:157-169/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证者",
+      "translation": "検証者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. 解析 Handle 获得 DID",
+      "translation": "1. Handleを解決してDIDを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "2. 解析 DID 获得 DID Document",
+      "translation": "2. DIDを解決してDID Documentを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "3. 查找 ANPHandleService 并读取 serviceEndpoint",
+      "translation": "3. ANPHandleServiceを探し、serviceEndpointを読み取る",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "4. 解引用 serviceEndpoint",
+      "translation": "4. serviceEndpointを参照解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Handle Resolution Document 或 DID Confirmation Document",
+      "translation": "Handle Resolution DocumentまたはDID Confirmation Document",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "公开 Handle 模式且精确匹配",
+      "translation": "公開Handleモードかつ完全一致",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "私密确认模式且 confirmed=true",
+      "translation": "非公開確認モードかつconfirmed=true",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "校验失败",
+      "translation": "検証失敗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+          "locator": "fence:534-554/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent 要执行受保护操作",
+      "translation": "エージェントが保護された操作を実行しようとしている",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ANP-02 请求认证<br/>接收方按本地策略处理",
+      "translation": "ANP-02による要求認証<br/>受信側がローカルポリシーに従って処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "是",
+      "translation": "はい",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/03-私聊基础语义.md",
+          "locator": "fence:464-477/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/03-私聊基础语义.md",
+          "locator": "fence:464-477/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/03-私聊基础语义.md",
+          "locator": "fence:464-477/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/03-私聊基础语义.md",
+          "locator": "fence:485-498/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/03-私聊基础语义.md",
+          "locator": "fence:485-498/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/03-私聊基础语义.md",
+          "locator": "fence:485-498/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "否，需要授权",
+      "translation": "いいえ、認可が必要",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "OAuth Profile<br/>授权码或客户端凭据",
+      "translation": "OAuth Profile<br/>認可コードまたはクライアント資格情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "资源方策略、用户授权或已验证信息",
+      "translation": "リソース側のポリシー、利用者の認可、または検証済み情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "VC Profile<br/>委托或角色凭证直接出示",
+      "translation": "VC Profile<br/>委任資格情報または役割資格情報を直接提示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "需要携带外部的委托或角色凭证",
+      "translation": "外部の委任資格情報または役割資格情報の携行が必要",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:130-137/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent 控制边界",
+      "translation": "エージェントの制御境界",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent 运行实例<br/>运行期认证密钥",
+      "translation": "エージェントの実行インスタンス<br/>実行時の認証鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "持有的委托凭证",
+      "translation": "保持する委任資格情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 文档托管边界",
+      "translation": "DID文書のホスティング境界",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent DID 文档<br/>认证密钥与元数据摘要",
+      "translation": "エージェントのDID文書<br/>認証鍵とメタデータのダイジェスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "元数据托管边界",
+      "translation": "メタデータのホスティング境界",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "标准 CIMD 与 JWKS",
+      "translation": "標準CIMDとJWKS",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "凭证签发方边界",
+      "translation": "資格情報発行者の境界",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户或组织<br/>签发密钥与状态列表",
+      "translation": "利用者または組織<br/>発行鍵と状態リスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "资源所有者",
+      "translation": "リソース所有者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "授权服务器",
+      "translation": "認可サーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "同意 / 撤销",
+      "translation": "同意／取り消し",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "签发委托凭证",
+      "translation": "委任資格情報を発行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "可选 DID 绑定：URL、密钥与固定摘要",
+      "translation": "任意のDIDバインディング：URL、鍵、固定ダイジェスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "标准元数据与客户端公钥",
+      "translation": "標準メタデータとクライアント公開鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "客户端断言与 OAuth 授权凭据",
+      "translation": "クライアントアサーションとOAuth認可資格情報",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "签发方 DID 与凭证状态",
+      "translation": "発行者のDIDと資格情報の状態",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "限定资源的令牌",
+      "translation": "リソースを限定したトークン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "资源服务器或对端 Agent<br/>确定性策略",
+      "translation": "リソースサーバーまたは相手のエージェント<br/>決定的なポリシー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "令牌与操作，或直接出示 VP",
+      "translation": "トークンと操作、またはVPの直接提示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "签发者信任 / 令牌状态",
+      "translation": "発行者への信頼／トークンの状態",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:141-165/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "CIMD URL 客户端请求",
+      "translation": "CIMD URLのクライアント要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 CIMD 与本地准入",
+      "translation": "CIMDとローカルの受け入れ条件を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 DID、URL、元数据摘要与密钥策略",
+      "translation": "DID、URL、メタデータのダイジェスト、鍵ポリシーを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证新的标准客户端断言",
+      "translation": "新しい標準クライアントアサーションを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "否",
+      "translation": "いいえ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/03-私聊基础语义.md",
+          "locator": "fence:464-477/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/03-私聊基础语义.md",
+          "locator": "fence:464-477/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/deprecated/03-私聊基础语义.md",
+          "locator": "fence:464-477/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/03-私聊基础语义.md",
+          "locator": "fence:485-498/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/03-私聊基础语义.md",
+          "locator": "fence:485-498/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/message/03-私聊基础语义.md",
+          "locator": "fence:485-498/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "通过",
+      "translation": "合格",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "拒绝，不切换模式",
+      "translation": "拒否し、モードを切り替えない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "失败",
+      "translation": "失敗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "检查独立授权、用户、资源与 scope",
+      "translation": "独立した認可、利用者、リソース、scopeを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "签发限定资源的令牌",
+      "translation": "リソースを限定したトークンを発行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "批准",
+      "translation": "承認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "拒绝",
+      "translation": "拒否",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:263-274/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "CIMD URL 的客户端断言",
+      "translation": "CIMD URLのクライアントアサーション",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "选择已接受 JWKS 密钥与认证策略",
+      "translation": "受け入れ済みのJWKS鍵と認証ポリシーを選択",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证当前 DID、URL、摘要及实际密钥",
+      "translation": "現在のDID、URL、ダイジェスト、実際の鍵を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 JWT 签名、声明与新鲜度",
+      "translation": "JWTの署名、クレーム、鮮度を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "拒绝，不回退",
+      "translation": "拒否し、フォールバックしない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "执行防重放控制",
+      "translation": "リプレイ防止制御を実施",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "评估授权与目标资源权限",
+      "translation": "認可と対象リソースの権限を評価",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "签发令牌",
+      "translation": "トークンを発行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:386-398/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户 / 系统浏览器",
+      "translation": "利用者／システムブラウザー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "资源服务器",
+      "translation": "リソースサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "公开 CIMD / JWKS / DID 托管方",
+      "translation": "公開CIMD／JWKS／DIDのホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "不带令牌请求资源",
+      "translation": "トークンなしでリソースを要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "401 与 resource_metadata",
+      "translation": "401とresource_metadata",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 issuer、CIMD 及所选能力",
+      "translation": "issuer、CIMD、選択した機能を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "打开授权 URL（CIMD URL、resource、state、S256）",
+      "translation": "認可URLを開く（CIMD URL、resource、state、S256）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "标准授权请求",
+      "translation": "標準認可要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "获取 CIMD 及已接受 JWKS",
+      "translation": "CIMDと受け入れ済みJWKSを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "标准元数据及公钥",
+      "translation": "標準メタデータと公開鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "已声明 DID 绑定处理",
+      "translation": "宣言されたDIDバインディングの処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析关联 DID 并进行方法验证",
+      "translation": "関連するDIDを解決し、メソッドの検証を実施",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "service URL、摘要及获准密钥",
+      "translation": "service URL、ダイジェスト、承認された鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "接受元数据前验证绑定",
+      "translation": "メタデータを受け入れる前にバインディングを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "执行准入并批准回调",
+      "translation": "受け入れ処理を実施し、コールバックを承認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "认证用户并请求范围明确的同意",
+      "translation": "利用者を認証し、範囲を明確にした同意を求める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "批准或拒绝",
+      "translation": "承認または拒否",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用户批准",
+      "translation": "利用者が承認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "code、state，以及选用时的 iss",
+      "translation": "code、state、および選択した場合のiss",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "获准 HTTPS 或 loopback 回调",
+      "translation": "承認されたHTTPSまたはloopbackコールバック",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证会话及固定的 issuer 策略",
+      "translation": "セッションと固定されたissuerポリシーを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "chinese/05-ANP-基于DID的授权协议.md",
+          "locator": "fence:433-468/line:25",
+          "language": "mermaid"
+        }
+      ]
+    }
+  ]
+}

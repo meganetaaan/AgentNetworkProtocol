@@ -1,0 +1,126 @@
+{
+  "snapshot_range": [
+    200,
+    1626
+  ],
+  "units_checked": 1427,
+  "status_counts": {
+    "agent-reviewed": 1367,
+    "technical-retained": 59,
+    "needs-extraction-review": 1
+  },
+  "source_fenced_blocks_hash_checked": 1338,
+  "source_files_checked": 122,
+  "extra_full_prompt_blocks": 1,
+  "extra_prompt_source_contexts": 2,
+  "errors": [],
+  "warnings": [
+    {
+      "type": "number-sequence",
+      "original": "将派生的密钥编码为十六进制字符串",
+      "translation": "導出した鍵を16進数文字列へ符号化",
+      "originalNumbers": [],
+      "translatedNumbers": [
+        "16"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "Roasted at approximately 135°C for a unique coconut sugar flavor, suitable for winter consumption. This drink combines coconut pulp juice and roasted coconut granules, offering five 'zero' light enjoyment health options, using master-customized Espresso from IIAC gold award coffee beans.",
+      "translation": "約135°Cでローストし、独特のココナッツシュガーの風味を引き出した、冬に適した飲み物です。ココナッツ果肉ジュースとローストしたココナッツの粒を組み合わせ、5つの「ゼロ」で軽やかに楽しめる健康志向の選択肢を提供します。IIAC金賞受賞コーヒー豆による、熟練者が調整したEspressoを使用しています。",
+      "originalNumbers": [
+        "135"
+      ],
+      "translatedNumbers": [
+        "135",
+        "5"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "Coconut pulp juice & roasted coconut granules blend, five 'zero' light enjoyment (0 lactose, 0 creamer, 0 sucrose solids, 0 trans fats, 0 added flavors), master-customized Espresso from IIAC gold award coffee beans",
+      "translation": "ココナッツ果肉ジュースとローストしたココナッツの粒のブレンド。5つの「ゼロ」で軽やかに楽しめます（乳糖0、クリーマー0、固形ショ糖0、トランス脂肪酸0、添加香料0）。IIAC金賞受賞コーヒー豆による、熟練者が調整したEspressoを使用。",
+      "originalNumbers": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "translatedNumbers": [
+        "5",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "16 个十六进制字符",
+      "translation": "16文字の16進数",
+      "originalNumbers": [
+        "16"
+      ],
+      "translatedNumbers": [
+        "16",
+        "16"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "Encode the derived key to a hexadecimal string",
+      "translation": "導出した鍵を16進数文字列へ符号化",
+      "originalNumbers": [],
+      "translatedNumbers": [
+        "16"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "绑定一：公钥指纹必须与 DID 一致",
+      "translation": "バインディング1：公開鍵のフィンガープリントはDIDと一致しなければならない",
+      "originalNumbers": [],
+      "translatedNumbers": [
+        "1"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "绑定二：签署文档级 DataIntegrityProof",
+      "translation": "バインディング2：文書単位のDataIntegrityProofに署名",
+      "originalNumbers": [],
+      "translatedNumbers": [
+        "2"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    },
+    {
+      "type": "number-sequence",
+      "original": "绑定三：授权认证密钥为请求签名",
+      "translation": "バインディング3：認証鍵に要求への署名を認可",
+      "originalNumbers": [],
+      "translatedNumbers": [
+        "3"
+      ],
+      "review_status": "agent-reviewed-equivalent-number-notation",
+      "reason": "原文のfive／十六进制／hexadecimal／一・二・三などを日本語のアラビア数字表記にした差。原文の技術数値の脱落・変更なし。"
+    }
+  ],
+  "unresolved_warnings": 0,
+  "verification_scope": "coverage, original fenced-body hashes, retained-value invariance, identifiers, escaped line breaks, numeric literals; not independent second semantic review"
+}

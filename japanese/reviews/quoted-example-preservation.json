@@ -1,0 +1,23 @@
+{
+  "policy": "Only quoted fenced example spans are restored; original files and surrounding Japanese prose are unchanged.",
+  "files": [
+    {
+      "source": "04-anp-did-wba-name-space-specification.md",
+      "quoted_blocks": 1,
+      "restored_blocks": 0,
+      "source_code_sha256": [
+        "39a46cb89ec1489d77fa06c3f00dbd44e415446717a28a979873f4735b47ae3c"
+      ]
+    },
+    {
+      "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "quoted_blocks": 1,
+      "restored_blocks": 1,
+      "source_code_sha256": [
+        "39a46cb89ec1489d77fa06c3f00dbd44e415446717a28a979873f4735b47ae3c"
+      ]
+    }
+  ],
+  "errors": [],
+  "written": 1
+}

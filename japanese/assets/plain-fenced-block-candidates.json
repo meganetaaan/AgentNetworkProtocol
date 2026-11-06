@@ -1,0 +1,853 @@
+{
+  "policy": "Supplemental prompt/ASCII diagram completeness candidates; extraction is not translation or review completion.",
+  "blocks": [
+    {
+      "source": "02-anp-did-authentication-protocol-specification.md",
+      "start": 242,
+      "end": 246,
+      "language": "plaintext",
+      "text": "WWW-Authenticate: DIDWba realm=\"api.example.com\", error=\"invalid_signature\", error_description=\"Signature verification failed.\", nonce=\"xyz987\"\nAccept-Signature: sig1=(\"@method\" \"@target-uri\" \"@authority\" \"content-digest\");created;expires;nonce;keyid\nCache-Control: no-store",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "start": 175,
+      "end": 178,
+      "language": "text",
+      "text": "did:wba:example.com:user:alice:e1_<fingerprint>\n        └──── stable subject path: example.com:user:alice ────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "start": 348,
+      "end": 352,
+      "language": "plaintext",
+      "text": "Example: Creating a DID\ndid:wba:example.com\n -> https://example.com/.well-known/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "start": 358,
+      "end": 362,
+      "language": "plaintext",
+      "text": "Example 5: Creating a path-based DID with the default path scheme\ndid:wba:example.com:user:alice:e1_<fingerprint>\n -> https://example.com/user/alice/e1_<fingerprint>/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "start": 366,
+      "end": 370,
+      "language": "plaintext",
+      "text": "Example 6: Creating a DID with an optional path and port\ndid:wba:example.com%3A3000:user:alice:e1_<fingerprint>\n -> https://example.com:3000/user/alice/e1_<fingerprint>/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "04-anp-did-wba-name-space-specification.md",
+      "start": 106,
+      "end": 115,
+      "language": "text",
+      "text": "alice.example.com          ✓ Valid\nbob-smith.example.com      ✓ Valid\nagent-42.example.com       ✓ Valid\na.example.com              ✓ Valid (single-character local-part)\n-alice.example.com         ✗ Invalid (starts with hyphen)\nalice-.example.com         ✗ Invalid (ends with hyphen)\nal--ice.example.com        ✗ Invalid (consecutive hyphens)\nAlice.Example.com          → Normalized to alice.example.com",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "04-anp-did-wba-name-space-specification.md",
+      "start": 154,
+      "end": 156,
+      "language": "text",
+      "text": "Handle → Handle Resolution Endpoint → DID → DID Document → service",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "06-anp-agent-communication-meta-protocol-specification.md",
+      "start": 23,
+      "end": 31,
+      "language": "text",
+      "text": "Agent Discovery\n  -> Agent Description\n  -> MetaProtocolInterface\n  -> anp.get_capabilities\n  -> anp.negotiate\n  -> selected interface / profile / security profile / schema\n  -> business call or message exchange",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "06-anp-agent-communication-meta-protocol-specification.md",
+      "start": 277,
+      "end": 286,
+      "language": "text",
+      "text": "Caller Agent\n  -> discover Agent Description\n  -> parse MetaProtocolInterface\n  -> resolve target DID and ANPMessageService\n  -> call anp.get_capabilities\n  -> call anp.negotiate\n  -> receive NegotiationResult\n  -> invoke selected interface or profile",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "start": 118,
+      "end": 120,
+      "language": "",
+      "text": "AI agents provide a unique opportunity for people to boost productivity by autonomously handling many routine or complex tasks. Today, businesses are increasingly building and deploying autonomous agents to help scale, automate, and optimize processes across work scenarios—from ordering a new laptop, to assisting customer service representatives, to aiding in supply chain planning. (https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "start": 66,
+      "end": 72,
+      "language": "plaintext",
+      "text": "Use Agent Network Protocol (ANP) to interact with other agents.\n1. For the first time, please enter the URL: https://agent-search.ai/ad.json, which is an agent search service that can use the interfaces inside to query agents that can provide hotels, tickets, and attractions.\n2. After receiving the agent's description document, you can crawl the data according to the data link URL in the agent's description document.\n3. During the process, you can call the API to complete the service until you think the task is completed.\n4. Note that any URL obtained using ANPTool must be called using ANPTool, do not call it directly yourself.",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "start": 206,
+      "end": 219,
+      "language": "plaintext",
+      "text": "1. You will receive a starting URL ({{initial_url}}), which is a description file of an agent.\n2. You need to understand the structure, functionality, and API usage of this agent description file.\n3. You should continuously discover and access new URLs and API endpoints like a web crawler.\n4. You can use the anp_tool to retrieve the content of any URL.\n5. This tool can handle responses in various formats, including:\n   - JSON format: which will be directly parsed into a JSON object.\n   - YAML format: which will return text content, and you need to analyze its structure.\n   - Other text formats: which will return the raw text content.\n6. Read each document to find information or API endpoints relevant to the task.\n7. You need to determine the crawling path on your own, without waiting for user instructions.\n8. Note: You can crawl up to 10 URLs, and must stop crawling after exceeding this limit.\n......",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/07-2-全球首个开放智能体网络.md",
+      "start": 118,
+      "end": 133,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────────┐\n│                        供给侧 (Supply Side)                   │\n│  酒店智能体 | 餐饮智能体 | 教育/娱乐智能体 | ViNote ...       │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│              连接层 (Connection Layer)                        │\n│  1. 发现 (Discovery)  2. 描述 (Description)  3. 身份 (Identity) │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│                       需求侧 (Demand Side)                    │\n│  个人助手 | 垂直智能体 | AI应用 ...                           │\n└─────────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/07-全球首个开放智能体网络.md",
+      "start": 83,
+      "end": 98,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────────┐\n│                        供给侧 (Supply Side)                   │\n│  酒店智能体 | 餐饮智能体 | 教育/娱乐智能体 | ...              │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│              连接层 (Connection Layer)                        │\n│  Agent Protocol: 智能体发现、描述、交互                        │\n└─────────────────────────────────────────────────────────────┘\n                            ↕\n┌─────────────────────────────────────────────────────────────┐\n│                       需求侧 (Demand Side)                    │\n│  个人助手 | 垂直智能体 | AI应用 | 个人助手 ...                 │\n└─────────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/planning.md",
+      "start": 278,
+      "end": 282,
+      "language": "markdown",
+      "text": "## 版权声明\nCopyright (c) 2024 ANP Community\n本文件依据 [MIT 许可证](../../../LICENSE) 发布,您可以自由使用和修改,但必须保留本版权声明。",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "start": 71,
+      "end": 75,
+      "language": "plaintext",
+      "text": "示例：\ndid:wba:example.com:user:alice\n -> https://example.com/user/alice/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "start": 65,
+      "end": 71,
+      "language": "plaintext",
+      "text": "Use Agent Network Protocol (ANP) to interact with other agents.\n1. For the first time, please enter the URL: https://agent-search.ai/ad.json, which is an agent search service that can use the interfaces inside to query agents that can provide hotels, tickets, and attractions.\n2. After receiving the agent's description document, you can crawl the data according to the data link URL in the agent's description document.\n3. During the process, you can call the API to complete the service until you think the task is completed.\n4. Note that any URL obtained using ANPTool must be called using ANPTool, do not call it directly yourself.",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "start": 118,
+      "end": 120,
+      "language": "",
+      "text": "AI 智能体为人们带来了独特的机会，能够通过自主处理许多日常重复性或复杂任务，帮助提升工作效率。如今，企业越来越多地构建并部署自主智能体，以帮助在整个工作场景中实现规模化、自动化并优化各类流程——从订购新笔记本电脑，到辅助客户服务代表，再到协助供应链规划。（https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/）",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "start": 46,
+      "end": 48,
+      "language": "",
+      "text": "https://<域名>/.well-known/agent-descriptions",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "start": 210,
+      "end": 223,
+      "language": "plaintext",
+      "text": "1. 您将收到一个起始URL（{{initial_url}}），这是一个智能体的描述文件。\n2. 您需要了解该智能体描述文件的结构、功能和API使用方法。\n3. 您需要像网络爬虫一样不断发现和访问新的URL和API端点。\n4. 您可以使用anp_tool获取任何URL的内容。\n5. 该工具可以处理多种格式的响应，包括：\n   - JSON格式：将直接解析为JSON对象。\n   - YAML格式：将返回文本内容，您需要分析其结构。\n   - 其他文本格式：将返回原始文本内容。\n6. 阅读每个文档以查找与任务相关的信息或API端点。\n7. 您需要自行决定爬取路径，不要等待用户指示。\n8. 注意：您最多可以爬取10个URL，超过此限制后必须结束爬取。\n......",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/02-ANP-基于DID的身份认证协议.md",
+      "start": 242,
+      "end": 246,
+      "language": "plaintext",
+      "text": "WWW-Authenticate: DIDWba realm=\"api.example.com\", error=\"invalid_signature\", error_description=\"Signature verification failed.\", nonce=\"xyz987\"\nAccept-Signature: sig1=(\"@method\" \"@target-uri\" \"@authority\" \"content-digest\");created;expires;nonce;keyid\nCache-Control: no-store",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "start": 175,
+      "end": 178,
+      "language": "text",
+      "text": "did:wba:example.com:user:alice:e1_<fingerprint>\n        └──── 稳定主体路径：example.com:user:alice ────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "start": 349,
+      "end": 353,
+      "language": "plaintext",
+      "text": "示例：创建DID\ndid:wba:example.com\n -> https://example.com/.well-known/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "start": 359,
+      "end": 363,
+      "language": "plaintext",
+      "text": "示例5：使用默认路径方案创建路径型 DID\ndid:wba:example.com:user:alice:e1_<fingerprint>\n -> https://example.com/user/alice/e1_<fingerprint>/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "start": 367,
+      "end": 371,
+      "language": "plaintext",
+      "text": "示例6：使用可选路径和端口创建DID\ndid:wba:example.com%3A3000:user:alice:e1_<fingerprint>\n -> https://example.com:3000/user/alice/e1_<fingerprint>/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "start": 105,
+      "end": 114,
+      "language": "text",
+      "text": "alice.example.com          ✓ 有效\nbob-smith.example.com      ✓ 有效\nagent-42.example.com       ✓ 有效\na.example.com              ✓ 有效（单字符 local-part）\n-alice.example.com         ✗ 无效（以连字符开头）\nalice-.example.com         ✗ 无效（以连字符结尾）\nal--ice.example.com        ✗ 无效（连续连字符）\nAlice.Example.com          → 归一化为 alice.example.com",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "start": 153,
+      "end": 155,
+      "language": "text",
+      "text": "Handle → Handle Resolution Endpoint → DID → DID Document → service",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/06-ANP-智能体通信元协议规范.md",
+      "start": 23,
+      "end": 31,
+      "language": "text",
+      "text": "Agent Discovery\n  -> Agent Description\n  -> MetaProtocolInterface\n  -> anp.get_capabilities\n  -> anp.negotiate\n  -> selected interface / profile / security profile / schema\n  -> business call or message exchange",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/06-ANP-智能体通信元协议规范.md",
+      "start": 277,
+      "end": 286,
+      "language": "text",
+      "text": "Caller Agent\n  -> discover Agent Description\n  -> parse MetaProtocolInterface\n  -> resolve target DID and ANPMessageService\n  -> call anp.get_capabilities\n  -> call anp.negotiate\n  -> receive NegotiationResult\n  -> invoke selected interface or profile",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+      "start": 999,
+      "end": 1006,
+      "language": "",
+      "text": "CartMandate(cart_hash)\n    ↓ (同步)\nPaymentMandate(cart_hash, pmt_hash)\n    ↓ (异步Webhook)\n    ├─→ PaymentReceipt(pmt_hash, cred_hash)\n    └─→ FulfillmentReceipt(pmt_hash, cred_hash)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "start": 160,
+      "end": 192,
+      "language": "plain",
+      "text": "Client (A)                                      Client (B)\n|                                                 |\n| -- Initiate Short-term Key Creation Process --> |\n|                                                 |\n|      (Create Temporary Encryption Key)          |\n|                                                 |\n| <---- Temporary Key Created ----                |\n|                                                 |\n|       (Key has an expiration time)              |\n|                                                 |\n|      (Monitor Key Validity)                     |\n|                                                 |\n|   (Before expiration, restart creation process) |\n|                                                 |\n| (A and B now have a negotiated short-term key)  |\n|                                                 |\n| ---- Encrypted Message ---->                    |\n|                                                 |\n|     (Encrypt message using short-term key)      |\n|     (Send via message server)                   |\n|                                                 |\n| <---- Receive Encrypted Message ----            |\n|                                                 |\n|     (Find stored key using key ID)              |\n|     (Decrypt message)                           |\n|      (If key not found or expired)              |\n|                                                 |\n| <---- or Error Message ----                     |\n|                                                 |\n|      (Notify A to update short-term key)        |\n|                                                 |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "start": 211,
+      "end": 229,
+      "language": "plain",
+      "text": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |         (Include public key and signature)         |\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |         (Include public key and signature)         |\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (Include verify_data) ------->  |\n   |                                                    |\n   |  <-------- Finished (Include verify_data) -------- |\n   |                                                    |\n   |                                                    |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "start": 40,
+      "end": 47,
+      "language": "plaintext",
+      "text": "示例3: wba方法DID示例\ndid:wba:example.com\n\ndid:wba:example.com:user:alice\n\ndid:wba:example.com%3A3000",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "start": 210,
+      "end": 214,
+      "language": "plaintext",
+      "text": "示例：创建DID\ndid:wba:example.com\n -> https://example.com/.well-known/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "start": 218,
+      "end": 222,
+      "language": "plaintext",
+      "text": "示例5：使用可选路径创建DID\ndid:wba:example.com:user:alice\n -> https://example.com/user/alice/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "start": 226,
+      "end": 230,
+      "language": "plaintext",
+      "text": "示例6：使用可选路径和端口创建DID\ndid:wba:example.com%3A3000:user:alice\n -> https://example.com:3000/user/alice/did.json",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "start": 430,
+      "end": 432,
+      "language": "plaintext",
+      "text": "WWW-Authenticate: Bearer method=\"DIDWba,DIDWeb\", error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "start": 35,
+      "end": 67,
+      "language": "plaintext",
+      "text": "Client (A)                                      Client (B)\n|                                                 |\n| -- Initiate Short-term Key Creation Process --> |\n|                                                 |\n|      (Create Temporary Encryption Key)          |\n|                                                 |\n| <---- Temporary Key Created ----                |\n|                                                 |\n|       (Key has an expiration time)              |\n|                                                 |\n|      (Monitor Key Validity)                     |\n|                                                 |\n|   (Before expiration, restart creation process) |\n|                                                 |\n| (A and B now have a negotiated short-term key)  |\n|                                                 |\n| ---- Encrypted Message ---->                    |\n|                                                 |\n|     (Encrypt message using short-term key)      |\n|     (Send via message server)                   |\n|                                                 |\n| <---- Receive Encrypted Message ----            |\n|                                                 |\n|     (Find stored key using key ID)              |\n|     (Decrypt message)                           |\n|      (If key not found or expired)              |\n|                                                 |\n| <---- or Error Message ----                     |\n|                                                 |\n|      (Notify A to update short-term key)        |\n|                                                 |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "start": 100,
+      "end": 118,
+      "language": "plaintext",
+      "text": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |                  (包含公钥和签名)                    |\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |                  (包含公钥和签名)                    |\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (包含verify_data) ------->       |\n   |                                                    |\n   |  <-------- Finished (包含verify_data) --------      |\n   |                                                    |\n   |                                                    |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/05-基于did的消息服务协议.md",
+      "start": 65,
+      "end": 76,
+      "language": "",
+      "text": "{\n  \"alg\": \"HS256\",\n  \"sign_type\": \"SIGN\"\n}\n- alg: 属性表示签名使用的算法，默认为 HMAC SHA256（写为HS256）。\n- sign_type: 属性表示令牌的类型，JWT 令牌统一写为 SIGN 。\n\n2. payload 示例\n\n",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "start": 607,
+      "end": 610,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)\nSK  = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 Initial Secret\", L = 32)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "start": 614,
+      "end": 618,
+      "language": "text",
+      "text": "RK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Root Key\", L = 32)\nCK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Chain Key\", L = 32)\nSID = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Session ID\", L = 16)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "start": 1035,
+      "end": 1040,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = RK, IKM = dh_out)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_RK\", L = 64)\nRK' = OUT[0:32]\nCK  = OUT[32:64]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "start": 1044,
+      "end": 1050,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM = CK)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_CK\", L = 76)\nCK'   = OUT[0:32]\nMK    = OUT[32:64]\nNONCE = OUT[64:76]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "start": 416,
+      "end": 418,
+      "language": "text",
+      "text": "外层群上下文中的所有 active 群成员",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "start": 435,
+      "end": 437,
+      "language": "text",
+      "text": "本地应用 roster 或 profile 层分类为 agent 的 active 群成员",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "start": 454,
+      "end": 456,
+      "language": "text",
+      "text": "本地应用 roster 或 profile 层分类为 human 的 active 群成员",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "start": 830,
+      "end": 863,
+      "language": "plaintext",
+      "text": "Alice                           Message Server                          Bob\n  |                                   |                                   |\n  |  send(type=e2ee_hello)            |                                   |\n  |  content=SourceHello              |                                   |\n  |---------------------------------->|  send(type=e2ee_hello)            |\n  |                                   |  content=SourceHello              |\n  |                                   |---------------------------------->|\n  |                                   |                                   |\n  |                                   |  send(type=e2ee_hello)            |\n  |                                   |  content=DestinationHello         |\n  |  send(type=e2ee_hello)            |<----------------------------------|\n  |  content=DestinationHello         |                                   |\n  |<----------------------------------|  send(type=e2ee_finished)         |\n  |                                   |  content=Finished                 |\n  |  send(type=e2ee_finished)         |<----------------------------------|\n  |  content=Finished                 |                                   |\n  |<----------------------------------|                                   |\n  |                                   |                                   |\n  |  send(type=e2ee_finished)         |                                   |\n  |  content=Finished                 |                                   |\n  |---------------------------------->|  send(type=e2ee_finished)         |\n  |                                   |  content=Finished                 |\n  |                                   |---------------------------------->|\n  |                                   |                                   |\n  |           [双方会话激活，开始加密通信]                                    |\n  |                                   |                                   |\n  |  send(type=e2ee)                  |                                   |\n  |  content=加密消息                  |                                   |\n  |---------------------------------->|  send(type=e2ee)                  |\n  |                                   |  content=加密消息                  |\n  |                                   |---------------------------------->|\n  |                                   |                                   |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "start": 22,
+      "end": 29,
+      "language": "plaintext",
+      "text": "PUT /wba/user/2i3dg4dtf908cde0/did.json HTTP/1.1\nHost: agent-network-protocol.com\nContent-Type: application/json\nContent-Length: <文件长度>\n\n<DID文档json>",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "start": 43,
+      "end": 49,
+      "language": "plaintext",
+      "text": "HTTP/1.1 200 OK\nContent-Type: application/json\nContent-Length: <文件长度>\n\n<DID文档json>",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "start": 114,
+      "end": 119,
+      "language": "plaintext",
+      "text": "HTTP/1.1 401 Unauthorized\nWWW-Authenticate: Bearer error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"\nContent-Type: application/json\nContent-Length: 0",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "start": 661,
+      "end": 664,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)\nSK  = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 Initial Secret\", L = 32)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "start": 668,
+      "end": 672,
+      "language": "text",
+      "text": "RK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Root Key\", L = 32)\nCK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Chain Key\", L = 32)\nSID = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Session ID\", L = 16)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "start": 1114,
+      "end": 1119,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = RK, IKM = dh_out)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_RK\", L = 64)\nRK' = OUT[0:32]\nCK  = OUT[32:64]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "start": 1123,
+      "end": 1129,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM = CK)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_CK\", L = 76)\nCK'   = OUT[0:32]\nMK    = OUT[32:64]\nNONCE = OUT[64:76]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/09-消息Mention扩展.md",
+      "start": 435,
+      "end": 437,
+      "language": "text",
+      "text": "外层群上下文中的所有 active 群成员",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/09-消息Mention扩展.md",
+      "start": 454,
+      "end": 456,
+      "language": "text",
+      "text": "本地应用 roster 或 profile 层分类为 agent 的 active 群成员",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "chinese/message/09-消息Mention扩展.md",
+      "start": 473,
+      "end": 475,
+      "language": "text",
+      "text": "本地应用 roster 或 profile 层分类为 human 的 active 群成员",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "start": 168,
+      "end": 186,
+      "language": "plain",
+      "text": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |         (Include public key and signature)         |\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |         (Include public key and signature)         |\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (Include verify_data) ------->  |\n   |                                                    |\n   |  <-------- Finished (Include verify_data) -------- |\n   |                                                    |\n   |                                                    |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "start": 35,
+      "end": 67,
+      "language": "plaintext",
+      "text": "Client (A)                                      Client (B)\n|                                                 |\n| -- Initiate Short-term Key Creation Process --> |\n|                                                 |\n|      (Create Temporary Encryption Key)          |\n|                                                 |\n| <---- Temporary Key Created ----                |\n|                                                 |\n|       (Key has an expiration time)              |\n|                                                 |\n|      (Monitor Key Validity)                     |\n|                                                 |\n|   (Before expiration, restart creation process) |\n|                                                 |\n| (A and B now have a negotiated short-term key)  |\n|                                                 |\n| ---- Encrypted Message ---->                    |\n|                                                 |\n|     (Encrypt message using short-term key)      |\n|     (Send via message server)                   |\n|                                                 |\n| <---- Receive Encrypted Message ----            |\n|                                                 |\n|     (Find stored key using key ID)              |\n|     (Decrypt message)                           |\n|      (If key not found or expired)              |\n|                                                 |\n| <---- or Error Message ----                     |\n|                                                 |\n|      (Notify A to update short-term key)        |\n|                                                 |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "start": 98,
+      "end": 116,
+      "language": "plaintext",
+      "text": "Client (A)                                          Server (B)\n   |                                                    |\n   |  ---------------- SourceHello ---------------->    |\n   |                                                    |\n   |                  (Includes public key and signature)|\n   |                                                    |\n   |                                                    |\n   |  <------------- DestinationHello ------------      |\n   |                                                    |\n   |                  (Includes public key and signature)|\n   |                                                    |\n   |                                                    |\n   |  -------- Finished (Includes verify_data) -------> |\n   |                                                    |\n   |  <-------- Finished (Includes verify_data) --------|\n   |                                                    |\n   |                                                    |",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "start": 606,
+      "end": 609,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)\nSK  = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 Initial Secret\", L = 32)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "start": 613,
+      "end": 617,
+      "language": "text",
+      "text": "RK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Root Key\", L = 32)\nCK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Chain Key\", L = 32)\nSID = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Session ID\", L = 16)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "start": 1032,
+      "end": 1037,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = RK, IKM = dh_out)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_RK\", L = 64)\nRK' = OUT[0:32]\nCK  = OUT[32:64]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "start": 1041,
+      "end": 1047,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM = CK)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_CK\", L = 76)\nCK'   = OUT[0:32]\nMK    = OUT[32:64]\nNONCE = OUT[64:76]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "start": 416,
+      "end": 418,
+      "language": "text",
+      "text": "all active group members in the enclosing group context",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "start": 435,
+      "end": 437,
+      "language": "text",
+      "text": "active group members that the local application roster or profile layer classifies as agents",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "start": 454,
+      "end": 456,
+      "language": "text",
+      "text": "active group members that the local application roster or profile layer classifies as humans",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "docs/anp-getting-started-guide.md",
+      "start": 113,
+      "end": 120,
+      "language": "text",
+      "text": "WNS Handle or Search Result\n  -> DID\n  -> DID Document\n  -> AgentDescription / ANPMessageService\n  -> Runtime capabilities\n  -> Business interface or messaging profile",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "docs/anp-getting-started-guide.md",
+      "start": 281,
+      "end": 283,
+      "language": "text",
+      "text": "Handle -> Handle Resolution Endpoint -> DID -> DID Document -> service",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "start": 113,
+      "end": 120,
+      "language": "text",
+      "text": "WNS Handle 或搜索结果\n  -> DID\n  -> DID Document\n  -> AgentDescription / ANPMessageService\n  -> 运行时能力\n  -> 业务接口或消息 Profile",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "start": 281,
+      "end": 283,
+      "language": "text",
+      "text": "Handle -> Handle Resolution Endpoint -> DID -> DID Document -> service",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+      "start": 15,
+      "end": 17,
+      "language": "",
+      "text": "https://<域名>/.well-known/agent-descriptions",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "docs/did-wba-server-test-interface.md",
+      "start": 112,
+      "end": 117,
+      "language": "plaintext",
+      "text": "HTTP/1.1 401 Unauthorized\nWWW-Authenticate: Bearer error=\"invalid_nonce\", error_description=\"Nonce has already been used. Please provide a new nonce.\", nonce=\"xyz987\"\nContent-Type: application/json\nContent-Length: 0",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "start": 660,
+      "end": 663,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)\nSK  = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 Initial Secret\", L = 32)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "start": 667,
+      "end": 671,
+      "language": "text",
+      "text": "RK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Root Key\", L = 32)\nCK0 = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Chain Key\", L = 32)\nSID = HKDF-Expand(SK, info = \"ANP Direct E2EE v1 Session ID\", L = 16)",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "start": 1111,
+      "end": 1116,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = RK, IKM = dh_out)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_RK\", L = 64)\nRK' = OUT[0:32]\nCK  = OUT[32:64]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "start": 1120,
+      "end": 1126,
+      "language": "text",
+      "text": "PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM = CK)\nOUT = HKDF-Expand(PRK, info = \"ANP Direct E2EE v1 KDF_CK\", L = 76)\nCK'   = OUT[0:32]\nMK    = OUT[32:64]\nNONCE = OUT[64:76]",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/09-message-mentions.md",
+      "start": 435,
+      "end": 437,
+      "language": "text",
+      "text": "all active group members in the enclosing group context",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/09-message-mentions.md",
+      "start": 454,
+      "end": 456,
+      "language": "text",
+      "text": "active group members that the local application roster or profile layer classifies as agents",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "message/09-message-mentions.md",
+      "start": 473,
+      "end": 475,
+      "language": "text",
+      "text": "active group members that the local application roster or profile layer classifies as humans",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 7,
+      "end": 28,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                    OAuth 生态                            │\n│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │\n│  │   Client     │  │     AS       │  │     RS       │  │\n│  │  (不变)      │  │  (不变)      │  │  (不变)      │  │\n│  └──────────────┘  └──────────────┘  └──────────────┘  │\n│         │                 │                  │           │\n│         │                 │                  │           │\n│         │          ┌──────▼──────┐           │           │\n│         │          │   Authn层   │           │           │\n│         └─────────►│  (可插拔)   │           │           │\n│                    └──────────────┘           │           │\n│                          │                    │           │\n│                    ┌─────▼──────┐             │           │\n│                    │ DID-auth   │             │           │\n│                    │ (OIDC IdP) │             │           │\n│                    └────────────┘             │           │\n└─────────────────────────────────────────────────────────┘\n\n关键：DID-auth是OAuth认证层的一个可选实现，不改变OAuth的授权架构",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 36,
+      "end": 57,
+      "language": "",
+      "text": "┌─────────────────────────────────────────┐\n│         Authn Layer (认证层)             │\n│  职责：确认\"主体是谁\"                     │\n│  实现：密码/OIDC/SAML/DID-auth          │\n│  输出：认证凭证（如ID Token）            │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│         Authz Layer (授权层)             │\n│  职责：决定\"主体能做什么\"                 │\n│  实现：OAuth AS (token颁发)              │\n│  输出：Access Token + Refresh Token      │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│      Resource Access (资源访问)          │\n│  职责：执行访问控制                       │\n│  实现：Resource Server                   │\n│  验证：Access Token + 策略               │\n└─────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 159,
+      "end": 183,
+      "language": "",
+      "text": "┌────────────────────────────────────────────────────┐\n│              DID-auth (OIDC Provider)              │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  标准OIDC端点                                 │ │\n│  │  ├── /.well-known/openid-configuration       │ │\n│  │  ├── /token (ID Token颁发)                   │ │\n│  │  ├── /jwks (公钥端点)                        │ │\n│  │  └── /authorize (浏览器场景)                 │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  DID/VC/VP验证能力                           │ │\n│  │  ├── DID解析                                 │ │\n│  │  ├── VP签名验证                              │ │\n│  │  ├── VC签名验证                              │ │\n│  │  ├── Personhood VC验证                       │ │\n│  │  └── VC撤销检查                              │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  输出：标准ID Token (JWT)                          │\n│        包含vc_claims (已验证的VC内容)              │\n└────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 351,
+      "end": 367,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  核心思路：                                              │\n│                                                         │\n│  • Agent 用 HTTP 库处理 302 重定向（模拟浏览器）        │\n│  • IdP (DID-auth) 支持在请求中直接接受 VP 认证          │\n│  • Agent 截获最终重定向，从 URL 提取 code               │\n│  • 使用标准 Authorization Code 换取 Access Token        │\n│                                                         │\n│  优势：                                                  │\n│  ✅ 兼容性最强（几乎所有 AS 都支持 Auth Code Flow）     │\n│  ✅ 不需要 AS 支持 Token Exchange                       │\n│  ✅ 安全性由 IdP 的 DID/VC 验证保证                    │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 421,
+      "end": 446,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  DID-auth /authorize 端点需要支持：                      │\n│                                                         │\n│  方式 A：GET 请求带 VP 参数                             │\n│  GET /authorize?                                        │\n│    response_type=code&                                  │\n│    client_id=xxx&                                       │\n│    vp_token=<base64url编码的VP>&                       │\n│    redirect_uri=...                                     │\n│                                                         │\n│  方式 B：POST 请求带 JSON body                          │\n│  POST /authorize                                        │\n│  Content-Type: application/json                         │\n│  {                                                      │\n│    \"response_type\": \"code\",                            │\n│    \"client_id\": \"xxx\",                                 │\n│    \"vp\": { ... VP内容 ... },                           │\n│    \"redirect_uri\": \"...\"                               │\n│  }                                                      │\n│                                                         │\n│  验证通过后直接返回 302，不返回 HTML                    │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 496,
+      "end": 518,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  安全屏障转移：                                          │\n│                                                         │\n│  传统 OAuth：                                           │\n│    安全依赖 → AS 的 client 注册 + client_secret        │\n│                                                         │\n│  本方案：                                                │\n│    安全依赖 → IdP 的 DID/VC 验证                       │\n│                                                         │\n│  client_id 的作用降级为：                               │\n│    • 满足 AS 形式要求                                   │\n│    • 绑定 redirect_uri（AS 验证用）                    │\n│    • 配置 PKCE 要求                                     │\n│                                                         │\n│  真正的身份验证：                                        │\n│    ✓ DID 私钥签名（密码学不可伪造）                    │\n│    ✓ VC 颁发方验证（权威机构背书）                     │\n│    ✓ VC 撤销检查（动态准入控制）                       │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 535,
+      "end": 548,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  优先使用 Token Exchange：                               │\n│    AS 支持 RFC 8693 时                                  │\n│    流程更简单，代码更少                                  │\n│                                                         │\n│  使用模拟 Auth Code Flow：                              │\n│    AS 不支持 Token Exchange 时                          │\n│    需要最大兼容性时                                      │\n│    如 AWS Cognito 等受限环境                           │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 773,
+      "end": 778,
+      "language": "",
+      "text": "传统OAuth只知道\"谁\"：\n用户登录 → AS只知道sub=\"alice\"\n         → 授予固定scope=\"read write\"\n         → 无法根据用户属性动态调整权限",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 782,
+      "end": 789,
+      "language": "",
+      "text": "有了VC Claims，AS知道\"谁的什么属性\"：\n用户提交VP → DID-auth验证VC\n           → 提取：personhood=verified, kyc_level=2\n           → 这些信息进入ID Token\n           → AS根据这些可信属性构造RAR\n           → 动态授予细粒度权限",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 876,
+      "end": 888,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  传统OAuth的安全模型：                                   │\n│    client_id + client_secret（或mTLS）                 │\n│    → 防止未授权client获取token                          │\n│                                                         │\n│  DID-OAuth集成方案的安全模型：                           │\n│    client_id（形式要求）+ DID/VC验证（实质安全）        │\n│    → 安全重心从client凭据转移到主体身份验证              │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 1029,
+      "end": 1046,
+      "language": "",
+      "text": "┌─────────────────────────────────────────┐\n│      现有OAuth AS (如Keycloak)         │\n│  ┌───────────────────────────────────┐  │\n│  │  Identity Provider配置            │  │\n│  │  ├── Google (OIDC)                │  │\n│  │  ├── Azure AD (OIDC)              │  │\n│  │  ├── SAML IdP                     │  │\n│  │  └── DID-auth (OIDC) ← 新增      │  │\n│  └───────────────────────────────────┘  │\n│                                         │\n│  配置方式：                              │\n│  - 添加OIDC Provider                    │\n│  - 配置issuer URL                       │\n│  - 配置jwks_uri                         │\n│  - 映射vc_claims到用户属性              │\n└─────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "start": 1143,
+      "end": 1152,
+      "language": "",
+      "text": "┌─────────────────────────────────────────┐\n│  DID-auth = 标准OIDC Provider           │\n│           + DID/VC/VP验证能力           │\n│                                         │\n│  定位：OAuth认证层的可插拔实现           │\n│  输出：标准ID Token                     │\n│  集成：通过OIDC标准协议                  │\n└─────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 7,
+      "end": 29,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                    OAuth Ecosystem                       │\n│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │\n│  │   Client     │  │     AS       │  │     RS       │  │\n│  │  (unchanged) │  │  (unchanged) │  │  (unchanged) │  │\n│  └──────────────┘  └──────────────┘  └──────────────┘  │\n│         │                 │                  │           │\n│         │                 │                  │           │\n│         │          ┌──────▼──────┐           │           │\n│         │          │   Authn     │           │           │\n│         └─────────►│  (pluggable)│           │           │\n│                    └──────────────┘           │           │\n│                          │                    │           │\n│                    ┌─────▼──────┐             │           │\n│                    │ DID-auth   │             │           │\n│                    │ (OIDC IdP) │             │           │\n│                    └────────────┘             │           │\n└─────────────────────────────────────────────────────────┘\n\nKey: DID-auth is an optional implementation of OAuth's authentication layer,\n     not changing OAuth's authorization architecture",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 37,
+      "end": 63,
+      "language": "",
+      "text": "┌─────────────────────────────────────────┐\n│         Authn Layer (Authentication)     │\n│  Responsibility: Confirm \"who is the     │\n│                  subject\"                │\n│  Implementation: Password/OIDC/SAML/     │\n│                  DID-auth                │\n│  Output: Authentication credentials      │\n│          (e.g., ID Token)                │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│         Authz Layer (Authorization)      │\n│  Responsibility: Decide \"what the        │\n│                  subject can do\"         │\n│  Implementation: OAuth AS (token         │\n│                  issuance)               │\n│  Output: Access Token + Refresh Token    │\n└─────────────────────────────────────────┘\n                    ↓\n┌─────────────────────────────────────────┐\n│      Resource Access                     │\n│  Responsibility: Execute access control  │\n│  Implementation: Resource Server         │\n│  Verification: Access Token + Policy     │\n└─────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 165,
+      "end": 189,
+      "language": "",
+      "text": "┌────────────────────────────────────────────────────┐\n│              DID-auth (OIDC Provider)              │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  Standard OIDC Endpoints                     │ │\n│  │  ├── /.well-known/openid-configuration       │ │\n│  │  ├── /token (ID Token issuance)              │ │\n│  │  ├── /jwks (public key endpoint)             │ │\n│  │  └── /authorize (browser scenario)           │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  ┌──────────────────────────────────────────────┐ │\n│  │  DID/VC/VP Verification Capability           │ │\n│  │  ├── DID resolution                          │ │\n│  │  ├── VP signature verification               │ │\n│  │  ├── VC signature verification               │ │\n│  │  ├── Personhood VC verification              │ │\n│  │  └── VC revocation check                     │ │\n│  └──────────────────────────────────────────────┘ │\n│                                                    │\n│  Output: Standard ID Token (JWT)                   │\n│          Contains vc_claims (verified VC content)  │\n└────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 360,
+      "end": 381,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  Core Idea:                                             │\n│                                                         │\n│  • Agent uses HTTP library to handle 302 redirects     │\n│    (simulating browser)                                 │\n│  • IdP (DID-auth) supports accepting VP authentication │\n│    directly in request                                  │\n│  • Agent intercepts final redirect, extracts code      │\n│    from URL                                             │\n│  • Uses standard Authorization Code to exchange for    │\n│    Access Token                                         │\n│                                                         │\n│  Advantages:                                            │\n│  ✅ Strongest compatibility (almost all AS support     │\n│     Auth Code Flow)                                     │\n│  ✅ Doesn't require AS to support Token Exchange       │\n│  ✅ Security guaranteed by IdP's DID/VC verification   │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 445,
+      "end": 470,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  DID-auth /authorize endpoint needs to support:        │\n│                                                         │\n│  Method A: GET request with VP parameter               │\n│  GET /authorize?                                        │\n│    response_type=code&                                  │\n│    client_id=xxx&                                       │\n│    vp_token=<base64url encoded VP>&                    │\n│    redirect_uri=...                                     │\n│                                                         │\n│  Method B: POST request with JSON body                 │\n│  POST /authorize                                        │\n│  Content-Type: application/json                         │\n│  {                                                      │\n│    \"response_type\": \"code\",                            │\n│    \"client_id\": \"xxx\",                                 │\n│    \"vp\": { ... VP content ... },                       │\n│    \"redirect_uri\": \"...\"                               │\n│  }                                                      │\n│                                                         │\n│  After verification, directly return 302, no HTML      │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 531,
+      "end": 555,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  Security Barrier Transfer:                            │\n│                                                         │\n│  Traditional OAuth:                                     │\n│    Security relies on → AS's client registration +     │\n│                         client_secret                   │\n│                                                         │\n│  This Solution:                                         │\n│    Security relies on → IdP's DID/VC verification      │\n│                                                         │\n│  client_id's role downgraded to:                       │\n│    • Satisfy AS formal requirements                    │\n│    • Bind redirect_uri (for AS verification)           │\n│    • Configure PKCE requirements                       │\n│                                                         │\n│  Real identity verification:                           │\n│    ✓ DID private key signature (cryptographically      │\n│      unforgeable)                                       │\n│    ✓ VC issuer verification (authority endorsement)    │\n│    ✓ VC revocation check (dynamic admission control)   │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 578,
+      "end": 591,
+      "language": "",
+      "text": "┌─────────────────────────────────────────────────────────┐\n│                                                         │\n│  Prioritize Token Exchange:                            │\n│    When AS supports RFC 8693                           │\n│    Simpler flow, less code                             │\n│                                                         │\n│  Use Simulated Auth Code Flow:                         │\n│    When AS doesn't support Token Exchange              │\n│    When maximum compatibility needed                   │\n│    E.g., AWS Cognito and other restricted environments │\n│                                                         │\n└─────────────────────────────────────────────────────────┘",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 815,
+      "end": 820,
+      "language": "",
+      "text": "Traditional OAuth only knows \"who\":\nUser login → AS only knows sub=\"alice\"\n          → Grants fixed scope=\"read write\"\n          → Cannot dynamically adjust permissions based on user attributes",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 824,
+      "end": 831,
+      "language": "",
+      "text": "With VC Claims, AS knows \"who's what attributes\":\nUser submits VP → DID-auth verifies VC\n           → Extracts: personhood=verified, kyc_level=2\n           → This information enters ID Token\n           → AS constructs RAR based on these trusted attributes\n           → Dynamically grants fine-grained permissions",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 918,
+      "end": 926,
+      "language": "",
+      "text": "Traditional OAuth Security Model:\n  client_id + client_secret (or mTLS)\n  → Prevents unauthorized clients from obtaining tokens\n\nDID-OAuth Integration Solution Security Model:\n  client_id (formal requirement) + DID/VC verification (substantive security)\n  → Security focus shifts from client credentials to subject identity verification",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 1067,
+      "end": 1082,
+      "language": "",
+      "text": "Existing OAuth AS (e.g., Keycloak)\n ┌───────────────────────────────────┐\n │  Identity Provider Configuration  │\n │  ├── Google (OIDC)                │\n │  ├── Azure AD (OIDC)              │\n │  ├── SAML IdP                     │\n │  └── DID-auth (OIDC) ← New        │\n └───────────────────────────────────┘\n                                     \n Configuration:\n - Add OIDC Provider\n - Configure issuer URL\n - Configure jwks_uri\n - Map vc_claims to user attributes",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "start": 1178,
+      "end": 1185,
+      "language": "",
+      "text": "DID-auth = Standard OIDC Provider\n         + DID/VC/VP Verification Capability\n\nPositioning: Pluggable implementation of OAuth authentication layer\nOutput: Standard ID Token\nIntegration: Via OIDC standard protocol",
+      "completeness_review": "pending-human-classification"
+    },
+    {
+      "source": "standard/draft-zyyhl-agent-networks-framework-00.md",
+      "start": 476,
+      "end": 492,
+      "language": "",
+      "text": "+--------------------------------------------------------+\n|                  AI Agent Application                  |\n+--------------------------------------------------------+\n\n+--------------------------------------------------------+\n|  AI Agent Comm Protocol Layer (e.g.,JSON-RPC, JSON-LD) |\n+--------------------------------------------------------+\n\n+--------------------------------------------------------+\n|            Application Layer (e.g.,HTTP, SIP)          |\n+--------------------------------------------------------+\n\n+--------------------------------------------------------+\n|         Transmission Layer (e.g.,UDP, TCP, QUIC)       |\n+--------------------------------------------------------+                    ",
+      "completeness_review": "pending-human-classification"
+    }
+  ]
+}

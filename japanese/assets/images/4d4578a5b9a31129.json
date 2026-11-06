@@ -1,0 +1,436 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page8.jpg",
+  "sha256": "4d4578a5b9a31129edd61856a3e78a950da84ce1699e343996875035456ad916",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Goals and Principles of Agent ldentity Design",
+      "confidence": 0.9925088365872701,
+      "box": [
+        [
+          36.0,
+          39.342857360839844
+        ],
+        [
+          1758.1934814453125,
+          43.97142791748047
+        ],
+        [
+          1758.1934814453125,
+          123.81428527832031
+        ],
+        [
+          36.0,
+          119.18571472167969
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9697919289271036,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          86.78571319580078
+        ],
+        [
+          2154.193603515625,
+          86.78571319580078
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Goals",
+      "confidence": 0.9995984554290771,
+      "box": [
+        [
+          190.4516143798828,
+          357.5571594238281
+        ],
+        [
+          322.8387145996094,
+          359.8714294433594
+        ],
+        [
+          321.6773986816406,
+          413.1000061035156
+        ],
+        [
+          189.29031372070312,
+          410.7857360839844
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Principles",
+      "confidence": 0.9990033626556396,
+      "box": [
+        [
+          1260.0,
+          374.914306640625
+        ],
+        [
+          1480.6451416015625,
+          378.3857116699219
+        ],
+        [
+          1479.48388671875,
+          433.9285888671875
+        ],
+        [
+          1258.838623046875,
+          430.4571533203125
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "·All agents can authenticate each other's",
+      "confidence": 0.9800763740772154,
+      "box": [
+        [
+          199.74192810058594,
+          484.8428649902344
+        ],
+        [
+          923.2257690429688,
+          482.5285949707031
+        ],
+        [
+          923.2257690429688,
+          524.1857299804688
+        ],
+        [
+          199.74192810058594,
+          526.5
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· Decentralization: Identity should not be",
+      "confidence": 0.9747335527624402,
+      "box": [
+        [
+          1265.806396484375,
+          497.5714416503906
+        ],
+        [
+          2013.6773681640625,
+          498.72857666015625
+        ],
+        [
+          2013.6773681640625,
+          541.5428466796875
+        ],
+        [
+          1265.806396484375,
+          540.3857421875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "identity.",
+      "confidence": 0.9998713069491916,
+      "box": [
+        [
+          224.1290283203125,
+          541.5428466796875
+        ],
+        [
+          379.7419128417969,
+          549.6428833007812
+        ],
+        [
+          377.4193420410156,
+          601.7142944335938
+        ],
+        [
+          221.8064422607422,
+          593.6143188476562
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "provided by a few vendors.",
+      "confidence": 0.9975902071365943,
+      "box": [
+        [
+          1297.1612548828125,
+          568.1571655273438
+        ],
+        [
+          1783.741943359375,
+          563.528564453125
+        ],
+        [
+          1783.741943359375,
+          608.6571655273438
+        ],
+        [
+          1297.1612548828125,
+          613.2857055664062
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Interoperability:Identities between",
+      "confidence": 0.9796907884734017,
+      "box": [
+        [
+          1273.9354248046875,
+          658.414306640625
+        ],
+        [
+          1941.6773681640625,
+          658.414306640625
+        ],
+        [
+          1941.6773681640625,
+          700.0714111328125
+        ],
+        [
+          1273.9354248046875,
+          700.0714111328125
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "different systems should be easily",
+      "confidence": 0.9834120045689976,
+      "box": [
+        [
+          1299.48388671875,
+          724.3714599609375
+        ],
+        [
+          1888.258056640625,
+          726.6857299804688
+        ],
+        [
+          1888.258056640625,
+          769.5
+        ],
+        [
+          1299.48388671875,
+          767.1857299804688
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "authenticated with each other.",
+      "confidence": 0.9746806065241496,
+      "box": [
+        [
+          1297.1612548828125,
+          792.6428833007812
+        ],
+        [
+          1824.3870849609375,
+          793.7999877929688
+        ],
+        [
+          1824.3870849609375,
+          831.9857177734375
+        ],
+        [
+          1297.1612548828125,
+          830.82861328125
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· Scalability: The system should support",
+      "confidence": 0.9819243520498275,
+      "box": [
+        [
+          1269.290283203125,
+          881.7428588867188
+        ],
+        [
+          1993.9354248046875,
+          882.9000244140625
+        ],
+        [
+          1993.9354248046875,
+          928.028564453125
+        ],
+        [
+          1269.290283203125,
+          926.8714599609375
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "large-scale user usage.",
+      "confidence": 0.9995718805686288,
+      "box": [
+        [
+          1293.6773681640625,
+          947.7000122070312
+        ],
+        [
+          1698.9676513671875,
+          954.6428833007812
+        ],
+        [
+          1698.9676513671875,
+          999.7714233398438
+        ],
+        [
+          1293.6773681640625,
+          992.82861328125
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "W3CDID(DecentralizedIdentifier)规范:https://www.w3.org/TR/did-core/",
+      "confidence": 0.9777345336400546,
+      "box": [
+        [
+          1466.7095947265625,
+          1232.357177734375
+        ],
+        [
+          2247.0966796875,
+          1233.5142822265625
+        ],
+        [
+          2247.0966796875,
+          1267.0714111328125
+        ],
+        [
+          1466.7095947265625,
+          1265.914306640625
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "W3CDID",
+        "DecentralizedIdentifier",
+        "https://www.w3.org/TR/did-core/"
+      ]
+    },
+    {
+      "source": "Goals and Principles of Agent Identity Design\n\n\n\n\n\n       Goals                                                         Principles\n\n           • All agents can authenticate each other's                                                                                • Decentralization: Identity should not be\n            identity.                                                                 provided by a few vendors.\n\n                                                                                • Interoperability: Identities between\n\n                                                                            different systems should be easily\n\n                                                                      authenticated with each other.\n\n                                                                                • Scalability: The system should support\n\n                                                                         large-scale user usage.\n\n\n\n\n\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L015",
+      "japanese": "エージェントのアイデンティティ設計の目標と原則\n\n目標：すべてのエージェントが、互いの身元を認証できること。\n\n原則：\n- 分散性：アイデンティティを少数のベンダーだけが提供するべきではありません。\n- 相互運用性：異なるシステムのアイデンティティを、互いに容易に認証できるべきです。\n- 拡張性：大規模な利用者数に対応できるべきです。\n\nW3C DID（Decentralized Identifier）仕様：https://www.w3.org/TR/did-core/",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4670674999943003,
+    0.022358179092407227,
+    2.3744664192199707
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 8,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-8",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.156446759259259,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 8,
+    "manual_label_translations": {
+      "Goals and Principles of Agent Identity Design\n\n\n\n\n\n       Goals                                                         Principles\n\n           • All agents can authenticate each other's                                                                                • Decentralization: Identity should not be\n            identity.                                                                 provided by a few vendors.\n\n                                                                                • Interoperability: Identities between\n\n                                                                            different systems should be easily\n\n                                                                      authenticated with each other.\n\n                                                                                • Scalability: The system should support\n\n                                                                         large-scale user usage.\n\n\n\n\n\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/": "エージェントのアイデンティティ設計の目標と原則\n\n目標：すべてのエージェントが、互いの身元を認証できること。\n\n原則：\n- 分散性：アイデンティティを少数のベンダーだけが提供するべきではありません。\n- 相互運用性：異なるシステムのアイデンティティを、互いに容易に認証できるべきです。\n- 拡張性：大規模な利用者数に対応できるべきです。\n\nW3C DID（Decentralized Identifier）仕様：https://www.w3.org/TR/did-core/"
+    },
+    "additional_labels": [
+      {
+        "source": "Goals and Principles of Agent Identity Design\n\n\n\n\n\n       Goals                                                         Principles\n\n           • All agents can authenticate each other's                                                                                • Decentralization: Identity should not be\n            identity.                                                                 provided by a few vendors.\n\n                                                                                • Interoperability: Identities between\n\n                                                                            different systems should be easily\n\n                                                                      authenticated with each other.\n\n                                                                                • Scalability: The system should support\n\n                                                                         large-scale user usage.\n\n\n\n\n\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Goals and Principles of Agent ldentity Design",
+      "ANP",
+      "Goals",
+      "Principles",
+      "·All agents can authenticate each other's",
+      "· Decentralization: Identity should not be",
+      "identity.",
+      "provided by a few vendors.",
+      "Interoperability:Identities between",
+      "different systems should be easily",
+      "authenticated with each other.",
+      "· Scalability: The system should support",
+      "large-scale user usage.",
+      "W3CDID(DecentralizedIdentifier)规范:https://www.w3.org/TR/did-core/"
+    ],
+    "source_sha256": "4d4578a5b9a31129edd61856a3e78a950da84ce1699e343996875035456ad916"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/09-bad3.png",
+  "sha256": "3101abcbcbfd17f3d09298396838e022425acf90dcfd874d8c60a489a115da4c",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "1 attacker swaps the key",
+      "confidence": 0.9891195942958196,
+      "box": [
+        [
+          335.0,
+          129.0
+        ],
+        [
+          599.0,
+          133.0
+        ],
+        [
+          598.0,
+          158.0
+        ],
+        [
+          335.0,
+          154.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "1 攻撃者が鍵を差し替える",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "2 shop fetches as usual",
+      "confidence": 0.9872508359991986,
+      "box": [
+        [
+          798.0,
+          131.0
+        ],
+        [
+          1047.0,
+          131.0
+        ],
+        [
+          1047.0,
+          156.0
+        ],
+        [
+          798.0,
+          156.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "2 店がいつも通り取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "Attacker",
+      "confidence": 0.9989233016967773,
+      "box": [
+        [
+          184.0,
+          268.0
+        ],
+        [
+          304.0,
+          270.0
+        ],
+        [
+          304.0,
+          298.0
+        ],
+        [
+          184.0,
+          297.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "攻撃者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "did.json on your domain",
+      "confidence": 0.9883378329484359,
+      "box": [
+        [
+          525.0,
+          266.0
+        ],
+        [
+          866.0,
+          267.0
+        ],
+        [
+          866.0,
+          303.0
+        ],
+        [
+          525.0,
+          302.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "あなたのドメイン上のdid.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did.json"
+      ]
+    },
+    {
+      "source": "Real coffee shop",
+      "confidence": 0.9977934472262859,
+      "box": [
+        [
+          1029.0,
+          266.0
+        ],
+        [
+          1258.0,
+          271.0
+        ],
+        [
+          1257.0,
+          303.0
+        ],
+        [
+          1029.0,
+          297.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "本物のコーヒー店",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "controls your domain",
+      "confidence": 0.9838486522436142,
+      "box": [
+        [
+          121.0,
+          310.0
+        ],
+        [
+          368.0,
+          309.0
+        ],
+        [
+          368.0,
+          335.0
+        ],
+        [
+          121.0,
+          336.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "あなたのドメインを支配している",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "key has been swapped",
+      "confidence": 0.9589199423789978,
+      "box": [
+        [
+          564.0,
+          310.0
+        ],
+        [
+          824.0,
+          310.0
+        ],
+        [
+          824.0,
+          336.0
+        ],
+        [
+          564.0,
+          336.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "鍵が差し替えられた",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "gets the fake key",
+      "confidence": 0.994731440263636,
+      "box": [
+        [
+          1045.0,
+          310.0
+        ],
+        [
+          1242.0,
+          308.0
+        ],
+        [
+          1242.0,
+          337.0
+        ],
+        [
+          1045.0,
+          338.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "偽の鍵を取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6613493000040762,
+    0.01051020622253418,
+    0.8870139122009277
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "右下の×は拒否、チェックマークは受理を示す図形。本文ラベルを全照合した。",
+    "source_sha256": "3101abcbcbfd17f3d09298396838e022425acf90dcfd874d8c60a489a115da4c"
+  }
+}

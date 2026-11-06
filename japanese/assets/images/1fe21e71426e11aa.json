@@ -1,0 +1,520 @@
+{
+  "source": "images/mcp-registry-architecture.svg",
+  "sha256": "1fe21e71426e11aa7d6043be83a08c6be8acd2322d02521c05ad0a655e6df8f1",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "MCP Registry Architecture",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "35",
+      "label_id": "L001",
+      "japanese": "MCPレジストリの構成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Server Maintainers",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "110",
+      "label_id": "L002",
+      "japanese": "サーバーの保守担当者",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Publish MCP Servers",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "130",
+      "label_id": "L003",
+      "japanese": "MCPサーバーを公開する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "with server.json",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "148",
+      "label_id": "L004",
+      "japanese": "server.jsonを使用",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Authentication",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "210",
+      "label_id": "L005",
+      "japanese": "認証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "GitHub OAuth",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "230",
+      "label_id": "L006",
+      "japanese": "GitHub OAuth",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "GitHub OIDC",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "248",
+      "label_id": "L007",
+      "japanese": "GitHub OIDC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "DNS Verification",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "266",
+      "label_id": "L008",
+      "japanese": "DNSによる検証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Verification",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "284",
+      "label_id": "L009",
+      "japanese": "HTTPによる検証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Publisher CLI",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "345",
+      "label_id": "L010",
+      "japanese": "公開者用CLI",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "mcp-publisher tool",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "365",
+      "label_id": "L011",
+      "japanese": "mcp-publisherツール",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Command line interface",
+      "element": "text",
+      "id": null,
+      "x": "110",
+      "y": "383",
+      "label_id": "L012",
+      "japanese": "コマンドラインインターフェース",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "MCP Registry",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "160",
+      "label_id": "L013",
+      "japanese": "MCPレジストリ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Single Source of Truth",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "180",
+      "label_id": "L014",
+      "japanese": "唯一の正本",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "registry.modelcontextprotocol.io",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "195",
+      "label_id": "L015",
+      "japanese": "registry.modelcontextprotocol.io",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "API Layer",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "233",
+      "label_id": "L016",
+      "japanese": "API層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "REST API v0",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "250",
+      "label_id": "L017",
+      "japanese": "REST API v0",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Service Layer",
+      "element": "text",
+      "id": null,
+      "x": "535",
+      "y": "233",
+      "label_id": "L018",
+      "japanese": "サービス層",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Business Logic",
+      "element": "text",
+      "id": null,
+      "x": "535",
+      "y": "250",
+      "label_id": "L019",
+      "japanese": "ビジネスロジック",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Validators",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "303",
+      "label_id": "L020",
+      "japanese": "検証器",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Schema Validation",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "320",
+      "label_id": "L021",
+      "japanese": "スキーマの検証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Auth & Security",
+      "element": "text",
+      "id": null,
+      "x": "535",
+      "y": "303",
+      "label_id": "L022",
+      "japanese": "認証・認可とセキュリティ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Namespace Control",
+      "element": "text",
+      "id": null,
+      "x": "535",
+      "y": "320",
+      "label_id": "L023",
+      "japanese": "名前空間の管理",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Database",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "373",
+      "label_id": "L024",
+      "japanese": "データベース",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "PostgreSQL",
+      "element": "text",
+      "id": null,
+      "x": "365",
+      "y": "390",
+      "label_id": "L025",
+      "japanese": "PostgreSQL",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "Telemetry",
+      "element": "text",
+      "id": null,
+      "x": "535",
+      "y": "373",
+      "label_id": "L026",
+      "japanese": "テレメトリー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Metrics & Monitoring",
+      "element": "text",
+      "id": null,
+      "x": "535",
+      "y": "390",
+      "label_id": "L027",
+      "japanese": "メトリクスと監視",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Community Moderation",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "510",
+      "label_id": "L028",
+      "japanese": "コミュニティによるモデレーション",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Issue Reporting • Denylist Management",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "530",
+      "label_id": "L029",
+      "japanese": "問題の報告 • 拒否リストの管理",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Guideline Enforcement",
+      "element": "text",
+      "id": null,
+      "x": "450",
+      "y": "545",
+      "label_id": "L030",
+      "japanese": "ガイドラインの適用",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "MCP Clients",
+      "element": "text",
+      "id": null,
+      "x": "790",
+      "y": "110",
+      "label_id": "L031",
+      "japanese": "MCPクライアント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Access Server Data",
+      "element": "text",
+      "id": null,
+      "x": "790",
+      "y": "130",
+      "label_id": "L032",
+      "japanese": "サーバーデータにアクセスする",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "via Registry API",
+      "element": "text",
+      "id": null,
+      "x": "790",
+      "y": "148",
+      "label_id": "L033",
+      "japanese": "レジストリAPI経由",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Public Sub-Registries",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "245",
+      "label_id": "L034",
+      "japanese": "公開サブレジストリ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "MCP Marketplaces",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "265",
+      "label_id": "L035",
+      "japanese": "MCPマーケットプレイス",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Enhanced Metadata",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "280",
+      "label_id": "L036",
+      "japanese": "拡張メタデータ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Opinionated Curation",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "295",
+      "label_id": "L037",
+      "japanese": "独自の方針によるキュレーション",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Private Sub-Registries",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "355",
+      "label_id": "L038",
+      "japanese": "非公開のサブレジストリ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Enterprise Deployments",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "375",
+      "label_id": "L039",
+      "japanese": "企業でのデプロイ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Custom Security Policies",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "390",
+      "label_id": "L040",
+      "japanese": "独自のセキュリティポリシー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Privacy Requirements",
+      "element": "text",
+      "id": null,
+      "x": "775",
+      "y": "405",
+      "label_id": "L041",
+      "japanese": "プライバシーに関する要件",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Legend:",
+      "element": "text",
+      "id": null,
+      "x": "35",
+      "y": "583",
+      "label_id": "L042",
+      "japanese": "凡例:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Data Flow",
+      "element": "text",
+      "id": null,
+      "x": "145",
+      "y": "583",
+      "label_id": "L043",
+      "japanese": "データフロー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Bi-directional Sync",
+      "element": "text",
+      "id": null,
+      "x": "145",
+      "y": "603",
+      "label_id": "L044",
+      "japanese": "双方向同期",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Authentication Flow",
+      "element": "text",
+      "id": null,
+      "x": "145",
+      "y": "623",
+      "label_id": "L045",
+      "japanese": "認証フロー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Sub-Registry",
+      "element": "text",
+      "id": null,
+      "x": "315",
+      "y": "583",
+      "label_id": "L046",
+      "japanese": "サブレジストリ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Main Registry",
+      "element": "text",
+      "id": null,
+      "x": "315",
+      "y": "603",
+      "label_id": "L047",
+      "japanese": "メインレジストリ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Component",
+      "element": "text",
+      "id": null,
+      "x": "315",
+      "y": "623",
+      "label_id": "L048",
+      "japanese": "構成要素",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Features: Open Source • MIT License",
+      "element": "text",
+      "id": null,
+      "x": "420",
+      "y": "583",
+      "label_id": "L049",
+      "japanese": "特徴: オープンソース • MIT License",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Built with: Go • PostgreSQL • OpenAPI",
+      "element": "text",
+      "id": null,
+      "x": "420",
+      "y": "603",
+      "label_id": "L050",
+      "japanese": "使用技術: Go • PostgreSQL • OpenAPI",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Deployment: Pulumi IaC",
+      "element": "text",
+      "id": null,
+      "x": "420",
+      "y": "623",
+      "label_id": "L051",
+      "japanese": "デプロイ: Pulumi IaC",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

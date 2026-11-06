@@ -1,0 +1,1416 @@
+{
+  "source": "examples/adp/lkcoffe/silk-latte/instruction.jpg",
+  "sha256": "b96ea698231f51355ce953d0971263b585a74ec10109674a813d82ac42ef9ed8",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "luckincoffee",
+      "confidence": 0.9925210128227869,
+      "box": [
+        [
+          189.4027862548828,
+          231.3125
+        ],
+        [
+          466.22222900390625,
+          231.3125
+        ],
+        [
+          466.22222900390625,
+          279.8135070800781
+        ],
+        [
+          189.4027862548828,
+          279.8135070800781
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "年度重磅！",
+      "confidence": 0.9566396832466125,
+      "box": [
+        [
+          750.326416015625,
+          346.96875
+        ],
+        [
+          947.013916015625,
+          346.96875
+        ],
+        [
+          947.013916015625,
+          391.7389221191406
+        ],
+        [
+          750.326416015625,
+          391.7389221191406
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "丝绒拿铁",
+      "confidence": 0.9952070564031601,
+      "box": [
+        [
+          240.39584350585938,
+          384.2772216796875
+        ],
+        [
+          845.0277709960938,
+          391.7389221191406
+        ],
+        [
+          845.0277709960938,
+          544.7036743164062
+        ],
+        [
+          240.39584350585938,
+          540.9727783203125
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "丝滑感提升20.99%",
+      "confidence": 0.9976211244409735,
+      "box": [
+        [
+          182.11805725097656,
+          570.819580078125
+        ],
+        [
+          899.6632080078125,
+          570.819580078125
+        ],
+        [
+          899.6632080078125,
+          641.7056884765625
+        ],
+        [
+          182.11805725097656,
+          641.7056884765625
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "20.99"
+      ]
+    },
+    {
+      "source": "生局丝绒拿铁",
+      "confidence": 0.7111843302845955,
+      "box": [
+        [
+          76.48958587646484,
+          1074.48388671875
+        ],
+        [
+          116.55555725097656,
+          1074.48388671875
+        ],
+        [
+          116.55555725097656,
+          1275.9495849609375
+        ],
+        [
+          76.48958587646484,
+          1275.9495849609375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "香草丝拿铁",
+      "confidence": 0.7955605983734131,
+      "box": [
+        [
+          735.7569580078125,
+          1469.95361328125
+        ],
+        [
+          775.8229370117188,
+          1469.95361328125
+        ],
+        [
+          775.8229370117188,
+          1667.6885986328125
+        ],
+        [
+          735.7569580078125,
+          1667.6885986328125
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "口路顺滑奶香醇厚",
+      "confidence": 0.7004772499203682,
+      "box": [
+        [
+          83.77430725097656,
+          1984.810546875
+        ],
+        [
+          327.8125,
+          1984.810546875
+        ],
+        [
+          327.8125,
+          2022.1190185546875
+        ],
+        [
+          83.77430725097656,
+          2022.1190185546875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "·题选IAC金奖咖豆",
+      "confidence": 0.7119725689291954,
+      "box": [
+        [
+          83.77430725097656,
+          2025.849853515625
+        ],
+        [
+          335.09722900390625,
+          2029.5806884765625
+        ],
+        [
+          335.09722900390625,
+          2066.88916015625
+        ],
+        [
+          83.77430725097656,
+          2063.158447265625
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "0",
+      "confidence": 0.8583313822746277,
+      "box": [
+        [
+          495.3611145019531,
+          2096.73583984375
+        ],
+        [
+          670.1944580078125,
+          2096.73583984375
+        ],
+        [
+          670.1944580078125,
+          2395.20361328125
+        ],
+        [
+          495.3611145019531,
+          2395.20361328125
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "0"
+      ]
+    },
+    {
+      "source": "瑞幸咖味全线饮品",
+      "confidence": 0.7114092409610748,
+      "box": [
+        [
+          699.3333740234375,
+          2078.081787109375
+        ],
+        [
+          939.7291870117188,
+          2033.3115234375
+        ],
+        [
+          947.013916015625,
+          2074.350830078125
+        ],
+        [
+          706.6180419921875,
+          2115.39013671875
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "植脂末X",
+      "confidence": 0.8955197930335999,
+      "box": [
+        [
+          699.3333740234375,
+          2119.12109375
+        ],
+        [
+          987.0798950195312,
+          2074.350830078125
+        ],
+        [
+          994.3646240234375,
+          2130.3134765625
+        ],
+        [
+          706.6180419921875,
+          2175.083740234375
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "阿斯巴甜x",
+      "confidence": 0.9007368445396423,
+      "box": [
+        [
+          695.6909790039062,
+          2190.007080078125
+        ],
+        [
+          983.4375,
+          2145.237060546875
+        ],
+        [
+          994.3646240234375,
+          2201.19970703125
+        ],
+        [
+          702.9757080078125,
+          2245.9697265625
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "氢化植物油x",
+      "confidence": 0.9126368264357249,
+      "box": [
+        [
+          695.6909790039062,
+          2257.162353515625
+        ],
+        [
+          987.0798950195312,
+          2212.39208984375
+        ],
+        [
+          994.3646240234375,
+          2268.35498046875
+        ],
+        [
+          702.9757080078125,
+          2309.394287109375
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "反式脂肪酸x",
+      "confidence": 0.8959633857011795,
+      "box": [
+        [
+          702.9757080078125,
+          2324.317626953125
+        ],
+        [
+          987.0798950195312,
+          2279.54736328125
+        ],
+        [
+          994.3646240234375,
+          2335.51025390625
+        ],
+        [
+          710.2604370117188,
+          2380.2802734375
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "门店恢强赋认态项及绿准制售博买下，饮晶不添比植指",
+      "confidence": 0.5588184517497817,
+      "box": [
+        [
+          477.1493225097656,
+          2462.35888671875
+        ],
+        [
+          994.3646240234375,
+          2462.35888671875
+        ],
+        [
+          994.3646240234375,
+          2488.474853515625
+        ],
+        [
+          477.1493225097656,
+          2488.474853515625
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "2021年度重磅之作",
+      "confidence": 0.9910104036331177,
+      "box": [
+        [
+          145.69444274902344,
+          2727.2490234375
+        ],
+        [
+          914.232666015625,
+          2727.2490234375
+        ],
+        [
+          914.232666015625,
+          2801.865966796875
+        ],
+        [
+          145.69444274902344,
+          2801.865966796875
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "2021"
+      ]
+    },
+    {
+      "source": "秋日好评榜top1",
+      "confidence": 0.9885137743420072,
+      "box": [
+        [
+          364.2361145019531,
+          2898.867919921875
+        ],
+        [
+          681.1215209960938,
+          2898.867919921875
+        ],
+        [
+          681.1215209960938,
+          2947.369140625
+        ],
+        [
+          364.2361145019531,
+          2943.63818359375
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "滑、香、甜、柔",
+      "confidence": 0.9473673871585301,
+      "box": [
+        [
+          375.1632080078125,
+          2977.2158203125
+        ],
+        [
+          673.8367919921875,
+          2977.2158203125
+        ],
+        [
+          673.8367919921875,
+          3021.986083984375
+        ],
+        [
+          375.1632080078125,
+          3021.986083984375
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "带你一杯滑进秋天",
+      "confidence": 0.9954807907342911,
+      "box": [
+        [
+          349.66668701171875,
+          3044.37109375
+        ],
+        [
+          695.6909790039062,
+          3048.101806640625
+        ],
+        [
+          695.6909790039062,
+          3096.60302734375
+        ],
+        [
+          349.66668701171875,
+          3092.8720703125
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "TOP1",
+      "confidence": 0.9693581908941269,
+      "box": [
+        [
+          750.326416015625,
+          3424.91748046875
+        ],
+        [
+          928.8021240234375,
+          3406.26318359375
+        ],
+        [
+          936.0867919921875,
+          3454.76416015625
+        ],
+        [
+          753.96875,
+          3477.1494140625
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "TOP1"
+      ]
+    },
+    {
+      "source": "丝绒晕铁",
+      "confidence": 0.8938043713569641,
+      "box": [
+        [
+          750.326416015625,
+          3469.6875
+        ],
+        [
+          932.4444580078125,
+          3454.76416015625
+        ],
+        [
+          936.0867919921875,
+          3499.534423828125
+        ],
+        [
+          753.96875,
+          3514.457763671875
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "添加丝绒风味厚奶",
+      "confidence": 0.9986440688371658,
+      "box": [
+        [
+          91.05902862548828,
+          4719.521484375
+        ],
+        [
+          961.5833740234375,
+          4719.521484375
+        ],
+        [
+          961.5833740234375,
+          4805.33056640625
+        ],
+        [
+          91.05902862548828,
+          4805.33056640625
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "丝滑感提升",
+      "confidence": 0.9990874052047729,
+      "box": [
+        [
+          120.19792175292969,
+          4906.0634765625
+        ],
+        [
+          502.6458435058594,
+          4906.0634765625
+        ],
+        [
+          502.6458435058594,
+          4976.94970703125
+        ],
+        [
+          120.19792175292969,
+          4976.94970703125
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "20.99%*",
+      "confidence": 0.9853649309703282,
+      "box": [
+        [
+          593.7048950195312,
+          4906.0634765625
+        ],
+        [
+          939.7291870117188,
+          4898.60205078125
+        ],
+        [
+          943.3715209960938,
+          4973.21875
+        ],
+        [
+          593.7048950195312,
+          4980.6806640625
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "20.99"
+      ]
+    },
+    {
+      "source": "奶香浓郁，甜感柔和，尽显丝滑",
+      "confidence": 0.9623973752771106,
+      "box": [
+        [
+          214.89930725097656,
+          5211.9931640625
+        ],
+        [
+          823.1736450195312,
+          5211.9931640625
+        ],
+        [
+          823.1736450195312,
+          5256.76318359375
+        ],
+        [
+          214.89930725097656,
+          5256.76318359375
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "与瑞幸普通拿铁相比，丝滑感提升20.99%",
+      "confidence": 0.9935485862550282,
+      "box": [
+        [
+          131.125,
+          5286.60986328125
+        ],
+        [
+          917.875,
+          5286.60986328125
+        ],
+        [
+          917.875,
+          5327.6494140625
+        ],
+        [
+          131.125,
+          5327.6494140625
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "20.99"
+      ]
+    },
+    {
+      "source": "与项幸普通拿铁对比，数据来源于内部测试报告，基于15位测试",
+      "confidence": 0.9234056380288355,
+      "box": [
+        [
+          109.27083587646484,
+          6439.44189453125
+        ],
+        [
+          954.2986450195312,
+          6439.44189453125
+        ],
+        [
+          954.2986450195312,
+          6473.01953125
+        ],
+        [
+          109.27083587646484,
+          6473.01953125
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "15"
+      ]
+    },
+    {
+      "source": "人员，其中6位为CQ1认证即啡品盛师（Q-Grader）综合评分折",
+      "confidence": 0.9136063899054672,
+      "box": [
+        [
+          109.27083587646484,
+          6484.2119140625
+        ],
+        [
+          954.2986450195312,
+          6484.2119140625
+        ],
+        [
+          954.2986450195312,
+          6517.78955078125
+        ],
+        [
+          109.27083587646484,
+          6517.78955078125
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "6",
+        "1",
+        "Q-"
+      ]
+    },
+    {
+      "source": "算。测试评分与实际系登可能存在一定差异。实际逐登因人而异。",
+      "confidence": 0.8898152580548977,
+      "box": [
+        [
+          109.27083587646484,
+          6528.98193359375
+        ],
+        [
+          957.9409790039062,
+          6528.98193359375
+        ],
+        [
+          957.9409790039062,
+          6562.5595703125
+        ],
+        [
+          109.27083587646484,
+          6562.5595703125
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "甜度",
+      "confidence": 0.9983516335487366,
+      "box": [
+        [
+          484.43402099609375,
+          6734.1787109375
+        ],
+        [
+          564.5659790039062,
+          6734.1787109375
+        ],
+        [
+          564.5659790039062,
+          6782.6796875
+        ],
+        [
+          484.43402099609375,
+          6782.6796875
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "余韵",
+      "confidence": 0.9945226311683655,
+      "box": [
+        [
+          298.6736145019531,
+          6805.06494140625
+        ],
+        [
+          371.5208435058594,
+          6805.06494140625
+        ],
+        [
+          371.5208435058594,
+          6849.8349609375
+        ],
+        [
+          298.6736145019531,
+          6849.8349609375
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "苦度",
+      "confidence": 0.9324453771114349,
+      "box": [
+        [
+          670.1944580078125,
+          6805.06494140625
+        ],
+        [
+          743.0416870117188,
+          6805.06494140625
+        ],
+        [
+          743.0416870117188,
+          6846.10400390625
+        ],
+        [
+          670.1944580078125,
+          6846.10400390625
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "丝滑度",
+      "confidence": 0.9434534708658854,
+      "box": [
+        [
+          211.25694274902344,
+          6943.10595703125
+        ],
+        [
+          316.8854064941406,
+          6943.10595703125
+        ],
+        [
+          316.8854064941406,
+          6987.8759765625
+        ],
+        [
+          211.25694274902344,
+          6987.8759765625
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "咖啡风味",
+      "confidence": 0.9794580638408661,
+      "box": [
+        [
+          724.8298950195312,
+          6943.10595703125
+        ],
+        [
+          866.8819580078125,
+          6946.8369140625
+        ],
+        [
+          863.2396240234375,
+          6987.8759765625
+        ],
+        [
+          724.8298950195312,
+          6984.1455078125
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "醇厚度",
+      "confidence": 0.9882582028706869,
+      "box": [
+        [
+          254.9652862548828,
+          7081.1474609375
+        ],
+        [
+          364.2361145019531,
+          7081.1474609375
+        ],
+        [
+          364.2361145019531,
+          7125.91748046875
+        ],
+        [
+          254.9652862548828,
+          7125.91748046875
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "奶风味",
+      "confidence": 0.9976385831832886,
+      "box": [
+        [
+          688.40625,
+          7081.1474609375
+        ],
+        [
+          794.0347290039062,
+          7081.1474609375
+        ],
+        [
+          794.0347290039062,
+          7125.91748046875
+        ],
+        [
+          688.40625,
+          7125.91748046875
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "平衡度",
+      "confidence": 0.984107236067454,
+      "box": [
+        [
+          473.5069580078125,
+          7178.1494140625
+        ],
+        [
+          579.1354370117188,
+          7185.611328125
+        ],
+        [
+          575.4930419921875,
+          7230.38134765625
+        ],
+        [
+          469.8645935058594,
+          7226.650390625
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "风味雷达图",
+      "confidence": 0.9977079629898071,
+      "box": [
+        [
+          786.75,
+          7249.03564453125
+        ],
+        [
+          990.7222290039062,
+          7249.03564453125
+        ],
+        [
+          990.7222290039062,
+          7293.8056640625
+        ],
+        [
+          786.75,
+          7293.8056640625
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "一丝统掌铁（络）",
+      "confidence": 0.6926322877407074,
+      "box": [
+        [
+          786.75,
+          7308.72900390625
+        ],
+        [
+          994.3646240234375,
+          7304.998046875
+        ],
+        [
+          994.3646240234375,
+          7342.306640625
+        ],
+        [
+          786.75,
+          7346.03759765625
+        ]
+      ],
+      "label_id": "L039",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "丝绒拿铁（冰）",
+      "confidence": 0.8112269980566842,
+      "box": [
+        [
+          801.3194580078125,
+          7346.03759765625
+        ],
+        [
+          990.7222290039062,
+          7346.03759765625
+        ],
+        [
+          990.7222290039062,
+          7383.34619140625
+        ],
+        [
+          801.3194580078125,
+          7383.34619140625
+        ]
+      ],
+      "label_id": "L040",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "luckin coffee",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 1",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L041",
+      "japanese": "luckin coffee（ブランド名）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "年度重磅！ / 丝绒拿铁",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 2",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L042",
+      "japanese": "今年の注目作！／ベルベットラテ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "丝滑感提升20.99%",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 3",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L043",
+      "japanese": "なめらかさが20.99%向上",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "生椰丝绒拿铁 / 香草丝绒拿铁",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 4",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L044",
+      "japanese": "フレッシュココナツ・ベルベットラテ／バニラ・ベルベットラテ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "口感顺滑 奶香醇厚",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 5",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L045",
+      "japanese": "なめらかな口当たり、豊かなミルクの香り",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "甄选IIAC金奖咖啡豆",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 6",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L046",
+      "japanese": "IIAC金賞のコーヒー豆を厳選",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "0 / 瑞幸咖啡全线饮品",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 7",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L047",
+      "japanese": "0／瑞幸珈琲の全ドリンク",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "植脂末× 阿斯巴甜× 氢化植物油× 反式脂肪酸×",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 8",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L048",
+      "japanese": "植物性クリーマー×、アスパルテーム×、硬化植物油×、トランス脂肪酸×",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "*门店饮品默认选项及标准制售情况下，饮品不添加植脂末、阿斯巴甜、氢化植物油，整杯饮品符合0反式脂肪酸。",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 9",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L049",
+      "japanese": "*店舗の既定の選択と標準の調製・販売条件では、植物性クリーマー、アスパルテーム、硬化植物油を飲料へ添加せず、1杯全体がトランス脂肪酸0の基準に適合。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2021年度重磅之作",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 10",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L050",
+      "japanese": "2021年の注目作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "秋日好评榜top1",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 11",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L051",
+      "japanese": "秋の好評ランキングtop1",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "滑、香、甜、柔",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 12",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L052",
+      "japanese": "なめらか、香り豊か、甘い、やわらかい",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "带你一杯滑进秋天",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 13",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L053",
+      "japanese": "1杯で、なめらかに秋へ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "TOP1 / 丝绒拿铁",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 14",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L054",
+      "japanese": "TOP1／ベルベットラテ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "添加丝绒风味厚奶",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 15",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L055",
+      "japanese": "ベルベット風味の濃厚ミルクを加えて",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "丝滑感提升 / 20.99%*",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 16",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L056",
+      "japanese": "なめらかさが向上／20.99%*",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "奶香浓郁，甜感柔和，尽显丝滑",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 17",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L057",
+      "japanese": "豊かなミルクの香り、穏やかな甘さ、際立つなめらかさ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "与瑞幸普通拿铁相比，丝滑感提升20.99%*",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 18",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L058",
+      "japanese": "瑞幸の通常のラテに比べ、なめらかさが20.99%向上*",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "*与瑞幸普通拿铁对比。数据来源于内部测试报告，基于15位测试人员，其中6位为CQI认证咖啡品鉴师（Q-Grader）综合评分折算。",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 19",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L059",
+      "japanese": "*瑞幸の通常のラテと比較。社内試験報告に基づき、15人の試験参加者（うち6人はCQI認定のコーヒー鑑定士Q-Grader）の総合評価を換算。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "测试评分与实际感受可能存在一定差异。实际感受因人而异。",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 20",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L060",
+      "japanese": "試験の評価と実際の感じ方には差が生じる可能性があります。実際の感じ方には個人差があります。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "甜度 / 苦度 / 咖啡风味 / 奶风味",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 21",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L061",
+      "japanese": "甘さ／苦さ／コーヒーの風味／ミルクの風味",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "平衡度 / 醇厚度 / 丝滑度 / 余韵",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 22",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L062",
+      "japanese": "バランス／コク／なめらかさ／余韻",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "风味雷达图",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 23",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L063",
+      "japanese": "風味のレーダーチャート",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "丝绒拿铁（热） / 丝绒拿铁（冰）",
+      "location": "manual visible-text transcription in top-to-bottom image order, block 24",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L064",
+      "japanese": "ベルベットラテ（ホット）／ベルベットラテ（アイス）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "visible-readable-text-translated-unreadable-source-text-remains",
+  "ocr_seconds": [
+    2.497762299957685,
+    0.04865670204162598,
+    4.004979610443115
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": false,
+    "corrections": {},
+    "source_note": "商品広告の画像を目視し、読める文章・数値・脚注を手動で対訳した。元OCRの不完全な断片は別途保持し、手動追記のラベルへ置き換えて読めるようにした。品質・栄養・受賞・売上・順位・試験結果は原広告の主張として訳しており、現在の事実や効果を保証する記述ではない。写真内の署名・ロゴ図形は原画素を保持。",
+    "additional_labels": [
+      {
+        "source": "luckin coffee",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 1"
+      },
+      {
+        "source": "年度重磅！ / 丝绒拿铁",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 2"
+      },
+      {
+        "source": "丝滑感提升20.99%",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 3"
+      },
+      {
+        "source": "生椰丝绒拿铁 / 香草丝绒拿铁",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 4"
+      },
+      {
+        "source": "口感顺滑 奶香醇厚",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 5"
+      },
+      {
+        "source": "甄选IIAC金奖咖啡豆",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 6"
+      },
+      {
+        "source": "0 / 瑞幸咖啡全线饮品",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 7"
+      },
+      {
+        "source": "植脂末× 阿斯巴甜× 氢化植物油× 反式脂肪酸×",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 8"
+      },
+      {
+        "source": "*门店饮品默认选项及标准制售情况下，饮品不添加植脂末、阿斯巴甜、氢化植物油，整杯饮品符合0反式脂肪酸。",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 9"
+      },
+      {
+        "source": "2021年度重磅之作",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 10"
+      },
+      {
+        "source": "秋日好评榜top1",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 11"
+      },
+      {
+        "source": "滑、香、甜、柔",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 12"
+      },
+      {
+        "source": "带你一杯滑进秋天",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 13"
+      },
+      {
+        "source": "TOP1 / 丝绒拿铁",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 14"
+      },
+      {
+        "source": "添加丝绒风味厚奶",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 15"
+      },
+      {
+        "source": "丝滑感提升 / 20.99%*",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 16"
+      },
+      {
+        "source": "奶香浓郁，甜感柔和，尽显丝滑",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 17"
+      },
+      {
+        "source": "与瑞幸普通拿铁相比，丝滑感提升20.99%*",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 18"
+      },
+      {
+        "source": "*与瑞幸普通拿铁对比。数据来源于内部测试报告，基于15位测试人员，其中6位为CQI认证咖啡品鉴师（Q-Grader）综合评分折算。",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 19"
+      },
+      {
+        "source": "测试评分与实际感受可能存在一定差异。实际感受因人而异。",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 20"
+      },
+      {
+        "source": "甜度 / 苦度 / 咖啡风味 / 奶风味",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 21"
+      },
+      {
+        "source": "平衡度 / 醇厚度 / 丝滑度 / 余韵",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 22"
+      },
+      {
+        "source": "风味雷达图",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 23"
+      },
+      {
+        "source": "丝绒拿铁（热） / 丝绒拿铁（冰）",
+        "location": "manual visible-text transcription in top-to-bottom image order, block 24"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "luckincoffee",
+      "年度重磅！",
+      "丝绒拿铁",
+      "丝滑感提升20.99%",
+      "生局丝绒拿铁",
+      "香草丝拿铁",
+      "口路顺滑奶香醇厚",
+      "·题选IAC金奖咖豆",
+      "0",
+      "瑞幸咖味全线饮品",
+      "植脂末X",
+      "阿斯巴甜x",
+      "氢化植物油x",
+      "反式脂肪酸x",
+      "门店恢强赋认态项及绿准制售博买下，饮晶不添比植指",
+      "2021年度重磅之作",
+      "秋日好评榜top1",
+      "滑、香、甜、柔",
+      "带你一杯滑进秋天",
+      "TOP1",
+      "丝绒晕铁",
+      "添加丝绒风味厚奶",
+      "丝滑感提升",
+      "20.99%*",
+      "奶香浓郁，甜感柔和，尽显丝滑",
+      "与瑞幸普通拿铁相比，丝滑感提升20.99%",
+      "与项幸普通拿铁对比，数据来源于内部测试报告，基于15位测试",
+      "人员，其中6位为CQ1认证即啡品盛师（Q-Grader）综合评分折",
+      "算。测试评分与实际系登可能存在一定差异。实际逐登因人而异。",
+      "甜度",
+      "余韵",
+      "苦度",
+      "丝滑度",
+      "咖啡风味",
+      "醇厚度",
+      "奶风味",
+      "平衡度",
+      "风味雷达图",
+      "一丝统掌铁（络）",
+      "丝绒拿铁（冰）"
+    ],
+    "unreadable_source_text": true,
+    "source_limitation": "レーダーチャートの薄い小さな目盛数字と、写真中の白い紙カップの薄い印字は一部判読困難。数字を推測して追加しない。読める広告本文・比較条件・15人/6人・20.99%・各軸名と凡例は対訳済み。",
+    "source_sha256": "b96ea698231f51355ce953d0971263b585a74ec10109674a813d82ac42ef9ed8"
+  }
+}

@@ -1,0 +1,23 @@
+graph LR
+    subgraph "アイデンティティの所有者"
+        PrivateKey["秘密鍵"]
+        PublicKey["公開鍵"]
+    end
+    subgraph "署名の手順"
+        Data["元のデータ"]
+        Sign["デジタル署名"]
+        PrivateKey -->|秘密鍵で署名| Sign
+        Data -->|ハッシュを計算| Sign
+    end
+    subgraph "検証の手順"
+        VerifyData["受信したデータ"]
+        VerifySign["受信した署名"]
+        Result["検証結果"]
+        PublicKey -->|公開鍵で検証| Result
+        VerifyData -->|ハッシュを計算| Result
+        VerifySign --> Result
+    end
+    style PrivateKey fill:#f9f,stroke:#333,stroke-width:2px
+    style PublicKey fill:#9ff,stroke:#333,stroke-width:2px
+    style Sign fill:#ff9,stroke:#333,stroke-width:2px
+    style Result fill:#9f9,stroke:#333,stroke-width:2px

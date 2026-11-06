@@ -1,4 +1,5 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: full; source=CONTRIBUTING.cn.md; basis=entire original read and manually compared paragraph by paragraph -->
+> 日本語参考訳（原文全文を照合し、誤訳を修正済み）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
 > 原文: [CONTRIBUTING.cn.md](../CONTRIBUTING.cn.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
 # 貢献ガイド
@@ -8,7 +9,7 @@
 ## 誰が貢献できるか
 
 私たちは、以下のグループがプロジェクトに参加することを心から歓迎します。
-- ネットワーク技術を研究してきた開発者
+- ネットワーク技術を研究する開発者
 - プロトコルの設計と実装に興味のあるエンジニア
 - 関連ソフトウェアの研究開発を行う企業
 - 大学・研究機関の研究者
@@ -20,15 +21,15 @@
 ドキュメントの作成を開始する前に、次のことをお勧めします。
 - GitHub Issues であなたの考えを提案してください
 - Discord コミュニティで他の開発者と話し合う
--  コミュニティからのフィードバックを完全に収集して、計画の実現可能性を確認します
+- コミュニティから十分な意見を集め、計画の実現可能性を確認してください
 
 ### 2. プルリクエストを送信
 - ドキュメントがプロジェクトの仕様を満たしていることを確認してください
 -  変更の目的と実装を説明する明確な PR 説明を提供します。
 - PR が問題に関連付けられている場合は、説明にそれを示してください
 
-### 3. 書類審査
-- できるだけ早くあなたのPRを確認させていただきます
+### 3. 文書のレビュー
+- PRをできるだけ早くレビューします
 - 必要に応じて、関連分野の開発者がディスカッションに参加するよう招待されます
 - 変更や最適化を求められる場合があります
 
@@ -36,10 +37,10 @@
 
 ご質問がございましたら、以下の方法でお問い合わせください。
 - GitHub の問題：[https://github.com/agent-network-protocol/AgentNetworkProtocol/issues](https://github.com/agent-network-protocol/AgentNetworkProtocol/issues)
-- ディスコードコミュニティ:[https://discord.gg/sFjBKTY7sB](https://discord.gg/sFjBKTY7sB)  
+- Discordコミュニティ：[https://discord.gg/sFjBKTY7sB](https://discord.gg/sFjBKTY7sB)  
 
 プロジェクトへのご注目とご支援に改めて感謝申し上げます。
 
 ## 著作権表示
-著作権 (c) 2024 ANP コミュニティ
-この文書は以下に基づいています [Apache ライセンス 2.0](../LICENSE) 投稿されたものは自由に使用および変更できますが、この著作権に関する声明は保持する必要があります。
+Copyright (c) 2024 ANP Community
+このファイルは[Apache License 2.0](../LICENSE)の下で公開されています。自由に利用・変更できますが、この著作権表示を保持しなければなりません。

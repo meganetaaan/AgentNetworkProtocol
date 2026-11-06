@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/Ten-Questions-and-Answers-about-MCP.md -->
 # MCPについての10の質問と回答
 
 ## はじめに

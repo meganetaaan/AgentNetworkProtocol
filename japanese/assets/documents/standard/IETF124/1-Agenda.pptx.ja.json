@@ -1,0 +1,570 @@
+{
+  "source": "standard/IETF124/1-Agenda.pptx",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "source_sha256": "5ba078689b449ab4c94caf61e30ecbf97984b1aba60a16e8584e6beb199bf362",
+  "format": "pptx",
+  "historical_document": true,
+  "original_binary_unchanged": true,
+  "sidecar": "japanese/assets/documents/standard/IETF124/1-Agenda.pptx.ja.md",
+  "structured_sidecar": "japanese/assets/documents/standard/IETF124/1-Agenda.pptx.ja.json",
+  "extracted_text_sidecar": "japanese/assets/documents/standard/IETF124/1-Agenda.pptx.extracted.json",
+  "unit_count": 15,
+  "extracted_text_translation_status": "complete-manual-translation",
+  "full_visual_document_verification": false,
+  "full_visual_document_status": "all-package-media-inspected-readable-prose-translated-native-layout-pending",
+  "independent_second_review": false,
+  "retained_source_image_assets": [],
+  "units": [
+    {
+      "unit": 1,
+      "kind": "slide",
+      "original_text": "Side meetingAI-Agent Network Requirements and Protocols \nNovember 2025",
+      "translation": "サイドミーティング：AIエージェントネットワークの要件とプロトコル\n\nNovember 2025。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 2,
+      "kind": "slide",
+      "original_text": "Note Well\nBy participating in the IETF you agree to follow IETF processes and policies. This Note Well is a reminder of some of those policies. For a linked version of this text, please visit www.ietf.org/note-well or use the QR code below.\nIETF participants are expected to behave in a professional manner and extend respect and courtesy to their colleagues at all times (see RFC 7154: IETF Guidelines for Conduct and IETF Anti-Harassment Policy). If you have any concerns about behavior, please contact the Ombudsteam who have a duty of confidentiality and extensive powers to act, as set out in RFC 7776: IETF Anti-Harassment Procedures.\nIf you are aware that any IETF contribution (as defined in RFC 5378: Rights Contributors Provide to the IETF Trust) is covered by patents or patent applications that are owned or controlled by you, your employer or your sponsor, you must disclose that fact, or not participate in the discussion (see RFC 8179: Intellectual Property Rights in IETF Technology).\nFor detailed process information consult RFC 2026: Internet Standards Process and RFC 2418: IETF Working Group Guidelines and Procedures and updates to those.\nThe IETF routinely makes public written, audio, video, and photographic records of IETF activities, including your personal information as set out in the IETF Privacy Statement. \nFor advice, please talk to Working Group chairs or Area Directors.",
+      "translation": "Note Well（参加にあたっての注意）\n\nIETFに参加することにより、IETFの手続きと方針に従うことに同意します。このNote Wellは、それらの方針の一部を再確認するものです。リンク付きの本文は、www.ietf.org/note-well または下のQRコードを参照してください。\n\nIETFの参加者には、常に専門家として振る舞い、同僚に敬意と礼節をもって接することが求められます。RFC 7154: IETF Guidelines for Conductと、IETF Anti-Harassment Policyを参照してください。行動について懸念があれば、守秘義務と広い対応権限を持つOmbudsteamに連絡してください。詳細はRFC 7776: IETF Anti-Harassment Proceduresに定められています。\n\nIETFへの貢献物（RFC 5378: Rights Contributors Provide to the IETF Trustで定義）が、自分、雇用主、スポンサーが所有または管理する特許や特許出願の対象であると知っている場合、その事実を開示するか、議論に参加しない必要があります。RFC 8179: Intellectual Property Rights in IETF Technologyを参照してください。\n\n詳細な手続きは、RFC 2026: Internet Standards Process、RFC 2418: IETF Working Group Guidelines and Procedures、およびそれらの更新文書を参照してください。\n\nIETFは、IETF Privacy Statementに記載された個人情報を含め、IETF活動の文書、音声、動画、写真の記録を日常的に公開します。\n\n助言が必要な場合は、Working Groupの議長またはArea Directorに相談してください。",
+      "original_notes": "The IETF Note Well should be shown at the start of every IETF working session. The guidance below is adapted from IETF legal counsel presentation during IETF 120\n\nDO\nDo make sure people have enough time to read through the slide before you move on,\nDo give a high-level summary of what’s covered in the Note Well: “IETF policies on conduct, privacy and IPR.”,\nDo encourage people to read through all the linked policies & documents in detail before participating or contributing,\nDo explain where people can direct questions or concerns (IETF Executive Director or Ombudsteam).\nDON'T\nDon’t dismiss the importance or relevance of any of the information on the Note Well.\nDon’t interpret the meaning or get into the substance of any of the topics or content of the policies.\nDon’t communicate that the Note Well conveys all the information participants need to know.\nDon’t address questions or concerns in the meeting itself.",
+      "notes_translation": "発表者ノート\n\nIETF Note Wellは、IETFの各作業セッションの開始時に提示するべきです。以下の案内は、IETF 120でのIETF法律顧問の発表を基にしています。\n\n行うこと：\n- 次へ進む前に、参加者がスライドを十分に読む時間を確保してください。\n- Note Wellで扱う内容を、「行動、プライバシー、知的財産権に関するIETFの方針」のように大まかに説明してください。\n- 参加や貢献の前に、リンク先の方針や文書をすべて詳しく読むよう促してください。\n- 質問や懸念の連絡先（IETF Executive DirectorまたはOmbudsteam）を説明してください。\n\n行わないこと：\n- Note Wellの情報の重要性や関連性を軽視しないでください。\n- 方針の話題や内容について、その意味を解釈したり、実質的な議論に入ったりしないでください。\n- Note Wellだけで、参加者が知るべき情報をすべて伝えられると説明しないでください。\n- 会議の場で質問や懸念に対処しないでください。",
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 3,
+      "kind": "slide",
+      "original_text": "Agenda\n10min: Agenda and Introduction (Lionel)\n60min: Presentations\n15mn: AI Agents Communication Use Cases and Requirements (China Telecom)\n10mn: Telecom AI Agent Use cases and Requirements (China Mobile) \n10mn: Multi-Access Collaboration Requirements for AI Agent Protocol (China Unicom)\n25mn: AI agent networks framework (ANP)\n40min: Additional items for the proposed charter? \n10min: Conclusions and Next Steps\n3",
+      "translation": "議題\n\n- 10min：議題と導入（Lionel）。\n- 60min：発表。\n  - 15mn：AIエージェント通信のユースケースと要件（China Telecom）。\n  - 10mn：通信分野のAIエージェントのユースケースと要件（China Mobile）。\n  - 10mn：AIエージェントプロトコルのマルチアクセス協働要件（China Unicom）。\n  - 25mn：AIエージェントネットワークの枠組み（ANP）。\n- 40min：提案中の憲章に追加する事項はあるか。\n- 10min：結論と次の手順。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 4,
+      "kind": "slide",
+      "original_text": "Output of AI Protocols side meeting (Tuesday, Nov 4)\nDiscussion on the Strawman charter:\nhttps://github.com/jdrosen/aiproto-wg/blob/3f1cb59b980f31326a1c3965c2c40ad4badeffd1/charter.txt \nCurrent charter items\n(1) A standards track AI Agent session protocol for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools that have long-lived operation.\n(2) An Agent-to-Agent protocol that allows one AI Agent to invoke the services of another AI Agent. \n(3) A protocol for enabling human users to confirm operations invoked by AI agents acting on their behalf. \n(4) A protocol that allows an AI Agent to obtain and exchange OAuth tokens with extremely limited scopes, bound to the specific operations that the AI Agent is permitted to perform on behalf of the user. \n4",
+      "translation": "AI Protocolsサイドミーティング（Tuesday, Nov 4）の成果\n\nたたき台となる憲章の議論：\nhttps://github.com/jdrosen/aiproto-wg/blob/3f1cb59b980f31326a1c3965c2c40ad4badeffd1/charter.txt\n\n現在の憲章の項目：\n(1) AIエージェント同士、またはAIエージェントと長時間動作するツールとの間で、長期間のセッションを作成・維持する、標準化過程のAIエージェントセッションプロトコル。\n(2) 一つのAIエージェントが、別のAIエージェントのサービスを呼び出せるAgent-to-Agentプロトコル。\n(3) 利用者の代理として動くAIエージェントが呼び出す操作を、人間の利用者が確認できるようにするプロトコル。\n(4) AIエージェントが利用者に代わって実行することを認められた特定の操作にバインドされた、きわめて限定的なスコープのOAuthトークンを取得・交換できるプロトコル。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [
+        "https://github.com/jdrosen/aiproto-wg/blob/3f1cb59b980f31326a1c3965c2c40ad4badeffd1/charter.txt"
+      ],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 5,
+      "kind": "slide",
+      "original_text": "Objectives of this side meeting\nPresent some specific telco use cases and requirements\nIdentify additional aspect(s) not addressed in the current proposed charter\nPotential proposal for charter update.\n5",
+      "translation": "このサイドミーティングの目的\n\n- 通信事業分野の具体的なユースケースと要件を提示する。\n- 現在提案中の憲章で扱っていない追加の観点を特定する。\n- 憲章更新の提案の可能性を検討する。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 6,
+      "kind": "slide",
+      "original_text": "3GPP 6G workplan \n6\nService requirements\nSecurity\nMedia\nO&M\nApplication Enablers\nProtocols\nArchitecture\nService requirements\nSecurity\nMedia\nO&M\nApplication Enablers\nProtocols\nArchitecture\n2024\n2025\n2026\n2027\n2028\n2029\nFeasibility Study Phase (Rel-20)\nNormative Phase (Rel-21)\n*Exact timeline for Rel-21 TBD\n*",
+      "translation": "3GPPの6G作業計画\n\n図の年軸：2024、2025、2026、2027、2028、2029。\n\n実現可能性調査の段階（Rel-20）と、規範仕様の段階（Rel-21）。Rel-21の正確な日程は未定（TBD、原図の*印）。\n\n両段階の項目：サービス要件、セキュリティ、メディア、O&M（運用・保守）、アプリケーション支援機能、プロトコル、アーキテクチャ。\n\n訳注：本文の項目と年軸を訳したもので、図形の位置から未定の日程を補ってはいません。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 7,
+      "kind": "slide",
+      "original_text": "Status\nOngoing study demonstrates the potential of AI agent communication in the scope of 6G.\nStudy on architecture, functional and protocol related aspects will be studied in the upcoming months\nIf a multi-AI agent-based system is formally adopted by 3GPP in the scope of 6G, standard solutions will be required to support secure and reliable communication between agents and between agents and external tools. \nStandard solutions for intra-network but also for inter-network and interaction with 3rd-party platforms. \nClose coordination between IETF and 3GPP is expected\n7",
+      "translation": "状況\n\n- 進行中の調査は、6Gの範囲におけるAIエージェント通信の可能性を示しています。\n- アーキテクチャ、機能、プロトコルに関する検討は、今後数か月で行われます。\n- 3GPPが6Gの範囲で複数AIエージェントに基づくシステムを正式に採用する場合、エージェント同士、およびエージェントと外部ツールとの間の安全で信頼できる通信を支える、標準的な解決策が必要です。\n- ネットワーク内に加え、ネットワーク間や第三者の基盤とのやり取りにも、標準的な解決策が必要です。\n- IETFと3GPPの緊密な連携が期待されます。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 8,
+      "kind": "slide",
+      "original_text": "Agenda\n10min: Agenda and Introduction (Lionel)\n60min: Presentations\n15mn: AI Agents Communication Use Cases and Requirements (China Telecom)\n10mn: Telecom AI Agent Use cases and Requirements (China Mobile) \n10mn: Multi-Access Collaboration Requirements for AI Agent Protocol (China Unicom)\n25mn: AI agent networks framework (ANP)\n40min: Additional items for the proposed charter? \n10min: Conclusions and Next Steps\n8",
+      "translation": "議題\n\n- 10min：議題と導入（Lionel）。\n- 60min：発表。\n  - 15mn：AIエージェント通信のユースケースと要件（China Telecom）。\n  - 10mn：通信分野のAIエージェントのユースケースと要件（China Mobile）。\n  - 10mn：AIエージェントプロトコルのマルチアクセス協働要件（China Unicom）。\n  - 25mn：AIエージェントネットワークの枠組み（ANP）。\n- 40min：提案中の憲章に追加する事項はあるか。\n- 10min：結論と次の手順。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 9,
+      "kind": "slide",
+      "original_text": "AI Agents Communication Use Cases and Requirements\n9",
+      "translation": "AIエージェント通信のユースケースと要件。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": "埋込画像の全文訳：まとめ――6GのAIエージェントのユースケースに必要な主要要件。\n\n1. AIエージェント通信の枠組み：挙げられたすべての場面を実現するために、必要な構成要素を統合できること。\n2. AIエージェントのアイデンティティ：AIエージェントのデジタルアイデンティティに対する、安全な認証、認可、管理の仕組み。\n3. 効率的な協働：異なるAIエージェント同士、およびAIエージェントとツールとの効率的な協働。\n4. 登録と発見：端末内AIエージェント、第三者のAIエージェント、ネットワークAIエージェント、ツール。\n5. 意味に基づくルーティング：アイデンティティ、利用者の文脈、意図など、アプリケーション層の意味に基づく経路判断。\n6. セキュリティ：データ保護と利用者の同意。\n\n画像内のページ番号は13。ロゴの5G／helloは原表記を保持します。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 10,
+      "kind": "slide",
+      "original_text": "Telecom AI Agent Use cases and Requirements\n10",
+      "translation": "通信分野のAIエージェントのユースケースと要件。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": "埋込画像の全文訳：通信コアネットワークにおけるエージェントプロトコルの適用可能性。\n\n- アイデンティティの登録・発行・発見：エージェント、ツール、その他のサービス／資源には、IDの観点で類似点があります。関連するネットワーク機能（NF）の拡張候補：UDM、UDR、SMFなど。\n- 認証と認可：関連するNFの拡張候補：AUSF、SMFなど。\n- HITL（Human-in-the-Loop）による確認：コアネットワーク機能が呼び出す、人間の確認へのリダイレクト。関連するNFの拡張候補：PCF、NEF、UPFなど。\n- 動的なグループとリアルタイム通信：関連するNFの拡張候補：AMF、SMFなど。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 11,
+      "kind": "slide",
+      "original_text": "Multi-Access Collaboration\n11",
+      "translation": "マルチアクセス協働。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": "埋込画像の全文訳：AIエージェントプロトコルへの要件。\n\n**身元認証とリクエスト検証**\nエージェント間のやり取りの要求を実行する前に、厳格な身元認証を行う必要があります。プロトコルは、デジタル証明書や相互認証などの高い安全性を持つ認証の仕組みを定義し、正規かつ認可済みのエージェントだけが指示を開始・受信できるようにして、不正アクセスや悪意ある制御を防止するものとします。\n\n**エージェントの発見と自動交渉**\nエージェントが家庭やオフィスなどのネットワークにアクセスした際、他の利用可能なエージェントと、プリンターやビデオ会議などの提供サービスを自動で発見するものとします。また、機能を自動で交渉し、接続を確立するものとします。\n\n**接続の安定性と切れ目のないハンドオーバー**\n利用者が家庭のネットワークからモバイルネットワークへ切り替える場面では、プロトコルはAIエージェントのセッションの維持と切れ目のないハンドオーバーに対応するものとします。これにより、進行中のサービスの連続動作が保証されます。アイデンティティの変換を伴う場合があります。\n\n**ローカルの障害復旧とオフライン処理**\nネットワーク障害などが発生した場合、家庭のゲートウェイやNASなどの重要なエージェントは現在の状態を記録し、ローカルの意思決定とデータ処理の機能を持つものとします。例えば、通信断の後も家庭のセンサーは異常イベントのローカル記録を続け、復旧後に記録したデータをクラウドとモバイル端末へ同期するものとします。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 12,
+      "kind": "slide",
+      "original_text": "Agenda\n10min: Agenda and Introduction (Lionel)\n60min: Presentations\n25mn: AI agent networks framework (ANP)\n10mn: Multi-Access Collaboration Requirements for AI Agent Protocol (China Unicom)\n15mn: AI Agents Communication Use Cases and Requirements (China Telecom)\n10mn: Telecom AI Agent Use cases and Requirements (China Mobile)\n40min: Additional items for the proposed charter? \n10min: Conclusions and Next Steps\n12",
+      "translation": "議題\n\n- 10min：議題と導入（Lionel）。\n- 60min：発表。\n  - 25mn：AIエージェントネットワークの枠組み（ANP）。\n  - 10mn：AIエージェントプロトコルのマルチアクセス協働要件（China Unicom）。\n  - 15mn：AIエージェント通信のユースケースと要件（China Telecom）。\n  - 10mn：通信分野のAIエージェントのユースケースと要件（China Mobile）。\n- 40min：提案中の憲章に追加する事項はあるか。\n- 10min：結論と次の手順。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 13,
+      "kind": "slide",
+      "original_text": "Current items identified in the proposed charter 1/2\n(1) A standards track AI Agent session protocol for creation and maintenance of long-lived sessions between AI agents, or between AI agents and tools that have long-lived operation. These sessions allow for the bidirectional exchange of data, incuding model context, tool call results, and chat messages. The protocol will facilitate highly scalable and reliable session management, able to survive network and server failures while gracefully recovering. It is capable of exchanging real-time data (such as voice), semi-real-time data like chat, and non-real-time data like tool call inputs and outputs, all concurrently during the session.\nThis protocol is a foundational layer on top of which additional protocols can be built. It is anticipated that the AI Agent session protocol will make use of modern IETF application transfer protocols, such as webtransport or MOQ, based on the anticipated use cases. The protocol must also be usable by non-IETF protocols, like the Model Context Protocol (MCP) or Agent-to-Agent (A2A) protocol, with the appropriate layering enabling its usage by any application\n13",
+      "translation": "提案中の憲章で現在特定されている項目（1/2）\n\n(1) AIエージェント同士、またはAIエージェントと長時間動作するツールとの間で、長期間のセッションを作成・維持する、標準化過程のAIエージェントセッションプロトコル。これらのセッションでは、モデルの文脈、ツール呼び出し結果、チャットメッセージを含むデータを双方向に交換できます。プロトコルは、高い拡張性と信頼性を持つセッション管理を実現し、ネットワークやサーバーの障害が発生しても継続し、適切に復旧できるようにします。音声などのリアルタイムデータ、チャットのような準リアルタイムデータ、ツール呼び出しの入出力のような非リアルタイムデータを、セッション中に同時並行で交換できます。\n\nこのプロトコルは、追加のプロトコルをその上に構築できる基盤の層です。想定されるユースケースに基づき、AIエージェントセッションプロトコルはwebtransportやMOQなどの現代的なIETFアプリケーション転送プロトコルを使用する見込みです。また、Model Context Protocol（MCP）やAgent-to-Agent（A2A）のようなIETF以外のプロトコルからも利用可能でなければならず、適切な階層化によって、あらゆるアプリケーションで使えるようにします。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 14,
+      "kind": "slide",
+      "original_text": "Current items identified in the proposed charter 2/2\n(2) An Agent-to-Agent protocol that allows one AI Agent to invoke the services of another AI Agent. This protocol will allow for the exchange of user messages from the end user, including voice, video, images and chat. It will provide basic lifecycle management, enabling the establishment, update, and termination of the services of the downstream agent. This A2A protocol will make use of the AI Agent session protocol, and be the first application specified on top of it. It is anticipated that this protocol would be a next-gen version of the A2A protocol currently under the auspices of the Linux Foundation, building upon that foundation. \n14",
+      "translation": "提案中の憲章で現在特定されている項目（2/2）\n\n(2) 一つのAIエージェントが別のAIエージェントのサービスを呼び出せるAgent-to-Agentプロトコル。このプロトコルは、音声、動画、画像、チャットを含む、エンドユーザーからの利用者メッセージの交換を可能にします。基本的なライフサイクル管理を提供し、呼び出し先エージェントのサービスの確立、更新、終了を可能にします。このA2AプロトコルはAIエージェントセッションプロトコルを使用し、その上に規定される最初のアプリケーションとなります。現在Linux FoundationのもとにあるA2Aプロトコルを土台にした、次世代版になることが想定されています。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 15,
+      "kind": "slide",
+      "original_text": "Agenda\n10min: Agenda and Introduction (Lionel)\n60min: Presentations\n25mn: AI agent networks framework (ANP)\n10mn: Multi-Access Collaboration Requirements for AI Agent Protocol (China Unicom)\n15mn: AI Agents Communication Use Cases and Requirements (China Telecom)\n10mn: Telecom AI Agent Use cases and Requirements (China Mobile)\n40min: Additional items for the proposed charter? \n10min: Conclusions and Next Steps\n15",
+      "translation": "議題\n\n- 10min：議題と導入（Lionel）。\n- 60min：発表。\n  - 25mn：AIエージェントネットワークの枠組み（ANP）。\n  - 10mn：AIエージェントプロトコルのマルチアクセス協働要件（China Unicom）。\n  - 15mn：AIエージェント通信のユースケースと要件（China Telecom）。\n  - 10mn：通信分野のAIエージェントのユースケースと要件（China Mobile）。\n- 40min：提案中の憲章に追加する事項はあるか。\n- 10min：結論と次の手順。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    }
+  ],
+  "visual_follow_up": {
+    "record": "japanese/assets/documents/visual-follow-up.json",
+    "media_assets": [
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image1.png",
+        "slides_referencing_including_layout_master": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "dimensions": [
+          531,
+          282
+        ],
+        "sha256": "e2c70c565100b681a6cb04ad9d111567da5bb14f6393b20e68c1f5ca51e75296",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image1.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 3,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image6.png",
+        "slides_referencing_including_layout_master": [
+          10
+        ],
+        "dimensions": [
+          1284,
+          730
+        ],
+        "sha256": "ceabc1c337836acd65aed5ee0f987f9f2cba19c4233d6cab4b90956391130624",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image6.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 11,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image5.png",
+        "slides_referencing_including_layout_master": [
+          9
+        ],
+        "dimensions": [
+          1084,
+          606
+        ],
+        "sha256": "a6de1971bff240b8a8c0503ffa624f74a3ed808e8abb9b94515be8fd35ec6955",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image5.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 20,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image7.png",
+        "slides_referencing_including_layout_master": [
+          11
+        ],
+        "dimensions": [
+          969,
+          734
+        ],
+        "sha256": "758c03c645c2507ca2864247d68badb57af43400a0c809a0e96dd2252b227884",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image7.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 18,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image3.jpg",
+        "slides_referencing_including_layout_master": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "dimensions": [
+          1024,
+          768
+        ],
+        "sha256": "a1f9ab81d46202cebed92ee209dd7d8a4ef568d28ca05a1716c653c43dbdf387",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image3.jpg",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image2.png",
+        "slides_referencing_including_layout_master": [
+          2
+        ],
+        "dimensions": [
+          350,
+          200
+        ],
+        "sha256": "2a39c25349d213c50e9bba319a3223556082eee2d16783f8b65d9fbc4eca1a53",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image2.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 3,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/1-Agenda.pptx",
+        "source_part": "ppt/media/image4.png",
+        "slides_referencing_including_layout_master": [
+          2
+        ],
+        "dimensions": [
+          400,
+          400
+        ],
+        "sha256": "f36dc9ae924a4c2a1eb02da1f3d43c449d205aadd6ff428c111d2ac463fed8d8",
+        "path": "japanese/assets/documents/source-pptx-media/1-Agenda/image4.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      }
+    ],
+    "native_rendering": "unavailable-in-checked-installed-applications",
+    "additional_translation_units": [
+      9,
+      10,
+      11
+    ],
+    "full_visual_verification_complete": false
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step5.png",
+  "sha256": "49f30a6dda2dda3051f5dd6c3cffd25115e757b81bf62479fe3371defadbde9f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第5步/共5步",
+      "confidence": 0.9879311578614371,
+      "box": [
+        [
+          38.0,
+          35.0
+        ],
+        [
+          188.0,
+          35.0
+        ],
+        [
+          188.0,
+          57.0
+        ],
+        [
+          38.0,
+          57.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第5段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "5",
+        "5"
+      ]
+    },
+    {
+      "source": "一封贴好封条的请求",
+      "confidence": 0.9964022172821893,
+      "box": [
+        [
+          575.0,
+          275.0
+        ],
+        [
+          833.0,
+          275.0
+        ],
+        [
+          833.0,
+          303.0
+        ],
+        [
+          575.0,
+          303.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "封印を付けたリクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8703479000250809,
+    0.005002260208129883,
+    0.19302773475646973
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "49f30a6dda2dda3051f5dd6c3cffd25115e757b81bf62479fe3371defadbde9f"
+  }
+}

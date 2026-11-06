@@ -1,0 +1,194 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/01-worry-server.png",
+  "sha256": "22d99ce1a6f5fb98611cb9905cba017d81ac8e54b0538b2d8262245081f1c75e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Some visitor",
+      "confidence": 0.9853318234284719,
+      "box": [
+        [
+          156.0,
+          288.0
+        ],
+        [
+          332.0,
+          288.0
+        ],
+        [
+          332.0,
+          318.0
+        ],
+        [
+          156.0,
+          318.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ある訪問者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Coffee shop program",
+      "confidence": 0.9758474011170236,
+      "box": [
+        [
+          1000.0,
+          288.0
+        ],
+        [
+          1291.0,
+          294.0
+        ],
+        [
+          1290.0,
+          324.0
+        ],
+        [
+          999.0,
+          318.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "コーヒー店のプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "claimstobe Alice's assistant",
+      "confidence": 0.9724232597010476,
+      "box": [
+        [
+          80.0,
+          328.0
+        ],
+        [
+          409.0,
+          330.0
+        ],
+        [
+          409.0,
+          353.0
+        ],
+        [
+          80.0,
+          351.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "Aliceのアシスタントだと名乗っている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "claims to be Alice's assistant"
+    },
+    {
+      "source": "take the order?",
+      "confidence": 0.9669599413871766,
+      "box": [
+        [
+          1055.0,
+          330.0
+        ],
+        [
+          1233.0,
+          330.0
+        ],
+        [
+          1233.0,
+          353.0
+        ],
+        [
+          1055.0,
+          353.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "この注文を受けてよいだろうか",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"It says it is Alice's assistant, but I have never seen it.",
+      "confidence": 0.9875596741498527,
+      "box": [
+        [
+          402.0,
+          387.0
+        ],
+        [
+          1007.0,
+          387.0
+        ],
+        [
+          1007.0,
+          416.0
+        ],
+        [
+          402.0,
+          416.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "「Aliceのアシスタントだと言っているが、会ったことがない。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Why should I believe it? I can't serve everyone who asks.\"",
+      "confidence": 0.988939550416223,
+      "box": [
+        [
+          377.0,
+          428.0
+        ],
+        [
+          1029.0,
+          426.0
+        ],
+        [
+          1029.0,
+          456.0
+        ],
+        [
+          377.0,
+          457.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "なぜ信用してよいのだろうか。要求する人すべてを受け入れるわけにはいかない。」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "?",
+      "location": "central speech bubble",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L007",
+      "japanese": "?（疑問符）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5986086999764666,
+    0.008013248443603516,
+    1.425163984298706
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "additional_labels": [
+      {
+        "source": "?",
+        "location": "central speech bubble"
+      }
+    ],
+    "corrections": {
+      "claimstobe Alice's assistant": "claims to be Alice's assistant"
+    },
+    "source_sha256": "22d99ce1a6f5fb98611cb9905cba017d81ac8e54b0538b2d8262245081f1c75e"
+  }
+}

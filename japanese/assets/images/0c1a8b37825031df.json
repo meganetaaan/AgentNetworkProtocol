@@ -1,0 +1,556 @@
+{
+  "source": "chinese/思考&问题/pic/meta-protocol-flow.png",
+  "sha256": "0c1a8b37825031df03d27e4b5ae49f2055bd0569c8a810cdb2bb6a753bb90b09",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agent (A)",
+      "confidence": 0.9255407253901163,
+      "box": [
+        [
+          487.0,
+          17.0
+        ],
+        [
+          594.0,
+          15.0
+        ],
+        [
+          595.0,
+          42.0
+        ],
+        [
+          488.0,
+          45.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェント（A）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent (B)",
+      "confidence": 0.9221872091293335,
+      "box": [
+        [
+          1033.0,
+          17.0
+        ],
+        [
+          1139.0,
+          17.0
+        ],
+        [
+          1139.0,
+          43.0
+        ],
+        [
+          1033.0,
+          43.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェント（B）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Negotiation",
+      "confidence": 0.9963621318340301,
+      "box": [
+        [
+          691.0,
+          72.0
+        ],
+        [
+          925.0,
+          73.0
+        ],
+        [
+          925.0,
+          97.0
+        ],
+        [
+          691.0,
+          96.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "プロトコル交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "基于自然语言的协议协商",
+      "confidence": 0.9991024895147844,
+      "box": [
+        [
+          77.0,
+          86.0
+        ],
+        [
+          481.0,
+          88.0
+        ],
+        [
+          480.0,
+          125.0
+        ],
+        [
+          77.0,
+          122.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "自然言語に基づくプロトコル交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(Multiple negotiations may occur)",
+      "confidence": 0.9858250347050753,
+      "box": [
+        [
+          628.0,
+          125.0
+        ],
+        [
+          1001.0,
+          125.0
+        ],
+        [
+          1001.0,
+          151.0
+        ],
+        [
+          628.0,
+          151.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "（複数回の交渉が生じる場合がある）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "预定义协议or个性化协议",
+      "confidence": 0.9944219241539637,
+      "box": [
+        [
+          68.0,
+          146.0
+        ],
+        [
+          489.0,
+          146.0
+        ],
+        [
+          489.0,
+          182.0
+        ],
+        [
+          68.0,
+          182.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "事前定義のプロトコル、または個別のプロトコル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Negotiation",
+      "confidence": 0.9771450638771058,
+      "box": [
+        [
+          701.0,
+          183.0
+        ],
+        [
+          937.0,
+          183.0
+        ],
+        [
+          937.0,
+          205.0
+        ],
+        [
+          701.0,
+          205.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "プロトコル交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ProtocolCodeGenerated",
+      "confidence": 0.9954091878164382,
+      "box": [
+        [
+          558.0,
+          292.0
+        ],
+        [
+          823.0,
+          292.0
+        ],
+        [
+          823.0,
+          315.0
+        ],
+        [
+          558.0,
+          315.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "プロトコルのコードを生成済み",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ProtocolCodeGenerated"
+      ],
+      "transcribed_source": "Protocol Code Generated"
+    },
+    {
+      "source": "CodeGeneration",
+      "confidence": 0.9970080980232784,
+      "box": [
+        [
+          714.0,
+          373.0
+        ],
+        [
+          891.0,
+          373.0
+        ],
+        [
+          891.0,
+          396.0
+        ],
+        [
+          714.0,
+          396.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "コード生成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "CodeGeneration"
+      ],
+      "transcribed_source": "Code Generation"
+    },
+    {
+      "source": "AI自动生成协议处理代码",
+      "confidence": 0.9913545350233713,
+      "box": [
+        [
+          77.0,
+          393.0
+        ],
+        [
+          482.0,
+          396.0
+        ],
+        [
+          481.0,
+          433.0
+        ],
+        [
+          77.0,
+          430.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "AIがプロトコル処理のコードを自動生成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ProtocolCodeGenerated",
+      "confidence": 0.994175102029528,
+      "box": [
+        [
+          1126.0,
+          455.0
+        ],
+        [
+          1390.0,
+          455.0
+        ],
+        [
+          1390.0,
+          478.0
+        ],
+        [
+          1126.0,
+          478.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "プロトコルのコードを生成済み",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ProtocolCodeGenerated"
+      ],
+      "transcribed_source": "Protocol Code Generated"
+    },
+    {
+      "source": "CodeGeneration",
+      "confidence": 0.9869007979120527,
+      "box": [
+        [
+          716.0,
+          537.0
+        ],
+        [
+          892.0,
+          537.0
+        ],
+        [
+          892.0,
+          560.0
+        ],
+        [
+          716.0,
+          560.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "コード生成",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "CodeGeneration"
+      ],
+      "transcribed_source": "Code Generation"
+    },
+    {
+      "source": "Test Cases Negotiation",
+      "confidence": 0.976064229553396,
+      "box": [
+        [
+          678.0,
+          617.0
+        ],
+        [
+          939.0,
+          619.0
+        ],
+        [
+          939.0,
+          645.0
+        ],
+        [
+          678.0,
+          643.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "テストケースの交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(Optional)",
+      "confidence": 0.9712350785732269,
+      "box": [
+        [
+          730.0,
+          647.0
+        ],
+        [
+          844.0,
+          647.0
+        ],
+        [
+          844.0,
+          671.0
+        ],
+        [
+          730.0,
+          671.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "（任意）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AI进行协议联调、测试",
+      "confidence": 0.9790891192176125,
+      "box": [
+        [
+          96.0,
+          658.0
+        ],
+        [
+          465.0,
+          660.0
+        ],
+        [
+          465.0,
+          697.0
+        ],
+        [
+          96.0,
+          694.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "AIがプロトコルの結合試験・テストを実施",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(Multiple negotiations may occur)",
+      "confidence": 0.9797365954428008,
+      "box": [
+        [
+          627.0,
+          673.0
+        ],
+        [
+          1001.0,
+          673.0
+        ],
+        [
+          1001.0,
+          698.0
+        ],
+        [
+          627.0,
+          698.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "（複数回の交渉が生じる場合がある）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Test Cases Negotiation",
+      "confidence": 0.9884872571988539,
+      "box": [
+        [
+          679.0,
+          727.0
+        ],
+        [
+          937.0,
+          728.0
+        ],
+        [
+          937.0,
+          754.0
+        ],
+        [
+          679.0,
+          753.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "テストケースの交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(Start Communication Using Final Protocol)",
+      "confidence": 0.9877878030141195,
+      "box": [
+        [
+          570.0,
+          810.0
+        ],
+        [
+          1046.0,
+          810.0
+        ],
+        [
+          1046.0,
+          836.0
+        ],
+        [
+          570.0,
+          836.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "（最終的なプロトコルを使って通信を開始）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "使用A生成代码进行协议通信",
+      "confidence": 0.996141832608443,
+      "box": [
+        [
+          36.0,
+          851.0
+        ],
+        [
+          513.0,
+          851.0
+        ],
+        [
+          513.0,
+          883.0
+        ],
+        [
+          36.0,
+          883.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "AIが生成したコードを使ってプロトコル通信を行う",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "使用AI生成代码进行协议通信"
+    },
+    {
+      "source": "Application Protocol Message",
+      "confidence": 0.9758233278989792,
+      "box": [
+        [
+          634.0,
+          864.0
+        ],
+        [
+          960.0,
+          865.0
+        ],
+        [
+          960.0,
+          891.0
+        ],
+        [
+          634.0,
+          890.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "アプリケーションプロトコルのメッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9278665999881923,
+    0.028100013732910156,
+    2.5095393657684326
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "ProtocolCodeGenerated": "Protocol Code Generated",
+      "CodeGeneration": "Code Generation",
+      "使用A生成代码进行协议通信": "使用AI生成代码进行协议通信"
+    },
+    "source_sha256": "0c1a8b37825031df03d27e4b5ae49f2055bd0569c8a810cdb2bb6a753bb90b09"
+  }
+}

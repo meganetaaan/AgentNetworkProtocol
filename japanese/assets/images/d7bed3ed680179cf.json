@@ -1,0 +1,236 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/10-outcomes.png",
+  "sha256": "d7bed3ed680179cfe2fd68b75474720c764a403969da552da28f3d751004ebb4",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Withoutel",
+      "confidence": 0.989972624513838,
+      "box": [
+        [
+          289.0,
+          67.0
+        ],
+        [
+          438.0,
+          69.0
+        ],
+        [
+          437.0,
+          95.0
+        ],
+        [
+          288.0,
+          93.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "e1なし",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Without e1"
+    },
+    {
+      "source": "With e1 (SDK default)",
+      "confidence": 0.9597848128704798,
+      "box": [
+        [
+          900.0,
+          66.0
+        ],
+        [
+          1192.0,
+          68.0
+        ],
+        [
+          1191.0,
+          97.0
+        ],
+        [
+          900.0,
+          96.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "e1あり（SDKの既定値）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1",
+        "SDK"
+      ]
+    },
+    {
+      "source": "after the domain changes hands",
+      "confidence": 0.9905958533287048,
+      "box": [
+        [
+          191.0,
+          108.0
+        ],
+        [
+          533.0,
+          109.0
+        ],
+        [
+          533.0,
+          133.0
+        ],
+        [
+          191.0,
+          132.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "ドメインの所有者が変わった後",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "after the domain changes hands",
+      "confidence": 0.9771018664042155,
+      "box": [
+        [
+          876.0,
+          109.0
+        ],
+        [
+          1216.0,
+          110.0
+        ],
+        [
+          1216.0,
+          132.0
+        ],
+        [
+          876.0,
+          131.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "ドメインの所有者が変わった後",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Verification passes as usual",
+      "confidence": 0.9856372113738742,
+      "box": [
+        [
+          204.0,
+          307.0
+        ],
+        [
+          522.0,
+          307.0
+        ],
+        [
+          522.0,
+          333.0
+        ],
+        [
+          204.0,
+          333.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "検証は通常通り成功する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Verification does not pass",
+      "confidence": 0.9900761751028208,
+      "box": [
+        [
+          898.0,
+          307.0
+        ],
+        [
+          1196.0,
+          310.0
+        ],
+        [
+          1196.0,
+          334.0
+        ],
+        [
+          898.0,
+          330.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "検証は成功しない",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "The verifier cannot tell the key changed",
+      "confidence": 0.9819729119539261,
+      "box": [
+        [
+          134.0,
+          346.0
+        ],
+        [
+          590.0,
+          347.0
+        ],
+        [
+          590.0,
+          375.0
+        ],
+        [
+          134.0,
+          374.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "検証側は鍵の変更を見分けられない",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "The verifier can tell, and declines",
+      "confidence": 0.9946991954530988,
+      "box": [
+        [
+          858.0,
+          347.0
+        ],
+        [
+          1235.0,
+          349.0
+        ],
+        [
+          1235.0,
+          372.0
+        ],
+        [
+          858.0,
+          371.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "検証側は変更を見分け、拒否する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7195724000339396,
+    0.013016939163208008,
+    1.3195507526397705
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Withoutel": "Without e1"
+    },
+    "source_note": "e1_とCfnI4…の表記を元図と本文の公開鍵例で照合した。図は末尾を省略しているため完全な鍵値として利用できない。",
+    "source_sha256": "d7bed3ed680179cfe2fd68b75474720c764a403969da552da28f3d751004ebb4"
+  }
+}

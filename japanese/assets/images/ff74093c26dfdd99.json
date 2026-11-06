@@ -1,0 +1,459 @@
+{
+  "source": "blogs/images/anp-first-meet/00.png",
+  "sha256": "ff74093c26dfdd99aae8b626b11ca203586a39e379e22f8fdd9f5a0cd50f65b9",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "2025年4月28日，今天也许是历史性的一天，希望未来回望，能看见一",
+      "confidence": 0.9993911017389858,
+      "box": [
+        [
+          105.0,
+          15.0
+        ],
+        [
+          1005.0,
+          16.0
+        ],
+        [
+          1005.0,
+          45.0
+        ],
+        [
+          105.0,
+          44.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "2025年4月28日。今日は歴史的な1日になるかもしれない。いつか振り返ったとき、小さな",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2025",
+        "4",
+        "28"
+      ]
+    },
+    {
+      "source": "粒火种燃起整个生态。代码为笔，逻辑为尺，在开放协作中探索人与AI",
+      "confidence": 0.996605146676302,
+      "box": [
+        [
+          106.0,
+          57.0
+        ],
+        [
+          993.0,
+          57.0
+        ],
+        [
+          993.0,
+          86.0
+        ],
+        [
+          106.0,
+          86.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "火種がエコシステム全体を燃え立たせたと分かることを願う。コードを筆、論理を物差しとして、開かれた協働の中で人間とAIが",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "共生的边界。“当一个巨大的浪潮来临的时候，我们应做的只有一件事，",
+      "confidence": 0.9981225598603487,
+      "box": [
+        [
+          105.0,
+          100.0
+        ],
+        [
+          983.0,
+          100.0
+        ],
+        [
+          983.0,
+          130.0
+        ],
+        [
+          105.0,
+          130.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "共生する境界を探る。「大きな波がやって来たとき、私たちがすべきことはただ1つ、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "保持在场（Be There)。‘",
+      "confidence": 0.9534352645277977,
+      "box": [
+        [
+          105.0,
+          141.0
+        ],
+        [
+          403.0,
+          140.0
+        ],
+        [
+          403.0,
+          170.0
+        ],
+        [
+          105.0,
+          171.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "その場に居続けること（Be There）。」",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "保持在场 (Be There)。“"
+    },
+    {
+      "source": "起点时刻。愿，",
+      "confidence": 0.9624121018818447,
+      "box": [
+        [
+          104.0,
+          181.0
+        ],
+        [
+          289.0,
+          183.0
+        ],
+        [
+          289.0,
+          216.0
+        ],
+        [
+          103.0,
+          214.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "いまが始まりの時。願わくは、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "韶华逝去似码流，协议星火铸恒章",
+      "confidence": 0.9980263431866964,
+      "box": [
+        [
+          105.0,
+          226.0
+        ],
+        [
+          534.0,
+          226.0
+        ],
+        [
+          534.0,
+          255.0
+        ],
+        [
+          105.0,
+          255.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "若き日々がコードの流れのように過ぎても、プロトコルの火種が永遠の章を刻まんことを。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9954727768898011,
+      "box": [
+        [
+          380.0,
+          301.0
+        ],
+        [
+          435.0,
+          301.0
+        ],
+        [
+          435.0,
+          326.0
+        ],
+        [
+          380.0,
+          326.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9958287715911865,
+      "box": [
+        [
+          197.0,
+          377.0
+        ],
+        [
+          253.0,
+          377.0
+        ],
+        [
+          253.0,
+          402.0
+        ],
+        [
+          197.0,
+          402.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9946536540985107,
+      "box": [
+        [
+          564.0,
+          378.0
+        ],
+        [
+          617.0,
+          378.0
+        ],
+        [
+          617.0,
+          400.0
+        ],
+        [
+          564.0,
+          400.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9905173314942254,
+      "box": [
+        [
+          111.0,
+          560.0
+        ],
+        [
+          187.0,
+          562.0
+        ],
+        [
+          186.0,
+          583.0
+        ],
+        [
+          110.0,
+          581.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AgenticWeb",
+      "confidence": 0.9908934950828552,
+      "box": [
+        [
+          332.0,
+          552.0
+        ],
+        [
+          473.0,
+          552.0
+        ],
+        [
+          473.0,
+          576.0
+        ],
+        [
+          332.0,
+          576.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "エージェントのWeb",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgenticWeb"
+      ],
+      "transcribed_source": "Agentic Web"
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9926920533180237,
+      "box": [
+        [
+          628.0,
+          561.0
+        ],
+        [
+          704.0,
+          561.0
+        ],
+        [
+          704.0,
+          582.0
+        ],
+        [
+          628.0,
+          582.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AgentNetworkProtocol",
+      "confidence": 0.9974108934402466,
+      "box": [
+        [
+          298.0,
+          580.0
+        ],
+        [
+          515.0,
+          580.0
+        ],
+        [
+          515.0,
+          603.0
+        ],
+        [
+          298.0,
+          603.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "Agent Network Protocol",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentNetworkProtocol"
+      ],
+      "transcribed_source": "Agent Network Protocol"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9942031979560852,
+      "box": [
+        [
+          197.0,
+          744.0
+        ],
+        [
+          251.0,
+          744.0
+        ],
+        [
+          251.0,
+          766.0
+        ],
+        [
+          197.0,
+          766.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9954774618148804,
+      "box": [
+        [
+          563.0,
+          744.0
+        ],
+        [
+          617.0,
+          744.0
+        ],
+        [
+          617.0,
+          766.0
+        ],
+        [
+          563.0,
+          766.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9954227447509766,
+      "box": [
+        [
+          380.0,
+          819.0
+        ],
+        [
+          434.0,
+          819.0
+        ],
+        [
+          434.0,
+          841.0
+        ],
+        [
+          380.0,
+          841.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "💪",
+      "location": "after the closing poem",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L017",
+      "japanese": "💪（力こぶ）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6562594000133686,
+    0.027413129806518555,
+    2.1344752311706543
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "保持在场（Be There)。‘": "保持在场 (Be There)。“",
+      "AgenticWeb": "Agentic Web",
+      "AgentNetworkProtocol": "Agent Network Protocol"
+    },
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。",
+    "additional_labels": [
+      {
+        "source": "💪",
+        "location": "after the closing poem"
+      }
+    ],
+    "source_sha256": "ff74093c26dfdd99aae8b626b11ca203586a39e379e22f8fdd9f5a0cd50f65b9"
+  }
+}

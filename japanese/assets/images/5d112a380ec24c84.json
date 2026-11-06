@@ -1,0 +1,158 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/13-meta3.png",
+  "sha256": "5d112a380ec24c845a7976cc1e7e21b51594868155c36137503a68c3adaa24e9",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第3步/共4步",
+      "confidence": 0.9773654341697693,
+      "box": [
+        [
+          37.0,
+          35.0
+        ],
+        [
+          189.0,
+          35.0
+        ],
+        [
+          189.0,
+          58.0
+        ],
+        [
+          37.0,
+          58.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全4段階の第3段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "source": "O",
+      "confidence": 0.764528751373291,
+      "box": [
+        [
+          635.0,
+          121.0
+        ],
+        [
+          690.0,
+          127.0
+        ],
+        [
+          684.0,
+          182.0
+        ],
+        [
+          629.0,
+          176.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "O",
+      "confidence": 0.7621493935585022,
+      "box": [
+        [
+          739.0,
+          122.0
+        ],
+        [
+          798.0,
+          122.0
+        ],
+        [
+          798.0,
+          180.0
+        ],
+        [
+          739.0,
+          180.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "程序 A",
+      "confidence": 0.9335979372262955,
+      "box": [
+        [
+          240.0,
+          266.0
+        ],
+        [
+          328.0,
+          266.0
+        ],
+        [
+          328.0,
+          300.0
+        ],
+        [
+          240.0,
+          300.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "プログラムA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "程序B",
+      "confidence": 0.9995474616686503,
+      "box": [
+        [
+          1099.0,
+          266.0
+        ],
+        [
+          1189.0,
+          266.0
+        ],
+        [
+          1189.0,
+          299.0
+        ],
+        [
+          1099.0,
+          299.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "プログラムB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.670891500019934,
+    0.011003971099853516,
+    0.15509462356567383
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "false_positive_labels": [
+      "O"
+    ],
+    "source_note": "図中の文字と記号を目視確認した。",
+    "source_sha256": "5d112a380ec24c845a7976cc1e7e21b51594868155c36137503a68c3adaa24e9"
+  }
+}

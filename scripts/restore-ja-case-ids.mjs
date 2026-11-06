@@ -14,6 +14,16 @@ const lines = text => text.match(/[^\r\n]*(?:\r\n|\n|\r|$)/g).filter(Boolean);
 const counts = ids => Object.fromEntries([...new Set(ids)].sort().map(id => [id, ids.filter(value => value === id).length]));
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 
+/** Verify reviewed translations without offering a replacement or changing metadata. */
+export function verifyCaseIds(original, translated) {
+  const sourceIds = lines(original).flatMap(line => sourceCell.exec(line)?.[2] ?? []);
+  const targetIds = lines(translated).flatMap(line => sourceCell.exec(line)?.[2] ?? []);
+  const actualCounts = counts([...translated.matchAll(/\bAUTHZ-[A-Z0-9_-]+\b/g)].map(match => match[0]));
+  const expectedCounts = counts([...original.matchAll(/\bAUTHZ-[A-Z0-9_-]+\b/g)].map(match => match[0]));
+  const ok = equal(sourceIds, targetIds) && equal(expectedCounts, actualCounts);
+  return { source_cases: sourceIds.length, source_counts: counts(sourceIds), status: ok ? 'already-correct' : 'needs-repair', verified_cases: ok ? sourceIds.length : 0, translation_counts: counts(targetIds), read_only_verification: true };
+}
+
 /** Return a replacement only after correspondence and identifier counts pass. */
 export function repairCaseIds(original, translated) {
   const originalLines = lines(original);
@@ -79,7 +89,7 @@ export async function run({ root = path.resolve(import.meta.dirname, '..'), chec
       files.push({ source, destination, status: 'pending-translation', source_cases: lines(original).filter(line => sourceCell.test(line)).length });
       continue;
     }
-    const result = repairCaseIds(original, translated);
+    const result = check ? verifyCaseIds(original, translated) : repairCaseIds(original, translated);
     if (result.status === 'repaired' && !check) {
       if (await fs.readFile(path.join(root, destination), 'utf8') !== translated) {
         files.push({ source, destination, status: 'skipped-concurrent-change', source_cases: result.source_cases });

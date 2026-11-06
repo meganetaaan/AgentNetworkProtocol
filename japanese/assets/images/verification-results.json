@@ -1,0 +1,109 @@
+{
+  "baseline": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "image_paths_checked": 212,
+  "unique_images_checked": 209,
+  "original_sha256_comparisons": 212,
+  "source_images_unchanged": true,
+  "source_path_translation_status": {
+    "all-visible-text-visually-reviewed-and-translated": 162,
+    "not-applicable-invalid-source": 1,
+    "visible-labels-translated-source-clipped": 8,
+    "visible-human-prose-translated-technical-code-transcription-unverified": 7,
+    "all-svg-xml-labels-translated-technical-labels-retained": 30,
+    "technical-code-only-original-pixels-retained-no-prose-to-translate": 1,
+    "visible-readable-text-translated-unreadable-source-text-remains": 3
+  },
+  "unique_image_translation_status": {
+    "all-visible-text-visually-reviewed-and-translated": 161,
+    "not-applicable-invalid-source": 1,
+    "visible-labels-translated-source-clipped": 8,
+    "visible-human-prose-translated-technical-code-transcription-unverified": 7,
+    "all-svg-xml-labels-translated-technical-labels-retained": 28,
+    "technical-code-only-original-pixels-retained-no-prose-to-translate": 1,
+    "visible-readable-text-translated-unreadable-source-text-remains": 3
+  },
+  "unique_labels": 3655,
+  "unreviewed_machine_translation_labels": 0,
+  "visually_reviewed_unique_raster_images": 180,
+  "technical_code_transcription_unverified_unique_images": 8,
+  "visible_prose_review_pending_unique_images": 0,
+  "source_pixel_limitations": [
+    {
+      "source": "blogs/images/agent-network/vinote.png",
+      "sha256": "1613f299528cb9c3898cf01589a569f890bac25b2cb35c891fee4289b5cc586d",
+      "limitation": "右端のカードの文字が画像の端で切れている。"
+    },
+    {
+      "source": "blogs/images/anp-ap2/ap2flow.png",
+      "sha256": "a71c81fb1d6f0123578cbde5d0d23e6c3c6b1897e07b07236d61e6945b13a07e",
+      "limitation": "右上Payment Processo…の末尾文字がボックスで切れている。"
+    },
+    {
+      "source": "blogs/images/anp-explorer.png",
+      "sha256": "adfb7bc5f4425866abaec2f9be04ec6d0b6d54bc0ccd4ab8b2e82d8ec7d473e4",
+      "limitation": "下部の説明文の続きは画像外。"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page17.jpg",
+      "sha256": "2c7ebe6dbe294857a94614a82abb8668110c087b13ef3842c8bf50b06909464a",
+      "limitation": "左右下部のdescriptionとURLが元コード画像の右端で切れている。見える自然言語の値は訳したが、見えない語やURLの続きを補完しない。"
+    },
+    {
+      "source": "blogs/images/anp-in-w3c-20250214/page7.jpg",
+      "sha256": "88f09260551b6cf5e7075ed94c97b33cd6781f5317d22689d1412eabdeaff11f",
+      "limitation": "右図のE2Eの下にある文字は元図で隠れており、判読不能な点しか残っていない。推測して補完しない。"
+    },
+    {
+      "source": "blogs/images/first-web-agent.png",
+      "sha256": "6c3f3ecb4010d9e076a221368c0a24052febe8cf2922c5d11fed0d7755b4eec4",
+      "limitation": "英語併記の長い文章の右端と最下部コードの続きは画像外。見える人向け文章は上記の対訳に含む。"
+    },
+    {
+      "source": "blogs/images/human-ai-agent.png",
+      "sha256": "4f866038d7349a52bbe72a4e9c03a2a265396962b858b6deee66df577ffb58b3",
+      "limitation": "下端の透かしの大部分が画像外であり、判読できない。"
+    },
+    {
+      "source": "blogs/images/mcp-wba-did-proposal.png",
+      "sha256": "c7a763e7ed0bf8cccd8339eb1abf2956b6dd1cb27383df12d59bfbba43554284",
+      "limitation": "シーケンス図の末尾は原画像の下端より外にあり、見えない内容は補完しない。"
+    },
+    {
+      "source": "chinese/思考&问题/pic/protocol-layer-design.png",
+      "sha256": "31ad8676c6c2ec167eda42cd23e21c173533e74fd385e6f342c863b7e0e899b8",
+      "limitation": "E2Eの直下の文字が元画像で隠れており判読不能。"
+    },
+    {
+      "source": "examples/adp/lkcoffe/orange-americano/instruction.jpg",
+      "sha256": "10314aa19ed3b01136599117d0a38d94cbfb6839983012a88513b36c4a1123fe",
+      "limitation": "注いでいる瓶のラベルは手で覆われており断片しか見えないため、隠れたブランド文字を推測しない。カップ上の薄い小文字の一部は原画像の印刷・反射により判読困難。読める商品説明・脚注・人物名は対訳済み。"
+    },
+    {
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/instruction.jpeg",
+      "sha256": "c4fa85623a87c2f8e3b85118c830058422246651f3c10594b2fc15ea54c59680",
+      "limitation": "人物写真内の手書きサインは文字としての判読が困難なため、原画素を保持。手で隠れた紙カップのブランド表示の一部は補完しない。読める広告本文・脚注・人物名は対訳済み。"
+    },
+    {
+      "source": "examples/adp/lkcoffe/silk-latte/instruction.jpg",
+      "sha256": "b96ea698231f51355ce953d0971263b585a74ec10109674a813d82ac42ef9ed8",
+      "limitation": "レーダーチャートの薄い小さな目盛数字と、写真中の白い紙カップの薄い印字は一部判読困難。数字を推測して追加しない。読める広告本文・比較条件・15人/6人・20.99%・各軸名と凡例は対訳済み。"
+    },
+    {
+      "source": "images/did-identity-authentication.png",
+      "sha256": "db68b4a4cf6155fe8f2f6d23afce077876af0b8cd01d6e1f43f3e1dcab8bc6cc",
+      "limitation": "図の説明ラベルは目視照合した。小さなDID文書コード内の暗号鍵文字列・括弧とpublicKeyMultibase行はOCRの欠落があり、完全なコード転記は未確認。コードのOCR文字列を正確な識別子として使用しないこと。"
+    },
+    {
+      "source": "images/protocol-layer-design.png",
+      "sha256": "11576e27122bcaef77403d7520afd706adfc0eea3500a8b8a13fd4bcc94d7dd2",
+      "limitation": "E2Eの下に文字らしき切れた画素があり、原画像で下部が隠れているため判読不能。見えているラベルは照合済みだが、隠れた文字は補完していない。"
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "OCR success and token preservation do not establish complete transcription or accurate translation.",
+    "SVG review covers extracted XML text elements; the original graphic remains authoritative for relationships and layout.",
+    "The empty OAuth2.1.svg source cannot be translated.",
+    "Document-page OCR is tracked separately and is excluded from this original-image inventory."
+  ]
+}

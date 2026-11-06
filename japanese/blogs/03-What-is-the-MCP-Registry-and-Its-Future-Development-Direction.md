@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md -->
 # 分析：MCP Registryとは何か、今後どのように発展するのか
 
 今日、MCPがレジストリの紹介を公開したというニュースを見ました。詳細はこちらです：https://blog.modelcontextprotocol.io/posts/2025-09-08-mcp-registry-preview/

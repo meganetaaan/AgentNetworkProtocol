@@ -1,0 +1,150 @@
+{
+  "source": "images/agent-discovery-protocol.svg",
+  "sha256": "d2104ec2d20d09743cab10e723f2e81c171580f20694041eddac17ad380db351",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "智能体发现协议 (ADSP)",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "エージェント発見プロトコル（ADSP）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "主动发现流程",
+      "element": "text",
+      "id": null,
+      "x": "350",
+      "y": "85",
+      "label_id": "L002",
+      "japanese": "能動的発見の手順",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "搜索引擎/智能体",
+      "element": "text",
+      "id": null,
+      "x": "70",
+      "y": "35",
+      "label_id": "L003",
+      "japanese": "検索エンジン／エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "域名服务器",
+      "element": "text",
+      "id": null,
+      "x": "370",
+      "y": "35",
+      "label_id": "L004",
+      "japanese": "ドメインサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "智能体描述文档",
+      "element": "text",
+      "id": null,
+      "x": "370",
+      "y": "225",
+      "label_id": "L005",
+      "japanese": "エージェント記述文書",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "JSON-LD",
+      "element": "text",
+      "id": null,
+      "x": "370",
+      "y": "245",
+      "label_id": "L006",
+      "japanese": "JSON-LD",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "1. 请求 /.well-known/agent-descriptions",
+      "element": "text",
+      "id": null,
+      "x": "220",
+      "y": "20",
+      "label_id": "L007",
+      "japanese": "1. /.well-known/agent-descriptionsを要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2. 返回 CollectionPage (JSON-LD)",
+      "element": "text",
+      "id": null,
+      "x": "220",
+      "y": "80",
+      "label_id": "L008",
+      "japanese": "2. CollectionPage（JSON-LD）を返す",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "3. 请求智能体描述文档",
+      "element": "text",
+      "id": null,
+      "x": "185",
+      "y": "210",
+      "label_id": "L009",
+      "japanese": "3. エージェント記述文書を要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "4. 返回智能体描述",
+      "element": "text",
+      "id": null,
+      "x": "185",
+      "y": "280",
+      "label_id": "L010",
+      "japanese": "4. エージェントの記述を返す",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包含URL链接",
+      "element": "text",
+      "id": null,
+      "x": "390",
+      "y": "130",
+      "label_id": "L011",
+      "japanese": "URLリンクを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "核心特点",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "0",
+      "label_id": "L012",
+      "japanese": "主な特徴",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 使用.well-known URI作为智能体发现入口点",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "30",
+      "label_id": "L013",
+      "japanese": "• .well-known URIをエージェント発見の入口として使用する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 基于JSON-LD格式，支持链接数据和语义网",
+      "element": "text",
+      "id": null,
+      "x": "0",
+      "y": "60",
+      "label_id": "L014",
+      "japanese": "• JSON-LD形式に基づき、リンクトデータとセマンティックウェブに対応する",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

@@ -1,0 +1,76 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step1.png",
+  "sha256": "b0968a0beb2cc50cf43fe56ecf438af20392f93cf75de15b09bb3d561da5b334",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第1步/共5步",
+      "confidence": 0.9835519960948399,
+      "box": [
+        [
+          38.0,
+          35.0
+        ],
+        [
+          188.0,
+          35.0
+        ],
+        [
+          188.0,
+          57.0
+        ],
+        [
+          38.0,
+          57.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第1段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1",
+        "5"
+      ]
+    },
+    {
+      "source": "四样东西凑成一小段内容",
+      "confidence": 0.9795033498243852,
+      "box": [
+        [
+          546.0,
+          274.0
+        ],
+        [
+          862.0,
+          276.0
+        ],
+        [
+          862.0,
+          304.0
+        ],
+        [
+          546.0,
+          303.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "4つの項目を1つの小さなデータにまとめる",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.3634936999878846,
+    0.004304170608520508,
+    0.33661580085754395
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "b0968a0beb2cc50cf43fe56ecf438af20392f93cf75de15b09bb3d561da5b334"
+  }
+}

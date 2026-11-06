@@ -1,0 +1,301 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/10-verify-e1.png",
+  "sha256": "b8e1c89d27d72f7700181b4b3cccd4f72c1bd363b07d96765f470241b27d399d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "1 fetch via the domain",
+      "confidence": 0.964844283732501,
+      "box": [
+        [
+          437.0,
+          132.0
+        ],
+        [
+          670.0,
+          132.0
+        ],
+        [
+          670.0,
+          154.0
+        ],
+        [
+          437.0,
+          154.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "1 ドメインから取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "2 take out the key",
+      "confidence": 0.990554948647817,
+      "box": [
+        [
+          883.0,
+          129.0
+        ],
+        [
+          1077.0,
+          132.0
+        ],
+        [
+          1077.0,
+          158.0
+        ],
+        [
+          883.0,
+          155.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "2 鍵を取り出す",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "Identity in the request",
+      "confidence": 0.9932960660561271,
+      "box": [
+        [
+          130.0,
+          262.0
+        ],
+        [
+          438.0,
+          265.0
+        ],
+        [
+          437.0,
+          296.0
+        ],
+        [
+          130.0,
+          294.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "リクエストに含まれるID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "did.json just fetched",
+      "confidence": 0.9962244998841059,
+      "box": [
+        [
+          635.0,
+          262.0
+        ],
+        [
+          915.0,
+          262.0
+        ],
+        [
+          915.0,
+          296.0
+        ],
+        [
+          635.0,
+          296.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "取得したばかりのdid.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did.json"
+      ]
+    },
+    {
+      "source": "The key inside that file",
+      "confidence": 0.9694775889317194,
+      "box": [
+        [
+          1028.0,
+          263.0
+        ],
+        [
+          1340.0,
+          262.0
+        ],
+        [
+          1340.0,
+          293.0
+        ],
+        [
+          1029.0,
+          295.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "そのファイル内の鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "..:user:alice:el_CfnI4Tul...",
+      "confidence": 0.9623219328267234,
+      "box": [
+        [
+          127.0,
+          306.0
+        ],
+        [
+          443.0,
+          303.0
+        ],
+        [
+          443.0,
+          329.0
+        ],
+        [
+          127.0,
+          332.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "…:user:alice:e1_CfnI4Tul…",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "el_CfnI4Tul"
+      ],
+      "transcribed_source": "…:user:alice:e1_CfnI4Tul…"
+    },
+    {
+      "source": "3 compare the two fingerprints",
+      "confidence": 0.9545972724755605,
+      "box": [
+        [
+          541.0,
+          348.0
+        ],
+        [
+          868.0,
+          348.0
+        ],
+        [
+          868.0,
+          371.0
+        ],
+        [
+          541.0,
+          371.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "3 2つのフィンガープリントを比較する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "Carved in at issue time",
+      "confidence": 0.9614050699316937,
+      "box": [
+        [
+          148.0,
+          420.0
+        ],
+        [
+          411.0,
+          420.0
+        ],
+        [
+          411.0,
+          444.0
+        ],
+        [
+          148.0,
+          444.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "発行時にIDへ組み込んだもの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Cfnl4TulguySDoAXRS1f...",
+      "confidence": 0.9531578654828279,
+      "box": [
+        [
+          457.0,
+          419.0
+        ],
+        [
+          750.0,
+          417.0
+        ],
+        [
+          750.0,
+          446.0
+        ],
+        [
+          457.0,
+          448.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "CfnI4TulguySDoAXRS1f…",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4",
+        "1"
+      ],
+      "transcribed_source": "CfnI4TulguySDoAXRS1f…"
+    },
+    {
+      "source": "Computed now from this key Cfnl4TulguySDoAXRS1f..",
+      "confidence": 0.9744060964000468,
+      "box": [
+        [
+          146.0,
+          465.0
+        ],
+        [
+          797.0,
+          464.0
+        ],
+        [
+          798.0,
+          495.0
+        ],
+        [
+          146.0,
+          496.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "この鍵から今計算したもの CfnI4TulguySDoAXRS1f…",
+      "translation_method": "agent-reviewed-label-translation",
+      "transcribed_source": "Computed now from this key CfnI4TulguySDoAXRS1f…"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.5570559999905527,
+    0.018021345138549805,
+    1.2566685676574707
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "..:user:alice:el_CfnI4Tul...": "…:user:alice:e1_CfnI4Tul…",
+      "Cfnl4TulguySDoAXRS1f...": "CfnI4TulguySDoAXRS1f…",
+      "Computed now from this key Cfnl4TulguySDoAXRS1f..": "Computed now from this key CfnI4TulguySDoAXRS1f…"
+    },
+    "source_note": "e1_とCfnI4…の表記を元図と本文の公開鍵例で照合した。図は末尾を省略しているため完全な鍵値として利用できない。",
+    "source_sha256": "b8e1c89d27d72f7700181b4b3cccd4f72c1bd363b07d96765f470241b27d399d"
+  }
+}

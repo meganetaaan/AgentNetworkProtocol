@@ -1,0 +1,979 @@
+{
+  "source": "blogs/images/all-protocol-1.png",
+  "sha256": "5970aa78bf5983fdb8ef2d7673588b2e15d497a241e2340c96dc0f9c851ff1b6",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "组织",
+      "confidence": 0.9998633563518524,
+      "box": [
+        [
+          657.8024291992188,
+          66.42338562011719
+        ],
+        [
+          752.9637451171875,
+          66.42338562011719
+        ],
+        [
+          752.9637451171875,
+          118.86289978027344
+        ],
+        [
+          657.8024291992188,
+          118.86289978027344
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "組織",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "解决问题",
+      "confidence": 0.9969109147787094,
+      "box": [
+        [
+          1086.0283203125,
+          68.7540283203125
+        ],
+        [
+          1262.07666015625,
+          68.7540283203125
+        ],
+        [
+          1262.07666015625,
+          116.53225708007812
+        ],
+        [
+          1086.0283203125,
+          116.53225708007812
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "解決する課題",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "技术路线",
+      "confidence": 0.9956315606832504,
+      "box": [
+        [
+          1553.5081787109375,
+          68.7540283203125
+        ],
+        [
+          1730.74609375,
+          68.7540283203125
+        ],
+        [
+          1730.74609375,
+          116.53225708007812
+        ],
+        [
+          1553.5081787109375,
+          116.53225708007812
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "技術的な方針",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发展阶段",
+      "confidence": 0.9998487234115601,
+      "box": [
+        [
+          2022.177490234375,
+          67.58870697021484
+        ],
+        [
+          2200.60498046875,
+          67.58870697021484
+        ],
+        [
+          2200.60498046875,
+          118.86289978027344
+        ],
+        [
+          2022.177490234375,
+          118.86289978027344
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "発展段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "MCP (Model Context",
+      "confidence": 0.964647865957684,
+      "box": [
+        [
+          39.25403594970703,
+          229.56854248046875
+        ],
+        [
+          436.55242919921875,
+          234.22982788085938
+        ],
+        [
+          436.55242919921875,
+          277.3467712402344
+        ],
+        [
+          39.25403594970703,
+          272.68548583984375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "MCP（Model Context",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "MCP"
+      ]
+    },
+    {
+      "source": "模型如何连接到工具与",
+      "confidence": 0.9965418159961701,
+      "box": [
+        [
+          957.560546875,
+          236.5604705810547
+        ],
+        [
+          1385.786376953125,
+          234.22982788085938
+        ],
+        [
+          1385.786376953125,
+          277.3467712402344
+        ],
+        [
+          957.560546875,
+          279.6773986816406
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "モデルをツールや",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Anthropic",
+      "confidence": 0.9998656908671061,
+      "box": [
+        [
+          614.9798583984375,
+          262.19757080078125
+        ],
+        [
+          796.975830078125,
+          264.5282287597656
+        ],
+        [
+          796.975830078125,
+          312.3064270019531
+        ],
+        [
+          614.9798583984375,
+          309.9757995605469
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "Anthropic",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "RPC、OAuth",
+      "confidence": 0.9996030330657959,
+      "box": [
+        [
+          1527.3387451171875,
+          268.024169921875
+        ],
+        [
+          1756.9154052734375,
+          268.024169921875
+        ],
+        [
+          1756.9154052734375,
+          311.14111328125
+        ],
+        [
+          1527.3387451171875,
+          311.14111328125
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "RPC、OAuth",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "RPC"
+      ]
+    },
+    {
+      "source": "行业事实标准",
+      "confidence": 0.9998248418172201,
+      "box": [
+        [
+          1978.1654052734375,
+          262.19757080078125
+        ],
+        [
+          2242.238037109375,
+          262.19757080078125
+        ],
+        [
+          2242.238037109375,
+          312.3064270019531
+        ],
+        [
+          1978.1654052734375,
+          312.3064270019531
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "業界の事実上の標準",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol)",
+      "confidence": 0.9989121754964193,
+      "box": [
+        [
+          135.60484313964844,
+          297.1572570800781
+        ],
+        [
+          310.4637145996094,
+          297.1572570800781
+        ],
+        [
+          310.4637145996094,
+          348.4314270019531
+        ],
+        [
+          135.60484313964844,
+          348.4314270019531
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "Protocol）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "资源",
+      "confidence": 0.9996132850646973,
+      "box": [
+        [
+          1124.0927734375,
+          290.1653137207031
+        ],
+        [
+          1224.01220703125,
+          290.1653137207031
+        ],
+        [
+          1224.01220703125,
+          346.1007995605469
+        ],
+        [
+          1124.0927734375,
+          346.1007995605469
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "リソースへ接続する方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP  (Agent Network",
+      "confidence": 0.9565817933333548,
+      "box": [
+        [
+          39.25403594970703,
+          418.3507995605469
+        ],
+        [
+          436.55242919921875,
+          423.0120849609375
+        ],
+        [
+          436.55242919921875,
+          469.6249694824219
+        ],
+        [
+          39.25403594970703,
+          464.96368408203125
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "ANP（Agent Network",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ],
+      "transcribed_source": "ANP (Agent Network"
+    },
+    {
+      "source": "智能体之间如何连接与",
+      "confidence": 0.9980568289756775,
+      "box": [
+        [
+          959.9395751953125,
+          426.508056640625
+        ],
+        [
+          1384.5968017578125,
+          426.508056640625
+        ],
+        [
+          1384.5968017578125,
+          469.6249694824219
+        ],
+        [
+          959.9395751953125,
+          469.6249694824219
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "エージェント同士を接続し、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP开源技术社区",
+      "confidence": 0.9989241030481126,
+      "box": [
+        [
+          538.850830078125,
+          456.8064270019531
+        ],
+        [
+          870.725830078125,
+          456.8064270019531
+        ],
+        [
+          870.725830078125,
+          499.9233703613281
+        ],
+        [
+          538.850830078125,
+          499.9233703613281
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "ANPオープンソース技術コミュニティ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "语义网、DID",
+      "confidence": 0.9997395021574838,
+      "box": [
+        [
+          1521.3912353515625,
+          453.3104553222656
+        ],
+        [
+          1764.052490234375,
+          453.3104553222656
+        ],
+        [
+          1764.052490234375,
+          504.58465576171875
+        ],
+        [
+          1521.3912353515625,
+          504.58465576171875
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "セマンティックWeb、DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "项目落地中",
+      "confidence": 0.9997948050498963,
+      "box": [
+        [
+          1998.38720703125,
+          453.3104553222656
+        ],
+        [
+          2219.63720703125,
+          453.3104553222656
+        ],
+        [
+          2219.63720703125,
+          504.58465576171875
+        ],
+        [
+          1998.38720703125,
+          504.58465576171875
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "プロジェクトを実用化中",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol)",
+      "confidence": 0.9996421535809835,
+      "box": [
+        [
+          134.4153289794922,
+          483.6088562011719
+        ],
+        [
+          310.4637145996094,
+          485.93951416015625
+        ],
+        [
+          310.4637145996094,
+          537.2136840820312
+        ],
+        [
+          134.4153289794922,
+          534.883056640625
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "Protocol）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "协作",
+      "confidence": 0.9998603165149689,
+      "box": [
+        [
+          1124.0927734375,
+          480.1128845214844
+        ],
+        [
+          1224.01220703125,
+          480.1128845214844
+        ],
+        [
+          1224.01220703125,
+          536.04833984375
+        ],
+        [
+          1124.0927734375,
+          536.04833984375
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "協調させる方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "元协议：智能体之间协",
+      "confidence": 0.9998228073120117,
+      "box": [
+        [
+          956.3710327148438,
+          616.4556274414062
+        ],
+        [
+          1388.1654052734375,
+          616.4556274414062
+        ],
+        [
+          1388.1654052734375,
+          663.0685424804688
+        ],
+        [
+          956.3710327148438,
+          663.0685424804688
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "メタプロトコル：エージェント同士の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agora Protocol",
+      "confidence": 0.9992724061012268,
+      "box": [
+        [
+          102.29839324951172,
+          650.25
+        ],
+        [
+          373.5080871582031,
+          647.9193115234375
+        ],
+        [
+          373.5080871582031,
+          689.8709716796875
+        ],
+        [
+          102.29839324951172,
+          692.2015991210938
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "Agora Protocol",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "牛津大学、Camel.ai",
+      "confidence": 0.9976047644248376,
+      "box": [
+        [
+          521.0081176757812,
+          645.5886840820312
+        ],
+        [
+          893.32666015625,
+          647.9193115234375
+        ],
+        [
+          893.32666015625,
+          694.5322265625
+        ],
+        [
+          521.0081176757812,
+          692.2015991210938
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "オックスフォード大学、Camel.ai",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "Camel.ai"
+      ]
+    },
+    {
+      "source": "元协议、自然语言协商",
+      "confidence": 0.9990073680877686,
+      "box": [
+        [
+          1427.41943359375,
+          649.0846557617188
+        ],
+        [
+          1856.834716796875,
+          649.0846557617188
+        ],
+        [
+          1856.834716796875,
+          692.2015991210938
+        ],
+        [
+          1427.41943359375,
+          692.2015991210938
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "メタプロトコル、自然言語による交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "概念验证",
+      "confidence": 0.9997213035821915,
+      "box": [
+        [
+          2019.7984619140625,
+          644.42333984375
+        ],
+        [
+          2201.79443359375,
+          642.0927124023438
+        ],
+        [
+          2201.79443359375,
+          694.5322265625
+        ],
+        [
+          2019.7984619140625,
+          696.8628540039062
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "概念実証",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "议协商",
+      "confidence": 0.9997739394505819,
+      "box": [
+        [
+          1103.8709716796875,
+          672.39111328125
+        ],
+        [
+          1243.04443359375,
+          672.39111328125
+        ],
+        [
+          1243.04443359375,
+          725.9959716796875
+        ],
+        [
+          1103.8709716796875,
+          725.9959716796875
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "プロトコル交渉",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "控制台如何控制智能体",
+      "confidence": 0.9705956935882568,
+      "box": [
+        [
+          957.560546875,
+          808.7338256835938
+        ],
+        [
+          1388.1654052734375,
+          808.7338256835938
+        ],
+        [
+          1388.1654052734375,
+          851.8507690429688
+        ],
+        [
+          957.560546875,
+          851.8507690429688
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "コンソールからエージェントを制御する方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Protocol",
+      "confidence": 0.9992886057921818,
+      "box": [
+        [
+          102.29839324951172,
+          841.3628540039062
+        ],
+        [
+          373.5080871582031,
+          839.0322265625
+        ],
+        [
+          373.5080871582031,
+          880.9838256835938
+        ],
+        [
+          102.29839324951172,
+          883.3145141601562
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "Agent Protocol",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Al Engineer Foundation",
+      "confidence": 0.994035699150779,
+      "box": [
+        [
+          499.5968017578125,
+          842.5281982421875
+        ],
+        [
+          911.1693725585938,
+          840.1975708007812
+        ],
+        [
+          911.1693725585938,
+          878.6531982421875
+        ],
+        [
+          499.5968017578125,
+          880.9838256835938
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "AI Engineer Foundation",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "AI Engineer Foundation"
+    },
+    {
+      "source": "RESTful API",
+      "confidence": 0.9529068957675587,
+      "box": [
+        [
+          1541.613037109375,
+          840.1975708007812
+        ],
+        [
+          1745.020263671875,
+          840.1975708007812
+        ],
+        [
+          1745.020263671875,
+          878.6531982421875
+        ],
+        [
+          1541.613037109375,
+          878.6531982421875
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "RESTful API",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API"
+      ]
+    },
+    {
+      "source": "更新较少",
+      "confidence": 0.9998290836811066,
+      "box": [
+        [
+          2019.7984619140625,
+          834.3709106445312
+        ],
+        [
+          2200.60498046875,
+          834.3709106445312
+        ],
+        [
+          2200.60498046875,
+          886.8104248046875
+        ],
+        [
+          2019.7984619140625,
+          886.8104248046875
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "更新が少ない",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(启动、停止)",
+      "confidence": 0.9996793866157532,
+      "box": [
+        [
+          1050.3427734375,
+          865.8346557617188
+        ],
+        [
+          1296.5726318359375,
+          865.8346557617188
+        ],
+        [
+          1296.5726318359375,
+          913.6128540039062
+        ],
+        [
+          1050.3427734375,
+          913.6128540039062
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "（起動、停止）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体之间的通信与协",
+      "confidence": 0.9991412937641144,
+      "box": [
+        [
+          958.7500610351562,
+          1001.0120849609375
+        ],
+        [
+          1386.975830078125,
+          1001.0120849609375
+        ],
+        [
+          1386.975830078125,
+          1042.963623046875
+        ],
+        [
+          958.7500610351562,
+          1042.963623046875
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "エージェント同士の通信と協調。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "A2A",
+      "confidence": 0.990641454855601,
+      "box": [
+        [
+          192.70162963867188,
+          1030.1451416015625
+        ],
+        [
+          278.3468017578125,
+          1030.1451416015625
+        ],
+        [
+          278.3468017578125,
+          1073.2620849609375
+        ],
+        [
+          192.70162963867188,
+          1073.2620849609375
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "A2A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "A2A"
+      ]
+    },
+    {
+      "source": "Google",
+      "confidence": 0.9997742573420206,
+      "box": [
+        [
+          639.959716796875,
+          1026.649169921875
+        ],
+        [
+          771.9960327148438,
+          1030.1451416015625
+        ],
+        [
+          770.8065185546875,
+          1080.2540283203125
+        ],
+        [
+          638.7702026367188,
+          1076.758056640625
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "Google",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "RPC、Oauth",
+      "confidence": 0.9994813866085477,
+      "box": [
+        [
+          1529.7177734375,
+          1033.64111328125
+        ],
+        [
+          1754.536376953125,
+          1033.64111328125
+        ],
+        [
+          1754.536376953125,
+          1076.758056640625
+        ],
+        [
+          1529.7177734375,
+          1076.758056640625
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "RPC、Oauth",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "RPC"
+      ]
+    },
+    {
+      "source": "刚发布",
+      "confidence": 0.9999587138493856,
+      "box": [
+        [
+          2041.209716796875,
+          1027.814453125
+        ],
+        [
+          2179.193603515625,
+          1027.814453125
+        ],
+        [
+          2179.193603515625,
+          1080.2540283203125
+        ],
+        [
+          2041.209716796875,
+          1080.2540283203125
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "公開されたばかり",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "作，包括局域网广域网",
+      "confidence": 0.9994173109531402,
+      "box": [
+        [
+          958.7500610351562,
+          1061.60888671875
+        ],
+        [
+          1386.975830078125,
+          1061.60888671875
+        ],
+        [
+          1386.975830078125,
+          1104.725830078125
+        ],
+        [
+          958.7500610351562,
+          1104.725830078125
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "ローカルネットワークと広域ネットワークを含む",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.3477217000327073,
+    0.04823613166809082,
+    2.235929250717163
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "ANP  (Agent Network": "ANP (Agent Network",
+      "Al Engineer Foundation": "AI Engineer Foundation"
+    },
+    "source_note": "組織・成熟度・標準化状況などは原画像の歴史的な比較表を訳したもの。現在の事実として更新・検証していない。",
+    "source_sha256": "5970aa78bf5983fdb8ef2d7673588b2e15d497a241e2340c96dc0f9c851ff1b6"
+  }
+}

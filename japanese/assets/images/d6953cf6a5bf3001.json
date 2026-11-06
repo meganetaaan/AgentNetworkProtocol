@@ -1,0 +1,1017 @@
+{
+  "source": "blogs/images/all-protocol-2.png",
+  "sha256": "d6953cf6a5bf30012e6869d2a33c722816bdf36b57a8172af5e564c2fc40b94c",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "组织",
+      "confidence": 0.9996111392974854,
+      "box": [
+        [
+          654.4576416015625,
+          65.03225708007812
+        ],
+        [
+          752.6854858398438,
+          65.03225708007812
+        ],
+        [
+          752.6854858398438,
+          120.7741928100586
+        ],
+        [
+          654.4576416015625,
+          120.7741928100586
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "組織",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "解决问题",
+      "confidence": 0.9971521496772766,
+      "box": [
+        [
+          1081.6895751953125,
+          67.3548355102539
+        ],
+        [
+          1261.57666015625,
+          67.3548355102539
+        ],
+        [
+          1261.57666015625,
+          118.45160675048828
+        ],
+        [
+          1081.6895751953125,
+          118.45160675048828
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "解決する課題",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "技术路线",
+      "confidence": 0.997390016913414,
+      "box": [
+        [
+          1550.3427734375,
+          67.3548355102539
+        ],
+        [
+          1729.04638671875,
+          67.3548355102539
+        ],
+        [
+          1729.04638671875,
+          118.45160675048828
+        ],
+        [
+          1550.3427734375,
+          118.45160675048828
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "技術的な方針",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "发展阶段",
+      "confidence": 0.9996999949216843,
+      "box": [
+        [
+          2018.9959716796875,
+          66.19355010986328
+        ],
+        [
+          2198.883056640625,
+          66.19355010986328
+        ],
+        [
+          2198.883056640625,
+          117.29032135009766
+        ],
+        [
+          2018.9959716796875,
+          117.29032135009766
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "発展段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "网站对智能体的声明",
+      "confidence": 0.9996017813682556,
+      "box": [
+        [
+          978.7278442382812,
+          236.90321350097656
+        ],
+        [
+          1362.17138671875,
+          235.74192810058594
+        ],
+        [
+          1362.17138671875,
+          278.70965576171875
+        ],
+        [
+          978.7278442382812,
+          279.8709716796875
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "Webサイトからエージェントへの宣言",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "agents.json",
+      "confidence": 0.9992316527800127,
+      "box": [
+        [
+          131.3649139404297,
+          265.93548583984375
+        ],
+        [
+          339.6552429199219,
+          264.7742004394531
+        ],
+        [
+          339.6552429199219,
+          308.9032287597656
+        ],
+        [
+          131.3649139404297,
+          310.06451416015625
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "agents.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "agents.json"
+      ]
+    },
+    {
+      "source": "Wildcard Al",
+      "confidence": 0.9800007885152643,
+      "box": [
+        [
+          598.8346557617188,
+          262.45159912109375
+        ],
+        [
+          807.125,
+          264.7742004394531
+        ],
+        [
+          807.125,
+          307.7419128417969
+        ],
+        [
+          598.8346557617188,
+          305.4193420410156
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "Wildcard AI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Wildcard AI"
+    },
+    {
+      "source": "/.well-known",
+      "confidence": 0.9705361078182856,
+      "box": [
+        [
+          1520.756103515625,
+          264.7742004394531
+        ],
+        [
+          1756.26611328125,
+          264.7742004394531
+        ],
+        [
+          1756.26611328125,
+          307.7419128417969
+        ],
+        [
+          1520.756103515625,
+          307.7419128417969
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "/.well-known",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/.well-known"
+      ]
+    },
+    {
+      "source": "草案阶段",
+      "confidence": 0.9999431073665619,
+      "box": [
+        [
+          2017.8125,
+          260.1290283203125
+        ],
+        [
+          2198.883056640625,
+          262.45159912109375
+        ],
+        [
+          2198.883056640625,
+          314.70965576171875
+        ],
+        [
+          2017.8125,
+          312.3870849609375
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "草案段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(接口、认证、权限)",
+      "confidence": 0.9814337730407715,
+      "box": [
+        [
+          985.82861328125,
+          296.1290283203125
+        ],
+        [
+          1357.4375,
+          296.1290283203125
+        ],
+        [
+          1357.4375,
+          342.58062744140625
+        ],
+        [
+          985.82861328125,
+          342.58062744140625
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "（インターフェース、認証、権限）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "AITP (Agent Interaction",
+      "confidence": 0.99306437243586,
+      "box": [
+        [
+          14.20161247253418,
+          418.06451416015625
+        ],
+        [
+          456.81854248046875,
+          425.0322570800781
+        ],
+        [
+          456.81854248046875,
+          471.4838562011719
+        ],
+        [
+          14.20161247253418,
+          464.51611328125
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "AITP（Agent Interaction",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AITP"
+      ]
+    },
+    {
+      "source": "NEAR基金会",
+      "confidence": 0.9993298820086888,
+      "box": [
+        [
+          582.26611328125,
+          455.2257995605469
+        ],
+        [
+          822.5100708007812,
+          455.2257995605469
+        ],
+        [
+          822.5100708007812,
+          502.83868408203125
+        ],
+        [
+          582.26611328125,
+          502.83868408203125
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "NEAR財団",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "智能体通信与价值交换",
+      "confidence": 0.9986685395240784,
+      "box": [
+        [
+          957.4254150390625,
+          457.5483703613281
+        ],
+        [
+          1387.024169921875,
+          457.5483703613281
+        ],
+        [
+          1387.024169921875,
+          499.3548278808594
+        ],
+        [
+          957.4254150390625,
+          499.3548278808594
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "エージェントの通信と価値の交換",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "区块链、HTTP",
+      "confidence": 0.999541699886322,
+      "box": [
+        [
+          1506.554443359375,
+          451.7419128417969
+        ],
+        [
+          1776.3851318359375,
+          455.2257995605469
+        ],
+        [
+          1776.3851318359375,
+          505.1612854003906
+        ],
+        [
+          1506.554443359375,
+          501.6773986816406
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "ブロックチェーン、HTTP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP"
+      ]
+    },
+    {
+      "source": "演示，推广中",
+      "confidence": 0.9989618261655172,
+      "box": [
+        [
+          1976.39111328125,
+          454.06451416015625
+        ],
+        [
+          2239.12109375,
+          454.06451416015625
+        ],
+        [
+          2239.12109375,
+          504.0
+        ],
+        [
+          1976.39111328125,
+          504.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "デモ、普及活動中",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "& Transaction Protocol)",
+      "confidence": 0.9894702797350676,
+      "box": [
+        [
+          11.834677696228027,
+          491.2257995605469
+        ],
+        [
+          431.9657287597656,
+          491.2257995605469
+        ],
+        [
+          431.9657287597656,
+          533.0322265625
+        ],
+        [
+          11.834677696228027,
+          533.0322265625
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "& Transaction Protocol）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ACP (Agent Connect",
+      "confidence": 0.9957795871628655,
+      "box": [
+        [
+          43.788307189941406,
+          612.0
+        ],
+        [
+          429.5987854003906,
+          615.4838256835938
+        ],
+        [
+          429.5987854003906,
+          661.9354858398438
+        ],
+        [
+          43.788307189941406,
+          658.4515991210938
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "ACP（Agent Connect",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ACP"
+      ]
+    },
+    {
+      "source": "思科、LangChain、",
+      "confidence": 0.9997764734121469,
+      "box": [
+        [
+          525.4596557617188,
+          616.6451416015625
+        ],
+        [
+          854.4636840820312,
+          621.290283203125
+        ],
+        [
+          854.4636840820312,
+          668.9031982421875
+        ],
+        [
+          525.4596557617188,
+          664.258056640625
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "Cisco、LangChain、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LangChain"
+      ]
+    },
+    {
+      "source": "局域网的多智能体协作",
+      "confidence": 0.9993659913539886,
+      "box": [
+        [
+          957.4254150390625,
+          649.1612548828125
+        ],
+        [
+          1385.8406982421875,
+          649.1612548828125
+        ],
+        [
+          1385.8406982421875,
+          692.1290283203125
+        ],
+        [
+          957.4254150390625,
+          692.1290283203125
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "ローカルネットワーク内のマルチエージェント協調",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "OpenAPI、JSON",
+      "confidence": 0.9864670981963476,
+      "box": [
+        [
+          1494.7197265625,
+          651.4838256835938
+        ],
+        [
+          1785.852783203125,
+          651.4838256835938
+        ],
+        [
+          1785.852783203125,
+          694.4515991210938
+        ],
+        [
+          1494.7197265625,
+          694.4515991210938
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "OpenAPI、JSON",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "OpenAPI",
+        "JSON"
+      ]
+    },
+    {
+      "source": "推广中",
+      "confidence": 0.9996951421101888,
+      "box": [
+        [
+          2037.9315185546875,
+          644.51611328125
+        ],
+        [
+          2176.397216796875,
+          644.51611328125
+        ],
+        [
+          2176.397216796875,
+          697.9354858398438
+        ],
+        [
+          2037.9315185546875,
+          697.9354858398438
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "普及活動中",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol)",
+      "confidence": 0.952578624089559,
+      "box": [
+        [
+          132.5483856201172,
+          678.1935424804688
+        ],
+        [
+          307.70159912109375,
+          678.1935424804688
+        ],
+        [
+          307.70159912109375,
+          729.290283203125
+        ],
+        [
+          132.5483856201172,
+          729.290283203125
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "Protocol）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Galileo",
+      "confidence": 0.9987781303269523,
+      "box": [
+        [
+          637.8890991210938,
+          678.1935424804688
+        ],
+        [
+          769.2540283203125,
+          680.51611328125
+        ],
+        [
+          768.070556640625,
+          725.8064575195312
+        ],
+        [
+          636.7056274414062,
+          723.4838256835938
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "Galileo",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ACP (Agent",
+      "confidence": 0.9842328727245331,
+      "box": [
+        [
+          119.53024291992188,
+          775.7418823242188
+        ],
+        [
+          351.48992919921875,
+          775.7418823242188
+        ],
+        [
+          351.48992919921875,
+          826.8386840820312
+        ],
+        [
+          119.53024291992188,
+          826.8386840820312
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "ACP（Agent",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ACP"
+      ]
+    },
+    {
+      "source": "Linux Foundation Al &",
+      "confidence": 0.9754520995276315,
+      "box": [
+        [
+          513.625,
+          803.6128540039062
+        ],
+        [
+          902.9859008789062,
+          805.9354858398438
+        ],
+        [
+          902.9859008789062,
+          844.258056640625
+        ],
+        [
+          513.625,
+          841.9354858398438
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "Linux Foundation AI &",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Linux Foundation AI &"
+    },
+    {
+      "source": "Communication",
+      "confidence": 0.9989216098418603,
+      "box": [
+        [
+          93.49394989013672,
+          840.774169921875
+        ],
+        [
+          378.7096862792969,
+          840.774169921875
+        ],
+        [
+          378.7096862792969,
+          879.0967407226562
+        ],
+        [
+          93.49394989013672,
+          879.0967407226562
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "通信",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "局域网的多智能体协作",
+      "confidence": 0.9994237840175628,
+      "box": [
+        [
+          958.60888671875,
+          840.774169921875
+        ],
+        [
+          1385.8406982421875,
+          840.774169921875
+        ],
+        [
+          1385.8406982421875,
+          882.5806274414062
+        ],
+        [
+          958.60888671875,
+          882.5806274414062
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "ローカルネットワーク内のマルチエージェント協調",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "OpenAPI",
+      "confidence": 0.9941215855734689,
+      "box": [
+        [
+          1559.810546875,
+          838.4515991210938
+        ],
+        [
+          1721.945556640625,
+          836.1290283203125
+        ],
+        [
+          1723.1290283203125,
+          884.9031982421875
+        ],
+        [
+          1560.993896484375,
+          887.2257690429688
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "OpenAPI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "OpenAPI"
+      ]
+    },
+    {
+      "source": "设计中",
+      "confidence": 0.9998926917711893,
+      "box": [
+        [
+          2040.29833984375,
+          832.6451416015625
+        ],
+        [
+          2176.397216796875,
+          834.9677124023438
+        ],
+        [
+          2175.213623046875,
+          889.54833984375
+        ],
+        [
+          2039.1148681640625,
+          887.2257690429688
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "設計中",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Data、IBM",
+      "confidence": 0.9994521141052246,
+      "box": [
+        [
+          602.3850708007812,
+          869.806396484375
+        ],
+        [
+          807.125,
+          867.4838256835938
+        ],
+        [
+          807.125,
+          910.4515991210938
+        ],
+        [
+          602.3850708007812,
+          912.774169921875
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "Data、IBM",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "IBM"
+      ]
+    },
+    {
+      "source": "Protocol)",
+      "confidence": 0.9996145698759291,
+      "box": [
+        [
+          133.7318572998047,
+          897.6773681640625
+        ],
+        [
+          307.70159912109375,
+          897.6773681640625
+        ],
+        [
+          307.70159912109375,
+          948.774169921875
+        ],
+        [
+          133.7318572998047,
+          948.774169921875
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "Protocol）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "LMos (Language Model",
+      "confidence": 0.94577756524086,
+      "box": [
+        [
+          11.834677696228027,
+          996.3870849609375
+        ],
+        [
+          459.18548583984375,
+          999.8709106445312
+        ],
+        [
+          459.18548583984375,
+          1042.838623046875
+        ],
+        [
+          11.834677696228027,
+          1039.3548583984375
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "LMOS（Language Model",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "LMOS (Language Model"
+    },
+    {
+      "source": "Eclipse 社区、德国电信",
+      "confidence": 0.9823918064435323,
+      "box": [
+        [
+          485.2217712402344,
+          1032.3870849609375
+        ],
+        [
+          924.288330078125,
+          1028.9031982421875
+        ],
+        [
+          924.288330078125,
+          1075.3548583984375
+        ],
+        [
+          485.2217712402344,
+          1078.838623046875
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "Eclipseコミュニティ、ドイツテレコム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Eclipse社区、德国电信"
+    },
+    {
+      "source": "智能体互联网、物联网",
+      "confidence": 0.9998125195503235,
+      "box": [
+        [
+          950.3245849609375,
+          1030.064453125
+        ],
+        [
+          1383.4737548828125,
+          1032.3870849609375
+        ],
+        [
+          1383.4737548828125,
+          1075.3548583984375
+        ],
+        [
+          950.3245849609375,
+          1073.0322265625
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "エージェントインターネット、モノのインターネット",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "WOT、DID",
+      "confidence": 0.9981514130319867,
+      "box": [
+        [
+          1540.875,
+          1033.54833984375
+        ],
+        [
+          1739.6976318359375,
+          1033.54833984375
+        ],
+        [
+          1739.6976318359375,
+          1076.51611328125
+        ],
+        [
+          1540.875,
+          1076.51611328125
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "WOT、DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WOT",
+        "DID"
+      ]
+    },
+    {
+      "source": "孵化期",
+      "confidence": 0.9997986952463785,
+      "box": [
+        [
+          2039.1148681640625,
+          1024.258056640625
+        ],
+        [
+          2177.58056640625,
+          1026.58056640625
+        ],
+        [
+          2176.397216796875,
+          1081.1612548828125
+        ],
+        [
+          2037.9315185546875,
+          1078.838623046875
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "育成段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Operating System)",
+      "confidence": 0.9997670405051288,
+      "box": [
+        [
+          53.25605010986328,
+          1067.225830078125
+        ],
+        [
+          390.5443420410156,
+          1062.58056640625
+        ],
+        [
+          390.5443420410156,
+          1113.6773681640625
+        ],
+        [
+          53.25605010986328,
+          1118.322509765625
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "Operating System）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8155186999938451,
+    0.046029090881347656,
+    2.41998553276062
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Wildcard Al": "Wildcard AI",
+      "Linux Foundation Al &": "Linux Foundation AI &",
+      "LMos (Language Model": "LMOS (Language Model",
+      "Eclipse 社区、德国电信": "Eclipse社区、德国电信"
+    },
+    "source_note": "組織・成熟度・標準化状況などは原画像の歴史的な比較表を訳したもの。現在の事実として更新・検証していない。",
+    "source_sha256": "d6953cf6a5bf30012e6869d2a33c722816bdf36b57a8172af5e564c2fc40b94c"
+  }
+}

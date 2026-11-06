@@ -1,0 +1,907 @@
+{
+  "source": "images/relationship.png",
+  "sha256": "b48bdddfd1d012ad410fc2e32c7d2c451fd6bc148cab84143fa85593dfca90ab",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "DEMO 2",
+      "confidence": 0.967649499575297,
+      "box": [
+        [
+          1307.0,
+          18.0
+        ],
+        [
+          1422.0,
+          18.0
+        ],
+        [
+          1422.0,
+          50.0
+        ],
+        [
+          1307.0,
+          50.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "デモ 2",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DEMO",
+        "2"
+      ]
+    },
+    {
+      "source": "WEB API",
+      "confidence": 0.9786547677857536,
+      "box": [
+        [
+          121.0,
+          62.0
+        ],
+        [
+          222.0,
+          62.0
+        ],
+        [
+          222.0,
+          91.0
+        ],
+        [
+          121.0,
+          91.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ウェブAPI",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WEB",
+        "API"
+      ]
+    },
+    {
+      "source": "项目名称",
+      "confidence": 0.9996882379055023,
+      "box": [
+        [
+          357.0,
+          54.0
+        ],
+        [
+          491.0,
+          54.0
+        ],
+        [
+          491.0,
+          92.0
+        ],
+        [
+          357.0,
+          92.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "プロジェクト名",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": ":ANP天气智能体服务-服务端",
+      "confidence": 0.9713992595672607,
+      "box": [
+        [
+          544.0,
+          56.0
+        ],
+        [
+          955.0,
+          57.0
+        ],
+        [
+          955.0,
+          89.0
+        ],
+        [
+          544.0,
+          88.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": ": ANP天気エージェントサービス・サーバー側",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(lnternet)",
+      "confidence": 0.9512648820877075,
+      "box": [
+        [
+          115.0,
+          97.0
+        ],
+        [
+          227.0,
+          97.0
+        ],
+        [
+          227.0,
+          124.0
+        ],
+        [
+          115.0,
+          124.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "（インターネット）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "(Internet)"
+    },
+    {
+      "source": "Project Name : ANP Weather Intelligent Agent Service - Server",
+      "confidence": 0.9854833024447082,
+      "box": [
+        [
+          357.0,
+          101.0
+        ],
+        [
+          1184.0,
+          101.0
+        ],
+        [
+          1184.0,
+          131.0
+        ],
+        [
+          357.0,
+          131.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "プロジェクト名: ANP天気エージェントサービス・サーバー側",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "API",
+      "confidence": 0.9835663239161173,
+      "box": [
+        [
+          202.0,
+          159.0
+        ],
+        [
+          255.0,
+          159.0
+        ],
+        [
+          255.0,
+          194.0
+        ],
+        [
+          202.0,
+          194.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "API",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API"
+      ]
+    },
+    {
+      "source": "WEB访问方式",
+      "confidence": 0.9996690835271563,
+      "box": [
+        [
+          347.0,
+          179.0
+        ],
+        [
+          542.0,
+          179.0
+        ],
+        [
+          542.0,
+          214.0
+        ],
+        [
+          347.0,
+          214.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ウェブでのアクセス方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": ": Https://agent-weather.xyz/ad.json",
+      "confidence": 0.9994856340544565,
+      "box": [
+        [
+          642.0,
+          201.0
+        ],
+        [
+          1121.0,
+          203.0
+        ],
+        [
+          1121.0,
+          237.0
+        ],
+        [
+          641.0,
+          234.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": ": Https://agent-weather.xyz/ad.json",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "//agent-weather.xyz/ad.json"
+      ]
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9845601320266724,
+      "box": [
+        [
+          125.0,
+          227.0
+        ],
+        [
+          217.0,
+          227.0
+        ],
+        [
+          217.0,
+          259.0
+        ],
+        [
+          125.0,
+          259.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "(WEB RUN MODE)",
+      "confidence": 0.9654111734458378,
+      "box": [
+        [
+          347.0,
+          223.0
+        ],
+        [
+          589.0,
+          222.0
+        ],
+        [
+          589.0,
+          254.0
+        ],
+        [
+          347.0,
+          255.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "（ウェブ実行モード）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WEB",
+        "RUN",
+        "MODE"
+      ]
+    },
+    {
+      "source": "本地运行方式",
+      "confidence": 0.9997793634732565,
+      "box": [
+        [
+          347.0,
+          269.0
+        ],
+        [
+          546.0,
+          271.0
+        ],
+        [
+          545.0,
+          309.0
+        ],
+        [
+          346.0,
+          307.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "ローカルでの実行方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": ": Http://127.0.0.1:9870",
+      "confidence": 0.9995845141618148,
+      "box": [
+        [
+          642.0,
+          283.0
+        ],
+        [
+          955.0,
+          283.0
+        ],
+        [
+          955.0,
+          314.0
+        ],
+        [
+          642.0,
+          314.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": ": Http://127.0.0.1:9870",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "//127.0.0.1",
+        "9870"
+      ]
+    },
+    {
+      "source": "DID",
+      "confidence": 0.9968216220537821,
+      "box": [
+        [
+          144.0,
+          294.0
+        ],
+        [
+          197.0,
+          294.0
+        ],
+        [
+          197.0,
+          324.0
+        ],
+        [
+          144.0,
+          324.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "(LOCAL RUN MODE)",
+      "confidence": 0.9926473423838615,
+      "box": [
+        [
+          348.0,
+          317.0
+        ],
+        [
+          611.0,
+          317.0
+        ],
+        [
+          611.0,
+          348.0
+        ],
+        [
+          348.0,
+          348.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "（ローカル実行モード）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LOCAL",
+        "RUN",
+        "MODE"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.990753968556722,
+      "box": [
+        [
+          194.0,
+          373.0
+        ],
+        [
+          259.0,
+          368.0
+        ],
+        [
+          261.0,
+          402.0
+        ],
+        [
+          196.0,
+          406.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "DEMO 1",
+      "confidence": 0.989014744758606,
+      "box": [
+        [
+          1307.0,
+          411.0
+        ],
+        [
+          1421.0,
+          411.0
+        ],
+        [
+          1421.0,
+          441.0
+        ],
+        [
+          1307.0,
+          441.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "デモ 1",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DEMO",
+        "1"
+      ]
+    },
+    {
+      "source": "DID",
+      "confidence": 0.9964043100674947,
+      "box": [
+        [
+          144.0,
+          440.0
+        ],
+        [
+          197.0,
+          440.0
+        ],
+        [
+          197.0,
+          471.0
+        ],
+        [
+          144.0,
+          471.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "DID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "项目名称",
+      "confidence": 0.9996758848428726,
+      "box": [
+        [
+          354.0,
+          484.0
+        ],
+        [
+          488.0,
+          484.0
+        ],
+        [
+          488.0,
+          522.0
+        ],
+        [
+          354.0,
+          522.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "プロジェクト名",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": ":ANP网络探索工具",
+      "confidence": 0.9971366882324219,
+      "box": [
+        [
+          543.0,
+          486.0
+        ],
+        [
+          815.0,
+          486.0
+        ],
+        [
+          815.0,
+          520.0
+        ],
+        [
+          543.0,
+          520.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": ": ANPネットワーク探索ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "LLM",
+      "confidence": 0.9908502697944641,
+      "box": [
+        [
+          139.0,
+          506.0
+        ],
+        [
+          203.0,
+          506.0
+        ],
+        [
+          203.0,
+          538.0
+        ],
+        [
+          139.0,
+          538.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "LLM",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LLM"
+      ]
+    },
+    {
+      "source": "Project Name : ANP Network Exploration Tool",
+      "confidence": 0.9964363380920055,
+      "box": [
+        [
+          355.0,
+          530.0
+        ],
+        [
+          965.0,
+          530.0
+        ],
+        [
+          965.0,
+          561.0
+        ],
+        [
+          355.0,
+          561.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "プロジェクト名: ANPネットワーク探索ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Client",
+      "confidence": 0.9974538087844849,
+      "box": [
+        [
+          129.0,
+          567.0
+        ],
+        [
+          215.0,
+          571.0
+        ],
+        [
+          213.0,
+          607.0
+        ],
+        [
+          128.0,
+          603.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "WEB访问方式",
+      "confidence": 0.9994091221264431,
+      "box": [
+        [
+          345.0,
+          607.0
+        ],
+        [
+          539.0,
+          607.0
+        ],
+        [
+          539.0,
+          642.0
+        ],
+        [
+          345.0,
+          642.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "ウェブでのアクセス方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Web Server",
+      "confidence": 0.9905299603939056,
+      "box": [
+        [
+          92.0,
+          637.0
+        ],
+        [
+          249.0,
+          641.0
+        ],
+        [
+          249.0,
+          673.0
+        ],
+        [
+          91.0,
+          668.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "ウェブサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": ": Https://service.agent-network-protocol.com/anp-demo",
+      "confidence": 0.9996435361088447,
+      "box": [
+        [
+          641.0,
+          632.0
+        ],
+        [
+          1396.0,
+          634.0
+        ],
+        [
+          1396.0,
+          664.0
+        ],
+        [
+          641.0,
+          661.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": ": Https://service.agent-network-protocol.com/anp-demo",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "//service.agent-network-protocol.com/anp-demo"
+      ]
+    },
+    {
+      "source": "(WEB RUN MODE)",
+      "confidence": 0.990993218762534,
+      "box": [
+        [
+          346.0,
+          653.0
+        ],
+        [
+          587.0,
+          653.0
+        ],
+        [
+          587.0,
+          684.0
+        ],
+        [
+          346.0,
+          684.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "（ウェブ実行モード）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "WEB",
+        "RUN",
+        "MODE"
+      ]
+    },
+    {
+      "source": "HTTP",
+      "confidence": 0.9995486736297607,
+      "box": [
+        [
+          192.0,
+          708.0
+        ],
+        [
+          264.0,
+          708.0
+        ],
+        [
+          264.0,
+          738.0
+        ],
+        [
+          192.0,
+          738.0
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "HTTP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP"
+      ]
+    },
+    {
+      "source": "本地运行方式",
+      "confidence": 0.9998332858085632,
+      "box": [
+        [
+          346.0,
+          702.0
+        ],
+        [
+          542.0,
+          702.0
+        ],
+        [
+          542.0,
+          737.0
+        ],
+        [
+          346.0,
+          737.0
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "ローカルでの実行方法",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": ": Http://127.0.0.1:5005",
+      "confidence": 0.9887021754098975,
+      "box": [
+        [
+          642.0,
+          711.0
+        ],
+        [
+          951.0,
+          714.0
+        ],
+        [
+          951.0,
+          744.0
+        ],
+        [
+          641.0,
+          742.0
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": ": Http://127.0.0.1:5005",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "//127.0.0.1",
+        "5005"
+      ]
+    },
+    {
+      "source": "(LOCAL RUN MODE)",
+      "confidence": 0.9934891946613789,
+      "box": [
+        [
+          348.0,
+          747.0
+        ],
+        [
+          607.0,
+          747.0
+        ],
+        [
+          607.0,
+          775.0
+        ],
+        [
+          348.0,
+          775.0
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "（ローカル実行モード）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LOCAL",
+        "RUN",
+        "MODE"
+      ]
+    },
+    {
+      "source": "Browser",
+      "confidence": 0.9997840438570295,
+      "box": [
+        [
+          114.0,
+          779.0
+        ],
+        [
+          229.0,
+          779.0
+        ],
+        [
+          229.0,
+          809.0
+        ],
+        [
+          114.0,
+          809.0
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "ブラウザー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.778651800006628,
+    0.04615306854248047,
+    2.9694509506225586
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "source_note": "図内URLは原画像の歴史的な記載を保持し、到達性は検証していない。",
+    "corrections": {
+      "(lnternet)": "(Internet)"
+    },
+    "source_sha256": "b48bdddfd1d012ad410fc2e32c7d2c451fd6bc148cab84143fa85593dfca90ab"
+  }
+}

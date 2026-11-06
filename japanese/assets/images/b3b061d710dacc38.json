@@ -1,0 +1,1014 @@
+{
+  "source": "blogs/images/did-wba-flow.png",
+  "sha256": "b3b061d710dacc38b2900d132b60ed324112007fa59dbed1a296abb582b3863d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "User",
+      "confidence": 0.9978425353765488,
+      "box": [
+        [
+          373.0,
+          48.0
+        ],
+        [
+          416.0,
+          48.0
+        ],
+        [
+          416.0,
+          71.0
+        ],
+        [
+          373.0,
+          71.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent A Client",
+      "confidence": 0.9965490060193198,
+      "box": [
+        [
+          633.0,
+          49.0
+        ],
+        [
+          751.0,
+          46.0
+        ],
+        [
+          751.0,
+          70.0
+        ],
+        [
+          633.0,
+          73.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェントAのクライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgentB",
+      "confidence": 0.9992905954519907,
+      "box": [
+        [
+          1033.0,
+          45.0
+        ],
+        [
+          1115.0,
+          41.0
+        ],
+        [
+          1116.0,
+          69.0
+        ],
+        [
+          1034.0,
+          73.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentB"
+      ],
+      "transcribed_source": "Agent B"
+    },
+    {
+      "source": "Agent A DID Sever",
+      "confidence": 0.9959717322798336,
+      "box": [
+        [
+          1259.0,
+          48.0
+        ],
+        [
+          1407.0,
+          48.0
+        ],
+        [
+          1407.0,
+          72.0
+        ],
+        [
+          1259.0,
+          72.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェントAのDIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "Preliminary Operation",
+      "confidence": 0.9749442338943481,
+      "box": [
+        [
+          647.0,
+          118.0
+        ],
+        [
+          828.0,
+          118.0
+        ],
+        [
+          828.0,
+          141.0
+        ],
+        [
+          647.0,
+          141.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "事前操作",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Subscribetotheservice",
+      "confidence": 0.9977811518169585,
+      "box": [
+        [
+          437.0,
+          176.0
+        ],
+        [
+          650.0,
+          179.0
+        ],
+        [
+          650.0,
+          203.0
+        ],
+        [
+          437.0,
+          201.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "サービスを購読する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Subscribe to the service"
+    },
+    {
+      "source": "SubscribetotheserviceusingDID",
+      "confidence": 0.9781104326248169,
+      "box": [
+        [
+          738.0,
+          239.0
+        ],
+        [
+          1034.0,
+          239.0
+        ],
+        [
+          1034.0,
+          265.0
+        ],
+        [
+          738.0,
+          265.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "DIDを使ってサービスを購読する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SubscribetotheserviceusingDID"
+      ],
+      "transcribed_source": "Subscribe to the service using DID"
+    },
+    {
+      "source": "First Request",
+      "confidence": 0.9900794900380648,
+      "box": [
+        [
+          832.0,
+          299.0
+        ],
+        [
+          941.0,
+          299.0
+        ],
+        [
+          941.0,
+          323.0
+        ],
+        [
+          832.0,
+          323.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "最初のリクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTP Request: DID,Signature",
+      "confidence": 0.9955045205575449,
+      "box": [
+        [
+          759.0,
+          357.0
+        ],
+        [
+          1015.0,
+          359.0
+        ],
+        [
+          1015.0,
+          386.0
+        ],
+        [
+          759.0,
+          384.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "HTTPリクエスト：DID、署名",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP",
+        "DID"
+      ]
+    },
+    {
+      "source": "GetDIDDocument",
+      "confidence": 0.9962645854268756,
+      "box": [
+        [
+          1126.0,
+          421.0
+        ],
+        [
+          1289.0,
+          421.0
+        ],
+        [
+          1289.0,
+          446.0
+        ],
+        [
+          1126.0,
+          446.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "DIDドキュメントを取得",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "GetDIDDocument"
+      ],
+      "transcribed_source": "Get DID Document"
+    },
+    {
+      "source": "Authorization: DID <did> Nonce <abc123> Timestamp",
+      "confidence": 0.9764422518866402,
+      "box": [
+        [
+          43.0,
+          456.0
+        ],
+        [
+          645.0,
+          459.0
+        ],
+        [
+          645.0,
+          488.0
+        ],
+        [
+          43.0,
+          485.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "Authorization: DID <did> Nonce <abc123> Timestamp （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified",
+      "protected_tokens": [
+        "DID",
+        "123"
+      ]
+    },
+    {
+      "source": "<2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature",
+      "confidence": 0.9859899696657213,
+      "box": [
+        [
+          44.0,
+          492.0
+        ],
+        [
+          752.0,
+          494.0
+        ],
+        [
+          752.0,
+          521.0
+        ],
+        [
+          44.0,
+          519.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "<2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified",
+      "protected_tokens": [
+        "2024",
+        "12",
+        "05",
+        "12",
+        "34",
+        "56",
+        "VerificationMethod",
+        "1"
+      ]
+    },
+    {
+      "source": "DID Document",
+      "confidence": 0.9668911546468735,
+      "box": [
+        [
+          1143.0,
+          483.0
+        ],
+        [
+          1271.0,
+          485.0
+        ],
+        [
+          1271.0,
+          508.0
+        ],
+        [
+          1143.0,
+          506.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "DIDドキュメント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "<base64url(signature)>",
+      "confidence": 0.9986914667216215,
+      "box": [
+        [
+          45.0,
+          529.0
+        ],
+        [
+          304.0,
+          529.0
+        ],
+        [
+          304.0,
+          557.0
+        ],
+        [
+          45.0,
+          557.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "<base64url(signature)> （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified",
+      "protected_tokens": [
+        "64"
+      ]
+    },
+    {
+      "source": "Authentication",
+      "confidence": 0.9918594913823264,
+      "box": [
+        [
+          1019.0,
+          541.0
+        ],
+        [
+          1154.0,
+          544.0
+        ],
+        [
+          1154.0,
+          565.0
+        ],
+        [
+          1019.0,
+          563.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "認証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "use the publickey in the",
+      "confidence": 0.9471666539708773,
+      "box": [
+        [
+          1213.0,
+          534.0
+        ],
+        [
+          1485.0,
+          534.0
+        ],
+        [
+          1485.0,
+          558.0
+        ],
+        [
+          1213.0,
+          558.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "DIDドキュメント内の公開鍵を使い、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "use the public key in the"
+    },
+    {
+      "source": "DID document to verify",
+      "confidence": 0.9848207614638589,
+      "box": [
+        [
+          1218.0,
+          555.0
+        ],
+        [
+          1480.0,
+          559.0
+        ],
+        [
+          1480.0,
+          586.0
+        ],
+        [
+          1218.0,
+          583.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "署名を",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "the signature",
+      "confidence": 0.9995912130062397,
+      "box": [
+        [
+          1273.0,
+          580.0
+        ],
+        [
+          1427.0,
+          582.0
+        ],
+        [
+          1427.0,
+          609.0
+        ],
+        [
+          1273.0,
+          607.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "検証する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Use.the private key to generate a signature",
+      "confidence": 0.9643888750741648,
+      "box": [
+        [
+          40.0,
+          608.0
+        ],
+        [
+          532.0,
+          610.0
+        ],
+        [
+          532.0,
+          640.0
+        ],
+        [
+          40.0,
+          638.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "秘密鍵を使って署名を生成する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "Use.the"
+      ],
+      "transcribed_source": "Use the private key to generate a signature"
+    },
+    {
+      "source": "HTTP Response: token",
+      "confidence": 0.9973723888397217,
+      "box": [
+        [
+          787.0,
+          600.0
+        ],
+        [
+          991.0,
+          603.0
+        ],
+        [
+          991.0,
+          630.0
+        ],
+        [
+          787.0,
+          627.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "HTTPレスポンス：トークン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP"
+      ]
+    },
+    {
+      "source": "generate",
+      "confidence": 0.9989163875579834,
+      "box": [
+        [
+          1031.0,
+          602.0
+        ],
+        [
+          1141.0,
+          600.0
+        ],
+        [
+          1141.0,
+          624.0
+        ],
+        [
+          1031.0,
+          626.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "トークンを",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "the token",
+      "confidence": 0.9628282851643033,
+      "box": [
+        [
+          1032.0,
+          621.0
+        ],
+        [
+          1142.0,
+          623.0
+        ],
+        [
+          1142.0,
+          651.0
+        ],
+        [
+          1032.0,
+          648.0
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "生成する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"nonce\":\"abc123\",",
+      "confidence": 0.9187912239747889,
+      "box": [
+        [
+          96.0,
+          653.0
+        ],
+        [
+          265.0,
+          653.0
+        ],
+        [
+          265.0,
+          674.0
+        ],
+        [
+          96.0,
+          674.0
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "\"nonce\":\"abc123\", （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "SubsequentRequests",
+      "confidence": 0.9984705117013719,
+      "box": [
+        [
+          800.0,
+          663.0
+        ],
+        [
+          974.0,
+          663.0
+        ],
+        [
+          974.0,
+          684.0
+        ],
+        [
+          800.0,
+          684.0
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "後続のリクエスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "SubsequentRequests"
+      ],
+      "transcribed_source": "Subsequent Requests"
+    },
+    {
+      "source": "\"service\":\"example.com\",",
+      "confidence": 0.9830969000856081,
+      "box": [
+        [
+          93.0,
+          696.0
+        ],
+        [
+          335.0,
+          698.0
+        ],
+        [
+          335.0,
+          721.0
+        ],
+        [
+          93.0,
+          719.0
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "\"service\":\"example.com\", （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "\"did\": \"did:wba:example.com:user:alice\"",
+      "confidence": 0.9867286238914881,
+      "box": [
+        [
+          93.0,
+          718.0
+        ],
+        [
+          466.0,
+          719.0
+        ],
+        [
+          466.0,
+          743.0
+        ],
+        [
+          93.0,
+          742.0
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "\"did\": \"did:wba:example.com:user:alice\" （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    },
+    {
+      "source": "HTTP Request:token",
+      "confidence": 0.9783175223403506,
+      "box": [
+        [
+          794.0,
+          722.0
+        ],
+        [
+          979.0,
+          722.0
+        ],
+        [
+          979.0,
+          745.0
+        ],
+        [
+          794.0,
+          745.0
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "HTTPリクエスト：トークン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP"
+      ],
+      "transcribed_source": "HTTP Request: token"
+    },
+    {
+      "source": "use the token to",
+      "confidence": 0.963889978826046,
+      "box": [
+        [
+          429.0,
+          778.0
+        ],
+        [
+          615.0,
+          778.0
+        ],
+        [
+          615.0,
+          805.0
+        ],
+        [
+          429.0,
+          805.0
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "トークンを使って",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTP Response",
+      "confidence": 0.9963562947053176,
+      "box": [
+        [
+          817.0,
+          782.0
+        ],
+        [
+          955.0,
+          785.0
+        ],
+        [
+          955.0,
+          811.0
+        ],
+        [
+          817.0,
+          809.0
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "HTTPレスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP"
+      ]
+    },
+    {
+      "source": "initiate subsequent ",
+      "confidence": 0.9867214530706405,
+      "box": [
+        [
+          412.0,
+          800.0
+        ],
+        [
+          633.0,
+          802.0
+        ],
+        [
+          633.0,
+          829.0
+        ],
+        [
+          412.0,
+          827.0
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "後続のリクエストを",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "initiate subsequent"
+    },
+    {
+      "source": "requests",
+      "confidence": 0.9996678829193115,
+      "box": [
+        [
+          471.0,
+          827.0
+        ],
+        [
+          572.0,
+          827.0
+        ],
+        [
+          572.0,
+          851.0
+        ],
+        [
+          471.0,
+          851.0
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "開始する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "User",
+      "confidence": 0.9927366673946381,
+      "box": [
+        [
+          373.0,
+          870.0
+        ],
+        [
+          416.0,
+          873.0
+        ],
+        [
+          415.0,
+          895.0
+        ],
+        [
+          372.0,
+          892.0
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AgentA Client",
+      "confidence": 0.9840220671433669,
+      "box": [
+        [
+          633.0,
+          871.0
+        ],
+        [
+          751.0,
+          869.0
+        ],
+        [
+          751.0,
+          893.0
+        ],
+        [
+          633.0,
+          896.0
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "エージェントAのクライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentA"
+      ],
+      "transcribed_source": "Agent A Client"
+    },
+    {
+      "source": "Github",
+      "confidence": 0.9997239311536154,
+      "box": [
+        [
+          1051.0,
+          870.0
+        ],
+        [
+          1110.0,
+          870.0
+        ],
+        [
+          1110.0,
+          894.0
+        ],
+        [
+          1051.0,
+          894.0
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "Github",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent A DID Sever",
+      "confidence": 0.9262004038866829,
+      "box": [
+        [
+          1259.0,
+          871.0
+        ],
+        [
+          1407.0,
+          871.0
+        ],
+        [
+          1407.0,
+          894.0
+        ],
+        [
+          1259.0,
+          894.0
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "エージェントAのDIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "\"timestamp\": \"2024-12-05T12:34:56Z\",",
+      "location": "JSON timestamp line omitted by OCR",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L036",
+      "japanese": "\"timestamp\": \"2024-12-05T12:34:56Z\", （技術コード。原画像の画素を参照。OCR転記の完全性は未確認）",
+      "translation_method": "original-technical-code-pixels-retained-transcription-unverified"
+    }
+  ],
+  "review": "visible-human-prose-reviewed-technical-code-original-pixels-authoritative",
+  "translation_status": "visible-human-prose-translated-technical-code-transcription-unverified",
+  "ocr_seconds": [
+    1.0143803000100888,
+    0.04507732391357422,
+    4.349877834320068
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "AgentB": "Agent B",
+      "Subscribetotheservice": "Subscribe to the service",
+      "SubscribetotheserviceusingDID": "Subscribe to the service using DID",
+      "GetDIDDocument": "Get DID Document",
+      "use the publickey in the": "use the public key in the",
+      "Use.the private key to generate a signature": "Use the private key to generate a signature",
+      "SubsequentRequests": "Subsequent Requests",
+      "HTTP Request:token": "HTTP Request: token",
+      "initiate subsequent ": "initiate subsequent",
+      "AgentA Client": "Agent A Client"
+    },
+    "additional_labels": [
+      {
+        "source": "\"timestamp\": \"2024-12-05T12:34:56Z\",",
+        "location": "JSON timestamp line omitted by OCR"
+      }
+    ],
+    "source_note": "下端の相手名GithubやSever表記は原図を保持。コードの数値・キーは書き換えず、原画像を正として参照する。",
+    "code_transcription_unverified": true,
+    "technical_code_labels": [
+      "Authorization: DID <did> Nonce <abc123> Timestamp",
+      "<2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature",
+      "<base64url(signature)>",
+      "\"nonce\":\"abc123\",",
+      "\"service\":\"example.com\",",
+      "\"did\": \"did:wba:example.com:user:alice\"",
+      "\"timestamp\": \"2024-12-05T12:34:56Z\","
+    ],
+    "source_sha256": "b3b061d710dacc38b2900d132b60ed324112007fa59dbed1a296abb582b3863d"
+  }
+}

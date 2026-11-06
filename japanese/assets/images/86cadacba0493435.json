@@ -1,0 +1,440 @@
+{
+  "source": "images/end-to-end-encryption-process.png",
+  "sha256": "86cadacba04934351270e3ea442d827b4847c892dfcbcf9de164153f27c6281d",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "APrivatekey",
+      "confidence": 0.9957952120087363,
+      "box": [
+        [
+          315.0,
+          48.0
+        ],
+        [
+          430.0,
+          52.0
+        ],
+        [
+          429.0,
+          75.0
+        ],
+        [
+          314.0,
+          71.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "Aの秘密鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A Private key"
+    },
+    {
+      "source": "BPrivatekey",
+      "confidence": 0.9979646476832303,
+      "box": [
+        [
+          1268.0,
+          48.0
+        ],
+        [
+          1384.0,
+          52.0
+        ],
+        [
+          1383.0,
+          75.0
+        ],
+        [
+          1267.0,
+          71.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "Bの秘密鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "B Private key"
+    },
+    {
+      "source": "TheMessageservicemightnotexist",
+      "confidence": 0.9975992341836294,
+      "box": [
+        [
+          717.0,
+          64.0
+        ],
+        [
+          1025.0,
+          65.0
+        ],
+        [
+          1025.0,
+          87.0
+        ],
+        [
+          717.0,
+          86.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "メッセージサービスは存在しない場合もある",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TheMessageservicemightnotexist"
+      ],
+      "transcribed_source": "The Message service might not exist"
+    },
+    {
+      "source": "BPublickey",
+      "confidence": 0.9697476148605346,
+      "box": [
+        [
+          315.0,
+          75.0
+        ],
+        [
+          425.0,
+          79.0
+        ],
+        [
+          424.0,
+          102.0
+        ],
+        [
+          314.0,
+          98.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "Bの公開鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "B Public key"
+    },
+    {
+      "source": "APublickey",
+      "confidence": 0.9964585483074189,
+      "box": [
+        [
+          1268.0,
+          75.0
+        ],
+        [
+          1376.0,
+          79.0
+        ],
+        [
+          1375.0,
+          102.0
+        ],
+        [
+          1267.0,
+          98.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "Aの公開鍵",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A Public key"
+    },
+    {
+      "source": "ASever",
+      "confidence": 0.9962928295135498,
+      "box": [
+        [
+          323.0,
+          175.0
+        ],
+        [
+          393.0,
+          175.0
+        ],
+        [
+          393.0,
+          198.0
+        ],
+        [
+          323.0,
+          198.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "Aのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A Sever"
+    },
+    {
+      "source": "Message",
+      "confidence": 0.9973103404045105,
+      "box": [
+        [
+          675.0,
+          168.0
+        ],
+        [
+          754.0,
+          171.0
+        ],
+        [
+          753.0,
+          194.0
+        ],
+        [
+          674.0,
+          191.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "メッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Message",
+      "confidence": 0.9966744439942496,
+      "box": [
+        [
+          910.0,
+          168.0
+        ],
+        [
+          991.0,
+          172.0
+        ],
+        [
+          989.0,
+          195.0
+        ],
+        [
+          909.0,
+          190.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "メッセージ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "BSever",
+      "confidence": 0.996948113044103,
+      "box": [
+        [
+          1269.0,
+          174.0
+        ],
+        [
+          1339.0,
+          176.0
+        ],
+        [
+          1338.0,
+          198.0
+        ],
+        [
+          1268.0,
+          195.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "Bのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "B Sever"
+    },
+    {
+      "source": "Service",
+      "confidence": 0.9927833761487689,
+      "box": [
+        [
+          681.0,
+          194.0
+        ],
+        [
+          751.0,
+          196.0
+        ],
+        [
+          750.0,
+          219.0
+        ],
+        [
+          680.0,
+          217.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service",
+      "confidence": 0.9911284361566816,
+      "box": [
+        [
+          918.0,
+          194.0
+        ],
+        [
+          988.0,
+          196.0
+        ],
+        [
+          988.0,
+          219.0
+        ],
+        [
+          918.0,
+          217.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "1.UseECDHEtonegotiatea temporary encryptionkey.",
+      "confidence": 0.9759215737910981,
+      "box": [
+        [
+          659.0,
+          323.0
+        ],
+        [
+          1129.0,
+          325.0
+        ],
+        [
+          1129.0,
+          348.0
+        ],
+        [
+          659.0,
+          346.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "1. ECDHEを使用して一時的な暗号鍵を合意する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1.UseECDHEtonegotiatea"
+      ],
+      "transcribed_source": "1. Use ECDHE to negotiate a temporary encryption key."
+    },
+    {
+      "source": "2.Usethetemporarykeytoencryptcommunication.",
+      "confidence": 0.9867582487505536,
+      "box": [
+        [
+          658.0,
+          350.0
+        ],
+        [
+          1110.0,
+          351.0
+        ],
+        [
+          1110.0,
+          373.0
+        ],
+        [
+          658.0,
+          372.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "2. 一時的な鍵を使用して通信を暗号化する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2.Usethetemporarykeytoencryptcommunication"
+      ],
+      "transcribed_source": "2. Use the temporary key to encrypt communication."
+    },
+    {
+      "source": "AUser",
+      "confidence": 0.9934424996376038,
+      "box": [
+        [
+          87.0,
+          411.0
+        ],
+        [
+          147.0,
+          414.0
+        ],
+        [
+          146.0,
+          437.0
+        ],
+        [
+          86.0,
+          433.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "ユーザー A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "A User"
+    },
+    {
+      "source": "BUser",
+      "confidence": 0.9958540678024292,
+      "box": [
+        [
+          1501.0,
+          412.0
+        ],
+        [
+          1562.0,
+          415.0
+        ],
+        [
+          1561.0,
+          437.0
+        ],
+        [
+          1500.0,
+          433.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "ユーザー B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "B User"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.0886097999755293,
+    0.019401073455810547,
+    1.032458782196045
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "APrivatekey": "A Private key",
+      "BPrivatekey": "B Private key",
+      "TheMessageservicemightnotexist": "The Message service might not exist",
+      "BPublickey": "B Public key",
+      "APublickey": "A Public key",
+      "ASever": "A Sever",
+      "BSever": "B Sever",
+      "1.UseECDHEtonegotiatea temporary encryptionkey.": "1. Use ECDHE to negotiate a temporary encryption key.",
+      "2.Usethetemporarykeytoencryptcommunication.": "2. Use the temporary key to encrypt communication.",
+      "AUser": "A User",
+      "BUser": "B User"
+    },
+    "source_sha256": "86cadacba04934351270e3ea442d827b4847c892dfcbcf9de164153f27c6281d"
+  }
+}

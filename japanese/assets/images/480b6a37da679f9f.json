@@ -1,0 +1,318 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/10-mint.png",
+  "sha256": "480b6a37da679f9f27204cca950e8cc41516fe9ebaf1a2dbbbcd25d23741b561",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Q",
+      "confidence": 0.822334349155426,
+      "box": [
+        [
+          635.0,
+          108.0
+        ],
+        [
+          758.0,
+          102.0
+        ],
+        [
+          765.0,
+          226.0
+        ],
+        [
+          641.0,
+          233.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "①拿公钥去算",
+      "confidence": 0.9896956185499827,
+      "box": [
+        [
+          436.0,
+          131.0
+        ],
+        [
+          571.0,
+          131.0
+        ],
+        [
+          571.0,
+          154.0
+        ],
+        [
+          436.0,
+          154.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "① 公開鍵から計算する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "②算出来的接在后面",
+      "confidence": 0.9840228093994988,
+      "box": [
+        [
+          815.0,
+          131.0
+        ],
+        [
+          1013.0,
+          131.0
+        ],
+        [
+          1013.0,
+          154.0
+        ],
+        [
+          815.0,
+          154.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "② 計算結果を末尾に付ける",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "先生成一对密钥",
+      "confidence": 0.9951740333012172,
+      "box": [
+        [
+          141.0,
+          254.0
+        ],
+        [
+          341.0,
+          254.0
+        ],
+        [
+          341.0,
+          284.0
+        ],
+        [
+          141.0,
+          284.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "まず鍵ペアを生成する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "对公钥算指纹",
+      "confidence": 0.9972928166389465,
+      "box": [
+        [
+          617.0,
+          254.0
+        ],
+        [
+          791.0,
+          254.0
+        ],
+        [
+          791.0,
+          284.0
+        ],
+        [
+          617.0,
+          284.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "公開鍵のフィンガープリントを計算する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "指纹接到身份末尾",
+      "confidence": 0.9933075979351997,
+      "box": [
+        [
+          1046.0,
+          253.0
+        ],
+        [
+          1275.0,
+          254.0
+        ],
+        [
+          1275.0,
+          284.0
+        ],
+        [
+          1046.0,
+          282.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "フィンガープリントをIDの末尾に付ける",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "私钥留在本机",
+      "confidence": 0.9991871217886606,
+      "box": [
+        [
+          168.0,
+          295.0
+        ],
+        [
+          314.0,
+          295.0
+        ],
+        [
+          314.0,
+          320.0
+        ],
+        [
+          168.0,
+          320.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "秘密鍵はこの端末内に保持する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "公钥变一点，指纹全变",
+      "confidence": 0.9990211844444274,
+      "box": [
+        [
+          585.0,
+          295.0
+        ],
+        [
+          823.0,
+          295.0
+        ],
+        [
+          823.0,
+          320.0
+        ],
+        [
+          585.0,
+          320.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "公開鍵が少しでも変わると、フィンガープリント全体が変わる",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "从此这串身份定死了",
+      "confidence": 0.9980081054899428,
+      "box": [
+        [
+          1055.0,
+          296.0
+        ],
+        [
+          1265.0,
+          296.0
+        ],
+        [
+          1265.0,
+          319.0
+        ],
+        [
+          1055.0,
+          319.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "これでこのID文字列が固定される",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "did:wba:example.com:user:alice:el_CfnI4TulguySDoAX..",
+      "confidence": 0.9911584773888955,
+      "box": [
+        [
+          392.0,
+          350.0
+        ],
+        [
+          1015.0,
+          351.0
+        ],
+        [
+          1014.0,
+          378.0
+        ],
+        [
+          392.0,
+          377.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "did:wba:example.com:user:alice:e1_CfnI4TulguySDoAX…",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "did:wba:example.com:user:alice:el_CfnI4TulguySDoAX.."
+      ],
+      "transcribed_source": "did:wba:example.com:user:alice:e1_CfnI4TulguySDoAX…"
+    },
+    {
+      "source": "末尾e1_后面那一串，就是上一步算出来的公钥指纹",
+      "confidence": 0.9843256150682768,
+      "box": [
+        [
+          450.0,
+          393.0
+        ],
+        [
+          959.0,
+          393.0
+        ],
+        [
+          959.0,
+          416.0
+        ],
+        [
+          450.0,
+          416.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "末尾のe1_の後ろの文字列は、直前の手順で計算した公開鍵のフィンガープリント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6930621999781579,
+    0.016167163848876953,
+    1.799250841140747
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "did:wba:example.com:user:alice:el_CfnI4TulguySDoAX..": "did:wba:example.com:user:alice:e1_CfnI4TulguySDoAX…"
+    },
+    "false_positive_labels": [
+      "Q"
+    ],
+    "source_note": "e1_とCfnI4…の表記を元図と本文の公開鍵例で照合した。図は末尾を省略しているため完全な鍵値として利用できない。",
+    "source_sha256": "480b6a37da679f9f27204cca950e8cc41516fe9ebaf1a2dbbbcd25d23741b561"
+  }
+}

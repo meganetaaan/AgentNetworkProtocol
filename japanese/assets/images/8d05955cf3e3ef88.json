@@ -1,0 +1,255 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/02-apikeys-6.png",
+  "sha256": "8d05955cf3e3ef8839b441cad2863a8b54d7fe6f8dc37bac16e37b9c752e0e4f",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "服务A",
+      "confidence": 0.9989835619926453,
+      "box": [
+        [
+          741.0,
+          72.0
+        ],
+        [
+          832.0,
+          72.0
+        ],
+        [
+          832.0,
+          109.0
+        ],
+        [
+          741.0,
+          109.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "サービス A",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "每一家都要单独注册一个账号",
+      "confidence": 0.9994766895587628,
+      "box": [
+        [
+          901.0,
+          80.0
+        ],
+        [
+          1211.0,
+          80.0
+        ],
+        [
+          1211.0,
+          108.0
+        ],
+        [
+          901.0,
+          108.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "それぞれに個別のアカウント登録が必要",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务B",
+      "confidence": 0.9998593926429749,
+      "box": [
+        [
+          741.0,
+          173.0
+        ],
+        [
+          833.0,
+          173.0
+        ],
+        [
+          833.0,
+          210.0
+        ],
+        [
+          741.0,
+          210.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "サービス B",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "你的助理程序",
+      "confidence": 0.998581717411677,
+      "box": [
+        [
+          157.0,
+          275.0
+        ],
+        [
+          333.0,
+          275.0
+        ],
+        [
+          333.0,
+          310.0
+        ],
+        [
+          157.0,
+          310.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "あなたのアシスタントプログラム",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务C",
+      "confidence": 0.9992256561915079,
+      "box": [
+        [
+          741.0,
+          272.0
+        ],
+        [
+          834.0,
+          272.0
+        ],
+        [
+          834.0,
+          311.0
+        ],
+        [
+          741.0,
+          311.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "サービス C",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务D",
+      "confidence": 0.999880333741506,
+      "box": [
+        [
+          741.0,
+          373.0
+        ],
+        [
+          833.0,
+          373.0
+        ],
+        [
+          833.0,
+          410.0
+        ],
+        [
+          741.0,
+          410.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "サービス D",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "要保管的钥匙串，每家一把",
+      "confidence": 0.9990666111310323,
+      "box": [
+        [
+          100.0,
+          427.0
+        ],
+        [
+          388.0,
+          427.0
+        ],
+        [
+          388.0,
+          452.0
+        ],
+        [
+          100.0,
+          452.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "管理する鍵の束。サービスごとに1本",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务E",
+      "confidence": 0.9995266000429789,
+      "box": [
+        [
+          741.0,
+          473.0
+        ],
+        [
+          831.0,
+          473.0
+        ],
+        [
+          831.0,
+          510.0
+        ],
+        [
+          741.0,
+          510.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "サービス E",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "服务F",
+      "confidence": 0.9993177254994711,
+      "box": [
+        [
+          742.0,
+          574.0
+        ],
+        [
+          829.0,
+          574.0
+        ],
+        [
+          829.0,
+          608.0
+        ],
+        [
+          742.0,
+          608.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "サービス F",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7770347999758087,
+    0.012017488479614258,
+    0.891960859298706
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "8d05955cf3e3ef8839b441cad2863a8b54d7fe6f8dc37bac16e37b9c752e0e4f"
+  }
+}

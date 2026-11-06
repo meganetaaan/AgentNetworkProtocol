@@ -1,0 +1,2735 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    1200,
+    1399
+  ],
+  "units": [
+    {
+      "original": "An intelligent hospitality agent for room booking, concierge services, guest assistance, and messaging.",
+      "translation": "客室予約、コンシェルジュサービス、宿泊者の支援、メッセージングを提供する知的な接客エージェント。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:352-412//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Hotel facilities, amenities, location, and policies.",
+      "translation": "ホテルの施設、アメニティ、所在地、ポリシー。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:352-412//Infomations/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Natural language interface for conversational hotel services.",
+      "translation": "ホテルサービスとの対話のための自然言語インターフェース。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:352-412//interfaces/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Structured interface for booking and reservation management.",
+      "translation": "予約と予約管理のための構造化インターフェース。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:352-412//interfaces/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Optional draft negotiation interface.",
+      "translation": "任意の交渉インターフェースの草案。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:352-412//interfaces/2/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Hotel Assistant",
+      "translation": "Hotel Assistant",
+      "status": "technical-retained",
+      "reason": "エージェント名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:432-455//items/0/name",
+          "language": "json"
+        },
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:432-455//items/0/name",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "Calculator Agent",
+      "translation": "Calculator Agent",
+      "status": "technical-retained",
+      "reason": "エージェント名の固有表記を保持。",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:571-588/line:15",
+          "language": "python"
+        },
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:571-588/line:15",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "A simple calculator agent",
+      "translation": "簡単な計算機エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/anp-getting-started-guide.md",
+          "locator": "fence:571-588/line:8",
+          "language": "python"
+        },
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:571-588/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "一个旅行规划智能体",
+      "translation": "旅行計画エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:295-314//profile/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "面向房间预订、礼宾服务、住客协助和消息通信的智能酒店助手。",
+      "translation": "客室予約、コンシェルジュサービス、宿泊者の支援、メッセージ通信のための知的なホテルアシスタント。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:352-412//description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "提供高级设施和个性化服务的豪华酒店客房。",
+      "translation": "高級な設備と個別対応サービスを提供する豪華なホテル客室。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:352-412//Infomations/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "酒店设施、便利设施、位置和政策信息。",
+      "translation": "ホテルの施設、アメニティ、所在地、ポリシーの情報。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:352-412//Infomations/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "用于酒店服务对话的自然语言接口。",
+      "translation": "ホテルサービスとの対話に使う自然言語インターフェース。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:352-412//interfaces/0/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "用于预订和预约管理的结构化接口。",
+      "translation": "予約と予約管理に使う構造化インターフェース。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:352-412//interfaces/1/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "可选的草案协商接口。",
+      "translation": "任意の交渉インターフェースの草案。",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/ANP入门指南.md",
+          "locator": "fence:352-412//interfaces/2/description",
+          "language": "json"
+        }
+      ]
+    },
+    {
+      "original": "以下代码展示如何使用 ANPTool 访问天气 WebAgent",
+      "translation": "次のコードは、ANPToolを使って天気WebAgentへアクセスする方法を示します",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:1",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "步骤 1：获取智能体描述文件",
+      "translation": "手順1：エージェント記述ファイルを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:4",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "步骤 2：解析接口信息",
+      "translation": "手順2：インターフェース情報を解析",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "步骤 3：获取 API 定义",
+      "translation": "手順3：API定義を取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:15",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "步骤 4-6：构建请求并发送",
+      "translation": "手順4-6：要求を構築して送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:18",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "注意：实际 URL 和参数需根据 API 定义确定",
+      "translation": "注：実際のURLとパラメーターはAPI定義に基づいて決定する必要があります",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:19",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "步骤 7：处理响应",
+      "translation": "手順7：応答を処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+          "locator": "fence:161-190/line:27",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "The following code demonstrates how to use ANPTool to access the Weather WebAgent",
+      "translation": "次のコードは、ANPToolを使って天気WebAgentへアクセスする方法を示します",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:1",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Step 1: Get the agent description file",
+      "translation": "手順1：エージェント記述ファイルを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:4",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Step 2: Parse interface information",
+      "translation": "手順2：インターフェース情報を解析",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:8",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Step 3: Get API definition",
+      "translation": "手順3：API定義を取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:15",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Steps 4-6: Build and send request",
+      "translation": "手順4-6：要求を構築して送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:18",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Note: Actual URL and parameters should be determined based on the API definition",
+      "translation": "注：実際のURLとパラメーターはAPI定義に基づいて決定します",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:19",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Step 7: Process response",
+      "translation": "手順7：応答を処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "docs/how-anp-based-webagent-works.md",
+          "locator": "fence:161-190/line:27",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "meta<br/>DID fields / operation fields<br/>device selectors only for a declaring E2EE Overlay",
+      "translation": "meta<br/>DIDフィールド／操作フィールド<br/>デバイスselectorはそれを宣言するE2EE Overlayのみが使用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/01-core-binding.md",
+          "locator": "fence:233-250/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Host accepts member DID update",
+      "translation": "HostがメンバーDIDの更新を受け入れる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:177-187/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:177-187/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group state-changing operations<br/>create / join / add / group.member_did_update / remove / leave / update_*",
+      "translation": "グループ状態の変更操作<br/>create / join / add / group.member_did_update / remove / leave / update_*",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:254-270/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Active Members",
+      "translation": "アクティブなメンバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1017-1027/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1018-1028/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve stored old DID and verify transition",
+      "translation": "保存済みの旧DIDを解決し、移行を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1017-1027/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1018-1028/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "current DID + assurance",
+      "translation": "現在のDID＋assurance",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1017-1027/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1018-1028/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Apply business policy + CAS member record",
+      "translation": "業務ポリシーを実施＋メンバー記録をCAS更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/04-group-messaging-base-semantics.md",
+          "locator": "fence:1017-1027/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/p4-group-messaging-base-semantics.md",
+          "locator": "fence:1018-1028/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "deviceManifest entry",
+      "translation": "deviceManifestの項目",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Device Assertion Key<br/>signing_key_id / assertionMethod",
+      "translation": "デバイスのアサーション鍵<br/>signing_key_id / assertionMethod",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Device Static Key Agreement Key<br/>e2ee_key_id / keyAgreement / X25519",
+      "translation": "デバイスの静的な鍵合意鍵<br/>e2ee_key_id / keyAgreement / X25519",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Per-device One-Time Prekey pool",
+      "translation": "デバイスごとの使い捨て事前鍵プール",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:214-232/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Initiator device A/a",
+      "translation": "開始デバイスA/a",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Recipient device B/b",
+      "translation": "受信デバイスB/b",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/05-direct-end-to-end-encryption.md",
+          "locator": "fence:745-760/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "P4 business-state changes<br/>group.create / member active / member left or removed / member DID updated",
+      "translation": "P4の業務状態の変化<br/>group.create / メンバーがactive / メンバーがleftまたはremoved / メンバーのDID更新",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "eligible device not yet in MLS",
+      "translation": "適格なデバイスがMLSに参加していない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "device or DID must leave MLS",
+      "translation": "デバイスまたはDIDがMLSから離脱しなければならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "P4 member rebound and old leaves remain",
+      "translation": "P4メンバーが再バインド済みで、旧leavesが残っている",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "execute after DID update Add is accepted",
+      "translation": "DID更新のAddが受け入れられた後に実行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:152-180/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "preserved unchanged",
+      "translation": "変更せず保持",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1669-1677/line:3:column:28",
+          "language": "text"
+        }
+      ]
+    },
+    {
+      "original": "Creator Device (owner)",
+      "translation": "作成者のデバイス（owner）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1749-1758/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "New Member Device",
+      "translation": "新メンバーのデバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1762-1775/line:2",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1779-1793/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Owner Device",
+      "translation": "Ownerのデバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1762-1775/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1779-1793/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Current Device Leaves",
+      "translation": "現在のデバイスのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1762-1775/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1779-1793/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1818-1829/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "independent group.e2ee.notice(commit-delivery)",
+      "translation": "独立したgroup.e2ee.notice(commit-delivery)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1762-1775/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1779-1793/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Remaining Device Leaves",
+      "translation": "残るデバイスのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Removed Device Leaf",
+      "translation": "削除されたデバイスのLeaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "each affected device leaf",
+      "translation": "影響を受ける各デバイスのleaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "final group.e2ee.notice(commit-delivery, subject_status=removed)",
+      "translation": "最終のgroup.e2ee.notice(commit-delivery, subject_status=removed)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "terminalize local binding only; no new epoch secret",
+      "translation": "ローカルのバインディングだけを終了し、新しいepoch secretは取得しない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1797-1814/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Sending Device Leaf",
+      "translation": "送信デバイスのLeaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1818-1829/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.send(sender_did, sender_device_id, one PrivateMessage)",
+      "translation": "group.e2ee.send(sender_did, sender_device_id, 一つのPrivateMessage)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1818-1829/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "independent P6 group.incoming(recipient_device_id, same PrivateMessage)",
+      "translation": "独立したP6 group.incoming(recipient_device_id, 同じPrivateMessage)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1818-1829/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Selected New-DID Devices",
+      "translation": "選択された新DIDのデバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Owner Device / MLS Controller",
+      "translation": "Ownerのデバイス／MLSコントローラー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Retained Device Leaves",
+      "translation": "保持するデバイスのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Removed Old-DID Leaves",
+      "translation": "削除される旧DIDのLeaves",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "P4 Host accepts member DID update",
+      "translation": "P4 HostがメンバーDIDの更新を受け入れる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "each selected new-DID device",
+      "translation": "選択された新DIDの各デバイス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "welcome-delivery to exact recipient device",
+      "translation": "正確に指定した受信デバイスへのwelcome-delivery",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "independent commit-delivery envelopes",
+      "translation": "独立したcommit-deliveryエンベロープ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "No application messages in any intermediate epoch",
+      "translation": "すべての中間epochでアプリケーションメッセージを禁止",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "each old-DID device leaf",
+      "translation": "旧DIDの各デバイスleaf",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "final commit-delivery to the removed old-DID leaf",
+      "translation": "削除される旧DIDのleafへの最終commit-delivery",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resume after the final Remove succeeds",
+      "translation": "最後のRemoveの成功後に再開",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/06-group-end-to-end-encryption.md",
+          "locator": "fence:1833-1856/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Send attachment manifest<br/>direct.send / group.send / group.e2ee.send",
+      "translation": "添付ファイルのマニフェストを送信<br/>direct.send / group.send / group.e2ee.send",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:97-113/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "group.e2ee.send (group-e2ee, inner manifest carries object_key)",
+      "translation": "group.e2ee.send（group-e2ee、内側のmanifestにobject_keyを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:313-336/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "direct.send / group.send / group.e2ee.send attachment manifest",
+      "translation": "direct.send / group.send / group.e2ee.sendの添付ファイルのマニフェスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "message/07-attachments-and-object-transfer.md",
+          "locator": "fence:738-757/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 1: OAuth Initiation",
+      "translation": "フェーズ1：OAuthの開始",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /authorize (PKCE Start)<br/>client_id=PUBLIC_AGENT<br/>response_type=code<br/>code_challenge=S256(...)",
+      "translation": "GET /authorize（PKCE開始）<br/>client_id=PUBLIC_AGENT<br/>response_type=code<br/>code_challenge=S256(...)",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "302 Redirect to IdP<br/>(OIDC Federation)",
+      "translation": "IdPへ302リダイレクト<br/>（OIDC Federation）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 2: DID Authentication (Bridge)",
+      "translation": "フェーズ2：DID認証（ブリッジ）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent 自动跟随跳转到 IdP",
+      "translation": "エージェントがIdPへのリダイレクトを自動でたどる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /auth (from Redirect)",
+      "translation": "GET /auth（リダイレクトから）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Challenge: Request VP",
+      "translation": "チャレンジ：VPを要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "用 DID 私钥签名 VP",
+      "translation": "DIDの秘密鍵でVPに署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /verify-vp (Verifiable Presentation)",
+      "translation": "POST /verify-vp（Verifiable Presentation）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:27",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 VP 签名 & 时效",
+      "translation": "VPの署名と有効期間を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:29",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "认证成功，发放 IdP_Code",
+      "translation": "認証に成功し、IdP_Codeを発行",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:31",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "302 Redirect back to AS<br/>Location: as.com/callback?code=IdP_Code",
+      "translation": "ASへ302で戻る<br/>Location: as.com/callback?code=IdP_Code",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 3: AS Validation (Back-channel)",
+      "translation": "フェーズ3：ASでの検証（バックチャネル）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:37",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent 将 IdP_Code 搬运给 AS",
+      "translation": "エージェントがIdP_CodeをASへ運ぶ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:38",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "AS 后端直接找 IdP 验证",
+      "translation": "ASのバックエンドがIdPに直接問い合わせて検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:41",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token (sub=did:example:123)",
+      "translation": "ID Token (sub=did:example:123)",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:43",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 ID Token 签名<br/>确认用户身份为 DID",
+      "translation": "ID Tokenの署名を検証<br/>利用者のアイデンティティがDIDであることを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:45",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "生成 AS_Code<br/>关联 PKCE & DID 用户",
+      "translation": "AS_Codeを生成<br/>PKCEとDID利用者を関連付ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:47",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "302 Redirect to App<br/>Location: app://callback?code=AS_Code",
+      "translation": "アプリへ302リダイレクト<br/>Location: app://callback?code=AS_Code",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:48",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 4: Token Exchange with DPoP",
+      "translation": "フェーズ4：DPoPによるトークン交換",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:53",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "构造 DPoP Proof JWT<br/>必须用 DID 私钥签名",
+      "translation": "DPoP Proof JWTを構築<br/>DIDの秘密鍵で署名しなければならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:54",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token (Exchange AS_Code)<br/>code_verifier=...<br/>Header: DPoP <Proof JWT>",
+      "translation": "POST /token（AS_Codeを交換）<br/>code_verifier=...<br/>Header: DPoP <Proof JWT>",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:56",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. 验证 PKCE<br/>2. 验证 DPoP 签名<br/>3. 提取 DPoP 公钥",
+      "translation": "1. PKCEを検証<br/>2. DPoPの署名を検証<br/>3. DPoPの公開鍵を抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:58",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "关键步骤：绑定<br/>Access Token 内写入 cnf: {jwk: DID_Key}",
+      "translation": "重要な手順：バインディング<br/>Access Tokenにcnf: {jwk: DID_Key}を書き込む",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:60",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token (DPoP Bound)",
+      "translation": "アクセストークン（DPoPにバインド）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:62",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Phase 5: Resource Access",
+      "translation": "フェーズ5：リソースへのアクセス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:67",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "再次用 DID 私钥签 DPoP (针对 RS URL)",
+      "translation": "DIDの秘密鍵で再びDPoPに署名（RS URL向け）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:68",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /api/data<br/>Auth: Bearer <Access Token><br/>Header: DPoP <Proof JWT>",
+      "translation": "GET /api/data<br/>Auth: Bearer <Access Token><br/>Header: DPoP <Proof JWT>",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:70",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. 验 Token 合法性<br/>2. 验 DPoP 签名<br/>3. 确保 Token.cnf 匹配 DPoP Key",
+      "translation": "1. Tokenの有効性を検証<br/>2. DPoPの署名を検証<br/>3. Token.cnfとDPoP Keyの一致を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:72",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "200 OK Data",
+      "translation": "200 OK：データ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+          "locator": "fence:105-181/line:74",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "OAuth Client",
+      "translation": "OAuthクライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Authentication Service",
+      "translation": "DID認証サービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "OAuth Authorization Server",
+      "translation": "OAuth認可サーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resource Server",
+      "translation": "リソースサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:8",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Authorization Request (client_id, redirect_uri, etc.)",
+      "translation": "認可要求（client_id、redirect_uriなど）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Redirect to DIDAuth (Authn required)",
+      "translation": "DIDAuthへリダイレクト（認証が必要）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Open DID-auth page",
+      "translation": "DID認証ページを開く",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Request DID Signature + VC + Personhood VC",
+      "translation": "DID署名＋VC＋Personhood VCを要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return Verifiable Presentation (VP)",
+      "translation": "Verifiable Presentation（VP）を返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify VP",
+      "translation": "VPを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token (with VC claims/identity info)",
+      "translation": "ID Token（VCクレーム／アイデンティティ情報を含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Submit ID Token + client_id",
+      "translation": "ID Token＋client_idを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify ID Token and VC claims/identity info",
+      "translation": "ID TokenとVCクレーム／アイデンティティ情報を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Construct RAR (authorization_details)",
+      "translation": "RAR（authorization_details）を構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Bind DPoP public key (cnf.jwk)",
+      "translation": "DPoP公開鍵をバインド（cnf.jwk）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:25",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token (DPoP-bound, RAR included)",
+      "translation": "アクセストークン（DPoPにバインド、RARを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DPoP Proof + Access Token",
+      "translation": "DPoP Proof＋Access Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:29",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:27",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:27",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Validate Token + Validate DPoP",
+      "translation": "Tokenを検証＋DPoPを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:30",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Enforce RAR / UMA Policy",
+      "translation": "RAR／UMAポリシーを適用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:31",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Protected Resource",
+      "translation": "保護対象リソース",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+          "locator": "fence:104-137/line:32",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:32",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:29",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:32",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:29",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "主体是谁",
+      "translation": "主体は誰か",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:36-57/line:3:column:9",
+          "language": ""
+        }
+      ]
+    },
+    {
+      "original": "主体能做什么",
+      "translation": "主体が何をできるか",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:36-57/line:10:column:9",
+          "language": ""
+        }
+      ]
+    },
+    {
+      "original": "Resource Server<br/>(标准OAuth RS)",
+      "translation": "Resource Server<br/>（標準OAuth RS）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "OAuth AS<br/>(标准OAuth AS)",
+      "translation": "OAuth AS<br/>（標準OAuth AS）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID-auth<br/>(OIDC Provider)",
+      "translation": "DID-auth<br/>（OIDC Provider）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:7",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /api/resource<br/>(无Authorization头)",
+      "translation": "GET /api/resource<br/>（Authorizationヘッダーなし）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "检查token：不存在",
+      "translation": "tokenを確認：存在しない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "401 Unauthorized<br/>WWW-Authenticate: DPoP realm=\"anp\",<br/>  as_uri=\"https://as.example.com\"",
+      "translation": "401 Unauthorized<br/>WWW-Authenticate: DPoP realm=\"anp\",<br/>  as_uri=\"https://as.example.com\"",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:14",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "标准OAuth发现流程<br/>解析WWW-Authenticate",
+      "translation": "標準OAuth発見フロー<br/>WWW-Authenticateを解析",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>(尝试获取Access Token)",
+      "translation": "POST /token<br/>（Access Tokenの取得を試行）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "AS告知需要从DID-auth认证<br/>(AS可配置多个IdP)",
+      "translation": "ASがDID-authでの認証が必要と通知<br/>（ASに複数のIdPを設定可能）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证VP<br/>提取VC claims<br/>生成ID Token",
+      "translation": "VPを検証<br/>VC claimsを抽出<br/>ID Tokenを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token (标准JWT)",
+      "translation": "ID Token（標準JWT）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>grant_type=token-exchange<br/>subject_token=<ID Token><br/>subject_token_type=id_token",
+      "translation": "POST /token<br/>grant_type=token-exchange<br/>subject_token=<ID Token><br/>subject_token_type=id_token",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:30",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:30",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证ID Token<br/>(通过DID-auth的jwks)<br/>提取vc_claims<br/>构造RAR",
+      "translation": "ID Tokenを検証<br/>（DID-authのjwksを使用）<br/>vc_claimsを抽出<br/>RARを構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token + Refresh Token<br/>(标准OAuth响应)",
+      "translation": "Access Token＋Refresh Token<br/>（標準OAuth応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:34",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证Access Token<br/>(标准OAuth验证)",
+      "translation": "Access Tokenを検証<br/>（標準OAuth検証）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:203-244/line:38",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "OAuth AS",
+      "translation": "OAuth AS",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证token签名：✓<br/>检查exp：已过期 ✗",
+      "translation": "tokenの署名を検証：✓<br/>expを確認：期限切れ ✗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "401 Unauthorized<br/>error=\"invalid_token\",<br/>error_description=\"token expired\"",
+      "translation": "401 Unauthorized<br/>error=\"invalid_token\",<br/>error_description=\"token expired\"",
+      "status": "technical-retained",
+      "reason": "HTTP応答例のerror値を保持。token expiredは「トークンの有効期限切れ」を意味する。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:13",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "标准OAuth刷新流程",
+      "translation": "標準OAuth更新フロー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Refresh Token有效",
+      "translation": "Refresh Tokenが有効",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "新的Access Token<br/>(标准OAuth响应)",
+      "translation": "新しいAccess Token<br/>（標準OAuth応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Refresh Token也过期",
+      "translation": "Refresh Tokenも期限切れ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "400 Bad Request<br/>{<br/>  \"error\": \"invalid_grant\",<br/>  \"idp_uri\": \"https://did-auth.example.com\"<br/>}",
+      "translation": "400 Bad Request<br/>{<br/>  \"error\": \"invalid_grant\",<br/>  \"idp_uri\": \"https://did-auth.example.com\"<br/>}",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:24",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "需要重新认证",
+      "translation": "再認証が必要",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>(重新DID认证)",
+      "translation": "POST /token<br/>（DID再認証）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "新ID Token",
+      "translation": "新しいID Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:29",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>(Token Exchange)",
+      "translation": "POST /token<br/>（トークン交換）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:31",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:31",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "新Access Token + Refresh Token",
+      "translation": "新しいAccess Token＋Refresh Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:255-292/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Web Application",
+      "translation": "Webアプリケーション",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:3",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "访问需认证的页面",
+      "translation": "認証が必要なページへアクセス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "重定向到/authorize<br/>(标准OIDC Authorization Code Flow)",
+      "translation": "/authorizeへリダイレクト<br/>（標準OIDC Authorization Code Flow）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "显示DID钱包连接页面",
+      "translation": "DIDウォレット接続ページを表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "打开钱包，签名VP",
+      "translation": "ウォレットを開き、VPに署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "提交VP",
+      "translation": "VPを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证VP",
+      "translation": "VPを検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "重定向回调<br/>code=<authorization_code>",
+      "translation": "コールバックへリダイレクト<br/>code=<authorization_code>",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token + Access Token<br/>(标准OIDC响应)",
+      "translation": "ID Token＋Access Token<br/>（標準OIDC応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>grant_type=token-exchange<br/>subject_token=<ID Token>",
+      "translation": "POST /token<br/>grant_type=token-exchange<br/>subject_token=<ID Token>",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:26",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token (OAuth)",
+      "translation": "アクセストークン（OAuth）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:28",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "API请求<br/>Authorization: DPoP <token>",
+      "translation": "API要求<br/>Authorization: DPoP <token>",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:30",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "显示结果",
+      "translation": "結果を表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:303-338/line:34",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID-auth<br/>(OIDC IdP)",
+      "translation": "DID-auth<br/>（OIDC IdP）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. 生成 PKCE<br/>code_verifier + code_challenge",
+      "translation": "1. PKCEを生成<br/>code_verifier + code_challenge",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTP 库跟随重定向",
+      "translation": "HTTPライブラリがリダイレクトをたどる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /authorize + VP参数<br/>或 POST /authorize {vp: ...}<br/>⭐ 直接在请求中携带 DID 签名/VP",
+      "translation": "GET /authorize＋VPパラメーター<br/>またはPOST /authorize {vp: ...}<br/>⭐ 要求にDID署名／VPを直接含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证 VP：<br/>✓ DID 签名有效<br/>✓ VC issuer 可信<br/>✓ VC 未撤销",
+      "translation": "VPを検証：<br/>✓ DID署名が有効<br/>✓ VC issuerが信頼できる<br/>✓ VCが取り消されていない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "后台调用 DID-auth /token<br/>用 idp_code 换 ID Token<br/>验证 ID Token<br/>生成 AS 自己的 code",
+      "translation": "バックエンドでDID-auth /tokenを呼び出す<br/>idp_codeをID Tokenに交換<br/>ID Tokenを検証<br/>AS独自のcodeを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "⭐ 截获此 302<br/>不真的访问 redirect_uri<br/>从 Location 提取 code",
+      "translation": "⭐ この302を捕捉<br/>redirect_uriへ実際にはアクセスせず<br/>Locationからcodeを抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>grant_type=authorization_code<br/>code=as_code<br/>code_verifier=原始值<br/>client_id=did-agent-public<br/>redirect_uri=https://localhost/callback",
+      "translation": "POST /token<br/>grant_type=authorization_code<br/>code=as_code<br/>code_verifier=元の値<br/>client_id=did-agent-public<br/>redirect_uri=https://localhost/callback",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token + Refresh Token",
+      "translation": "Access Token＋Refresh Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:369-389/line:19",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "生成 PKCE",
+      "translation": "PKCEを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:392-419/line:4",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "在 /authorize 请求中携带",
+      "translation": "/authorize要求に含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:392-419/line:9",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "在 /token 请求中携带 code_verifier",
+      "translation": "/token要求にcode_verifierを含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:392-419/line:19",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "必须",
+      "translation": "必須",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:392-419/line:25",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "配置 HTTP 客户端",
+      "translation": "HTTPクライアントを設定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:448-479/line:3",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "手动处理重定向链",
+      "translation": "リダイレクトチェーンを手動で処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:448-479/line:5",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "检查是否是最终重定向（到 redirect_uri）",
+      "translation": "最終リダイレクト（redirect_uri宛て）かを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:448-479/line:9",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "截获！从 URL 提取 code",
+      "translation": "捕捉し、URLからcodeを抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:448-479/line:11",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "如果是到 DID-auth，需要附带 VP",
+      "translation": "DID-auth宛ての場合はVPの添付が必要",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:448-479/line:16",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "用 code 换 token",
+      "translation": "codeをtokenへ交換",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:448-479/line:25",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "The access token expired",
+      "translation": "アクセストークンの有効期限が切れました",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:558-564/line:5:column:21",
+          "language": "http"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:601-607/line:5:column:21",
+          "language": "http"
+        }
+      ]
+    },
+    {
+      "original": "Authentication with identity provider required",
+      "translation": "アイデンティティプロバイダーでの認証が必要です",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:579-589/line:6:column:24",
+          "language": "http"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:622-632/line:6:column:24",
+          "language": "http"
+        }
+      ]
+    },
+    {
+      "original": "谁",
+      "translation": "誰か",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:773-778/line:1:column:11",
+          "language": ""
+        }
+      ]
+    },
+    {
+      "original": "read write",
+      "translation": "read write",
+      "status": "technical-retained",
+      "reason": "プロトコルの要求・応答・ヘッダー・scope・識別子の技術表記を保持。人向け本文ではなくコード例の値。",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:773-778/line:3:column:22",
+          "language": ""
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:815-820/line:3:column:32",
+          "language": ""
+        }
+      ]
+    },
+    {
+      "original": "谁的什么属性",
+      "translation": "誰のどの属性か",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:782-789/line:1:column:17",
+          "language": ""
+        }
+      ]
+    },
+    {
+      "original": "DID-auth (OIDC Provider)",
+      "translation": "DID-auth（OIDCプロバイダー）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:6",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Authorization / Token Request (client_id, ...)",
+      "translation": "認可／トークン要求（client_idなど）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:11",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Authn required (idp_uri = DIDAuth)",
+      "translation": "認証が必要（idp_uri = DIDAuth）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:12",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Start DID-auth (authorize or direct token)",
+      "translation": "DID-authを開始（認可または直接のトークン要求）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:15",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Request DID signature + VC/Personhood (optional)",
+      "translation": "DID署名＋VC/Personhoodを要求（任意）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:16",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verifiable Presentation (VP)",
+      "translation": "Verifiable Presentation（VP）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:17",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token (JWT) incl. vc_claims + client_id + cnf",
+      "translation": "ID Token（JWT）：vc_claims＋client_id＋cnfを含む",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:18",
+          "language": "mermaid"
+        }
+      ]
+    }
+  ]
+}

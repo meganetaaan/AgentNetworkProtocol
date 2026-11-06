@@ -1,0 +1,650 @@
+{
+  "source": "images/ap2-402/ANP_X402_Hybrid_Protocol.svg",
+  "sha256": "7d42e97ba6d3e1c9f6cdc3d5392f586dba27cef62086b0f5c2fc780fe7667c1b",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP + x402 混合支付协议",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "45",
+      "label_id": "L001",
+      "japanese": "ANP＋x402のハイブリッド決済プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "融合 HTTP 402 + CartMandate/PaymentMandate + 支付宝/微信支付",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "72",
+      "label_id": "L002",
+      "japanese": "HTTP 402＋CartMandate/PaymentMandate＋Alipay／WeChat Payを統合",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AI Agent",
+      "element": "text",
+      "id": null,
+      "x": "160",
+      "y": "135",
+      "label_id": "L003",
+      "japanese": "AIエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(客户端)",
+      "element": "text",
+      "id": null,
+      "x": "160",
+      "y": "158",
+      "label_id": "L004",
+      "japanese": "（クライアント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "API Server",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "135",
+      "label_id": "L005",
+      "japanese": "APIサーバー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(商户智能体)",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "158",
+      "label_id": "L006",
+      "japanese": "（加盟店エージェント）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User",
+      "element": "text",
+      "id": null,
+      "x": "840",
+      "y": "135",
+      "label_id": "L007",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(用户)",
+      "element": "text",
+      "id": null,
+      "x": "840",
+      "y": "158",
+      "label_id": "L008",
+      "japanese": "（ユーザー）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Payment",
+      "element": "text",
+      "id": null,
+      "x": "1180",
+      "y": "135",
+      "label_id": "L009",
+      "japanese": "支払い",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(支付宝/微信)",
+      "element": "text",
+      "id": null,
+      "x": "1180",
+      "y": "158",
+      "label_id": "L010",
+      "japanese": "（Alipay／WeChat Pay）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Facilitator",
+      "element": "text",
+      "id": null,
+      "x": "1480",
+      "y": "135",
+      "label_id": "L011",
+      "japanese": "Facilitator（決済検証支援者）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "(验证方)",
+      "element": "text",
+      "id": null,
+      "x": "1480",
+      "y": "158",
+      "label_id": "L012",
+      "japanese": "（検証者）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "阶段1:",
+      "element": "text",
+      "id": null,
+      "x": "90",
+      "y": "227",
+      "label_id": "L013",
+      "japanese": "段階1:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "资源请求",
+      "element": "text",
+      "id": null,
+      "x": "90",
+      "y": "245",
+      "label_id": "L014",
+      "japanese": "リソースの要求",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "1",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "256",
+      "label_id": "L015",
+      "japanese": "1",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "GET /api/resource",
+      "element": "text",
+      "id": null,
+      "x": "330",
+      "y": "237",
+      "label_id": "L016",
+      "japanese": "GET /api/resource",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "请求受保护的API资源",
+      "element": "text",
+      "id": null,
+      "x": "330",
+      "y": "267",
+      "label_id": "L017",
+      "japanese": "保護されたAPIリソースを要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "2",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "341",
+      "label_id": "L018",
+      "japanese": "2",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "HTTP 402 + CartMandate",
+      "element": "text",
+      "id": null,
+      "x": "330",
+      "y": "322",
+      "label_id": "L019",
+      "japanese": "HTTP 402 + CartMandate",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "返回购物车授权凭证",
+      "element": "text",
+      "id": null,
+      "x": "330",
+      "y": "365",
+      "label_id": "L020",
+      "japanese": "ショッピングカートの認可の資格情報を返す",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "CartMandate 内容:",
+      "element": "text",
+      "id": null,
+      "x": "180",
+      "y": "393",
+      "label_id": "L021",
+      "japanese": "CartMandateの内容:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• order_id, items, total_amount",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "413",
+      "label_id": "L022",
+      "japanese": "• order_id, items, total_amount",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "• payment_methods: [支付宝, 微信]",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "430",
+      "label_id": "L023",
+      "japanese": "• payment_methods: [Alipay, WeChat Pay]",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• merchant_authorization (JWS签名)",
+      "element": "text",
+      "id": null,
+      "x": "190",
+      "y": "447",
+      "label_id": "L024",
+      "japanese": "• merchant_authorization（JWS署名）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "阶段2:",
+      "element": "text",
+      "id": null,
+      "x": "90",
+      "y": "492",
+      "label_id": "L025",
+      "japanese": "段階2:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户授权",
+      "element": "text",
+      "id": null,
+      "x": "90",
+      "y": "510",
+      "label_id": "L026",
+      "japanese": "ユーザーによる認可",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "3",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "516",
+      "label_id": "L027",
+      "japanese": "3",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "展示订单信息",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "497",
+      "label_id": "L028",
+      "japanese": "注文情報を表示する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "显示商品、价格、支付方式选择",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "527",
+      "label_id": "L029",
+      "japanese": "商品、価格、支払い方法の選択肢を表示する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "4",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "586",
+      "label_id": "L030",
+      "japanese": "4",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "用户选择支付方式",
+      "element": "text",
+      "id": null,
+      "x": "840",
+      "y": "570",
+      "label_id": "L031",
+      "japanese": "ユーザーが支払い方法を選ぶ",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付宝 / 微信支付",
+      "element": "text",
+      "id": null,
+      "x": "840",
+      "y": "590",
+      "label_id": "L032",
+      "japanese": "Alipay／WeChat Pay",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "5",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "656",
+      "label_id": "L033",
+      "japanese": "5",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "扫码支付",
+      "element": "text",
+      "id": null,
+      "x": "1010",
+      "y": "637",
+      "label_id": "L034",
+      "japanese": "QRコードを読み取って支払う",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付宝/微信完成支付",
+      "element": "text",
+      "id": null,
+      "x": "1010",
+      "y": "667",
+      "label_id": "L035",
+      "japanese": "Alipay／WeChat Payで支払いを完了する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "阶段3:",
+      "element": "text",
+      "id": null,
+      "x": "90",
+      "y": "712",
+      "label_id": "L036",
+      "japanese": "段階3:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付确认",
+      "element": "text",
+      "id": null,
+      "x": "90",
+      "y": "730",
+      "label_id": "L037",
+      "japanese": "支払い確認",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "6",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "736",
+      "label_id": "L038",
+      "japanese": "6",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "授权支付",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "717",
+      "label_id": "L039",
+      "japanese": "支払いを認可する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户确认并提供支付凭证",
+      "element": "text",
+      "id": null,
+      "x": "500",
+      "y": "747",
+      "label_id": "L040",
+      "japanese": "ユーザーが確認し、支払いの資格情報を提供する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "7",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "806",
+      "label_id": "L041",
+      "japanese": "7",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "POST /api/payment + PaymentMandate",
+      "element": "text",
+      "id": null,
+      "x": "330",
+      "y": "787",
+      "label_id": "L042",
+      "japanese": "POST /api/payment + PaymentMandate",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "携带用户授权签名 (user_authorization)",
+      "element": "text",
+      "id": null,
+      "x": "330",
+      "y": "830",
+      "label_id": "L043",
+      "japanese": "ユーザーの認可署名（user_authorization）を添える",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "PaymentMandate 内容:",
+      "element": "text",
+      "id": null,
+      "x": "520",
+      "y": "768",
+      "label_id": "L044",
+      "japanese": "PaymentMandateの内容:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• payment_mandate_id, order_id",
+      "element": "text",
+      "id": null,
+      "x": "530",
+      "y": "788",
+      "label_id": "L045",
+      "japanese": "• payment_mandate_id, order_id",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "• payment_method: 支付宝/微信",
+      "element": "text",
+      "id": null,
+      "x": "530",
+      "y": "805",
+      "label_id": "L046",
+      "japanese": "• payment_method: Alipay／WeChat Pay",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• user_authorization (JWS签名)",
+      "element": "text",
+      "id": null,
+      "x": "530",
+      "y": "822",
+      "label_id": "L047",
+      "japanese": "• user_authorization（JWS署名）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "8",
+      "element": "text",
+      "id": null,
+      "x": "45",
+      "y": "876",
+      "label_id": "L048",
+      "japanese": "8",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "验证支付",
+      "element": "text",
+      "id": null,
+      "x": "840",
+      "y": "857",
+      "label_id": "L049",
+      "japanese": "支払いを検証する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "查询交易",
+      "element": "text",
+      "id": null,
+      "x": "1330",
+      "y": "857",
+      "label_id": "L050",
+      "japanese": "取引を照会する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "核心创新:",
+      "element": "text",
+      "id": null,
+      "x": "50",
+      "y": "935",
+      "label_id": "L051",
+      "japanese": "主な新機軸:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• HTTP 402 标准化 - 统一支付请求接口",
+      "element": "text",
+      "id": null,
+      "x": "65",
+      "y": "965",
+      "label_id": "L052",
+      "japanese": "• HTTP 402の標準化: 支払い要求のインターフェースを統一する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• CartMandate - 商户签名保证订单完整性 (防篡改)",
+      "element": "text",
+      "id": null,
+      "x": "65",
+      "y": "980",
+      "label_id": "L053",
+      "japanese": "• CartMandate: 加盟店の署名で注文の完全性を保証する（改ざん防止）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• PaymentMandate - 用户授权签名 (不可抵赖)",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "965",
+      "label_id": "L054",
+      "japanese": "• PaymentMandate: ユーザーの認可署名（否認防止）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• 支持主流支付 - 支付宝、微信、USDC",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "980",
+      "label_id": "L055",
+      "japanese": "• 主流の支払い手段に対応: Alipay、WeChat Pay、USDC",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "技术实现:",
+      "element": "text",
+      "id": null,
+      "x": "800",
+      "y": "935",
+      "label_id": "L056",
+      "japanese": "技術的な実装:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• ANP: DID:WBA 身份认证 + JWT/JWS 签名",
+      "element": "text",
+      "id": null,
+      "x": "815",
+      "y": "965",
+      "label_id": "L057",
+      "japanese": "• ANP: DID:WBAによるID認証＋JWT/JWS署名",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• x402: HTTP 402 状态码 + 标准化支付流程",
+      "element": "text",
+      "id": null,
+      "x": "815",
+      "y": "980",
+      "label_id": "L058",
+      "japanese": "• x402: HTTP 402ステータスコード＋標準化された支払い手順",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "• cart_hash = SHA-256(JCS(contents))",
+      "element": "text",
+      "id": null,
+      "x": "1100",
+      "y": "965",
+      "label_id": "L059",
+      "japanese": "• cart_hash = SHA-256(JCS(contents))",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "• transaction_data = [cart_hash, pmt_hash]",
+      "element": "text",
+      "id": null,
+      "x": "1100",
+      "y": "980",
+      "label_id": "L060",
+      "japanese": "• transaction_data = [cart_hash, pmt_hash]",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "图例:",
+      "element": "text",
+      "id": null,
+      "x": "1200",
+      "y": "220",
+      "label_id": "L061",
+      "japanese": "凡例:",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "请求",
+      "element": "text",
+      "id": null,
+      "x": "1290",
+      "y": "240",
+      "label_id": "L062",
+      "japanese": "要求",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "响应",
+      "element": "text",
+      "id": null,
+      "x": "1290",
+      "y": "260",
+      "label_id": "L063",
+      "japanese": "応答",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付",
+      "element": "text",
+      "id": null,
+      "x": "1290",
+      "y": "280",
+      "label_id": "L064",
+      "japanese": "支払い",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

@@ -73,7 +73,7 @@ P4の状態を変える要求と`group.send`には、発信者のOrigin Proofが
 
 Hostは、署名計算が合うかだけでなく、DID Documentのメソッド別検証、鍵の`authentication`関係、送信者DIDとの一致、時刻・リプレイ対策なども検証します。その上で、`group_policy`に基づいて送信や管理の権限を判断します。「誰かを認証できた」と「その操作を許可する」は別の判断です。
 
-`group.send`の成功応答に`group_receipt`を含めること自体は任意です（MAY）。receiptを発行する場合の`proof`は通常は推奨（SHOULD）で、Hostのドメイン外へ出て他ドメインに依拠される場合は必須（MUST）です。receiptのProofは、Group DIDが発行するObject Proofで、`assertionMethod`の権限を使います。発信者のOrigin Proofに使う`authentication`関係と混同しません。有効な署名を確認した後も、receiptの内容が実際の応答・通知・グループ状態と一致するかの検査が必要です。
+`group.send`の個別の成功応答定義（§8.9.4）では`group_receipt`は任意（MAY）ですが、§8の共通規則も合わせて読みます。非federated要求の成功応答ではreceiptを含めることが推奨（SHOULD）され、Hostドメイン外へ出て他ドメインが依拠する成功応答では、receiptの返却とその有効な`proof`が必須（MUST）です。receiptを発行する場合の`proof`は通常も推奨（SHOULD）です。個別のMAYだけを取り出して共通条件を省略しません。receiptのProofは、Group DIDが発行するObject Proofで、`assertionMethod`の権限を使います。発信者のOrigin Proofに使う`authentication`関係と混同しません。有効な署名を確認した後も、receiptの内容が実際の応答・通知・グループ状態と一致するかの検査が必要です。
 
 根拠: [P1付録A §A.3–A.4](../message/01-core-binding.md#a3-sharing-signed-request-object)、[§A.6–A.9](../message/01-core-binding.md#a6-minimum-authentication-requirements)、[付録B](../message/01-core-binding.md#appendix-b-normative-shared-object-proof-profile)、[P4 §3.6](../message/04-group-messaging-base-semantics.md#36-separation-of-initiator-authentication-and-group-result-witnessing)、[§7.9](../message/04-group-messaging-base-semantics.md#79-group_receipt)、[§8.9.4](../message/04-group-messaging-base-semantics.md#894-successful-response)、[§11.2–11.5](../message/04-group-messaging-base-semantics.md#112-group-operation-initiator-authentication)。
 
@@ -89,7 +89,7 @@ P4のイベント順序は、Hostが受理した通信上の出来事の順序�
 
 [3体のTypeScriptデモ](../examples/three-agents-typescript/README.md)は、Roundtableを使わず、異なる人格の3エージェントが、ANPの要求・通知を実際に送受信する流れを観察するためのものです。HTTPSの通信、DID Document取得、Origin Proof、Hostの受理と順序付け、各エージェントの受信履歴を追えます。
 
-**会話文は人格別の固定台詞と直前の受信内容を参照するローカル規則で作る、決定的な模擬会話です。実モデルが自律的に生成した会話ではありません。** 発言順はデモのアプリケーションループが決めます。ANPの規定で次の話者が自動選択されたと解釈しないでください。音声再生や物理的な重なりの試験もしていません。
+既定のscriptedモードは、人格別の固定台詞と直前の受信内容を参照するローカル規則で作る模擬会話です。明示的な`--model`指定では、各体の人格指示と、その体がANP経由で受信した履歴から実モデルが発言を生成します。[実モデルの会話例](../examples/three-agents-typescript/sample-live-conversation.json)では9 API要求・9送信・27通知を確認しました。両モードとも発言順はアプリケーションループが決めます。ANPが自動で次の話者を選ぶわけではありません。音声再生や物理的な重なりの試験はしていません。
 
 **デモはP4 v2の一部操作を使う学習用サブセットであり、P4やANP 1.2への完全適合実装ではありません。** P4は`group.join`、`group.add`、`group.remove`、`group.leave`、プロフィール／ポリシー更新、DID更新、状態通知なども最低相互運用要件に含めています。SDKの署名関数を利用したことや、`meta.profile`に正しい名前を入れたことだけで、これらの要件を満たしたことにはなりません。
 

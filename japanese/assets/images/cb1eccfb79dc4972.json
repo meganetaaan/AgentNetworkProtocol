@@ -1,0 +1,314 @@
+{
+  "source": "blogs/images/anp-first-meet/04.png",
+  "sha256": "cb1eccfb79dc49728cc6b121b3afdf443af8f4f6099c335cc9e04a0b2b3ae770",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "社区顾问制度",
+      "confidence": 0.9962707857290903,
+      "box": [
+        [
+          33.145164489746094,
+          42.26171875
+        ],
+        [
+          596.6129150390625,
+          42.26171875
+        ],
+        [
+          596.6129150390625,
+          129.51171875
+        ],
+        [
+          33.145164489746094,
+          129.51171875
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "コミュニティの顧問制度",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9871677954991659,
+      "box": [
+        [
+          2567.369140625,
+          32.71875
+        ],
+        [
+          2723.427490234375,
+          32.71875
+        ],
+        [
+          2723.427490234375,
+          89.9765625
+        ],
+        [
+          2567.369140625,
+          89.9765625
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ANP",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "法律顾问，李扬，北京爱问法科技有限公司创始人",
+      "confidence": 0.9968698268586939,
+      "box": [
+        [
+          196.10887145996094,
+          415.80078125
+        ],
+        [
+          1510.866943359375,
+          415.80078125
+        ],
+        [
+          1510.866943359375,
+          473.05859375
+        ],
+        [
+          196.10887145996094,
+          473.05859375
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "法律顧問：李扬。北京爱问法科技有限公司の創業者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "/CEO，法律硕士，持有国家法律职业资格，前某",
+      "confidence": 0.9698336137377698,
+      "box": [
+        [
+          197.48992919921875,
+          504.4140625
+        ],
+        [
+          1494.29443359375,
+          505.77734375
+        ],
+        [
+          1494.29443359375,
+          564.3984375
+        ],
+        [
+          197.48992919921875,
+          563.03515625
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "／CEO。法学修士、国家法律職業資格を保有。かつて某",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "/CEO"
+      ]
+    },
+    {
+      "source": "上市公司法务总监",
+      "confidence": 0.9997286945581436,
+      "box": [
+        [
+          201.63307189941406,
+          599.84375
+        ],
+        [
+          673.95166015625,
+          597.1171875
+        ],
+        [
+          673.95166015625,
+          655.73828125
+        ],
+        [
+          201.63307189941406,
+          658.46484375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "上場企業で法務責任者を務めた",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "技术顾问，司晋琦，前大厂CTO，现AI全栈",
+      "confidence": 0.9741645512126741,
+      "box": [
+        [
+          191.96572875976562,
+          721.17578125
+        ],
+        [
+          1339.616943359375,
+          719.8125
+        ],
+        [
+          1339.616943359375,
+          778.43359375
+        ],
+        [
+          191.96572875976562,
+          779.796875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "技術顧問：司晋琦。大手企業の元CTO、現在はAIのフルスタック開発に従事",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "虚位以待",
+      "confidence": 0.988515093922615,
+      "box": [
+        [
+          2121.29052734375,
+          733.4453125
+        ],
+        [
+          2361.5927734375,
+          733.4453125
+        ],
+        [
+          2361.5927734375,
+          798.8828125
+        ],
+        [
+          2121.29052734375,
+          798.8828125
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "参加者を募集中",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "生态战略顾问，侯宏，北京大学国家发展研究院，",
+      "confidence": 0.9980635859749534,
+      "box": [
+        [
+          200.2520294189453,
+          845.234375
+        ],
+        [
+          1472.1976318359375,
+          845.234375
+        ],
+        [
+          1472.1976318359375,
+          898.40234375
+        ],
+        [
+          200.2520294189453,
+          898.40234375
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "エコシステム戦略顧問：侯宏。北京大学国家発展研究院、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "管理学助理教授，博导",
+      "confidence": 0.9995554089546204,
+      "box": [
+        [
+          203.0141143798828,
+          937.9375
+        ],
+        [
+          792.7218017578125,
+          937.9375
+        ],
+        [
+          792.7218017578125,
+          992.46875
+        ],
+        [
+          203.0141143798828,
+          992.46875
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "経営学助理教授、博士課程指導教員",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "标准化顾问，冉若曦，W3C标准技术专家",
+      "confidence": 0.997773716324254,
+      "box": [
+        [
+          160.2016143798828,
+          1056.54296875
+        ],
+        [
+          1320.2823486328125,
+          1056.54296875
+        ],
+        [
+          1320.2823486328125,
+          1113.80078125
+        ],
+        [
+          160.2016143798828,
+          1113.80078125
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "標準化顧問：冉若曦。W3Cの標準技術専門家",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "按时间顺序排列",
+      "confidence": 0.9994347010340009,
+      "box": [
+        [
+          667.04638671875,
+          1239.22265625
+        ],
+        [
+          986.068603515625,
+          1239.22265625
+        ],
+        [
+          986.068603515625,
+          1286.9375
+        ],
+        [
+          667.04638671875,
+          1286.9375
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "時系列順に記載",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4548661999870092,
+    0.014464139938354492,
+    1.706911325454712
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "人物名・役職・計画・参加状況は原画像の歴史的記載を訳しており、現時点の情報に更新していない。成長経路の説明は原図の列ごとに上から読む。",
+    "source_sha256": "cb1eccfb79dc49728cc6b121b3afdf443af8f4f6099c335cc9e04a0b2b3ae770"
+  }
+}

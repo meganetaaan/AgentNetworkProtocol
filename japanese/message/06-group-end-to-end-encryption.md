@@ -1,156 +1,157 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: machine-fully-reviewed; scope=full-document-source-lines-1-2479; inventory=japanese/reviews/messaging-overlays-review.json -->
+> 日本語参考訳（機械翻訳から全文を意味校閲済み）。規範となるのは原文です。本文・見出し・表・条件・否定を原文と照合し、コード例・識別子・規範キーワードを保持しています。独立した二次校閲や実装適合性の検証は未実施です。
 > 原文: [message/06-group-end-to-end-encryption.md](../../message/06-group-end-to-end-encryption.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
-# ANPプロファイル6:グループエンドツーエンド暗号化
+# ANP Profile 6：グループのエンドツーエンド暗号化
 
-- 文書ID: ANP-P6
-- タイトル:グループエンドツーエンド暗号化
-- ステータス: 候補者; に含まれています 1.2 ドキュメント, 安定した v2 リリース 終了 MLS ExtensionType 登録
-- バージョン: 1.2
-- 仕様セット: ANP のメッセージング 1.2
-- 原文言語: English / このページは日本語参考訳
-- プロフィール: `anp.group.e2ee.v2`
-- 依存関係: `anp.core.binding.v1`, `anp.identity.discovery.v1`, `anp.group.base.v2`
-- 応用性:このプロフィールはグループDIDに基づいてグループのエンドツーエンドの暗号化制御層のために適しています、密接に働くこと `anp.group.base.v2`.
-
----
-
-## 1. 目的:
-
-このプロファイルは、ANPのグループエンドツーエンド暗号化制御レイヤーを定義します。
-
-1. 結合する方法 `group_did`, `group_state_version`と `group_event_seq` グループ暗号化状態機械に。
-2. グループキーの確立、メンバーの変更およびアプリケーションメッセージ保護のための基本的なプロトコルとしてMLSを使用する方法;
-3. 方法検証済みのエージェントの DID と 1 つの資格を結合する方法 `device_id` MLSメンバー資格、KeyPackage、およびリーフ署名キーに。
-4. 独立したセットを定義する方法 `group.e2ee.*` JSON-RPC メソッドは、MLS の暗号アクションを具体的に運ぶ。
-5. 密接に働く方法 `anp.group.base.v2` とりあえず **ステートカップリング** 代わりに「P4メソッドでMLSハンドシェイクオブジェクトを埋め込む」;
-6. 対処方法 `epoch`, `Welcome`, `PrivateMessage`, `PublicMessage`, `epoch_authenticator`、フォークの検出および回復。
-7. 注文したMLS葉を交換する方法 `group.e2ee.add` とりあえず `group.e2ee.remove` P4 の後の操作はメンバーのための DID の更新を受け入れます;
-8. DID は、DID レベルのビジネスメンバーシップを変更することなく複数の独立した MLS デバイス葉を持つことができます。
-
-このプロファイルは定義しません。
-
-- 履歴メッセージを引き受ける。
-- オンラインでのステータスを読んでください。
-- 製品ローカルデバイス登録、ネーミング、ロール、同期、または内部のレプリカ管理。
-- KeyPackage のプライベート素材、リーフプライベートキー、エポックシークレット、または MLS のプライベートな状態をデバイス間で共有する。
-- グループ外でのディレクトリ同期の特定の実装。
-- グループ以外のシナリオのためのエンドツーエンド暗号化;
-- 外的なコミットの本管;
-- `group_join_info` とりあえず `group.e2ee.get_join_info`;
-- `accept_welcome` プロトコルメソッド;
-- 会員ステータスモデルの2セット。
-- 失われた歴史MLSのエポック秘密の回復または再配布。
+- 文書ID：ANP-P6
+- タイトル：グループのエンドツーエンド暗号化
+- 状態：候補版。1.2の文書に含まれますが、安定したv2のリリースはMLS ExtensionType登録の完了待ちです。
+- バージョン：1.2
+- 仕様セット：ANP Messaging 1.2
+- 原文言語：English
+- Profile：`anp.group.e2ee.v2`
+- 依存関係：`anp.core.binding.v1`、`anp.identity.discovery.v1`、`anp.group.base.v2`
+- 適用範囲：Group DIDに基づくグループのエンドツーエンド暗号化制御層を対象とし、`anp.group.base.v2`と密接に連携します。
 
 ---
 
-## 2. 用語集と定款
+## 1. 目的
 
-### 2.1 仮説キーワード
+このProfileは、ANPのグループのエンドツーエンド暗号化制御層を定義し、次を規定します。
 
-この記事では、 **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**, **NOT RECOMMENDED**, **MAY**, **OPTIONAL** 資本金を基準とした規範的な要件として解釈されます。
+1. `group_did`、`group_state_version`、`group_event_seq`をグループの暗号状態機械に結び付ける方法。
+2. グループ鍵確立、メンバー変更、アプリケーションメッセージ保護の基礎プロトコルとしてMLSを使う方法。
+3. メソッドに従って検証したAgent DIDと、適格な`device_id`を一つ、MLSメンバー資格情報、KeyPackage、Leaf署名鍵へ結び付ける方法。
+4. MLS暗号操作を専用に運ぶ、独立した`group.e2ee.*` JSON-RPCメソッド群を定義する方法。
+5. 「P4メソッドへMLSハンドシェイクオブジェクトを埋め込む」のではなく、**状態の連動**を通じて`anp.group.base.v2`と密接に連携する方法。
+6. `epoch`、`Welcome`、`PrivateMessage`、`PublicMessage`、`epoch_authenticator`、フォーク検出、回復の扱い方。
+7. P4がメンバーのDID更新を受け入れた後、順序付けられた`group.e2ee.add`と`group.e2ee.remove`操作を通じて、対応するMLS Leafを置換する方法。
+8. DID単位の業務メンバーシップを変えずに、一つのP4メンバーDIDが独立した複数のMLSデバイスLeafを持つ方法。
 
-### 2.2 用語集
+このProfileは次を定義しません。
 
-- **グループID**: グループのアプリケーションレイヤーグローバル識別子、つまり `group_did`.
-- **暗号グループID**: グループの暗号化内部識別子、MLS対応 `group_id`、と異なってもいいです `group_did`.
-- **グループホストサービス**: グループ基本ステータスの注文、ポリシーアプリケーション、グループメッセージの入力を担当するサービスです。MLS コントローラではなく、
-- **MLSグループの状態**: MLS に基づくグループ暗号化状態を維持
-- **エスポック**: MLSグループ状態の世代別進出
-- **キーパッケージ**: このプロファイルで使用した材料オブジェクトを追加するMLSは、グループに1つの対象となるデバイスリーフを追加します。
-- **おすすめ**: MLS のウェルカムオブジェクトは、グループの状態を初期化するために新しいメンバーを助けるために使われます。
-- **プライベートメッセージ**: 会員認証でMLSメッセージを暗号化しました。
-- **パブリックメッセージ**: 署名されたものだけで暗号化されていないMLSメッセージ。
-- **デバイスリーフ**: 外部に識別される1つのMLSの顧客/葉 `(agent_did, device_id)`. . . 追加のP4ビジネスメンバーではありません。
-- **有資格デバイス**: 現在有効なデバイス `anp.group.e2ee.v2` P2 の `deviceManifest`、参照されたキー、サービス機能およびグループ方針。
-- **DID 装置結合** (保持されたワイヤー名前 `did_wba_binding`): MLS の葉の署名鍵、メンバーの資格、または KeyPackage を検証可能に結合しました `(agent_did, device_id)` 証拠の目的。
-- **MLS のコントローラー**: 一般的なMLSメンバー変更のコントロール操作を担当する。 グループ `owner` v2 のコントローラーは残っています。 セクション9.4と13.4で定義された、非常に認可された同じDIDデバイス残留カウンダは一般的なコントローラーではありません。
-- **州のカップリング**: P4とP6はメソッドによるマッピングではなく、ビジネス状態の変化を通した暗号状態の進歩をトリガーするカップリング方法はありません。
-- **E2EE 通知**: P6 の自己定義された独立した暗号化通知オブジェクト、などの暗号結果を提供するために使用されます `commit` とりあえず `welcome`.
-- **ターミナルリーフ**: グループのMLS会員セットから削除されたデバイスリーフ。 ローカルグループ結合は、アプリケーションメッセージを送信、受信、または復号化しなくなる `group_did`、デバイス自体が現在のP2マニフェストエントリを維持しているかもしれない間。
-- **デバイスデリバリーキュー**: 耐久性のあるパー`(recipient_did, recipient_device_id)` グループホストがP6のために守っている配信状態は、それが輸送禁止されていない封筒を包みます。 パブリックメタデータ、保存された公開起源の証拠、不透明の暗号文のみを運ぶため、グループ歴ではありません。
-- **フォーク**: 不安定なシーケンス `epoch` / `epoch_authenticator` / 同一メンバーの異なるメンバーがステータスの推移を観察 `group_did`.
-- **MLSメンバーIDアップデート**: P4 が同じメンバーの DID 更新を受け入れた後、選択した新しい DID デバイス葉を追加し、注文されたコミットを介してすべての古い DID デバイス リーフを削除します。
+- 過去のメッセージの取得。
+- 既読状態やオンライン状態。
+- 製品内のデバイス登録、命名、役割、同期、内部複製管理。
+- KeyPackageの秘密素材、Leaf秘密鍵、epoch秘密情報、MLS秘密状態のデバイス間共有。
+- グループ外のディレクトリ同期の具体的な実装。
+- グループ以外の場面のエンドツーエンド暗号化。
+- External Commitの主要経路。
+- `group_join_info`と`group.e2ee.get_join_info`。
+- `accept_welcome`プロトコルメソッド。
+- 第二の業務メンバー状態モデル。
+- 失われた過去のMLS epoch秘密情報の回復・再配布。
 
 ---
 
-## 3. デザイン原則
+## 2. 用語と規範上の表記
 
-### 3.1 グループアイデンティティと暗号ステータスのストラテジー
+### 2.1 規範キーワード
 
-このプロフィールは、以下の点を明らかに区別します。
+本書の**MUST**、**MUST NOT**、**REQUIRED**、**SHALL**、**SHALL NOT**、**SHOULD**、**SHOULD NOT**、**RECOMMENDED**、**NOT RECOMMENDED**、**MAY**、**OPTIONAL**は、大文字表記に従って規範的要件として解釈します。
 
-- `group_did`: アプリケーションレイヤーグループグローバル識別子;
-- `crypto_group_id`: 暗号化グループ内部識別子;
-- `group_state_version`: グループホストが指定したアプリケーションレイヤーグループの状態バージョン。
-- `epoch`: MLS ステートマシンが割り当てられたクリプトソロジーグループ生成。
+### 2.2 用語
 
-4人で MUST NOT 機械的に等しくなる。しかしそこに MUST それらの間に検証可能な結合である。
+- **Group DID**：グループのアプリケーション層のグローバル識別子。`group_did`です。
+- **Crypto Group ID**：グループ暗号処理内部の識別子。MLSの`group_id`に対応し、`group_did`とは異なっていてもかまいません。
+- **グループHostサービス（Group Host Service）**：グループの基本状態の順序付け、ポリシー適用、グループメッセージの入口を担当するサービス。MLSコントローラーではありません。
+- **MLS Group State**：MLSに基づいて維持するグループの暗号状態。
+- **Epoch**：MLSグループ状態が一世代進むこと。
+- **KeyPackage**：MLSの追加用素材オブジェクト。このProfileでは、一つの適格なデバイスLeafをグループへ追加するために使います。
+- **Welcome**：新しいメンバーがグループ状態を初期化するのを助ける、MLSのWelcomeオブジェクト。
+- **PrivateMessage**：メンバー認証を備えた、暗号化されたMLSメッセージ。
+- **PublicMessage**：署名のみを行い、暗号化しないMLSメッセージ。
+- **Device Leaf**：外部から`(agent_did, device_id)`で識別する、一つのMLSクライアント／Leaf。追加のP4業務メンバーではありません。
+- **適格デバイス（Eligible Device）**：現在のP2 `deviceManifest`、参照鍵、サービス機能、グループポリシーの下で、`anp.group.e2ee.v2`に適格なデバイス。
+- **DID Device Binding**（維持するwire名は`did_wba_binding`）：MLS Leaf署名鍵、メンバー資格情報、KeyPackageを、検証可能な`(agent_did, device_id)`の証明オブジェクトに結び付けます。
+- **MLSコントローラー（MLS Controller）**：一般のMLSメンバー変更制御操作を担当する主体。v2では、引き続きグループの`owner`がコントローラーです。9.4節と13.4節で定義する、同じDIDのデバイス削除を限定的に認可された呼び出し元は、一般のコントローラーではありません。
+- **状態の連動（State Coupling）**：P4とP6をメソッドごとに対応させるのではなく、業務状態の変化を通じて暗号状態の進行を起動する連動方式。
+- **E2EE Notice**：`commit`や`welcome`などの暗号処理結果を届けるために、P6が独自に定義する独立した暗号処理通知オブジェクト。
+- **Terminal Leaf**：グループのMLSメンバー集合から削除されたデバイスLeaf。ローカルのグループバインディングでは、その`group_did`のアプリケーションメッセージを送信・受信・復号できなくなりますが、デバイス自体は現在の適格なP2 Manifestエントリのままであり得ます。
+- **Device Delivery Queue**：グループHostが、トランスポートで確認されていないP6エンベロープについて保持する、`(recipient_did, recipient_device_id)`ごとの永続配信状態。公開メタデータ、保持した公開origin proof、不透明な暗号文だけを運び、グループ履歴ではありません。
+- **フォーク（Fork）**：同じ`group_did`について、異なるメンバーが、両立できない`epoch`／`epoch_authenticator`／状態進行の列を観測したこと。
+- **MLS Member DID Update**：P4が同じメンバーのDID更新を受け入れた後、順序付けたCommitを通じて、選んだ新DIDのデバイスLeafを追加し、その後ですべての旧DIDのデバイスLeafを削除する、暗号処理の編成。
 
-### 3.2 1つのエージェントID = 1つの外部グループのメンバー;各デバイス= 1つのMLSの葉
+---
 
-P4会員、役割、方針、会員数は、現在に添付されているまま `agent_did`. . . P4 v2 は、現在の `agent_did` ワイヤメンバーのアイデンティティだけとして、名前、安定したパスフィールド、またはローカルレコード識別子は、MLSでそのDIDを置き換える可能性があります。 `credential.identity`.
+## 3. 設計原則
 
-プチ6 **MAY** 独立したMLSクライアントや葉と同じDIDの複数のデバイスを表します。 葉が残っている葉は、 `credential.identity = UTF8(agent_did)` 認証されたものから区別される `device_id` セクション6で定義される結合。 同じ DID で複数の葉は、追加の P4 メンバー、ロール、またはメンバーアカウントエントリを作成しません。
+### 3.1 グループアイデンティティと暗号状態の階層化
 
-各デバイスは、KeyPackageのプライベート素材、リーフプライベートキー、エポックシークレット、およびMLSの状態を独自に生成し、保存します。 それらの値 **MUST NOT** 兄弟のデバイス間でコピーまたは共有されます。 新規デバイスは、独自のAdd,Commit、およびデバイスターゲットのウェルカムを通じてグループに入ります。
+このProfileは、次を明確に区別します。
 
-`anp.group.e2ee.v1` 独立した相互運用性契約を保ちます。 導入事例 **MUST NOT** v1 のメンバーまたは MLS リーフを v2 デバイス リーフとして再解釈するか、v1 MLS グループの状態を v2 マルチデバイス状態にロードします。 このプロファイルは、v1-to-v2状態のアップグレードを置き換えるものではありません。 移行には、このプロファイルの外側に明示的に定義されたプロセスが必要で、それ以外の場合は、閉じられていない必要があります。
+- `group_did`：アプリケーション層のグループのグローバル識別子。
+- `crypto_group_id`：暗号処理グループ内部の識別子。
+- `group_state_version`：グループHostが割り当てるアプリケーション層のグループ状態バージョン。
+- `epoch`：MLS状態機械が割り当てる暗号グループの世代。〔訳注：原文の形容詞はCryptozoologicalで、この文脈と不整合です。ここは、同節の他の記述が示す暗号グループの世代として訳しています。〕
 
-### 3.3 P4は主要なビジネス プロトコルであり、P6は暗号化制御の層です
+四つを機械的に同一視してはなりません（MUST NOT）。ただし、それらの間には、検証可能なバインディングが存在しなければなりません（MUST）。
 
-このプロフィールとの間の関係 `anp.group.base.v2` 以下は、
+### 3.2 一つのAgent DIDは一人の外部グループメンバー、各デバイスは一つのMLS Leaf
 
-- P4は、グループにおける経営行動、ビジネス状態、秩序や領収書のセマティクスを定義します。
-- P6 は MLS の暗号行為、暗号オブジェクト、結合ルールおよび検証要件を定義します。
-- P4は、まだビジネス層の権限です。
-- プチ6 **しない** 上記のようなビジネス会員のステータスを赤化 `active / left / removed`;
-- P4 ベース操作と通知は DID アドレスを割り当てたまま、 **MUST NOT** P6 装置セレクターを運んで下さい;
-- P6は、P4会員を独立して変更することなく、1つのデバイスリーフを一度に追加または削除します。
-- P6 は、PS4 メソッド本体に直接 MLS のネイティブオブジェクトを直接実行する必要はありません。
+P4のメンバーシップ、役割、ポリシー、メンバー数は、引き続き現在の`agent_did`に属します。P4 v2は、唯一のwire上のメンバーアイデンティティとして現在の`agent_did`を使います。MLSの`credential.identity`内で、名前、安定したパスのフィールド、ローカル記録識別子をDIDの代わりに使うことはできません。
 
-### 3.4 メソッドによるマッピングではなく、ステートカップリング
+P6は、同じDIDの複数デバイスを独立したMLSクライアントとLeafとして表してもかまいません（**MAY**）。各Leafは`credential.identity = UTF8(agent_did)`を維持し、6節で定義する、認証された`device_id`バインディングで区別します。同じDIDの複数Leafによって、P4メンバー、役割、メンバー数のエントリが追加されることはありません。
 
-P4とP6のカップリングは、 **ステート**, "特定のP4メソッドを直接特定のP6メソッドをマッピングする"ではなく、
+各デバイスは、KeyPackageの秘密素材、Leaf秘密鍵、epoch秘密情報、MLS状態を独立して生成・保存します。同じDIDの別デバイスとの間で、これらの値をコピー・共有してはなりません（**MUST NOT**）。新しいデバイスがグループへ入る経路は、自分用のAdd、Commit、デバイスを指定したWelcomeだけです。
 
-具体的に:
+`anp.group.e2ee.v1`は別個の相互運用契約のままです。実装は、v1のメンバーやMLS Leafをv2のDevice Leafに読み替えたり、v1のMLSグループ状態をv2の複数デバイス状態として読み込んだりしてはなりません（**MUST NOT**）。このProfileは、その場でのv1からv2への状態アップグレードを定義しません。移行には、このProfile外で明示的に定義した手順が必要です。それ以外は、安全側で失敗させなければなりません。
 
-- P4は、ビジネス用語で何かが有効であるかを決定します。
-- P6は、事業状態の変化を観察し、それに応じてMLS状態を進歩させます。
+### 3.3 P4が主要な業務プロトコル、P6が暗号制御層
 
-たとえば:
+このProfileと`anp.group.base.v2`の関係は次のとおりです。
 
-- P4 でグループが正常に作成され、クリエイターは `owner` → 所有者は自動的に実行します `group.e2ee.create`
-- 会員が `active` P4 では、対象となるデバイスはまだ MLS 会員セット → オーナーが実行されていない `group.e2ee.add(member DID, device ID)`
-- 既にアクティブメンバーは、別の対象となるデバイス → 所有者を追加して、別のデバイスレベルの実行ができます。 `group.e2ee.add` P4会員の変更なし
-- 会員が `left` または `removed` P4 → 所有者は、そのDIDのためのすべてのMLSデバイスリーフを削除します
-- DIDがアクティブ→所有者のまま、または現在のMLS状態と同等DIDデバイス管理権限を持つライセンスを失っている間、デバイスはP2マニフェストの適格性を失う、デバイスリーフだけを削除
-- P4会員が制作する `member-did-updated` P4 → 所有者は、選択した新しい DID デバイス葉を追加し、すべての古い DID デバイスの葉を削除します。
+- P4はグループの業務操作、業務状態、順序付けの意味、受領証の意味を定義します。
+- P6はMLS暗号操作、暗号オブジェクト、バインディング規則、検証要件を定義します。
+- 業務層の権威は、引き続きP4です。
+- P6は、`active / left / removed`などの業務メンバー状態を再定義**しません**。
+- P4 Baseの操作と通知は、引き続きDIDを宛先とし、P6デバイスセレクターを運んではなりません（**MUST NOT**）。
+- P6は、一回に一つのデバイスLeafを追加・削除し、P4メンバーシップを独立して変更しません。
+- P6は、P4メソッドのbodyでMLSネイティブオブジェクトを直接運ぶことを要求しません。
 
-### 3.5 オーナーは MLS コントローラーです。同じ DID デバイス除去は狭い例外です
+### 3.4 メソッドごとの対応ではなく、状態の連動
 
-v2では、所有者のみのDIDは、一般的なMLSコントローラーの役割を想定しています。 一般的な制御リクエストは、必要な現在のMLS状態を所有する資格のある所有者デバイスによって提出されます。別の所有者デバイスの資格は、プライベートな状態を与えません。
+P4とP6の連動は、「あるP4メソッドがあるP6メソッドに直接対応する」ことではなく、**状態**を通じて実現します。
 
-オーナーは、以下の責任を負います。
+具体的には次のとおりです。
 
-- MLSグループを作成します。
-- 実行する `add`;
-- 実行する `remove`;
-- ユーザIDの更新を、各デバイスごとに順に完了し、削除します。
-- 生成する `commit` 会員の変更に対応
-- 生成する `welcome` 新規会員の場合
-- アドバンス `epoch` 会員変更後。
+- P4が、業務上有効かどうかを決めます。
+- P6が業務状態の変化を観測し、それに応じてMLS状態を進めます。
 
-一つの例外は、呼び出し元のDIDの正確な再発デバイスリーフにのみ適用されます。 デバイスが権威ある同一DIDデバイス管理権限を持つ資格のある現在の葉 **MAY** 投稿フォーム `group.e2ee.remove` ターゲットデバイスが正式に再発または現在のP2の適格性を失った後、同じDIDの異なるデバイスリーフのために。 例外:
+例：
 
-- **MUST NOT** コールワーズ独自の葉、アクティブシブルデバイス、別のDIDの葉、またはP4ビジネスメンバーを削除します。
-- **MUST NOT** P4 の役割、ステータス、参加時間、またはメンバー数を変更します。
-- **MUST** 呼び出し元の現在の MLS ステートを使用して、正確な 1 リーフの削除を生成します。
-- **MUST NOT** グループホストがコミットまたはリリースMLSプライベート状態を生成します。
+- P4でグループを作成でき、作成者が`owner`になった→ownerが`group.e2ee.create`を自動実行する。
+- P4でメンバーが`active`になり、適格デバイスがまだMLSメンバー集合に入っていない→ownerが`group.e2ee.add(member DID, device ID)`を実行する。
+- 既にactiveなメンバーが別の適格デバイスを追加した→ownerは、P4メンバーシップを変えずに、デバイス単位の`group.e2ee.add`をもう一度実行できる。
+- P4でメンバーが`left`または`removed`になった→ownerが、そのDIDのすべてのMLSデバイスLeafを削除する。
+- DIDはactiveのまま、デバイスがP2 Manifestの適格性を失った→owner、または現在のMLS状態を持ち、同じDIDのデバイス管理権限を認可された別デバイスが、そのLeafだけを削除する。
+- P4メンバーについてP4で`member-did-updated`が発生した→ownerが、選んだ新DIDのデバイスLeafを追加し、その後ですべての旧DIDのデバイスLeafを削除する。
 
-デバイス管理の承認は、新しいP6要求フィールドではなく、信頼できる展開認可事実です。 認証できないグループホスト **MUST** 例外を拒否し、 **MUST NOT** 呼び出し主のアサーションやキャッシュされたプレゼンテーションデータを信頼できます。
+### 3.5 ownerがMLSコントローラー。同じDIDのデバイス削除は限定的な例外
 
-P6のコアアイデアは、MLSオブジェクトをP4メソッドボディに置くことはないが、暗号化状態をビジネスの状態と共に進歩させるようにする。 以下の図は、読者が以下の詳細な制約を読む前に方法間の因果関係を理解することができるように、この状態のカップリングを要約します。
+v2で一般のMLSコントローラー役を担うのは、owner DIDだけです。一般の制御要求は、必要な現在のMLS状態を持つ、適格なownerデバイスが送信します。別のownerデバイスが適格でも、その秘密状態が与えられるわけではありません。
+
+ownerの責務：
+
+- MLSグループの作成。
+- `add`の実行。
+- `remove`の実行。
+- デバイスごとに順序付けたAddとRemoveによる、メンバーDID更新の実行。
+- メンバー変更に対応する`commit`の生成。
+- 新メンバー向けの`welcome`の生成。
+- メンバー変更後の`epoch`の進行。
+
+限定的な例外が、呼び出し元自身のDIDの、失効した正確なデバイスLeafだけに適用されます。同じDIDのデバイス管理について信頼できる権限を持つデバイスの、適格な現在のLeafは、宛先デバイスが権威ある情報に基づいて失効した、または現在のP2適格性を失った後で、同じDIDの別のデバイスLeafに対する`group.e2ee.remove`を送信してもかまいません（**MAY**）。この例外では：
+
+- 呼び出し元自身のLeaf、有効な同DIDの別デバイス、他DIDのLeaf、P4業務メンバーを削除してはなりません（**MUST NOT**）。
+- P4の役割、状態、参加時刻、メンバー数を変えてはなりません（**MUST NOT**）。
+- 呼び出し元自身の現在のMLS状態を使い、正確に一つのLeafを削除するRemove Commitを生成しなければなりません（**MUST**）。かつ、
+- グループHostにCommitを生成させたり、MLS秘密状態を開示させたりしてはなりません（**MUST NOT**）。
+
+デバイス管理の認可は、配備環境の信頼された認可事実であり、新しいP6要求フィールドではありません。グループHostがその認可を権威ある情報に基づいて検証できない場合、例外を拒否しなければならず（**MUST**）、呼び出し元の自己申告やキャッシュされた表示データを信頼してはなりません（**MUST NOT**）。
+
+P6の中心的な考え方は、MLSオブジェクトをP4メソッドのbodyへ入れることではなく、業務状態とともに暗号状態を進めることです。次の図はこの状態の連動をまとめ、詳細な制約を読む前にメソッド間の因果関係を理解できるようにします。
 
 ```mermaid
 flowchart TB
@@ -182,222 +183,222 @@ DID_UPDATE_REMOVE --> HOST
 HOST --> NOTICE
 ```
 
-*図P6-1: P4/P6状態のカップリング(非放射性)の概要。*
+*図P6-1：P4／P6の状態連動の概観（非規範）。*
 
-この図は、新しいビジネスステートマシンではなくトリガー関係を強調します。P4 は、事業レイヤーの権限を保持し、P6 はそれらの事業結果を観察し、MLS が作成/追加/削除する操作としてそれらを材料化します。
+この図が強調するのは起動の関係であり、新しい業務状態機械ではありません。P4が引き続き業務層の権威であり、P6はその業務結果を観測し、MLSのcreate／add／remove操作として実体化するだけです。
 
-### 3.6 グループ ホストは、注文を担当し、MLS 制御に責任を負わない
+### 3.6 グループHostは順序付けを担当し、MLS制御は担当しない
 
-グループホストサービスの責任は次のとおりです。
+グループHostサービスの責務：
 
-- P4事業の受入・発注
-- ソリューション `group_event_seq` 受付けたイベント
-- アドバンス `group_state_version`;
-- 生成 `group_receipt`;
-- グループメッセージとE2EE通知を配信する。
-- MLSオブジェクトを復号化または再暗号化することなく、各ターゲットデバイスリーフ用の別の暗号化式封筒を作成します。
-- 業務レイヤーでMLS制御結果の実装を一目瞭然。
+- P4業務操作の受信と順序付け。
+- 受け入れたイベントへの`group_event_seq`の割り当て。
+- `group_state_version`の進行。
+- `group_receipt`の生成。
+- グループメッセージとE2EE Noticeの配信。
+- MLSオブジェクトを復号・再暗号化せず、宛先デバイスLeafごとに別個の暗号化配信エンベロープを作成。
+- MLS制御結果の業務層での成立を証明すること。
 
-デフォルトでは、グループホストサービス:
+既定では、グループHostサービスは：
 
-- **SHOULD NOT** MLS のコントローラーとして機能して下さい;
-- **SHOULD NOT** MLSグループメンバーとして機能する。
-- **SHOULD NOT** グループアプリケーションプレーンテキストの復号化機能を保持します。
-- **MUST NOT** デバイス間でMLSプライベート状態またはエポックの秘密をコピーします。
+- MLSコントローラーとして動作するべきではありません（**SHOULD NOT**）。
+- MLSグループメンバーになるべきではありません（**SHOULD NOT**）。
+- グループアプリケーション平文の復号能力を持つべきではありません（**SHOULD NOT**）。
+- デバイス間でMLS秘密状態やepoch秘密情報をコピーしてはなりません（**MUST NOT**）。
 
-### 3.7 所有者はグループの状態を管理します。, アクティブなメンバーはグループメッセージを管理する
+### 3.7 ownerがグループ状態を管理し、activeなメンバーがグループメッセージを扱う
 
-オーナーは、次の操作を行います。
+ownerが制御するもの：
 
-- 会員の変更
-- グループ暗号状態の高度化;
-- 更新情報 `epoch`.
+- メンバー変更。
+- グループ暗号状態の進行。
+- `epoch`の更新。
 
-対象となるデバイスは、 `active` 会員様と現在、MLSの葉は以下にできます。
+`active`なメンバーに属し、現在MLS Leafを持つ各適格デバイスは、次を行えます。
 
-- 現在のグループの状態を使用して、独自のグループメッセージの暗号文を生成する。
-- コールセンター `group.e2ee.send` 独自のグループメッセージを送信する
-- 他のメンバーのグループメッセージを復号化します。
+- 現在のグループ状態を使い、自分のグループメッセージ暗号文を生成する。
+- `group.e2ee.send`を呼び、自分のグループメッセージを送信する。
+- 他のメンバーのグループメッセージを復号する。
 
-このプロファイルは、すべてのグループメッセージが所有者によって暗号化されることを必要としません。
+このProfileは、すべてのグループメッセージをownerが暗号化することを要求しません。
 
-セクション3.5の同じDID例外は、新規作成、追加、会員レベルの削除、DID-update、またはサードパーティのコントロール権限を付与しません。
+3.5節の同DIDの例外は、作成、追加、メンバー単位の削除、DID更新、第三者に対する制御の権限を与えません。
 
-### 3.8 v2は外部コミットをサポートしていません
+### 3.8 v2はExternal Commitに対応しない
 
-v2 で:
+v2では：
 
-- 外部コミットはサポートされていません。
-- `group_join_info` 定義されていない;
-- `group.e2ee.get_join_info` 定義されていない;
-- とりあえず `accept_welcome` プロトコルメソッドは定義されていません。
+- External Commitに対応しません。
+- `group_join_info`を定義しません。
+- `group.e2ee.get_join_info`を定義しません。
+- `accept_welcome`プロトコルメソッドを定義しません。
 
-すべてのグループエントリーパスは、最終的にMLSに統一されます `add` 暗号層の所有者によって開始される。
+すべてのグループ参加経路は、最終的に、暗号層でownerが開始するMLSの`add`へ統一されます。
 
-### 3.9 メッセージ側のみがPrivateMessageに入ります
+### 3.9 PrivateMessageに入るのはメッセージ側だけ
 
-v2 で:
+v2では：
 
-- アプリケーションのメッセージ内容だけ `group.e2ee.send` MLS を入力してください `PrivateMessage` 暗号化される
-- `group.e2ee.create`, `group.e2ee.add`と `group.e2ee.remove` 今後もプレーンテキストJSON-RPCリクエストボディの活用を続けていきます。DIDアップデートオーケストレーションは再利用します `add` とりあえず `remove` 新規リクエストメソッドを定義し、
-- オブジェクトなど `commit` とりあえず `welcome` P4ビジネスメソッドボディに埋め込まれる代わりに、メソッドの入力や通知ペイロードとして表示されます。
+- `group.e2ee.send`のアプリケーションメッセージ内容だけが、MLSの`PrivateMessage`に入り暗号化されます。
+- `group.e2ee.create`、`group.e2ee.add`、`group.e2ee.remove`は、すべて引き続き平文のJSON-RPC要求bodyを使います。DID更新の編成は`add`と`remove`を再利用し、新しい要求メソッドを定義しません。
+- `commit`や`welcome`などのオブジェクトは、メソッド入力やNoticeペイロードとして現れ、P4業務メソッドのbodyへ埋め込みません。
 
 ---
 
-## 4. 依存性、プロファイル識別およびターゲットモデリング
+## 4. 依存関係、Profileの識別、対象モデル
 
-### 4.1 プロフィール名
+### 4.1 Profile名
 
-このプロファイルの標準的な名前は、次のとおりです。
+このProfileの標準名は次のとおりです。
 
 `anp.group.e2ee.v2`
 
 ### 4.2 依存関係
 
-プロフィール **MUST** 下記のプロフィールによります。
+このProfileは、次のProfileに依存しなければなりません（**MUST**）。
 
 - `anp.core.binding.v1`
 - `anp.identity.discovery.v1`
 - `anp.group.base.v2`
 
-### 4.3 セキュリティプロファイル
+### 4.3 Security Profile
 
-このページの先頭へ:
+このProfileを使う場合：
 
-- `meta.profile` **MUST** 等しいです `anp.group.e2ee.v2`.
-- このプロファイルで定義されたすべてのデバイス起源のP6 **MUST** 含まれるもの `meta.sender_device_id` と現在のP2マニフェストエントリに結合します。 `meta.sender_did`.
-- デバイスターゲットのP6通知または暗号化された配信 **MUST** 含まれるもの `meta.recipient_device_id` エージェントのIDをそのまま保存 `meta.target.did`.
-- これらのセレクタはP6のみに所属しています。 P4ベース操作と通知 **MUST NOT** それらを継承する。
+- `meta.profile`は`anp.group.e2ee.v2`と等しくなければなりません（**MUST**）。
+- このProfileが定義するデバイス起点の各P6要求は、`meta.sender_device_id`を含み、`meta.sender_did`の現在のP2 Manifestエントリに結び付けなければなりません（**MUST**）。
+- デバイスを対象とするP6通知や暗号化配信は、`meta.recipient_device_id`を含み、`meta.target.did`内のAgent DIDを維持しなければなりません（**MUST**）。
+- これらのセレクターはP6だけに属します。P4 Baseの操作と通知が引き継いではなりません（**MUST NOT**）。
 
-それらの中で:
+具体的には：
 
-- `group.e2ee.publish_key_package`, `group.e2ee.get_key_package`, `group.e2ee.notice` **MUST** 利用条件 `transport-protected`
-- `group.e2ee.create`, `group.e2ee.add`, `group.e2ee.remove`, `group.e2ee.send`, P6 と `group.incoming` **MUST** 利用条件 `group-e2ee`
+- `group.e2ee.publish_key_package`、`group.e2ee.get_key_package`、`group.e2ee.notice`は、`transport-protected`を使わなければなりません（**MUST**）。
+- `group.e2ee.create`、`group.e2ee.add`、`group.e2ee.remove`、`group.e2ee.send`、P6の`group.incoming`は、`group-e2ee`を使わなければなりません（**MUST**）。
 
-のために `group.e2ee.send`, `group-e2ee` グループE2EE側に属するメッセージのセマティクスを意味します。それは、その外部JSON-RPCリクエストボディが再びグループによって暗号化されるという意味ではありません。
+`group.e2ee.send`の`group-e2ee`は、運ぶメッセージの意味がグループE2EE側に属することを示します。外側のJSON-RPC要求bodyを、グループによって再び暗号化するという意味ではありません。
 
-### 4.4 方法ターゲットモデリング
+### 4.4 メソッドの対象モデル
 
-### 4.4.1 サービススコープ
+### 4.4.1 サービスをスコープとするメソッド
 
-次の方法 **MUST** は、 `service-scoped`:
+次のメソッドは、`service-scoped`でなければなりません（**MUST**）。
 
 - `group.e2ee.publish_key_package`
 - `group.e2ee.get_key_package`
 - `group.e2ee.create`
 
-ルール:
+規則：
 
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 等しいターゲット 公共 `ANPMessageService.serviceDid`
+- `meta.target.did`は、宛先の公開`ANPMessageService.serviceDid`と等しくなければなりません（**MUST**）。
 
-理由はなぜ `group.e2ee.create` サービススコープを使用する:
-成功の前の `group.create` 経営層に、グループが持つ事業状態が確立されました。 ですが、 `group_did` 生成された、作成アクション自体はグループホストサービス入り口の暗号化初期化をまだ完了しています。そのため、v2はサービススコープ付きを均一に使用しています。
+`group.e2ee.create`がservice-scopedを使う理由：
+業務層の`group.create`の成功前には、グループの業務状態が成立したばかりです。`group_did`は生成済みでも、作成操作自体はグループHostのサービス入口に対する暗号初期化を完了するため、v2ではサービススコープへ統一します。〔訳注：原文は「成功前」と「業務状態が成立したばかり」を同時に記載しています。この時間関係の不整合を、成功後などへ黙って変更していません。〕
 
-### 4.4.2 グループアドレス
+### 4.4.2 グループを宛先とするメソッド
 
-次の方法 **MUST** は、 `group-addressed`:
+次のメソッドは、`group-addressed`でなければなりません（**MUST**）。
 
 - `group.e2ee.add`
 - `group.e2ee.remove`
 - `group.e2ee.send`
 
-ルール:
+規則：
 
 - `meta.target.kind = "group"`
-- `meta.target.did` **MUST** 等しいターゲット `group_did`
+- `meta.target.did`は、宛先の`group_did`と等しくなければなりません（**MUST**）。
 
-### 4.4.3 エージェントが通知をアドレス指定
+### 4.4.3 エージェントを宛先とする通知
 
-下記の通知 **MUST** は、 `agent-addressed`:
+次の通知は、`agent-addressed`でなければなりません（**MUST**）。
 
 - `group.e2ee.notice`
-- プチ6 `group.incoming` アプリケーション・暗号文配信のため
+- アプリケーション暗号文配信用のP6 `group.incoming`。
 
-ルール:
+規則：
 
 - `meta.target.kind = "agent"`
-- `meta.target.did` **MUST** 通知受信者エージェント DID に等しい
-- `meta.recipient_device_id` **MUST** 正確な受信デバイスリーフを選択します。通知 **MUST NOT** 兄弟デバイスにリダイレクトされます。
-- このプロファイルは定義しません `target.kind = "device"`.
+- `meta.target.did`は、通知を受け取るAgent DIDと等しくなければなりません（**MUST**）。
+- `meta.recipient_device_id`は、正確な受信デバイスLeafを選ばなければなりません（**MUST**）。通知を同じDIDの別デバイスへ振り向けてはなりません（**MUST NOT**）。
+- このProfileは`target.kind = "device"`を定義しません。
 
 ---
 
-## 5. 暗号メインラインとMTIスイート
+## 5. 暗号処理の主要経路とMTIスイート
 
-### 5.1 主流プロトコル
+### 5.1 主要プロトコル
 
-プロフィールのグループキーの本管 **MUST** MLS 1.0 のセマンティックスに基づいて実装されますが、v2 は制限された使用サブセットのみを固定します。
+このProfileのグループ鍵の主要経路は、MLS 1.0の意味に基づいて実装しなければなりません（**MUST**）。ただし、v2が固定するのは、その制限された使用部分集合だけです。
 
-v2 のメインラインは、少なくとも次のものを含んでいます:
+v2の主要経路は、少なくとも次を含みます。
 
-- キーパッケージ
-- アクセサリー
-- 削除
-- コンテンツ
-- おすすめ
-- プライベートメッセージ
-- エッチングの進歩
+- KeyPackage
+- Add
+- Remove
+- Commit
+- Welcome
+- PrivateMessage
+- Epochの進行
 
-P4メンバーDIDアップデートでは、新しいP6方法や新MLSのプリミティブも紹介しています。 まずは1つを使用します。 `group.e2ee.add` 選択した新しいDIDデバイスごとにコミットし、その後1つ `group.e2ee.remove` 古いDIDデバイスリーフごとにコミットします。
+P4メンバーのDID更新は、新しいP6メソッドやMLSプリミティブを導入しません。まず、選んだ新DIDのデバイスごとに一つの`group.e2ee.add` Commitを使い、次に、旧DIDのデバイスLeafごとに一つの`group.e2ee.remove` Commitを使います。
 
-それらの中で:
+各項目の規則：
 
-- `commit_b64u` **MUST** 完全なMLSの生バイトとして表される `MLSMessage` (`mls-public-message`) TLSによってシリアライズされる;
-- `welcome_b64u` **MUST** MLSの生バイトとして表される `Welcome` TLS でシリアライズされたオブジェクト。
-- `PrivateMessage` **MUST** グループアプリケーションメッセージの唯一の ciphertext ベアラーオブジェクトとして機能します。
+- `commit_b64u`は、TLSで直列化した完全なMLS `MLSMessage`（`mls-public-message`）の生バイト列で表現しなければなりません（**MUST**）。
+- `welcome_b64u`は、TLSで直列化したMLS `Welcome`オブジェクトの生バイト列で表現しなければなりません（**MUST**）。
+- `PrivateMessage`は、グループアプリケーションメッセージの唯一の暗号文運搬オブジェクトでなければなりません（**MUST**）。
 
-MLSライブラリ **MAY** 標準的な機能も追加でサポート `Update`, 提案のバッチ処理, PSK, そして、ReInit; しかしながら, これらの機能 **所属しない** このプロファイルv2の最小プロトコルメインラインに、v2の相互運用性要件を構成していません。
+MLSライブラリは、`Update`、proposalの一括処理、PSK、ReInitなどの標準機能に追加対応してもかまいません（**MAY**）。ただし、これらはこのProfile v2の最小プロトコルの主要経路に**含まれず**、v2の相互運用要件ではありません。
 
-### 5.2 必須-ツー・イポメンドスイート
+### 5.2 実装必須スイート
 
-最小限の相互運用性を確保するために、このプロファイルに準拠した実装 MUST 以下のMTIパッケージをサポート:
+相互運用の最小要件を確保するため、このProfileに適合する実装は、次のMTIスイートに対応しなければなりません（MUST）。
 
 `MLS_128_DHKEMX25519_AES128GCM_SHA256_Ed25519`
 
-### 5.3 追加スイート
+### 5.3 追加のスイート
 
-導入事例 **MAY** MLS スイートをもっとサポートします。
+実装は、さらに多くのMLSスイートに対応してもかまいません（**MAY**）。ただし：
 
-- 同じグループ内のすべてのメンバー **MUST** 使用されるキットに同意します。
-- グループポリシー制限により、パッケージコレクションが許可されている場合、MLS コントローラー **MUST** 方針に満足しないパッケージを拒否します。
+- 同じグループの全メンバーは、使うスイートに合意しなければなりません（**MUST**）。
+- グループポリシーが許可するスイート集合を制限する場合、MLSコントローラーは、ポリシーを満たさないスイートを拒否しなければなりません（**MUST**）。
 
 ### 5.4 DIDアイデンティティとの関係
 
-このプロフィールとDIDのアイデンティティの主な行間の関係は次のとおりです。
+このProfileの主要経路とDIDアイデンティティの関係は次のとおりです。
 
-- `assertionMethod` DID 文書では、ID の証拠を結合するために使用されます;
-- `keyAgreement` **SHOULD** DID ドキュメントには、エージェントが E2EE 機能を持っていることを示す少なくとも 1 つの X25519 エントリが含まれている。
-- プチスイム `deviceManifest` 現在のデバイスエントリを識別する、その `signing_key_id`, `e2ee_key_id`と `anp.group.e2ee.v2` 資格;
-- MLSグループメンバーの葉署名キー **SHOULD NOT** DID の長期署名キーと直接等しいこと;
-- 葉の署名キー **SHOULD** 別々に生成され、境界線を `(agent_did, device_id)` セクション6の結合オブジェクトを介して。
+- DID文書の`assertionMethod`を、アイデンティティのバインディング証明に使います。
+- DID文書の`keyAgreement`には、エージェントがE2EE機能を持つことを示すため、少なくとも一つのX25519エントリを含めるべきです（**SHOULD**）。
+- P2の`deviceManifest`は、現在のデバイスエントリ、その`signing_key_id`、`e2ee_key_id`、`anp.group.e2ee.v2`への適格性を識別します。
+- MLSグループメンバーのLeaf署名鍵を、DIDの長期アイデンティティ署名鍵と直接同一にするべきではありません（**SHOULD NOT**）。
+- Leaf署名鍵は別途生成し、6節のバインディングオブジェクトで`(agent_did, device_id)`に結び付けるべきです（**SHOULD**）。
 
 ---
 
-## 6. 方法独立型DIDとMLS結合モデル
+## 6. DIDメソッドに依存しないDIDとMLSのバインディングモデル
 
-### 6.1 結合ターゲット
+### 6.1 バインディングの対象
 
-このプロファイルは、次のMLS要素をバインドする必要があります `(agent_did, device_id)`:
+このProfileは、次のMLS要素を`(agent_did, device_id)`に結び付けることを要求します。
 
-1. KeyPackage オーナー;
-2. 現在の葉の署名キー;
-3. グループメンバーの資格情報におけるアイデンティティ文字列。
-4. 結合証拠に使用するP2マニフェストの署名キー参照。
+1. KeyPackageの所有者。
+2. 現在のLeaf署名鍵。
+3. グループメンバー資格情報内のアイデンティティ文字列。
+4. バインディング証明で使う、P2 Manifestの署名鍵参照。
 
-### 6.2 犯罪者ID規則
+### 6.2 資格情報のアイデンティティ規則
 
-このページのトップへ `credential.identity` MLSメンバー資格 **MUST** 同じく、その葉の現在のUTF-8バイト文字列 `agent_did`. . . 読みやすい名前、安定した主題パス、またはローカルアイデンティティ **MUST NOT** 書き込むか、または取り替えて下さい `credential.identity`.
+このProfileでは、MLSメンバー資格情報の`credential.identity`は、そのLeafの現在の`agent_did`のUTF-8バイト列と等しくなければなりません（**MUST**）。読みやすい名前、安定した主体パス、ローカルアイデンティティを、`credential.identity`へ書き込んだり、その代わりに使ったりしてはなりません（**MUST NOT**）。
 
-導入事例 **MUST NOT** 交換する `credential.identity` ローカルアカウントID、デバイスID、数値ユーザID、その他非DID文字列で。
+実装は、`credential.identity`を、ローカルアカウントID、デバイスID、数値の利用者ID、その他の非DID文字列に置き換えてはなりません（**MUST NOT**）。
 
-同じDIDの兄弟葉は、したがって同じを持っている `credential.identity` 明確な認証 `device_id` 値。 頂点は、単独で値ではなく、P6葉を完全ペアで識別します。
+したがって、同じDIDの複数Leafは、同じ`credential.identity`を持ちますが、認証された`device_id`値は異なります。検証者は、いずれか一方の値だけでなく、完全な組によってP6 Leafを識別します。
 
-### 6.3 `did_wba_binding` オブジェクト
+### 6.3 `did_wba_binding`オブジェクト
 
-このプロファイルは、 `did_wba_binding` MLS 葉署名キーを 1 つの対象となるデバイスにバインドするために使用されるオブジェクト `agent_did`. . . オブジェクト名やオブジェクト名を無視する `anp_did_wba_device_binding` 拡張子名は DID メソッドを制限します。 `agent_did`.
+このProfileは、MLS Leaf署名鍵を、`agent_did`の下の一つの適格デバイスに結び付ける`did_wba_binding`オブジェクトを定義します。このオブジェクト名や拡張名`anp_did_wba_device_binding`は、`agent_did`のDIDメソッドを制限しません。
 
-推奨構造は以下の通りです。
+推奨する構造は次のとおりです。
 
 ```json
 {
@@ -418,40 +419,40 @@ MLSライブラリ **MAY** 標準的な機能も追加でサポート `Update`, 
 }
 ```
 
-`did_wba_binding.proof` **MUST** 共有の再利用 **オブジェクトの証拠のプロフィール** P1 付録 B で定義される。
+`did_wba_binding.proof`は、P1付録Bの共通の**Object Proof Profile**を再利用しなければなりません（**MUST**）。
 
-のために `did_wba_binding`:
+`did_wba_binding`について：
 
-- 発行者 DID **MUST** は、 `agent_did`
-- 保護された文書 **MUST** 全体として `did_wba_binding` 取除の後の目的 `proof`
-- `device_id` **MUST** 対象となる現在のP2マニフェストエントリーを識別する `anp.group.e2ee.v2`
-- `verification_method` とりあえず `proof.verificationMethod` **MUST** エントリーの同等 `signing_key_id`, , , **MUST** 認定される `assertionMethod` で、 `agent_did` DID ドキュメント
+- 発行者DIDは`agent_did`でなければなりません（**MUST**）。
+- 保護対象文書は、`proof`を削除した`did_wba_binding`オブジェクト全体でなければなりません（**MUST**）。
+- `device_id`は、`anp.group.e2ee.v2`に適格な現在のP2 Manifestエントリを識別しなければなりません（**MUST**）。
+- `verification_method`と`proof.verificationMethod`は、そのエントリの`signing_key_id`と等しくなければならず（**MUST**）、その鍵は`agent_did`のDID文書の`assertionMethod`で認可されていなければなりません（**MUST**）。
 
-#### 6.3.1 `anp_did_wba_device_binding` MLS拡張
+#### 6.3.1 MLS拡張`anp_did_wba_device_binding`
 
-このドラフトは暫定的なプライベートユースMLSを割り当てます `ExtensionType` `0xF0A1` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `anp_did_wba_device_binding`. . . IANAの譲渡ではありません。 **MUST** 後だけ使用して下さい `anp.group.e2ee.v2` 交渉が進んでいます。 アクセシビリティ **MUST** v2 を解放する前に、安定した登録コードポイントを公開します。このドラフト値を変更すると、ドラフトの修正が行われます。
+この草案は、`anp_did_wba_device_binding`に、プライベート利用の暫定MLS `ExtensionType`値`0xF0A1`を割り当てます。IANAによる割り当てではなく、`anp.group.e2ee.v2`を明示的に交渉した後にだけ使用しなければなりません（**MUST**）。ANPは、v2をリリースする前に、登録済みの安定したコードポイントを公開しなければなりません（**MUST**）。この草案値を変更する場合、互換性を壊す草案改訂となります。
 
-とりあえず `extension_data` バイトは、完全なUTF-8 RFC 8785 JCSエンコーディングです `did_wba_binding` JSONオブジェクト、を含む `proof`. . . KeyPackage が実施する v2 リーフノード **MUST** このタイプの1つの拡張子を正確に含んだ、およびグループに保持されている認証済みのリーフノード **MUST** 同じ結合を保存します。 リーフノードの `capabilities.extensions` グループコンテキスト `required_capabilities` エクステンション **MUST** リスト `0xF0A1`.
+`extension_data`のバイト列は、`proof`を含む完全な`did_wba_binding` JSONオブジェクトをUTF-8 RFC 8785 JCSで符号化したものです。KeyPackageが運ぶv2 LeafNodeは、この型の拡張を正確に一つ含まなければならず（**MUST**）、グループに保持される認証済みLeafNodeも、同じバインディングを維持しなければなりません（**MUST**）。LeafNodeの`capabilities.extensions`とGroupContextの`required_capabilities`拡張は、`0xF0A1`を列挙しなければなりません（**MUST**）。
 
-v2 の実装 **MUST** 欠落、重複、誤字、サポートされていない、または拡張機能または機能宣言を衝突させる拒否します。 便利さ `group_key_package.did_wba_binding` 会員名 **MUST** 埋め込まれた拡張機能と同じJCSバイトを持ち、それを置き換えません。
+v2実装は、拡張や機能宣言の欠落、重複、不正形式、未対応、値の衝突を拒否しなければなりません（**MUST**）。便宜上の`group_key_package.did_wba_binding`メンバーは、埋め込まれた拡張と同じJCSバイト列でなければならず（**MUST**）、拡張の代わりにはなりません。
 
-### 6.4 `did_wba_binding` 検証ルール
+### 6.4 `did_wba_binding`の検証規則
 
-受取人 MUST KeyPackage、Fリーフノードの更新、または新規メンバーを受け入れる前に、次の検証を完了します。
+受信側は、KeyPackage、LeafNode更新、新メンバーを受け入れる前に、次の検証を完了しなければなりません（MUST）。
 
-1. 解決し、現在の検証 `agent_did` ドキュメントの下のDID文書 [P2 メソッド検証](../../message/02-identity-and-discovery.md#method-validation);
-2. `device_id` 現行のP2で一度に正確に起こる `deviceManifest` 宣言する `anp.group.e2ee.v2` 依存関係で;
-3. `verification_method` エントリーの現在の等しい `signing_key_id` と は によって 承認される `assertionMethod`;
-4. `proof` **MUST** P1付録Bの共有オブジェクトプルーフプロファイルが存在し、満足させます。
-5. 発行者 DID の `proof` イーグル `agent_did` 証拠の検証パス;
-6. 保護された文書は少なくともカバーします `agent_did`, `device_id`, `verification_method`, `leaf_signature_key_b64u`, `issued_at`と `expires_at`;
-7. KeyPackage/リーフノードは、セクション6.01の拡張機能と必要な機能宣言を運びます。
-8. 埋め込まれた延長および兄弟 `did_wba_binding` 同じ JCS バイトを持っている;
-9. 実際の葉署名公鍵は、一貫して一貫性のあるものです。 `leaf_signature_key_b64u`;
-10. `credential.identity` MLS のクレデンシャルは一貫して `agent_did`;
-11. スイート、グループポリシー、 `issued_at` / `expires_at` ウィンドウが有効です。
+1. [P2のメソッド検証](../../message/02-identity-and-discovery.md#method-validation)に従って、現在の`agent_did`のDID Documentを解決・検証する。
+2. `device_id`が現在のP2 `deviceManifest`に正確に一度現れ、`anp.group.e2ee.v2`とその依存関係を宣言している。
+3. `verification_method`が、そのエントリの現在の`signing_key_id`と等しく、`assertionMethod`で認可されている。
+4. `proof`が存在し、P1付録Bの共通Object Proof Profileを満たさなければならない（**MUST**）。
+5. `proof`の発行者DIDが`agent_did`と等しく、証明検証に合格する。
+6. 保護対象文書が、少なくとも`agent_did`、`device_id`、`verification_method`、`leaf_signature_key_b64u`、`issued_at`、`expires_at`を対象としている。
+7. KeyPackage／LeafNodeが、6.3.1節の拡張と必須の機能宣言を運ぶ。
+8. 埋め込まれた拡張と、同じ階層にある`did_wba_binding`のJCSバイト列が同一。
+9. 実際のLeaf署名公開鍵が`leaf_signature_key_b64u`と一致する。
+10. MLS資格情報の`credential.identity`が`agent_did`と一致する。
+11. スイート、グループポリシー、`issued_at`／`expires_at`の期間が有効。
 
-P6 は定義します `did_wba_binding` MLS の葉署名キーは DID の長期同一証明鍵と直接一致しないべきではないですので。 次の図は、 `agent_did`, DID ドキュメント, 結合オブジェクト, KeyPackage/ `credential.identity` 読者が確認の順序を理解できるように。
+P6が`did_wba_binding`を定義するのは、MLS Leaf署名鍵をDIDの長期アイデンティティ署名鍵と直接同一視すべきでないためです。次の図は、`agent_did`、DID文書、バインディングオブジェクト、KeyPackage／`credential.identity`を結び、検証順を理解できるようにします。
 
 ```mermaid
 flowchart LR
@@ -469,39 +470,39 @@ DID --> CID
 CID --> KP
 ```
 
-*図P6-2:DID/deviceとMLS結合チェーン(非放射性)。*
+*図P6-2：DID／デバイスとMLSのバインディング連鎖（非規範）。*
 
-検証中に、受信者は内部の MLS 署名が有効であることを確認するだけでなく、 また、このチェーンに従うべきことを確認し、 `credential.identity`, `device_id`、葉の署名キー、現在のマニフェストの記入項目および `agent_did` 完全に境界線です。
+受信側は、内部のMLS署名が有効なことだけを確認するべきではありません。この連鎖に従い、`credential.identity`、`device_id`、Leaf署名鍵、現在のManifestエントリ、`agent_did`が完全に結び付くことも確認するべきです。
 
-### 6.5 DID方法および結合の証拠
+### 6.5 DIDメソッドとバインディング証明
 
-- サポートされている DID メソッドの場合、 `did_wba_binding.proof` **MUST** P1付録Bの共有オブジェクトプルーフプロファイルを再使用します。
-- 互換性のあるため `k1_` ドイド, `did_wba_binding.proof` **MAY** 明示的な拡張交渉によって定義される代替オブジェクトプルーフプロファイルを使用します。 しかし、明示的なエクステンション交渉がないとき、v2 MTI **しない** ビーコン `k1_` デフォルトでインターワーキング・パスとして証拠;
-- MLSグループのためのMTIの葉の署名キーはまだ **MAY** 結合の証拠が保持する限り、DIDのアイデンティティ・カーブに関係なくEd25519を使用して下さい。
+- 対応するDIDメソッドでは、`did_wba_binding.proof`はP1付録Bの共通Object Proof Profileを再利用しなければなりません（**MUST**）。
+- 互換の`k1_` DIDでは、`did_wba_binding.proof`に、明示的な拡張交渉で定義する代替Object Proof Profileを使ってもかまいません（**MAY**）。ただし、明示的な拡張交渉がない場合、v2 MTIは、`k1_`証明のバインディングを既定の相互接続経路と**しません**。
+- DIDのアイデンティティ曲線にかかわらず、バインディング証明が成り立つ限り、MLSグループのMTI Leaf署名鍵にEd25519を使ってもかまいません（**MAY**）。
 
 ---
 
-## 7. コアオブジェクト
+## 7. 中核オブジェクト
 
 ### 7.1 `crypto_group_id`
 
-`crypto_group_id` MLSの内部を表します `group_id`.
+`crypto_group_id`は、MLS内部の`group_id`を表します。
 
-ルールは以下の通りです。
+規則は次のとおりです。
 
-- `crypto_group_id` **MUST** 不透明バイトとして扱われる;
-- JSON では、 **MUST** によって表現される `base64url`フィールド名は、 `crypto_group_id_b64u`;
-- `crypto_group_id` **MUST** 検証可能な結合を確立する `group_did`.
+- `crypto_group_id`は不透明なバイト列として扱わなければなりません（**MUST**）。
+- JSONでは`base64url`で表現しなければなりません（**MUST**）。推奨フィールド名は`crypto_group_id_b64u`です。
+- `crypto_group_id`は、`group_did`との検証可能なバインディングを確立しなければなりません（**MUST**）。
 
 ### 7.2 `group_state_ref`
 
-このページの先頭へ `group_state_ref` P4の概念は、E2EEグループが少なくとも含まれていることを要求します。
+このProfileは、P4の`group_state_ref`の概念を再利用し、E2EEグループに少なくとも次を含めることを要求します。
 
 - `group_did`
 - `group_state_version`
-- `policy_hash` (グループポリシーがハッシュされた場合)
+- `policy_hash`（グループポリシーをハッシュ化している場合）
 
-グループE2EEでは、リーダーは異なるレイヤーで4つの識別子/バージョン間で誤った精神モデルを簡単に接続できます。グループID、ビジネスステートバージョン、暗号化内部グループID、およびMLSのEPOC。 以下は、ソースと進歩関係を1つのビューに置きます。
+グループE2EEでは、異なる層にある四つの識別子／バージョン、すなわちGroup DID、業務状態バージョン、暗号処理内部のグループID、MLS epochの関係を誤解しやすくなります。次の図は、それぞれの情報源と進行の関係を一つにまとめます。
 
 ```mermaid
 flowchart TD
@@ -529,13 +530,13 @@ CG --> MSG
 EP --> MSG
 ```
 
-*図P6-3:関係性 `group_did`, `crypto_group_id`, `group_state_version`と `epoch` (非放射性)。*
+*図P6-3：`group_did`、`crypto_group_id`、`group_state_version`、`epoch`の関係（非規範）。*
 
-後続のオブジェクト構造と検証ルールを読むときは、これらの4つの値を異なるレイヤーから座標として扱います。それらはバインドする必要がありますが、互いに交換してはならないため、同じ値として機械的に処理されるべきではありません。
+以降のオブジェクト構造と検証規則では、この四つの値を、異なる層の座標として捉えてください。相互に結び付ける必要はありますが、互いを置き換えることはできず、機械的に同じ値と扱うべきではありません。
 
 ### 7.3 `group_key_package`
 
-このプロファイル定義グループは、材料包装オブジェクトを追加します。
+このProfileは、グループへの追加素材を包む次のオブジェクトを定義します。
 
 ```text
 {
@@ -549,26 +550,26 @@ EP --> MSG
 }
 ```
 
-それらの中で:
+各項目の規則：
 
-- `key_package_id` **MUST** 存在;
-- `owner_did` **MUST** 存在;
-- `owner_device_id` **MUST** 存在;
-- `suite` **MUST** 存在;
-- `mls_key_package_b64u` **MUST** 存在;
-- `did_wba_binding` **MUST** 存在;
-- `expires_at` **SHOULD** 存在;
-- `mls_key_package_b64u` **MUST** MLSの生バイトのためのno-padding base64url `KeyPackage` MLS 1.0 TLS によるシリアライズ後のオブジェクト。
-- `owner_did` とりあえず `owner_device_id` **MUST** 等しく `did_wba_binding.agent_did` とりあえず `did_wba_binding.device_id`;
-- 1つのKeyPackageは正確に1つの装置に属し、 **MUST NOT** 別のデバイスリーフに使用されます。 消費量と展開決定の最後のリゾート再利用はセクション13.2を変更しないようにします。
+- `key_package_id`が存在しなければなりません（**MUST**）。
+- `owner_did`が存在しなければなりません（**MUST**）。
+- `owner_device_id`が存在しなければなりません（**MUST**）。
+- `suite`が存在しなければなりません（**MUST**）。
+- `mls_key_package_b64u`が存在しなければなりません（**MUST**）。
+- `did_wba_binding`が存在しなければなりません（**MUST**）。
+- `expires_at`は存在するべきです（**SHOULD**）。
+- `mls_key_package_b64u`は、MLS 1.0 TLSで直列化したMLS `KeyPackage`オブジェクトの生バイト列を、パディングなしのbase64urlで表現しなければなりません（**MUST**）。
+- `owner_did`と`owner_device_id`は、それぞれ`did_wba_binding.agent_did`と`did_wba_binding.device_id`に等しくなければなりません（**MUST**）。
+- 一つのKeyPackageは正確に一つのデバイスに属し、別デバイスのLeafへ使ってはなりません（**MUST NOT**）。消費と、配備環境が宣言するlast-resort再利用は、変更せず13.2節に従います。
 
-`group_key_package` 主に所有者が実行するために使用されます `group.e2ee.add`.
+`group_key_package`は、主にownerが後で`group.e2ee.add`を実行するために使います。
 
 ### 7.4 `group_cipher_object`
 
-`group_cipher_object` のワイヤー プロトコル メッセージ ボディ オブジェクトです。 `group.e2ee.send`.
+`group_cipher_object`は、`group.e2ee.send`のwireプロトコルのメッセージbodyオブジェクトです。
 
-推奨構造は以下の通りです。
+推奨する構造は次のとおりです。
 
 ```json
 {
@@ -584,17 +585,17 @@ EP --> MSG
 }
 ```
 
-ルール:
+規則：
 
-- `crypto_group_id_b64u` **MUST** 存在;
-- `epoch` **MUST** 存在;
-- `private_message_b64u` **MUST** 存在;
-- `private_message_b64u` **MUST** MLSの生バイトのためのno-padding base64url `PrivateMessage` MLS 1.0 TLS でシリアル化されたオブジェクト。
-- `group_state_ref.group_did` **MUST** 外部ターゲットに等しくなる `group_did`.
+- `crypto_group_id_b64u`が存在しなければなりません（**MUST**）。
+- `epoch`が存在しなければなりません（**MUST**）。
+- `private_message_b64u`が存在しなければなりません（**MUST**）。
+- `private_message_b64u`は、MLS 1.0 TLSで直列化したMLS `PrivateMessage`オブジェクトの生バイト列を、パディングなしのbase64urlで表現しなければなりません（**MUST**）。
+- `group_state_ref.group_did`は、外側の宛先`group_did`と等しくなければなりません（**MUST**）。
 
 ### 7.5 `Group Application Plaintext`
 
-グループアプリケーションメッセージが MLS に入る前に `PrivateMessage` 暗号化, **MUST** 次の内文脈オブジェクトに正規化される:
+グループアプリケーションメッセージをMLSの`PrivateMessage`で暗号化する前に、次の内側の平文オブジェクトへ正規化しなければなりません（**MUST**）。
 
 ```json
 {
@@ -608,18 +609,18 @@ EP --> MSG
 }
 ```
 
-ルール:
+規則：
 
-- `application_content_type` **MUST** 存在;
-- 正確に 1 つ `text`, `payload`, または `payload_b64u` **MUST** プレゼント
-- メッセージのセマンティックフィールド `thread_id`, `reply_to_message_id`と `annotations` で P4 **MUST** グループE2EEの下の内部の目的にある;
-- 送信者 **MUST** 全体にシリアライズ `Group Application Plaintext` 暗号化前のUTF-8 + RFC 8785 JCSを使用してバイト文字列にオブジェクト; 受信機 **MUST** 復号後に同じルールに従ってオブジェクトを解釈します。
+- `application_content_type`が存在しなければなりません（**MUST**）。
+- `text`、`payload`、`payload_b64u`のうち、正確に一つが存在しなければなりません（**MUST**）。
+- P4のメッセージ意味フィールド`thread_id`、`reply_to_message_id`、`annotations`は、グループE2EEでは内側のオブジェクトへ配置しなければなりません（**MUST**）。
+- 送信側は、暗号化前に`Group Application Plaintext`オブジェクト全体をUTF-8＋RFC 8785 JCSでバイト列へ直列化しなければならず（**MUST**）、受信側は復号後に同じ規則で解釈しなければなりません（**MUST**）。
 
-いつか `application_content_type = "application/json"`, `payload` **MUST**
-JSON オブジェクトを直接運ぶ。 このプロフィールは、事業の意味を定義しない
-そのオブジェクト内のフィールド。
+`application_content_type = "application/json"`の場合、`payload`はJSONオブジェクトを直接運ばなければなりません（**MUST**）。
+このProfileは、そのオブジェクト内部のフィールドの業務上の意味を
+定義しません。
 
-通常のJSONグループアプリケーションプレーンテキスト例:
+通常のJSONグループアプリケーション平文の例：
 
 ```json
 {
@@ -636,9 +637,9 @@ JSON オブジェクトを直接運ぶ。 このプロフィールは、事業�
 
 ### 7.6 `e2ee_notice_object`
 
-P6 は、暗号化結果を提供するために使用される独立した暗号通知オブジェクトを定義します。
+P6は、暗号処理結果の配信用に、独立した暗号処理通知オブジェクトを定義します。
 
-推奨構造は以下の通りです。
+推奨する構造は次のとおりです。
 
 ```text
 {
@@ -663,31 +664,31 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 }
 ```
 
-ルール:
+規則：
 
-- `notice_id` **MUST** 存在します。 **MUST** 同じ封筒の赤みに安定して、 **MUST NOT** 同一の受取装置に送られる異なった論理的な通知のために再使用される。 同じ暗号結果の Per-leaf コピー **MAY** シェア 1 `notice_id`、各デバイスが自分自身に対処された封筒だけを複製するので、 `(group_did, notice_id)`;
-- `notice_type` **MUST** 存在;
-- `group_did` **MUST** 存在;
-- `group_state_ref` **MUST** 存在;
-- `crypto_group_id_b64u` **MUST** 存在;
-- `epoch` **MUST** 存在;
-- `commit_b64u` **MUST** いつか存在している `notice_type = "commit-delivery"` プレゼント
-- いつか `notice_type = "welcome-delivery"`, `welcome_b64u` とりあえず `ratchet_tree_b64u` **MUST** 同時に存在します。
-- DIDアップデートオーケストレーションによる通知のため、 `group_state_ref` **MUST** 正確に受け入れられたP4を参照して下さい `member-did-updated` P6 で使われるイベントは、P6 を追加して削除します。 受信機 **MUST** 重複したP6連続フィールドではなく、そのP4イベントから以前のDIDと現在のDIDを取得。
-- `subject_did`, `subject_device_id`と `subject_status` このP6操作に影響する1つの葉を記述して下さい:加える使用DID/deviceをと加えて下さい `active`、取除きはと取除かれたDID/deviceを使用します `removed`;
-- 通知を受信するデバイスは、外部からのみ識別されます `meta.target.did` とりあえず `meta.recipient_device_id`; のために `commit-delivery`被写体とは異なる可能性があります。 削除のために `commit-delivery`, 受取人 **MAY** セクション12.3で指定された1つの最終的な通知を受け取る削除された主題の葉自体である;
-- `ratchet_tree_b64u` **MUST** ラチェットツリーのTLSシリアライズのための未加工バイトのno-padding base64urlである;
-- `group_receipt` **MAY** 仮想通貨の取引状況をビジネス注文の場所と関連付ける存在です。
+- `notice_id`は存在しなければならず（**MUST**）、同じエンベロープの再配信でも安定していなければならず（**MUST**）、同じ受信デバイスへ届ける異なる論理通知で再利用してはなりません（**MUST NOT**）。同じ暗号処理結果のLeafごとのコピーは、一つの`notice_id`を共有してもかまいません（**MAY**）。各デバイスが`(group_did, notice_id)`をキーに、自分宛てのエンベロープだけを重複排除するためです。
+- `notice_type`が存在しなければなりません（**MUST**）。
+- `group_did`が存在しなければなりません（**MUST**）。
+- `group_state_ref`が存在しなければなりません（**MUST**）。
+- `crypto_group_id_b64u`が存在しなければなりません（**MUST**）。
+- `epoch`が存在しなければなりません（**MUST**）。
+- `notice_type = "commit-delivery"`の場合、`commit_b64u`が存在しなければなりません（**MUST**）。
+- `notice_type = "welcome-delivery"`の場合、`welcome_b64u`と`ratchet_tree_b64u`が同時に存在しなければなりません（**MUST**）。
+- DID更新の編成で生成した通知では、`group_state_ref`は、各P6 AddとRemoveが使った、受け入れ済みのP4 `member-did-updated`イベントを正確に参照しなければなりません（**MUST**）。受信側は、P6に重複する継続性フィールドからではなく、そのP4イベントから旧DIDと現在のDIDを取得しなければなりません（**MUST**）。
+- `subject_did`、`subject_device_id`、`subject_status`は、このP6操作で影響する一つのLeafを表します。Addでは追加DID／デバイスと`active`、Removeでは削除DID／デバイスと`removed`を使います。
+- 通知を受け取るデバイスは、外側の`meta.target.did`と`meta.recipient_device_id`だけで識別します。`commit-delivery`では、影響対象と受信先が異なる場合があります。Removeの`commit-delivery`では、12.3節のとおり、削除対象のLeaf自身を受信先とし、最後の通知を一度届けてもかまいません（**MAY**）。
+- `ratchet_tree_b64u`は、ラチェット木をTLS直列化した生バイト列の、パディングなしbase64urlでなければなりません（**MUST**）。
+- `group_receipt`は、暗号処理結果を業務の順序位置に関連付けるために存在してもかまいません（**MAY**）。
 
 ---
 
-## 8. KeyPackage 公開と発見方法
+## 8. KeyPackageの公開と発見のメソッド
 
 ### 8.1 `group.e2ee.publish_key_package`
 
-#### 8.1.1 統計学
+#### 8.1.1 意味
 
-エージェントが露出したままに公開 `ANPMessageService`、グループ結合に使用できるKeyPackage。
+エージェントが、グループ参加に使えるKeyPackageを、自分が公開する`ANPMessageService`へ公開します。
 
 #### 8.1.2 要求の要件
 
@@ -695,23 +696,23 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `meta.profile = "anp.group.e2ee.v2"`
 - `meta.security_profile = "transport-protected"`
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 出版社の公開と等しい `ANPMessageService.serviceDid`
-- `meta.sender_did` **MUST** 存在している
-- `meta.sender_device_id` **MUST** 存在している
-- `body.group_key_package` **MUST** 存在している
-- `body.group_key_package.owner_did` **MUST** 等しく `meta.sender_did`
-- `body.group_key_package.owner_device_id` とりあえず `body.group_key_package.did_wba_binding.device_id` **MUST** 等しく `meta.sender_device_id`
-- 出版サービス **MUST** パッケージを受け入れる前に現在のP2マニフェストのエントリーとセクション6バインディングを検証します。
+- `meta.target.did`は、公開者自身の公開`ANPMessageService.serviceDid`と等しくなければなりません（**MUST**）。
+- `meta.sender_did`が存在しなければなりません（**MUST**）。
+- `meta.sender_device_id`が存在しなければなりません（**MUST**）。
+- `body.group_key_package`が存在しなければなりません（**MUST**）。
+- `body.group_key_package.owner_did`は`meta.sender_did`と等しくなければなりません（**MUST**）。
+- `body.group_key_package.owner_device_id`と`body.group_key_package.did_wba_binding.device_id`は、`meta.sender_device_id`と等しくなければなりません（**MUST**）。
+- 公開サービスは、KeyPackageを受け入れる前に、現在のP2 Manifestエントリと6節のバインディングを検証しなければなりません（**MUST**）。
 
-認証制約:
+認証上の制約：
 
-- このメソッドは、 **サービススコープ** 制御計画方法;
-- 呼び出し者 **MUST** 認証されたローカルセッションまたは同等のホップとサービスレベルの認証コンテキストで実行されます。
-- v2 は **なし** 追加のビジネスレイヤーが必要です `origin_proof` こんな方法。
+- このメソッドは、**サービスをスコープとする**制御プレーンメソッドです。
+- 呼び出し元は、認証済みのローカルセッション、または同等のホップ単位・サービス単位の認証コンテキスト内で動作しなければなりません（**MUST**）。
+- v2は、このメソッドに追加の業務層`origin_proof`を**要求しません**。
 
-#### 8.1.3 成功的な応答
+#### 8.1.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `published = true`
 - `owner_did`
@@ -721,80 +722,80 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 
 ### 8.2 `group.e2ee.get_key_package`
 
-#### 8.2.1 科学
+#### 8.2.1 意味
 
-対象となるエージェントの対象エージェントから利用可能なKeyPackageを入手 `ANPMessageService`.
+宛先エージェントの`ANPMessageService`を通じて、利用可能なKeyPackageを取得します。
 
 #### 8.2.2 要求の要件
 
 - `meta.profile = "anp.group.e2ee.v2"`
 - `meta.security_profile = "transport-protected"`
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 等しいこと `ANPMessageService.serviceDid` ターゲットエージェントが露出
-- `meta.sender_did` **MUST** 存在している
-- `meta.sender_device_id` **MUST** 現行のP6-eligibleデバイスを下回る `meta.sender_did`
+- `meta.target.did`は、宛先エージェントが公開する`ANPMessageService.serviceDid`と等しくなければなりません（**MUST**）。
+- `meta.sender_did`が存在しなければなりません（**MUST**）。
+- `meta.sender_device_id`は、`meta.sender_did`の下の、現在P6に適格なデバイスを識別しなければなりません（**MUST**）。
 
-`body` **MUST** 含まれるもの:
+`body`は次を含まなければなりません（**MUST**）。
 
 - `target_did`
 - `target_device_id`
 
-`body` **MAY** 含まれるもの:
+`body`は次を含めてもかまいません（**MAY**）。
 
 - `preferred_suite`
 - `require_fresh`
 
-認証制約:
+認証上の制約：
 
-- このメソッドは、 **サービススコープ** 制御計画方法;
-- 認証されたコンテキスト **MUST** 正確に結合する `(meta.sender_did, meta.sender_device_id)` ペアリング、そのデバイス **MUST** 現行のP2マニフェストで有効に。
-- v2 最小相互運用性要件は、少なくともホップ/サービスレベルの認証です。
-- **KeyPackageの匿名検索はv2 MTIの一部です**.
+- このメソッドは、**サービスをスコープとする**制御プレーンメソッドです。
+- 認証済みコンテキストは、正確な`(meta.sender_did, meta.sender_device_id)`の組をバインドしなければならず（**MUST**）、そのデバイスは現在のP2 Manifestの下で適格なままでなければなりません（**MUST**）。
+- v2の相互運用の最小要件は、少なくともホップ／サービス単位の認証です。
+- **KeyPackageの匿名取得はv2 MTIに含まれません**。
 
-#### 8.2.3 成功の応答
+#### 8.2.3 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `target_did`
 - `target_device_id`
 - `group_key_package`
 
-#### 8.2.4 サーバー側の配布ルール
+#### 8.2.4 サーバー側の配布規則
 
-`ANPMessageService` 返還する時 `group_key_package`:
+`ANPMessageService`が`group_key_package`を返す場合：
 
-- **SHOULD** 期限が切れていないKeyPackageを返す, 再発されていないと消費されない;
-- **MUST** キーパッケージを返す `owner_did` とりあえず `owner_device_id` 要求されたターゲット・ペアを丁度等しくして下さい、 **MUST NOT** 兄弟の装置を代入して下さい;
-- **MUST** 戻り前に、現在のP2マニフェストに対してターゲットデバイスを無効化します。
-- サーバ **MAY** マークとして `reserved`、または同時再発行を避けるために、返された後の同等のステータスを割り当てる。
-- 対応するタイミング `group.e2ee.add`DID 更新オーケストレーションの追加ステップを含む、グループホストと暗号会員変更が正常に受け入れられています。 **MUST** マークとして `consumed` 公開セットから削除するか
-- 対応するプロセスが失敗した場合は、キャンセルまたは消去され、予約済みKeyPackageのリリースは展開固有のものですが、 **SHOULD NOT** 同じKeyPackageが2つの成功によって同時再使用されるようにする `group.e2ee.add` 業務;
-- コールワーID、レート制限およびアンチユースポリシー **MUST** ホップ/サービスレベルの認証に基づく実装
+- 期限切れでも、取り消し済みでも、消費済みでもないKeyPackageを返すべきです（**SHOULD**）。
+- `owner_did`と`owner_device_id`が、要求された宛先の組と正確に等しいKeyPackageを返さなければならず（**MUST**）、同じDIDの別デバイスへ置き換えてはなりません（**MUST NOT**）。
+- 返す前に、宛先デバイスを現在のP2 Manifestに対して再検証しなければなりません（**MUST**）。
+- サーバーは、同時の再発行を防ぐため、返却後に`reserved`または同等の状態へ設定してもかまいません（**MAY**）。
+- DID更新の編成におけるAdd段階も含め、対応する`group.e2ee.add`がグループHostに受け入れられ、暗号メンバーシップ変更が完了したら、サービスは`consumed`と記録するか、公開集合から削除しなければなりません（**MUST**）。
+- 対応する処理が失敗、取消し、タイムアウトになった場合、予約したKeyPackageの解放は配備環境ごとに決めます。ただし、同じKeyPackageを、成功する二つの`group.e2ee.add`操作で同時に再利用させるべきではありません（**SHOULD NOT**）。
+- ホップ／サービス単位の認証に基づき、呼び出し元の識別、レート制限、不正利用対策ポリシーを実装しなければなりません（**MUST**）。
 
 ---
 
-## 9. MLS制御計画法
+## 9. MLS制御プレーンのメソッド
 
-### 9.1 一般
+### 9.1 全体
 
-この章のメソッドは独立系JSON-RPCメソッドです。 P4 のビジネスメソッドに「追加フィールド」ではなく、P6 独自の暗号化制御アクションです。
+この章のメソッドは独立したJSON-RPCメソッドです。P4業務メソッドの「追加フィールド」ではなく、P6自体の暗号制御操作です。
 
-それらの中で:
+具体的には：
 
-- `group.e2ee.create`, `group.e2ee.add`と `group.e2ee.remove` は、 **会員変更の制御方法**
-- `group.e2ee.send` は、 **メッセージ送信方法**
-- `group.e2ee.create/add/remove` 既存のP4ビジネス状態にバインドされるが、 **新規P4ビジネスメンバーのステートを作成しない**
-- `group.e2ee.send` 直接オンライン配達方法として、二次包装なしで使用されます `group.send`
+- `group.e2ee.create`、`group.e2ee.add`、`group.e2ee.remove`は、**メンバー変更の制御メソッド**です。
+- `group.e2ee.send`は、**メッセージ送信メソッド**です。
+- `group.e2ee.create/add/remove`は、既存のP4業務状態に結び付きますが、**新しいP4業務メンバー状態を作成しません**。
+- `group.e2ee.send`をwire上の配信メソッドとして直接使い、`group.send`で再び包みません。
 
 ### 9.2 `group.e2ee.create`
 
-#### 9.2.1 科学
+#### 9.2.1 意味
 
-新規のMLSグループステートを作成し、初期メンバーとしてオーナーを追加します。
+新しいMLSグループ状態を作成し、ownerを初期メンバーとして追加します。
 
-#### 9.2.2 コールア
+#### 9.2.2 呼び出し元
 
-オーナーのみ。
+ownerのみ。
 
 #### 9.2.3 要求の要件
 
@@ -802,12 +803,12 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `meta.profile = "anp.group.e2ee.v2"`
 - `meta.security_profile = "group-e2ee"`
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 等しいこと `ANPMessageService.serviceDid` 対象グループホストによる露出
-- `meta.sender_did` **MUST** 現在のグループに等しくなる `owner`
-- `meta.sender_device_id` **MUST** 必要な現在のMLS状態の対象となる所有者デバイスを識別します
-- `auth.origin_proof` **MUST** 存在している
+- `meta.target.did`は、宛先グループHostが公開する`ANPMessageService.serviceDid`と等しくなければなりません（**MUST**）。
+- `meta.sender_did`は、現在のグループの`owner`と等しくなければなりません（**MUST**）。
+- `meta.sender_device_id`は、必要な現在のMLS状態を持つ、適格なownerデバイスを識別しなければなりません（**MUST**）。
+- `auth.origin_proof`が存在しなければなりません（**MUST**）。
 
-`body` **MUST** 少なくとも:
+`body`は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `group_did`
 - `group_state_ref`
@@ -816,16 +817,16 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `crypto_group_id_b64u`
 - `epoch`
 
-ルール:
+規則：
 
-- `creator_key_package.owner_did` **MUST** 等しく `meta.sender_did`
-- `creator_key_package.owner_device_id` **MUST** 等しく `meta.sender_device_id`
-- `group_state_ref.group_did` **MUST** 等しく `body.group_did`
-- `epoch` 初期グループの状態の場合 **SHOULD** は、 `"0"` または初期値が明示的に実装によって合意された
+- `creator_key_package.owner_did`は`meta.sender_did`と等しくなければなりません（**MUST**）。
+- `creator_key_package.owner_device_id`は`meta.sender_device_id`と等しくなければなりません（**MUST**）。
+- `group_state_ref.group_did`は`body.group_did`と等しくなければなりません（**MUST**）。
+- 初期グループ状態の`epoch`は、`"0"`または実装が明示的に合意した初期値であるべきです（**SHOULD**）。
 
-#### 9.2.4 応答の成功
+#### 9.2.4 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `created = true`
 - `group_did`
@@ -834,21 +835,21 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `epoch`
 - `accepted_at`
 
-注意:
+注：
 
-- `group.e2ee.create` まあ、 **MUST NOT** P4 の新しい事業グループを作成します。
-- 実行後のみ実行されます。 `group.create` 営業層の受入れを受けています。
-- 新規生成がなくなりました `group_state_version` または `group_event_seq` 独立して。
+- `group.e2ee.create`自体が、新しいP4業務グループを作成してはなりません（**MUST NOT**）。
+- 業務層が`group.create`を受け入れた後でのみ実行します。
+- `group_state_version`や`group_event_seq`を新たに独立生成しません。
 
 ### 9.3 `group.e2ee.add`
 
-#### 9.3.1 統計
+#### 9.3.1 意味
 
-オーナーがMLSを実行 `add` P4の対象となるデバイスリーフを1つ追加する `active` 暗号グループのメンバー。 同じアクティブDIDの2番目のデバイスは、別のAddを使用し、別のP4メンバーを作成していません。
+ownerがMLSの`add`を実行し、P4の`active`メンバーの適格デバイスLeafを一つ、暗号グループへ追加します。同じactive DIDの二つ目のデバイスは、別のAddを使い、別のP4メンバーを作成しません。
 
-#### 9.3.2 コールア
+#### 9.3.2 呼び出し元
 
-オーナーのみ。
+ownerのみ。
 
 #### 9.3.3 要求の要件
 
@@ -856,12 +857,12 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `meta.profile = "anp.group.e2ee.v2"`
 - `meta.security_profile = "group-e2ee"`
 - `meta.target.kind = "group"`
-- `meta.target.did` **MUST** 等しいターゲット `group_did`
-- `meta.sender_did` **MUST** 現在のグループに等しくなる `owner`
-- `meta.sender_device_id` **MUST** 必要な現在のMLS状態の対象となる所有者デバイスを識別します
-- `auth.origin_proof` **MUST** 存在している
+- `meta.target.did`は、宛先の`group_did`と等しくなければなりません（**MUST**）。
+- `meta.sender_did`は、現在のグループの`owner`と等しくなければなりません（**MUST**）。
+- `meta.sender_device_id`は、必要な現在のMLS状態を持つ、適格なownerデバイスを識別しなければなりません（**MUST**）。
+- `auth.origin_proof`が存在しなければなりません（**MUST**）。
 
-`body` **MUST** 少なくとも:
+`body`は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `member_did`
 - `member_device_id`
@@ -873,22 +874,22 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `welcome_b64u`
 - `ratchet_tree_b64u`
 
-ルール:
+規則：
 
-- `group_state_ref.group_did` **MUST** 等しい外ターゲット `group_did`
-- `group_key_package.owner_did` **MUST** 等しく `member_did`
-- `group_key_package.owner_device_id` とりあえず `group_key_package.did_wba_binding.device_id` **MUST** 等しく `member_device_id`
-- `commit_b64u` **MUST** 完全なMLSのための no-padding base64url `MLSMessage` TLS によるオブジェクトのシリアル化
-- `welcome_b64u` **MUST** MLS の no-padding base64url は、 `Welcome` TLSによるシリアライズ後のオブジェクト
-- `ratchet_tree_b64u` **MUST** ラチェットツリーのTLSシリアライズのための未加工バイトの no-padding base64url
-- `epoch` **MUST** 新規に表示する `epoch` あとは `add`
-- 普通の道に、 `member_did` **MUST** 現行のP4 `active` 会員と正確 `(member_did, member_device_id)` リーフレット **MUST NOT** 既に存在している。同じ DID の別の葉は競合ではありません。
-- DID 更新パスで、 `group_state_ref` **MUST** 正確に受け入れられたP4を参照して下さい `member-did-updated` イベント `member_did` **MUST** イベントの事態が等しい `subject_did`と新しいKeyPackage **MUST** 選択した新しいDIDデバイスをバインドします。
-- DID 更新パス 選択した新しい DID デバイスに追加 **MUST** 古いDIDデバイスが削除される前に成功します。
+- `group_state_ref.group_did`は、外側の宛先`group_did`と等しくなければなりません（**MUST**）。
+- `group_key_package.owner_did`は`member_did`と等しくなければなりません（**MUST**）。
+- `group_key_package.owner_device_id`と`group_key_package.did_wba_binding.device_id`は、`member_device_id`と等しくなければなりません（**MUST**）。
+- `commit_b64u`は、完全なMLS `MLSMessage`オブジェクトをTLSで直列化した、パディングなしbase64urlでなければなりません（**MUST**）。
+- `welcome_b64u`は、MLS `Welcome`オブジェクトをTLSで直列化した、パディングなしbase64urlでなければなりません（**MUST**）。
+- `ratchet_tree_b64u`は、ラチェット木をTLS直列化した生バイト列の、パディングなしbase64urlでなければなりません（**MUST**）。
+- `epoch`は、この`add`の後の新しい`epoch`を示さなければなりません（**MUST**）。
+- 通常の経路では、`member_did`が現在のP4 `active`メンバーでなければならず（**MUST**）、正確な`(member_did, member_device_id)`のLeafは、まだ存在していてはなりません（**MUST NOT**）。同じDIDの別Leafの存在は競合ではありません。
+- DID更新経路では、`group_state_ref`が受け入れ済みのP4 `member-did-updated`イベントを正確に参照しなければならず（**MUST**）、`member_did`がそのイベントの`subject_did`と等しくなければならず（**MUST**）、新しいKeyPackageが選択した新DIDのデバイスに結び付かなければなりません（**MUST**）。
+- DID更新経路では、旧DIDのデバイスLeafを削除する前に、選択した新DIDのデバイスに対するすべてのAddが成功しなければなりません（**MUST**）。
 
-#### 9.3.4 応答の成功
+#### 9.3.4 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `accepted = true`
 - `group_did`
@@ -899,24 +900,24 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `epoch`
 - `accepted_at`
 
-注意:
+注：
 
-- `group.e2ee.add` まあ、 **MUST NOT** 対象となるメンバーのP4ビジネス状態を切り替えて `active`;
-- 営業状態 **MUST** P4 によって既に決定されている;
-- この方法は、MLS に事業成果を実装するだけ責任があります。
+- `group.e2ee.add`自体が、宛先メンバーのP4業務状態を`active`へ変えてはなりません（**MUST NOT**）。
+- 業務状態は、P4によって既に決定されていなければなりません（**MUST**）。
+- このメソッドが担当するのは、業務結果をMLSで実現することだけです。
 
 ### 9.4 `group.e2ee.remove`
 
-#### 9.4.1 統計
+#### 9.4.1 意味
 
-メルマガ `remove` デバイスリーフを1つだけ削除します。 トリガーは、DIDのP4削除、DIDがアクティブのまま、グループポリシー、または承認されたメンバーDID更新オーケストレーション中にデバイスの資格喪失をすることができます。 一般的な除去は、所有者制御を維持します。下にある同じDID例外は、1つの再発された兄弟デバイスに限定されます。
+MLSの`remove`は、正確に一つのデバイスLeafを削除します。起動原因には、P4によるDIDの削除、DIDがactiveのままデバイスが適格性を失うこと、グループポリシー、受け入れたメンバーDID更新の編成があります。一般の削除は引き続きownerが制御し、下記の同DIDの例外は、失効した別デバイス一つに限定します。
 
-#### 9.4.2 コールア
+#### 9.4.2 呼び出し元
 
-いずれか:
+次のいずれか：
 
-- 必要な現在のMLSの状態の対象となる所有者デバイス。または
-- 認証の同一DIDデバイス管理権限を持つ資格のある現在の葉は、異なる、既に再考または現在独自のDIDの必須デバイスリーフを削除する場合にのみ使用されます。
+- 必要な現在のMLS状態を持つ、適格なownerデバイス。あるいは、
+- 権威ある同DIDのデバイス管理権限を持つ、適格な現在のLeaf。ただし、自分のDIDの、別の、既に失効済みまたは現在不適格なデバイスLeafを削除する場合だけ。
 
 #### 9.4.3 要求の要件
 
@@ -924,12 +925,12 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `meta.profile = "anp.group.e2ee.v2"`
 - `meta.security_profile = "group-e2ee"`
 - `meta.target.kind = "group"`
-- `meta.target.did` **MUST** 等しいターゲット `group_did`
-- オーナーの支店の下、 `meta.sender_did` **MUST** 現在のグループを等しくして下さい `owner` とりあえず `meta.sender_device_id` **MUST** 必要な現在のMLSの状態の対象となる所有者デバイスを識別します。
-- 同じDIDのブランチの下、 `meta.sender_did` **MUST** 等しく `member_did`、送信者 **MUST** P4 はそのまま `active` 会員および現在のMLSの葉、 `meta.sender_device_id` **MUST NOT** 等しく `member_device_id`グループホスト **MUST** ターゲットデバイスが再発または現在P2に依存している間、送信機デバイスに現在のデバイス管理権限があることを検証します。
-- `auth.origin_proof` **MUST** 存在している
+- `meta.target.did`は、宛先の`group_did`と等しくなければなりません（**MUST**）。
+- owner経路では、`meta.sender_did`が現在のグループの`owner`と等しくなければならず（**MUST**）、`meta.sender_device_id`が、必要な現在のMLS状態を持つ適格なownerデバイスを識別しなければなりません（**MUST**）。
+- 同DID経路では、`meta.sender_did`が`member_did`と等しくなければならず（**MUST**）、送信者はP4の`active`メンバーかつ現在のMLS Leafでなければならず（**MUST**）、`meta.sender_device_id`は`member_device_id`と等しくてはなりません（**MUST NOT**）。グループHostは、送信デバイスに現在のデバイス管理権限があり、宛先デバイスが失効済みまたは現在P2不適格であることを、権威ある情報に基づいて検証しなければなりません（**MUST**）。
+- `auth.origin_proof`が存在しなければなりません（**MUST**）。
 
-`body` **MUST** 少なくとも:
+`body`は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `member_did`
 - `member_device_id`
@@ -938,19 +939,19 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `epoch`
 - `commit_b64u`
 
-ルール:
+規則：
 
-- `commit_b64u` **MUST** 完全なMLSのための no-padding base64url `MLSMessage` TLS によるオブジェクトのシリアル化
-- `epoch` **MUST** 新規に表示する `epoch` あとは `remove`
-- 正確です `(member_did, member_device_id)` リーフレット **MUST** 現在のMLS状態に存在します。
-- P4マークの場合 `member_did` として `removed` または `left`, 所有者 **MUST** 注文された問題 そのDIDのすべての現在のデバイスリーフのために削除します。
-- P4 が DID を保っている場合 `active`, 削除は、現在のP2の適格性またはグループポリシーがその葉を取り除きた後に名前付きデバイスのためにのみ許可されます。 兄弟葉とP4会員は変更されません。
-- 同じDIDブランチ **MUST** 名前付きターゲット葉を正確に削除し、 **MUST NOT** グループポリシー除去、メンバー削除/リーブ、DID更新オーケストレーション、または別のDIDに使用されます。
-- DID 更新パスで、 `member_did` **MUST** 等しく `previous_subject_did` 参照されたP4イベントで、選択した新しいDIDデバイスを追加既に成功しなければならず、所有者はアプリケーションメッセージを再開する前に、すべての古いDIDデバイスリーフを削除しなければなりません。
+- `commit_b64u`は、完全なMLS `MLSMessage`オブジェクトをTLSで直列化した、パディングなしbase64urlでなければなりません（**MUST**）。
+- `epoch`は、この`remove`の後の新しい`epoch`を示さなければなりません（**MUST**）。
+- 正確な`(member_did, member_device_id)`のLeafが、現在のMLS状態に存在しなければなりません（**MUST**）。
+- P4が`member_did`を`removed`または`left`と記録した場合、ownerは、そのDIDの現在のすべてのデバイスLeafについて、順序付けたRemoveを発行しなければなりません（**MUST**）。
+- P4でDIDを`active`に保つ場合、名前を指定したデバイスが現在のP2適格性を失った後、またはグループポリシーがそのLeafを削除する場合にだけ、そのデバイスの削除を認めます。同DIDの別LeafとP4メンバーシップは変えません。
+- 同DID経路では、指定した宛先Leafを正確に一つだけ削除しなければならず（**MUST**）、グループポリシーによる削除、メンバーの削除・離脱、DID更新の編成、別DIDに使ってはなりません（**MUST NOT**）。
+- DID更新経路では、`member_did`が、参照するP4イベントの`previous_subject_did`と等しくなければなりません（**MUST**）。選んだ新DIDのデバイスへのAddが既に成功している必要があり、ownerは、アプリケーションメッセージを再開する前に、すべての旧DIDのデバイスLeafを削除する必要があります。
 
-#### 9.4.4 応答の成功
+#### 9.4.4 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `accepted = true`
 - `group_did`
@@ -963,39 +964,39 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 
 ### 9.5 `group.e2ee.send`
 
-#### 9.5.1 統計
+#### 9.5.1 意味
 
-直接、MLS暗号化されたグループメッセージをグループに送信します。
+MLSで暗号化したグループメッセージを、グループへ直接送ります。
 
-#### 9.5.2 コールア
+#### 9.5.2 呼び出し元
 
-現行の対象となるデバイスリーフ `active` 会員様
+現在の`active`メンバーの、任意の適格なデバイスLeaf。
 
 #### 9.5.3 要求の要件
 
-コンプライアンス `group.e2ee.send` リクエスト **MUST** 満足する:
+適合する`group.e2ee.send`要求は、次を満たさなければなりません（**MUST**）。
 
 1. `method = "group.e2ee.send"`
 2. `meta.profile = "anp.group.e2ee.v2"`
 3. `meta.security_profile = "group-e2ee"`
 4. `meta.target.kind = "group"`
-5. `meta.target.did` **MUST** ターゲットになる `group_did`
-6. `meta.sender_did` **MUST** 現在の送信者エージェントのIDである
-7. `meta.sender_device_id` **MUST** プライベートメッセージを生成する現在の対象となるMLSの葉を識別する
-8. `meta.message_id` **MUST** 存在している
-9. `meta.operation_id` **MUST** 存在している
-10. `meta.content_type` **MUST** 固定される `application/anp-group-cipher+json`
-11. `auth.origin_proof` **MUST** 選択されたデバイスの現在のP2署名キーが存在し、使用
-12. `body` **MUST** 直接運送 `group_cipher_object`
+5. `meta.target.did`は、宛先の`group_did`でなければなりません（**MUST**）。
+6. `meta.sender_did`は、現在の送信側Agent DIDでなければなりません（**MUST**）。
+7. `meta.sender_device_id`は、PrivateMessageを生成した、現在適格なMLS Leafを識別しなければなりません（**MUST**）。
+8. `meta.message_id`が存在しなければなりません（**MUST**）。
+9. `meta.operation_id`が存在しなければなりません（**MUST**）。
+10. `meta.content_type`は`application/anp-group-cipher+json`に固定しなければなりません（**MUST**）。
+11. `auth.origin_proof`が存在し、選択したデバイスの現在のP2署名鍵を使わなければなりません（**MUST**）。
+12. `body`は`group_cipher_object`を直接運ばなければなりません（**MUST**）。
 
-注意:
+注：
 
-- `group.e2ee.send` オンライン送信方法自体です。
-- P4 で別のレイヤーをラップしなくなった `group.send`.
+- `group.e2ee.send`自体が、wire上の送信メソッドです。
+- P4の`group.send`を通じてもう一層包みません。
 
-#### 9.5.4 応答の成功
+#### 9.5.4 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `accepted = true`
 - `group_did`
@@ -1007,130 +1008,130 @@ P6 は、暗号化結果を提供するために使用される独立した暗�
 - `epoch`
 - `group_receipt`
 
-成功のセマティクスは言う:
+成功が意味すること：
 
-- グループホストは、MLS 暗号文オブジェクトを承諾し注文しています。
-- 会員全員がメッセージの復号化を成功させたことを自動で意味しません。
+- グループHostが、一つのMLS暗号文オブジェクトを受け入れ、順序付けた。
+- 全メンバーがメッセージを正常に復号したことを、自動的に意味するわけではありません。
 
 ---
 
-## 10. ステートカップリングルール
+## 10. 状態の連動規則
 
-### 10.1 全般
+### 10.1 全体
 
-P4とP6のカップリングは、 **業務状態の変化**.
-このプロファイルは、メソッドによるマッピングテーブルのメンテナンスを必要としません `group.create -> create` とりあえず `group.add -> add`.
+P4とP6の連動は、**業務状態の変化**を通じて行います。
+このProfileは、`group.create -> create`や`group.add -> add`のような、メソッドごとの対応表を維持することを要求しません。
 
-オーナー **MUST** 信頼できる状態の観察によって知られている:
+ownerは、信頼できる状態観測を通じて、次を把握しなければなりません（**MUST**）。
 
-- 特定のグループがビジネスレイヤーで作成されました。
-- 会員がなってきた `active` 業務レベル
-- 会員がなってきた `left` または `removed` 業務レベル
-- 対象となるデバイスは、葉や現在の葉のデバイスがP2の適格性を失います。
-- P4会員様が制作されました `member-did-updated`.
+- あるグループが業務層で作成された。
+- あるメンバーが業務上`active`になった。
+- あるメンバーが業務上`left`または`removed`になった。
+- 適格なデバイスにLeafが必要になった、または現在のLeafのデバイスがP2適格性を失った。
+- P4メンバーについて`member-did-updated`が発生した。
 
-ステータスの観察方法 **MAY** は:
+状態観測の方法には次を使ってもかまいません（**MAY**）。
 
-- 現地およびグループホストの内部のオーケストレーション
-- サブスクリプション `group.state_changed`;
-- または他の等しく、信頼できる状態の観察メカニズム。
+- ローカル側とグループHostの内部での処理編成。
+- `group.state_changed`の購読。
+- その他の同等で信頼できる状態観測機構。
 
-### 10.2 グループ作成のカップリング規則
+### 10.2 グループ作成の連動規則
 
-所有者が次の事業状態が同時に真であることを観察する場合:
+ownerが、次の業務状態が同時に成り立つことを観測した場合：
 
-- 特定の `group_did` 作成されました。
-- クリエイターは自分です。
-- ありません `crypto_group_id`sは、まだこのグループに添付
+- ある`group_did`が作成済み。
+- 作成者が自分自身。
+- まだグループに結び付く`crypto_group_id`がない。
 
-オーナー **MUST** トリガー `group.e2ee.create` 一度。
+ownerは、一度だけ`group.e2ee.create`を起動しなければなりません（**MUST**）。
 
-### 10.3 会員結合ルール
+### 10.3 メンバー参加の連動規則
 
-所有者が次の事業状態が同時に真であることを観察する場合:
+ownerが、次の業務状態が同時に成り立つことを観測した場合：
 
-- 特定の `member_did` 既に会員です。 `active` P4のグループ;
-- 選択対象資格 `member_device_id` MLS の葉はまだありません。
-- デバイスが利用可能 `group_key_package`
+- ある`member_did`が、既にP4でそのグループの`active`メンバー。
+- 選択した適格な`member_device_id`が、まだMLS Leafを持たない。
+- そのデバイスに利用可能な`group_key_package`がある。
 
-オーナー **MUST** トリガー `group.e2ee.add` 一度そのデバイスのために。 同じアクティブDIDの追加の資格デバイスは、別のP4メンバーシップイベントなしでこのP6ステップを繰り返す。
+ownerは、そのデバイスについて、一度だけ`group.e2ee.add`を起動しなければなりません（**MUST**）。同じactive DIDの追加の適格デバイスも、別のP4メンバーシップイベントなしに、このP6手順を繰り返します。
 
-このルールは、次の規則にも適用されます。
+この規則は次にも適用されます。
 
 - `group.join`
 - `group.add`
-- 展開拡張は参加を招待します
-- 承認される展開延長
+- 配備環境の拡張による招待参加。
+- 配備環境の拡張による承認。
 
-つまり、P4の様々なサービスエントリポイントは最終的にコンバージする `group.e2ee.add` 暗号層で。
+つまり、P4のさまざまな業務入口は、最終的に暗号層の`group.e2ee.add`へ収束します。
 
-葉がこのグループから以前に取り除かれた装置 **MAY** 後続のリンク 上記トリガーは変更されず、十分です。DIDはP4です `active`, 現在、葉がないデバイスがその場で,それを公開している **フレッシュ** `group_key_package`. . . このプロファイルは、別のrejoinメソッドを定義しません。 オーナー様 **MUST NOT** セクション13.2で説明したように消費されたKeyPackageを再利用します。 **MUST NOT** デバイスの前の葉を復元し、 **MUST NOT** 再結合する前に、どのEPOCシークレットをも解放します。 再結合デバイスは、新しいウェルカムから現在およびその後の状態のみを取得しています。
+このグループからLeafを削除されたデバイスが、後で再参加してもかまいません（**MAY**）。起動条件は変わらず、それで十分です。DIDがP4で`active`であり、その正確なデバイスに現在Leafがなく、**新しい**`group_key_package`を公開していることです。このProfileは、別個の再参加メソッドを定義しません。ownerは、13.2節のとおり、消費済みKeyPackageを再利用してはならず（**MUST NOT**）、そのデバイスの前のLeafを復元してはならず（**MUST NOT**）、再参加前のepoch秘密情報を開示してはなりません（**MUST NOT**）。再参加デバイスが新しいWelcomeから得るのは、現在とそれ以降の状態だけです。
 
-### 10.4 会員の取り外し/転倒のカップリングの規則
+### 10.4 メンバー削除・離脱の連動規則
 
-いつか `member_did` は、 `removed` または `left` P4 の所有者 **MUST** 注文したトリガー `group.e2ee.remove` 現行のデバイスリーフにDIDが含まれている場合
+P4で`member_did`が`removed`または`left`になったら、ownerは、そのDIDの現在のすべてのデバイスLeafについて、順序付けた`group.e2ee.remove`を一回ずつ起動しなければなりません（**MUST**）。
 
-1つのデバイスだけが現在のマニフェストの適格性を失うとき、そのDIDはP4のまま `active`, 所有者または同じ DID デバイス管理権限を与えられた現在の MLS の状態と兄弟姉妹 **MAY** デバイスリーフだけをすぐに削除しようとします。 グループポリシー除去は、所有者制御を維持します。 隣接するパスはP4メンバーまたはその兄弟の葉を変えます。
+DIDはP4の`active`のまま、一つのデバイスだけが現在のManifest適格性を失った場合、owner、または現在のMLS状態を持ち、同DIDのデバイス管理権限を認可された別デバイスは、そのLeafだけの削除を直ちに試みてもかまいません（**MAY**）。グループポリシーによる削除は引き続きownerが制御します。どちらの経路も、P4メンバーや同DIDの別Leafを変更しません。
 
-P4会員全体が全メンバーになる場合 `removed`/`left`、DIDの更新中、またはホストが孤児/会員の競合を検出したときに、ホスト **MUST** 新規を一時停止 `group.e2ee.send` 必要なMLSが閉じるまで受け入れます。 対照的に、DIDがP4を維持しながら、1つのデバイスのみが権威的に再発またはP2の適格性を失うとき `active`、ホスト **MUST NOT** 休止しないで有給 `group.e2ee.send` デバイスリーフが保留中の除去を残すため、単独で。 でん **MUST** 新規サービスデータを再発デバイスに認証し、配信を停止し、現在のMLSヘッドに対してメッセージを検証し続ける。
+P4メンバー全体が`removed`／`left`になった場合、DID更新中、Hostが孤立Leafやメンバーシップの競合を検出した場合、Hostは、必要なMLS変更が完結するまで、新しい`group.e2ee.send`の受け入れを一時停止しなければなりません（**MUST**）。一方、DIDはP4の`active`のまま、一つのデバイスだけが権威ある情報に基づいて失効、またはP2適格性を失った場合、Hostは、そのLeafが削除待ちであることだけを理由に、他の有効な`group.e2ee.send`を一時停止してはなりません（**MUST NOT**）。Hostは、失効デバイスの認証と新しいサービスデータの配信を止めつつ、現在のMLS先頭状態に対してメッセージ検証を続けなければなりません（**MUST**）。
 
-このデバイスのみの非ブロック状態は、明示的な可用性/セキュリティトレードオフです。 正確なCommitを削除するまで、revokedリーフは現在のepochの秘密を保持し、サービス配送パス外で得られた暗号文を復号化することがあります。 即時に失敗した試みを削除しても、暗号の取消ではなく、このプロファイルは、クレームタスク、修理通知、耐久性のあるクライアントキュー、またはその試みの自動再試行を必要としません。
+このデバイスだけを対象とする非ブロッキング状態は、可用性とセキュリティの明示的なトレードオフです。正確なRemove Commitが成功するまで、失効Leafは現在のepoch秘密情報を保持し、サービス配信経路外で入手した暗号文を復号できる場合があります。即時のRemove試行が失敗しても、暗号学的な失効を意味しません。このProfileは、その試行について、claim-task、修復通知、クライアントの永続キュー、自動再試行を要求しません。
 
-デバイスリーフを取除くことは、 **グループスコープ** 暗号作用は、さまざまな状態の機械からあります **アイデンティティスコープ** P2装置取り外し。 葉を取り戻すと、そのDIDからデバイスを削除しない `deviceManifest` 退職しない `device_id`. . . 現在のManifestエントリのままのデバイスは、同じままになります `device_id` 葉が取り除かれ、 **MAY** 後に、同じか他のグループにこのまたは他のグループを再度参加してください。 `device_id` セクション10.3で説明したように、新しいKeyPackageを使って。 逆に、P2マニフェストから削除されたデバイス **MUST** 新規デバイス ID と新しいデバイスキーで再登録 **MUST NOT** 退職した識別子を再利用します。 導入事例 **MUST NOT** 集合の葉除去はグループごとに、再可逆的であり、マニフェストデバイス除去はアイデンティティスコープとパーマスタです。
+デバイスLeafの削除は、**グループをスコープとする**暗号操作であり、**アイデンティティをスコープとする**P2デバイス削除とは別の状態機械です。Leafを削除しても、DIDの`deviceManifest`からデバイスを削除せず、`device_id`を廃止しません。現在の適格Manifestエントリのままのデバイスは、Leaf削除後も同じ`device_id`を維持し、10.3節のとおり、新しいKeyPackageで、同じ`device_id`の下、このグループや他のグループへ再参加してもかまいません（**MAY**）。一方、P2 Manifestから削除されたデバイスは、新しいデバイスIDと鍵で再登録しなければならず（**MUST**）、廃止した識別子を再利用してはなりません（**MUST NOT**）。実装は両者を混同してはなりません（**MUST NOT**）。Leaf削除はグループごとで可逆ですが、Manifestのデバイス削除はアイデンティティ単位で永続的です。
 
-### 10.5 メンバーのID更新カップリングルール
+### 10.5 メンバーDID更新の連動規則
 
-オーケストラの追加・削除を開始する前に、MLSコントローラー **MUST** P4 の取得と検証 `member-did-updated` イベント・イベント `group_receipt`、独立してP2の移行を検証します `previous_subject_did` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `subject_did`、実際の保証を保持し、P4のロスターが既に含まれていることを確認します `subject_did`, 新しい DID の現在の対象となるデバイスと KeyPackages を解決します。 `provider_asserted` P6の事業方針により受理または拒絶される。それはプロトコル管理上の失敗ではなく、 **MUST NOT** より高い保証として表されます。
+Add／Removeの編成を始める前に、MLSコントローラーは、P4の`member-did-updated`イベントと`group_receipt`を取得・検証し、`previous_subject_did`から`subject_did`へのP2移行を独立して検証し、実際のassuranceを保持し、P4のrosterに既に`subject_did`が含まれることを確認し、新DIDの現在の適格デバイスとKeyPackageを解決しなければなりません（**MUST**）。`provider_asserted`を受け入れるかはP6自身の業務ポリシーで決めます。プロトコルで強制する失敗ではなく、より高いassuranceとして表してはなりません（**MUST NOT**）。
 
-所有者がP4を観察するとき `member-did-updated` イベント、イベント `subject_did` 新規IDとその識別 `previous_subject_did` 古い DID を識別します。 古いDIDがMLS会員セットに残っている場合、所有者 **MUST** この順序で既存のメソッドをオーケスト:
+ownerがP4の`member-did-updated`イベントを観測したとき、`subject_did`は新DID、`previous_subject_did`は旧DIDを識別します。MLSメンバー集合に旧DIDのLeafが残っていれば、ownerは次の順序で既存メソッドを編成しなければなりません（**MUST**）。
 
-1. コールセンター `group.e2ee.add` 選択した各デバイスとそのKeyPackageの1回。
-2. 選択したすべての追加が成功した後、呼び出し `group.e2ee.remove` 一度、各古いDIDデバイスリーフのために;
-3. 完了します。 暗号 DID 更新 すべての削除が成功した後.
+1. 選択した新DIDの各デバイスとそのKeyPackageについて、`group.e2ee.add`を一回ずつ呼ぶ。
+2. 選択したすべてのAddが成功したら、旧DIDの各デバイスLeafについて、`group.e2ee.remove`を一回ずつ呼ぶ。
+3. すべてのRemoveに成功したら、暗号学的なDID更新を完了する。
 
-リクエスト **MUST** 同じP4を丁度参照して下さい `member-did-updated` `group_state_ref`. . . 選択されたすべての追加 **MUST** 最初に削除する前に成功します。 削除は、イベントのデバイス葉のみを削除できます `previous_subject_did` とりあえず **MUST NOT** DID の更新ワークフローを使用して、別のメンバーを削除します。
+すべての要求は、同じP4 `member-did-updated`の`group_state_ref`を正確に参照しなければなりません（**MUST**）。最初のRemoveの前に、選択したすべてのAddが成功しなければなりません（**MUST**）。Removeで削除できるのは、そのイベントの`previous_subject_did`のデバイスLeafだけです。DID更新ワークフローを使って、他のメンバーを削除してはなりません（**MUST NOT**）。
 
-DID更新オーケストレーション中、グループホスト **MUST** P6メンバー変更の制御操作をシリアライズします。 現在のステップの不当な再試行を除き、追加成功直後にマッチするグループホストは、 **MUST NOT** 関係のない受け入れ `group.e2ee.add` または `group.e2ee.remove` DID の更新が完了するまで。
+DID更新の編成中、グループHostは、P6メンバー変更制御操作を直列化しなければなりません（**MUST**）。現在の手順の冪等な再試行と、Add成功直後の対応するRemoveを除き、DID更新が完了するまで、無関係な`group.e2ee.add`や`group.e2ee.remove`を受け入れてはなりません（**MUST NOT**）。
 
-最終削除が成功するまでP4 DIDの更新イベントの受け入れから、グループホスト **MUST** 新規の仮面受け入れ `group.e2ee.send` グループのための操作。 Adds と Removes によって生成される中間のエポック **MUST NOT** アプリケーションのメッセージを運ぶ。 ステップが失敗した場合、実装 **MUST** 一歩足を踏み入れて再試行してください。
+P4のDID更新イベントの受け入れから、最後のRemoveの成功まで、グループHostは、グループの新しい`group.e2ee.send`操作の受け入れを一時停止しなければなりません（**MUST**）。AddとRemoveで生じる中間epochで、アプリケーションメッセージを運んではなりません（**MUST NOT**）。手順が失敗したら、実装は一時停止を維持し、その手順を再試行しなければなりません（**MUST**）。
 
-P6 の失敗 **MUST NOT** P4 DID の更新をロールバックし、古い DID の P4 権限を復元したり、新しい P6 ビジネス メンバーシップの状態を作成します。 P4会員、ロール、ステータス、参加時間、会員数は、元のDID更新イベントで決定されます。
+P6の失敗によって、P4のDID更新を巻き戻したり、旧DIDのP4権限を復元したり、新しいP6業務メンバーシップ状態を作成したりしてはなりません（**MUST NOT**）。P4のメンバーシップ、役割、状態、参加時刻、メンバー数は、引き続き元のDID更新イベントが決定します。
 
-P4 が受け入れられる場合 `provider_asserted` しかし、P6ポリシーはそれを拒絶します。, P4のロスターは権威を維持し、ロールバックされていません; P6 **MUST** 方針要件が満たされるまでE2EEメッセージ平面をパユースキーに保ちます。
+P4は`provider_asserted`を受け入れたものの、P6ポリシーが拒否する場合、P4のrosterは引き続き正規の状態で、巻き戻しません。P6は、自身のポリシー要件を満たすまで、E2EEメッセージプレーンを一時停止したままにしなければなりません（**MUST**）。
 
-DID の更新対象が所有者の場合、新しい DID で選択した対象となるデバイス **MUST** 独自のデバイス・バウンドを使用する `origin_proof`. . . 移行を追加 **MAY** 古いデバイスリーフの保持されたMLS状態から生成されます。 少なくとも1つの新しい所有者のデバイスリーフが参加した後、その後の古いDIDは削除します **MUST** 対象となる新規所有者のデバイスリーフで現在の状態を生成します。 認定所有者のデバイスが必要な現在の状態を保持または取得しない場合、システム **MUST** E2EEメッセージの飛行機を閉じて保存しても問題ありません。
+DID更新対象がownerの場合、新DIDで選ばれた適格デバイスは、自分のデバイスに結び付く`origin_proof`を使わなければなりません（**MUST**）。移行用Add Commitは、旧ownerのデバイスLeafに保持されたMLS状態から生成してもかまいません（**MAY**）。少なくとも一つの新ownerのデバイスLeafが参加した後、後続の旧DIDのRemoveは、現在の状態を持つ適格な新ownerのデバイスLeafが生成しなければなりません（**MUST**）。必要な現在の状態を保持・取得している認可済みownerデバイスがなければ、システムは安全側で失敗させ、E2EEメッセージプレーンの一時停止を維持しなければなりません（**MUST**）。
 
-### 10.6 送信ルール
+### 10.6 メッセージ送信規則
 
-`group.e2ee.send` は、 **なし** ステートカップリングをトリガーするメソッド。
-会員が明示的に開始するオンライン送信方法です。
+`group.e2ee.send`は、状態の連動を起動するメソッドでは**ありません**。
+メンバーが明示的に開始する、wire上の送信メソッドです。
 
-しかし、そのビジネスの一貫性の要件はまだP4に縛られています:
+ただし、その業務上の整合性要件は、引き続きP4と強く結び付きます。
 
-- 送信者 **MUST** 現会員になる `active`;
-- カレンダー **MUST** 会って下さい P4 `group_policy.permissions.send`
-- の皮質の `group_event_seq`, `group_state_version`と `group_receipt` 成功するレスポンスでは、P4 のグループメッセージの定義に従ってください。
+- 送信者は現在の`active`メンバーでなければなりません（**MUST**）。
+- 送信者はP4の`group_policy.permissions.send`を満たさなければなりません（**MUST**）。
+- 成功応答の`group_event_seq`、`group_state_version`、`group_receipt`の意味は、P4のグループメッセージの定義に従います。
 
 ---
 
 
-## 11. MLS利用プロファイル(仮称)
+## 11. MLSの使用Profile（規範）
 
-### 11.1 一般および外部仕様の参照
+### 11.1 全体と外部仕様の参照
 
-この章は、 **制限された使用のサブセットおよび固定構成** このページのトップへ
-この章の目的は、MLS 規格をリライトするものではありませんが、以下のものを提供していません。
+この章は、このProfileによるMLSの**制限された使用部分集合と固定構成**を定義します。
+MLS標準を書き直すことではなく、次を示すことが目的です。
 
-- MLSのオブジェクトとステートマシンの動作は、v2で使用できるもの。
-- これらのオブジェクトはオンラインプロトコルでエンコードされる方法
-- オーナー、アクティブメンバー、グループホストのローカルステータスと処理義務はそれぞれに負担する必要がありますか?
-- 背後にあるMLSの皮脂質とは何ですか? `group.e2ee.create`, `group.e2ee.add`, `group.e2ee.remove`と `group.e2ee.send`.
+- v2で使用を認める、MLSのオブジェクトと状態機械の操作。
+- wireプロトコルでの、それらのオブジェクトの符号化方法。
+- owner、activeメンバー、グループHostが、それぞれ担うローカル状態と処理義務。
+- `group.e2ee.create`、`group.e2ee.add`、`group.e2ee.remove`、`group.e2ee.send`の背後にあるMLS上の意味。
 
-導入事例 **MUST NOT** MLS のコアアルゴリズムセマティクスを変更します。ただし、MLS 標準ライブラリの自由度がこのプロファイルの v2 制限されたルールと相関する場合には、 **MUST** 優先する。
+実装は、MLSの中核アルゴリズムの意味を変更してはなりません（**MUST NOT**）。ただし、MLS標準ライブラリの既定の自由度が、このProfileのv2制限規則と競合する場合、このProfileの制限規則を優先しなければなりません（**MUST**）。
 
-### 11.2 MLS サブセット v2 で許可
+### 11.2 v2で認めるMLS部分集合
 
-このプロファイルv2のMLSメインラインは、次のオブジェクトと操作性境界を入力するアクションのみを可能にします。
+このProfile v2のMLS主要経路では、相互運用の境界へ入れるオブジェクトと操作を、次だけに限定します。
 
 - `KeyPackage`
 - `Add`
@@ -1138,78 +1139,78 @@ DID の更新対象が所有者の場合、新しい DID で選択した対象�
 - `Commit`
 - `Welcome`
 - `PrivateMessage`
-- `epoch` アドバンス
+- `epoch`の進行
 
-このプロフィールv2で:
+このProfile v2では：
 
-- `commit_b64u` **MUST** 完全なMLSに対応 `MLSMessage`およびワイヤー フォーマット **MUST** は、 `mls-public-message`
-- `welcome_b64u` **MUST** MLS対応 `Welcome`
-- `private_message_b64u` **MUST** MLS対応 `PrivateMessage`
+- `commit_b64u`は完全なMLS `MLSMessage`に対応しなければならず（**MUST**）、wire形式は`mls-public-message`でなければなりません（**MUST**）。
+- `welcome_b64u`はMLSの`Welcome`に対応しなければなりません（**MUST**）。
+- `private_message_b64u`はMLSの`PrivateMessage`に対応しなければなりません（**MUST**）。
 
-プロフィール v2 **しない** 主要な相互運用性ラインに次の機能が含まれています。
+このProfile v2は、次の機能を相互運用の主要経路に**含めません**。
 
-- 外部コミット
+- External Commit
 - `GroupInfo` / `group_join_info`
 - `group.e2ee.get_join_info`
-- スタンドアロン `accept_welcome` プロトコルメソッド
-- 複数のコントローラーによる同時送信
-- 所有者以外のメンバーの変更
-- `Update` プロトコルレベルのメインラインアクションとして
-- 相互運用性の条件としてバッチ処理を提案
-- ReInit、PSK、Subgroup、またはカスタムMLSの拡張はセクション6.3.1以外の端末結合拡張はv2 MTIとして
+- 独立した`accept_welcome`プロトコルメソッド。
+- 複数コントローラーによる同時送信。
+- owner以外が開始するメンバー変更。〔訳注：原文のこの一般的な除外とは別に、前の節で、同じDIDの失効デバイス削除の限定例外が規定されています。〕
+- プロトコル上の主要操作としての`Update`。
+- 相互運用要件としてのproposalの一括処理。
+- v2 MTIとしてのReInit、PSK、Subgroup、または6.3.1節のデバイスバインディング拡張以外の独自MLS拡張。
 
-実装で利用するMLSライブラリ **MAY** 上記機能をサポート。ただし、交渉が明示的に延長されていない場合 **MUST NOT** v2 ワイヤープロトコルのインターワーキングに持って下さい。
+実装のMLSライブラリは、これらの機能に対応してもかまいません（**MAY**）。ただし、明示的な拡張交渉がない場合、v2のwireプロトコル相互接続に持ち込んではなりません（**MUST NOT**）。
 
 ### 11.3 MTIスイートと固定アルゴリズム
 
-プロフィール v2 **MUST** 以下のMTIスイートを実装します。
+このProfile v2は、次のMTIスイートを実装しなければなりません（**MUST**）。
 
 `MLS_128_DHKEMX25519_AES128GCM_SHA256_Ed25519`
 
-対応する固定アルゴリズムの設定は、次の通りです。
+対応する固定アルゴリズム構成：
 
-- ケム/HPKE DH: `DHKEMX25519`
-- エイエイド: `AES-128-GCM`
-- ハッシュ/KDF ベース: `SHA-256`
-- 葉の署名: `Ed25519`
+- KEM／HPKE DH：`DHKEMX25519`
+- AEAD：`AES-128-GCM`
+- ハッシュ／KDFの基礎：`SHA-256`
+- Leaf署名：`Ed25519`
 
-さらに、このプロファイルのすべてのJSONオブジェクトは、証拠、AAD、または内部のプレーンテキスト結合に入る MUST UTF-8 + RFC 8785 JCS を使用してエンコードされます。 この条件は少なくともに適用します:
+さらに、このProfileで、証明、AAD、内側の平文のバインディングに入るすべてのJSONオブジェクトを、UTF-8＋RFC 8785 JCSで符号化しなければなりません（MUST）。少なくとも次に適用します。
 
-- 保護されたオブジェクト `did_wba_binding`
+- `did_wba_binding`の保護対象オブジェクト。
 - `Group Application Plaintext`
-- `group.e2ee.send` のり `authenticated_data`
-- 会員変更による認証されたバインディングオブジェクト
+- `group.e2ee.send`の`authenticated_data`。
+- メンバー変更の送信時の、認証されるバインディングオブジェクト。
 
-### 11.4 MLSの皮質 `group.e2ee.create`
+### 11.4 `group.e2ee.create`のMLS上の意味
 
-`group.e2ee.create` 実行後のみ `group.create` 営業層の受入れを受けています。
+`group.e2ee.create`は、業務層が`group.create`を受け入れた後にだけ実行します。
 
-実行時に `group.e2ee.create`, 選択した所有者のローカルMLSランタイム **MUST**:
+`group.e2ee.create`を実行するとき、選択したownerのローカルMLS実行環境は、次を行わなければなりません（**MUST**）。
 
-1. それを検証する `creator_key_package` 正確に所属する `(owner DID, sender_device_id)` ペア;
-2. 確認する `did_wba_binding`、セクション6.0.1延長および現在のP2マニフェストの適格性;
-3. 新しいMLSグループの状態を作成し、新しいMLSグループを生成します。 `crypto_group_id`;
-4. 保持中に最初のMLSリーフとして、その所有者デバイスを追加します。 `credential.identity` 所有者に等しい DID;
-5. 初期設定を書かなければならない `epoch`; と
-6. ローカルデバイスのみにプライベートなMLS状態を主張します。
+1. `creator_key_package`が、正確な`(owner DID, sender_device_id)`の組に属することを検証する。
+2. その`did_wba_binding`、6.3.1節の拡張、現在のP2 Manifest適格性を検証する。
+3. 新しいMLSグループ状態を作成し、新しい`crypto_group_id`を生成する。
+4. `credential.identity`をowner DIDに等しく保ち、そのownerデバイスを最初のMLS Leafとして追加する。
+5. 初期の`epoch`を形成する。かつ、
+6. そのローカルデバイスだけについて、秘密のMLS状態を永続化する。
 
-`group.e2ee.create` **MUST NOT** 新規P4事業グループを別々に作成します。既存の事業グループで対応する初期のMLS状態のみを作成します。
+`group.e2ee.create`は、新しいP4業務グループを別個に作成してはなりません（**MUST NOT**）。既存の業務グループに対応する初期MLS状態だけを作成します。
 
-### 11.5 MLSのセマンティックス `group.e2ee.add`
+### 11.5 `group.e2ee.add`のMLS上の意味
 
-`group.e2ee.add` v2 の標準的なエントリ暗号化メインラインのみです。
+`group.e2ee.add`は、v2で唯一の標準のグループ参加用暗号経路です。
 
-実行時に `group.e2ee.add`オーナーのローカルMLSランタイム **MUST**:
+`group.e2ee.add`を実行するとき、ownerのローカルMLS実行環境は、次を行わなければなりません（**MUST**）。
 
-1. 取得する `group_key_package` 正確のため `(member_did, member_device_id)` ペア;
-2. KeyPackage、デバイス結合、セクション6.03拡張、および現在のP2マニフェストの適格性を確認します。
-3. 対象のDIDがP4のいずれかであることを確認 `active` 普通のパスまたは `subject_did` 参照されたP4で `member-did-updated` イベント
-4. この正確な DID/デバイスペアは既に葉ではないことを確認し、同じ DID の兄弟デバイスが競合していないことを確認します。
-5. 1つのMLSを実行 `Add`, 新しい生成 `Commit`, 1 つを生成し、 `Welcome` そのデバイスリーフのため;
-6. それをキーボードトラップにするために、そのデバイスのために十分なラチェットツリーの材料をエクスポートまたは構築します。
-7. アドバンス `epoch` オーナーのローカルデバイスの状態を更新します。
+1. 正確な`(member_did, member_device_id)`の組の`group_key_package`を取得する。
+2. KeyPackage、デバイスバインディング、6.3.1節の拡張、現在のP2 Manifest適格性を検証する。
+3. 宛先DIDが、通常経路ではP4 `active`メンバー、または、参照するP4 `member-did-updated`イベントの`subject_did`であることを検証する。
+4. 正確なDID／デバイスの組がまだLeafでないことを検証する。同じDIDの別デバイスは競合ではない。
+5. MLSの`Add`を一つ実行し、新しい`Commit`と、そのデバイスLeaf用の`Welcome`を一つ生成する。
+6. そのデバイスが初期化するのに十分なラチェット木素材を、出力または構築する。
+7. `epoch`を進め、ownerのローカルデバイス状態を更新する。
 
-そのため、v2の標準的なグループ暗号化の主な行は次のとおりです。
+したがって、v2の標準グループ暗号処理の主要経路は次のとおりです。
 
 ```text
 KeyPackage
@@ -1220,29 +1221,29 @@ KeyPackage
 → new epoch
 ```
 
-実装の曖昧性を低下させるために、v2は次のように規定します。
+実装の曖昧さを減らすため、v2は次を規定します。
 
-- `commit_b64u` **MUST** 完全なMLSのTLSserializedの未加工バイトである `MLSMessage`;
-- `welcome_b64u` **MUST** MLSのTLS-serializedの未加工バイトである `Welcome` オブジェクト;
-- `ratchet_tree_b64u` **MUST** 新しく会員のみ、明示的に提供されなければならない。
-- `welcome-delivery` **MUST NOT** ライブラリレベルのオプションの動作に依存します。 "Welcomeは内部でラチェットツリーを付属しているかもしれません。"
+- `commit_b64u`は、完全なMLS `MLSMessage`をTLS直列化した生バイト列でなければなりません（**MUST**）。
+- `welcome_b64u`は、MLS `Welcome`オブジェクトをTLS直列化した生バイト列でなければなりません（**MUST**）。
+- `ratchet_tree_b64u`を、新メンバーにだけ明示的に提供しなければなりません（**MUST**）。
+- `welcome-delivery`は、「Welcomeが内部にラチェット木を含む場合がある」という、ライブラリの任意動作に依存してはなりません（**MUST NOT**）。
 
-DID 更新オーケストレーションでは、各セクションで追加します。 **MUST** P4 DID 更新イベントの参照 `group_state_ref`, 選択したデバイスリーフを新しいDIDにバインドし、ウェルカムをDID /デバイスペアだけに配信します。 選択したすべての新しいDIDデバイスは、古いDIDデバイスの葉の事前削除を追加します。
+DID更新の編成では、この節の各Addは、P4 DID更新イベントの`group_state_ref`を参照し、新DIDに結び付く選択デバイスLeafを一つ追加し、そのDID／デバイスの組だけへWelcomeを配信しなければなりません（**MUST**）。選んだ新DIDのすべてのデバイスへのAddを、旧DIDのいずれのデバイスLeafの削除よりも先に行います。
 
-### 11.6 MLSのセマンティックス `group.e2ee.remove`
+### 11.6 `group.e2ee.remove`のMLS上の意味
 
-実行時に `group.e2ee.remove`オーナーのローカルMLSランタイム **MUST**:
+`group.e2ee.remove`を実行するとき、ownerのローカルMLS実行環境は、次を行わなければなりません（**MUST**）。
 
-1. 正確であることを確認する `(member_did, member_device_id)` ペアは現在の葉です。
-2. 許可されたトリガーを1つ確認: DIDは `removed` または `left` P4では、名前付きデバイスは、現在のP2マニフェストまたはグループポリシーの下でもはや資格を与えられていないか、ペアは参照されたP4 DID更新イベントの古いDIDリーフです。
-3. 1つのMLSを実行 `Remove` その葉のために、新しいものを生成します `Commit`、先立って下さい `epoch`オーナーのローカルデバイスの状態を更新し、;
-4. 削除されたデバイスリーフが、その後のメッセージを復号化できないことを確認してください。
+1. 正確な`(member_did, member_device_id)`の組が、現在のLeafであることを検証する。
+2. 許可された起動原因を一つ検証する。DIDがP4で`removed`または`left`、指定デバイスが現在のP2 Manifestやグループポリシーで不適格、参照するP4 DID更新イベントにおける旧DIDのLeaf、のいずれか。
+3. そのLeafに対するMLS `Remove`を一つ実行し、新しい`Commit`を生成し、`epoch`を進め、ownerのローカルデバイス状態を更新する。
+4. 削除したデバイスLeafが、以後のメッセージを復号できないことを確保する。
 
-P4 が DID を削除または葉を取除いた場合、所有者 **MUST** 現行のDIDの葉を全て繰り返して、この操作を繰り返します。 DIDが残っている場合 P4 `active`、名前付き必須またはポリシー削除されたデバイスリーフのみが削除されます。 P4会員と兄弟の葉は変更されません。
+P4でDIDが削除・離脱した場合、ownerは、そのDIDの現在のすべてのLeafについて、この操作を順に繰り返さなければなりません（**MUST**）。DIDがP4の`active`のままなら、指定した不適格またはポリシーで削除対象となったデバイスLeafだけを削除し、P4メンバーシップや同DIDの別Leafは変えません。
 
-成功した削除は、ターミナルリーフを葉にします。 削除されたデバイスは、このことを学ぶことができます。MLS はバンド内シグナルを除去したメンバーに持ちませんので、グループホスト **MUST** セクション12.3で指定されたように、削除された葉に受け入れられたコミットを最終通知として配信します。 デバイスを退社させない除去 `device_id` セクション 10.3 で後ほど再結合を禁止します。
+Removeが成功すると、そのLeafはTerminal Leafになります。削除デバイスは、削除されたことを知る権利があります。MLSは削除されたメンバーへの帯域内信号を持たないため、グループHostは、12.3節のとおり、受け入れたCommitを最後の通知として削除Leafへ配信しなければなりません（**MUST**）。この削除はデバイスの`device_id`を廃止せず、10.3節に従う後の再参加も妨げません。
 
-行のプロトコル出力 `group.e2ee.remove` **MUST** 少なくとも:
+`group.e2ee.remove`のwireプロトコルの出力は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `commit_b64u`
 - `crypto_group_id_b64u`
@@ -1251,307 +1252,307 @@ P4 が DID を削除または葉を取除いた場合、所有者 **MUST** 現�
 - `member_did`
 - `member_device_id`
 
-DID 更新オーケストレーションでは、選択したすべての新しい DID デバイスを追加しても同じで成功しているのは、Remove が起動する可能性があります。 `group_state_ref`;各削除は、そのP4イベントによって識別された1つの古いDIDデバイスリーフのみを削除することができます。
+DID更新の編成では、同じ`group_state_ref`の下で選択した新DIDのすべてのデバイスへのAddが成功した後でのみRemoveを始められます。各Removeで削除できるのは、そのP4イベントが識別する旧DIDのデバイスLeaf一つだけです。
 
-### 11.7 暗号化の皮質 `group.e2ee.send`
+### 11.7 `group.e2ee.send`の暗号化の意味
 
-送信者呼び出し時 `group.e2ee.send`ローカルMLSランタイム **MUST**:
+送信側が`group.e2ee.send`を呼ぶとき、ローカルMLS実行環境は次を行わなければなりません（**MUST**）。
 
-1. DID が現在 P4 であることを確認する `active` 会員名
-2. それを検証する `meta.sender_device_id` 現在、MLS の有効リーフを適格かつ対応しています。
-3. P4 を満たしていることを確認してください。 `permissions.send`;
-4. コンサルティング `Group Application Plaintext` と 第13章 `authenticated_data`;
-5. デバイスの現在の MLS 状態を使用して、平文を 1 つの MLS に一度暗号化します。 `PrivateMessage`;
-6. コンサルティング `group_cipher_object` とりあえず、それを提出する `body` のり `group.e2ee.send`.
+1. 自分のDIDが現在のP4 `active`メンバーであることを検証する。
+2. `meta.sender_device_id`が現在適格で、自分自身のactiveなMLS Leafに対応することを検証する。
+3. P4の`permissions.send`を満たすことを検証する。
+4. `Group Application Plaintext`と、13章の`authenticated_data`を構築する。
+5. そのデバイスの現在のMLS状態を使い、平文を一度だけ暗号化し、一つのMLS `PrivateMessage`とする。
+6. `group_cipher_object`を構築し、`group.e2ee.send`の`body`として送信する。
 
-グループホスト **MUST NOT** このアプリケーションメッセージの暗号化または再暗号化を行います。 同じ受諾を配る `group_cipher_object` 独立したP6配達封筒で、セクション12.5で指定される各現在の装置葉のための1つ。
+グループHostは、このアプリケーションメッセージを復号・再暗号化してはなりません（**MUST NOT**）。12.5節のとおり、受け入れた同じ`group_cipher_object`を、現在の各デバイスLeafに一つずつ、独立したP6配信エンベロープで配信します。
 
-成功への貢献 `group.e2ee.send` 単に意味:
+`group.e2ee.send`の成功が意味するのは、次だけです。
 
-- グループホストは、MLS 暗号文オブジェクトを承諾し注文しています。
-- 会員全員がメッセージの復号化を成功させたことを自動で意味しません。
+- グループHostが、一つのMLS暗号文オブジェクトを受け入れ、順序付けた。
+- 全メンバーがメッセージを正常に復号したことを、自動的に意味するわけではありません。
 
-### 11.8 グループメッセージの復号化義務
+### 11.8 グループメッセージの復号義務
 
-受信装置が対応する暗号文オブジェクトを受信した後 `group.e2ee.send`, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , **MUST**:
+受信デバイスは、`group.e2ee.send`に対応する暗号文オブジェクトを受け取った後、次を行わなければなりません（**MUST**）。
 
-1. 外部に検証する `meta.target.did` とりあえず `meta.recipient_device_id` 独自の DID/デバイスペアを特定します。
-2. このデバイスのローカルMLSグループの状態をここから見つけます `group_did`;それ **MUST NOT** 兄弟のデバイスからコピーされたプライベートな状態を使用します。
-3. 検証 `crypto_group_id_b64u` 受け入れられるおよび `epoch` ウィンドウ;
-4. 復号化 `private_message_b64u` ローカルデバイスの状態だけを使用して;
-5. 検証 `authenticated_data`、を含む `sender_did` とりあえず `sender_device_id`, MLS の送信者リーフマップが同じペアにマップしていることを検証します。
-6. 内側をパーズ `Group Application Plaintext` チェックパスがすべて通過した後にのみ配信します。
+1. 外側の`meta.target.did`と`meta.recipient_device_id`が、自分自身のDID／デバイスの組を識別することを検証する。
+2. `group_did`から、このデバイスのローカルMLSグループ状態を探す。同DIDの別デバイスからコピーした秘密状態を使ってはならない（**MUST NOT**）。
+3. `crypto_group_id_b64u`と、許容される`epoch`期間を検証する。
+4. そのローカルデバイス状態だけで`private_message_b64u`を復号する。
+5. `sender_did`と`sender_device_id`を含む`authenticated_data`を検証し、MLS送信者Leafが同じ組へ対応することを検証する。
+6. 内側の`Group Application Plaintext`を解析し、すべての検査に合格してから配信する。
 
-どのステップでも失敗すれば、受信機 **MUST NOT** 有効なグループメッセージとして、アプリケーションレイヤーにメッセージを届けます。
+いずれかの手順が失敗した場合、受信側は、有効なグループメッセージとしてアプリケーション層へ渡してはなりません（**MUST NOT**）。
 
-### 11.9 ローカル処理の義務 `group.e2ee.notice`
+### 11.9 `group.e2ee.notice`のローカル処理義務
 
 #### 11.9.1 `commit-delivery`
 
-受取のとき `notice_type = "commit-delivery"`、受信機のローカルMLSランタイム **MUST**:
+`notice_type = "commit-delivery"`を受け取った場合、受信側のローカルMLS実行環境は、次を行わなければなりません（**MUST**）。
 
-1. 外部に検証する `meta.recipient_device_id` ローカルデバイスを識別します。
-2. デコード `commit_b64u` 確認・検証 `group_did`, `group_state_ref`, `crypto_group_id_b64u`, `epoch`, 影響を受ける `subject_did` / `subject_device_id` ペア;
-3. このデバイスのローカルMLSグループの状態にコミットを適用します。
-4. ローカルの現在の更新 `epoch` 必要事項を記入し、記録して下さい `epoch_authenticator` または一貫性のある状態、存在する場合。
+1. 外側の`meta.recipient_device_id`がローカルデバイスを識別することを検証する。
+2. `commit_b64u`をデコードし、`group_did`、`group_state_ref`、`crypto_group_id_b64u`、`epoch`、影響する`subject_did`／`subject_device_id`の組を検証する。
+3. このデバイスのローカルMLSグループ状態にCommitを適用する。
+4. ローカルの現在の`epoch`を更新し、存在する場合、必要な`epoch_authenticator`や整合性状態を記録する。
 
-削除する `commit-delivery` 誰が `subject_did` とりあえず `subject_device_id` 受信デバイスの独自のペアがデバイスに等しい **決勝** 団体の通知 そのような受信機:
+Removeの`commit-delivery`で、`subject_did`と`subject_device_id`が受信デバイス自身の組に等しい場合、それはそのデバイスのグループに対する**最後の**通知です。その受信側は：
 
-- **MUST** グループに対する通知として拒否するのではなく、受け入れて処理することはもはやメンバーではありません。
-- **MUST** 独自のローカルグループ結合を事前にし、ターミナル化するためにのみ適用します。
-- **MUST NOT** 新たなエポックの秘密を導き、 **MUST** 新規または後続のEPOCのアプリケーションメッセージを復号化できない。
-- **MUST NOT** さらなる投稿 `group.e2ee.send` そのために `group_did` 結合はターミナルを残っている間、それはセクション10.3の下で再結合するまでです。
+- もうメンバーではないグループの通知として拒否せず、受け入れて処理しなければなりません（**MUST**）。
+- 自分のローカルグループバインディングを進行・終了させるためだけに適用しなければなりません（**MUST**）。
+- 新epochの秘密情報を導出してはならず（**MUST NOT**）、新epochやそれ以後のepochのアプリケーションメッセージを復号できないままでなければなりません（**MUST**）。かつ、
+- バインディングが終了状態にある間、すなわち10.3節に従って再参加するまで、その`group_did`へ追加の`group.e2ee.send`を送信してはなりません（**MUST NOT**）。
 
-それに気づくのはMLSです `PublicMessage`なので、削除されたデバイスに新しいエポックの秘密を伝えません。 デバイスが保持された葉を既に保持している同じターミナル結論に達することができるだけ。
+その通知のCommitはMLSの`PublicMessage`なので、削除デバイスに新epochの秘密情報を伝えません。保持されたLeafが既に持つのと同じ、終了という結論に、そのデバイスも到達できるようにするだけです。
 
-最終通知の配信は、第12項に記載された通りに拘束され保証されません。 デバイス **MUST NOT** 端末状態の決定や、それを受け取る上でのみ依存する能力を発揮します。 P4 セクション 8.11 同様に、グループホストが 1 つの最終的な自己スコープを試みる必要があります `member-removed` または `member-left` 被写体DIDへの配信が、その試みも拘束され、到着も保証されていません。 以下各号 **MUST** したがって、同様に権威のあるターミナル信号として扱われ、それらのいずれかが単独で処理される **MUST** 同じターミナルのローカル状態に達するのに十分である:それが到着するとき最終的な通知、P4 `member-removed` または `member-left` 到着時に自分のDIDのイベント、 `group.not_member` 後でのリクエストを拒絶する、 `group.e2ee.leaf_not_current` 後者のグループアドレス指定P6の要求、またはセクション11.9.2の州ルールの拒絶。
+12.3節のとおり、最終通知の配信には上限があり、到着を保証しません。デバイスは、終了状態の判定や再参加能力を、その受信だけに依存させてはなりません（**MUST NOT**）。P4の8.11節も、グループHostに、対象DIDへの最後の自己スコープの`member-removed`または`member-left`配信を一度試みることを要求しますが、その試行にも上限があり、到着を保証しません。したがって、次を等しく権威ある終了信号として扱わなければならず（**MUST**）、どれか一つだけで同じローカル終了状態へ到達できなければなりません（**MUST**）。すなわち、到着した最終通知、自分のDIDのP4 `member-removed`または`member-left`イベント、後の自身の要求に対する`group.not_member`拒否、後の自身のグループ宛てP6要求に対する`group.e2ee.leaf_not_current`拒否、11.9.2節の古い状態に関する規則です。
 
-リーフのみのため DID が P4 のまま削除します。 `active`P4イベントも、 `group.not_member` 火災:DIDはメンバーであり、デバイスリーフが完全に削除された。 とりあえず `group.e2ee.leaf_not_current` セクション13.3と17で定義された拒絶反応は、その場合に利用可能なままのプル信号です。デバイスの次の正当なグループアドレス指定P6リクエスト — 次の手順を実行します `group.e2ee.send` — **MUST** 方針やペイロード評価前のエラーで拒否し、デバイスを受信する **MUST** 最終通知が到着したかのように、そのグループをターミナルとして扱うローカル結合。 デバイス **SHOULD NOT** 合成アプリケーションメッセージをプローブするだけ、そのメンバーシップをプローブします。積極的なチェックが必要な展開 **MAY** このプロファイルの外側に読み取り専用のステータスメカニズムを提供します。
+DIDがP4の`active`のままLeafだけをRemoveする場合、P4イベントも`group.not_member`も発生しません。DIDはまだメンバーで、正確なデバイスLeafだけを削除したためです。13.3節と17章の`group.e2ee.leaf_not_current`拒否は、この場合も利用できるプル型の信号です。次の正当なグループ宛てP6要求、実際には次の`group.e2ee.send`は、ポリシーやペイロードを評価する前に、そのエラーで拒否しなければなりません（**MUST**）。受信したデバイスは、最終通知を受け取った場合と同じように、そのグループのローカルバインディングを終了状態として扱わなければなりません（**MUST**）。メンバーシップを探るためだけに、合成したアプリケーションメッセージを捏造するべきではありません（**SHOULD NOT**）。能動的な確認が必要な配備環境は、このProfile外に読み取り専用の状態確認機構を提供してもかまいません（**MAY**）。
 
 #### 11.9.2 `welcome-delivery`
 
-受取のとき `notice_type = "welcome-delivery"`, 新しいデバイスのローカル MLS のランタイム **MUST**:
+`notice_type = "welcome-delivery"`を受け取った場合、新デバイスのローカルMLS実行環境は、次を行わなければなりません（**MUST**）。
 
-1. 外部に検証する `meta.target.did` とりあえず `meta.recipient_device_id` 等しく `subject_did` とりあえず `subject_device_id` ローカルデバイスを識別し、
-2. デコード `welcome_b64u` とりあえず `ratchet_tree_b64u`;
-3. 検証 `group_did`, `group_state_ref`, `crypto_group_id_b64u`と `epoch`;
-4. ウェルカムは、このデバイス自体が公開された新鮮で不燃なKeyPackageの秘密鍵の下に復号化し、配信されたラチェットツリーがこのデバイス用のKeyPackageのリーフノードを運ぶ1つの葉を正確に含んだことを確認し、KeyPackageが消費したことをマークします。
-5. 歓迎とラチェットツリーからこのデバイスの独自のMLSグループの状態を初期化し、永続化します。
-6. ローカルにその状態を埋め込む `(group_did, device_id)` ペアリングと、その後のコミットとアプリケーションメッセージ配信の準備。
+1. 外側の`meta.target.did`と`meta.recipient_device_id`が、`subject_did`と`subject_device_id`に等しく、このローカルデバイスを識別することを検証する。
+2. `welcome_b64u`と`ratchet_tree_b64u`をデコードする。
+3. `group_did`、`group_state_ref`、`crypto_group_id_b64u`、`epoch`を検証する。
+4. このデバイス自身が公開した新しい未消費KeyPackageの秘密鍵でWelcomeを復号できることを検証し、配信されたラチェット木に、そのKeyPackageのこのデバイスのLeafNodeを持つLeafが正確に一つ含まれることを検証し、KeyPackageを消費済みと記録する。
+5. Welcomeとラチェット木から、このデバイス自身のMLSグループ状態を初期化・永続化する。
+6. その状態をローカルの`(group_did, device_id)`の組に結び付け、後続のCommitとアプリケーションメッセージ配信に備える。
 
-デバイス **MAY** ローカル MLS の状態を既に保持している `group_did` ウェルカムが到着すると、最も一般的には葉が先ほど削除され、セクション10.3の下に再び結合されているためです。 デバイス **MUST** 次のように衝突を解決します。
+Welcomeの到着時、デバイスは、その`group_did`のローカルMLS状態を既に持っていてもかまいません（**MAY**）。典型的には、以前Leafを削除され、10.3節に従って再参加する場合です。デバイスは、この衝突を次のように解決しなければなりません（**MUST**）。
 
-- ローカル状態がグループにとってまだ使用可能である場合、ウェルカムの `crypto_group_id_b64u` とりあえず `epoch` マッチして、配信 `welcome_b64u` とりあえず `ratchet_tree_b64u` 既にその結合のために処理される歓迎されたこの装置にバイト識別され、歓迎を不当な繰り返すように扱います **MUST NOT** ローカル状態を破棄します。 場合 `crypto_group_id_b64u` とりあえず `epoch` マッチが、渡されたバイトは、以前に処理したもの、デバイスと異なる **MUST** ローカルの状態を保ち、そして **MUST NOT** 異なるペイロードを処理する。
-- それ以外の場合は、ウェルカムが同じ参照する場合 `crypto_group_id_b64u` 厳密に新しい状態で保存された結合として `epoch`、および保存された結合はターミナル リーフまたは配達ラチェットの木です装置によって貯えられたローカル州で記録される厳密な葉ノードが、歓迎からのローカル状態を取り替えないし、 **SHOULD** 置換結合の可聴レコードを保持します。 葉の比較は、デバイスにバインドする葉に対して、保存された葉ノードに対してではなく、 `(agent_did, device_id)` ペア: 配信されたツリーを再び囲むには、デバイスの新しいキーパッケージから新しい葉が含まれているため、新しい葉は保存されたものとしてカウントされません。
-- さもと **MUST** 不定休、 **MUST NOT** ローカル状態を破棄します。
+- ローカル状態がグループでまだ利用可能で、Welcomeの`crypto_group_id_b64u`と`epoch`が一致し、配信された`welcome_b64u`と`ratchet_tree_b64u`が、このバインディングで既に処理したWelcomeとバイト単位で同一なら、冪等な繰り返しとして扱い、ローカル状態を破棄してはなりません（**MUST NOT**）。`crypto_group_id_b64u`と`epoch`が一致しても、配信バイト列が以前と異なる場合、安全側で失敗させてローカル状態を保持しなければならず（**MUST**）、異なるペイロードを処理してはなりません（**MUST NOT**）。
+- それ以外で、Welcomeが保存済みバインディングと同じ`crypto_group_id_b64u`を厳密に新しい`epoch`で参照し、かつ、保存バインディングがTerminal Leafである、または配信ラチェット木にデバイスの保存済みローカル状態の正確なLeafNodeがもう含まれない場合、Welcomeからローカル状態を置き換え、置換したバインディングの監査可能な記録を残すべきです（**SHOULD**）。Leafの比較対象は、保存されたLeafNodeであり、デバイスの`(agent_did, device_id)`の組に結び付く任意のLeafではありません。再参加時の配信木には、新しいKeyPackageから得たデバイスの新Leafが含まれますが、その新Leafを保存済みLeafとはみなしません。
+- それ以外は安全側で失敗させなければならず（**MUST**）、ローカル状態を破棄してはなりません（**MUST NOT**）。
 
-これらのブランチは、既存のローカルの状態を置き換えるかどうかだけを決定します。 上記番号付き検証のどれも放棄します。 ターミナルリーフは、したがって、迂回しません `crypto_group_id_b64u` 継続チェックやEPOCの比較、および異なる参照する歓迎 `crypto_group_id_b64u` 同じ下 `group_did` グループの再作成やフォーク回復の移行を定義しないため、すべてのブランチで閉じる失敗。
+これらの分岐が決めるのは、既存ローカル状態を置き換えてよいかだけであり、上記の番号付き検証を免除しません。したがって、Terminal Leafも`crypto_group_id_b64u`の継続性検査やepoch比較を迂回できません。同じ`group_did`の下で、異なる`crypto_group_id_b64u`を参照するWelcomeは、すべての分岐で安全側に失敗します。この版はグループ再作成やフォーク回復の移行を定義しないためです。〔訳注：上記には未消費KeyPackageの検証と消費済みへの変更があり、処理済みWelcomeの冪等再配信分岐との適用関係は明確でありません。この訳では両要件を保持しています。〕
 
-新しく歓迎されたサポートは、それがそれ自体が要求しなかった機能を与えません。すべてのブランチでは、ウェルカムが再結合のために公開された新しい、不燃のKeyPackageの秘密鍵の下にのみ解読するので、リクエストを受け付けます。 このルールは、機密性ではなく、静止したローカル状態の破壊を管理します。 したがって、デバイス **MUST NOT** 使用可能なローカル状態を取り替え、 **MUST NOT** 直前に最終削除を受信した状態の交換 `commit-delivery` セクション 12.3, その通知は到着することを保証されていないので、.
+新しいWelcomeを受け入れても、デバイスが自分で要求していない能力は与えません。どの分岐でも、Welcomeを復号できるのは、このデバイス自身が再参加用に公開した新しい未消費KeyPackageの秘密鍵だけだからです。この規則で管理するリスクは機密性ではなく、まだ利用可能なローカル状態の破壊です。したがって、デバイスは、利用可能なローカル状態を置き換えてはならず（**MUST NOT**）、置換を、12.3節の最終Remove `commit-delivery`を以前受け取ったことを条件としてもいけません（**MUST NOT**）。その通知の到着は保証されないためです。
 
-ようこそ、JSON-RPCプロトコルメソッドではなく、ローカルの動作仕様です。
+Welcomeの処理は、ローカル動作の仕様であり、新しいJSON-RPCプロトコルメソッドではありません。
 
 ### 11.10 ローカル永続状態の要件
 
-再起動と通知タイミングの違いを横断して実行可能にしておくため、各参加者 **SHOULD** 少なくとも次の状態を主張します。
+再起動や通知時刻の違いがあっても実装できるよう、各参加者は少なくとも次の状態を永続化するべきです（**SHOULD**）。
 
-#### 11.10.1 オーナー
+#### 11.10.1 owner
 
-MLS状態を維持する各所有者デバイス **SHOULD** 少なくとも持続的な:
-
-- `group_did`
-- 自社所有 `device_id`
-- `crypto_group_id`
-- 流れの `epoch`
-- 独自の電流 MLS グループ状態
-- 現行のビジネスレイヤーのシンクロナイズドメンバーセットビュー
-- 最近受け入れられる最も最近への参照 `add/remove` その結果、DIDアップデートオーケストレーションのあらゆる操作を含む
-
-オーナーデバイス **MUST NOT** MLS 秘密鍵、エポックの秘密、またはプライベートツリーの状態をプロトコル状態として同期します。
-
-#### 11.10.2 アクティブメンバー
-
-通常のアクティブメンバーデバイス **SHOULD** 少なくとも持続的な:
+MLS状態を維持する各ownerデバイスは、少なくとも次を永続化するべきです（**SHOULD**）。
 
 - `group_did`
-- 自社所有 `device_id`
+- 自分自身の`device_id`。
 - `crypto_group_id`
-- 現在、MLSグループの状態が使用可能
-- 流れの `epoch`
-- 最近は正常に適用されて `commit/welcome` リファレンス
+- 現在の`epoch`。
+- 自分自身の現在のMLSグループ状態。
+- 同期された、現在の業務層のメンバー集合の見方。
+- DID更新の編成の各操作も含む、最近受け入れられた`add/remove`結果への参照。
 
-各装置は独立した葉および独立した私状態を維持します。 同じ DID の別のデバイスは、この状態をコピーするのではなく、独自の KeyPackage と Welcome に参加します。
+ownerデバイスは、MLS秘密鍵、epoch秘密情報、秘密の木状態を、プロトコル状態として同DIDの別デバイスへ同期してはなりません（**MUST NOT**）。
 
-#### 11.10.3 グループホスト
+#### 11.10.2 activeメンバー
 
-グループホスト **SHOULD** 少なくとも持続的な:
+通常の各activeメンバーデバイスは、少なくとも次を永続化するべきです（**SHOULD**）。
+
+- `group_did`
+- 自分自身の`device_id`。
+- `crypto_group_id`
+- 自分自身の現在利用可能なMLSグループ状態。
+- 現在の`epoch`。
+- 最近正常に適用した`commit/welcome`への参照。
+
+各デバイスは、独立したLeafと独立した秘密状態を維持します。同じDIDの他デバイスは、この状態をコピーせず、自分のKeyPackageとWelcomeで参加します。
+
+#### 11.10.3 グループHost
+
+グループHostは、少なくとも次を永続化するべきです（**SHOULD**）。
 
 - `group_state_version`
 - `group_event_seq`
 - `group_receipt`
-- 外面の結合参照への `crypto_group_id`, `epoch`
-- 現在のパブリック `(DID, device_id)`-to-leaf 受入から得られる投影 `create/add/remove` 業務;この投影 **MUST NOT** MLS 秘密鍵やエポックの秘密を含んだ
-- セクション12.6は、パブリックメタデータ、保存された公共の起源の証拠、および不透明の暗号に限らず、まだ輸送禁止されていない封筒のためのデバイスデリバリーキュー州
-- DID 更新オーケストレーションが追加または削除にあるかどうかを内部の進捗状況。この進行は新しいプロトコルレベルのメンバーシップ状態ではありません
+- `crypto_group_id`、`epoch`への外側のバインディング参照。
+- 受け入れ済み`create/add/remove`操作から導いた、現在の公開`(DID, device_id)`からLeafへの対応。この対応に、MLS秘密鍵やepoch秘密情報を含めてはなりません（**MUST NOT**）。
+- トランスポートで未確認のエンベロープに関する、12.6節のDevice Delivery Queue状態。公開メタデータ、保持した公開origin proof、不透明な暗号文だけに限定します。
+- DID更新の編成がAddとRemoveのどちらの段階かを示す内部進捗。新しいプロトコル上のメンバーシップ状態ではありません。
 
-デフォルトでは、グループホストは **必須事項** グループメッセージを復号化できる MLS のプライベートな状態を永続的に行える。
+既定では、グループHostに、グループメッセージを復号できるMLS秘密状態の永続化を**要求しません**。
 
-### 11.11 MLS 機能 v2 ではサポートされていません
+### 11.11 v2で対応しないMLS機能
 
-セクション11.2にリストされている例外に加えて、このプロファイルv2はサポートしていません。
+11.2節の除外事項に加え、このProfile v2は次に対応しません。
 
-- エクスポーター `Update` 別のプロトコルレベルのアクションとして
-- 暗号化されていない結果の配信 `group_state_ref` 連絡方法
-- MLSライブラリに適して、不意に復元し、欠落したツリー素材を自動的に復元します
-- 所有者以外のメンバーに提出する `Commit` 会員セットの変更
-- グループホストは、会員の代表的な最終MLS妥当性判断を完了させます
+- 独立したプロトコル上の操作としての`Update`の公開。
+- `group_state_ref`に結び付かない暗号処理結果のNoticeによる配信。
+- 不足した木素材をMLSライブラリが暗黙・自動的に復元することへの依存。
+- owner以外のメンバーが、メンバー集合を変える`Commit`を送信すること。〔訳注：前の節には、同じDIDの失効デバイス削除について限定例外も記載されています。〕
+- グループHostが、メンバーの代わりにMLSの最終有効性判断を完了すること。
 
-### 11.12 P4 メンバーのDIDアップデート MLSオーケストレーション
+### 11.12 P4メンバーDID更新のMLS処理編成
 
-オーナーのローカルMLSランタイム **MUST**:
+ownerのローカルMLS実行環境は、次を行わなければなりません（**MUST**）。
 
-1. 対応するP4を検証 `member-did-updated` ステートイベントと古いDID、新しいDID、 `group_state_ref`;
-2. 現行の古いDIDデバイスリーフと選択した対象の新規DIDデバイスを列挙する。
-3. 選択した各々の新規DIDデバイス用の別のKeyPackageとデバイスの結合を完全に確認し、検証します。
-4. 1 つを実行します。 `group.e2ee.add` 選択した新しいDIDデバイスごとにコミットし、そのデバイスにのみウェルカムとラチェットツリーを配信します。
-5. 選択したすべての追加が成功した後、 1 つを実行します `group.e2ee.remove` 古いDIDデバイスリーフごとにコミットします。
-6. 保持されたデバイスリーフに独立して各コミットを配信し、セクション12.3の最終通知として、古いDIDリーフを削除するために、各旧DID削除コミットをさらに配信します。
-7. 最終的な削除が成功した後にアプリケーションメッセージを再開します。
+1. 対応するP4 `member-did-updated`状態イベントと、その旧DID、新DID、`group_state_ref`を検証する。
+2. 現在のすべての旧DIDデバイスLeafと、選択した適格な新DIDデバイスを列挙する。
+3. 選択した新DIDの各デバイスについて、別個のKeyPackageとデバイスバインディングを取得して完全に検証する。
+4. 選択した新DIDのデバイスごとに、一つの`group.e2ee.add` Commitを実行し、そのデバイスだけへWelcomeとラチェット木を配信する。
+5. 選択したすべてのAddが成功したら、旧DIDのデバイスLeafごとに、一つの`group.e2ee.remove` Commitを実行する。
+6. 各Commitを、保持するすべてのデバイスLeafへ独立に配信し、各旧DIDのRemove Commitは、12.3節の最後の通知として、その削除する旧DIDのLeafへも追加配信する。
+7. 最後のRemoveの成功後にだけ、アプリケーションメッセージを再開する。
 
-コミットを追加して削除する **MUST** 同じP4を結合して下さい `group_state_ref`. . . 中間のEPOCは、DIDの更新を完了するだけで存在します。 **MUST NOT** アプリケーションのメッセージを運ぶ。 新規DIDデバイスは、独自のウェルカムを通じて、現在およびその後の状態のみを取得しています。 このプロファイル **MUST NOT** 失われた歴史のエポック秘密を復元したり、デバイス間でプライベートなMLS状態を共有したりできます。
+すべてのAddとRemove Commitは、同じP4 `group_state_ref`をバインドしなければなりません（**MUST**）。各中間epochは、DID更新を完了するためだけに存在し、アプリケーションメッセージを運んではなりません（**MUST NOT**）。新DIDのデバイスが、それぞれのWelcomeから得るのは、現在とそれ以降の状態だけです。このProfileは、失われた過去のepoch秘密情報を復元したり、デバイス間で秘密のMLS状態を共有したりしてはなりません（**MUST NOT**）。
 
-DID の更新対象が所有者である場合、移行はコミットを追加します **MAY** 対象となる旧所有者のデバイスが現在の状態を保持することで生成されます。 新規所有者のデバイスリーフが参加した後、その後の古いDIDは削除します **MUST** 対象となる新規所有者デバイスで現在の状態を生成します。 認定所有者のデバイスが現在の状態を保持または取得しない場合、実装 **MUST** 不定休 このプロフィールは自動所有者MLSの回復およびグループ ホストを提供しません **MUST NOT** 現行または歴史的なエポックの秘密を解放します。
+DID更新対象がownerなら、現在の状態を保持する適格な旧ownerデバイスが、移行用Add Commitを生成してもかまいません（**MAY**）。新ownerデバイスLeafの参加後は、現在の状態を持つ適格な新ownerデバイスが、後続の旧DIDのRemoveを生成しなければなりません（**MUST**）。現在の状態を保持・取得する認可済みownerデバイスがなければ、実装は安全側で失敗させなければなりません（**MUST**）。このProfileはownerのMLS状態の自動回復を提供せず、グループHostは、現在または過去のepoch秘密情報を開示してはなりません（**MUST NOT**）。
 
 ---
 
-## 12. 独立通知モデル
+## 12. 独立した通知モデル
 
-### 12.1 全般
+### 12.1 全体
 
-P6 は 2 つのデバイスターゲット通知パスを定義します。
+P6は、デバイスを対象とする二つの通知経路を定義します。
 
-- `group.e2ee.notice` MLS コミットと歓迎の結果のため。
-- プチ6 `group.incoming` アプリケーション ciphertext 用。
+- MLS CommitとWelcome結果用の`group.e2ee.notice`。
+- アプリケーション暗号文用のP6 `group.incoming`。
 
-ネザーパスはP4の再利用を繰り返します `group.state_changed`. . . プチ4 `group.state_changed` 持ち運びを続けていく **業務状態の変化**.
+どちらも、P4の`group.state_changed`を再利用しません。P4 `group.state_changed`は、引き続き**業務状態の変化**だけを運びます。
 
 ### 12.2 `group.e2ee.notice`
 
-#### 12.2.1 統計学
+#### 12.2.1 意味
 
-グループ暗号化関連の結果オブジェクトを1つのターゲットエージェントデバイスに直接配信します。
+グループ暗号処理に関する結果オブジェクトを、一つの宛先エージェントデバイスへ直接配信します。
 
-#### 12.2.2 通知封筒制約
+#### 12.2.2 通知エンベロープの制約
 
 - `method = "group.e2ee.notice"`
 - `meta.profile = "anp.group.e2ee.v2"`
 - `meta.security_profile = "transport-protected"`
 - `meta.target.kind = "agent"`
-- `meta.target.did` **MUST** 現在の通知の受信者を等しい DID
-- `meta.recipient_device_id` **MUST** 厳密な現在の通知の受渡装置を等しい
-- `meta.sender_did` **SHOULD** 等しいです `group_did`
-- `body` **MUST** 直接運送 `e2ee_notice_object`
+- `meta.target.did`は、現在の通知受信者DIDと等しくなければなりません（**MUST**）。
+- `meta.recipient_device_id`は、正確な現在の通知受信デバイスと等しくなければなりません（**MUST**）。
+- `meta.sender_did`は、`group_did`と等しいべきです（**SHOULD**）。
+- `body`は、`e2ee_notice_object`を直接運ばなければなりません（**MUST**）。
 
 ### 12.3 `notice_type = "commit-delivery"`
 
-現行のMLS会員への配送について:
+現在のMLSメンバーへの配信では：
 
 - `commit_b64u`
-- 新着情報 `epoch`
-- 新着情報 `epoch_authenticator` (利用可能な場合)
+- 新しい`epoch`。
+- 新しい`epoch_authenticator`（取得できる場合）。
 
-コミットの追加、グループホスト **MUST** 保持されたデバイスリーフごとに独立した通知封筒を1つ放します。
+Add Commitでは、グループHostは、保持する各デバイスLeafへ一つずつ、独立した通知エンベロープを出さなければなりません（**MUST**）。
 
-削除コミットのために、グループホスト **MUST** 保持されたデバイスリーフごとに独立した通知封筒を1つ放します **とりあえず** 最終通知は、削除された被写体リーフの完全通知封筒です。 最終的な封筒:
+Remove Commitでは、グループHostは、保持する各デバイスLeafへ一つずつ独立した通知エンベロープを出し、**さらに**削除対象の正確なLeafへ最終通知エンベロープを一つ出さなければなりません（**MUST**）。その最終エンベロープは：
 
-- **MUST** 正確にターゲット `(body.subject_did, body.subject_device_id)` 外側に `meta.target.did` とりあえず `meta.recipient_device_id`;
-- **MUST** 同じ受け入れたコミットを運ぶ、 `crypto_group_id_b64u`, `epoch`と `group_state_ref` 保持リーフエンベロープとして、 `body.subject_status = "removed"`; と
-- **MUST NOT** 削除された対象の兄弟デバイス、別の削除された葉、または任意のDIDレベルのファンアウトにリダイレクトされます。
+- 外側の`meta.target.did`と`meta.recipient_device_id`で、正確に`(body.subject_did, body.subject_device_id)`を宛先としなければなりません（**MUST**）。
+- 保持Leaf向けのエンベロープと同じ、受け入れ済みCommit、`crypto_group_id_b64u`、`epoch`、`group_state_ref`を運び、`body.subject_status = "removed"`としなければなりません（**MUST**）。かつ、
+- 削除対象と同DIDの別デバイス、別の削除Leaf、DID単位のファンアウトへ振り向けてはなりません（**MUST NOT**）。
 
-MLSは削除されたメンバーが削除したことを学習するためのバンド内方法を提供しないので、最終的な封筒が必要です。 不要で、削除されたデバイスは輸送の故障から除去を区別できず、不明確なアクティブなローカルグループ結合を無期限に保持できます。 コミットはMLSです `PublicMessage`, そのため、この配信は、エポックの秘密を開示し、前方秘密を弱めません;セクション11.9.1は、削除されたデバイスの処理義務を述べています。
+この最終エンベロープが必要なのは、MLSが、削除されたメンバー自身に削除を知らせる帯域内の方法を提供しないためです。これがなければ、削除デバイスは削除と通信障害を区別できず、見かけ上activeなローカルグループバインディングを無期限に保持するおそれがあります。CommitはMLSの`PublicMessage`なので、この配信でepoch秘密情報を明かさず、前方秘匿性も弱めません。削除デバイスの処理義務は11.9.1節にあります。
 
-葉のDIDとデバイスIDが、一方、各封筒ターゲット `body.subject_did` とりあえず `body.subject_device_id` コミットによって追加または削除された1つの葉を識別します。 受信後、デバイスはセクション11.9.1のローカルMLSランタイムルールに従ってコミットを処理します。
+各エンベロープの宛先は、そのLeafのDIDとデバイスIDです。一方、`body.subject_did`と`body.subject_device_id`は、Commitで追加・削除した一つのLeafを識別します。受信デバイスは、11.9.1節のローカルMLS実行環境の規則でCommitを処理します。
 
-削除された葉のための最後の封筒は、葉がグループのために受け取ることができる最後のP6封筒です。 そのため、その配達は無期限ではなく拘束されます。
+削除Leaf向けの最終エンベロープは、そのLeafがグループについて受け取れる最後のP6エンベロープです。したがって、配信は無期限ではなく、上限を設けます。
 
-- グループホスト **MUST** 明示的、展開決定的な再試行と保持制限を適用します。
-- 限界に達したと、グループホスト **MUST** 封筒をその葉のデバイスデリバリーキュー州とともに捨てることができ、 **MUST NOT** ターミナルリーフのデバイスデリバリーの状態を無期限に保持します。
-- それを捨てる **MUST NOT** グループが続くエポック、保持された葉の配達、または新しい受け入れをブロックする `group.e2ee.send`.
+- グループHostは、配備環境で明示・宣言した再試行と保持の上限を適用しなければなりません（**MUST**）。
+- 上限に達したら、グループHostは、そのLeafのDevice Delivery Queue状態とともにエンベロープを破棄できなければならず（**MUST**）、Terminal Leafのデバイスごとの配信状態を無期限に保持してはなりません（**MUST NOT**）。かつ、
+- その破棄によって、以後のepoch、保持Leafへの配信、新しい`group.e2ee.send`の受け入れを阻止してはなりません（**MUST NOT**）。
 
-配達がバインドされるので、受信機 **MUST NOT** この封筒を後で任意のローカル遷移のための保証された前提条件として扱います。セクション11.9.1および11.9.2を参照してください。
+配信には上限があるため、受信側は、このエンベロープを、後のローカル移行の到着保証付きの前提として扱ってはなりません（**MUST NOT**）。11.9.1節と11.9.2節を参照してください。
 
 ### 12.4 `notice_type = "welcome-delivery"`
 
-新規会員への配送を対象とする:
+新メンバーを対象とする配信では：
 
 - `welcome_b64u`
 - `ratchet_tree_b64u`
-- 新着情報 `epoch`
+- 新しい`epoch`。
 - `group_state_ref`
 
-ルールは以下の通りです。
+規則は次のとおりです。
 
-- `welcome_b64u` **MUST** MLSのTLS-serializedの未加工バイトである `Welcome` オブジェクト;
-- `ratchet_tree_b64u` **MUST** ラチェットツリーのTLS-serializedの未加工バイトである;
-- 新着情報 **MUST** 正確にターゲット追加 `(subject_did, subject_device_id)` ペアと **MUST NOT** 兄弟の装置に送られて下さい;
-- 新規デバイス **MUST** 利用条件 `welcome_b64u + ratchet_tree_b64u` 独自のローカルブーツストラップを完了するには、
-- DID アップデートオーケストレーションの追加、対象の DID **MUST** イベントの等しい `subject_did`; 歓迎 **MUST NOT** 送信する `previous_subject_did` または未選択の新DIDデバイスに。
+- `welcome_b64u`は、MLS `Welcome`オブジェクトをTLS直列化した生バイト列でなければなりません（**MUST**）。
+- `ratchet_tree_b64u`は、ラチェット木をTLS直列化した生バイト列でなければなりません（**MUST**）。
+- この通知は、追加した正確な`(subject_did, subject_device_id)`の組を宛先としなければならず（**MUST**）、同DIDの別デバイスへ送ってはなりません（**MUST NOT**）。
+- 新デバイスは、`welcome_b64u + ratchet_tree_b64u`を使って、自分自身のローカル初期化を完了しなければなりません（**MUST**）。
+- DID更新の編成のAddでは、宛先DIDがイベントの`subject_did`と等しくなければなりません（**MUST**）。Welcomeを`previous_subject_did`や、選択していない新DIDのデバイスへ送ってはなりません（**MUST NOT**）。
 
 ### 12.5 P4通知との関係
 
-- プチ4 `group.state_changed` DIDレベルのビジネスイベントのみを遂行します。
-- P4ベース `group.incoming` ノンE2EEグループメッセージとDID/Group-DIDアドレスを格納します。デバイスセレクタはありません。
-- プチ6 `group.e2ee.notice` 特定のデバイスにMLSのコミットと歓迎の結果だけを運ぶ。
+- P4の`group.state_changed`は、DID単位の業務イベントだけを運びます。
+- P4 Baseの`group.incoming`は、非E2EEのグループメッセージを運び、引き続きDID／Group DIDを宛先とし、デバイスセレクターを持ちません。
+- P6の`group.e2ee.notice`は、特定のデバイスへMLS CommitとWelcome結果だけを運びます。
 
-P6アプリケーション暗号文配信 **MUST** 利用条件 `group.incoming` JSON-RPC 通知として。 P6封筒です。 **MUST** 以下を全て満たします。
+P6のアプリケーション暗号文配信は、JSON-RPC Notificationとして`group.incoming`を使わなければなりません（**MUST**）。これはP6のエンベロープであり、次をすべて満たさなければなりません（**MUST**）。
 
-- `meta.profile = "anp.group.e2ee.v2"` とりあえず `meta.security_profile = "group-e2ee"`;
-- `meta.target.kind = "agent"`, `meta.target.did` 現在の葉のエージェントIDは1つ、 `meta.recipient_device_id` 葉のデバイスIDです。
-- `meta.sender_did` とりあえず `meta.sender_device_id` 送信者ペアを承諾したままに `group.e2ee.send`;
-- `meta.message_id`, `meta.operation_id`と `meta.content_type` 受諾を保ち、 `group.e2ee.send` 値;
-- `params.auth` オリジナルを守ろう `scheme` とりあえず `origin_proof` デバイスデリバリーキューから任意の赤みを含む変更なし、および追加の持ち運び `origin_context` セクション13.6で定義された再構成入力;セクション13.6は、受信機が保存された証拠を検証する方法を定義します。
-- `body.group_did` 受け入れられる等しい `group.e2ee.send.meta.target.did` とりあえず `body.group_cipher_object.group_state_ref.group_did`;
-- `body.group_state_version`, `body.group_event_seq`, `body.accepted_at`と `body.group_receipt` グループホストの承認された注文結果を保存し、
-- `body.group_cipher_object` 受け入れられる変更されていないコピーです `group.e2ee.send` ボディ。
+- `meta.profile = "anp.group.e2ee.v2"`かつ`meta.security_profile = "group-e2ee"`。
+- `meta.target.kind = "agent"`。`meta.target.did`は現在のLeaf一つのAgent DID、`meta.recipient_device_id`はそのLeafのデバイスID。
+- `meta.sender_did`と`meta.sender_device_id`は、`group.e2ee.send`で受け入れた送信者の組を保持する。
+- `meta.message_id`、`meta.operation_id`、`meta.content_type`は、受け入れた`group.e2ee.send`の値を保持する。
+- `params.auth`は、Device Delivery Queueからの再配信も含め、元の`scheme`と`origin_proof`を変更せず保持し、追加で13.6節の`origin_context`再構築入力を運ぶ。保持された証明の受信側検証方法は、13.6節で定義する。
+- `body.group_did`は、受け入れた`group.e2ee.send.meta.target.did`と`body.group_cipher_object.group_state_ref.group_did`に等しい。
+- `body.group_state_version`、`body.group_event_seq`、`body.accepted_at`、`body.group_receipt`は、グループHostが受け入れた順序付け結果を保持する。かつ、
+- `body.group_cipher_object`は、受け入れた`group.e2ee.send`のbodyの、変更のないコピー。
 
-グループホストは、現在のデバイスリーフごとに独立した封筒を1つ放ちます。 そのような封筒はすべて同じ注文フィールド、領収書、およびMLSを運びます `PrivateMessage`; のみ `meta.target.did` とりあえず `meta.recipient_device_id` 葉によって異なる。 ホスト **MUST NOT** 暗号解除または暗号化解除。 この標準 P6 通知は P4 ベースではありません `group.incoming`; P4 定義のときと同じメソッド名を使用します。 `group_event_seq`, `group_state_version`, `group_receipt`、および注文は受け入れられたグループメッセージに引き続き適用します。 最上位レベル `body.group_did` また、P8フェデレーションで必要なグループコータアンカーも提供します。
+グループHostは、現在の各デバイスLeafへ、独立したエンベロープを一つずつ出します。各エンベロープは同じ順序付けフィールド、受領証、MLS `PrivateMessage`を運び、Leafごとに変わるのは`meta.target.did`と`meta.recipient_device_id`だけです。Hostは、暗号文を復号・再暗号化してはなりません（**MUST NOT**）。この標準P6通知は、P4 Baseの`group.incoming`ではありません。メソッド名は同じですが、受け入れたグループメッセージには、P4の`group_event_seq`、`group_state_version`、`group_receipt`、順序付けの定義が引き続き適用されます。トップレベルの`body.group_did`は、P8連携が要求するグループのcaller anchorにもなります。
 
-### 12.6 装置配達キュー
+### 12.6 Device Delivery Queue
 
-P6通知パスはデバイスアドレスが指定され、その封筒は兄弟のデバイス間で交換できません。 封筒が最初に放出されたときにオフラインでいた装置は、グループホストがMLSのプライベート状態を保持していないため、まだ正確な封筒が必要であり、そのため、そのために1を再暗号化または再生することはできません。
+P6の二つの通知経路は、ともにデバイスを宛先とし、同じDIDのデバイス同士でもエンベロープを交換できません。初回発行時にオフラインだったデバイスも、その正確なエンベロープを必要とします。グループHostはMLS秘密状態を持たず、そのデバイス用に再暗号化・再生成できないためです。
 
-グループホスト **MUST** 従ってキーを付けられた耐久装置配達キューの状態を維持して下さい、 `(recipient_did, recipient_device_id)` グループ内では、両方 `group.e2ee.notice` と P6 `group.incoming`. . . つまり、
+したがって、グループHostは、グループ内の`(recipient_did, recipient_device_id)`をキーとする永続的なDevice Delivery Queue状態を、`group.e2ee.notice`とP6の`group.incoming`の両方について維持しなければなりません（**MUST**）。その状態は：
 
-1. **MUST** 出された封筒を主張して下さい `meta`, オパク `body`, と, P6用 `group.incoming`、保存される `auth`、ホストが輸送禁止されていないすべての封筒のために;
-2. **MUST** 封筒を赤みに交換しないように再現します。 `meta.message_id`, `meta.operation_id`, `meta.content_type`、注文分野、 `group_receipt`保存される `auth` 封筒が1つを運ぶとき、 `body`; 赤い **MUST NOT** デバイスやエポックを横断して、リターゲティング、マージ、分割、再オーダー、または再ナンバーエンベロップ。
-3. **MUST** 配達が現在の資格に対して有効化される前に、各配送の試みの前に、その配達は、もはや現在の資格葉でない葉のために停止し、2つの例外:セクション12.3で定義された最終削除通知を取り除き、そしてすでに次の許可として、その葉のために既に満たしました。
-4. **MUST NOT** 同じ DID の兄弟装置に渡される、露出されるか、またはファンにされてであって下さい、 **MUST NOT** 兄弟のデバイスの封筒を置換することによって満足される;
-5. **MUST** 公開メタデータ、保存されたパブリックオリジンの証拠、不透明暗号文に限ります。 グループホスト **MUST NOT** パーシスト MLS プライベート状態, EPOCTの秘密, このセクションを満たすために、またはプレーンテキスト.
+1. Hostがトランスポートで未確認の各エンベロープについて、発行した`meta`、不透明な`body`、P6 `group.incoming`では保持した`auth`を、永続化しなければなりません（**MUST**）。
+2. 再配信時は、`meta.message_id`、`meta.operation_id`、`meta.content_type`、順序フィールド、`group_receipt`、存在する場合の保持された`auth`、`body`を含め、エンベロープを変更せず再現しなければなりません（**MUST**）。デバイスやepochをまたいで、宛先変更、統合、分割、並べ替え、番号の付け直しをしてはなりません（**MUST NOT**）。
+3. キューに入れる前と各配信試行の前に、現在の適格性を再検証し、現在の適格Leafでなくなった場合は配信を止めなければなりません（**MUST**）。ただし、12.3節の最後のRemove通知と、以下で認める、そのLeaf用に既にキューへ入れたエンベロープは例外です。かつ、
+4. 同じDIDの別デバイスへ配信、開示、ファンアウトしてはならず（**MUST NOT**）、その別デバイスのエンベロープで代用してもいけません（**MUST NOT**）。かつ、
+5. 公開メタデータ、保持した公開origin proof、不透明な暗号文だけに限定しなければなりません（**MUST**）。この節を満たすために、グループHostがMLS秘密状態、epoch秘密情報、平文を永続化してはなりません（**MUST NOT**）。
 
-配達確認は運送レベルです。 P6 デリバリーパスは JSON-RPC 通知で、P1 セクション 5.3 の 1 つに残っています。このプロファイルはアプリケーションレベルの認識方法を定義しません。 ホストの輸送が受信者のデバイス認証セッションやエンドポイントに対する完全封筒の書き込みを報告したときに、封筒は輸送確認としてカウントされます。 輸送配達が確認されるので、アプリケーション処理は行いません。 輸送確認後ホスト **MAY** 封筒を解凍し、 **MUST NOT** このプロファイルが定義されていないアプリケーションを承認するためのキューオープン待機を保持します。 輸送確認が処理を証明しないため、受信機 **MUST** プロセスは、浮上する封筒を下回る: `(body.group_did, body.group_event_seq)` 一緒に `meta.message_id` P6 を識別する `group.incoming` 封筒、 `(body.group_did, body.notice_id)` 識別する `group.e2ee.notice` 受取人の装置自身の配達流れの中で、/ `notice_id` セクション7.6の規則。
+配信確認はトランスポート層のものです。両方のP6配信経路はJSON-RPC Notificationであり、P1の5.3節の下で一方向のままです。このProfileは、アプリケーション層の確認応答メソッドを定義しません。Hostのトランスポートが、受信デバイスの認証済みセッションやエンドポイントへ、その正確なエンベロープの書き込み完了を報告した時点で、トランスポート確認済みと数えます。アプリケーション処理ではなく、通信上の配信の確認です。確認後、Hostはエンベロープをキューから外してもかまいません（**MAY**）。このProfileが定義しないアプリケーション確認を待って、キューを開いたままにしてはなりません（**MUST NOT**）。通信確認は処理を証明しないので、受信側は再配信を冪等に処理しなければなりません（**MUST**）。`(body.group_did, body.group_event_seq)`と`meta.message_id`でP6 `group.incoming`を識別し、7.6節の`notice_id`規則に従い、各受信デバイス自身の配信ストリーム内で`(body.group_did, body.notice_id)`により`group.e2ee.notice`を識別します。
 
-デバイスのキュー内、P6 `group.incoming` プロモーション **MUST** 配達され、赤字で `group_event_seq` 注文と `commit-delivery` EPochの注文で通知します。 ツイート `welcome-delivery` **MAY** 旧バージョンを継続するのではなく、新しい結合を開始しているため、アプリケーションエンベロップをオーバーテークします。 最終削除通知 **MUST NOT** ホストがまだ配信するつもりであるアプリケーションをオーバーテイク, それが最後のP6エンベロープに滞在するように、 リーフが受け取る, セクション 12.3は要求します. 具体的には、葉の削除が受け入れられた後、ホスト **MUST NOT** 新規アプリケーションがその葉のために封筒を刻み、同じ境界保持内で次の1つを正確に行います。 **SHOULD** 削除された葉は、その葉のために既に使用されていないアプリケーション封筒を配信します。この葉は、暗号化されたエポックキーを保持しています。セクション 12.3の最終通知は、すべて後に配信されます。または、 **MAY**, 宣言された展開方針として, その葉のための残りの封印されたアプリケーション封筒をすべてキャンセルし、すぐに最終的な通知を配信. 最終通知が輸送確認されると、ホスト **MUST NOT** 更に、P6の封筒をその葉に届けます。
+一つのデバイスのキュー内では、P6 `group.incoming`を`group_event_seq`順に、`commit-delivery`通知をepoch順に、配信・再配信しなければなりません（**MUST**）。`welcome-delivery`は、旧バインディングの継続ではなく新しいバインディングを始めるため、保留中のアプリケーションエンベロープを追い越してもかまいません（**MAY**）。最後のRemove通知は、12.3節のとおりLeafが最後に受け取るP6エンベロープであるため、Hostがまだ配信する予定のアプリケーションエンベロープを追い越してはなりません（**MUST NOT**）。具体的には、LeafのRemoveを受け入れた後、新しいアプリケーションエンベロープをそのLeafへキューイングしてはなりません（**MUST NOT**）。その後、同じ保持上限内で次のどちらか一方だけを行います。既にキューに入れたアプリケーションエンベロープを順に配信し、その後で12.3節の最終通知を配信するべきです（**SHOULD**）。削除Leafは、それらの暗号化に使ったepoch鍵をまだ持ちます。あるいは、宣言済みの配備ポリシーとして、残るアプリケーションエンベロープをすべて取り消し、直ちに最終通知を配信してもかまいません（**MAY**）。最終通知がトランスポート確認済みになったら、そのLeafへ以後のP6エンベロープを配信してはなりません（**MUST NOT**）。
 
-注意点 **MUST** 明示的、展開決定的な制限によってバインドされる。 ディスクアワードの結果として、封筒の種類によって異なります。 各回復パスはセクション13.4を尊重する必要があります。現在の葉はまだ追加できません正確なDID /デバイスペアを追加してください:
+保持には、配備環境が明示・宣言した上限を設けなければなりません（**MUST**）。破棄の影響はエンベロープの種類で異なります。各回復経路も、現在のLeafである正確なDID／デバイスの組を再びAddできないという、13.4節の前提条件を守る必要があります。
 
-- 捨てられた `welcome-delivery` デバイスが初期化されていない、受入葉を残します。 オーナー様 **MUST** まず、その葉を取り除きます。ポリシー主導のDIDが残っている間にセクション13.4が許可する `active` — 新鮮なKeyPackageで新しいAddを実行し、新しい歓迎を収穫します。
-- 捨てられた `commit-delivery` 保持された葉に、デバイスは、まだ現在の葉であるときに、そのエポックを先立たせられないまま残します。 封筒が保持内で赤字化できない場合、所有者は同様に **MUST** 最初に、デバイスがセクション10.3の下に接する階段葉を削除します。
-- 破棄された最終的な削除通知は、追加のホストサイドのアクションを必要としません。葉は既にグループから欠落していますが、デバイスはセクション11.9.1の他の信号を介してターミナルの状態に達し、セクション10.3で直接再結合することができます。
-- 捨てられたP6 `group.incoming` envelope は 1 つのメッセージだけを失う; 後で封筒は独立して復号化され、Remove か再結合は必要としません。
+- `welcome-delivery`を破棄すると、受け入れ済みLeafはあるのにデバイスが未初期化となります。ownerは、まずそのLeafをRemoveし、その後で新しいKeyPackageによる新規Addを行い、新しいWelcomeを得なければなりません（**MUST**）。13.4節は、DIDが`active`でも、このポリシー駆動のRemoveを認めます。
+- 保持Leaf向け`commit-delivery`を破棄すると、Leafは現在のままなのに、デバイスはそのepochより先へ進めなくなります。保持期間内に再配信できなければ、同じくownerが先に古いLeafをRemoveしなければなりません（**MUST**）。その後、デバイスは10.3節に従って再参加します。
+- 最後のRemove通知を破棄しても、Host側に追加操作は不要です。Leafは既にグループから消えており、デバイスは11.9.1節の他の信号で終了状態に達し、10.3節に従って直接再参加できます。
+- P6 `group.incoming`を破棄した場合、失われるのはその一通だけです。後続エンベロープは独立して復号でき、Removeや再参加は不要です。
 
-これらの回復パスのどれも、このプロファイルが歴史的なエポックシークレットを解放します。 **MUST NOT** リリース
+いずれの回復経路も、過去のepoch秘密情報を開示しません。このProfileは、それを開示してはなりません（**MUST NOT**）。
 
-このキューは、グループ履歴ではなく、デリバリー機構です。 P5 Mailbox と同様に、MLS の状態を保有せず、このプロファイルは P6 履歴プル、読み取りレシート、またはデバイス同期方法を定義しません。
+このキューは配信機構であり、グループ履歴ではありません。P5 Mailboxと同じくMLS状態を持たず、このProfileはP6の履歴取得、既読通知、デバイス同期のメソッドを定義しません。
 
-展開 **MAY** ローカル履歴や、このプロファイルの外でAPIを再再生する。 このような API は、その一部ではありません。 `anp.group.e2ee.v2` とりあえず **MUST NOT** P6 機能として広告される。 デバイスアドレスの P6 エンベロープを返すと、次のようになります。
+配備環境は、このProfile外でローカル履歴や再生APIを提供してもかまいません（**MAY**）。それは`anp.group.e2ee.v2`の一部ではなく、P6機能として公開してはなりません（**MUST NOT**）。デバイス宛てのP6エンベロープを返すなら：
 
-- とりあえず **MUST** デリブ `meta.target.did` とりあえず `meta.recipient_device_id` 発信者の認証デバイスプリンシパルから。
-- とりあえず **MUST NOT** デバイスが封筒に対処される権限として、発信者支援装置セレクターを受け入れます。 **MUST** 認証されたプリンシパルと競合するセレクタを拒否 `anp.device_binding_invalid`;
-- とりあえず **MUST NOT** 認証された発信者の現在の葉ではなく、デバイスにアドレスを付けられた封筒を返します。
-- とりあえず **MUST NOT** 呼び出し者の認証が DID レベルのプリンシパルのみを確立したときに、デバイスアドレスの封筒を合成します。
+- `meta.target.did`と`meta.recipient_device_id`を、呼び出し元の認証済みデバイス主体から導かなければなりません（**MUST**）。
+- どのデバイス宛てかを決める根拠として、呼び出し元の自己申告デバイスセレクターを受け入れてはなりません（**MUST NOT**）。認証済み主体と競合するセレクターは、`anp.device_binding_invalid`で拒否しなければなりません（**MUST**）。
+- 認証済み呼び出し元自身の現在のLeaf以外のデバイス宛てのエンベロープを返してはなりません（**MUST NOT**）。かつ、
+- 認証がDID単位の主体だけを確立している場合、デバイス宛てエンベロープを合成してはなりません（**MUST NOT**）。
 
 ---
 
-## 13. 結合、ADおよび認証の要件
+## 13. バインディング、AAD、認証の要件
 
-### 13.1 最小結合セット
+### 13.1 最小のバインディング集合
 
-下記項目 **MUST** 認証された結合スコープを入力してください。
+次のフィールドを、認証されるバインディング範囲へ含めなければなりません（**MUST**）。
 
 - `group_did`
 - `crypto_group_id`
-- `group_state_version` (または) `group_state_ref`)
-- `policy_hash` (プレゼントの場合)
+- `group_state_version`（または`group_state_ref`）
+- `policy_hash`（存在する場合）
 - `meta.sender_did`
-- `meta.sender_device_id` (デバイス開始リクエストとP6アプリケーション配信)
+- `meta.sender_device_id`（デバイス起点の要求とP6アプリケーション配信）
 - `meta.message_id` / `meta.operation_id`
 - `meta.security_profile = group-e2ee`
 
-各デバイスターゲット `group.e2ee.notice` または P6 `group.incoming` 封筒、外部認証 **MUST** もつれ `meta.target.did` とりあえず `meta.recipient_device_id`. . . 受信者デバイス ID は MLS に差し込みません。 `authenticated_data`同じMLSだから `PrivateMessage` あらゆる流れの葉に渡されます。
+デバイスを対象とする各`group.e2ee.notice`やP6 `group.incoming`では、外側の認証で`meta.target.did`と`meta.recipient_device_id`もバインドしなければなりません（**MUST**）。同じMLS `PrivateMessage`を現在の全Leafへ配るため、受信デバイスIDはMLSの`authenticated_data`に入れません。
 
-### 13.1.1 `authenticated_data` のり `group.e2ee.send`
+### 13.1.1 `group.e2ee.send`の`authenticated_data`
 
-`group.e2ee.send` MLS の使用時 `PrivateMessage`, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , `authenticated_data` **MUST** 次のJSONオブジェクトのUTF-8 + RFC 8785 JCSエンコードバイト文字列になります。
+`group.e2ee.send`でMLS `PrivateMessage`を使う場合、`authenticated_data`は、次のJSONオブジェクトをUTF-8＋RFC 8785 JCSで符号化したバイト列でなければなりません（**MUST**）。
 
 ```json
 {
@@ -1567,11 +1568,11 @@ P6通知パスはデバイスアドレスが指定され、その封筒は兄弟
 }
 ```
 
-ここでは、発信者とは `group.e2ee.send` ターゲットがグループDIDである、エージェントDIDである後続の配信封筒ではない。 受取装置が取得 `group_did` 配達封筒から `body.group_did` とりあえず **MUST** 等しいことを確認し `body.group_cipher_object.group_state_ref.group_did` 認証済み `group_did`;封筒は、送信者ペア、メッセージID、および運用IDを保存します。
+ここで「外側」は、Group DIDを宛先とする元の`group.e2ee.send`要求を意味し、後のAgent DID宛てのデバイス別配信エンベロープではありません。受信デバイスは、配信エンベロープの`body.group_did`から`group_did`を取得し、`body.group_cipher_object.group_state_ref.group_did`および認証された`group_did`と等しいことを検証しなければなりません（**MUST**）。エンベロープは、元の送信者の組、メッセージID、操作IDを保持します。
 
-### 13.1.2 提出書類の結合 `group.e2ee.add/remove`
+### 13.1.2 `group.e2ee.add/remove`送信時のバインディング
 
-所有者が生成するとき `commit_b64u` ローカル `group.e2ee.add/remove`, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , **SHOULD** 少なくとも次のセマティクスを認証されたバインディングスコープに置きます。例えば、MLS を通して `authenticated_data` または同等のコンテキスト:
+ownerが`group.e2ee.add/remove`用の`commit_b64u`をローカルで生成するとき、例えばMLSの`authenticated_data`や同等のコンテキストを使い、認証されるバインディング範囲へ少なくとも次の意味を入れるべきです（**SHOULD**）。
 
 ```json
 {
@@ -1589,85 +1590,85 @@ P6通知パスはデバイスアドレスが指定され、その封筒は兄弟
 }
 ```
 
-すべてのデフォルトオプションフィールド **MUST** 直接、 **MUST NOT** によって表現される `null`、空の文字列、または別のプレースホルダー。 `member_did` とりあえず `member_device_id` **MUST** 常に実際の追加または削除操作の正確なターゲット葉を識別します。
+既定の任意フィールドは、すべて直接省略しなければならず（**MUST**）、`null`、空文字列、その他のプレースホルダーで表してはなりません（**MUST NOT**）。`member_did`と`member_device_id`は、常に実際のAdd／Remove操作が対象とする正確なLeafを識別しなければなりません（**MUST**）。
 
-DID アップデートオーケストレーションのため、すべてのコミット **MUST** 上記結合を使用して、同じP4を参照して下さい `group_state_ref`: 各追加's `member_did` **MUST** イベントの等しい `subject_did`と各Remove's `member_did` **MUST** イベントの等しい `previous_subject_did`. . . P6 リクエストは重複 DID 継続フィールドを追加しません。 `previous_subject_did` とりあえず `subject_did` 参照されたP4イベントで提供されている。
+DID更新の編成では、すべてのCommitが上のバインディングを使い、同じP4 `group_state_ref`を参照しなければなりません（**MUST**）。各Addの`member_did`はイベントの`subject_did`と等しくなければならず（**MUST**）、各Removeの`member_did`はイベントの`previous_subject_did`と等しくなければなりません（**MUST**）。P6要求は、DID継続性のフィールドを重複追加しません。`previous_subject_did`と`subject_did`は、参照するP4イベントが提供します。
 
-### 13.2 キーパッケージ検証
+### 13.2 KeyPackageの検証
 
-受信機がグループに加わってKeyPackageを受け入れる前に、 **MUST**:
+受信側は、グループ参加用KeyPackageを受け入れる前に、次を行わなければなりません（**MUST**）。
 
-1. MLS のデコード `KeyPackage`
-2. このグループでプロトコルバージョンとスイートが要件を満たしていることを確認してください
-3. 期限が切れていないことを確認し、再発され、消費されるようにマークされていないことを確認
-4. それを検証する `leaf_node` 有効です `KeyPackage`
-5. 確認する `KeyPackage` 公開鍵を使って署名する `leaf_node.credential`
-6. 検証 `credential.identity == owner_did`;
-7. それを検証する `owner_device_id == did_wba_binding.device_id` ペアが要求された葉にマッチする。
-8. 完全な確認 `did_wba_binding` 証拠およびセクション 6.3.1 埋め込まれた延長;
-9. デバイスが現在のP2マニフェストで正確に一度起こることを確認し、このプロファイルの対象となり、現在のマニフェスト署名キーを使用します。
-10. 葉署名公鍵が一貫していることを確認します。 `did_wba_binding.leaf_signature_key_b64u`.
+1. MLS `KeyPackage`をデコードする。
+2. プロトコル版とスイートがグループの要件を満たすことを検証する。
+3. 期限切れでも、取り消し済みでも、消費済みでもないことを検証する。
+4. `leaf_node`が`KeyPackage`に対して有効であることを検証する。
+5. `leaf_node.credential`内の公開鍵で、`KeyPackage`署名を検証する。
+6. `credential.identity == owner_did`を検証する。
+7. `owner_device_id == did_wba_binding.device_id`であり、その組が要求したLeafと一致することを検証する。
+8. 完全な`did_wba_binding`証明と6.3.1節の埋め込み拡張を検証する。
+9. デバイスが現在のP2 Manifestに正確に一度現れ、このProfileに適格で、現在のManifest署名鍵を使うことを検証する。
+10. Leaf署名公開鍵が、`did_wba_binding.leaf_signature_key_b64u`と一致することを検証する。
 
-KeyPackageが正常に使用されている場合 `group.e2ee.add`DID アップデートオーケストレーションの追加ステップ、グループホストによる受諾、実装を含む **MUST NOT** 展開が明示的に最後のリゾート例外を宣言しない限り、再利用可能な有効結合材料として扱います。
+DID更新のAdd段階も含め、KeyPackageを`group.e2ee.add`に使って成功し、グループHostが受け入れた場合、配備環境がlast-resort例外を明示的に宣言していない限り、再利用可能な有効参加素材として扱ってはなりません（**MUST NOT**）。
 
-### 13.3 `group.e2ee.send` リクエスト検証
+### 13.3 `group.e2ee.send`要求の検証
 
-受付前に `group.e2ee.send`グループホスト **MUST** 少なくとも確認して下さい:
+グループHostは、`group.e2ee.send`を受け入れる前に、少なくとも次を検証しなければなりません（**MUST**）。
 
-1. `auth.origin_proof` 法的です
-2. `group_did` 現在のホストによって存在し、管理することができます
-3. `group_state_ref.group_did` 外部ターゲットと一貫しています
-4. `meta.sender_did` 現在 P4 が現在 `active` 会員名
-5. `meta.sender_device_id` 現在、主催者のパブリックプロジェクションで現在のリーフにP2マニフェストとマップを送信します。
-6. `auth.origin_proof` マニフェストのエントリーのキーを署名し、送信者DID/デバイスペアをバインドすることで作られました。
-7. `group_policy.permissions.send` この送信者を許可します。
-8. とりあえず `group_cipher_object` フィールドは完了し、正しいフォーマットで。
+1. `auth.origin_proof`が有効。
+2. `group_did`が存在し、現在のHostが管理できる。
+3. `group_state_ref.group_did`が外側の宛先と一致。
+4. `meta.sender_did`が現在のP4 `active`メンバー。
+5. `meta.sender_device_id`が、送信者の現在のP2 Manifestで適格で、Hostの公開対応表の現在のLeafに対応。
+6. `auth.origin_proof`を、そのManifestエントリの現在の署名鍵で作成し、送信者DID／デバイスの組にバインドしている。
+7. `group_policy.permissions.send`がこの送信者を許可。
+8. `group_cipher_object`フィールドが完全で、正しい形式。
 
-4 と 5 のチェックは 3 つの状態を区別します。 **MUST** 安定した3つのエラーをマップし、グループホスト **MUST** ポリシーが7をチェックし、ペイロードチェック8をチェックアウトする前に、この順序で解決してください。 `meta.sender_did` 現在 P4 ではありません `active` 会員、P4 `group.not_member` エラーは適用されます。そうでなければ、 `meta.sender_device_id` 送信者のP2マニフェストでは現在資格がありません。P1コアデバイスエラーが適用されます(`anp.device_not_eligible` または `anp.device_state_changed`セクション17で、そうでなければ、対象となるペアが現在の葉にマップされていない場合は、グループホスト **MUST** 安定したエラーで拒否する `group.e2ee.leaf_not_current` セクション17で定義される **MUST NOT** この場合、このケースを倒す `group.not_member`、デバイスエラー、またはポリシーエラー。 この拒絶は、セクション11.9.1の認証端末信号でリーフのみ除去するため、このケースでは異なるまたは不安定なエラーを返すホストが削除されたデバイスの強制能力を破棄します。
+検査4と5は三つの状態を区別し、それぞれ異なる安定したエラーへ対応付けなければなりません（**MUST**）。グループHostは、ポリシー検査7やペイロード検査8の前に、次の順で判定しなければなりません（**MUST**）。`meta.sender_did`が現在のP4 `active`メンバーでなければP4の`group.not_member`。それ以外で、`meta.sender_device_id`が送信者の現在のP2 Manifestで不適格なら、17章に従うP1 Coreデバイスエラー（`anp.device_not_eligible`または`anp.device_state_changed`）。それ以外で、適格な組が現在のLeafに対応しなければ、17章の安定したエラー`group.e2ee.leaf_not_current`で拒否しなければならず（**MUST**）、`group.not_member`、デバイスエラー、ポリシーエラーへまとめてはなりません（**MUST NOT**）。この拒否は、Leafのみの削除について11.9.1節が定める権威ある終了信号です。異なる、または不安定なエラーを返すHostは、削除デバイスが状態を収束させる能力を壊します。
 
-グループホストはMLSのプライベート状態を保持しないため、受信MLSランタイムは復号化されたMLS送信者リーフが同じである最終チェックを実行します `(sender_did, sender_device_id)` ペア境界線 `authenticated_data`. . . ミスマッチ **MUST** 拒否します。
+グループHostはMLS秘密状態を持たなくてよいため、復号したMLS送信者Leafが、`authenticated_data`にバインドした同じ`(sender_did, sender_device_id)`の組であるかの最終検査は、受信側MLS実行環境が行います。不一致は拒否しなければなりません（**MUST**）。
 
-### 13.4 `group.e2ee.add/remove` リクエスト検証
+### 13.4 `group.e2ee.add/remove`要求の検証
 
-グループホストが受け入れる前に `group.e2ee.add` または `group.e2ee.remove`, **MUST** 少なくとも確認して下さい:
+グループHostは、`group.e2ee.add`や`group.e2ee.remove`を受け入れる前に、少なくとも次を検証しなければなりません（**MUST**）。
 
-1. `auth.origin_proof` 法的です
-2. 呼び出し側は、正確に1つの承認ブランチを満足させます。 `meta.sender_did` 現在のグループです `owner` とりあえず `meta.sender_device_id` 必要な状態を持つ資格のある現在の所有者の葉、またはこれは同じDIDの厳密なデバイスです。以下にすべての制限を満たすことを削除します。
-3. `group_state_ref.group_did` 外部ターゲットと一貫しています
-4. `crypto_group_id` グループの現在の暗号結合と一貫しています
-5. `(member_did, member_device_id)` 要求によって影響される厳密な葉と皮直に一貫しています;
-6. とりあえず `commit_b64u` (と) `welcome_b64u`, 現時点で)フィールド形式は法的です
+1. `auth.origin_proof`が有効。
+2. 呼び出し元が、正確に一つの認可経路を満たす。`meta.sender_did`が現在のグループ`owner`で、`meta.sender_device_id`が必要な状態を持つ適格な現在のowner Leafである、または、下記のすべての制限を満たす同DIDの正確なデバイスRemoveである。
+3. `group_state_ref.group_did`が外側の宛先と一致。
+4. `crypto_group_id`が、グループの現在の暗号学的バインディングと一致。
+5. `(member_did, member_device_id)`が、要求で影響する正確なLeafと意味的に一致。
+6. `commit_b64u`と、存在する場合の`welcome_b64u`が有効な形式。
 
-加えて:
+さらに：
 
-- 普通の追加 **MUST** ターゲットを現行P4 `active` DIDと、DID/deviceのペアがまだ葉ではない、対象となるマニフェストデバイス。 DID アップデート追加 **MUST** P4 を正確に参照 `member-did-updated`, ターゲット `subject_did`キーパッケージがそのDIDの名称デバイスをバインドしていることを確認し、確認します。
-- 普通の削除 **MUST** 既存の葉をターゲットに DID は P4 です `removed` または `left`、または名前付けされたデバイスがマニフェストの適格性を失っているか、DIDが残っている間グループポリシーによって削除されるか `active`. . . DID 更新を解除 **MUST** 同じイベントの下の古いDIDデバイスリーフをターゲットにし、 `group_state_ref`, すべての選択した新しいDIDデバイスを追加した後、成功しました。
-- 同じDIDが削除される **MUST** ありがたい `meta.sender_did == member_did`, そのDIDの異なるデバイスをターゲットに, 送信者を現在のデバイス管理権限とMLS電流の葉として検証します。, 再投票または現在P2-inligibleとしてターゲットを確認します。, P4メンバーとすべての兄弟の葉を保存します。, そして、その1つのターゲットリーフ以外の何かを削除Commit deltaを拒否します;
-- グループホスト **MUST** DID の更新を拒否する その対応する追加を優先し、 **MUST** DID 更新例外の使用を拒否し、別の削除をします。 `active` 会員名
-- DIDの更新中、グループホスト **MUST** 選択したすべての追加とオールドリーフのシリアライズ、関連する追加/削除操作を拒否または拒否します。
-- 同じP4 DID更新イベントに、reretriesを追加して削除する **MUST** 不法な皮質薬があります。
+- 通常のAddは、現在のP4 `active` DIDと、正確なDID／デバイスの組がまだLeafでない適格Manifestデバイスを宛先としなければなりません（**MUST**）。DID更新のAddは、P4 `member-did-updated`を正確に参照して、その`subject_did`を宛先とし、KeyPackageがそのDIDの指定デバイスに結び付くことを検証しなければなりません（**MUST**）。
+- 通常のRemoveは、DIDがP4 `removed`または`left`の既存Leaf、または、DIDは`active`のままで、指定デバイスがManifest適格性を失った、もしくはグループポリシーで削除される既存Leafを対象としなければなりません（**MUST**）。DID更新のRemoveは、選択した新DIDのすべてのデバイスへのAddが成功した後、同じイベントと`group_state_ref`の下の旧DIDデバイスLeafを対象としなければなりません（**MUST**）。
+- 同DIDのRemoveでは、`meta.sender_did == member_did`で、同じDIDの別デバイスを対象とし、送信側が現在デバイス管理権限を認可されMLSの最新状態にあるLeafであることと、宛先が失効済みまたは現在P2不適格であることを検証し、P4メンバーと同DIDの全別Leafを保持し、その宛先Leaf以外を削除するCommit差分を拒否しなければなりません（**MUST**）。
+- グループHostは、対応するAddより先のDID更新Removeを拒否しなければならず（**MUST**）、DID更新例外を使った、他の`active`メンバーの削除も拒否しなければなりません（**MUST**）。
+- DID更新中、グループHostは、選択したすべてのAddと旧Leafの全Removeを直列化し、無関係なAdd／Removeを拒否または保留しなければなりません（**MUST**）。
+- 同じP4 DID更新イベントに対するAddとRemoveの再試行は、冪等でなければなりません（**MUST**）。
 
-グループホストチェック **MUST NOT** 会員MLSランタイムで最終コミットとウェルカム検証を交換します。 それらのランタイム **MUST** コミットデルタが正確に境界を追加または削除することを確認します `(member_did, member_device_id)` 葉。
+これらのグループHost検査は、メンバーのMLS実行環境による最終のCommit／Welcome検証を置き換えてはなりません（**MUST NOT**）。それらの実行環境は、Commit差分が、バインドされた正確な`(member_did, member_device_id)`のLeafだけを追加・削除することを検証しなければなりません（**MUST**）。
 
-### 13.5 `group.e2ee.create` リクエスト検証
+### 13.5 `group.e2ee.create`要求の検証
 
-受付前に `group.e2ee.create`グループホスト **MUST** 少なくとも確認して下さい:
+グループHostは、`group.e2ee.create`を受け入れる前に、少なくとも次を検証しなければなりません（**MUST**）。
 
-1. `auth.origin_proof` 法的です
-2. `meta.sender_did` 現業の経営層のオーナーであり、 `meta.sender_device_id` プロフィールの登録は、現在可能です。
-3. `creator_key_package.owner_did` とりあえず `owner_device_id` 等しく `meta.sender_did` とりあえず `meta.sender_device_id`と結合拡張は、現在のP2マニフェストにマッチします。
-4. `crypto_group_id_b64u`, `epoch`と `group_state_ref` フィールドは完了です
-5. 現在、本グループではMLSの初期状態が認められていない。
+1. `auth.origin_proof`が有効。
+2. `meta.sender_did`が現在の業務層ownerで、`meta.sender_device_id`が現在このProfileに適格。
+3. `creator_key_package.owner_did`と`owner_device_id`が、それぞれ`meta.sender_did`と`meta.sender_device_id`に等しく、バインディング拡張が現在のP2 Manifestと一致。
+4. `crypto_group_id_b64u`、`epoch`、`group_state_ref`のフィールドが完全。
+5. 現在、このグループに受け入れ済みMLS初期状態がない。
 
-### 13.6 配信および償還の確認 `group.incoming` プロモーション
+### 13.6 配信・再配信された`group.incoming`エンベロープの検証
 
-このセクションはP6に適用されます `group.incoming` のみ。 スタンダード `group.e2ee.notice` 運ぶ いいえ `params.auth` 保存された原点の証拠なし:その認証は、グループホスト、セクション12.2から輸送認証チャネルに残り、受信ランタイムが納品されたコミットまたはウェルカム自身内で確認するMLS署名。 導入事例 **MUST NOT** 通知封筒に署名すると思われる証拠を添付し、 **MUST NOT** 下記のルールを通知に適用する。
+この節はP6の`group.incoming`だけに適用します。標準の`group.e2ee.notice`は、`params.auth`も保持したorigin proofも運びません。その真正性は、グループHostからのトランスポート認証済みチャネル、12.2節のエンベロープバインディング、配信されたCommitやWelcome自体の内側で受信実行環境が検証するMLS署名に基づきます。実装は、通知エンベロープに署名したように見える証明を付けてはならず（**MUST NOT**）、通知に以下の規則を適用してはなりません（**MUST NOT**）。
 
-の P6 `group.incoming` 封筒は、生成された原点の証拠をいつ保存するか `group.e2ee.send` セクション12.5で要求されるように、提出された、修正されていない。 そのため、同じ証拠は、すべてのリーフ配送封筒に提出され、デバイスデリバリーキューから後続的に再配達されます。 鮮度と証拠の妥当性を証明する **MUST** これらの2つのコンテキストで異なる評価される。
+P6の`group.incoming`エンベロープは、12.5節のとおり、`group.e2ee.send`送信時に作ったorigin proofを変更せず保持します。同じ証明が、送信要求、Leafごとの全配信エンベロープ、Device Delivery Queueからの後の再配信にも現れます。証明の鮮度と有効性は、二つの文脈で異なる評価をしなければなりません（**MUST**）。
 
-起源防止の新鮮さ変数のような `created`, `expires`と `nonce` 制約条件 **投稿フォーム** のみ。 グループホスト **MUST** 受入時にフルフレッシュネスウィンドウとシングルユースノーズチェックを適用します。 `group.e2ee.create`, `group.e2ee.add`, `group.e2ee.remove`と `group.e2ee.send`.
+origin proofの`created`、`expires`、`nonce`などの鮮度パラメーターが制限するのは、**送信要求の受け入れ**だけです。グループHostは、`group.e2ee.create`、`group.e2ee.add`、`group.e2ee.remove`、`group.e2ee.send`を受け入れる際、完全な鮮度期間と使い捨てnonceの検査を適用しなければなりません（**MUST**）。
 
-**再構成の入力。** 証拠は、送信者の元の投稿を、配信封筒ではなく署名します。そのため、受信機は、被覆されたコンポーネントを再現することができる必要があります。 P1 付録 A.4 のグローバルマッピングでは、HTTP トランスポートの値ではなく、論理的値です。 `"@method"` 署名されたリクエストオブジェクトです `method`と `"@target-uri"` は、 `anp://{meta.target.kind}/{pct-encoded meta.target.did}`. . . そのため、以下の再構築から完全に派生し、実装 **MUST NOT** 実際のHTTPメソッドやURLをリクエストするなど、 送信のみの値は、受信者が封筒から派生できない唯一の投稿は、投稿の `meta.created_at`, 封筒の独自の納期が上書きされ、このプロファイルは、保存するために封筒を必要としません. 封筒の `auth` ですから、 **MUST** 持ち運び `origin_context` 保存された証拠の横:
+**再構築入力。** 証明が署名するのは送信者の元の要求であり、配信エンベロープではないため、受信側は署名対象の構成要素を再現できる必要があります。P1付録A.4の共通マッピングでは、これらはHTTP通信値ではなく論理値です。`"@method"`はSigned Request Objectの`method`、`"@target-uri"`は`anp://{meta.target.kind}/{pct-encoded meta.target.did}`です。どちらも下記の再構築から完全に導け、実装は実際のHTTPメソッドや要求URLで代用してはなりません（**MUST NOT**）。エンベロープから導けない送信値は、配信時刻で上書きされる元要求の`meta.created_at`と、このProfileが保持を要求しない他の元metaフィールドだけです。したがって、エンベロープの`auth`は、保持した証明に加えて`origin_context`を運ばなければなりません（**MUST**）。
 
 ```text
 "auth": {
@@ -1679,75 +1680,75 @@ KeyPackageが正常に使用されている場合 `group.e2ee.add`DID アップ�
 }
 ```
 
-`origin_context.created_at` 投稿の記録 `meta.created_at` 受諾されたSigned Requestオブジェクトが1つ含まれているとき、封筒の所有物 `meta.created_at` 配達タイムスタンプです。 承認されたSigned Request Objectに、このプロファイルが既に保存するために封筒を必要としない他のメタフィールドが含まれていた場合、Group Host **MUST** 変更されていないレコード `origin_context.extra_meta`. `extra_meta` **MUST NOT** 含まれるもの `profile`, `security_profile`, `sender_did`, `sender_device_id`, `target`, `recipient_device_id`, `message_id`, `operation_id`, `content_type`, または `created_at`; ; これらの予約フィールドの1つを見つける受信機 `extra_meta` **MUST** 封筒を未提供として扱い、 **MUST NOT** とりあえず `extra_meta` 値が再構築定義された値を上書きします。 `origin_context` 認証入力は、信頼できるクレームではありません。誤った値が単に消化確認に失敗するので、別の保護を必要としません。 **MUST** 変更を解除する
+`origin_context.created_at`は、受け入れたSigned Request Objectに`meta.created_at`があった場合、その送信時刻を記録します。エンベロープ自身の`meta.created_at`は配信時刻だからです。受け入れたSigned Request Objectに、このProfileが既に保持を要求しているもの以外のmetaフィールドがあれば、グループHostは、`origin_context.extra_meta`へ変更せず記録しなければなりません（**MUST**）。`extra_meta`に、`profile`、`security_profile`、`sender_did`、`sender_device_id`、`target`、`recipient_device_id`、`message_id`、`operation_id`、`content_type`、`created_at`を含めてはなりません（**MUST NOT**）。受信側がこれらの予約フィールドを`extra_meta`に見つけた場合、エンベロープを未証明として扱わなければならず（**MUST**）、`extra_meta`の値で再構築規定値を上書きさせてはなりません（**MUST NOT**）。`origin_context`は検証入力であり、信頼済みの主張ではありません。誤った値はダイジェスト検証を失敗させるだけなので、個別の保護を要しません。中継は、変更せず転送しなければなりません（**MUST**）。
 
-**再建。** 受信機は、送信の署名リクエストオブジェクトを以下のように再構築します。
+**再構築。** 受信側は、送信要求のSigned Request Objectを次のように再構築します。
 
 - `method` = `"group.e2ee.send"`;
-- `meta` = 保存された投稿フィールド `profile`, `security_profile`, `sender_did`, `sender_device_id`, `message_id`, `operation_id`と `content_type`、プラス `target` 再建として `{"kind": "group", "did": <body.group_did>}`、プラス `created_at` から `origin_context.created_at` いつ現在、プラス `origin_context.extra_meta` フィールド。 配送のみの値が除外されます。封筒の1枚のリーフ `meta.target`, `meta.recipient_device_id`, および封筒の所有 `meta.created_at`;
-- `body` = `body.group_cipher_object`変更なし
+- `meta`＝保持された送信フィールド`profile`、`security_profile`、`sender_did`、`sender_device_id`、`message_id`、`operation_id`、`content_type`に、`{"kind": "group", "did": <body.group_did>}`として再構築した`target`、存在する場合の`origin_context.created_at`からの`created_at`、`origin_context.extra_meta`の各フィールドを加えたもの。配信専用の値、すなわちLeafごとの`meta.target`、`meta.recipient_device_id`、エンベロープ自身の`meta.created_at`は除きます。
+- `body`＝変更のない`body.group_cipher_object`。
 
-**検証。** 配達または赤字化の有効な受取装置 `group.incoming` 封筒 **MUST** 確認:
+**検証。** 配信・再配信された`group.incoming`を検証する受信デバイスは、次を検証しなければなりません（**MUST**）。
 
-1. RFC 8785 JCS の `contentDigest` 再建された署名された要求オブジェクトに再構成された要求オブジェクトは、証拠によって覆われた消化器を等しくします。
-2. RFC 9421 署名は、被覆されたコンポーネントに検証し、導出する `"@method"` 再構成されたオブジェクトから `method` (`group.e2ee.send`)と `"@target-uri"` として `anp://group/<pct-encoded body.group_did>` P1 付録 A.4 による、校正法の規定による検証方法 `keyid`、送信者の現在のメソッド検証済み DID 文書から解決したように。
-3. 証拠が同じ結合する `(meta.sender_did, meta.sender_device_id)` 封筒で運ばれる組;そして
-4. 封筒の注文フィールド、 `group_receipt`と `group_cipher_object` 相互に一貫して、同じに縛られる `group_did`.
+1. 再構築したSigned Request Objectに対し再計算したRFC 8785 JCSの`contentDigest`が、証明対象のダイジェストと等しい。
+2. P1付録A.4に従い、再構築オブジェクトの`method`（`group.e2ee.send`）から`"@method"`を、`anp://group/<pct-encoded body.group_did>`として`"@target-uri"`を導き、証明の`keyid`が参照する検証メソッドを、送信者の現在のメソッド検証済みDID Documentから解決して使い、対象構成要素のRFC 9421署名検証に合格する。
+3. 証明が、エンベロープと同じ`(meta.sender_did, meta.sender_device_id)`の組をバインドする。かつ、
+4. エンベロープの順序フィールド、`group_receipt`、`group_cipher_object`が相互に整合し、同じ`group_did`に結び付く。
 
-P2 文書は履歴キーログではなく、操作後にキーを回転または削除することで、古い証拠が許されないことがあります。 場合の `keyid` 検証方法は、現在の文書から解決できない、受信機 **MUST NOT** 鍛造品として封筒を扱います; それは **MUST** 代わりに、封筒を未提供として扱います。 `auth` 不在だった。 セクション11.8のMLSチェックは、暗号テキスト自体の認証送信者認証を維持します。
+P2文書は過去の鍵のログではないので、操作後の鍵ローテーションや削除で、古い証明が検証不能になる場合があります。現在の文書から`keyid`の検証メソッドを解決できなくなっても、受信側はエンベロープを偽造と扱ってはなりません（**MUST NOT**）。`auth`がない場合と同じく、未証明として扱わなければなりません（**MUST**）。暗号文自体について、送信者認証の権威ある根拠は引き続き11.8節のMLS検査です。
 
-受信機 **MUST NOT** 証拠が証明のためにだけ封筒を拒絶して下さい `expires` 渡された、 **MUST NOT** 証拠を扱います `nonce` 元の配達と同じの赤みを繰り返す `(group_did, group_event_seq)` 再プレイ攻撃として。 アプリケーションメッセージのレシーバ側再生保護がキーオン `(group_did, group_event_seq)` とりあえず `meta.message_id` セクション11.8のMLSチェックと組み合わせて; それ **MUST NOT** 原点防止の新鮮さにキーをつけて下さい。
+その受信側は、証明の`expires`が過ぎたことだけでエンベロープを拒否してはならず（**MUST NOT**）、同じ`(group_did, group_event_seq)`の初回配信と再配信で証明の`nonce`が繰り返されたことを、リプレイ攻撃と扱ってはなりません（**MUST NOT**）。アプリケーションメッセージの受信側リプレイ防止のキーは、`(group_did, group_event_seq)`と`meta.message_id`、および11.8節のMLS検査です。origin proofの鮮度をキーにしてはなりません（**MUST NOT**）。
 
-標準 P6 `group.incoming` 欠けている封筒 `auth` リアルタイムまたは赤字であっても、非適合性である:グループホストは提出を承諾したので、セクション12.5が保存する必要があるという証拠とコンテキストを常に保有しています。 省略するオプション `auth` そして、未提供として封筒を表面化することは、証拠の永続性を前提とした保存された行を再再生するときなど、セクション12.6の下に、アウトオブプロファイルのローカル履歴や再生APIのみのために存在します。 持ち運びにない封筒 `auth` **MUST NOT** 原点を証明する処理され、実装が合成、再署名、バックデート、または証拠の修理、または送信者のためのグループホスト自身の署名を代入することができません。
+リアルタイムでも再配信でも、`auth`のない標準P6 `group.incoming`は不適合です。グループHostは送信要求を受け入れているので、12.5節で保持を要求する証明とコンテキストを必ず持っているためです。`auth`を省略し未証明のエンベロープとして提示できるのは、12.6節のProfile外のローカル履歴・再生APIだけであり、例えば証明の永続化以前の保存行を再生する場合です。`auth`のないエンベロープを発信元証明済みと扱ってはなりません（**MUST NOT**）。いかなる実装も、証明の合成、再署名、日付の遡及、修復、送信者署名をグループHost自身の署名で代用することをしてはいけません。
 
 ---
 
-## 14. 注文、Epoch、レシートおよびフォーク
+## 14. 順序付け、Epoch、受領証、フォーク
 
-### 14.1 注文責任
+### 14.1 順序付けの責任
 
-- P4事業運営・事業展開 `group.e2ee.send` グループホストからグループイベント注文リンクを入力してください。
-- `group.e2ee.create/add/remove` 既存のビジネス状態に縛られる暗号制御行為であり、 **MUST NOT** 独立して新しいP4を作成します。 `group_state_version`;
-- 関連する暗号結果が、 `group.e2ee.notice`.
+- P4業務操作と`group.e2ee.send`は、グループHostからグループイベント順序付け経路に入ります。
+- `group.e2ee.create/add/remove`は既存業務状態に結び付く暗号制御操作であり、新しいP4 `group_state_version`を独立して作成してはなりません（**MUST NOT**）。
+- 関連する暗号処理結果を、`group.e2ee.notice`で配信します。
 
-### 14.2 `epoch` 加工プロセス
+### 14.2 `epoch`の処理
 
-- `epoch` **MUST** 外部オブジェクトの小数文字列として表現される。
-- 受信機 **MUST** 公差ウィンドウの外に明らかに古いアプリケーションメッセージを拒否します。
-- 実装 **MAY** 遅延メッセージの送信元に存在する古いepochの復号ウィンドウを留保しますが、 **MUST** 上限を設定
+- 外側のオブジェクトの`epoch`は、十進数文字列で表現しなければなりません（**MUST**）。
+- 受信側は、明らかに古く、許容期間外のアプリケーションメッセージを拒否しなければなりません（**MUST**）。
+- 遅延メッセージ用に、有限の旧epoch復号期間を保持してもかまいません（**MAY**）。ただし、上限を設定しなければなりません（**MUST**）。
 
 ### 14.3 `epoch_authenticator`
 
-パッケージが輸出できる場合 `epoch_authenticator` または同等の一貫性トークンを実装 **SHOULD** で:
+スイートから`epoch_authenticator`または同等の整合性トークンを出力できる場合、実装は、次の箇所に値を公開するべきです（**SHOULD**）。
 
 - `group_cipher_object`
 - `group.e2ee.notice`
-- `group_receipt` (該当する場合)
+- `group_receipt`（該当する場合）
 
-一貫性チェックを行うことができるように、この値を公開します。
+これにより、メンバーが整合性を検査できるようにします。
 
-### 14.4 グループレシート
+### 14.4 グループ受領証
 
-- `group_receipt` グループホストによって生成される継続
-- のために `group.e2ee.send`, `group_receipt` それでも標準的なリターン分野です;
-- のために `group.e2ee.add/remove/create`, `group_receipt` **MAY** 追加の情報として表示 `group.e2ee.notice` 対応するビジネス状態に暗号結果をアンカーするため。
-- 場合 `group_receipt` ミッション `proof`、証拠の構文、保護された文書および確認のステップ **MUST** P4 セクション 7.9 および P1 付録 B の共有オブジェクトのプルーフプロファイルを再使用します。
+- `group_receipt`は引き続きグループHostが生成します。
+- `group.e2ee.send`では、`group_receipt`は引き続き標準の戻り値フィールドです。
+- `group.e2ee.add/remove/create`では、暗号処理結果を対応する業務状態へ位置付けるため、`group.e2ee.notice`に追加情報として`group_receipt`を含めてもかまいません（**MAY**）。
+- `group_receipt`が`proof`を運ぶ場合、その証明構文、保護対象文書、検証手順は、P4の7.9節とP1付録Bの共通Object Proof Profileを再利用しなければなりません（**MUST**）。
 
 ### 14.5 フォークの検出
 
-会員が観察する場合:
+メンバーが次を観測した場合：
 
-- 同じ `group_did` 複数個体に不安定に対応 `crypto_group_id`
-- パートナー `epoch_authenticator` 同じか隣接した州で
-- 異なる有効 `Commit`s は同じコンテキストで
+- 同じ`group_did`が、複数の両立しない`crypto_group_id`に対応する。
+- 同じまたは隣接状態の`epoch_authenticator`が不一致。
+- 同じコンテキストに、異なる有効な`Commit`がある。
 
-それから実行して下さい **SHOULD** グループをマークする `fork-suspected` ステータスが変更されるまで、グループメッセージの送信を中断します。
+実装は、グループを`fork-suspected`と記録し、状態を再確認するまで新しいグループメッセージの送信を停止するべきです（**SHOULD**）。
 
 ---
 
 ## 15. フロー図
 
-### 15.1 グループ設立プロセス
+### 15.1 グループの確立フロー
 
 ```mermaid
 sequenceDiagram
@@ -1760,7 +1761,7 @@ sequenceDiagram
     H-->>C: MLS initialization succeeded (crypto_group_id, epoch)
 ```
 
-### 15.2 セルフサービス結合プロセス(オープンジョイント)
+### 15.2 自己参加フロー（open-join）
 
 ```mermaid
 sequenceDiagram
@@ -1777,7 +1778,7 @@ sequenceDiagram
     H-->>R: independent group.e2ee.notice(commit-delivery)
 ```
 
-### 15.3 直接追加プロセス(admin-add)
+### 15.3 直接追加フロー（admin-add）
 
 ```mermaid
 sequenceDiagram
@@ -1795,7 +1796,7 @@ sequenceDiagram
     H-->>R: independent group.e2ee.notice(commit-delivery)
 ```
 
-### 15.4 取り外し/プロセスを去ること
+### 15.4 削除・離脱フロー
 
 ```mermaid
 sequenceDiagram
@@ -1816,7 +1817,7 @@ sequenceDiagram
     Note over D: terminalize local binding only; no new epoch secret
 ```
 
-### 15.5 グループメッセージ送信プロセス
+### 15.5 グループメッセージの送信フロー
 
 ```mermaid
 sequenceDiagram
@@ -1831,7 +1832,7 @@ sequenceDiagram
     H-->>M: independent P6 group.incoming(recipient_device_id, same PrivateMessage)
 ```
 
-### 15.6 P4会員ID更新プロセス
+### 15.6 P4メンバーDIDの更新フロー
 
 ```mermaid
 sequenceDiagram
@@ -1862,138 +1863,138 @@ sequenceDiagram
 
 ## 16. セキュリティとポリシーの要件
 
-### 16.1 ホストは、会員の暗号化権限を交換しません
+### 16.1 Hostはメンバーの暗号化権限を代替しない
 
-グループホスト **MUST NOT** 注文を責任で管理しているため、グループプレーンテキストへのアクセス権を持っていると仮定されます。
+グループHostが順序付けを担当するという理由だけで、グループ平文にアクセスできると想定してはなりません（**MUST NOT**）。
 
-### 16.2 関係間の `origin_proof` 会員の署名とMLSメンバー
+### 16.2 `origin_proof`とMLSメンバー署名の関係
 
-- `auth.origin_proof` DID/device のペアがアプリケーションレイヤーでアクションを要求したことを証明します。このデバイスの現在のマニフェスト署名キーを使用します。
-- MLS 署名または送信者データは、デバイス・バウンド MLS リーフが暗号文やコミットを生成したかを証明します。
+- `auth.origin_proof`は、そのデバイスの現在のManifest署名鍵を使い、どのDID／デバイスの組がアプリケーション層の操作を要求したかを証明します。
+- MLS署名や送信者データは、どのデバイスに結び付くMLS Leafが暗号文やCommitを生成したかを証明します。
 
-通常のアクションでは、両方のバインディング **MUST** 同じ DID/device のペアに解決し、 **MUST NOT** それぞれを交換します。 唯一の例外は、セクション10.5と11.12で移行オーナーDIDの更新を追加:Origin Proofは、対象となる現在の新しい所有者デバイスをバインドし、Commitは保持された古い所有者のデバイスリーフによって生成され、両方とも同じ受け入れられたP4 DID更新イベントに拘束されます。
+通常の操作では、両バインディングが同じDID／デバイスの組へ解決されなければならず（**MUST**）、互いを置き換えてはなりません（**MUST NOT**）。唯一の例外は、10.5節と11.12節の、owner DID更新時の移行用Addです。Origin Proofは適格な現在の新ownerデバイスに結び付き、Commitは保持された旧ownerデバイスLeafで生成できますが、双方が同じ受け入れ済みP4 DID更新イベントに結び付きます。
 
-アナウンス `origin_proof` P6で保存 `group.incoming` envelope は参照されたものを提出した者を証明します `group.e2ee.send`. . . 納期、納期、または受取装置の証拠ではなく、その鮮度パラメータは、受信機の受入受容を抑制しません。 セクション13.6は、その分割を定義します。 スタンダード `group.e2ee.notice` 保存された証拠を運ぶこと; コミットとウェルカムペイロードは、MLS署名によって認証されます。
+P6 `group.incoming`に保持された`origin_proof`は、参照する`group.e2ee.send`を誰が送信したかを証明します。配信時刻、配信順、受信デバイスの証拠ではなく、鮮度パラメーターも、受信側が再配信を受け入れる際の制約ではありません。この区別は13.6節が定義します。標準の`group.e2ee.notice`は保持した証明を運ばず、CommitとWelcomeペイロードをMLS署名で認証します。
 
-### 16.3 グループポリシーは、純粋な暗号化能力を優先的に受け止めます
+### 16.3 グループポリシーは、純粋な暗号能力より優先する
 
-会員が「提案/コミット/プライベートメッセージ」の一部を純粋なMLSの視点から生成できる場合でも、アプリケーションレイヤーは実行を許可するかどうか **MUST** P4の決定 `group_policy`.
+純粋なMLSの観点でメンバーが「ある種のProposal／Commit／PrivateMessageを生成できる」としても、アプリケーション層が実行を認めるかは、P4の`group_policy`で決めなければなりません（**MUST**）。
 
-### 16.4 許可の送信 `group.e2ee.send`
+### 16.4 `group.e2ee.send`の送信権限
 
-送信者の場合だけ:
+送信者が次を満たす場合にだけ：
 
-- DID は現在 P4 です。 `active` 会員名
-- コンセプト `sender_device_id` 現在、Manifest-eligible とアクティブな MLS の送信者リーフにマップされています。
-- おすすめ `group_policy.permissions.send`;
+- DIDが現在のP4 `active`メンバー。
+- `sender_device_id`が現在Manifestに適格で、activeなMLS送信者Leafに対応。
+- `group_policy.permissions.send`を満たす。
 
-グループホストは、ただ受け入れるだけ `group.e2ee.send`.
+グループHostは、`group.e2ee.send`を受け入れられます。
 
-### 16.5 所有者は一般的なコントローラーとして
+### 16.5 一般のコントローラーとしてのowner
 
-複数の制御回路モデルにv2が拡張されていない限り、次のようになります。
+v2を複数コントローラーモデルへ拡張しない限り：
 
-- P4所有者のみ DID は許可することができます `group.e2ee.create/add` と一般 `group.e2ee.remove`
-- 必要な現在のMLS状態がある場合のみ、その所有者のDIDの対象となるデバイスをDIDがアクションを送信できます。デバイスIDは新しいP4ロールを作成しません
-- 現在の同一DIDデバイス管理認証の葉は、直接、完全に再発された兄弟のみを呼び出すことができます `group.e2ee.remove` セクションの例外 9.4 と 13.4
-- 管理者は、直接作成/追加を呼び出したり、P4メンバーを削除したり、別のIDを削除したり、DID-update制御を実行したりすることはできません。
-- 管理者の業務層の行動はP4ステータスにのみ影響を及ぼし、最終的にはMLSに所有者によって実装されます。
+- P4 owner DIDだけが、`group.e2ee.create/add`と一般の`group.e2ee.remove`を認可できます。
+- そのowner DIDの適格デバイスが操作を送信できるのは、必要な現在のMLS状態を持つ場合だけです。デバイスIDで新しいP4役割ができるわけではありません。
+- 現在の、同DIDデバイス管理権限を認可されたLeafが直接呼べるのは、9.4節と13.4節の、正確な失効済み別デバイスに対する`group.e2ee.remove`例外だけです。
+- adminは、この例外を使い、create／addを直接呼ぶ、P4メンバーを削除する、他DIDを削除する、DID更新を制御することはできません。
+- adminの業務層の操作はP4状態だけに影響し、最終的にownerがMLSで実現します。
 
-### 16.6 未来の秘密と歴史境界DIDの更新後の
+### 16.6 DID更新後の将来の秘匿性と過去の境界
 
-- デバイスリーフの削除Commitが受け入れられた後、そのデバイスリーフ **MUST NOT** 新しくなったエポックや後方からのメッセージを復号化します。
-- P4 削除または DID の残留 **MUST** そのDIDのすべての葉を削除することによって収束; 1デバイスの資格の喪失は、その葉が兄弟の葉やP4会員を変更することなく削除されるようにすることができ、その保留除去は、それ以外の有給申請を送るのを一時停止しません。
-- 複数のデバイスDID更新中にすべての中間のEPOC **MUST NOT** アプリケーションメッセージの送信
-- 選択した各デバイスは、独自のウェルカムを通じて新しいエポックと後日の状態のみを受信します。 プロフィール **MUST NOT** 失われた歴史のエポックの秘密を再配布する。
-- 歴史の暗号文、送信者ID、MLSの資格情報、およびレシート **MUST NOT** DID の更新のため、書き換えられます。
-- 歴史的な平文回復を必要とするアプリケーションは、このプロファイルの外に明示的に暗号化されたバックアップ機構が必要です。
+- デバイスLeafのRemove Commitが受け入れられた後、そのLeafが新epochや以後のepochのメッセージを復号してはなりません（**MUST NOT**）。
+- P4でDIDを削除・離脱させた場合、そのDIDの全Leafの削除へ収束させなければなりません（**MUST**）。一つのデバイスの適格性喪失では、同DIDの別LeafやP4メンバーシップを変えず、そのLeafだけを削除できます。その削除待ちで、他の有効なアプリケーション送信は止めません。
+- 複数デバイスのDID更新中の各中間epochで、アプリケーションメッセージを運んではなりません（**MUST NOT**）。
+- 選択した新DIDの各デバイスが、自分のWelcomeで得るのは新epochとそれ以後の状態だけです。このProfileは、失われた過去のepoch秘密情報を再配布してはなりません（**MUST NOT**）。
+- DID更新を理由に、過去の暗号文、送信者DID、MLS資格情報、受領証を書き換えてはなりません（**MUST NOT**）。
+- 過去の平文の回復が必要なアプリケーションには、このProfile外の明示的な暗号化バックアップ機構が必要です。
 
 ---
 
-## 17. プロファイル固有のエラー(推奨)
+## 17. Profile固有のエラー（推奨）
 
-ANPコアの公開エラーモデルを以下に示す前提では、このプロファイルは、次のことを推奨します。 `anp_code`:
+ANP Coreの共通エラーモデルに従うことを前提に、このProfileは次の`anp_code`を推奨します。
 
-| `code` | `anp_code` | 意味する |
+| `code` | `anp_code` | 意味 |
 |---|---|---|
-| 5000 | `group.e2ee.key_package_not_found` | 利用可能なKeyPackageが見つかりません |
-| 5001 | `group.e2ee.invalid_key_package` | KeyPackage は無効です |
-| 5002 | `group.e2ee.did_binding_invalid` | DID/device-to-MLS の結合検証失敗 |
-| 5003 | `group.e2ee.controller_required` | 現在の呼び出し主はMLSコントローラーではありません |
-| 5004 | `group.e2ee.state_not_ready` | 対応するビジネス状態はまだ準備が整っていない |
-| 5005 | `group.e2ee.epoch_conflict` | epoch の競合 |
-| 5006 | `group.e2ee.crypto_group_mismatch` | 結合の `group_did` とりあえず `crypto_group_id` 不整合性 |
-| 5007 | `group.e2ee.private_message_invalid` | グループメッセージ ciphertext オブジェクトは無効です |
-| 5008 | `group.e2ee.commit_invalid` | コミットオブジェクトは無効です |
-| 5009 | `group.e2ee.welcome_invalid` | ウェルカムオブジェクトは無効です |
-| 5010 | `group.e2ee.fork_suspected` | 潜在的なフォーク検出 |
-| 5011 | `group.e2ee.notice_type_unsupported` | サポートされていないE2EE通知タイプ |
-| 5012 | `group.e2ee.key_package_consumed` | KeyPackage は消費され、再使用できません |
-| 5013 | `group.e2ee.leaf_not_current` | 送信機装置は、このグループの現在のMLSの葉ではありません。DIDはP4メンバーのままです |
+| 5000 | `group.e2ee.key_package_not_found` | 利用可能なKeyPackageが見つからない |
+| 5001 | `group.e2ee.invalid_key_package` | KeyPackageが無効 |
+| 5002 | `group.e2ee.did_binding_invalid` | DID／デバイスからMLSへのバインディング検証が失敗 |
+| 5003 | `group.e2ee.controller_required` | 現在の呼び出し元がMLSコントローラーではない |
+| 5004 | `group.e2ee.state_not_ready` | 対応する業務状態がまだ準備できていない |
+| 5005 | `group.e2ee.epoch_conflict` | epochの競合 |
+| 5006 | `group.e2ee.crypto_group_mismatch` | `group_did`と`crypto_group_id`のバインディングが不一致 |
+| 5007 | `group.e2ee.private_message_invalid` | グループメッセージの暗号文オブジェクトが無効 |
+| 5008 | `group.e2ee.commit_invalid` | Commitオブジェクトが無効 |
+| 5009 | `group.e2ee.welcome_invalid` | Welcomeオブジェクトが無効 |
+| 5010 | `group.e2ee.fork_suspected` | フォークの疑いを検出 |
+| 5011 | `group.e2ee.notice_type_unsupported` | 未対応のE2EE Notice型 |
+| 5012 | `group.e2ee.key_package_consumed` | KeyPackageが消費済みで、再利用不可 |
+| 5013 | `group.e2ee.leaf_not_current` | DIDはP4メンバーのままであり得るが、送信デバイスが、このグループの現在のMLS Leafではない |
 
-DID 更新オーケストレーションは、専用のエラーコードを定義しません。 状態が準備されていない場合、Commit は無効です。epoch の競合、または発信者はコントローラーではなく、実装再使用 `group.e2ee.state_not_ready`, `group.e2ee.commit_invalid`, `group.e2ee.epoch_conflict`と `group.e2ee.controller_required`,それぞれ.
+DID更新の編成は、専用エラーコードを定義しません。状態の未準備、Commitの無効、epochの競合、呼び出し元がコントローラーでない場合には、それぞれ`group.e2ee.state_not_ready`、`group.e2ee.commit_invalid`、`group.e2ee.epoch_conflict`、`group.e2ee.controller_required`を再利用します。
 
-ミス、無効、または無視できない、またはストールデバイスのバインディングは、P1コアエラーを再使用します `anp.device_binding_required`, `anp.device_binding_invalid`, `anp.device_not_eligible`と `anp.device_state_changed`. . . このプロファイルは、第2のエラー封筒形状を定義したり、コアコードを複製したりしません。
+デバイスバインディングの欠落、無効、不適格、古い状態には、P1 Coreの`anp.device_binding_required`、`anp.device_binding_invalid`、`anp.device_not_eligible`、`anp.device_state_changed`を再利用します。このProfileは、第二のエラーエンベロープ形式や、これらのCoreコードの重複を定義しません。
 
 ---
 
-## 18. 最小相互運用性要件
+## 18. 相互運用の最小要件
 
-このページの先頭へ MUST 少なくともサポート:
+このProfileに適合する実装は、少なくとも次に対応しなければなりません（MUST）。
 
 1. `MLS_128_DHKEMX25519_AES128GCM_SHA256_Ed25519`
-2. MLS 利用プロファイル 制限された 使用サブセットを第11章で定義
+2. 11章のMLS Usage Profileで定義する、制限された使用部分集合。
 3. `group.e2ee.publish_key_package`
 4. `group.e2ee.get_key_package`
 5. `group.e2ee.create`
 6. `group.e2ee.add`
 7. `group.e2ee.remove`
 8. `group.e2ee.send`
-9. P2 マニフェスト バック デバイス検証とセクション 6.3.1 `anp_did_wba_device_binding` MLS拡張
-10. サービススコープ対象モデル `group.e2ee.create`
-11. グループアドレス対象モデルの `group.e2ee.add/remove/send`
-12. DID-and-device-addressed通知モデルの `group.e2ee.notice` と P6 `group.incoming`
-13. 所有者は、一般的なMLSコントローラーとして、クローズドの同一DID再発デバイスのみこのプロファイルによって定義された例外を削除します。
-14. ドライブ `create/add/remove` P4ビジネスの状態を通した
-15. 選択したすべてのドライブ `add(new DID, device)` 続いている全ての操作 `remove(old DID, device)` P4の操作 `member-did-updated`、同じに縛られるあらゆるステップを使って `group_state_ref`
-16. 最終削除が完了するまでP4 DIDの更新の受け入れからアプリケーションメッセージを不正にし、メンバー変更のコントロールアクションを全体的にシリアライズします。
-17. `group.e2ee.send` 直接、パッケージ化されていない MLS 暗号文を送信します `group.send`
-18. `group.e2ee.notice` のために使用される `welcome-delivery` とりあえず `commit-delivery`
-19. 迅速な配達 `ratchet_tree_b64u` でん `welcome-delivery`
-20. P6 の塗布配達は標準を使用します `group.incoming` 通知と連絡 `meta.profile = "anp.group.e2ee.v2"`、送信者/沈殿物装置結合、P4の発注分野および受取り書および同じ受け入れられる `group_cipher_object`;それはP4の基盤ではないです `group.incoming`
-21. メッセージ側のみが入力 `PrivateMessage`
-22. 経営の分野 `group_receipt`, `group_state_version`と `group_event_seq` P4 と一貫して
-23. 削除されたデバイスリーフが成功した後、将来のメッセージを復号化しないようにする
-24. P4 の会員、役割、ステータス、およびメンバーは 1 つの DID のための複数の独立した MLS の葉を許可する間、DID スコープでカウントします
-25. 必須条件 `sender_device_id`, `member_device_id`, `owner_device_id`デバイスターゲット `recipient_device_id` このプロファイルが宣言する場所
-26. 各デバイスに対して独立したKeyPackages、ウェルカム、プライベートMLSの状態、および暗号化された配信を維持します。 プライベート状態は兄弟デバイス間で共有されません
-27. P4 DIDが削除または葉を取消し、単一のrevoked / 必須デバイスは、影響を受ける葉だけをpausingしないで取り除くことができます。
-28. 1つのMLSを暗号化する `PrivateMessage` アプリケーションの送信とホストのリ暗号化なしで、現在のデバイスリーフごとの独立したP6封筒にそれを配布
-29. 最終決勝を1回まで `commit-delivery` 埋め立てられた再試行と保持限度額の下の、すべての保持された葉に加えて、完全に削除された被写体リーフに封筒を詰めて、新しいエポックの秘密を導き出さずに、最終封筒を処理します
-30. 最終の時に同じターミナルローカル状態に到達 `commit-delivery` P4から到着しない `member-removed` または `member-left` 観察される場合のでき事、から `group.not_member` 後者のリクエストの拒否、 `group.e2ee.leaf_not_current` デバイスリーフのみが削除されたとき、またはセクション11.9.2のストール状態ルールから拒絶反応し、再結合のための事前条件としてその封筒を必要としません
-31. P4 で以前に削除されたデバイスリーフを再度参照 `active` 状態と新しいKeyPackageと歓迎、再結合方法なし、消費されたKeyPackageを再利用せず、以前のepochの秘密を修復することなく
-32. グループ リーフ除去を P2 マニフェスト デバイス 取り外し、同じを保持します。 `device_id` グループリーフ除去と再結合
-33. キーをキーで置かれる耐久装置配達キューを維持して下さい `(recipient_did, recipient_device_id)` 未確認の封筒を交換し、各配達の前に葉の適格性を再検証し、兄弟デバイスのエンベロープを代入し、MLSの私的状態または文脈を保存しません
-34. 配達または赤外されたP6を検証する `group.incoming` 封筒の保存 `origin_proof` セクション13.6ごとの元の署名された要求オブジェクトを再構築し、P1の付録A.4論理マッピングの下でカバーされたコンポーネントを導き出すことによって、送信の鮮度ウィンドウを適用するか、または繰り返した証拠を再生として扱うことなく、そして決して欠落している証拠を合成しません
-35. DID が残っている間、現在の葉がなくなったデバイスからグループアドレスの P6 リクエストを注入します `active` 安定した間違いを使って `group.e2ee.leaf_not_current`、および装置はグループ結合のための権威のあるターミナル信号として拒絶する処理します
+9. P2 Manifestに基づくデバイス検証と、6.3.1節のMLS拡張`anp_did_wba_device_binding`。
+10. `group.e2ee.create`のサービススコープの対象モデル。
+11. `group.e2ee.add/remove/send`のグループ宛て対象モデル。
+12. `group.e2ee.notice`とP6 `group.incoming`の、DIDとデバイスを宛先とする通知モデル。
+13. 一般のMLSコントローラーとしてのownerと、このProfileが定義する閉じた範囲の、同DIDの失効デバイスRemove例外だけ。
+14. P4業務状態を通じて`create/add/remove`を駆動する。
+15. P4 `member-did-updated`を起点に、選んだすべての`add(new DID, device)`の後ですべての`remove(old DID, device)`を行い、各手順を同じ`group_state_ref`へ結び付ける。
+16. P4 DID更新の受け入れから最後のRemove完了まで、アプリケーションメッセージを停止し、その間のメンバー変更制御操作を直列化する。
+17. `group.e2ee.send`で、`group.send`に包まずMLS暗号文を直接送る。
+18. `welcome-delivery`と`commit-delivery`に`group.e2ee.notice`を使う。
+19. `welcome-delivery`で`ratchet_tree_b64u`を明示的に配信する。
+20. P6アプリケーション配信では、`meta.profile = "anp.group.e2ee.v2"`、送信・受信デバイスのバインディング、P4の順序フィールドと受領証、受け入れた同じ`group_cipher_object`を持つ、標準の`group.incoming` Notificationを使う。P4 Baseの`group.incoming`ではない。
+21. メッセージ側だけを`PrivateMessage`へ入れる。
+22. `group_receipt`、`group_state_version`、`group_event_seq`の業務上の意味をP4と一致させる。
+23. 各削除デバイスLeafが、Remove成功後の将来のメッセージを復号できないようにする。
+24. 一つのDIDの複数の独立したMLS Leafを認めながら、P4の業務メンバーシップ、役割、状態、メンバー数をDID単位に保つ。
+25. このProfileが宣言する箇所で、`sender_device_id`、`member_device_id`、`owner_device_id`、デバイス宛ての`recipient_device_id`を必須にする。
+26. KeyPackage、Welcome、秘密のMLS状態、暗号化配信をデバイスごとに独立させ、同DIDの別デバイスと秘密状態を共有しない。
+27. P4のDIDが削除・離脱したら全Leafを削除する。一つの失効・不適格デバイスでは、他の有効なアプリケーション送信を止めず、影響Leafだけを削除する。
+28. アプリケーション送信一回につきMLS `PrivateMessage`を一つ暗号化し、Hostが再暗号化せず、現在の各デバイスLeafへ独立したP6エンベロープを一つずつ配る。
+29. 保持する全Leafに加え、削除対象の正確なLeafへ最終`commit-delivery`を一つ出す。再試行と保持に上限を設け、削除デバイスでは新epoch秘密情報を導出せず、その最終エンベロープを処理する。
+30. 最終`commit-delivery`が届かなくても、観測したP4 `member-removed`／`member-left`、後の要求の`group.not_member`拒否、デバイスLeafだけの削除の場合の`group.e2ee.leaf_not_current`拒否、11.9.2節の古い状態規則から、同じローカル終了状態へ到達する。最終エンベロープを再参加の前提にしない。
+31. 削除済みデバイスLeafの再参加を、P4 `active`状態、新しいKeyPackageとWelcomeで行い、再参加メソッド、消費済みKeyPackageの再利用、過去のepoch秘密情報の復元を使わない。
+32. グループLeaf削除をP2 Manifestのデバイス削除と区別し、Leaf削除と再参加の間も同じ`device_id`を維持する。
+33. `(recipient_did, recipient_device_id)`をキーに永続的なDevice Delivery Queueを維持し、未確認エンベロープを変更せず再現し、各配信前にLeaf適格性を再検証し、同DIDの別デバイスのエンベロープで代用せず、MLS秘密状態や平文を保存しない。
+34. 配信・再配信したP6 `group.incoming`に保持された`origin_proof`を、13.6節の元のSigned Request Object再構築と、P1付録A.4の論理マッピングによる対象構成要素の導出で検証する。送信時の鮮度期間を適用せず、証明nonceの繰り返しをリプレイと扱わず、不足証明を合成しない。
+35. DIDは`active`のまま、現在のLeafでなくなったデバイスからのグループ宛てP6要求を、安定した`group.e2ee.leaf_not_current`で拒否し、デバイスでは、その拒否をグループバインディングの権威ある終了信号として扱う。
 
-このプロファイルv2は **なし** 要求して下さい:
+このProfile v2は、次を**要求しません**。
 
-- 外部コミット
+- External Commit
 - `group_join_info`
 - `group.e2ee.get_join_info`
 - `accept_welcome`
-- スタンドアロン `get_state` メソッド
-- `Update` プロトコルレベルのメインラインアクションとして
-- 複数のコントローラーによる同時送信
-- P6 歴史プル、読み取りレシート、またはデバイス同期方法
-- 専用の再ジョイント方式
+- 独立した`get_state`メソッド。
+- プロトコル上の主要操作としての`Update`。
+- 複数コントローラーの同時送信。
+- P6の履歴取得、既読通知、デバイス同期のメソッド。
+- 専用の再参加メソッド。
 
 ---
 
-## 19. 事例紹介
+## 19. 例
 
-### 19.1 `group.e2ee.publish_key_package` 事例紹介
+### 19.1 `group.e2ee.publish_key_package`の例
 
 ```json
 {
@@ -2043,7 +2044,7 @@ DID 更新オーケストレーションは、専用のエラーコードを定�
 }
 ```
 
-### 19.2 `group.e2ee.create` 事例紹介
+### 19.2 `group.e2ee.create`の例
 
 ```json
 {
@@ -2098,7 +2099,7 @@ DID 更新オーケストレーションは、専用のエラーコードを定�
 }
 ```
 
-### 19.3 `group.e2ee.add` 事例紹介
+### 19.3 `group.e2ee.add`の例
 
 ```json
 {
@@ -2156,7 +2157,7 @@ DID 更新オーケストレーションは、専用のエラーコードを定�
 }
 ```
 
-### 19.4 `group.e2ee.send` 事例紹介
+### 19.4 `group.e2ee.send`の例
 
 ```json
 {
@@ -2201,7 +2202,7 @@ DID 更新オーケストレーションは、専用のエラーコードを定�
 }
 ```
 
-### 19.5 `group.e2ee.notice` 例(welcome-delivery)
+### 19.5 `group.e2ee.notice`の例（welcome-delivery）
 
 ```json
 {
@@ -2240,9 +2241,9 @@ DID 更新オーケストレーションは、専用のエラーコードを定�
 }
 ```
 
-### 19.6 P4 メンバーID アップデートオーケストレーション例
+### 19.6 P4メンバーDID更新の編成の例
 
-P4の後 `member-did-updated` 受け入れられ、メッセージ平面がパユースされ、所有者は1つの選択した新しいDIDデバイス(および他の任意の選択デバイスのためにそれを繰り返す)のために次の追加を提出します。
+P4 `member-did-updated`を受け入れてメッセージプレーンを停止した後、ownerは、選択した新DIDのデバイス一つに、次のAddを送信します。他の選択デバイスについても繰り返します。
 
 ```json
 {
@@ -2300,7 +2301,7 @@ P4の後 `member-did-updated` 受け入れられ、メッセージ平面がパ�
 }
 ```
 
-選択したすべての追加が受け入れられた後、グループホストはアプリケーションメッセージの再利用を保ち、所有者は1つの古いDIDデバイスリーフ(残りのすべての葉のためにそれを繰り返します)のために次の削除を提出します。 あらゆる用途は、まったく同じリクエストを要求します。 `group_state_ref`:
+選択したすべてのAddの受け入れ後、グループHostはアプリケーションメッセージの停止を保ち、ownerは、旧DIDのデバイスLeaf一つに、次のRemoveを送信します。残る全旧Leafについて繰り返します。各要求は、正確に同じ`group_state_ref`を使います。
 
 ```json
 {
@@ -2344,9 +2345,9 @@ P4の後 `member-did-updated` 受け入れられ、メッセージ平面がパ�
 }
 ```
 
-### 19.7 P6の特長 `group.incoming` デバイスデリバリー事例
+### 19.7 P6 `group.incoming`のデバイス配信の例
 
-グループホストは、各現在のデバイスリーフにこの封筒の独立したコピーを送信します。 コピーは、同じ注文フィールド、レシート、および `group_cipher_object`;ターゲットDIDだけおよび `recipient_device_id` 葉によって異なる。 `auth` 送信者の投稿証拠を変更し、セクション13.6を追加して保存します `origin_context`, その `created_at` 投稿のエコーを `meta.created_at` 封筒の所有している間 `meta.created_at` 配達タイムスタンプです。
+グループHostは、現在の各デバイスLeafへ、このエンベロープの独立したコピーを送ります。各コピーは同じ順序フィールド、受領証、`group_cipher_object`を持ち、Leafごとに違うのは宛先DIDと`recipient_device_id`だけです。`auth`は送信者の送信証明を変更せず保持し、13.6節の`origin_context`を追加します。その`created_at`は元要求の`meta.created_at`を再掲し、エンベロープ自身の`meta.created_at`は配信時刻です。
 
 ```json
 {
@@ -2401,9 +2402,9 @@ P4の後 `member-did-updated` 受け入れられ、メッセージ平面がパ�
 }
 ```
 
-### 19.8 決勝 `commit-delivery` 削除された葉の例
+### 19.8 削除Leafへの最後の`commit-delivery`の例
 
-アフター `group.e2ee.remove` グループホストが1つを出すことを受け入れられます `commit-delivery` 葉と最終封筒を1枚ずつ、葉の葉を取り除きます。 下の最終封筒は、保持リーフコピーと同じコミットとエポックを運ぶ。外側のターゲットだけが削除されたデバイスを識別し、 `subject_status` は、 `removed`. . . 標準的な通知として、それは運ぶことができません `params.auth`: セクション13.6ごとに、COMMIT内部はMLS署名によって認証されます。
+`group.e2ee.remove`を受け入れた後、グループHostは、保持するLeafごとに一つの`commit-delivery`と、削除Leaf自身への最終エンベロープを出します。下の最終エンベロープは、保持Leafのコピーと同じCommit・epochを持ち、外側の宛先だけが削除デバイスを指し、`subject_status`は`removed`です。標準通知なので`params.auth`を運ばず、13.6節のとおり、内側のCommitをMLS署名で認証します。
 
 ```json
 {
@@ -2443,39 +2444,39 @@ P4の後 `member-did-updated` 受け入れられ、メッセージ平面がパ�
 }
 ```
 
-削除されたデバイスは、このコミットを独自のローカルバインディングをターミナル化するためにのみ適用されます。 でん **MUST NOT** EPOCを導き出す `2` 秘密とエポックで任意のアプリケーションメッセージを復号化することはできません `2` またはそれ以降。 この封筒がホストの保持制限内で配信されていない場合、そのデバイスはP4などの別の権限信号から同じ端末の状態に到達します。 `member-removed` 観察される場合のでき事、 `group.not_member` 後者のリクエストの拒否、または `group.e2ee.leaf_not_current` このデバイスリーフのみが削除されたときに拒絶反応は、その後退は受けた結果に依存しません。
+削除デバイスは、このCommitを、自分のローカルバインディングの終了のためだけに適用します。epoch `2`の秘密情報を導出してはならず（**MUST NOT**）、epoch `2`以降のアプリケーションメッセージを復号できないままです。Hostの保持上限内に届かなかった場合、観測したP4 `member-removed`、後の要求の`group.not_member`拒否、このデバイスLeafだけを削除した場合の`group.e2ee.leaf_not_current`拒否など、他の権威ある信号から同じ終了状態へ到達します。後の再参加は、その受信に依存しません。
 
 ---
 
-## 20. レジストリプレースホルダー
+## 20. レジストリの予約枠
 
-この標準のサブシーケントバージョン **SHOULD** 下記のレジストリの登録簿を定める:
+この標準の後続版は、次のレジストリを設けるべきです（**SHOULD**）。
 
-1. グループE2EEスイート登録フォーム;
-2. DID 装置結合の証拠タイプのレジストリ;
-3. `group.e2ee.notice.notice_type` レジストリ;
-4. グループ E2EE エラーコードレジストリ;
-5. 安定したMLS `ExtensionType` 代入用 `anp_did_wba_device_binding`, ドラフトの個人使用値を置き換える `0xF0A1` v2リリース前の。
+1. グループE2EEスイートの登録表。
+2. DID Device Bindingの証明型レジストリ。
+3. `group.e2ee.notice.notice_type`レジストリ。
+4. グループE2EEのエラーコードレジストリ。
+5. v2リリース前に、草案のプライベート利用値`0xF0A1`を置き換える、`anp_did_wba_device_binding`の安定したMLS `ExtensionType`割り当て。
 
 ---
 
-## 21. 参照実装ノート(非定常)
+## 21. 参考実装の注記（非規範）
 
-このプロファイルを実行すると、インストーラは以下のようにみなします。
+実装者は、このProfileを次のように捉えるべきです。
 
-- 密接に機能するMLS制御層 `anp.group.base.v2`;
-- オーナーがメンバー変更管理を担当するグループE2EEモデルと、通常のメッセージの送信に責任を負います。
-- ドライブを駆動するコンバージェントスキーム `create/add/remove` 状態の変化による;
-- デバイスごとのワークフロー add(新しい DID) コミットは、P4 によって駆動されるパーデバイス除去(古い DID) コミットの順に並べられます。 `member-did-updated` イベント
-- 独立した MLS の葉および装置ごとの私用状態、現在の葉ごとの 1 つの暗号化されたdelivery 封筒を使って;
-- 配達の `commit` とりあえず `welcome` デバイスターゲットを独立 `group.e2ee.notice` 封筒;
-- 保存した封筒を、再構築する歴史サービスではなく、確実に再現する耐久性のあるデバイス配送キュー。
-- 別々のライフサイクルを1つのデバイス:削除され、後に再結合されるグループリーフと、除去が永続的であるアイデンティティスコープマニフェストエントリ。
+- `anp.group.base.v2`と密接に連携するMLS制御層。
+- ownerがメンバー変更制御を担当し、メンバーが通常メッセージの送信を担当するグループE2EEモデル。
+- 状態変化を通じて`create/add/remove`を駆動する収束方式。
+- P4 `member-did-updated`を起点に、デバイスごとのadd(new DID) Commit、その後にデバイスごとのremove(old DID) Commitを行う、順序付きワークフロー。
+- デバイスごとの独立したMLS Leafと秘密状態、現在のLeafごとの一つの暗号化配信エンベロープ。
+- デバイス宛ての独立した`group.e2ee.notice`での`commit`と`welcome`の配信。
+- エンベロープを再構築する履歴サービスではなく、保存した正確なエンベロープを再配信するデバイスごとの永続配信キュー。
+- 一つのデバイスに対する二つのライフサイクル。削除後に再参加可能なグループごとのLeafと、削除が永続的なアイデンティティ単位のManifestエントリ。
 
-将来のバージョンについては、次の点について検討してください。
+将来の版では、さらに次を検討できます。
 
-- 別のMLSのコントローラーとして管理して下さい;
-- 多制御回路のコラボレーション;
-- 外部コミットはオプションの拡張子として再導入されます。
-- より詳細なフォーク回復メカニズム;
-- 後量子の Swarm キット。
+- 代替MLSコントローラーとしてのadmin。
+- 複数コントローラーの協働。
+- 任意拡張としてのExternal Commitの再導入。
+- より詳細なフォーク回復機構。
+- 耐量子の群スイート（原文：Post-Quantum Swarm Kit）。

@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=chinese/参考资料/paper&规范.md; basis=complete manual translation against the original in the preceding review -->
 > 日本語訳。原文：[paper&规范.md](../../../chinese/参考资料/paper&规范.md)。研究メモ中の記述・主張は執筆時点の原文に従います。
 
 以下の DID 関連仕様の大半は草案です。

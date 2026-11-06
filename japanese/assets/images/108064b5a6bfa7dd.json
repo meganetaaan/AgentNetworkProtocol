@@ -1,0 +1,102 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/06-step4.png",
+  "sha256": "108064b5a6bfa7dd3014e3205da1b48cb421898ed6776c61d70a92c8841bdd98",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "第4步/共5步",
+      "confidence": 0.9838395544460842,
+      "box": [
+        [
+          38.0,
+          36.0
+        ],
+        [
+          188.0,
+          36.0
+        ],
+        [
+          188.0,
+          57.0
+        ],
+        [
+          38.0,
+          57.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第4段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4",
+        "5"
+      ]
+    },
+    {
+      "source": "私钥 (只在本机)",
+      "confidence": 0.9986837042702569,
+      "box": [
+        [
+          365.0,
+          264.0
+        ],
+        [
+          581.0,
+          264.0
+        ],
+        [
+          581.0,
+          299.0
+        ],
+        [
+          365.0,
+          299.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "秘密鍵（この端末内だけに保持）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "签出来的那一小串",
+      "confidence": 0.9991880729794502,
+      "box": [
+        [
+          859.0,
+          265.0
+        ],
+        [
+          1089.0,
+          266.0
+        ],
+        [
+          1089.0,
+          296.0
+        ],
+        [
+          859.0,
+          295.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "署名で生成される短い文字列",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5164601000142284,
+    0.005517482757568359,
+    0.327625036239624
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "108064b5a6bfa7dd3014e3205da1b48cb421898ed6776c61d70a92c8841bdd98"
+  }
+}

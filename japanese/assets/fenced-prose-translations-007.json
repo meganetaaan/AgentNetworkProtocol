@@ -1,0 +1,2490 @@
+{
+  "method": "agent-read-and-manually-translated-labels; original code unchanged; single-pass review",
+  "snapshot_range": [
+    1400,
+    1599
+  ],
+  "units": [
+    {
+      "original": "Token Exchange (subject_token = ID Token)",
+      "translation": "トークン交換（subject_token = ID Token）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:21",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify ID Token (jwks_uri), bind client pre-reg",
+      "translation": "ID Tokenを検証（jwks_uri）し、クライアントの事前登録をバインド",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:22",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Map vc_claims -> RAR (authorization_details)",
+      "translation": "vc_claimsをRAR（authorization_details）へ対応付ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:23",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token (DPoP-bound) + Refresh Token",
+      "translation": "アクセストークン（DPoPにバインド）＋Refresh Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:24",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Validate token + validate DPoP + enforce RAR/UMA",
+      "translation": "tokenを検証＋DPoPを検証＋RAR/UMAを適用",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+          "locator": "fence:948-978/line:28",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:986-1016/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resource Server<br/>(Standard OAuth RS)",
+      "translation": "Resource Server<br/>（標準OAuth RS）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "OAuth AS<br/>(Standard OAuth AS)",
+      "translation": "OAuth AS<br/>（標準OAuth AS）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /api/resource<br/>(No Authorization header)",
+      "translation": "GET /api/resource<br/>（Authorizationヘッダーなし）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Check token: doesn't exist",
+      "translation": "tokenを確認：存在しない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Standard OAuth discovery flow<br/>Parse WWW-Authenticate",
+      "translation": "標準OAuth発見フロー<br/>WWW-Authenticateを解析",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>(Attempt to get Access Token)",
+      "translation": "POST /token<br/>（Access Tokenの取得を試行）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "AS indicates need for DID-auth authentication<br/>(AS can configure multiple IdPs)",
+      "translation": "ASがDID-authでの認証が必要と通知<br/>（ASに複数のIdPを設定可能）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:22",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify VP<br/>Extract VC claims<br/>Generate ID Token",
+      "translation": "VPを検証<br/>VC claimsを抽出<br/>ID Tokenを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token (Standard JWT)",
+      "translation": "ID Token（標準JWT）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify ID Token<br/>(via DID-auth's jwks)<br/>Extract vc_claims<br/>Construct RAR",
+      "translation": "ID Tokenを検証<br/>（DID-authのjwksを使用）<br/>vc_claimsを抽出<br/>RARを構築",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access Token + Refresh Token<br/>(Standard OAuth response)",
+      "translation": "Access Token＋Refresh Token<br/>（標準OAuth応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:34",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify Access Token<br/>(Standard OAuth verification)",
+      "translation": "Access Tokenを検証<br/>（標準OAuth検証）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:209-250/line:38",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify token signature: ✓<br/>Check exp: expired ✗",
+      "translation": "tokenの署名を検証：✓<br/>expを確認：期限切れ ✗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Standard OAuth refresh flow",
+      "translation": "標準OAuth更新フロー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Refresh Token valid",
+      "translation": "Refresh Tokenが有効",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "New Access Token<br/>(Standard OAuth response)",
+      "translation": "新しいAccess Token<br/>（標準OAuth応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Refresh Token also expired",
+      "translation": "Refresh Tokenも期限切れ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:23",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Need to re-authenticate",
+      "translation": "再認証が必要",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:26",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>(Re-authenticate with DID)",
+      "translation": "POST /token<br/>（DID再認証）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:28",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "New ID Token",
+      "translation": "新しいID Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:29",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "New Access Token + Refresh Token",
+      "translation": "新しいAccess Token＋Refresh Token",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:261-298/line:32",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Access authenticated page",
+      "translation": "認証が必要なページへアクセス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Redirect to /authorize<br/>(Standard OIDC Authorization Code Flow)",
+      "translation": "/authorizeへリダイレクト<br/>（標準OIDC Authorization Code Flow）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Display DID wallet connection page",
+      "translation": "DIDウォレット接続ページを表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Open wallet, sign VP",
+      "translation": "ウォレットを開き、VPに署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Submit VP",
+      "translation": "VPを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Redirect callback<br/>code=<authorization_code>",
+      "translation": "コールバックへリダイレクト<br/>code=<authorization_code>",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "ID Token + Access Token<br/>(Standard OIDC response)",
+      "translation": "ID Token＋Access Token<br/>（標準OIDC応答）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:24",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "API request<br/>Authorization: DPoP <token>",
+      "translation": "API要求<br/>Authorization: DPoP <token>",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:30",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Display result",
+      "translation": "結果を表示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:309-344/line:34",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "1. Generate PKCE<br/>code_verifier + code_challenge",
+      "translation": "1. PKCEを生成<br/>code_verifier + code_challenge",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "HTTP library follows redirect",
+      "translation": "HTTPライブラリがリダイレクトをたどる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:9",
+          "language": "mermaid"
+        },
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "GET /authorize + VP params<br/>or POST /authorize {vp: ...}<br/>⭐ Directly carry DID signature/VP in request",
+      "translation": "GET /authorize＋VPパラメーター<br/>またはPOST /authorize {vp: ...}<br/>⭐ 要求にDID署名／VPを直接含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Verify VP:<br/>✓ DID signature valid<br/>✓ VC issuer trusted<br/>✓ VC not revoked",
+      "translation": "VPを検証：<br/>✓ DID署名が有効<br/>✓ VC issuerが信頼できる<br/>✓ VCが取り消されていない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Backend calls DID-auth /token<br/>Exchange idp_code for ID Token<br/>Verify ID Token<br/>Generate AS's own code",
+      "translation": "バックエンドでDID-auth /tokenを呼び出す<br/>idp_codeをID Tokenに交換<br/>ID Tokenを検証<br/>AS独自のcodeを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "⭐ Intercept this 302<br/>Don't actually visit redirect_uri<br/>Extract code from Location",
+      "translation": "⭐ この302を捕捉<br/>redirect_uriへ実際にはアクセスせず<br/>Locationからcodeを抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "POST /token<br/>grant_type=authorization_code<br/>code=as_code<br/>code_verifier=original value<br/>client_id=did-agent-public<br/>redirect_uri=https://localhost/callback",
+      "translation": "POST /token<br/>grant_type=authorization_code<br/>code=as_code<br/>code_verifier=元の値<br/>client_id=did-agent-public<br/>redirect_uri=https://localhost/callback",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:385-405/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Generate PKCE",
+      "translation": "PKCEを生成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:411-441/line:5",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Carry in /authorize request",
+      "translation": "/authorize要求に含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:411-441/line:11",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Carry code_verifier in /token request",
+      "translation": "/token要求にcode_verifierを含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:411-441/line:22",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Configure HTTP client",
+      "translation": "HTTPクライアントを設定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:4",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Don't auto-follow last redirect",
+      "translation": "最後のリダイレクトを自動でたどらない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:5",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Manually handle redirect chain",
+      "translation": "リダイレクトチェーンを手動で処理",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:7",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Check if this is final redirect (to redirect_uri)",
+      "translation": "最終リダイレクト（redirect_uri宛て）かを確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:12",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Intercepted! Extract code from URL",
+      "translation": "捕捉し、URLからcodeを抽出",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:14",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "If redirecting to DID-auth, need to attach VP",
+      "translation": "DID-auth宛ての場合はVPの添付が必要",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:20",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "Exchange code for token",
+      "translation": "codeをtokenへ交換",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:474-510/line:30",
+          "language": "python"
+        }
+      ]
+    },
+    {
+      "original": "who's what attributes",
+      "translation": "誰のどの属性か",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+          "locator": "fence:824-831/line:1:column:26",
+          "language": ""
+        }
+      ]
+    },
+    {
+      "original": "Agent A (caller)",
+      "translation": "エージェントA（呼び出し元）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Search agent or target domain",
+      "translation": "検索エージェントまたは宛先ドメイン",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent B (service provider)",
+      "translation": "エージェントB（サービス提供者）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent discovery: search, or read .well-known/agent-descriptions",
+      "translation": "エージェントの発見：検索、または.well-known/agent-descriptionsの読み取り",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return Agent Description (AD) URLs",
+      "translation": "エージェント記述（AD）のURLを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Read AD and selectively follow links to Information",
+      "translation": "ADを読み、必要なリンクをたどってInformationを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Decide locally using the user's context",
+      "translation": "利用者のコンテキストを使ってローカルで判断",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Invoke Interface with a DID signature (ANP-02 authentication)",
+      "translation": "DID署名付きでInterfaceを呼び出す（ANP-02認証）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve and validate A's DID Document#59; evaluate permissions independently",
+      "translation": "AのDID Documentを解決・検証#59; 権限を独立して評価",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return result",
+      "translation": "結果を返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Continue through ANP messages (optional E2EE)",
+      "translation": "ANPメッセージで継続してやり取り（E2EEは任意）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:135-149/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Organization A (a.example)",
+      "translation": "組織A（a.example）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent Alice",
+      "translation": "エージェントAlice",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Document<br/>Hosted by Organization A",
+      "translation": "DID Document<br/>組織Aがホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Organization B (b.example)",
+      "translation": "組織B（b.example）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent Bob",
+      "translation": "エージェントBob",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Document<br/>Hosted by Organization B",
+      "translation": "DID Document<br/>組織Bがホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Individual developer (c.example)",
+      "translation": "個人開発者（c.example）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent Carol",
+      "translation": "エージェントCarol",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Document<br/>Hosted by the developer",
+      "translation": "DID Document<br/>開発者がホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Mutual DID authentication",
+      "translation": "DIDによる相互認証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:224-246/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Binding public key (Ed25519)",
+      "translation": "バインディング公開鍵（Ed25519）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Document: authentication keys, service endpoints, device declarations",
+      "translation": "DID Document：認証鍵、サービスエンドポイント、デバイス宣言",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Signature on each request",
+      "translation": "各要求への署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Binding 1: the public-key fingerprint must match the DID",
+      "translation": "バインディング1：公開鍵のフィンガープリントはDIDと一致しなければならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Binding 2: sign the document-wide DataIntegrityProof",
+      "translation": "バインディング2：文書全体のDataIntegrityProofに署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Binding 3: authorize authentication keys to sign requests",
+      "translation": "バインディング3：認証鍵に要求への署名を認可",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Hosting server",
+      "translation": "ホスティングサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Cannot produce a valid proof for a modified document without the binding private key",
+      "translation": "バインディング秘密鍵がなければ、変更した文書の有効な証明を生成できない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:272-282/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent A's client",
+      "translation": "エージェントAのクライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent B's server",
+      "translation": "エージェントBのサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Agent A's DID hosting service",
+      "translation": "エージェントAのDIDホスティングサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "First HTTP request: Signature-Input, Signature, Content-Digest",
+      "translation": "初回HTTP要求：Signature-Input、Signature、Content-Digest",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Resolve A's DID Document under its method",
+      "translation": "AのDID Documentを、そのメソッドに従って解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Validate document (did:wba requires fingerprint and document-proof checks)",
+      "translation": "文書を検証（did:wbaはフィンガープリントと文書証明の検証が必要）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Check signature coverage, key purpose, time, and replay protection",
+      "translation": "署名の対象範囲、鍵の用途、時刻、リプレイ防止を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Evaluate business permissions independently",
+      "translation": "業務の権限を独立して評価",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Respond and return an access token through Authentication-Info",
+      "translation": "応答し、Authentication-Infoを通じてアクセストークンを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Subsequent requests carry the access token",
+      "translation": "以降の要求にアクセストークンを含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:316-330/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service domain a.example",
+      "translation": "サービスドメインa.example",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Messaging Service A",
+      "translation": "メッセージングサービスA",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service domain b.example",
+      "translation": "サービスドメインb.example",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Messaging Service B",
+      "translation": "メッセージングサービスB",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service domain c.example",
+      "translation": "サービスドメインc.example",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group Host<br/>Maintains membership and orders group events",
+      "translation": "グループのHost<br/>メンバーシップを維持し、グループイベントを順序付ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Discover messaging service from Bob's DID; deliver direct messages across domains",
+      "translation": "BobのDIDからメッセージングサービスを発見し、ドメインをまたいで個別メッセージを届ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group operations and messages",
+      "translation": "グループ操作とグループメッセージ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:373-393/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Expected recipient DID (containing the public-key fingerprint)",
+      "translation": "期待する受信者のDID（公開鍵のフィンガープリントを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Fingerprint-matched binding public key",
+      "translation": "フィンガープリントが一致するバインディング公開鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID Document verified through DataIntegrityProof",
+      "translation": "DataIntegrityProofで検証したDID Document",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Document-authorized devices and communication keys (Device Manifest)",
+      "translation": "文書で認可されたデバイスと通信鍵（Device Manifest）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Establishment material and sessions verified under the E2EE Profile",
+      "translation": "E2EE Profileに従って検証した確立用素材とセッション",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Messages decryptable only by recipient devices",
+      "translation": "受信デバイスだけが復号できるメッセージ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Messaging server",
+      "translation": "メッセージングサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Key substitution at any link causes verification to fail",
+      "translation": "どの段階で鍵をすり替えても検証が失敗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:423-433/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Caller agent",
+      "translation": "呼び出し元エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Service provider agent",
+      "translation": "サービス提供エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Search agent",
+      "translation": "検索エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Active discovery",
+      "translation": "能動的な発見",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "CollectionPage: AD URLs (paginated through next)",
+      "translation": "CollectionPage：ADのURL（nextでページ分割）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Passive discovery",
+      "translation": "受動的な発見",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Invoke registration interface and submit its AD URL",
+      "translation": "登録インターフェースを呼び出し、自身のAD URLを送信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Retrieve AD and build index",
+      "translation": "ADを取得して索引を作成",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Search for required capabilities",
+      "translation": "必要な機能を検索",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Return matching AD URLs",
+      "translation": "一致するAD URLを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:515-529/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Read AD and locate MetaProtocolInterface",
+      "translation": "ADを読み、MetaProtocolInterfaceを特定",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:554-564/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Currently supported interfaces, Profiles, security modes, and schemas",
+      "translation": "現在対応しているインターフェース、Profile、セキュリティモード、スキーマ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:554-564/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "anp.negotiate: propose an interaction plan and constraints",
+      "translation": "anp.negotiate：やり取りの計画と制約を提案",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:554-564/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Accept or propose an alternative",
+      "translation": "受け入れるか、代案を提示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:554-564/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Perform business interaction under the negotiated result",
+      "translation": "交渉結果に従って業務上のやり取りを実施",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:554-564/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Procurement agent",
+      "translation": "調達エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Supplier agent",
+      "translation": "供給者エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Procurement approver",
+      "translation": "調達の承認者",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Search for suitable suppliers",
+      "translation": "適切な供給者を検索",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Supplier AD URLs",
+      "translation": "供給者のAD URL",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Read AD and product Information",
+      "translation": "ADと商品のInformationを読み取る",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Compare options locally using budget and internal standards",
+      "translation": "予算と社内基準を使い、ローカルで選択肢を比較",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "E2EE message: ask about lead time and customization",
+      "translation": "E2EEメッセージ：納期とカスタマイズを問い合わせる",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Message: quote and delivery plan",
+      "translation": "メッセージ：見積もりと納品計画",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Request order approval",
+      "translation": "注文承認を要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Invoke ordering interface with DID authentication",
+      "translation": "DID認証付きで発注インターフェースを呼び出す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Request a delegation credential",
+      "translation": "委任資格情報を要求",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Present the enterprise-issued procurement role credential",
+      "translation": "企業が発行した調達役割の資格情報を提示",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Confirm order",
+      "translation": "注文を確認",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:18",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Complete payment through the payment protocol",
+      "translation": "決済プロトコルを通じて支払いを完了",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Messages and attachments: progress and shipping documents",
+      "translation": "メッセージと添付ファイル：進捗と発送書類",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+          "locator": "fence:636-657/line:20",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 A（调用方）",
+      "translation": "エージェントA（呼び出し元）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "搜索智能体或目标域名",
+      "translation": "検索エージェントまたは宛先ドメイン名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 B（服务方）",
+      "translation": "エージェントB（サービス提供側）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体发现：检索，或读取 .well-known/agent-descriptions",
+      "translation": "エージェントの発見：検索、または.well-known/agent-descriptionsの読み取り",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回智能体描述（AD）的 URL",
+      "translation": "エージェント記述（AD）のURLを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "读取 AD，沿链接按需获取 Information",
+      "translation": "ADを読み、必要なリンクをたどってInformationを取得",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "在本地结合用户上下文做出判断",
+      "translation": "利用者のコンテキストを使ってローカルで判断",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "以 DID 签名调用 Interface（ANP-02 认证）",
+      "translation": "DID署名付きでInterfaceを呼び出す（ANP-02認証）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "解析并验证 A 的 DID 文档，独立判断权限",
+      "translation": "AのDID文書を解決・検証し、権限を独立して判断",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "返回结果",
+      "translation": "結果を返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "通过 ANP 消息持续沟通（可选端到端加密）",
+      "translation": "ANPメッセージで継続してやり取り（エンドツーエンド暗号化は任意）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:135-149/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "组织 A（a.example）",
+      "translation": "組織A（a.example）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 Alice",
+      "translation": "エージェントAlice",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:4",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 文档<br/>由组织 A 自行托管",
+      "translation": "DID文書<br/>組織Aが自らホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "组织 B（b.example）",
+      "translation": "組織B（b.example）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 Bob",
+      "translation": "エージェントBob",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:10",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 文档<br/>由组织 B 自行托管",
+      "translation": "DID文書<br/>組織Bが自らホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "个人开发者（c.example）",
+      "translation": "個人開発者（c.example）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 Carol",
+      "translation": "エージェントCarol",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:16",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 文档<br/>由开发者自行托管",
+      "translation": "DID文書<br/>開発者が自らホスト",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 相互认证",
+      "translation": "DIDによる相互認証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:20",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:224-246/line:21",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID：did:wba:example.com:user:alice:e1_指纹",
+      "translation": "DID：did:wba:example.com:user:alice:e1_指纹",
+      "status": "technical-retained",
+      "reason": "例示DIDの技術表記とフィンガープリントのプレースホルダーを保持。「指纹」はフィンガープリントを意味する。",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "绑定公钥（Ed25519）",
+      "translation": "バインディング公開鍵（Ed25519）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "DID 文档：认证密钥、服务端点、设备声明",
+      "translation": "DID文書：認証鍵、サービスエンドポイント、デバイス宣言",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "每一次请求的签名",
+      "translation": "各要求への署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "绑定一：公钥指纹必须与 DID 一致",
+      "translation": "バインディング1：公開鍵のフィンガープリントはDIDと一致しなければならない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "绑定二：签署文档级 DataIntegrityProof",
+      "translation": "バインディング2：文書単位のDataIntegrityProofに署名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "绑定三：授权认证密钥为请求签名",
+      "translation": "バインディング3：認証鍵に要求への署名を認可",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "托管服务器",
+      "translation": "ホスティングサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "若改写文档：没有绑定私钥就无法生成有效证明",
+      "translation": "文書を書き換えた場合、バインディング秘密鍵なしでは有効な証明を生成できない",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:272-282/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 A 的客户端",
+      "translation": "エージェントAのクライアント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 B 的服务端",
+      "translation": "エージェントBのサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "智能体 A 的 DID 托管服务",
+      "translation": "エージェントAのDIDホスティングサービス",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "首次 HTTP 请求：Signature-Input、Signature、Content-Digest",
+      "translation": "初回HTTP要求：Signature-Input、Signature、Content-Digest",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "按 DID 方法解析 A 的 DID 文档",
+      "translation": "DIDメソッドに従ってAのDID文書を解決",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证文档（did:wba 需验证指纹与文档证明）",
+      "translation": "文書を検証（did:wbaではフィンガープリントと文書証明の検証が必要）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "验证签名覆盖、密钥用途、时间与防重放",
+      "translation": "署名の対象範囲、鍵の用途、時刻、リプレイ防止を検証",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "独立判断业务权限",
+      "translation": "業務の権限を独立して判断",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:11",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "响应，并通过 Authentication-Info 返回 access token",
+      "translation": "応答し、Authentication-Infoを通じてaccess tokenを返す",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:12",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "后续请求携带 access token",
+      "translation": "以降の要求にaccess tokenを含める",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:316-330/line:13",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务域 a.example",
+      "translation": "サービスドメインa.example",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息服务 A",
+      "translation": "メッセージサービスA",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务域 b.example",
+      "translation": "サービスドメインb.example",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:8",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息服务 B",
+      "translation": "メッセージサービスB",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:10",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务域 c.example",
+      "translation": "サービスドメインc.example",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:14",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "Group Host<br/>维护成员关系，为群事件排序",
+      "translation": "グループのHost<br/>メンバー関係を維持し、グループイベントを順序付ける",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:15",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "按 Bob 的 DID 发现消息服务，跨域投递私聊",
+      "translation": "BobのDIDからメッセージサービスを発見し、ドメインをまたいで個別チャットを配信",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:17",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "群操作与群消息",
+      "translation": "グループ操作とグループメッセージ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:18",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:373-393/line:19",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "预期的接收方 DID（包含公钥指纹）",
+      "translation": "期待する受信者のDID（公開鍵のフィンガープリントを含む）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "与指纹一致的绑定公钥",
+      "translation": "フィンガープリントが一致するバインディング公開鍵",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "经 DataIntegrityProof 验证的 DID 文档",
+      "translation": "DataIntegrityProofで検証したDID文書",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "文档中授权的设备及其通信密钥（Device Manifest）",
+      "translation": "文書で認可されたデバイスと通信鍵（Device Manifest）",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:5",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "按 E2EE Profile 验证的建链材料与会话",
+      "translation": "E2EE Profileに従って検証した接続確立用素材とセッション",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:6",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "只有接收方设备能够解密的消息",
+      "translation": "受信デバイスだけが復号できるメッセージ",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:7",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "消息服务器",
+      "translation": "メッセージサーバー",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "替换任何一环的密钥，都会使验证失败",
+      "translation": "どの段階で鍵をすり替えても検証が失敗",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:423-433/line:9",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "调用方智能体",
+      "translation": "呼び出し元エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:2",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "目标域名",
+      "translation": "宛先ドメイン名",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:3",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "服务方智能体",
+      "translation": "サービス提供エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "搜索智能体",
+      "translation": "検索エージェント",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:5",
+          "language": "mermaid"
+        },
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:636-657/line:4",
+          "language": "mermaid"
+        }
+      ]
+    },
+    {
+      "original": "主动发现",
+      "translation": "能動的な発見",
+      "status": "agent-reviewed",
+      "contexts": [
+        {
+          "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+          "locator": "fence:515-529/line:6",
+          "language": "mermaid"
+        }
+      ]
+    }
+  ]
+}

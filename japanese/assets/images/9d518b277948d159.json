@@ -1,0 +1,489 @@
+{
+  "source": "images/agent-a-call-agent-b.png",
+  "sha256": "9d518b277948d1597d39f7e1a4e771df48f9ec0e6cada72daf2204688f9d9f13",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "1.Query Agent and Return",
+      "confidence": 0.9742700532078743,
+      "box": [
+        [
+          241.0,
+          32.0
+        ],
+        [
+          614.0,
+          35.0
+        ],
+        [
+          613.0,
+          72.0
+        ],
+        [
+          240.0,
+          70.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "1. エージェントを照会し、次を返す:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1.Query"
+      ]
+    },
+    {
+      "source": "Agent B Description Document",
+      "confidence": 0.981438228062221,
+      "box": [
+        [
+          248.0,
+          80.0
+        ],
+        [
+          692.0,
+          77.0
+        ],
+        [
+          693.0,
+          111.0
+        ],
+        [
+          248.0,
+          114.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェント Bの記述文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "0.Register Agent Description Document",
+      "confidence": 0.9965513123048318,
+      "box": [
+        [
+          1051.0,
+          78.0
+        ],
+        [
+          1618.0,
+          79.0
+        ],
+        [
+          1618.0,
+          113.0
+        ],
+        [
+          1050.0,
+          112.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "0. エージェント記述文書を登録する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "0.Register"
+      ]
+    },
+    {
+      "source": "Agent Discovery",
+      "confidence": 0.9996671557426453,
+      "box": [
+        [
+          723.0,
+          96.0
+        ],
+        [
+          960.0,
+          99.0
+        ],
+        [
+          960.0,
+          136.0
+        ],
+        [
+          723.0,
+          134.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェント発見",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Service",
+      "confidence": 0.9970518691199166,
+      "box": [
+        [
+          787.0,
+          139.0
+        ],
+        [
+          899.0,
+          143.0
+        ],
+        [
+          898.0,
+          178.0
+        ],
+        [
+          786.0,
+          174.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "サービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "2.DownloadProtocol",
+      "confidence": 0.9975099596712325,
+      "box": [
+        [
+          269.0,
+          243.0
+        ],
+        [
+          573.0,
+          243.0
+        ],
+        [
+          573.0,
+          273.0
+        ],
+        [
+          269.0,
+          273.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "2. プロトコルをダウンロードする",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2.DownloadProtocol"
+      ],
+      "transcribed_source": "2.Download Protocol"
+    },
+    {
+      "source": "0.Download Protocol and",
+      "confidence": 0.9676395887913911,
+      "box": [
+        [
+          1024.0,
+          243.0
+        ],
+        [
+          1390.0,
+          243.0
+        ],
+        [
+          1390.0,
+          273.0
+        ],
+        [
+          1024.0,
+          273.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "0. プロトコルと次のものをダウンロードする:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "0.Download"
+      ]
+    },
+    {
+      "source": "andProtocol RequestCode",
+      "confidence": 0.9778085895206617,
+      "box": [
+        [
+          269.0,
+          288.0
+        ],
+        [
+          662.0,
+          288.0
+        ],
+        [
+          662.0,
+          318.0
+        ],
+        [
+          269.0,
+          318.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "およびプロトコル要求コード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "andProtocol",
+        "RequestCode"
+      ],
+      "transcribed_source": "and Protocol Request Code"
+    },
+    {
+      "source": "Protocol Request Handling Code",
+      "confidence": 0.9925788660844167,
+      "box": [
+        [
+          1022.0,
+          286.0
+        ],
+        [
+          1495.0,
+          286.0
+        ],
+        [
+          1495.0,
+          322.0
+        ],
+        [
+          1022.0,
+          322.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "プロトコル要求処理コード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Protocol Service",
+      "confidence": 0.9859807416796684,
+      "box": [
+        [
+          728.0,
+          319.0
+        ],
+        [
+          966.0,
+          321.0
+        ],
+        [
+          966.0,
+          353.0
+        ],
+        [
+          728.0,
+          351.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "プロトコルサービス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "3.lnvoke Service Using Protocol Code",
+      "confidence": 0.9860775934325324,
+      "box": [
+        [
+          630.0,
+          622.0
+        ],
+        [
+          1167.0,
+          623.0
+        ],
+        [
+          1167.0,
+          656.0
+        ],
+        [
+          629.0,
+          655.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "3. プロトコルのコードを使ってサービスを呼び出す",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3.lnvoke"
+      ],
+      "transcribed_source": "3.Invoke Service Using Protocol Code"
+    },
+    {
+      "source": "Protocol",
+      "confidence": 0.9984348490834236,
+      "box": [
+        [
+          423.0,
+          642.0
+        ],
+        [
+          561.0,
+          642.0
+        ],
+        [
+          561.0,
+          674.0
+        ],
+        [
+          423.0,
+          674.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "AgentA",
+      "confidence": 0.9992532730102539,
+      "box": [
+        [
+          149.0,
+          664.0
+        ],
+        [
+          267.0,
+          664.0
+        ],
+        [
+          267.0,
+          702.0
+        ],
+        [
+          149.0,
+          702.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentA"
+      ],
+      "transcribed_source": "Agent A"
+    },
+    {
+      "source": "Agent B",
+      "confidence": 0.9955778973443168,
+      "box": [
+        [
+          1453.0,
+          663.0
+        ],
+        [
+          1572.0,
+          663.0
+        ],
+        [
+          1572.0,
+          704.0
+        ],
+        [
+          1453.0,
+          704.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Code",
+      "confidence": 0.9991320073604584,
+      "box": [
+        [
+          451.0,
+          684.0
+        ],
+        [
+          533.0,
+          684.0
+        ],
+        [
+          533.0,
+          720.0
+        ],
+        [
+          451.0,
+          720.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "コード",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Check Agent B's Capabilities",
+      "confidence": 0.9773555802447456,
+      "box": [
+        [
+          29.0,
+          774.0
+        ],
+        [
+          437.0,
+          776.0
+        ],
+        [
+          437.0,
+          813.0
+        ],
+        [
+          29.0,
+          811.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "エージェント Bの能力を確認する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "and LoadProtocol Code",
+      "confidence": 0.990294215225038,
+      "box": [
+        [
+          29.0,
+          822.0
+        ],
+        [
+          376.0,
+          822.0
+        ],
+        [
+          376.0,
+          853.0
+        ],
+        [
+          29.0,
+          853.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "そしてプロトコルのコードを読み込む",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "LoadProtocol"
+      ],
+      "transcribed_source": "and Load Protocol Code"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9549452000064775,
+    0.027071237564086914,
+    1.756779670715332
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "2.DownloadProtocol": "2.Download Protocol",
+      "andProtocol RequestCode": "and Protocol Request Code",
+      "3.lnvoke Service Using Protocol Code": "3.Invoke Service Using Protocol Code",
+      "AgentA": "Agent A",
+      "and LoadProtocol Code": "and Load Protocol Code"
+    },
+    "source_sha256": "9d518b277948d1597d39f7e1a4e771df48f9ec0e6cada72daf2204688f9d9f13"
+  }
+}

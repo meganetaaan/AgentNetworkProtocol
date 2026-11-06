@@ -1,0 +1,694 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page6.jpg",
+  "sha256": "9be88edfde623c3db2dfa1ed002533e70a82c7c7e71a8933ba3c261392cc127b",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "AgentNetworkProtocol(ANP)",
+      "confidence": 0.9863720560073852,
+      "box": [
+        [
+          36.0,
+          45.128570556640625
+        ],
+        [
+          1126.4515380859375,
+          42.81428527832031
+        ],
+        [
+          1126.4515380859375,
+          115.71428680419922
+        ],
+        [
+          36.0,
+          118.02857208251953
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentNetworkProtocol",
+        "ANP"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9907242059707642,
+      "box": [
+        [
+          2153.0322265625,
+          35.871429443359375
+        ],
+        [
+          2281.935302734375,
+          35.871429443359375
+        ],
+        [
+          2281.935302734375,
+          84.47142791748047
+        ],
+        [
+          2153.0322265625,
+          84.47142791748047
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "Goal",
+      "confidence": 0.9998653382062912,
+      "box": [
+        [
+          469.1612854003906,
+          304.3285827636719
+        ],
+        [
+          588.774169921875,
+          304.3285827636719
+        ],
+        [
+          588.774169921875,
+          357.5571594238281
+        ],
+        [
+          469.1612854003906,
+          357.5571594238281
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9953333139419556,
+      "box": [
+        [
+          1666.4515380859375,
+          329.78570556640625
+        ],
+        [
+          1738.4515380859375,
+          329.78570556640625
+        ],
+        [
+          1738.4515380859375,
+          358.71429443359375
+        ],
+        [
+          1666.4515380859375,
+          358.71429443359375
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "HTTP/HTML of theAgenticWeb",
+      "confidence": 0.9678222491190984,
+      "box": [
+        [
+          176.51612854003906,
+          444.3428649902344
+        ],
+        [
+          952.258056640625,
+          446.65716552734375
+        ],
+        [
+          952.258056640625,
+          495.25714111328125
+        ],
+        [
+          176.51612854003906,
+          492.94287109375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "HTTP",
+        "/HTML",
+        "theAgenticWeb"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9955509424209594,
+      "box": [
+        [
+          1414.4515380859375,
+          433.9285888671875
+        ],
+        [
+          1486.4515380859375,
+          433.9285888671875
+        ],
+        [
+          1486.4515380859375,
+          462.8571472167969
+        ],
+        [
+          1414.4515380859375,
+          462.8571472167969
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9952273964881897,
+      "box": [
+        [
+          1917.290283203125,
+          433.9285888671875
+        ],
+        [
+          1990.4515380859375,
+          433.9285888671875
+        ],
+        [
+          1990.4515380859375,
+          462.8571472167969
+        ],
+        [
+          1917.290283203125,
+          462.8571472167969
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "AgenticWeb",
+      "confidence": 0.9849582135677337,
+      "box": [
+        [
+          1599.0966796875,
+          669.9857177734375
+        ],
+        [
+          1794.1934814453125,
+          669.9857177734375
+        ],
+        [
+          1794.1934814453125,
+          708.1714477539062
+        ],
+        [
+          1599.0966796875,
+          708.1714477539062
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgenticWeb"
+      ]
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9868938326835632,
+      "box": [
+        [
+          1294.838623046875,
+          685.028564453125
+        ],
+        [
+          1399.354736328125,
+          685.028564453125
+        ],
+        [
+          1399.354736328125,
+          712.7999877929688
+        ],
+        [
+          1294.838623046875,
+          712.7999877929688
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9894267188178169,
+      "box": [
+        [
+          2005.54833984375,
+          686.1857299804688
+        ],
+        [
+          2108.903076171875,
+          686.1857299804688
+        ],
+        [
+          2108.903076171875,
+          710.4857177734375
+        ],
+        [
+          2005.54833984375,
+          710.4857177734375
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Vision",
+      "confidence": 0.9997202157974243,
+      "box": [
+        [
+          454.06451416015625,
+          709.32861328125
+        ],
+        [
+          605.0322265625,
+          715.1143188476562
+        ],
+        [
+          602.7096557617188,
+          766.028564453125
+        ],
+        [
+          451.7419128417969,
+          760.2428588867188
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgentNetworkProtocol",
+      "confidence": 0.9953924000263215,
+      "box": [
+        [
+          1552.6451416015625,
+          711.6428833007812
+        ],
+        [
+          1851.0966796875,
+          709.32861328125
+        ],
+        [
+          1851.0966796875,
+          740.5714111328125
+        ],
+        [
+          1552.6451416015625,
+          742.8857421875
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentNetworkProtocol"
+      ]
+    },
+    {
+      "source": "Define the connectivity between agents",
+      "confidence": 0.9812117971872029,
+      "box": [
+        [
+          168.3870849609375,
+          821.5714721679688
+        ],
+        [
+          960.3870849609375,
+          825.0428466796875
+        ],
+        [
+          960.3870849609375,
+          870.1714477539062
+        ],
+        [
+          168.3870849609375,
+          866.7000122070312
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "and build an open, secure, and",
+      "confidence": 0.9843976676464081,
+      "box": [
+        [
+          249.6774139404297,
+          896.7857055664062
+        ],
+        [
+          880.258056640625,
+          899.1000366210938
+        ],
+        [
+          880.258056640625,
+          948.857177734375
+        ],
+        [
+          249.6774139404297,
+          946.5428466796875
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9948824167251586,
+      "box": [
+        [
+          1413.290283203125,
+          934.971435546875
+        ],
+        [
+          1488.774169921875,
+          934.971435546875
+        ],
+        [
+          1488.774169921875,
+          967.3714599609375
+        ],
+        [
+          1413.290283203125,
+          967.3714599609375
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9946703314781189,
+      "box": [
+        [
+          1916.1290283203125,
+          934.971435546875
+        ],
+        [
+          1991.61279296875,
+          934.971435546875
+        ],
+        [
+          1991.61279296875,
+          967.3714599609375
+        ],
+        [
+          1916.1290283203125,
+          967.3714599609375
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "efficient collaboration network for",
+      "confidence": 0.9669415354728699,
+      "box": [
+        [
+          213.6774139404297,
+          973.1571655273438
+        ],
+        [
+          918.5806274414062,
+          974.3143310546875
+        ],
+        [
+          918.5806274414062,
+          1015.971435546875
+        ],
+        [
+          213.6774139404297,
+          1014.8143310546875
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "billions of agents.",
+      "confidence": 0.9926369347070393,
+      "box": [
+        [
+          384.3870849609375,
+          1046.05712890625
+        ],
+        [
+          745.54833984375,
+          1050.685791015625
+        ],
+        [
+          745.54833984375,
+          1096.971435546875
+        ],
+        [
+          384.3870849609375,
+          1092.3428955078125
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9957635045051575,
+      "box": [
+        [
+          1665.290283203125,
+          1040.271484375
+        ],
+        [
+          1737.290283203125,
+          1040.271484375
+        ],
+        [
+          1737.290283203125,
+          1069.2000732421875
+        ],
+        [
+          1665.290283203125,
+          1069.2000732421875
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "AgentNetworkProtocol(ANP)\n\n\n\n                Goal\n\n\n    HTTP/HTML of the Agentic Web\n\n\n\n\n                 Vision\n\n      Define the connectivity between agents\n\n         and build an open, secure, and\n\n          efficient collaboration network for\n\n                   billions of agents.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L020",
+      "japanese": "AgentNetworkProtocol（ANP）\n\n目標：Agentic WebのHTTP/HTMLになること。\n\nビジョン：エージェント間の接続を定義し、数十億のエージェントのために、オープンで安全かつ効率的な協働ネットワークを構築すること。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L021",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L022",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L023",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L024",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L025",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L026",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L027",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L028",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agentic Web",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L029",
+      "japanese": "エージェントのWeb",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent Network Protocol",
+      "location": "visible diagram label 10, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L030",
+      "japanese": "Agent Network Protocol（エージェントネットワークプロトコル）",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.521433199988678,
+    0.02278614044189453,
+    1.7480239868164062
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 6,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-6",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.2143344907407407,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 6,
+    "manual_label_translations": {
+      "AgentNetworkProtocol(ANP)\n\n\n\n                Goal\n\n\n    HTTP/HTML of the Agentic Web\n\n\n\n\n                 Vision\n\n      Define the connectivity between agents\n\n         and build an open, secure, and\n\n          efficient collaboration network for\n\n                   billions of agents.": "AgentNetworkProtocol（ANP）\n\n目標：Agentic WebのHTTP/HTMLになること。\n\nビジョン：エージェント間の接続を定義し、数十億のエージェントのために、オープンで安全かつ効率的な協働ネットワークを構築すること。",
+      "Agent": "エージェント",
+      "Assistant": "アシスタント",
+      "Agentic Web": "エージェントのWeb",
+      "Agent Network Protocol": "Agent Network Protocol（エージェントネットワークプロトコル）"
+    },
+    "additional_labels": [
+      {
+        "source": "AgentNetworkProtocol(ANP)\n\n\n\n                Goal\n\n\n    HTTP/HTML of the Agentic Web\n\n\n\n\n                 Vision\n\n      Define the connectivity between agents\n\n         and build an open, secure, and\n\n          efficient collaboration network for\n\n                   billions of agents.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "Assistant",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Assistant",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "Agentic Web",
+        "location": "visible diagram label 9, manually transcribed"
+      },
+      {
+        "source": "Agent Network Protocol",
+        "location": "visible diagram label 10, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "AgentNetworkProtocol(ANP)",
+      "ANP",
+      "Goal",
+      "Agent",
+      "HTTP/HTML of theAgenticWeb",
+      "Agent",
+      "Agent",
+      "AgenticWeb",
+      "Assistant",
+      "Assistant",
+      "Vision",
+      "AgentNetworkProtocol",
+      "Define the connectivity between agents",
+      "and build an open, secure, and",
+      "Agent",
+      "Agent",
+      "efficient collaboration network for",
+      "billions of agents.",
+      "Agent"
+    ],
+    "source_sha256": "9be88edfde623c3db2dfa1ed002533e70a82c7c7e71a8933ba3c261392cc127b"
+  }
+}

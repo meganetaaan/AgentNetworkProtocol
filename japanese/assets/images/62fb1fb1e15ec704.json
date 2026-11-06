@@ -1,0 +1,213 @@
+{
+  "source": "blogs/images/api-keys-flow.png",
+  "sha256": "62fb1fb1e15ec70411e86ccad9d989f5d9362d42e4127e41b2e1b4282af2a7cd",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Register a platform account",
+      "confidence": 0.9794505304760404,
+      "box": [
+        [
+          85.0,
+          73.0
+        ],
+        [
+          440.0,
+          73.0
+        ],
+        [
+          440.0,
+          102.0
+        ],
+        [
+          85.0,
+          102.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "プラットフォームのアカウントを登録する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Obtain the API keys",
+      "confidence": 0.9735884321363348,
+      "box": [
+        [
+          138.0,
+          281.0
+        ],
+        [
+          390.0,
+          286.0
+        ],
+        [
+          389.0,
+          320.0
+        ],
+        [
+          137.0,
+          315.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "APIキーを取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API"
+      ]
+    },
+    {
+      "source": "Client",
+      "confidence": 0.9987896879514059,
+      "box": [
+        [
+          107.0,
+          562.0
+        ],
+        [
+          217.0,
+          564.0
+        ],
+        [
+          216.0,
+          606.0
+        ],
+        [
+          106.0,
+          604.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Sever",
+      "confidence": 0.9962128162384033,
+      "box": [
+        [
+          646.0,
+          562.0
+        ],
+        [
+          754.0,
+          568.0
+        ],
+        [
+          751.0,
+          610.0
+        ],
+        [
+          643.0,
+          604.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "サーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTP request: Carry API keys",
+      "confidence": 0.9980762558323997,
+      "box": [
+        [
+          245.0,
+          716.0
+        ],
+        [
+          610.0,
+          719.0
+        ],
+        [
+          609.0,
+          753.0
+        ],
+        [
+          245.0,
+          750.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "HTTPリクエスト：APIキーを付ける",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP",
+        "API"
+      ]
+    },
+    {
+      "source": "HTTP Response",
+      "confidence": 0.9941886434188256,
+      "box": [
+        [
+          330.0,
+          868.0
+        ],
+        [
+          527.0,
+          872.0
+        ],
+        [
+          526.0,
+          903.0
+        ],
+        [
+          330.0,
+          899.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "HTTPレスポンス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "HTTP"
+      ]
+    },
+    {
+      "source": "API keys",
+      "confidence": 0.933885246515274,
+      "box": [
+        [
+          352.0,
+          1105.0
+        ],
+        [
+          506.0,
+          1111.0
+        ],
+        [
+          504.0,
+          1159.0
+        ],
+        [
+          350.0,
+          1153.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "APIキー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "API"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.7344284999999218,
+    0.01119685173034668,
+    0.35543155670166016
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "Severは原図の誤記として保持した。",
+    "source_sha256": "62fb1fb1e15ec70411e86ccad9d989f5d9362d42e4127e41b2e1b4282af2a7cd"
+  }
+}

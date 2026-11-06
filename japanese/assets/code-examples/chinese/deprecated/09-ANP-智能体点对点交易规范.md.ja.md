@@ -1,0 +1,577 @@
+# chinese/deprecated/09-ANP-智能体点对点交易规范.md のコード例・図ラベルの日本語補足
+
+原文: [chinese/deprecated/09-ANP-智能体点对点交易规范.md](../../../../../chinese/deprecated/09-ANP-智能体点对点交易规范.md)。元のコードフェンス、識別子、URL、署名対象データは変更しません。下記は実行・送信するコードの代替ではなく、人が読む文章の対訳です。歴史資料は当時の説明を訳し、現行仕様へ書き換えていません。
+
+## fence:201-270/line:2
+
+原文:
+
+````text
+用户智能体(User Agent)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+利用者エージェント（User Agent）
+````
+
+## fence:201-270/line:3
+
+原文:
+
+````text
+酒店智能体(Hotel Agent)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+ホテルエージェント（Hotel Agent）
+````
+
+## fence:201-270/line:4
+
+原文:
+
+````text
+支付智能体(Payment Agent)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+決済エージェント（Payment Agent）
+````
+
+## fence:201-270/line:5
+
+原文:
+
+````text
+公证/注册服务(Registry)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+公証／登録サービス（Registry）
+````
+
+## fence:201-270/line:7
+
+原文:
+
+````text
+步骤1: 用户搜索与选择
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順1：利用者が検索して選択
+````
+
+## fence:201-270/line:8
+
+原文:
+
+````text
+服务发现请求
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+サービス発見要求
+````
+
+## fence:201-270/line:9
+
+原文:
+
+````text
+提供服务信息
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+サービス情報を提供する
+````
+
+## fence:201-270/line:11
+
+原文:
+
+````text
+步骤2: 用户请求预订
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順2：利用者が予約を要求
+````
+
+## fence:201-270/line:12
+
+原文:
+
+````text
+发送预订请求(BookingRequest)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+予約要求を送信（BookingRequest）
+````
+
+## fence:201-270/line:14
+
+原文:
+
+````text
+步骤3: 生成订单提议
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順3：注文提案を生成
+````
+
+## fence:201-270/line:15
+
+原文:
+
+````text
+（可选）查询产品信息的哈希和URL
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+（任意）商品情報のハッシュとURLを照会
+````
+
+## fence:201-270/line:16
+
+原文:
+
+````text
+返回验证过的产品信息哈希和URL
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+検証済みの商品情報のハッシュとURLを返す
+````
+
+## fence:201-270/line:18
+
+原文:
+
+````text
+【订单提议凭证】OrderProposalCredential<br/>(包含公证服务产品信息的哈希和URL)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【注文提案資格情報】OrderProposalCredential<br/>（公証サービスの商品情報のハッシュとURLを含む）
+````
+
+## fence:201-270/line:20
+
+原文:
+
+````text
+发送订单提议凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+注文提案の資格情報を送信する
+````
+
+## fence:201-270/line:22
+
+原文:
+
+````text
+步骤4: 用户确认订单
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順4：利用者が注文を確認
+````
+
+## fence:201-270/line:24
+
+原文:
+
+````text
+【订单确认凭证】BookingConfirmationCredential<br/>(包含OrderProposal的哈希)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【予約確認資格情報】BookingConfirmationCredential<br/>（OrderProposalのハッシュを含む）
+````
+
+## fence:201-270/line:26
+
+原文:
+
+````text
+发送订单确认凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+注文確認の資格情報を送信する
+````
+
+## fence:201-270/line:28
+
+原文:
+
+````text
+发送付款请求
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+支払い要求を送信する
+````
+
+## fence:201-270/line:30
+
+原文:
+
+````text
+生成支付指令
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+支払い指示を生成する
+````
+
+## fence:201-270/line:32
+
+原文:
+
+````text
+【支付指令凭证】PaymentInstructionCredential<br/>(包含BookingConfirmation的哈希)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【支払い指示資格情報】PaymentInstructionCredential<br/>（BookingConfirmationのハッシュを含む）
+````
+
+## fence:201-270/line:34
+
+原文:
+
+````text
+发送支付指令凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+支払い指示の資格情報を送信する
+````
+
+## fence:201-270/line:35
+
+原文:
+
+````text
+转发支付指令凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+支払い指示の資格情報を転送する
+````
+
+## fence:201-270/line:37
+
+原文:
+
+````text
+步骤5: 用户付款与资金托管
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順5：利用者による支払いとエスクロー
+````
+
+## fence:201-270/line:38
+
+原文:
+
+````text
+完成支付操作
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+支払い操作を完了
+````
+
+## fence:201-270/line:40
+
+原文:
+
+````text
+资金托管
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+資金の預託
+````
+
+## fence:201-270/line:42
+
+原文:
+
+````text
+【资金托管凭证】FundsEscrowedCredential<br/>(包含PaymentInstruction的哈希)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【資金エスクロー資格情報】FundsEscrowedCredential<br/>（PaymentInstructionのハッシュを含む）
+````
+
+## fence:201-270/line:44
+
+原文:
+
+````text
+发送资金托管凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+資金預託の資格情報を送信する
+````
+
+## fence:201-270/line:45
+
+原文:
+
+````text
+发送资金托管凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+資金預託の資格情報を送信する
+````
+
+## fence:201-270/line:47
+
+原文:
+
+````text
+步骤6: 酒店确认与服务履约
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順6：ホテルの確認とサービスの履行
+````
+
+## fence:201-270/line:49
+
+原文:
+
+````text
+【预订完成凭证(可选)】BookingFinalizedCredential<br/>(包含FundsEscrowed的哈希)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【予約完了資格情報（任意）】BookingFinalizedCredential<br/>（FundsEscrowedのハッシュを含む）
+````
+
+## fence:201-270/line:51
+
+原文:
+
+````text
+发送预订完成凭证(可选)
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+予約完了の資格情報を送信する（任意）
+````
+
+## fence:201-270/line:53
+
+原文:
+
+````text
+提供服务
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+サービスを提供する
+````
+
+## fence:201-270/line:54
+
+原文:
+
+````text
+服务完成通知
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+サービス完了通知
+````
+
+## fence:201-270/line:56
+
+原文:
+
+````text
+步骤7: 用户确认放款
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順7：利用者が資金の払い出しを確認
+````
+
+## fence:201-270/line:58
+
+原文:
+
+````text
+【服务完成确认凭证】ServiceCompletionConfirmationCredential<br/>(包含FundsEscrowed或BookingFinalized的哈希)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【サービス完了確認資格情報】ServiceCompletionConfirmationCredential<br/>（FundsEscrowedまたはBookingFinalizedのハッシュを含む）
+````
+
+## fence:201-270/line:60
+
+原文:
+
+````text
+发送服务完成确认凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+サービス完了確認の資格情報を送信する
+````
+
+## fence:201-270/line:62
+
+原文:
+
+````text
+步骤8: 结算结束
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+手順8：決済完了
+````
+
+## fence:201-270/line:64
+
+原文:
+
+````text
+【资金释放凭证】FundsReleasedCredential<br/>(包含ServiceCompletionConfirmation的哈希)
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+【資金払い出し資格情報】FundsReleasedCredential<br/>（ServiceCompletionConfirmationのハッシュを含む）
+````
+
+## fence:201-270/line:66
+
+原文:
+
+````text
+发送资金释放凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+資金解放の資格情報を送信する
+````
+
+## fence:201-270/line:67
+
+原文:
+
+````text
+发送资金释放凭证
+````
+
+日本語補足（agent-reviewed-exact-text-reuse）:
+
+````text
+資金解放の資格情報を送信する
+````
+
+## fence:201-270/line:68
+
+原文:
+
+````text
+资金划转至酒店账户
+````
+
+日本語補足（agent-reviewed）:
+
+````text
+ホテルの口座へ資金を移す
+````

@@ -1,0 +1,580 @@
+{
+  "source": "blogs/images/anp-interaction-flow.png",
+  "sha256": "e891bf1b23bd23d72cda5653f50e6e90ad38759338329e0fff74fa8adbd573fb",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "AgentA",
+      "confidence": 0.9800229668617249,
+      "box": [
+        [
+          170.0,
+          85.0
+        ],
+        [
+          265.0,
+          83.0
+        ],
+        [
+          266.0,
+          115.0
+        ],
+        [
+          171.0,
+          117.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentA"
+      ],
+      "transcribed_source": "Agent A"
+    },
+    {
+      "source": "AgentA",
+      "confidence": 0.9790550967057546,
+      "box": [
+        [
+          978.0,
+          105.0
+        ],
+        [
+          1073.0,
+          103.0
+        ],
+        [
+          1074.0,
+          134.0
+        ],
+        [
+          979.0,
+          137.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AgentA"
+      ],
+      "transcribed_source": "Agent A"
+    },
+    {
+      "source": "www.alice.com",
+      "confidence": 0.9896852465776297,
+      "box": [
+        [
+          123.0,
+          118.0
+        ],
+        [
+          308.0,
+          120.0
+        ],
+        [
+          307.0,
+          148.0
+        ],
+        [
+          123.0,
+          145.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "www.alice.com",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "www.alice.com"
+      ]
+    },
+    {
+      "source": "www.alice.com",
+      "confidence": 0.9932851424584022,
+      "box": [
+        [
+          931.0,
+          136.0
+        ],
+        [
+          1119.0,
+          139.0
+        ],
+        [
+          1119.0,
+          169.0
+        ],
+        [
+          931.0,
+          167.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "www.alice.com",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "www.alice.com"
+      ]
+    },
+    {
+      "source": "Agent authentication",
+      "confidence": 0.9973712235689163,
+      "box": [
+        [
+          494.0,
+          162.0
+        ],
+        [
+          744.0,
+          158.0
+        ],
+        [
+          744.0,
+          189.0
+        ],
+        [
+          494.0,
+          192.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "エージェント認証",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Prompts",
+      "confidence": 0.9913795420101711,
+      "box": [
+        [
+          40.0,
+          350.0
+        ],
+        [
+          177.0,
+          353.0
+        ],
+        [
+          177.0,
+          391.0
+        ],
+        [
+          39.0,
+          389.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "プロンプト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Http Function",
+      "confidence": 0.9808031687369714,
+      "box": [
+        [
+          245.0,
+          353.0
+        ],
+        [
+          461.0,
+          353.0
+        ],
+        [
+          461.0,
+          387.0
+        ],
+        [
+          245.0,
+          387.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "Http関数",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Http",
+      "confidence": 0.9997060894966125,
+      "box": [
+        [
+          286.0,
+          449.0
+        ],
+        [
+          365.0,
+          456.0
+        ],
+        [
+          362.0,
+          495.0
+        ],
+        [
+          283.0,
+          488.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "Http",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.8917806347211202,
+      "box": [
+        [
+          990.0,
+          496.0
+        ],
+        [
+          1055.0,
+          496.0
+        ],
+        [
+          1055.0,
+          524.0
+        ],
+        [
+          990.0,
+          524.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "Agent Description",
+      "confidence": 0.9970170995768379,
+      "box": [
+        [
+          1096.0,
+          488.0
+        ],
+        [
+          1375.0,
+          485.0
+        ],
+        [
+          1376.0,
+          521.0
+        ],
+        [
+          1096.0,
+          524.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "エージェント記述",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "URL",
+      "confidence": 0.99457714955012,
+      "box": [
+        [
+          1032.0,
+          557.0
+        ],
+        [
+          1085.0,
+          557.0
+        ],
+        [
+          1085.0,
+          587.0
+        ],
+        [
+          1032.0,
+          587.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9316890041033427,
+      "box": [
+        [
+          802.0,
+          713.0
+        ],
+        [
+          869.0,
+          713.0
+        ],
+        [
+          869.0,
+          742.0
+        ],
+        [
+          802.0,
+          742.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9374349315961202,
+      "box": [
+        [
+          1182.0,
+          713.0
+        ],
+        [
+          1249.0,
+          713.0
+        ],
+        [
+          1249.0,
+          742.0
+        ],
+        [
+          1182.0,
+          742.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "URL",
+      "confidence": 0.9956764777501425,
+      "box": [
+        [
+          842.0,
+          778.0
+        ],
+        [
+          895.0,
+          778.0
+        ],
+        [
+          895.0,
+          808.0
+        ],
+        [
+          842.0,
+          808.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9503037333488464,
+      "box": [
+        [
+          611.0,
+          919.0
+        ],
+        [
+          680.0,
+          922.0
+        ],
+        [
+          679.0,
+          951.0
+        ],
+        [
+          610.0,
+          948.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9463079770406088,
+      "box": [
+        [
+          1002.0,
+          921.0
+        ],
+        [
+          1067.0,
+          921.0
+        ],
+        [
+          1067.0,
+          950.0
+        ],
+        [
+          1002.0,
+          950.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "URL",
+      "confidence": 0.9940393765767416,
+      "box": [
+        [
+          1041.0,
+          985.0
+        ],
+        [
+          1092.0,
+          985.0
+        ],
+        [
+          1092.0,
+          1014.0
+        ],
+        [
+          1041.0,
+          1014.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "Dod",
+      "confidence": 0.7662724653879801,
+      "box": [
+        [
+          1197.0,
+          1135.0
+        ],
+        [
+          1266.0,
+          1135.0
+        ],
+        [
+          1266.0,
+          1168.0
+        ],
+        [
+          1197.0,
+          1168.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "DOC"
+    },
+    {
+      "source": "DOO",
+      "confidence": 0.522018680969874,
+      "box": [
+        [
+          1006.0,
+          1145.0
+        ],
+        [
+          1058.0,
+          1145.0
+        ],
+        [
+          1058.0,
+          1167.0
+        ],
+        [
+          1006.0,
+          1167.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOO"
+      ],
+      "transcribed_source": "DOC"
+    },
+    {
+      "source": "TaskComplete",
+      "confidence": 0.9950826515754064,
+      "box": [
+        [
+          921.0,
+          1240.0
+        ],
+        [
+          1150.0,
+          1243.0
+        ],
+        [
+          1150.0,
+          1277.0
+        ],
+        [
+          921.0,
+          1275.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "タスク完了",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "TaskComplete"
+      ],
+      "transcribed_source": "Task Complete"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.3156802000012249,
+    0.0323948860168457,
+    0.916104793548584
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "AgentA": "Agent A",
+      "Dod": "DOC",
+      "DOO": "DOC",
+      "TaskComplete": "Task Complete"
+    },
+    "source_note": "左右ともAgent Aとwww.alice.comと記載されている。原図の重複をBや別ドメインへ書き換えていない。DOC文字付き文書アイコン7個を照合。",
+    "source_sha256": "e891bf1b23bd23d72cda5653f50e6e90ad38759338329e0fff74fa8adbd573fb"
+  }
+}

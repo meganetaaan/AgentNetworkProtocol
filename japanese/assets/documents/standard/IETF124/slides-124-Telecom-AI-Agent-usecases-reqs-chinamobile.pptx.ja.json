@@ -1,0 +1,400 @@
+{
+  "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "source_sha256": "131e7a4e711f623143da267ae83b63c7500e931cb3480717bcf080c672ab98ea",
+  "format": "pptx",
+  "historical_document": true,
+  "original_binary_unchanged": true,
+  "sidecar": "japanese/assets/documents/standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx.ja.md",
+  "structured_sidecar": "japanese/assets/documents/standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx.ja.json",
+  "extracted_text_sidecar": "japanese/assets/documents/standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx.extracted.json",
+  "unit_count": 9,
+  "extracted_text_translation_status": "complete-manual-translation",
+  "full_visual_document_verification": false,
+  "full_visual_document_status": "all-package-media-inspected-readable-prose-translated-native-layout-pending",
+  "independent_second_review": false,
+  "retained_source_image_assets": [],
+  "units": [
+    {
+      "unit": 1,
+      "kind": "slide",
+      "original_text": "Telecom AI Agent  Use cases and Requirements\nKehan Yao, China Mobile\nIETF 124",
+      "translation": "通信分野のAIエージェントのユースケースと要件\n\nKehan Yao、China Mobile\nIETF 124。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 2,
+      "kind": "slide",
+      "original_text": "Holistic AI agent communication scenarios \nOTT X\nOperator B\nOperator A\nOTT Y\nApplication\nTools Service\nTool y_1\nTool y_2\nUser\nAgent\nAgent\nAgent\nAgent\nAgent\nNetwork\nTools Service\nTool a_2\nTool a_1\nAI agent types:\nAgent in Apps. Provider: OTT, operator, third party, etc.\nAgent in UEs. Provider: phone vendor, robot vendor, etc.\nAgent in network. Provider: operator, OTT.\nTools types:\nApplication tools. \nNetwork tools.",
+      "translation": "AIエージェント通信の全体的な場面\n\n図の主体：OTT X、OTT Y、Operator A、Operator B、利用者（User）、各Agent。\nアプリケーションのツールサービス（Application Tools Service）：Tool y_1、Tool y_2。\nネットワークのツールサービス（Network Tools Service）：Tool a_2、Tool a_1。\n\nAIエージェントの種類：\n- アプリ内エージェント。提供者：OTT、通信事業者、第三者など。\n- UE内のエージェント。提供者：携帯電話やロボットのベンダーなど。\n- ネットワーク内エージェント。提供者：通信事業者、OTT。\n\nツールの種類：アプリケーションのツール、ネットワークのツール。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": "3点の埋込画像は、エージェント／利用者対応／ツールを表すアイコンで、人向けの説明文は見当たりませんでした。図中の役割やサービス名はスライドXMLから抽出した本文で訳しています。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 3,
+      "kind": "slide",
+      "original_text": "Ownership and Roles of AI agents:\nOBO(On-behalf-of) User: the agent may require the authorization from user(s) to implement jobs for user(s). \nOBO Agent Itself: the agent itself has indentity and implements jobs and represents itself.\nOBO Other Agent(s): the agent may represent other agents to implement some jobs, given that other agents may not have the capabilities to implement the jobs.\nDomain:\nTask-wise Domain: a temporary domain that is created to target on a specific job, when the job is finished, the domain is destroyed.  A typical example is a domain that is created by 6G systems.\nApplication Domain: a durable domain that is created by a specific application, e.g., a web or mobile application offerred by cloud service providers.\nTerminology ",
+      "translation": "用語\n\nAIエージェントの所有と役割：\n- OBO（On-behalf-of）User：エージェントが利用者のために仕事を行う際、利用者の認可が必要になることがあります。\n- OBO Agent Itself：エージェント自体がアイデンティティを持ち、自分を代表して仕事を実行します。\n- OBO Other Agent(s)：他のエージェントが実行に必要な機能を持たない場合などに、その代理として仕事を実行できます。\n\nドメイン：\n- Task-wise Domain：特定の仕事のために一時的に作られ、仕事が終わると破棄されるドメイン。6Gシステムが作るドメインが代表例です。\n- Application Domain：クラウドサービス提供者のWebアプリやモバイルアプリなど、特定のアプリケーションが作る継続的なドメイン。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 4,
+      "kind": "slide",
+      "original_text": "Use cases: Trip Planning (Agent OBO User) \nAI agent delegates its user to plan trip services. \nAI agent can do payment execution for booking.  \nAI Agent\nUser\nTrip Planning Agent\n(UE native/App native)\nApplication 1\nticket booking service\nmap service\nApplication 2\nRequirements:\nMUST support HITL(human-in-the-loop) to avoid wrong execution.\nMUST define risk levels, what level MUST require HITL, what level is in “whitelist”,  and what level requires user confirmation but can then put into “whitelist”.",
+      "translation": "ユースケース：旅行計画（Agent OBO User）\n\nAIエージェントが利用者の代理で旅行サービスを計画し、予約のための決済も実行できます。\n\n図の主体：AI Agent、User、Trip Planning Agent（UE native/App native）、Application 1（チケット予約サービス）、Application 2（地図サービス）。\n\n要件：\n- 誤った実行を避けるため、HITL（human-in-the-loop）に対応しなければなりません（MUST）。\n- リスクの段階を定義しなければなりません（MUST）。どの段階でHITLが必須か（MUST）、どの段階を「whitelist」に入れるか、どの段階で利用者確認が必要で、その後「whitelist」に入れられるかを定義します。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 5,
+      "kind": "slide",
+      "original_text": "Use cases: Health Care (Agent OBO other agent)\nFor children, specific elder people (e.g., Alzheimer's patients), and people with disabilities who require guardians\nTheir agents (e.g., smart watches) collect biosensing data and transmit it to the guardians' agents which make decisions on whether sending requests to external institutions such as hospitals on behalf of the wards' agents \nRequirements:\nMUST define clear scope or boundaries for resource access and decision making under delegated authorization.\nAI Agent\nUser\nSmart Watch \nAI Agent\nUser\nPhone \nWard\nGuardian \nExternal\nresources/API\nHospital, etc. ",
+      "translation": "ユースケース：ヘルスケア（Agent OBO other agent）\n\n子ども、Alzheimer病患者などの特定の高齢者、保護者を必要とする障害者を対象とします。本人側のエージェント（スマートウォッチなど）が生体センシングデータを収集し、保護者側のエージェントに送信します。保護者側は、被保護者のエージェントに代わり、病院などの外部機関へ要求を送るかを判断します。\n\n要件：委任された認可のもとでの資源アクセスと意思決定について、明確なスコープや境界を定義しなければなりません（MUST）。\n\n図のラベル：被保護者（Ward）のUserとAI Agent／Smart Watch、保護者（Guardian）のUserとAI Agent／Phone、外部リソース／API（External resources/API）、病院など（Hospital, etc.）。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 6,
+      "kind": "slide",
+      "original_text": "Use cases:  Remote Rescue (Agent OBO itself) \nMultiple AI agents collaborate to finish remote rescue tasks.   \nRobot Dog\nRobot Arm\nUAV\nACN\nSubnet\ntask-wise domain\nExternal Agent\nMobile Core Network\nRequirements:\nMUST support real-time communication between agents, as well as reliablity.\nMUST support dynamic groups of agent communication for temporary tasks.\nMUST support life-cycle management of groups, including construction and destroy. ",
+      "translation": "ユースケース：遠隔救助（Agent OBO itself）\n\n複数のAIエージェントが協力して、遠隔救助タスクを完了します。\n\n図のラベル：Robot Dog（ロボット犬）、Robot Arm（ロボットアーム）、UAV、ACN、Subnet、task-wise domain（タスク単位のドメイン）、External Agent（外部エージェント）、Mobile Core Network（モバイルコアネットワーク）。\n\n要件：\n- エージェント間のリアルタイム通信と信頼性に対応しなければなりません（MUST）。\n- 一時的なタスクに対する、動的なグループでのエージェント通信に対応しなければなりません（MUST）。\n- グループの作成・破棄を含むライフサイクル管理に対応しなければなりません（MUST）。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": "5点の埋込画像は、ロボット犬、ロボットアーム、UAV、ネットワーク図、ロボットのアイコンです。説明用の文章は見当たりませんでした。機器表面の微小な刻印を意味のある語として確定していません。図外のRobot Dog／Robot Arm／UAVなどは抽出本文に含まれます。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 7,
+      "kind": "slide",
+      "original_text": "Agent Protocols’ Applicability in Telecom Core Net\nIdentity registration, issue, and discovery:\nAgents, Tools, and other services/resources share similarities in terms of ID.\nPotential related NFs enhancements, UDM, UDR, SMF, etc.\nAuthentication and authorization：\nPotential related NFs enhancements, AUSF, SMF, etc.\nHITL(Human-in-the-Loop) confirmation:\nRedirection to human confirmation invoked by core network functions\nPotential related NFs enhancements, PCF, NEF,UPF, etc.\nDynamic group and real-time communication: \nPotential related NFs enhancements, AMF, SMF, etc.",
+      "translation": "通信コアネットワークへのエージェントプロトコルの適用可能性\n\n- アイデンティティの登録、発行、発見：エージェント、ツール、その他のサービス／リソースには、IDという点で共通性があります。関連するNFの拡張候補：UDM、UDR、SMFなど。\n- 認証と認可：関連するNFの拡張候補：AUSF、SMFなど。\n- HITL（Human-in-the-Loop）の確認：コアネットワーク機能が呼び出す、人間による確認へのリダイレクト。関連するNFの拡張候補：PCF、NEF、UPFなど。\n- 動的グループとリアルタイム通信：関連するNFの拡張候補：AMF、SMFなど。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 8,
+      "kind": "slide",
+      "original_text": "Summary\nThere are some important use cases in telecom network, beyond enterprise networks and the Internet. They are not limited to use just A2A, but also open to MCP, ANP, etc. \nFine-grained requirements and new requirements are proposed for protocol design, beyond the 4 main work item listed in AIproto strawman charter.\nDo you agree with these use cases and requirements? \nAny interests to join? ",
+      "translation": "まとめ\n\n企業ネットワークやインターネットに加え、通信事業者のネットワークにも重要なユースケースがあります。利用するプロトコルはA2Aに限定されず、MCP、ANPなどにも開かれています。\n\nAIprotoのたたき台の憲章に挙がる4つの主要作業項目を超えて、プロトコル設計のための、より細かい要件や新しい要件を提案しました。\n\nこれらのユースケースと要件に賛同しますか。参加に関心はありますか。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 9,
+      "kind": "slide",
+      "original_text": "THANKS!\nIETF 124",
+      "translation": "ありがとうございました。\n\nIETF 124。",
+      "original_notes": "",
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "slide-xml-text-and-notes-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "package-media-inspected-readable-prose-translated-native-slide-layout-pending",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "PPTXのネイティブ描画は未実施。全埋込画像を原画素で確認したが、スライド全体の配置・重なり・フォントは未検証。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": false,
+        "embedded_media_review": "all-package-media-inspected-native-layout-pending",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    }
+  ],
+  "visual_follow_up": {
+    "record": "japanese/assets/documents/visual-follow-up.json",
+    "media_assets": [
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image1.png",
+        "slides_referencing_including_layout_master": [
+          2
+        ],
+        "dimensions": [
+          80,
+          75
+        ],
+        "sha256": "d83064d9814b4a8c8e3615b4e15925cbf7172fbfc2d41a6ae829ee1ad92e2c36",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image1.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image2.png",
+        "slides_referencing_including_layout_master": [
+          2
+        ],
+        "dimensions": [
+          78,
+          74
+        ],
+        "sha256": "658533aad0f222956458dbf00baf52b13196a5618e402195969d93b34d80f840",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image2.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image3.png",
+        "slides_referencing_including_layout_master": [
+          2
+        ],
+        "dimensions": [
+          75,
+          66
+        ],
+        "sha256": "ba8bd980b241ff179e1093c51f81e6a17255f5e0e86cc24177533d96c6591761",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image3.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image4.png",
+        "slides_referencing_including_layout_master": [
+          6
+        ],
+        "dimensions": [
+          354,
+          321
+        ],
+        "sha256": "57c99673b8f716f66d381d0bb3f9c7ba41834548d0542674aece35f94bb2cb55",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image4.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 1,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image5.png",
+        "slides_referencing_including_layout_master": [
+          6
+        ],
+        "dimensions": [
+          287,
+          255
+        ],
+        "sha256": "9516b2efe7d75da3394cedfe4ef309f247302ab55fea5bc49ff0616719c3d547",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image5.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 2,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image6.png",
+        "slides_referencing_including_layout_master": [
+          6
+        ],
+        "dimensions": [
+          654,
+          306
+        ],
+        "sha256": "a55228d49d93f5f6ce4c8fe447b54a8ac9115639af823d2df207ac0058664fbc",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image6.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image7.png",
+        "slides_referencing_including_layout_master": [
+          6
+        ],
+        "dimensions": [
+          514,
+          500
+        ],
+        "sha256": "96fa0057969660fc93a249104ff5cce45f99bf323e0f93d1c521be282dbf8a52",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image7.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile.pptx",
+        "source_part": "ppt/media/image8.png",
+        "slides_referencing_including_layout_master": [
+          6
+        ],
+        "dimensions": [
+          116,
+          116
+        ],
+        "sha256": "0b9d07f9636b7975b1d465b1c2f193270e16843bbce59938fa8fb712139bcc3f",
+        "path": "japanese/assets/documents/source-pptx-media/slides-124-Telecom-AI-Agent-usecases-reqs-chinamobile/image8.png",
+        "visual_status": "source-media-inspected-readable-prose-manually-translated-or-no-prose-observed",
+        "native_slide_rendered": false,
+        "local_ocr_label_count": 1,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      }
+    ],
+    "native_rendering": "unavailable-in-checked-installed-applications",
+    "additional_translation_units": [
+      2,
+      6
+    ],
+    "full_visual_verification_complete": false
+  }
+}

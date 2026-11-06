@@ -1,0 +1,155 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/03-identity.png",
+  "sha256": "0cea8dec52a2ee5d2245a6ec9cafa968f9f67c97203d5229c639b5e387e86028",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "O",
+      "confidence": 0.5331729054450989,
+      "box": [
+        [
+          245.0,
+          129.0
+        ],
+        [
+          363.0,
+          129.0
+        ],
+        [
+          363.0,
+          246.0
+        ],
+        [
+          245.0,
+          246.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "三",
+      "confidence": 0.7900108695030212,
+      "box": [
+        [
+          337.0,
+          148.0
+        ],
+        [
+          424.0,
+          148.0
+        ],
+        [
+          424.0,
+          216.0
+        ],
+        [
+          337.0,
+          216.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "一个ANP身份",
+      "confidence": 0.9996874758175441,
+      "box": [
+        [
+          250.0,
+          273.0
+        ],
+        [
+          437.0,
+          274.0
+        ],
+        [
+          437.0,
+          304.0
+        ],
+        [
+          250.0,
+          303.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "1つのANPのID",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "它同时是一个能打开的地址",
+      "confidence": 0.9980722715457281,
+      "box": [
+        [
+          873.0,
+          276.0
+        ],
+        [
+          1216.0,
+          276.0
+        ],
+        [
+          1216.0,
+          303.0
+        ],
+        [
+          873.0,
+          303.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "同時に、アクセスして開けるアドレスでもある",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "看着像乱码，其实分五段",
+      "confidence": 0.9991838335990906,
+      "box": [
+        [
+          213.0,
+          314.0
+        ],
+        [
+          476.0,
+          315.0
+        ],
+        [
+          475.0,
+          340.0
+        ],
+        [
+          213.0,
+          339.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "文字化けのように見えるが、実際には5つの部分に分かれている",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.3427786999964155,
+    0.007004737854003906,
+    0.5567340850830078
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "false_positive_labels": [
+      "O",
+      "三"
+    ],
+    "corrections": {},
+    "source_sha256": "0cea8dec52a2ee5d2245a6ec9cafa968f9f67c97203d5229c639b5e387e86028"
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "source": "blogs/images/mcp-vs-anp-core.png",
+  "sha256": "a9ad5d482398dfc41f42fbbfdb60f56a43c1b2df4f92b3d9d71f5374b8cf7be6",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agent",
+      "confidence": 0.9967234611511231,
+      "box": [
+        [
+          1513.0,
+          74.0
+        ],
+        [
+          1606.0,
+          74.0
+        ],
+        [
+          1606.0,
+          111.0
+        ],
+        [
+          1513.0,
+          111.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Tools",
+      "confidence": 0.997504734992981,
+      "box": [
+        [
+          259.0,
+          122.0
+        ],
+        [
+          346.0,
+          122.0
+        ],
+        [
+          346.0,
+          157.0
+        ],
+        [
+          259.0,
+          157.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.997360497713089,
+      "box": [
+        [
+          438.0,
+          125.0
+        ],
+        [
+          575.0,
+          129.0
+        ],
+        [
+          574.0,
+          156.0
+        ],
+        [
+          437.0,
+          153.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.997524581849575,
+      "box": [
+        [
+          75.0,
+          227.0
+        ],
+        [
+          214.0,
+          232.0
+        ],
+        [
+          214.0,
+          262.0
+        ],
+        [
+          74.0,
+          257.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Tools",
+      "confidence": 0.9971765756607056,
+      "box": [
+        [
+          622.0,
+          225.0
+        ],
+        [
+          709.0,
+          225.0
+        ],
+        [
+          709.0,
+          260.0
+        ],
+        [
+          622.0,
+          260.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9924736976623535,
+      "box": [
+        [
+          1257.0,
+          265.0
+        ],
+        [
+          1350.0,
+          265.0
+        ],
+        [
+          1350.0,
+          301.0
+        ],
+        [
+          1257.0,
+          301.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.997110116481781,
+      "box": [
+        [
+          1770.0,
+          265.0
+        ],
+        [
+          1863.0,
+          265.0
+        ],
+        [
+          1863.0,
+          302.0
+        ],
+        [
+          1770.0,
+          302.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Tools",
+      "confidence": 0.9971855282783508,
+      "box": [
+        [
+          66.0,
+          372.0
+        ],
+        [
+          154.0,
+          372.0
+        ],
+        [
+          154.0,
+          407.0
+        ],
+        [
+          66.0,
+          407.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ツール",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.9974541291594505,
+      "box": [
+        [
+          644.0,
+          380.0
+        ],
+        [
+          783.0,
+          381.0
+        ],
+        [
+          782.0,
+          409.0
+        ],
+        [
+          643.0,
+          407.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Model",
+      "confidence": 0.9954478740692139,
+      "box": [
+        [
+          364.0,
+          418.0
+        ],
+        [
+          461.0,
+          418.0
+        ],
+        [
+          461.0,
+          451.0
+        ],
+        [
+          364.0,
+          451.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "モデル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9965594172477722,
+      "box": [
+        [
+          1315.0,
+          500.0
+        ],
+        [
+          1408.0,
+          500.0
+        ],
+        [
+          1408.0,
+          536.0
+        ],
+        [
+          1315.0,
+          536.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9965466141700745,
+      "box": [
+        [
+          1721.0,
+          500.0
+        ],
+        [
+          1814.0,
+          500.0
+        ],
+        [
+          1814.0,
+          536.0
+        ],
+        [
+          1721.0,
+          536.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.410772499977611,
+    0.019506454467773438,
+    0.3822314739227295
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_sha256": "a9ad5d482398dfc41f42fbbfdb60f56a43c1b2df4f92b3d9d71f5374b8cf7be6"
+  }
+}

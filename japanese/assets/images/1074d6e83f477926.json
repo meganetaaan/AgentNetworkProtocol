@@ -1,0 +1,529 @@
+{
+  "source": "blogs/images/mcp-architecture.png",
+  "sha256": "1074d6e83f477926b95c5da96db215a11844eb1bf05629a73a8b3e2de3eb2295",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Internet",
+      "confidence": 0.9851995185017586,
+      "box": [
+        [
+          804.0,
+          79.0
+        ],
+        [
+          925.0,
+          79.0
+        ],
+        [
+          925.0,
+          109.0
+        ],
+        [
+          804.0,
+          109.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "インターネット",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Application Host Process",
+      "confidence": 0.9972856665651003,
+      "box": [
+        [
+          68.0,
+          134.0
+        ],
+        [
+          422.0,
+          132.0
+        ],
+        [
+          422.0,
+          166.0
+        ],
+        [
+          69.0,
+          168.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "アプリケーションのホストプロセス",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server 3",
+      "confidence": 0.9706140533089638,
+      "box": [
+        [
+          658.0,
+          193.0
+        ],
+        [
+          781.0,
+          193.0
+        ],
+        [
+          781.0,
+          227.0
+        ],
+        [
+          658.0,
+          227.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "サーバー3",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "Remote",
+      "confidence": 0.9994234442710876,
+      "box": [
+        [
+          964.0,
+          193.0
+        ],
+        [
+          1079.0,
+          195.0
+        ],
+        [
+          1079.0,
+          229.0
+        ],
+        [
+          963.0,
+          227.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "リモート",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Client 3",
+      "confidence": 0.9688698276877403,
+      "box": [
+        [
+          285.0,
+          217.0
+        ],
+        [
+          401.0,
+          217.0
+        ],
+        [
+          401.0,
+          251.0
+        ],
+        [
+          285.0,
+          251.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "クライアント3",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ]
+    },
+    {
+      "source": "External APls",
+      "confidence": 0.959288477897644,
+      "box": [
+        [
+          626.0,
+          242.0
+        ],
+        [
+          815.0,
+          242.0
+        ],
+        [
+          815.0,
+          274.0
+        ],
+        [
+          626.0,
+          274.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "外部API",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "External APIs"
+    },
+    {
+      "source": "Resource C",
+      "confidence": 0.9956259906291962,
+      "box": [
+        [
+          941.0,
+          243.0
+        ],
+        [
+          1101.0,
+          242.0
+        ],
+        [
+          1101.0,
+          272.0
+        ],
+        [
+          941.0,
+          274.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "リソースC",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Local machine",
+      "confidence": 0.9651470230175898,
+      "box": [
+        [
+          758.0,
+          447.0
+        ],
+        [
+          968.0,
+          447.0
+        ],
+        [
+          968.0,
+          479.0
+        ],
+        [
+          758.0,
+          479.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "ローカルマシン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server 1",
+      "confidence": 0.9872119426727295,
+      "box": [
+        [
+          657.0,
+          563.0
+        ],
+        [
+          781.0,
+          565.0
+        ],
+        [
+          781.0,
+          599.0
+        ],
+        [
+          656.0,
+          596.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "サーバー1",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "Local",
+      "confidence": 0.9975510954856872,
+      "box": [
+        [
+          981.0,
+          565.0
+        ],
+        [
+          1062.0,
+          565.0
+        ],
+        [
+          1062.0,
+          597.0
+        ],
+        [
+          981.0,
+          597.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "ローカル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Host",
+      "confidence": 0.9997090846300125,
+      "box": [
+        [
+          88.0,
+          585.0
+        ],
+        [
+          161.0,
+          589.0
+        ],
+        [
+          159.0,
+          625.0
+        ],
+        [
+          86.0,
+          621.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "ホスト",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Client 1",
+      "confidence": 0.9978144317865372,
+      "box": [
+        [
+          284.0,
+          585.0
+        ],
+        [
+          398.0,
+          589.0
+        ],
+        [
+          397.0,
+          624.0
+        ],
+        [
+          283.0,
+          620.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "クライアント1",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "Files & Git",
+      "confidence": 0.9506228511983698,
+      "box": [
+        [
+          643.0,
+          611.0
+        ],
+        [
+          798.0,
+          611.0
+        ],
+        [
+          798.0,
+          644.0
+        ],
+        [
+          643.0,
+          644.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "ファイルとGit",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource A",
+      "confidence": 0.9785889029502869,
+      "box": [
+        [
+          943.0,
+          614.0
+        ],
+        [
+          1100.0,
+          614.0
+        ],
+        [
+          1100.0,
+          643.0
+        ],
+        [
+          943.0,
+          643.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "リソースA",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server 2",
+      "confidence": 0.9863391369581223,
+      "box": [
+        [
+          657.0,
+          853.0
+        ],
+        [
+          782.0,
+          853.0
+        ],
+        [
+          782.0,
+          887.0
+        ],
+        [
+          657.0,
+          887.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "サーバー2",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "Local",
+      "confidence": 0.9965983510017395,
+      "box": [
+        [
+          981.0,
+          855.0
+        ],
+        [
+          1063.0,
+          855.0
+        ],
+        [
+          1063.0,
+          887.0
+        ],
+        [
+          981.0,
+          887.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "ローカル",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Client 2",
+      "confidence": 0.9855080470442772,
+      "box": [
+        [
+          284.0,
+          877.0
+        ],
+        [
+          401.0,
+          877.0
+        ],
+        [
+          401.0,
+          911.0
+        ],
+        [
+          284.0,
+          911.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "クライアント2",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "Database",
+      "confidence": 0.9978310391306877,
+      "box": [
+        [
+          653.0,
+          902.0
+        ],
+        [
+          788.0,
+          904.0
+        ],
+        [
+          788.0,
+          935.0
+        ],
+        [
+          652.0,
+          933.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "データベース",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Resource B",
+      "confidence": 0.9847897231578827,
+      "box": [
+        [
+          941.0,
+          903.0
+        ],
+        [
+          1100.0,
+          902.0
+        ],
+        [
+          1100.0,
+          933.0
+        ],
+        [
+          941.0,
+          934.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "リソースB",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.9822986000217497,
+    0.030770301818847656,
+    0.7260842323303223
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "External APls": "External APIs"
+    },
+    "source_sha256": "1074d6e83f477926b95c5da96db215a11844eb1bf05629a73a8b3e2de3eb2295"
+  }
+}

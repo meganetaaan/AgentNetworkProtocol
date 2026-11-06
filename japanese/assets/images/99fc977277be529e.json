@@ -1,0 +1,1922 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page12.jpg",
+  "sha256": "99fc977277be529e636c958224da80b0b21caa6979b19797a51dfb60cf2c56cf",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "DID:wba Method ldentity Verification Process",
+      "confidence": 0.96394640004093,
+      "box": [
+        [
+          38.32257843017578,
+          43.97142791748047
+        ],
+        [
+          1776.774169921875,
+          45.128570556640625
+        ],
+        [
+          1776.774169921875,
+          113.4000015258789
+        ],
+        [
+          38.32257843017578,
+          112.24285888671875
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9888566931088766,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          37.02857208251953
+        ],
+        [
+          2283.0966796875,
+          85.62857055664062
+        ],
+        [
+          2154.193603515625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "User",
+      "confidence": 0.9908894002437592,
+      "box": [
+        [
+          1154.322509765625,
+          208.2857208251953
+        ],
+        [
+          1197.290283203125,
+          210.60000610351562
+        ],
+        [
+          1196.1290283203125,
+          232.58572387695312
+        ],
+        [
+          1153.1612548828125,
+          230.2714385986328
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "AgentAClient",
+      "confidence": 0.9771585663159689,
+      "box": [
+        [
+          1420.258056640625,
+          208.2857208251953
+        ],
+        [
+          1542.1934814453125,
+          208.2857208251953
+        ],
+        [
+          1542.1934814453125,
+          234.90000915527344
+        ],
+        [
+          1420.258056640625,
+          234.90000915527344
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentAClient"
+      ]
+    },
+    {
+      "source": "AgentB",
+      "confidence": 0.9927085240681967,
+      "box": [
+        [
+          1827.8709716796875,
+          203.6571502685547
+        ],
+        [
+          1916.1290283203125,
+          201.34286499023438
+        ],
+        [
+          1917.290283203125,
+          232.58572387695312
+        ],
+        [
+          1829.0322265625,
+          234.90000915527344
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentB"
+      ]
+    },
+    {
+      "source": "AgentADIDSever",
+      "confidence": 0.9887482651642391,
+      "box": [
+        [
+          2061.290283203125,
+          208.2857208251953
+        ],
+        [
+          2213.419189453125,
+          205.971435546875
+        ],
+        [
+          2213.419189453125,
+          232.58572387695312
+        ],
+        [
+          2061.290283203125,
+          234.90000915527344
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentADIDSever"
+      ]
+    },
+    {
+      "source": "·A calls the API to subscribe toB's service, and",
+      "confidence": 0.9424233958125114,
+      "box": [
+        [
+          58.06451416015625,
+          227.9571533203125
+        ],
+        [
+          716.51611328125,
+          229.11428833007812
+        ],
+        [
+          716.51611328125,
+          263.8285827636719
+        ],
+        [
+          58.06451416015625,
+          262.67144775390625
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "API",
+        "toB"
+      ]
+    },
+    {
+      "source": "B records A's DID.",
+      "confidence": 0.971947087181939,
+      "box": [
+        [
+          77.80644989013672,
+          275.3999938964844
+        ],
+        [
+          344.9032287597656,
+          275.3999938964844
+        ],
+        [
+          344.9032287597656,
+          306.6428527832031
+        ],
+        [
+          77.80644989013672,
+          306.6428527832031
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "PreliminaryOperation",
+      "confidence": 0.9824756860733033,
+      "box": [
+        [
+          1433.0322265625,
+          277.71429443359375
+        ],
+        [
+          1620.0,
+          280.028564453125
+        ],
+        [
+          1620.0,
+          306.6428527832031
+        ],
+        [
+          1433.0322265625,
+          304.3285827636719
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "PreliminaryOperation"
+      ]
+    },
+    {
+      "source": "·A includes its DID and signature in the HTTP",
+      "confidence": 0.9681984610027737,
+      "box": [
+        [
+          58.06451416015625,
+          335.5714416503906
+        ],
+        [
+          707.2257690429688,
+          336.72857666015625
+        ],
+        [
+          707.2257690429688,
+          374.914306640625
+        ],
+        [
+          58.06451416015625,
+          373.75714111328125
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID",
+        "HTTP"
+      ]
+    },
+    {
+      "source": "Subscribeto theservice",
+      "confidence": 0.9642543277957223,
+      "box": [
+        [
+          1220.51611328125,
+          340.20001220703125
+        ],
+        [
+          1436.51611328125,
+          340.20001220703125
+        ],
+        [
+          1436.51611328125,
+          366.8143005371094
+        ],
+        [
+          1220.51611328125,
+          366.8143005371094
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "header during the first HTTP request.",
+      "confidence": 0.9599282129390819,
+      "box": [
+        [
+          76.64515686035156,
+          381.8571472167969
+        ],
+        [
+          588.774169921875,
+          383.0142822265625
+        ],
+        [
+          588.774169921875,
+          417.72857666015625
+        ],
+        [
+          76.64515686035156,
+          416.5714416503906
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "HTTP"
+      ]
+    },
+    {
+      "source": "Subscribeto theserviceusingDID",
+      "confidence": 0.9797901570796966,
+      "box": [
+        [
+          1527.0966796875,
+          405.0
+        ],
+        [
+          1831.354736328125,
+          405.0
+        ],
+        [
+          1831.354736328125,
+          431.6142883300781
+        ],
+        [
+          1527.0966796875,
+          431.6142883300781
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "theserviceusingDID"
+      ]
+    },
+    {
+      "source": "·WhenBreceives theHTTP request,it extracts",
+      "confidence": 0.9651362796624502,
+      "box": [
+        [
+          59.22580337524414,
+          444.3428649902344
+        ],
+        [
+          713.0322265625,
+          447.8143005371094
+        ],
+        [
+          713.0322265625,
+          482.5285949707031
+        ],
+        [
+          59.22580337524414,
+          479.0571594238281
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "WhenBreceives",
+        "theHTTP"
+      ]
+    },
+    {
+      "source": "FirstRequest",
+      "confidence": 0.9641679922739664,
+      "box": [
+        [
+          1623.4837646484375,
+          464.0142822265625
+        ],
+        [
+          1736.1290283203125,
+          466.3285827636719
+        ],
+        [
+          1736.1290283203125,
+          490.6285705566406
+        ],
+        [
+          1623.4837646484375,
+          488.3143005371094
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "FirstRequest"
+      ]
+    },
+    {
+      "source": "A'sDID and signaturefrom theHTTPheader,",
+      "confidence": 0.96937973682697,
+      "box": [
+        [
+          78.96774291992188,
+          491.7857360839844
+        ],
+        [
+          710.7096557617188,
+          491.7857360839844
+        ],
+        [
+          710.7096557617188,
+          525.3428955078125
+        ],
+        [
+          78.96774291992188,
+          525.3428955078125
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "sDID",
+        "theHTTPheader"
+      ]
+    },
+    {
+      "source": "thenretrievesA'sDIDdocumentfromA'sDID",
+      "confidence": 0.9942692695437251,
+      "box": [
+        [
+          78.96774291992188,
+          534.6000366210938
+        ],
+        [
+          721.1612548828125,
+          534.6000366210938
+        ],
+        [
+          721.1612548828125,
+          568.1571655273438
+        ],
+        [
+          78.96774291992188,
+          568.1571655273438
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "thenretrievesA",
+        "sDIDdocumentfromA",
+        "sDID"
+      ]
+    },
+    {
+      "source": "HTTPRequest:DID,Signature",
+      "confidence": 0.9781188607215882,
+      "box": [
+        [
+          1548.0,
+          525.3428955078125
+        ],
+        [
+          1810.4515380859375,
+          528.8142700195312
+        ],
+        [
+          1810.4515380859375,
+          556.5857543945312
+        ],
+        [
+          1548.0,
+          553.1143188476562
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "server using A's DID.",
+      "confidence": 0.9362799525260925,
+      "box": [
+        [
+          76.64515686035156,
+          579.7285766601562
+        ],
+        [
+          378.58062744140625,
+          579.7285766601562
+        ],
+        [
+          378.58062744140625,
+          614.44287109375
+        ],
+        [
+          76.64515686035156,
+          614.44287109375
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "GetDIDDocument",
+      "confidence": 0.9882344773837498,
+      "box": [
+        [
+          1925.4193115234375,
+          592.4571533203125
+        ],
+        [
+          2091.48388671875,
+          592.4571533203125
+        ],
+        [
+          2091.48388671875,
+          615.6000366210938
+        ],
+        [
+          1925.4193115234375,
+          615.6000366210938
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "GetDIDDocument"
+      ]
+    },
+    {
+      "source": "Authorization:DID<did>Nonce<abc123>Timestamp",
+      "confidence": 0.9834197041663256,
+      "box": [
+        [
+          815.2257690429688,
+          627.1714477539062
+        ],
+        [
+          1430.7095947265625,
+          629.4857177734375
+        ],
+        [
+          1430.7095947265625,
+          659.5714111328125
+        ],
+        [
+          815.2257690429688,
+          657.2571411132812
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "DID",
+        "123"
+      ]
+    },
+    {
+      "source": "·AfterBobtainsA'sDIDdocument,ituses the",
+      "confidence": 0.9739394906239632,
+      "box": [
+        [
+          60.3870964050293,
+          642.2142944335938
+        ],
+        [
+          707.2257690429688,
+          642.2142944335938
+        ],
+        [
+          707.2257690429688,
+          675.7714233398438
+        ],
+        [
+          60.3870964050293,
+          675.7714233398438
+        ]
+      ],
+      "label_id": "L022",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AfterBobtainsA",
+        "sDIDdocument"
+      ]
+    },
+    {
+      "source": "<2024-12-05T12:34:56Z>VerificationMethod<key-1>Signature",
+      "confidence": 0.9805586263537407,
+      "box": [
+        [
+          815.2257690429688,
+          664.2000122070312
+        ],
+        [
+          1543.354736328125,
+          665.357177734375
+        ],
+        [
+          1543.354736328125,
+          695.44287109375
+        ],
+        [
+          815.2257690429688,
+          694.2857055664062
+        ]
+      ],
+      "label_id": "L023",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "2024",
+        "12",
+        "05",
+        "12",
+        "34",
+        "56",
+        "VerificationMethod",
+        "1"
+      ]
+    },
+    {
+      "source": "DIDDocument",
+      "confidence": 0.99344571612098,
+      "box": [
+        [
+          1941.6773681640625,
+          653.7857055664062
+        ],
+        [
+          2074.064453125,
+          653.7857055664062
+        ],
+        [
+          2074.064453125,
+          680.4000244140625
+        ],
+        [
+          1941.6773681640625,
+          680.4000244140625
+        ]
+      ],
+      "label_id": "L024",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "public key from A's DID document to verify",
+      "confidence": 0.9834100277650923,
+      "box": [
+        [
+          76.64515686035156,
+          686.1857299804688
+        ],
+        [
+          682.8386840820312,
+          683.8714599609375
+        ],
+        [
+          682.8386840820312,
+          722.05712890625
+        ],
+        [
+          76.64515686035156,
+          724.3714599609375
+        ]
+      ],
+      "label_id": "L025",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "<base64url(signature)>",
+      "confidence": 0.991075724363327,
+      "box": [
+        [
+          817.54833984375,
+          701.2285766601562
+        ],
+        [
+          1082.322509765625,
+          701.2285766601562
+        ],
+        [
+          1082.322509765625,
+          732.471435546875
+        ],
+        [
+          817.54833984375,
+          732.471435546875
+        ]
+      ],
+      "label_id": "L026",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "64"
+      ]
+    },
+    {
+      "source": "usethepublickeyinthe",
+      "confidence": 0.9935473948717117,
+      "box": [
+        [
+          2013.6773681640625,
+          704.7000122070312
+        ],
+        [
+          2295.870849609375,
+          705.857177734375
+        ],
+        [
+          2295.870849609375,
+          735.94287109375
+        ],
+        [
+          2013.6773681640625,
+          734.7857055664062
+        ]
+      ],
+      "label_id": "L027",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Authentication",
+      "confidence": 0.9965571974005017,
+      "box": [
+        [
+          1816.258056640625,
+          716.2714233398438
+        ],
+        [
+          1945.1612548828125,
+          716.2714233398438
+        ],
+        [
+          1945.1612548828125,
+          739.414306640625
+        ],
+        [
+          1816.258056640625,
+          739.414306640625
+        ]
+      ],
+      "label_id": "L028",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "A's signature.",
+      "confidence": 0.9786962185587201,
+      "box": [
+        [
+          81.29032135009766,
+          733.6286010742188
+        ],
+        [
+          270.58062744140625,
+          733.6286010742188
+        ],
+        [
+          270.58062744140625,
+          764.8714599609375
+        ],
+        [
+          81.29032135009766,
+          764.8714599609375
+        ]
+      ],
+      "label_id": "L029",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "DIDdocumenttoverify",
+      "confidence": 0.9910913737196672,
+      "box": [
+        [
+          2017.1612548828125,
+          729.0
+        ],
+        [
+          2288.903076171875,
+          731.3142700195312
+        ],
+        [
+          2288.903076171875,
+          761.4000244140625
+        ],
+        [
+          2017.1612548828125,
+          759.0857543945312
+        ]
+      ],
+      "label_id": "L030",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "thesignature",
+      "confidence": 0.9959093530972799,
+      "box": [
+        [
+          2074.064453125,
+          754.4571533203125
+        ],
+        [
+          2233.1611328125,
+          756.7714233398438
+        ],
+        [
+          2233.1611328125,
+          784.5428466796875
+        ],
+        [
+          2074.064453125,
+          782.2285766601562
+        ]
+      ],
+      "label_id": "L031",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Use,the private key to generate a signature",
+      "confidence": 0.9802341793858728,
+      "box": [
+        [
+          811.7418823242188,
+          782.2285766601562
+        ],
+        [
+          1318.064453125,
+          783.3857421875
+        ],
+        [
+          1318.064453125,
+          816.94287109375
+        ],
+        [
+          811.7418823242188,
+          815.7857055664062
+        ]
+      ],
+      "label_id": "L032",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTPResponse:token",
+      "confidence": 0.9882106847233243,
+      "box": [
+        [
+          1578.1934814453125,
+          775.2857055664062
+        ],
+        [
+          1784.9031982421875,
+          777.6000366210938
+        ],
+        [
+          1784.9031982421875,
+          804.2142944335938
+        ],
+        [
+          1578.1934814453125,
+          801.9000244140625
+        ]
+      ],
+      "label_id": "L033",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "generate",
+      "confidence": 0.9957772418856621,
+      "box": [
+        [
+          1826.7095947265625,
+          775.2857055664062
+        ],
+        [
+          1938.1934814453125,
+          770.6571655273438
+        ],
+        [
+          1939.354736328125,
+          801.9000244140625
+        ],
+        [
+          1827.8709716796875,
+          806.528564453125
+        ]
+      ],
+      "label_id": "L034",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "·Once theverificationis successful,Bprocesses",
+      "confidence": 0.9771405100822449,
+      "box": [
+        [
+          58.06451416015625,
+          792.6428833007812
+        ],
+        [
+          726.9677124023438,
+          796.1143188476562
+        ],
+        [
+          726.9677124023438,
+          829.6714477539062
+        ],
+        [
+          58.06451416015625,
+          826.2000122070312
+        ]
+      ],
+      "label_id": "L035",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "thetoken",
+      "confidence": 0.9946936890482903,
+      "box": [
+        [
+          1826.7095947265625,
+          798.4285888671875
+        ],
+        [
+          1942.838623046875,
+          798.4285888671875
+        ],
+        [
+          1942.838623046875,
+          826.2000122070312
+        ],
+        [
+          1826.7095947265625,
+          826.2000122070312
+        ]
+      ],
+      "label_id": "L036",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"nonce\":\"abc123\"，",
+      "confidence": 0.8957654167624081,
+      "box": [
+        [
+          868.6451416015625,
+          827.357177734375
+        ],
+        [
+          1045.1612548828125,
+          827.357177734375
+        ],
+        [
+          1045.1612548828125,
+          850.5
+        ],
+        [
+          868.6451416015625,
+          850.5
+        ]
+      ],
+      "label_id": "L037",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "A'sbusinessrequest andreturns thebusiness",
+      "confidence": 0.9773275634137596,
+      "box": [
+        [
+          80.1290283203125,
+          838.9285888671875
+        ],
+        [
+          692.1290283203125,
+          838.9285888671875
+        ],
+        [
+          692.1290283203125,
+          872.4857177734375
+        ],
+        [
+          80.1290283203125,
+          872.4857177734375
+        ]
+      ],
+      "label_id": "L038",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "SubsequentRequests",
+      "confidence": 0.9969115853309631,
+      "box": [
+        [
+          1589.806396484375,
+          837.7714233398438
+        ],
+        [
+          1768.6451416015625,
+          837.7714233398438
+        ],
+        [
+          1768.6451416015625,
+          860.914306640625
+        ],
+        [
+          1589.806396484375,
+          860.914306640625
+        ]
+      ],
+      "label_id": "L039",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "SubsequentRequests"
+      ]
+    },
+    {
+      "source": "\"timestamp\":\"2024-12-05T12:34:56Z\",",
+      "confidence": 0.9341393624033246,
+      "box": [
+        [
+          869.806396484375,
+          851.6571655273438
+        ],
+        [
+          1218.1934814453125,
+          851.6571655273438
+        ],
+        [
+          1218.1934814453125,
+          874.7999877929688
+        ],
+        [
+          869.806396484375,
+          874.7999877929688
+        ]
+      ],
+      "label_id": "L040",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "data along with an access token.",
+      "confidence": 0.9636176116764545,
+      "box": [
+        [
+          78.96774291992188,
+          884.05712890625
+        ],
+        [
+          523.741943359375,
+          884.05712890625
+        ],
+        [
+          523.741943359375,
+          917.6143188476562
+        ],
+        [
+          78.96774291992188,
+          917.6143188476562
+        ]
+      ],
+      "label_id": "L041",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "\"service\":\"example.com\"，",
+      "confidence": 0.9229953934748968,
+      "box": [
+        [
+          869.806396484375,
+          877.1143188476562
+        ],
+        [
+          1113.6773681640625,
+          877.1143188476562
+        ],
+        [
+          1113.6773681640625,
+          896.7857055664062
+        ],
+        [
+          869.806396484375,
+          896.7857055664062
+        ]
+      ],
+      "label_id": "L042",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "\"did\":\"did:wba:example.com:user:alice\"",
+      "confidence": 0.9504900527627844,
+      "box": [
+        [
+          866.3225708007812,
+          895.6286010742188
+        ],
+        [
+          1250.7095947265625,
+          896.7857055664062
+        ],
+        [
+          1250.7095947265625,
+          923.4000244140625
+        ],
+        [
+          866.3225708007812,
+          922.2428588867188
+        ]
+      ],
+      "label_id": "L043",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "HTTPRequest:token",
+      "confidence": 0.9888655893942889,
+      "box": [
+        [
+          1584.0,
+          899.1000366210938
+        ],
+        [
+          1775.61279296875,
+          899.1000366210938
+        ],
+        [
+          1775.61279296875,
+          925.7142944335938
+        ],
+        [
+          1584.0,
+          925.7142944335938
+        ]
+      ],
+      "label_id": "L044",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "·Insubsequent requests,A includes the access",
+      "confidence": 0.9588113792917945,
+      "box": [
+        [
+          62.70967483520508,
+          946.5428466796875
+        ],
+        [
+          696.774169921875,
+          947.7000122070312
+        ],
+        [
+          696.774169921875,
+          982.414306640625
+        ],
+        [
+          62.70967483520508,
+          981.2571411132812
+        ]
+      ],
+      "label_id": "L045",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "use thetokento",
+      "confidence": 0.9650276345866067,
+      "box": [
+        [
+          1210.064453125,
+          955.7999877929688
+        ],
+        [
+          1401.6773681640625,
+          955.7999877929688
+        ],
+        [
+          1401.6773681640625,
+          984.7285766601562
+        ],
+        [
+          1210.064453125,
+          984.7285766601562
+        ]
+      ],
+      "label_id": "L046",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "HTTPResponse",
+      "confidence": 0.9904181361198425,
+      "box": [
+        [
+          1610.7095947265625,
+          963.9000244140625
+        ],
+        [
+          1748.9031982421875,
+          963.9000244140625
+        ],
+        [
+          1748.9031982421875,
+          990.5142822265625
+        ],
+        [
+          1610.7095947265625,
+          990.5142822265625
+        ]
+      ],
+      "label_id": "L047",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "initiate subsequent",
+      "confidence": 0.9699839102594476,
+      "box": [
+        [
+          1192.6451416015625,
+          977.7857055664062
+        ],
+        [
+          1419.0966796875,
+          980.1000366210938
+        ],
+        [
+          1419.0966796875,
+          1011.3428955078125
+        ],
+        [
+          1192.6451416015625,
+          1009.028564453125
+        ]
+      ],
+      "label_id": "L048",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "token,and B verifies A's identity by validating",
+      "confidence": 0.9514817253072211,
+      "box": [
+        [
+          77.80644989013672,
+          990.5142822265625
+        ],
+        [
+          711.8709716796875,
+          992.82861328125
+        ],
+        [
+          711.8709716796875,
+          1027.5428466796875
+        ],
+        [
+          77.80644989013672,
+          1025.2286376953125
+        ]
+      ],
+      "label_id": "L049",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "requests",
+      "confidence": 0.9949694648385048,
+      "box": [
+        [
+          1250.7095947265625,
+          1006.7142944335938
+        ],
+        [
+          1358.7095947265625,
+          1004.4000244140625
+        ],
+        [
+          1358.7095947265625,
+          1032.17138671875
+        ],
+        [
+          1250.7095947265625,
+          1034.4857177734375
+        ]
+      ],
+      "label_id": "L050",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "the accesstoken.",
+      "confidence": 0.9807470105588436,
+      "box": [
+        [
+          80.1290283203125,
+          1036.800048828125
+        ],
+        [
+          312.3870849609375,
+          1036.800048828125
+        ],
+        [
+          312.3870849609375,
+          1068.0428466796875
+        ],
+        [
+          80.1290283203125,
+          1068.0428466796875
+        ]
+      ],
+      "label_id": "L051",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "User",
+      "confidence": 0.9934419691562653,
+      "box": [
+        [
+          1153.1612548828125,
+          1050.685791015625
+        ],
+        [
+          1199.6129150390625,
+          1053.0
+        ],
+        [
+          1198.4515380859375,
+          1078.4571533203125
+        ],
+        [
+          1152.0,
+          1076.142822265625
+        ]
+      ],
+      "label_id": "L052",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "AgentA Client",
+      "confidence": 0.9659673571586609,
+      "box": [
+        [
+          1419.0966796875,
+          1051.8428955078125
+        ],
+        [
+          1542.1934814453125,
+          1049.528564453125
+        ],
+        [
+          1542.1934814453125,
+          1076.142822265625
+        ],
+        [
+          1419.0966796875,
+          1078.4571533203125
+        ]
+      ],
+      "label_id": "L053",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentA"
+      ]
+    },
+    {
+      "source": "Github",
+      "confidence": 0.9977441132068634,
+      "box": [
+        [
+          1847.61279296875,
+          1051.8428955078125
+        ],
+        [
+          1909.1612548828125,
+          1051.8428955078125
+        ],
+        [
+          1909.1612548828125,
+          1076.142822265625
+        ],
+        [
+          1847.61279296875,
+          1076.142822265625
+        ]
+      ],
+      "label_id": "L054",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgentA DIDSever",
+      "confidence": 0.9675795276959737,
+      "box": [
+        [
+          2061.290283203125,
+          1054.1571044921875
+        ],
+        [
+          2213.419189453125,
+          1054.1571044921875
+        ],
+        [
+          2213.419189453125,
+          1077.300048828125
+        ],
+        [
+          2061.290283203125,
+          1077.300048828125
+        ]
+      ],
+      "label_id": "L055",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgentA"
+      ]
+    },
+    {
+      "source": "Features: Supports automatic registration; simple process with minimal interaction;",
+      "confidence": 0.991309364157987,
+      "box": [
+        [
+          945.290283203125,
+          1180.2857666015625
+        ],
+        [
+          2162.322509765625,
+          1180.2857666015625
+        ],
+        [
+          2162.322509765625,
+          1218.471435546875
+        ],
+        [
+          945.290283203125,
+          1218.471435546875
+        ]
+      ],
+      "label_id": "L056",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "equivalentsecuritytotraditionalmethods.",
+      "confidence": 0.9924022295536139,
+      "box": [
+        [
+          947.6128540039062,
+          1238.142822265625
+        ],
+        [
+          1554.9676513671875,
+          1234.6715087890625
+        ],
+        [
+          1554.9676513671875,
+          1269.3857421875
+        ],
+        [
+          947.6128540039062,
+          1272.857177734375
+        ]
+      ],
+      "label_id": "L057",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID:wba Method Identity Verification Process\n\n\n\n\n                                                                                                                                                             Agent B\n  • A calls the API to subscribe to B's service, and\n  B records A's DID.\n\n  • A includes its DID and signature in the HTTP\n   header during the first HTTP request.\n\n  • When B receives the HTTP request, it extracts\n   A's DID and signature from the HTTP header,\n   then retrieves A's DID document from A's DID\n   server using A's DID.\n\n                                                                    Authorization: DID <did> Nonce <abc123> Timestamp\n  • After B obtains A's DID document, it uses the\n                                                             <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature\n   public key from A's DID document to verify                                                                  <base64url(signature)>                                                                       use the public key in the\n   A's signature.                                                                                                                                DID document to verify\n                                                                                                                                                                the signature\n                                                                                                                                   generate\n                                                          Use the private key to generate a signature\n  • Once the verification is successful, B processes                                                                                      the token\n   A's business request and returns the business\n   data along with an access token.\n\n  • In subsequent requests, A includes the access                                       use the token to\n                                                                                                                        initiate subsequent\n   token, and B verifies A's identity by validating                                             requests\n   the access token.\n\n\n\n                                                         Features: Supports automatic registration; simple process with minimal interaction;\n\n                                                             equivalent security to traditional methods.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L058",
+      "japanese": "DID:wbaメソッドによる身元検証の流れ\n\n- AはAPIを呼び出してBのサービスを購読し、BはAのDIDを記録します。\n- Aは最初のHTTPリクエストのHTTPヘッダーに、自分のDIDと署名を含めます。\n- Bはリクエストを受信すると、ヘッダーからAのDIDと署名を取り出し、AのDIDを使ってAのDIDサーバーからDID文書を取得します。\n- BはAのDID文書内の公開鍵を使い、Aの署名を検証します。\n- 検証に成功すると、BはAの業務リクエストを処理し、業務データとアクセストークンを返します。\n- 以後のリクエストでは、Aはアクセストークンを含め、Bはその有効性を検証してAの身元を確認します。\n\nヘッダー例（歴史的な方式を原文どおり保持）：\n`Authorization: DID <did> Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature)>`\n\n図中の処理：秘密鍵を使った署名生成、DID文書内の公開鍵を使った署名検証、トークン生成、トークンを用いた後続リクエストの開始。\n\n特徴：自動登録に対応し、やり取りが少ない単純な流れで、従来方式と同等の安全性を持ちます。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "User",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L059",
+      "japanese": "ユーザー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent A Client",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L060",
+      "japanese": "エージェントAのクライアント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent B",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L061",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent A DID Sever",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L062",
+      "japanese": "エージェントAのDIDサーバー（原文Sever）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Github",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L063",
+      "japanese": "Github（原図下段の表記）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Preliminary Operation",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L064",
+      "japanese": "事前操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Subscribe to the service",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L065",
+      "japanese": "サービスを購読する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Subscribe to the service using DID",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L066",
+      "japanese": "DIDを使ってサービスを購読する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "First Request",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L067",
+      "japanese": "最初のリクエスト",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Request: DID,Signature",
+      "location": "visible diagram label 10, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L068",
+      "japanese": "HTTPリクエスト：DID、署名",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Get DID Document",
+      "location": "visible diagram label 11, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L069",
+      "japanese": "DIDドキュメントを取得",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DID Document",
+      "location": "visible diagram label 12, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L070",
+      "japanese": "DIDドキュメント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Authentication",
+      "location": "visible diagram label 13, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L071",
+      "japanese": "認証",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Response: token",
+      "location": "visible diagram label 14, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L072",
+      "japanese": "HTTPレスポンス：トークン",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Subsequent Requests",
+      "location": "visible diagram label 15, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L073",
+      "japanese": "後続のリクエスト",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Request: token",
+      "location": "visible diagram label 16, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L074",
+      "japanese": "HTTPリクエスト：トークン",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "HTTP Response",
+      "location": "visible diagram label 17, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L075",
+      "japanese": "HTTPレスポンス",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Use the private key to generate a signature",
+      "location": "visible diagram label 18, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L076",
+      "japanese": "秘密鍵を使って署名を生成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "use the public key in the DID document to verify the signature",
+      "location": "visible diagram label 19, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L077",
+      "japanese": "DIDドキュメント内の公開鍵を使って署名を検証する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "generate the token",
+      "location": "visible diagram label 20, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L078",
+      "japanese": "トークンを生成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "use the token to initiate subsequent requests",
+      "location": "visible diagram label 21, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L079",
+      "japanese": "トークンを使って後続のリクエストを開始する",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-human-prose-reviewed-technical-code-original-pixels-authoritative",
+  "translation_status": "visible-human-prose-translated-technical-code-transcription-unverified",
+  "ocr_seconds": [
+    1.4627722000004724,
+    0.06684088706970215,
+    7.0898566246032715
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 12,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-12",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 2.689508101851852,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels; technical-code-original-pixels-authoritative",
+    "matching_pdf_page": 12,
+    "manual_label_translations": {
+      "DID:wba Method Identity Verification Process\n\n\n\n\n                                                                                                                                                             Agent B\n  • A calls the API to subscribe to B's service, and\n  B records A's DID.\n\n  • A includes its DID and signature in the HTTP\n   header during the first HTTP request.\n\n  • When B receives the HTTP request, it extracts\n   A's DID and signature from the HTTP header,\n   then retrieves A's DID document from A's DID\n   server using A's DID.\n\n                                                                    Authorization: DID <did> Nonce <abc123> Timestamp\n  • After B obtains A's DID document, it uses the\n                                                             <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature\n   public key from A's DID document to verify                                                                  <base64url(signature)>                                                                       use the public key in the\n   A's signature.                                                                                                                                DID document to verify\n                                                                                                                                                                the signature\n                                                                                                                                   generate\n                                                          Use the private key to generate a signature\n  • Once the verification is successful, B processes                                                                                      the token\n   A's business request and returns the business\n   data along with an access token.\n\n  • In subsequent requests, A includes the access                                       use the token to\n                                                                                                                        initiate subsequent\n   token, and B verifies A's identity by validating                                             requests\n   the access token.\n\n\n\n                                                         Features: Supports automatic registration; simple process with minimal interaction;\n\n                                                             equivalent security to traditional methods.": "DID:wbaメソッドによる身元検証の流れ\n\n- AはAPIを呼び出してBのサービスを購読し、BはAのDIDを記録します。\n- Aは最初のHTTPリクエストのHTTPヘッダーに、自分のDIDと署名を含めます。\n- Bはリクエストを受信すると、ヘッダーからAのDIDと署名を取り出し、AのDIDを使ってAのDIDサーバーからDID文書を取得します。\n- BはAのDID文書内の公開鍵を使い、Aの署名を検証します。\n- 検証に成功すると、BはAの業務リクエストを処理し、業務データとアクセストークンを返します。\n- 以後のリクエストでは、Aはアクセストークンを含め、Bはその有効性を検証してAの身元を確認します。\n\nヘッダー例（歴史的な方式を原文どおり保持）：\n`Authorization: DID <did> Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature)>`\n\n図中の処理：秘密鍵を使った署名生成、DID文書内の公開鍵を使った署名検証、トークン生成、トークンを用いた後続リクエストの開始。\n\n特徴：自動登録に対応し、やり取りが少ない単純な流れで、従来方式と同等の安全性を持ちます。",
+      "User": "ユーザー",
+      "Agent A Client": "エージェントAのクライアント",
+      "Agent B": "エージェントB",
+      "Agent A DID Sever": "エージェントAのDIDサーバー（原文Sever）",
+      "Github": "Github（原図下段の表記）",
+      "Preliminary Operation": "事前操作",
+      "Subscribe to the service": "サービスを購読する",
+      "Subscribe to the service using DID": "DIDを使ってサービスを購読する",
+      "First Request": "最初のリクエスト",
+      "HTTP Request: DID,Signature": "HTTPリクエスト：DID、署名",
+      "Get DID Document": "DIDドキュメントを取得",
+      "DID Document": "DIDドキュメント",
+      "Authentication": "認証",
+      "HTTP Response: token": "HTTPレスポンス：トークン",
+      "Subsequent Requests": "後続のリクエスト",
+      "HTTP Request: token": "HTTPリクエスト：トークン",
+      "HTTP Response": "HTTPレスポンス",
+      "Use the private key to generate a signature": "秘密鍵を使って署名を生成する",
+      "use the public key in the DID document to verify the signature": "DIDドキュメント内の公開鍵を使って署名を検証する",
+      "generate the token": "トークンを生成する",
+      "use the token to initiate subsequent requests": "トークンを使って後続のリクエストを開始する"
+    },
+    "additional_labels": [
+      {
+        "source": "DID:wba Method Identity Verification Process\n\n\n\n\n                                                                                                                                                             Agent B\n  • A calls the API to subscribe to B's service, and\n  B records A's DID.\n\n  • A includes its DID and signature in the HTTP\n   header during the first HTTP request.\n\n  • When B receives the HTTP request, it extracts\n   A's DID and signature from the HTTP header,\n   then retrieves A's DID document from A's DID\n   server using A's DID.\n\n                                                                    Authorization: DID <did> Nonce <abc123> Timestamp\n  • After B obtains A's DID document, it uses the\n                                                             <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature\n   public key from A's DID document to verify                                                                  <base64url(signature)>                                                                       use the public key in the\n   A's signature.                                                                                                                                DID document to verify\n                                                                                                                                                                the signature\n                                                                                                                                   generate\n                                                          Use the private key to generate a signature\n  • Once the verification is successful, B processes                                                                                      the token\n   A's business request and returns the business\n   data along with an access token.\n\n  • In subsequent requests, A includes the access                                       use the token to\n                                                                                                                        initiate subsequent\n   token, and B verifies A's identity by validating                                             requests\n   the access token.\n\n\n\n                                                         Features: Supports automatic registration; simple process with minimal interaction;\n\n                                                             equivalent security to traditional methods.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "User",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "Agent A Client",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "Agent B",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "Agent A DID Sever",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "Github",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "Preliminary Operation",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "Subscribe to the service",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Subscribe to the service using DID",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "First Request",
+        "location": "visible diagram label 9, manually transcribed"
+      },
+      {
+        "source": "HTTP Request: DID,Signature",
+        "location": "visible diagram label 10, manually transcribed"
+      },
+      {
+        "source": "Get DID Document",
+        "location": "visible diagram label 11, manually transcribed"
+      },
+      {
+        "source": "DID Document",
+        "location": "visible diagram label 12, manually transcribed"
+      },
+      {
+        "source": "Authentication",
+        "location": "visible diagram label 13, manually transcribed"
+      },
+      {
+        "source": "HTTP Response: token",
+        "location": "visible diagram label 14, manually transcribed"
+      },
+      {
+        "source": "Subsequent Requests",
+        "location": "visible diagram label 15, manually transcribed"
+      },
+      {
+        "source": "HTTP Request: token",
+        "location": "visible diagram label 16, manually transcribed"
+      },
+      {
+        "source": "HTTP Response",
+        "location": "visible diagram label 17, manually transcribed"
+      },
+      {
+        "source": "Use the private key to generate a signature",
+        "location": "visible diagram label 18, manually transcribed"
+      },
+      {
+        "source": "use the public key in the DID document to verify the signature",
+        "location": "visible diagram label 19, manually transcribed"
+      },
+      {
+        "source": "generate the token",
+        "location": "visible diagram label 20, manually transcribed"
+      },
+      {
+        "source": "use the token to initiate subsequent requests",
+        "location": "visible diagram label 21, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "DID:wba Method ldentity Verification Process",
+      "ANP",
+      "User",
+      "AgentAClient",
+      "AgentB",
+      "AgentADIDSever",
+      "·A calls the API to subscribe toB's service, and",
+      "B records A's DID.",
+      "PreliminaryOperation",
+      "·A includes its DID and signature in the HTTP",
+      "Subscribeto theservice",
+      "header during the first HTTP request.",
+      "Subscribeto theserviceusingDID",
+      "·WhenBreceives theHTTP request,it extracts",
+      "FirstRequest",
+      "A'sDID and signaturefrom theHTTPheader,",
+      "thenretrievesA'sDIDdocumentfromA'sDID",
+      "HTTPRequest:DID,Signature",
+      "server using A's DID.",
+      "GetDIDDocument",
+      "Authorization:DID<did>Nonce<abc123>Timestamp",
+      "·AfterBobtainsA'sDIDdocument,ituses the",
+      "<2024-12-05T12:34:56Z>VerificationMethod<key-1>Signature",
+      "DIDDocument",
+      "public key from A's DID document to verify",
+      "<base64url(signature)>",
+      "usethepublickeyinthe",
+      "Authentication",
+      "A's signature.",
+      "DIDdocumenttoverify",
+      "thesignature",
+      "Use,the private key to generate a signature",
+      "HTTPResponse:token",
+      "generate",
+      "·Once theverificationis successful,Bprocesses",
+      "thetoken",
+      "\"nonce\":\"abc123\"，",
+      "A'sbusinessrequest andreturns thebusiness",
+      "SubsequentRequests",
+      "\"timestamp\":\"2024-12-05T12:34:56Z\",",
+      "data along with an access token.",
+      "\"service\":\"example.com\"，",
+      "\"did\":\"did:wba:example.com:user:alice\"",
+      "HTTPRequest:token",
+      "·Insubsequent requests,A includes the access",
+      "use thetokento",
+      "HTTPResponse",
+      "initiate subsequent",
+      "token,and B verifies A's identity by validating",
+      "requests",
+      "the accesstoken.",
+      "User",
+      "AgentA Client",
+      "Github",
+      "AgentA DIDSever",
+      "Features: Supports automatic registration; simple process with minimal interaction;",
+      "equivalentsecuritytotraditionalmethods."
+    ],
+    "code_transcription_unverified": true,
+    "source_sha256": "99fc977277be529e636c958224da80b0b21caa6979b19797a51dfb60cf2c56cf"
+  }
+}

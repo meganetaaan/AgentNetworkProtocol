@@ -1,0 +1,630 @@
+{
+  "source": "chinese/过程文档/智能体点对点交易方案设计/ANP-理想交易流程图-v2.svg",
+  "sha256": "6ec869377d6e9a9ede3c388f19ff6068ef2dd432c3efcc90c3eee20670496b23",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "ANP 智能体点对点交易理想流程图",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "40",
+      "label_id": "L001",
+      "japanese": "ANPエージェント間P2P取引の理想的なフロー",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户智能体",
+      "element": "text",
+      "id": null,
+      "x": "130",
+      "y": "95",
+      "label_id": "L002",
+      "japanese": "ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店智能体",
+      "element": "text",
+      "id": null,
+      "x": "280",
+      "y": "95",
+      "label_id": "L003",
+      "japanese": "ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付智能体",
+      "element": "text",
+      "id": null,
+      "x": "430",
+      "y": "95",
+      "label_id": "L004",
+      "japanese": "決済エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "凭证传递(VC)",
+      "element": "text",
+      "id": null,
+      "x": "650",
+      "y": "95",
+      "label_id": "L005",
+      "japanese": "資格情報の受け渡し（VC）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "凭证生成",
+      "element": "text",
+      "id": null,
+      "x": "130",
+      "y": "125",
+      "label_id": "L006",
+      "japanese": "資格情報の生成",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤1",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "190",
+      "label_id": "L007",
+      "japanese": "手順1",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤2",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "320",
+      "label_id": "L008",
+      "japanese": "手順2",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤3",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "450",
+      "label_id": "L009",
+      "japanese": "手順3",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤4",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "580",
+      "label_id": "L010",
+      "japanese": "手順4",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤5",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "710",
+      "label_id": "L011",
+      "japanese": "手順5",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤6",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "840",
+      "label_id": "L012",
+      "japanese": "手順6",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤7",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "970",
+      "label_id": "L013",
+      "japanese": "手順7",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "步骤8",
+      "element": "text",
+      "id": null,
+      "x": "60",
+      "y": "1100",
+      "label_id": "L014",
+      "japanese": "手順8",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户智能体",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "160",
+      "label_id": "L015",
+      "japanese": "ユーザーエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "酒店智能体",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "160",
+      "label_id": "L016",
+      "japanese": "ホテルエージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "支付智能体",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "160",
+      "label_id": "L017",
+      "japanese": "決済エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "搜索酒店服务",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "220",
+      "label_id": "L018",
+      "japanese": "ホテルサービスを検索する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "服务发现请求",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "200",
+      "label_id": "L019",
+      "japanese": "サービス発見要求",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "提供服务信息",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "220",
+      "label_id": "L020",
+      "japanese": "サービス情報を提供する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "服务信息响应",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "255",
+      "label_id": "L021",
+      "japanese": "サービス情報の応答",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户请求预订",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "340",
+      "label_id": "L022",
+      "japanese": "ユーザーが予約を要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "BookingRequest",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "355",
+      "label_id": "L023",
+      "japanese": "BookingRequest",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送预订请求",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "330",
+      "label_id": "L024",
+      "japanese": "予約要求を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "生成订单提议",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "440",
+      "label_id": "L025",
+      "japanese": "注文提案を生成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "OrderProposal",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "455",
+      "label_id": "L026",
+      "japanese": "OrderProposal",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "502.5",
+      "y": "417",
+      "label_id": "L027",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送订单提议凭证",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "430",
+      "label_id": "L028",
+      "japanese": "注文提案の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户确认订单",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "570",
+      "label_id": "L029",
+      "japanese": "ユーザーが注文を確認する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "BookingConfirm",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "585",
+      "label_id": "L030",
+      "japanese": "BookingConfirm",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "222.5",
+      "y": "547",
+      "label_id": "L031",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送订单确认凭证",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "560",
+      "label_id": "L032",
+      "japanese": "注文確認の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "请求付款",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "635",
+      "label_id": "L033",
+      "japanese": "支払いを要求する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "发送付款请求",
+      "element": "text",
+      "id": null,
+      "x": "620",
+      "y": "615",
+      "label_id": "L034",
+      "japanese": "支払い要求を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "生成支付指令",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "680",
+      "label_id": "L035",
+      "japanese": "支払い指示を生成する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "PaymentInstruction",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "695",
+      "label_id": "L036",
+      "japanese": "PaymentInstruction",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "782.5",
+      "y": "657",
+      "label_id": "L037",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送支付指令凭证",
+      "element": "text",
+      "id": null,
+      "x": "620",
+      "y": "670",
+      "label_id": "L038",
+      "japanese": "支払い指示の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "转发支付指令凭证",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "670",
+      "label_id": "L039",
+      "japanese": "支払い指示の資格情報を転送する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "用户付款",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "730",
+      "label_id": "L040",
+      "japanese": "ユーザーが支払う",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "UserPayment",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "745",
+      "label_id": "L041",
+      "japanese": "UserPayment",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "支付操作",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "720",
+      "label_id": "L042",
+      "japanese": "支払い操作",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "资金托管",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "785",
+      "label_id": "L043",
+      "japanese": "資金の預託",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "FundsEscrowed",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "800",
+      "label_id": "L044",
+      "japanese": "FundsEscrowed",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "782.5",
+      "y": "762",
+      "label_id": "L045",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送资金托管凭证",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "775",
+      "label_id": "L046",
+      "japanese": "資金預託の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "发送资金托管凭证",
+      "element": "text",
+      "id": null,
+      "x": "645",
+      "y": "810",
+      "label_id": "L047",
+      "japanese": "資金預託の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "确认预订并履约",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "860",
+      "label_id": "L048",
+      "japanese": "予約を確認し、契約を履行する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "BookingFinalized",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "875",
+      "label_id": "L049",
+      "japanese": "BookingFinalized",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "502.5",
+      "y": "837",
+      "label_id": "L050",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送预订完成凭证(可选)",
+      "element": "text",
+      "id": null,
+      "x": "340",
+      "y": "850",
+      "label_id": "L051",
+      "japanese": "予約完了の資格情報を送信する（任意）",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "提供服务",
+      "element": "text",
+      "id": null,
+      "x": "520",
+      "y": "905",
+      "label_id": "L052",
+      "japanese": "サービスを提供する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "确认服务完成",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "990",
+      "label_id": "L053",
+      "japanese": "サービス完了を確認する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "ServiceCompletion",
+      "element": "text",
+      "id": null,
+      "x": "200",
+      "y": "1005",
+      "label_id": "L054",
+      "japanese": "ServiceCompletion",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "222.5",
+      "y": "967",
+      "label_id": "L055",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送服务完成确认凭证",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "980",
+      "label_id": "L056",
+      "japanese": "サービス完了確認の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "结算资金",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "1100",
+      "label_id": "L057",
+      "japanese": "資金を決済する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "FundsReleased",
+      "element": "text",
+      "id": null,
+      "x": "760",
+      "y": "1115",
+      "label_id": "L058",
+      "japanese": "FundsReleased",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "VC",
+      "element": "text",
+      "id": null,
+      "x": "782.5",
+      "y": "1077",
+      "label_id": "L059",
+      "japanese": "VC",
+      "translation_method": "reviewed-verbatim-technical-label"
+    },
+    {
+      "source": "发送资金释放凭证",
+      "element": "text",
+      "id": null,
+      "x": "480",
+      "y": "1090",
+      "label_id": "L060",
+      "japanese": "資金解放の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "发送资金释放凭证",
+      "element": "text",
+      "id": null,
+      "x": "645",
+      "y": "1155",
+      "label_id": "L061",
+      "japanese": "資金解放の資格情報を送信する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "资金到账",
+      "element": "text",
+      "id": null,
+      "x": "520",
+      "y": "1170",
+      "label_id": "L062",
+      "japanese": "資金が入金される",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

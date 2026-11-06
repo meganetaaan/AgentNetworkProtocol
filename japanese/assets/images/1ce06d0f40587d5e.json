@@ -1,0 +1,730 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page5.jpg",
+  "sha256": "1ce06d0f40587d5edf6dec7703738767d97d661175603fd496609c403d341dfe",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agentic Web:",
+      "confidence": 0.949434737364451,
+      "box": [
+        [
+          36.0,
+          46.28571319580078
+        ],
+        [
+          595.741943359375,
+          42.81428527832031
+        ],
+        [
+          595.741943359375,
+          115.71428680419922
+        ],
+        [
+          36.0,
+          119.18571472167969
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9893266558647156,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          85.62857055664062
+        ],
+        [
+          2154.193603515625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "The Impact of Agents on the Internet",
+      "confidence": 0.9816334429714415,
+      "box": [
+        [
+          616.6451416015625,
+          63.64285659790039
+        ],
+        [
+          1340.1290283203125,
+          70.5857162475586
+        ],
+        [
+          1340.1290283203125,
+          124.97142791748047
+        ],
+        [
+          616.6451416015625,
+          118.02857208251953
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9956391811370849,
+      "box": [
+        [
+          1667.61279296875,
+          278.8714294433594
+        ],
+        [
+          1739.61279296875,
+          278.8714294433594
+        ],
+        [
+          1739.61279296875,
+          307.8000183105469
+        ],
+        [
+          1667.61279296875,
+          307.8000183105469
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agents interact with each other through protocols",
+      "confidence": 0.998876082653902,
+      "box": [
+        [
+          118.45160675048828,
+          333.25714111328125
+        ],
+        [
+          1183.3548583984375,
+          332.1000061035156
+        ],
+        [
+          1183.3548583984375,
+          385.3285827636719
+        ],
+        [
+          118.45160675048828,
+          386.4857177734375
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9937108635902405,
+      "box": [
+        [
+          1416.774169921875,
+          380.70001220703125
+        ],
+        [
+          1491.0966796875,
+          380.70001220703125
+        ],
+        [
+          1491.0966796875,
+          413.1000061035156
+        ],
+        [
+          1416.774169921875,
+          413.1000061035156
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9951205372810363,
+      "box": [
+        [
+          1917.290283203125,
+          380.70001220703125
+        ],
+        [
+          1992.774169921875,
+          380.70001220703125
+        ],
+        [
+          1992.774169921875,
+          413.1000061035156
+        ],
+        [
+          1917.290283203125,
+          413.1000061035156
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "·The most efficient way for AI to interact with",
+      "confidence": 0.945110152376459,
+      "box": [
+        [
+          126.58064270019531,
+          453.6000061035156
+        ],
+        [
+          955.7418823242188,
+          454.75714111328125
+        ],
+        [
+          955.7418823242188,
+          496.414306640625
+        ],
+        [
+          126.58064270019531,
+          495.25714111328125
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "the internet.",
+      "confidence": 0.9989355160639837,
+      "box": [
+        [
+          152.1290283203125,
+          520.7142944335938
+        ],
+        [
+          372.774169921875,
+          524.1857299804688
+        ],
+        [
+          372.774169921875,
+          563.528564453125
+        ],
+        [
+          152.1290283203125,
+          560.05712890625
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": " Computer Use is a transitional form.",
+      "confidence": 0.9824803101049887,
+      "box": [
+        [
+          128.90322875976562,
+          609.8142700195312
+        ],
+        [
+          800.1290283203125,
+          612.1286010742188
+        ],
+        [
+          800.1290283203125,
+          658.414306640625
+        ],
+        [
+          128.90322875976562,
+          656.1000366210938
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AgenticWeb",
+      "confidence": 0.9887665808200836,
+      "box": [
+        [
+          1606.064453125,
+          615.6000366210938
+        ],
+        [
+          1802.322509765625,
+          614.44287109375
+        ],
+        [
+          1802.322509765625,
+          653.7857055664062
+        ],
+        [
+          1606.064453125,
+          654.94287109375
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AgenticWeb"
+      ]
+    },
+    {
+      "source": "-",
+      "confidence": 0.7232547998428345,
+      "box": [
+        [
+          2128.64501953125,
+          615.6000366210938
+        ],
+        [
+          2234.322509765625,
+          615.6000366210938
+        ],
+        [
+          2234.322509765625,
+          682.7142944335938
+        ],
+        [
+          2128.64501953125,
+          682.7142944335938
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9865298403633965,
+      "box": [
+        [
+          1298.322509765625,
+          630.6428833007812
+        ],
+        [
+          1402.838623046875,
+          630.6428833007812
+        ],
+        [
+          1402.838623046875,
+          658.414306640625
+        ],
+        [
+          1298.322509765625,
+          658.414306640625
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Assistant",
+      "confidence": 0.9855880671077304,
+      "box": [
+        [
+          2003.2257080078125,
+          628.3285522460938
+        ],
+        [
+          2110.064453125,
+          630.6428833007812
+        ],
+        [
+          2110.064453125,
+          659.5714111328125
+        ],
+        [
+          2003.2257080078125,
+          657.2571411132812
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "In the future, standardized agent",
+      "confidence": 0.9962133042740099,
+      "box": [
+        [
+          130.06451416015625,
+          703.5428466796875
+        ],
+        [
+          725.8064575195312,
+          705.857177734375
+        ],
+        [
+          725.8064575195312,
+          747.5142822265625
+        ],
+        [
+          130.06451416015625,
+          745.2000122070312
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "communication protocols will emerge.",
+      "confidence": 0.9969256454043918,
+      "box": [
+        [
+          152.1290283203125,
+          769.5
+        ],
+        [
+          836.1290283203125,
+          774.1286010742188
+        ],
+        [
+          836.1290283203125,
+          816.94287109375
+        ],
+        [
+          152.1290283203125,
+          812.3142700195312
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9935524702072144,
+      "box": [
+        [
+          1416.774169921875,
+          880.5857543945312
+        ],
+        [
+          1491.0966796875,
+          880.5857543945312
+        ],
+        [
+          1491.0966796875,
+          912.9857177734375
+        ],
+        [
+          1416.774169921875,
+          912.9857177734375
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9942043781280517,
+      "box": [
+        [
+          1916.1290283203125,
+          880.5857543945312
+        ],
+        [
+          1991.61279296875,
+          880.5857543945312
+        ],
+        [
+          1991.61279296875,
+          912.9857177734375
+        ],
+        [
+          1916.1290283203125,
+          912.9857177734375
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9952386975288391,
+      "box": [
+        [
+          1668.774169921875,
+          985.8857421875
+        ],
+        [
+          1740.774169921875,
+          985.8857421875
+        ],
+        [
+          1740.774169921875,
+          1014.8143310546875
+        ],
+        [
+          1668.774169921875,
+          1014.8143310546875
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "Directly processing underlying data through protocols is the best way for",
+      "confidence": 0.9876799616095138,
+      "box": [
+        [
+          564.3870849609375,
+          1142.0999755859375
+        ],
+        [
+          1739.61279296875,
+          1144.414306640625
+        ],
+        [
+          1739.61279296875,
+          1190.7000732421875
+        ],
+        [
+          564.3870849609375,
+          1188.3857421875
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "AI to interact with the internet.",
+      "confidence": 0.957381394776431,
+      "box": [
+        [
+          903.4838256835938,
+          1193.0142822265625
+        ],
+        [
+          1404.0,
+          1195.32861328125
+        ],
+        [
+          1404.0,
+          1233.5142822265625
+        ],
+        [
+          903.4838256835938,
+          1231.2000732421875
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AI"
+      ]
+    },
+    {
+      "source": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents interact with each other through protocols\n\n\n      • The most efficient way for AI to interact with\n\n       the internet.\n\n      • Computer Use is a transitional form.\n\n      • In the future, standardized agent\n\n      communication protocols will emerge.\n\n\n\n\n\n                                 Directly processing underlying data through protocols is the best way for\n                                         AI to interact with the internet.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L022",
+      "japanese": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェントはプロトコルを通じて相互にやり取りします。\n- AIがインターネットとやり取りするうえで、最も効率的な方法です。\n- Computer Useは過渡的な形態です。\n- 将来、標準化されたエージェント通信プロトコルが登場します。\n\nプロトコルを通じて基礎となるデータを直接処理することが、AIとインターネットのやり取りの最善の方法です。",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 1, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L023",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 2, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L024",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 3, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L025",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 4, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L026",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 5, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L027",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agent",
+      "location": "visible diagram label 6, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L028",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "location": "visible diagram label 7, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L029",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Assistant",
+      "location": "visible diagram label 8, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L030",
+      "japanese": "アシスタント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Agentic Web",
+      "location": "visible diagram label 9, manually transcribed",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L031",
+      "japanese": "エージェントのWeb",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4306960999965668,
+    0.031213998794555664,
+    2.3258137702941895
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 5,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-5",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.3957407407407407,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 5,
+    "manual_label_translations": {
+      "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents interact with each other through protocols\n\n\n      • The most efficient way for AI to interact with\n\n       the internet.\n\n      • Computer Use is a transitional form.\n\n      • In the future, standardized agent\n\n      communication protocols will emerge.\n\n\n\n\n\n                                 Directly processing underlying data through protocols is the best way for\n                                         AI to interact with the internet.": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェントはプロトコルを通じて相互にやり取りします。\n- AIがインターネットとやり取りするうえで、最も効率的な方法です。\n- Computer Useは過渡的な形態です。\n- 将来、標準化されたエージェント通信プロトコルが登場します。\n\nプロトコルを通じて基礎となるデータを直接処理することが、AIとインターネットのやり取りの最善の方法です。",
+      "Agent": "エージェント",
+      "Assistant": "アシスタント",
+      "Agentic Web": "エージェントのWeb"
+    },
+    "additional_labels": [
+      {
+        "source": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents interact with each other through protocols\n\n\n      • The most efficient way for AI to interact with\n\n       the internet.\n\n      • Computer Use is a transitional form.\n\n      • In the future, standardized agent\n\n      communication protocols will emerge.\n\n\n\n\n\n                                 Directly processing underlying data through protocols is the best way for\n                                         AI to interact with the internet.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 1, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 2, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 3, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 4, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 5, manually transcribed"
+      },
+      {
+        "source": "Agent",
+        "location": "visible diagram label 6, manually transcribed"
+      },
+      {
+        "source": "Assistant",
+        "location": "visible diagram label 7, manually transcribed"
+      },
+      {
+        "source": "Assistant",
+        "location": "visible diagram label 8, manually transcribed"
+      },
+      {
+        "source": "Agentic Web",
+        "location": "visible diagram label 9, manually transcribed"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Agentic Web:",
+      "ANP",
+      "The Impact of Agents on the Internet",
+      "Agent",
+      "Agents interact with each other through protocols",
+      "Agent",
+      "Agent",
+      "·The most efficient way for AI to interact with",
+      "the internet.",
+      " Computer Use is a transitional form.",
+      "AgenticWeb",
+      "-",
+      "Assistant",
+      "Assistant",
+      "In the future, standardized agent",
+      "communication protocols will emerge.",
+      "Agent",
+      "Agent",
+      "Agent",
+      "Directly processing underlying data through protocols is the best way for",
+      "AI to interact with the internet."
+    ],
+    "source_sha256": "1ce06d0f40587d5edf6dec7703738767d97d661175603fd496609c403d341dfe"
+  }
+}

@@ -1,0 +1,724 @@
+{
+  "source": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "source_sha256": "7e9fac77b0f09a963fcd5feb736cc5a562982756b7b10eee7a9c47e6bcd27d92",
+  "format": "pdf",
+  "historical_document": true,
+  "original_binary_unchanged": true,
+  "sidecar": "japanese/assets/documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md",
+  "structured_sidecar": "japanese/assets/documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.json",
+  "extracted_text_sidecar": "japanese/assets/documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.extracted.json",
+  "unit_count": 24,
+  "extracted_text_translation_status": "complete-manual-translation",
+  "full_visual_document_verification": false,
+  "full_visual_document_status": "partial-figure-review-code-pixels-preserved-some-microtext-unverified",
+  "independent_second_review": false,
+  "retained_source_image_assets": [
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-01.png",
+      "sha256": "9e3b03638b0ff0f0bf9ae581414c5d7f92c5af1f0b7c38cfcff87b8e28895088",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-02.png",
+      "sha256": "07d7dbccccbe271fd0d126d92452a65de8395cfb9194bb71aa214eff6502fda5",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-03.png",
+      "sha256": "1827db4180a6a5d10997717e9fb90b7d49b038651f987bea2f8dabd978e7109b",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-010-image-01.png",
+      "sha256": "2e66800669abaa3b5c411e27ea50e7d3a3be5e1ece70afcaec4f35b06ace76cc",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-02.png",
+      "sha256": "7f276e671d95a5c5cbf6b84c3a2588da13bd924f320369e064a38181e8c323c8",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-03.png",
+      "sha256": "64f6b299683714e2bdf48972521ddb47e769b927cb150c8a7b65abda7771c550",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-04.png",
+      "sha256": "5595112cffa94588fb5f1d35027cb00af20ef29bd6ac6d42800316214ab63711",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    },
+    {
+      "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-05.png",
+      "sha256": "481adc622139c568f750a2fa57f7f0be26a20d3da620b5cca81ab345255ee294",
+      "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+    }
+  ],
+  "units": [
+    {
+      "unit": 1,
+      "kind": "page",
+      "original_text": "Agent Network Protocol\n\n\n\n     Redefining Agent Connectivity and Collaboration\n\n\n\n          ANP Open Source Community\n            Gaowei Chang, James Waugh\n\n\n\n                        2025-02\n\n\n\n\n                                                          https://agent-network-protocol.com/",
+      "translation": "Agent Network Protocol\n\nエージェントの接続と協働を再定義する。\n\nANP Open Source Community\nGaowei Chang、James Waugh\n2025-02\nhttps://agent-network-protocol.com/",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 2,
+      "kind": "page",
+      "original_text": "Outline\n\n\n\n\n          This presentation will cover the following topics:\n\n              • Core Assumptions of ANP Design\n\n              • ANP Authentication Scheme\n\n              • ANP Identity Verification Process\n\n              • ANP Agent Description Scheme\n\n              • How to Build an AI-Accessible Data Network Using Agent Descriptions\n\n              • Demo Demonstration",
+      "translation": "目次\n\nこの発表では、次の話題を扱います。\n- ANP設計の基本的な前提\n- ANPの認証方式\n- ANPの身元検証の流れ\n- ANPのエージェント記述方式\n- エージェント記述を使ってAIがアクセス可能なデータネットワークを構築する方法\n- デモ実演",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 3,
+      "kind": "page",
+      "original_text": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents will replace existing software\n\n\n      • The personal assistant will replace humans in\n\n       accessing the internet.\n\n      • Agents will replace software services for\n\n       enterprises.\n\n      • Personal assistants will directly connect to\n\n       agents.\n\n\n\n\n\n                             A personal assistant is also an agent",
+      "translation": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェントが既存のソフトウェアを置き換えます。\n- パーソナルアシスタントが、人間に代わってインターネットにアクセスします。\n- エージェントが、企業向けのソフトウェアサービスを置き換えます。\n- パーソナルアシスタントが、エージェントに直接接続します。\n\nパーソナルアシスタントもエージェントの一種です。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のAgentは「エージェント」、Agentic Webは「エージェントによるWeb」を指します。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "図の追加ラベル：Assistant＝アシスタント。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 4,
+      "kind": "page",
+      "original_text": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents must be interconnected\n\n\n      • AI must have access to complete contextual\n\n       information.\n\n      • AI should be able to access all tool\n\n       capabilities.\n\n      • The connectivity between agents will have a\n\n      higher proportion.\n\n\n\n\n\n                            The current data silos on the internet hinder the full potential of AI.",
+      "translation": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェント同士を接続する必要があります。\n- AIは、完全な文脈情報にアクセスできなければなりません。\n- AIは、すべてのツールの機能にアクセスできるべきです。\n- エージェント間の接続が占める割合は、より大きくなります。\n\n現在のインターネットのデータサイロは、AIの潜在能力を十分に発揮する妨げとなっています。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のAgentは「エージェント」、Agentic Webは「エージェントによるWeb」を指します。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "図の追加ラベル：Assistant＝アシスタント。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 5,
+      "kind": "page",
+      "original_text": "Agentic Web：The Impact of Agents on the Internet\n\n\n\n\n    Agents interact with each other through protocols\n\n\n      • The most efficient way for AI to interact with\n\n       the internet.\n\n      • Computer Use is a transitional form.\n\n      • In the future, standardized agent\n\n      communication protocols will emerge.\n\n\n\n\n\n                                 Directly processing underlying data through protocols is the best way for\n                                         AI to interact with the internet.",
+      "translation": "Agentic Web：エージェントがインターネットに与える影響\n\nエージェントはプロトコルを通じて相互にやり取りします。\n- AIがインターネットとやり取りするうえで、最も効率的な方法です。\n- Computer Useは過渡的な形態です。\n- 将来、標準化されたエージェント通信プロトコルが登場します。\n\nプロトコルを通じて基礎となるデータを直接処理することが、AIとインターネットのやり取りの最善の方法です。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のAgentは「エージェント」、Agentic Webは「エージェントによるWeb」を指します。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "図の追加ラベル：Assistant＝アシスタント。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 6,
+      "kind": "page",
+      "original_text": "AgentNetworkProtocol(ANP)\n\n\n\n                Goal\n\n\n    HTTP/HTML of the Agentic Web\n\n\n\n\n                 Vision\n\n      Define the connectivity between agents\n\n         and build an open, secure, and\n\n          efficient collaboration network for\n\n                   billions of agents.",
+      "translation": "AgentNetworkProtocol（ANP）\n\n目標：Agentic WebのHTTP/HTMLになること。\n\nビジョン：エージェント間の接続を定義し、数十億のエージェントのために、オープンで安全かつ効率的な協働ネットワークを構築すること。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のAgentは「エージェント」、Agentic Webは「エージェントによるWeb」、Agent Network Protocolは「エージェントネットワークプロトコル」を指します。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "図の追加ラベル：Assistant＝アシスタント。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 7,
+      "kind": "page",
+      "original_text": "AgentNetworkProtocol(ANP)\n\n\n\n       • 🔒 Identity and Encrypted Communication Layer:\n        Based on W3C DID, it builds a decentralized identity\n\n          authentication solution with excellent scalability, capable\n\n         of supporting billions of users.\n\n       • 🌍 Meta-Protocol Layer: A meta-protocol is a protocol\n          for negotiating communication protocols between agents.\n\n             It is the key to the evolution of the agent network into an\n\n        autonomous, self-negotiating, and highly efficient\n\n          collaborative network.\n\n       • 📡 Application Protocol Layer: Based on Semantic Web\n          standards, it enables agents to describe their public\n\n         information, available capabilities, and supported\n\n          interfaces. Using this information, other agents can\n\n         discover and interact with them.\n\n\n\n\n                                 Today, we will focus on the identity layer and the application layer.",
+      "translation": "AgentNetworkProtocol（ANP）\n\n- アイデンティティ・暗号化通信層：W3C DIDを基盤に、優れた拡張性を持ち、数十億の利用者に対応できる分散型の身元認証方式を構築します。\n- メタプロトコル層：メタプロトコルは、エージェント間の通信プロトコルを交渉するためのプロトコルです。エージェントネットワークが、自律的で、自ら交渉し、効率よく協働するネットワークへ発展するための鍵となります。\n- アプリケーションプロトコル層：セマンティックWeb標準に基づき、エージェントが公開情報、利用可能な機能、対応インターフェースを記述できるようにします。他のエージェントは、この情報を使って発見し、やり取りできます。\n\n本日は、アイデンティティ層とアプリケーション層を中心に説明します。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のラベル：Standard Protocol＝標準プロトコル、Consensus Protocol＝合意によるプロトコル、Personalized Protocol＝個別化したプロトコル、Agent Description Specification＝エージェント記述仕様、APP Protocol Specification＝アプリケーションプロトコル仕様、Application Protocol Layer＝アプリケーションプロトコル層、Protocol Negotiation＝プロトコル交渉、Protocol Debugging＝プロトコルのデバッグ、Protocol Testing＝プロトコルのテスト、Meta-Protocol Layer＝メタプロトコル層、Identity＝アイデンティティ、E2E＝エンドツーエンド、W3C DID、Identity and Encrypted Communication Layer＝アイデンティティ・暗号化通信層。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 8,
+      "kind": "page",
+      "original_text": "Goals and Principles of Agent Identity Design\n\n\n\n\n\n       Goals                                                         Principles\n\n           • All agents can authenticate each other's                                                                                • Decentralization: Identity should not be\n            identity.                                                                 provided by a few vendors.\n\n                                                                                • Interoperability: Identities between\n\n                                                                            different systems should be easily\n\n                                                                      authenticated with each other.\n\n                                                                                • Scalability: The system should support\n\n                                                                         large-scale user usage.\n\n\n\n\n\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/",
+      "translation": "エージェントのアイデンティティ設計の目標と原則\n\n目標：すべてのエージェントが、互いの身元を認証できること。\n\n原則：\n- 分散性：アイデンティティを少数のベンダーだけが提供するべきではありません。\n- 相互運用性：異なるシステムのアイデンティティを、互いに容易に認証できるべきです。\n- 拡張性：大規模な利用者数に対応できるべきです。\n\nW3C DID（Decentralized Identifier）仕様：https://www.w3.org/TR/did-core/",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [
+        "https://www.w3.org/TR/did-core/"
+      ],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 9,
+      "kind": "page",
+      "original_text": "W3C DID\n\n\n\n\n    What is DID:\n\n      •  Full Name: Decentralized Identifier\n\n      •  Definition: A user-controlled, self-sovereign digital\n        identity identifier, widely applicable in decentralized\n       systems.\n\n      •  Officially became a W3C Recommendation in 2022.\n\n\n\n     Features of DID:\n\n        •  Decentralized Identity: Users manage their identity\n          independently, avoiding reliance on centralized service\n          providers.\n\n        •  Interoperability: Supports cross-platform usage,\n         enhancing compatibility between different systems.\n\n        •  Privacy and Security: Ensures the privacy and security\n          of user identity data, preventing abuse.\n\n        •  Typical Application: Bluesky.\n                                                                                 W3C DID(Decentralized Identifier)规范：https://www.w3.org/TR/did-core/",
+      "translation": "W3C DID\n\nDIDとは：\n- 正式名称はDecentralized Identifier（分散型識別子）です。\n- 利用者が制御する、自己主権型のデジタルアイデンティティの識別子であり、分散型システムに幅広く適用できます。\n- 2022年に正式なW3C勧告となりました。\n\n特徴：\n- 分散型アイデンティティ：利用者が自分で管理し、中央集権的なサービス提供者への依存を避けます。\n- 相互運用性：プラットフォームをまたいで利用でき、異なるシステム間の互換性を高めます。\n- プライバシーとセキュリティ：利用者の身元データのプライバシーと安全性を確保し、悪用を防ぎます。\n- 代表的な適用例：Bluesky。\n\nW3C DID（Decentralized Identifier）仕様：https://www.w3.org/TR/did-core/",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中文字：EXAMPLE 1: A simple DID document＝例1：簡単なDID文書。コード内コメント「used to authenticate as did:...fghi」は「did:...fghiとして認証するために使用」。Scheme＝スキーム、DID Method＝DIDメソッド、DID Method-Specific Identifier＝DIDメソッド固有識別子、DID subject＝DID主体、DID URL、DID controller＝DID制御者、DID document＝DID文書、Verifiable Data Registry＝検証可能データレジストリ。矢印のrefers to＝参照する、contains＝含む、resolves to＝解決する、refers, and dereferences, to＝参照し参照解決する、recorded on＝記録される、controls＝制御する。コードのフィールド名、DID、公開鍵などは翻訳せず、抽出した原画像で保持します。",
+      "hyperlinks": [
+        "https://www.w3.org/TR/did-core/"
+      ],
+      "source_code_assets": [
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-01.png",
+          "sha256": "9e3b03638b0ff0f0bf9ae581414c5d7f92c5af1f0b7c38cfcff87b8e28895088",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-02.png",
+          "sha256": "07d7dbccccbe271fd0d126d92452a65de8395cfb9194bb71aa214eff6502fda5",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-009-image-03.png",
+          "sha256": "1827db4180a6a5d10997717e9fb90b7d49b038651f987bea2f8dabd978e7109b",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        }
+      ],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "コードの識別子・鍵・URLは原画像で保持。コード全文の手動転記は実施せず、OCR文字列を正式なコードとして使用していない。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 10,
+      "kind": "page",
+      "original_text": "DID Method：Web-Based Agent\n\n\n\n\n\n   Method Design Principles:\n\n    • Do not pursue complete decentralization, feasibility is\n\n       prioritized over decentralization features.\n\n    •  Reuse existing web infrastructure to reduce implementation\n\n       costs.\n\n    •  Build upon the existing did:web method and add agent-related\n\n       features.\n\n\n\n   Did:wba DID Defines：\n   did:wba:example.com:user:alice\n   -> https://example.com/user/alice/did.json",
+      "translation": "DIDメソッド：Web-Based Agent\n\nメソッド設計の原則：\n- 完全な分散化を追求せず、分散性よりも実現可能性を優先します。\n- 既存のWeb基盤を再利用し、実装コストを下げます。\n- 既存のdid:webメソッドを基礎に、エージェント関連の機能を追加します。\n\ndid:wbaのDID定義：\n`did:wba:example.com:user:alice`\n→ `https://example.com/user/alice/did.json`",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "DID文書のコード画像には、`@context`、`id`、`verificationMethod`、`authentication`、`keyAgreement`、`service`などが示されています。コードの識別子、公開鍵、URL、値は翻訳・再生成せず、抽出した原画像のまま保持します。OCRの鍵文字列には誤認識があるため、OCR出力を正式なコード転記として使用していません。",
+      "hyperlinks": [],
+      "source_code_assets": [
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-010-image-01.png",
+          "sha256": "2e66800669abaa3b5c411e27ea50e7d3a3be5e1ece70afcaec4f35b06ace76cc",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        }
+      ],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "コードの識別子・鍵・URLは原画像で保持。コード全文の手動転記は実施せず、OCR文字列を正式なコードとして使用していない。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 11,
+      "kind": "page",
+      "original_text": "CURD Operations of did:wba\n\n\n               www.alice.com                                                                   www.bob.com\n\n\n\n                                                             https://alice.com/user/did.json        did:wba:alice.com:user                                                                                                                                                                        Create       Update     Deactivate         Create       Update     Deactivate            Read\n\n\n\n\n                                                     did:wba:bob.com:user          https://bob.com/user/did.json                                                                                                                      Read\n\n\n\n\n\n                                                                                                                                                                                       Private Keys         DID Document            Private Keys         DID Document\n\n\n\n\n\n     CURD Operations:                                                               Method Features:\n            •  Create (Register): Defined by the implementer.                                                                                                      •  Fully utilizes existing web infrastructure, capable of\n            •  Read (Parse): Use the HTTP GET method to retrieve                        serving billions of users.\n              the DID document.                                                                                                      •  Achieves decentralization and interoperability of agent\n            •  Update: Defined by the implementer.                                               identities.\n\n            •  Deactivate (Revoke): Defined by the implementer.                            •  The method is similar to the existing Email service.",
+      "translation": "did:wbaのCURD操作（原文表記）\n\n図中のドメインと識別子：\n- `www.alice.com`、`did:wba:alice.com:user`、`https://alice.com/user/did.json`\n- `www.bob.com`、`did:wba:bob.com:user`、`https://bob.com/user/did.json`\n\n操作：\n- Create（登録）：実装者が定義します。\n- Read（解決）：HTTP GETメソッドでDID文書を取得します。\n- Update（更新）：実装者が定義します。\n- Deactivate（失効）：実装者が定義します。\n\n図中のPrivate Keysは秘密鍵、DID DocumentはDID文書を指します。\n\nメソッドの特徴：\n- 既存のWeb基盤を十分に利用し、数十億の利用者に対応できます。\n- エージェントのアイデンティティの分散性と相互運用性を実現します。\n- 既存の電子メールサービスに似た方式です。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [
+        "https://alice.com/user/did.json",
+        "https://bob.com/user/did.json"
+      ],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 12,
+      "kind": "page",
+      "original_text": "DID:wba Method Identity Verification Process\n\n\n\n\n                                                                                                                                                             Agent B\n  • A calls the API to subscribe to B's service, and\n  B records A's DID.\n\n  • A includes its DID and signature in the HTTP\n   header during the first HTTP request.\n\n  • When B receives the HTTP request, it extracts\n   A's DID and signature from the HTTP header,\n   then retrieves A's DID document from A's DID\n   server using A's DID.\n\n                                                                    Authorization: DID <did> Nonce <abc123> Timestamp\n  • After B obtains A's DID document, it uses the\n                                                             <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature\n   public key from A's DID document to verify                                                                  <base64url(signature)>                                                                       use the public key in the\n   A's signature.                                                                                                                                DID document to verify\n                                                                                                                                                                the signature\n                                                                                                                                   generate\n                                                          Use the private key to generate a signature\n  • Once the verification is successful, B processes                                                                                      the token\n   A's business request and returns the business\n   data along with an access token.\n\n  • In subsequent requests, A includes the access                                       use the token to\n                                                                                                                        initiate subsequent\n   token, and B verifies A's identity by validating                                             requests\n   the access token.\n\n\n\n                                                         Features: Supports automatic registration; simple process with minimal interaction;\n\n                                                             equivalent security to traditional methods.",
+      "translation": "DID:wbaメソッドによる身元検証の流れ\n\n- AはAPIを呼び出してBのサービスを購読し、BはAのDIDを記録します。\n- Aは最初のHTTPリクエストのHTTPヘッダーに、自分のDIDと署名を含めます。\n- Bはリクエストを受信すると、ヘッダーからAのDIDと署名を取り出し、AのDIDを使ってAのDIDサーバーからDID文書を取得します。\n- BはAのDID文書内の公開鍵を使い、Aの署名を検証します。\n- 検証に成功すると、BはAの業務リクエストを処理し、業務データとアクセストークンを返します。\n- 以後のリクエストでは、Aはアクセストークンを含め、Bはその有効性を検証してAの身元を確認します。\n\nヘッダー例（歴史的な方式を原文どおり保持）：\n`Authorization: DID <did> Nonce <abc123> Timestamp <2024-12-05T12:34:56Z> VerificationMethod <key-1> Signature <base64url(signature)>`\n\n図中の処理：秘密鍵を使った署名生成、DID文書内の公開鍵を使った署名検証、トークン生成、トークンを用いた後続リクエストの開始。\n\n特徴：自動登録に対応し、やり取りが少ない単純な流れで、従来方式と同等の安全性を持ちます。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "認証シーケンス図の画像を拡大して確認しました。User＝利用者、Agent A Client＝エージェントAのクライアント、Github＝GitHub、Agent A DID Sever（原図の綴り）＝エージェントAのDIDサーバー。Preliminary Operation＝事前の操作。Subscribe to the service＝サービスを購読する。Subscribe to the service using DID＝DIDを使ってサービスを購読する。First Request＝初回の要求。HTTP Request: DID,Signature＝HTTP要求：DIDと署名。Get DID Document＝DID文書を取得する。DID Document＝DID文書。Authentication＝認証。HTTP Response: token＝HTTP応答：トークン。Subsequent Requests＝以降の要求。HTTP Request: token＝HTTP要求：トークン。HTTP Response＝HTTP応答。\n\n隣のJSON画像には`nonce`、`timestamp`、`service`、`did`と例示値があり、人向け説明文はありません。これらの技術値は原画像のまま保持します。この図は発表当時の認証フローであり、現在仕様への更新ではありません。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 13,
+      "kind": "page",
+      "original_text": "Unresolved Issues\n\n\n\n\n             • For user permissions, how can we implement more granular permission control,\n             instead of using a single ID for communication with all agents?\n\n             • How can we determine whether a request from an agent has been manually\n            authorized by the user? Some sensitive actions should not be initiated\n           autonomously by the agent.\n\n             • How can we ensure that the user has full ownership of their identity, rather than\n             relying on permissions granted by the platform?",
+      "translation": "未解決の課題\n\n- すべてのエージェントとの通信に一つのIDを使うのではなく、利用者の権限をさらに細かく制御するにはどうすればよいでしょうか。\n- エージェントのリクエストが、利用者本人によって承認されたかをどう判断すればよいでしょうか。機密性の高い一部の操作を、エージェントが自律的に開始するべきではありません。\n- プラットフォームから付与された権限に依存せず、利用者が自分のアイデンティティを完全に所有するにはどうすればよいでしょうか。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 14,
+      "kind": "page",
+      "original_text": "Agent Description Protocol(ADP)\n\n\n\n                                         What information does an agent description  What is an Agent Description Protocol?\n                                              document contain?\n\n   • Used to define the Agent Description Document.                  • An agent description includes the identity of the entity\n\n                                                                         to which the agent belongs, the owner, authentication\n   • The agent description document can be seen as an\n                                                              methods, external interfaces, and public information\n     entry point for the agent, similar to the homepage of a\n                                                                about the entity.\n    website. Through this homepage, all aspects of the\n\n    website can be accessed.                                             • For example, if the agent represents a coffee shop, the\n\n                                                                     publicly available information would include the\n\n                                                                          location, business hours, product list, purchase\n\n                                                                            interface, and other related details..",
+      "translation": "Agent Description Protocol（ADP）\n\nエージェント記述プロトコルとは：\n- Agent Description Documentを定義するために使います。\n- エージェント記述文書は、Webサイトのホームページのように、エージェントへの入り口と見なせます。この入り口から、サイトのあらゆる側面にアクセスできます。\n\nエージェント記述文書に含まれる情報：\n- エージェントが属する実体のアイデンティティ、所有者、認証方法、外部インターフェース、その実体の公開情報。\n- 例えば、エージェントがコーヒーショップを代表する場合、公開情報には所在地、営業時間、商品一覧、購入インターフェースなどが含まれます。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 15,
+      "kind": "page",
+      "original_text": "Core Principles of ADP Design\n\n\n\n\n\n                • AI-Oriented Design: Specifically designed for AI, making it easier for AI to access.\n\n                • Semi-Structured Protocol: Overall, it is a structured design that facilitates\n              programmatic processing; fields can contain natural language, making it easier to\n             convey personalized information.\n\n                • Multi-Agent Consensus: Enhances the consistency of agents' understanding of data\n               semantics.\n\n\n\n\n\n                                In theory, as long as the intelligence is strong enough, ADP could entirely\n                              use natural language. However, this approach has many drawbacks, such\n                                     as cost, the probability of errors at the current stage, and so on.",
+      "translation": "ADP設計の基本原則\n\n- AIを対象とする設計：AIからのアクセスを容易にするため、AI向けに特化して設計します。\n- 半構造化プロトコル：全体としてプログラム処理しやすい構造化設計としつつ、フィールドに自然言語を含めて個別の情報を伝えやすくします。\n- 複数エージェント間の合意：データの意味に関するエージェントの理解の一貫性を高めます。\n\n理論的には、十分な知能があればADPをすべて自然言語にすることも可能です。ただし、コストや現段階での誤りの確率など、多くの欠点があります。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 16,
+      "kind": "page",
+      "original_text": "ADP Design Scheme\n\n\n\n            • Linked-Data: Using Linked-Data technology, the information of agents is linked together. The agent\n\n            description document serves as the entry point for all the information about the agent, and from this\n\n            entry point, all the agent's information can be traversed. In terms of document format, we use Json-LD\n\n            as the primary format.\n\n            • Schema.org: The fields in Json-LD extensively use the predefined fields of Schema.org. If there are\n\n          any undefined fields, they will be added with a definition. This ensures consistency in how multiple\n\n            agents interpret the same field, while also making it easier for programs to process.\n\n            • The specification is divided into two parts: one is the core ADP specification, which describes the\n\n            core framework and structure of ADP; the other part consists of AD examples for each domain. For\n\n           example, an AD document for a coffee shop, where other agents can refer to this example to generate\n\n              their own.",
+      "translation": "ADPの設計方式\n\n- Linked-Data：Linked-Data技術を使って、エージェントの情報を相互に結び付けます。エージェント記述文書をそのエージェントの全情報への入り口とし、そこから全情報をたどれるようにします。文書形式には主にJson-LDを使います。\n- Schema.org：Json-LDのフィールドでは、Schema.orgがあらかじめ定義したフィールドを広く使います。未定義のものは定義を追加します。複数のエージェントが同じフィールドを一貫して解釈でき、プログラム処理もしやすくなります。\n- 仕様は二つに分かれます。一つはADPの中心的な枠組みと構造を記述するコアADP仕様、もう一つは分野別のAD例です。例えばコーヒーショップのAD文書を例に、他のエージェントが自分の文書を生成できます。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 17,
+      "kind": "page",
+      "original_text": "AD Document Example\n\n\n      Example URL: https://github.com/chgaowei/AgentNetworkProtocol/blob/main/examples/adp/lkcoffe/ad.json\n\n                                                                           Domain entities corresponding to the agent             Identity authentication information\n\n\n\n\n\n        External interfaces, including natural language\n                 interfaces and purchased APIs\n\n                                                                                        Products provided by the entity to the outside world",
+      "translation": "AD文書の例\n\n例のURL：https://github.com/chgaowei/AgentNetworkProtocol/blob/main/examples/adp/lkcoffe/ad.json\n\n注釈：\n- エージェントに対応する分野の実体。\n- 身元認証情報。\n- 自然言語インターフェースや購入APIを含む外部インターフェース。\n- 実体が外部へ提供する商品。\n\nコード画像内のフィールドと値は、原本の画像を参照してください。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "コード画像の可読部分の説明：認証方式は`didwba`、ヘッダー名は`Authorization`。分野の実体は`CafeOrCoffeeShop`で、名前は`Luckin Coffee`、住所は`PostalAddress`、`XX Road No.XX`、`Some City`、`Some Province`、郵便番号`123456`、国コード`CN`という例示値です。日本語ではコーヒーショップ、住所、通り、都市、省、郵便番号、国に相当します。商品名`Silk Latte`はシルクラテです。`NaturalLanguageInterface`は自然言語インターフェース、`PurchaseInterface`は購入インターフェースです。descriptionの「A YAML file for interacting with ...」は「…とやり取りするためのYAMLファイル」、「Made with high-quality ...」は「高品質の…を使って作られた」を意味します。これらのdescriptionと一部URLは原画像自体の右端で切れており、見えない続きを補っていません。コードの識別子・値は原画像を保持します。",
+      "hyperlinks": [
+        "https://github.com/chgaowei/AgentNetworkProtocol/blob/main/examples/adp/lkcoffe/ad.json"
+      ],
+      "source_code_assets": [
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-02.png",
+          "sha256": "7f276e671d95a5c5cbf6b84c3a2588da13bd924f320369e064a38181e8c323c8",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-03.png",
+          "sha256": "64f6b299683714e2bdf48972521ddb47e769b927cb150c8a7b65abda7771c550",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-04.png",
+          "sha256": "5595112cffa94588fb5f1d35027cb00af20ef29bd6ac6d42800316214ab63711",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        },
+        {
+          "path": "japanese/assets/documents/source-code-images/w3c-page-017-image-05.png",
+          "sha256": "481adc622139c568f750a2fa57f7f0be26a20d3da620b5cca81ab345255ee294",
+          "disposition": "original-code-and-diagram-pixels-retained-untranslated"
+        }
+      ],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "コードの識別子・鍵・URLは原画像で保持。コード全文の手動転記は実施せず、OCR文字列を正式なコードとして使用していない。",
+        "原画像自体で一部descriptionとURLの右端が切れている。原資料から見えない文字列は復元していない。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 18,
+      "kind": "page",
+      "original_text": "Interaction Flow\n\n\n\n\n\n                   • We have placed the agent description document link in the DID document, meaning that as long as\n                  there is a DID, the agent description document can be found.\n\n                   • In the future, there will be a data network that makes it easier for AI to access.",
+      "translation": "やり取りの流れ\n\n- DID文書内にエージェント記述文書へのリンクを配置しているため、DIDさえあればエージェント記述文書を見つけられます。\n- 将来は、AIがよりアクセスしやすいデータネットワークが形成されます。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のラベル：AgentSearch＝エージェント検索、DNS、DID、DIDDocument＝DID文書、Agent.com、HTML/CSS/JS、Protocol＝プロトコル、Capacity＝機能、Agent Description＝エージェント記述。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 19,
+      "kind": "page",
+      "original_text": "Others\n\n\n\n\n                     • Supporting ADP during LLM training: ADs specifications, along with\n               examples and interfaces from various industries, can be incorporated\n                    into the LLM through training data or fine-tuning. This enhances the\n               LLM's speed and accuracy in processing ADP and reduces the length\n                   of prompts required.\n\n                     • Agents can independently define and upload AD document examples\n                     for reference by other agents. The specification examples defined by\n                agents may surpass those defined by humans.",
+      "translation": "その他\n\n- LLMの学習時にADPを取り込む：ADの仕様と、各業界の例やインターフェースを、学習データやファインチューニングを通じてLLMに組み込めます。これにより、LLMによるADP処理の速度と精度が上がり、必要なプロンプトの長さを減らせます。\n- エージェントが自分でAD文書の例を定義・アップロードし、他のエージェントが参照できます。エージェントの定義する仕様例が、人間の定義したものを上回る可能性があります。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 20,
+      "kind": "page",
+      "original_text": "Demo Presentation\n\n\n\n\n\n               Through the coffee ordering scenario, demonstrate how a\n               personal assistant interacts with the coffee shop's agent using\n                      DID and AgentDescription.",
+      "translation": "デモ実演\n\nコーヒー注文の場面を通じて、パーソナルアシスタントがDIDとAgentDescriptionを使い、コーヒーショップのエージェントとやり取りする様子を示します。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 21,
+      "kind": "page",
+      "original_text": "Code\n\n\n\n\n\n                    ANP Open Source Code: https://github.com/chgaowei/AgentConnect",
+      "translation": "コード\n\nANPのオープンソースコード：https://github.com/chgaowei/AgentConnect",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": "図中のラベル：Application Layer Protocol Integration Framework＝アプリケーション層のプロトコル統合フレームワーク。Protocol Loading／Unloading／Configuration／Running＝プロトコルの読み込み／取り外し／設定／実行。Scalable Protocol Framework＝拡張可能なプロトコルフレームワーク。Meta-Protocol Module＝メタプロトコルモジュール。Protocol Negotiation／Implementation／Debug／Handling＝プロトコルの交渉／実装／デバッグ／処理。LLM、API。Identity＝アイデンティティ。DID Generate＝DID生成。DID Authentication＝DID認証。End-to-End Encryption＝エンドツーエンド暗号化。ECDHE。Asymmetric Encryption＝非対称暗号。",
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "page-or-enlarged-figure-reviewed-supplement-added",
+      "ocr_status": "local-ocr-assisted-readable-labels-visually-checked",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 22,
+      "kind": "page",
+      "original_text": "Thanks\n\n\n\n\n\n      The historical meeting records of WebAgents provide valuable\n                  resources and inspiration for our design.",
+      "translation": "謝辞\n\nWebAgentsの過去の会議記録は、設計のための貴重な資料と着想を提供してくれました。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 23,
+      "kind": "page",
+      "original_text": "Finally\n\n\n\n\n\n     ANP is still in its early stages, and if possible, we are willing\n          to contribute ANP and continue improving it together with\n                       everyone in WebAgents.",
+      "translation": "最後に\n\nANPはまだ初期段階にあります。可能であればANPを提供し、WebAgentsの皆さんと一緒に改善を続けたいと考えています。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 24,
+      "kind": "page",
+      "original_text": "Q&A\n\n\n\n\n\n                          Question & Answer",
+      "translation": "Q&A\n\n質疑応答。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    }
+  ],
+  "visual_follow_up": {
+    "record": "japanese/assets/documents/visual-follow-up.json",
+    "media_assets": [
+      {
+        "source": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+        "pages": [
+          12
+        ],
+        "dimensions": [
+          1172,
+          960
+        ],
+        "sha256": "e9401d87872169cf88288b9f5abf919bbbbd680db9f02f165c24a9f40f87fd4b",
+        "path": "japanese/assets/documents/source-figure-images/asset-011.png",
+        "visual_status": "readable-prose-manually-translated",
+        "local_ocr_label_count": 20,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      }
+    ],
+    "native_rendering": "pdf-page-rendering-used",
+    "additional_translation_units": [
+      3,
+      4,
+      5,
+      6,
+      12
+    ],
+    "full_visual_verification_complete": false
+  }
+}

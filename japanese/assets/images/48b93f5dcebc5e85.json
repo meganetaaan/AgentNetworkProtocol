@@ -1,0 +1,164 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page22.jpg",
+  "sha256": "48b93f5dcebc5e853e244eed2e2f0fdc38327fddf2a322f51bbc41cb371b3630",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Thanks",
+      "confidence": 0.9858405292034149,
+      "box": [
+        [
+          33.67741775512695,
+          42.81428527832031
+        ],
+        [
+          291.4838562011719,
+          42.81428527832031
+        ],
+        [
+          291.4838562011719,
+          113.4000015258789
+        ],
+        [
+          33.67741775512695,
+          113.4000015258789
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9862425327301025,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          85.62857055664062
+        ],
+        [
+          2154.193603515625,
+          85.62857055664062
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "The historical meeting records of WebAgents provide valuable",
+      "confidence": 0.9911936342716217,
+      "box": [
+        [
+          240.3870849609375,
+          569.3142700195312
+        ],
+        [
+          2058.9677734375,
+          571.6286010742188
+        ],
+        [
+          2058.9677734375,
+          651.471435546875
+        ],
+        [
+          240.3870849609375,
+          649.1571655273438
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "WebAgents"
+      ]
+    },
+    {
+      "source": "resources and inspiration for our design.",
+      "confidence": 0.9995988142199632,
+      "box": [
+        [
+          559.741943359375,
+          657.2571411132812
+        ],
+        [
+          1733.806396484375,
+          664.2000122070312
+        ],
+        [
+          1733.806396484375,
+          735.94287109375
+        ],
+        [
+          559.741943359375,
+          729.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Thanks\n\n\n\n\n\n      The historical meeting records of WebAgents provide valuable\n                  resources and inspiration for our design.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L005",
+      "japanese": "謝辞\n\nWebAgentsの過去の会議記録は、設計のための貴重な資料と着想を提供してくれました。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.3425531999673694,
+    0.005716800689697266,
+    0.9530525207519531
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 22,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-22",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 0.5791030092592593,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 22,
+    "manual_label_translations": {
+      "Thanks\n\n\n\n\n\n      The historical meeting records of WebAgents provide valuable\n                  resources and inspiration for our design.": "謝辞\n\nWebAgentsの過去の会議記録は、設計のための貴重な資料と着想を提供してくれました。"
+    },
+    "additional_labels": [
+      {
+        "source": "Thanks\n\n\n\n\n\n      The historical meeting records of WebAgents provide valuable\n                  resources and inspiration for our design.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Thanks",
+      "ANP",
+      "The historical meeting records of WebAgents provide valuable",
+      "resources and inspiration for our design."
+    ],
+    "source_sha256": "48b93f5dcebc5e853e244eed2e2f0fdc38327fddf2a322f51bbc41cb371b3630"
+  }
+}

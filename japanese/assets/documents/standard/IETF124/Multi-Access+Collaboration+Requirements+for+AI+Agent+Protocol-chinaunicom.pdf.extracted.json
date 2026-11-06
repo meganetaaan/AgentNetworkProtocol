@@ -1,0 +1,546 @@
+{
+  "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+  "source_sha256": "fb90c97bc40f8d6df8fffe3815b66cbe47103751a8f2ff02e82e0f8132b2214a",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "format": "pdf",
+  "units": [
+    {
+      "unit": 1,
+      "kind": "page",
+      "text": "Multi-Access Collaboration\nRequirements for AI Agent Protocol\n\n\n                           2025-11\n   LIU WEI, ZHANG YAOMIN, HAN MENGYAO (CHINA UNICOM)\n                  Email: liuw550@chinaunicom.cn",
+      "text_characters": 199,
+      "embedded_images": 0,
+      "image_regions": [],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-001.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 2,
+      "kind": "page",
+      "text": "What Multi-Access Collaboration Cares About\n\n\n• Introduction\n\n• The multi-access collaboration scenarios\n\n• The requirements for AI agent communication protocols",
+      "text_characters": 161,
+      "embedded_images": 0,
+      "image_regions": [],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-002.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 3,
+      "kind": "page",
+      "text": "Multi-Access Collaboration and Service\n\n•  With the rapid development of terminal technology and the popularization of multi-scenario networking\n   requirements, scenarios such as remote home security monitoring, remote work, and 3GPP and non-\n  3GPP access have gradually become core user needs.\n\n\n\n         Home Security                 Remote Work                   Hybrid Access",
+      "text_characters": 382,
+      "embedded_images": 21,
+      "image_regions": [
+        {
+          "bbox": [
+            102.5999984741211,
+            328.79998779296875,
+            156.36000061035156,
+            365.2799987792969
+          ],
+          "width": 85,
+          "height": 62
+        },
+        {
+          "bbox": [
+            142.32000732421875,
+            333.239990234375,
+            189.60000610351562,
+            363.9599914550781
+          ],
+          "width": 75,
+          "height": 52
+        },
+        {
+          "bbox": [
+            99.5999984741211,
+            365.2799987792969,
+            199.1999969482422,
+            419.760009765625
+          ],
+          "width": 183,
+          "height": 107
+        },
+        {
+          "bbox": [
+            206.0399932861328,
+            339.0,
+            276.7200012207031,
+            405.0
+          ],
+          "width": 211,
+          "height": 246
+        },
+        {
+          "bbox": [
+            636.5999755859375,
+            338.0400085449219,
+            720.719970703125,
+            410.6400146484375
+          ],
+          "width": 300,
+          "height": 207
+        },
+        {
+          "bbox": [
+            731.6400146484375,
+            338.0400085449219,
+            825.47998046875,
+            410.6400146484375
+          ],
+          "width": 300,
+          "height": 183
+        },
+        {
+          "bbox": [
+            363.8489990234375,
+            331.5489807128906,
+            452.843017578125,
+            419.5929870605469
+          ],
+          "width": 271,
+          "height": 269
+        },
+        {
+          "bbox": [
+            451.79998779296875,
+            336.96002197265625,
+            552.719970703125,
+            414.6000061035156
+          ],
+          "width": 951,
+          "height": 599
+        },
+        {
+          "bbox": [
+            119.322998046875,
+            298.197021484375,
+            159.05599975585938,
+            311.3680114746094
+          ],
+          "width": 121,
+          "height": 40
+        },
+        {
+          "bbox": [
+            114.2229995727539,
+            308.9969787597656,
+            163.8939971923828,
+            319.9679870605469
+          ],
+          "width": 151,
+          "height": 33
+        },
+        {
+          "bbox": [
+            212.47300720214844,
+            303.9469909667969,
+            242.44400024414062,
+            314.51800537109375
+          ],
+          "width": 91,
+          "height": 32
+        },
+        {
+          "bbox": [
+            242.572998046875,
+            303.8470153808594,
+            264.9440002441406,
+            314.51800537109375
+          ],
+          "width": 68,
+          "height": 32
+        },
+        {
+          "bbox": [
+            393.9729919433594,
+            298.09698486328125,
+            424.1940002441406,
+            309.1679992675781
+          ],
+          "width": 92,
+          "height": 33
+        },
+        {
+          "bbox": [
+            376.822998046875,
+            308.9969787597656,
+            441.04400634765625,
+            319.9679870605469
+          ],
+          "width": 196,
+          "height": 33
+        },
+        {
+          "bbox": [
+            471.572998046875,
+            303.9469909667969,
+            480.843994140625,
+            314.4179992675781
+          ],
+          "width": 28,
+          "height": 31
+        },
+        {
+          "bbox": [
+            477.4230041503906,
+            304.4469909667969,
+            509.4440002441406,
+            314.51800537109375
+          ],
+          "width": 97,
+          "height": 30
+        },
+        {
+          "bbox": [
+            509.12298583984375,
+            303.8470153808594,
+            518.093994140625,
+            314.51800537109375
+          ],
+          "width": 27,
+          "height": 32
+        },
+        {
+          "bbox": [
+            515.1729736328125,
+            303.5469970703125,
+            545.6939697265625,
+            314.51800537109375
+          ],
+          "width": 93,
+          "height": 33
+        },
+        {
+          "bbox": [
+            654.322998046875,
+            298.49700927734375,
+            704.5440063476562,
+            309.1679992675781
+          ],
+          "width": 153,
+          "height": 32
+        },
+        {
+          "bbox": [
+            662.2730102539062,
+            309.39697265625,
+            695.843994140625,
+            319.9679870605469
+          ],
+          "width": 102,
+          "height": 32
+        },
+        {
+          "bbox": [
+            748.9730224609375,
+            303.8470153808594,
+            808.843994140625,
+            314.51800537109375
+          ],
+          "width": 182,
+          "height": 32
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-003.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 4,
+      "kind": "page",
+      "text": "Multi-Access Collaboration & AI Agent\n\n •  Collaborative interaction between different AI agents is the key to realizing service value\n\n\n\n\n\n•  Mobile AI agents need to interact with camera AI agents to transmit real-time images;\n•  In the scenario of mixed access between fixed and mobile networks, the mobile terminal AI agent needs to\n   rely on the fixed network gateway to achieve seamless network switching and dynamic bandwidth\n   allocation.\n•  The effective collaboration of different AI agents faces problems such as agent Identity transformation,\n   multimodality data exchange, insufficient security verification and etc.\n                                                      draft-liu-access-collaboration-agent",
+      "text_characters": 723,
+      "embedded_images": 2,
+      "image_regions": [
+        {
+          "bbox": [
+            255.47999572753906,
+            149.8800048828125,
+            414.0,
+            313.44000244140625
+          ],
+          "width": 317,
+          "height": 327
+        },
+        {
+          "bbox": [
+            478.0799865722656,
+            149.8800048828125,
+            640.0799560546875,
+            313.44000244140625
+          ],
+          "width": 324,
+          "height": 327
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-004.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 5,
+      "kind": "page",
+      "text": "The Multi-Access Collaboration Scenarios\n\np   Home Security\n In the scenario of remote access for home security, remote care for the elderly, children, and pets is achieved\n through the collaboration between mobile terminal AI agents and home fixed network device AI agents (such as\n cameras, NAS, printers, pet sensors). In the home security scenario, the participating roles include UE\n agent responsible for sending and receiving requests, and home device agents executing instructions.\n\n•  User want to check on elderly family members, they can\n   adjust the home camera's view via their smartphone. If\n  any anomalies are detected, the NAS device will trigger\n   video recording.\n• When remotely printing documents for children while\n  away from home, users can activate the home printer via\n   their smartphone.                              UE         Agent      AI Agent for Home\n•  During routine monitoring by the home camera, abnormal     Agent      Gateway   Network Equipment\n   pet activity will trigger alerts pushed to the user's\n  smartphone.",
+      "text_characters": 1058,
+      "embedded_images": 5,
+      "image_regions": [
+        {
+          "bbox": [
+            548.4000244140625,
+            327.1199951171875,
+            608.280029296875,
+            387.0
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            694.0800170898438,
+            330.239990234375,
+            741.8400268554688,
+            378.0
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            754.2000122070312,
+            327.1199951171875,
+            820.5599975585938,
+            393.47998046875
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            812.52001953125,
+            333.8399963378906,
+            875.280029296875,
+            396.6000061035156
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            881.47998046875,
+            338.1600036621094,
+            930.3200073242188,
+            387.0
+          ],
+          "width": 200,
+          "height": 200
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-005.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 6,
+      "kind": "page",
+      "text": "The Multi-Access Collaboration Scenarios\n\np   Remote Work\n In remote work scenarios, efficient telecommuting is achieved through the collaboration between terminal AI\n agents (such as mobile phones and laptops) and office equipment AI agents (including cloud desktops, printers,\n video conferencing terminals, and file-sharing servers). The participating roles are employees who operate\n terminal AI agents, terminal AI agents responsible for sending and receiving instructions, and office\n equipment AI agents that execute tasks.\n\n• When employees need to work remotely, they initiate an\n  access request through the terminal AI agent to quickly\n   connect to the cloud desktop and synchronize their\n   personal office environment and data.\n                                                                                     Agent for Office•  The terminal AI agent can automatically verifies                                   Enterprise Branch                                                                                                                                                     .....                                                                                      Equipment   permissions, transmits file data, and wakes up the office\n  equipment AI agent to control the printer for output.                                                               Staff\n• When holding meetings, the terminal AI agent starts the                                                 Agent\n   video conferencing terminal with one click, synchronously\n   pulls up the file sharing server, and supports real-time\n   multi-person collaboration and content interaction.",
+      "text_characters": 1667,
+      "embedded_images": 9,
+      "image_regions": [
+        {
+          "bbox": [
+            519.9600219726562,
+            330.239990234375,
+            579.8400268554688,
+            390.1199951171875
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            645.0,
+            271.1999816894531,
+            692.760009765625,
+            318.9599914550781
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            746.239990234375,
+            291.4800109863281,
+            795.0800170898438,
+            340.32000732421875
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            683.8800048828125,
+            294.4800109863281,
+            749.1600341796875,
+            340.32000732421875
+          ],
+          "width": 285,
+          "height": 200
+        },
+        {
+          "bbox": [
+            787.9199829101562,
+            282.7200012207031,
+            857.1599731445312,
+            351.9599914550781
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            645.0,
+            408.0,
+            692.760009765625,
+            455.760009765625
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            683.8800048828125,
+            424.20001220703125,
+            749.1600341796875,
+            470.0400085449219
+          ],
+          "width": 285,
+          "height": 200
+        },
+        {
+          "bbox": [
+            749.1199951171875,
+            421.55999755859375,
+            797.9600219726562,
+            470.3999938964844
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            787.9199829101562,
+            408.0,
+            857.1599731445312,
+            477.239990234375
+          ],
+          "width": 200,
+          "height": 200
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-006.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 7,
+      "kind": "page",
+      "text": "The Multi-Access Collaboration Scenarios\n\np   Fixed Mobile Hybrid Access\n   In fixed-mobile convergence access scenarios, seamless device switching and dynamic network\n  resource allocation are achieved through the collaboration between mobile terminal entities (e.g.,\n  smartphones, tablets) and fixed-network gateway entities (e.g., home optical network terminals,\n  enterprise routers). Key participants include users operating mobile network terminals, mobile terminal\n   entities responsible for dynamic access, and fixed-network gateway entities managing resource scheduling.\n\n• When at home, the user agent prioritizes fixed network\n  access for high-bandwidth services and conducts agent-\n                                                                                 Network Handover   to-agent communication via the fixed network.\n• When away from home, the fixed network gateway agent\n   preemptively coordinates with mobile network agent\n   devices to rapidly synchronize the user agent's service                                                                      AI Agent for Fixed\n   information to the mobile network. Network configuration                                                              Network Gateway\n  ensures seamless handover, while the user agent\n  communicates with other agents via the mobile network.",
+      "text_characters": 1342,
+      "embedded_images": 3,
+      "image_regions": [
+        {
+          "bbox": [
+            691.4400024414062,
+            458.4000244140625,
+            751.3200073242188,
+            530.52001953125
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            621.47998046875,
+            340.55999755859375,
+            669.239990234375,
+            398.0400085449219
+          ],
+          "width": 200,
+          "height": 200
+        },
+        {
+          "bbox": [
+            758.0399780273438,
+            345.3600158691406,
+            822.47998046875,
+            410.0400085449219
+          ],
+          "width": 240,
+          "height": 200
+        }
+      ],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-007.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 8,
+      "kind": "page",
+      "text": "Requirements for AI Agent Protocol\n\n\np   Identity Authentication and Request Verification\nBefore executing interaction requests between agents, strict identity authentication must be performed. The\nprotocol shall define high-security authentication mechanisms—such as digital certificates and mutual\nauthentication—to ensure that only legitimate and authorized agents can initiate or receive commands,\nthereby preventing unauthorized access and malicious control.\n\n\np  Agent Discovery and Automatic Negotiation\nWhen an agent accesses a network (e.g., home or office network), it shall automatically discover other\navailable agents and their provided services (e.g., printers, video conferencing). It shall also automatically\nnegotiate capabilities and establish connections.",
+      "text_characters": 774,
+      "embedded_images": 0,
+      "image_regions": [],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-008.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 9,
+      "kind": "page",
+      "text": "Requirements for AI Agent Protocol\n\n\np  Connection Stability and Seamless Handover\nIn multi-access collaboration scenarios, when a user switches from a home network to mobile network, the\nprotocol shall support session persistence and seamless handover for AI agents. This guarantees the\nuninterrupted operation of ongoing services. It maybe involove the Identity transformation.\n\np   Local Disaster Recovery and Offline Processing Capabilities\nIn the event of network outages or other anomalies, critical agents (e.g., home gateways, NAS) shall record the\ncurrent state, possess local decision-making and data processing capabilities. For example, after a\nnetwork disconnection, home sensors shall continue to locally record abnormal events and synchronize the\nrecorded data to the cloud and mobile terminals once the network is restored.\n\n\n\nTherefore, agent communication protocol is required to support multi-access collaboration\nrequirements.",
+      "text_characters": 946,
+      "embedded_images": 0,
+      "image_regions": [],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-009.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": false,
+      "extraction_status": "text-layer-extracted"
+    },
+    {
+      "unit": 10,
+      "kind": "page",
+      "text": "Thanks!",
+      "text_characters": 7,
+      "embedded_images": 0,
+      "image_regions": [],
+      "hyperlinks": [],
+      "preview_local_reference": "Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom/page-010.png",
+      "source_image_assets": [],
+      "ocr_candidate_sparse_text": true,
+      "extraction_status": "text-layer-extracted"
+    }
+  ],
+  "unit_count": 10,
+  "original_binary_unchanged": true,
+  "historical_document": true
+}

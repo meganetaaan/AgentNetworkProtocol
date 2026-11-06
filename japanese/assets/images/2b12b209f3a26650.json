@@ -1,0 +1,607 @@
+{
+  "source": "images/did-all-core-flow.png",
+  "sha256": "2b12b209f3a266505b0d95128df93da1fc9adfb8f24d41cea12ddbd84f9d63ab",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "2、Selecta",
+      "confidence": 0.9989951782756381,
+      "box": [
+        [
+          375.0,
+          71.0
+        ],
+        [
+          502.0,
+          71.0
+        ],
+        [
+          502.0,
+          99.0
+        ],
+        [
+          375.0,
+          99.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "2、 選択する:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ],
+      "transcribed_source": "2、 Select a"
+    },
+    {
+      "source": "Self-hosted",
+      "confidence": 0.9987404400652106,
+      "box": [
+        [
+          717.0,
+          70.0
+        ],
+        [
+          843.0,
+          70.0
+        ],
+        [
+          843.0,
+          97.0
+        ],
+        [
+          717.0,
+          97.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "自己ホスト型",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "4、Query DID",
+      "confidence": 0.9969458417458967,
+      "box": [
+        [
+          1009.0,
+          70.0
+        ],
+        [
+          1157.0,
+          70.0
+        ],
+        [
+          1157.0,
+          101.0
+        ],
+        [
+          1009.0,
+          101.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "4、 DIDを照会する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "4",
+        "DID"
+      ],
+      "transcribed_source": "4、 Query DID"
+    },
+    {
+      "source": "service node to",
+      "confidence": 0.9474627176920573,
+      "box": [
+        [
+          374.0,
+          105.0
+        ],
+        [
+          543.0,
+          102.0
+        ],
+        [
+          544.0,
+          130.0
+        ],
+        [
+          374.0,
+          132.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "次を行うサービスノード:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID Server",
+      "confidence": 0.9559861481189728,
+      "box": [
+        [
+          724.0,
+          102.0
+        ],
+        [
+          842.0,
+          106.0
+        ],
+        [
+          842.0,
+          133.0
+        ],
+        [
+          723.0,
+          130.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "DIDサーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ]
+    },
+    {
+      "source": "document",
+      "confidence": 0.9994006901979446,
+      "box": [
+        [
+          1009.0,
+          102.0
+        ],
+        [
+          1127.0,
+          105.0
+        ],
+        [
+          1126.0,
+          132.0
+        ],
+        [
+          1008.0,
+          130.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "createa DID",
+      "confidence": 0.9521161426197399,
+      "box": [
+        [
+          374.0,
+          139.0
+        ],
+        [
+          510.0,
+          137.0
+        ],
+        [
+          510.0,
+          163.0
+        ],
+        [
+          374.0,
+          166.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "DIDを作成する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID"
+      ],
+      "transcribed_source": "create a DID"
+    },
+    {
+      "source": "document",
+      "confidence": 0.9990491196513176,
+      "box": [
+        [
+          376.0,
+          171.0
+        ],
+        [
+          493.0,
+          171.0
+        ],
+        [
+          493.0,
+          198.0
+        ],
+        [
+          376.0,
+          198.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Third-party",
+      "confidence": 0.9999425573782488,
+      "box": [
+        [
+          719.0,
+          265.0
+        ],
+        [
+          846.0,
+          268.0
+        ],
+        [
+          846.0,
+          299.0
+        ],
+        [
+          718.0,
+          295.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "第三者の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "UserA Sever",
+      "confidence": 0.9600179628892378,
+      "box": [
+        [
+          180.0,
+          282.0
+        ],
+        [
+          321.0,
+          286.0
+        ],
+        [
+          320.0,
+          313.0
+        ],
+        [
+          179.0,
+          310.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "ユーザー Aのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "UserA"
+      ],
+      "transcribed_source": "User A Sever"
+    },
+    {
+      "source": "User B Sever",
+      "confidence": 0.9197848439216614,
+      "box": [
+        [
+          1309.0,
+          282.0
+        ],
+        [
+          1450.0,
+          286.0
+        ],
+        [
+          1449.0,
+          313.0
+        ],
+        [
+          1308.0,
+          310.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "ユーザー Bのサーバー（原画像の綴りはSever）",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DID Server1",
+      "confidence": 0.969554911960255,
+      "box": [
+        [
+          717.0,
+          301.0
+        ],
+        [
+          854.0,
+          301.0
+        ],
+        [
+          854.0,
+          328.0
+        ],
+        [
+          717.0,
+          328.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "DIDサーバー 1",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID",
+        "1"
+      ],
+      "transcribed_source": "DID Server 1"
+    },
+    {
+      "source": "Third-party",
+      "confidence": 0.9998600753870878,
+      "box": [
+        [
+          719.0,
+          461.0
+        ],
+        [
+          847.0,
+          466.0
+        ],
+        [
+          845.0,
+          496.0
+        ],
+        [
+          718.0,
+          491.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "第三者の",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "1、Readmethod",
+      "confidence": 0.9944091588258743,
+      "box": [
+        [
+          50.0,
+          496.0
+        ],
+        [
+          233.0,
+          496.0
+        ],
+        [
+          233.0,
+          522.0
+        ],
+        [
+          50.0,
+          522.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "1、 メソッドの次の情報を読み取る:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ],
+      "transcribed_source": "1、 Read method"
+    },
+    {
+      "source": "DID Server2",
+      "confidence": 0.9867386601187966,
+      "box": [
+        [
+          716.0,
+          495.0
+        ],
+        [
+          854.0,
+          498.0
+        ],
+        [
+          854.0,
+          525.0
+        ],
+        [
+          716.0,
+          523.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "DIDサーバー 2",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DID",
+        "2"
+      ],
+      "transcribed_source": "DID Server 2"
+    },
+    {
+      "source": "3、Readmethod",
+      "confidence": 0.9892425636450449,
+      "box": [
+        [
+          1409.0,
+          496.0
+        ],
+        [
+          1594.0,
+          496.0
+        ],
+        [
+          1594.0,
+          522.0
+        ],
+        [
+          1409.0,
+          522.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "3、 メソッドの次の情報を読み取る:",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "3"
+      ],
+      "transcribed_source": "3、 Read method"
+    },
+    {
+      "source": "service domain",
+      "confidence": 0.972909186567579,
+      "box": [
+        [
+          49.0,
+          529.0
+        ],
+        [
+          217.0,
+          529.0
+        ],
+        [
+          217.0,
+          557.0
+        ],
+        [
+          49.0,
+          557.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "サービスのドメイン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "service domain",
+      "confidence": 0.9820827969482967,
+      "box": [
+        [
+          1408.0,
+          529.0
+        ],
+        [
+          1575.0,
+          529.0
+        ],
+        [
+          1575.0,
+          557.0
+        ],
+        [
+          1408.0,
+          557.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "サービスのドメイン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "name list",
+      "confidence": 0.9723204837905036,
+      "box": [
+        [
+          54.0,
+          561.0
+        ],
+        [
+          159.0,
+          561.0
+        ],
+        [
+          159.0,
+          588.0
+        ],
+        [
+          54.0,
+          588.0
+        ]
+      ],
+      "label_id": "L019",
+      "japanese": "名の一覧",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "name list",
+      "confidence": 0.9730222026507059,
+      "box": [
+        [
+          1413.0,
+          562.0
+        ],
+        [
+          1520.0,
+          562.0
+        ],
+        [
+          1520.0,
+          589.0
+        ],
+        [
+          1413.0,
+          589.0
+        ]
+      ],
+      "label_id": "L020",
+      "japanese": "名の一覧",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Blockchain:all method servicedomainname list",
+      "confidence": 0.9664608375592665,
+      "box": [
+        [
+          570.0,
+          686.0
+        ],
+        [
+          1091.0,
+          686.0
+        ],
+        [
+          1091.0,
+          712.0
+        ],
+        [
+          570.0,
+          712.0
+        ]
+      ],
+      "label_id": "L021",
+      "japanese": "ブロックチェーン: すべてのメソッドのサービスドメイン名一覧",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "Blockchain: all method service domain name list"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8375331000424922,
+    0.03431367874145508,
+    0.9130270481109619
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "2、Selecta": "2、 Select a",
+      "4、Query DID": "4、 Query DID",
+      "createa DID": "create a DID",
+      "UserA Sever": "User A Sever",
+      "DID Server1": "DID Server 1",
+      "1、Readmethod": "1、 Read method",
+      "DID Server2": "DID Server 2",
+      "3、Readmethod": "3、 Read method",
+      "Blockchain:all method servicedomainname list": "Blockchain: all method service domain name list"
+    },
+    "source_sha256": "2b12b209f3a266505b0d95128df93da1fc9adfb8f24d41cea12ddbd84f9d63ab"
+  }
+}

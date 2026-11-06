@@ -1,0 +1,300 @@
+{
+  "source": "blogs/images/anp-data-network.png",
+  "sha256": "f117eb996f8bf2b117620519e6f109d98590a6d2be4f2133a875ce117b66b1d9",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "URL",
+      "confidence": 0.9976417024930319,
+      "box": [
+        [
+          647.0,
+          23.0
+        ],
+        [
+          696.0,
+          23.0
+        ],
+        [
+          696.0,
+          47.0
+        ],
+        [
+          647.0,
+          47.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9228930473327637,
+      "box": [
+        [
+          514.0,
+          53.0
+        ],
+        [
+          574.0,
+          53.0
+        ],
+        [
+          574.0,
+          78.0
+        ],
+        [
+          514.0,
+          78.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "GD",
+      "confidence": 0.729746863245964,
+      "box": [
+        [
+          752.0,
+          67.0
+        ],
+        [
+          815.0,
+          16.0
+        ],
+        [
+          843.0,
+          50.0
+        ],
+        [
+          780.0,
+          101.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "GD"
+      ],
+      "transcribed_source": "DOC"
+    },
+    {
+      "source": "URL",
+      "confidence": 0.9962088465690613,
+      "box": [
+        [
+          319.0,
+          134.0
+        ],
+        [
+          368.0,
+          135.0
+        ],
+        [
+          367.0,
+          160.0
+        ],
+        [
+          318.0,
+          158.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "Agent",
+      "confidence": 0.9963128089904785,
+      "box": [
+        [
+          57.0,
+          144.0
+        ],
+        [
+          150.0,
+          144.0
+        ],
+        [
+          150.0,
+          178.0
+        ],
+        [
+          57.0,
+          178.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "エージェント",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9487972060839335,
+      "box": [
+        [
+          212.0,
+          178.0
+        ],
+        [
+          274.0,
+          179.0
+        ],
+        [
+          273.0,
+          206.0
+        ],
+        [
+          212.0,
+          205.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "Description",
+      "confidence": 0.997996059331027,
+      "box": [
+        [
+          20.0,
+          189.0
+        ],
+        [
+          192.0,
+          189.0
+        ],
+        [
+          192.0,
+          217.0
+        ],
+        [
+          20.0,
+          217.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "記述",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9215839505195618,
+      "box": [
+        [
+          766.0,
+          192.0
+        ],
+        [
+          829.0,
+          195.0
+        ],
+        [
+          827.0,
+          222.0
+        ],
+        [
+          765.0,
+          219.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    },
+    {
+      "source": "URL",
+      "confidence": 0.9960660139719645,
+      "box": [
+        [
+          618.0,
+          282.0
+        ],
+        [
+          666.0,
+          282.0
+        ],
+        [
+          666.0,
+          306.0
+        ],
+        [
+          618.0,
+          306.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "URL",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "URL"
+      ]
+    },
+    {
+      "source": "DOC",
+      "confidence": 0.9461949666341146,
+      "box": [
+        [
+          521.0,
+          313.0
+        ],
+        [
+          584.0,
+          315.0
+        ],
+        [
+          583.0,
+          342.0
+        ],
+        [
+          520.0,
+          340.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "文書",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "DOC"
+      ]
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8501573000103235,
+    0.013002157211303711,
+    0.330629825592041
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "GD": "DOC"
+    },
+    "source_note": "4つの文書アイコンのDOC文字を照合。APIプラグ・画像・動画の各アイコンに文章はない。",
+    "source_sha256": "f117eb996f8bf2b117620519e6f109d98590a6d2be4f2133a875ce117b66b1d9"
+  }
+}

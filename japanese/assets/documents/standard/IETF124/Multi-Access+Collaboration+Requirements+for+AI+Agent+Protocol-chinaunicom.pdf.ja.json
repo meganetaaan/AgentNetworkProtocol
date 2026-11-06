@@ -1,0 +1,334 @@
+{
+  "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+  "source_base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "source_sha256": "fb90c97bc40f8d6df8fffe3815b66cbe47103751a8f2ff02e82e0f8132b2214a",
+  "format": "pdf",
+  "historical_document": true,
+  "original_binary_unchanged": true,
+  "sidecar": "japanese/assets/documents/standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf.ja.md",
+  "structured_sidecar": "japanese/assets/documents/standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf.ja.json",
+  "extracted_text_sidecar": "japanese/assets/documents/standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf.extracted.json",
+  "unit_count": 10,
+  "extracted_text_translation_status": "complete-manual-translation",
+  "full_visual_document_verification": false,
+  "full_visual_document_status": "partial-figure-review-code-pixels-preserved-some-microtext-unverified",
+  "independent_second_review": false,
+  "retained_source_image_assets": [],
+  "units": [
+    {
+      "unit": 1,
+      "kind": "page",
+      "original_text": "Multi-Access Collaboration\nRequirements for AI Agent Protocol\n\n\n                           2025-11\n   LIU WEI, ZHANG YAOMIN, HAN MENGYAO (CHINA UNICOM)\n                  Email: liuw550@chinaunicom.cn",
+      "translation": "AIエージェントプロトコルに求めるマルチアクセス協働の要件\n\n2025-11\nLIU WEI、ZHANG YAOMIN、HAN MENGYAO（CHINA UNICOM）\nEmail: liuw550@chinaunicom.cn",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 2,
+      "kind": "page",
+      "original_text": "What Multi-Access Collaboration Cares About\n\n\n• Introduction\n\n• The multi-access collaboration scenarios\n\n• The requirements for AI agent communication protocols",
+      "translation": "マルチアクセス協働で重視する事項\n\n- はじめに\n- マルチアクセス協働の場面\n- AIエージェント通信プロトコルへの要件",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 3,
+      "kind": "page",
+      "original_text": "Multi-Access Collaboration and Service\n\n•  With the rapid development of terminal technology and the popularization of multi-scenario networking\n   requirements, scenarios such as remote home security monitoring, remote work, and 3GPP and non-\n  3GPP access have gradually become core user needs.\n\n\n\n         Home Security                 Remote Work                   Hybrid Access",
+      "translation": "マルチアクセス協働とサービス\n\n端末技術の急速な発展と、複数の場面に対応するネットワーク需要の普及に伴い、遠隔のホームセキュリティ監視、リモートワーク、3GPP／非3GPPアクセスなどが、利用者の主要な要求となってきています。\n\n図の分類：ホームセキュリティ、リモートワーク、ハイブリッドアクセス。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "説明用の機器・アプリ画面の写真に含まれる微小文字は、網羅的な転記・翻訳を行っていない。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "図に使われた機器写真を元の埋込画像で確認しました。写真内のHUAWEIは企業・製品のブランド表記として保持します。\n\nタブレット／スマートフォンの写真に含まれる読める中国語UI：\n- 为你推荐＝おすすめ。活动＝アクティビティ。张照片＝枚の写真（枚数は端末の重なりで隠れています）。\n- 日历＝カレンダー。完成＝完了。全部隐藏＝すべて非表示。\n- 学校＝学校。个人＝個人。家人＝家族。工作＝仕事。其他＝その他。\n- 中国节假日＝中国の祝祭日。已订阅＝購読済み。生日＝誕生日。\n- Siri 在应用中找到的日程＝Siriがアプリ内で見つけた予定。显示已拒绝的日程＝辞退した予定を表示。添加日历＝カレンダーを追加。\n- 照片＝写真。相簿＝アルバム。搜索＝検索。\n- 上午9:41 1月25日 周五＝午前9:41、1月25日、金曜日。時刻9:41、電池表示100%、ICLOUD、Emily Parker、Siriは原表記のままです。家族カレンダーの共有相手の行は右端が省略されているため、その続きを補っていません。\n\nホテルのスマートフォン写真は元画像が300×207画素で、画面上部の細い文字を確実に判読できません。図の主要分類（Home Security／Remote Work／Hybrid Access）は本文で訳しています。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 4,
+      "kind": "page",
+      "original_text": "Multi-Access Collaboration & AI Agent\n\n •  Collaborative interaction between different AI agents is the key to realizing service value\n\n\n\n\n\n•  Mobile AI agents need to interact with camera AI agents to transmit real-time images;\n•  In the scenario of mixed access between fixed and mobile networks, the mobile terminal AI agent needs to\n   rely on the fixed network gateway to achieve seamless network switching and dynamic bandwidth\n   allocation.\n•  The effective collaboration of different AI agents faces problems such as agent Identity transformation,\n   multimodality data exchange, insufficient security verification and etc.\n                                                      draft-liu-access-collaboration-agent",
+      "translation": "マルチアクセス協働とAIエージェント\n\n異なるAIエージェント間の協調的なやり取りが、サービスの価値を実現する鍵です。\n\n- モバイルAIエージェントは、カメラのAIエージェントとやり取りし、リアルタイム画像を送信する必要があります。\n- 固定・モバイルネットワークの混在アクセスでは、モバイル端末のAIエージェントは固定ネットワークのゲートウェイに依存し、切れ目のないネットワーク切り替えと動的な帯域割り当てを実現します。\n- 異なるAIエージェントの効率的な協働には、エージェントのアイデンティティの変換、複数モダリティのデータ交換、不十分なセキュリティ検証などの問題があります。\n\n参照：draft-liu-access-collaboration-agent。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [
+        "説明用の機器・アプリ画面の写真に含まれる微小文字は、網羅的な転記・翻訳を行っていない。"
+      ],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": "カメラ、ゲートウェイ、サーバー、スマートフォンの2点のイラストを元の埋込画像で確認しました。画面やサーバーに描かれた微小な模様は、原画素で意味のある文字列として判読できず、転記・翻訳していません。図外の本文は既存の全文訳に含まれます。",
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 5,
+      "kind": "page",
+      "original_text": "The Multi-Access Collaboration Scenarios\n\np   Home Security\n In the scenario of remote access for home security, remote care for the elderly, children, and pets is achieved\n through the collaboration between mobile terminal AI agents and home fixed network device AI agents (such as\n cameras, NAS, printers, pet sensors). In the home security scenario, the participating roles include UE\n agent responsible for sending and receiving requests, and home device agents executing instructions.\n\n•  User want to check on elderly family members, they can\n   adjust the home camera's view via their smartphone. If\n  any anomalies are detected, the NAS device will trigger\n   video recording.\n• When remotely printing documents for children while\n  away from home, users can activate the home printer via\n   their smartphone.                              UE         Agent      AI Agent for Home\n•  During routine monitoring by the home camera, abnormal     Agent      Gateway   Network Equipment\n   pet activity will trigger alerts pushed to the user's\n  smartphone.",
+      "translation": "マルチアクセス協働の場面：ホームセキュリティ\n\n自宅のセキュリティへの遠隔アクセスでは、モバイル端末のAIエージェントと、カメラ、NAS、プリンター、ペット用センサーなどの家庭の固定ネットワーク機器のAIエージェントが協働し、高齢者、子ども、ペットを遠隔で見守ります。役割は、要求の送受信を担うUEエージェントと、指示を実行する家庭内機器のエージェントです。\n\n- 高齢の家族の様子を見たい利用者は、スマートフォンから家庭用カメラの向きを調整できます。異常を検知すると、NASが動画録画を開始します。\n- 外出先から子どものために文書を印刷する場合、スマートフォンで家庭のプリンターを起動できます。\n- 家庭用カメラの日常監視でペットの異常な行動を検知すると、利用者のスマートフォンに通知します。\n\n図のラベル：UE Agent、Agent Gateway、AI Agent for Home Network Equipment（家庭内ネットワーク機器のAIエージェント）。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 6,
+      "kind": "page",
+      "original_text": "The Multi-Access Collaboration Scenarios\n\np   Remote Work\n In remote work scenarios, efficient telecommuting is achieved through the collaboration between terminal AI\n agents (such as mobile phones and laptops) and office equipment AI agents (including cloud desktops, printers,\n video conferencing terminals, and file-sharing servers). The participating roles are employees who operate\n terminal AI agents, terminal AI agents responsible for sending and receiving instructions, and office\n equipment AI agents that execute tasks.\n\n• When employees need to work remotely, they initiate an\n  access request through the terminal AI agent to quickly\n   connect to the cloud desktop and synchronize their\n   personal office environment and data.\n                                                                                     Agent for Office•  The terminal AI agent can automatically verifies                                   Enterprise Branch                                                                                                                                                     .....                                                                                      Equipment   permissions, transmits file data, and wakes up the office\n  equipment AI agent to control the printer for output.                                                               Staff\n• When holding meetings, the terminal AI agent starts the                                                 Agent\n   video conferencing terminal with one click, synchronously\n   pulls up the file sharing server, and supports real-time\n   multi-person collaboration and content interaction.",
+      "translation": "マルチアクセス協働の場面：リモートワーク\n\n携帯電話やノートPCなどの端末AIエージェントと、クラウドデスクトップ、プリンター、ビデオ会議端末、ファイル共有サーバーなどのオフィス機器のAIエージェントが協働し、効率的な在宅勤務を実現します。役割は、端末AIエージェントを操作する従業員、指示を送受信する端末AIエージェント、タスクを実行するオフィス機器AIエージェントです。\n\n- 従業員が遠隔で作業する際、端末AIエージェント経由でアクセスを要求し、クラウドデスクトップにすばやく接続して、自分の作業環境とデータを同期します。\n- 端末AIエージェントが権限を自動検証し、ファイルを転送し、オフィス機器AIエージェントを起動して印刷を制御できます。\n- 会議時には、端末AIエージェントがワンクリックでビデオ会議端末を起動し、同時にファイル共有サーバーを呼び出し、複数人のリアルタイム協働と内容のやり取りを支援します。\n\n図のラベル：従業員のエージェント（Staff Agent）、企業の拠点（Enterprise Branch）、オフィス機器のエージェント（Agent for Office Equipment）。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 7,
+      "kind": "page",
+      "original_text": "The Multi-Access Collaboration Scenarios\n\np   Fixed Mobile Hybrid Access\n   In fixed-mobile convergence access scenarios, seamless device switching and dynamic network\n  resource allocation are achieved through the collaboration between mobile terminal entities (e.g.,\n  smartphones, tablets) and fixed-network gateway entities (e.g., home optical network terminals,\n  enterprise routers). Key participants include users operating mobile network terminals, mobile terminal\n   entities responsible for dynamic access, and fixed-network gateway entities managing resource scheduling.\n\n• When at home, the user agent prioritizes fixed network\n  access for high-bandwidth services and conducts agent-\n                                                                                 Network Handover   to-agent communication via the fixed network.\n• When away from home, the fixed network gateway agent\n   preemptively coordinates with mobile network agent\n   devices to rapidly synchronize the user agent's service                                                                      AI Agent for Fixed\n   information to the mobile network. Network configuration                                                              Network Gateway\n  ensures seamless handover, while the user agent\n  communicates with other agents via the mobile network.",
+      "translation": "マルチアクセス協働の場面：固定・モバイルのハイブリッドアクセス\n\n固定・モバイル統合アクセスでは、スマートフォンやタブレットなどのモバイル端末と、家庭用光回線終端装置や企業のルーターなどの固定ネットワークゲートウェイが協働し、機器の切れ目のない切り替えと、ネットワーク資源の動的割り当てを実現します。主要な参加者は、モバイル端末を操作する利用者、動的なアクセスを担うモバイル端末の主体、資源のスケジューリングを管理する固定ネットワークゲートウェイの主体です。\n\n- 自宅では、利用者のエージェントは広帯域サービスに固定ネットワークアクセスを優先し、固定ネットワークを通じて他のエージェントと通信します。\n- 外出時には、固定ネットワークゲートウェイのエージェントが、あらかじめモバイルネットワークのエージェント機器と調整し、利用者エージェントのサービス情報をモバイルネットワークへすばやく同期します。ネットワーク設定によって切れ目のないハンドオーバーを確保し、利用者のエージェントはモバイルネットワークを介して他のエージェントと通信します。\n\n図のラベル：Network Handover（ネットワークのハンドオーバー）、AI Agent for Fixed Network Gateway（固定ネットワークゲートウェイのAIエージェント）。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 8,
+      "kind": "page",
+      "original_text": "Requirements for AI Agent Protocol\n\n\np   Identity Authentication and Request Verification\nBefore executing interaction requests between agents, strict identity authentication must be performed. The\nprotocol shall define high-security authentication mechanisms—such as digital certificates and mutual\nauthentication—to ensure that only legitimate and authorized agents can initiate or receive commands,\nthereby preventing unauthorized access and malicious control.\n\n\np  Agent Discovery and Automatic Negotiation\nWhen an agent accesses a network (e.g., home or office network), it shall automatically discover other\navailable agents and their provided services (e.g., printers, video conferencing). It shall also automatically\nnegotiate capabilities and establish connections.",
+      "translation": "AIエージェントプロトコルへの要件\n\n身元認証とリクエスト検証：\nエージェント間のやり取りの要求を実行する前に、厳格な身元認証を行う必要があります。プロトコルは、デジタル証明書や相互認証などの高い安全性を持つ認証の仕組みを定義し、正規かつ認可済みのエージェントだけが指示を開始・受信できるようにして、不正アクセスや悪意ある制御を防止するものとします。\n\nエージェントの発見と自動交渉：\nエージェントが家庭やオフィスなどのネットワークにアクセスした際、他の利用可能なエージェントと、プリンターやビデオ会議などの提供サービスを自動で発見するものとします。また、機能を自動で交渉し、接続を確立するものとします。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 9,
+      "kind": "page",
+      "original_text": "Requirements for AI Agent Protocol\n\n\np  Connection Stability and Seamless Handover\nIn multi-access collaboration scenarios, when a user switches from a home network to mobile network, the\nprotocol shall support session persistence and seamless handover for AI agents. This guarantees the\nuninterrupted operation of ongoing services. It maybe involove the Identity transformation.\n\np   Local Disaster Recovery and Offline Processing Capabilities\nIn the event of network outages or other anomalies, critical agents (e.g., home gateways, NAS) shall record the\ncurrent state, possess local decision-making and data processing capabilities. For example, after a\nnetwork disconnection, home sensors shall continue to locally record abnormal events and synchronize the\nrecorded data to the cloud and mobile terminals once the network is restored.\n\n\n\nTherefore, agent communication protocol is required to support multi-access collaboration\nrequirements.",
+      "translation": "AIエージェントプロトコルへの要件\n\n接続の安定性と切れ目のないハンドオーバー：\n利用者が家庭のネットワークからモバイルネットワークへ切り替える場面では、プロトコルはAIエージェントのセッションの維持と切れ目のないハンドオーバーに対応し、進行中のサービスの連続動作を保証するものとします。アイデンティティの変換を伴う場合があります。\n\nローカルの障害復旧とオフライン処理：\nネットワーク障害などが発生した場合、家庭のゲートウェイやNASなどの重要なエージェントは、現在の状態を記録し、ローカルの意思決定とデータ処理の機能を持つものとします。例えば、通信断の後も家庭のセンサーは異常イベントのローカル記録を続け、復旧後に記録したデータをクラウドとモバイル端末へ同期するものとします。\n\nしたがって、エージェント通信プロトコルは、マルチアクセス協働の要件をサポートする必要があります。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-used-for-main-text",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    },
+    {
+      "unit": 10,
+      "kind": "page",
+      "original_text": "Thanks!",
+      "translation": "ありがとうございました。",
+      "original_notes": null,
+      "notes_translation": null,
+      "diagram_text_supplement": null,
+      "hyperlinks": [],
+      "source_code_assets": [],
+      "extraction_status": "text-layer-extracted",
+      "extracted_text_translation_status": "complete-manual-translation",
+      "semantic_review_status": "single-pass-agent-translation-no-independent-second-review",
+      "visual_review_status": "contact-sheet-reviewed-details-not-exhaustively-transcribed",
+      "ocr_status": "not-required-title-or-thanks-page-visually-confirmed",
+      "ocr_required_for_extracted_body": false,
+      "limitations": [],
+      "visual_follow_up": {
+        "overview_rechecked": true,
+        "embedded_media_review": "unique-embedded-image-previews-inspected",
+        "additional_translation": null,
+        "native_slide_rendered": false
+      }
+    }
+  ],
+  "visual_follow_up": {
+    "record": "japanese/assets/documents/visual-follow-up.json",
+    "media_assets": [
+      {
+        "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+        "pages": [
+          3
+        ],
+        "dimensions": [
+          300,
+          207
+        ],
+        "sha256": "3af93a067ac6112a5c028577f02fdbe45ed9f71ca8432a59bff5b573465a6bbb",
+        "path": "japanese/assets/documents/source-figure-images/asset-098.jpeg",
+        "visual_status": "source-pixels-inspected-microtext-not-decipherable",
+        "local_ocr_label_count": 1,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+        "pages": [
+          3
+        ],
+        "dimensions": [
+          951,
+          599
+        ],
+        "sha256": "476cc1ad3a4a86b963ef027d52c926087edc1cd0f3c07ff15adbef0b7268dab5",
+        "path": "japanese/assets/documents/source-figure-images/asset-101.jpeg",
+        "visual_status": "readable-prose-manually-translated",
+        "local_ocr_label_count": 26,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+        "pages": [
+          4
+        ],
+        "dimensions": [
+          317,
+          327
+        ],
+        "sha256": "e6c1173eaba9e8cd0e6cab95d31d419dc24b1f0d487eb0dcd6e07344aa2cfab4",
+        "path": "japanese/assets/documents/source-figure-images/asset-102.jpeg",
+        "visual_status": "source-pixels-inspected-microtext-not-decipherable",
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      },
+      {
+        "source": "standard/IETF124/Multi-Access+Collaboration+Requirements+for+AI+Agent+Protocol-chinaunicom.pdf",
+        "pages": [
+          4
+        ],
+        "dimensions": [
+          324,
+          327
+        ],
+        "sha256": "3db89e883c6fcc77a5cf26f47b58666dfdd2e34df26b1ce77b34e3a59b84ae8d",
+        "path": "japanese/assets/documents/source-figure-images/asset-103.jpeg",
+        "visual_status": "source-pixels-inspected-microtext-not-decipherable",
+        "local_ocr_label_count": 0,
+        "local_ocr_status": "assistance-only-not-authoritative-transcription"
+      }
+    ],
+    "native_rendering": "pdf-page-rendering-used",
+    "additional_translation_units": [
+      3,
+      4
+    ],
+    "full_visual_verification_complete": false
+  }
+}

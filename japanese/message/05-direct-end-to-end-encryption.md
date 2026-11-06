@@ -1,218 +1,219 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: machine-fully-reviewed; scope=full-document-source-lines-1-1804; inventory=japanese/reviews/messaging-overlays-review.json -->
+> 日本語参考訳（機械翻訳から全文を意味校閲済み）。規範となるのは原文です。本文・見出し・表・条件・否定を原文と照合し、コード例・識別子・規範キーワードを保持しています。独立した二次校閲や実装適合性の検証は未実施です。
 > 原文: [message/05-direct-end-to-end-encryption.md](../../message/05-direct-end-to-end-encryption.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
-# ANP プロファイル 5: エンドツーエンド暗号化
+# ANP Profile 5：個別メッセージのエンドツーエンド暗号化
 
-- 文書ID: ANP-P5
-- タイトル: 直接エンドツーエンド暗号化
-- ステータス: リリース
-- バージョン: 1.2
-- 仕様セット: ANP のメッセージング 1.2
-- 原文言語: English / このページは日本語参考訳
-- プロフィール: `anp.direct.e2ee.v2`
-- 応用性: このプロファイルは、2つのエージェントIDの下で特定の暗号デバイス間で直接E2EEに適用されます。
-- 依存関係:
+- 文書ID：ANP-P5
+- タイトル：個別メッセージのエンドツーエンド暗号化
+- 状態：リリース済み
+- バージョン：1.2
+- 仕様セット：ANP Messaging 1.2
+- 原文言語：English
+- Profile：`anp.direct.e2ee.v2`
+- 適用範囲：二つのAgent DIDの下にある、特定の暗号デバイス間のDirect E2EEに適用されます。
+- 依存関係：
   - `anp.core.binding.v1`
   - `anp.identity.discovery.v1`
   - `anp.direct.base.v1`
-  - [ANP-02 身元入力](../../02-anp-did-authentication-protocol-specification.md#identity-input) および適用可能なDID方法結合(指定の依存性、新しいワイヤー プロフィールではない)
+  - [ANP-02のアイデンティティ入力](../../02-anp-did-authentication-protocol-specification.md#identity-input)と、適用されるDIDメソッドのバインディング（仕様上の依存関係であり、新しいwire Profileではありません）
 
 ---
 
-## 1. ゴールとスコープ
+## 1. 目標と範囲
 
-このプロファイルは、ANP 直接エンドツーエンド暗号化の完全な実行可能なソリューションを定義します。, stipulating:
+このProfileは、ANPの個別メッセージのエンドツーエンド暗号化について、実装可能な完全な方式を定義し、次を規定します。
 
-1. 方法検証済みのID ID、P2 を接続する方法 `deviceManifest`直接E2EEへのサービス発見
-2. 各対象となるデバイスが、Prekey Bundle を公開し、発見し、検証する方法
-3. 送信者側と受信側側のペアが非同期化をいかに確立するか `X3DH-like` セッション
-4. 各デバイスペアが独立した状態を維持する方法 `Double Ratchet-like` 状態;
-5. デバイス・バウンド・AD、リプレイ保護、アウト・オブ・オーダー処理、セッションの復興、メールボックスの配信、エラーの動作方法
-6. エージェント DID が、明示的なデバイスセレクターが暗号エンドポイントだけを識別しながら、ビジネスのアイデンティティを維持する方法。
+1. メソッドに従って検証したDIDアイデンティティ、P2の`deviceManifest`、サービス発見をDirect E2EEへ接続する方法。
+2. 適格な各デバイスが、自分のPrekey Bundleを公開、発見、検証する方法。
+3. 正確に指定された送信デバイスと受信デバイスのペアが、非同期の`X3DH-like`セッションを確立する方法。
+4. 各デバイスペアが、独立した`Double Ratchet-like`状態を維持する方法。
+5. デバイスに結び付くAAD、リプレイ防止、順不同の処理、セッション再構築、Mailbox配信、エラーの動作。
+6. Agent DIDを業務アイデンティティとして維持し、明示的なデバイスセレクターでは暗号エンドポイントだけを識別する方法。
 
-論理的な DID-to-DID メッセージは、複数の独立したデバイス ciphertext 操作を生成する可能性があるためです。 このプロファイルは、デバイスを連絡先、参加者、または新しいものに変えません `target.kind`.
+したがって、DID間の一つの論理メッセージから、独立した複数のデバイス暗号文操作が生じる場合があります。このProfileによって、デバイスが連絡先、参加者、新しい`target.kind`になるわけではありません。
 
-このプロファイルは定義しません。
+このProfileは次を定義しません。
 
-- デバイスの入園または製品ローカルデバイス管理ワークフロー;
-- 履歴メッセージを引き受ける。
-- ステータスを読んで下さい;
-- プレゼンス;
--グループエンドツーエンド暗号化;
-- デバイス秘密鍵、ラチェットの状態、または歴史の文脈のコピー。
-- DID メソッド自体の解像度、更新、および非アクティブ化メカニズム。
-
----
-
-## 2. 仮説キーワードと用語集
-
-### 2.1 仮説キーワード
-
-この記事では、 **MUST**, **MUST NOT**, **REQUIRED**, **SHALL**, **SHALL NOT**, **SHOULD**, **SHOULD NOT**, **RECOMMENDED**, **NOT RECOMMENDED**, **MAY**, **OPTIONAL** 資本金を基準とした規範的な要件として解釈されます。
-
-### 2.2 用語集
-
-- **エージェントID**: 外部通信のエージェント識別 このプロファイルでは、それは外面のビジネス対象識別子だけでなく、 `direct.send`、また AAD の同一証明アンカー、束ねられた確認およびセッション結合。
-- **デバイスエンドポイント**: エージェントIDの下の暗号エンドポイント、不透明で選択 `device_id` DID の現在の P2 から `deviceManifest`. . . DIDやビジネス参加者ではありません。
-- **デバイスペア**: 注文したタプル `(sender_did, sender_device_id, recipient_did, recipient_device_id)` 直接E2EE操作にバインド。
-- **インサートキー**: 選択したマニフェストエントリの署名キー `signing_key_id` および承認される `assertionMethod`. . . デバイスのバンドルまたはビンディングプルーフをサインし、DH計算には参加しません。
-- **静的キーの一致のキー**: 選択したマニフェストエントリの参照される長期X25519公開鍵 `e2ee_key_id` DID 文書で宣言 `keyAgreement`.
-- **署名されたプレキー(SPK)**: 1つのデバイスによって生成されたX25519の公開鍵を、署名し、そのデバイスのAssertionキーでバインドします。
-- **ワンタイムプレキー(OPK)**: 1つのデバイスに属する1回X25519公開鍵。 正常に使用した場合は、消費されず再利用することはできません。
-- **プレキーバンドル**: セッション・フェスティバルの公共資料は、正確に1つに限って `(owner_did, owner_device_id)`. . . デバイスの長期静的交渉キーと現在のSPKは記述しますが、直接OPKを埋めません。
-- **ダイレクトセッション**: 注文したデバイスペアのE2EEセッション、 `session_id`. . . 二重ラチェット、注文外、再生状態は別のデバイスペアと共有されません。
-- **アプリケーション プレーンテキスト**: 暗号化される前に、アプリケーションレイヤーのプレーンテキストオブジェクトを直接メッセージングします。 AEADの暗号化を入力するために使用される直接ベースアプリケーションのペイロードの正規化内部表現です。
-- **ラチェットヘッダー**: 送信されたメッセージに対して、最小の公開ヘッダーフィールドが必要です。 受信チェーンを見つけるために受信機は、それがDHラチェットを進歩し、注文外のメッセージを処理する必要があるかどうかを決定します。
-- **メールボックス**: 不透明の暗号テキストキューがスコープ付けされる `(recipient_did, recipient_device_id)`. . . 複数のセッションを運ぶことができるが、ラチェット状態を持たない。
-- **キャッシュを再生する**: 重複した初期メッセージや、その後のメッセージを複製するために使用される状態のコレクション。 標準的なワイヤプロトコルフィールドではなく、ローカルな状態です。
-
-ツイート `device_id` **MUST** 不透明で、 **MUST NOT** 取り外しの後で再使用されて。 鍵、ハードウェア識別子、またはユーザー表示名ではありません。
+- デバイスの受け入れや、製品内のデバイス管理ワークフロー。
+- 過去のメッセージの取得。
+- 既読状態。
+- プレゼンス。
+- グループのエンドツーエンド暗号化。
+- デバイスの秘密鍵、Ratchet状態、過去の平文の、デバイス間でのコピー。
+- DIDメソッド自体の解決、更新、失効の仕組み。
 
 ---
 
-## 3. 設計全般の原則
+## 2. 規範キーワードと用語
 
-### 3.1 ビジネスのアイデンティティと暗号デバイスエンドポイント
+### 2.1 規範キーワード
 
-業務の送信者と受取人が残っている `meta.sender_did` とりあえず `meta.target.did`. . . このプロファイルは、追加の必要 `meta.sender_device_id` とりあえず `meta.recipient_device_id` 正確な暗号デバイスペアを選択するために。 これらのフィールドはP5にのみ属し、DIDレベルの連絡先や会話のセマティクスを変更しません。
+本書の**MUST**、**MUST NOT**、**REQUIRED**、**SHALL**、**SHALL NOT**、**SHOULD**、**SHOULD NOT**、**RECOMMENDED**、**NOT RECOMMENDED**、**MAY**、**OPTIONAL**は、大文字表記に従って規範的要件として解釈します。
 
-送信者が複数の対象となるデバイスを1つの受信者IDの下にターゲットする場合、 **MUST** 独立して暗号化されたものを作成する `direct.send` 受取装置ごとの操作。 サービス **MUST NOT** ラチェットの状態を共有したり、隠された暗号ファンアウトを実行したりできます。
+### 2.2 用語
 
-### 3.2 セキュリティのオーバーレイとビジネスのセマティクスの分離
+- **Agent DID**：外部通信で使うエージェントの識別子。このProfileでは、外側の`direct.send`の業務主体識別子に加えて、AAD、Bundle検証、セッションバインディングのアイデンティティアンカーでもあります。
+- **デバイスエンドポイント（Device Endpoint）**：Agent DIDの下の暗号エンドポイント。そのDIDの現在のP2 `deviceManifest`から、不透明な`device_id`で選択します。DIDや業務参加者ではありません。
+- **デバイスペア（Device Pair）**：一つのDirect E2EE操作に結び付く、順序付きタプル`(sender_did, sender_device_id, recipient_did, recipient_device_id)`。
+- **Assertion Key**：選択したManifestエントリの`signing_key_id`が参照し、`assertionMethod`で認可された署名鍵。デバイスのBundleやBinding Proofに署名し、DH計算には参加しません。
+- **静的鍵合意鍵（Static Key Agreement Key）**：選択したManifestエントリの`e2ee_key_id`が参照し、DID文書の`keyAgreement`で宣言される長期X25519公開鍵。
+- **署名付き事前鍵（Signed Prekey、SPK）**：一つのデバイスが生成し、そのデバイスのAssertion Keyで署名して結び付けた、中期のX25519公開鍵。
+- **使い捨て事前鍵（One-Time Prekey、OPK）**：一つのデバイスに属する使い捨てX25519公開鍵。使用に成功したら消費しなければならず、再利用できません。
+- **Prekey Bundle**：正確に一つの`(owner_did, owner_device_id)`に結び付く、セッション確立用の公開素材。デバイスの長期静的合意鍵と現在のSPKを記述しますが、OPKを直接埋め込みません。
+- **Direct Session**：`session_id`で識別される、順序付きデバイスペア一組のE2EEセッション。そのDouble Ratchet、順不同処理、リプレイの状態を、他のデバイスペアと共有することはありません。
+- **Application Plaintext**：暗号化前の個別メッセージングのアプリケーション層平文オブジェクト。Direct Baseのアプリケーションペイロードを正規化した内側の表現で、AEAD暗号化へ渡します。
+- **Ratchet Header**：後続メッセージに必要な、公開ヘッダーフィールドの最小集合。受信側はこれを使い、受信チェーンを特定し、DHラチェットを進める必要があるか判断し、順不同のメッセージを処理します。
+- **Mailbox**：`(recipient_did, recipient_device_id)`をスコープとする不透明な暗号文キュー。複数のセッションを運べますが、Ratchet状態は持ちません。
+- **Replay Cache**：初期メッセージや後続メッセージの重複を識別するための状態の集合。ローカル状態であり、標準wireプロトコルのフィールドではありません。
 
-ダイレクトメッセージングのビジネスセマティクスを赤くしない、再利用 `anp.direct.base.v1`'s:
+`device_id`は不透明でなければならず（**MUST**）、削除後に再利用してはなりません（**MUST NOT**）。鍵、ハードウェア識別子、利用者に見える名前ではありません。
 
-- `direct.send` メソッド;
-- `sender_did` / `target.did` 美容師;
-- `message_id` / `operation_id` 美容師;
-- 直接メッセージング成功のセマティクス(ターゲットエージェントポータルサービスが受け入れられる);
-- 応用層のコンテンツ タイプ 皮下。
+---
 
-各デバイス暗号文では、P5 はデバイスセレクター、デバイスのペア暗号化結合、およびデバイス固有の承認結果の両方を所有しています。 輸送保護されたP3メッセージは、DID-アドレスをとり、デバイスセレクタを運ぶことなく残します。
+## 3. 全体の設計原則
 
-### 3.3 MTIベースラインを交換しない
+### 3.1 業務アイデンティティと暗号デバイスエンドポイント
 
-このv2プロファイルの必須相互運用性ベースラインは引き続き採用されています。
+業務上の送信者と受信者は、引き続き`meta.sender_did`と`meta.target.did`です。このProfileは、正確に一組の暗号デバイスペアを選ぶため、追加で`meta.sender_device_id`と`meta.recipient_device_id`を要求します。これらのフィールドはP5だけに属し、DID単位の連絡先や会話の意味を変えません。
 
-- 初期セッションの開設: `X3DH-like` (DIDの提出)
-- 長期静的な交渉のキー: `X25519`
-- ケド: `HKDF-SHA-256`
-- 電子メール: `ChaCha20-Poly1305`
-- サブシーケントメッセージ: `Double Ratchet-like`
+送信者が一つの受信者DIDの下の複数の適格デバイスを宛先とする場合、受信デバイスごとに独立して暗号化した`direct.send`操作を一つ作成しなければなりません（**MUST**）。サービスはRatchet状態を共有したり、見えない形で暗号処理をファンアウトしたりしてはなりません（**MUST NOT**）。
 
-### 3.4 将来のアップグレードパス
+### 3.2 セキュリティOverlayと業務上の意味の分離
 
-このページはアップグレードのお部屋を予約しています。 `PQXDH-like`. . . このv2プロファイルは、既存のMTIの暗号スイートを変更しません。将来のスイートには、別の明示的なスイート識別子と交渉が必要です。
+このProfileは個別メッセージングの業務上の意味を再定義せず、`anp.direct.base.v1`の次の要素を再利用します。
 
-`anp.direct.e2ee.v1` 独立した単一エンドポイント契約を保留します。 導入事例 **MUST NOT** v1 ピアのデバイスを注入し、v1 セッションまたはラチェットの状態を v2 デバイスの状態として再利用したり、v1 やトランスポート保護 P3 に失敗した v2 デバイス操作をサイレントダウングレードします。
+- `direct.send`メソッド。
+- `sender_did`／`target.did`の意味。
+- `message_id`／`operation_id`の意味。
+- 個別メッセージングの成功の意味（宛先エージェントの入口サービスが受け入れたこと）。
+- アプリケーション層のコンテンツ型の意味。
 
-### 初期設定では、3.5 の長期署名が必須ではありません。
+各デバイス暗号文について、二つのデバイスセレクター、デバイスペアの暗号学的バインディング、デバイス固有の受け入れ結果をP5が管理します。トランスポート保護されたP3メッセージは引き続きDIDを宛先とし、デバイスセレクターを運びません。
 
-このプロフィールでは、全体にわたって長期IDの署名を `direct_init` オブジェクトは **必須事項** デフォルトでは。
+### 3.3 MTI基準は変更しない
 
-理由は:
+このv2 Profileの必須相互運用基準は、引き続き次を採用します。
 
-1. X3DH のような認証自体は、長期静的交渉キーと受信機 SPK の組み合わせから来ています。
-2. 受信機SPKはAssertionのキーによって縛られました;
-3. 長い時間のために署名するすべての init メッセージが要求された場合、それは「属性制御メッセージ」モデルに向かって著しく偏見し、信号スタイルの劣化を弱める。
+- 初回セッション確立：`X3DH-like`（DID向けに適応）
+- 長期静的合意鍵：`X25519`
+- KDF：`HKDF-SHA-256`
+- メッセージAEAD：`ChaCha20-Poly1305`
+- 後続メッセージ：`Double Ratchet-like`
 
-展開がより強い可聴性を必要とする場合、 MAY 有効にして下さい `Direct Init Accountability Extension`. . . その拡張子はオプションで、このプロファイルのデフォルトの動作の一部ではありません。
+### 3.4 将来のアップグレード経路
 
-### 3.6 MTIワイヤーの目的コレクション `anp.direct.e2ee.v2`
+このProfileは、`PQXDH-like`へのアップグレードの余地を残します。このv2 Profileでは既存のMTI暗号スイートを変更しません。将来のスイートには、別個の明示的なスイート識別子と交渉が必要です。
 
-いつか `method = "direct.send"` とりあえず `meta.profile = "anp.direct.e2ee.v2"`,次の2つの値のみが許可されます `meta.content_type` 変更されていないMTIパスで:
+`anp.direct.e2ee.v1`は、別個の単一エンドポイント契約のままです。実装は、v1の相手のデバイスを推論したり、v1のSessionやRatchet状態をv2のデバイス状態に再利用したり、失敗したv2デバイス操作をv1やトランスポート保護されたP3へ暗黙にダウングレードしたりしてはなりません（**MUST NOT**）。
+
+### 3.5 initメッセージ全体への長期鍵による署名は既定で不要
+
+このProfileでは、`direct_init`オブジェクト全体に対する、長期DIDアイデンティティ鍵による署名を、既定では**要求しません**。
+
+理由は次のとおりです。
+
+1. X3DH-likeの認証自体は、長期静的合意鍵と受信側SPKの組み合わせから得られる。
+2. 受信側SPKはAssertion Keyによってバインドされている。
+3. initメッセージ全体への長期鍵による署名を必須にすると、「送信元を帰属できる制御メッセージ」モデルへ大きく寄り、Signal方式の否認可能性を弱める。
+
+配備環境で、より高い監査可能性が必要な場合、`Direct Init Accountability Extension`を有効にしてもかまいません（MAY）。この拡張は任意で、このprofileの既定の動作には含まれません。
+
+### 3.6 `anp.direct.e2ee.v2`のMTI wireオブジェクト集合
+
+`method = "direct.send"`かつ`meta.profile = "anp.direct.e2ee.v2"`の場合、変更しないMTI経路では、`meta.content_type`に次の二つの値だけを認めます。
 
 - `application/anp-direct-init+json`
 - `application/anp-direct-cipher+json`
 
-送信者 **MUST NOT** 変更されていないMTIパスで異なるワイヤオブジェクトタイプを使用します。
-他の受取人を受け取る `content_type` MUST 拡張交渉により、機能が明示的に有効化されていない限り拒否します。
+送信側は、変更しないMTI経路で別のwireオブジェクト型を使ってはなりません（**MUST NOT**）。
+他の`content_type`を受け取った受信側は、拡張交渉でその機能を明示的に有効化していない限り、拒否しなければなりません（MUST）。
 
-### 3.7 メッセージID制約 `direct.send` とりあえず `anp.direct.e2ee.v2`
+### 3.7 `anp.direct.e2ee.v2`の`direct.send`におけるメッセージIDの制約
 
-のために `direct.send` のり `meta.profile = "anp.direct.e2ee.v2"`:
+`meta.profile = "anp.direct.e2ee.v2"`の`direct.send`では、次に従います。
 
-- `meta.message_id` **MUST** 存在;
-- `meta.operation_id` **MUST** 存在;
-- `meta.operation_id` **MUST** 正確に等しい `meta.message_id`.
+- `meta.message_id`が存在しなければなりません（**MUST**）。
+- `meta.operation_id`が存在しなければなりません（**MUST**）。
+- `meta.operation_id`は`meta.message_id`と完全に等しくなければなりません（**MUST**）。
 
-各受信デバイス 暗号テキスト **MUST** 独自のユニークで `message_id` / `operation_id` ペア。 兄弟用テキストは、暗号化されたアプリケーションプレインテキストに同じオプションが含まれている場合でもペアを共有できません `logical_message_id`.
+各受信デバイスの暗号文は、独自の一意な`message_id`／`operation_id`の組を使わなければなりません（**MUST**）。暗号化されたApplication Plaintextに同じ任意の`logical_message_id`が含まれていても、同じDIDの他のデバイスの暗号文と、この組を共有することはできません。
 
-### 3.8 `auth` 制約の制限 `direct.send` とりあえず `anp.direct.e2ee.v2`
+### 3.8 `anp.direct.e2ee.v2`の`direct.send`における`auth`の制約
 
-`params.auth` **MUST** 不在な `direct.send` いつか `meta.profile = "anp.direct.e2ee.v2"`.
+`meta.profile = "anp.direct.e2ee.v2"`の`direct.send`では、`params.auth`が存在してはなりません（**MUST**）。
 
-展開が明示的に交渉する場合 `Direct Init Accountability Extension`, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , **MAY** 追加のアテスティングオブジェクトを紹介します。 延長が交渉されていない場合、受信機 **MUST** 受領を拒否する `params.auth`.
+配備環境が`Direct Init Accountability Extension`を明示的に交渉した場合、追加の証明オブジェクトを導入してもかまいません（**MAY**）。拡張を交渉していない場合、受信側は、受け取った`params.auth`をすべて拒否しなければなりません（**MUST**）。
 
 ---
 
 
-### 3.9 P3オリジナイザーの結合の条件との関係
+### 3.9 P3の発信元バインディング要件との関係
 
-とりあえず`auth.origin_proof.contentDigest` P3セクション9.7の同等の起源の証拠の消化器」の条件、このプロフィールは次の目的によって同等な結合に一緒に合います:
+P3の9.7節の「`auth.origin_proof.contentDigest`または同等の発信元証明ダイジェスト」という要件に対し、このProfileは次のオブジェクトを組み合わせて同等のバインディングを満たします。
 
 - `AD_init`
 - `AD_msg`
-- `Application Plaintext` エイエイエイド保護下
+- AEAD保護下の`Application Plaintext`
 
-いつか `Direct Init Accountability Extension` 交渉は行いません。このプロフィールのMTI **必須ではありません** P3 フォームをさらに持ち運ぶ `params.auth.origin_proof`.
+`Direct Init Accountability Extension`を交渉していない場合、このProfileのMTIは、P3形式の`params.auth.origin_proof`を追加で運ぶことを**要求されません**。
 
-## 4. 方法独立性 DID 統合ルール
+## 4. DIDメソッドに依存しない統合規則
 
 ### 4.1 DID文書の最小要件
 
-エージェントのDIDは、このプロファイルをサポートしている文書 **MUST** 会议日程:
+このProfileに対応するAgent DID文書は、次を満たさなければなりません（**MUST**）。
 
-1. 同一認証やアサーション署名に使用することができるアサーションキーには少なくとも1つの認証鍵があります。
-2. 少なくとも1つあります `keyAgreement` 検証方法;
-3. 少なくとも1つあります `ANPMessageService` または同等のサービスエントリ;
-4. 現在のP2 `deviceManifest` P5 を使用するすべてのデバイスを宣言し、そのマップを `device_id`, `signing_key_id`, `e2ee_key_id`、および完全な P1/P2/P3/P5 プロフィールの依存性セット;
-5. とりあえず `ANPMessageService` **MUST** 呼び出し側から解析・アクセスでき、このプロファイルで必要なデバイスキーのマテリアルメソッドを提供します。
+1. アイデンティティ認証に使えるAuthentication Keyと、アサーション署名に使えるAssertion Keyが、少なくとも一つずつある。
+2. 少なくとも一つの`keyAgreement`検証メソッドがある。
+3. 少なくとも一つの`ANPMessageService`または同等のサービスエントリがある。
+4. 現在のP2 `deviceManifest`が、P5を使えるすべてのデバイスを宣言し、その`device_id`、`signing_key_id`、`e2ee_key_id`と、P1/P2/P3/P5 Profileの完全な依存集合を対応付けている。
+5. 呼び出し元が`ANPMessageService`を解決してアクセスでき、このProfileが要求するデバイスごとの鍵素材メソッドを提供していなければならない（**MUST**）。
 
-#### 4.1.1 現在の装置適格性
+#### 4.1.1 現在のデバイスの適格性
 
-出版前、返送、P5素材使用前に `(D, d)`, 実装 **MUST** 現在の DID ドキュメントに対して、次のことを確認してください。
+実装は、`(D, d)`のP5素材を公開、返却、使用する前に、現在のDID文書に対して次を検証しなければなりません（**MUST**）。
 
-1. `d` エージェントIDで1つの現在のP2マニフェストエントリを正確に選択します `D`;
-2. エントリーが宣言する `anp.direct.e2ee.v2` およびその必要な P1/P2/P3 の依存関係;
-3. `signing_key_id` バンドルの証拠に必要な署名方法を参照し、 `e2ee_key_id` リファレンスX25519メソッドで `keyAgreement`; と
-4. バンドル、セッション、AD、再生状態、およびMailbox操作は同じDID/デバイスとキーリファレンスを使用します。
+1. `d`がAgent DID `D`の下の、現在のP2 Manifestエントリを正確に一つ選択する。
+2. そのエントリが`anp.direct.e2ee.v2`と、必要なP1/P2/P3依存関係を宣言している。
+3. `signing_key_id`がBundle証明に必要な署名メソッドを参照し、`e2ee_key_id`が`keyAgreement`内のX25519メソッドを参照している。かつ、
+4. Bundle、Session、AAD、リプレイ状態、Mailbox操作が、同じDID／デバイスと鍵参照を使っている。
 
-選択したデバイスがこれらの規則、新しい素材および暗号テキストを満たしていない場合 **MUST** キャッシュやセッションの拒否、影響を受ける **MUST** 利用停止、呼び出し側 **MUST** DIDを再解決します。 他者向け静止対象のデバイスペアの変更が不備となります。
+選択したいずれかのデバイスがこれらの規則を満たさなくなった場合、新しい素材と暗号文を拒否しなければならず（**MUST**）、影響するキャッシュとSessionの使用を止めなければならず（**MUST**）、呼び出し元はDIDを再解決しなければなりません（**MUST**）。引き続き適格な他のデバイスペアの、変更されていないSessionには影響しません。
 
-### 4.2 キーロール分離
+### 4.2 鍵の役割の分離
 
-プロフィール **MUST** 主役割の分離を使用して下さい:
+このProfileは、鍵の役割を分離しなければなりません（**MUST**）。
 
-1. リストされているキー `assertionMethod` のために使用されます:
-   - 署名のプレキーの束;
-   - 強力なアイデンティティ所有権を必要とするオブジェクトを署名する(拡張機能が有効になっている場合)。
-2. リストされているキー `keyAgreement` のために使用されます:
-   - 長期静的交渉;
-   - 初期共有キーの派生;
-3. 試金キーおよび静的な主合意のキー **MUST NOT** 一緒に使用して下さい。
+1. `assertionMethod`に列挙された鍵を次に使う。
+   - Prekey Bundleへの署名。
+   - 強いアイデンティティ所有証明が必要な制御オブジェクトへの署名（拡張が有効な場合）。
+2. `keyAgreement`に列挙された鍵を次に使う。
+   - 長期静的鍵合意。
+   - 初期共有鍵の導出。
+3. Assertion Keyと静的鍵合意鍵を兼用してはならない（**MUST NOT**）。
 
-各マニフェストデバイスは、別々の署名とX25519プライベートキー、SPK / OPKプライベートキー、ダイレクトセッション、ラチェット状態、スキップキー、および再生状態を所有しています。 2つのデバイス **MUST NOT** これらのプライベートな状態を共有したり、同じアクティブなキーリファレンスを公開したりします。
+各Manifestデバイスは、別個の署名秘密鍵とX25519秘密鍵、SPK/OPK秘密鍵、Direct Session、Ratchet状態、スキップした鍵、リプレイ状態を所有します。二つのデバイスが、これらの秘密状態を共有したり、同じ有効な鍵参照を公開したりしてはなりません（**MUST NOT**）。
 
-補足注記:オンラインプロトコルでは、通常は参照されます `proof.verificationMethod`と後者は通常、 `static_key_agreement_id` バンドルまたは `sender_static_key_agreement_id` init; 実装は、同じキーが両方のタイプのセマティクスを負担させないようにする必要があります。
+補足：wireプロトコルでは、前者は通常`proof.verificationMethod`で、後者はBundleの`static_key_agreement_id`またはinitの`sender_static_key_agreement_id`で参照します。実装は、同じ鍵に両方の意味を担わせるべきではありません。
 
-### 4.3 DIDメソッド検証
+### 4.3 DIDメソッドの検証
 
-DID ドキュメントは、以下の検証を行います。 [P2 メソッド検証](../../message/02-identity-and-discovery.md#method-validation) 対応するメソッドの仕様。 デバイスの適格性とバンドルオブジェクトプルーフは、それぞれセクション4.1.1と6.2に従うことを継続します。
+DID Documentは、[P2のメソッド検証](../../message/02-identity-and-discovery.md#method-validation)と、対応するメソッド仕様に従って検証します。デバイスの適格性とBundle Object Proofは、それぞれ引き続き4.1.1節と6.2節に従います。
 
-### 4.4 主な材料能力 `ANPMessageService`
+### 4.4 `ANPMessageService`の鍵素材の機能
 
-あらゆる正確のために `(owner_did, owner_device_id)`, `ANPMessageService` **MUST** このプロファイルで必要な次のキー材料機能をサポートしています。
+正確に指定された各`(owner_did, owner_device_id)`について、`ANPMessageService`は、このprofileが要求する次の鍵素材機能に対応しなければなりません（**MUST**）。
 
-- プレキーバンドルを公開する。
-- OPKプールを補充または回転させる。
-- プレキーバンドルのクエリ
-- ワンの利用可能なOPKを1回ずつ発行(存在してポリシーが許せば)。
-- 再使用のために割り当てられた、消費されるか、または利用できなくなったとしてOPKを印を付けて下さい;
-- バンドルのリヴォーク状態または無効なステータスを返します(実装でサポートされている場合)。
-- デバイスがP5の適格性を失うときにバンドルとOPKをサービングを停止します。
+- Prekey Bundleを公開する。
+- OPKプールを補充またはローテーションする。
+- Prekey Bundleを照会する。
+- 利用できるOPKを一回につき一つ発行する（存在し、ポリシーが認める場合）。
+- OPKを、割り当て済み、消費済み、または再利用不可として記録する。
+- Bundleの取り消し・無効化状態を返す（実装が対応する場合）。
+- デバイスがP5の適格性を失ったら、そのBundleとOPKの提供を止める。
 
-P5を理解する最初の障壁はアルゴリズムではなく、パーティーサインがDHを実行し、どのパーティがバンドル/OPKを公開するのかを把握するのではなく、その方向に示すようにします。 次の図は、DID ドキュメントのキーロールと外部から露出した材料を 1 つのビューに置き、その後のセッション・エステティックスフローをします。
+P5を理解する最初の難所はアルゴリズムではなく、誰が署名し、誰がDHを行い、誰がBundle／OPKを公開するかです。次の図は、後続のセッション確立フローに向けて、DID文書の鍵の役割と、外部に公開する素材を一つにまとめています。
 
 ```mermaid
 flowchart TB
@@ -234,76 +235,76 @@ SVC --> GET[direct.e2ee.get_prekey_bundle]
 GET --> RET[Return prekey_bundle + optional OPK]
 ```
 
-*図 P5-1: 重要な役割と公共材料(非放射性)の関係。*
+*図P5-1：鍵の役割と公開素材の関係（非規範）。*
 
-この図は、責任の分離を強調しています。Assertion Keyは、長期的にはアイデンティティ結合に責任があります。 `keyAgreement` OPK/OPKキーはDH計算に責任があります。 実装は、同じキーが両方のセマティクスを運ぶようにしてはならない。
+この図は責務の分離を強調します。Assertion Keyがアイデンティティのバインディングを担当し、長期の`keyAgreement`とSPK／OPK鍵がDH計算を担当します。実装は、同じ鍵に両方の意味を担わせるべきではありません。
 
 ---
 
-## 5. 必須-to-Implement Suite (MTI) - マンディタリーツー・イポメンションスイート(MTI)
+## 5. 実装必須スイート（MTI）
 
 ### 5.1 MTIスイート名
 
-v2 プロファイルは変更されていない MTI 暗号スイートを引き続き使用しています。
+v2 Profileは、変更していない次のMTI暗号スイートを引き続き使います。
 
 `ANP-DIRECT-E2EE-X3DH-25519-CHACHA20POLY1305-SHA256-V1`
 
-トレイル `V1` P5 プロファイルバージョンではなく、Cipher-suite バージョンです。 導入事例 **MUST NOT** それを取り替えて下さい `V2`HKDFの全ての方 `info` このドキュメントの文字列とアルゴリズムパラメータは、リリースされたスイートから変更されずに残っています。
+末尾の`V1`は暗号スイートの版であり、P5 Profileの版ではありません。実装はそれを`V2`に置き換えてはならず（**MUST NOT**）、本書のすべてのHKDF `info`文字列とアルゴリズムパラメーターも、リリース済みスイートから変更しません。
 
-### 5.2 MTIスイートパラメータ
+### 5.2 MTIスイートのパラメーター
 
-キットパラメータは、次の通り修正されます。
+スイートのパラメーターは次に固定します。
 
-- 静的な交渉のカーブ: `X25519`
-- 一時的な交渉のカーブ: `X25519`
-- HKDF: `HKDF-SHA-256`
-- エイエイド: `ChaCha20-Poly1305`
-- バンドルオブジェクトの証拠のプロフィール: `prekey_bundle.proof` **MUST** 共有の再利用 `Object Proof Profile` P1 付録 B で定義
+- 静的鍵合意の曲線：`X25519`
+- 一時鍵合意の曲線：`X25519`
+- HKDF：`HKDF-SHA-256`
+- AEAD：`ChaCha20-Poly1305`
+- Bundleオブジェクト証明のprofile：`prekey_bundle.proof`は、P1付録Bで定義する共通の`Object Proof Profile`を再利用しなければなりません（**MUST**）。
 
 
-この条件は少なくとも適用します:
+この要件は、少なくとも次に適用されます。
 
-- 保護された文書の `prekey_bundle` (別名) `Signed Bundle Object` この記事で
+- `prekey_bundle`の保護対象文書（本書で`Signed Bundle Object`とも呼ぶ）。
 - `AD_init`
 - `AD_msg`
 - `Application Plaintext`
 
 
-### 5.3 推奨オプションスイート
+### 5.3 推奨する任意スイート
 
-導入事例 **MAY** 追加のサポート:
+実装は、追加で次に対応してもかまいません（**MAY**）。
 
 - `ANP-DIRECT-E2EE-X3DH-25519-AES256GCM-SHA256-V1`
-- `ANP-DIRECT-E2EE-PQXDH-HYBRID-V1` (予約済み)
+- `ANP-DIRECT-E2EE-PQXDH-HYBRID-V1`（予約済み）
 
-どんなことでも `anp.direct.e2ee.v2` 相互運用性実装 **MUST** 変更されていないMTIスイートをサポート。
+ただし、`anp.direct.e2ee.v2`の相互運用実装はすべて、変更していないMTIスイートに対応しなければなりません（**MUST**）。
 
 ---
 
-## 6. 公共材料および束の構造
+## 6. 公開素材とBundleの構造
 
-### 6.1長期静的交渉キー
+### 6.1 長期静的鍵合意鍵
 
-それぞれの現在のデバイスがこのプロファイルを宣言する **MUST**, そのマニフェストを通して `e2ee_key_id`、エージェント DID 文書の独自の長命静 X25519 公開鍵を参照して下さい `keyAgreement`.
+このProfileを宣言する現在の各デバイスは、Manifestの`e2ee_key_id`を通じて、Agent DID文書の`keyAgreement`内にある、自分の長期静的X25519公開鍵を参照しなければなりません（**MUST**）。
 
-推奨分野:
+推奨するフィールド：
 
-- `id`: たとえば `did:wba:example.com:agent:alice:e1_xxx#ka-1`
-- `type`: 自己選択を実装するが、明示的にX25519を述べなければならない
-- `publicKeyMultibase` または同等の公開鍵の表現
+- `id`：例：`did:wba:example.com:agent:alice:e1_xxx#ka-1`
+- `type`：実装で選べますが、X25519であることを明記する必要があります。
+- `publicKeyMultibase`または同等の公開鍵表現。
 
 
-フィールド使用方法の指示:
+各フィールドの用途：
 
-- `id`: バンドル、Init メッセージおよびAADで「この時間に長期DHキーが使用されたか」を正確に示すのに使用される。
-- `type`: 検証方法のアルゴリズムとエンコーディング方法を宣言するために使用されるため、ピアは正しくX25519であることをデコードし、確認することができます。
-- `publicKeyMultibase` または等価:実際の公共鍵バイトを運び、DHを実行しているピアの入力ソースです。
+- `id`：Bundle、Initメッセージ、AADで、「今回どの長期DH鍵を使ったか」を正確に示します。
+- `type`：検証メソッドのアルゴリズムと符号化方式を宣言し、相手が正しくデコードし、実際にX25519であることを検証できるようにします。
+- `publicKeyMultibase`または同等の表現：実際の公開鍵バイト列を運び、相手がDH計算を行う際の入力元になります。
 
-### 6.2 `prekey_bundle` 構造体
+### 6.2 `prekey_bundle`の構造
 
-`prekey_bundle` 代表的な **静的セッションの設置材料** 長期的に受取人が公開し、選択したデバイスのP1付録Bオブジェクトプルーフでバインドします。 シグナルスタイルのOPKペイパービュー発行モデルと一致させるために、 `prekey_bundle` **MUST NOT** 直接埋め込む `one_time_prekey`; クエリ時にサーバが OPK を返します。
+`prekey_bundle`は、受信側が長期にわたり公開する**静的なセッション確立素材**であり、選択したデバイスのP1付録BのObject Proofでバインドされます。Signal方式のOPKを照会ごとに発行するモデルに合わせるため、`prekey_bundle`に`one_time_prekey`を直接埋め込んではなりません（**MUST NOT**）。OPKは照会時にサーバーが返します。
 
-推奨定義の `prekey_bundle` 以下は、
+`prekey_bundle`の推奨定義は次のとおりです。
 
 ```json
 {
@@ -328,40 +329,40 @@ v2 プロファイルは変更されていない MTI 暗号スイートを引き
 }
 ```
 
-フィールド使用方法の指示:
+各フィールドの用途：
 
-- `bundle_id`: この静的バンドルバージョンの安定識別子。 送信者はそれに持って来ます `direct_init` とりあえず `AD_init`、および受信機はまた監査のためにそれを使うことができます、キャッシュは範囲の差別をヒットし、再生します。
-- `owner_did`: バンドルが所属するエージェントID 送信者は DID 文書を解析し、 `proof` バンドルのアイデンティティをそれに基づいて確認して下さい。
-- `owner_device_id`: バンドルを所有する正確なデバイスエンドポイント。 **MUST** 選択する 1 つの現在の P5 必須 マニフェストのエントリ 下 `owner_did`.
-- `suite`: 同バンドルに適用される暗号スイートの名前。 送信者は最初に、ローカルでサポートされているかどうかを決定し、バンドルセッションの確立を使用するかどうかを決めるべきです。
-- `static_key_agreement_id`: 長寿命静的X25519キーに示すDID URL `owner_did` DID ドキュメント。 同人格に「長期DHキーが対応する」と伝えます。
-- `signed_prekey.key_id`: 現在のSPKの安定識別子。 送信者参照でこれ `direct_init`受信機が正しいSPKの秘密鍵を見つけるのに使用している。
-- `signed_prekey.public_key_b64u`: 未パッドベース64url で表される SPK の公開鍵バイトは、初期 DH への入力の 1 つである。
-- `signed_prekey.expires_at`: SPKの有効期限 送信者は、使用前にバンドルが期限切れていないことを確認しなければなりません。
-- `proof.type`: 証拠オブジェクトの種類; このプロファイルのMTIは固定されています `DataIntegrityProof`.
-- `proof.cryptosuite`: 特定の証拠のcryptosuiteの名前;このプロフィールのMTIは固定に残ります `eddsa-jcs-2022`.
-- `proof.verificationMethod`: 正規化方法 DID URL がバンドルに署名するために使用されます。 送信者は、それが属しているかどうかをチェックする必要があります `assertionMethod` 許可される関係 `owner_did` ドキュメント。
-- `proof.proofPurpose`: 署名で使用されている認可関係を宣言します。これは、DID文書の承認関係に対応するために使用されます。
-- `proof.created`: 証明書が生成された時刻、監査およびポリシーチェックに使用されます。
-- `proof.proofValue`: バンドル表現のチェックアウトの検証値が正規化されます。
+- `bundle_id`：この静的Bundle版の安定した識別子。送信側は`direct_init`と`AD_init`に含め、受信側も監査、キャッシュヒット、リプレイ範囲の区別に使えます。
+- `owner_did`：Bundleの所属するAgent DID。送信側はこのDIDに基づいてDID文書を解決し、`proof`を検証して、Bundleのアイデンティティを確認します。
+- `owner_device_id`：Bundleを所有する正確なデバイスエンドポイント。`owner_did`の下の、現在P5に適格なManifestエントリを一つ選択しなければなりません（**MUST**）。
+- `suite`：このBundleに適用する暗号スイート名。送信側は、まずローカルで対応するか判断してから、このBundleでセッションを確立するかを決めるべきです。
+- `static_key_agreement_id`：`owner_did`のDID文書内の長期静的X25519鍵を指すDID URL。「このBundleがどの長期DH鍵に対応するか」を相手へ伝えます。
+- `signed_prekey.key_id`：現在のSPKの安定した識別子。送信側が`direct_init`で参照し、受信側が正しいSPK秘密鍵を見つけるために使います。
+- `signed_prekey.public_key_b64u`：パディングなしのbase64urlで表現したSPKの公開鍵バイト列。初期DHの入力の一つです。
+- `signed_prekey.expires_at`：SPKの有効期限。送信側は、Bundleを使う前に期限切れでないことを検証する必要があります。
+- `proof.type`：証明オブジェクトの種類。このProfileのMTIでは引き続き`DataIntegrityProof`に固定します。
+- `proof.cryptosuite`：具体的な証明暗号スイート名。このProfileのMTIでは引き続き`eddsa-jcs-2022`に固定します。
+- `proof.verificationMethod`：Bundleへの署名に使う検証メソッドのDID URL。送信側は、`owner_did`文書が認める`assertionMethod`関係に属するか確認するべきです。
+- `proof.proofPurpose`：署名で使う認可関係を宣言し、DID文書内の認可関係との対応に使います。
+- `proof.created`：この証明を生成した時刻。監査とポリシー検査に使います。
+- `proof.proofValue`：Bundleの正規化表現を検証するための証明値。〔訳注：このフィールドの原文説明は英文の構文が不明確です。具体的な証明の規則は、後続の節と共通のObject Proof Profileに従います。〕
 
-### 6.2.1 `prekey_bundle.proof` オブジェクトのプルーフプロファイルと共有
+### 6.2.1 `prekey_bundle.proof`と共通のObject Proof Profile
 
-`prekey_bundle.proof` **MUST** 共有の再利用 **オブジェクトの証拠のプロフィール** P1 付録 B で定義される。
+`prekey_bundle.proof`は、P1付録Bで定義する共通の**Object Proof Profile**を再利用しなければなりません（**MUST**）。
 
-のために `prekey_bundle`:
+`prekey_bundle`について：
 
-- 発行者 DID **MUST** は、 `owner_did`
-- オーナーデバイス **MUST** は、 `owner_device_id` 選択する 1 つの現在の P5 資格のあるマニフェストのエントリ
-- 保護された文書 **MUST** 全体として `prekey_bundle` 取除の後の目的 `proof`
-- この記事は、保護された文書を次のように参照します。 `Signed Bundle Object`
-- `proof.verificationMethod` **MUST** 認証方法のポイント `assertionMethod` で、 `owner_did` DID ドキュメント
-- `proofPurpose` **MUST** 固定する `assertionMethod`
+- 発行者DIDは`owner_did`でなければなりません（**MUST**）。
+- 所有デバイスは`owner_device_id`であり、現在P5に適格なManifestエントリを一つ選択しなければなりません（**MUST**）。
+- 保護対象文書は、`proof`を削除した`prekey_bundle`オブジェクト全体でなければなりません（**MUST**）。
+- 本書では、その保護対象文書を`Signed Bundle Object`と呼びます。
+- `proof.verificationMethod`は、`owner_did`のDID文書の`assertionMethod`によって認可された認証メソッドを指さなければなりません（**MUST**）。
+- `proofPurpose`は`assertionMethod`に固定しなければなりません（**MUST**）。
 
 
-### 6.2.2 非再定義可能なセマンティック `bundle_id`
+### 6.2.2 `bundle_id`の意味は再定義できない
 
-現地受入窓口内では、同じ `bundle_id` **MUST** フィールドの次の組み合わせだけをユニークかつマッピングします。
+ローカルの受け入れ期間内で、同じ`bundle_id`は、次のフィールドの組み合わせだけへ一意に対応付けなければなりません（**MUST**）。
 
 - `owner_did`
 - `owner_device_id`
@@ -370,21 +371,21 @@ v2 プロファイルは変更されていない MTI 暗号スイートを引き
 - `signed_prekey.key_id`
 - `signed_prekey.public_key_b64u`
 
-サーバ **MAY** 複数の異なる受け入れ `bundle_id` 短い猶予期間内で同時値が値するが、 **MUST NOT** 同じものを赤くする `bundle_id`.
+サーバーは、短い猶予期間内に異なる複数の`bundle_id`値を同時に受け入れてもかまいません（**MAY**）。ただし、同じ`bundle_id`を再定義してはなりません（**MUST NOT**）。
 
-しばらくの間 `bundle_id` 受入ウィンドウ内にはまだ存在します。 **MUST** 対応するSPKプライベートキー、バンドルメタデータ、および受入ウィンドウの最後に必要な検索インデックスを保持します。
+`bundle_id`が受け入れ期間内にある間、受信側は、その期間が終わるまで、対応するSPK秘密鍵、Bundleメタデータ、必要な検索索引を保持しなければなりません（**MUST**）。
 
-### 6.2.3 バンドル証拠のためのオブジェクト固有の制約
+### 6.2.3 Bundle証明のオブジェクト固有の制約
 
-プロフィールのMTIの下でP1付録Bの共有ルールに加えて、 `prekey_bundle` **MUST** 満足する:
+P1付録Bの共通規則に加えて、このProfileのMTIでは、`prekey_bundle`は次を満たさなければなりません（**MUST**）。
 
-- `proof` **MUST** 存在している
-- `proof.verificationMethod` did に所属する **MUST** 等しいへの `owner_did`
-- 場合 `prekey_bundle.proof` P1付録B、または発行者DIDは矛盾しません `owner_did`, 受取人 **MUST** バンドルをとらえないようにする `anp.direct.e2ee.bundle_invalid`
+- `proof`が存在しなければなりません（**MUST**）。
+- `proof.verificationMethod`の所属DIDは、`owner_did`と等しくなければなりません（**MUST**）。
+- `prekey_bundle.proof`がP1付録Bを満たさない、またはその発行者DIDが`owner_did`と一致しない場合、受信側は`anp.direct.e2ee.bundle_invalid`でBundleを拒否しなければなりません（**MUST**）。
 
-### 6.3 束の分野条件
+### 6.3 Bundleフィールドの要件
 
-`prekey_bundle` **MUST** 含まれるもの:
+`prekey_bundle`は次を含まなければなりません（**MUST**）。
 
 - `bundle_id`
 - `owner_did`
@@ -394,13 +395,13 @@ v2 プロファイルは変更されていない MTI 暗号スイートを引き
 - `signed_prekey`
 - `proof`
 
-`prekey_bundle` **MUST NOT** 直接に含まれている:
+`prekey_bundle`に次を直接含めてはなりません（**MUST NOT**）。
 
 - `one_time_prekey`
 
-### 6.4 バンドル証拠のオブジェクト固有のフィールド制約
+### 6.4 Bundle証明のオブジェクト固有のフィールド制約
 
-P1付録Bの統一保護範囲の要件に加えて、「後のオブジェクト全体 `proof` 削除されます。 `prekey_bundle` まさか **MUST** 少なくとも次のセキュリティクリティカルなフィールドを含み、したがって、その全体で保護されています `proof`:
+P1付録Bの「`proof`を削除したオブジェクト全体」という共通の保護範囲要件に加えて、`prekey_bundle`は少なくとも次のセキュリティ上重要なフィールドを含まなければならず（**MUST**）、その全体が`proof`によって保護されます。
 
 - `bundle_id`
 - `owner_did`
@@ -409,28 +410,28 @@ P1付録Bの統一保護範囲の要件に加えて、「後のオブジェク�
 - `static_key_agreement_id`
 - `signed_prekey`
 
-`proof` 静的バンドルにバインドされる。OPK **MUST NOT** 実行時に毎回発行されるのは、静的バンドル証拠のカバレッジコンテンツとして使用されます。
+`proof`は静的Bundleに結び付きます。実行時に一回ごとに発行されるOPKを、静的Bundle証明の対象内容にしてはなりません（**MUST NOT**）。
 
-### 6.5 束の証明の条件
+### 6.5 Bundleの検証要件
 
-送信者 **MUST** バンドルを使用する前に:
+送信側は、Bundleの使用前に次を行わなければなりません（**MUST**）。
 
-1. 現在の DID ドキュメントをパースします。 `owner_did` 検証 `owner_device_id` セクション 4.1.1 の下;
-2. それを検証する `proof.verificationMethod` エントリーのマニフェストが現れると等しい `signing_key_id` と は によって 承認される `assertionMethod` で、 `owner_did` DID文書;
-3. 検証 `prekey_bundle.proof` P1の付録Bで定義される共有オブジェクトプルーフプロファイル(保護された文書は `Signed Bundle Object`);
-4. それを検証する `static_key_agreement_id` エントリーのマニフェストが現れると等しい `e2ee_key_id` DID ドキュメントに存在する `keyAgreement`;
-5. 検証するかどうか `suite` ローカルでサポートされるパッケージです。
-6. それを検証する `signed_prekey.expires_at` 期限が切れていない;
-7. 場合 `direct.e2ee.get_prekey_bundle`'s Successful Response は、 `one_time_prekey`、送信者 **MUST** フィールド形式が法的であることを確認し、そのフィールドのレコードを記録する `key_id` セッションの確立、消費および監査のため。
-8. 送信者がその後に構築したときに `direct_init`, `recipient_signed_prekey_id` **MUST** 選択されたに等しいです `prekey_bundle.signed_prekey.key_id`.
+1. `owner_did`の現在のDID文書を解決し、4.1.1節に従って`owner_device_id`を検証する。
+2. `proof.verificationMethod`がそのManifestエントリの`signing_key_id`と等しく、`owner_did`のDID文書の`assertionMethod`で認可されていることを検証する。
+3. P1付録Bの共通のObject Proof Profileに従って、`prekey_bundle.proof`を検証する（保護対象文書は`Signed Bundle Object`）。
+4. `static_key_agreement_id`が、そのManifestエントリの`e2ee_key_id`と等しく、DID文書の`keyAgreement`内に存在することを検証する。
+5. `suite`がローカルで対応するスイートかを検証する。
+6. `signed_prekey.expires_at`が期限切れでないことを検証する。
+7. `direct.e2ee.get_prekey_bundle`の成功応答に`one_time_prekey`が付いている場合、送信側は、そのフィールド形式が有効であることを検証し、後続のセッション確立、消費、監査のために`key_id`を記録しなければならない（**MUST**）。
+8. 送信側が後で`direct_init`を構築するとき、`recipient_signed_prekey_id`は、選んだ`prekey_bundle.signed_prekey.key_id`と等しくなければならない（**MUST**）。
 
-### 6.6 OPK戦略
+### 6.6 OPKポリシー
 
-このプロフィールの変更のないMTIの下で、使用 `one_time_prekey` 残留期間 **SHOULD**, しかし、それは **MAY** 必須項目
+このProfileの変更しないMTIでは、`one_time_prekey`の使用は引き続き推奨（**SHOULD**）ですが、省略してもかまいません（**MAY**）。
 
-シグナルスタイルのワンタイムプレキー発行方法と一貫性のあるためには、各受信デバイス **SHOULD** 発行可能なOPKの一括アップロード `ANPMessageService` 事前にサーバーがそのデバイスのプールから1つを返し、 `direct.e2ee.get_prekey_bundle`'s は、一度に応答を成功させる。
+Signal方式の使い捨て事前鍵の発行に合わせ、各受信デバイスは、発行可能なOPKを自分の`ANPMessageService`へ事前に一括アップロードするべきです（**SHOULD**）。サーバーは、`direct.e2ee.get_prekey_bundle`の成功応答で、そのデバイスのプールから一つずつ返します。
 
-成功した応答がOPKに来るとき、オブジェクトのフォーマットは次の通り推奨されます。
+成功応答にOPKを付ける場合、推奨オブジェクト形式は次のとおりです。
 
 ```json
 {
@@ -439,66 +440,66 @@ P1付録Bの統一保護範囲の要件に加えて、「後のオブジェク�
 }
 ```
 
-フィールド使用方法の指示:
+各フィールドの用途：
 
-- `key_id`: このOPKレコードの安定したID。 送信者とは、それを通すことを指します。 `recipient_one_time_prekey_id` でん `direct_init`、受信機はそれを使用して対応する秘密鍵を見つけ、消費します。
-- `public_key_b64u`: 未パッドベース64urlを使用して表されるこのOPKの公開鍵バイトは、オプションに入力されます `DH4`.
+- `key_id`：このOPK記録の安定したID。送信側が`direct_init`の`recipient_one_time_prekey_id`で参照し、受信側が対応する秘密鍵を探して消費するために使います。
+- `public_key_b64u`：パディングなしのbase64urlで表現したOPKの公開鍵バイト列。任意の`DH4`への入力です。
 
-ルールは以下の通りです。
+規則は次のとおりです。
 
-- サーバ **SHOULD** OPKを返したときに割り当てられたままにマークします。
-- 同じOPK **MUST NOT** 複数の送信者またはデバイスペアに同時配布されます。
-- OPKが初期セッションの確立が完了したら、サーバ **MUST** 消費されるようにマークし、受信機 **MUST** 対応する OPK プライベート キーを削除します。
-- 配分後にセッションの設置が終了しない場合、再資源化が許可されているかどうかは、展開方針で決定されます。ただし、OPK **MUST NOT** セッションの成功のために使用することが確認されていること、再び発行する必要があります。
-- 場合 `direct.e2ee.get_prekey_bundle`'s Successful Response は、OPK が付属していないため、イニシエータはセッションの確立を続行できますが、初期共有シークレットのフォワードセキュリティは SPK ライフサイクルに多く依存します。
+- サーバーはOPKを返すとき、直ちに割り当て済みと記録するべきです（**SHOULD**）。
+- 同じOPKを、複数の送信者やデバイスペアへ同時に配ってはなりません（**MUST NOT**）。
+- OPKを使って初回のセッション確立に成功したら、サーバーは消費済みと記録しなければならず（**MUST**）、受信側は対応するOPK秘密鍵を削除しなければなりません（**MUST**）。
+- 割り当て後にセッション確立が完了しなかった場合、回収を認めるかは配備ポリシーで決めます。ただし、セッション確立に成功したことが確認されたOPKを再発行してはなりません（**MUST NOT**）。
+- `direct.e2ee.get_prekey_bundle`の成功応答にOPKがなくても、開始側はセッション確立を続けられます。ただし、初期共有秘密の前方秘匿性は、SPKのライフサイクルへより強く依存します。
 
 ---
 
-## 7. キーサービス方法
+## 7. 鍵サービスのメソッド
 
 ### 7.1 `direct.e2ee.publish_prekey_bundle`
 
-この方法は、送信者の公開に新しい静的プレキーバンドルを公開するために使用されます `ANPMessageService`、オプションでOPKのバッチを補う。
+このメソッドは、送信側自身の公開`ANPMessageService`へ新しい静的Prekey Bundleを公開し、任意でOPKの一括補充を行うために使います。
 
-#### リクエストの要件
+#### 要求の要件
 
 - `meta.profile = anp.direct.e2ee.v2`
 - `meta.security_profile = transport-protected`
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 出版社の公開と等しい `ANPMessageService.serviceDid`
-- `meta.sender_did` **MUST** 存在している
-- `meta.sender_device_id` **MUST** 存在している
-- `meta.operation_id` **MUST** 存在している
-- `params.auth` **MUST** 延長が交渉されていない限り、不在である
-- `body.prekey_bundle` **MUST** 存在している
-- `body.prekey_bundle.owner_did` **MUST** 等しく `meta.sender_did`
-- `body.prekey_bundle.owner_device_id` **MUST** 等しく `meta.sender_device_id`
-- `body.one_time_prekeys` **MAY** 存在;それが存在する場合、 **MUST** 空の配列ではなく、各要素 **MUST** 少なくとも `key_id` とりあえず `public_key_b64u`
+- `meta.target.did`は、公開者自身の公開`ANPMessageService.serviceDid`と等しくなければなりません（**MUST**）。
+- `meta.sender_did`が存在しなければなりません（**MUST**）。
+- `meta.sender_device_id`が存在しなければなりません（**MUST**）。
+- `meta.operation_id`が存在しなければなりません（**MUST**）。
+- 拡張を交渉していない限り、`params.auth`が存在してはなりません（**MUST**）。
+- `body.prekey_bundle`が存在しなければなりません（**MUST**）。
+- `body.prekey_bundle.owner_did`は`meta.sender_did`と等しくなければなりません（**MUST**）。
+- `body.prekey_bundle.owner_device_id`は`meta.sender_device_id`と等しくなければなりません（**MUST**）。
+- `body.one_time_prekeys`は存在してもかまいません（**MAY**）。存在する場合、空でない配列でなければならず（**MUST**）、各要素は少なくとも`key_id`と`public_key_b64u`を含まなければなりません（**MUST**）。
 
-認証制約:
+認証上の制約：
 
-- このメソッドは、 **サービススコープ** 制御計画方法;
-- 認証されたコンテキスト **MUST** 正確な特定 `(meta.sender_did, meta.sender_device_id)`デバイスとそのデバイス **MUST** 現在、セクション4.1.1でP5-eligibleである;
-- 標準パスの下、呼び出し側 **MUST** 認証されたローカルセッションまたは同等のホップとサービスレベルの認証コンテキストで実行します。
-- プロフィールは **なし** 追加のビジネスレイヤーが必要です `origin_proof` このようにして
-- リクエストを受け付ける前に、サーバ **MUST**ホップとサービスレベルの認証の確認に加えて、認証された発信者が材料を発行する許可があることを確認 `body.prekey_bundle.owner_did` 代用して `meta.sender_did`.
+- このメソッドは、**サービスをスコープとする**制御プレーンメソッドです。
+- 認証済みコンテキストは、正確な`(meta.sender_did, meta.sender_device_id)`を識別しなければならず（**MUST**）、そのデバイスは4.1.1節の下で現在P5に適格でなければなりません（**MUST**）。
+- 標準経路では、呼び出し元は、認証済みローカルセッション、または同等のホップ単位・サービス単位の認証コンテキスト内で動作しなければなりません（**MUST**）。
+- このProfileは、このメソッドに追加の業務層`origin_proof`を**要求しません**。
+- サーバーは、要求を受け入れる前に、ホップ単位・サービス単位の認証を検証するだけでなく、認証された呼び出し元が、`meta.sender_did`の代理として`body.prekey_bundle.owner_did`の素材を公開する権限を持つことを検証しなければなりません（**MUST**）。
 
 
-隔離された条件:
+冪等性の要件：
 
-- サーバ **MUST** 利用条件 `(meta.sender_did, meta.sender_device_id, meta.target.did, method, meta.operation_id)` 重要なキーとして;
-- 同一の重要キーで繰り返しリクエストの場合、 `body.prekey_bundle` とりあえず `body.one_time_prekeys` は、基本的に等価です。 **MUST** 元の結果か同等の結果を返す;
-- 同一の重要紛争に対応するボディリクエストのセマティクスの場合、 **MUST** 返品 `anp.idempotency_conflict` または同等のエラー。
+- サーバーは、`(meta.sender_did, meta.sender_device_id, meta.target.did, method, meta.operation_id)`を冪等性キーに使わなければなりません（**MUST**）。
+- 同じ冪等性キーの繰り返し要求では、`body.prekey_bundle`と`body.one_time_prekeys`が意味的に等価なら、元の結果または同等の結果を返さなければなりません（**MUST**）。
+- 同じ冪等性キーに対応する要求bodyの意味が競合する場合、`anp.idempotency_conflict`または同等のエラーを返さなければなりません（**MUST**）。
 
-フィールド使用説明書:
+各フィールドの用途：
 
-- `meta.security_profile = transport-protected` セッションが確立された後、E2EE 暗号文伝達ではなく、キー制御平面呼び出しであることを示します。
-- `body.prekey_bundle` 現在、他者向けに利用できる静的なセッションの設置材料を公開または交換するために使用されます。
-- `body.one_time_prekeys` ワンゴーでOPKプールを再補充するために使用される; それはオプションのバルクアップロードであり、静的なバンドルの証拠に行きません。
+- `meta.security_profile = transport-protected`は、セッション確立後のE2EE暗号文の送信ではなく、鍵制御プレーンの呼び出しであることを示します。
+- `body.prekey_bundle`は、現在、他者が利用できる静的セッション確立素材の公開・置換に使います。
+- `body.one_time_prekeys`は、OPKプールの一括補充に使います。任意の一括アップロードであり、静的Bundle証明には入りません。
 
-#### 成功の応答
+#### 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `published = true`
 - `owner_did`
@@ -506,141 +507,141 @@ P1付録Bの統一保護範囲の要件に加えて、「後のオブジェク�
 - `bundle_id`
 - `published_at`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答は次を含めてもかまいません（**MAY**）。
 
 - `published_opk_count`
 
 
 ### 7.2 `direct.e2ee.get_prekey_bundle`
 
-この方法は、利用可能な静的バンドルを経由して入手するために使用される `ANPMessageService` ターゲットエージェントが、利用可能なOPKを要求する上で公開します。
+このメソッドは、宛先エージェントが公開する`ANPMessageService`を通じて利用可能な静的Bundleを取得し、必要に応じて利用可能なOPKも取得するために使います。
 
-#### リクエストの要件
+#### 要求の要件
 
 - `meta.profile = anp.direct.e2ee.v2`
 - `meta.security_profile = transport-protected`
 - `meta.target.kind = "service"`
-- `meta.target.did` **MUST** 等しいこと `ANPMessageService.serviceDid` ターゲットエージェントが露出
-- `meta.sender_did` **MUST** 存在している
-- `meta.sender_device_id` **MUST** 存在している
-- `meta.operation_id` **MUST** 存在している
-- `params.auth` **MUST** 延長が交渉されていない限り、不在である
+- `meta.target.did`は、宛先エージェントが公開する`ANPMessageService.serviceDid`と等しくなければなりません（**MUST**）。
+- `meta.sender_did`が存在しなければなりません（**MUST**）。
+- `meta.sender_device_id`が存在しなければなりません（**MUST**）。
+- `meta.operation_id`が存在しなければなりません（**MUST**）。
+- 拡張を交渉していない限り、`params.auth`が存在してはなりません（**MUST**）。
 
-`body` **MUST** 含まれるもの:
+`body`は次を含まなければなりません（**MUST**）。
 
 - `target_did`
 - `target_device_id`
 
-`body` **MAY** 含まれるもの:
+`body`は次を含めてもかまいません（**MAY**）。
 
 - `preferred_suite`
 - `require_opk`
 
-認証制約:
+認証上の制約：
 
-- このメソッドは、 **サービススコープ** 制御計画方法;
-- 認証されたコンテキスト **MUST** 現在のP5資格を識別する `(meta.sender_did, meta.sender_device_id)`;
-- 返却前に、サービス **MUST** 正確な検証 `(target_did, target_device_id)` セクション 4.1.1 の下;
-- 最小相互運用性ベースラインは、少なくともホップとサービスレベルの認証が必要です。
-- 標準パスでは、拡張子が交渉されていない場合、 `params.auth` **MUST** 不在である;
-- **バンドルまたはOPKの匿名取得は、このプロファイルのMTIに所属していません**; デプロイメントが匿名アクセスを可能にする場合、追加の展開戦略です。
+- このメソッドは、**サービスをスコープとする**制御プレーンメソッドです。
+- 認証済みコンテキストは、現在P5に適格な`(meta.sender_did, meta.sender_device_id)`を識別しなければなりません（**MUST**）。
+- 素材を返す前に、サービスは4.1.1節に従って、正確な`(target_did, target_device_id)`を検証しなければなりません（**MUST**）。
+- 相互運用の最小基準では、少なくともホップ単位・サービス単位の認証が必要です。
+- 標準経路では、拡張を交渉していない場合、`params.auth`が存在してはなりません（**MUST**）。
+- **BundleやOPKの匿名取得は、このProfileのMTIに含まれません**。配備環境が匿名アクセスを認める場合、それは追加の配備ポリシーです。
 
-フィールド使用説明書:
+各フィールドの用途：
 
-- `target_did`: 取得したいセッションの設置材料を指示します。サーバーは、他の対象のキャッシュされた結果ではなく、DIDにバインドしたバンドルを返す必要があります。
-- `target_device_id`: 受信したデバイスを1つ選択します。 `target_did`; サービス **MUST NOT** 兄弟デバイスにキャッシュされた材料を返します。
-- `preferred_suite`: サーバが複数のパッケージを同時に維持する場合、呼び出し主が最初に材料を取得したいパッケージを表現するために使われます。
-- `require_opk`: 「OPKなしでセッションの確立を劣化させないでください」という意味。 `true`、発信者は、直接使用できるワンタイムのプレキーを取得することを期待します `DH4`.
+- `target_did`：誰のセッション確立素材を取得するかを示します。サーバーは、他の主体のキャッシュ結果ではなく、そのDIDに結び付くBundleを返すべきです。
+- `target_device_id`：`target_did`の下の、現在の受信デバイスを一つ選びます。サービスは、同じDIDの別デバイス用にキャッシュした素材を返してはなりません（**MUST NOT**）。
+- `preferred_suite`：サーバーが複数のスイートを同時に持つ場合、呼び出し元がどのスイートの素材を優先して取得したいかを表します。
+- `require_opk`：「利用可能なOPKがないままセッション確立を弱めない」ことを意味します。`true`なら、呼び出し元は`DH4`に直接使える使い捨て事前鍵を期待します。
 
 
-#### 成功の応答
+#### 成功応答
 
-成功する応答 **MUST** 少なくとも:
+成功応答は、少なくとも次を含まなければなりません（**MUST**）。
 
 - `target_did`
 - `target_device_id`
 - `prekey_bundle`
 
-成功する応答 **MAY** 含まれるもの:
+成功応答は次を含めてもかまいません（**MAY**）。
 
 - `one_time_prekey`
 
 
-成功の応答フィールドは、次のようになります。
+成功応答の各フィールドの用途：
 
-- `target_did`: 返された素材が実際に属するターゲットDIDをEchoします。そのため、呼び出し側はリクエスト対象のターゲットと一致しているかどうかを確認することができます。
-- `target_device_id`: 返された材料を所有する厳密な装置を選ばして下さい;それ **MUST** 等しい要求および要求 `prekey_bundle.owner_device_id`.
-- `prekey_bundle`: 対象に現在利用できる静的セッションの設置材料を返します。送信者は、実際のセッション施設の前にセクション6.5に従って検証を完了する必要があります。
-- `one_time_prekey`: 現時点では、サーバーがこのクエリに対して利用可能なOPKを割り当てていることを意味します。送信者は、長期キャッシュされた公開情報ではなく、その後の初期試みに拘束される材料として扱うべきです。
+- `target_did`：返した素材が実際に属する宛先DIDを再掲し、呼び出し元がキャッシュと要求した宛先との一致を確認できるようにします。
+- `target_device_id`：返した素材を所有する正確なデバイスを再掲します。要求および`prekey_bundle.owner_device_id`と等しくなければなりません（**MUST**）。
+- `prekey_bundle`：宛先主体が現在利用できる静的セッション確立素材を返します。送信側は、実際のセッション確立前に、なお6.5節に従った検証を完了する必要があります。
+- `one_time_prekey`：存在する場合、サーバーがこの照会のために利用可能なOPKを割り当てたことを示します。送信側は、長期にキャッシュする公開情報ではなく、後続のinit試行に結び付く素材として扱うべきです。
 
-場合 `require_opk = true` サーバは、現在、OSKが問題なく、サーバーを発行していません。 **SHOULD** 古いOPKを鍛造または再利用する代わりにexplicitエラーを返します。
-
-
-イオンおよびOPKの配分の条件:
-
-- サーバ **MUST** 利用条件 `(meta.sender_did, meta.sender_device_id, target_did, target_device_id, meta.target.did, method, meta.operation_id)` 重要なキーとして;
-- 特定の成功した応答が割り当てられた場合 `one_time_prekey` 重要なキーに、そして現在の装置の適格性が再検証されるの後で、同じ不浸透のキーのretry **MUST** 同じを返す `prekey_bundle` 同じ `one_time_prekey`;
-- サーバ **MUST** 原子の方法で「重要記録書き込み+OPK位置/保持状態書き込み」を完了します。
-- サーバ **MUST NOT** 同じ重要鍵で、他のOPKをリトリートすることで実現します。
+`require_opk = true`で、現在発行できるOPKがない場合、サーバーは、古いOPKを偽造・再利用せず、明示的なエラーを返すべきです（**SHOULD**）。
 
 
+冪等性とOPK割り当ての要件：
 
-### 7.3 サーバー側のバンドル配布ルール
+- サーバーは、`(meta.sender_did, meta.sender_device_id, target_did, target_device_id, meta.target.did, method, meta.operation_id)`を冪等性キーに使わなければなりません（**MUST**）。
+- ある成功応答で、その冪等性キーに`one_time_prekey`を割り当て済みなら、現在のデバイスの適格性を再検証した後、同じ冪等性キーでの再試行には、同じ`prekey_bundle`と同じ`one_time_prekey`を返さなければなりません（**MUST**）。
+- サーバーは、「冪等性記録の書き込み＋OPK割り当て／保持状態の書き込み」を原子的に完了しなければなりません（**MUST**）。
+- サーバーは、同じ冪等性キーの再試行によって、別のOPKを再割り当てしてはなりません（**MUST NOT**）。
 
-`ANPMessageService` バンドルを返すとき:
 
-- **SHOULD** 最新静的を返すことを優先します `prekey_bundle` それでも有効です。
-- 利用可能なOPKとポリシーがある場合、 **SHOULD** 追加のもの `one_time_prekey`;
-- 返された `one_time_prekey` **MUST** OPKプールから現在利用できる `(owner_did, owner_device_id)`と **MUST NOT** 静的バンドルの証拠によって署名の一部として渡される;
-- OPKを返した後、サーバ **SHOULD** 割り当てられたようにそれをマークして下さい;
-- この戻りが OPK に来るとき、サーバ **MUST** 原子の「この応答+OPKの位置/保持状態書き込み」の詳細な記録を完成させる。
-- サーバ **MUST NOT** 複数の送信者に同時同行して配布する。
-- ターゲット受信機が正常にinitを処理した後、サーバー **MUST** 消費されるように対応するOPKをマークし、受信機 **MUST** 対応する OPK プライベート キーを削除します。
-- ターゲットサービスが要求を拒否したり、処理をしない場合は、OPKのリサイクルを許可しているかどうかは、デプロイメント固有のものです。ただし、成功したセッションの確立のために使用されていることが確認されたすべてのOPK **MUST NOT** 再び発行される;
-- コールアID、レート制限、およびアンチユースポリシー **MUST** ホップとサービスレベルの認証を使って強制的に実施します。
+
+### 7.3 サーバー側のBundle配布規則
+
+`ANPMessageService`がBundleを返す場合：
+
+- まだ有効な最新の静的`prekey_bundle`を優先して返すべきです（**SHOULD**）。
+- 利用可能なOPKがあり、ポリシーが認めるなら、追加で`one_time_prekey`を付けるべきです（**SHOULD**）。
+- 返す`one_time_prekey`は、現在`(owner_did, owner_device_id)`で利用できるOPKプールから取得しなければならず（**MUST**）、静的Bundle証明の署名対象の一部であるかのように見せかけてはなりません（**MUST NOT**）。
+- OPKを返したら、サーバーは割り当て済みと記録するべきです（**SHOULD**）。
+- OPKを付けて返すとき、サーバーは、「この応答の冪等性記録の書き込み＋OPK割り当て／保持状態の書き込み」を原子的に完了しなければなりません（**MUST**）。
+- サーバーは、同じOPKを複数の送信者へ同時に配布してはなりません（**MUST NOT**）。
+- 宛先受信者がinitを正常に処理したら、サーバーは対応するOPKを消費済みと記録しなければならず（**MUST**）、受信側は対応するOPK秘密鍵を削除しなければなりません（**MUST**）。
+- 宛先サービスが要求を拒否したり、その他の処理に失敗したりした場合、OPKの回収を認めるかは配備環境次第です。ただし、セッション確立に成功したことが確認されたOPKを再発行してはなりません（**MUST NOT**）。
+- ホップ単位・サービス単位の認証によって、呼び出し元の識別、レート制限、不正利用対策ポリシーを適用しなければなりません（**MUST**）。
 
 ---
 
-## 8. 初期セッションの確立:X3DH-like(DID適応版)
+## 8. 初回セッション確立：X3DH-like（DID向け適応版）
 
-## 8.1 設計記述
+## 8.1 設計の説明
 
-このプロファイルの初期セッションは、それがであるように信号X3DHのコピーではなく、 **X3DH のような** 適応版:
+このProfileの初回セッション確立は、Signal X3DHのそのままのコピーではなく、適応した**X3DH-like**方式です。
 
-- X3DHの元の設計の長期同一性DHのキーはDID文書の長期静的なX25519のキーによって仮定されます `keyAgreement` プロフィール
-- DIDのAssertionキーはDHに参加しませんが、バンドルに署名するだけ責任があります。
-- 署名キーはDHキーから分離されるため、XEdDSAの元のX3DHによって導入されたドメイン分割の詳細の一部が同じキー使用で変更されずにコピーする必要はありません。
+- 元のX3DHの長期アイデンティティDH鍵の役割は、このProfileでは、DID文書の`keyAgreement`の長期静的X25519鍵が担います。
+- DIDのAssertion KeyはDHに参加せず、Bundleの署名だけを担当します。
+- 署名鍵とDH鍵を分離しているため、元のX3DHがXEdDSAで同じ鍵を使うことに対して導入したドメイン分離の詳細の一部は、そのままコピーする必要がなくなります。
 
-## 8.2 参加キー
+## 8.2 関与する鍵
 
-### ベンダーデバイス `(A, a)`
+### 送信デバイス`(A, a)`
 
-- `A` 送信者エージェント DID です。 `a` は、現在 `sender_device_id`;
-- `KA_A`: 送信デバイスの長期静的X25519 `keyAgreement` パブリックキー/プライベートキーペア。 オンラインプロトコルでは、通常は指定されます `sender_static_key_agreement_id`.
-- `EK_A`: 送信者の1回限りの一時的なX25519公開/プライベートキーペア。 それぞれの新しいinitで再生され、公開鍵部分を経由して露出します `sender_ephemeral_pub_b64u`.
+- `A`は送信側Agent DID、`a`はその現在の`sender_device_id`です。
+- `KA_A`：送信デバイスの長期静的X25519 `keyAgreement`公開鍵・秘密鍵の組。wireプロトコルでは、通常`sender_static_key_agreement_id`で指定します。
+- `EK_A`：送信側の使い捨て一時X25519公開鍵・秘密鍵の組。新しいinitごとに生成し直し、`sender_ephemeral_pub_b64u`で公開鍵部分を公開します。
 
-### 受精装置 `(B, b)`
+### 受信デバイス`(B, b)`
 
-- `B` 受信者エージェント DID であり、 `b` は、現在 `recipient_device_id`;
-- `KA_B`: 受取装置の長期静的X25519 `keyAgreement` パブリックキー/プライベートキーペア。 sender は、バンドルバージョンを選択したものと判断します。 `recipient_bundle_id` と間接的に `static_key_agreement_id` で。
-- `SPK_B`: 受信機の署名された中間物X25519のプレッサー。 で指定します `recipient_signed_prekey_id` オンラインプロトコルで、バンドルの証拠によってDID IDにバインドします。
-- `OPK_B`: 受信機のワンタイムX25519プレッキー(任意)。 サーバが返すと、サーバが指定した `recipient_one_time_prekey_id` オンラインプロトコルで、セッションの成功後に消費されます。
+- `B`は受信側Agent DID、`b`はその現在の`recipient_device_id`です。
+- `KA_B`：受信デバイスの長期静的X25519 `keyAgreement`公開鍵・秘密鍵の組。送信側は、`recipient_bundle_id`と、そのBundle内の`static_key_agreement_id`を介して、選択したBundle版を特定します。
+- `SPK_B`：受信側の署名付き中期X25519事前鍵。wireプロトコルでは`recipient_signed_prekey_id`で指定し、Bundle証明によってDIDアイデンティティに結び付けます。
+- `OPK_B`：受信側の使い捨てX25519事前鍵（任意）。サーバーが返した場合、wireプロトコルの`recipient_one_time_prekey_id`で指定し、セッション確立に成功した後で消費します。
 
-## 8.3セッションの設置条件
+## 8.3 セッション確立の前提条件
 
-`recipient_did` このセクションでは、外部の省略 `direct.send.params.meta.target.did`独立したワイヤー分野は加えられません。 `sender_device_id` とりあえず `recipient_device_id` アウターP5から来て下さい `meta` 一緒に1つの厳密な装置組を選んで下さい。
+この節の`recipient_did`は、外側の`direct.send.params.meta.target.did`の略記であり、独立したwireフィールドを追加しません。`sender_device_id`と`recipient_device_id`は外側のP5 `meta`から取得し、合わせて正確に一組のデバイスペアを選びます。
 
-送信者 **MUST** セッション開始前:
+送信側は、セッション確立を開始する前に次を行わなければなりません（**MUST**）。
 
-1. ターゲットを解析し、検証する `recipient_did`;
-2. セクション4.1.1で選択したマニフェストエントリを検証します。
-3. ターゲットデバイスの取得と検証 `prekey_bundle`; 応答が付属する場合 `one_time_prekey`、同様にOPKを記録して下さい;
-4. 送信デバイスのローカル静的秘密鍵をマニフェストに収まる `e2ee_key_id`;
-5. 新しい一時的なX25519キーペアを生成する `EK_A`.
+1. 宛先の`recipient_did`を解決・検証する。
+2. 4.1.1節に従って、選択した両方のManifestエントリを検証する。
+3. 宛先デバイスの`prekey_bundle`を取得・検証する。応答に`one_time_prekey`が付いている場合、そのOPKも記録する。
+4. Manifestの`e2ee_key_id`に対応する、送信デバイスのローカル静的秘密鍵を取得する。
+5. 新しい一時X25519鍵ペア`EK_A`を生成する。
 
 ## 8.4 DH計算
 
-OPKが成功する応答に存在していない場合 `direct.e2ee.get_prekey_bundle`、送信者 **MUST** 計算:
+`direct.e2ee.get_prekey_bundle`の成功応答にOPKがない場合、送信側は次を計算しなければなりません（**MUST**）。
 
 ```text
 DH1 = DH(KA_A, SPK_B)
@@ -649,23 +650,23 @@ DH3 = DH(EK_A, SPK_B)
 IKM = DH1 || DH2 || DH3
 ```
 
-OPKが成功した応答にない場合 `direct.e2ee.get_prekey_bundle`、送信者 **MUST** 追加の計算:
+`direct.e2ee.get_prekey_bundle`の成功応答にOPKがある場合、送信側は追加で次を計算しなければなりません（**MUST**）。
 
 ```text
 DH4 = DH(EK_A, OPK_B)
 IKM = DH1 || DH2 || DH3 || DH4
 ```
 
-## 8.5 初期共有秘密の派生
+## 8.5 初期共有秘密の導出
 
-送り主と受信機 **MUST** 使用:
+送信側と受信側は、次を使わなければなりません（**MUST**）。
 
 ```text
 PRK = HKDF-Extract(salt = 0x00...00(32 bytes), IKM)
 SK  = HKDF-Expand(PRK, info = "ANP Direct E2EE v1 Initial Secret", L = 32)
 ```
 
-それから由来する `SK`:
+次に`SK`から次を導出します。
 
 ```text
 RK0 = HKDF-Expand(SK, info = "ANP Direct E2EE v1 Root Key", L = 32)
@@ -673,38 +674,38 @@ CK0 = HKDF-Expand(SK, info = "ANP Direct E2EE v1 Chain Key", L = 32)
 SID = HKDF-Expand(SK, info = "ANP Direct E2EE v1 Session ID", L = 16)
 ```
 
-それらの中で:
+各値の意味：
 
-- `RK0`: 初期ルートキー
-- `CK0`: 最初の初期チェーンの開始点は、最初の init ciphertext が消費される前に
-- `SID`: 16バイトのセッションID、ベース64URLとしてエンコード `session_id`
+- `RK0`：初期Root Key。
+- `CK0`：最初のinit暗号文を消費する前の、初期チェーンの開始点。
+- `SID`：16バイトのセッションID。Base64URLで符号化し、`session_id`とします。
 
 
 
-### 8.5.1 ファーストメッセージキーと非
+### 8.5.1 最初のメッセージ鍵とnonce
 
-アフター `SK` デリブ `RK0` とりあえず `CK0`、送信者および受信機 **MUST** すぐに実行 `kdf_ck` にほんご `CK0`:
+`SK`から`RK0`と`CK0`を導出したら、送信側と受信側は直ちに、`CK0`に対して`kdf_ck`を実行しなければなりません（**MUST**）。
 
 ```text
 CK1, MK0, NONCE0 = kdf_ck(CK0)
 ```
 
-それらの中で:
+各値の意味：
 
-- `MK0` 暗号化または復号化のみに使用されます。 `direct_init.ciphertext_b64u`
-- `NONCE0` は、最初の init ciphertext の AEAD の nonce にのみ使用されます。
-- `CK1` 初期のチェーン状態が成功した後にのみ始点
+- `MK0`は、`direct_init.ciphertext_b64u`の暗号化・復号だけに使います。
+- `NONCE0`は、最初のinit暗号文のAEAD nonceだけに使います。
+- init成功後の後続チェーン状態の開始点は、`CK1`だけです。
 
-変更されていないMTIルールは、初期メッセージがチェーンで0番目のメッセージを消費していることです。 つまり、 `CK0` 導出にのみ使用される `MK0`, `NONCE0` とりあえず `CK1`; 開始後、両方の党成功 **MUST** これからも `CK1`と **MUST NOT** 利用条件 `CK0` チェーンの送信や受信チェーンの開始点として。
+変更しないMTIの規則では、initメッセージがチェーンの0番目のメッセージを消費します。つまり、`CK0`は`MK0`、`NONCE0`、`CK1`を導出するためだけに使います。init成功後、双方は`CK1`から継続しなければならず（**MUST**）、後続の送信・受信チェーンの開始点に`CK0`を使ってはなりません（**MUST NOT**）。
 
-加えて、 `ciphertext_b64u` **AEAD 暗号文(認証ラベルを含む)ボディのみ**, 追加スプライシングやプレフィックスなし; このプロファイルのKDFルールに従って、nonceは常に派生します。
+また、`ciphertext_b64u`が含むのは、**AEAD暗号文（認証タグを含む）の本体だけ**であり、nonceを追加連結したり先頭に付けたりしません。nonceは常に、このProfileのKDF規則に従って導出します。
 
 
-## 8.6 初期アソシエイトデータ
+## 8.6 初期の関連データ
 
-セッションの設置時にAEAD AADを初期に記録します。 `AD_init`. . . 正式な JSON 構造と独自のバイトシーケンスは、セクション 9.4.2 で定義され、 **MUST** UTF-8 + RFC 8785 JCS のエンコーディングを使用します。
+セッション確立時の初期AEAD AADを`AD_init`と表記します。正規化したJSON構造と一意なバイト列は9.4.2節が定義し、UTF-8＋RFC 8785 JCS符号化を使わなければなりません（**MUST**）。
 
-`AD_init` **MUST** 少なくとも次のフィールドをバインド:
+`AD_init`は、少なくとも次のフィールドをバインドしなければなりません（**MUST**）。
 
 - `content_type = application/anp-direct-init+json`
 - `sender_did`
@@ -715,35 +716,35 @@ CK1, MK0, NONCE0 = kdf_ck(CK0)
 - `recipient_bundle_id`
 - `sender_static_key_agreement_id`
 - `recipient_signed_prekey_id`
-- `recipient_one_time_prekey_id` (プレゼントの場合)
+- `recipient_one_time_prekey_id`（存在する場合）
 - `session_id`
 - `message_id`
 - `operation_id`
 - `profile = anp.direct.e2ee.v2`
 - `security_profile = direct-e2ee`
 
-下記の目的には以下のフィールドを配置します。
+各フィールドの目的：
 
-- `content_type`: 同一の暗号文が他のオブジェクトタイプとして解釈されるのを防ぐため、現在のワイヤオブジェクトタイプを結合しました。
-- `sender_did` / `recipient_did`: 両当事者の事業のアイデンティティをセッション・ビルディングに結合し、アイデンティティの誤拘束のリスクを軽減します。
-- `sender_device_id` / `recipient_device_id`: 正確な暗号エンドポイントを埋め、その暗号テキストを兄弟デバイスやセッションに移動させないようにします。
-- `suite`: 同じ暗号文がスイート全体で誤解されるのを防ぐために使用される暗号スイートを埋めました。
-- `recipient_bundle_id`: 異なるバンドル間で材料の混合を防ぐため、受信者によって使用される特定のバンドルバージョンを結合しました。
-- `sender_static_key_agreement_id`: 送信者の長期静的キーをDHに実際に参加させる結合します。
-- `recipient_signed_prekey_id`: 今回、バインディングレシーバーが使用するSPKバージョン。
-- `recipient_one_time_prekey_id`: 存在する場合は、この時間にセッションの確立で消費されたOPKレコードを結合します。
-- `session_id`: セッションIDを結合して、他のセッションで同じ暗号文が使用されるのを防ぐことができます。
-- `message_id` / `operation_id`: これらは、外部を参照します `direct.send.meta` 識別子。 このプロファイルが同じである必要があるにもかかわらず、両方とも明示的に認証されます。
-- `profile`/`security_profile`: バイナリプロトコル解釈コンテキスト、クロスプロファイルまたはクロスセキュリティプロファイル置換を防ぐ。
+- `content_type`：現在のwireオブジェクト型をバインドし、同じ暗号文を別のオブジェクト型と解釈することを防ぐ。
+- `sender_did`／`recipient_did`：双方の業務アイデンティティをセッション確立にバインドし、アイデンティティの誤った結び付けのリスクを減らす。
+- `sender_device_id`／`recipient_device_id`：正確な暗号エンドポイントをバインドし、init暗号文を同じDIDの別デバイスや別Sessionへ移すことを防ぐ。
+- `suite`：使用する暗号スイートをバインドし、同じ暗号文を別スイートで誤解釈することを防ぐ。
+- `recipient_bundle_id`：受信側が使う具体的なBundle版をバインドし、異なるBundle間で素材を混在させることを防ぐ。
+- `sender_static_key_agreement_id`：実際にDHに参加する、送信側の長期静的鍵をバインドする。
+- `recipient_signed_prekey_id`：今回受信側が使うSPKの版をバインドする。
+- `recipient_one_time_prekey_id`：存在する場合、今回のセッション確立で消費するOPKの記録をバインドする。
+- `session_id`：今回導出したセッションIDをバインドし、同じ暗号文が他のセッションで使われることを防ぐ。
+- `message_id`／`operation_id`：外側の`direct.send.meta`の識別子を指す。このProfileで両者が等しいことを要求していても、双方を明示的に認証する。
+- `profile`／`security_profile`：プロトコル解釈のコンテキストをバインドし、Profileやsecurity profileをまたぐ置換を防ぐ。
 
 
-## 8.7 初期アプリケーションメッセージ
+## 8.7 初期のアプリケーションメッセージ
 
-このプロフィールの未変更MTIの下で、 `direct_init.ciphertext_b64u` **MUST** 完全な内部を運びて下さい `Application Plaintext` オブジェクト。
+このProfileの変更しないMTIでは、`direct_init.ciphertext_b64u`は、完全な内側の`Application Plaintext`オブジェクトを運ばなければなりません（**MUST**）。
 
-つまり、このプロファイルのMTIは「空のinit」オブジェクトを定義しません。 送信者が成功したデリブスの後 `SK`, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , MUST 最初に暗号化する `Application Plaintext` 利用方法 `MK0` / `NONCE0` から得られる `CK0` ビア `kdf_ck` それを書いて下さい `ciphertext_b64u`.
+つまり、このProfileのMTIは「空のinit」オブジェクトを定義しません。送信側は`SK`の導出に成功したら、`CK0`から`kdf_ck`で導出した`MK0`／`NONCE0`を使って最初の`Application Plaintext`を暗号化し、`ciphertext_b64u`に書き込まなければなりません（MUST）。
 
-次のシーケンス図はバンドル検索、オプションのOPK選択を接続し、送信 `direct_init`, 受信機のブートストラップ, 1つの完全なパスに最初の応答. 下記の式を読んでいる間、読者はメッセージと状態が一緒に進む方法を見ることができます。
+次のシーケンス図は、Bundleの取得、任意のOPKの選択、`direct_init`の送信、受信側の初期化、最初の応答を、一つの完全な経路としてつなぎます。後の式を読む際、メッセージと状態が一緒に進む様子を確認できます。
 
 ```mermaid
 sequenceDiagram
@@ -762,18 +763,18 @@ BS-->>A: First reply
 A->>A: Session enters established
 ```
 
-*図P5-2:X3DHのような初期セッション-establishmentシーケンス(非放射性)。*
+*図P5-2：X3DH-likeによる初回セッション確立のシーケンス（非規範）。*
 
-ここでは「establishment」はバンドル検索が成功するという意味ではありません。 つまり、同じ結果に基づいてブーツストラップを完成させ、イニシエータは同じ下で最初の有効な応答を受けました。 `session_id`.
+ここで「確立に成功する」とは、Bundleの取得成功ではありません。双方が同じ導出結果に基づいて初期化を完了し、開始側が、同じ`session_id`の下で最初の有効な応答を受信したことを意味します。
 
 
 ---
 
-## 9. `application/anp-direct-init+json` オブジェクト
+## 9. `application/anp-direct-init+json`オブジェクト
 
-### 9.1トップレベル構造
+### 9.1 トップレベルの構造
 
-いつか `meta.content_type = application/anp-direct-init+json`, `body` **MUST** 次の構造を採用します:
+`meta.content_type = application/anp-direct-init+json`の場合、`body`は次の構造を採用しなければなりません（**MUST**）。
 
 ```json
 {
@@ -788,9 +789,9 @@ A->>A: Session enters established
 }
 ```
 
-### 9.2 フィールド要件
+### 9.2 フィールドの要件
 
-`direct_init` **MUST** 含まれるもの:
+`direct_init`は次を含まなければなりません（**MUST**）。
 
 - `session_id`
 - `suite`
@@ -800,75 +801,75 @@ A->>A: Session enters established
 - `sender_ephemeral_pub_b64u`
 - `ciphertext_b64u`
 
-`direct_init` **MAY** 含まれるもの:
+`direct_init`は次を含めてもかまいません（**MAY**）。
 
 - `recipient_one_time_prekey_id`
 
-フィールド使用方法の指示:
+各フィールドの用途：
 
-- `session_id`: この新しいセッションの識別子。 初期の共有秘密から派生し、その後再使用 `application/anp-direct-cipher+json` ラチェットの状態をインデックス化するためのメッセージ。
-- `suite`: cipherスイートをこの入口で使用して宣言します。 受信機は、まず正しいKDF、AEADおよびメッセージの解釈規則をそれに応じて選択する必要があります。
-- `sender_static_key_agreement_id`: 静的寿命の長い場所へのポイント `keyAgreement` 実際にDHに参加する送信者のDID文書のキー。
-- `recipient_bundle_id`: 受信機の静的バンドルバージョンがこの入口に使用されていることを示します。受信機は、それに応じて対応するSPKライフサイクル、ローカル受け入れウィンドウ、再生範囲を見つけることができます。
-- `recipient_signed_prekey_id`: 今回受信機で使用したSPKレコードへのポイント、それに応じて正しいSPK秘密鍵を見つけるための受信機が必要です。 送信者が構築する際 `direct_init`,その値 **MUST** 選択されたに等しいです `prekey_bundle.signed_prekey.key_id`.
-- `recipient_one_time_prekey_id`: 存在する場合、この init は OPK も消費していることを意味します。受信機はそれに応じて見つけ、成功したセッションの確立後に対応する秘密鍵を消費する必要があります。
-- `sender_ephemeral_pub_b64u`: このinitの送信者によって新しく生成される一時的なX25519公開鍵は、受信機はローカルの長期/プレキーとともにDH計算に参加します。
-- `ciphertext_b64u`: 初期メッセージキーで暗号化された AEAD 暗号文バイト。この変更されていないスイートでは、非分離は送信されませんが、それに応じて派生しています `kdf_ck` このページの先頭へ `ciphertext_b64u` ** 暗号文体のみを含んだり、非状態をスプライスしません**.
+- `session_id`：この新しいセッションの識別子。初期共有秘密から導出し、後続の`application/anp-direct-cipher+json`メッセージでも、Ratchet状態を索引するために再利用します。
+- `suite`：このinitで使う暗号スイートを宣言します。受信側は、これに従って正しいKDF、AEAD、メッセージ解釈規則を先に選ぶべきです。
+- `sender_static_key_agreement_id`：実際にDHに参加する、送信側DID文書内の長期静的`keyAgreement`鍵を指します。
+- `recipient_bundle_id`：このinitで使う受信側の静的Bundle版を示します。受信側は、これに従ってSPKのライフサイクル、ローカルの受け入れ期間、リプレイ範囲を特定できます。
+- `recipient_signed_prekey_id`：今回受信側が使うSPK記録を指します。受信側は、これに従って正しいSPK秘密鍵を見つける必要があります。送信側が`direct_init`を構築するとき、値は、選んだ`prekey_bundle.signed_prekey.key_id`と等しくなければなりません（**MUST**）。
+- `recipient_one_time_prekey_id`：存在する場合、このinitがOPKも消費したことを示します。受信側は、これに従って該当鍵を特定し、セッション確立の成功後に対応する秘密鍵を消費するべきです。
+- `sender_ephemeral_pub_b64u`：送信側がこのinitのために新しく生成した、一時X25519公開鍵。受信側では、ローカルの長期鍵／事前鍵とともにDH計算に使います。
+- `ciphertext_b64u`：initで導出した最初のメッセージ鍵で暗号化した、AEAD暗号文のバイト列。この変更しないスイートでは、nonceは別途送らず、このProfileの`kdf_ck`規則で導出します。そのため、`ciphertext_b64u`は**暗号文本体だけを含み、nonceを連結しません**。
 
 
-### 9.3 外法の要件
+### 9.3 外側のメソッドの要件
 
-`direct_init` **MUST** で運ぶ `direct.send` とりあえず **MUST** 以下を満たす:
+`direct_init`は`direct.send`で運ばなければならず（**MUST**）、次を満たさなければなりません（**MUST**）。
 
 - `meta.profile = anp.direct.e2ee.v2`
 - `meta.security_profile = direct-e2ee`
-- `meta.sender_device_id` **MUST** 存在している
-- `meta.recipient_device_id` **MUST** 存在している
+- `meta.sender_device_id`が存在しなければなりません（**MUST**）。
+- `meta.recipient_device_id`が存在しなければなりません（**MUST**）。
 - `meta.content_type = application/anp-direct-init+json`
-- `meta.operation_id` **MUST** 同じように丁度ある `meta.message_id`
-- `params.auth` **MUST** 延長が交渉されていない限り、不在である
+- `meta.operation_id`は`meta.message_id`と完全に同じでなければなりません（**MUST**）。
+- 拡張を交渉していない限り、`params.auth`が存在してはなりません（**MUST**）。
 
-補足説明: 外層 `meta.content_type` ここでは、E2EEベアアオブジェクトフォーマットが使用されるかを説明します `body`; プレーンテキストを適用する最初の実質のビジネス タイプは内部の層にあります `Application Plaintext` 暗号化された `ciphertext_b64u`.
+補足：ここの外側の`meta.content_type`は、`body`が使うE2EE運搬オブジェクトの形式を表します。実際の最初の業務の平文コンテンツ型は、`ciphertext_b64u`で暗号化した内側の`Application Plaintext`にあります。
 
-### 9.4 独自のセッションの確立と国家初期化アルゴリズム(仮称)
+### 9.4 一意なセッション確立と状態初期化のアルゴリズム（規範）
 
-このセクションは、初期のコメントや回答者の最初の返信、イニシエータが最初に返答を受け取り、イニシアチブが受け取る前後の状態の進捗規則を均一に定義します。 導入事例 **MUST NOT** このセクションと競合する他のセクションでbootstrapのセマティクスを定義します。
+この節は、init暗号文の生成、init後のローカル状態の確立、応答側の最初の応答、開始側が最初の応答を受信する前後の状態進行規則を、一体として定義します。実装は、他の節で、この節と矛盾する初期化の意味を追加定義してはなりません（**MUST NOT**）。
 
-#### 9.4.1 入力と事前条件
+#### 9.4.1 入力と前提条件
 
-送信者 A **MUST** 開始する前に完了して下さい `direct_init`:
+送信側Aは、`direct_init`を開始する前に次を完了しなければなりません（**MUST**）。
 
-1. ターゲットを解析し、検証 `recipient_did` と、選択した現在のマニフェストエントリの両方
-2. 受信者のデバイスを正確に取得し、検証します `prekey_bundle`
-3. 応答が付属している場合 `one_time_prekey`OPK をログアウト
-4. 送信者の独自の長期静的取得と検証 `keyAgreement` キーワード
-5. 新しい一時的なX25519キーペアを生成する `EK_A`
+1. 宛先の`recipient_did`と、選択した両方の現在のManifestエントリを解決・検証する。
+2. 正確な受信デバイスの`prekey_bundle`を取得・検証する。
+3. 応答に`one_time_prekey`が付いている場合、そのOPKを記録する。
+4. 送信側自身の長期静的`keyAgreement`鍵を取得・検証する。
+5. 新しい一時X25519鍵ペア`EK_A`を生成する。
 
-共有秘密を導き出すか、OPKやセッションの状態を変更する前に、B の受信者 **MUST** それを検証します。:
+受信側Bは、共有秘密の導出やOPK・Session状態の変更の前に、次を検証しなければなりません（**MUST**）。
 
-1. アウター `(sender_did, sender_device_id)` とりあえず `(recipient_did, recipient_device_id)` 現在のP5必須装置エンドポイントです。
-2. `body.sender_static_key_agreement_id` 送信者マニフェストのエントリを等しい `e2ee_key_id`;
-3. `body.recipient_bundle_id` 外部受取装置に所属し、 `recipient_signed_prekey_id` バンドルに所属する。
-4. どんなことでも `recipient_one_time_prekey_id` 同じ受取人 OPK プールに属します。
+1. 外側の`(sender_did, sender_device_id)`と`(recipient_did, recipient_device_id)`が、現在P5に適格なデバイスエンドポイントである。
+2. `body.sender_static_key_agreement_id`が、送信側Manifestエントリの`e2ee_key_id`と等しい。
+3. `body.recipient_bundle_id`が外側の受信デバイスに属し、`recipient_signed_prekey_id`がそのBundleに属する。かつ、
+4. `recipient_one_time_prekey_id`がある場合、同じ受信デバイスのOPKプールに属する。
 
-セクション8.4および8.5に従って送り装置そして受信機の包囲:
+送信側と受信側は、8.4節と8.5節に従って次を導出します。
 
 - `SK`
 - `RK0`
 - `CK0`
 - `SID`
 
-注文:
+そして、次のように定めます。
 
 - `session_id = base64url(SID)`
 
-ローカルセッションインデックス **MUST** 含まれるもの `(local_did, local_device_id, peer_did, peer_device_id, session_id, suite, local_e2ee_key_id, peer_e2ee_key_id)`. . . セッション **MUST NOT** デバイスペアで選択またはマージされる。
+ローカルSessionの索引には、`(local_did, local_device_id, peer_did, peer_device_id, session_id, suite, local_e2ee_key_id, peer_e2ee_key_id)`を含めなければなりません（**MUST**）。デバイスペアをまたいでSessionを選択・統合してはなりません（**MUST NOT**）。
 
-受信機のプロセスが `direct_init`, , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , **MUST** 受信したことを確認する `body.session_id` ローカル派生者と同一 `session_id`.
+受信側は`direct_init`を処理するとき、受け取った`body.session_id`が、ローカルで導出した`session_id`と同一であることを検証しなければなりません（**MUST**）。
 
-#### 9.4.2 独自のバイトシーケンス `AD_init`
+#### 9.4.2 `AD_init`の一意なバイト列
 
-`AD_init` **MUST** 次のJSONオブジェクトのUTF-8 + RFC 8785 JCSエンコードバイト文字列になります。
+`AD_init`は、次のJSONオブジェクトをUTF-8＋RFC 8785 JCSで符号化したバイト列でなければなりません（**MUST**）。
 
 ```json
 {
@@ -890,35 +891,35 @@ A->>A: Session enters established
 }
 ```
 
-それらの中で:
+各項目の規則：
 
-- `recipient_one_time_prekey_id` **MUST** デフォルトで省略されます。
-- すべてのデフォルトオプションフィールド **MUST** 直接省略して下さい;
-- **MUST NOT** 利用条件 `null`、省略されたフィールドの代わりに空の文字列、または他のプレースホルダー値。
+- `recipient_one_time_prekey_id`は、既定では省略しなければなりません（**MUST**）。
+- 既定の任意フィールドは、すべて直接省略しなければなりません（**MUST**）。
+- 省略するフィールドの代わりに、`null`、空文字列、その他のプレースホルダー値を使ってはなりません（**MUST NOT**）。
 
-#### 9.4.3内部の入口の明白なテキストバイト
+#### 9.4.3 内側のinit平文のバイト列
 
-暗号化された `Application Plaintext` **MUST** init はセクション 10.4 で定義される内部のプレーンテキストオブジェクトに最初に組み立てられ、UTF-8 + RFC 8785 JCS を使用してバイト文字列にエンコードされます。
+initで暗号化する`Application Plaintext`は、まず10.4節が定義する内側の平文オブジェクトとして構築し、次にUTF-8＋RFC 8785 JCSでバイト列へ符号化しなければなりません（**MUST**）。
 
-#### 9.4.4 入口暗号文生成
+#### 9.4.4 init暗号文の生成
 
-送信者および受信機 **MUST** 最初に実行します:
+送信側と受信側は、先に次を実行しなければなりません（**MUST**）。
 
 ```text
 CK1, MK0, NONCE0 = kdf_ck(CK0)
 ```
 
-それから:
+その後：
 
-- 送信者 **MUST** 内側の init プレーンテキストを暗号化します。 `MK0`, `NONCE0`と `AD_init`;
-- 生成された AEAD 暗号文(タグを含む)は、 `ciphertext_b64u`;
-- `ciphertext_b64u` **MUST NOT** ノンスを含む。
+- 送信側は、`MK0`、`NONCE0`、`AD_init`で内側のinit平文を暗号化しなければなりません（**MUST**）。
+- 生成したAEAD暗号文（タグを含む）を`ciphertext_b64u`へ書き込みます。
+- `ciphertext_b64u`にnonceを含めてはなりません（**MUST NOT**）。
 
-#### 9.4.5 チェーンで 0 番目のメッセージを消費します。
+#### 9.4.5 initはチェーンの0番目のメッセージを消費する
 
-変更されていないMTIルールは、初期のA -> Bチェーンの0番目のメッセージである。
+変更しないMTIの規則では、init暗号文は「初期のA→Bチェーン」の0番目のメッセージです。
 
-そのため、送信者Aが正常に送信した後 `direct_init`ローカルステータス **MUST** 設定する:
+したがって、送信側Aが`direct_init`の送信に成功したら、ローカル状態を次のように設定しなければなりません（**MUST**）。
 
 - `RK = RK0`
 - `DHs = EK_A`
@@ -931,23 +932,23 @@ CK1, MK0, NONCE0 = kdf_ck(CK0)
 - `MKSKIPPED = empty`
 - `status = "pending-confirmation"`
 
-それらの中で:
+各値の意味：
 
-- `Ns = 1` つまり、0番目のメッセージが init によって消費されたことを示します。
-- `status` 行のプロトコルフィールドではなく、ローカルのステータスフィールドです。
+- `Ns = 1`は、initが0番目のメッセージを消費したことを示します。
+- `status`はローカル状態フィールドであり、wireプロトコルのフィールドではありません。
 
-#### 9.4.6 開始者の最初の応答の前に限界を送信します
+#### 9.4.6 開始側が最初の応答を受けるまでの送信制限
 
-現地セッション `status = "pending-confirmation"`, イニシエーター **MUST NOT** 別の送信 `application/anp-direct-cipher+json`.
+ローカルセッションが`status = "pending-confirmation"`の間、開始側は、独立した`application/anp-direct-cipher+json`を送ってはなりません（**MUST NOT**）。
 
-同じのための隔離されたレトリーズ `direct_init` 許可されている; しかし、追加のアプリケーションメッセージ **MUST** 同じ下でピアから最初の有効な応答までローカルにバッファされます `session_id` 受け取られ、巧妙に復号化されます。
+同じ`direct_init`の冪等な再試行は認められます。ただし、追加のアプリケーションメッセージは、同じ`session_id`で相手からの最初の有効な応答を受信して正常に復号するまで、ローカルにバッファーしなければなりません（**MUST**）。
 
-#### 9.4.7 受信機が首尾よくinitを扱うの後のローカル状態
+#### 9.4.7 受信側がinitを正常処理した後のローカル状態
 
-受信機Bが正常に復号化した後 `direct_init`, **MUST**:
+受信側Bは、`direct_init`の復号に成功した後、次を行わなければなりません（**MUST**）。
 
-1. 場合 `recipient_one_time_prekey_id` 存在する、消費はOPKに相当します
-2. 下記のローカルステートを作成します。
+1. `recipient_one_time_prekey_id`が存在する場合、対応するOPKを消費する。
+2. 次のローカル状態を作成する。
 
 - `RK = RK0`
 - `DHr = EK_A`
@@ -960,53 +961,53 @@ CK1, MK0, NONCE0 = kdf_ck(CK0)
 - `MKSKIPPED = empty`
 - `status = "established"`
 
-#### 9.4.8 受信機の応急処置
+#### 9.4.8 受信側の最初の応答
 
-受信機Bのファースト・リメート **MUST** 利用条件 `application/anp-direct-cipher+json`.
+受信側Bの最初の応答は、`application/anp-direct-cipher+json`を使わなければなりません（**MUST**）。
 
-`ratchet_header` **MUST** このメッセージの満足のために:
+このメッセージの`ratchet_header`は、次を満たさなければなりません（**MUST**）。
 
 - `dh_pub_b64u = DHs.public`
 - `pn = "0"`
 - `n = "0"`
 
-メッセージキー **MUST** 、noce と共に、 `kdf_ck(CKs)`. . . 伝達完了の後で、受信機 **MUST** ローカルを更新する `CKs` 派生した `CKs'` とセット `Ns = 1`.
+メッセージ鍵は、nonceとともに`kdf_ck(CKs)`で導出しなければなりません（**MUST**）。送信完了後、受信側は、ローカルの`CKs`を導出した`CKs'`へ更新し、`Ns = 1`に設定しなければなりません（**MUST**）。
 
-#### 9.4.9 主催者が最初の返信を受け取ります
+#### 9.4.9 開始側が最初の応答を受信する
 
-開始者 A が、同一の有効な応答を最初に受け取るとき `session_id`, 現在のセッションがない場合 `status = "pending-confirmation"`、受け取られた `ratchet_header` **MUST** 最初に満足します:
+開始側Aが同じ`session_id`の下で最初の有効な応答を受信したとき、現在のセッションが`status = "pending-confirmation"`なら、受信した`ratchet_header`は、まず次を満たさなければなりません（**MUST**）。
 
 - `pn = "0"`
 - `n = "0"`
 
-これらの条件が満たされていない場合、イニシエータ **MUST** 拒否する `anp.direct.e2ee.bad_init_message` または `anp.direct.e2ee.invalid_security_binding`と **MUST NOT** ローカル状態を前もって進めて下さい。
+これらの条件を満たさない場合、開始側は、`anp.direct.e2ee.bad_init_message`または`anp.direct.e2ee.invalid_security_binding`で拒否しなければならず（**MUST**）、ローカル状態を進めてはなりません（**MUST NOT**）。
 
-上記チェックが成功した後、イニシエータ **MUST** 下記の注文で進む:
+上の検査に成功したら、開始側は、次の順序で処理を進めなければなりません（**MUST**）。
 
-1. とりあえず `DHr_new = ratchet_header.dh_pub_b64u`
-2. 計算:
+1. `DHr_new = ratchet_header.dh_pub_b64u`とする。
+2. 次を計算する。
    - `(RK, CKr) = kdf_rk(RK, DH(DHs, DHr_new))`
-3. とりあえず `DHr = DHr_new`
-4. とりあえず `PN = Ns`
-5. とりあえず `Ns = 0`
-6. とりあえず `Nr = 0`
-7. ローカル送信DHキーペアを生成 `DHs_new`
-8. 計算:
+3. `DHr = DHr_new`とする。
+4. `PN = Ns`とする。
+5. `Ns = 0`とする。
+6. `Nr = 0`とする。
+7. 新しいローカル送信DH鍵ペア`DHs_new`を生成する。
+8. 次を計算する。
    - `(RK, CKs) = kdf_rk(RK, DH(DHs_new, DHr))`
-9. とりあえず `DHs = DHs_new`
-10. 実行:
+9. `DHs = DHs_new`とする。
+10. 次を実行する。
     - `CKr_next, MK_reply0, NONCE_reply0 = kdf_ck(CKr)`
-11. 初回返信を解読 `MK_reply0`, `NONCE_reply0`と `AD_msg` セクション10.5で定義される
-12. 復号化が成功すると、次のようにします。
+11. `MK_reply0`、`NONCE_reply0`、10.5節が定義する`AD_msg`を使って、最初の応答を復号する。
+12. 復号に成功したら、次のようにする。
     - `CKr = CKr_next`
     - `Nr = 1`
     - `status = "established"`
 
-復号がステップ11で失敗した場合、実装 **MUST** 仮説のステートの進歩を捨て、メッセージが受信される前に変更されていないセッション状態を残します。
+手順11の復号に失敗した場合、実装は、この仮の状態進行を破棄し、メッセージ受信前のセッション状態を変えずに保持しなければなりません（**MUST**）。
 
-このセクションの定義が完了したら、その後のメッセージは、第10章で安定した状態のダブルラチェット処理を入力します。
+この節の処理が完了した後、後続メッセージは10章の定常状態のDouble Ratchet処理に入ります。
 
-テキストだけで、実装者は簡単に境界を誤解することができます `pending-confirmation` とりあえず `established`. . . 次の州図は、ブートストラップの状態を1ビューに圧縮し、イニスターが最初の有効な応答を受信する前に独立した暗号文を送信しないという制約を強調します。
+文章だけでは、実装者は`pending-confirmation`と`established`の境界を誤解しがちです。次の状態図は初期化状態を一つにまとめ、開始側が最初の有効な応答を受信する前に、独立した後続暗号文を送ってはならないという制約を強調します。
 
 ```mermaid
 stateDiagram-v2
@@ -1022,29 +1023,29 @@ Pending --> NoSession: Timeout / abandon / rebuild
 Established --> NoSession: reset / rebuild with new init
 ```
 
-*図P5-3: セッションブート状態(非暫定)。*
+*図P5-3：セッションの初期化状態（非規範）。*
 
-初期のローカルバッファリング、再送信、エラー回復を処理する場合、実装は、セッションを完全に使用できるようにする代わりに、この状態図に従うべきです。 `direct_init` 送信する
+開始側のローカルバッファリング、再送、エラー回復を扱う際、実装はこの状態図に従い、`direct_init`を送った直後に、そのセッションを定常状態の通信へ全面的に使用できると扱うべきではありません。
 
 
-### 9.5 Init メッセージはデフォルトで署名されていません
+### 9.5 initメッセージは既定では署名しない
 
-デフォルトでは、このプロファイルは **なし** 全体に追加の長期DID署名が必要です `direct_init` オブジェクト。
+このProfileは、既定では`direct_init`オブジェクト全体に対する、追加の長期DID署名を**要求しません**。
 
-展開がより強い可聴性を必要とする場合、 `Direct Init Accountability Extension` **MAY** 有効にして下さい。 拡張子 **MAY** 導入事例 `origin_proof` または同等の認証オブジェクトの `params.auth`. . . それ以外の場合, `params.auth` **MUST** 不在です。
+より高い監査可能性が必要な配備環境では、`Direct Init Accountability Extension`を有効にしてもかまいません（**MAY**）。この拡張は、`params.auth`に`origin_proof`または同等の証明オブジェクトを導入してもかまいません（**MAY**）。それ以外の場合、`params.auth`が存在してはなりません（**MUST**）。
 
-この拡張子は、このプロファイルのMTIの一部ではありません。
+この拡張は、このProfileのMTIに含まれません。
 
 
 ---
 
-## 10. 従属メッセージ:ダブルラチェットのような
+## 10. 後続メッセージ：Double Ratchet-like
 
 ## 10.1 初期化状態
 
-初期起動のブートストラップ、最初の init ciphertext、受信機の最初の応答、およびイニシエータが最初に返された後の状態の初期化はセクション9.4で定義されているすべてです。 このセクションでは、ステートセッションが少なくとも保存する必要があるフィールドのみをリストします。
+initの初期化、最初のinit暗号文、受信側の最初の応答、開始側が最初の応答を受信する前後の状態初期化は、すべて9.4節が定義します。この節は、定常状態のセッションで最低限保存する必要のあるフィールドだけを列挙します。
 
-各セッション **MUST** 少なくとも保存して下さい:
+各セッションは、少なくとも次を保存しなければなりません（**MUST**）。
 
 - `session_id`
 - `suite`
@@ -1054,36 +1055,36 @@ Established --> NoSession: reset / rebuild with new init
 - `peer_device_id`
 - `local_e2ee_key_id`
 - `peer_e2ee_key_id`
-- `RK`: ルートキー
-- `DHs`: ローカルにDHの秘密鍵/公共キーペアを送って下さい
-- `DHr`: ピアの最新のDH公開鍵
-- `CKs`: チェーンキーを送って下さい
-- `CKr`: 受信チェーンキー
-- `Ns`: チェーンメッセージ番号の送信
-- `Nr`: チェーンメッセージ番号の受信
-- `PN`: 前の送信チェーンの長さ
-- `MKSKIPPED`: スキップメッセージキーキャッシュ
-- `status`: ローカルセッションのステータス、推奨値: `pending-confirmation`, `established`
+- `RK`：Root Key。
+- `DHs`：ローカルの送信用DH秘密鍵・公開鍵の組。
+- `DHr`：相手の最新のDH公開鍵。
+- `CKs`：送信チェーンのChain Key。
+- `CKr`：受信チェーンのChain Key。
+- `Ns`：送信チェーンのメッセージ番号。
+- `Nr`：受信チェーンのメッセージ番号。
+- `PN`：直前の送信チェーンの長さ。
+- `MKSKIPPED`：スキップしたメッセージ鍵のキャッシュ。
+- `status`：ローカルセッションの状態。推奨値：`pending-confirmation`、`established`。
 
-各ステータスフィールドの関数は、次のようになります。
+各状態フィールドの役割：
 
-- `session_id`: セッションに対応するラチェットステータスをインデックス化します。
-- `suite`: 同じルールに従って、その後のメッセージが処理できるように、このセッションで使用するべき暗号スイートを提示します。
-- `local_agent_did` / `peer_did`: 業務用DIDペアを埋め込む
-- `local_device_id` / `peer_device_id`: ラチェットとすべてのスキップ/再生状態を1つの正確なデバイスペアに結合します。
-- `local_e2ee_key_id` / `peer_e2ee_key_id`: 実際にこのセッションを確立するために使用されるマニフェストE2EEキーリファレンスを録音します。
-- `RK`: ルートキー、各DHラチェットの進歩の後で導き出す新しいチェーン キーを続行するのに使用されて。
-- `DHs`: 現在ラチェットを送るローカルDHキーペア。ローカルエンドスイッチラチェット時に更新されます。
-- `DHr`: 受取側DHラチェットを進展させる必要があるとき、ピアによって受け入れられる最後のラチェットの公共のキー;使用されて。
-- `CKs` / `CKr`: 送信チェーンのチェーンキーをそれぞれ表示し、受信チェーンを1つずつ導き出す。
-- `Ns`/`Nr`: チェーン送信と受信チェーンのメッセージカウンターをそれぞれ表示します。
-- `PN`: 前の送信チェーンの長さは、ラチェットスイッチングの前にピアプロセス番号ホッピングメッセージを助けるために使用される `ratchet_header.pn`.
-- `MKSKIPPED`: 指定されたメッセージのキーを、アウト・オブ・オーダー・メッセージをキャッシュするために使用し、復号化が合理的なウィンドウ内で再開できるようにします。
-- `status`: ローカルセッションフェーズ;イニスターが入る `pending-confirmation` 入出力後、入出入り `established` 受取後、最初の有効な返信をピアから解読します。
+- `session_id`：このセッションに対応するRatchet状態を索引する。
+- `suite`：このセッションで使う暗号スイートを示し、後続メッセージを同じ規則で処理できるようにする。
+- `local_agent_did`／`peer_did`：業務DIDの組をバインドする。
+- `local_device_id`／`peer_device_id`：Ratchetと、スキップ鍵・リプレイの全状態を、正確な一組のデバイスペアへ結び付ける。
+- `local_e2ee_key_id`／`peer_e2ee_key_id`：このSessionの確立に実際に使った、ManifestのE2EE鍵参照を記録する。
+- `RK`：Root Key。DHラチェットが進むたびに、新しいチェーン鍵を導出し続けるために使う。
+- `DHs`：現在のローカル送信ラチェットのDH鍵ペア。ローカル側がラチェットを切り替えると更新する。
+- `DHr`：相手が最後に受け入れたラチェット公開鍵。受信側DHラチェットをいつ進める必要があるか判断する。〔訳注：この説明の原文は「相手が受け入れた」と記載し、前の状態一覧では「相手の最新のDH公開鍵」と記載しています。主語の不明確さを黙って修正せず、両記載を保持しています。〕
+- `CKs`／`CKr`：それぞれ送信・受信チェーンのChain Key。メッセージ鍵を一つずつ導出するために使う。
+- `Ns`／`Nr`：それぞれ現在の送信・受信チェーンのメッセージカウンター。
+- `PN`：直前の送信チェーンの長さ。`ratchet_header.pn`を通じて、ラチェット切り替え前のスキップした番号のメッセージを相手が処理する助けになる。
+- `MKSKIPPED`：順不同メッセージに対応する導出済みメッセージ鍵をキャッシュし、適切な期間内に復号できるようにする。
+- `status`：ローカルセッションの段階。開始側はinit送信後に`pending-confirmation`へ入り、相手からの最初の有効な応答を受信・復号したら`established`へ入る。
 
-## 10.2 ラチェットヘッダ
+## 10.2 Ratchet Header
 
-いつか `meta.content_type = application/anp-direct-cipher+json`, `body` **MUST** 含まれるもの `ratchet_header`:
+`meta.content_type = application/anp-direct-cipher+json`の場合、`body`は`ratchet_header`を含まなければなりません（**MUST**）。
 
 ```json
 {
@@ -1093,21 +1094,21 @@ Established --> NoSession: reset / rebuild with new init
 }
 ```
 
-分野条件:
+フィールドの要件：
 
-- `dh_pub_b64u`: **MUST**
-- `pn`: **MUST**
-- `n`: **MUST**
+- `dh_pub_b64u`：必須（**MUST**）
+- `pn`：必須（**MUST**）
+- `n`：必須（**MUST**）
 
-フィールド使用説明書:
+各フィールドの用途：
 
-- `dh_pub_b64u`: 受信機がDHラチェットを先立ってかどうかを決定するのに使用している現在の送信機ラチェットの公共キー。
-- `pn`: 以前の送信チェーンのメッセージの合計数、受信機にラチェットスイッチングの前に、そこにあるかもしれない多くの古いチェーンメッセージを伝えるために使用される。
-- `n`: 現在の送信チェーンのメッセージシーケンス番号。 受信機はコンバインします `dh_pub_b64u` とりあえず `n` どのメッセージキーが派生するか、または調べるべきであるかを判断するため。
+- `dh_pub_b64u`：現在の送信側のラチェット公開鍵。受信側が、DHラチェットを進めるか判断するために使います。
+- `pn`：直前の送信チェーンの総メッセージ数。ラチェットの切り替え前に旧チェーンのメッセージが最大何件あるかを受信側に伝えます。
+- `n`：現在の送信チェーンのメッセージ連番。受信側は`dh_pub_b64u`と`n`を組み合わせ、導出または検索するメッセージ鍵を特定します。
 
-### 10.2.1 KDFルール(仮)
+### 10.2.1 KDF規則（規範）
 
-実装全体で相互運用性を確保するために、このプロファイル **MUST** 以下の派生規則を使用してください。
+実装間の相互運用を確保するため、このProfileは次の導出規則を使わなければなりません（**MUST**）。
 
 **`kdf_rk(RK, dh_out) -> (RK', CK)`**
 
@@ -1128,91 +1129,91 @@ MK    = OUT[32:64]
 NONCE = OUT[64:76]
 ```
 
-注意:
+注：
 
-- `MK` AEADキーです。
-- `NONCE` 直接ChaChaChaCha20-Poly1305のnonceとして使用される12バイトに固定されます;
-- 変更されていないスイートの下に、nonceは別々に送信されず、また、splicedのではない `ciphertext_b64u`.
+- `MK`はAEAD鍵です。
+- `NONCE`は12バイト固定で、ChaCha20-Poly1305のnonceとして直接使います。
+- 変更しないスイートでは、nonceを別途送信せず、`ciphertext_b64u`にも連結しません。
 
-### 10.2.2 DH ラチェットの進歩(仮)
+### 10.2.2 DH Ratchetの進行（規範）
 
-このセクションでは、確立されたセッションの定着状態のDHラチェットの進歩のみを定義します。 初期化は、初期化が始まると、最初の init ciphertext、rece's 最初の応答、およびイニシエータの最初の応答はすべてセクション9.4で定義されます。
+この節は、確立済みセッションの定常状態でのDH Ratchetの進行だけを定義します。initによる初期化、最初のinit暗号文、受信側の最初の応答、開始側の最初の応答の前後の状態初期化は、すべて9.4節が定義します。
 
-現在のセッションがまだある場合 `pending-confirmation`またはもし `DHr` 未確立、加工 **MUST** セクション 9.4.9 に従う、およびこのセクション **MUST NOT** 直接適用されます。
+現在のセッションがまだ`pending-confirmation`である、または`DHr`がまだ確立されていない場合、処理は9.4.9節に従わなければならず（**MUST**）、この節を直接適用してはなりません（**MUST NOT**）。
 
-いつか `ratchet_header.dh_pub_b64u` 受信した受信機は、現在記録されていると矛盾しています `DHr`, **MUST** 安定した状態の DH ラチェットを実行します。:
+受信した`ratchet_header.dh_pub_b64u`が、現在記録している`DHr`と一致しない場合、受信側は次の定常状態DHラチェット処理を行わなければなりません（**MUST**）。
 
-1. プレス `ratchet_header.pn` 最初に、古い受信チェーンに残す必要があるかもしれないスキップされたメッセージキーを処理する。
-2. とりあえず `DHr_new = ratchet_header.dh_pub_b64u`
-3. 計算:
+1. まず`ratchet_header.pn`に従い、旧受信チェーンに保持する必要があるスキップしたメッセージ鍵を処理する。
+2. `DHr_new = ratchet_header.dh_pub_b64u`とする。
+3. 次を計算する。
    - `(RK, CKr) = kdf_rk(RK, DH(DHs, DHr_new))`
-4. とりあえず `DHr = DHr_new`
-5. とりあえず `PN = Ns`
-6. とりあえず `Ns = 0`
-7. とりあえず `Nr = 0`
-8. ローカル送信DHキーペアを生成 `DHs_new`
-9. 計算:
+4. `DHr = DHr_new`とする。
+5. `PN = Ns`とする。
+6. `Ns = 0`とする。
+7. `Nr = 0`とする。
+8. 新しいローカル送信DH鍵ペア`DHs_new`を生成する。
+9. 次を計算する。
    - `(RK, CKs) = kdf_rk(RK, DH(DHs_new, DHr))`
-10. 注文注文 `DHs = DHs_new`
+10. `DHs = DHs_new`とする。
 
 
 
-### 10.2.3 メッセージキーの派生と復号処理(仮)
+### 10.2.3 メッセージ鍵の導出と復号処理（規範）
 
-このセクションでは、安定した状態下での最小相互運用性処理アルゴリズムを定義しています。
+この節は、定常状態における相互運用の最小処理アルゴリズムを定義します。
 
 #### 10.2.3.1 `RatchetEncrypt()`
 
-送信者がその後のメッセージを送るとき **MUST**:
+送信側は、後続メッセージを送るとき、次を行わなければなりません（**MUST**）。
 
-1. 実行する `CKs_next, MK, NONCE = kdf_ck(CKs)`
-2. コンサルティング `ratchet_header = { dh_pub_b64u = DHs.public, pn = decimal(PN), n = decimal(Ns) }`
-3. コンサルティング `AD_msg` セクション10.5による
-4. 暗号化 `Application Plaintext` セクション 10.4 から `MK`, `NONCE`と `AD_msg`
-5. 投稿コマンドを送信:
+1. `CKs_next, MK, NONCE = kdf_ck(CKs)`を実行する。
+2. `ratchet_header = { dh_pub_b64u = DHs.public, pn = decimal(PN), n = decimal(Ns) }`を構築する。
+3. 10.5節に従って`AD_msg`を構築する。
+4. `MK`、`NONCE`、`AD_msg`を使い、10.4節の`Application Plaintext`を暗号化する。
+5. 送信後、次のように設定する。
    - `CKs = CKs_next`
    - `Ns = Ns + 1`
 
 #### 10.2.3.2 `TrySkippedMessageKeys()`
 
-受信機 **MUST** チェック `MKSKIPPED[(dh_pub_b64u, n)]` 続いてメッセージを処理する前に。 ヒットしたら、次のようになります。
+受信側は、後続メッセージを処理する前に`MKSKIPPED[(dh_pub_b64u, n)]`を確認しなければなりません（**MUST**）。見つかった場合は次に従います。
 
-1. 対応する `MK` とりあえず `NONCE`
-2. コンサルティング `AD_msg` セクション10.5による
-3. 復号化しようとする
-4. 成功や失敗に関係なく、 **MUST** エントリーを削除
-5. 復号化が成功すると、メッセージ処理を完了します。失敗した場合は、 **MUST** 返品 `anp.direct.e2ee.decrypt_failed`
+1. 対応する`MK`と`NONCE`を取り出す。
+2. 10.5節に従って`AD_msg`を構築する。
+3. 復号を試みる。
+4. 成否にかかわらず、そのエントリを削除しなければならない（**MUST**）。
+5. 復号に成功したらメッセージ処理を完了する。失敗したら、`anp.direct.e2ee.decrypt_failed`を返さなければならない（**MUST**）。
 
 #### 10.2.3.3 `SkipMessageKeys(until_n)`
 
-**MUST NOT** スキップされたキーを生成するときに `until_n < Nr`.
-いつか `until_n - Nr > MAX_SKIP`, **MUST** 返品 `anp.direct.e2ee.max_skip_exceeded`.
+`until_n < Nr`の場合、新たなスキップ鍵を生成してはなりません（**MUST NOT**）。
+`until_n - Nr > MAX_SKIP`の場合、`anp.direct.e2ee.max_skip_exceeded`を返さなければなりません（**MUST**）。
 
-さもなければ、受信機 **MUST** しばらく繰り返して、次のことを繰り返す `Nr < until_n`:
+それ以外では、受信側は`Nr < until_n`の間、次を繰り返さなければなりません（**MUST**）。
 
-1. 実行する `CKr_next, MK, NONCE = kdf_ck(CKr)`
-2. 投稿する `(MK, NONCE)` に へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ へ `MKSKIPPED` キーを使う `(DHr, Nr)` または同等のキー
-3. とりあえず `CKr = CKr_next`
-4. とりあえず `Nr = Nr + 1`
+1. `CKr_next, MK, NONCE = kdf_ck(CKr)`を実行する。
+2. `(DHr, Nr)`または同等のキーを使い、`(MK, NONCE)`を`MKSKIPPED`へ書き込む。
+3. `CKr = CKr_next`とする。
+4. `Nr = Nr + 1`とする。
 
 #### 10.2.3.4 `RatchetDecrypt()`
 
-受信機がその後のメッセージを処理するとき **MUST**:
+受信側は、後続メッセージを処理するとき、次を行わなければなりません（**MUST**）。
 
-1. 実行する `TrySkippedMessageKeys()` 初めて
-2. 場合 `ratchet_header.dh_pub_b64u` 現行と矛盾している `DHr`、セクション 10.2.2 の安定した状態 DH ラチェットを最初に実行して下さい。
-3. 場合 `ratchet_header.n < Nr` とりあえず `MKSKIPPED` ヒットしません。 **MUST** 返品 `anp.direct.e2ee.decrypt_failed`
-4. 実行する `SkipMessageKeys(ratchet_header.n)`
-5. 実行する `CKr_next, MK, NONCE = kdf_ck(CKr)`
-6. コンサルティング `AD_msg` セクション10.5による
-7. 利用するデクリプト `MK`, `NONCE` とりあえず `AD_msg`
-8. 復号化が成功すると、次のようにします。
+1. まず`TrySkippedMessageKeys()`を実行する。
+2. `ratchet_header.dh_pub_b64u`が現在の`DHr`と一致しない場合、先に10.2.2節の定常状態DHラチェットを実行する。
+3. `ratchet_header.n < Nr`で、`MKSKIPPED`に見つからない場合、`anp.direct.e2ee.decrypt_failed`を返さなければならない（**MUST**）。
+4. `SkipMessageKeys(ratchet_header.n)`を実行する。
+5. `CKr_next, MK, NONCE = kdf_ck(CKr)`を実行する。
+6. 10.5節に従って`AD_msg`を構築する。
+7. `MK`、`NONCE`、`AD_msg`で復号する。
+8. 復号に成功したら、次のようにする。
    - `CKr = CKr_next`
    - `Nr = Nr + 1`
 
-導入事例 **SHOULD** 暫定状態または同等のロールバック機構でステップ5-8を実行します。復号が失敗した場合、 **MUST NOT** 消費する `CKr` 増加する `Nr`と **MUST** 返品 `anp.direct.e2ee.decrypt_failed`.
+実装は、手順5-8を仮の状態または同等のロールバック機構で行うべきです（**SHOULD**）。復号に失敗したら、`CKr`を消費したり`Nr`を増やしたりしてはならず（**MUST NOT**）、`anp.direct.e2ee.decrypt_failed`を返さなければなりません（**MUST**）。
 
-安定した状態に入ると、P5の硬い部分は新しいDHラチェットから普通のチェーン進歩を区別します。 次の図は、コアの進歩経路をまとめたものです。 `RK / DHs / DHr / CKs / CKr / Ns / Nr / PN`.
+定常状態に入ると、P5の難所は、通常のチェーン進行と新たなDHラチェットを区別することになります。次の図は、`RK / DHs / DHr / CKs / CKr / Ns / Nr / PN`の中心的な進行経路をまとめます。
 
 ```mermaid
 flowchart TD
@@ -1239,13 +1240,13 @@ RK2 --> NewCKs[Obtain new CKs]
 NewCKs --> ResetCtr[PN = Ns ; Ns = 0 ; Nr = 0]
 ```
 
-*図P5-4:ダブルラチェット状態の進歩(非放射性)。*
+*図P5-4：Double Ratchet状態の進行（非規範）。*
 
-下記を読む場合 `RatchetEncrypt()`, `RatchetDecrypt()`, およびスキップされたメッセージキー処理ロジック, それらを送信するためのこの状態アドバンスメント図のコンクリート拡張として扱います, 受信, そして、注文外回復.
+以降の`RatchetEncrypt()`、`RatchetDecrypt()`、スキップメッセージ鍵の処理を読む際、送信、受信、順不同からの回復について、この状態進行図を具体化したものとして捉えてください。
 
-### 10.3 `application/anp-direct-cipher+json` オブジェクト
+### 10.3 `application/anp-direct-cipher+json`オブジェクト
 
-推奨構造は以下の通りです。
+推奨する構造は次のとおりです。
 
 ```json
 {
@@ -1259,24 +1260,24 @@ NewCKs --> ResetCtr[PN = Ns ; Ns = 0 ; Nr = 0]
 }
 ```
 
-分野条件:
+フィールドの要件：
 
-- `session_id`: **MUST**
-- `ratchet_header`: **MUST**
-- `ciphertext_b64u`: **MUST**
-- `suite`: **MAY**
+- `session_id`：必須（**MUST**）
+- `ratchet_header`：必須（**MUST**）
+- `ciphertext_b64u`：必須（**MUST**）
+- `suite`：任意（**MAY**）
 
-フィールド使用方法の指示:
+各フィールドの用途：
 
-- `session_id`: ダイレクトセッションをこの暗号文に所属し、その受信機はそれに応じて対応するラチェットステータスをロードしたことを示します。
-- `suite`: 現時点でのその値 **MUST** セッションスイートと同じです。 `session_id`; デフォルトで、受信機 **MUST** ローカルセッションの状態にバインドされたバンドルを使用します。
-- `ratchet_header`: 後続メッセージで公開されているラチェット座標を運ぶが、認証によってバインドする必要があります。
-- `ciphertext_b64u`:内部で暗号化されたAEADの暗号テキスト文字列 `Application Plaintext` は、パディングなしでbase64urlで表されます。変更されていないスイートの下に、値はCephertextボディのみが含まれており、nonceが含まれていません**.
+- `session_id`：この暗号文が、どの確立済みDirect Sessionに属するかを示します。受信側は、これに従って対応するRatchet状態を読み込みます。
+- `suite`：存在する場合、値は`session_id`に結び付くセッションのスイートと完全に同じでなければなりません（**MUST**）。省略時、受信側は、ローカルセッション状態に結び付くBundleを使わなければなりません（**MUST**）。〔訳注：原文後半はBundleと記載しています。暗号スイートに関する前半の要件へ黙って書き換えず、原記載を保持しています。〕
+- `ratchet_header`：後続メッセージで公開されるラチェットの座標を運びますが、認証によるバインディングが必要です。
+- `ciphertext_b64u`：内側の`Application Plaintext`を暗号化したAEAD暗号文文字列。パディングなしのbase64urlで表現します。変更しないスイートでは、値は暗号文本体だけを含み、nonceを含みません。
 
 
-### 10.4 内部の層 `Application Plaintext`
+### 10.4 内側の`Application Plaintext`
 
-暗号化の前に、送信者 **MUST** 直接ベースアプリケーションペイロードを正規化します。
+暗号化前に、送信側はDirect Baseのアプリケーションペイロードを、次の形へ正規化しなければなりません（**MUST**）。
 
 ```json
 {
@@ -1291,27 +1292,27 @@ NewCKs --> ResetCtr[PN = Ns ; Ns = 0 ; Nr = 0]
 }
 ```
 
-フィールド使用方法の指示:
+各フィールドの用途：
 
-- `application_content_type`: インナーオリジナルアプリケーションペイロードタイプ。 対応するフィールドと同等です。 `meta.content_type` 暗号文の内部の直接ベースで。
-- `logical_message_id`: 任意 DIDレベルのアプリケーション相関識別子は、独立して1つの論理メッセージの暗号化されたコピーによって共有されます。 AEAD保護された文脈の中にのみ存在し、 **MUST NOT** 外部ルーティング、潜入性、または許容された結果に影響します。
-- `conversation_id`: 任意アプリケーションセッションコンテキストID; E2EEセッションやラチェット状態IDではなく、セッションマージに使用されます。
-- `reply_to_message_id`: 業務メッセージがこの内部のアプリケーションメッセージに応答する、任意応答参照。
-- `annotations`: 暗号化保護下で拡張されたアプリケーションメタデータ。それは同義語のままに `annotations` P3の分野は外の管か不浸透の決定のために使用してはならない。
-- `text` / `payload` / `payload_b64u`:それぞれ、プレーンテキスト、構造化されたJSONオブジェクトとバイナリ拡張ペイロードの3つの相互に排他的なベアラーモードに対応する。 直接ベースとセマンティックスは一貫していますが、シーフェース内で位置を移動します。
-  いつか `application_content_type = "application/json"`, `payload` **MUST**
-JSON オブジェクトを直接運ぶ。 このプロフィールは、事業を定義しない
-そのオブジェクト内のフィールドの意味。
+- `application_content_type`：内側の元のアプリケーションペイロードの型。Direct Baseの`meta.content_type`に対応するフィールドを、暗号文内に置いたものです。
+- `logical_message_id`：一つの論理メッセージを独立に暗号化した各コピーで共有する、任意のDID単位のアプリケーション相関識別子。AEAD保護された平文内にだけ存在し、外側のルーティング、冪等性、受け入れ結果に影響してはなりません（**MUST NOT**）。
+- `conversation_id`：任意のアプリケーション会話コンテキストID。会話の統合に使い、E2EEセッションやRatchet状態のIDではありません。
+- `reply_to_message_id`：任意の返信参照。この内側のアプリケーションメッセージが、どの業務メッセージへ返信するかを示します。
+- `annotations`：暗号化保護下の、アプリケーション拡張メタデータ。P3の`annotations`フィールドと同じ意味を維持し、外側のルーティングや冪等性の判断に使うべきではありません。
+- `text`／`payload`／`payload_b64u`：それぞれ、相互排他的な三つの運搬方式である、プレーンテキスト、構造化JSONオブジェクト、バイナリ拡張ペイロードに対応します。意味はDirect Baseと同じですが、位置を暗号文の内側へ移します。
+  `application_content_type = "application/json"`の場合、`payload`はJSONオブジェクトを直接運ばなければなりません（**MUST**）。
+  このProfileは、そのオブジェクト内部のフィールドの業務上の
+  意味を定義しません。
 
-満足して:
+そして、次を満たします。
 
-- `application_content_type` **MUST** 存在;
-- `logical_message_id` **MAY** 存在し、現われれば **MUST** 空でない文字列になります。
-- 正確に 1 つ `text`, `payload`, または `payload_b64u` **MUST** プレゼントします。
+- `application_content_type`が存在しなければなりません（**MUST**）。
+- `logical_message_id`は存在してもかまいません（**MAY**）。存在する場合、空でない文字列でなければなりません（**MUST**）。
+- `text`、`payload`、`payload_b64u`のうち、正確に一つが存在しなければなりません（**MUST**）。
 
-送信者 **MUST** 全体にシリアライズ `Application Plaintext` 暗号化前のUTF-8 + RFC 8785 JCSを使用してバイト文字列にオブジェクト; 受信機 **MUST** 復号後に同じルールに従ってオブジェクトを解釈します。
+送信側は、暗号化前に`Application Plaintext`オブジェクト全体をUTF-8＋RFC 8785 JCSでバイト列へ直列化しなければならず（**MUST**）、受信側は復号後、同じ規則でオブジェクトを解釈しなければなりません（**MUST**）。
 
-通常のJSONアプリケーションプレーンテキスト例:
+通常のJSONアプリケーション平文の例：
 
 ```json
 {
@@ -1327,12 +1328,12 @@ JSON オブジェクトを直接運ぶ。 このプロフィールは、事業�
 }
 ```
 
-デフォルトオプションフィールド **MUST** 直接省略して下さい; `conversation_id` とりあえず `reply_to_message_id` デフォルトで使用されます **MUST NOT** 利用する `null` または空の文字列プレースホルダー。 `annotations` デフォルトの場合 **MUST** 省略される; 提示すれば、 **MAY** は、 `{}`. . . フィールドのセマンティックが他の方法では、送信者を指示しない MUST NOT "Field が存在しません" の代わりに空のオブジェクト、空配列、または他のプレースホルダー値を使用します。
+既定の任意フィールドは、直接省略しなければなりません（**MUST**）。`conversation_id`と`reply_to_message_id`を省略する場合、代わりに`null`や空文字列を使ってはなりません（**MUST NOT**）。`annotations`も省略時はフィールド自体を省かなければなりません（**MUST**）。存在する場合は`{}`でもかまいません（**MAY**）。フィールドの意味で別の定めがない限り、送信側は「フィールドが存在しない」ことの代わりに空オブジェクト、空配列、その他のプレースホルダー値を使ってはなりません（MUST NOT）。
 
 
-### 10.5 メッセージ エイド
+### 10.5 メッセージのAAD
 
-それぞれのメッセージのAEAD AADは、次のように記録されます。 `AD_msg`, **MUST** 次のJSONオブジェクトのUTF-8 + RFC 8785 JCSエンコードバイト文字列になります。
+各後続メッセージのAEAD AADを`AD_msg`と表記します。次のJSONオブジェクトをUTF-8＋RFC 8785 JCSで符号化したバイト列でなければなりません（**MUST**）。
 
 ```text
 {
@@ -1350,71 +1351,71 @@ JSON オブジェクトを直接運ぶ。 このプロフィールは、事業�
 }
 ```
 
-以下に示すフィールドが使われます。
+各フィールドの目的：
 
-- `content_type`: 同一の暗号文が他のオブジェクトとして解釈されるのを防ぐため、現在のワイヤオブジェクトタイプを結合しました。
-- `message_id` / `operation_id`: これらは、外部を参照します `direct.send.meta` 識別子。 このプロファイルが同じである必要があるにもかかわらず、両方とも明示的に認証されます。
-- `profile` / `security_profile`: プロファイル全体やセキュリティプロファイル全体で、暗号文が再利用されるのを防ぎます。
-- `sender_did` / `recipient_did`: サービスの送信者と受信者に、その後の暗号文が属する。
-- `sender_device_id` / `recipient_device_id`: 暗号文を正確にデバイスペアに埋め、兄弟のセッションで配信を防ぐ
-- `session_id`: 特定の直接セッションに結合して、他のセッション状態に移動し、解釈のために暗号文が他のセッション状態に移動されるのを防ぐことができます。
-- `ratchet_header`: 公開ヘッダーと暗号テキストを全体として認証し、ヘッダの暗号文フィールドが置換またはスプライシングされるのを防ぐことができます。
+- `content_type`：現在のwireオブジェクト型をバインドし、同じ暗号文を他のオブジェクトとして解釈することを防ぐ。
+- `message_id`／`operation_id`：外側の`direct.send.meta`の識別子を指す。このProfileで両者が等しいことを要求していても、双方を明示的に認証する。
+- `profile`／`security_profile`：Profileやsecurity profileをまたぐ暗号文の再利用を防ぐ。
+- `sender_did`／`recipient_did`：後続暗号文の属する送信・受信主体（原文ではservice sender and receiver）をバインドする。
+- `sender_device_id`／`recipient_device_id`：暗号文を正確なデバイスペアへ結び付け、同じDIDの別デバイスのSessionの下で配信することを防ぐ。
+- `session_id`：特定のDirect Sessionへ結び付け、暗号文を他のセッション状態へ移して解釈することを防ぐ。
+- `ratchet_header`：公開ヘッダーと暗号文を一体として認証し、ヘッダーや暗号文のフィールドの置換・連結を防ぐ。
 
-注意:
+注：
 
-- `ratchet_header` **MUST** 同じように丁度ある `ratchet_header` 実際にワイヤー オブジェクトで送られる;
-- `application_content_type` 内側の層にのみ存在し続ける `Application Plaintext`、AEAD自体によって保護される完全性を使って;
-- プロフィールは **なし** 利用条件 `attachment_manifest_digest` 追加の AAD フィールドとして; デプロイメントがこのバインディングを追加する場合、MTI ではなく拡張機能です。
+- `ratchet_header`は、実際にwireオブジェクトで送った`ratchet_header`と完全に同じでなければなりません（**MUST**）。
+- `application_content_type`は、引き続き内側の`Application Plaintext`にだけ存在し、AEAD自体が完全性を保護します。
+- このProfileは、追加AADフィールドとして`attachment_manifest_digest`を使うことを**要求しません**。配備環境がこのバインディングを追加する場合、それはMTIではなく拡張機能です。
 
 
-### 10.6 ヘッダーの暗号化
+### 10.6 ヘッダー暗号化
 
-このプロファイルでは、ヘッダ暗号化は **なし** MTI の必須項目
+このProfileでは、ヘッダー暗号化はMTIで**要求しません**。
 
-導入事例 **MAY** ヘッダー暗号化のバリアントをサポート。ただし、サポートされている場合は、機能交渉に明示的に広告され、ヘッダ AEAD と nonce ルールを定義する必要があります。
+実装は、ヘッダー暗号化の派生方式に対応してもかまいません（**MAY**）。ただし、対応する場合、機能交渉で明示的に公開し、ヘッダーのAEADとnonceの規則を定義する必要があります。
 
-### 10.7 装置修飾される `direct.send` 電子メールボックス
+### 10.7 デバイスを指定した`direct.send`とMailbox
 
-の P5 `direct.send` **MUST** 含まれるもの:
+P5の`direct.send`は、次を含まなければなりません（**MUST**）。
 
-- `meta.profile = "anp.direct.e2ee.v2"` とりあえず `meta.security_profile = "direct-e2ee"`;
-- `meta.target.kind = "agent"`, 受信者エージェントの DID で `meta.target.did`;
-- `meta.sender_device_id` とりあえず `meta.recipient_device_id` 正確なデバイスペアを選択します。
-- ユニークなパーデバイス `meta.message_id` とりあえず `meta.operation_id`と、 `operation_id = message_id` セクション3.7で要求されるように;
-- 1つのP5 initまたはそれ以降の暗号本文とその対応 `meta.content_type`.
+- `meta.profile = "anp.direct.e2ee.v2"`かつ`meta.security_profile = "direct-e2ee"`。
+- `meta.target.kind = "agent"`。受信側Agent DIDを`meta.target.did`に入れる。
+- 正確なデバイスペアを選ぶ`meta.sender_device_id`と`meta.recipient_device_id`。
+- デバイスごとに一意な`meta.message_id`と`meta.operation_id`。3.7節の要件どおり`operation_id = message_id`。
+- P5のinitまたは後続暗号文のbodyを一つと、対応する`meta.content_type`。
 
-暗号文の受け入れ前に、対象サービス **MUST**:
+暗号文を受け入れる前に、宛先サービスは次を行わなければなりません（**MUST**）。
 
-1. 選択したデバイスが各エージェントのDIDの下に現在のP5資格のあるエンドポイントのままであることを確認し、
-2. バンドルまたはセッションとAADが外部と同じデバイスペアを識別することを確認します `meta`;
-3. 利用条件 `(sender_did, sender_device_id, recipient_did, recipient_device_id, method, operation_id)` 出土キーとして;
-4. メールボックスにのみ不透明の暗号文をエンキュー `(recipient_did, recipient_device_id)`; と
-5. 暗号化、再暗号化、または暗号テキストを兄弟デバイスにファンアウトしないでください。
+1. 選択した両デバイスが、それぞれのAgent DIDの下で、現在P5に適格なエンドポイントであることを検証する。
+2. BundleまたはSessionとAADが、外側の`meta`と同じデバイスペアを識別することを検証する。
+3. `(sender_did, sender_device_id, recipient_did, recipient_device_id, method, operation_id)`を冪等性キーに使う。
+4. 不透明な暗号文を、`(recipient_did, recipient_device_id)`のMailboxだけにキューイングする。かつ、
+5. 暗号文を復号、再暗号化、同じDIDの別デバイスへファンアウトしない。
 
-成功の応答 `result` **MUST** 含まれるもの `accepted = true`, `message_id`, `operation_id`, `target_did`, `recipient_device_id`と `accepted_at`. . . 選択された識別子 **MUST** 受け入れられた要求を等しい。 結果は、その正確なデバイス暗号文にのみ適用されます。別のデバイスの成功または失敗は独立して、 **MUST NOT** デバイス検索配列として返されます。
+成功応答の`result`は、`accepted = true`、`message_id`、`operation_id`、`target_did`、`recipient_device_id`、`accepted_at`を含まなければなりません（**MUST**）。再掲する識別子は、受け入れた要求と等しくなければなりません（**MUST**）。結果が適用されるのは、その正確なデバイス暗号文だけです。他デバイスの成否は独立であり、デバイス結果の配列として返してはなりません（**MUST NOT**）。
 
-アクセダンスは、この正確な暗号文が受け入れられるか、キューイングされたことだけを意味します。 Mailboxは複数のセッションから暗号文を保持する可能性がありますが、その認可と配送キー **MUST** 受信者 DID とデバイスを含む。 ラチェット状態を保有せず、履歴プル、読み取りレシート、デバイス同期方法を定義しません。
+受け入れが意味するのは、この正確な暗号文を受け入れた、またはキューへ入れたことだけです。Mailboxは複数Sessionの暗号文を保持できますが、認可と配信のキーには受信者DIDとデバイスを含めなければなりません（**MUST**）。Ratchet状態は持たず、履歴取得、既読通知、デバイス同期のメソッドも定義しません。
 
-論理的な DID-to-DID メッセージの場合、送信者は同じ任意を置くことができます `logical_message_id` 各暗号化されたアプリケーション プレーンテキスト内、 **MUST** 受信デバイスごとに別の暗号文と外部識別子のペアを作成および再試行します。
+DID間の一つの論理メッセージでは、送信側が、各暗号化Application Plaintextの内側へ同じ任意の`logical_message_id`を入れてもかまいません。ただし、受信デバイスごとに、別個の暗号文と外側の識別子の組を作成し、再試行しなければなりません（**MUST**）。
 
-#### 10.7.1 P5の特長 `direct.incoming`
+#### 10.7.1 P5の`direct.incoming`
 
-プチ5 `direct.incoming` JSON-RPC 通知で、JSON-RPC の通知がないので、 `id` または成功の応答。 でん **MUST** 利用条件 `meta.profile = "anp.direct.e2ee.v2"` とりあえず **MUST** 受入P5から保存 `direct.send`:
+P5の`direct.incoming`はJSON-RPC Notificationであり、`id`も成功応答もありません。`meta.profile = "anp.direct.e2ee.v2"`を使わなければならず（**MUST**）、受け入れられたP5の`direct.send`から、次を保持しなければなりません（**MUST**）。
 
-- `meta.profile`, `meta.security_profile`、DIDsの装置セレクター両方、 `message_id`, `operation_id`と `content_type`; と
-- 変更されていないP5 initまたはその後の暗号テキスト `body`.
+- `meta.profile`、`meta.security_profile`、両DID、両デバイスセレクター、`message_id`、`operation_id`、`content_type`。かつ、
+- 変更のないP5のinitまたは後続暗号文の`body`。
 
-でん **MUST** 配送のみ `meta.recipient_device_id`. . . 同じドメインディスパッチャまたはクロスドメインリレー **MUST NOT** デバイスセレクタのどちらかを、削除、インフェール、またはリライトし、P5プロファイルをP3に変更するか、または暗号本文ボディを置き換えます。 目的地サービス **MUST** メールボックスのエンキューまたは配送前の再検証受取人への資格。 P5 と同様に `direct.send`, `params.auth` 説明責任延長が明示的に交渉された場合を除き、不在です。
+配信先は`meta.recipient_device_id`だけでなければなりません（**MUST**）。同一ドメインの配送処理やドメイン間中継は、どちらのデバイスセレクターも追加、削除、推論、書き換えしてはならず、P5 ProfileをP3へ変えたり、暗号文bodyを置き換えたりしてはなりません（**MUST NOT**）。宛先サービスは、Mailboxへのキューイングまたは配信の前に、受信デバイスの適格性を再検証しなければなりません（**MUST**）。P5の`direct.send`と同じく、accountability拡張を明示的に交渉していない限り、`params.auth`は存在しません。
 
 ---
 
-## 11. 受注生産、メッセージ番号のスキップ、保護再生
+## 11. 順不同の処理、スキップしたメッセージ番号、リプレイ防止
 
-### 11.1 国家ベースのアンチリプレイ
+### 11.1 状態に基づくリプレイ防止
 
-のために `direct.send` とりあえず `anp.direct.e2ee.v2`から、 `operation_id` **MUST** 正確に等しい `message_id`外部デバイス認証された重要キーとメッセージIDは同じ値にバインドされます。 重要鍵には、DIDとデバイスIDの両方が搭載されています。 受信機 **MUST** 任意のラチェット状態を前進させる前に、このチェックを完了します。
+`anp.direct.e2ee.v2`の`direct.send`では、`operation_id`が`message_id`と完全に等しくなければならないため（**MUST**）、外側のデバイスを含めた冪等性キーとメッセージIDは同じ値へ結び付きます。冪等性キーには両DIDと両デバイスIDを含みます。受信側は、Ratchet状態を進める前に、この検査を完了しなければなりません（**MUST**）。
 
-受信機 **MUST** 少なくとも次の寸法に基づいて再生防止を実行します。
+受信側は、少なくとも次の軸に基づくリプレイ防止を実装しなければなりません（**MUST**）。
 
 - `session_id`
 - `sender_device_id`
@@ -1422,136 +1423,136 @@ JSON オブジェクトを直接運ぶ。 このプロフィールは、事業�
 - `message_id`
 - `ratchet_header.dh_pub_b64u`
 - `ratchet_header.n`
-- 暗号テキストの消化器(任意)
+- 暗号文のダイジェスト（任意）。
 
-### 11.2 ナンバーホッピングサポート
+### 11.2 番号が飛んだメッセージへの対応
 
-導入事例 **MUST** 特定の範囲内のメッセージのホッピングをサポートし、維持 `MKSKIPPED` そのためには
+実装は、一定範囲内で番号が飛んだメッセージに対応し、そのために`MKSKIPPED`を維持しなければなりません（**MUST**）。
 
 ### 11.3 `MAX_SKIP`
 
-導入事例 **MUST** 定義 `MAX_SKIP`.
+実装は`MAX_SKIP`を定義しなければなりません（**MUST**）。
 
-変更されていない MTI 推奨値は次のようになります。
+変更しないMTIの推奨値は次のとおりです。
 
 - `MAX_SKIP = 1000`
 
-導入事例 **MAY** より小さい値や大きい値を取るが、機能交渉を通して露出されなければならない。
+実装は、より小さい値や大きい値を使ってもかまいません（**MAY**）。ただし、機能交渉を通じて公開する必要があります。
 
-### 11.4 スキップされたキー削除
+### 11.4 スキップ鍵の削除
 
-導入事例 **SHOULD** とりあえず `MKSKIPPED` 設定:
+実装は、`MKSKIPPED`に次を設定するべきです（**SHOULD**）。
 
-- セッションごとのエントリー数の最大
-- 退会戦略;
-- 決定的なトリガー条件。
+- セッションごとの最大エントリ数。
+- 削除ポリシー。
+- 決定的な発動条件。
 
-壁時計時間に基づいて純粋に「メッセージ受信数/ラチェット段数」に基づいて決定的な削除を優先的に与えることをお勧めします。
+純粋に実時刻へ依存するより、「メッセージ受信回数／ラチェット進行回数」に基づく決定的な削除を優先することを推奨します。
 
-`MKSKIPPED` デバイスペアセッション1名に所属し、 **MUST NOT** 別のデバイスペアで上下または再使用している。
+`MKSKIPPED`は一つのデバイスペアのSessionに属し、別のデバイスペアから検索・再利用してはなりません（**MUST NOT**）。
 
-### 11.5 初期メッセージの再生と下位
+### 11.5 初期メッセージのリプレイと冪等性
 
-受信機 **MUST** 同時に2種類のステータスを維持します。
+受信側は、二種類の状態を同時に維持しなければなりません（**MUST**）。
 
-1. 外部の不法記録は、キーが少なくともです:
+1. 外側の冪等性記録。キーには少なくとも次を含む。
    - `(sender_did, sender_device_id, recipient_did, recipient_device_id, method, operation_id)`
 
-2. 初期レコードは、キーが少なくとも次のものになります。
+2. initのリプレイ記録。キーには少なくとも次を含む。
    - `(recipient_did, recipient_device_id, recipient_bundle_id, sender_did, sender_device_id, sender_ephemeral_pub_b64u, session_id)`
 
-処理ルールは以下の通りです。
+処理規則は次のとおりです。
 
-- 繰り返しリクエストが同じにヒットした場合 `operation_id` そして、その入口のリプレイキーも同じです、そして **MUST** 同一のinitの不当な再試行と、元の結果または同等の結果が返されます。
-- 初期キーが同じである場合 `operation_id` または `message_id` は、 **MUST** 拒否と返品 `anp.direct.e2ee.replay_detected`;
-- 続いて `application/anp-direct-cipher+json`、ラチェットの状態 **MUST NOT** 重複配達のために再度高度にして下さい。
+- 繰り返し要求が同じ`operation_id`に一致し、initリプレイキーも同じ場合、同じinitの冪等な再試行とみなし、元の結果または同等の結果を返さなければなりません（**MUST**）。
+- initリプレイキーが同じで、`operation_id`または`message_id`が異なる場合、拒否して`anp.direct.e2ee.replay_detected`を返さなければなりません（**MUST**）。
+- 後続の`application/anp-direct-cipher+json`では、重複配信によってRatchet状態を再び進めてはなりません（**MUST NOT**）。
 
 
 ---
 
-## 12. セッションの再確立とメッセージの制御
+## 12. セッションの再確立と制御メッセージ
 
-### 12.1 復興原則
+### 12.1 再構築の原則
 
-セッション **SHOULD** 再確立される時:
+次の場合、Sessionを再確立するべきです（**SHOULD**）。
 
-- 連続復号化失敗は、局所的なしきい値に達する。
-- 再建のための明確な指示を受け取りなさい;
-- ピアスイートの変更;
-- デバイスが削除されるか、マニフェストE2EEキーを変更するか、P5の適格性を失います。
-- 長期材料の更新を現地方針で行う必要があります。
+- 連続する復号失敗が、ローカルのしきい値に達した。
+- 明示的な再構築の指示を受信した。
+- 相手のスイートが変わった。
+- いずれかのデバイスが削除された、ManifestのE2EE鍵を変更した、P5の適格性を失った。
+- ローカルポリシーが長期素材の更新を要求する。
 
-### 12.2 推奨再建方法
+### 12.2 推奨する再構築方法
 
-このページでは、新しいセッションを直接再配布することを推奨しています。 `application/anp-direct-init+json` 複雑な別々のリキープロトコルを設計する代わりに。
+このProfileは、複雑な独立した再鍵生成プロトコルを設計する代わりに、新しい`application/anp-direct-init+json`を通じて直接セッションを再確立し、鍵を更新することを推奨します。
 
 
-### 12.2.1 セッションの共存とデフォルトアウトバウンドセッション
+### 12.2.1 セッションの共存と既定の送信セッション
 
-同じ間 `(local_agent_did, local_device_id, peer_did, peer_device_id, suite)`, 複数 `session_id`sは共存することができます **MAY**. . . デフォルトアウトバウンドセッション **MUST** デバイスペアの正確な設定のみ選択します。
+同じ`(local_agent_did, local_device_id, peer_did, peer_device_id, suite)`の間で、複数の`session_id`が共存してもかまいません（**MAY**）。既定の送信Sessionは、その正確なデバイスペア内だけから選ばなければなりません（**MUST**）。
 
-アプリケーションレイヤーが明示的に指定されていない場合 `session_id`, デフォルトアウトバウンドセッション **SHOULD** 最近のセッションを選択すると、 `status = "established"`. . . なし `established` セッションが存在し、送信者 **SHOULD** 新規に取り組みます `direct_init`と **MUST NOT** メッセージを別の方法で送信する `application/anp-direct-cipher+json` メッセージを送信する `pending-confirmation` セッション
+アプリケーション層が`session_id`を明示しない場合、既定の送信セッションには、`status = "established"`の最新のものを選ぶべきです（**SHOULD**）。`established`セッションがなければ、送信側は新しい`direct_init`を開始するべきであり（**SHOULD**）、`pending-confirmation`セッション上で、独立した`application/anp-direct-cipher+json`としてメッセージを送ってはなりません（**MUST NOT**）。
 
-受取人が受け取るとき `application/anp-direct-cipher+json` 未知の人 `session_id`, **MUST** 返品 `anp.direct.e2ee.session_not_found`.
+受信側が未知の`session_id`の`application/anp-direct-cipher+json`を受信した場合、`anp.direct.e2ee.session_not_found`を返さなければなりません（**MUST**）。
 
-### 12.3 制御オブジェクト(非MTI拡張)
+### 12.3 制御オブジェクト（MTI外の拡張）
 
-`application/anp-direct-control+json` このプロファイルのMTIの一部ではなく、標準ワイヤオブジェクトです。 `direct.send` とりあえず `anp.direct.e2ee.v2`.
+`application/anp-direct-control+json`は、このProfileのMTIにも、`anp.direct.e2ee.v2`の`direct.send`の標準wireオブジェクトにも含まれません。
 
-実装が明示的なセッション制御を必要とする場合、 **MAY** 拡張交渉によるこのオブジェクトを定義します。 この拡張子が交渉されていない場合、送信者 **MUST NOT** それを使用し、受信機 **MUST** 拒否します。
+実装が明示的なセッション制御を必要とする場合、拡張交渉によってこのオブジェクトを定義してもかまいません（**MAY**）。拡張を交渉していない場合、送信側は使ってはならず（**MUST NOT**）、受信側は拒否しなければなりません（**MUST**）。
 
-推奨制御タイプ:
+推奨する制御の種類：
 
 - `reset`
 - `close`
 - `error`
 
-これらの制御オブジェクト **SHOULD** セッションキーによって保護されます。セッションが終了した場合は、最初に新しい init を使用して再セッションの確立を行います。
+これらの制御オブジェクトは、確立済みのセッション鍵で保護するべきです（**SHOULD**）。セッションが期限切れなら、先に新しいinitを使ってセッションを再確立します。
 
-### 12.4 デバイスセットの変更と履歴
+### 12.4 デバイス集合の変更と履歴
 
-送信機は、現在の受信者マニフェストを解決し、選択したデバイスペアごとに1つのセッションを確立または再利用し、独立して暗号化、送信、および受信者のデバイスごとの1つのP5操作を回復します。 暗号化されたコピー **MAY** 内側を共有 `logical_message_id`, しかし、その外側 `message_id` / `operation_id`、ラチェットの位置、暗号文、受け入れられた結果およびretry状態は独立しています。
+一つの論理送信について、送信側は現在の受信側Manifestを解決し、選んだ各デバイスペアのSessionを確立・再利用し、受信デバイスごとに一つのP5操作を独立して暗号化・送信・再試行します。暗号化されたコピーは、内側の`logical_message_id`を共有してもかまいません（**MAY**）。ただし、外側の`message_id`／`operation_id`、Ratchet位置、暗号文、受け入れ結果、再試行状態は独立です。
 
-デバイスが削除されると、マニフェストキーを変更したり、P5プロファイルを紛失したり、実装したりします。 **MUST** プレキー素材の公開や返却を止め、今後のメールボックスのエンキューイングと配信を停止し、影響を受けるセッションの使用を中止します。 他社端末の未変更セッションが続行します。 再登録エンドポイントは、新しいデバイス ID とキーを使用します。
+デバイスが削除された、Manifest鍵を変えた、P5 Profileを失った場合、実装は、そのPreKey素材の公開・返却、今後のMailboxへのキューイングと配信、影響するSessionの使用を止めなければなりません（**MUST**）。他のデバイスの変更されていないSessionは継続します。再登録するエンドポイントは、新しいデバイスIDと鍵を使います。
 
-新たに追加されたデバイスは、申請が対象になった後に送信するメッセージのみを受信します。 P5は別のデバイスのラチェットの状態をコピーしたり、履歴文を自動的に付与しません。
+新しく追加されたデバイスが受け取るのは、適格になった後にアプリケーションが送ると選択したメッセージだけです。P5は、他デバイスのRatchet状態をコピーしたり、過去の平文を自動的に提供したりしません。
 
-### 12.5 エージェント DID 移行
+### 12.5 Agent DIDの移行
 
-受入エージェント DID 移行は、所有するビジネスシステムが 1 つの継続アカウントまたは連絡先として、古い新しい DID を扱う場合でも、P5 暗号アイデンティティを変更します。
+Agent DIDの移行を受け入れると、管理元の業務システムが新旧DIDを継続した同じアカウントや連絡先と扱っても、P5の暗号学的アイデンティティは変わります。
 
-P2移行保証の受入後、送信者 **MUST** 古いDIDに縛られたセッションで新しい暗号文を作成するのを止め、後継者のDIDの現在の問題を解決します `deviceManifest`新しくPreKey素材を入手し、検証し、選択したデバイスペアの新しいセッションを確立し、すべてのDID-bound AAD、暗号文、および外部リクエストフィールドを再構築します。
+P2の移行assuranceを受け入れた後、送信側は、旧DIDに結び付くSessionで新しい暗号文を作ることを止め、後継DIDの現在の`deviceManifest`を解決し、新しいPreKey素材を取得・検証し、選んだ各デバイスペアに新しいSessionを確立し、DIDに結び付くAAD、暗号文、外側の要求フィールドをすべて再構築しなければなりません（**MUST**）。
 
-業務システムが、事業システムが決定するかどうか `provider_asserted` コンタクトや会話関係を継承するのに十分です。 その決定に関係なく、P5 **MUST NOT** 古いDIDセッション、ラチェットの状態、プライベートキー、スキップされたメッセージキー、または後継者DIDの下で状態を再生するコピーまたは再利用します。 歴史の暗号文、ヘッダー、署名、およびDIDは変更されません。 古いセッションを保持することは、ローカル保持ポリシーに従って既存の履歴情報を処理するためにのみ使用できます。
+`provider_asserted`で連絡先や会話関係を引き継ぐのに十分かは、業務システムが決めます。その判断にかかわらず、P5は、旧DIDのSession、Ratchet状態、秘密鍵、スキップメッセージ鍵、リプレイ状態を、後継DIDの下にコピー・再利用してはなりません（**MUST NOT**）。過去の暗号文、ヘッダー、署名、DIDは変更しません。保持した旧Sessionを使えるのは、ローカル保持ポリシーに従って、既存の過去の暗号文を処理する場合だけです。
 
 
 ---
 
 ## 13. エラーモデル
 
-このプロフィールは固定に割り当てます `4000-4012` 直接メッセージングE2EEエラーのコードセグメント。 サーバがこのエラーを返すとき、 `error.data.anp_code` **MUST** 存在します。
+このProfileは、個別メッセージングのE2EEエラーに`4000-4012`のコード範囲を固定割り当てします。サーバーがこれらのエラーを返す場合、`error.data.anp_code`が存在しなければなりません（**MUST**）。
 
-| `code` | `anp_code` | 意味する |
+| `code` | `anp_code` | 意味 |
 |---|---|---|
-| 4000 | `anp.direct.e2ee.bundle_not_found` | 利用可能なバンドルが見つかりません |
-| 4001 | `anp.direct.e2ee.bundle_invalid` | バンドルが無効または校正が失敗している |
-| 4002 | `anp.direct.e2ee.bundle_expired` | バンドルまたはSPKが期限切れになりました |
-| 4003 | `anp.direct.e2ee.opk_unavailable` | リクエスト要件 OPK, しかし、OPK は使用できません |
-| 4004 | `anp.direct.e2ee.missing_key_agreement` | 見逃せない `keyAgreement` 素材: |
-| 4005 | `anp.direct.e2ee.session_not_found` | セッション状態が見つかりません |
-| 4006 | `anp.direct.e2ee.session_conflict` | セッション状態の競合または重複セッションの確立の競合 |
-| 4007 | `anp.direct.e2ee.bad_init_message` | 初期メッセージ構造やバインディング検証が失敗しました |
-| 4008 | `anp.direct.e2ee.replay_detected` | 検出されたインシットを再生または複製する |
-| 4009 | `anp.direct.e2ee.decrypt_failed` | 復号化失敗 |
-| 4010 | `anp.direct.e2ee.max_skip_exceeded` | `MAX_SKIP` 上限を超えた |
-| 4011 | `anp.direct.e2ee.reset_required` | 現地の方針は、セッションの再確立が必要です |
-| 4012 | `anp.direct.e2ee.invalid_security_binding` | 外面の結合、AD の結合または保証プロフィールの結合は矛盾しています |
+| 4000 | `anp.direct.e2ee.bundle_not_found` | 利用可能なBundleが見つからない |
+| 4001 | `anp.direct.e2ee.bundle_invalid` | Bundleが無効、または証明検証が失敗 |
+| 4002 | `anp.direct.e2ee.bundle_expired` | BundleまたはSPKが期限切れ |
+| 4003 | `anp.direct.e2ee.opk_unavailable` | 要求でOPKが必要だが、現在利用可能なOPKがない |
+| 4004 | `anp.direct.e2ee.missing_key_agreement` | 利用可能な`keyAgreement`素材がない |
+| 4005 | `anp.direct.e2ee.session_not_found` | セッション状態が見つからない |
+| 4006 | `anp.direct.e2ee.session_conflict` | セッション状態の競合、または重複したセッション確立の競合 |
+| 4007 | `anp.direct.e2ee.bad_init_message` | initメッセージの構造またはバインディングの検証が失敗 |
+| 4008 | `anp.direct.e2ee.replay_detected` | リプレイ、または冪等性と両立しないinitの重複を検出 |
+| 4009 | `anp.direct.e2ee.decrypt_failed` | 復号失敗 |
+| 4010 | `anp.direct.e2ee.max_skip_exceeded` | `MAX_SKIP`上限を超過 |
+| 4011 | `anp.direct.e2ee.reset_required` | ローカルポリシーがセッション再確立を要求 |
+| 4012 | `anp.direct.e2ee.invalid_security_binding` | 外側のバインディング、AADバインディング、security profileのバインディングが不一致 |
 
-選択者や現在のマニフェストの変更が共有されたコアエラーを使用するのを欠損または無効にしました `anp.device_binding_required`, `anp.device_binding_invalid`, `anp.device_not_eligible`と `anp.device_state_changed`. . . コアの資格が成功した後、P5バンドルオーナー、キーリファレンス、セッションペア、AAD、またはMailboxは既存のものを使用します `anp.direct.e2ee.invalid_security_binding` エラー。
+セレクターの欠落・無効と現在のManifestの変更には、共通Coreエラー`anp.device_binding_required`、`anp.device_binding_invalid`、`anp.device_not_eligible`、`anp.device_state_changed`を使います。Coreの適格性検査に成功した後の、P5 Bundleの所有者、鍵参照、Sessionペア、AAD、Mailboxの間の不一致には、既存の`anp.direct.e2ee.invalid_security_binding`を使います。
 
-デバイスエラー **MUST NOT** 兄弟デバイス在庫、プライベートプレキー状態、プライベートキー、ラチェットの状態、または内部トポロジーを開示します。
+デバイスエラーで、同じDIDの他デバイスの一覧、秘密のPreKey状態、秘密鍵、Ratchet状態、内部トポロジーを明かしてはなりません（**MUST NOT**）。
 
-エラー応答 **SHOULD**、実用的時、次ので提供して下さい `error.data`:
+可能な場合、エラー応答は`error.data`に次を示すべきです（**SHOULD**）。
 
 - `target_did`
 - `bundle_id`
@@ -1565,82 +1566,82 @@ P2移行保証の受入後、送信者 **MUST** 古いDIDに縛られたセッ�
 
 ## 14. セキュリティ要件と制限
 
-### 14.1 アイデンティティの不正行為に対する保護
+### 14.1 アイデンティティの誤った結び付けへの対策
 
-導入事例 **MUST** 初期メッセージの AAD で結合:
+実装は、初期メッセージのAADに次をバインドしなければなりません（**MUST**）。
 
 - `sender_did`
 - `sender_device_id`
 - `recipient_did`
 - `recipient_device_id`
-- 関連キー ID
+- 関連する鍵ID。
 - `bundle_id`
 - `session_id`
 
-アイデンティティの不正な/未知のキー共有のリスクを減らすため。
+これは、アイデンティティの誤った結び付けやunknown key shareのリスクを減らすためです。
 
-### 14.2 バンドル署名は省略できません
+### 14.2 Bundle署名は省略できない
 
-DH 計算自体が特定の認証プロパティを提供しても、受信機の署名済みプレキー MUST 認証方法によって認可される `assertionMethod` DID ドキュメントで。 このステップを省略すると、悪意のあるサーバーに偽のプレキーを提供し、転送セキュリティが弱まる可能性があります。
+DH計算自体が一定の認証特性を提供する場合でも、受信側のSigned Prekeyは、DID文書の`assertionMethod`で認可された認証メソッドによってバインドしなければなりません（MUST）。この手順を省くと、悪意あるサーバーに偽の事前鍵を提供する機会を与え、前方秘匿性を弱めます。
 
-`one_time_prekey` 静的バンドルの証拠を入力する必要はありません。OPKのワンタイムセマンティクスは、サーバー側の発行と消費状況管理によって保証されます。 悪意のあるサーバー SHOULD ほとんどの場合、規定の拒否を引き起こします。セッションの確立に失敗したり、OPKパスを劣化させないと失敗します。 **MUST NOT** 過度検証の検証 `signed_prekey` 結合。
+`one_time_prekey`を静的Bundle証明に含める必要はありません。OPKの使い捨ての意味は、サーバー側の発行・消費状態の管理で保証します。悪意あるサーバーが引き起こせる影響は、最大でも、提供拒否、セッション確立失敗、OPKなし経路への移行にとどめるべきであり（SHOULD）、`signed_prekey`のバインディング検証を置き換えてはなりません（**MUST NOT**）。
 
-### 14.3 サーバー トラスト境界
+### 14.3 サーバーの信頼境界
 
-悪意のあるキーサービスまたはリレーサービスは、以下のことができます。
+悪意ある鍵サービスや中継サービスは、依然として次を行えます。
 
-- 転送の拒否
-- OPKを発行する拒否;
-- セッションの設置を怠った。
+- 転送を拒む。
+- OPKの発行を拒む。
+- セッション確立を誘導できないこと。〔訳注：原文はこの箇条書きを「Failed to induce session establishment.」と記載しています。前後と英文のつながりが不明確なため、意図を推測して別の主張へ置き換えていません。〕
 
-そのため、長期展開 **SHOULD** 透明性のあるディレクトリ、監査可能なログをバンドルしたり、同等のメカニズムをオーバーレイします。
+したがって、長期の配備環境では、透明性ディレクトリ、監査可能なBundleログ、同等の仕組みを重ねるべきです（**SHOULD**）。
 
-### 14.4 変更されていないX3DHのようなスイートの境界
+### 14.4 変更しないX3DH-likeスイートの境界
 
-このX3DH-likeスイートを使用するには、次の明示的な境界が必要です。
+このX3DH-likeスイートを使う場合、次の境界を明示する必要があります。
 
-- 後量液の解決ではありません。
-- 長期静的を必要とします `keyAgreement` 注意キーから分離されるべきキー;
-- デフォルトでは「すべての制御オブジェクトは長期署名」の強いインピーテーションのセマティクスを提供していません。
-- 将来の量子攻撃に対する抵抗が強い場合は、その後のバージョンでPQXDHのようなスイートに切り替える必要があります。
+- 耐量子方式ではない。
+- 長期静的な`keyAgreement`鍵とAssertion Keyの分離が必要。
+- 「すべての制御オブジェクトが長期鍵で署名される」という、強い帰属の意味を既定では提供しない。
+- 将来の量子攻撃への耐性をさらに高める必要がある場合、後続の版のPQXDH-likeスイートへ切り替えるべき。
 
 ---
 
-## 15. 最小相互運用性要件
+## 15. 相互運用の最小要件
 
-このページの先頭へ MUST 少なくともサポート:
+このProfileに適合する実装は、少なくとも次に対応しなければなりません（MUST）。
 
-1. パーズ `authentication`, `assertionMethod`, `keyAgreement`と `ANPMessageService` DID ドキュメントで;
-2. 公開と取得 `prekey_bundle`; 実装がOPKをサポートするための主張の場合、また **MUST** OPKプール補充とペイパーユースの発行をサポート
-3. サービスのスコープ対象モデルを明示的に採用 `target.kind = "service"` のり `direct.e2ee.publish_prekey_bundle` / `direct.e2ee.get_prekey_bundle`;
-4. 検証 `prekey_bundle.proof` 共有のサポート `Object Proof Profile` P1 付録 B で定義される;
-5. MTI スイートを使用して、X3DH のような初期セッションの確立を実行します。
-6. インフォメーション `anp.direct.e2ee.v2`、変更されていないMTIパスの `direct.send` 唯一の許可 `application/anp-direct-init+json` とりあえず `application/anp-direct-cipher+json`;
-7. インフォメーション `anp.direct.e2ee.v2`, `direct.send.meta.operation_id` **MUST** 正確に等しい `meta.message_id`;
-8. インフォメーション `anp.direct.e2ee.v2`, `direct.send.params.auth` **MUST** 延長が交渉されていない限り、不在である;
-9. キャリア `application/anp-direct-init+json` とりあえず `direct.send`;
-10. キャリア `application/anp-direct-cipher+json` とりあえず `direct.send`;
-11. 固定使用 `kdf_rk`, `kdf_ck` このプロファイルで定義された、派生した nonce ルール。
-12. 初期メッセージ **MUST** チェーンでメッセージ 0 を消費します。 成功後、両者 **MUST** これからも `CK1`;
-13. `direct_init.ciphertext_b64u` **MUST** 持ち運び完了 `Application Plaintext`;
-14. セミナー **MUST NOT** 独立した送信 `application/anp-direct-cipher+json` ピアからの最初の有効な応答を受信する前に;
-15. ダブルラチェットのようなステータスを維持します。
-16. 同等の処理ロジックを実装する `RatchetEncrypt()`, `RatchetDecrypt()`, `SkipMessageKeys()`と `TrySkippedMessageKeys()`;
-17. 導入事例 `MAX_SKIP` とりあえず `MKSKIPPED`;
-18. 特定処理を実施する `direct.e2ee.publish_prekey_bundle` / `direct.e2ee.get_prekey_bundle`; もし `get_prekey_bundle` OPK を割り当て、同じ idempotent キーで再試行 **MUST** 同じOPKを返す。
-19. 初期メッセージ再生によるキーの大惨劇的な再利用を防止します。
-20. 選択したデバイスを現在のP2マニフェストエントリに検証し、バンドル署名/E2EEキーリファレンスを独自のデバイスにバインドします。
-21. デバイス ID を両方含める `AD_init`, `AD_msg`セッションインデックス、キーを再再生し、 `direct.send` 出土キーと明示的に両方を結合する `message_id` とりあえず `operation_id` AADオブジェクトの両方で。
-22. 暗号化された1つを独自に送って下さい `direct.send` 独立者と `message_id = operation_id` 受取人全員のデバイスに対して、受入者全員が承認した結果
-23. ビンドメールボックスの承認と認可 `direct.incoming` 配達への `(recipient_did, recipient_device_id)` ドメイン全体でセレクターを保存し、保存します。
-24. デバイスペアごとに、PreKey のプライベート素材、ラチェットの状態、スキップキー、および再生状態を分離します。
-25. 任意暗号化される御馳走 `logical_message_id` アプリケーションの相関として、ルーティングや不利な、または受容可能な入力として、決して;
-26. デバイス ID を P5 セキュリティ操作だけに保ち、デバイス名、ハードウェア識別子、内部トポロジー、またはレプリカ状態を露出しません。
+1. DID文書内の`authentication`、`assertionMethod`、`keyAgreement`、`ANPMessageService`を解決する。
+2. `prekey_bundle`を公開・取得する。OPK対応を主張する実装は、OPKプールの補充と、一回ごとの発行にも対応しなければならない（**MUST**）。
+3. `direct.e2ee.publish_prekey_bundle`／`direct.e2ee.get_prekey_bundle`で、サービスをスコープとする`target.kind = "service"`の対象モデルを明示的に採用する。
+4. `prekey_bundle.proof`を検証し、P1付録Bの共通の`Object Proof Profile`に対応する。
+5. MTIスイートでX3DH-likeの初回セッション確立を実行する。
+6. `anp.direct.e2ee.v2`の下で、`direct.send`の変更しないMTI経路に、`application/anp-direct-init+json`と`application/anp-direct-cipher+json`だけを認める。
+7. `anp.direct.e2ee.v2`の下で、`direct.send.meta.operation_id`が`meta.message_id`と完全に等しくなければならない（**MUST**）。
+8. `anp.direct.e2ee.v2`の下で、拡張を交渉していない限り`direct.send.params.auth`が存在してはならない（**MUST**）。
+9. `application/anp-direct-init+json`を`direct.send`で運ぶ。
+10. `application/anp-direct-cipher+json`を`direct.send`で運ぶ。
+11. このProfileで定義する`kdf_rk`、`kdf_ck`、nonce導出規則を固定して使う。
+12. initメッセージがチェーンの0番目のメッセージを消費しなければならず（**MUST**）、init成功後、双方が`CK1`から継続しなければならない（**MUST**）。
+13. `direct_init.ciphertext_b64u`が完全な`Application Plaintext`を運ばなければならない（**MUST**）。
+14. 開始側が、相手からの最初の有効な応答を受信する前に、独立した`application/anp-direct-cipher+json`を送ってはならない（**MUST NOT**）。
+15. Double Ratchet-likeの状態を維持する。
+16. `RatchetEncrypt()`、`RatchetDecrypt()`、`SkipMessageKeys()`、`TrySkippedMessageKeys()`と等価な処理を実装する。
+17. `MAX_SKIP`と`MKSKIPPED`を実装する。
+18. `direct.e2ee.publish_prekey_bundle`／`direct.e2ee.get_prekey_bundle`の冪等処理を実装する。`get_prekey_bundle`でOPKを割り当てたら、同じ冪等性キーの再試行で、同じOPKを返さなければならない（**MUST**）。
+19. 初期メッセージのリプレイに起因する、壊滅的な鍵の再利用を防ぐ。
+20. 選択した両デバイスを現在のP2 Manifestエントリに対して検証し、Bundleの署名鍵／E2EE鍵参照を所有デバイスに結び付ける。
+21. `AD_init`、`AD_msg`、Session索引、リプレイキー、`direct.send`の冪等性キーに両デバイスIDを含め、両AADオブジェクトで`message_id`と`operation_id`の双方を明示的にバインドする。
+22. 受信デバイスごとに、独立した`message_id = operation_id`と受け入れ結果を持つ、独立に暗号化した`direct.send`を送る。
+23. Mailboxの認可と`direct.incoming`の配信を`(recipient_did, recipient_device_id)`に結び付け、ドメインをまたいでもセレクターを保持する。
+24. PreKeyの全秘密素材、Ratchet状態、スキップ鍵、リプレイ状態を、デバイスペアごとに分離する。
+25. 任意の暗号化された`logical_message_id`を、アプリケーションの相関だけに使い、ルーティング、冪等性、受け入れ結果の入力には使わない。
+26. デバイスIDをP5のセキュリティ操作専用とし、デバイス名、ハードウェア識別子、内部トポロジー、複製状態を公開しない。
 
 
-## 16. 事例紹介
+## 16. 例
 
-### 16.1 リリースバンドル
+### 16.1 Bundleの公開
 
 ```json
 {
@@ -1696,7 +1697,7 @@ DH 計算自体が特定の認証プロパティを提供しても、受信機�
 }
 ```
 
-### 16.2 初期セッションの確立メッセージ
+### 16.2 初回セッション確立のメッセージ
 
 ```json
 {
@@ -1733,7 +1734,7 @@ DH 計算自体が特定の認証プロパティを提供しても、受信機�
 }
 ```
 
-### 16.3 続いて暗号化されたメッセージ
+### 16.3 後続の暗号化メッセージ
 
 ```json
 {
@@ -1769,7 +1770,7 @@ DH 計算自体が特定の認証プロパティを提供しても、受信機�
 }
 ```
 
-### 16.4 デバイス受入応答
+### 16.4 デバイスごとの受け入れ応答
 
 ```json
 {
@@ -1788,19 +1789,19 @@ DH 計算自体が特定の認証プロパティを提供しても、受信機�
 
 ---
 
-## 付録A(情報):元のX3DHとの違い
+## 付録A（参考）：元のX3DHとの差異
 
-このプロファイルと元の信号X3DHのキーの違いは次のとおりです。
+このProfileと元のSignal X3DHの主要な差異は次のとおりです。
 
-1. DID ドキュメントの長期 DH アイデンティティが想定される `keyAgreement`署名付きアイデンティティキーで直接ではなく、
-2. 静的バンドル結合は、元のXEdDSA専用のフォーマットの代わりにP1付録Bオブジェクトプルーフを再使用します。 OPKは静的なバンドルプルーフに入りませんが、サーバーによって一つずつ発行されます。
-3. エージェント DID は、ビジネスの対象を保ちながら、明示的なデバイスセレクタは、パブリックマテリアル、セッション、AAD、暗号エンドポイントへの暗号テキスト配信をバインドします。
-4. このプロファイルは、デフォルトで、インit メッセージを全文に長期的に署名し、シグナルスタイルに近いセキュリティ属性を保持しない。
-5. このプロファイルは、PQXDH のようなアップグレードパスを明示的に予約します。
+1. 長期DHアイデンティティは、署名アイデンティティ鍵が直接担うのではなく、DID文書の`keyAgreement`が担う。
+2. 静的Bundleのバインディングは、元のXEdDSA専用形式ではなくP1付録BのObject Proofを再利用する。OPKは静的Bundle証明に入れず、サーバーが一つずつ発行する。
+3. Agent DIDを業務主体として維持し、明示的なデバイスセレクターが、公開素材、Session、AAD、暗号文配信を暗号エンドポイントに結び付ける。
+4. このProfileは、initメッセージ全体への長期鍵による署名を既定で強制せず、Signal方式に近いセキュリティ特性を保つ。
+5. このProfileは、PQXDH-likeへのアップグレード経路を明示的に残す。
 
-## 付録B(情報):フォローアップの提言
+## 付録B（参考）：今後の推奨事項
 
-1. 添加するのがおすすめです `ANP-DIRECT-E2EE-PQXDH-HYBRID-V1` 将来の明示的に交渉されたスイート候補として;
-2. バンドルリリース用の透明ディレクトリや監査ログを追加することを推奨します。
-3. オブジェクトの正規化とアルゴリズムは、メソッド固有の証拠ルールをコピーする代わりにP1付録Bを参照します。
-4. 定義するのがおすすめです `Direct Init Accountability Extension` 監査可能な展開のため、MTI は行いません。
+1. 将来、明示的に交渉するスイート候補として、`ANP-DIRECT-E2EE-PQXDH-HYBRID-V1`を追加することを推奨する。
+2. Bundleの公開に、透明性ディレクトリや監査ログを追加することを推奨する。
+3. オブジェクト証明の正規化とアルゴリズムは、メソッド固有の証明規則をコピーせず、P1付録Bを参照する。
+4. 監査可能な配備環境向けに`Direct Init Accountability Extension`を定義することを推奨するが、MTIにはしない。

@@ -1,80 +1,81 @@
-> 日本語参考訳（機械翻訳・未校閲）。規範となるのは原文です。コード例・識別子・規範キーワードは原文を保持しています。
+<!-- translation-review: full; source=standard/bak/draft-name-wg-word1-word2-00.md; basis=entire original read and manually compared paragraph by paragraph -->
+> 日本語参考訳（原文全文を照合し、誤訳を修正済み）。規範となるのは原文です。コード例・識別子は原文を保持しています。
 > 原文: [standard/bak/draft-name-wg-word1-word2-00.md](../../../standard/bak/draft-name-wg-word1-word2-00.md) / 基準コミット: `0837cfdfaf4ddcf834f0890ddaf34fc4c824e066`
 
 ---
-title: IETF ID マークダウンテンプレート
-abbrev: ショートタイトル
-docname: ドラフト名 wg-word1-word2-00
-ディレクティブ:
-更新情報:
-日:
-カテゴリ: std
-IETFの投稿タイプ:
+title: IETF ID Markdown Template
+abbrev: Short Title
+docname: draft-name-wg-word1-word2-00
+obsoletes:
+updates:
+date:
+category: std
+submissionType: IETF
 
-ipr:trust200902の特長
-エリア:一般
-ワークグループ: ばね
-キーワード:インターネット・ドラフト
+ipr: trust200902
+area: General
+workgroup: SPRING
+keyword: Internet-Draft
 
-著者:
+author:
  -
-で: H. ヒアン
-名前: ホンイ・ホアン
-組織: Huawei社
-電子メール:hongyi.huang@huawei.com
-ロール: エディタ
-通り: ベイク・ロード
-市: 北京
-コード: 100000
-国: 中国
+  ins: H. Huang
+  name: Hongyi Huang
+  organization: Huawei
+  email: hongyi.huang@huawei.com
+  role: editor
+  street: Beiqing Road
+  city: Beijing
+  code: 100000
+  country: China
  -
-で: S. ジャンボ
-名前: サン・ザン
-組織: Org
-電子メール:xxx@xxx.xxx
+  ins: S. Zhang
+  name: San Zhang
+  organization: Org
+  email: XXX@xxx.xxx
 
-規範的:
-RFC8986:
+normative:
+  RFC8986:
 
-インフォメーション
-I-D.ietf-spring-bfd: 以下は、
-I-D.tian-spring-srv6-deployment-consideration: 以下は、以下のとおりです。
-プロトコル・リンク:
-title: プロトコル
-データシート: 2023-01
-ターゲット: https://www.luismg.com/protocol/
-カスタムリンク:
-タイトル:リンクタイトル
-著者:
-org: Huawei社
-日: 2023-01
-ターゲット: www.baidu.com
+informative:
+  I-D.ietf-spring-bfd:
+  I-D.tian-spring-srv6-deployment-consideration:
+  Protocol-link:
+    title: Protocol
+    data: 2023-01
+    target: https://www.luismg.com/protocol/
+  Custom-link:
+    title: Link Title
+    author: 
+    org: Huawei
+    date: 2023-01
+    target: www.baidu.com
 ...
 
---- 抽象的
+--- abstract
 
-コンテンツの抽象化
+要旨の内容。
 
 
---- 中間
+--- middle
 
-# 導入事例
+# はじめに {#intro}
 
-コンテンツ
+本文。
 
-## 用語集
+## 用語
 
-## 条件 語学
+## 要件を表す用語
 
-.::boilerplate bcp14-tagged} の
+{::boilerplate bcp14-tagged}
 
-# タイトル
+# 題名
 
-## サブタイトル
+## 小見出し
 
-### サブタイトル
+### さらに下位の見出し
 
-#### Pseudo コード
+#### 擬似コード
 
 ~~~
 S01.   If (True) {
@@ -84,7 +85,7 @@ S03.   }
 
 #### パケット形式
 
-下記のプロトコルヘッダは、{Protocol-link}} で生成できます。
+次のプロトコルヘッダーは{{Protocol-link}}で生成できます。
 
 ~~~
 0                   1
@@ -93,60 +94,60 @@ S03.   }
 |          NUM          |M| SZX |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 ~~~
-タイトル「Figure Caption」のタイトルを「#ref-to-fig」に置き換えてください。
+{: #ref-to-fig  title="Figure Caption"}
 
-数:
-: 番号。 このフィールドの意味は...
+NUM: 
+:  数値。このフィールドの意味は…
 
-#### シート
+#### 表
 
 | 列名 1 | 列名 2 | 列名 3 | 列名 4 |
 |:-----:+:----+--:--+---------|
-| インフォメーション | 左から | 右から | デフォルト |
-| インフォメーション | 左から | 右から | デフォルト |
-タイトル「テーブルキャプション」の「#ref-to-tab」を
+| 中央 | 左 | 右 | 既定 |
+| 中央 | 左 | 右 | 既定 |
+{: #ref-to-tab title="Table Caption"}
 
-#### リファレンス
+#### 参照
 
-- リファレンス
-  - ドキュメントの参照
-    - 問い合わせ
-    - 利用条件: {{!RFC8986}} [RFC8986の特長]
-    - デフォルトは {{I-D.tian-spring-srv6-deployment-consideration}} で
-    - 注文リンクは {{Custom-link}}
-    - セクション: {{Section 3 of RFC8986}}
-  - このドキュメントを参照してください。
-    - 表は、 {{ref-to-tab}}
-    - プロフィール
-    - セクションで {{intro}}
-- アイテム B
-
-
-# セキュリティの考慮事項
-
-新規のセキュリティ対策は、このドキュメントでは紹介していません。
+- 参照
+  - 文書を参照する
+    - 参考情報としての参照：{{?I-D.ietf-spring-bfd}}
+    - 規範的な参照：{{!RFC8986}}または[RFC8986]
+    - 既定の参照：{{I-D.tian-spring-srv6-deployment-consideration}}
+    - 独自のリンク：{{Custom-link}}
+    - 節の参照：{{Section 3 of RFC8986}}
+  - この文書を参照する
+    - 表：{{ref-to-tab}}
+    - 図：{{ref-to-fig}}
+    - 節：{{intro}}
+- 項目B
 
 
-# IANA について
+# セキュリティに関する考慮事項
 
-この文書は、IANAの行動を一切行いません。
+この文書は、新たなセキュリティ上の考慮事項を導入しません。
 
-| バリュー | お名前(必須) |
-| TBD1の特長  | ツイート |
-| TBD2の特長  | ツイート |
-| TBD3の特長  |  ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇   ⁇  |
 
---- 背部
+# IANAに関する考慮事項
 
-# アクノレッジメント
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
+この文書に伴うIANAの処理はありません。
 
-著者は、ありがとうございました.
+| 値 | 名前 |
+| TBD1  | A |
+| TBD2  | B |
+| TBD3  | C |
 
-# 参加者
-. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' ' '
+--- back
 
-誰がこの文書に貢献したか。
+# 謝辞
+{:numbered="false"}
+
+著者は…に感謝します。
+
+# 貢献者
+{:numbered="false"}
+
+この文書への貢献者。
 
 
 

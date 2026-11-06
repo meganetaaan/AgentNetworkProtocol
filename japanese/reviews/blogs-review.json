@@ -1,0 +1,1696 @@
+{
+  "schema_version": 1,
+  "scope": "All 87 blog documents: 84 Markdown sources plus 3 Chinese sources without file extensions",
+  "base_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "policy": "Only files whose complete source prose, headings, tables, negations, numbers and proper names were read and compared are marked full. Source code/fenced examples remain untranslated.",
+  "files": [
+    {
+      "source": "blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md",
+      "destination": "japanese/blogs/03-What-is-the-MCP-Registry-and-Its-Future-Development-Direction.md",
+      "status": "full",
+      "source_lines": 24,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "f99ba6f2ecb7c86955d120dc5ffe61c25bd300f0efa1b97a09e22bca9cac0b03",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/Ten-Questions-and-Answers-about-MCP.md",
+      "destination": "japanese/blogs/Ten-Questions-and-Answers-about-MCP.md",
+      "status": "full",
+      "source_lines": 97,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          97
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "dcb45477018108fffe83620d6754b0e9d7b8f0ac7683c5e85e5805aa457464aa",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/did-wba-security-principles.md",
+      "destination": "japanese/blogs/did-wba-security-principles.md",
+      "status": "full",
+      "source_lines": 116,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          116
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "6860bd5d4fbbdf9a0869d4b648a6b54b38cbdf8b9237ca82afdc65e7a45584d1",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "destination": "japanese/blogs/Challenges-to-MCP-from-LangGraph-Lead-and-How-ANP-Addresses-Them.md",
+      "status": "full",
+      "source_lines": 82,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          82
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "9b31fa4d467e8908b6b4dfc5e1f5e2a5a70853d8a54c8dae521b1aa2377986cb",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md",
+      "destination": "japanese/blogs/W3C-AI-Agent-Protocol-Community-Group-Latest-Progress-June-2025.md",
+      "status": "full",
+      "source_lines": 92,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          92
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "48ec4178be4e7eb4c0378b2892e634149937a73acca2d5ff77d108b1641226e6",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md",
+      "destination": "japanese/blogs/Agent-Impact-on-Infrastructure-Challenges-to-Existing-Connection-Infrastructure.md",
+      "status": "full",
+      "source_lines": 54,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          54
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "280e9a32e682e95e5abf6c2868dacdf304c2a7d0712b4e4c0802b3d5adf187c3",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/did-wba安全性原理解析.md",
+      "destination": "japanese/blogs/cn/did-wba安全性原理解析.md",
+      "status": "full",
+      "source_lines": 122,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          122
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "924757ec00cfe5f7086f7be564aea8badc33e1214b3aecc02b30237d27f80e05",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/MCP十问十答.md",
+      "destination": "japanese/blogs/cn/MCP十问十答.md",
+      "status": "full",
+      "source_lines": 105,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          105
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "36c08a15509bb7c91d8f9b5c2291033e0f7123f5a6021209312cf321c8041301",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md",
+      "destination": "japanese/blogs/cn/LangGraph负责人对MCP的挑战，ANP是怎么解决的？.md",
+      "status": "full",
+      "source_lines": 76,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          76
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "273e9deb9b61e7689787d0f78dbf67f8a75ccfa43c7cf547a066b6b15b023a01",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/12-ANP-explained-from-scratch-en.md",
+      "destination": "japanese/blogs/12-ANP-explained-from-scratch-en.md",
+      "status": "full",
+      "source_lines": 574,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          574
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "5178e62a83a25c2ee803b9268a3385ab56de74513b2e399ccdc99554edb680aa",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/12-ANP-讲解从0开始.md",
+      "destination": "japanese/blogs/cn/12-ANP-讲解从0开始.md",
+      "status": "full",
+      "source_lines": 574,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          574
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "a96907edc9015b3f6a20507680691255e2d298dc7747431e55a3ecb89f60d6f4",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/2025年ANP下一步规划的思考.md",
+      "destination": "japanese/blogs/cn/2025年ANP下一步规划的思考.md",
+      "status": "full",
+      "source_lines": 36,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          36
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "abcda69ee4e512f7273b5a3ae33c641810b279c2def7ff9947519985ed98f9aa",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/我们应该为AI，重构所有互联网应用.md",
+      "destination": "japanese/blogs/cn/我们应该为AI，重构所有互联网应用.md",
+      "status": "full",
+      "source_lines": 24,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "7a94d2f16311bd7f51f5a8264945894e62a51af8ff1dc1e84854d50ad64351f8",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/《微信背后的产品观》是否适合AI.md",
+      "destination": "japanese/blogs/cn/《微信背后的产品观》是否适合AI.md",
+      "status": "full",
+      "source_lines": 56,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "0907a9cd976200fd6595c7d4fd9574d7dd2ea172bec2221b5f55ebb91e5d26f7",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire document manually translated from the source and reread for meaning; original code and historical factual assertions retained."
+      ]
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/00-series-preview-when-ai-becomes-advanced-productivity.md",
+      "destination": "japanese/blogs/Agentic-Web-Ten-Talks/00-series-preview-when-ai-becomes-advanced-productivity.md",
+      "status": "full",
+      "source_lines": 85,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          85
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "80f96d7c2abadf3e6ef73b3e7ba2a454deda5d08b54dde1b628e1a8743df7325",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete 118-line English source and complete Japanese translation. Corrected reversed Day 1 question; restored missing human-versus-agent contrast in Day 4; fixed Agentic Web, executor, commissions and architecture mistranslations in Days 5–10; restored exact copyright owner/year and complete permission condition.",
+        "インターネットがオープンからエンクロージャに移行する",
+        "** AI の登場により、その前提が根本から変わりつつあります。**",
+        "これにより、インターネットは新たな段階、**オープン性への回帰です。**",
+        "エージェントティック Web",
+        "##  Agentic Web でシリーズを開始する理由?",
+        "Webエンクロージャの歴史的必然性",
+        "プラットフォーム化とクローズ化が避けられない「つながり」を可能にするネットワークはなぜ生まれたのか？",
+        "エージェントのWebとは何ですか? インテリジェントエージェントがインターネットのファースト市民になるとき",
+        "インテリジェントなエージェントがWebページをクリックするのではなく、インターネットが一体化したのは?",
+        "有剤網を形づける3つの主要な傾向",
+        "エージェント・ウェブ",
+        "エージェントプロトコル — AI Era の HTTP は、シェイプをとっています。",
+        "ユーザインタフェースは人のために設計されます;プロトコルはAIのために設計されています。",
+        "エージェントがタスクを自分で補完するのを始めたとき",
+        "検察者が人からインテリジェントエージェントに変化したときにインターネットはどうなりますか?",
+        "建築の進化",
+        "プラットフォーム委員会なしで、エージェントのWebがお金を稼ぐ方法",
+        "未来のインターネットを解く者は誰ですか? エージェントのWebのパスと風景",
+        "Agentic Webが大きくなるプレイヤーであり、どのように競合するかを形づけるの?",
+        "社会貢献活動の推進に関する基本方針 _ ANPコミュニティ",
+        "このファイルは、以下のとおりです。 [MITライセンス](../../../LICENSE). . . 無料で利用して変更することができますが、この著作権表示を保ちなければなりません。"
+      ]
+    },
+    {
+      "source": "blogs/cn/03-解读：MCP注册中心是什么，未来发展方向",
+      "destination": "japanese/assets/texts/blogs/cn/03-解读：MCP注册中心是什么，未来发展方向.ja.md",
+      "status": "full",
+      "source_lines": 24,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          24
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "bb464bde075787ab0b081a2fa0fa14d6de881fa9737405ce0c70f486dc0f0d87",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full original Chinese extensionless file read. All nine numbered points matched against the previously hand-translated English counterpart; no semantic content differences found beyond wording and duplicated source word. Preserved all externally linked URLs and original historical uncertainty concerning fees and trust."
+      ]
+    },
+    {
+      "source": "blogs/cn/09-豆包手机助手",
+      "destination": "japanese/assets/texts/blogs/cn/09-豆包手机助手.ja.md",
+      "status": "full",
+      "source_lines": 103,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          103
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "e32332b15422e9659e32a92d17eba8f823de8fb11c0ab16f172b6e6d8b2660a8",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read full Chinese source with two separate draft versions. Translated both drafts without deduplicating them. Preserved skipped number 3 and repeated number 13 in first draft; separate 1–15 numbering in repeated draft. Kept original historical today/three-years references, names, platform restrictions, statements of opinion and future uncertainty. First draft source typo about repeated input rendered as input; surrounding distinct second draft correctly says input/output."
+      ]
+    },
+    {
+      "source": "blogs/cn/09-豆包手机助手2",
+      "destination": "japanese/assets/texts/blogs/cn/09-豆包手机助手2.ja.md",
+      "status": "full",
+      "source_lines": 78,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          78
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "5d1606858f1a4953ddc0d80d090fda9e881e447f238eda6abc21f26c2f519caa",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read all 15 sections against Chinese source and translated complete prose, quotations, bold emphasis and parallel lists. Preserved current-at-authoring claims, future uncertainty, all named competitors and three-year period; no external current-fact updates made."
+      ]
+    },
+    {
+      "source": "blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "destination": "japanese/blogs/anthropic-mcp-2025h1-milestone-analysis.md",
+      "status": "full",
+      "source_lines": 80,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          80
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "7d810327b3c4b74fa95eb4596fe11fa80f65b57d26ee43355a8b88feb57cad34",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire article reread against English original and completely rewritten. Restored Anthropic proper name, 2025 first-half timing, high entry barrier (not usage rate), pluggable-authentication PR plan (not imperative), usability (not instability), single-vendor dominance (not unit-price superiority), and exact copyright."
+      ]
+    },
+    {
+      "source": "blogs/02-Why-Sequoia-Capital-US-Lists-Communication-Protocols-as-One-of-Five-Major-Investment-Themes.md",
+      "destination": "japanese/blogs/02-Why-Sequoia-Capital-US-Lists-Communication-Protocols-as-One-of-Five-Major-Investment-Themes.md",
+      "status": "full",
+      "source_lines": 44,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          44
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "04df5beaedced40a42ef1004fd46abf2a7ddd9e759ded6ebe502e6f5178243ca",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "All numbered sections including 2.1–2.3 and closing appeals read against source and fully rewritten. Restored 10 trillion dollars and over 700 million weekly active users (machine had 7 million and dropped weekly), investment versus direct monetization distinction, no-demand and immature-technology reasons, direct supply/demand logic and donation/foundation compliance claim."
+      ]
+    },
+    {
+      "source": "blogs/cn/02-解读：为什么红杉美国将通信协议作为五大投资主题之一.md",
+      "destination": "japanese/blogs/cn/02-解读：为什么红杉美国将通信协议作为五大投资主题之一.md",
+      "status": "full",
+      "source_lines": 45,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "4aac637cc34408c39d8883b2d2ad7d3cf5b2d37c4227188c4528d41515b7b013",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source reread against reviewed English translation. Confirmed $10 trillion, over 700 million weekly active users and all sections 0–11 including subsections. Preserved Chinese-specific WeChat contact instead of English email, lower-case deepseek and Chinese author name 侯宏; source typo about attack interpreted as supply from context.",
+        "Fixed nested Chinese image link depth to ../../../blogs/images/internet-translation.png after link verification."
+      ]
+    },
+    {
+      "source": "blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "destination": "japanese/blogs/cn/anthropic-mcp-2025h1-里程碑解读.md",
+      "status": "full",
+      "source_lines": 81,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          81
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "60c4cb6ebe0b6e64e4d1660f230763e707ea72c2b03c04712a4f81aa4ba7d01c",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese source read, including three major points, all milestones and closing discussion. Added Chinese-specific prior-article link, restored its distinct comparison/article WeChat URLs, removed English-only email contact, matched qualified recommendation to avoid local execution where possible. Preserved historical proposals and author uncertainty."
+      ]
+    },
+    {
+      "source": "blogs/cn/agent对infra的改变-对连接基础设施的改变.md",
+      "destination": "japanese/blogs/cn/agent对infra的改变-对连接基础设施的改变.md",
+      "status": "full",
+      "source_lines": 56,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          56
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "1499d971dba6eaa3cf9f317bec77889b536e9a1b45b1bb023f8b5a28bd25b1c9",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese source compared paragraph-by-paragraph to previously hand-translated English counterpart. Same full argument and all bullet points confirmed, including two limitations, all three protocol efficiencies, two MCP constraints and five final predictions. No substantive content differences required additional translation."
+      ]
+    },
+    {
+      "source": "blogs/cn/W3C-AI-Agent-Protocol社区组最新进展(202506).md",
+      "destination": "japanese/blogs/cn/W3C-AI-Agent-Protocol社区组最新进展(202506).md",
+      "status": "full",
+      "source_lines": 93,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          93
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "6258c83fffca9ba0ea54db6bc1daee0335430f4d2684c8abfe120f883f6297c1",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire Chinese source and full previously manual EN translation read. Confirmed June 18 2025 date, all six companies, four academic institutions, five scope categories, two drafts and all URLs. Matched Chinese-specific name labels and scope of verifiable-credential-based trust; no factual modernization."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/00-系列预告-当AI成为先进生产力.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/00-系列预告-当AI成为先进生产力.md",
+      "status": "full",
+      "source_lines": 81,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          81
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "57f186d404c5ab7868ae8ad23d7bfa69e676679b8f1a176b8b90016df8f06454",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read entire Chinese original and machine translation against reviewed English counterpart. Replaced semantic corruption including Beanbao, agent as spy, openness as reopening, public-account writing and all ten outline items. Matched Chinese-specific current-technical-conditions wording, declarative Day 8 and absence of English copyright section."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/notebook-prompt.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/notebook-prompt.md",
+      "status": "full",
+      "source_lines": 27,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          27
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "26381f33d2aa5161b4ad5644923d1cca3d27ed463dd2c4f18f34f2bd129ba2ff",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "All three source prompt variants read and fully translated. Corrected explicit 20-character constraint previously mistranslated as 20 words; restored patterned-background prohibition, specific graphic suggestions and WeChat official-account reading context. Kept repeated comprehensive section rather than deduplicating."
+      ]
+    },
+    {
+      "source": "blogs/Comprehensive-Comparison-of-Google-A2A-ANP-MCP.md",
+      "destination": "japanese/blogs/Comprehensive-Comparison-of-Google-A2A-ANP-MCP.md",
+      "status": "full",
+      "source_lines": 126,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "74a2163165e0c185d48e73c1f8a6b3ae580104e2fe32820114711807035db825",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire English article read and completely retranslated. All concepts, identity versus verification distinction, enterprise-scope inference, opacity levels, out-of-band credentials, discovery paths, license transition and overlap arguments retained. Clarified that A2A would struggle to challenge MCP’s established tools/resources role; did not modernize obsolete discovery/license claims."
+      ]
+    },
+    {
+      "source": "blogs/ANP-Community-First-Meeting-A-Milestone-for-the-Agentic-Web.md",
+      "destination": "japanese/blogs/ANP-Community-First-Meeting-A-Milestone-for-the-Agentic-Web.md",
+      "status": "full",
+      "source_lines": 123,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          123
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "bf503c9c162d2cd16f424ff50f9333b42d343f77bf53fa9ea5004c4751a65097",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete English source including all images, five draft principles, governance succession, four advisor biographies, member progression, work updates, six next-step priorities and closing participation appeals retranslated. Explicit 100%, 6 months, 1–2 months, 2–4 weeks and 50+/70+ values preserved."
+      ]
+    },
+    {
+      "source": "blogs/cn/多角度全面对比Google最新的A2A、ANP、MCP.md",
+      "destination": "japanese/blogs/cn/多角度全面对比Google最新的A2A、ANP、MCP.md",
+      "status": "full",
+      "source_lines": 128,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          128
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "4583ca51d7673252e3240444b10ae1db59d3181dca73849932c3a37e9638caa1",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Chinese source fully read alongside English source, then corresponding Japanese body reread. Preserved all sections and identified Chinese-only parenthetical explanations of Artifact and interface names. Retained historical licensing/discovery statements and the author’s expressly qualified enterprise-use inference."
+      ]
+    },
+    {
+      "source": "blogs/cn/ANP社区首次会议：这可能是一个新时代的起点.md",
+      "destination": "japanese/blogs/cn/ANP社区首次会议：这可能是一个新时代的起点.md",
+      "status": "full",
+      "source_lines": 123,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          123
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "c13984fa676a7a3947ce35ca5faf1d87992dfc0dd0b795ea136069c62ffe8faf",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "All Chinese paragraphs read and matched against full English translation. Restored Chinese advisor/company name forms and Chinese-specific BIP heading/detail placement. Verified 5 principles, 4 advisors, all contribution-based governance conditions, temporary committee sunset, numerical timelines and historical meeting links."
+      ]
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/02day-first-principles.md",
+      "destination": "japanese/blogs/Agentic-Web-Ten-Talks/02day-first-principles.md",
+      "status": "full",
+      "source_lines": 112,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          112
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "deda7848e1276c57bd502da18f72c2de80a216cae5049d7cbb63eb0fe7d693a0",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read all five English sections and fully retranslated entire article. Preserved decision/action distinction, local-versus-global optimum, two technical/commercial barriers, three scenario comparisons, trip times and amounts (lunar days 3–6, 5,000 yuan, next Tuesday, 1 hour, 5–6 apps, seconds), and experience/cost/efficiency causal chain."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/02day-第一性原理.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/02day-第一性原理.md",
+      "status": "full",
+      "source_lines": 112,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          112
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "265479498ade23b940e93f3709de71287c749c18f59f9e837e98ff6f05087e4b",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese source read against English full translation, preserving five sections, all examples and negations. Restored unqualified all-services scope from Chinese versus English relevant-services qualification, Chinese app brand names and distinct local copyright-link depth."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/大纲/01-Agentic-web-10day.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/大纲/01-Agentic-web-10day.md",
+      "status": "full",
+      "source_lines": 128,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          128
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "4d981e0edc1c9add13c74655829bcfb22b86bc81987819b2b6e2ee829b6130a8",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire source outline fully translated including six detailed sections, nested explanatory bullets, both different four-condition summaries, quoted conclusion and final intended historical positioning. Preserved central claim that closure is a structural outcome rather than a moral failure, software marginal cost tending to zero, and the conditional no-change/no-return conclusion."
+      ]
+    },
+    {
+      "source": "blogs/cn/05-ANP的核心概念和交互模式.md",
+      "destination": "japanese/blogs/cn/05-ANP的核心概念和交互模式.md",
+      "status": "full",
+      "source_lines": 99,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          99
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "951342333cf2b7da9a54b42001a57d91cf01450bda07330de592962d994dbbf8",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire Chinese conceptual note read and translated, not just terminology replaced. Preserved mandatory metadata/URL/functional-coverage requirements versus recommendations for natural-language and entrypoint support, structured-interface priority with fallback, recursive fetching, local sensitive-data processing and both privacy points."
+      ]
+    },
+    {
+      "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+      "destination": "japanese/blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+      "status": "full",
+      "source_lines": 131,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          131
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "a9ed2cb4fc9fe4cb62a53c803d28accf2d7e89c891f20829b56b5319670b6856",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete English article read and fully translated: three conclusions, three comparisons, MCP flow, all five A2A stages, unchanged Mermaid example, all six ANP stages and three final information-organization summaries. Corrected original first previous-article self-link to intended existing comparison document; no wire example or historical capability claim modernized."
+      ]
+    },
+    {
+      "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+      "destination": "japanese/blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+      "status": "full",
+      "source_lines": 133,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          133
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "62c8080bce9ee3e5152b7da5056cb4eec329698bc0dd44ffe8019f86c6b58a22",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Chinese source read in full and compared with English source. Identical substantive content and Mermaid example confirmed; restored distinct Chinese previous-article links and asset depths. Preserved task-outsourcing versus data-crawling distinction, local decision-making, optional task splitting and all numbered process stages."
+      ]
+    },
+    {
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "destination": "japanese/blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "status": "full",
+      "source_lines": 157,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          157
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "1db9920924de7c96ede84e2928ea1d8dfad9bf6ef3a3add585464a6adb4fc80f",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete six-section English article including all three source fenced examples and both use cases. Fully translated draft-method status, account control versus cross-platform interconnection, prerequisites/admission versus authentication, token reuse and client-authenticates-server note. Updated obsolete local link names to corresponding existing Japanese paths while retaining external historical references."
+      ]
+    },
+    {
+      "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "destination": "japanese/blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "status": "full",
+      "source_lines": 158,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          158
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "17125ecc65f4d9cabdcf86fd6c39282614f1a3c980d91f1365d74c3163eb2253",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Chinese source read completely and compared to English text. Distinct Chinese plaintext example preserved byte-for-byte; same JSON/Mermaid blocks retained. Preserved original repeated Section 2 numbering and shifted sections 3–5 rather than silently matching English numbering. Restored Chinese-specific local and external reference targets."
+      ]
+    },
+    {
+      "source": "blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "destination": "japanese/blogs/comparison-of-did-wba-with-openid-connect-and-api-keys.md",
+      "status": "full",
+      "source_lines": 155,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          155
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "eea4b9723984b3101d9606b1a8b790e706731acb6b8a3985ee96e89fc417a8ea",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete English source retranslated, including all preliminary and authentication flows, all limitations and all six rows of the comparison matrix. Preserved ID-token versus access-token meanings, no-user-intervention claim versus still-necessary legacy integration caveat, security rankings and historical 2022 claim without updating it. All six original illustrations retained with local paths adjusted."
+      ]
+    },
+    {
+      "source": "blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "destination": "japanese/blogs/cn/did-wba对比openid-connect、api-keys.md",
+      "status": "full",
+      "source_lines": 156,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          156
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "aab165b4260a83af82892318c09b8dbf3e9404a894092a659a6dbea11841b3bf",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source read against full English article and Japanese translation. Same substantive paragraphs, all numbered/parallel lists and six comparison rows confirmed; restored distinct Chinese did:wba specification reference and local asset/license paths. Kept author’s original centralized/decentralized security assertions and legacy compatibility qualification."
+      ]
+    },
+    {
+      "source": "blogs/01-agent-Identity-authorization-encryption.md",
+      "destination": "japanese/blogs/01-agent-Identity-authorization-encryption.md",
+      "status": "full",
+      "source_lines": 112,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          112
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "86c4a39236836e93cb2a9c7c3eb549fbc5a2cc581164a8e8f2ba7afea876d000",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire English source read and completely retranslated. Preserved identity/authentication/authorization distinctions, all four authorization models, B-to-C data permission direction, revocation at any time, general versus per-operation special authorization, 30-minute read example, and relay versus direct transport encryption distinction. Kept source-specific Google questions wording."
+      ]
+    },
+    {
+      "source": "blogs/agent-.md",
+      "destination": "japanese/blogs/agent-.md",
+      "status": "full",
+      "source_lines": 112,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          112
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "a47d63d1a0f548ab316f5a308e6226d6c162b01cdd69f88842478e2d6e0f514e",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire alternate English article read alongside primary English source. Same full sections and arguments confirmed; restored its distinct Google search results example (primary says questions) and non-two-agent opening. No content deduplicated from the published mirror."
+      ]
+    },
+    {
+      "source": "blogs/cn/01-智能体的身份-授权-加密.md",
+      "destination": "japanese/blogs/cn/01-智能体的身份-授权-加密.md",
+      "status": "full",
+      "source_lines": 118,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          118
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "39447513b1994ef497148575a7162c3e6818ec6db68c1117b6118f7e2da1bd02",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source read, including an extra section absent from both English versions: two identity ownership modes (personal/platform). Added that section and explicit Identity Interoperability term. Confirmed same four authorization models, example direction, grant/revocation semantics, 30-minute permission and historical proposal status."
+      ]
+    },
+    {
+      "source": "blogs/cn/10-谷歌UCP.md",
+      "destination": "japanese/blogs/cn/10-谷歌UCP.md",
+      "status": "full",
+      "source_lines": 94,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          94
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "46b45cdd4211f5eac48b24f9bc3fd76f9d898de4acad27bf9d959cccf5ee72b0",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete historical Chinese article reread and fully translated: all four ecosystem roles, direct merchant relationship versus platform role, REST/JSON-RPC/OAuth claims, two-layer-versus-entry-protocol distinction, AP2 optionality, four roadmap items, China-company comparisons and 2026 prediction. Preserved original Appche2.0, esta and Infomation spellings and original internally awkward AP2 complete-flow claim without inventing a negation or fact update."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web copy.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web copy.md",
+      "status": "full",
+      "source_lines": 180,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          180
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "f40ef3b0c0b550323467bc72f592dd378cf8210f3f500edaca0297c23a62db12",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full copy-version source read and entirely retranslated: all three transitions, two-layer architecture, human-versus-agent metrics, all five browser steps, all four travel-agent stages, three illustration prompts, service/action connection and exact 2024-end/2025-start historical timeline. Preserved Function inline signature."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/03day-什么是Agentic-Web.md",
+      "status": "full",
+      "source_lines": 160,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          160
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "50e3f3e2cc0265f8ece0dd475fa876116b6136175edcd0b5c8eab4c9f04479c3",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read full non-copy source and all differences from copy version. Restored tentative/explicitly non-academic definition; removed copy-only metrics and illustration; retained original unfinished Section 2 with explicit translator note rather than inventing a continuation. Restored distinct hotel/scenic-site/airline/payment itinerary and open-versus-decentralized collaboration wording. Kept source’s 2024-end/2025-start date and Function signature."
+      ]
+    },
+    {
+      "source": "blogs/cn/但我们设计一个协议的时候，我们在设计什么.md",
+      "destination": "japanese/blogs/cn/但我们设计一个协议的时候，我们在设计什么.md",
+      "status": "full",
+      "source_lines": 88,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          88
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "44c4c0ab76b1e699f651947f5b143e9813af3ec752c9ee964d9a0ac0c44e79df",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete design-philosophy draft retranslated. Preserved all MCP/ANP/Agora stages, original editorial note to research cursor (translated as a note; not executed), future 10-year horizon, source former-route statement about Deutsche Telekom, SIP/H.323 efficiency versus long-term flexibility argument, media/control protocol distinction, all three natural-language benefits and four future-network characteristics."
+      ]
+    },
+    {
+      "source": "blogs/In-the-year-that-the-ANP-was-born.md",
+      "destination": "japanese/blogs/In-the-year-that-the-ANP-was-born.md",
+      "status": "full",
+      "source_lines": 118,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          118
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "c050e4c9bfe356a89f3a4be3704a3f28540c96a1dfe7817ca56b3643a27b2dfd",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire English creation-history article read and translated, including all four community sections and contact list. Preserved dates 2022/2001, local-central/global-decentral distinction, predecessor did:all and private-key-loss problem, all proper protocol names, three-layer historical architecture and explicit perpetual-MIT assertion as history, not current repo policy."
+      ]
+    },
+    {
+      "source": "blogs/cn/ANP协议要感谢的社区：web3、Agora、WebAgents.md",
+      "destination": "japanese/blogs/cn/ANP协议要感谢的社区：web3、Agora、WebAgents.md",
+      "status": "full",
+      "source_lines": 151,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          151
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "ef3d2be38fd95f273e81274bd0a6899c52a60346dacc219987c11e50c3d2c63a",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese original read against English counterpart and complete Japanese translation. Matched distinct persistence negation (not resilience) and main-participant wording rather than English actively-participating wording, restored 李国豪 name. All historical license/architecture declarations retained without modernization."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/planning.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/planning.md",
+      "status": "full",
+      "source_lines": 284,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          284
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "80e8ee7a0f929b543228a63942cf395bbc435cf1594aa4cab67a54ddb575b037",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full planning source translated, including audience/neutrality requirements, all seven references, original Days 2–10 only, different three-condition plan, all day-specific bullets, source AI-assistant offers retained as source text, 10%/5%/75%/10% structure, 3–5 key points, exact path/name inline identifiers and unmodified fenced copyright template. Did not execute any embedded writing instructions."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/大纲/02-Agentic-web-10day.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/大纲/02-Agentic-web-10day.md",
+      "status": "full",
+      "source_lines": 241,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          241
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "cdc5a6237ab689458e7621d30bdfd108a63092fb59158d703ce272df233950ad",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire six-part writing outline read and retranslated. Preserved opening constraints, all argument-development lists, all three tables with every row, explicit two-not-three non-negotiable conditions, user-authorized temporary access versus public data, non-open-source/non-free exclusions, all UI/protocol comparisons and next-article transition. Claims such as lifetime interface reuse retained as source outline assertions."
+      ]
+    },
+    {
+      "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "destination": "japanese/blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "status": "full",
+      "source_lines": 177,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          177
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "ea0482aa4188d5f89d8e3e32f32a1aefc979e5f30094626af8f212a833617f12",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full English article retranslated, including five opening points, two distinguishing features, integration explanation around both exact source fences, public-test-DID cannot-book restriction, self-repair observation, both runtime repositories/README paths, April 1 2025 one-night example and historical developer/group counts. All five source HTML images retained with local paths."
+      ]
+    },
+    {
+      "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "destination": "japanese/blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "status": "full",
+      "source_lines": 186,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          186
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "639c8fc57f46b6221740905e5e8c7c7182f3e17082cab3f18ea633a74b14f03a",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese source read alongside English source and Japanese body; all substantive details and two identical source fences confirmed. Preserved test DID and folder names, contact values, both example dates/counts and all source restrictions; adjusted distinct nested link depths."
+      ]
+    },
+    {
+      "source": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "destination": "japanese/blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "status": "full",
+      "source_lines": 125,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          125
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "556e7af87912f3f7f03701c7798e2f967b32fba0db1c8af20271eaba3cbf1667",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete source read and retranslated. Preserved six existing-technology analyses, all DID reasons, both excessive-caution and excessive-autonomy risks, two kinds of authorization, exact two JSON examples and both humanAuthorization code-span occurrences. Preserved three-level privacy strategy and primary/subordinate/rotation relationships as historical proposals."
+      ]
+    },
+    {
+      "source": "blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "destination": "japanese/blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "status": "full",
+      "source_lines": 131,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          131
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "e90b83c07c5ecddd60607f904680817226abbb454d6f1ef6a26fb2fa13756e7f",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source read. Retained its duplicated introductory paragraph rather than losing source content, matched explicit 1-billion/10-billion scale, repaired original missing closing parenthesis on did:wba local link, and preserved same authorization examples and multi-identity reasoning. Both exact code fences and formatted field identifiers retained."
+      ]
+    },
+    {
+      "source": "blogs/What-Makes-Agentic-Web-Different.md",
+      "destination": "japanese/blogs/What-Makes-Agentic-Web-Different.md",
+      "status": "full",
+      "source_lines": 165,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          165
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "9aafb55ec8e40d505997c456231af933831d5bff96cb8178caeeeeba2876b11e",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full English article translated, including six opening points, PC-versus-mobile technological drivers, all three access approaches, three connection challenges, five network characteristics, explicit uncertainty about emergence and conditional web3 scalability qualification. Restored hundred-billion-dollar amount as 1,000億ドル; all five illustrations retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/智能体互联网有什么不同.md",
+      "destination": "japanese/blogs/cn/智能体互联网有什么不同.md",
+      "status": "full",
+      "source_lines": 172,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          172
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "6bf7403507e281a02d0c367e6c8d2428f5578b749647bfe57df4ddb0860772ba",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire Chinese original read against English counterpart and full Japanese body. Confirmed same full examples, arguments and five final characteristics; retained thousand-hundred-million-dollar market framing, next decade and both emergence/scalability qualifications. Adjusted nested source asset/license paths."
+      ]
+    },
+    {
+      "source": "blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "destination": "japanese/blogs/ANP-Presentation-at-W3C-WebAgents-CG.md",
+      "status": "full",
+      "source_lines": 282,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          282
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "b962550b2a39ddffbd7013351fb37d75e0cce95470ce386c3f2e0fb463fbfe8b",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read all original 22 slide scripts plus seven Q&A topics and opening/community descriptions. Fully translated all identity principles, three-layer architecture, CRUD locality, three authentication stages, four custom AD fields, two AD training considerations, 99% claim and absence of TTL/RDF mapping. Repaired source EN PDF/image links to actual retained blogs assets; all 22 illustrated pages kept."
+      ]
+    },
+    {
+      "source": "blogs/cn/ANP在W3C-WebAgents-CG的演讲.md",
+      "destination": "japanese/blogs/cn/ANP在W3C-WebAgents-CG的演讲.md",
+      "status": "full",
+      "source_lines": 286,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          286
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "c1e7ce7e199eced78ab6c59eeaa8bb45d85b3bc41199f047571db196c28ca8be",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source read alongside English original. Preserved Chinese-specific absence of XXX introduction, hundreds-of-millions (not English billions) in slide 6, API subscription in slide 12 and original second-occurrence Jmaes typo. Verified all 22 slide scripts and seven Q&A topics; local PDF/images point to actual original retained assets."
+      ]
+    },
+    {
+      "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "destination": "japanese/blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "status": "full",
+      "source_lines": 167,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          167
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "a81885f2e8569c6a2acf83450961904b5ea09858538caefd5d6805bbd26fdfd6",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire source read and fully retranslated: all technical comparisons, tentative one-card-per-domain claim, seven Task states and operations, out-of-band versus identity interoperation scope, advantages and disadvantages of both protocols, enterprise-origin inference with official-not-explicit qualification, hotel privacy/coupling example, possible future expansion and three horizons of prediction. Three exact fences and five illustrations retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "destination": "japanese/blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "status": "full",
+      "source_lines": 168,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          168
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "e42e5bae1769086944bf614f77b04e0657cf01a313fc8cfa342592dfc3f58be3",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese source compared to English and Japanese. Preserved Chinese-specific quote and pie-chart fences verbatim (18/18/11/8/5 counts), translated Chinese parentheticals for all concepts/states/operations, restored community names and nested comparison/image links. Did not modernize historical method names or collapse author qualifications."
+      ]
+    },
+    {
+      "source": "blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "destination": "japanese/blogs/Comparison-of-MCP-and-ANP-What-Kind-of-Communication-Protocol-Do-Agents-Need.md",
+      "status": "full",
+      "source_lines": 211,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          211
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "537cb256c198d759e6ce56d8f19babe9c09367bdd0edf8c96b19c75fbd38c92a",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete long English source retranslated: all opening arguments, three technical comparisons and subheadings, OAuth 2.1 draft/metadata/DCR details, DID interaction/0-RTT explanation, all four unresolved identity issues, resource subscriptions, full coffee linked-data example, semantic/search properties, four future traits and two FAQ answers. Preserved one-to-two-order 2025 cost forecast, all six images and historical assumptions without updating. Repaired obsolete local spec links to existing mirror paths."
+      ]
+    },
+    {
+      "source": "blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md",
+      "destination": "japanese/blogs/cn/MCP与ANP对比：智能体需要什么样的通信协议.md",
+      "status": "full",
+      "source_lines": 213,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          213
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "a7410f81e5ec9bdfc24fa29f4c9e93f6f959ec89cda3b44ca3e93ca985933550",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source read against English and Japanese, including extra relative-project-completeness statement and Model-Centric/Agent-Centric labels. Preserved Chinese-specific 2025 further-reduction forecast, lower-case o3 Mini, source JONS-LD typo with explicit note and distinct Chinese spec/blog references. All clauses and remaining questions translated rather than only replacing terminology."
+      ]
+    },
+    {
+      "source": "blogs/cn/智能体协议汇总.md",
+      "destination": "japanese/blogs/cn/智能体协议汇总.md",
+      "status": "full",
+      "source_lines": 126,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          126
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "e7e2ba4c32e6519b5c4956c96fb80ad2e0e39b34b9a808bc29ce6a04dc3f4ea0",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read and fully translated all eleven protocol entries, every developer/problem/technical/ecosystem/site bullet, AITP additional application link and final four-category comparison. Preserved distinct Cisco/IBM ACP identities, all 2024/2025/one-year dates, alpha/draft/no-public-implementation statuses, original architecture claims and exact /.well-known/agents.json inline identifier; no current-state verification or modernization implied."
+      ]
+    },
+    {
+      "source": "blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "destination": "japanese/blogs/Three_Technical_Approaches_to_AI_Internet_Interaction.md",
+      "status": "full",
+      "source_lines": 226,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          226
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "6abdd60a3ca1945d6e6a64b04f0b66c8f0f1b63f2c61cd5fed9964c177dbcaf8",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete English source and translated all four approaches despite Three in title. Preserved every advantage/disadvantage and implementation item, CUA figures 87%/38.1%/58.1%, iOS18 and 200+ registrations, TEE no-raw-data-leaves claim, mini-program hypothesis, B2B/professional/general consumer distinctions, short/long-term qualifications and legacy conversion costs."
+      ]
+    },
+    {
+      "source": "blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "destination": "japanese/blogs/cn/从OpenAI的Operator，看AI与互联网交互的三种技术路线.md",
+      "status": "full",
+      "source_lines": 230,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          230
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "e8ccb73ab3d2b04248408e66f66041f0c13ea303b0b489356f5c9fe857ac63fb",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source read, preserving distinct Four title versus Three conclusion and its list of three approaches referred to as two. Restored additional progress sentence before About Us and Chinese conclusion including client-side API. Matched all source numeric measurements, restrictions and implementation mechanisms; retained historical judgments rather than current product advice."
+      ]
+    },
+    {
+      "source": "blogs/11-ANP-Release-1.1-Focus-on-Agent-Cross-Domain-Communication.md",
+      "destination": "japanese/blogs/11-ANP-Release-1.1-Focus-on-Agent-Cross-Domain-Communication.md",
+      "status": "full",
+      "source_lines": 201,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          201
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "5b35a8cd8cd8827efbc9030ee9f312932568b571e3d1df1e7a31383d9f6e8346",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire release source read and fully retranslated: public-not-private fingerprint binding, both DID-method compatibility, two Handle reasons and resolution/rotation semantics; all protocol exclusions; Agent/Group/Service DID proof boundaries; no added Relay layer; control/data plane separation; Signal-like/MLS responsibilities; all next-step VC/audit/context directions. Preserved historical no-protocol-multidevice scope and hypothetical device DID rather than upgrading to 1.2."
+      ]
+    },
+    {
+      "source": "blogs/cn/11-ANP-Release-1.1-从身份到跨域消息.md",
+      "destination": "japanese/blogs/cn/11-ANP-Release-1.1-从身份到跨域消息.md",
+      "status": "full",
+      "source_lines": 195,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          195
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "82cb1f876396936e1cc4ccdde1296a238adc6d28940586fa8b408cea11d4a80f",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete Chinese source; confirmed all full English substantive paragraphs correspond. Preserved Chinese-specific unformatted method names, exact shared Handle example and direct.send/group.send code spans; omitted English-only Apache copyright section. All historical scope, role/proof, security and future-plan details retained."
+      ]
+    },
+    {
+      "source": "blogs/the-three-major-trends-of-the-internet-of-agents.md",
+      "destination": "japanese/blogs/the-three-major-trends-of-the-internet-of-agents.md",
+      "status": "full",
+      "source_lines": 183,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          183
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "051ca6fdc51e9a26829c048e5e3c72d3b2d3d6e570e509b4062c016e765e4dd3",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete English article translated including full nested opening outline, all 1.1–3.3 subsections and final philosophy. Preserved 10x experience prediction, games exception, software development/runtime cost distinction, 3–5% monetization and 100-unit example, strictly below-3% comparison, after-sales/security unresolved caveat, user-authorized context access, 20+ developers and both WeChat values."
+      ]
+    },
+    {
+      "source": "blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "destination": "japanese/blogs/cn/我们对智能体互联网(agentic-web)的三个核心判断.md",
+      "status": "full",
+      "source_lines": 201,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          201
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "41c3fd4f2f2994f07d7315ce7b23eabdcd743198e891502e845f34f363b9886b",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese source compared against English and Japanese. Retained distinct Chinese RMB amounts and inclusive within-3% threshold (English below-3%), original Chinese entertainment brands and coze/dify case, repaired original missing .md link suffix, and preserved all same argument stages and qualifications."
+      ]
+    },
+    {
+      "source": "blogs/analysis-and-predictions-of-future-ai-personal-assistant-products-and-key-players.md",
+      "destination": "japanese/blogs/analysis-and-predictions-of-future-ai-personal-assistant-products-and-key-players.md",
+      "status": "full",
+      "source_lines": 172,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          172
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "852945e3e5f18826ab2daa89db7b0b11351254db78c06993f63c5fc525723354",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire source translated and compared, including three stages, four ideal user tasks, all player categories, 5/10/20/30-year and 1–2/3/5-year predictions, sovereignty access-versus-ownership distinction, Solid/GDPR and uncertainties. English absence of explicit Stage 3 heading preserved."
+      ]
+    },
+    {
+      "source": "blogs/cn/AI个人助手未来产品形态和主要玩家的分析与预测.md",
+      "destination": "japanese/blogs/cn/AI个人助手未来产品形态和主要玩家的分析与预测.md",
+      "status": "full",
+      "source_lines": 192,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          192
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "ab64e186fe6178f26a819e6e57779bdccc9ada7429bb5db3296add1e6e708438",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete Chinese source and compared to English. Translated substantial Chinese-only stage-two discussion in full: phone/startup joint ecosystem creation, platform value decomposition, direct protocol connections, monopoly/choice caveat and explicit third-stage heading. Preserved all tools capability phrase, original model case and all numbers/negations."
+      ]
+    },
+    {
+      "source": "blogs/Agentic-Web-Ten-Talks/01day-the-past-and-present-of-the-web.md",
+      "destination": "japanese/blogs/Agentic-Web-Ten-Talks/01day-the-past-and-present-of-the-web.md",
+      "status": "full",
+      "source_lines": 309,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          309
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "machine-translation-full-source-review",
+      "source_sha256": "b3fb4f1635396b5fcf6e01ff57b434816f828b357949160d5e48699ad5d61b73",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete day-one source translated across all six main sections, every numbered list/subheading and conclusion/copyright. Preserved HTTP/0.9 example, one-page/one-line claims, 100 versus 100-million users, 7 versus 100,000 TPS, and original historical judgments without updating disputed claims."
+      ]
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/01day-Web的前世今生.md",
+      "destination": "japanese/blogs/cn/Agentic-Web十日谈/01day-Web的前世今生.md",
+      "status": "full",
+      "source_lines": 310,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          310
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "94671f8ec72ea8324853fa23b8393352316848759a722b1b6073b30e9b6b39c6",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full Chinese original read and compared to the English mirror paragraph by paragraph. Retained Chinese parenthetical principle names and Connection is Power, all argument stages, quantities, negative qualifications, historical performance assertions and distinct relative MIT license link."
+      ]
+    },
+    {
+      "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "destination": "japanese/blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "status": "full",
+      "source_lines": 167,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          167
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "144c988bd05086067cb2ddb0530a0de1b46eac35152d910bb7a1ef2df1f821df",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire source including eight interaction steps, roles, protocol comparisons, forecasts and footnotes translated from Chinese. Exact Mermaid retained. Kept author uncertainty about delegate-payment flow, ACP single-item historical limitation, AP2/ANP preferred opinion, ATXP details-not-yet-seen caveat and original AWS claim rather than silently replacing it. Fixed malformed image link to AP2 article to regular mirrored document link."
+      ]
+    },
+    {
+      "source": "blogs/cn/08-智能体支付.md",
+      "destination": "japanese/blogs/cn/08-智能体支付.md",
+      "status": "full",
+      "source_lines": 245,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          245
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "ec9482f3b984760f0f8029ac376090fea477bbd4d79630cd98d5ae7c0f40ca45",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read and translated complete Chinese source. Preserved actual versus planned features, test/demo launch assertions, all four role definitions, CartMandate→PaymentMandate→receipt chain, QR user-present process, AP2 extensions distinguished from native AP2, legal-validity uncertainty versus earlier legal claim, absent-user/SD-JWT/digital-RMB future plans. Explicitly noted original says four phases but only lists three; no invented phase. Exact hash-chain fence and source inline identifier retained."
+      ]
+    },
+    {
+      "source": "blogs/cn/07-全球首个开放智能体网络.md",
+      "destination": "japanese/blogs/cn/07-全球首个开放智能体网络.md",
+      "status": "full",
+      "source_lines": 336,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          336
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "1bd92c07680f1c319f0fbe2e80074526d39d5377499df2f21d9753b67a183377",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full first draft translated, retaining both initial titles, all three network properties, native/bridge access, three connection capabilities, supply/demand/dual roles, each example and advantage, complete ViNote six-feature description and three-hour claim, all future plans and all contact links. Distinguishes already-provided MCP bridge from planned A2A/ACP/payment features. Original architecture code fence retained byte-for-byte after newline normalization."
+      ]
+    },
+    {
+      "source": "blogs/cn/07-2-全球首个开放智能体网络.md",
+      "destination": "japanese/blogs/cn/07-2-全球首个开放智能体网络.md",
+      "status": "full",
+      "source_lines": 224,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          224
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "04e2069bb625bb05e46007635be04dfa82e1d95aba19f6e4b19870aaa2478b33",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read entire second draft separately, translated all sections including App workflow and three isolation causes; preserved Interaction in first capability trio versus Identity in architecture trio, reversed schedule→health assistant example distinct from draft one, land-rental metaphor, ViNote old/new contrast, 1991/2008 historic dates, three-hour/30-minute claims, exact ASCII diagram and original planned-feature wording."
+      ]
+    },
+    {
+      "source": "blogs/cn/07-3-全球首个开放智能体网络.md",
+      "destination": "japanese/blogs/cn/07-3-全球首个开放智能体网络.md",
+      "status": "full",
+      "source_lines": 280,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          280
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "f33f364fcf2c1780ccd7a8c28c3fa04e3f38f957a4e7b73b4fb67c542e89cf41",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read and translated entire third draft independently, retaining unique enterprise beneficiary, optional infrastructure/no owner and legal-boundary clauses, three actual image assets, existing network service list and services still onboarding, ANP+AP2 already implemented versus X402 ongoing, future gateways/IM, exact links and absence of copyright section. Did not replace with either earlier draft."
+      ]
+    },
+    {
+      "source": "blogs/04-In-Depth-Analysis-of-Google-AP2.md",
+      "destination": "japanese/blogs/04-In-Depth-Analysis-of-Google-AP2.md",
+      "status": "full",
+      "source_lines": 237,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          237
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "e648d5be10ac84a86f94a27c9458553276f0206da613c492a166017624dd980a",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Full English article translated and compared including eleven takeaways, four trust questions, six named roles and hardware key manager, all three VDCs, eleven-step human-present flow, both execution alternatives, 100/1000-yuan and two-ticket/1000-dollar examples, all dispute types, escrow/CP differences and VC chain. Retained legal-validity caveat, separate PaymentMandate visibility versus direct payment, historical opinions and copyright."
+      ]
+    },
+    {
+      "source": "blogs/cn/04-深度解读谷歌最新发布的AP2.md",
+      "destination": "japanese/blogs/cn/04-深度解读谷歌最新发布的AP2.md",
+      "status": "full",
+      "source_lines": 234,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          234
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "d2fb9f5649f78f628305eb027cbd4a57754e59bf43473c4107f50612a22334f7",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese source compared paragraph by paragraph against translated English mirror. Retained Chinese merchant-order-monitoring wording distinct from English inventory, extra existing-network-application design qualifier and absence of English copyright. Kept every credential, role, payment option, liability qualification, quantitative example and original investment/competition opinion."
+      ]
+    },
+    {
+      "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "destination": "japanese/blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "status": "full",
+      "source_lines": 247,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          247
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "7528d78827f6ccc55986d0aef16304f568d00bbd6cc511cf108ea82cb987efd6",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Entire English article read and translated, including all four comparisons, two discovery paths, four weather-request steps, full three-stage auth and three access controls, public DID test-only restriction, Explorer two functions, all final data-network properties. Preserved all five original code fences including JSON and English prompt and all inline identifiers.",
+        "Restored whitespace on source fence closing lines exactly; strict Markdown parser now verifies full fenced block bytes, including trailing spaces."
+      ]
+    },
+    {
+      "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "destination": "japanese/blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "status": "full",
+      "source_lines": 252,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          252
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "630a70c7b29a835a29af48592f217b6a9be454fa2cf356f981428188a36b59a0",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete Chinese prose compared to English mirror; retained Chinese agent/persona names and Chinese placeholders/endpoint example, all five Chinese source fences including Chinese JSON descriptions and Chinese prompt unchanged. Same original auth historical status, real-transaction prohibition for public test DID, API actual-endpoint caveat and full final vision preserved.",
+        "Restored whitespace on source fence closing lines exactly; strict Markdown parser now verifies full fenced block bytes, including trailing spaces."
+      ]
+    },
+    {
+      "source": "blogs/10-Major-Upgrade-to-the-ANP-Message-Protocol.md",
+      "destination": "japanese/blogs/10-Major-Upgrade-to-the-ANP-Message-Protocol.md",
+      "status": "full",
+      "source_lines": 521,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          521
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "b5ae37e63c89e29c428c068917484918ef1b65e76280bad4916d0e1a517fd432",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Complete English source read across six opening questions, all eight main sections, three full comparison tables and all twelve slide outlines. Preserved explicit no multi-device/current relay-only, old HPKE was already usable, v1 not post-quantum, Group Host acceptance versus direct-entry acceptance, no object bytes on relay and original-proof nonrewrite requirements, plus every source identifier and HTTP fence."
+      ]
+    },
+    {
+      "source": "blogs/cn/10-新版本IM协议.md",
+      "destination": "japanese/blogs/cn/10-新版本IM协议.md",
+      "status": "full",
+      "source_lines": 520,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          520
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "12777b37690dbd4bd0141941f209738c0f50aab43a9b2edd2ad8b39f6f2a6d1f",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read all Chinese source separately and compared to English. Retained original martix typo and stronger lowest-coupling claim, Chinese document URLs, object-e2ee plain text versus English code span, no English-only copyright and original next-reply wording. Kept every table/slide entry, mandatory prohibitions, historical routing scope and all key security distinctions."
+      ]
+    },
+    {
+      "source": "blogs/Comparison-of-Agent-Communication-Protocols.md",
+      "destination": "japanese/blogs/Comparison-of-Agent-Communication-Protocols.md",
+      "status": "full",
+      "source_lines": 465,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          465
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-full-translation-and-review",
+      "source_sha256": "3738308e239444b0601e9c06195445334bc0a2eb66ac58b7f169b9bc87ccb477",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete English source across all six protocols × seven dimensions and concluding synthesis. Translated every original bullet, including current/proposed limitations, uncertain ecosystem claims, licensing qualifications, routing/topology distinctions and complementary-protocol forecast. Preserved all identifiers, old ANP three-layer claims, old MCP no-remote claims and Agora no-open-implementation as historical statements. Inline formatting matched exact original per-token counts."
+      ]
+    },
+    {
+      "source": "blogs/cn/智能体通信协议对比.md",
+      "destination": "japanese/blogs/cn/智能体通信协议对比.md",
+      "status": "full",
+      "source_lines": 447,
+      "reviewed_source_line_ranges": [
+        [
+          1,
+          447
+        ]
+      ],
+      "unreviewed_source_line_ranges": [],
+      "method": "manual-mirror-full-source-review",
+      "source_sha256": "061d2d7ec798a9f3d75a1db8eede2e3bbdb01d57f9715b4d5c03c3b321025a82",
+      "evidence": "Complete source and Japanese prose read and compared, including all headings, paragraphs, tables, negations, numeric values and proper nouns. Historical claims retained as authored; code and identifiers preserved.",
+      "corrections": [
+        "Read complete Chinese source separately (all seven dimensions per protocol), compared every bullet to English. Retained Chinese /agents.json retrieval versus English /.well-known/agents.json, initial Agora hobbyist-test possibility versus English later GitHub-developer-ecosystem sentence, uncertain corporate support for LMOS versus English declarative support. Every historic limitation, future uncertainty, example, license qualification and original code token retained."
+      ]
+    }
+  ],
+  "total_source_files": 87,
+  "full_reviewed": 87,
+  "pending": [],
+  "coverage": {
+    "documents": 87,
+    "markdown_sources": 84,
+    "extensionless_sources": 3,
+    "full": 87,
+    "source_lines": 15131,
+    "pending": []
+  }
+}

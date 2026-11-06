@@ -1,3 +1,4 @@
+<!-- translation-review: full; source=chinese/思考&问题/协议与技术对比/http与ANP.md; basis=complete manual translation against the original in the preceding review -->
 > 日本語訳。原文：[http与ANP.md](../../../../chinese/思考&问题/协议与技术对比/http与ANP.md)。研究メモ中の記述・主張は執筆時点の原文に従います。
 
 HTTP は設計時からインターネットのアーキテクチャを考慮し、プロキシ、ゲートウェイ、キャッシュ、ルーティング、負荷分散などの仕組みを備えています。これらの仕組みを、私たちはどう利用できるでしょうか。

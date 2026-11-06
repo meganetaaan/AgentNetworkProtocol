@@ -1,0 +1,535 @@
+{
+  "source_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "policy": "Original fenced examples remain unchanged; prose translations are non-executable sidecars. Extraction and exact-text reuse are not semantic completion.",
+  "source_blocks": 1338,
+  "candidates": 2782,
+  "resolved_units": 2782,
+  "pending_units": 0,
+  "pending": [],
+  "full_block_unique_supplements": 76,
+  "full_block_source_contexts": 106,
+  "full_block_pending": 0,
+  "invalid_extraction_fragments_covered_by_full_prompt": 2,
+  "documents": [
+    {
+      "source": "01-agentnetworkprotocol-technical-white-paper.md",
+      "sidecar": "japanese/assets/code-examples/01-agentnetworkprotocol-technical-white-paper.md.ja.md",
+      "units": 2
+    },
+    {
+      "source": "02-anp-did-authentication-protocol-specification.md",
+      "sidecar": "japanese/assets/code-examples/02-anp-did-authentication-protocol-specification.md.ja.md",
+      "units": 7
+    },
+    {
+      "source": "04-anp-did-wba-name-space-specification.md",
+      "sidecar": "japanese/assets/code-examples/04-anp-did-wba-name-space-specification.md.ja.md",
+      "units": 26
+    },
+    {
+      "source": "05-anp-did-authorization-protocol-specification.md",
+      "sidecar": "japanese/assets/code-examples/05-anp-did-authorization-protocol-specification.md.ja.md",
+      "units": 92
+    },
+    {
+      "source": "06-anp-agent-communication-meta-protocol-specification.md",
+      "sidecar": "japanese/assets/code-examples/06-anp-agent-communication-meta-protocol-specification.md.ja.md",
+      "units": 13
+    },
+    {
+      "source": "07-anp-agent-description-protocol-specification.md",
+      "sidecar": "japanese/assets/code-examples/07-anp-agent-description-protocol-specification.md.ja.md",
+      "units": 64
+    },
+    {
+      "source": "08-ANP-Agent-Discovery-Protocol-Specification.md",
+      "sidecar": "japanese/assets/code-examples/08-ANP-Agent-Discovery-Protocol-Specification.md.ja.md",
+      "units": 10
+    },
+    {
+      "source": "application/10-anp-agent-payment-protocol-specification.md",
+      "sidecar": "japanese/assets/code-examples/application/10-anp-agent-payment-protocol-specification.md.ja.md",
+      "units": 48
+    },
+    {
+      "source": "blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md",
+      "sidecar": "japanese/assets/code-examples/blogs/Comparing-the-Interaction-Modes-of-MCP-A2A-and-ANP.md.ja.md",
+      "units": 7
+    },
+    {
+      "source": "blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md",
+      "sidecar": "japanese/assets/code-examples/blogs/In-depth-Comparison-of-Google-A2A-and-ANP-Finding-the-Origin-of-Protocols.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md",
+      "sidecar": "japanese/assets/code-examples/blogs/One-Prompt-One-HTTP-Function-Enabling-Open-Source-Manus-to-Interact-with-Other-Agents-via-ANP.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md",
+      "sidecar": "japanese/assets/code-examples/blogs/The-Birth-of-the-First-WebAgent-Designed-for-AI-Access.md.ja.md",
+      "units": 8
+    },
+    {
+      "source": "blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/06-OpenAI联手Stripe发布ACP协议，用智能体商务颠覆传统电商.md.ja.md",
+      "units": 27
+    },
+    {
+      "source": "blogs/cn/Agentic-Web十日谈/planning.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/Agentic-Web十日谈/planning.md.ja.md",
+      "units": 2
+    },
+    {
+      "source": "blogs/cn/did-wba-基于web的去中心化身份标识符.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/did-wba-基于web的去中心化身份标识符.md.ja.md",
+      "units": 5
+    },
+    {
+      "source": "blogs/cn/did-wba安全性原理解析.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/did-wba安全性原理解析.md.ja.md",
+      "units": 14
+    },
+    {
+      "source": "blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/一个提示词一个HTTP函数：让开源Manus通过ANP与其他智能体交互.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/关于智能体身份的三个关键问题：互联互通、人类授权、隐私保护.md.ja.md",
+      "units": 1
+    },
+    {
+      "source": "blogs/cn/深入对比MCP、A2A、ANP的交互模式.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/深入对比MCP、A2A、ANP的交互模式.md.ja.md",
+      "units": 7
+    },
+    {
+      "source": "blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/深入对比谷歌A2A与ANP：找到协议的原点.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/第一个专为AI访问而设计的WebAgent诞生了.md.ja.md",
+      "units": 9
+    },
+    {
+      "source": "blogs/did-wba-a-web-based-decentralized-identifier.md",
+      "sidecar": "japanese/assets/code-examples/blogs/did-wba-a-web-based-decentralized-identifier.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "blogs/did-wba-security-principles.md",
+      "sidecar": "japanese/assets/code-examples/blogs/did-wba-security-principles.md.ja.md",
+      "units": 14
+    },
+    {
+      "source": "blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md",
+      "sidecar": "japanese/assets/code-examples/blogs/three-key-issues-of-agent-identity-interoperability-human-authorization-and-privacy-protection.md.ja.md",
+      "units": 1
+    },
+    {
+      "source": "chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "sidecar": "japanese/assets/code-examples/chinese/01-AgentNetworkProtocol技术白皮书.md.ja.md",
+      "units": 2
+    },
+    {
+      "source": "chinese/02-ANP-基于DID的身份认证协议.md",
+      "sidecar": "japanese/assets/code-examples/chinese/02-ANP-基于DID的身份认证协议.md.ja.md",
+      "units": 7
+    },
+    {
+      "source": "chinese/04-ANP-基于DID-WBA的命名空间规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/04-ANP-基于DID-WBA的命名空间规范.md.ja.md",
+      "units": 28
+    },
+    {
+      "source": "chinese/05-ANP-基于DID的授权协议.md",
+      "sidecar": "japanese/assets/code-examples/chinese/05-ANP-基于DID的授权协议.md.ja.md",
+      "units": 108
+    },
+    {
+      "source": "chinese/06-ANP-智能体通信元协议规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/06-ANP-智能体通信元协议规范.md.ja.md",
+      "units": 13
+    },
+    {
+      "source": "chinese/07-ANP-智能体描述协议规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/07-ANP-智能体描述协议规范.md.ja.md",
+      "units": 64
+    },
+    {
+      "source": "chinese/08-ANP-智能体发现协议规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/08-ANP-智能体发现协议规范.md.ja.md",
+      "units": 11
+    },
+    {
+      "source": "chinese/application/10-ANP-智能体支付协议规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/application/10-ANP-智能体支付协议规范.md.ja.md",
+      "units": 47
+    },
+    {
+      "source": "chinese/deprecated/01-核心绑定.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/01-核心绑定.md.ja.md",
+      "units": 21
+    },
+    {
+      "source": "chinese/deprecated/02-did-all方法规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/02-did-all方法规范.md.ja.md",
+      "units": 10
+    },
+    {
+      "source": "chinese/deprecated/02-身份与发现.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/02-身份与发现.md.ja.md",
+      "units": 26
+    },
+    {
+      "source": "chinese/deprecated/03-did-wba方法规范-2026-03-28.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/03-did-wba方法规范-2026-03-28.md.ja.md",
+      "units": 10
+    },
+    {
+      "source": "chinese/deprecated/03-私聊基础语义.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/03-私聊基础语义.md.ja.md",
+      "units": 22
+    },
+    {
+      "source": "chinese/deprecated/04-基于did的端到端加密通信技术协议.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/04-基于did的端到端加密通信技术协议.md.ja.md",
+      "units": 31
+    },
+    {
+      "source": "chinese/deprecated/04-群组基础语义.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/04-群组基础语义.md.ja.md",
+      "units": 25
+    },
+    {
+      "source": "chinese/deprecated/05-基于did的消息服务协议.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/05-基于did的消息服务协议.md.ja.md",
+      "units": 9
+    },
+    {
+      "source": "chinese/deprecated/05-私聊端到端加密.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/05-私聊端到端加密.md.ja.md",
+      "units": 47
+    },
+    {
+      "source": "chinese/deprecated/06-群组端到端加密.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/06-群组端到端加密.md.ja.md",
+      "units": 43
+    },
+    {
+      "source": "chinese/deprecated/07-附件与对象传输.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/07-附件与对象传输.md.ja.md",
+      "units": 79
+    },
+    {
+      "source": "chinese/deprecated/08-联邦与跨域.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/08-联邦与跨域.md.ja.md",
+      "units": 53
+    },
+    {
+      "source": "chinese/deprecated/09-ANP-智能体点对点交易规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/09-ANP-智能体点对点交易规范.md.ja.md",
+      "units": 41
+    },
+    {
+      "source": "chinese/deprecated/09-消息Mention扩展.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/09-消息Mention扩展.md.ja.md",
+      "units": 9
+    },
+    {
+      "source": "chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/deprecated-07-ANP-智能体描述协议规范.md.ja.md",
+      "units": 26
+    },
+    {
+      "source": "chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/deprecated-09-ANP-端到端即时消息协议规范.md.ja.md",
+      "units": 28
+    },
+    {
+      "source": "chinese/docs/did-wba服务端测试接口.md",
+      "sidecar": "japanese/assets/code-examples/chinese/docs/did-wba服务端测试接口.md.ja.md",
+      "units": 15
+    },
+    {
+      "source": "chinese/message/01-核心绑定.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/01-核心绑定.md.ja.md",
+      "units": 22
+    },
+    {
+      "source": "chinese/message/02-身份与发现.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/02-身份与发现.md.ja.md",
+      "units": 26
+    },
+    {
+      "source": "chinese/message/03-私聊基础语义.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/03-私聊基础语义.md.ja.md",
+      "units": 22
+    },
+    {
+      "source": "chinese/message/04-群组基础语义.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/04-群组基础语义.md.ja.md",
+      "units": 24
+    },
+    {
+      "source": "chinese/message/05-私聊端到端加密.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/05-私聊端到端加密.md.ja.md",
+      "units": 51
+    },
+    {
+      "source": "chinese/message/06-群组端到端加密.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/06-群组端到端加密.md.ja.md",
+      "units": 69
+    },
+    {
+      "source": "chinese/message/07-附件与对象传输.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/07-附件与对象传输.md.ja.md",
+      "units": 79
+    },
+    {
+      "source": "chinese/message/08-联邦与跨域.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/08-联邦与跨域.md.ja.md",
+      "units": 53
+    },
+    {
+      "source": "chinese/message/09-消息Mention扩展.md",
+      "sidecar": "japanese/assets/code-examples/chinese/message/09-消息Mention扩展.md.ja.md",
+      "units": 9
+    },
+    {
+      "source": "chinese/思考&问题/语义网与智能体研究/语义网研究.md",
+      "sidecar": "japanese/assets/code-examples/chinese/思考&问题/语义网与智能体研究/语义网研究.md.ja.md",
+      "units": 6
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md",
+      "sidecar": "japanese/assets/code-examples/chinese/过程文档/智能体点对点交易方案设计/OpenAI-智能体点对点交易流程&协议设计 copy.md.ja.md",
+      "units": 18
+    },
+    {
+      "source": "chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md",
+      "sidecar": "japanese/assets/code-examples/chinese/过程文档/智能体点对点交易方案设计/智能体点对点交易流程&协议设计-通俗版.md.ja.md",
+      "units": 41
+    },
+    {
+      "source": "deprecated/01-core-binding.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/01-core-binding.md.ja.md",
+      "units": 20
+    },
+    {
+      "source": "deprecated/02-did-all-method-design-specification.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/02-did-all-method-design-specification.md.ja.md",
+      "units": 8
+    },
+    {
+      "source": "deprecated/02-identity-and-discovery.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/02-identity-and-discovery.md.ja.md",
+      "units": 26
+    },
+    {
+      "source": "deprecated/03-direct-messaging-base-semantics.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/03-direct-messaging-base-semantics.md.ja.md",
+      "units": 16
+    },
+    {
+      "source": "deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/04-end-to-end-encrypted-communication-technology-protocol-based-on-did.md.ja.md",
+      "units": 29
+    },
+    {
+      "source": "deprecated/04-group-messaging-base-semantics.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/04-group-messaging-base-semantics.md.ja.md",
+      "units": 23
+    },
+    {
+      "source": "deprecated/05-direct-end-to-end-encryption.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/05-direct-end-to-end-encryption.md.ja.md",
+      "units": 46
+    },
+    {
+      "source": "deprecated/05-message-service-protocol-based-on-did.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/05-message-service-protocol-based-on-did.md.ja.md",
+      "units": 8
+    },
+    {
+      "source": "deprecated/06-group-end-to-end-encryption.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/06-group-end-to-end-encryption.md.ja.md",
+      "units": 42
+    },
+    {
+      "source": "deprecated/07-attachments-and-object-transfer.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/07-attachments-and-object-transfer.md.ja.md",
+      "units": 74
+    },
+    {
+      "source": "deprecated/08-federation-and-cross-domain.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/08-federation-and-cross-domain.md.ja.md",
+      "units": 53
+    },
+    {
+      "source": "deprecated/09-anp-peer-to-peer-agent-transaction-specification.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/09-anp-peer-to-peer-agent-transaction-specification.md.ja.md",
+      "units": 47
+    },
+    {
+      "source": "deprecated/09-message-mentions.md",
+      "sidecar": "japanese/assets/code-examples/deprecated/09-message-mentions.md.ja.md",
+      "units": 9
+    },
+    {
+      "source": "docs/agent-description-extended-fields-guide.md",
+      "sidecar": "japanese/assets/code-examples/docs/agent-description-extended-fields-guide.md.ja.md",
+      "units": 6
+    },
+    {
+      "source": "docs/anp-getting-started-guide.md",
+      "sidecar": "japanese/assets/code-examples/docs/anp-getting-started-guide.md.ja.md",
+      "units": 15
+    },
+    {
+      "source": "docs/chinese/ANP入门指南.md",
+      "sidecar": "japanese/assets/code-examples/docs/chinese/ANP入门指南.md.ja.md",
+      "units": 15
+    },
+    {
+      "source": "docs/chinese/基于ANP的WebAgent如何运行.md",
+      "sidecar": "japanese/assets/code-examples/docs/chinese/基于ANP的WebAgent如何运行.md.ja.md",
+      "units": 15
+    },
+    {
+      "source": "docs/did-wba-server-test-interface.md",
+      "sidecar": "japanese/assets/code-examples/docs/did-wba-server-test-interface.md.ja.md",
+      "units": 5
+    },
+    {
+      "source": "docs/how-anp-based-webagent-works.md",
+      "sidecar": "japanese/assets/code-examples/docs/how-anp-based-webagent-works.md.ja.md",
+      "units": 14
+    },
+    {
+      "source": "message/01-core-binding.md",
+      "sidecar": "japanese/assets/code-examples/message/01-core-binding.md.ja.md",
+      "units": 21
+    },
+    {
+      "source": "message/02-identity-and-discovery.md",
+      "sidecar": "japanese/assets/code-examples/message/02-identity-and-discovery.md.ja.md",
+      "units": 26
+    },
+    {
+      "source": "message/03-direct-messaging-base-semantics.md",
+      "sidecar": "japanese/assets/code-examples/message/03-direct-messaging-base-semantics.md.ja.md",
+      "units": 16
+    },
+    {
+      "source": "message/04-group-messaging-base-semantics.md",
+      "sidecar": "japanese/assets/code-examples/message/04-group-messaging-base-semantics.md.ja.md",
+      "units": 22
+    },
+    {
+      "source": "message/05-direct-end-to-end-encryption.md",
+      "sidecar": "japanese/assets/code-examples/message/05-direct-end-to-end-encryption.md.ja.md",
+      "units": 50
+    },
+    {
+      "source": "message/06-group-end-to-end-encryption.md",
+      "sidecar": "japanese/assets/code-examples/message/06-group-end-to-end-encryption.md.ja.md",
+      "units": 69
+    },
+    {
+      "source": "message/07-attachments-and-object-transfer.md",
+      "sidecar": "japanese/assets/code-examples/message/07-attachments-and-object-transfer.md.ja.md",
+      "units": 74
+    },
+    {
+      "source": "message/08-federation-and-cross-domain.md",
+      "sidecar": "japanese/assets/code-examples/message/08-federation-and-cross-domain.md.ja.md",
+      "units": 53
+    },
+    {
+      "source": "message/09-message-mentions.md",
+      "sidecar": "japanese/assets/code-examples/message/09-message-mentions.md.ja.md",
+      "units": 9
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md",
+      "sidecar": "japanese/assets/code-examples/standard/W3C-proposal/DID-OAuth-Compatibility Discussion-cn.md.ja.md",
+      "units": 30
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md",
+      "sidecar": "japanese/assets/code-examples/standard/W3C-proposal/DID-OAuth-Compatibility Discussion.md.ja.md",
+      "units": 20
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md",
+      "sidecar": "japanese/assets/code-examples/standard/W3C-proposal/DID-OAuth-Integration-Solution-cn.md.ja.md",
+      "units": 103
+    },
+    {
+      "source": "standard/W3C-proposal/DID-OAuth-Integration-Solution.md",
+      "sidecar": "japanese/assets/code-examples/standard/W3C-proposal/DID-OAuth-Integration-Solution.md.ja.md",
+      "units": 100
+    },
+    {
+      "source": "vnext/01-agentnetworkprotocol-technical-white-paper.md",
+      "sidecar": "japanese/assets/code-examples/vnext/01-agentnetworkprotocol-technical-white-paper.md.ja.md",
+      "units": 95
+    },
+    {
+      "source": "vnext/chinese/01-AgentNetworkProtocol技术白皮书.md",
+      "sidecar": "japanese/assets/code-examples/vnext/chinese/01-AgentNetworkProtocol技术白皮书.md.ja.md",
+      "units": 97
+    },
+    {
+      "source": "vnext/chinese/P4-群组基础语义.md",
+      "sidecar": "japanese/assets/code-examples/vnext/chinese/P4-群组基础语义.md.ja.md",
+      "units": 24
+    },
+    {
+      "source": "vnext/p4-group-messaging-base-semantics.md",
+      "sidecar": "japanese/assets/code-examples/vnext/p4-group-messaging-base-semantics.md.ja.md",
+      "units": 22
+    },
+    {
+      "source": "03-did-wba-method-design-specification.md",
+      "sidecar": "japanese/assets/code-examples/03-did-wba-method-design-specification.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "blogs/cn/07-2-全球首个开放智能体网络.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/07-2-全球首个开放智能体网络.md.ja.md",
+      "units": 1
+    },
+    {
+      "source": "blogs/cn/07-全球首个开放智能体网络.md",
+      "sidecar": "japanese/assets/code-examples/blogs/cn/07-全球首个开放智能体网络.md.ja.md",
+      "units": 1
+    },
+    {
+      "source": "chinese/03-did-wba方法规范.md",
+      "sidecar": "japanese/assets/code-examples/chinese/03-did-wba方法规范.md.ja.md",
+      "units": 4
+    },
+    {
+      "source": "chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md",
+      "sidecar": "japanese/assets/code-examples/chinese/deprecated/01-AgentNetworkProtocol技术白皮书(20041204).md.ja.md",
+      "units": 2
+    },
+    {
+      "source": "deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md",
+      "sidecar": "japanese/assets/code-examples/deprecated/01-agentnetworkprotocol-technical-white-paper(20041204).md.ja.md",
+      "units": 1
+    },
+    {
+      "source": "standard/draft-zyyhl-agent-networks-framework-00.md",
+      "sidecar": "japanese/assets/code-examples/standard/draft-zyyhl-agent-networks-framework-00.md.ja.md",
+      "units": 1
+    }
+  ]
+}

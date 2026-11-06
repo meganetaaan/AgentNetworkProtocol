@@ -1,0 +1,178 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-cn-png/09-bad2.png",
+  "sha256": "28b80226c00b95f9f1effd5b509b172ba1c74dd8c7cc3f30a1ffafef41f4dfb7",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "①助理正常认证",
+      "confidence": 0.9983784556388855,
+      "box": [
+        [
+          338.0,
+          129.0
+        ],
+        [
+          494.0,
+          129.0
+        ],
+        [
+          494.0,
+          153.0
+        ],
+        [
+          338.0,
+          153.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "① アシスタントが通常通り認証する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "②坏人原样转发",
+      "confidence": 0.9946117315973554,
+      "box": [
+        [
+          828.0,
+          129.0
+        ],
+        [
+          985.0,
+          129.0
+        ],
+        [
+          985.0,
+          153.0
+        ],
+        [
+          828.0,
+          153.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "② 攻撃者がそのまま転送する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "你的助理",
+      "confidence": 0.9995920211076736,
+      "box": [
+        [
+          156.0,
+          268.0
+        ],
+        [
+          273.0,
+          268.0
+        ],
+        [
+          273.0,
+          299.0
+        ],
+        [
+          156.0,
+          299.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "あなたのアシスタント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "坏人的假咖啡店",
+      "confidence": 0.9954579983438764,
+      "box": [
+        [
+          562.0,
+          267.0
+        ],
+        [
+          765.0,
+          269.0
+        ],
+        [
+          765.0,
+          298.0
+        ],
+        [
+          562.0,
+          297.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "攻撃者の偽コーヒー店",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "真咖啡店",
+      "confidence": 0.9997959136962891,
+      "box": [
+        [
+          1086.0,
+          267.0
+        ],
+        [
+          1202.0,
+          267.0
+        ],
+        [
+          1202.0,
+          299.0
+        ],
+        [
+          1086.0,
+          299.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "本物のコーヒー店",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "拿到了你那一行",
+      "confidence": 0.9994824188096183,
+      "box": [
+        [
+          581.0,
+          308.0
+        ],
+        [
+          750.0,
+          308.0
+        ],
+        [
+          750.0,
+          336.0
+        ],
+        [
+          581.0,
+          336.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "あなたの行を手に入れた",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.6544332000194117,
+    0.009510517120361328,
+    0.34710192680358887
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "右下の×は拒否、チェックマークは受理を示す図形。本文ラベルを全照合した。",
+    "source_sha256": "28b80226c00b95f9f1effd5b509b172ba1c74dd8c7cc3f30a1ffafef41f4dfb7"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "source": "blogs/images/OAuth2.1.svg",
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "method": "svg-xml",
+  "status": "invalid-svg",
+  "error": "no element found: line 1, column 0",
+  "labels": [],
+  "review": "source-defect-confirmed",
+  "translation_status": "not-applicable-invalid-source"
+}

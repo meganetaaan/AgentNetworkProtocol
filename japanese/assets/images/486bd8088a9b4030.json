@@ -1,0 +1,500 @@
+{
+  "source": "blogs/images/openid-connect-fllow.png",
+  "sha256": "486bd8088a9b4030df9e0fafd41a61939963d86c37c037937d490b34025422de",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Register a platform account",
+      "confidence": 0.9988192010808874,
+      "box": [
+        [
+          51.0,
+          63.0
+        ],
+        [
+          409.0,
+          60.0
+        ],
+        [
+          409.0,
+          93.0
+        ],
+        [
+          51.0,
+          97.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "プラットフォームのアカウントを登録する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Create an application",
+      "confidence": 0.9762380321820577,
+      "box": [
+        [
+          637.0,
+          64.0
+        ],
+        [
+          908.0,
+          64.0
+        ],
+        [
+          908.0,
+          94.0
+        ],
+        [
+          637.0,
+          94.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "アプリケーションを作成する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Obtain the client ID and",
+      "confidence": 0.9949645971258482,
+      "box": [
+        [
+          79.0,
+          259.0
+        ],
+        [
+          384.0,
+          261.0
+        ],
+        [
+          384.0,
+          292.0
+        ],
+        [
+          79.0,
+          289.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "クライアントIDと",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "ID"
+      ]
+    },
+    {
+      "source": "Configure application",
+      "confidence": 0.9960842501549494,
+      "box": [
+        [
+          638.0,
+          278.0
+        ],
+        [
+          911.0,
+          278.0
+        ],
+        [
+          911.0,
+          309.0
+        ],
+        [
+          638.0,
+          309.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "アプリケーションを設定する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "secret",
+      "confidence": 0.9990737636884054,
+      "box": [
+        [
+          190.0,
+          300.0
+        ],
+        [
+          275.0,
+          300.0
+        ],
+        [
+          275.0,
+          328.0
+        ],
+        [
+          190.0,
+          328.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "シークレットを取得する",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "|--(A)- Authorization Request ->",
+      "confidence": 0.9647416025400162,
+      "box": [
+        [
+          190.0,
+          550.0
+        ],
+        [
+          695.0,
+          549.0
+        ],
+        [
+          695.0,
+          579.0
+        ],
+        [
+          190.0,
+          580.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "|--(A)- 認可リクエスト ->",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.9984477162361145,
+      "box": [
+        [
+          751.0,
+          550.0
+        ],
+        [
+          883.0,
+          552.0
+        ],
+        [
+          883.0,
+          579.0
+        ],
+        [
+          751.0,
+          577.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Owner",
+      "confidence": 0.9620190501213074,
+      "box": [
+        [
+          782.0,
+          581.0
+        ],
+        [
+          868.0,
+          584.0
+        ],
+        [
+          867.0,
+          613.0
+        ],
+        [
+          781.0,
+          610.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "所有者",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "<-(B)--Authorization Grant ---",
+      "confidence": 0.9736606697241466,
+      "box": [
+        [
+          196.0,
+          616.0
+        ],
+        [
+          684.0,
+          616.0
+        ],
+        [
+          684.0,
+          645.0
+        ],
+        [
+          196.0,
+          645.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "<-(B)-- 認可の付与 ---",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "|--(C)-- Authorization Grant -->| Authorization",
+      "confidence": 0.9730870140359756,
+      "box": [
+        [
+          191.0,
+          747.0
+        ],
+        [
+          929.0,
+          746.0
+        ],
+        [
+          929.0,
+          776.0
+        ],
+        [
+          191.0,
+          777.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "|--(C)-- 認可の付与 -->| 認可",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Client",
+      "confidence": 0.9872143765290579,
+      "box": [
+        [
+          73.0,
+          778.0
+        ],
+        [
+          174.0,
+          780.0
+        ],
+        [
+          174.0,
+          808.0
+        ],
+        [
+          73.0,
+          806.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "クライアント",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9978533983230591,
+      "box": [
+        [
+          783.0,
+          779.0
+        ],
+        [
+          884.0,
+          782.0
+        ],
+        [
+          883.0,
+          810.0
+        ],
+        [
+          782.0,
+          807.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "<-(D)-----AccessToken",
+      "confidence": 0.9743882133847191,
+      "box": [
+        [
+          192.0,
+          813.0
+        ],
+        [
+          574.0,
+          813.0
+        ],
+        [
+          574.0,
+          842.0
+        ],
+        [
+          192.0,
+          842.0
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "<-(D)-----アクセストークン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "AccessToken"
+      ]
+    },
+    {
+      "source": "--(E)-----Access Token",
+      "confidence": 0.9595173516056754,
+      "box": [
+        [
+          197.0,
+          945.0
+        ],
+        [
+          569.0,
+          945.0
+        ],
+        [
+          569.0,
+          974.0
+        ],
+        [
+          197.0,
+          974.0
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "--(E)-----アクセストークン",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Resource",
+      "confidence": 0.9993542060256004,
+      "box": [
+        [
+          766.0,
+          942.0
+        ],
+        [
+          900.0,
+          947.0
+        ],
+        [
+          899.0,
+          977.0
+        ],
+        [
+          765.0,
+          973.0
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "リソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Server",
+      "confidence": 0.9974389771620432,
+      "box": [
+        [
+          783.0,
+          977.0
+        ],
+        [
+          884.0,
+          980.0
+        ],
+        [
+          883.0,
+          1008.0
+        ],
+        [
+          782.0,
+          1005.0
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "サーバー",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "|<-(F)---Protected Resource",
+      "confidence": 0.9656067645108258,
+      "box": [
+        [
+          191.0,
+          1010.0
+        ],
+        [
+          632.0,
+          1008.0
+        ],
+        [
+          632.0,
+          1038.0
+        ],
+        [
+          191.0,
+          1040.0
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "|<-(F)---保護されたリソース",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Oauth2.0 / OpenlD Connect",
+      "confidence": 0.9698836588859558,
+      "box": [
+        [
+          232.0,
+          1124.0
+        ],
+        [
+          727.0,
+          1124.0
+        ],
+        [
+          727.0,
+          1163.0
+        ],
+        [
+          232.0,
+          1163.0
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "Oauth2.0／OpenID Connect",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "Oauth2.0",
+        "OpenlD"
+      ],
+      "transcribed_source": "Oauth2.0 / OpenID Connect"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8014995999983512,
+    0.02352595329284668,
+    2.607542037963867
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Oauth2.0 / OpenlD Connect": "Oauth2.0 / OpenID Connect"
+    },
+    "source_note": "ASCIIの矢印・枠線は原画像を正として参照。Oauthの大文字小文字は原図を保持。",
+    "source_sha256": "486bd8088a9b4030df9e0fafd41a61939963d86c37c037937d490b34025422de"
+  }
+}

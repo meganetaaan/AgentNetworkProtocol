@@ -1,0 +1,338 @@
+{
+  "source": "blogs/images/agent-authorization/multi-agent-auth.png",
+  "sha256": "2841da0913fa6716869b209cc0c7ec002fadea933f4133a56ca93c675ec298fe",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agent A",
+      "confidence": 0.9836060575076512,
+      "box": [
+        [
+          617.0,
+          163.0
+        ],
+        [
+          756.0,
+          160.0
+        ],
+        [
+          757.0,
+          204.0
+        ],
+        [
+          619.0,
+          208.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "エージェントA",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "Data",
+      "confidence": 0.998439833521843,
+      "box": [
+        [
+          738.0,
+          226.0
+        ],
+        [
+          799.0,
+          229.0
+        ],
+        [
+          797.0,
+          257.0
+        ],
+        [
+          736.0,
+          255.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "データ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "2. C uses the authorization",
+      "confidence": 0.9930854439735413,
+      "box": [
+        [
+          969.0,
+          388.0
+        ],
+        [
+          1318.0,
+          388.0
+        ],
+        [
+          1318.0,
+          417.0
+        ],
+        [
+          969.0,
+          417.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "2. Cは与えられた権限を使って、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2"
+      ]
+    },
+    {
+      "source": "Agent B",
+      "confidence": 0.9985657504626683,
+      "box": [
+        [
+          617.0,
+          412.0
+        ],
+        [
+          755.0,
+          410.0
+        ],
+        [
+          756.0,
+          454.0
+        ],
+        [
+          618.0,
+          457.0
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "エージェントB",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "to access the user's",
+      "confidence": 0.9670022398233413,
+      "box": [
+        [
+          996.0,
+          429.0
+        ],
+        [
+          1276.0,
+          427.0
+        ],
+        [
+          1276.0,
+          457.0
+        ],
+        [
+          997.0,
+          459.0
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "Bにあるユーザーの",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Data",
+      "confidence": 0.9974229484796524,
+      "box": [
+        [
+          738.0,
+          475.0
+        ],
+        [
+          799.0,
+          478.0
+        ],
+        [
+          797.0,
+          506.0
+        ],
+        [
+          736.0,
+          504.0
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "データ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "data on B.",
+      "confidence": 0.9908403813838959,
+      "box": [
+        [
+          999.0,
+          467.0
+        ],
+        [
+          1134.0,
+          470.0
+        ],
+        [
+          1134.0,
+          500.0
+        ],
+        [
+          998.0,
+          498.0
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "データにアクセスする。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "1. The user authorizes",
+      "confidence": 0.9952405799518932,
+      "box": [
+        [
+          115.0,
+          609.0
+        ],
+        [
+          406.0,
+          611.0
+        ],
+        [
+          405.0,
+          641.0
+        ],
+        [
+          115.0,
+          638.0
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "1. ユーザーは、",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "1"
+      ]
+    },
+    {
+      "source": "C to access the",
+      "confidence": 0.9821833451588948,
+      "box": [
+        [
+          146.0,
+          651.0
+        ],
+        [
+          343.0,
+          651.0
+        ],
+        [
+          343.0,
+          681.0
+        ],
+        [
+          146.0,
+          681.0
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "Bにあるユーザーのデータへのアクセスを",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent C",
+      "confidence": 0.9923834885869708,
+      "box": [
+        [
+          617.0,
+          661.0
+        ],
+        [
+          756.0,
+          659.0
+        ],
+        [
+          757.0,
+          705.0
+        ],
+        [
+          618.0,
+          707.0
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "エージェントC",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    },
+    {
+      "source": "user' s data in B.",
+      "confidence": 0.9649421473344167,
+      "box": [
+        [
+          145.0,
+          691.0
+        ],
+        [
+          376.0,
+          691.0
+        ],
+        [
+          376.0,
+          721.0
+        ],
+        [
+          145.0,
+          721.0
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "Cに許可する。",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [],
+      "transcribed_source": "user's data in B."
+    },
+    {
+      "source": "Data",
+      "confidence": 0.998324915766716,
+      "box": [
+        [
+          738.0,
+          724.0
+        ],
+        [
+          798.0,
+          727.0
+        ],
+        [
+          796.0,
+          757.0
+        ],
+        [
+          736.0,
+          754.0
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "データ",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8325796000426635,
+    0.017032146453857422,
+    1.0264456272125244
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "user' s data in B.": "user's data in B."
+    },
+    "source_sha256": "2841da0913fa6716869b209cc0c7ec002fadea933f4133a56ca93c675ec298fe"
+  }
+}

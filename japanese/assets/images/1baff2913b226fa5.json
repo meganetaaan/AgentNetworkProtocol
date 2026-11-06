@@ -1,0 +1,110 @@
+{
+  "source": "blogs/images/mcp-anp-share/protocol-explanation.svg",
+  "sha256": "1baff2913b226fa5cab99c774ff18812406ab4b358c1b7c1f3256696fba5d911",
+  "method": "svg-xml",
+  "status": "text-extracted",
+  "labels": [
+    {
+      "source": "什么是协议 (Protocol)",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "50",
+      "label_id": "L001",
+      "japanese": "プロトコル（Protocol）とは",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "节点 A",
+      "element": "text",
+      "id": null,
+      "x": "175",
+      "y": "275",
+      "label_id": "L002",
+      "japanese": "ノード A",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "节点 B",
+      "element": "text",
+      "id": null,
+      "x": "625",
+      "y": "275",
+      "label_id": "L003",
+      "japanese": "ノード B",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "协议",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "180",
+      "label_id": "L004",
+      "japanese": "プロトコル",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "数据格式约定",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "225",
+      "label_id": "L005",
+      "japanese": "データ形式の取り決め",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "数据交换流程约定",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "285",
+      "label_id": "L006",
+      "japanese": "データ交換手順の取り決め",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "角色约定",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "345",
+      "label_id": "L007",
+      "japanese": "役割の取り決め",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "协议定义了系统间通信的规则",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "420",
+      "label_id": "L008",
+      "japanese": "プロトコルはシステム間通信の規則を定義する",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "包括数据格式、交换流程和角色约定",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "450",
+      "label_id": "L009",
+      "japanese": "データ形式、交換手順、役割の取り決めを含む",
+      "translation_method": "agent-reviewed-label-translation"
+    },
+    {
+      "source": "协议是两个节点或系统之间数据传递格式的约定，也约定数据交换的流程和角色",
+      "element": "text",
+      "id": null,
+      "x": "400",
+      "y": "510",
+      "label_id": "L010",
+      "japanese": "プロトコルは、2つのノードまたはシステム間でデータを渡す形式の取り決めであり、データ交換の手順と役割も定める",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "all-extracted-svg-labels-agent-reviewed",
+  "translation_status": "all-svg-xml-labels-translated-technical-labels-retained"
+}

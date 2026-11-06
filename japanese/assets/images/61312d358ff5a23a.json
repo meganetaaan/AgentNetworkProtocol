@@ -1,0 +1,542 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page14.jpg",
+  "sha256": "61312d358ff5a23af1c844213597ba5c25886494d614f042341b2ea55019875e",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Agent Description Protocol(ADP)",
+      "confidence": 0.9903761090770844,
+      "box": [
+        [
+          36.0,
+          45.128570556640625
+        ],
+        [
+          1279.741943359375,
+          41.657142639160156
+        ],
+        [
+          1279.741943359375,
+          118.02857208251953
+        ],
+        [
+          36.0,
+          121.5
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ADP"
+      ]
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9909840226173401,
+      "box": [
+        [
+          2153.0322265625,
+          35.871429443359375
+        ],
+        [
+          2283.0966796875,
+          35.871429443359375
+        ],
+        [
+          2283.0966796875,
+          89.0999984741211
+        ],
+        [
+          2153.0322265625,
+          89.0999984741211
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "What is an Agent Description Protocol?",
+      "confidence": 0.9978967026660317,
+      "box": [
+        [
+          84.7741928100586,
+          302.0142822265625
+        ],
+        [
+          927.8709106445312,
+          302.0142822265625
+        ],
+        [
+          927.8709106445312,
+          355.24285888671875
+        ],
+        [
+          84.7741928100586,
+          355.24285888671875
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "What information does an agent description",
+      "confidence": 0.996521050021762,
+      "box": [
+        [
+          1261.1612548828125,
+          291.6000061035156
+        ],
+        [
+          2194.838623046875,
+          297.3857116699219
+        ],
+        [
+          2194.838623046875,
+          347.1428527832031
+        ],
+        [
+          1261.1612548828125,
+          341.3571472167969
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "document contain?",
+      "confidence": 0.9864930265090045,
+      "box": [
+        [
+          1262.322509765625,
+          356.3999938964844
+        ],
+        [
+          1665.290283203125,
+          356.3999938964844
+        ],
+        [
+          1665.290283203125,
+          398.0571594238281
+        ],
+        [
+          1262.322509765625,
+          398.0571594238281
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· Used to define the Agent Description Document.",
+      "confidence": 0.9754466898739338,
+      "box": [
+        [
+          81.29032135009766,
+          439.71429443359375
+        ],
+        [
+          973.1612548828125,
+          444.3428649902344
+        ],
+        [
+          973.1612548828125,
+          494.1000061035156
+        ],
+        [
+          81.29032135009766,
+          489.471435546875
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· An agent description includes the identity of the entity",
+      "confidence": 0.9775688113837406,
+      "box": [
+        [
+          1253.0322265625,
+          440.8714294433594
+        ],
+        [
+          2235.48388671875,
+          443.18572998046875
+        ],
+        [
+          2235.48388671875,
+          491.7857360839844
+        ],
+        [
+          1253.0322265625,
+          489.471435546875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "to which the agent belongs, the owner, authentication",
+      "confidence": 0.9831637447735049,
+      "box": [
+        [
+          1282.064453125,
+          510.3000183105469
+        ],
+        [
+          2221.54833984375,
+          510.3000183105469
+        ],
+        [
+          2221.54833984375,
+          555.4285888671875
+        ],
+        [
+          1282.064453125,
+          555.4285888671875
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· The agent description document can be seen as an",
+      "confidence": 0.9816287279129028,
+      "box": [
+        [
+          88.25806427001953,
+          534.6000366210938
+        ],
+        [
+          996.3870849609375,
+          536.914306640625
+        ],
+        [
+          996.3870849609375,
+          583.2000122070312
+        ],
+        [
+          88.25806427001953,
+          580.8857421875
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "methods, external interfaces, and public information",
+      "confidence": 0.9947763337538793,
+      "box": [
+        [
+          1284.3870849609375,
+          579.7285766601562
+        ],
+        [
+          2199.48388671875,
+          579.7285766601562
+        ],
+        [
+          2199.48388671875,
+          621.3857421875
+        ],
+        [
+          1284.3870849609375,
+          621.3857421875
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "entry point for the agent, similar to the homepage of a",
+      "confidence": 0.9879672213034196,
+      "box": [
+        [
+          117.29032135009766,
+          604.028564453125
+        ],
+        [
+          1066.064453125,
+          601.7142944335938
+        ],
+        [
+          1066.064453125,
+          646.8428955078125
+        ],
+        [
+          117.29032135009766,
+          649.1571655273438
+        ]
+      ],
+      "label_id": "L011",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "about the entity.",
+      "confidence": 0.9886365042013281,
+      "box": [
+        [
+          1282.064453125,
+          642.2142944335938
+        ],
+        [
+          1567.741943359375,
+          646.8428955078125
+        ],
+        [
+          1566.58056640625,
+          696.6000366210938
+        ],
+        [
+          1280.9031982421875,
+          691.971435546875
+        ]
+      ],
+      "label_id": "L012",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "website. Through this homepage, all aspects of the",
+      "confidence": 0.9892645275592804,
+      "box": [
+        [
+          118.45160675048828,
+          671.1428833007812
+        ],
+        [
+          1003.3547973632812,
+          669.9857177734375
+        ],
+        [
+          1003.3547973632812,
+          712.7999877929688
+        ],
+        [
+          118.45160675048828,
+          713.9571533203125
+        ]
+      ],
+      "label_id": "L013",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "websitecanbeaccessed.",
+      "confidence": 0.991824624084291,
+      "box": [
+        [
+          121.93547821044922,
+          739.414306640625
+        ],
+        [
+          550.4515991210938,
+          739.414306640625
+        ],
+        [
+          550.4515991210938,
+          774.1286010742188
+        ],
+        [
+          121.93547821044922,
+          774.1286010742188
+        ]
+      ],
+      "label_id": "L014",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· For example, if the agent represents a coffee shop, the",
+      "confidence": 0.9848696453529492,
+      "box": [
+        [
+          1250.7095947265625,
+          733.6286010742188
+        ],
+        [
+          2232.0,
+          734.7857055664062
+        ],
+        [
+          2232.0,
+          784.5428466796875
+        ],
+        [
+          1250.7095947265625,
+          783.3857421875
+        ]
+      ],
+      "label_id": "L015",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "publicly available information would include the",
+      "confidence": 0.9945205313464006,
+      "box": [
+        [
+          1279.741943359375,
+          804.2142944335938
+        ],
+        [
+          2144.903076171875,
+          800.7428588867188
+        ],
+        [
+          2144.903076171875,
+          845.8714599609375
+        ],
+        [
+          1279.741943359375,
+          849.3428955078125
+        ]
+      ],
+      "label_id": "L016",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "location, business hours, product list, purchase",
+      "confidence": 0.9825105505685011,
+      "box": [
+        [
+          1279.741943359375,
+          869.0142822265625
+        ],
+        [
+          2104.258056640625,
+          870.1714477539062
+        ],
+        [
+          2104.258056640625,
+          916.4571533203125
+        ],
+        [
+          1279.741943359375,
+          915.2999877929688
+        ]
+      ],
+      "label_id": "L017",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "interface, and other related details..",
+      "confidence": 0.9925447325957449,
+      "box": [
+        [
+          1282.064453125,
+          938.44287109375
+        ],
+        [
+          1903.354736328125,
+          939.6000366210938
+        ],
+        [
+          1903.354736328125,
+          977.7857055664062
+        ],
+        [
+          1282.064453125,
+          976.6286010742188
+        ]
+      ],
+      "label_id": "L018",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Agent Description Protocol(ADP)\n\n\n\n                                         What information does an agent description  What is an Agent Description Protocol?\n                                              document contain?\n\n   • Used to define the Agent Description Document.                  • An agent description includes the identity of the entity\n\n                                                                         to which the agent belongs, the owner, authentication\n   • The agent description document can be seen as an\n                                                              methods, external interfaces, and public information\n     entry point for the agent, similar to the homepage of a\n                                                                about the entity.\n    website. Through this homepage, all aspects of the\n\n    website can be accessed.                                             • For example, if the agent represents a coffee shop, the\n\n                                                                     publicly available information would include the\n\n                                                                          location, business hours, product list, purchase\n\n                                                                            interface, and other related details..",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L019",
+      "japanese": "Agent Description Protocol（ADP）\n\nエージェント記述プロトコルとは：\n- Agent Description Documentを定義するために使います。\n- エージェント記述文書は、Webサイトのホームページのように、エージェントへの入り口と見なせます。この入り口から、サイトのあらゆる側面にアクセスできます。\n\nエージェント記述文書に含まれる情報：\n- エージェントが属する実体のアイデンティティ、所有者、認証方法、外部インターフェース、その実体の公開情報。\n- 例えば、エージェントがコーヒーショップを代表する場合、公開情報には所在地、営業時間、商品一覧、購入インターフェースなどが含まれます。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.4157704000244848,
+    0.030017614364624023,
+    3.478367328643799
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 14,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-14",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.6868287037037037,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 14,
+    "manual_label_translations": {
+      "Agent Description Protocol(ADP)\n\n\n\n                                         What information does an agent description  What is an Agent Description Protocol?\n                                              document contain?\n\n   • Used to define the Agent Description Document.                  • An agent description includes the identity of the entity\n\n                                                                         to which the agent belongs, the owner, authentication\n   • The agent description document can be seen as an\n                                                              methods, external interfaces, and public information\n     entry point for the agent, similar to the homepage of a\n                                                                about the entity.\n    website. Through this homepage, all aspects of the\n\n    website can be accessed.                                             • For example, if the agent represents a coffee shop, the\n\n                                                                     publicly available information would include the\n\n                                                                          location, business hours, product list, purchase\n\n                                                                            interface, and other related details..": "Agent Description Protocol（ADP）\n\nエージェント記述プロトコルとは：\n- Agent Description Documentを定義するために使います。\n- エージェント記述文書は、Webサイトのホームページのように、エージェントへの入り口と見なせます。この入り口から、サイトのあらゆる側面にアクセスできます。\n\nエージェント記述文書に含まれる情報：\n- エージェントが属する実体のアイデンティティ、所有者、認証方法、外部インターフェース、その実体の公開情報。\n- 例えば、エージェントがコーヒーショップを代表する場合、公開情報には所在地、営業時間、商品一覧、購入インターフェースなどが含まれます。"
+    },
+    "additional_labels": [
+      {
+        "source": "Agent Description Protocol(ADP)\n\n\n\n                                         What information does an agent description  What is an Agent Description Protocol?\n                                              document contain?\n\n   • Used to define the Agent Description Document.                  • An agent description includes the identity of the entity\n\n                                                                         to which the agent belongs, the owner, authentication\n   • The agent description document can be seen as an\n                                                              methods, external interfaces, and public information\n     entry point for the agent, similar to the homepage of a\n                                                                about the entity.\n    website. Through this homepage, all aspects of the\n\n    website can be accessed.                                             • For example, if the agent represents a coffee shop, the\n\n                                                                     publicly available information would include the\n\n                                                                          location, business hours, product list, purchase\n\n                                                                            interface, and other related details..",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Agent Description Protocol(ADP)",
+      "ANP",
+      "What is an Agent Description Protocol?",
+      "What information does an agent description",
+      "document contain?",
+      "· Used to define the Agent Description Document.",
+      "· An agent description includes the identity of the entity",
+      "to which the agent belongs, the owner, authentication",
+      "· The agent description document can be seen as an",
+      "methods, external interfaces, and public information",
+      "entry point for the agent, similar to the homepage of a",
+      "about the entity.",
+      "website. Through this homepage, all aspects of the",
+      "websitecanbeaccessed.",
+      "· For example, if the agent represents a coffee shop, the",
+      "publicly available information would include the",
+      "location, business hours, product list, purchase",
+      "interface, and other related details.."
+    ],
+    "source_sha256": "61312d358ff5a23af1c844213597ba5c25886494d614f042341b2ea55019875e"
+  }
+}

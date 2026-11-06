@@ -1,0 +1,333 @@
+{
+  "source": "blogs/images/anp-in-w3c-20250214/page19.jpg",
+  "sha256": "0a5dfc07401f1118d3269d9a87429ddf247d49e76582647b368eb00cecdae27a",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Others",
+      "confidence": 0.996682475010554,
+      "box": [
+        [
+          37.16128921508789,
+          38.18571472167969
+        ],
+        [
+          290.32257080078125,
+          47.4428596496582
+        ],
+        [
+          288.0,
+          119.18571472167969
+        ],
+        [
+          34.838706970214844,
+          109.92857360839844
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "ANP",
+      "confidence": 0.9698982636133829,
+      "box": [
+        [
+          2154.193603515625,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          37.02857208251953
+        ],
+        [
+          2281.935302734375,
+          86.78571319580078
+        ],
+        [
+          2154.193603515625,
+          86.78571319580078
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ANP"
+      ]
+    },
+    {
+      "source": "· Supporting ADP during LLM training: ADs specifications, along with",
+      "confidence": 0.9733114268849877,
+      "box": [
+        [
+          393.6773986816406,
+          302.0142822265625
+        ],
+        [
+          1908.0,
+          302.0142822265625
+        ],
+        [
+          1908.0,
+          351.77142333984375
+        ],
+        [
+          393.6773986816406,
+          351.77142333984375
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "ADP",
+        "LLM"
+      ]
+    },
+    {
+      "source": "examples and interfaces from various industries, can be incorporated",
+      "confidence": 0.9863334604922462,
+      "box": [
+        [
+          420.3870849609375,
+          372.6000061035156
+        ],
+        [
+          1885.9354248046875,
+          372.6000061035156
+        ],
+        [
+          1885.9354248046875,
+          421.20001220703125
+        ],
+        [
+          420.3870849609375,
+          421.20001220703125
+        ]
+      ],
+      "label_id": "L004",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription"
+    },
+    {
+      "source": "into the LLM through training data or fine-tuning. This enhances the",
+      "confidence": 0.9965309211436439,
+      "box": [
+        [
+          413.4193420410156,
+          438.5571594238281
+        ],
+        [
+          1849.9354248046875,
+          439.71429443359375
+        ],
+        [
+          1849.9354248046875,
+          492.94287109375
+        ],
+        [
+          413.4193420410156,
+          491.7857360839844
+        ]
+      ],
+      "label_id": "L005",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "LLM"
+      ]
+    },
+    {
+      "source": "LLM's speed and accuracy in processing ADP and reduces the length",
+      "confidence": 0.9852853041428786,
+      "box": [
+        [
+          418.06451416015625,
+          510.3000183105469
+        ],
+        [
+          1892.9031982421875,
+          510.3000183105469
+        ],
+        [
+          1892.9031982421875,
+          563.528564453125
+        ],
+        [
+          418.06451416015625,
+          563.528564453125
+        ]
+      ],
+      "label_id": "L006",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "LLM",
+        "ADP"
+      ]
+    },
+    {
+      "source": "of prompts required.",
+      "confidence": 0.9646277844905853,
+      "box": [
+        [
+          416.9031982421875,
+          582.0428466796875
+        ],
+        [
+          847.7418823242188,
+          579.7285766601562
+        ],
+        [
+          847.7418823242188,
+          634.1143188476562
+        ],
+        [
+          416.9031982421875,
+          636.4285888671875
+        ]
+      ],
+      "label_id": "L007",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "· Agents can independently define and upload AD document examples",
+      "confidence": 0.9829540225175711,
+      "box": [
+        [
+          393.6773986816406,
+          673.4571533203125
+        ],
+        [
+          1887.0966796875,
+          673.4571533203125
+        ],
+        [
+          1887.0966796875,
+          726.6857299804688
+        ],
+        [
+          393.6773986816406,
+          726.6857299804688
+        ]
+      ],
+      "label_id": "L008",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": [
+        "AD"
+      ]
+    },
+    {
+      "source": "for reference by other agents. The specification examples defined by",
+      "confidence": 0.9899335792836021,
+      "box": [
+        [
+          413.4193420410156,
+          742.8857421875
+        ],
+        [
+          1872.0,
+          744.0428466796875
+        ],
+        [
+          1872.0,
+          793.7999877929688
+        ],
+        [
+          413.4193420410156,
+          792.6428833007812
+        ]
+      ],
+      "label_id": "L009",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "agents may surpass those defined by humans.",
+      "confidence": 0.98997563123703,
+      "box": [
+        [
+          419.2257995605469,
+          818.1000366210938
+        ],
+        [
+          1412.1290283203125,
+          813.471435546875
+        ],
+        [
+          1412.1290283203125,
+          862.0714721679688
+        ],
+        [
+          419.2257995605469,
+          866.7000122070312
+        ]
+      ],
+      "label_id": "L010",
+      "japanese": "不完全な原OCR断片。対応する領域の手動文字起こし・対訳ラベルを参照。",
+      "translation_method": "superseded-by-visually-reviewed-manual-transcription",
+      "protected_tokens": []
+    },
+    {
+      "source": "Others\n\n\n\n\n                     • Supporting ADP during LLM training: ADs specifications, along with\n               examples and interfaces from various industries, can be incorporated\n                    into the LLM through training data or fine-tuning. This enhances the\n               LLM's speed and accuracy in processing ADP and reduces the length\n                   of prompts required.\n\n                     • Agents can independently define and upload AD document examples\n                     for reference by other agents. The specification examples defined by\n                agents may surpass those defined by humans.",
+      "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained",
+      "extraction_method": "manual-visual-addition",
+      "label_id": "L011",
+      "japanese": "その他\n\n- LLMの学習時にADPを取り込む：ADの仕様と、各業界の例やインターフェースを、学習データやファインチューニングを通じてLLMに組み込めます。これにより、LLMによるADP処理の速度と精度が上がり、必要なプロンプトの長さを減らせます。\n- エージェントが自分でAD文書の例を定義・アップロードし、他のエージェントが参照できます。エージェントの定義する仕様例が、人間の定義したものを上回る可能性があります。",
+      "translation_method": "agent-reviewed-label-translation"
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    1.5292962999665178,
+    0.01200413703918457,
+    3.1807210445404053
+  ],
+  "related_japanese_document": {
+    "source_document": "blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf",
+    "page": 19,
+    "href": "../documents/blogs/ANP-Presentation-at-W3C-WebAgents-cg.pdf.ja.md#ページ-19",
+    "comparison": "mean-absolute-RGB-difference-at-320x180",
+    "mean_absolute_rgb_difference": 1.4316261574074074,
+    "status": "near-identical-layout-reference-not-full-image-label-review"
+  },
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {},
+    "source_note": "元JPEGを目視し、同番号PDFの本文と手動日本語訳との対応を照合。原OCRの不完全な断片は保持し、PDFテキスト層を再利用した対応本文と、図中文字の手動対訳を追加した。これは当時の発表の主張の翻訳であり、現在の仕様・実装・製品状況に書き換えていない。",
+    "matching_pdf_page_visually_confirmed": true,
+    "review_scope": "all-visible-human-prose-and-readable-diagram-labels",
+    "matching_pdf_page": 19,
+    "manual_label_translations": {
+      "Others\n\n\n\n\n                     • Supporting ADP during LLM training: ADs specifications, along with\n               examples and interfaces from various industries, can be incorporated\n                    into the LLM through training data or fine-tuning. This enhances the\n               LLM's speed and accuracy in processing ADP and reduces the length\n                   of prompts required.\n\n                     • Agents can independently define and upload AD document examples\n                     for reference by other agents. The specification examples defined by\n                agents may surpass those defined by humans.": "その他\n\n- LLMの学習時にADPを取り込む：ADの仕様と、各業界の例やインターフェースを、学習データやファインチューニングを通じてLLMに組み込めます。これにより、LLMによるADP処理の速度と精度が上がり、必要なプロンプトの長さを減らせます。\n- エージェントが自分でAD文書の例を定義・アップロードし、他のエージェントが参照できます。エージェントの定義する仕様例が、人間の定義したものを上回る可能性があります。"
+    },
+    "additional_labels": [
+      {
+        "source": "Others\n\n\n\n\n                     • Supporting ADP during LLM training: ADs specifications, along with\n               examples and interfaces from various industries, can be incorporated\n                    into the LLM through training data or fine-tuning. This enhances the\n               LLM's speed and accuracy in processing ADP and reduces the length\n                   of prompts required.\n\n                     • Agents can independently define and upload AD document examples\n                     for reference by other agents. The specification examples defined by\n                agents may surpass those defined by humans.",
+        "location": "corresponding PDF page text layer, visually matched to JPEG; original whitespace retained"
+      }
+    ],
+    "superseded_ocr_labels": [
+      "Others",
+      "ANP",
+      "· Supporting ADP during LLM training: ADs specifications, along with",
+      "examples and interfaces from various industries, can be incorporated",
+      "into the LLM through training data or fine-tuning. This enhances the",
+      "LLM's speed and accuracy in processing ADP and reduces the length",
+      "of prompts required.",
+      "· Agents can independently define and upload AD document examples",
+      "for reference by other agents. The specification examples defined by",
+      "agents may surpass those defined by humans."
+    ],
+    "source_sha256": "0a5dfc07401f1118d3269d9a87429ddf247d49e76582647b368eb00cecdae27a"
+  }
+}

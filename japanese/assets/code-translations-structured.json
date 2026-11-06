@@ -1,0 +1,2547 @@
+{
+  "source_commit": "0837cfdfaf4ddcf834f0890ddaf34fc4c824e066",
+  "scope": "JSON/YAML/Python candidate units only; translation sidecar, originals not modified",
+  "unit_count": 315,
+  "units": [
+    {
+      "id": "40e405dc5bf74a608dce",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/name",
+      "original": "Bug Report | 错误报告",
+      "translation": "不具合報告",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "03436490d5fe4275249e",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/description",
+      "original": "Report a bug you encountered during use | 报告使用过程中遇到的问题",
+      "translation": "使用中に見つけた不具合を報告します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "92e34f455a0b0e98d357",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/0/attributes/value",
+      "original": "🐞 Thank you for reporting a bug! | 感谢你提交 Bug 报告！\n\nPlease help us by filling out the following fields as completely as possible. Incomplete bug reports may be **closed** if we cannot reproduce the problem. | 请尽量完整地填写以下内容，否则我们可能无法复现该问题，导致该 issue 被 **关闭**。\n",
+      "translation": "🐞 不具合を報告してくださりありがとうございます！\n\n以下の項目をできる限り詳しく記入してください。情報が不十分で問題を再現できない報告は、**クローズ**する場合があります。\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "568edf33fd38ed1ad68d",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/1/attributes/value",
+      "original": "## 🧩 Bug Details | Bug 详情\n\nDescribe the bug you encountered. You may attach screenshots, relevant code, stack traces, etc., to help developers track down the issue. | 描述你遇到的 Bug，可以附上截图、相关代码或堆栈信息以帮助定位问题。\n",
+      "translation": "## 🧩 不具合の詳細\n\n発生した不具合を説明してください。問題の特定に役立つスクリーンショット、関連コード、スタックトレースなどを添付できます。\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "693b6447340b34e6b8f4",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/2/attributes/label",
+      "original": "Error Information | 错误信息",
+      "translation": "エラー情報",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "aa53fc506a804e44923f",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/2/attributes/description",
+      "original": "Error messages you encountered | 你遇到的报错信息",
+      "translation": "発生したエラーメッセージ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "560765069a3e77a165ef",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/3/attributes/label",
+      "original": "Steps to Reproduce | 重现步骤",
+      "translation": "再現手順",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6c2a1471b07e3a102bb1",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/3/attributes/description",
+      "original": "Please list the steps to reproduce the bug | 请列出重现该问题的步骤",
+      "translation": "不具合を再現する手順を列挙してください。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6120f4edced96c07b277",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/4/attributes/label",
+      "original": "Related Code | 相关代码",
+      "translation": "関連コード",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f0f6cdcceac7cc845736",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/4/attributes/description",
+      "original": "The relevant code where the error occurred (please hide any sensitive info) | 出现错误的代码片段（请确保去除敏感信息）",
+      "translation": "エラーが発生した関連コードの断片（機密情報は除いてください）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5789f9826af253cf5871",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/5/attributes/label",
+      "original": "Stack Trace | 堆栈信息",
+      "translation": "スタックトレース",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "bc9a1573681752f24b00",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/5/attributes/description",
+      "original": "Paste the stack trace here if available | 如果有，请粘贴完整堆栈信息",
+      "translation": "利用できる場合は、完全なスタックトレースを貼り付けてください。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6f240421ac48bd1af095",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/6/attributes/label",
+      "original": "Python Version | Python 版本",
+      "translation": "Pythonのバージョン",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4f1d05e7618adcc28362",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/6/attributes/description",
+      "original": "The version of Python you are currently using | 当前使用的 Python 版本",
+      "translation": "現在使っているPythonのバージョン",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6f806a73988f75edb599",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/7/attributes/label",
+      "original": "Runtime Environment | 运行环境",
+      "translation": "実行環境",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8926ba14b29e15f6a2c5",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/7/attributes/description",
+      "original": "The operating system where the issue occurred | 出现问题的运行系统",
+      "translation": "問題が発生したオペレーティングシステム",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "756222042e8d179eca9a",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/8/attributes/label",
+      "original": "Additional Information | 其他补充信息",
+      "translation": "追加情報",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "00e970801bc38ab90785",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/8/attributes/description",
+      "original": "Any other context, screenshots, logs or suggestions | 其他上下文信息、截图、日志或建议",
+      "translation": "その他の背景情報、スクリーンショット、ログ、提案",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a95b700f38f7aad4c22c",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/9/attributes/label",
+      "original": "Final Check | 最后检查",
+      "translation": "最終確認",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ea5e11691ff634f9b0bf",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/9/attributes/description",
+      "original": "Please review your answers before submitting | 提交前请确认以下事项",
+      "translation": "送信前に、回答内容を確認してください。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6ab4489ad3bb15a4aabe",
+      "source": ".github/ISSUE_TEMPLATE/bug.yml",
+      "locator": "/body/9/attributes/options/0/label",
+      "original": "I believe the above description is detailed enough to allow developers to reproduce the issue. If not, I understand it may be **closed**. | 我相信以上描述足够详细，能够帮助开发者复现问题。如不满足要求，我理解该问题可能会被 **关闭**。",
+      "translation": "上記の説明は、開発者が問題を再現できるほど十分に詳しいと考えています。不十分な場合、問題が**クローズ**されることを理解しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "129c65ed06f123073152",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/name",
+      "original": "Feature Request | 功能请求",
+      "translation": "機能の要望",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "cc6dd0203e9ff4db6385",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/description",
+      "original": "Use this template to submit feature requests | 使用此模板提交功能请求",
+      "translation": "このテンプレートを使って機能の要望を提出します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0e4596ecff76a2c5984c",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/0/attributes/value",
+      "original": "🙏 Thank you for submitting a feature request! | 感谢你提交功能请求！\n\nPlease help us by filling out the following fields as completely as possible. | 请尽可能完整地填写以下字段。\n\n⚠️ Incomplete feature requests may be **closed** if we cannot understand or implement them clearly. | 如果功能请求描述不清楚，可能会被直接 **关闭**。\n",
+      "translation": "🙏 機能の要望を提出してくださりありがとうございます！\n\n以下の項目を、できる限り詳しく記入してください。\n\n⚠️ 内容を明確に理解できない、または実装できない不十分な要望は、**クローズ**する場合があります。\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3ddcfed4dd8d2607e00a",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/1/attributes/label",
+      "original": "Feature Description | 功能描述",
+      "translation": "機能の説明",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "fb1265a5dd3404b23ac8",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/1/attributes/description",
+      "original": "Describe the feature you are requesting | 描述你希望实现的功能",
+      "translation": "実現してほしい機能を説明してください。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "452b514952cdd639b8c3",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/2/attributes/label",
+      "original": "Motivation | 动机",
+      "translation": "動機",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "fb61f4089cff759b1505",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/2/attributes/description",
+      "original": "Why do you need this feature? What problem does it solve or what value does it add? | 为什么你需要这个功能？它解决了什么问题或带来了什么价值？",
+      "translation": "この機能が必要な理由は何ですか。どの問題を解決し、どんな価値を加えますか。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ade4fa337138d9b57a50",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/3/attributes/label",
+      "original": "Expected Outcome | 期望结果",
+      "translation": "期待する結果",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ba0f4d03dec4c6dbea39",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/3/attributes/description",
+      "original": "What is the desired effect or behavior of the feature? | 你期望这个功能达到什么效果？",
+      "translation": "この機能に期待する効果や動作は何ですか。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "414b4c74478be14f37a9",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/4/attributes/label",
+      "original": "Supporting Materials | 辅助材料",
+      "translation": "補足資料",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9c1bd2ded487d09a828e",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/4/attributes/description",
+      "original": "Optional screenshots, sketches, or code snippets that help explain your request | 可选：截图、草图或代码片段，帮助说明你的请求",
+      "translation": "要望の説明に役立つスクリーンショット、スケッチ、コード断片（任意）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "76859d02a2658911463e",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/5/attributes/label",
+      "original": "Final Check | 最后检查",
+      "translation": "最終確認",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9225ac76028bc96cbdf3",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/5/attributes/description",
+      "original": "Review your answers before submission | 提交前请检查你的回答",
+      "translation": "送信前に、回答を確認してください。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a7e8aa66591f530b1970",
+      "source": ".github/ISSUE_TEMPLATE/feature.yml",
+      "locator": "/body/5/attributes/options/0/label",
+      "original": "I believe the above description is detailed enough to allow developers to implement the feature. If not, I understand it may be **closed**. | 我相信以上描述足够详细，能让开发者理解并实现该功能。如不满足要求，我理解该请求可能会被**关闭**。",
+      "translation": "上記の説明は、開発者が機能を理解して実装できるほど十分に詳しいと考えています。不十分な場合、要望が**クローズ**されることを理解しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "dc71b739704daaa7af0f",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "/name",
+      "original": "Update contributor avatars",
+      "translation": "貢献者のアバターを更新",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5cba2c992c969c306344",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "/jobs/update/steps/1/name",
+      "original": "Update README contributor blocks",
+      "translation": "READMEの貢献者ブロックを更新",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f968fd5c19f36ec74b58",
+      "source": ".github/workflows/update-contributors.yml",
+      "locator": "/jobs/update/steps/2/name",
+      "original": "Open or update contributor pull request",
+      "translation": "貢献者更新のプルリクエストを作成または更新",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d5915a0dc2a7a445afbe",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/name",
+      "original": "Hotel Booking Agent",
+      "translation": "Hotel Booking Agent（ホテル予約エージェント）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "aa090f70addd4c3042e8",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/owner/name",
+      "original": "Hotel Chain Group",
+      "translation": "Hotel Chain Group（ホテルチェーングループ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1ddda2e4180c97e77626",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/description",
+      "original": "An intelligent hotel booking agent providing comprehensive hotel information, room availability, and booking services.",
+      "translation": "ホテルの総合情報、客室の空き状況、予約サービスを提供する知的なホテル予約エージェント。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4accbaf0aaa06ef2b96c",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/name",
+      "original": "滁州港汇喜来登酒店",
+      "translation": "滁州港汇喜来登酒店（シェラトン滁州ホテル）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "2580243e7b3e4b31105b",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/description",
+      "original": "滁州港汇喜来登酒店是喜达屋酒店及度假村国际集团旗下的喜来登品牌在滁州市的一家酒店。酒店位于滁州政治、商业和文化中心，毗邻滁州市政府，距离滁州高铁站仅5公里，距离南京也仅40分钟车程。",
+      "translation": "滁州港汇喜来登酒店は、スターウッド・ホテル＆リゾート・ワールドワイドのSheratonブランドの、滁州市にあるホテルです。滁州の政治・商業・文化の中心に位置し、滁州市政府に隣接しています。滁州の高速鉄道駅からわずか5キロメートル、南京からも車でわずか40分です。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "690966eec0b0d32ed052",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/address/streetAddress",
+      "original": "中都大道1599号",
+      "translation": "中都大道1599号",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9b30341b87aa12e28b6e",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/address/addressLocality",
+      "original": "滁州",
+      "translation": "滁州",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "14e3085cc66e6361b702",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/address/addressRegion",
+      "original": "安徽省",
+      "translation": "安徽省",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "819c9fb0b19af3cca696",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/starRating/alternateName",
+      "original": "豪华型",
+      "translation": "高級タイプ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "155be4db4371bba69531",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/image/0/caption",
+      "original": "滁州港汇喜来登酒店 - 行政套房",
+      "translation": "滁州港汇喜来登酒店 — エグゼクティブスイート",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5b03b3706efeb40a44d8",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/image/0/description",
+      "original": "豪华行政套房配备高档家具和设施，为商务和休闲旅客提供舒适优雅的住宿体验",
+      "translation": "高級な家具と設備を備えた豪華なエグゼクティブスイートで、ビジネス客にも観光客にも快適で優雅な滞在を提供します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "16693d14fc0bb0125085",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/image/1/caption",
+      "original": "滁州港汇喜来登酒店 - 豪华客房",
+      "translation": "滁州港汇喜来登酒店 — デラックス客室",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a6b2f9dec4c104c7e30b",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/image/1/description",
+      "original": "宽敞明亮的豪华客房，配备现代化设施，为宾客提供舒适的入住体验",
+      "translation": "広く明るいデラックス客室に近代的な設備を備え、快適な滞在を提供します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "575c02a0f7f480702935",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/image/2/caption",
+      "original": "滁州港汇喜来登酒店 - 行政酒廊",
+      "translation": "滁州港汇喜来登酒店 — エグゼクティブラウンジ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d8ce6a780681e2c41e2a",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/image/2/description",
+      "original": "位于酒店高层的行政酒廊，为行政楼层客人提供专属休息和商务空间",
+      "translation": "ホテルの高層階にあるエグゼクティブラウンジで、エグゼクティブフロアの宿泊客に専用の休憩・業務スペースを提供します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "fddeb2994a2e03c3f743",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/amenityFeature/0/name",
+      "original": "残疾人客房",
+      "translation": "バリアフリー客室",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b67ec716cf8da16d8a26",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/amenityFeature/1/name",
+      "original": "大堂吧",
+      "translation": "ロビーバー",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "015bee071d2e143507c6",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/amenityFeature/2/name",
+      "original": "行政楼层",
+      "translation": "エグゼクティブフロア",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a8edc0fd9064b31684dd",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/amenityFeature/3/name",
+      "original": "健身室",
+      "translation": "フィットネスルーム",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "aaa3cbab8a3847027ce6",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/amenityFeature/4/name",
+      "original": "自动取款机",
+      "translation": "現金自動預払機（ATM）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "fb5709241cc8419cd049",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/amenityFeature/5/name",
+      "original": "餐厅",
+      "translation": "レストラン",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "c1f896fb48ad171149a9",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/makesOffer/0/itemOffered/name",
+      "original": "24小时前台服务",
+      "translation": "24時間のフロントサービス",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8b7426e1646ba6cf86f1",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/makesOffer/1/itemOffered/name",
+      "original": "商务服务",
+      "translation": "ビジネスサービス",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "15f87fc350a9ad9eb18e",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/makesOffer/2/itemOffered/name",
+      "original": "邮政服务",
+      "translation": "郵便サービス",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "21961e4166806d4c95d3",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/domainEntity/makesOffer/3/itemOffered/name",
+      "original": "快速办理入住/退房手续",
+      "translation": "迅速なチェックイン／チェックアウト",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b5190d8cda7715f023f8",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/Infomations/0/description",
+      "original": "Hotel room details, rates, availability, and booking conditions.",
+      "translation": "ホテル客室の詳細、料金、空き状況、予約条件。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8aa73749c0fdd68f7954",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/interfaces/0/description",
+      "original": "A YAML file for searching and filtering hotel information, such as room information, price information, etc.",
+      "translation": "客室情報や料金情報など、ホテル情報を検索・絞り込みするためのYAMLファイル。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a18f726735ce94a48fc4",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/interfaces/1/description",
+      "original": "A YAML file for hotel room booking and reservation management.",
+      "translation": "ホテル客室の予約と予約管理のためのYAMLファイル。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "be5e88a573977d98c073",
+      "source": "examples/adp/hotel/examples/ad.json",
+      "locator": "/interfaces/2/description",
+      "original": "A YAML file for interacting with the intelligent agent through natural language.",
+      "translation": "自然言語で知的エージェントとやり取りするためのYAMLファイル。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "24f9f8418e2efa5e002a",
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "locator": "/interface/description",
+      "original": "用于预订指定的商品或服务",
+      "translation": "指定した商品またはサービスを予約するために使用します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "86122f50e1a67d19b536",
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "locator": "/interface/endpoints/0/description",
+      "original": "预订操作",
+      "translation": "予約操作",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "718905cab9abb1e60c4f",
+      "source": "examples/adp/hotel/examples/api/booking-interface.yaml",
+      "locator": "/interface/endpoints/0/parameters/0/description",
+      "original": "指定商品或服务在描述文档中的identifier",
+      "translation": "指定する商品またはサービスの、説明文書内のidentifier。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "22061fcef52d3f44ebb9",
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "locator": "/interface/description",
+      "original": "用于通过自然语言与智能代理交互的接口。",
+      "translation": "自然言語で知的エージェントとやり取りするためのインターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7cc0c38ff7c3dde7ca90",
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "locator": "/interface/endpoints/0/description",
+      "original": "使用自然语言提问并获取自然语言回答，支持SSE返回。",
+      "translation": "自然言語で質問して自然言語の回答を取得します。SSEによる応答に対応します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "adfae876abc7cf215d9f",
+      "source": "examples/adp/hotel/examples/api/nl-interface.yaml",
+      "locator": "/interface/endpoints/0/response/description",
+      "original": "自然语言回答，支持SSE返回。",
+      "translation": "自然言語による回答。SSEによる応答に対応します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a6d3126bac6033bdb692",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/info/title",
+      "original": "Hotel Room Search Interface",
+      "translation": "ホテル客室検索インターフェース",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e98c3171e8ac8bc399c0",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/info/description",
+      "original": "This API allows searching for available hotel rooms based on check-in and check-out dates.\nThe response can contain a URL to an ANP Product document or the product data directly.\n",
+      "translation": "このAPIは、チェックイン日とチェックアウト日に基づいて、空いているホテル客室を検索できます。\n応答には、ANP Product文書のURL、または商品データ自体を含められます。\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5131136efc85ecfca4ec",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/summary",
+      "original": "Search available hotel rooms",
+      "translation": "空いているホテル客室を検索",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "61dbee390dfa4cf77b6f",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/requestBody/content/application~1json/schema/properties/checkInDate/description",
+      "original": "Required. Check-in date in yyyy-MM-dd format",
+      "translation": "必須。yyyy-MM-dd形式のチェックイン日。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "87f77b4ce27a6f925998",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/requestBody/content/application~1json/schema/properties/checkOutDate/description",
+      "original": "Required. Check-out date in yyyy-MM-dd format",
+      "translation": "必須。yyyy-MM-dd形式のチェックアウト日。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "65fcc4832095a509ea9e",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/responses/200/description",
+      "original": "A successful response containing either a URL to hotel room details or the product data itself.",
+      "translation": "ホテル客室の詳細のURL、または商品データ自体を含む成功応答。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8c7f9186e0044ca599b0",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/responses/200/content/application~1json/schema/properties/urls/description",
+      "original": "URLs to ANP Product documents containing hotel room data",
+      "translation": "ホテル客室データを含むANP Product文書のURL。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d4b39159114a22d14b69",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/responses/200/content/application~1json/schema/properties/data/description",
+      "original": "Hotel room data using the ANP Product document format",
+      "translation": "ANP Product文書形式を使ったホテル客室データ。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "30f65da9259513fa67af",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/paths/~1agents~1hotel~1api~1search/post/responses/400/description",
+      "original": "The check-in or check-out date is missing or invalid.",
+      "translation": "チェックイン日またはチェックアウト日が指定されていないか、無効です。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "212bbc6828ee1fa6be9c",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/securitySchemes/didwba_sc/description",
+      "original": "DID-WBA authentication using the Authorization header.",
+      "translation": "Authorizationヘッダーを使うDID-WBA認証。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e088c305023c995bc0b2",
+      "source": "examples/adp/hotel/examples/api/search-interface.yaml",
+      "locator": "/components/schemas/HotelRoom/description",
+      "original": "Hotel room data using the ANP Product document format.",
+      "translation": "ANP Product文書形式を使ったホテル客室データ。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b54dd37f669ff9b327a6",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/name",
+      "original": "Deluxe Ocean View Room",
+      "translation": "Deluxe Ocean View Room（デラックス・オーシャンビュー客室）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "920af20a70e9cdf7e501",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/description",
+      "original": "Spacious deluxe room with breathtaking ocean views, featuring modern amenities and elegant design.",
+      "translation": "息をのむような海の眺めを楽しめる、広々としたデラックス客室。近代的な設備と優雅なデザインを備えています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "cecb04675006be61ffec",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/image/0/caption",
+      "original": "豪华海景房 - 全景",
+      "translation": "豪华海景房（デラックス・オーシャンビュー客室） — 全景",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3da3f4067d5580289b05",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/image/0/description",
+      "original": "Luxurious room featuring floor-to-ceiling windows with panoramic ocean views",
+      "translation": "床から天井までの窓から、海のパノラマを望める豪華な客室。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "bdaf0cf79d8d3ed5c8af",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/image/1/caption",
+      "original": "豪华海景房 - 卧室",
+      "translation": "豪华海景房（デラックス・オーシャンビュー客室） — 寝室",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9656a671e153dcfbec4e",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/image/1/description",
+      "original": "Bedroom with king-size bed and premium bedding",
+      "translation": "キングサイズベッドと上質な寝具を備えた寝室。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8a88ba63338d8f8af114",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/name",
+      "original": "标准价",
+      "translation": "標準料金",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0d2cac08b5ce3934f4c1",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/paymentMethod/name",
+      "original": "Prepayment required",
+      "translation": "前払いが必要",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8ea544594040b32c6ad8",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/addOn/description",
+      "original": "含2份免费早餐",
+      "translation": "無料朝食2名分を含む",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "2efa29869963082d31bc",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/seller/name",
+      "original": "Sheraton Chuzhou Hotel",
+      "translation": "Sheraton Chuzhou Hotel（シェラトン滁州ホテル）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6c02d338de8ccb03e5df",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/termsOfService/name",
+      "original": "限时取消",
+      "translation": "期限付きのキャンセル",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9bcf69a0b7e676b742dd",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/offers/termsOfService/cancelationPolicy/description",
+      "original": "入住日18:00前可免费取消",
+      "translation": "宿泊当日の18:00前まで無料でキャンセルできます。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f2b52177a9c7e55117cc",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/amenityFeature/0/name",
+      "original": "Room Size",
+      "translation": "客室面積",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d9fca907f069a24e80c7",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/amenityFeature/0/value",
+      "original": "45 square meters",
+      "translation": "45平方メートル",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "98e5108971aeb4d02aa3",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/amenityFeature/1/value",
+      "original": "Ocean View",
+      "translation": "オーシャンビュー",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "113e45f58f8813737446",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/amenityFeature/2/value",
+      "original": "En-suite bathroom with separate shower and bathtub",
+      "translation": "独立したシャワーとバスタブを備えた専用バスルーム",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d5d857497face90a51c7",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/containedInPlace/name",
+      "original": "Sheraton Chuzhou Hotel",
+      "translation": "Sheraton Chuzhou Hotel（シェラトン滁州ホテル）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "bf201acd47b4b0bf4a43",
+      "source": "examples/adp/hotel/examples/hotel_room.json",
+      "locator": "/containedInPlace/address/streetAddress",
+      "original": "No. 299 Qingliu North Road",
+      "translation": "清流北路299号（No. 299 Qingliu North Road）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e49598e82b58a41e7afb",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/name",
+      "original": "Luckin Coffee Agent",
+      "translation": "Luckin Coffee Agent（Luckin Coffeeのエージェント）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ef07f7b62e438ed2df00",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/owner/name",
+      "original": "Luckin Coffee",
+      "translation": "Luckin Coffee",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "73c4e89e90d798aebbf0",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/description",
+      "original": "Luckin Coffee's intelligent agent providing product information and customization options.",
+      "translation": "商品情報とカスタマイズの選択肢を提供する、Luckin Coffeeの知的エージェント。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5ebae7c8bf368be8f4f0",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/domainEntity/name",
+      "original": "Luckin Coffee",
+      "translation": "Luckin Coffee",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4e5cd3891e14ac91646c",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/domainEntity/address/streetAddress",
+      "original": "XX Road No.XX",
+      "translation": "XX Road No.XX（XX通りXX番地）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ff2dba169a291ca0976e",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/domainEntity/address/addressLocality",
+      "original": "Some City",
+      "translation": "Some City（例示用の都市名）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f14eeae10e8a7fa86721",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/domainEntity/address/addressRegion",
+      "original": "Some Province",
+      "translation": "Some Province（例示用の省名）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1287153478156a97873a",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/Infomations/0/name",
+      "original": "Silk Latte",
+      "translation": "Silk Latte（シルクラテ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ba253e05fc472e9661ec",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/Infomations/0/description",
+      "original": "Made with high-quality milk source, providing a silky smooth taste, suitable for consumers pursuing health and taste.",
+      "translation": "高品質のミルクを使い、絹のようになめらかな口当たりを提供します。健康と味わいを求める消費者に適しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0351934c43a4b8432553",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/Infomations/1/name",
+      "original": "Orange C Americano",
+      "translation": "Orange C Americano（オレンジCアメリカーノ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9404a66da7c00116d15d",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/Infomations/1/description",
+      "original": "Niche fruit aroma paired with rich coffee, suitable for consumers seeking freshness and unique flavors.",
+      "translation": "珍しい果実の香りと濃厚なコーヒーを組み合わせた、新鮮さや独特な風味を求める消費者向けの商品。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "235776ec7880bc0b9908",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/Infomations/2/name",
+      "original": "Roasted Coconut Latte",
+      "translation": "Roasted Coconut Latte（ローストココナッツラテ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "c1b66f9f72f3f51274d0",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/Infomations/2/description",
+      "original": "Roasted at around 135°C, featuring unique coconut sugar flavor, perfect for winter consumption. This beverage combines coconut juice and roasted coconut bits, offering a healthy choice with five 'zero' features, using master-crafted Espresso from IIAC gold medal coffee beans.",
+      "translation": "約135°Cでローストし、独特のココナッツシュガーの風味を引き出した、冬に適した飲み物です。ココナッツの果汁とローストしたココナッツ片を組み合わせ、五つの「ゼロ」の特徴を持つ健康的な選択肢を提供します。IIAC金賞受賞のコーヒー豆から職人が仕立てたEspressoを使います。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4341bee7134e7da0d3cc",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/interfaces/0/description",
+      "original": "A YAML file for interacting with the intelligent agent through natural language.",
+      "translation": "自然言語で知的エージェントとやり取りするためのYAMLファイル。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0d1e1b6fab73e5678699",
+      "source": "examples/adp/lkcoffe/ad.json",
+      "locator": "/interfaces/1/description",
+      "original": "A YAML file for interacting with the intelligent agent through purchase.",
+      "translation": "購入を通じて知的エージェントとやり取りするためのYAMLファイル。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b6c346be8788630ac143",
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "locator": "/interface/description",
+      "original": "用于通过自然语言与智能代理交互的接口。",
+      "translation": "自然言語で知的エージェントとやり取りするためのインターフェース。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "889b568000d26cd751d3",
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "locator": "/interface/endpoints/0/description",
+      "original": "使用自然语言提问并获取自然语言回答，支持SSE返回。",
+      "translation": "自然言語で質問して自然言語の回答を取得します。SSEによる応答に対応します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "93a829d657a24c881d8d",
+      "source": "examples/adp/lkcoffe/api/nl-interface.yaml",
+      "locator": "/interface/endpoints/0/response/description",
+      "original": "自然语言回答，支持SSE返回。",
+      "translation": "自然言語による回答。SSEによる応答に対応します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "c10682fa5b9a7db6b711",
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "locator": "/interface/description",
+      "original": "购买指定的商品或服务",
+      "translation": "指定した商品またはサービスを購入します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3c782c903b4886b1cde5",
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "locator": "/interface/endpoints/0/description",
+      "original": "购买操作",
+      "translation": "購入操作",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "098602148c0018325c34",
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "locator": "/interface/endpoints/0/parameters/0/description",
+      "original": "所购买商品或服务在描述文档中的identifier",
+      "translation": "購入する商品またはサービスの、説明文書内のidentifier。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9cf3bee77b898d67468e",
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "locator": "/interface/endpoints/0/parameters/1/description",
+      "original": "用户选择的商品或服务的自定义选项",
+      "translation": "利用者が選んだ商品またはサービスのカスタマイズの選択肢。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7e60c5b16b9c2e0197ae",
+      "source": "examples/adp/lkcoffe/api/purchase-interface.yaml",
+      "locator": "/interface/endpoints/0/parameters/1/additionalProperties/description",
+      "original": "用户选择的选项值，键为选项名称，值为用户选择的值",
+      "translation": "利用者が選択した値。キーは選択項目名、値は利用者が選んだ値です。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6e979139fb60d0a0841e",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/name",
+      "original": "橙C美式",
+      "translation": "橙C美式（オレンジCアメリカーノ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3fdcf77ebe429fbc1807",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/description",
+      "original": "小众果香，搭配浓郁咖啡，适合追求新鲜感和独特口味的消费者。",
+      "translation": "珍しい果実の香りと濃厚なコーヒーを組み合わせた、新鮮さや独特な風味を求める消費者向けの商品。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7cd62a571a062c6a3a87",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/brand/name",
+      "original": "瑞幸咖啡",
+      "translation": "瑞幸咖啡（Luckin Coffee）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "94bc808e4fbd2c21c054",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/0/value",
+      "original": "大师级Espresso，使用IIAC金奖咖啡豆",
+      "translation": "IIAC金賞受賞豆を使った、職人仕立てのEspresso。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9c477caeb8268eaa4a55",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/1/value",
+      "original": "橙C美式 破亿杯！",
+      "translation": "橙C美式、1億杯突破！",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b154ec747df8acbcaed6",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/2/name",
+      "original": "Juice Content",
+      "translation": "果汁含有量",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "710821506fb46158a20e",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/2/value",
+      "original": "1杯橙汁含量 ≈ 1个橙子",
+      "translation": "1杯のオレンジ果汁量 ≈ オレンジ1個分",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7a3b30ffdd7369836bb3",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/3/value",
+      "original": "浓郁橙香，清新沁爽",
+      "translation": "濃厚なオレンジの香りと、すっきり爽快な味わい。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d4fb309605102e14ee4d",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/4/name",
+      "original": "Coffee Blend",
+      "translation": "コーヒーブレンド",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "18bba6349639d7f8a362",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/4/value",
+      "original": "定制融合IIAC金奖浓缩咖啡，口感丰富高亮亮味蕾",
+      "translation": "IIAC金賞受賞のエスプレッソを特別にブレンドし、豊かな口当たりで味覚を鮮やかに刺激します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "dc09a2be0ec6822e4e54",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/5/value",
+      "original": "大师级定制Espresso，源自IIAC金奖咖啡豆",
+      "translation": "IIAC金賞受賞のコーヒー豆から仕立てた、職人による特製Espresso。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d995c3e94940338bd5ef",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/6/name",
+      "original": "Coffee Origin",
+      "translation": "コーヒーの産地",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8c9d0c5b299d04b702fa",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/additionalProperty/6/value",
+      "original": "瑞幸冠军团队经历上百次调试，寻求多产区咖啡豆专业拼配方案，甄选100%阿拉比卡咖啡豆，捕捉埃塞俄比亚、巴西、哥伦比亚、危地马拉等产区风味特征，呈现独特风味与浓醇口感",
+      "translation": "瑞幸のチャンピオンチームが100回以上の調整を重ね、複数産地の豆を専門的に配合する方法を探求しました。100%アラビカ豆を厳選し、エチオピア、ブラジル、コロンビア、グアテマラなどの産地の風味を捉え、独特の風味と濃厚でまろやかな口当たりを実現しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "884675fe9acdca7108f9",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/image/0/caption",
+      "original": "橙C美式 - 小众果香与浓郁咖啡的完美融合",
+      "translation": "橙C美式 — 珍しい果実の香りと濃厚なコーヒーの調和",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f96c16acf2ed21146b71",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/image/0/description",
+      "original": "一杯清新橙香与浓郁咖啡完美融合的饮品，使用IIAC金奖咖啡豆制作，搭配新鲜橙汁，呈现独特的果香咖啡体验",
+      "translation": "爽やかなオレンジの香りと濃厚なコーヒーを組み合わせた飲み物。IIAC金賞受賞の豆と新鮮なオレンジジュースを使い、果実の香る独特なコーヒー体験を提供します。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "cb753c61a6fd6afb4acc",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/manufacturer/name",
+      "original": "瑞幸咖啡",
+      "translation": "瑞幸咖啡（Luckin Coffee）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4c7a348ebcaf018c3aea",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/0/name",
+      "original": "杯型",
+      "translation": "杯型（カップサイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "54a86335bd8229af03ca",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/0/value/0",
+      "original": "小杯",
+      "translation": "小杯（小サイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5e04ed541371089b71ce",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/0/value/1",
+      "original": "中杯",
+      "translation": "中杯（中サイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "181fff550812d8124183",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/0/value/2",
+      "original": "大杯",
+      "translation": "大杯（大サイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "70167f54c4e7bdf9fdc8",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/1/name",
+      "original": "咖啡豆",
+      "translation": "咖啡豆（コーヒー豆）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e8cbfeb0834022b0e9e2",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/1/value/0",
+      "original": "IIAC金奖豆",
+      "translation": "IIAC金奖豆（IIAC金賞受賞豆）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4753f2d73c862df3fdae",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/2/name",
+      "original": "温度",
+      "translation": "温度",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4260e0bd3220c5705638",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/2/value/0",
+      "original": "冰",
+      "translation": "冰（アイス）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d000b484d42d134934d4",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/2/value/1",
+      "original": "热",
+      "translation": "热（ホット）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "11ab2e021e5e0b60df8d",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/3/name",
+      "original": "糖度",
+      "translation": "糖度（甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "c1f7151f7d11ca02ccfd",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/3/value/0",
+      "original": "标准甜",
+      "translation": "标准甜（標準の甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8dddc4be55c51cf1b559",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/3/value/1",
+      "original": "少甜",
+      "translation": "少甜（甘さ控えめ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9720297f0d9398d10e3b",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/3/value/2",
+      "original": "少少甜",
+      "translation": "少少甜（さらに甘さ控えめ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "cb5824d983ca0dece97b",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/3/value/3",
+      "original": "微甜",
+      "translation": "微甜（ほのかな甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "407b3466d504561be187",
+      "source": "examples/adp/lkcoffe/orange-americano/orange-americano.json",
+      "locator": "/customizationOptions/options/3/value/4",
+      "original": "不另外加糖",
+      "translation": "不另外加糖（追加の砂糖なし）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b4a8ca2fd83a755dc253",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/name",
+      "original": "烤椰拿铁",
+      "translation": "烤椰拿铁（ローストココナッツラテ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "c59fab8b64dddba244c3",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/description",
+      "original": "135°C左右高温烘烤，独特椰子糖味道，适合冬季饮用。这款饮品结合了椰肉汁和烤椰粒，提供五个‘0’轻轻享的健康选择，使用大师级定制的Espresso，源自IIAC金奖咖啡豆。",
+      "translation": "約135°Cの高温でローストし、独特なココナッツシュガーの風味を引き出した、冬に適した飲み物です。ココナッツの果肉汁とローストしたココナッツ片を組み合わせ、五つの「0」を持つ軽やかで健康的な選択肢を提供します。IIAC金賞受賞豆から仕立てた、職人特製のEspressoを使っています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "05d06d3bdf5384fb1800",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/brand/name",
+      "original": "瑞幸咖啡",
+      "translation": "瑞幸咖啡（Luckin Coffee）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b722a85579fbf57e9f23",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/additionalProperty/0/value",
+      "original": "椰肉汁 & 烤椰粒调配, 5个‘0’轻轻享（0乳糖、0植脂末、0蔗糖固体、0反式脂肪酸、0香精物加）, 大师级定制Espresso，源自IIAC金奖咖啡豆",
+      "translation": "ココナッツの果肉汁とローストしたココナッツ片を調合。5つの「0」で軽やかに楽しめます（乳糖0、粉末植物性クリーマー0、固形ショ糖0、トランス脂肪酸0、香料添加0。最後の項目の原文は「0香精物加」）。IIAC金賞受賞豆から仕立てた、職人特製のEspresso。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "cd8fef752197e35e3a0b",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/additionalProperty/1/value",
+      "original": "冬季特饮 暖暖回归",
+      "translation": "冬の特別な一杯が、温かさとともに再登場。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6d6ce1e4de582fff8502",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/additionalProperty/2/name",
+      "original": "Additional Info",
+      "translation": "追加情報",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ac913840d4915ce8490e",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/additionalProperty/2/value",
+      "original": "记忆中的椰子椰味道",
+      "translation": "記憶の中のココナッツの味わい。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e2a976e183bebd6eaeee",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/image/0/caption",
+      "original": "烤椰拿铁 - 冬季特饮暖暖回归",
+      "translation": "烤椰拿铁 — 冬の特別な一杯が温かく再登場",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "08331cf68a85f93bb333",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/image/0/description",
+      "original": "采用135°C高温烘烤工艺，完美融合椰肉汁和烤椰粒，搭配IIAC金奖咖啡豆制作的Espresso，带来独特的烤椰香与咖啡香的完美融合",
+      "translation": "135°Cの高温でローストする工程を採用し、ココナッツの果肉汁とローストしたココナッツ片を融合。IIAC金賞受賞豆のEspressoと合わせ、ローストココナッツの独特な香りとコーヒーの香りを調和させます。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f53a3abcec75a8db1c90",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/manufacturer/name",
+      "original": "瑞幸咖啡",
+      "translation": "瑞幸咖啡（Luckin Coffee）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "748afc8a92ed99e27e4a",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/0/name",
+      "original": "温度",
+      "translation": "温度",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6d3820c6362608347ea3",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/0/value/0",
+      "original": "冰",
+      "translation": "冰（アイス）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "abe9062370ae5170f626",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/0/value/1",
+      "original": "热",
+      "translation": "热（ホット）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7ce4e2d2d0d4eaa39725",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/1/name",
+      "original": "糖度",
+      "translation": "糖度（甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1cd070105140a1824cf9",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/1/value/0",
+      "original": "标准甜",
+      "translation": "标准甜（標準の甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "c901fd9888b89bd8a68c",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/1/value/1",
+      "original": "少甜",
+      "translation": "少甜（甘さ控えめ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "786d003a0f9b36079fab",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/1/value/2",
+      "original": "微甜",
+      "translation": "微甜（ほのかな甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6c1b9d006aab475df54e",
+      "source": "examples/adp/lkcoffe/roasted-coconut-latte/roasted-coconut-latte.json",
+      "locator": "/customizationOptions/options/1/value/3",
+      "original": "不另外加糖",
+      "translation": "不另外加糖（追加の砂糖なし）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6a73da439c8727c0224c",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/name",
+      "original": "丝绸拿铁",
+      "translation": "丝绸拿铁（シルクラテ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1fce8651759ba6d63fdb",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/description",
+      "original": "采用高品质奶源，提供丝滑口感，适合追求健康和口感的消费者。",
+      "translation": "高品質のミルクを使い、絹のようになめらかな口当たりを提供します。健康と味わいを求める消費者に適しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1fe2ef45b04de7aaeb00",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/brand/name",
+      "original": "瑞幸咖啡",
+      "translation": "瑞幸咖啡（Luckin Coffee）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "76d9f855e28771e75ad1",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/additionalProperty/0/value",
+      "original": "丝滑厚奶，丝滑蛋白含量 20.99%, 0乳糖、0植脂末、0蔗糖固体、0反式脂肪酸、0香精物加",
+      "translation": "なめらかで濃厚なミルク。なめらかな乳たんぱく質の含有率20.99%。乳糖0、粉末植物性クリーマー0、固形ショ糖0、トランス脂肪酸0、香料添加0（最後の項目の原文は「0香精物加」）。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "fc073b00485af57448ba",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/additionalProperty/1/value",
+      "original": "添加丝绸风味厚奶",
+      "translation": "シルクのような風味の濃厚なミルクを使用。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e656d2458fbebf504258",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/image/0/caption",
+      "original": "丝绸拿铁 - 丝滑浓郁的咖啡体验",
+      "translation": "丝绸拿铁 — なめらかで濃厚なコーヒー体験",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d2687bd6944763a4cd00",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/image/0/description",
+      "original": "采用高品质奶源制作的丝滑拿铁，0乳糖、0植脂末，带来纯净丝滑的口感体验，搭配优质咖啡豆，呈现完美平衡的咖啡风味",
+      "translation": "高品質のミルクから作ったなめらかなラテ。乳糖0、粉末植物性クリーマー0で、純粋でなめらかな口当たりを提供します。良質なコーヒー豆と合わせ、調和のとれたコーヒーの風味を実現しています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ee04b058c5b4b3ef3d28",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/manufacturer/name",
+      "original": "瑞幸咖啡",
+      "translation": "瑞幸咖啡（Luckin Coffee）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9b90900a01aa39e49a3c",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/0/name",
+      "original": "杯型",
+      "translation": "杯型（カップサイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "eebfb6787bd71371e296",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/0/value/0",
+      "original": "小杯",
+      "translation": "小杯（小サイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b45f736deb468658d0b0",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/0/value/1",
+      "original": "中杯",
+      "translation": "中杯（中サイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "588769f53f151092bb57",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/0/value/2",
+      "original": "大杯",
+      "translation": "大杯（大サイズ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "2cac63e3077583cdb7ab",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/1/name",
+      "original": "咖啡豆",
+      "translation": "咖啡豆（コーヒー豆）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8c1ca836116eb8946dc2",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/1/value/0",
+      "original": "IIAC金奖豆",
+      "translation": "IIAC金奖豆（IIAC金賞受賞豆）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "70650e10759e76e582af",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/1/value/1",
+      "original": "深烘拼配豆",
+      "translation": "深烘拼配豆（深煎りブレンド豆）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "af256dbe97c127056805",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/2/name",
+      "original": "温度",
+      "translation": "温度",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "094a6e39712040ba3437",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/2/value/0",
+      "original": "冰",
+      "translation": "冰（アイス）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "57645dc57ebee17d9c82",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/2/value/1",
+      "original": "热",
+      "translation": "热（ホット）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "92ae5470bf6acc655e27",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/3/name",
+      "original": "糖度",
+      "translation": "糖度（甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f74627c68fabd81dd553",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/3/value/0",
+      "original": "标准甜",
+      "translation": "标准甜（標準の甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "638e9891fb54e1a19f5b",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/3/value/1",
+      "original": "少甜",
+      "translation": "少甜（甘さ控えめ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "2a7b7e5920f1593df063",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/3/value/2",
+      "original": "少少甜",
+      "translation": "少少甜（さらに甘さ控えめ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8ef6b7ba26e51c86b0a9",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/3/value/3",
+      "original": "微甜",
+      "translation": "微甜（ほのかな甘さ）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7f24d7548682cffdc064",
+      "source": "examples/adp/lkcoffe/silk-latte/silk-latte.json",
+      "locator": "/customizationOptions/options/3/value/4",
+      "original": "不另外加糖",
+      "translation": "不另外加糖（追加の砂糖なし）",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "36348fabe58b9b219968",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/10/signed_request_object/body/text",
+      "original": "Hello from a native DID",
+      "translation": "Hello from a native DID",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "60226721cd30557c4b34",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/11/signed_request_object/body/text",
+      "original": "Group receipt assertion",
+      "translation": "Group receipt assertion",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "f975726937233554bd96",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/12/signed_request_object/body/text",
+      "original": "Hello from a native DID",
+      "translation": "Hello from a native DID",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "9e110562f4aff1cc2f6b",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/13/signed_request_object/body/text",
+      "original": "Group receipt assertion",
+      "translation": "Group receipt assertion",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "16a5d7ea25fff92fcc4a",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/14/signed_request_object/body/text",
+      "original": "Hello from a native DID",
+      "translation": "Hello from a native DID",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "5735607f93c2108cb6cd",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/15/signed_request_object/body/text",
+      "original": "Group receipt assertion",
+      "translation": "Group receipt assertion",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "9e3494502fb3b7344125",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/16/signed_request_object/body/text",
+      "original": "Hello from a native DID",
+      "translation": "Hello from a native DID",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "289dfb1568420da2b73a",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/17/signed_request_object/body/text",
+      "original": "Group receipt assertion",
+      "translation": "Group receipt assertion",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "47e502940025bcaf42b3",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/26/related_signed_request_object/body/text",
+      "original": "Group receipt assertion",
+      "translation": "Group receipt assertion",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "e3689ed92c3d0dfff74c",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/27/related_signed_request_object/body/text",
+      "original": "Group receipt assertion",
+      "translation": "Group receipt assertion",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "cc050ae56aa81f5d80e0",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/28/plaintext/text",
+      "original": "No separate origin proof is required for this P5 ciphertext",
+      "translation": "No separate origin proof is required for this P5 ciphertext",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "1513bd684d3e6313c59e",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/29/plaintext/text",
+      "original": "No separate origin proof is required for this P5 ciphertext",
+      "translation": "No separate origin proof is required for this P5 ciphertext",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "a259d3de5316a817f4b9",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/30/plaintext/text",
+      "original": "No separate origin proof is required for this P5 ciphertext",
+      "translation": "No separate origin proof is required for this P5 ciphertext",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "57d2214d239c868bd30f",
+      "source": "examples/did-authentication-vnext/byte-vectors.json",
+      "locator": "/positives/31/plaintext/text",
+      "original": "No separate origin proof is required for this P5 ciphertext",
+      "translation": "No separate origin proof is required for this P5 ciphertext",
+      "status": "technical-retained",
+      "reason": "署名対象／暗号化テストの固定平文です。バイト列、ダイジェスト、署名、暗号文との整合性を保つため、原文を保持します。"
+    },
+    {
+      "id": "74ee534f283fbfa918a8",
+      "source": "examples/message-vnext/02-direct-two-device-deliveries.json",
+      "locator": "/note",
+      "original": "This outer object is only an example collection and is not sent on the wire. Each direct.send is an independent P5 Direct E2EE delivery whose encrypted Application Plaintext contains the same logical_message_id; each response accepts only its exact recipient device ciphertext.",
+      "translation": "この外側のオブジェクトは例を集めたものであり、通信上では送信しません。各direct.sendは独立したP5 Direct E2EE配信で、暗号化されたApplication Plaintextは同じlogical_message_idを含みます。各応答は、その正確な宛先デバイス向けの暗号文だけを受け入れます。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a5798a2c5b88b57e8cc1",
+      "source": "examples/message-vnext/04-mls-two-device-leaves.json",
+      "locator": "/invariant",
+      "original": "Both leaves have credential.identity = UTF8(did:example:bob), but distinct authenticated device_id values and independent MLS private state.",
+      "translation": "両方のリーフでcredential.identity = UTF8(did:example:bob)ですが、認証済みのdevice_id値と、独立したMLSの秘密状態はそれぞれ異なります。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e72d9b32dbc0aad54f28",
+      "source": "examples/message-vnext/06-device-state-changed-error.json",
+      "locator": "/error/message",
+      "original": "Device eligibility may have changed",
+      "translation": "デバイスの適格性が変わった可能性があります。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1866a3dcfebcae316451",
+      "source": "examples/message-vnext/07-did-transition-retry.json",
+      "locator": "/scenario",
+      "original": "verified did:wba successor retry",
+      "translation": "検証済みdid:wba後継DIDへの再試行。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4dde74ce7cfed2075ec3",
+      "source": "examples/message-vnext/07-did-transition-retry.json",
+      "locator": "/initial_error/error/message",
+      "original": "Target DID has been superseded",
+      "translation": "宛先DIDは後継DIDに置き換えられています。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "2df43b0cb6499c57193a",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:1",
+      "original": "!/usr/bin/env python3",
+      "translation": "!/usr/bin/env python3",
+      "status": "technical-retained",
+      "reason": "実行環境を指定するshebangであり、人向け本文ではありません。パスとインタープリター指定を保持します。"
+    },
+    {
+      "id": "779adf3c023fcae0899a",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:6",
+      "original": "Check if file is in chinese directory or has cn in name",
+      "translation": "ファイルがchineseディレクトリ内にあるか、名前にcnを含むかを確認する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7da7a670081899e54357",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:14",
+      "original": "Skip if copyright notice already exists",
+      "translation": "著作権表示がすでに存在する場合は、スキップする。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9ab48c8ac7cc4f7373ef",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:18",
+      "original": "Prepare copyright notice based on language",
+      "translation": "言語に応じて著作権表示を用意する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "083f2950cdef962e4ab6",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:32",
+      "original": "Add copyright notice to the end of file",
+      "translation": "ファイル末尾に著作権表示を追加する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6c41d999ba83b3f90d96",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:42",
+      "original": "Walk through all directories",
+      "translation": "すべてのディレクトリをたどる。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "322c09d3bbfaa0fed37c",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:44",
+      "original": "Skip venv directory",
+      "translation": "venvディレクトリをスキップする。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ad3843fad9c8a45c2f53",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:36",
+      "original": "f\"Added copyright notice to {filepath}\"",
+      "translation": "f\"{filepath}に著作権表示を追加しました\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d73c6702b4ac4e761e01",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:20",
+      "original": "\n## 版权声明  \nCopyright (c) 2024 ANP Community  \n本文件依据 [Apache License 2.0](./LICENSE) 发布，您可以自由使用和修改，但必须保留本版权声明。\n",
+      "translation": "\n## 著作権表示  \nCopyright (c) 2024 ANP Community  \nこのファイルは[Apache License 2.0](./LICENSE)に基づいて公開されています。自由に利用・改変できますが、この著作権表示を保持しなければなりません。\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4af90668dbd1a3d4e257",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:26",
+      "original": "\n## Copyright Notice\nCopyright (c) 2024 ANP Community  \nThis file is released under the [Apache License 2.0](./LICENSE). You are free to use and modify it, but you must retain this copyright notice.\n",
+      "translation": "\n## 著作権表示\nCopyright (c) 2024 ANP Community  \nこのファイルは[Apache License 2.0](./LICENSE)に基づいて公開されています。自由に利用・改変できますが、この著作権表示を保持しなければなりません。\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "559de5c7d91c09e2fc71",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:39",
+      "original": "f\"Error processing {filepath}: {str(e)}\"",
+      "translation": "f\"{filepath}の処理でエラーが発生しました: {str(e)}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b6064ef87d82bdea55c2",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:15",
+      "original": "版权声明",
+      "translation": "版权声明",
+      "status": "technical-retained",
+      "reason": "既存の中国語著作権見出しを検索する完全一致パターンです。意味は「著作権表示」ですが、検索用の値は保持します。"
+    },
+    {
+      "id": "43ae5dd98c30e1d4a7d6",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:15",
+      "original": "Copyright Notice",
+      "translation": "Copyright Notice",
+      "status": "technical-retained",
+      "reason": "既存の英語著作権見出しを検索する完全一致パターンです。意味は「著作権表示」ですが、検索用の値は保持します。"
+    },
+    {
+      "id": "884fb4ef0baf9edc65ec",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:36",
+      "original": "Added copyright notice to ",
+      "translation": "著作権表示を追加しました: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "f53ad0c621c6189e9a70",
+      "source": "scripts/add_copyright.py",
+      "locator": "line:39",
+      "original": "Error processing ",
+      "translation": "処理中のエラー: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "754967eccee52418d654",
+      "source": "scripts/rename_images.py",
+      "locator": "line:1",
+      "original": "!/usr/bin/env python3",
+      "translation": "!/usr/bin/env python3",
+      "status": "technical-retained",
+      "reason": "実行環境を指定するshebangであり、人向け本文ではありません。パスとインタープリター指定を保持します。"
+    },
+    {
+      "id": "f43eb1b727a0ae5580ec",
+      "source": "scripts/rename_images.py",
+      "locator": "line:15",
+      "original": "Sort files naturally",
+      "translation": "ファイルを自然順で並べ替える。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6272151f59b27ea65da8",
+      "source": "scripts/rename_images.py",
+      "locator": "line:18",
+      "original": "Rename files",
+      "translation": "ファイル名を変更する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "925e325920e475debe39",
+      "source": "scripts/rename_images.py",
+      "locator": "line:6",
+      "original": "Sort strings containing numbers in natural order.",
+      "translation": "数字を含む文字列を自然な順序に並べ替えます。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e4bf67f40d062f2cd5d6",
+      "source": "scripts/rename_images.py",
+      "locator": "line:7",
+      "original": "Sort strings containing numbers in natural order.",
+      "translation": "数字を含む文字列を自然な順序に並べ替えます。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "176e4859428a057be7ab",
+      "source": "scripts/rename_images.py",
+      "locator": "line:24",
+      "original": "f\"Renamed {old_name} to {new_name}\"",
+      "translation": "f\"{old_name}を{new_name}に変更しました\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "31274910720c1f536800",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:1",
+      "original": "!/usr/bin/env python3",
+      "translation": "!/usr/bin/env python3",
+      "status": "technical-retained",
+      "reason": "実行環境を指定するshebangであり、人向け本文ではありません。パスとインタープリター指定を保持します。"
+    },
+    {
+      "id": "7c079e43666136de85d9",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:32",
+      "original": "创建控制台处理器",
+      "translation": "コンソールハンドラーを作成する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e94c644b476ec9e10f48",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:39",
+      "original": "如果指定了日志文件，创建文件处理器",
+      "translation": "ログファイルが指定された場合、ファイルハンドラーを作成する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1816a1faba325292d109",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:69",
+      "original": "排除指定目录",
+      "translation": "指定したディレクトリを除外する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a3a7f2d67cfa5abed76a",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:72",
+      "original": "检查文件",
+      "translation": "ファイルを調べる。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a12236034350f8979d35",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:78",
+      "original": "如果需要，检查目录",
+      "translation": "必要な場合は、ディレクトリも調べる。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3d0a5d4061b23fce9ae8",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:92",
+      "original": "首先处理文件，然后处理目录（从深到浅）",
+      "translation": "最初にファイルを処理し、その後、深い階層から浅い階層へディレクトリを処理する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "768e52114823a8c403d5",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:93",
+      "original": "确保先处理文件，再处理目录",
+      "translation": "ファイルを先に処理し、その後にディレクトリを処理するようにする。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "8bb72620ed028e24cd81",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:96",
+      "original": "目录从深到浅排序，确保先处理子目录",
+      "translation": "先に子ディレクトリを処理できるよう、深い階層から浅い階層へ並べ替える。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6030816d6d27120568a0",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:99",
+      "original": "处理所有项目",
+      "translation": "すべての項目を処理する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "46781251ac95b92da42c",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:104",
+      "original": "将空格替换为中划线，可选转为小写",
+      "translation": "空白をハイフンに置き換え、必要に応じて小文字に変換する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "22bf44c119af594cf500",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:109",
+      "original": "如果名称没有变化，跳过",
+      "translation": "名前が変わらない場合は、スキップする。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "575b66d08a3ea6959e15",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:131",
+      "original": "设置日志记录器",
+      "translation": "ロガーを設定する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1c1fedefaaf7f505a402",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:134",
+      "original": "获取仓库根目录",
+      "translation": "リポジトリのルートディレクトリを取得する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9eb1ff4f388fd41748b5",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:146",
+      "original": "查找包含空格的项目",
+      "translation": "空白を含む項目を探す。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "593e9a9ba6568fa36e37",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:152",
+      "original": "检查结果",
+      "translation": "結果を確認する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3861cab8682970896e87",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:157",
+      "original": "分类统计",
+      "translation": "種類別に集計する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6c574c0373c5b97825b4",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:169",
+      "original": "如果只是检测模式，到此结束",
+      "translation": "検出のみのモードなら、ここで終了する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1cffac89fa9af5513507",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:174",
+      "original": "询问用户是否继续",
+      "translation": "続行するか利用者に尋ねる。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "27c0c29c0ba01caa5738",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:181",
+      "original": "重命名项目",
+      "translation": "項目の名前を変更する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6dba7b630851fc862120",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:1",
+      "original": "\n检测仓库中包含空格的文件名并将空格替换为中划线\n\n用法:\n  python3 replace_spaces_with_hyphens.py [选项]\n\n选项:\n  -h, --help            显示此帮助信息\n  -d, --detect-only     仅检测，不进行重命名\n  -y, --yes             自动确认，无需用户交互\n  -r, --recursive-dirs  同时处理目录名\n  -l, --lowercase       同时将文件名转为小写\n  -p PATH, --path PATH  指定要处理的路径（默认为当前仓库根目录）\n  --log FILE            指定日志文件（默认为不记录日志）\n",
+      "translation": "\nリポジトリ内で、名前に空白を含むファイルを検出し、空白をハイフンに置き換えます。\n\n使い方:\n  python3 replace_spaces_with_hyphens.py [オプション]\n\nオプション:\n  -h, --help            このヘルプを表示\n  -d, --detect-only     検出のみ行い、名前を変更しない\n  -y, --yes             自動確認し、利用者とのやり取りを省略\n  -r, --recursive-dirs  ディレクトリ名も処理\n  -l, --lowercase       ファイル名を小文字にも変換\n  -p PATH, --path PATH  処理するパスを指定（既定は現在のリポジトリのルート）\n  --log FILE            ログファイルを指定（既定はログファイルに記録しない）\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "684d02ae6b791c5a6f47",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:27",
+      "original": "设置日志记录器",
+      "translation": "ロガーを設定する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "bb68bac9ccd3467ef7b8",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:49",
+      "original": "解析命令行参数",
+      "translation": "コマンドライン引数を解析する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9b8b0c9b7a725796d7b8",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:61",
+      "original": "查找包含空格的文件和目录",
+      "translation": "名前に空白を含むファイルとディレクトリを探す。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3ee329e9b704b9b9168b",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:87",
+      "original": "重命名文件和目录",
+      "translation": "ファイルとディレクトリの名前を変更する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "78ee234fc3532e571ff3",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:127",
+      "original": "主函数",
+      "translation": "メイン関数。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7e1059b165b7fa21aa5d",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:4",
+      "original": "\n检测仓库中包含空格的文件名并将空格替换为中划线\n\n用法:\n  python3 replace_spaces_with_hyphens.py [选项]\n\n选项:\n  -h, --help            显示此帮助信息\n  -d, --detect-only     仅检测，不进行重命名\n  -y, --yes             自动确认，无需用户交互\n  -r, --recursive-dirs  同时处理目录名\n  -l, --lowercase       同时将文件名转为小写\n  -p PATH, --path PATH  指定要处理的路径（默认为当前仓库根目录）\n  --log FILE            指定日志文件（默认为不记录日志）\n",
+      "translation": "\nリポジトリ内で、名前に空白を含むファイルを検出し、空白をハイフンに置き換えます。\n\n使い方:\n  python3 replace_spaces_with_hyphens.py [オプション]\n\nオプション:\n  -h, --help            このヘルプを表示\n  -d, --detect-only     検出のみ行い、名前を変更しない\n  -y, --yes             自動確認し、利用者とのやり取りを省略\n  -r, --recursive-dirs  ディレクトリ名も処理\n  -l, --lowercase       ファイル名を小文字にも変換\n  -p PATH, --path PATH  処理するパスを指定（既定は現在のリポジトリのルート）\n  --log FILE            ログファイルを指定（既定はログファイルに記録しない）\n",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a34db94f5be72f363150",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:28",
+      "original": "设置日志记录器",
+      "translation": "ロガーを設定する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0345cb086d57f94219ec",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:50",
+      "original": "解析命令行参数",
+      "translation": "コマンドライン引数を解析する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "402d55b969ad4612684e",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:62",
+      "original": "查找包含空格的文件和目录",
+      "translation": "名前に空白を含むファイルとディレクトリを探す。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "68efc94b53890391044b",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:88",
+      "original": "重命名文件和目录",
+      "translation": "ファイルとディレクトリの名前を変更する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "403f4599dfc442660df7",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:128",
+      "original": "主函数",
+      "translation": "メイン関数。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e9e02f83ea756ffccf58",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:142",
+      "original": "=== 文件名空格替换工具 ===",
+      "translation": "=== ファイル名の空白置換ツール ===",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "aaa38aaf9d7eba2645c5",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:143",
+      "original": "f\"开始时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\"",
+      "translation": "f\"開始時刻: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "aba6a1628836faf71c3c",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:144",
+      "original": "f\"工作目录: {os.getcwd()}\"",
+      "translation": "f\"作業ディレクトリ: {os.getcwd()}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "6c5e583af368cb013362",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:161",
+      "original": "f\"发现 {len(items_with_spaces)} 个包含空格的项目:\"",
+      "translation": "f\"空白を含む項目が{len(items_with_spaces)}件見つかりました:\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "865f0118c99d6f191763",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:162",
+      "original": "f\"  文件: {file_count} 个\"",
+      "translation": "f\"  ファイル: {file_count}件\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "779a707c4cb0d7fba774",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:163",
+      "original": "f\"  目录: {dir_count} 个\"",
+      "translation": "f\"  ディレクトリ: {dir_count}件\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e75c796b1b9f6f831482",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:182",
+      "original": "开始重命名...",
+      "translation": "名前の変更を開始します...",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "e020742f555072c879c7",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:190",
+      "original": "操作完成：",
+      "translation": "操作が完了しました:",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "d0d5f4255fbbf9b2f70e",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:191",
+      "original": "f\"  成功重命名: {success_count} 个项目\"",
+      "translation": "f\"  名前の変更に成功: {success_count}件\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a03d1cc0a65c6a681dc6",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:192",
+      "original": "f\"  重命名失败: {fail_count} 个项目\"",
+      "translation": "f\"  名前の変更に失敗: {fail_count}件\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0b45e482ae519070a370",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:193",
+      "original": "f\"结束时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\"",
+      "translation": "f\"終了時刻: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4351b0f7c2556f831e66",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:154",
+      "original": "未发现包含空格的文件或目录名。",
+      "translation": "名前に空白を含むファイルやディレクトリは見つかりませんでした。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1d64619cf6bab8f106f2",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:166",
+      "original": "f\"  {item}\"",
+      "translation": "f\"  {item}\"",
+      "status": "technical-retained",
+      "reason": "変数{item}だけをインデントして表示するテンプレートです。翻訳対象の自然言語がないため、そのまま保持します。"
+    },
+    {
+      "id": "f590193071fbe047402e",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:171",
+      "original": "检测完成，因设置了仅检测模式，不进行重命名操作。",
+      "translation": "検出のみのモードが指定されているため、検出を完了し、名前の変更は行いません。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "42cf8831224f20e678d1",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:196",
+      "original": "注意: 部分项目重命名失败，可能是因为权限问题或文件正在使用中。",
+      "translation": "注意: 一部の項目の名前を変更できませんでした。権限の問題や、ファイルが使用中であることが原因の可能性があります。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3fb3e4edc4fbf58613cb",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:51",
+      "original": "检测仓库中包含空格的文件名并将空格替换为中划线",
+      "translation": "リポジトリ内で、名前に空白を含むファイルを検出し、空白をハイフンに置き換えます。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "110ae2217b6cd18ea95f",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:52",
+      "original": "仅检测，不进行重命名",
+      "translation": "検出のみ行い、名前を変更しない。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "696f232c4c1c36e2a203",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:53",
+      "original": "自动确认，无需用户交互",
+      "translation": "自動確認し、利用者とのやり取りを省略する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "fb53017ffec61fd4fed4",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:54",
+      "original": "同时处理目录名",
+      "translation": "ディレクトリ名も処理する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4b71f16b89dd324fd265",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:55",
+      "original": "同时将文件名转为小写",
+      "translation": "ファイル名を小文字にも変換する。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "cf8ef170e0928488e49f",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:56",
+      "original": "指定要处理的路径（默认为当前仓库根目录）",
+      "translation": "処理するパスを指定する（既定は現在のリポジトリのルートディレクトリ）。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "2ddfb44ae6b31aab1bb8",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:57",
+      "original": "指定日志文件（默认为不记录日志）",
+      "translation": "ログファイルを指定する（既定ではログファイルに記録しない）。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9c5bbbcec435c217b1fe",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:111",
+      "original": "f\"跳过 (无需更改): {item_path}\"",
+      "translation": "f\"スキップ（変更不要）: {item_path}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "58ab70fb72508aee795b",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:118",
+      "original": "f\"已重命名: {item_path} → {new_path}\"",
+      "translation": "f\"名前を変更しました: {item_path} → {new_path}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "3c0182ca25fda02e701e",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:143",
+      "original": "开始时间: ",
+      "translation": "開始時刻: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "1f14ab95e2c9aa3fe406",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:144",
+      "original": "工作目录: ",
+      "translation": "作業ディレクトリ: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b65a6d261ca57ca60fee",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:161",
+      "original": "发现 ",
+      "translation": "検出: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "bb65bcc44062882a0163",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:161",
+      "original": " 个包含空格的项目:",
+      "translation": "件の、空白を含む項目:",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a16467d7c5ad0fda6bea",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:162",
+      "original": "  文件: ",
+      "translation": "  ファイル: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b42b4d633f4f39c87914",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:162",
+      "original": " 个",
+      "translation": "件",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a6b0ee33ff1eedd918be",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:163",
+      "original": "  目录: ",
+      "translation": "  ディレクトリ: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "eb98de63d813d837d8e6",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:163",
+      "original": " 个",
+      "translation": "件",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "5166f30838f1885568f4",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:176",
+      "original": "是否将这些项目名中的空格替换为中划线？(y/n): ",
+      "translation": "これらの項目名に含まれる空白をハイフンに置き換えますか？(y/n): ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "01763774e1ac1ee3a484",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:178",
+      "original": "操作已取消。",
+      "translation": "操作をキャンセルしました。",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "9cbecfd654451e90223b",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:191",
+      "original": "  成功重命名: ",
+      "translation": "  名前の変更に成功: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0f463fe44f9e43e18253",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:191",
+      "original": " 个项目",
+      "translation": "件の項目",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "ffc622d1dfae399c15b3",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:192",
+      "original": "  重命名失败: ",
+      "translation": "  名前の変更に失敗: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "339772ff42d065f7767f",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:192",
+      "original": " 个项目",
+      "translation": "件の項目",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "7f031d7a1c31593b21e5",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:193",
+      "original": "结束时间: ",
+      "translation": "終了時刻: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "4c86f278f27a0f853bca",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:121",
+      "original": "f\"重命名失败: {item_path}\"",
+      "translation": "f\"名前の変更に失敗: {item_path}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "96a6483eaeed1bf906ed",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:122",
+      "original": "f\"错误信息: {str(e)}\"",
+      "translation": "f\"エラー情報: {str(e)}\"",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "75723a8a4189213458d7",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:111",
+      "original": "跳过 (无需更改): ",
+      "translation": "スキップ（変更不要）: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "0cd9c9ba31ecc27e3d01",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:118",
+      "original": "已重命名: ",
+      "translation": "名前を変更しました: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "b5a68716778dfe595029",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:121",
+      "original": "重命名失败: ",
+      "translation": "名前の変更に失敗: ",
+      "status": "agent-reviewed"
+    },
+    {
+      "id": "a97596647e75bf54e744",
+      "source": "scripts/replace_spaces_with_hyphens.py",
+      "locator": "line:122",
+      "original": "错误信息: ",
+      "translation": "エラー情報: ",
+      "status": "agent-reviewed"
+    }
+  ]
+}

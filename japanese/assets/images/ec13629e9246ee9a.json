@@ -1,0 +1,108 @@
+{
+  "source": "blogs/images/12-ANP-from-scratch-en-png/06-step2.png",
+  "sha256": "ec13629e9246ee9a17876ec85482b737b4061562e5747ade94f95de63160f0fb",
+  "method": "rapidocr-onnxruntime-1.4.4-local",
+  "status": "ocr-text-unverified",
+  "labels": [
+    {
+      "source": "Step2of5",
+      "confidence": 0.9482701048254967,
+      "box": [
+        [
+          35.0,
+          35.0
+        ],
+        [
+          147.0,
+          34.0
+        ],
+        [
+          147.0,
+          58.0
+        ],
+        [
+          36.0,
+          60.0
+        ]
+      ],
+      "label_id": "L001",
+      "japanese": "全5段階の第2段階",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": [
+        "2",
+        "5"
+      ],
+      "transcribed_source": "Step 2 of 5"
+    },
+    {
+      "source": "三",
+      "confidence": 0.9494646787643433,
+      "box": [
+        [
+          653.0,
+          123.0
+        ],
+        [
+          748.0,
+          123.0
+        ],
+        [
+          748.0,
+          244.0
+        ],
+        [
+          653.0,
+          244.0
+        ]
+      ],
+      "label_id": "L002",
+      "japanese": "文字ではない（アイコンの線をOCRが誤検出）",
+      "translation_method": "visually-confirmed-nontext-ocr-false-positive",
+      "protected_tokens": []
+    },
+    {
+      "source": "One line, arranged by strict rules",
+      "confidence": 0.999253502663444,
+      "box": [
+        [
+          477.0,
+          274.0
+        ],
+        [
+          933.0,
+          274.0
+        ],
+        [
+          933.0,
+          309.0
+        ],
+        [
+          477.0,
+          309.0
+        ]
+      ],
+      "label_id": "L003",
+      "japanese": "厳密な規則に従って並べた1行",
+      "translation_method": "agent-reviewed-label-translation",
+      "protected_tokens": []
+    }
+  ],
+  "review": "visible-labels-visually-reviewed-and-translated",
+  "translation_status": "all-visible-text-visually-reviewed-and-translated",
+  "ocr_seconds": [
+    0.8525819000205956,
+    0.0049991607666015625,
+    0.4500908851623535
+  ],
+  "visual_review": {
+    "complete_visible_labels_reviewed": true,
+    "full_transcription_confirmed": true,
+    "corrections": {
+      "Step2of5": "Step 2 of 5"
+    },
+    "false_positive_labels": [
+      "三"
+    ],
+    "source_sha256": "ec13629e9246ee9a17876ec85482b737b4061562e5747ade94f95de63160f0fb"
+  }
+}
